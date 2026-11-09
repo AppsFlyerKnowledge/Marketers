@@ -32,7 +32,7 @@ x-zendesk:
 ---
 > **Краткий обзор.** Атрибутируйте установки приложений к производителям устройств, если приложения были добавлены на устройства на фабрике. **Примечание.** Посмотрите <Anchor target="_blank" href="/marketers/ru/docs/appsflyer-attribution-model#preload-campaigns">все другие методы атрибуции предварительной загрузки</Anchor>.
 
-![pre-install-intro-breakdown.png](https://files.readme.io/6095a24d5031a91f7e3fc862769a25bd300e0651bd8f9eb272feca7a5bfafdf5-49929306623889.png)
+<Image align="center" alt="pre-install-intro-breakdown.png" src="https://files.readme.io/6095a24d5031a91f7e3fc862769a25bd300e0651bd8f9eb272feca7a5bfafdf5-49929306623889.png" />
 
 <div id="introduction" />
 
@@ -429,9 +429,9 @@ OR
 
 Создайте приложение в Android Studio и установите его на тестовое устройство. Когда приложение запустится, откройте Logcat в Android studio и отфильтруйте его по «AppsFlyer». Вы должны увидеть атрибутированную установку со всеми деталями. Для наглядности смотрите скриншоты ниже:
 
-![pre_install_logcat.png](https://files.readme.io/af258e2a46a5e685d241d94512e3432a76bc2e2c4758766fd96dcdb3a53484f7-49929290834321.png)
+<Image align="center" alt="pre_install_logcat.png" src="https://files.readme.io/af258e2a46a5e685d241d94512e3432a76bc2e2c4758766fd96dcdb3a53484f7-49929290834321.png" />
 
-![pre_install_logcat_2.png](https://files.readme.io/e7efd423d7fc53fa04939f7b1fc444a6831c5674b05d5ee9b4286c9409579c5e-49929306625297.png)
+<Image align="center" alt="pre_install_logcat_2.png" src="https://files.readme.io/e7efd423d7fc53fa04939f7b1fc444a6831c5674b05d5ee9b4286c9409579c5e-49929306625297.png" />
 
 </Accordion>
 
@@ -445,13 +445,13 @@ OR
 
 1. На странице обзора отфильтруйте медиа-источники и выберите медиа-источник:  
 
-   ![choose_media_source.png](https://files.readme.io/e63c23af74a1f09363df62f3f5d9feafd7de7831e0dfda8fb6ed68328228f574-49929290834833.png)
+   <Image align="center" alt="choose_media_source.png" src="https://files.readme.io/e63c23af74a1f09363df62f3f5d9feafd7de7831e0dfda8fb6ed68328228f574-49929290834833.png" />
 2. На диаграмме ***Разбивка по кампаниям*** видно, что установка, атрибутированная к «моему медиа-источнику», происходит из кампании предустановки:  
 
-    [![](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)  
+    <Image align="center" alt="" src="https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png" />
    Вы также можете убедиться, что установка атрибутирована правильно, просмотрев ***Агрегированный отчет об эффективности***. В нем вы можете увидеть медиа-источник и кампанию. На скриншоте ниже в строке «My Media Source» указан медиа-источник, а кампания — Pre-install:  
 
-    [![](https://files.readme.io/c178a0bc1c013a20aa9c557022e5a0560c267b797c3033f476bcd2c9525cb125-49929306627729.png)](https://files.readme.io/c178a0bc1c013a20aa9c557022e5a0560c267b797c3033f476bcd2c9525cb125-49929306627729.png)
+    <Image align="center" alt="" src="https://files.readme.io/c178a0bc1c013a20aa9c557022e5a0560c267b797c3033f476bcd2c9525cb125-49929306627729.png" />
 3. Повторите этот процесс для всех производителей или медиа-источников, с которыми вы сотрудничаете в рамках кампаний по предустановке.
 
 </Accordion>

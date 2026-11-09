@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Краткий обзор.** AppsFlyer декодирует и преобразует заданное вами значение конверсии в события. События используются для заполнения дэшборда SKAN, сырых данных и постбэков партнерам.
 
-![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
+<Image align="center" alt="SKAdNetwork_-_Custom__1_.png" src="https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png" />
 
 <div id="decode-skan-conversion-value" />
 
@@ -282,7 +282,7 @@ x-zendesk:
 
 Обычно Excel форматирует ячейки со значениями с помощью запятой для отделения тысяч, как показано на рисунке. Этот формат не подходит для загрузки CSV-файлов. Вам также необходимо удалить символ $.
 
-![mceclip0.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 Это можно исправить, отформатировав ячейки в Excel.
 
@@ -293,7 +293,7 @@ x-zendesk:
    Откроется окно форматирования ячеек.
 3. Выберите **Number** (Число).  
 
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 
 1. Очистите поле **Использовать 1000-й сепаратор (,)** .
 2. (Необязательно) Установите количество **знаков после десятичного разделителя**. По умолчанию установлено значение 2. Максимально допустимое значение — 5.
@@ -315,14 +315,14 @@ x-zendesk:
 
 **Вид в редакторе**
 
-![SKCustomeEditor.png](https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png)
+<Image align="center" alt="SKCustomeEditor.png" src="https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png" />
 
 Используя редактор, просмотрите CSV-файл. Обратите особое внимание на следующее:
 
 * **Пробелы:** Убедитесь, что до и после запятых, разделяющих поля, нет пробелов. В Excel для удаления пробелов используйте команду @trim.
 * **event\_revenue\_usd:** Убедитесь, что в столбце event\_revenue\_usd нет ни запятой, ни символа $.  
 
-  ![mceclip1.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+  <Image align="center" alt="mceclip1.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 </Accordion>
 

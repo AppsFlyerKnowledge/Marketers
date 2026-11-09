@@ -43,15 +43,15 @@ x-zendesk:
 
 1. Чтобы получить доступ к Data Collaboration Platform, в боковом меню AppsFlyer кликните **Collaborate** > **Data Clean Room**. 
 
-   <Image alt="Кликните Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="33.49%" />
+   <Image align="center" alt="Кликните Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="33.49%" />
 2. (Необязательно) Добавьте [Условия и положения](#terms-and-conditions) совместной работы. Это также можно сделать позже.
 3. Перейдите на вкладку **Collaborations** > **+ New collaboration**.
 
-   <Image alt="На вкладке Collaborations кликните New collaboration w arrow New UI.png" src="https://files.readme.io/63945589565b79f71d82453c00df9e088fc9a9eaef6dd6a14ecc1130b96c19ca-43774064785425.png" width="1240px" />
+   <Image align="center" alt="На вкладке Collaborations кликните New collaboration w arrow New UI.png" src="https://files.readme.io/63945589565b79f71d82453c00df9e088fc9a9eaef6dd6a14ecc1130b96c19ca-43774064785425.png" width="1240px" />
 
    Появится экран создания новой совместной работы.
 
-   [![New collaboration — empty state.png](https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png)](https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png)
+   <Image align="center" alt="New collaboration — empty state.png" src="https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png" />
 
 </Accordion>
 
@@ -63,10 +63,10 @@ x-zendesk:
 
 1. Нажмите **Настроить**(в разделе **Настроить детали сотрудничества**).
 
-   <Image alt="Set .png" src="https://files.readme.io/e47781f360714e539ed54c6a8bfaa32b282f4609dc2c91d77021034f46dfb23a-32348709077393.png" width="951px" />
+   <Image align="center" alt="Set .png" src="https://files.readme.io/e47781f360714e539ed54c6a8bfaa32b282f4609dc2c91d77021034f46dfb23a-32348709077393.png" width="951px" />
 2. Введите название совместной работы. Это будет исходное название, которое также увидит ваш соавтор (позже вы всегда сможете его изменить). Затем нажмите **Сохранить**.
 
-<Image alt="Задать сведения о совместной работе.png" src="https://files.readme.io/1af9e94bfac35aa85a8857e8aa117939245cf73f7c83700d2fe1c77bf12d6cc3-32324652610961.png" width="825px" />
+<Image align="center" alt="Задать сведения о совместной работе.png" src="https://files.readme.io/1af9e94bfac35aa85a8857e8aa117939245cf73f7c83700d2fe1c77bf12d6cc3-32324652610961.png" width="825px" />
 
 </Accordion>
 
@@ -80,10 +80,10 @@ x-zendesk:
 
 1. Нажмите **Add** (в разделе **Add a collaborator**).   
 
-   <Image alt="Добавить соавтора: нажмите Add.png" src="https://files.readme.io/958f88782e8cd36bbfa1962b51de72824200952be183a968d311fa6ef164553e-34014450760465.png" width="2088px" />
+   <Image align="center" alt="Добавить соавтора: нажмите Add.png" src="https://files.readme.io/958f88782e8cd36bbfa1962b51de72824200952be183a968d311fa6ef164553e-34014450760465.png" width="2088px" />
 2. Введите электронную почту соавтора.
 
-   <Image alt="Установить политику сотрудничества.png" src="https://files.readme.io/6e5f0f0780cbaa661bcfc711fe2deb53e199db813b78581563d1af566462f33b-41966029775633.png" width="86.66%" />
+   <Image align="center" alt="Установить политику сотрудничества.png" src="https://files.readme.io/6e5f0f0780cbaa661bcfc711fe2deb53e199db813b78581563d1af566462f33b-41966029775633.png" width="86.66%" />
 3. Нажмите **Set** **collaboration policy**, чтобы определить разрешения, которые вы предоставляете соавтору. Они определяют, что соавтор может делать с вашими данными и какие ресурсы или партнёров по активации он может использовать. Помимо этой политики по умолчанию, также можно [настроить пользовательские разрешения на доступ к данным для каждого источника](/docs/data-collaboration-platform-dcp-create-a-collaboration#необязательно-настройте-пользовательские-разрешения-на-данные-по-источникам). Узнать больше о <Anchor target="_blank" href="/marketers/ru/docs/data-collaboration-platform-dcp-sharing-permissions">разрешениях на общий доступ</Anchor>.
 4. После сохранения соответствующих разрешений снова нажмите **Save** .   
    После создания сотрудничества соавтор получит приглашение к сотрудничеству в папке «Входящие». После входа в AppsFlyer по ссылке из письма он сможет начать сотрудничать с вами.
@@ -101,10 +101,10 @@ x-zendesk:
 1. На вкладке **Data Collaboration Platform** > **Collaborations** > нажмите нужное сотрудничество, чтобы получить к нему доступ.
 2. Нажмите **Associate** в разделе **Associate sources**.  
 
-   <Image alt="Связать источники: нажмите associate.png" src="https://files.readme.io/ed192e758d04c3f48dd70877f90c39428f72460247d4a5940c1217393ae5f686-34014749769617.png" width="2080px" />
+   <Image align="center" alt="Связать источники: нажмите associate.png" src="https://files.readme.io/ed192e758d04c3f48dd70877f90c39428f72460247d4a5940c1217393ae5f686-34014749769617.png" width="2080px" />
 3. Выберите источники, которые нужно связать (или <Anchor target="_blank" href="/marketers/ru/docs/data-collaboration-platform-dcp-create-and-manage-sources">создайте новый источник</Anchor>).  
 
-   <Image alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="78.23%" />  
+   <Image align="center" alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="78.23%" />
    Затем нажмите **Save**.
 4. #### <span id="optional-set-custom-data-permissions-by-source"></span>**Необязательно:** настройте пользовательские разрешения на данные по источникам
 
@@ -112,11 +112,11 @@ x-zendesk:
 
    В меню с 3 точками рядом с источником нажмите **Редактировать разрешения**.  
 
-   <Image alt="Редактировать разрешения new.png" src="https://files.readme.io/94395905bcd18545dfdaedb3829eafa37e047776ba6ba6d5daf0a2a00ca5afaa-43776633793553.png" width="1330px" />
+   <Image align="center" alt="Редактировать разрешения new.png" src="https://files.readme.io/94395905bcd18545dfdaedb3829eafa37e047776ba6ba6d5daf0a2a00ca5afaa-43776633793553.png" width="1330px" />
 
    Выберите соответствующие <Anchor target="_blank" href="/marketers/ru/docs/data-collaboration-platform-dcp-create-and-manage-sources#разрешения-на-доступ">разрешения на совместное использование</Anchor>.  
 
-   <Image alt="Разрешения для источника1.png" src="https://files.readme.io/e4b025bf9cd944024e578ac4bcfd60c46d847b3e403b1da737e3451eb708e5a9-34019077412369.png" width="90.08%" />
+   <Image align="center" alt="Разрешения для источника1.png" src="https://files.readme.io/e4b025bf9cd944024e578ac4bcfd60c46d847b3e403b1da737e3451eb708e5a9-34019077412369.png" width="90.08%" />
 
    **Примечание:** Вы также можете настроить разрешения источника для существующих совместных работ. Для этого перейдите в раздел **Связанные источники** в нужной совместной работе и в меню действий (3 точки) справа от источника выберите > **Редактировать разрешения**.
 
@@ -140,10 +140,10 @@ x-zendesk:
 
 1. На платформе Data Collaboration Platform (Data Clean Room) перейдите на вкладку **Совместные работы** > выберите нужную совместную работу.   
 
-   <Image alt="В разделе совместных работ перейдите к нужной совместной работе New.png" src="https://files.readme.io/b9c153e3e314f7788e942a49e465c9b10725066f50715a6eb0447f6796269328-43777319665169.png" width="876px" />
+   <Image align="center" alt="В разделе совместных работ перейдите к нужной совместной работе New.png" src="https://files.readme.io/b9c153e3e314f7788e942a49e465c9b10725066f50715a6eb0447f6796269328-43777319665169.png" width="876px" />
 2. На дэшборде совместной работы нажмите раздел **Связанные источники** или откройте меню действий в правом верхнем углу > **Связанные источники**.  
 
-   <Image alt="меню действий открыто.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+   <Image align="center" alt="меню действий открыто.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
 
 
 <div id="associate-new-sources" />
@@ -152,7 +152,7 @@ x-zendesk:
 
 **Чтобы связать новые источники:** Нажмите **+ Связать источник** > выберите источники в раскрывающемся меню > нажмите **Сохранить**.  
 
-<Image alt="Связать источник в существующей совместной работе.png" src="https://files.readme.io/4ecd2b8d33195d79c93848b8b1385f504b2c8ee78f509b99d7e4f3b1910bf81e-34127880603921.png" width="574px" />
+<Image align="center" alt="Связать источник в существующей совместной работе.png" src="https://files.readme.io/4ecd2b8d33195d79c93848b8b1385f504b2c8ee78f509b99d7e4f3b1910bf81e-34127880603921.png" width="574px" />
 
 <div id="manage-sources" />
 
@@ -175,10 +175,10 @@ x-zendesk:
 
 1. На платформе Data Collaboration Platform (Data Clean Room) перейдите на вкладку **Collaborations** > выберите нужную совместную работу.  
 
-   <Image alt="From collaborations go to specific collaboration New.png" src="https://files.readme.io/b9c153e3e314f7788e942a49e465c9b10725066f50715a6eb0447f6796269328-43777319665169.png" width="876px" />
+   <Image align="center" alt="From collaborations go to specific collaboration New.png" src="https://files.readme.io/b9c153e3e314f7788e942a49e465c9b10725066f50715a6eb0447f6796269328-43777319665169.png" width="876px" />
 2. На дэшборде Collaboration нажмите меню действий (3 точки) в правом верхнем углу и выберите нужное действие.   
 
-   <Image alt="actions menu open.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+   <Image align="center" alt="actions menu open.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
 
 <div id="notes-on-suspended-collaborations" />
 
@@ -200,15 +200,15 @@ x-zendesk:
 
 1. В Data Collaboration Platform (Data Clean Room) перейдите на вкладку **Collaborations** > выберите нужную совместную работу.  
 
-   <Image alt="From collaborations go to specific collaboration New.png" src="https://files.readme.io/b9c153e3e314f7788e942a49e465c9b10725066f50715a6eb0447f6796269328-43777319665169.png" width="876px" />
+   <Image align="center" alt="From collaborations go to specific collaboration New.png" src="https://files.readme.io/b9c153e3e314f7788e942a49e465c9b10725066f50715a6eb0447f6796269328-43777319665169.png" width="876px" />
 2. Нажмите **Управление доступом** (в правом верхнем углу).   
 
-   <Image alt="Manage access.png" src="https://files.readme.io/e9cfaf5da2b147f68255d6d442078a3770db4c9873109d1188b9a2b5c0f4e65f-36132545995281.png" width="475px" />
+   <Image align="center" alt="Manage access.png" src="https://files.readme.io/e9cfaf5da2b147f68255d6d442078a3770db4c9873109d1188b9a2b5c0f4e65f-36132545995281.png" width="475px" />
 3. **Чтобы предоставить доступ к совместной работе всем сотрудникам вашей компании (с разрешениями DCP):**   
 
    Установите для параметра **General access** значение **Anyone at "your company"**  
 
-   <Image alt="Collaboration is draft - manage access dropdown w arrow.png" src="https://files.readme.io/6358d272f675d9f6f7ad4b07637db7361d772d34738bbd54488212c9870598b4-36132546008209.png" width="623px" />
+   <Image align="center" alt="Collaboration is draft - manage access dropdown w arrow.png" src="https://files.readme.io/6358d272f675d9f6f7ad4b07637db7361d772d34738bbd54488212c9870598b4-36132546008209.png" width="623px" />
 
    **Чтобы пригласить конкретных пользователей:**   
 
@@ -241,10 +241,10 @@ x-zendesk:
 
 1. На вкладке **Collaborations** нажмите значок меню (3 точки) в правом верхнем углу.
 
-   <Image alt="Нажмите Настройки учётной записи.png" src="https://files.readme.io/c4fc038d615345fdca6552dc1fd3609298557c237da01512f9329c2f380d1c61-42204335554193.png" width="1776px" />
+   <Image align="center" alt="Нажмите Настройки учётной записи.png" src="https://files.readme.io/c4fc038d615345fdca6552dc1fd3609298557c237da01512f9329c2f380d1c61-42204335554193.png" width="1776px" />
 2. Нажмите **Настройки учётной записи**
 
-   <Image alt="Применить условия w arrow.png" src="https://files.readme.io/ec125bae5675efbfc20e16d726767c51894b5d3e4ec5d7d47073b0f14f6df90e-42204339679377.png" width="69.49%" />
+   <Image align="center" alt="Применить условия w arrow.png" src="https://files.readme.io/ec125bae5675efbfc20e16d726767c51894b5d3e4ec5d7d47073b0f14f6df90e-42204339679377.png" width="69.49%" />
 3. На вкладке **Terms and Conditions** введите действительный URL-адрес в поле **Terms and Conditions**. Это должен быть URL-адрес ваших официальных условий.
 4. Нажмите **Применить условия и положения**. Появится сообщение с подтверждением о том, что все участники сотрудничества должны будут принять обновлённые условия.
 

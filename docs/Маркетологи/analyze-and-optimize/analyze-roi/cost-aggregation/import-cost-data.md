@@ -217,7 +217,7 @@ x-zendesk:
 1. Выберите ячейки, которые необходимо отформатировать.
 2. Щелкните правой кнопкой мыши, затем выберите **Форматировать ячейки**.  
    Откроется окно форматирования ячеек.  
-   <Image alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
+   <Image align="center" alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
 3. Выберите **Настраиваемый**.
 4. В поле Тип введите **YYYY-MM-DD**
 5. Нажмите **OK**.  
@@ -229,7 +229,7 @@ x-zendesk:
 
 Обычно Excel форматирует ячейки со значениями с помощью запятой для отделения тысяч, как показано на следующем изображении. Этот формат не подходит для файлов импорта затрат.
 
-<Image alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
 
 **Чтобы отформатировать ячейки с расходами без запятых в качестве разделителей тысяч:**
 
@@ -237,7 +237,7 @@ x-zendesk:
 2. Щелкните правой кнопкой мыши, затем выберите **Форматировать ячейки**.  
    Откроется окно форматирования ячеек.
 3. Выберите **Число** .  
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 4. Снимите флажок **«Использовать разделитель тысяч (,)»**.
 5. (Необязательно) Укажите количество **знаков после запятой**. По умолчанию установлено значение 2. Максимально допустимое значение — 5.
 6. Нажмите **OK**.  
@@ -263,7 +263,7 @@ x-zendesk:
 
 Ниже приведен скриншот с [примером CSV-файла](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0oJTWdlNyT1gBHkGaN1QP-tUatugbPBzC2qYVNmjl_T_i3fKo1abYzTp6F7OqGeN_f7bBAJa3hxVz/pub?gid=0&single=true&output=csv), отображаемого в редакторе.
 
-<Image alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
 
 </Accordion>
 

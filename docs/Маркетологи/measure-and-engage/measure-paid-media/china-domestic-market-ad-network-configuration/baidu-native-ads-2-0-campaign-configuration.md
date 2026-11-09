@@ -56,13 +56,13 @@ x-zendesk:
 
 Baidu Native Ads 2.0 подключается к AppsFlyer с помощью уникального **akey**. Если у вас еще нет ключа, вам необходимо получить его в Baidu Native Ads 2.0, чтобы продолжить интеграцию.
 
-<Image alt="mceclip2.png" src="https://files.readme.io/fe8f44ee7d58fda9ee6289872903f96c716ab6d1191dd831745445cbced8b316-50899807435409.png" width="417px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/fe8f44ee7d58fda9ee6289872903f96c716ab6d1191dd831745445cbced8b316-50899807435409.png" width="417px" />
 
 <div id="default-postbacks" />
 
 ### Постбэки по умолчанию
 
-<Image alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="552px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="552px" />
 
 <div id="in-app-events-settings" />
 
@@ -70,7 +70,7 @@ Baidu Native Ads 2.0 подключается к AppsFlyer с помощью у�
 
 В этом разделе вы можете сопоставить события AppsFlyer с Baidu Native Ads 2.0 через постбэки. 
 
-<Image alt="mceclip1.png" src="https://files.readme.io/1d929a3ba75da04165e416843f5037b8e299b12ae190aa9068cc3b317348087c-50899846627601.png" width="598px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/1d929a3ba75da04165e416843f5037b8e299b12ae190aa9068cc3b317348087c-50899846627601.png" width="598px" />
 
 1. Установите переключатель "Постбэки внутренних событий приложения" в положение "Включено"
 2. Чтобы добавить в список событие, определенное в SDK, нажмите **Добавить событие**.
@@ -111,7 +111,7 @@ Baidu Native Ads 2.0 подключается к AppsFlyer с помощью у�
 * **Параметры подписчика** — используйте любой из 5 параметров подписчика, чтобы подставить полезные значения. Обратите внимание, что эти параметры парсятся и отображаются в отчете о сырых данных, что делает их очень удобными для агрегации или фильтрации данных.  
   **Параметры ссылки атрибуции:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 Если нужно добавить в ссылку атрибуции другой параметр, просто введите его в поле нового параметра. Узнать больше о <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">**структуре и параметрах ссылки атрибуции AppsFlyer**</Anchor>.
 
@@ -125,7 +125,7 @@ Baidu Native Ads 2.0 подключается к AppsFlyer с помощью у�
 
 Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">окне атрибуции по кликам см. здесь</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png" />
 
 <div id="attribution-link" />
 

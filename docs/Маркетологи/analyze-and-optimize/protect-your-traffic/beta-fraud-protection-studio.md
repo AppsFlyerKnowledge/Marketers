@@ -63,7 +63,7 @@ x-zendesk:
   * **Блокируется** в реальном времени
   * **Регистрируется** как мошенничество после атрибуции
 
-[<Image alt="Image description" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)   
+<Image align="center" alt="Image description" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />
 **Механизм с FPS:** Установки считаются следующим образом:
 
 * **Действительная** атрибуция
@@ -73,7 +73,7 @@ x-zendesk:
     * **Блокируется** в реальном времени
     * **Регистрируется** как мошенничество после атрибуции
 
-[<Image alt="Описание изображения" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)
+<Image align="center" alt="Описание изображения" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />
 
 <div id="note" />
 
@@ -96,7 +96,7 @@ x-zendesk:
 
 **Дэшборд Protect360**:
 
-[<Image alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />](https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png)
+<Image align="center" alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />
 
 * Общее количество событий с тегами в верхних компонентах страницы (1)
 * Временная динамика по «Статусу обнаружения» (2)
@@ -183,7 +183,7 @@ FPS – это страница конфигурации, позволяющая
 1. В окне клик-флудинга выберите [режим обнаружения](/docs/beta-fraud-protection-studio#режимы-fps).
 2. Нажмите кнопку **Сохранить** внизу страницы.
 
-   [<Image alt="Разворачиваемое изображение" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />](https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png)
+   <Image align="center" alt="Разворачиваемое изображение" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />
 
 <div id="current-detection-status" />
 
@@ -267,7 +267,7 @@ FPS – это страница конфигурации, позволяющая
 1. В окне «Новый релиз» в раскрывающемся списке выберите количество дней, в течение которых вы хотите отмечать новые пакеты как помеченные тегами до их реализации (по умолчанию: 14 дней (с возможностью увеличения до 14 дней)
 2. Нажмите **Сохранить**.
 
-<Image alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
+<Image align="center" alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
 
 <div id="note-2" />
 
@@ -296,7 +296,7 @@ FPS – это страница конфигурации, позволяющая
 1. Откройте **карточку нового релиза** на вкладке FPS.
 2. Контролируйте эффективность обнаружения с помощью таблицы и экспортируемых отчётов.
 3. Когда будете готовы, нажмите **«Реализовать сейчас»,** чтобы применить изменения.  
-   [![](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)
+   <Image align="center" alt="" src="https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png" />
 
 <div id="note-3" />
 
@@ -412,7 +412,7 @@ FPS – это страница конфигурации, позволяющая
     * Доля от общего числа атрибуций — доля атрибуций повторного вовлечения среди всех атрибуций приложения
   * Выявление повторного вовлечения по медиаисточнику — количество случаев обнаружения перехвата повторного вовлечения для наиболее часто выявляемых медиаисточников.
 
-<Image alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
 
 </Accordion>
 
@@ -455,7 +455,7 @@ FPS – это страница конфигурации, позволяющая
 
 * **Обнаружения на основе данных из приложения по медиаресурсам** — число установок от ведущих источников трафика.
 
-<Image alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
 
 </Accordion>
 

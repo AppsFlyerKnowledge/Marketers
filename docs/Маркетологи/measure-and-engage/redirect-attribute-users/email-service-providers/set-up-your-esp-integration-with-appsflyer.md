@@ -98,15 +98,15 @@ AppsFlyer решает эту проблему с помощью решения 
 
 1. В **AppsFlyer**, в боковом меню выберите **Вовлечение (Engage)** > **Интеграция с ESP (ESP integration)**.
 
-<Image alt="From Engage click ESP integration.png" src="https://files.readme.io/7b731446ce6158d5033020b63be5f386105e7899a8c1b291aa3cb13662a59ee5-27063684942481.png" width="196px" />
+<Image align="center" alt="From Engage click ESP integration.png" src="https://files.readme.io/7b731446ce6158d5033020b63be5f386105e7899a8c1b291aa3cb13662a59ee5-27063684942481.png" width="196px" />
 
 2. Выберите своего ESP.
 
-<Image alt="select ESP.png" src="https://files.readme.io/526fed3aaf1e6fdbf2404243619159984e298752fdf5913fd3a65cc5a2ed9e1d-27086632495761.png" width="482px" />
+<Image align="center" alt="select ESP.png" src="https://files.readme.io/526fed3aaf1e6fdbf2404243619159984e298752fdf5913fd3a65cc5a2ed9e1d-27086632495761.png" width="482px" />
 
 3. Выберите шаблон OneLink, который вы хотите использовать для email-кампаний, затем нажмите **Далее**.
 
-![select OneLink template.png](https://files.readme.io/4f96b999740be8596a424ce9108a8f702bda2a7ed025ec1869c553393432d87d-27086632499729.png)
+<Image align="center" alt="select OneLink template.png" src="https://files.readme.io/4f96b999740be8596a424ce9108a8f702bda2a7ed025ec1869c553393432d87d-27086632499729.png" />
 
 4. Проверьте, чтобы у вас была активная учётная запись у выбранного ESP.
 
@@ -119,7 +119,7 @@ AppsFlyer решает эту проблему с помощью решения 
 
 5. Введите свой домен отслеживания кликов и конечную точку ESP, затем нажмите **Проверить соединение**. Это нужно для проверки того, что домен отслеживания кликов указывает на введённую вами конечную точку.
 
-![enter your ctd and esp endpoint.png](https://files.readme.io/d068b7de020bed7ba979b25e0fe866c40a118b00bbfde06a36a4c097485ac885-27086632503441.png)
+<Image align="center" alt="enter your ctd and esp endpoint.png" src="https://files.readme.io/d068b7de020bed7ba979b25e0fe866c40a118b00bbfde06a36a4c097485ac885-27086632503441.png" />
 
 По завершении нажмите **Далее**.
 
@@ -129,7 +129,7 @@ AppsFlyer решает эту проблему с помощью решения 
 
 В результате, каждый раз при нажатии на ссылку, клик будет перенаправляться в AppsFlyer, который, в свою очередь, перенаправит его на конечную точку ESP.
 
-<Image alt="click to Af to ESP image.png" src="https://files.readme.io/8a53fa7e8e2574246ea6b1344cfec0ac2d8f319bb181f6956ecb6db5b05cd0c5-26982377140369.png" width="374px" />
+<Image align="center" alt="click to Af to ESP image.png" src="https://files.readme.io/8a53fa7e8e2574246ea6b1344cfec0ac2d8f319bb181f6956ecb6db5b05cd0c5-26982377140369.png" width="374px" />
 
 б. После копирования и отправки инструкций нажмите **Готово**.
 
@@ -224,7 +224,7 @@ AppsFlyer размещает файлы ассоциации приложени�
 
 1. В AppsFlyer создайте ссылку OneLink «Email-to-app» на странице управления OneLink (или вручную) в рамках шаблона OneLink, который вы создали ранее. Это ссылка, которую вы будете использовать в своей email-кампании, которая будет атрибутировать и перенаправлять пользователей в соответствии с вашими спецификациями. Узнайте, как создать ссылку <Anchor target="_blank" href="/marketers/ru/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#создание-ссылки-onelink">OneLink</Anchor>.
 
-<Image alt="email-to-app.png" src="https://files.readme.io/4e30986e039ed4cc13b9963ef3d1bb7b933061176bed812dced45a7240023d54-27082280943761.png" width="652px" />
+<Image align="center" alt="email-to-app.png" src="https://files.readme.io/4e30986e039ed4cc13b9963ef3d1bb7b933061176bed812dced45a7240023d54-27082280943761.png" width="652px" />
 
 **Практические рекомендации:** используйте одно и то же название кампании как в email-кампании c ESP, так и в ссылках OneLink AppsFlyer, используемых в этой кампании.
 

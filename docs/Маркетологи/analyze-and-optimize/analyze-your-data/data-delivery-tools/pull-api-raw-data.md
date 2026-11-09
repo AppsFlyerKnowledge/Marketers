@@ -24,7 +24,7 @@ x-zendesk:
 
 > **Краткий обзор:** Используйте этот API для получения отчетов с необработанными данными в формате CSV.
 
-[![PullAPIRaw_us-en.png](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)
+<Image align="center" alt="PullAPIRaw_us-en.png" src="https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png" />
 
 <div id="pull-api-raw-data" />
 

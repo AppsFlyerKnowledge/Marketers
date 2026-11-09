@@ -75,7 +75,7 @@ DCP использует возвращенные идентификаторы I
 
 1. Откройте Data Collaboration Platform, выбрав **Collaborate** > **Data Clean Room** в боковом меню AppsFlyer.
 
-   <Image alt="Щелкните Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="33.49%" />
+   <Image align="center" alt="Щелкните Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="33.49%" />
 2. Перейдите в раздел **Управление подключениями** (в правом верхнем углу).
 3. На вкладке **Data & Identity** выберите **+ Новое подключение**.
 
@@ -102,7 +102,7 @@ DCP использует возвращенные идентификаторы I
 2. Перейдите на вкладку **Источники** и наведите указатель на нужный источник.
 3. В меню действий выберите **Обогатить**.
 
-   <Image alt="Обогатить.png" src="https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png" width="245px" />
+   <Image align="center" alt="Обогатить.png" src="https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png" width="245px" />
 4. Щелкните **Начать обогащение**.
 5. После завершения процесса обогащения у вас появится новый источник, связанный с исходным, с добавлением идентификаторов ID5.  
    **Примечание:** Если исходный источник когда-либо будет удалён, новый источник также будет удалён.
@@ -124,13 +124,13 @@ DCP использует возвращенные идентификаторы I
    **<Image alt="Update collaboration policy.png" src="https://files.readme.io/25d707c47bed9f5f60cd1ba521c4b48f41afbb0e36949f0ffa35cecf9a932ddc-42838633495313.png" width="58.95%" />**
 4. Нажмите **Edit collaboration policy**.
 
-   <Image alt="Click Edit collaboration policy.png" src="https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png" width="80.3%" />
+   <Image align="center" alt="Click Edit collaboration policy.png" src="https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png" width="80.3%" />
 5. Нажмите **Access permissions**.
 
    **<Image alt="Click Access permissions.png" src="https://files.readme.io/b239775d71e1fa1dcc23537e73e35b80bff0184c9ee2aa213f644d90251284f3-42838633499281.png" width="78.62%" />**
 6. Включите **ID5 connection**.
 
-   <Image alt="ID5 permissions.png" src="https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png" width="79.6%" />
+   <Image align="center" alt="ID5 permissions.png" src="https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png" width="79.6%" />
 7. Нажмите **Save** (Сохранить).
 
 После этого участники смогут связать свои собственные источники с коллаборацией и обогащать их, используя подключение ID5 партнёра.

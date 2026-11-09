@@ -44,7 +44,7 @@ AppsFlyer атрибутирует приложения независимо о�
 > * Атрибуция AppsFlyer для Android поддерживает все типы идентификаторов устройств, включая GAID и <Anchor target="_blank" href="/marketers/ru/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor>.
 > * По приложениям, продвигаемым в Китае, см. статью <Anchor target="_blank" href="/marketers/ru/docs/measure-attribution-in-the-chinese-domestic-market">Атрибуция приложений для Android на внутреннем рынке Китая</Anchor>.
 
-![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
+<Image align="center" alt="DashboardType_us-en-new.jpg" src="https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg" />
 
 <div id="single-dashboard-vs-dashboard-per-store" />
 
@@ -253,7 +253,7 @@ AppsFlyer атрибутирует приложения независимо о�
 3. Перейдите к настройкам и найдите параметры для Android или добавьте платформу Android, если она еще не настроена.
 4. Введите необходимые данные, в том числе URL-адрес своего приложения в магазине приложений Amazon.  
 
-   [![outofstore_1.png](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)
+   <Image align="center" alt="outofstore_1.png" src="https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png" />
 5. На дэшборде AppsFlyer перейдите на страницу «Активные интеграции» и выберите Meta Ads, а потом введите тот же идентификатор приложения Facebook, который вы используете в Meta Ads при регистрации установок мобильных приложений из магазина с помощью AppsFlyer.
 
 </Accordion>

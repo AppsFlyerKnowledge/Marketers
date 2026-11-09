@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Liftoff, интегрированный партнер рекламной сети AppsFlyer, — один из ведущих партнеров по спросу для брендов и разработчиков приложений. Liftoff поддерживает мобильную атрибуцию по кликам и просмотрам, а также ретаргетинг по кликам и просмотрам, который можно регистрировать в AppsFlyer.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png" />
 
 <div id="important" />
 

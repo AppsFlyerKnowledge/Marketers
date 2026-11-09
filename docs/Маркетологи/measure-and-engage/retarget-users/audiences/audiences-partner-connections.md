@@ -263,7 +263,7 @@ AppsFlyer создает и синхронизирует **признаки** с
 2. Перейдите в раздел **Управление данными** > **Источники данных**.
 3. На странице **Источники данных** создайте новый **источник данных**.
 
-   [![](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg" />
 4. Заполните форму следующим образом:
    * Для параметра «Тип идентификатора» установите значение **Device Advertising ID**.
    * В настройках источника входящих данных активируйте **Customer ID**.
@@ -273,13 +273,13 @@ AppsFlyer создает и синхронизирует **признаки** с
 7. В левом меню перейдите в раздел **Администрирование** > **Группы**.
 8. Перейдите на вкладку **Permissions** (Разрешения).
 
-   [![](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)
+   <Image align="center" alt="" src="https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png" />
 9. Создайте новую группу.
 10. Выберите созданный источник данных.
 11. Нажмите **Сохранить объект**.
 12. Перейдите в раздел **Admin** > **Пользователи**.
 
-    [![](https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png)](https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png)
+    <Image align="center" alt="" src="https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png" />
 13. Создайте нового пользователя для использования Аудиториями AppsFlyer и заполните поля, обязательные для заполнения.
 14. В **Назначенные группы** выберите группу, созданную ранее.
 15. Запишите **электронную почту** и **пароль** созданного пользователя.
@@ -316,7 +316,7 @@ AppsFlyer создает и синхронизирует **признаки** с
 5. Выберите **Amazon S3**.  
    Откроется окно **Добавить подключение**.
 
-   ![image__9_.png](https://files.readme.io/790f8a50bf14fbb4065d9dcee05e31fa866bc73f236f439ec73f2bc833b31be6-31237653533201.png)
+   <Image align="center" alt="image__9_.png" src="https://files.readme.io/790f8a50bf14fbb4065d9dcee05e31fa866bc73f236f439ec73f2bc833b31be6-31237653533201.png" />
 6. Введите **ARN роли с доступом к нескольким аккаунтам**, **название бакета** и **название региона**.  
    **Примечание:** рекомендуется всегда вводить название региона. Если название региона не включается автоматически в AWS, его необходимо ввести здесь, иначе подключение не может быть создано. Чтобы найти регион на домашней странице консоли AWS, нажмите раскрывающийся список стран в правом верхнем углу страницы, и отобразятся регионы. <Image alt="region_name.jpg" src="https://files.readme.io/a3b65660a638674cbbe0da2802b4f926929d167d0b528c25c12ded6a90b0e981-31237648137489.jpg" width="355px" />
 7. Запишите **идентификатор аккаунта ID** и **внешний идентификатор ID** для последующего использования.
@@ -352,17 +352,17 @@ AppsFlyer создает и синхронизирует **признаки** с
 15. Нажмите кнопку **Создать политику**.
 16. В консоли AWS перейдите в раздел **Access management** > **Roles**.
 
-    [![](https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png)](https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png)
+    <Image align="center" alt="" src="https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png" />
 17. Кликните **Create role.**
 18. Выберите **Другой аккаунт AWS**, чтобы предоставить межаккаунтный доступ между вашим аккаунтом AWS и аккаунтом AWS AppsFlyer.
 
-    [![](https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png)](https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png)
+    <Image align="center" alt="" src="https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png" />
 19. Введите **идентификатор аккаунта ID.** Это идентификатор аккаунта ID, который вы уже скопировали из дэшборда AppsFlyer.
 20. Выберите **Require external ID**. Это внешний идентификатор, который вы уже скопировали из дэшборда AppsFlyer.
 21. Когда вам будет предложено выбрать политику из существующих в аккаунте AWS, выберите ранее созданную политику.
 22. Нажмите на название только что созданной роли, чтобы открыть окно свойств.
 
-    [![](https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png)](https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png)
+    <Image align="center" alt="" src="https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png" />
 23. Запишите **ARN роли**.
 24. В окне интеграции AppsFlyer S3 введите ARN и название корзины в соответствующие поля.
 
@@ -435,17 +435,17 @@ AppsFlyer создает и синхронизирует **признаки** с
    * **Примечание:** Если ключ уже отображается здесь, генерировать новый не нужно.
    * **Важно!** Убедитесь, что вы работаете в разделе страницы **Импорт данных с использованием импорта когорт** (а не в разделе атрибуции установок).
 
-     ![data_import_key.png](https://files.readme.io/4d288e6696da600d0e402b86a0986b3951f2cd35efd12084aa8feaeeb526fddf-31237653537681.png)
+     <Image align="center" alt="data_import_key.png" src="https://files.readme.io/4d288e6696da600d0e402b86a0986b3951f2cd35efd12084aa8feaeeb526fddf-31237653537681.png" />
 3. Скопируйте **ключ импорта данных** и **конечную точку REST**, чтобы использовать их при настройке подключения на дэшборде AppsFlyer.
 4. В аудиториях AppsFlyer перейдите на вкладку **Подключения** и нажмите **+ Новое подключение.**
 5. Выберите Braze в качестве партнера и дайте название подключению.
 6. Введите ключ импорта данных и конечную точку REST, которые вы скопировали из аккаунта Braze на шаге 3.
 
-   ![braze_connection.png](https://files.readme.io/200d1a1bef906ea50e40b3d8113bb9fd72068b6fda25a2f70b95b4510bd992de-31237653538449.png)
+   <Image align="center" alt="braze_connection.png" src="https://files.readme.io/200d1a1bef906ea50e40b3d8113bb9fd72068b6fda25a2f70b95b4510bd992de-31237653538449.png" />
 7. Сохраните подключение, и оно будет доступно для связи с любой новой или существующей аудиторией.
 8. После загрузки аудитории AppsFlyer в Braze вы можете использовать ее в качестве фильтра при определении сегментов в Braze.
 
-   ![cohorts_as_filter.png](https://files.readme.io/eec9e014afcb488bb7ebe31167cd5871c38207c8f4542e20ea313b7019e8b43a-31237653538961.png)
+   <Image align="center" alt="cohorts_as_filter.png" src="https://files.readme.io/eec9e014afcb488bb7ebe31167cd5871c38207c8f4542e20ea313b7019e8b43a-31237653538961.png" />
 
 </Accordion>
 
@@ -544,7 +544,7 @@ AppsFlyer создает и синхронизирует **признаки** с
    Отобразится список партнеров по аудиториям.
 3. В разделе Google Ads выберите имя подключения.
 
-   [![AcceptTermsAudiences_us-en.png](https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png)](https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png)
+   <Image align="center" alt="AcceptTermsAudiences_us-en.png" src="https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png" />
 4. Нажмите **Условия предоставления услуг.**
 5. Ознакомьтесь с условиями и, если вы согласны с ними, нажмите **Я принимаю.**
 6. Нажмите **Save changes (Сохранить изменения).**
@@ -602,7 +602,7 @@ AppsFlyer создает и синхронизирует **признаки** с
 
 1. В своем аккаунте Leanplum перейдите в раздел **Интеграции с партнерами > AppsFlyer.** В разделе **Аудитории** создайте новый **секрет.**
 
-   [![audiences_leanplum_integration.png](https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png)](https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png)
+   <Image align="center" alt="audiences_leanplum_integration.png" src="https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png" />
 2. Выберите, нужно ли создавать профили в Leanplum для **несуществующих пользователей.**
    * Несуществующий пользователь – это пользователь, чей идентификатор пользователя, отправленный из аудиторий AppsFlyer, не существует в Leanplum.
 3. Скопируйте **ID приложения** и вновь созданный **секрет** для использования при настройке подключения на дэшборде AppsFlyer.
@@ -610,7 +610,7 @@ AppsFlyer создает и синхронизирует **признаки** с
 5. Выберите **Leanplum** в качестве партнера и задайте название подключения.
 6. Введите **ID приложения** и **секрет**, которые вы скопировали из своего аккаунта Leanplum на шаге 3.
 
-   [![leanplum_integration_af_dashboard.png](https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png)](https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png)
+   <Image align="center" alt="leanplum_integration_af_dashboard.png" src="https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png" />
 7. Сохраните подключение, и оно будет доступно для связи с любой новой или существующей аудиторией.
 
 В течение 30 минут аудитория и пользователи будут заполнены на вашем дэшборде Аудитории в Leanplum.
@@ -640,7 +640,7 @@ AppsFlyer создает и синхронизирует **признаки** с
    * **Идентификатор API данных** (<Image alt="A.png" src="https://files.readme.io/66b5bb0c4ea35f232f65dbc8dcbdfd6a91c12cf94915b19d33dae44834127058-31237653543313.png" width="16px" /> на изображении ниже)
    * **Ключ API данных** (<Image alt="B.png" src="https://files.readme.io/f63914d3fefb55b627559c6e4c7d7cdef89239c0376a14c25c713a0a76dbad1b-31237653544337.png" width="16px" /> на изображении ниже)
 
-   [![moengage_dashboard.png](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)
+   <Image align="center" alt="moengage_dashboard.png" src="https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png" />
 3. В адресной строке браузера проверьте URL-адрес вашего дэшборда MoEngage, чтобы узнать номер вашего **центра обработки данных MoEngage:**
    * Если URL-адрес вашего дэшборда MoEngage — https://dashboard-01.moengage.com, значит, ваш аккаунт назначен в центр обработки данных 1.
    * Если URL-адрес — https://dashboard-02.moengage.com, значит, ваш аккаунт назначен в центр обработки данных 2.
@@ -648,7 +648,7 @@ AppsFlyer создает и синхронизирует **признаки** с
 4. В аудиториях AppsFlyer перейдите на вкладку **Подключения** и нажмите **+ Новое подключение.**
 5. Выберите **MoEngage** в качестве партнера и задайте название подключению.
 
-   [![moengage_outgoing_connection.png](https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png)](https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png)
+   <Image align="center" alt="moengage_outgoing_connection.png" src="https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png" />
 6. Введите **идентификатор Data API** и **ключ Data API**, которые вы скопировали из своей учетной записи MoEngage на шаге 2.
 7. Выберите свой **Центр обработки данных** MoEngage, определенный на шаге 3.
 8. Сохраните подключение, и оно будет доступно для связи с любой новой или существующей аудиторией.
@@ -709,7 +709,7 @@ AppsFlyer загружает CSV-файл с идентификаторами у
 1. Получите **идентификатор партнера** у своего менеджера аккаунта Tapjoy.
 2. Получите свой **ключ API отчетности паблишера** на странице **настроек приложения** Tapjoy.
 
-   [![](https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png)](https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png)
+   <Image align="center" alt="" src="https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png" />
 3. В AppsFlyer перейдите в раздел **Аудитории**. Выберите аудиторию и перейдите на вкладку **Connect** .
 4. Нажмите **+ Подключение партнёра**.
 5. Введите **имя подключения**.

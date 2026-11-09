@@ -77,7 +77,7 @@ x-zendesk:
 
 Leanplum подключается к AppsFlyer с помощью уникального ID приложения и ключа клиента. Если у вас их еще нет, для продолжения интеграции вы должны получить их от Leanplum или выполнить следующие шаги.
 
-![Leanplum_msc_new_3.png](https://files.readme.io/0ef9adb16568192e922b33688a0525a3e61bc0f18dfc63e3717390adc34a66c4-360001904209.png)
+<Image align="center" alt="Leanplum_msc_new_3.png" src="https://files.readme.io/0ef9adb16568192e922b33688a0525a3e61bc0f18dfc63e3717390adc34a66c4-360001904209.png" />
 
 **Отправка IDFA или IDFV**
 
@@ -93,13 +93,13 @@ Leanplum подключается к AppsFlyer с помощью уникаль�
 
 Нажмите на свое имя в правом верхнем углу экрана и выберите **Настройки приложения**
 
-![](https://files.readme.io/fcb9bb4fab1eec1db130904c2c4856529f58582bd8c9c04f08200ed82c0fcb80-206117303.png)
+<Image align="center" alt="" src="https://files.readme.io/fcb9bb4fab1eec1db130904c2c4856529f58582bd8c9c04f08200ed82c0fcb80-206117303.png" />
 
 Выберите приложение и нажмите **Ключи & настройки**
 
-[![](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)
+<Image align="center" alt="" src="https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png" />
 
-![](https://files.readme.io/cd638732b197f03c6194b8bae7b8f726a6e4c16661702fdad48054a35ce333e5-206117343.png)
+<Image align="center" alt="" src="https://files.readme.io/cd638732b197f03c6194b8bae7b8f726a6e4c16661702fdad48054a35ce333e5-206117343.png" />
 
 <div id="default-postbacks" />
 
@@ -107,7 +107,7 @@ Leanplum подключается к AppsFlyer с помощью уникаль�
 
 AppsFlyer может отправлять автоматические постбэки об установках пользователей Leanplum. В этом разделе можно определить отправку этих постбэков.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Выберите **События, атрибутированные любому партнеру или органически**, чтобы отправлять постбэки в Leanplum для любого пользователя, который загрузил приложение.
 
@@ -153,7 +153,7 @@ AppsFlyer может отправлять автоматические пост�
 
 После настройки интеграции между Leanplum и AppsFlyer вы сможете получить доступ к этой информации с помощью меню таргетинга и сегментации Leanplum:
 
-[![](https://files.readme.io/5685cfe357930bd57611365d7f47fff1608a8e7c345110070763af26374e01bc-206117523.png)](https://files.readme.io/5685cfe357930bd57611365d7f47fff1608a8e7c345110070763af26374e01bc-206117523.png)
+<Image align="center" alt="" src="https://files.readme.io/5685cfe357930bd57611365d7f47fff1608a8e7c345110070763af26374e01bc-206117523.png" />
 
 Это меню доступно в разделах «Аналитика», «Сообщения», «A/B-тесты» и «Пользователи» платформы Leanplum. В разделе Аналитика вы можете фильтровать, группировать и формировать когорты по этим данным, в разделе Пользователи — фильтровать по этим данным, а в Аналитике и A/B-тестах — использовать эти данные для таргетинга.
 

@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **At a glance:** EmailLabs, платформа доставки и аналитики электронной почты, встраивает OneLink AppsFlyer в электронные письма. Когда получатели электронных писем переходят по ссылке, они перенаправляются по диплинку в ваше приложение.
 
-![emaillabs-af-logo.png](https://files.readme.io/467ee1fbcea8a36dff40172b1dbc97780a7e6cafd958ecb5b520a612c3308231-49839289267857.png)
+<Image align="center" alt="emaillabs-af-logo.png" src="https://files.readme.io/467ee1fbcea8a36dff40172b1dbc97780a7e6cafd958ecb5b520a612c3308231-49839289267857.png" />
 
 <div id="introduction" />
 
@@ -60,12 +60,12 @@ ESP (поставщики услуг электронной почты) могу
 
 1. Настройте свой домен в соответствии с <Anchor target="_blank" href="https://docs.emaillabs.io/get_started/getting-started/">этой статьей</Anchor>
 2. Настройте свой домен для записи кликов в соответствии с <Anchor target="_blank" href="http://docs.emaillabs.io/user-panel/smtp-applications/whitelabel-2/">этой статьей</Anchor> и снимком экрана ниже.  
-   ![whitelabel-section-2.png](https://files.readme.io/a5b992868a0abd94b2f24097ead760a98e6529e4f83ecfaf713d681800de4631-49839273475217.png)
+   <Image align="center" alt="whitelabel-section-2.png" src="https://files.readme.io/a5b992868a0abd94b2f24097ead760a98e6529e4f83ecfaf713d681800de4631-49839273475217.png" />
 3. Включите отслеживание ссылок в соответствии с <Anchor target="_blank" href="http://docs.emaillabs.io/user-panel/smtp-applications/link-tracking/">этой статьей</Anchor> и снимком экрана ниже.  
-   ![link-tracking-section-3.png](https://files.readme.io/3c1d0f13d3fcc2b49754cf4beb653592b9fffc27ad27775cf56986f78f9ea53b-49839289275153.png)
+   <Image align="center" alt="link-tracking-section-3.png" src="https://files.readme.io/3c1d0f13d3fcc2b49754cf4beb653592b9fffc27ad27775cf56986f78f9ea53b-49839289275153.png" />
 4. Свяжитесь со службой поддержки EmailLabs по адресу [bok@emaillabs.pl](mailto:bok@emaillabs.pl) и попросите включить SSL.
 5. В EmailLabs перейдите в раздел **Панель** > **Учетные записи** **SMTP** > **Настройки** > **Диплинки** и установите флажок «Активировано». Для приложений iOS введите <Anchor target="_blank" href="https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/AppID.html">Apple Application ID</Anchor> в соответствующее поле.  
-   ![deeplinking-section-5.png](https://files.readme.io/15a5b45a58c1a130de6bfe2c3e9e3b379537b4fc549c1c3fcce41ef54b8653e9-49839289277073.png)
+   <Image align="center" alt="deeplinking-section-5.png" src="https://files.readme.io/15a5b45a58c1a130de6bfe2c3e9e3b379537b4fc549c1c3fcce41ef54b8653e9-49839289277073.png" />
 
 <div id="step-2-configuring-your-appsflyer-sdk" />
 
@@ -80,7 +80,7 @@ ESP (поставщики услуг электронной почты) могу
 После настройки домена отслеживания кликов для поддержки Universal Links, как описано выше, необходимо настроить приложение для диплинкинга и обработки соответствующей Universal Link.
 
 1. Свяжите домен записи кликов в Xcode:  
-   ![configure-xcode-deeplinking-domain.png](https://files.readme.io/90d0dcc0eba2d7d081ab7d5d4ea697e9257b9107af463fa8c973169f8a2651db-49839256220433.png)
+   <Image align="center" alt="configure-xcode-deeplinking-domain.png" src="https://files.readme.io/90d0dcc0eba2d7d081ab7d5d4ea697e9257b9107af463fa8c973169f8a2651db-49839256220433.png" />
 2. Передайте домен записи кликов в API SDK `setResolveDeepLinkURLs`. Этот API необходимо вызывать до инициализации SDK. Более подробная информация приведена в документации по SDK <Anchor target="_blank" href="/marketers/ru/docs/sdk-integration-overview">здесь</Anchor>.  
 
    ```objectivec

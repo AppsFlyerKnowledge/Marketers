@@ -41,17 +41,17 @@ x-zendesk:
 
 1. В разделе **Список разрешенных перенаправлений** нажмите **Управление списком разрешенных перенаправлений**.
 
-![from account click security center Cropped.jpg](https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg)
+<Image align="center" alt="from account click security center Cropped.jpg" src="https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg" />
 
 2. На вкладке **Вручную** введите корневой домен или субдомен в поле **Имя домена**, затем нажмите **Добавить домен в список**.
 
-<Image alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="549px" />  
+<Image align="center" alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="549px" />
 
 Откроется страница **списка разрешенных перенаправлений**.
 
 3. Перейдите на вкладку **Файл CSV**, затем следуйте **инструкциям по созданию файла CSV**, чтобы создать файл со списком ваших доменов.
 
-<Image alt="Manually add domains.jpg" src="https://files.readme.io/95b37db2064ddba8c787d2dd5ac5ab2aa7698605f5c6eb3b4a59dd6324dee355-25103405228689.jpg" width="403px" />
+<Image align="center" alt="Manually add domains.jpg" src="https://files.readme.io/95b37db2064ddba8c787d2dd5ac5ab2aa7698605f5c6eb3b4a59dd6324dee355-25103405228689.jpg" width="403px" />
 
 * Используйте только буквы, цифры, дефисы и точки.
 * Домен должен начинаться и заканчиваться буквой или цифрой и может содержать до 253 символов.
@@ -75,15 +75,15 @@ x-zendesk:
 
 1. На верхней панели откройте меню аккаунта (раскрывающийся список под адресом эл. почты) > **Центр безопасности** .  
 
-![from account click security center Cropped.jpg](https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg)
+<Image align="center" alt="from account click security center Cropped.jpg" src="https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg" />
 
 2. В разделе **Список разрешенных перенаправлений** нажмите **Управление списком разрешенных перенаправлений**.  
-<Image alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="530px" />  
+<Image align="center" alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="530px" />
 
 Откроется страница **списка разрешенных перенаправлений**.
 
 3. Загрузите CSV-файл в поле загрузки.  
-![CSV file upload.jpg](https://files.readme.io/2be73080048545f79e102e6f48df0db956e6739f156153c172c4fef5a2ea339f-25381979219345.jpg)
+<Image align="center" alt="CSV file upload.jpg" src="https://files.readme.io/2be73080048545f79e102e6f48df0db956e6739f156153c172c4fef5a2ea339f-25381979219345.jpg" />
 
 4. Загрузите CSV-файл в поле загрузки.
 

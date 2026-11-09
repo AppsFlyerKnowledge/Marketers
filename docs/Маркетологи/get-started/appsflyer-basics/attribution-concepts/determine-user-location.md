@@ -32,7 +32,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Местоположение пользователя определяется с помощью IP-адреса устройства, который сопоставляется с общим местоположением пользователя (город, штат, страна и т. д.). Местоположение пользователя влияет на выбор креативов, стоимость кампании, вовлечение и качество пользователей.
 
-![5888ResolveIpAddress_us-en.png](https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png)
+<Image align="center" alt="5888ResolveIpAddress_us-en.png" src="https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png" />
 
 <div id="determining-user-location" />
 
@@ -59,7 +59,7 @@ IP-адрес преобразуется в AppsFlyer в информацию о
 
 > 📘 **Примечание о Великобритании (UK)**
 >
-> <Image alt="blobid0.png" src="https://files.readme.io/33ed45ea49e3308e17a237400ea6c6e9d33c495a9c83197041fdae282f9c65a4-360006637538.png" width="62px" />
+> <Image align="center" alt="blobid0.png" src="https://files.readme.io/33ed45ea49e3308e17a237400ea6c6e9d33c495a9c83197041fdae282f9c65a4-360006637538.png" width="62px" />
 >
 > * В платформе Великобритания обозначается кодом UK.
 > * Код ISO 3166 для Великобритании — GB. Код UK зарезервирован, но не выделен в ISO, для Великобритании.

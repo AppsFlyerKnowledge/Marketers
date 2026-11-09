@@ -88,7 +88,7 @@ x-zendesk:
 
 ### Иерархия папок отчёта DL
 
-[![](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)](https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png)
+<Image align="center" alt="" src="https://files.readme.io/c10bd982197388cbe412d491829ae896bffbcb13921f008ba1508dc46b173032-39751330744209.png" />
 
 <div id="bi-developer-considerations" />
 

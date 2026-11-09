@@ -48,7 +48,7 @@ x-zendesk:
 
 В *обзорном дэшбордеагрегированный отчет об эффективности* содержит: данные о затратах, кликах, показах, ROI и средней eCPI.
 
-[![CostReporting.jpg](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)
+<Image align="center" alt="CostReporting.jpg" src="https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg" />
 
 Отчеты об эффективности и отчеты по сырым данным также доступны для <Anchor target="_blank" href="/marketers/ru/docs/raw-data-reporting-overview">скачивания</Anchor>.
 

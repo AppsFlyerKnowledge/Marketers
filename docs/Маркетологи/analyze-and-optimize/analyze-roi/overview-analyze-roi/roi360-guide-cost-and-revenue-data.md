@@ -27,7 +27,7 @@ x-zendesk:
 
 > **Кратко:** получайте данные о расходах и доходах, чтобы оценивать общую рентабельность инвестиций (ROI) и рентабельность расходов на рекламу (ROAS).
 
-![M_emptyState.png](https://files.readme.io/5eec5be77bf0b72afdd95b1957642cc67ba509000bc756ac68d87da5e96ed08e-11832563913489.png)
+<Image align="center" alt="M_emptyState.png" src="https://files.readme.io/5eec5be77bf0b72afdd95b1957642cc67ba509000bc756ac68d87da5e96ed08e-11832563913489.png" />
 
 <div id="overview" />
 

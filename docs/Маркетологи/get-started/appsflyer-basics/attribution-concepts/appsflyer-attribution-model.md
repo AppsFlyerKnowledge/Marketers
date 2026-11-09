@@ -35,7 +35,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** AppsFlyer определяет медиаисточник, побудивший пользователя установить приложение или повторно взаимодействовать с ним, и атрибутирует действие пользователя этому источнику с помощью модели атрибуции AppsFlyer.
 
-[![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
+<Image align="center" alt="" src="https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png" />
 
 <div id="what-is-attribution" />
 
@@ -79,7 +79,7 @@ AppsFlyer использует несколько методов атрибуц�
 
 При новой установке, если имеется более одного действительного взаимодействия, **AppsFlyer отдает предпочтение кликам перед показами и детерминированным методам перед вероятностными**. Методы атрибуции используются в соответствии с приоритетами, указанными на диаграмме.
 
-[<Image alt="watefall.png" src="https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png" width="1378px" />](https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png)
+<Image align="center" alt="watefall.png" src="https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png" width="1378px" />
 
 Ниже вы найдете подробные описания моделей атрибуции AppsFlyer.
 
@@ -336,7 +336,7 @@ AppsFlyer полностью атрибутирует только одну ис
 
 <Accordion title="Атрибуция ретаргетинга">
 
-![Retargeting_-_Flow__2_.png](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="Retargeting_-_Flow__2_.png" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 Пользователь, который повторно устанавливает приложение в течение <Anchor target="_blank" href="/marketers/ru/docs/set-up-re-attribution-window">окна реатрибуции</Anchor> (по умолчанию 90 дней), считается реатрибуцией. Если эта установка происходит после взаимодействия с ретаргетинговой кампанией, она регистрируется как повторная установка в рамках ретаргетинга, то есть реатрибуция, и отражается в <Anchor target="_blank" href="/marketers/ru/docs/retargeting-attribution-guide">ретаргетинге</Anchor>.
 

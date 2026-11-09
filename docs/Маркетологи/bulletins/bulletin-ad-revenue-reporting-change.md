@@ -71,6 +71,6 @@ x-zendesk:
 > * Данные о доходах от рекламы отображаются за день 0.
 >   * В дэшборде активности, Data Locker (папка h=23) и отчетах о сырых данных также доступно время показа рекламы.
 >
-> [![](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)
+> <Image align="center" alt="" src="https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg" />
 
 <div data-zendesk-anchors="ad-revenue-reporting-change=%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%BE-%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D0%B0%D1%85-%D0%BE%D1%82-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B before-the-change=%D0%B4%D0%BE-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F after-the-change=%D0%BF%D0%BE%D1%81%D0%BB%D0%B5-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F" />

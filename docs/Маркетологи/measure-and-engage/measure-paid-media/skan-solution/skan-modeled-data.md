@@ -85,7 +85,7 @@ x-zendesk:
 
 <Accordion title="Доход LTV">
 
-[![modeled_d7.png](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)
+<Image align="center" alt="modeled_d7.png" src="https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png" />
 
 Отчетность SKAN сама по себе может предоставить доход только на основе окна измерения SKAN и конфигурации CV для дохода в Conversion Studio. Моделирование SKAN позволяет моделировать доход до 7 дней (168 часов) после установки.
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Кратко:** Ligatus — интегрированный партнер AppsFlyer, рекламная сеть, которая лидирует в области решений для нативной рекламы для паблишеров, рекламодателей и programmatic-покупателей, обеспечивая высокое качество и высокую эффективность. Помимо мобильной атрибуции по кликам, Ligatus также предлагает атрибуцию затрат, дохода от рекламы, ретаргетинга и атрибуцию по просмотрам, данные которых можно регистрировать с помощью AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ligatus.png" width="209px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ligatus.png" width="209px" />
 
 <div id="setting-up-ligatus" />
 

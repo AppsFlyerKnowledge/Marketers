@@ -388,7 +388,7 @@ AppsFlyer постоянно сканирует новые версии файл
 
 После загрузки файлов источников за 2 дня (а также программного создания папок даты/версии/данных и файлов `_SUCCESS`) структура корзины и папок будет выглядеть следующим образом:
 
-![dcr_file_structure_after_uploads.png](https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png)
+<Image align="center" alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" />
 
 </Accordion>
 
@@ -479,11 +479,11 @@ AppsFlyer постоянно сканирует новые версии файл
 
 **Чтобы получить ключ DCR вашего аккаунта, нажмите кнопку «Ключ DCR» в верхней части главной страницы DCR.**
 
-![dcr_key_button.png](https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png)
+<Image align="center" alt="dcr_key_button.png" src="https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png" />
 
 После создания папки с ключом DCR, структура корзины и папок будет выглядеть следующим образом:
 
-![dcr_file_structure_dcr_key_folder.png](https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png)
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" />
 
 <div id="top-level-input-folder" />
 
@@ -498,7 +498,7 @@ AppsFlyer постоянно сканирует новые версии файл
 
 После создания папки верхнего уровня для входных данных структура корзины и папок будет выглядеть следующим образом:
 
-![dcr_file_structure_input_folder.png](https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png)
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" />
 
 <div id="second-level-folder-for-each-data-source" />
 
@@ -512,7 +512,7 @@ AppsFlyer постоянно сканирует новые версии файл
 
 После создания папок для двух источников данных структура корзины и папок будет выглядеть следующим образом:
 
-![dcr_file_structure_source_folders.png](https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png)
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" />
 
 В каждой папке источника данных [должны быть созданы вложенные подпапки по дате и версии](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version) при каждом обновлении источника.
 

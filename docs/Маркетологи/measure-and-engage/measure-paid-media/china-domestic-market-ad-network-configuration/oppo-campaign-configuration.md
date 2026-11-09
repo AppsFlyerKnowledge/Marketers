@@ -56,7 +56,7 @@ x-zendesk:
 
 ### Постбэки по умолчанию
 
-![mceclip2.png](https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" />
 
 </Accordion>
 
@@ -87,7 +87,7 @@ x-zendesk:
 * **Subscriber Parameters** — используйте любой из 5 параметров подписчика для вставки полезных значений. Обратите внимание, что эти параметры анализируются и отображаются в отчете о сырых данных, что делает их очень удобными для агрегации или фильтрации данных.  
   **Параметры ссылки атрибуции:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-<Image alt="attribution-link-parameters.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" width="561px" />
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" width="561px" />
 
 Если нужно добавить в ссылку атрибуции другой параметр, просто введите его в поле нового параметра. Дополнительные сведения см. в статье <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">**Структура и параметры ссылки атрибуции в AppsFlyer**</Anchor>.
 
@@ -101,7 +101,7 @@ x-zendesk:
 
 Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">окне атрибуции (лукбэк) по клику — здесь</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png" />
 
 <div id="attribution-link" />
 
@@ -133,7 +133,7 @@ x-zendesk:
 
 На этой вкладке можно выбрать разрешения для OPPO в зависимости от того, в каком качестве выступает партнер: как рекламная сеть, агентство или и то, и другое. Обратите внимание: даже если атрибуция для OPPO отключена, вкладка разрешений остается активной, и вы можете предоставить OPPO контроль.
 
-![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png" />
 
 <div id="ad-network-permissions" />
 

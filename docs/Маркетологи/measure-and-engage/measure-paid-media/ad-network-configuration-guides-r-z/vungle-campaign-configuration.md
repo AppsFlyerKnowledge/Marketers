@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Vungle, интегрированный партнер рекламной сети AppsFlyer, предлагает платформу видеорекламы в приложении для специалистов по маркетингу эффективности. Помимо мобильной атрибуции по кликам, Vungle также предлагает атрибуцию затрат и атрибуцию по просмотрам, данные которых можно регистрировать в AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/vungle.png?v=1" width="91px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/vungle.png?v=1" width="91px" />
 
 <div id="setting-up-vungle" />
 

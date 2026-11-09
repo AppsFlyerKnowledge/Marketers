@@ -25,7 +25,7 @@ x-zendesk:
 
 > **Краткий обзор:** Улучшите возможности сегментации пользователей по релевантным группам, добавив данные об их характеристиках в Аудитории.
 
-[![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
+<Image align="center" alt="UserAttributionNavigationXL3_us-en.png" src="https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png" />
 
 <div id="about-user-attributes" />
 
@@ -58,7 +58,7 @@ x-zendesk:
   * Текущий счет в игре: 15 и более в одной из текущих игр
 
 Таблица содержит данные об атрибутах пользователей из вашей CRM. Наборы правил аудитории должны иметь доступ к этим данным.   
-![UserAttributuesExample_us-en.png](https://files.readme.io/6f86d8659ef089ac82bb8401b4af650fbc590d2293ac93de30e6f9b4fc2ceb86-33375683035281.png)
+<Image align="center" alt="UserAttributuesExample_us-en.png" src="https://files.readme.io/6f86d8659ef089ac82bb8401b4af650fbc590d2293ac93de30e6f9b4fc2ceb86-33375683035281.png" />
 
 **Используйте данные CRM в наборах правил**
 
@@ -77,7 +77,7 @@ x-zendesk:
 
 Атрибуты пользователей действуют как фильтры в наборах правил для аудиторий. В этом примере используются критерии (любимый вид спорта и счет игры), установленные маркетологом.
 
-[<Image alt="UserAttributedExample.jpg" src="https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg" width="276px" />](https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg)
+<Image align="center" alt="UserAttributedExample.jpg" src="https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg" width="276px" />
 
 </Accordion>
 
@@ -115,7 +115,7 @@ x-zendesk:
 2. Нажмите на вкладку Атрибуты пользователей.
 3. Нажмите **Добавить атрибут пользователя**.
 
-   ![UserAttributeAdd.png](https://files.readme.io/6c7f25bb23d47e67aaef34264029daa9ab058f08e218a441ab9dde8240b0b384-33375683046033.png)
+   <Image align="center" alt="UserAttributeAdd.png" src="https://files.readme.io/6c7f25bb23d47e67aaef34264029daa9ab058f08e218a441ab9dde8240b0b384-33375683046033.png" />
 4. Заполните поля. Характеристики полей перечислены в таблице ниже.
    * **Имя атрибута**
    * **Формат**
@@ -138,7 +138,7 @@ x-zendesk:
 
 Чтобы управлять атрибутами пользователя, перейдите на вкладку **Аудитории** > **Атрибуты пользователей**.
 
-[![AudiencesUserAttributes_us-en.png](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)
+<Image align="center" alt="AudiencesUserAttributes_us-en.png" src="https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png" />
 
 | Функция | Описание |
 | --- | --- |
@@ -190,7 +190,7 @@ x-zendesk:
 
 <Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/360012423857">Пример атрибутов пользователя.csv</Anchor>
 
-![Файл для атрибутов.png](https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png)
+<Image align="center" alt="Файл для атрибутов.png" src="https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png" />
 
 **Требования к CSV файлу**
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Кратко:** Mobio, один из интегрированных партнеров AppsFlyer, — это платформа для маркетинга мобильных приложений с портфолио самых успешных кейсов в России №1. Помимо мобильной атрибуции по кликам, Mobio также предлагает атрибуцию стоимости, дохода от рекламы, ретаргетинга и атрибуцию по просмотрам, которые можно регистрировать с помощью AppsFlyer.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/mobio.png?v=1)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobio.png?v=1" />
 
 <div id="setting-up-mobio" />
 

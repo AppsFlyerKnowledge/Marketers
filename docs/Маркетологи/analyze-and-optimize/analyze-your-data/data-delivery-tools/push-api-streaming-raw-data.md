@@ -29,7 +29,7 @@ x-zendesk:
 
 > **Краткий обзор:** Отправляйте сырые данные о событиях атрибуции на серверные конечные точки.
 
-![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
+<Image align="center" alt="6970_Push_API_image.png" src="https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png" />
 
 <div id="push-api" />
 
@@ -152,7 +152,7 @@ Push API передает сырые данные, создаваемые сре
 
 **Конечная точка**
 
-[![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
+<Image align="center" alt="PushAPI_us-en.png" src="https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png" />
 
 <div id="endpoint-planning-table" />
 
@@ -301,7 +301,7 @@ Push API передает сырые данные, создаваемые сре
 
 <Accordion title="Выбор сообщений о событиях приложения отключен">
 
-[![InappSelectionDisabled_us-en.png](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)
+<Image align="center" alt="InappSelectionDisabled_us-en.png" src="https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png" />
 
 * Событие приложения можно выбрать только после того, как было зарегистрировано хотя бы одно такое событие.
 * Используйте тестовое устройство, чтобы сгенерировать внутреннее событие, или <Anchor target="_blank" href="/marketers/ru/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S API</Anchor>, чтобы сделать это вручную.

@@ -49,7 +49,7 @@ x-zendesk:
 * Чтобы получить api\_key, перейдите в дэшборд SearchAds.com и выберите **Integrations** > **AppsFlyer**. В открывшемся всплывающем окне скопируйте идентификатор ID. [![API-ключ SearchAds.com](https://files.readme.io/1acc061c44fe616a4485b576251d1ad64cb05607f4727bbd21b0bf6871720b40-4402869972241.png)](https://files.readme.io/1acc061c44fe616a4485b576251d1ad64cb05607f4727bbd21b0bf6871720b40-4402869972241.png)
 * Для идентификатора группы кампаний Apple Ads: в **дэшборде Apple Ads** получите идентификатор группы кампаний Apple Ads для нужной группы кампаний:
 
-  ![apple-search-ads-campaign-group-id.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+  <Image align="center" alt="apple-search-ads-campaign-group-id.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 
 <div id="setting-up-campaigns-in-appsflyer" />
 

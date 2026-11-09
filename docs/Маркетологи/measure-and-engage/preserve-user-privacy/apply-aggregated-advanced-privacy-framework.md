@@ -75,7 +75,7 @@ AAP не влияет на доступность агрегированных �
 
 Определенные здесь термины используются на схеме и в следующих разделах для описания данных, доступных рекламодателям и партнерам.
 
-![Advanced Privacy Framework - Advertisers (4).png](https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png)
+<Image align="center" alt="Advanced Privacy Framework - Advertisers (4).png" src="https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png" />
 
 Расширенная конфиденциальность работает по-другому в веб-браузерах, поэтому необходимо использовать параметр af\_media\_type=web или af\_media\_type=app. Подробные сведения <Anchor target="_blank" href="/partners/ru/docs/advanced-privacy-guide-postback-macros-for-ad-networks#веб-кампании">см. здесь</Anchor>.
 
@@ -117,7 +117,7 @@ AAP не влияет на доступность агрегированных �
 
 AAP — это переключатель на уровне приложения, который управляет настройками расширенной конфиденциальности для всех партнеров выбранного приложения. Переключатель AAP находится на странице **Настройки приложения**. Когда переключатель AAP включен, переключатели **Расширенная конфиденциальность** для всех партнеров выбранного приложения автоматически включаются и не могут быть изменены. Когда он выключен, рекламодатели могут перейти к каждой партнерской интеграции по отдельности и включить **расширенную конфиденциальность**.
 
-![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
+<Image align="center" alt="AAPcontrol.png" src="https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png" />
 
 <div id="aap-enabled" />
 
@@ -150,7 +150,7 @@ AAP — это переключатель на уровне приложени�
 
 Если AAP отключен, рекламодатели могут настроить режим расширенной конфиденциальности для каждой рекламной сети отдельно.
 
-![APControl.png](https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png)
+<Image align="center" alt="APControl.png" src="https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png" />
 
 **Чтобы отключить режим расширенной конфиденциальности для партнера:**
 
@@ -201,7 +201,7 @@ AAP — это переключатель на уровне приложени�
 
 На следующей схеме показаны сценарии с наличием или отсутствием согласия пользователя и различными типами постбэков.
 
-![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
+<Image align="center" alt="AAP - Attributed ad networks.png" src="https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png" />
 
 Расширенная конфиденциальность работает по-другому в веб-браузерах, поэтому необходимо использовать параметр af\_media\_type=web или af\_media\_type=app. Подробные сведения <Anchor target="_blank" href="/partners/ru/docs/advanced-privacy-guide-postback-macros-for-ad-networks#веб-кампании">см. здесь</Anchor>.
 
@@ -211,11 +211,11 @@ AAP — это переключатель на уровне приложени�
 
 Постбэки без атрибуции отправляются сети, когда в качестве варианта отправки на вкладке «Интеграция» интегрированного партнера выбрано значение *Все медиа-источники, включая органические*, и этот партнер не атрибутирован событию, как показано на следующем рисунке.
 
-![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+<Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 На следующей схеме показаны сценарии с наличием или отсутствием согласия пользователя и различными типами постбэков.
 
-![AAP - Unattributed ad networks.png](https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png)
+<Image align="center" alt="AAP - Unattributed ad networks.png" src="https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png" />
 
 Расширенная конфиденциальность работает по-другому в веб-браузерах, поэтому необходимо использовать параметр af\_media\_type=web или af\_media\_type=app. См. подробную информацию <Anchor target="_blank" href="/partners/ru/docs/advanced-privacy-guide-postback-macros-for-ad-networks#веб-кампании">здесь</Anchor>.
 
@@ -236,7 +236,7 @@ AAP влияет на обмен данными с партнерами по а�
 
 На следующей схеме показаны сценарии с наличием или отсутствием согласия пользователя и различными типами постбэков.
 
-![AAP - Analytics partner.png](https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png)
+<Image align="center" alt="AAP - Analytics partner.png" src="https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png" />
 
 Расширенная конфиденциальность работает по-другому в веб-браузерах, поэтому необходимо использовать параметр af\_media\_type=web или af\_media\_type=app. См. подробную информацию <Anchor target="_blank" href="/partners/ru/docs/advanced-privacy-guide-postback-macros-for-ad-networks#веб-кампании">здесь</Anchor>.
 
@@ -255,7 +255,7 @@ AAP влияет на обмен данными с партнерами по а�
 
 **Разрешение агентству настраивать режим расширенной конфиденциальности**
 
-![agency_advanced_privacy.png](https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png)
+<Image align="center" alt="agency_advanced_privacy.png" src="https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png" />
 
 **Чтобы разрешить агентству настраивать режим расширенной конфиденциальности**:
 

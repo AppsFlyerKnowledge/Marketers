@@ -43,7 +43,7 @@ x-zendesk:
 
 #### Дэшборд состояния данных о расходах и доходах от рекламы
 
-[![cost_and_ad_revenue_status_dashboard.jpg](https://files.readme.io/da713daae6c7044e8e4f32274520961e1b43c183d8e4cb95f58854cb614efb39-360016000898.jpg)](https://files.readme.io/da713daae6c7044e8e4f32274520961e1b43c183d8e4cb95f58854cb614efb39-360016000898.jpg)
+<Image align="center" alt="cost_and_ad_revenue_status_dashboard.jpg" src="https://files.readme.io/da713daae6c7044e8e4f32274520961e1b43c183d8e4cb95f58854cb614efb39-360016000898.jpg" />
 
 | Раздел | Описание |
 | --- | --- |

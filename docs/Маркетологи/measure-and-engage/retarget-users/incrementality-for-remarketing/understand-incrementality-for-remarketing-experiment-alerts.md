@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Вкратце:** Понимание оповещений и их устранение для обеспечения точности результатов эксперимента.
 
-![exp_alerts_doctored.jpg](https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg)
+<Image align="center" alt="exp_alerts_doctored.jpg" src="https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg" />
 
 <div id="about-experiment-alerts" />
 

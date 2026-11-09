@@ -45,26 +45,26 @@ x-zendesk:
 2. Когда появится запрос на выбор кампании **Simple (NEW)** (Простая (Новое)) или **Advanced** (Расширенная), выберите **Advanced**.
 3. В разделе **Campaign objective** (Цели кампании) выберите **App Installs** (Установки приложения) или **App re-engagements** (Повторное взаимодействие с приложением), затем нажмите **Далее**.
 
-   ![twitter-campaign-objective.png](https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png)
+   <Image align="center" alt="twitter-campaign-objective.png" src="https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png" />
 4. Выберите свое приложение, затем нажмите **партнер по мобильным измерениям** .
 5. На странице **Conversion tracking** (Отслеживание конверсий) нажмите **Go to AppsFlyer** (Перейти в AppsFlyer). 
 
-   ![twitter-mmp-selection.png](https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png)
+   <Image align="center" alt="twitter-mmp-selection.png" src="https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png" />
 6. На экране появится уведомление о том, что вы собираетесь покинуть X Ads и перейти на сайт AppsFlyer. Нажмите кнопку **Go to AppsFlyer** (Перейти в AppsFlyer) и войдите в свой дэшборд.
 
-   <Image alt="twitter-go-to-appsflyer.png" src="https://files.readme.io/bca10eea5032a495fd38c996d0aa4a9f2db8a285211e6cf0860dd6f21bcfa670-36433422307601.png" width="576px" />
+   <Image align="center" alt="twitter-go-to-appsflyer.png" src="https://files.readme.io/bca10eea5032a495fd38c996d0aa4a9f2db8a285211e6cf0860dd6f21bcfa670-36433422307601.png" width="576px" />
 7. В AppsFlyer в боковом меню выберите **Сотрудничество** > **Партнерские интеграции > Маркетплейс.**
 8. Найдите **X Ads** и выберите его.
 9. На вкладке **Интеграция** примите условия X Ads по использованию услуги регистрации конверсий для мобильных приложений (Mobile App Conversion Recording, MACT) и нажмите **Сохранить интеграцию**.
 10. Включите **Активировать партнера** и нажмите **Войти через X Ads**.
 11. Разрешите AppsFlyer использовать ваш аккаунт X Ads, нажав **Авторизовать приложение**.
 
-    [<Image alt="" src="https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png" width="476px" />](https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png)
+    <Image align="center" alt="" src="https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png" width="476px" />
 12. Включите **Активировать партнера** снова, чтобы отобразить настройки вкладки **Интеграция** и включить атрибуцию.  
     **Примечание:** Этот переключатель должен быть активирован все время, пока вы работаете с этим партнёром. Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">активации партнеров</Anchor>.
 13. Выберите свои аккаунты X Ads, чтобы активировать их, затем нажмите **Сохранить и закрыть**.
 
-    ![twitter_account_name.png](https://files.readme.io/d74e9b3edd08c4ca3396b95ae20e20db99bcbe1a220318403bd6c9d6f9600282-36433415108497.png)
+    <Image align="center" alt="twitter_account_name.png" src="https://files.readme.io/d74e9b3edd08c4ca3396b95ae20e20db99bcbe1a220318403bd6c9d6f9600282-36433415108497.png" />
 
 </Accordion>
 
@@ -86,7 +86,7 @@ x-zendesk:
 
 Выберите аккаунты, для которых нужно активировать атрибуцию.
 
-![Twitter_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
+<Image align="center" alt="Twitter_msc_new_4.png" src="https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png" />
 
 <div id="click-through-attribution" />
 
@@ -96,7 +96,7 @@ x-zendesk:
 
 Это значение можно задать в часах (от 1 до 23) или в днях (от 1 до 30). Мы рекомендуем задать для окна атрибуции по кликам значение 14 дней, что соответствует стандартному значению этого параметра в X Ads.
 
-![Twitter_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
+<Image align="center" alt="Twitter_msc_new_6.png" src="https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png" />
 
 <div id="view-through-attribution-lookback-window" />
 
@@ -106,7 +106,7 @@ x-zendesk:
 
 Это значение можно задать в часах (от 1 до 23) или в днях (от 1 до 7). Мы рекомендуем установить значение окна атрибуции по просмотрам на 1 день, что соответствует стандартному значению этого параметра в X Ads.
 
-![Twitter_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
+<Image align="center" alt="Twitter_msc_new_7.png" src="https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png" />
 
 <div id="re-engagement-settings" />
 
@@ -126,7 +126,7 @@ x-zendesk:
 
 Установите продолжительность **окна атрибуции повторного вовлечения по кликам** — максимальный период времени после клика по объявлению, в течение которого пользователя, на которого нацелен ретаргетинг, можно атрибутировать этому объявлению. Это значение можно задать в часах (до 23) или днях (1–30).
 
-![twitter-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+<Image align="center" alt="twitter-reengagement-activate.png" src="https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png" />
 
 <div id="re-engagement-view-through-lookback-window" />
 
@@ -136,7 +136,7 @@ x-zendesk:
 
 Установите продолжительность **окна атрибуции повторного вовлечения по просмотрам** — максимальный период времени после показа объявления, в течение которого пользователя, на которого нацелен ретаргетинг, можно атрибутировать этому объявлению. Это значение можно задать в часах (до 23) или днях (1-7):
 
-![twitter-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
+<Image align="center" alt="twitter-reengagement-view-through.png" src="https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png" />
 
 <div id="re-engagement-window" />
 
@@ -144,7 +144,7 @@ x-zendesk:
 
 Установите продолжительность **Окно повторного вовлечения** — временной интервал, в течение которого внутренние события приложения пользователя будут атрибутироваться медиа-источнику ретаргетинга. Это значение можно задавать в днях (от 1 до 90), часах (до 23) или даже на весь период использования приложения.
 
-![Twitter-reengagement-window.png](https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png)
+<Image align="center" alt="Twitter-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" />
 
 <div id="in-app-event-postback-settings" />
 
@@ -152,7 +152,7 @@ x-zendesk:
 
 В этом разделе можно настроить отправку партнёру постбэков о своих событиях в AppsFlyer.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png" />
 
 **Чтобы настроить постбэки для внутренних событий приложения:**
 

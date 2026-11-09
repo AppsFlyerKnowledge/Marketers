@@ -102,7 +102,7 @@ SRN отчет о событиях, таких как новые установ�
 
 <Accordion title="Пример A: Вспомогательная атрибуция">
 
-![SRN_1.png](https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png)
+<Image align="center" alt="SRN_1.png" src="https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png" />
 
 **Понедельник:** Сеть A сообщает о клике пользователя.
 
@@ -120,7 +120,7 @@ AppsFlyer предоставляет рекламодателям данные �
 
 <Accordion title="Пример B: Атрибуция последнего клика">
 
-![SRN_2.png](https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png)
+<Image align="center" alt="SRN_2.png" src="https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png" />
 
 **Сеть D** (SRN) сообщает о клике за несколько минут до сети C.
 
@@ -273,7 +273,7 @@ SRN, получающие постбэки о событиях, полагают
 * В 5% кампаний не менее 40% были уже существующими пользователями приложения.
 * **Вывод: В кампаниях SRN по привлечению пользователей 1 из 10 целевых пользователей уже является существующим пользователем.**
 
-[![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+<Image align="center" alt="mistargeted_users.png" src="https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png" />
 
 <div id="solving-the-mistargeting-problem" />
 

@@ -61,7 +61,7 @@ x-zendesk:
 2. Нажмите на нужное приложение.
 3. Кликните по идентификатору приложения, отображаемому в верхнем левом углу экрана, чтобы скопировать его.
 
-   [![](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg" />
 
 AppsFlyer атрибутирует данные на основе App ID. Тот же идентификатор Приложение Facebook можно использовать для [приложений на Android и iOS](https://developers.facebook.com/docs/app-ads/app-setup/). Обратите внимание, что начиная с iOS 14, Meta Ads ограничивает количество рекламных аккаунтов девятью на приложение.
 
@@ -106,7 +106,7 @@ AppsFlyer атрибутирует данные на основе App ID. Тот
    **Примечание: <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">Переключатель должен оставаться включённым (</Anchor><Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">активированным</Anchor>) всё время, пока вы работаете с партнёром.**
 5. В разделе **Общие настройки**:
 
-   [![](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
+   <Image align="center" alt="" src="https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png" />
 
    * Вставьте [идентификатор приложения Facebook](#create-and-retreive-facebook-app-id) в поле **Facebook App ID (Идентификатор приложения Facebook)**.
    * Вставьте [ключ расшифровки реферера установки из Meta Ads](/docs/meta-ads-integration-setup#зашифрованные-данные-из-api-реферальной-ссылки-google-play-или-реферальной-ссылки-meta).
@@ -120,7 +120,7 @@ AppsFlyer атрибутирует данные на основе App ID. Тот
 
 <Accordion title="[Необязательно] Настройка рекомендуемых параметров">
 
-[![](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)
+<Image align="center" alt="" src="https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png" />
 
 * Чтобы соответствовать окну атрибуции по кликам в Meta Ads, установите его на 7 дней.  
   (Обратите внимание, что есть [некоторые конкретные случаи, когда значение по умолчанию отличается](https://www.facebook.com/business/help/395050428485124?id=428636648170202)).
@@ -243,7 +243,7 @@ Meta Ads делится метаданными кампаний с реклам�
 
 <Accordion title="Затраты, клики и показы">
 
-[![meta_cost_tab.png](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)
+<Image align="center" alt="meta_cost_tab.png" src="https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png" />
 
 Эта интеграция предоставляет агрегированные данные о затратах, кликах и показах для ваших кампаний, наборов объявлений, объявлений и регионов/стран. Подробную информацию о поддерживаемых параметрах, метриках и функциях см. в таблице <Anchor target="_blank" href="/marketers/ru/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">интеграции затрат рекламной сети</Anchor>.
 
@@ -283,7 +283,7 @@ Meta Ads делится метаданными кампаний с реклам�
 
 <Accordion title="Сопоставление внутренних событий приложения">
 
-[![meta_iae_postbacks.png](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)
+<Image align="center" alt="meta_iae_postbacks.png" src="https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png" />
 
 **Для сопоставления внутренних событий приложения:**
 
@@ -328,13 +328,13 @@ Meta Ads делится метаданными кампаний с реклам�
 3. Установите **окно атрибуции повторного вовлечения по кликам**.  
    Окно атрибуции повторного вовлечения — это временной интервал начиная от клика по рекламе, в течение которого приложение должно быть запущено, чтобы клик был засчитан как повторное вовлечение.  
    Выберите единицы измерения окна атрибуции (часы или дни) и установите бегунок на нужное значение.  
-   [![](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)
+   <Image align="center" alt="" src="https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png" />
 4. Включите **атрибуцию повторного вовлечения по просмотрам**.
 5. Установите ползунок окна атрибуции по просмотрам для повторного вовлечения **на нужное значение (до 24 часов). Это временной интервал, который начинается с показа рекламы, в течение которого должно быть запущено приложение, чтобы показ был записан как повторное вовлечение.**[![](https://files.readme.io/82028408b7475e6ad5bcd35f2d597b7f5344b9eca432157559265cf73bdb952c-30354145625873.png)](https://files.readme.io/82028408b7475e6ad5bcd35f2d597b7f5344b9eca432157559265cf73bdb952c-30354145625873.png)
 6. Установите **окно повторного вовлечения**.  
    Это временной интервал, в течение которого внутренние события приложения данного пользователя будут атрибутироваться медиа-источнику ретаргетинга как основному источнику.  
    Это значение можно задавать в днях (от 1 до 90), часах (до 23) или даже на весь период использования приложения. Значение по умолчанию 30 дней.  
-   [![](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)
+   <Image align="center" alt="" src="https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png" />
 
 Узнайте больше об <Anchor target="_blank" href="/marketers/ru/docs/retargeting-attribution-guide">атрибуции ретаргетинга в AppsFlyer</Anchor>.
 
@@ -427,7 +427,7 @@ AppsFlyer поддерживает измерение кампаний марк�
 
 <Accordion title="Регистрация доходов от рекламы">
 
-[![](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)
+<Image align="center" alt="" src="https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png" />
 
 Если в вашем приложении для монетизации рекламы используется функция Meta Audience Network Ad Revenue (Доход от сетевой рекламы для аудитории Meta), вы можете регистрировать в AppsFlyer свои доходы от рекламы в Meta Ads. С помощью этой функции (вместе с данными о выручке от покупок в приложении или без них) можно получить **полное представление о выручке, полученной от ваших пользователей**.
 
@@ -501,7 +501,7 @@ AppsFlyer поддерживает <Anchor target="_blank" href="/marketers/ru/d
 
 Чтобы атрибуция работала, пользователь должен зарегистрировать свое приложение в Meta Ads как **Live** (Действующее) , а не как **In development** (В разработке).
 
-[![](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)
+<Image align="center" alt="" src="https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png" />
 
 </Accordion>
 
@@ -529,11 +529,11 @@ AppsFlyer поддерживает <Anchor target="_blank" href="/marketers/ru/d
 
 Правильная настройка — атрибуция работает.
 
-[![](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)
+<Image align="center" alt="" src="https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png" />
 
 Неправильная настройка — атрибуция не удается.
 
-[![](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)
+<Image align="center" alt="" src="https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png" />
 
 </Accordion>
 

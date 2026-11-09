@@ -24,7 +24,7 @@ x-zendesk:
   section_id: 6551161473041
   url: https://support.appsflyer.com/hc/ru/articles/4404213118481
 ---
-![iOS15.png](https://files.readme.io/b61770f82edee601aec1fba95c93bbf5b7e4ad3615a82205aa9c7da8cfe547f0-20445082158609.png)
+<Image align="center" alt="iOS15.png" src="https://files.readme.io/b61770f82edee601aec1fba95c93bbf5b7e4ad3615a82205aa9c7da8cfe547f0-20445082158609.png" />
 
 | **Что меняется** | Атрибутируйте доход от рекламы, полученный в течение окна активности SKAdNetwork, кампании, привлекшей пользователя. В настоящее время эта возможность ограничена рекламодателями, интегрированными с универсальным доходом от рекламы на уровне показов через SDK. |
 | --- | --- |

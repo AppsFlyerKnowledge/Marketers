@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Кратко:** MOLOCO, интегрированный партнер AppsFlyer, преобразует пользовательские данные в эффективность рекламы, помогая мобильным компаниям реализовывать программы маркетинга и монетизации рекламы.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/moloco.png?v=1" width="149px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/moloco.png?v=1" width="149px" />
 
 <div id="setting-up-moloco" />
 

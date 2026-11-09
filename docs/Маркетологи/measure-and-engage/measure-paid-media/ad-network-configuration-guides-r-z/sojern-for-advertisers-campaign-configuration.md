@@ -68,7 +68,7 @@ x-zendesk:
 
 Sojern for Advertisers подключается к AppsFlyer через уникальный идентификатор партнера ID. Если у вас еще нет идентификатора партнера, чтобы продолжить интеграцию, его нужно получить в Sojern for Advertisers.
 
-![Sojern_msc_new_2.png](https://files.readme.io/35d02000642f8dc768c5bd1b0ca7846b9575900b2e9b3169673840f438815ef1-360002443905.png)
+<Image align="center" alt="Sojern_msc_new_2.png" src="https://files.readme.io/35d02000642f8dc768c5bd1b0ca7846b9575900b2e9b3169673840f438815ef1-360002443905.png" />
 
 <div id="default-postbacks" />
 

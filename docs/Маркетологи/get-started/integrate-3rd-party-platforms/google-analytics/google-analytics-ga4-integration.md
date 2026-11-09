@@ -430,14 +430,14 @@ public class AnalyticsManager : MonoBehaviour
   Например, отчеты о событиях можно найти в коллекциях [Жизненный цикл](https://support.google.com/analytics/answer/12924233?hl=en) или [Отчетность по играм](https://support.google.com/analytics/answer/12925133?hl=en&sjid=5454549956257318969-NC) в разделе **Вовлеченность** > **События**.   
   Для получения дополнительной информации об отчёте о событиях см. [документацию Google](https://support.google.com/analytics/answer/12926615?sjid=5454549956257318969-NC).
 
-  ![Отчет GA4 о событиях](https://files.readme.io/01625878b13a46b8a87c34bf465c0ef6494a0f528960d62ce5535b69b29e7d0a-25707728713745.png)
+  <Image align="center" alt="Отчет GA4 о событиях" src="https://files.readme.io/01625878b13a46b8a87c34bf465c0ef6494a0f528960d62ce5535b69b29e7d0a-25707728713745.png" />
 * **Отчёт о привлечении трафика** помогает вам понять, откуда приходят ваши посетители сайта и приложения.
 
   В разделе [Коллекция жизненного цикла](https://support.google.com/analytics/answer/12924233?hl=en) перейдите в **Привлечение** > **Привлечение трафика**).
 
   Для получения дополнительной информации об отчёте о привлечении трафика см. [документацию Google](https://support.google.com/analytics/answer/12923437?hl=en&sjid=5454549956257318969-NC#zippy=%2Chow-do-i-filter-out-traffic-sources-from-the-report).
 
-  ![Отчет GA4 по привлечению трафика](https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png)
+  <Image align="center" alt="Отчет GA4 по привлечению трафика" src="https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png" />
 
 </Accordion>
 

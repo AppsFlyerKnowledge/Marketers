@@ -43,7 +43,7 @@ x-zendesk:
    2. **ACS URLs:** Введите URL-адрес обратного вызова в соответствии с <Anchor target="_blank" href="/marketers/ru/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration">методом аутентификации ваших пользователей</Anchor>.
    3. **Login URL:** Введите <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">URL-адрес входа</Anchor> AppsFlyer.  
 
-      <Image alt="jumpcloud_sso_tab2__1_.png" src="https://files.readme.io/3b45c98d191a35644c5479a0237e92908ca6f18416f6df2b6e0c84a30940307b-15934671100561.png" width="477px" />
+      <Image align="center" alt="jumpcloud_sso_tab2__1_.png" src="https://files.readme.io/3b45c98d191a35644c5479a0237e92908ca6f18416f6df2b6e0c84a30940307b-15934671100561.png" width="477px" />
 6. Нажмите **activate**.
 7. Будет создан общедоступный сертификат. Уведомление об этом появится в правом верхнем углу страницы. Нажмите **Download Certificate**. Этот сертификат потребуется на <Anchor target="_blank" href="/marketers/ru/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">шаге 2 на платформе AppsFlyer</Anchor>.
 
@@ -55,7 +55,7 @@ x-zendesk:
 
 1. В меню администратора JumpCloud перейдите в <Anchor target="_blank" href="https://console.jumpcloud.com/#/users">Users</Anchor> и нажмите значок + .
 2. Выберите **Manual user entry**.  
-   <Image alt="cloud_jump_manual_user_entry.png" src="https://files.readme.io/d00299979fa5e036c464c8c6d360965d46e42d5042a31366ced7adc84914c0be-14947838808081.png" width="417px" />
+   <Image align="center" alt="cloud_jump_manual_user_entry.png" src="https://files.readme.io/d00299979fa5e036c464c8c6d360965d46e42d5042a31366ced7adc84914c0be-14947838808081.png" width="417px" />
 3. Заполните все обязательные поля: **Username**, **Company Email**, затем нажмите **save user**.
 4. Настройте параметры пароля пользователя в соответствии с принятым в вашей компании методом.
 5. Чтобы продолжить добавление пользователей, кликните **Save And Create Another**, затем повторите шаг 3. Закончив добавлять всех пользователей, кликните **Save**.

@@ -25,7 +25,7 @@ x-zendesk:
 
 > **Краткий обзор:** Запуск эксперимента инкрементальности, чтобы понять реальное воздействие ваших ремаркетинговых кампаний.
 
-![KB_toggle_final.jpg](https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg)
+<Image align="center" alt="KB_toggle_final.jpg" src="https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg" />
 
 <div id="about-the-experiment" />
 
@@ -99,14 +99,14 @@ AppsFlyer облегчает тестирование инкрементальн
    * Подключите аудиторию к 1–3 партнерам по рекламной сети.
    * Убедитесь, что переключатель, который <Anchor target="_blank" href="/marketers/ru/docs/audiences-guide#audience-split-and-control-groups">разделяет аудиторию</Anchor>, включён (он **автоматически включается для подписчиков Incrementality в аудиториях, созданных после 11 января 2023 года**). Если нет, нажмите на переключатель, чтобы включить его.  
       Если нет, нажмите на переключатель, чтобы включить его.  
-     ![Measure_inc_impact_toggle.jpg](https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg)
+     <Image align="center" alt="Measure_inc_impact_toggle.jpg" src="https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg" />
    * Контрольная группа автоматически устанавливается на уровне 15% (рекомендуется).
    * Оставшаяся аудитория автоматически делится поровну между выбранными вами партнерами по рекламной сети.
      * Общий процент разделения должен быть равен 100% (включая контрольную группу).
 
 После сохранения аудитории с включённым разделением, эксперимент Incrementality автоматически запускается (только для подписчиков Incrementality). Эти эксперименты можно просмотреть на дэшборде "Инкрементность" с префиксом "[Авто]" перед названием.
 
-![Авто_перед_заголовком.jpg](https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg)
+<Image align="center" alt="Авто_перед_заголовком.jpg" src="https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg" />
 
 **Важные примечания:**
 
@@ -119,10 +119,10 @@ AppsFlyer облегчает тестирование инкрементальн
 
 В Meta реклама эта функция называется «Преимущество пользовательской аудитории». Она находится на уровне рекламного набора и по умолчанию включена.
 
-<Image alt="image__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />  
+<Image align="center" alt="image__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />
 В Google реклама это называется «Расширение аудитории».
 
-<Image alt="Google_Ads_Incrementality_limitation_cropped.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
+<Image align="center" alt="Google_Ads_Incrementality_limitation_cropped.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
 
 </Accordion>
 
@@ -151,17 +151,17 @@ AppsFlyer облегчает тестирование инкрементальн
 
 1. На странице **Инкрементный дэшборд** > выберите конкретный эксперимент > нажмите **Изменить эксперимент**.
 
-<Image alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
+<Image align="center" alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
 
 Или
 
 В разделе **Аудитории** найдите нужную аудиторию > клик **+ Связать кампанию** в столбце Инкрементность.
 
-<Image alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
+<Image align="center" alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
 
 Откроется окно, позволяющее связать кампании.
 
-<Image alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
+<Image align="center" alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
 
 2. Выберите соответствующие кампании для каждой рекламной сети.
 
@@ -189,7 +189,7 @@ AppsFlyer облегчает тестирование инкрементальн
   >
   > ШАГ 2 мастера – Настройка аудиторий
   >
-  > [<Image alt="" src="https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png" width="603px" />](https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png)
+  > <Image align="center" alt="" src="https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png" width="603px" />
   >
   > На втором ШАГЕ мастера вам предлагается выбрать **дату, с которой члены аудитории должны быть включены в эксперимент.**
   >
@@ -200,7 +200,7 @@ AppsFlyer облегчает тестирование инкрементальн
   >
   > **ШАГ 3 мастера — Установка целей**
   >
-  > ![ШАГ_3_Установить_цели.jpg](https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg)
+  > <Image align="center" alt="ШАГ_3_Установить_цели.jpg" src="https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg" />
   >
   > Здесь нужно выбрать целевое приложение и KPI.
   >
@@ -208,7 +208,7 @@ AppsFlyer облегчает тестирование инкрементальн
   >
   > ШАГ 4 мастера – Обзор
   >
-  > [<Image alt="" src="https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png" width="583px" />](https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png)
+  > <Image align="center" alt="" src="https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png" width="583px" />
   >
   > На ШАГЕ 4 мастера вам будет предложено установить **период эксперимента.**
   >

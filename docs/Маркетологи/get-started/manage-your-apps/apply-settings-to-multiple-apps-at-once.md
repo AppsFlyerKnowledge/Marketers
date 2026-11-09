@@ -50,23 +50,23 @@ x-zendesk:
 
 1. Откройте настройки приложения, параметры которого вы хотите изменить, и измените параметр (переключатель, раскрывающийся список или ползунок).
 
-   <Image alt="Screenshot 2026-09-16 at 14.31.44.png" src="https://files.readme.io/8a1abce58e1e8da4af5899e2e03a2a7fe9e6e9b8e9a04c240585bfd3e7934126-50944987863825.png" width="2557px" />
+   <Image align="center" alt="Screenshot 2026-09-16 at 14.31.44.png" src="https://files.readme.io/8a1abce58e1e8da4af5899e2e03a2a7fe9e6e9b8e9a04c240585bfd3e7934126-50944987863825.png" width="2557px" />
 2. Рядом с измененным полем нажмите **Применить к другим приложениям**.
 
-   <Image alt="aap.png" src="https://files.readme.io/0f2144ca43c6db7ffe9967df5c2b2f2fe3e8cffdbefa77167ed9262a61511774-50945027652113.png" width="612px" />
+   <Image align="center" alt="aap.png" src="https://files.readme.io/0f2144ca43c6db7ffe9967df5c2b2f2fe3e8cffdbefa77167ed9262a61511774-50945027652113.png" width="612px" />
 3. Найдите приложения по названию или идентификатору ID и выберите приложения, к которым нужно применить то же изменение. Приложения, для которых это изменение недоступно, остаются видимыми, но отображаются серым цветом. Наведите курсор на такое приложение, чтобы узнать причину.
 
-   <Image alt="Screenshot 2026-09-16 at 14.32.32.png" src="https://files.readme.io/95c79ce8c176e4a0836661a119ca12b1268b8874181d4fd78c96113e5339d6c9-50945018039953.png" width="1304px" />
+   <Image align="center" alt="Screenshot 2026-09-16 at 14.32.32.png" src="https://files.readme.io/95c79ce8c176e4a0836661a119ca12b1268b8874181d4fd78c96113e5339d6c9-50945018039953.png" width="1304px" />
 4. Чтобы закрыть список и подтвердить выбор, кликните вне списка. Кнопка **Apply to additional apps** заменяется значком с количеством выбранных приложений; нажмите его в любой момент, чтобы изменить выбор.
 
-   <Image alt="ssa.png" src="https://files.readme.io/b93174999053cdbbf5591eb215e6cd10becbd2d1bcb699ff286a8b1523f8a8f0-50944987865361.png" width="1238px" />
+   <Image align="center" alt="ssa.png" src="https://files.readme.io/b93174999053cdbbf5591eb215e6cd10becbd2d1bcb699ff286a8b1523f8a8f0-50944987865361.png" width="1238px" />
 5. Повторите эти шаги для всех нужных настроек.
 6. Внизу страницы кликните **Save changes** (если вы не выбрали дополнительные приложения) или **Review & Save** (после того как вы включили приложения в массовое изменение). На обеих кнопках в скобках отображается общее количество изменений.
 
-   <Image alt="Screenshot 2026-09-16 at 14.33.32.png" src="https://files.readme.io/6dfb050b984932023455af9022364b37534af276d7bb117ddb05ad0fc25d936c-50945018041489.png" width="2269px" />
+   <Image align="center" alt="Screenshot 2026-09-16 at 14.33.32.png" src="https://files.readme.io/6dfb050b984932023455af9022364b37534af276d7bb117ddb05ad0fc25d936c-50945018041489.png" width="2269px" />
 7. Если вы добавили дополнительные приложения, проверьте значения «до» и «после» для каждого приложения на экране **Review before saving**. В качестве базового значения используется текущее значение каждого приложения. Перед подтверждением можно удалить любое изменение из пакета.
 
-   <Image alt="Screenshot 2026-09-16 at 14.33.38.png" src="https://files.readme.io/c22f67575fc8ac9cbd868c923b5addfe8c70529ee1183fa7231f080d1b54d18c-50945018042385.png" width="1286px" />
+   <Image align="center" alt="Screenshot 2026-09-16 at 14.33.38.png" src="https://files.readme.io/c22f67575fc8ac9cbd868c923b5addfe8c70529ee1183fa7231f080d1b54d18c-50945018042385.png" width="1286px" />
 8. Нажмите **Подтвердить & Сохранить**. Это позволяет за одну операцию сохранить исходное приложение вместе со всеми дополнительными приложениями в пакете.
 
 <div id="note-1" />

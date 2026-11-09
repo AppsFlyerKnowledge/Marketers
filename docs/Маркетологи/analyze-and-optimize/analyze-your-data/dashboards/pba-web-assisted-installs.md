@@ -24,7 +24,7 @@ x-zendesk:
 
 **Web-Assisted Installs: сценарий использования**
 
-![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
+<Image align="center" alt="web_to_app_image.png" src="https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png" />
 
 <div id="web-assisted-installs-analysis" />
 
@@ -38,7 +38,7 @@ Web-Assisted Installs измеряет эффективность меропри
 
 В метриках заголовка отображается общее количество установок приложения относительно количества установок, источником которых является веб-сайт, в разбивке на органические и неорганические установки приложения.
 
-[![WAIHeadline_en-us.png](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)
+<Image align="center" alt="WAIHeadline_en-us.png" src="https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png" />
 
 В следующей таблице указаны сценарии использования анализа Web-Assisted Installs.
 
@@ -62,7 +62,7 @@ Web-Assisted Installs измеряет эффективность меропри
 
 <Accordion title="Установки и повторные установки, источником которых является веб-сайт">
 
-![30day_us-en.png](https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png)
+<Image align="center" alt="30day_us-en.png" src="https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png" />
 
 Считается, что на установки повлиял веб-сайт, если они происходят в течение 30 дней после посещения веб-сайта.Установки и повторные установки, включая установки в результате ретаргетинга (реатрибуция), могут быть органическими или неорганическими. Установки и повторные установки, включая установки в результате ретаргетинга (реатрибуция), могут быть органическими или неорганическими.
 

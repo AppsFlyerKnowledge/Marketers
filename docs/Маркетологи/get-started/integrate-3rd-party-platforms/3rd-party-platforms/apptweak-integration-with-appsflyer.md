@@ -43,7 +43,7 @@ x-zendesk:
    * Агрегированная аналитическая отчетность
    * Отчетность SKAN (для приложений iOS)
 
-     <Image alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
+     <Image align="center" alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
 6. Нажмите **Сохранить доступ к API**.
 7. Сообщите AppTweak, что вы предоставили им доступ.
 

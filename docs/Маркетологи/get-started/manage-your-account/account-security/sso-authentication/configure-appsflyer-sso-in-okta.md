@@ -35,11 +35,11 @@ x-zendesk:
 **Необходимое условие:** учетная запись Okta с правами администратора.
 
 1. В Admin Console перейдите в **Applications** > **Applications**.  
-   <Image alt="Okta_side_menu___applications.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="241px" />
+   <Image align="center" alt="Okta_side_menu___applications.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="241px" />
 2. Нажмите **Create App Integration**.
 3. В диалоговом окне **Create a new app integration** выберите **SAML 2** и нажмите **Next**.
 4. В разделе **(1) General Settings** в поле **App name** введите имя, которое должно отображаться в списке приложений плагина Okta.  
-   <Image alt="Okta_app_name_and_icon__1_.png" src="https://files.readme.io/6998e7737b0aa5c4d70ad97ab41e17e471ddaf060e78c44fa2de41be1df17574-13572380565521.png" width="639px" />
+   <Image align="center" alt="Okta_app_name_and_icon__1_.png" src="https://files.readme.io/6998e7737b0aa5c4d70ad97ab41e17e471ddaf060e78c44fa2de41be1df17574-13572380565521.png" width="639px" />
 5. [Необязательно] **App logo**: добавьте логотип, который будет отображаться рядом с названием приложения.
 6. Создайте информативное название для эксперимента, затем нажмите **Далее**.
 7. В разделе **(2) Configure SAML Integration** настройте интеграцию в соответствии со следующими полями: ![okta-create-saml-integration.png](https://files.readme.io/6c276dd54afd30e828b989fc6796de5eca46282ade015e7a34e0bd1cc95d7fb8-16870970396177.png)
@@ -50,7 +50,7 @@ x-zendesk:
      **Примечание:** адрес электронной почты пользователя Okta должен совпадать с адресом электронной почты учетной записи AppsFlyer этого пользователя
 8. Нажмите **Show Advanced Settings** и настройте интеграцию в соответствии с полями, показанными на изображении ниже:
 
-   <Image alt="Okta_расширенные_настройки__1_.png" src="https://files.readme.io/9a3461f700cc50a54237578a304206ed7693e30cdd516398089954321cd44af4-13572576788241.png" width="640px" />
+   <Image align="center" alt="Okta_расширенные_настройки__1_.png" src="https://files.readme.io/9a3461f700cc50a54237578a304206ed7693e30cdd516398089954321cd44af4-13572576788241.png" width="640px" />
 
    * **Assertion Encryption:** выберите **Encrypted** или **Unencrypted**.   
      **Примечание:** поскольку утверждения контролируются вашим IdP, рекомендуется выбрать **Encrypted**.
@@ -69,13 +69,13 @@ x-zendesk:
 
 1. В консоли администратора выберите **Directory** > **People**.
 
-   <Image alt="Okta___directory___people.png" src="https://files.readme.io/d9c5da8787fdb81bf97bc0753b2f7794cdc59060e5026348428545064d138d18-13572579297169.png" width="226px" />
+   <Image align="center" alt="Okta___directory___people.png" src="https://files.readme.io/d9c5da8787fdb81bf97bc0753b2f7794cdc59060e5026348428545064d138d18-13572579297169.png" width="226px" />
 2. Нажмите **Add Person**.
 
-   <Image alt="Okta___People___Add_person.png" src="https://files.readme.io/6bb8b854cf000259970d63b9eacb28bf6d4079d648939814aaa0e456a96c9bbe-13572600647697.png" width="524px" />
+   <Image align="center" alt="Okta___People___Add_person.png" src="https://files.readme.io/6bb8b854cf000259970d63b9eacb28bf6d4079d648939814aaa0e456a96c9bbe-13572600647697.png" width="524px" />
 3. В диалоговом окне **Add Person**:
 
-   <Image alt="Okta_Add_person__1_.png" src="https://files.readme.io/d6d7e198fab965872b5a01302a00bdbd0bfb5d561af372fc4390c9882a22a42c-13572617052689.png" width="620px" />
+   <Image align="center" alt="Okta_Add_person__1_.png" src="https://files.readme.io/d6d7e198fab965872b5a01302a00bdbd0bfb5d561af372fc4390c9882a22a42c-13572617052689.png" width="620px" />
 
    * В поле **User type** выберите **User**.
    * Заполните все обязательные поля: **First name**, **Last name**, **Username** (должен быть адресом электронной почты) и **Primary email**.
@@ -90,9 +90,9 @@ x-zendesk:
 
 1. В консоли администратора вернитесь в **Applications** > **Applications**.
 2. В разделе **Browse App Catalog** выберите приложение, которое вы только что создали.  
-   <Image alt="Okta_side_menu___applications.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="233px" />
+   <Image align="center" alt="Okta_side_menu___applications.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="233px" />
 3. В выбранном приложении на вкладке **Assignments** нажмите **Assign** > **Assign to People**.  
-   ![Okta_sso_assign_to_people.png](https://files.readme.io/50930693a4a58ad8162b2ac81e476081c9b0288da4dab5b92bb41fece4aff586-14942267242769.png)
+   <Image align="center" alt="Okta_sso_assign_to_people.png" src="https://files.readme.io/50930693a4a58ad8162b2ac81e476081c9b0288da4dab5b92bb41fece4aff586-14942267242769.png" />
 4. Найдите пользователя, которого нужно назначить вашему приложению, и нажмите **Assign**.
 5. Повторите этот шаг для всех пользователей.
 6. Нажмите **Done**, когда закончите добавлять всех пользователей. Новые пользователи теперь отображаются в разделе **People**.

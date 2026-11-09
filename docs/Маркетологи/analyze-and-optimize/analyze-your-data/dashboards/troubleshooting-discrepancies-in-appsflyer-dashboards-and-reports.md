@@ -83,7 +83,7 @@ x-zendesk:
 >
 > **Активность:** представьте, что вы наблюдаете за проходящим мимо поездом. Пока поезд идет мимо вас, вы видите только действия, которые пассажиры производят в вашем поле зрения. Это и есть данные об активности.
 >
-> <Image alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
+> <Image align="center" alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
 >
 > **LTV**: Теперь представьте, что вы садитесь в поезд в качестве наблюдателя. В поезде много вагонов.
 >
@@ -91,7 +91,7 @@ x-zendesk:
 > * В ходе всей поездки вы наблюдаете все действия пассажиров вашего вагона. Вы можете наблюдать действия всех пассажиров в вагоне, пока они не выйдут  – это удаление приложения.
 > * Вы не видите действий пассажиров в других вагонах, потому что они сели в поезд раньше или позже вас. Тогда это LTV.
 >
-> <Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
+> <Image align="center" alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
 
 <div id="appsflyer-dashboards-and-reportsltv-or-activity" />
 

@@ -174,7 +174,7 @@ x-zendesk:
    2. Выберите проект.
    3. Примечание
 
-       ![UninstallFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
+       <Image align="center" alt="UninstallFirebase.png" src="https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png" />
    4. Скопируйте идентификатор проекта. Он понадобится позже в процессе.
 2. Чтобы включить API FCM:
    1. Перейдите на вкладку **Облачные сообщения**.
@@ -192,7 +192,7 @@ x-zendesk:
    6. Нажмите **Добавить разрешения.**
    7. **Фильтре** выберите разрешение **cloudmessaging.messages.create**.
 
-       ![Фильтр разрешений для рассылки в облаке](https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png)
+       <Image align="center" alt="Фильтр разрешений для рассылки в облаке" src="https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png" />
    8. Нажмите **Добавить**, а затем кликните **Создать**.
 4. **Чтобы назначить AppsFlyer роль для удаления FCM:**
    1. В боковом меню выберите **IAM**.
@@ -230,7 +230,7 @@ x-zendesk:
 2. Откройте <Anchor target="_blank" href="https://console.firebase.google.com">консоль</Anchor> Firebase.
 3. В консоли Firebase перейдите в раздел «Настройки проекта» (кликните на значок шестеренки рядом с обзором проекта на левой панели страницы).
 
-    ![firebase_cloud_messaging_server_key.png](https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png)
+    <Image align="center" alt="firebase_cloud_messaging_server_key.png" src="https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png" />
 4. На вкладке «Облачные сообщения» вы видите два ключа сервера.
 5. Скопируйте **ключ сервера**.
 
@@ -251,7 +251,7 @@ x-zendesk:
 2. При необходимости включите **измерение удалений**.
 3. Выберите **HTTP V1 и введите идентификатор проекта, который вы подготовили ранее.**
 
-    ![UninstallHTTPV1.png](https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png)
+    <Image align="center" alt="UninstallHTTPV1.png" src="https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png" />
 4. Нажмите **Тестировать подключение**.  
    Появится сообщение об успешном подключении.
 
@@ -277,7 +277,7 @@ x-zendesk:
 3. Прокрутите страницу вниз до раздела «Удаления».
 4. Включите **измерение удалений**.
 
-    ![Uninstall_iOS_p2.png](https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png)
+    <Image align="center" alt="Uninstall_iOS_p2.png" src="https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png" />
 5. Нажмите на значок загрузки и выберите файл P12.
 6. [Необязательно] Если сертификат P12 защищен паролем, введите пароль.
 7. Нажмите **Проверить**, чтобы отправить сертификат в AppsFlyer для проверки.
@@ -333,7 +333,7 @@ x-zendesk:
 
 ## Сопоставление события удаления
 
- ![Удаление_событие_постбэк.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png) 
+ <Image align="center" alt="Удаление_событие_постбэк.png" src="https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png" />
 
 Для передачи данных об удалении в рекламную сеть необходимо сопоставить событие <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">af\_uninstall</Anchor> с партнером. Несхожий с постбэками для обычных внутренних событий, событие удаления не отправляется в реальном времени. Отчетное время события представляет собой время, когда AppsFlyer определил, что приложение было удалено, а не фактическое время удаления.
 

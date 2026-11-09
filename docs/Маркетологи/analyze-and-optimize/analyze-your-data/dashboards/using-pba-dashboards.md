@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Кратко:** Получите максимум от функций дэшборда PBA.
 
-![People-Based Attribution от AppsFlyer_us-en.png](https://files.readme.io/d2178dfedb2f67420e66626adbd72dd96ba9edc39fcb0be08648b01656fd2d4b-360010094118.png)
+<Image align="center" alt="People-Based Attribution от AppsFlyer_us-en.png" src="https://files.readme.io/d2178dfedb2f67420e66626adbd72dd96ba9edc39fcb0be08648b01656fd2d4b-360010094118.png" />
 
 <div id="pba-dashboards" />
 
@@ -44,7 +44,7 @@ x-zendesk:
 
 #### Панель фильтров на дэшбордах PBA
 
-[![PBAHeader_us-en.png](https://files.readme.io/aaa4040b69082c8507c604b530086404080d542b614fd20fcb0d5302221d7586-360019762657.png)](https://files.readme.io/aaa4040b69082c8507c604b530086404080d542b614fd20fcb0d5302221d7586-360019762657.png)
+<Image align="center" alt="PBAHeader_us-en.png" src="https://files.readme.io/aaa4040b69082c8507c604b530086404080d542b614fd20fcb0d5302221d7586-360019762657.png" />
 
 **Ключ**:
 

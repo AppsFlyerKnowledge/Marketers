@@ -58,7 +58,7 @@ x-zendesk:
 
 Если для партнера активирована атрибуция или интеграция, AppsFlyer может автоматически отправлять ему постбэки после установок, запуска приложения, повторного вовлечения или отклонения установок. В этом разделе можно определить **источник пользователей**, для которых отправляются постбэки.
 
-![Sina_Weibo_msc_new_2.png](https://files.readme.io/0f71568fd13ce9357f07282636e0b86fdbb9e9b1f6ef9db8ba673bb2066881aa-360002277585.png)
+<Image align="center" alt="Sina_Weibo_msc_new_2.png" src="https://files.readme.io/0f71568fd13ce9357f07282636e0b86fdbb9e9b1f6ef9db8ba673bb2066881aa-360002277585.png" />
 
 Параметр "**Only events attributed to this partner**" для пользователей, атрибутированных только этому партнеру, выбран по умолчанию.
 
@@ -93,7 +93,7 @@ x-zendesk:
 * **Subscriber Parameters** - используйте любой из 5 параметров подписчика для вставки полезных значений. Обратите внимание, что эти параметры анализируются и отображаются в отчете о сырых данных, что делает их очень удобными для агрегации или фильтрации данных.  
   **Параметры ссылки атрибуции:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-[![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
+<Image align="center" alt="" src="https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png" />
 
 Если нужно добавить в ссылку атрибуции другой параметр, просто введите его в поле нового параметра. Дополнительные сведения см. в статье <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">**Структура и параметры ссылки атрибуции в AppsFlyer**</Anchor>.
 
@@ -109,7 +109,7 @@ x-zendesk:
 
 Когда ретаргетинг включен, отображаются следующие настройки.
 
-![retargeting_settings.png](https://files.readme.io/b90bbd6e3bea9dd862808343896b005071b7d9e564d31039c188c3ebf8e81077-360002254489.png)
+<Image align="center" alt="retargeting_settings.png" src="https://files.readme.io/b90bbd6e3bea9dd862808343896b005071b7d9e564d31039c188c3ebf8e81077-360002254489.png" />
 
 ***Стандартная ссылка*** **vs.** ***OneLink***
 
@@ -149,7 +149,7 @@ x-zendesk:
 
 Подробные сведения об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">окне атрибуции по кликам см. здесь</Anchor>.
 
-[![настройки переходов по кликам Sina Weibo](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)
+<Image align="center" alt="настройки переходов по кликам Sina Weibo" src="https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png" />
 
 <div id="click-attribution-link" />
 
@@ -181,7 +181,7 @@ x-zendesk:
 
 На этой вкладке можно выбрать разрешения, предоставляемые партнеру, в зависимости от того, в каком качестве он действует: рекламной сети, агентства или в обоих. Обратите внимание на то, что, даже если атрибуция для партнера отключена, вкладка разрешений остается активной и вы можете предоставить партнеру разрешение на управление.
 
-![sina-weibo-permissions.png](https://files.readme.io/a22be58687921e80108fe4b2cbd2863d9277a938a751ed5c666f147d78041c05-360002799478.png)
+<Image align="center" alt="sina-weibo-permissions.png" src="https://files.readme.io/a22be58687921e80108fe4b2cbd2863d9277a938a751ed5c666f147d78041c05-360002799478.png" />
 
 Эти переключатели позволяют предоставить рекламной сети право самостоятельно выполнять настройки для вашего приложения:
 
@@ -205,11 +205,11 @@ x-zendesk:
 
 Перейдите на страницу **Tools**, чтобы загрузить свои приложения в разделе управления приложениями:
 
-[![](https://files.readme.io/56d413ce75a2a3b4ca78a6928f60b9898bbd892d43d370197189da66ef9b078b-360000449769.png)](https://files.readme.io/56d413ce75a2a3b4ca78a6928f60b9898bbd892d43d370197189da66ef9b078b-360000449769.png)
+<Image align="center" alt="" src="https://files.readme.io/56d413ce75a2a3b4ca78a6928f60b9898bbd892d43d370197189da66ef9b078b-360000449769.png" />
 
 Нажмите, чтобы добавить новые приложения:
 
-[![](https://files.readme.io/2c372745a5fe9b05325731e29e24f0b5097a43664e9a28e288d0b9300aecee8e-360000441885.png)](https://files.readme.io/2c372745a5fe9b05325731e29e24f0b5097a43664e9a28e288d0b9300aecee8e-360000441885.png)
+<Image align="center" alt="" src="https://files.readme.io/2c372745a5fe9b05325731e29e24f0b5097a43664e9a28e288d0b9300aecee8e-360000441885.png" />
 
 Android: введите ссылку на страницу загрузки APK (должна оканчиваться на .apk) или загрузите APK-файл.
 
@@ -221,11 +221,11 @@ iOS: введите ссылку на iTunes.
 
 Перейдите на страницу **Промоакции** и создайте новую серию объявлений
 
-[![](https://files.readme.io/eaf980c1adc0b134265162c114f66b1bf049a80336116db76d353ee5113a9ae5-360000449909.png)](https://files.readme.io/eaf980c1adc0b134265162c114f66b1bf049a80336116db76d353ee5113a9ae5-360000449909.png)
+<Image align="center" alt="" src="https://files.readme.io/eaf980c1adc0b134265162c114f66b1bf049a80336116db76d353ee5113a9ae5-360000449909.png" />
 
 Если вы хотите привлечь новых пользователей для своего приложения, выберите тип рекламы **Increase App Installs**, как показано ниже:
 
-[![](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)
+<Image align="center" alt="" src="https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png" />
 
 <div id="setup-ad-series" />
 
@@ -233,11 +233,11 @@ iOS: введите ссылку на iTunes.
 
 Выберите приложение, которое хотите продвигать:
 
-[![](https://files.readme.io/cf9697b09d8d8b5416b8029cb20c2137eda24d9616bf2db2e1e45a3ec150fcf3-360000450049.png)](https://files.readme.io/cf9697b09d8d8b5416b8029cb20c2137eda24d9616bf2db2e1e45a3ec150fcf3-360000450049.png)
+<Image align="center" alt="" src="https://files.readme.io/cf9697b09d8d8b5416b8029cb20c2137eda24d9616bf2db2e1e45a3ec150fcf3-360000450049.png" />
 
 Задайте характеристики аудитории, бюджет и периоды продвижения:
 
-[![](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)
+<Image align="center" alt="" src="https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png" />
 
 <div id="uploading-ad-creatives-and-set-the-attribution-link" />
 
@@ -252,7 +252,7 @@ Weibo предлагает четыре формата рекламы для п�
 
 Все форматы рекламы поддерживают атрибуцию AppsFlyer.
 
-[![](https://files.readme.io/5404349a21a783509e6de074826ace0db0d66248853f229ad444fabec95b8311-360000450369.png)](https://files.readme.io/5404349a21a783509e6de074826ace0db0d66248853f229ad444fabec95b8311-360000450369.png)
+<Image align="center" alt="" src="https://files.readme.io/5404349a21a783509e6de074826ace0db0d66248853f229ad444fabec95b8311-360000450369.png" />
 
 Введите ссылку атрибуции AppsFlyer
 
@@ -265,7 +265,7 @@ Weibo предлагает четыре формата рекламы для п�
 > 	&clickid={IMP}&md5_idfa={idfa_MD5}&md5_imei={imei_MD5}&redirect=false
 > ```
 
-[![](https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png)](https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png)
+<Image align="center" alt="" src="https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png" />
 
 Завершите все дополнительные настройки и опубликуйте рекламное объявление.
 
@@ -282,13 +282,13 @@ Weibo предлагает четыре формата рекламы для п�
 
 На уровне рекламной кампании настройте таргетинг, бюджет и продолжительность кампании:
 
-![sina-weibo-retargeting.png](https://files.readme.io/8225fbfd74d16bb1a3e2e816933cb22d5f581a219ee35dd7f9d5285bacd49d2d-360002715577.png)
+<Image align="center" alt="sina-weibo-retargeting.png" src="https://files.readme.io/8225fbfd74d16bb1a3e2e816933cb22d5f581a219ee35dd7f9d5285bacd49d2d-360002715577.png" />
 
 На уровне рекламного объявления настройте глубокую ссылку и ссылку атрибуции AppsFlyer:
 
 1. Выберите ***deeplink+app*** и вставьте глубокую ссылку в соответствующее поле:
 
-   ![sina-weibo-retargeting-deeplink.png](https://files.readme.io/dc5666893ff99dcb808a15aa2e41396b359617e2f6271f246a10893d4b05eebe-360002715557.png)
+   <Image align="center" alt="sina-weibo-retargeting-deeplink.png" src="https://files.readme.io/dc5666893ff99dcb808a15aa2e41396b359617e2f6271f246a10893d4b05eebe-360002715557.png" />
 
    <div id="example-1" />
 
@@ -300,7 +300,7 @@ Weibo предлагает четыре формата рекламы для п�
 
 2. Скопируйте ссылку атрибуции с дэшборда AppsFlyer со всеми необходимыми параметрами и вставьте ее в поле ссылки атрибуции:
 
-   ![sina-weibo-retargeting-links.png](https://files.readme.io/edd0861728e19a0bc0e23641161c2365cf5c41eeccaa801bd4e8c3392215fe83-360002799598.png)
+   <Image align="center" alt="sina-weibo-retargeting-links.png" src="https://files.readme.io/edd0861728e19a0bc0e23641161c2365cf5c41eeccaa801bd4e8c3392215fe83-360002799598.png" />
 
    <div id="example-2" />
 

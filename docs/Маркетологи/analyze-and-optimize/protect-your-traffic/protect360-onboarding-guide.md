@@ -74,7 +74,7 @@ Fraud Protection Studio предлагает возможность оценит
 >
 > Вы можете переключаться (<Anchor target="_blank" href="/marketers/ru/docs/user-management">Только для администраторов</Anchor>) между режимами **Реализовано** и **Помечено тегом** в любое время, чтобы обеспечивать соответствие вашим развивающимся бизнес-целям. <Anchor target="_blank" href="/marketers/ru/docs/beta-fraud-protection-studio#key-concepts">Больше информации здесь</Anchor>.
 
-<Image alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
 
 Совет: На этом этапе, когда ваша команда знакомится с Protect360, мы настоятельно рекомендуем ознакомиться с карточкой <Anchor target="_blank" href="/marketers/ru/docs/beta-fraud-protection-studio#app-detection-evaluation">**Оценка обнаружения приложений**</Anchor> в Fraud Protection Studio, чтобы протестировать и разобраться с этими настройками на уровне приложения.
 
@@ -84,7 +84,7 @@ Fraud Protection Studio предлагает возможность оценит
 
 Вы можете экспортировать данные Protect360 тремя способами: <Anchor target="_blank" href="/marketers/ru/docs/protect360-raw-data-reports#описание-отчетов-с-сырыми-данными-в-protect360">Отчёт о сырых данных</Anchor>, <Anchor target="_blank" href="/marketers/ru/docs/protect360-raw-data-reports#pull-api">Pull API</Anchor> и <Anchor target="_blank" href="/marketers/ru/docs/protect360-raw-data-reports#data-locker">Data Locker</Anchor>. Какой бы способ вы ни выбрали, важно правильно настроить ваши подключения данных, чтобы обеспечить точность отчётности о мошенничестве и эффективность выполняемого анализа.
 
-<Image alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
 
 <div id="important" />
 
@@ -124,7 +124,7 @@ Fraud Protection Studio предлагает возможность оценит
 > * Помеченные тегом внутренние события приложения
 > * помеченные внутренние события приложения после атрибуции.
 
-![](https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png)
+<Image align="center" alt="" src="https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png" />
 
 #### **Pull API**
 
@@ -174,7 +174,7 @@ Fraud Protection Studio предлагает возможность оценит
 
 <Anchor target="_blank" href="/marketers/ru/docs/protect360-dashboard">Дэшборд Protect360</Anchor> предоставляет визуальный обзор ваших данных о мошенничестве, позволяя вам проводить дальнейшее исследование и лучше понимать процесс обнаружение мошенничества и его влияние на вашу деятельность.
 
-<Image alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
 
 </Accordion>
 

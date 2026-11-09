@@ -28,7 +28,7 @@ x-zendesk:
 
 Приложения, ожидающие публикации, в AppsFlyer выглядят так же, как и опубликованные. Для них доступны дэшборды, и работают все измерения атрибуции. Единственное отличие — это логотип приложения, который отображается со значком AppsFlyer.
 
-![Pending_App.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
+<Image align="center" alt="Pending_App.png" src="https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png" />
 
 <div id="whats-happening" />
 
@@ -54,7 +54,7 @@ AppsFlyer автоматически проверяет статус прило�
 2. Рядом с приложением, ожидающим публикации, нажмите **Refresh Status** (Обновить статус).  
    Если статус приложения не изменился, оно отображается как ожидающее публикации. Если изменение произошло, отображается статус Live (Опубликовано), а также обновляется логотип.  
 
-   ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
+   <Image align="center" alt="app-refersh-status.png" src="https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png" />
 
 <div id="store-country" />
 

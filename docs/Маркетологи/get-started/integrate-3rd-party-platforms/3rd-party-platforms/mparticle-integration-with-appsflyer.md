@@ -51,17 +51,17 @@ x-zendesk:
 
 3. Нажмите плитку AppsFlyer, чтобы открыть сведения об интеграции, включая такие данные, как категории, доступные платформы, минимальные версии SDK mParticle (если есть), типы данных, идентификаторы пользователей, идентификаторы устройств, доступные события и доступные конфигурации.
 
-![Плитка AppsFlyer в каталоге mParticle](https://files.readme.io/afa886e48f2cddde39007275a72ce03c4a6c4182408bb2ad4c8c183b1591b47d-115015666683.png)
+<Image align="center" alt="Плитка AppsFlyer в каталоге mParticle" src="https://files.readme.io/afa886e48f2cddde39007275a72ce03c4a6c4182408bb2ad4c8c183b1591b47d-115015666683.png" />
 
 4. Кликните **Добавить AppsFlyer к настройке**.
 
 Откроется окно **Add to Setup**:
 
-![mParticle Окно Add to Setup](https://files.readme.io/1eccc4ea365d41d4228eb07f4df88641458244b303ac8805932bf42ef4df5a74-115015476946.png)
+<Image align="center" alt="mParticle Окно Add to Setup" src="https://files.readme.io/1eccc4ea365d41d4228eb07f4df88641458244b303ac8805932bf42ef4df5a74-115015476946.png" />
 
 5. Выберите тип интеграции **Output Event** и нажмите &lt;0>Добавить в настройки0>, чтобы открыть экран настройки конфигурации событий и продолжить процесс настройки.
 
-![mParticle Экран настройки конфигурации событий](https://files.readme.io/9a4720fef99a21a67fd017f4485e73765ebcb7aeb126f5342cc911aff4a345d2-115015476966.png)
+<Image align="center" alt="mParticle Экран настройки конфигурации событий" src="https://files.readme.io/9a4720fef99a21a67fd017f4485e73765ebcb7aeb126f5342cc911aff4a345d2-115015476966.png" />
 
 6. Введите параметры конфигурации AppsFlyer и нажмите **Сохранить**:
 
@@ -70,7 +70,7 @@ x-zendesk:
 * Ключ разработчика
 * Созданная вами конфигурация отображается в группе AppsFlyer Default Group
 
-![Конфигурация AppsFlyer, показанная в группе AppsFlyer Default Group](https://files.readme.io/4d82533f311b93373152f046e92fe46c5e515cb8f5084bb89e81bfcae608172c-115015666803.png)
+<Image align="center" alt="Конфигурация AppsFlyer, показанная в группе AppsFlyer Default Group" src="https://files.readme.io/4d82533f311b93373152f046e92fe46c5e515cb8f5084bb89e81bfcae608172c-115015666803.png" />
 
 Следующий шаг – установить связь между входными платформами и конфигурацией выходных событий AppsFlyer.
 
@@ -83,13 +83,13 @@ x-zendesk:
 10. Введите настройки подключения AppsFlyer:   
 Apple App ID (введите только номер, без префикса ID). Например, если ваш App ID — **id123456789**, введите **123456789**.)
 
-![Экран настроек подключения AppsFlyer](https://files.readme.io/2fb4c7480c5813bf7d893318de5c4a8edfe3649293bf51c8dae422be65db726e-115015477066.png)
+<Image align="center" alt="Экран настроек подключения AppsFlyer" src="https://files.readme.io/2fb4c7480c5813bf7d893318de5c4a8edfe3649293bf51c8dae422be65db726e-115015477066.png" />
 
 11. Нажмите **Добавить подключение**.
 
 AppsFlyer теперь отображается как подключенный выходной источник. Могут быть доступны дополнительные параметры, например пользовательские сопоставления. Подробнее см. в <Anchor target="_blank" href="https://docs.mparticle.com/guides/getting-started/connect-an-event-output#outputs">документации mParticle</Anchor>.
 
-![AppsFlyer отображается как подключенный вывод](https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png)
+<Image align="center" alt="AppsFlyer отображается как подключенный вывод" src="https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png" />
 
 <div id="feed-integrations" />
 
@@ -105,8 +105,8 @@ AppsFlyer теперь отображается как подключенный 
 
 3. Кликните плитку AppsFlyer, чтобы просмотреть сведения об интеграции, содержащие информацию об интеграции.
 
-![Плитка AppsFlyer в mParticle Directory](https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png)
-![Сведения об интеграции AppsFlyer в mParticle](https://files.readme.io/afa886e48f2cddde39007275a72ce03c4a6c4182408bb2ad4c8c183b1591b47d-115015666683.png)
+<Image align="center" alt="Плитка AppsFlyer в mParticle Directory" src="https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png" />
+<Image align="center" alt="Сведения об интеграции AppsFlyer в mParticle" src="https://files.readme.io/afa886e48f2cddde39007275a72ce03c4a6c4182408bb2ad4c8c183b1591b47d-115015666683.png" />
 
 4. Нажмите **Add AppsFlyer to Setup**.
 
@@ -119,11 +119,11 @@ AppsFlyer теперь отображается как подключенный 
 * Название конфигурации
 * Действовать от имени приложения
 
-![Настройки конфигурации фида AppsFlyer](https://files.readme.io/b27aff8223a98b0bf4bd73b6a7a04dc73bc245fa062ac9dd47ed6f4bbeece3f2-115015668703.png)
+<Image align="center" alt="Настройки конфигурации фида AppsFlyer" src="https://files.readme.io/b27aff8223a98b0bf4bd73b6a7a04dc73bc245fa062ac9dd47ed6f4bbeece3f2-115015668703.png" />
 
 7. Завершите настройку в дэшборде AppsFlyer, используя предоставленные данные аутентификации.
 
-![Настройка аутентификации в дэшборде AppsFlyer](https://files.readme.io/3c751a38c3891f73485375d75eacde3e07f86969a7d44cd33bf29ace6bfa1875-115015478566.png)
+<Image align="center" alt="Настройка аутентификации в дэшборде AppsFlyer" src="https://files.readme.io/3c751a38c3891f73485375d75eacde3e07f86969a7d44cd33bf29ace6bfa1875-115015478566.png" />
 
 <div id="deferred-deep-linking" />
 

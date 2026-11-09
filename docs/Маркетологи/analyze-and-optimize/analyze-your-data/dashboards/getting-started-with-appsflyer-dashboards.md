@@ -29,7 +29,7 @@ x-zendesk:
 
 ## Дэшборды AppsFlyer
 
-![OverviewBasic.png](https://files.readme.io/ff5e0fc20694b5f0233af9ea347fc11ae9587b29c542cda8dc2ed8daf334834a-11178012063377.png)
+<Image align="center" alt="OverviewBasic.png" src="https://files.readme.io/ff5e0fc20694b5f0233af9ea347fc11ae9587b29c542cda8dc2ed8daf334834a-11178012063377.png" />
 
 Основной дэшборд — это обзорный дэшборд. Он содержит данные о пожизненной ценности пользователей (LTV), эффективности кампаний по привлечению пользователей (UA) и ретаргетингу.
 

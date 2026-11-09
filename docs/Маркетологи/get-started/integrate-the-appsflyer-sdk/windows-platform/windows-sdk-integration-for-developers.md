@@ -33,7 +33,7 @@ x-zendesk:
 
 SDK AppsFlyer предоставляет функциональность регистрации установок приложения и записи событий.
 
-![SDK_Integration.jpg](https://files.readme.io/11ef01abe55ae3d53d1a3756ffd24bf3262002c3970005cd70047c9d0665b5d1-360001586617.jpg)
+<Image align="center" alt="SDK_Integration.jpg" src="https://files.readme.io/11ef01abe55ae3d53d1a3756ffd24bf3262002c3970005cd70047c9d0665b5d1-360001586617.jpg" />
 
 Вы можете регистрировать установки, обновления и сессии (выполнив обязательные шаги ниже), а также дополнительные события в приложении помимо установок приложения (включая покупки в приложении, уровни игры и т. д.) для оценки ROI и уровня вовлеченности пользователей.
 
@@ -49,7 +49,7 @@ SDK AppsFlyer предоставляет функциональность рег
 
 Универсальный SDK для Windows устанавливается через диспетчер пакетов NuGet. Чтобы установить SDK AppsFlyer для Windows через NuGet:
 
-[![](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)
+<Image align="center" alt="" src="https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png" />
 
 1. Щелкните правой кнопкой мыши файл проекта.
 2. Нажмите ***Manage NuGet Packages***.
@@ -63,11 +63,11 @@ SDK AppsFlyer предоставляет функциональность рег
 2. Скопируйте AppsFlyerLib.winmd в свой проект.
 3. В Visual Studio в проекте Universal Windows Platform нажмите ***Add Reference***.
 
-[![](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)
+<Image align="center" alt="" src="https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png" />
 
 * Найдите AppsFlyerLib.winmd и добавьте его.
 
-[![](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)
+<Image align="center" alt="" src="https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png" />
 
 <div id="important-1" />
 

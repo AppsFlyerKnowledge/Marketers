@@ -30,7 +30,7 @@ x-zendesk:
 >
 > См. бюллетень касательно <Anchor target="_blank" href="/marketers/ru/docs/bulletin-supporting-the-new-google-eu-consent-policy">поддержки новой политики Google в ЕС в отношении согласия пользователей на предоставление данных</Anchor>.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 
 <div id="overview" />
 
@@ -141,7 +141,7 @@ x-zendesk:
 
 **Пользователи из стран, не входящих в ЕС:** Решите, нужно ли вам активировать функцию <Anchor target="_blank" href="/marketers/ru/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**Пользователи не из ЕС**</Anchor>.
 
-<Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="536px" />
+<Image align="center" alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="536px" />
 
 <div id="install-attribution" />
 

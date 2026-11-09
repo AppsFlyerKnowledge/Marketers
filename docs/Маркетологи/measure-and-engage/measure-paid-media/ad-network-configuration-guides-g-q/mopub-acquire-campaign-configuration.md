@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Кратко:** MoPub Acquire (ранее Crossinstall, компания X Ads) — интегрированный партнер AppsFlyer. MoPub Acquire — это платформа DSP для мобильных устройств, специализирующаяся на playable ads в большом масштабе. Помимо мобильной атрибуции по кликам, MoPub Acquire также предлагает атрибуцию по стоимости и просмотрам, которую можно регистрировать с помощью AppsFlyer.
 
-<Image alt="MoPub Acquire, компания Twitter" src="https://cdn.appsflyer.com/marketplace/static/logo/crossinstall.png" width="104px" />
+<Image align="center" alt="MoPub Acquire, компания Twitter" src="https://cdn.appsflyer.com/marketplace/static/logo/crossinstall.png" width="104px" />
 
 <div id="setting-up-mopub-acquire" />
 

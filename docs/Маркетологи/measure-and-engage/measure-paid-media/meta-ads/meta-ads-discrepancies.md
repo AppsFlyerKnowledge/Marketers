@@ -55,7 +55,7 @@ AppsFlyer поддерживает атрибуцию как по кликам, 
 
 Рекомендуется настраивать окна атрибуции в AppsFlyer в соответствии с настройками в Meta Ads, как показано на этом снимке экрана: <Anchor target="_blank" href="https://www.facebook.com/business/help/654970342692714">См. документацию Meta for Developers о сравнении настроек атрибуции.</Anchor> <Anchor target="_blank" href="https://www.facebook.com/business/help/654970342692714">См. документацию Meta for Developers о сравнении настроек атрибуции.</Anchor>
 
-![image (13).png](https://files.readme.io/215d2234aae1ec6b4e1c6ac922915851bf8ab02574a874119d286fa49c64f9ba-25899749062033.png)
+<Image align="center" alt="image (13).png" src="https://files.readme.io/215d2234aae1ec6b4e1c6ac922915851bf8ab02574a874119d286fa49c64f9ba-25899749062033.png" />
 
 <div id="example" />
 

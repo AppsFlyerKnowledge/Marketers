@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Запланируйте миграцию на AppsFlyer от другого поставщика атрибуции. Вы узнаете, как в период миграции избежать двойной оплаты, дублирования и потери данных.
 
-![migration flow](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
+<Image align="center" alt="migration flow" src="https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png" />
 
 <div id="about-migrating-to-appsflyer-from-other-vendors" />
 

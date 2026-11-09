@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **Кратко:** узнайте, как передавать данные плагина ChatGPT в AppsFlyer для получения целостного представления о путях пользователей.
 
-![51523_Image_3.jpg](https://files.readme.io/211f85239a4ce3d1da9d7b0f9cb6a3768ca429bfd09f5c3667f1ee419a625b66-15533978285073.jpg)
+<Image align="center" alt="51523_Image_3.jpg" src="https://files.readme.io/211f85239a4ce3d1da9d7b0f9cb6a3768ca429bfd09f5c3667f1ee419a625b66-15533978285073.jpg" />
 
 <div id="what-are-chatgpt-plugins" />
 

@@ -49,7 +49,7 @@ AppsFlyer отдает наивысший приоритет атрибуции 
 3. AppsFlyer SDK запрашивает API реферера Google Play.
 4. AppsFlyer выполняет атрибуцию на основе полученных данных.
 
-![PAI-attribution-flow_en-us.png](https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png)
+<Image align="center" alt="PAI-attribution-flow_en-us.png" src="https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png" />
 
 <div id="data-availability" />
 

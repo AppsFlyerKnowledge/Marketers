@@ -49,7 +49,7 @@ Adobe Launch SDK является неотъемлемой частью плат
 
 <Accordion title="Получение ключа разработчика AppsFlyer (dev key)">
 
-![dev_key.png](https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png)
+<Image align="center" alt="dev_key.png" src="https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png" />
 
 1. На дэшборде вашего приложения нажмите ***Настройки приложения*** в разделе ***Конфигурация*** в левом меню.
 2. В разделе ***Установка SDK***скопируйте ***Ключ разработчика***.
@@ -75,7 +75,7 @@ Adobe Launch SDK является неотъемлемой частью плат
 
 <Accordion title="1.1 Создание нового свойства в Adobe Launch">
 
-![Примечание](https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png)
+<Image align="center" alt="Примечание" src="https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png" />
 
 1. Войдите в Adobe Experience Cloud.
 2. Выберите ***Launch*** (Запуск).
@@ -92,7 +92,7 @@ Adobe Launch SDK является неотъемлемой частью плат
 
 Установите следующие расширения в Adobe Launch:
 
-![adboe_extensions.png](https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png)
+<Image align="center" alt="adboe_extensions.png" src="https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png" />
 
 * Adobe Analytics соединяет записанные данные из SDK с модулем Adobe Analytics.
 * AppsFlyer SDK Extension отправляет данные и события в Adobe и AppsFlyer с помощью Adobe Launch SDK.
@@ -144,7 +144,7 @@ Adobe Launch SDK является неотъемлемой частью плат
 
 <Accordion title="2.1 Добавление SDK в приложение">
 
-![adobe_sdk.png](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)
+<Image align="center" alt="adobe_sdk.png" src="https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png" />
 
 1. Внутри свойств Adobe выберите ***Environments*** (Среды).
 2. Выберите среду, для которой вы хотите развернуть SDK.
@@ -159,7 +159,7 @@ Adobe Launch SDK является неотъемлемой частью плат
 
 Чтобы завершить реализацию SDK, необходимо опубликовать среду в библиотеке.
 
-![adobe_publishing.png](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)
+<Image align="center" alt="adobe_publishing.png" src="https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png" />
 
 1. Внутри свойств Adobe выберите ***Publishing*** (Публикация).
 2. Нажмите ***Add New Library*** (Добавить новую библиотеку).
@@ -383,7 +383,7 @@ AppsFlyerAdobeExtension.registerAppsFlyerExtensionCallbacks(new AppsFlyerExtensi
 
 1. Войдите в систему <Anchor target="_blank" href="https://mobilemarketing.adobe.com">Adobe Mobile Services</Anchor>.
 
-   ![adobe_analytics.png](https://files.readme.io/d56f170695893dbbde00c50c838ce8a5c2cfe418a17692f372e208d458ed2d6c-31205379096465.png)
+   <Image align="center" alt="adobe_analytics.png" src="https://files.readme.io/d56f170695893dbbde00c50c838ce8a5c2cfe418a17692f372e208d458ed2d6c-31205379096465.png" />
 2. Перейдите в **Admin** > **Report Suites**
 3. Выберите набор отчетов, настроенный во время внедрения Adobe Analytics.
 4. Выберите соответствующее приложение и войдите на страницу ***Manage Variables & Metrics*** (Управление переменными и метриками).

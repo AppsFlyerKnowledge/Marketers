@@ -46,7 +46,7 @@ x-zendesk:
        <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">https://hq1.appsflyer.com/auth/sso-callback</Anchor>
      * **Entity ID:** Введите следующую ссылку: <Anchor target="_blank" href="https://hq1.appsflyer.com/">https://hq1.appsflyer.com/</Anchor>  
 
-       <Image alt="ping" src="https://files.readme.io/8b265666f05bc4f6ab984151d7d73653b9ea5dcb837898d17e96bf9c392fe638-16063467179921.png" width="419px" />
+       <Image align="center" alt="ping" src="https://files.readme.io/8b265666f05bc4f6ab984151d7d73653b9ea5dcb837898d17e96bf9c392fe638-16063467179921.png" width="419px" />
    * Для аутентификации, инициируемой поставщиком удостоверений (IdP) Ping Identity, выберите **Manually Enter**:
      * **URL-адреса ACS:** Введите следующую ссылку, используя идентификатор вашей учетной записи AppsFlyer:   
        `https://hq1.appsflyer.com/auth/sso-callback/<Введите здесь идентификатор вашей учетной записи AppsFlyer>`
@@ -56,7 +56,7 @@ x-zendesk:
    1. Кликните **Download Metadata**.
    2. В правом верхнем углу нажмите значок редактирования и заполните поля ниже:  
 
-      <Image alt="ping" src="https://files.readme.io/386fab01b9389d88ea0c4870ba2ea8e33d9ab6e27322059be5e46efbf248714b-16063435689233.png" width="487px" />
+      <Image align="center" alt="ping" src="https://files.readme.io/386fab01b9389d88ea0c4870ba2ea8e33d9ab6e27322059be5e46efbf248714b-16063435689233.png" width="487px" />
 
       * **КЛЮЧ ПОДПИСИ:**
         * Выберите **Sign Assertion & Response**.
@@ -71,7 +71,7 @@ x-zendesk:
 6. Нажмите **Save** (Сохранить).
 7. На вкладке **Attribute Mappings** нажмите значок редактирования и выберите **Email Address** в разделе **PingOne Mappings**.  
 
-   <Image alt="ping-identity" src="https://files.readme.io/b93ac5463868c8f5f7760b60492a30f7ae59c52b766e76ef57fbe42e00f4bf2b-16292200523025.png" width="620px" />
+   <Image align="center" alt="ping-identity" src="https://files.readme.io/b93ac5463868c8f5f7760b60492a30f7ae59c52b766e76ef57fbe42e00f4bf2b-16292200523025.png" width="620px" />
 8. Нажмите **Save** (Сохранить).
 
 </Accordion>
@@ -84,7 +84,7 @@ x-zendesk:
 
 1. В меню администратора Ping Identity перейдите в **Identity** > **<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/group">Groups</Anchor>** и кликните +.  
 
-   <Image alt="ping" src="https://files.readme.io/fcc2a3f035a285d96d7b7c3e83cfeed64e86cb0f0807e6acced75df89bd8dfc4-16292210866705.png" width="216px" />
+   <Image align="center" alt="ping" src="https://files.readme.io/fcc2a3f035a285d96d7b7c3e83cfeed64e86cb0f0807e6acced75df89bd8dfc4-16292210866705.png" width="216px" />
 2. В открывшейся справа панели введите название группы и кликните **Save**.
 3. Повторите шаги 1–2 для всех групп пользователей.
 
@@ -96,7 +96,7 @@ x-zendesk:
 
 1. В меню администратора Ping Identity перейдите в **Identity** > <Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/user">**Users**</Anchor> и кликните +.  
 
-   ![ping](https://files.readme.io/802946a62c1df918b82cccc1cf0855ffea8167ed91aa6b0d6bce8973c37b4e75-16292200536081.png)
+   <Image align="center" alt="ping" src="https://files.readme.io/802946a62c1df918b82cccc1cf0855ffea8167ed91aa6b0d6bce8973c37b4e75-16292200536081.png" />
 2. В открывшемся справа разделе:
    1. Введите имя пользователя и адрес электронной почты.
    2. Выберите **Administrator Population**.
@@ -117,7 +117,7 @@ x-zendesk:
 
 1. В меню администратора Ping Identity перейдите в **Connections** > **<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications">Applications</Anchor>** и выберите созданное приложение.  
 
-   ![pi-applications.png](https://files.readme.io/6c8545bc5334747d7da6a090ca745c1b00cfedc3f48e59ccc304c814885cd183-16522614384785.png)
+   <Image align="center" alt="pi-applications.png" src="https://files.readme.io/6c8545bc5334747d7da6a090ca745c1b00cfedc3f48e59ccc304c814885cd183-16522614384785.png" />
 2. На панели, открывшейся справа, выберите вкладку **Access** и нажмите кнопку Edit.
 3. Выберите созданные группу или группы и нажмите **Save**.
 
@@ -128,7 +128,7 @@ x-zendesk:
 1. В меню администратора Ping Identity перейдите в **Connections** > **<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications">Applications</Anchor>** и выберите созданное приложение.
 2. Активируйте приложение.  
 
-   ![pi-appsflyer](https://files.readme.io/24c34f3426ae7b46301316937ae8485464e0b3810808e3bbcc1be843ba34a616-16523020816657.png)
+   <Image align="center" alt="pi-appsflyer" src="https://files.readme.io/24c34f3426ae7b46301316937ae8485464e0b3810808e3bbcc1be843ba34a616-16523020816657.png" />
 
 </Accordion>
 

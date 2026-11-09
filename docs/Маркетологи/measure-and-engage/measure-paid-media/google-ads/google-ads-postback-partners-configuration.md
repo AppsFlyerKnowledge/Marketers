@@ -59,7 +59,7 @@ x-zendesk:
 
 4. В аккаунте **Google Ads** скопируйте идентификатор клиента (без дефисов):
 
-![](https://files.readme.io/7afd536d06b1aca68744a83925ecac86fcef4cc47225826af20120f128da004f-21414601345681.png)
+<Image align="center" alt="" src="https://files.readme.io/7afd536d06b1aca68744a83925ecac86fcef4cc47225826af20120f128da004f-21414601345681.png" />
 
 5. Вставьте номер в поле **Google Ads Customer ID**.
 

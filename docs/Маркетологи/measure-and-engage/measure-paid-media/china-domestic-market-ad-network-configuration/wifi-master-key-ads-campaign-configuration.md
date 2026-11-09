@@ -58,13 +58,13 @@ x-zendesk:
 
 WiFi Master Key Ads подключается к AppsFlyer с помощью уникальных clientid и secretkey. Если у вас еще нет clientid и secretkey, необходимо получить их в WiFi Master Key Ads, чтобы продолжить интеграцию.
 
-<Image alt="mceclip2.png" src="https://files.readme.io/8b486a98e25837a0d64e0a27e9b3aa7b66b426e8bad3fbae07b7436b91351db5-50900288875153.png" width="406px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/8b486a98e25837a0d64e0a27e9b3aa7b66b426e8bad3fbae07b7436b91351db5-50900288875153.png" width="406px" />
 
 <div id="default-postbacks" />
 
 ### Постбэки по умолчанию
 
-<Image alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="509px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="509px" />
 
 <div id="in-app-events-settings" />
 
@@ -76,7 +76,7 @@ WiFi Master Key Ads подключается к AppsFlyer с помощью ун
 
 WiFi Master Key Ads подключается к AppsFlyer с помощью уникальных clientid и secretkey. Если у вас еще нет clientid и secretkey, необходимо получить их в WiFi Master Key Ads, чтобы продолжить интеграцию.
 
-![mceclip3.png](https://files.readme.io/035ce248d6876cf31870abc49e949fc887f6bef08efd6e132e43b8c74e3aaf45-50900269524881.png)
+<Image align="center" alt="mceclip3.png" src="https://files.readme.io/035ce248d6876cf31870abc49e949fc887f6bef08efd6e132e43b8c74e3aaf45-50900269524881.png" />
 
 1. Укажите здесь clientid и secretkey для WiFi Master Key Ads.
 2. Установите переключатель "Постбэки внутренних событий приложения" в положение "Включено"
@@ -118,7 +118,7 @@ WiFi Master Key Ads подключается к AppsFlyer с помощью ун
 * **Subscriber Parameters** — используйте любой из 5 параметров подписчика, чтобы подставить полезные значения. Обратите внимание, что эти параметры парсятся и отображаются в Отчете о сырых данных, что делает их очень удобными для агрегации или фильтрации данных.  
   **Параметры ссылки атрибуции:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 Если нужно добавить в ссылку атрибуции другой параметр, просто введите его в поле нового параметра. Дополнительные сведения см. в статье <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">**Структура и параметры ссылки атрибуции в AppsFlyer**</Anchor>.
 
@@ -132,7 +132,7 @@ WiFi Master Key Ads подключается к AppsFlyer с помощью ун
 
 Подробные сведения об окне атрибуции по кликам <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">см. здесь</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png" />
 
 <div id="click-attribution-link" />
 
@@ -164,7 +164,7 @@ WiFi Master Key Ads подключается к AppsFlyer с помощью ун
 
 На этой вкладке можно выбрать разрешения для WiFi Master Key Ads в зависимости от того, в каком качестве выступает партнер: как рекламная сеть, агентство или и то, и другое. Обратите внимание, что даже если атрибуция для WiFi Master Key Ads отключена, вкладка разрешений остается активной и вы можете предоставить WiFi Master Key Ads разрешение на управление.
 
-![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png" />
 
 <div id="ad-network-permissions" />
 

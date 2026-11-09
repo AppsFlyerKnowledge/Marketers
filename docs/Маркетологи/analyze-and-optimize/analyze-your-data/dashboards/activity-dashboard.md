@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Краткий обзор.** Просмотрите метрики активности, интеракций и внутренних событий за определенный период. Метрики за текущий день обновляются в режиме реального времени.
 
-![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
+<Image align="center" alt="ActivityDB.png" src="https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png" />
 
 <div id="activity-dashboard" />
 
@@ -194,7 +194,7 @@ x-zendesk:
 
 <Accordion title="Вкладка «Месячный обзор»: предыдущие двенадцать месяцев">
 
-![ActivityHiLevel.png](https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png)
+<Image align="center" alt="ActivityHiLevel.png" src="https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png" />
 
 Вкладка содержит исторический обзор показателей активности приложения за двенадцать месяцев и следующие графики: 
 

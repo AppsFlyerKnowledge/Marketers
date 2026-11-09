@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **At a glance:** **Краткий обзор:** Отправляйте события с ваших серверов в AppsFlyer для измерения мобильных событий, происходящих за пределами приложения.
 
-![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
+<Image align="center" alt="S2S_us-en.png" src="https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png" />
 
 <div id="server-to-server-events-api-for-mobile" />
 
@@ -134,7 +134,7 @@ AppsFlyer заполняет S2S события следующими данны�
 
 <Accordion title="Отметка времени событий S2S">
 
-![диаграмма логики метки времени](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)
+<Image align="center" alt="диаграмма логики метки времени" src="https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png" />
 
 Когда S2S события поступают в AppsFlyer оптом, им присваивается временная метка на основе ценностей, значений их свойства `eventTime` и времени прибытия. Свойство `eventTime` указывает время возникновения внутреннего события приложения.
 

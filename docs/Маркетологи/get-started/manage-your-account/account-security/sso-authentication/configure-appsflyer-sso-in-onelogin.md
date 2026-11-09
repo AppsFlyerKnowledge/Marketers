@@ -38,7 +38,7 @@ x-zendesk:
 2. В правом верхнем углу нажмите **Add App**.
 3. Найдите и выберите **SAML Custom Connector (Advanced)**.  
 
-   <Image alt="onelogin_saml_app.png" src="https://files.readme.io/c1e5ec122e21f05e860486ad280ba9e692b3d05b05105d9c1ca700b8921ee6ab-15045173609745.png" width="601px" />
+   <Image align="center" alt="onelogin_saml_app.png" src="https://files.readme.io/c1e5ec122e21f05e860486ad280ba9e692b3d05b05105d9c1ca700b8921ee6ab-15045173609745.png" width="601px" />
 4. В поле **Display Name** введите имя, которое будет отображаться в списке приложений плагина OneLogin.
 5. [Необязательно] **App logo**: добавьте логотип, который будет отображаться рядом с названием приложения.
 6. [Необязательно] Добавьте описание.
@@ -95,7 +95,7 @@ x-zendesk:
 2. Нажмите значок + рядом с **Applications**.
 3. Выберите созданное вами приложение AppsFlyer и нажмите **Continue**.  
 
-   <Image alt="onelogin_assign_app.png" src="https://files.readme.io/a1769673f3f167f728a00fb1cccb951bd246798fd7327c51b021f73987bc8fb2-15552909316241.png" width="326px" />
+   <Image align="center" alt="onelogin_assign_app.png" src="https://files.readme.io/a1769673f3f167f728a00fb1cccb951bd246798fd7327c51b021f73987bc8fb2-15552909316241.png" width="326px" />
 4. В верхнем меню перейдите в **Applications** > **<Anchor target="_blank" href="https://appsflyer-dev.onelogin.com/admin2/apps">Applications</Anchor>**.
 5. Выберите приложение, которое вы только что создали.
 6. Нажмите **Save** (Сохранить).

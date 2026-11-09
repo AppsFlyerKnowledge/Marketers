@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Spotify — рекламная сеть, интегрированный партнер AppsFlyer, которая использует свое усовершенствованное решение для мобильной рекламы, чтобы создавать стратегические, масштабируемые и интеллектуальные кампании, отвечающие потребностям мобильных пользователей. В Spotify клики генерируются, когда пользователь нажимает кнопку CTA во время просмотра или прослушивания рекламы.
 
-<Image alt="Spotify_Full_Logo_RGB_Black.png" src="https://files.readme.io/e3908e19ec71c506c2ff135652cea6529f128743d8284c02c1a481f24485b3a6-small-37818004235409.png" width="53.91%" />
+<Image align="center" alt="Spotify_Full_Logo_RGB_Black.png" src="https://files.readme.io/e3908e19ec71c506c2ff135652cea6529f128743d8284c02c1a481f24485b3a6-small-37818004235409.png" width="53.91%" />
 
 <div id="setting-up-spotify" />
 

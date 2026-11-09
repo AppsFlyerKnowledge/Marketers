@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Краткий обзор.** Tealium, платформа данных о клиентах (CDP), объединяет данные о клиентах в интернете, на мобильных устройствах, в интернете вещей и вне сети. Узнайте, как автоматически обмениваться данными о конверсиях с помощью Tealium.
 
-<Image alt="Tealium_icon.png" src="https://files.readme.io/e3cc1f95e8ce2de6fa83df63ff78dd4f4f76aebe1acb8e9378aa5b6aa4134364-10820461521681.png" width="276px" />
+<Image align="center" alt="Tealium_icon.png" src="https://files.readme.io/e3cc1f95e8ce2de6fa83df63ff78dd4f4f76aebe1acb8e9378aa5b6aa4134364-10820461521681.png" width="276px" />
 
 <div id="overview" />
 

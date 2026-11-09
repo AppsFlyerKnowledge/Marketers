@@ -43,7 +43,7 @@ x-zendesk:
 
 Описание предоставленных журналом аудита данных и краткий обзор его возможностей приведены в таблице ниже.
 
-[![audit_log.png](https://files.readme.io/4101dfb4dc84e4e916d165a22387bd6a84fa7889bc4e82e636c980fde1cac248-6867050961809.png)](https://files.readme.io/4101dfb4dc84e4e916d165a22387bd6a84fa7889bc4e82e636c980fde1cac248-6867050961809.png)
+<Image align="center" alt="audit_log.png" src="https://files.readme.io/4101dfb4dc84e4e916d165a22387bd6a84fa7889bc4e82e636c980fde1cac248-6867050961809.png" />
 
 |  | Элемент | Описание |
 | --- | --- | --- |

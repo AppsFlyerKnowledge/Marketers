@@ -53,7 +53,7 @@ x-zendesk:
 
 **Окно фильтров и группировок**
 
-[![p360_filters_2.png](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)
+<Image align="center" alt="p360_filters_2.png" src="https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png" />
 
 Доступны следующие параметры фильтрации и группировки:
 
@@ -106,7 +106,7 @@ x-zendesk:
 
 **Выявленные мошеннические случаи атрибуции**
 
-[<Image alt="" src="https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png" width="100%" />](https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png)
+<Image align="center" alt="" src="https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png" width="100%" />
 
 Метрики по общему количеству выявленных случаев мошенничества показывают:
 
@@ -115,31 +115,31 @@ x-zendesk:
 
 **Заблокированные события**
 
-[<Image alt="" src="https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png" width="100%" />](https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png)
+<Image align="center" alt="" src="https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png" width="100%" />
 
 Метрики по заблокированным внутренним событиям показывают количество внутренних событий приложения, заблокированных AppsFlyer. События могут быть заблокированы из-за связи с заблокированными установками или из-за того, что они помечены как подозрительные события после атрибуции.
 
 **Всего атрибуций с тегом**
 
-[<Image alt="" src="https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png" width="100%" />](https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png)
+<Image align="center" alt="" src="https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png" width="100%" />
 
 Метрики атрибуций с тегом отображают число установок, которые были распознаны как фрод, но помечены пользователем тегом и не заблокированы. это не включает события в приложении.
 
 **Число мошеннических событий в приложении**
 
-[<Image alt="" src="https://files.readme.io/79650837a722efdc3bea39664f0d5eb774ac6acbfb15e5f64d9a56f7c03b21fe-32637238112145.png" width="100%" />](https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png)
+<Image align="center" alt="" src="https://files.readme.io/79650837a722efdc3bea39664f0d5eb774ac6acbfb15e5f64d9a56f7c03b21fe-32637238112145.png" width="100%" />
 
 Метрики событий в приложении с тегом отображают число установок, которые были распознаны как фрод, но помечены пользователем тегом и не заблокированы.
 
 **Установки, признанные ложными после атрибуции**
 
-<Image alt="" src="https://files.readme.io/60fdba97e9eb920e26ac2667431b760a7dee62b53396196403d68326bff6c3cc-41459847283729.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/60fdba97e9eb920e26ac2667431b760a7dee62b53396196403d68326bff6c3cc-41459847283729.png" width="624px" />
 
 Установки, в которых устройство было определено логикой атрибуции AppsFlyer как перегруженное неаутентичными вовлечениями.
 
 **Средняя вовлеченность на установку**
 
-<Image alt="" src="https://files.readme.io/edb695ad30e16e403d953fd0fad274d5733ca4e2dc411baad7bbe4179cfcd0b0-41459862819857.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/edb695ad30e16e403d953fd0fad274d5733ca4e2dc411baad7bbe4179cfcd0b0-41459862819857.png" width="624px" />
 
  Средняя вовлеченность на установку показывает среднее число вовлечений, связанных с установкой.
 
@@ -232,7 +232,7 @@ x-zendesk:
 
 Таблица представлена в общем формате обзора, как показано на следующем изображении.
 
-[![p360_main_table.png](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)
+<Image align="center" alt="p360_main_table.png" src="https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png" />
 
 Структура динамической таблицы:
 
@@ -240,7 +240,7 @@ x-zendesk:
   Если вы вносите какие-либо изменения в таблицу, обязательно нажмите кнопку **Сохранить**.
 * Разбита по пользователям, чтобы каждый пользователь аккаунта, у которого есть доступ к Protect360, мог настроить свою собственную структуру таблицы. См. [дополнительные функции таблицы](/docs/protect360-dashboard#дополнительные-опции-таблицы).
 
-[![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+<Image align="center" alt="edit_table.jpg" src="https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg" />
 
 <div id="content-of-the-identified-fraud-breakdown-table" />
 
@@ -338,7 +338,7 @@ x-zendesk:
 
 <Accordion title="Внутренние события: метрики заголовка">
 
-[![](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)
+<Image align="center" alt="" src="https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg" />
 
 Метрики заголовка показывают:
 
@@ -389,7 +389,7 @@ x-zendesk:
 
 Таблица представлена в общем формате обзора, как показано на следующем изображении.
 
-[![IAE_fraud_table.jpg](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)
+<Image align="center" alt="IAE_fraud_table.jpg" src="https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg" />
 
 Структура динамической таблицы:
 
@@ -397,7 +397,7 @@ x-zendesk:
   Если вы вносите какие-либо изменения в таблицу, обязательно нажмите кнопку **Сохранить**.
 * Разбита по пользователям, чтобы каждый пользователь аккаунта, у которого есть доступ к Protect360, мог настроить свою собственную структуру таблицы. См. [дополнительные функции таблицы](/docs/protect360-dashboard#installs-table).
 
-[![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
+<Image align="center" alt="iae_table_structure.jpg" src="https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg" />
 
 <div id="content-of-the-in-app-event-fraud-breakdown-table" />
 
@@ -448,17 +448,17 @@ x-zendesk:
 **Чтобы активировать платные событиям на дэшборде по активности внутри приложения, сделайте следующее**:
 
 * В разделе **Фильтровать по** дэшборда по активности внутри приложения, включите Платные события.  
-  [![](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)
+  <Image align="center" alt="" src="https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg" />
 
 **Для настройки платных событий выполните следующее**:
 
 1. На дэшборде по активности внутри приложения нажмите кнопку **Настроить платные приложения**.
 
-   [![](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg" />
 
    Появится всплывающее окно настройки платных событий.
 
-   [![](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg" />
 2. [Необязательно] Если вы настраиваете новое платное событие, нажмите **Добавить новое**.
 3. В зависимости от того, какие платные IAE необходимо отобразить на дэшборде, выберите следующие опции из раскрывающихся меню:
    * Приложения

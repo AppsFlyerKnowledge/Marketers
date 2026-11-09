@@ -33,11 +33,11 @@ x-zendesk:
 
 ## Включение интеграции
 
-![itunes-connect-app-analytics.png](https://files.readme.io/e1e480c1af63a3404e40ba4049dac13497a4db8b298a1735812524392232f2d9-11523192862353.png)
+<Image align="center" alt="itunes-connect-app-analytics.png" src="https://files.readme.io/e1e480c1af63a3404e40ba4049dac13497a4db8b298a1735812524392232f2d9-11523192862353.png" />
 
 Чтобы включить интеграцию, просто отправьте iTunes Provider ID своему аккаунт-менеджеру AppsFlyer:
 
-![itunes-connect-app-analytics2.png](https://files.readme.io/7ae2c205b45a9084752a85c4bec93cb052f0e288a1dbee97c1eb5e51cd66d730-11523234132753.png)
+<Image align="center" alt="itunes-connect-app-analytics2.png" src="https://files.readme.io/7ae2c205b45a9084752a85c4bec93cb052f0e288a1dbee97c1eb5e51cd66d730-11523234132753.png" />
 
 **Известное ограничение:** Интеграция работает только с сетями, которые перенаправляют клики через AppsFlyer. SRN (например, Meta Ads, X Ads, Google Ads и т. д.) в настоящее время не поддерживаются.
 

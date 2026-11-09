@@ -56,7 +56,7 @@ x-zendesk:
    [![](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png)](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png) **Примечание**: Если у вас нет созданных шаблонов, откроется мастер онбординга. Следуйте указаниям в мастере и игнорируйте оставшуюся часть этой процедуры.
 2. Нажмите значок меню > **Добавить шаблон OneLink**.  
    Откроется страница настройки шаблона OneLink.  
-   [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
+   <Image align="center" alt="OneLink_template_page_en-us.png" src="https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png" />
 3. В поле **Название шаблона OneLink** введите название.
 
    <div id="note" />
@@ -152,7 +152,7 @@ x-zendesk:
       * Скажите ему, чтобы он следовал <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links">этим инструкциям</Anchor>.
       * Разработчик вернет вам Team ID (также называемый префиксом Apple App ID, например, PF23MIWNTW).
       * Если приложение еще не опубликовано, разработчик также должен предоставить вам идентификатор пакета (например com.myapp.something).  
-        [![](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)
+        <Image align="center" alt="" src="https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png" />
    2. На странице шаблона OneLink нажмите **Change to launch the app using Universal Links**.
    3. В новом окне выберите **Launch the app using Universal Links** (Запуск приложения с помощью универсальных ссылок).
    4. В поле **Team ID** введите идентификатор команды, предоставленный разработчиком.
@@ -235,7 +235,7 @@ x-zendesk:
 
 <Accordion title="Настройка QR-кода">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 Вы можете настроить вид QR-кодов, созданных через OneLink:
 

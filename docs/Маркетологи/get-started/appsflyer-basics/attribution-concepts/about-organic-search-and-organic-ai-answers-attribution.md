@@ -54,7 +54,7 @@ x-zendesk:
 2. SDK веб-атрибуции или S2S-интеграция считывает веб-реферер — поле, которое показывает, откуда пришел пользователь. AppsFlyer атрибутирует веб-посещение соответствующему SEO- или AEO-медиаисточнику.
 3. Если позже пользователь выполняет значимое действие, например регистрируется или совершает покупку, AppsFlyer атрибутирует событие этой поисковой системе или AI answer engine.
 
-<Image alt="Google Chrome 2026-11-01 19.17.00.png" src="https://files.readme.io/1188ff2a1b87b4ae825c6a2e2d1d67d7663cd526b1a3cfce7107265886d457a1-52589945729553.png" width="2266px" />
+<Image align="center" alt="Google Chrome 2026-11-01 19.17.00.png" src="https://files.readme.io/1188ff2a1b87b4ae825c6a2e2d1d67d7663cd526b1a3cfce7107265886d457a1-52589945729553.png" width="2266px" />
 
 Узнать больше об <Anchor target="_blank" href="/marketers/ru/docs/about-traffic-source-resolution#шаг-2-определение-медиаисточников">определении источника трафика</Anchor>.
 
@@ -76,7 +76,7 @@ x-zendesk:
 3. Smart Script создает ссылку атрибуции AppsFlyer. Ее медиаисточник (`pid`) определяется на основе веб-реферера, то есть страницы, с которой пришел пользователь. Например, пользователь приходит с google.com, и у визита нет признаков платного трафика (`pid`, параметры UTM, `gclid`, `gbraid` или `wbraid`). Тогда Smart Script может задать `pid=google_organic_seo`.
 4. Пользователь устанавливает приложение и открывает его в первый раз. AppsFlyer может атрибутировать установку этому клику и засчитать ее поисковой системе или AI-системе ответов, которая направила пользователя на ваш сайт.
 
-<Image alt="Google Chrome 2026-11-01 19.18.06.png" src="https://files.readme.io/3e6db22edfc5f8a22fd32c0167d1d0868a65097aaf9b6967f5c1162b40ebb85f-52589954515089.png" width="2250px" />
+<Image align="center" alt="Google Chrome 2026-11-01 19.18.06.png" src="https://files.readme.io/3e6db22edfc5f8a22fd32c0167d1d0868a65097aaf9b6967f5c1162b40ebb85f-52589954515089.png" width="2250px" />
 
 Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-smart-script-to-convert-web-visitors#seo-referrer-mapping">настройке Smart Scripts для конвертации посетителей сайта</Anchor>.
 
@@ -97,7 +97,7 @@ x-zendesk:
 2. Контент вашего сайта сопоставлен с вашим приложением, и у пользователя установлено приложение. Ссылка сразу открывает приложение на соответствующем контенте.
 3. Приложение открывается через диплинк. Веб-реферер, то есть страница, с которой пришел пользователь, отправляется в AppsFlyer. AppsFlyer использует его, чтобы атрибутировать открытие приложения соответствующей поисковой системе или AI-сервису ответов.
 
-<Image alt="Google Chrome 2026-11-01 19.18.53.png" src="https://files.readme.io/36363bbe8d74921f5c286b600f7e25daa91746fd8f2d217cf74c84ae43d4b528-52589954523025.png" width="2227px" />
+<Image align="center" alt="Google Chrome 2026-11-01 19.18.53.png" src="https://files.readme.io/36363bbe8d74921f5c286b600f7e25daa91746fd8f2d217cf74c84ae43d4b528-52589954523025.png" width="2227px" />
 
 Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">настройке атрибуции повторного вовлечения для органического поиска (SEO) и органических ответов ИИ (AEO)</Anchor>.
 

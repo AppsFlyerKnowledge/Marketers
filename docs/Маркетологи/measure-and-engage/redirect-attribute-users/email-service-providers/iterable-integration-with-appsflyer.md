@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **At a glance:** Интегрируйте ссылки атрибуции на основе OneLink с системой Iterable для <Anchor target="_blank" href="/marketers/ru/docs/email-service-provider-esp-integration-guide">перенаправления по диплинкам из электронных писем.</Anchor> В интеграции используется поддержка Iterable универсальных ссылок в дополнение к фирменным доменам регистрации кликов.
 
-![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
+<Image align="center" alt="iterable-af-logo.png" src="https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png" />
 
 <div id="introduction" />
 

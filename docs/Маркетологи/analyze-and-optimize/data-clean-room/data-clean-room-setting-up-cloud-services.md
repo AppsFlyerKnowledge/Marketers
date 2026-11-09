@@ -90,7 +90,7 @@ x-zendesk:
    1. На панели **слева** нажмите кнопку **Просмотр действий** <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> справа от идентификатора проекта.
    2. Выберите **Создать набор данных.**
 
-      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
+      <Image align="center" alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. В открывшейся панели **справа** введите название набора данных и выберите другие необходимые параметры.
       * Вы можете использовать любое подходящее вам название, используя только буквы, цифры и знак подчеркивания (\_).
         * **Рекомендация:** используйте название, указывающее на то, что набор данных используется для входящего подключения.
@@ -104,7 +104,7 @@ x-zendesk:
       `appsflyer-dcr@dcr-report.iam.gserviceaccount.com.`
    5. В разделе **Назначение ролей** выберите **BigQuery > BigQuery Data Viewer** (BigQuery — Просмотр данных).
 
-      <Image alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
+      <Image align="center" alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
    6. Нажмите кнопку ***Save*** (Сохранить).
    7. Нажмите **CLOSE** (Закрыть), чтобы закрыть правую боковую панель.
 
@@ -123,10 +123,10 @@ x-zendesk:
 3. На панели слева выберите **Private Sharing** (Ограниченный доступ).
 4. На открывшейся странице выберите вкладку **Shared By Your Account** (Предоставлено вашим аккаунтом).
 
-   <Image alt="snowflake_private_sharing.png" src="https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png" width="609px" />
+   <Image align="center" alt="snowflake_private_sharing.png" src="https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png" width="609px" />
 5. Нажмите кнопку **Поделиться**. В открывшемся списке выберите **Create a Direct Share** (Создать прямой обмен данными).
 
-   <Image alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
+   <Image align="center" alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
 6. Выберите таблицы и/или представления, которыми вы хотите поделиться с DCR, затем нажмите **Done** (Готово).
 7. В соответствии с вашими потребностями измените **Secure Share Identifier** (Идентификатор безопасного обмена) и добавьте дополнительное описание.
 8. В поле **Добавить аккаунты в вашем регионе по имени** введите один из следующих аккаунтов AppsFlyer Snowflake, в соответствии с регионом вашего аккаунта Snowflake:
@@ -245,7 +245,7 @@ x-zendesk:
       `appsflyer-dcr@dcr-report.iam.gserviceaccount.com.`
    5. В списке **Role** (Роль) выберите **Cloud storage** (Облачное хранилище) > **Storage Admin** (Администратор хранилища).  
 
-      ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
+      <Image align="center" alt="dcr_gcs_permissions.png" src="https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png" />
    6. Нажмите кнопку ***Save*** (Сохранить).
 
 </Accordion>
@@ -278,7 +278,7 @@ DCR передает отчеты в выбранные вами облачны�
    1. На панели **слева** нажмите кнопку **Просмотр действий** <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> справа от идентификатора проекта.
    2. Выберите **Создать набор данных.**
 
-      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
+      <Image align="center" alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. В открывшейся панели **справа** введите название набора данных и выберите другие необходимые параметры.
       * Вы можете использовать любое подходящее вам название, используя только буквы, цифры и знак подчеркивания (\_).
         * **Рекомендация:** используйте название, указывающее на то, что набор данных используется для исходящего подключения.
@@ -292,7 +292,7 @@ DCR передает отчеты в выбранные вами облачны�
       `datalocker-bq-admin-prod@datalocker-bq-prod.iam.gserviceaccount.com.`
    5. В разделе **Назначение ролей** выберите **BigQuery > BigQuery Data Editor** (BigQuery — Редактирование данных).
 
-      <Image alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
+      <Image align="center" alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
    6. Нажмите кнопку ***Save*** (Сохранить).
    7. Нажмите **CLOSE** (Закрыть), чтобы закрыть правую боковую панель.
 
@@ -434,7 +434,7 @@ DCR передает отчеты в выбранные вами облачны�
    `appsflyer-dcr@dcr-report.iam.gserviceaccount.com.`
 7. В списке **Role** (Роль) выберите **Cloud storage** (Облачное хранилище) > **Storage Admin** (Администратор хранилища).  
 
-   ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
+   <Image align="center" alt="dcr_gcs_permissions.png" src="https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png" />
 8. Нажмите кнопку ***Save*** (Сохранить).
 
 </Accordion>

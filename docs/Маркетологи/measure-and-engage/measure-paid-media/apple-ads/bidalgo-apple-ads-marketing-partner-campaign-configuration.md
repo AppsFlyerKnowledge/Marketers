@@ -52,7 +52,7 @@ x-zendesk:
    4. Нажмите кнопку **Save Integration** (Сохранить интеграцию).
 2. **На дэшборде Apple Ads**: получите параметр идентификатор ID группы кампаний Apple Ads, связанный с Bidalgo. Чтобы найти идентификатор, следуйте указаниям на скриншоте ниже.
 
-   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 3. **В AppsFlyer настройте Bidalgo:**
    1. В AppsFlyer в боковом меню выберите **Сотрудничество**> **Активные интеграции**.
    2. Найдите Bidalgo — маркетингового партнера Apple Ads.  

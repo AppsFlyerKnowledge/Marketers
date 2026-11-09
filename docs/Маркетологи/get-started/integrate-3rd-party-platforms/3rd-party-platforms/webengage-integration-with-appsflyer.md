@@ -79,7 +79,7 @@ AppsFlyer может автоматически отправлять постб�
 * **Выкл.** : не отправлять постбэки по установкам.
 * **Все медиаисточники, включая органические**: отправляйте постбэки для событий, атрибутированных любому партнеру, а также для органических событий.
 
-![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png)
+<Image align="center" alt="web_mo_engage_default_postbacks_en-us.png" src="https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png" />
 
 <div id="note" />
 

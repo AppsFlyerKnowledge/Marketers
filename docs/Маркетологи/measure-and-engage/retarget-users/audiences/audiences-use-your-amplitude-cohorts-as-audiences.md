@@ -51,7 +51,7 @@ x-zendesk:
 
    **Важно!** Если в вашей учетной записи Amplitude уже созданы места назначения данных AppsFlyer, диалоговое окно будет представлять собой прокручиваемый список, в котором отображены все существующие места назначения. Чтобы создать новое место назначения, прокрутите список до конца и нажмите **Добавить другой пункт назначения**.
 
-   [![](https://files.readme.io/ba47fc9a411bd55d84ad34ccd5c1d74fecb1648f8f7aed3ae713965bef616ae8-33375708375441.png)](https://files.readme.io/ba47fc9a411bd55d84ad34ccd5c1d74fecb1648f8f7aed3ae713965bef616ae8-33375708375441.png)
+   <Image align="center" alt="" src="https://files.readme.io/ba47fc9a411bd55d84ad34ccd5c1d74fecb1648f8f7aed3ae713965bef616ae8-33375708375441.png" />
 
    
 
@@ -78,7 +78,7 @@ x-zendesk:
 
    Откроется диалоговое окно **Определение назначения и частоты**.
 
-   [![amplitude_define_destination_and_cadence_dialog.png](https://files.readme.io/e9f726c731e865e6313bf430b1e5506db5a820fc7d3d544747a873cf08139b26-33375708382097.png)](https://files.readme.io/e9f726c731e865e6313bf430b1e5506db5a820fc7d3d544747a873cf08139b26-33375708382097.png)
+   <Image align="center" alt="amplitude_define_destination_and_cadence_dialog.png" src="https://files.readme.io/e9f726c731e865e6313bf430b1e5506db5a820fc7d3d544747a873cf08139b26-33375708382097.png" />
 5. В списке **Выберите цель API для синхронизации** выберите имя соответствующего назначения AppsFlyer.
 6. Выберите, хотите ли вы синхронизировать эту когорту с AppsFlyer один раз или по заданному расписанию. (Для запланированных синхронизаций выберите, обновлять ли данные ежедневно или ежечасно.)
 7. Нажмите кнопку **Синхронизировать**, чтобы начать процесс синхронизации.
@@ -87,6 +87,6 @@ x-zendesk:
 
 По умолчанию именем новой аудитории является имя синхронизированной когорты Amplitude, за которым следует буквенно-цифровой идентификатор. Вы можете изменить название аудитории на дэшборде аудиториями, если это необходимо.
 
-[![amplitude_imported_audience.png](https://files.readme.io/a4f8efc6818d94a68b28ca62ae26215f17bfc7edcfb990855a042a2dee71f8b6-33375708383249.png)](https://files.readme.io/a4f8efc6818d94a68b28ca62ae26215f17bfc7edcfb990855a042a2dee71f8b6-33375708383249.png)
+<Image align="center" alt="amplitude_imported_audience.png" src="https://files.readme.io/a4f8efc6818d94a68b28ca62ae26215f17bfc7edcfb990855a042a2dee71f8b6-33375708383249.png" />
 
 <div data-zendesk-anchors="overview=%D0%BE-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-amplitude h_01HNZP6HDVC5RBMKTCZY81HG4M=%D0%BE-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D1%81-amplitude setting-up-the-integration=%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%B8 h_01HNZP6HDVZH6Q1KGJE7FXSPMT=%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%B8 define-appsflyer-data-destinations=%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BC%D0%B5%D1%81%D1%82-%D0%BD%D0%B0%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-appsflyer h_01HNZP6HDVV3GSEPARCY1VABX8=%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BC%D0%B5%D1%81%D1%82-%D0%BD%D0%B0%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-appsflyer sync-amplitude-cohorts-to-appsflyer-destinations=%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BA%D0%BE%D0%B3%D0%BE%D1%80%D1%82-amplitude-%D1%81-%D1%86%D0%B5%D0%BB%D1%8F%D0%BC%D0%B8-appsflyer h_01HNZP6HDV6EFPCM5FE5XBAS78=%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BA%D0%BE%D0%B3%D0%BE%D1%80%D1%82-amplitude-%D1%81-%D1%86%D0%B5%D0%BB%D1%8F%D0%BC%D0%B8-appsflyer" />

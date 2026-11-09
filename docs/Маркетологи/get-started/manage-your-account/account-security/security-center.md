@@ -40,7 +40,7 @@ x-zendesk:
 | <span id="appsflyer-api-and-s2s-tokens"></span><Anchor target="_blank" href="/marketers/ru/docs/managing-appsflyer-tokens">Токены AppsFlyer</Anchor> | Используйте токены AppsFlyer для аутентификации ваших вызовов API и S2S. Управляйте токенами и периодически их обновляйте для максимальной безопасности. |
 | <span id="audit-log"></span><Anchor target="_blank" href="/marketers/ru/docs/audit-log">Журнал аудита</Anchor> | Анализируйте активность учетной записи для выявления несанкционированного доступа: входы в систему, действия по управлению пользователями и вызовы API. |
 
-[![новый-центр-безопасности.jpg](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)
+<Image align="center" alt="новый-центр-безопасности.jpg" src="https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg" />
 
 **Доступ к Центру безопасности:**
 

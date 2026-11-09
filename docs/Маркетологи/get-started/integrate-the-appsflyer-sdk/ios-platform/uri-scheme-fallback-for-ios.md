@@ -46,7 +46,7 @@ x-zendesk:
 
 ### Блок-схема сценариев
 
-<Image alt="flowchartdoctored.png" src="https://files.readme.io/5917ad4d8a01010db16eb16dd4c9a5beca02e80797ec9d47999772a8d4433401-41284711408529.png" width="1564px" />
+<Image align="center" alt="flowchartdoctored.png" src="https://files.readme.io/5917ad4d8a01010db16eb16dd4c9a5beca02e80797ec9d47999772a8d4433401-41284711408529.png" width="1564px" />
 
 <div id="use-cases" />
 
@@ -68,7 +68,7 @@ x-zendesk:
 
 #### **Блок-схема**
 
-<Image alt="use case flowchart.png" src="https://files.readme.io/9b68ccc634b55d72a9be8f8b07d9744214a10b2f14f11bf97416fcb377b28963-41284872656401.png" width="75.41%" />
+<Image align="center" alt="use case flowchart.png" src="https://files.readme.io/9b68ccc634b55d72a9be8f8b07d9744214a10b2f14f11bf97416fcb377b28963-41284872656401.png" width="75.41%" />
 
 </Accordion>
 
@@ -81,7 +81,7 @@ x-zendesk:
 **Если приложение не установлено:**
 
 1. Появится диалоговое окно сообщения об ошибке Safari.  
-   [![](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg" />
 2. Пользователь нажимает кнопку **OK**, чтобы закрыть диалог, на короткое время видит, как в фоновом режиме загружается целевая страница, а затем в течение 1 секунды автоматически перенаправляется в App Store или в соответствии с параметром af\_ios\_url.
 
 **Если приложение установлено:**
@@ -89,18 +89,18 @@ x-zendesk:
 * Если ссылка не содержит `af_force_deeplink=true`, пользователь перенаправляется в App Store или в соответствии с параметром af\_ios\_url.
 * Если ссылка содержит `af_force_deeplink=true`:
   1. Появится диалоговое окно Safari.  
-     [![](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)
+     <Image align="center" alt="" src="https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg" />
   2. Если пользователь нажмет кнопку **Открыть**, откроется приложение.
   3. Если пользователь нажимает кнопку **Отмена:**
      * Если задан параметр af\_ios\_url, пользователь будет перенаправлен соответствующим образом.
      * Если параметр af\_ios\_url не задан, диалог сообщения об ошибке Safari отображается на целевой странице в фоновом режиме.  
-       [![](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)
+       <Image align="center" alt="" src="https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg" />
   4. Пользователь нажимает **OK** и видит целевую страницу с призывом к действию (кнопка CTA).
   5. Пользователь нажимает на CTA, и на экране появляется диалоговое окно.  
-     [![](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)
+     <Image align="center" alt="" src="https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg" />
   6. Если пользователь нажмет кнопку **Открыть**, откроется приложение.
   7. Если пользователь нажмет кнопку **Отмена**, появится диалоговое окно.  
-     [![](https://files.readme.io/dd3aa8492bdf1883246bd740118e1b8d2f075a77a164e3ad55843f7c4d44d2b9-360016210038.jpg)](https://files.readme.io/dd3aa8492bdf1883246bd740118e1b8d2f075a77a164e3ad55843f7c4d44d2b9-360016210038.jpg)
+     <Image align="center" alt="" src="https://files.readme.io/dd3aa8492bdf1883246bd740118e1b8d2f075a77a164e3ad55843f7c4d44d2b9-360016210038.jpg" />
   8. Если пользователь нажмет кнопку **OK**, он будет перенаправлен в App Store.
   9. Если пользователь нажимает кнопку **Отмена**, он остается на целевой странице.
 
@@ -108,7 +108,7 @@ x-zendesk:
 
 #### **Блок-схема**
 
-![Copy_of_Ios_fall_back_-_safari.png](https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png)
+<Image align="center" alt="Copy_of_Ios_fall_back_-_safari.png" src="https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png" />
 
 </Accordion>
 
@@ -125,22 +125,22 @@ x-zendesk:
 **Если приложение не установлено:**
 
 1. Если приложение для социальных сетей не настроено, или после того как пользователь нажимает CTA на целевой странице, диалог отображается на целевой странице в фоновом режиме.  
-   [![](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg" />
 2. Нажмите кнопку Открыть приложение. Может произойти один из следующих результатов:
    * Если задан параметр `af_ios_url`, пользователь будет перенаправлен соответствующим образом.
    * Если параметр `af_ios_url` не задан и если `af_force_deeplink=true` отсутствует в ссылке, пользователь будет перенаправлен соответствующим образом.
    * Если параметр af\_ios\_url не задан, а в ссылке есть `af_force_deeplink=true`, диалог снова отображается на целевой странице в фоновом режиме.  
-     [![](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)
+     <Image align="center" alt="" src="https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg" />
 3. Если пользователь нажимает кнопку **Открыть**, он попадает в App Store.
 4. Если пользователь нажимает кнопку **Закрыть**, на заднем плане отображается целевая страница.  
-   [![](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg" />
 5. Пользователь нажимает на значок App Store и перенаправляется в App Store.
 
 <div id="flowchart-2" />
 
 #### **Блок-схема**
 
-![diagram-X.png](https://files.readme.io/0c8040d27bbf34fdf1374b4b40a8239b6af7b6c7719db9666f36dd2829bc3217-small-17710399441553.png)
+<Image align="center" alt="diagram-X.png" src="https://files.readme.io/0c8040d27bbf34fdf1374b4b40a8239b6af7b6c7719db9666f36dd2829bc3217-small-17710399441553.png" />
 
 </Accordion>
 

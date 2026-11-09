@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Кратко:** MediaMath, интегрированный партнер AppsFlyer, специализируется на технологиях programmatic-маркетинга, включая платформы управления данными и многоканальные DSP. Помимо мобильной атрибуции по кликам, MediaMath также предлагает ретаргетинг и атрибуцию по просмотрам, данные о которых можно передавать в AppsFlyer.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/mediamath.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mediamath.png" />
 
 <div id="setting-up-mediamath" />
 

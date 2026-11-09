@@ -32,7 +32,7 @@ x-zendesk:
 
 > **Краткий обзор:** Cost ETL является частью AppsFlyer ROI360 и предоставляет рекламодателям данные о затратах на кампанию с максимальной детализацией по медиаисточникам. Данные, обновляемые до 4 раз в день, доставляются в ваш облачный сервис и готовы к загрузке в BI-системы рекламодателей.
 
-[![5896_CostETL_graphic__2_.png](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)
+<Image align="center" alt="5896_CostETL_graphic__2_.png" src="https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png" />
 
 Cost ETL является частью ROI360 AppsFlyer и предоставляет рекламодателям данные о затратах на кампанию с максимальной детализацией по медиаисточникам. До четырех раз в день данные обновляются и поступают в ваш облачный сервис Data Locker, готовый к загрузке в системы бизнес-аналитики рекламодателя.
 
@@ -244,14 +244,14 @@ Cost ETL является частью ROI360 AppsFlyer и предоставл�
 1. В AppsFlyer в боковом меню выберите **Экспорт** **Cost ETL**.
 2. Выберите или настройте **подключение к данным**:
    * Если у вас уже настроены подключения к данным, выберите в раскрывающемся списке **«Подключение»** те, которые хотите использовать для Cost ETL.  
-     [<Image alt="" src="https://files.readme.io/483cc971805232bca48f4da7f4ee6bd98e43cb3f8e70cfb79fd158746b889e35-31233921523601.png" width="700px" />](https://files.readme.io/483cc971805232bca48f4da7f4ee6bd98e43cb3f8e70cfb79fd158746b889e35-31233921523601.png)
+     <Image align="center" alt="" src="https://files.readme.io/483cc971805232bca48f4da7f4ee6bd98e43cb3f8e70cfb79fd158746b889e35-31233921523601.png" width="700px" />
    * Если у вас еще нет подключения к данным, нажмите **+ Новое подключение в Data Locker** и создайте там подключение:  
-     [<Image alt="" src="https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png" width="700px" />](https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png)
+     <Image align="center" alt="" src="https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png" width="700px" />
      1. Дайте название подключению.  
-        [<Image alt="" src="https://files.readme.io/734060321cf14a4ebbce66fe2abc71ff299218f7c52cb64dc5b8e71c42d3632d-31233921530001.png" width="2100px" />](https://files.readme.io/734060321cf14a4ebbce66fe2abc71ff299218f7c52cb64dc5b8e71c42d3632d-31233921530001.png)
+        <Image align="center" alt="" src="https://files.readme.io/734060321cf14a4ebbce66fe2abc71ff299218f7c52cb64dc5b8e71c42d3632d-31233921530001.png" width="2100px" />
      2. **Выберите, куда в облачном сервисе должны записываться данные**. Выполните одно из следующих действий:
         * Выберите **S3**.  
-          [<Image alt="" src="https://files.readme.io/1a78090f00407d44a5b74f3cb3b94e3a28064bc9b991b1cecf506fa0b9053842-31233961351441.png" width="945px" />](https://files.readme.io/1a78090f00407d44a5b74f3cb3b94e3a28064bc9b991b1cecf506fa0b9053842-31233961351441.png)
+          <Image align="center" alt="" src="https://files.readme.io/1a78090f00407d44a5b74f3cb3b94e3a28064bc9b991b1cecf506fa0b9053842-31233961351441.png" width="945px" />
           1. Введите название своей корзины AWS S3. Префикс `af-` обязателен, его необходимо ввести вручную.
           2. Нажмите **Тестировать подключение**.
           3. Убедитесь, что не отображается сообщение об ошибке, указывающее на недопустимый путь к корзине.
@@ -259,7 +259,7 @@ Cost ETL является частью ROI360 AppsFlyer и предоставл�
           5. Нажмите **Сохранить**.
           6. В настройках Cost ETL выберите созданный облачный сервис в раскрывающемся списке **«Подключение»**.
         * Выберите **GCS**.  
-          [<Image alt="" src="https://files.readme.io/6da526f43131887270136e9fcfa9434ad88c2ce8cebdb896c07dac4a0652d683-31233921536913.png" width="944px" />](https://files.readme.io/6da526f43131887270136e9fcfa9434ad88c2ce8cebdb896c07dac4a0652d683-31233921536913.png)
+          <Image align="center" alt="" src="https://files.readme.io/6da526f43131887270136e9fcfa9434ad88c2ce8cebdb896c07dac4a0652d683-31233921536913.png" width="944px" />
           1. Введите **название вашей корзины GCS**.
           2. Нажмите **Тестировать подключение**.
           3. Убедитесь в отсутствии сообщения об ошибке, указывающего на неверный путь к корзине.
@@ -267,51 +267,51 @@ Cost ETL является частью ROI360 AppsFlyer и предоставл�
           5. Нажмите **Сохранить**.
           6. В настройках Cost ETL выберите созданный облачный сервис в раскрывающемся списке **«Подключение»**.
         * [Бета] Выберите **Azure**.  
-          [<Image alt="" src="https://files.readme.io/cd718eeebc5965d24a2d38457d4fa22c5691d6a186464187bea12199fb96671b-31233921550481.png" width="943px" />](https://files.readme.io/cd718eeebc5965d24a2d38457d4fa22c5691d6a186464187bea12199fb96671b-31233921550481.png)
+          <Image align="center" alt="" src="https://files.readme.io/cd718eeebc5965d24a2d38457d4fa22c5691d6a186464187bea12199fb96671b-31233921550481.png" width="943px" />
           1. Введите **Название подключения**, **Название аккаунта хранилища** и **Ключ**.
           2. Убедитесь в отсутствии сообщения об ошибке, указывающего на неверный путь к корзине.
           3. Выберите, нужно ли **Сделать это подключение совместимым с Adobe Experience Platform**.
           4. Нажмите **Сохранить**.
           5. В меню Cost ETL в раскрывающемся списке **Подключение** выберите созданный облачный сервис.
         * [Бета-версия] Выберите **Яндекс**.  
-          [<Image alt="" src="https://files.readme.io/230e0d9c0b56b4c9f85da8c97f1ab91818c16ecfbabbf81ecb35f12d41716888-31233961360273.png" width="944px" />](https://files.readme.io/230e0d9c0b56b4c9f85da8c97f1ab91818c16ecfbabbf81ecb35f12d41716888-31233961360273.png)
+          <Image align="center" alt="" src="https://files.readme.io/230e0d9c0b56b4c9f85da8c97f1ab91818c16ecfbabbf81ecb35f12d41716888-31233961360273.png" width="944px" />
           1. Введите **Название корзины**, **Ключ доступа** и **Секретный ключ**.
           2. Убедитесь в отсутствии сообщения об ошибке, указывающего на неверный путь к корзине.
           3. Выберите, нужно ли **сделать это подключение совместимым с Adobe Experience Platform**.
           4. Нажмите **Сохранить**.
           5. В меню Cost ETL в раскрывающемся списке **Подключение** выберите созданный облачный сервис.
         * Выберите **BigQuery**.  
-          [<Image alt="" src="https://files.readme.io/6989fa8c869c08440da757b3ebb385754a4f23dbe4e2d38c50837448c08ab03b-31233921555857.png" width="945px" />](https://files.readme.io/6989fa8c869c08440da757b3ebb385754a4f23dbe4e2d38c50837448c08ab03b-31233921555857.png)
+          <Image align="center" alt="" src="https://files.readme.io/6989fa8c869c08440da757b3ebb385754a4f23dbe4e2d38c50837448c08ab03b-31233921555857.png" width="945px" />
           1. Введите идентификатор проекта BigQuery и название набора данных.
           2. Нажмите **Тестировать подключение**.
           3. Убедитесь в отсутствии сообщения об ошибке, указывающего на неверный путь к корзине.
           4. Нажмите **Сохранить**.
           5. В меню Cost ETL в раскрывающемся списке **Подключение** выберите созданный облачный сервис.
         * Выберите **Snowflake.**  
-          [<Image alt="" src="https://files.readme.io/b0e5f5ece797f46006d6e29a6afd01bc120b035590bd2ee87a54daa8c36bb0ed-31233961363985.png" width="944px" />](https://files.readme.io/b0e5f5ece797f46006d6e29a6afd01bc120b035590bd2ee87a54daa8c36bb0ed-31233961363985.png)
+          <Image align="center" alt="" src="https://files.readme.io/b0e5f5ece797f46006d6e29a6afd01bc120b035590bd2ee87a54daa8c36bb0ed-31233961363985.png" width="944px" />
           1. Введите свой регион Snowflake и идентификатор аккаунта.
           2. Нажмите **Тестировать подключение**.
           3. Убедитесь в отсутствии сообщения об ошибке, указывающего на неверный путь к корзине.
           4. Нажмите **Сохранить**.
           5. В меню Cost ETL в раскрывающемся списке **Подключение** выберите созданный облачный сервис.
 3. Нажмите **Далее**.  
-   [<Image alt="" src="https://files.readme.io/4237ca8e7e70e0c04e924b61839d47d88e42075b4c257fcdf5e78870712d3582-31233921563153.png" width="746px" />](https://files.readme.io/4237ca8e7e70e0c04e924b61839d47d88e42075b4c257fcdf5e78870712d3582-31233921563153.png)
+   <Image align="center" alt="" src="https://files.readme.io/4237ca8e7e70e0c04e924b61839d47d88e42075b4c257fcdf5e78870712d3582-31233921563153.png" width="746px" />
 4. Задайте **расписание версий (UTC)**:  
-   [<Image alt="" src="https://files.readme.io/427b18043c0ab53ea559d53094efb6f04ad7505659c08ba7345b3a647f78d64d-31233961369105.png" width="607px" />](https://files.readme.io/427b18043c0ab53ea559d53094efb6f04ad7505659c08ba7345b3a647f78d64d-31233961369105.png)
+   <Image align="center" alt="" src="https://files.readme.io/427b18043c0ab53ea559d53094efb6f04ad7505659c08ba7345b3a647f78d64d-31233961369105.png" width="607px" />
    1. Выберите, сколько отчетов вы хотите получать каждый день (1, 2, 3 или 4).
    2. Выберите, в какое время вам удобнее получать отчеты. [Подробнее](/docs/set-up-and-use-roi360-cost-etl-reports#report-schedule)
    3. Нажмите **Далее**.
 5. Настройте сведения в отчете:
    1. Выберите одно или несколько приложений, данные которых нужно включить в отчеты. Выберите **Добавить все будущие приложения**, чтобы автоматически включать приложения, которые вы добавите в будущем.  
-      [<Image alt="" src="https://files.readme.io/a5d453f40a7c5318f6a4c6cdfc5cf4d645c540c4b684362a796cda41d3c058c6-31233961373585.png" width="566px" />](https://files.readme.io/a5d453f40a7c5318f6a4c6cdfc5cf4d645c540c4b684362a796cda41d3c058c6-31233961373585.png)
+      <Image align="center" alt="" src="https://files.readme.io/a5d453f40a7c5318f6a4c6cdfc5cf4d645c540c4b684362a796cda41d3c058c6-31233961373585.png" width="566px" />
    2. Выберите отчеты, наиболее соответствующие потребностям вашего анализа. См. описания в разделе [Типы отчетов](#report-types).
       * **Сводный отчет** выбран по умолчанию.
       * Для получения отчета «Все затраты» необходимо выбрать **Отчет по данным регионов**.  
-        [<Image alt="" src="https://files.readme.io/3662c55c71f3390ac651c9269eac519f846b53ad675dab224b62fb09f81d4578-31233921571345.png" width="1921px" />](https://files.readme.io/3662c55c71f3390ac651c9269eac519f846b53ad675dab224b62fb09f81d4578-31233921571345.png)
+        <Image align="center" alt="" src="https://files.readme.io/3662c55c71f3390ac651c9269eac519f846b53ad675dab224b62fb09f81d4578-31233921571345.png" width="1921px" />
    3. Выберите параметры для включения в отчеты. **Примечание**: Если вам необходим отчет по регионам, региональные параметры включаются по умолчанию. Если вы выбрали отчет по каналам, параметр «Канал» включается в него по умолчанию.   
-      [<Image alt="" src="https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png" width="1921px" />](https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png)
+      <Image align="center" alt="" src="https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png" width="1921px" />
    4. Выберите параметры для включения в отчеты.   
-      [<Image alt="" src="https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg" width="1863px" />](https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg)
+      <Image align="center" alt="" src="https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg" width="1863px" />
 6. Нажмите **Применить**.
 
 </Accordion>
@@ -333,9 +333,9 @@ Cost ETL является частью ROI360 AppsFlyer и предоставл�
 1. В AppsFlyer в боковом меню выберите **Экспорт** **Cost ETL**.
 2. В разделе **подключения данных**:
    * Для подключений Data Locker в раскрывающемся списке **Подключения** наведите курсор на подключение, которое вы хотите изменить. Отображение деталей подключения. Нажмите **Редактировать в Data Locker**.  
-     [<Image alt="" src="https://files.readme.io/95c76d3bfc4a4db4bb9b4e67e4460680e0039e91dd930903515771e52c00ac7a-31233961377937.png" width="695px" />](https://files.readme.io/95c76d3bfc4a4db4bb9b4e67e4460680e0039e91dd930903515771e52c00ac7a-31233961377937.png)
+     <Image align="center" alt="" src="https://files.readme.io/95c76d3bfc4a4db4bb9b4e67e4460680e0039e91dd930903515771e52c00ac7a-31233961377937.png" width="695px" />
    * Чтобы узнать о подключениях Cost ETL, нажмите раскрывающееся меню **Сведения о подключении**. Отображение деталей подключения.  
-     [<Image alt="" src="https://files.readme.io/67a1fb2ce45a49fc75d12eba4d1c3e67875b83883b0fc05307c080c6050be0f2-31233961380369.png" width="651px" />](https://files.readme.io/67a1fb2ce45a49fc75d12eba4d1c3e67875b83883b0fc05307c080c6050be0f2-31233961380369.png)
+     <Image align="center" alt="" src="https://files.readme.io/67a1fb2ce45a49fc75d12eba4d1c3e67875b83883b0fc05307c080c6050be0f2-31233961380369.png" width="651px" />
 3. Следуйте инструкциям на экране, чтобы изменить детали подключения.
 4. Нажмите **Сохранить изменения** или **Применить** по запросу.
 
@@ -348,9 +348,9 @@ Cost ETL является частью ROI360 AppsFlyer и предоставл�
 1. В AppsFlyer в боковом меню выберите **Экспорт** **Cost ETL**.
 2. В разделе **подключения данных**:
    * Если нужные вам подключения к Data Locker уже настроены, в раскрывающемся списке **Подключение** выберите нужные для Cost ETL.  
-     [<Image alt="" src="https://files.readme.io/483cc971805232bca48f4da7f4ee6bd98e43cb3f8e70cfb79fd158746b889e35-31233921523601.png" width="700px" />](https://files.readme.io/483cc971805232bca48f4da7f4ee6bd98e43cb3f8e70cfb79fd158746b889e35-31233921523601.png)
+     <Image align="center" alt="" src="https://files.readme.io/483cc971805232bca48f4da7f4ee6bd98e43cb3f8e70cfb79fd158746b889e35-31233921523601.png" width="700px" />
    * Если у вас ещё не настроено нужное вам подключение к Data Locker, нажмите **+ Новое подключение в Data Locker** и создайте там подключение. Затем вернитесь к настройкам Cost ETL и выберите их из выпадающего меню **Подключение**.  
-     [<Image alt="" src="https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png" width="700px" />](https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png)
+     <Image align="center" alt="" src="https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png" width="700px" />
 3. Нажмите **Сохранить изменения**.
 
 <div id="change-from-cost-etl-to-data-locker-connection" />
@@ -368,12 +368,12 @@ Cost ETL является частью ROI360 AppsFlyer и предоставл�
 
 1. В AppsFlyer в боковом меню выберите **Экспорт** **Cost ETL**.
 2. В разделе **Подключение к данным** нажмите **Подключения к Data Locker**.  
-   [<Image alt="" src="https://files.readme.io/2608d88368579c9fd3aa7648905484a56a7f0d989a96582cee51303409ce427c-31233961382289.png" width="631px" />](https://files.readme.io/2608d88368579c9fd3aa7648905484a56a7f0d989a96582cee51303409ce427c-31233961382289.png)
+   <Image align="center" alt="" src="https://files.readme.io/2608d88368579c9fd3aa7648905484a56a7f0d989a96582cee51303409ce427c-31233961382289.png" width="631px" />
 3. Чтобы настроить подключение к Data Locker, выполните одно из следующих действий:
    * Если у вас уже настроены нужные вам подключения, в раскрывающемся списке **Подключение** выберите нужные для Cost ETL.  
-     [<Image alt="" src="https://files.readme.io/da486f6399e92c49923527da3348f4535691768cebd7a776ec84f7a2a739c204-31233961385617.png" width="501px" />](https://files.readme.io/da486f6399e92c49923527da3348f4535691768cebd7a776ec84f7a2a739c204-31233961385617.png)
+     <Image align="center" alt="" src="https://files.readme.io/da486f6399e92c49923527da3348f4535691768cebd7a776ec84f7a2a739c204-31233961385617.png" width="501px" />
    * Если у вас еще не настроено нужное вам подключение, нажмите **+ Новое подключение в Data Locker** и создайте там подключение. Затем вернитесь к настройкам Cost ETL и выберите их из выпадающего меню **Подключение**.  
-     [<Image alt="" src="https://files.readme.io/0d48f83f30954f5f68efecf7e6c4cf2b39b295e0b893711bd2e2756406c42461-31233921587985.png" width="631px" />](https://files.readme.io/0d48f83f30954f5f68efecf7e6c4cf2b39b295e0b893711bd2e2756406c42461-31233921587985.png)
+     <Image align="center" alt="" src="https://files.readme.io/0d48f83f30954f5f68efecf7e6c4cf2b39b295e0b893711bd2e2756406c42461-31233921587985.png" width="631px" />
 4. Нажмите **Сохранить изменения**.
 
 </Accordion>

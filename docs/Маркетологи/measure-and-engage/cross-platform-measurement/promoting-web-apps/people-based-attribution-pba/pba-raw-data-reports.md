@@ -202,7 +202,7 @@ x-zendesk:
 1. Откройте Cyberduck  
    Отобразится список доступных типов данных.
 
-   ![Duck_us-en.jpg](https://files.readme.io/b8e93ad9423605b3247531d276b9c2d45abd4ea044dde29ee177f4d71b738e9d-360008254377.jpg)
+   <Image align="center" alt="Duck_us-en.jpg" src="https://files.readme.io/b8e93ad9423605b3247531d276b9c2d45abd4ea044dde29ee177f4d71b738e9d-360008254377.jpg" />
 2. **Дважды щелкните** тип отчета PBA и выберите web\_events, web\_to\_app или web\_touch\_points.  
    На экране появится список дат, за которые доступны отчеты.
 3. **Правой кнопкой мыши** щелкните нужную дату.

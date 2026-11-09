@@ -179,7 +179,7 @@ x-zendesk:
 
 <Accordion title="Protect360 — заблокированное мошенничество">
 
-![Пример отчета Protect360 о заблокированном мошенничестве](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)
+<Image align="center" alt="Пример отчета Protect360 о заблокированном мошенничестве" src="https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png" />
 
 Агрегированные отчеты о заблокированном фроде содержат данные о событиях, заблокированных <Anchor target="_blank" href="/marketers/ru/docs/protect360-anti-fraud-guide">Protect360</Anchor>.
 

@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **Краткий обзор.** Этот скрипт устарел с 17 декабря 2020 г. и заменен <Anchor target="_blank" href="/marketers/ru/docs/onelink-smart-script-overview">смарт-скриптом OneLink</Anchor>. Эта версия продолжает работать, но не будет обновляться или изменяться. Скрипт генерирует URL-адреса, встроенные в кнопку на вашем мобильном веб-сайте, и перенаправляет посетителей к загрузке вашего приложения. URL-адреса также поддерживают атрибуцию установок и диплинкинг.
 
-![5648_Sunset_and_deprecation-01.png](https://files.readme.io/f2a154145e26577b698d00c4c3719be3eea7298576e6883bd47e6fb42897c71a-360015062398.png)
+<Image align="center" alt="5648_Sunset_and_deprecation-01.png" src="https://files.readme.io/f2a154145e26577b698d00c4c3719be3eea7298576e6883bd47e6fb42897c71a-360015062398.png" />
 
 **<Anchor target="_blank" href="/marketers/ru/docs/onelink-smart-script-overview">Переход на смарт-скрипт OneLink</Anchor>**
 
@@ -709,7 +709,7 @@ function generateUrl(isDebug) {
 
 ## Просмотр результатов
 
-[![dashboard_landing_page_results.png](https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png)](https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png)
+<Image align="center" alt="dashboard_landing_page_results.png" src="https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png" />
 
 Как и в любом медиа-источнике, результаты целевой страницы можно просматривать на дэшборде приложения, в сырых данных или с помощью API AppsFlyer.
 

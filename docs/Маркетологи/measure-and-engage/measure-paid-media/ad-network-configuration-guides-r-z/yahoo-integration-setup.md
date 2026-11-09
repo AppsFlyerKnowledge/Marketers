@@ -104,7 +104,7 @@ x-zendesk:
 
 Чтобы найти идентификатор ID аккаунта, войдите в дэшборд Yahoo, нажмите значок шестерёнки, чтобы открыть меню ***Settings***, и выберите ***Billing***:
 
-![gemini-account-number.png](https://files.readme.io/77f464c6dadefc54acb3a84d97ab0d0751610b253d2da90523bc117f1f26683c-50705625726865.png)
+<Image align="center" alt="gemini-account-number.png" src="https://files.readme.io/77f464c6dadefc54acb3a84d97ab0d0751610b253d2da90523bc117f1f26683c-50705625726865.png" />
 
 Окна атрибуции по кликам и просмотрам доступны только для чтения и должны настраиваться рекламодателем.
 
@@ -117,7 +117,7 @@ x-zendesk:
 1. Введите идентификатор Dot Tag, предоставленный Yahoo.  
    Чтобы найти его на дэшборде Yahoo, кликните значок шестерёнки, чтобы открыть меню **Settings**, и выберите **View Dot tag code**. Скопируйте код с дэшборда:
 
-   [![yahoo-dot-tag.png](https://files.readme.io/6ceaea7447d1c3a81451dac3aa7c3c3063a5cf2c0051b4dfad6cf7aeba40ab24-small-50705593680401.png)](https://files.readme.io/6ceaea7447d1c3a81451dac3aa7c3c3063a5cf2c0051b4dfad6cf7aeba40ab24-small-50705593680401.png)
+   <Image align="center" alt="yahoo-dot-tag.png" src="https://files.readme.io/6ceaea7447d1c3a81451dac3aa7c3c3063a5cf2c0051b4dfad6cf7aeba40ab24-small-50705593680401.png" />
 2. Активируйте постбэки по внутренним событиям
 3. В поле «Вариант отправки» выберите значение, которое будет использоваться для всех событий, определенных в SDK.  
    **- Только события, атрибутированные этому партнеру**: партнер будет получать сведения о событиях **только** тех пользователей, которые ему атрибутированы.  
@@ -213,7 +213,7 @@ x-zendesk:
 
 Вы можете отметить как конверсии события, которые AppsFlyer отправляет в Yahoo через постбэки событий в приложении:
 
-![yahoo-conversion-rules.png](https://files.readme.io/17a3fdd1619d4e4d0bfcca35e4fd51e7f270ce7446f9e70fb6f7787291e2e022-50705625729297.png)
+<Image align="center" alt="yahoo-conversion-rules.png" src="https://files.readme.io/17a3fdd1619d4e4d0bfcca35e4fd51e7f270ce7446f9e70fb6f7787291e2e022-50705625729297.png" />
 
 <div id="yahoo-raw-report" />
 

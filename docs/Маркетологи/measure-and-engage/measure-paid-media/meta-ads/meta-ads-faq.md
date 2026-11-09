@@ -145,7 +145,7 @@ API реферера установки Google Play позволяет рекл�
 Да. Отчеты об эффективности имеют статическую структуру столбцов, которая не зависит от выбора медиа-источника, где представлены данные до уровня кампании.  
 Однако при загрузке отчетов об эффективности ТОЛЬКО для рекламы в Meta, AppsFlyer добавляет в них еще 4 столбца, где представлены данные до уровня отдельного объявления! Добавляются такие столбцы: Adset Name (Название блока рекламы), Adset ID (Идентификатор блока рекламы), Adgroup Name (Название группы объявлений) (т.е. отдельного объявления) и Adgroup ID (Идентификатор группы объявлений).
 
-[![](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)
+<Image align="center" alt="" src="https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png" />
 
 </Accordion>
 
@@ -163,7 +163,7 @@ API реферера установки Google Play позволяет рекл�
 
 <Accordion title="Что делать при получении такого предупреждения?">
 
-[![](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)
+<Image align="center" alt="" src="https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png" />
 
 * Подтвердите свой идентификатор приложения Facebook и проверьте, нет ли для этого идентификатора каких-либо ограничений по географическому положению или по возрасту.
 * Если атрибуция уже выполняется, это означает, что приложение уже доступно для сообщества на портале разработчиков Meta, и вы можете проигнорировать это сообщение об ошибке.
@@ -301,7 +301,7 @@ AppsFlyer получает данные о затратах (включая кл
 
 Рекламодатель запускает рекламную кампанию в Meta Ads. В AppsFlyer рекламодатель увидит такую информацию:
 
-![mceclip2.png](https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png" />
 
 Данные о затратах AppsFlyer получает из Meta Ads. AppsFlyer определяет количество **установок** расчетным путем на основании своих правил атрибуции. Поэтому расчетные показатели eCPI в Meta Ads и AppsFlyer, как правило, отличаются.
 
@@ -438,7 +438,7 @@ Meta Ads не позволяет одновременно группироват
 1. В Meta Ads перейдите в раздел **Settings** > **Business Integration** (Настройки > Бизнес-интеграция).
 2. Удалите интеграцию с AppsFlyer на вкладке **Active** (Активные).  
 
-   [![](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)
+   <Image align="center" alt="" src="https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png" />
 3. Перейдите на дэшборд AppsFlyer и подключите затраты к новому аккаунту.
 
 </Accordion>
@@ -515,7 +515,7 @@ Meta Ads не позволяет одновременно группироват
 
 На рисунке ниже показаны все параметры, которые рекламодатель должен настроить для агентства, чтобы дать ему возможность управлять своими кампаниями в Meta Ads:
 
-[![advertiser-vs-agency-facebook-int-new.png](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)
+<Image align="center" alt="advertiser-vs-agency-facebook-int-new.png" src="https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png" />
 
 </Accordion>
 
@@ -577,7 +577,7 @@ Meta Ads идентифицирует пользователей по аккау
 
 Эти данные можно использовать для сравнения качества пользователей, получаемых от различных каналов.
 
-![Facebook_channels.png](https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png)
+<Image align="center" alt="Facebook_channels.png" src="https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png" />
 
 </Accordion>
 

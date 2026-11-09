@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Краткий обзор.** ironSource, интегрированный партнер AppsFlyer, создает инструменты монетизации, вовлечения, аналитики и обнаружения для разработчиков приложений, производителей устройств, мобильных операторов и рекламодателей. Помимо мобильной атрибуции по кликам, ironSource также предлагает атрибуцию затрат, дохода от рекламы, ретаргетинга и атрибуцию по просмотрам, данные которых можно регистрировать с помощью AppsFlyer
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
 <div id="setting-up-ironsource" />
 

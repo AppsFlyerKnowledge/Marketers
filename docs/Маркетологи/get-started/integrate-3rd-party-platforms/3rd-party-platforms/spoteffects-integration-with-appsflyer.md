@@ -69,7 +69,7 @@ x-zendesk:
 
 AppsFlyer может отправлять автоматические постбэки об установках пользователей Spoteffects. В этом разделе можно определить отправку этих постбэков.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Выберите **События, атрибутированные любому партнеру или органически**, чтобы отправлять постбэки в Spoteffects для любого пользователя, который загружает приложение, или выберите **Выкл.**
 
@@ -79,7 +79,7 @@ AppsFlyer может отправлять автоматические пост�
 
 ### Настройки внутренних событий приложения
 
-[![](https://files.readme.io/97da1d47ab9bfa3855d18dcd60f3a263b8a631c477b354dc32486170b7708e96-360002201165.png)](https://files.readme.io/97da1d47ab9bfa3855d18dcd60f3a263b8a631c477b354dc32486170b7708e96-360002201165.png)
+<Image align="center" alt="" src="https://files.readme.io/97da1d47ab9bfa3855d18dcd60f3a263b8a631c477b354dc32486170b7708e96-360002201165.png" />
 
 В этом разделе можно сопоставить события AppsFlyer с Spoteffects посредством постбэков.
 

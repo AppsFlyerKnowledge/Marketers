@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Краткий обзор.** Атрибутируйте установки из кампаний перекрестной рекламы, которые продвигают ваши приложения в других приложениях, принадлежащих вам.
 
-![CrossPromo_userJourney](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
+<Image align="center" alt="CrossPromo_userJourney" src="https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png" />
 
 <div id="about-cross-promotion" />
 
@@ -35,7 +35,7 @@ x-zendesk:
 
 На следующем изображении показан дэшборд продвигаемого приложения с разбивкой показателей для кампаний, проводимых в собственных медиа **(af\_cross\_promotion**) и других медиа-источниках. Вы можете видеть, что количество установок и коэффициент конверсии для кампании перекрестной рекламы значительно выше, чем для других медиа-источников.
 
-[![CrossPromo_mediaSource](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+<Image align="center" alt="CrossPromo_mediaSource" src="https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png" />
 
 <div id="how-does-cross-promotion-work" />
 
@@ -115,7 +115,7 @@ AppsFlyer позволяет использовать сопоставление
 >
 > Если посмотреть на дэшборд, то можно увидеть, что коэффициент конверсии для приложения «Гольф» в 18,22 % намного выше, чем для приложения «Боулинг», что позволяет определить, что между приложением «Гольф» и продвигаемым приложением «Бильярд» существует большая смежность.
 >
-> [![CrossPromo_conversionRate](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)
+> <Image align="center" alt="CrossPromo_conversionRate" src="https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png" />
 >
 > Основываясь на этих данных, вы можете оптимизировать свою кампанию следующим образом:
 >
@@ -140,6 +140,6 @@ AppsFlyer позволяет использовать сопоставление
 >
 > Чтобы просмотреть показатели для всех трех продвигаемых приложений в одном месте, вы создаете пользовательский дэшборд. На следующем изображении видно, что коэффициент конверсии в приложении «Спортивная обувь» составляет 20,23 %, а это значит, что у приложения «Обувь» гораздо большая смежность с приложением «Спортивная обувь», чем с двумя другими продвигаемыми приложениями.
 >
-> ![CrossPromo_customWidget](https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png)
+> <Image align="center" alt="CrossPromo_customWidget" src="https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png" />
 
 <div data-zendesk-anchors="about-crosspromotion=%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0 h_01HE7RXZ2CZCYENE4K40W5YSHF=%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0 how-does-crosspromotion-work=%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0 h_01HE7RXZ2CE5EQV42Y4B9SK4FN=%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0 attributing-crosspromotion=%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%86%D0%B8%D1%8F-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%B9-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B h_01HE7RXZ2CWB2GZ8HV6447RVV1=%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%86%D0%B8%D1%8F-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%B9-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B setting-up-crosspromotion=%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%B9-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B h_01HE7RXZ2C9JGFYV8K8FECFFJN=%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%B9-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B viewing-crosspromotion-data=%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BE-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%B9-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B h_01HE7RXZ2CE9NWMQ1PT3G98QVN=%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BE-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8-%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%B9-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B promoted-app-dashboard=%D0%B4%D1%8D%D1%88%D0%B1%D0%BE%D1%80%D0%B4-%D0%BF%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D0%B5%D0%BC%D0%BE%D0%B3%D0%BE-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F h_01HE7RXZ2CQG9M35Y2FJNPZWDA=%D0%B4%D1%8D%D1%88%D0%B1%D0%BE%D1%80%D0%B4-%D0%BF%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D0%B5%D0%BC%D0%BE%D0%B3%D0%BE-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F analysis=%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7 h_01HE7RXZ2CVQD8H0J6EVRJM5T7=%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7 h_01HE7RXZ2CW1P0QNA8FFXP5KBS=%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80 custom-dashboard=%D0%BA%D0%B0%D1%81%D1%82%D0%BE%D0%BC%D0%B8%D0%B7%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D1%8B%D0%B5-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F h_01HE7RXZ2C7N3DKNPF898WM4AD=%D0%BA%D0%B0%D1%81%D1%82%D0%BE%D0%BC%D0%B8%D0%B7%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D1%8B%D0%B5-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F h_01HE7RXZ2C51KJMP795QYS26YK=%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-1" />

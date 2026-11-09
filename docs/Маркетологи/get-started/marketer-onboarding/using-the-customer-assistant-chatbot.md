@@ -31,10 +31,10 @@ x-zendesk:
 
 1. В верхней строке меню выберите **Помощь** > **Связаться с нашей командой**. Откроется чатбот – ассистент по работе с клиентами.
 
-   <Image alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
+   <Image align="center" alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
 2. Выберите **тип обращения** из списка и заполните всю информацию.
 
-   <Image alt="Снимок экрана 2026-08-26 в 12.17.34.png" src="https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png" width="75%" />
+   <Image align="center" alt="Снимок экрана 2026-08-26 в 12.17.34.png" src="https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png" width="75%" />
 
    3. Кликните **Отправить**
 

@@ -63,7 +63,7 @@ x-zendesk:
 
 RationalHeads связывается с AppsFlyer через уникальный идентификатор Part ID. Если у вас еще нет идентификатора Part ID и пароля, вы должны получить их у RationalHeads, чтобы продолжить интеграцию.
 
-<Image alt="Rationalheads_msc_new_2.png" src="https://files.readme.io/7e93003c13d4fa1e60bee4120307691b618757a7c55a271561827823005b86c3-360002076529.png" width="317px" />
+<Image align="center" alt="Rationalheads_msc_new_2.png" src="https://files.readme.io/7e93003c13d4fa1e60bee4120307691b618757a7c55a271561827823005b86c3-360002076529.png" width="317px" />
 
 <div id="default-postbacks" />
 

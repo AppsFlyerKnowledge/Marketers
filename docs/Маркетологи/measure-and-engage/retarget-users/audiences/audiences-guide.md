@@ -27,7 +27,7 @@ x-zendesk:
 
 > **Вкратце:** Увеличьте эффективность ваших кампаний по привлечению пользователей и ремаркетингу с помощью Аудиторий AppsFlyer; эта функция позволяет создавать сегменты аудиторий и подключать их к вашим партнерским сетям.
 
-![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
+<Image align="center" alt="Intro_image.png" src="https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png" />
 
 <div id="audiences-basics" />
 
@@ -126,7 +126,7 @@ x-zendesk:
 >
 > Этот пример иллюстрирует один из типичных случаев использования. Допустим, вы хотите побудить активных пользователей вашего приложения, которые еще не совершали покупок, совершить их первую покупку. Вы можете выбрать аудиторию «Поощрение покупки» и настроить ее, чтобы указать, какое событие определяет покупку в приложении. Затем вы можете подключить аудиторию к своим партнерам и запустить рекламную кампанию, которая побудит пользователей совершить покупку и приведет их на страницу покупки в приложении.
 >
-> ![Encourage_purchase_image_this_one.jpeg](https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg)
+> <Image align="center" alt="Encourage_purchase_image_this_one.jpeg" src="https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg" />
 
 **Чтобы создать предположительную аудиторию:**
 
@@ -201,7 +201,7 @@ x-zendesk:
     * Если идентификатор устройства связан с двумя разными CUID, используется последний связанный CUID.
     * При создании аудитории с CUID в качестве идентификатора, привязка CUID должна быть получена AppsFlyer при установке (а не только в событиях после установки) для полной связи с соответствующими устройствами и успешного обогащения данных идентификаторами устройств (т. е. GAID, IDFA). <Anchor target="_blank" href="/marketers/ru/docs/customer-user-id-field-cuid#установка-cuid">Узнать больше</Anchor>
 
-<Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+<Image align="center" alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
 
 <div id="example-device-id-vs-cuid" />
 
@@ -373,7 +373,7 @@ x-zendesk:
 
 <Accordion title="Наборы правил для сегментации аудитории">
 
-![audience_segmentation_rulesets.jpg](https://files.readme.io/4407da232d372a98afcd30df3a832f6ef38bb55a6b02640587f44c7501b014f2-46335625066897.jpg)
+<Image align="center" alt="audience_segmentation_rulesets.jpg" src="https://files.readme.io/4407da232d372a98afcd30df3a832f6ef38bb55a6b02640587f44c7501b014f2-46335625066897.jpg" />
 
 * Набор правил для сегмента аудитории состоит из одного или нескольких правил для точной фильтрации.
 * Сочетайте наборы правил с помощью операторов and (и), or (или), exclude (исключить).
@@ -396,7 +396,7 @@ x-zendesk:
 >
 > Пользователи из Нью-Йорка, удалившие приложение в прошлом месяце
 >
-> ![example_location_based_rule.jpg](https://files.readme.io/7ee7e2b9e8f06dc47c93148767fd67d87855a05cd09ba06f2dd2c0ea9dc29607-46335625068817.jpg)
+> <Image align="center" alt="example_location_based_rule.jpg" src="https://files.readme.io/7ee7e2b9e8f06dc47c93148767fd67d87855a05cd09ba06f2dd2c0ea9dc29607-46335625068817.jpg" />
 
 <div id="example-user-attributes-based-rule" />
 
@@ -404,7 +404,7 @@ x-zendesk:
 >
 > Пользователи, которые хотя бы один раз запускали приложение за последние 7 дней и чье любимое оружие — меч.
 >
-> ![example_user_attributes_based_rule.jpg](https://files.readme.io/8ab97cdccd2a1b33b671b1f686ca642306197ccf5151ca2ba9836db8ca496d03-46335625073809.jpg)
+> <Image align="center" alt="example_user_attributes_based_rule.jpg" src="https://files.readme.io/8ab97cdccd2a1b33b671b1f686ca642306197ccf5151ca2ba9836db8ca496d03-46335625073809.jpg" />
 
 <div id="example-revenue" />
 
@@ -412,7 +412,7 @@ x-zendesk:
 >
 > Пользователи, установившие приложение в течение последних семи дней и потратившие 1 $
 >
-> ![example_revenue.jpg](https://files.readme.io/d7768bec78ff5981639da4e1c8e1a3121961464c0a5932bf8f542f27979358a8-46335625074833.jpg)
+> <Image align="center" alt="example_revenue.jpg" src="https://files.readme.io/d7768bec78ff5981639da4e1c8e1a3121961464c0a5932bf8f542f27979358a8-46335625074833.jpg" />
 
 <div id="example-owned-media-filter" />
 
@@ -422,7 +422,7 @@ x-zendesk:
 >
 > Вот пример с пользователями, которые запускали приложение хотя бы раз за последние 7 дней, и чья установка была атрибутирована конкретной рассылке по электронной почте, а также конкретным наборам объявлений и объявлениям.
 >
-> ![Owned_media_example.jpg](https://files.readme.io/4b9c076f5299f4f59524a7f816964f4db2c8edd73690aa899e34fcac0d145628-46335667611409.jpg)
+> <Image align="center" alt="Owned_media_example.jpg" src="https://files.readme.io/4b9c076f5299f4f59524a7f816964f4db2c8edd73690aa899e34fcac0d145628-46335667611409.jpg" />
 >
 > Аудитория может быть использована для повторного вовлечения этих пользователей с помощью персонализированных сообщений в собственных или платных медиа, а также в качестве списка исключений, чтобы предотвратить показ нерелевантной или ненужной рекламы при проведении кампаний.
 
@@ -434,7 +434,7 @@ x-zendesk:
 >
 > Сформируйте аудиторию потенциальных пользователей, которые в течение последних двух дней нажимали на объявление, но не установили приложение.
 >
-> ![example_remarketing.jpg](https://files.readme.io/715c42d56c0deffdb4d28acd213f4a5da62de75bbcd6834a927b9226d2fea43e-46335667613329.jpg)
+> <Image align="center" alt="example_remarketing.jpg" src="https://files.readme.io/715c42d56c0deffdb4d28acd213f4a5da62de75bbcd6834a927b9226d2fea43e-46335667613329.jpg" />
 >
 > Это пользователи, которые в недавнем прошлом были достаточно заинтересованы в вашем мобильном приложении, чтобы нажать на рекламное объявление, но по какой-то причине не установили приложение, или же установили приложение, но не запустили его. Некоторым пользователям для установки приложения хватает напоминания (push-уведомления). Другим, возможно, нужно увидеть больше страниц или функций вашего приложения, чтобы наконец установить его. Поэтому, если у вас есть основной креатив, который вы используете для новых аудиторий, имеет смысл использовать другой креатив для аудиторий, которые кликнули по объявлению, но не установили приложение.
 
@@ -505,7 +505,7 @@ x-zendesk:
 6. Выберите идентификаторы пользователей, которыми вы разрешаете делиться с этим партнером.
    * Поддерживаемые идентификаторы зависят от партнера. В списке появятся только те идентификаторы, которые поддерживаются данным партнером.
    * Будут загружены только те идентификаторы, которые соответствующие вашей <Anchor target="_blank" href="/marketers/ru/docs/audiences-user-identifier-policy">политике использования идентификаторов пользователей на уровне аккаунта</Anchor>. Вы увидите предупреждение, если выберете идентификатор, который запрещен политикой вашего аккаунта.  
-     ![doctored_connection_image.jpg](https://files.readme.io/5de138c4a2c2a3f26bebc6bd14d9703408a986dc4f8c53235d4be337784603af-46335625091345.jpg)
+     <Image align="center" alt="doctored_connection_image.jpg" src="https://files.readme.io/5de138c4a2c2a3f26bebc6bd14d9703408a986dc4f8c53235d4be337784603af-46335625091345.jpg" />
 7. Нажмите кнопку **Сохранить**.
 
 </Accordion>
@@ -539,7 +539,7 @@ x-zendesk:
 
 <Accordion title="Дэшборд «Аудитории»">
 
-[![new_dashboard_image_doctored.jpg](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)
+<Image align="center" alt="new_dashboard_image_doctored.jpg" src="https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg" />
 
 | Столбчатая | Описание |
 | --- | --- |
@@ -588,7 +588,7 @@ x-zendesk:
 
 В изначальном представлении **Метрик кампании** итоговые данные по кампаниям отображаются для каждой аудитории:
 
-[<Image alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30228741007121)
+[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30228741007121)
 
 | Столбчатая | Описание |
 | --- | --- |
@@ -604,7 +604,7 @@ x-zendesk:
 
 В подробном представлении данные отображаются в разбивке по поддерживаемым партнерам и кампаниям:
 
-[![campaign_metrics_detailed_view.jpg](https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg)](https://support.appsflyer.com/hc/article_attachments/30228741023377)
+[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg" />](https://support.appsflyer.com/hc/article_attachments/30228741023377)
 
 Если выбранная аудитория использовалась для таргетинга нескольких приложений, используйте выпадающее меню ![pin_A.png](https://files.readme.io/dcf60cd17a1135e63f6443728c3d713d9cacd6af0e1c010c226d1a092770c40b-46335667636113.png) для фильтрации данных по приложению.
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Краткий обзор**. Измеряйте результаты маркетинговых активностей и привлекайте на сайт эффективный трафик. Какие медиа-источники, типы и каналы трафика приносят посещения сайта и события конверсии. Доступны метрики на уровне рекламного объявления.
 
-![Touchpoints_us-en.png](https://files.readme.io/45c45c9a1b108ea31e450df4c2aaab20482c9829726d9860e55e2c9ca32c401a-360008629017.png)
+<Image align="center" alt="Touchpoints_us-en.png" src="https://files.readme.io/45c45c9a1b108ea31e450df4c2aaab20482c9829726d9860e55e2c9ca32c401a-360008629017.png" />
 
 <div id="website-visits-and-web-events" />
 
@@ -47,7 +47,7 @@ x-zendesk:
 
 Дэшборды PBA и отчеты о сырых данных используют атрибутированные медиаисточники, типы, каналы и кампании.
 
-![MediaSource_us-en.png](https://files.readme.io/bcb3e471753809b0fdf1a0e1dc9783002004b1988f4701ab30524c1eb7b9fbfc-360008629057.png)
+<Image align="center" alt="MediaSource_us-en.png" src="https://files.readme.io/bcb3e471753809b0fdf1a0e1dc9783002004b1988f4701ab30524c1eb7b9fbfc-360008629057.png" />
 
 Для удобства понимания в следующей таблице приведены примеры определенных медиаисточников с указанием их типа и канала.
 
@@ -216,7 +216,7 @@ PBA определяет медиаисточник, тип медиа и мед
 
 **Правила регистрации посещений PBA**
 
-![PBA_-_PBA-vist.png](https://files.readme.io/651c3ee4d39832297b7d6dc871aa281f1fa3219264ba264851ad0cc643b8baee-360015532817.png)
+<Image align="center" alt="PBA_-_PBA-vist.png" src="https://files.readme.io/651c3ee4d39832297b7d6dc871aa281f1fa3219264ba264851ad0cc643b8baee-360015532817.png" />
 
 </Accordion>
 

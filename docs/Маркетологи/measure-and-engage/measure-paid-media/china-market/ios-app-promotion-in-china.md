@@ -33,7 +33,7 @@ x-zendesk:
 
 В Китае около 30% мобильных устройств работают на iOS. В 2016 году App Annie сообщила, что Китай вышел на первое место в мире по доходу в iOS App Store: выручка составила около 1,7 млрд долларов.
 
-[![](https://files.readme.io/e4a88adb5bb0e49904d9fed5117a3b45736c572fd3c2fa602aef4f9b1b6d48f8-115015413586.png)](https://files.readme.io/e4a88adb5bb0e49904d9fed5117a3b45736c572fd3c2fa602aef4f9b1b6d48f8-115015413586.png)
+<Image align="center" alt="" src="https://files.readme.io/e4a88adb5bb0e49904d9fed5117a3b45736c572fd3c2fa602aef4f9b1b6d48f8-115015413586.png" />
 
 ## iOS app store is still the Apple App Store
 

@@ -34,12 +34,12 @@ x-zendesk:
 
 1. Перейдите в <Anchor target="_blank" href="https://adsmanager.facebook.com/">Менеджер объявлений</Anchor> и выберите **Настройки**.
 
-[![Панель инструментов Менеджер рекламы с кнопкой «Настройки»](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)
+<Image align="center" alt="Панель инструментов Менеджер рекламы с кнопкой «Настройки»" src="https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png" />
 
 2. На панели Обзор креативов выберите **Доставка**.
 3. В разделе "Доставка" найдите **A"Дополнительные разбивки"**.
 4. В разделе Дополнительные разбивке проверьте, выбран ли уже значок плюса рядом с **Показы по устройствам** (`impression_device`). Если да, значит, подтверждение согласия активно для этого аккаунта.
 
-[![Панель Дополнительные разбивки в Менеджере рекламы со значками плюса для Время суток, Показы по устройствам и Значение частоты](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)
+<Image align="center" alt="Панель Дополнительные разбивки в Менеджере рекламы со значками плюса для Время суток, Показы по устройствам и Значение частоты" src="https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png" />
 
 <div data-zendesk-anchors="check-impression-device-in-ads-manager=%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8C%D1%82%D0%B5-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D1%8B-%D0%BF%D0%BE-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0%D0%BC-%D0%B2-%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%D0%B5-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B h_01KZ63J08GPADE2AH0KV9NNESC=%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8C%D1%82%D0%B5-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D1%8B-%D0%BF%D0%BE-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0%D0%BC-%D0%B2-%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%D0%B5-%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D1%8B" />

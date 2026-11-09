@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **At a glance:** Apple Ads — партнер AppsFlyer, сеть с самостоятельной атрибуцией (SRN, Self-Reporting Network), которая помогает пользователям находить ваше приложение в магазине приложений с помощью ключевых слов.
 
-<Image alt="medium_originaljpeg_apple_ads_logo_blk_highres_720 (1) (1).jpg" src="https://files.readme.io/f89d1a5ec1a1de2ec2dfdec7465465fc2be73e0cf41ddd6be8b2e3f62de3c9e8-47598828154001.jpg" width="719px" />
+<Image align="center" alt="medium_originaljpeg_apple_ads_logo_blk_highres_720 (1) (1).jpg" src="https://files.readme.io/f89d1a5ec1a1de2ec2dfdec7465465fc2be73e0cf41ddd6be8b2e3f62de3c9e8-47598828154001.jpg" width="719px" />
 
 От релевантности приложения зависит, будет ли ваша реклама показываться по поисковому запросу в App Store. Отклик пользователя на рекламу — показатель ее релевантности. По откликам пользователей Apple Ads определяет, какие рекламные объявления показывать чаще.
 
@@ -146,7 +146,7 @@ x-zendesk:
    3. Нажмите **Сохранить.**
 2. **На дэшборде Apple Search Ads**:![](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png) получите идентификатор группы кампаний в Apple Search Ads, связанный с данным маркетинговым партнером. Чтобы найти идентификатор, следуйте указаниям на скриншоте ниже.
 
-   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 3. **В AppsFlyer настройте маркетингового партнера Apple Ads:**
    1. В AppsFlyer в боковом меню выберите **Сотрудничество**> **Активные интеграции**.
    2. Запустите поиск *маркетингового партнера*** Apple Search Ads**.  
@@ -208,7 +208,7 @@ x-zendesk:
 
 1. **На дэшборде Apple Search Ads**:![](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png) Получите идентификатор группы кампаний. Чтобы найти идентификатор, следуйте указаниям на скриншоте ниже. Скопируйте только цифры.
 
-   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 2. Выберите приложение в AppsFlyer.
 3. В боковом меню выберите **Сотрудничество** > **Активные интеграции**.
 4. Выбрать **Apple Search Ads.**
@@ -300,11 +300,11 @@ AppsFlyer и Apple Search Ads используют разную логику а�
 
 **Ретаргетинг включен**
 
- ![ASA R Enabled2.jpg](https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg) 
+ <Image align="center" alt="ASA R Enabled2.jpg" src="https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg" />
 
 **Ретаргетинг отключен**
 
- ![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png) 
+ <Image align="center" alt="ASA_R_Disabled.png" src="https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png" />
 
 <div id="additional-reasons-for-discrepancies" />
 

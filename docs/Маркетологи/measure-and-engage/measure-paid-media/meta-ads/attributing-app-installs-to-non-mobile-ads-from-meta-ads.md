@@ -46,7 +46,7 @@ AppsFlyer может атрибутировать установки мобил�
 4. Продолжите настройку **набора рекламных объявлений** и **рекламного объявления** как обычно.
 5. На вкладке **Adverts** убедитесь, что приложение связано в разделе Mobile App Events Recording.
 
-![fb_app_events_ui.jpg](https://files.readme.io/304df530557ddaf6252d9a7c11fcb54b549f5cbdb7ebd4b0da61f847a57867a3-360016319338.jpg)
+<Image align="center" alt="fb_app_events_ui.jpg" src="https://files.readme.io/304df530557ddaf6252d9a7c11fcb54b549f5cbdb7ebd4b0da61f847a57867a3-360016319338.jpg" />
 
 После завершения настройки вы сможете видеть установки мобильного приложения, полученные в результате этой рекламы, в дэшбордах Meta Ads и AppsFlyer в реальном времени.
 

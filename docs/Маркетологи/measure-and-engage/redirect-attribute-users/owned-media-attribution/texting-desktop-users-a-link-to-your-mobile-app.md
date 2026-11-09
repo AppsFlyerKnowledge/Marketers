@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Кратко:** Конвертируйте пользователей десктопа в пользователей мобильного приложения с помощью СМС-поставщиков и OneLink.
 
-![web-form-text-me-the-app.png](https://files.readme.io/d28b843ab7528138b4d85b147b8d613efde740d354238227b0f123030fa3a1de-360004940018.png)
+<Image align="center" alt="web-form-text-me-the-app.png" src="https://files.readme.io/d28b843ab7528138b4d85b147b8d613efde740d354238227b0f123030fa3a1de-360004940018.png" />
 
 <div id="introduction" />
 

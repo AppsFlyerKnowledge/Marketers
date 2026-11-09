@@ -608,7 +608,7 @@ AF('pba', 'setCustomerUserId', '<the user's internal ID, as a string>');
 
 После установки проверьте, что SDK отправляет запросы, проверив сетевые запросы в инструментах разработчика вашего браузера.
 
-[<Image alt="Скриншот DevTools" src="https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png" width="1015px" />](https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png)
+<Image align="center" alt="Скриншот DevTools" src="https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png" width="1015px" />
 
 **Чтобы убедиться, что SDK работает, выполните следующие шаги:**
 
@@ -1019,10 +1019,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 3. Добавьте новый тег для атрибуции подписок после загрузки страницы благодарности.
 
-   [![Добавление нового тега GTM для события конверсии CUID](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="Добавление нового тега GTM для события конверсии CUID" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 4. Дайте тегу отдельное имя и выберите тип тега **Custom HTML.**
 
-   [![Присвоение имени тегу и выбор типа тега «Пользовательский HTML» в GTM](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)
+   <Image align="center" alt="Присвоение имени тегу и выбор типа тега «Пользовательский HTML» в GTM" src="https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg" />
 
    ```html
    <script>
@@ -1037,10 +1037,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 5. Разверните **Расширенные настройки** и затем **Последовательность тегов** под текстовой областью и убедитесь, что конверсия настроена на срабатывание после выполнения тега.
 
-   [![Настройка последовательности тегов в GTM для тега конверсии](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="Настройка последовательности тегов в GTM для тега конверсии" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. Установите триггер для тега конверсии, чтобы указать, когда тег конверсии должен срабатывать (в приведенном ниже примере он срабатывает при загрузке страницы благодарности).
 
-   [![Настройка триггера GTM для срабатывания тега конверсии при загрузке страницы "Спасибо"](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="Настройка триггера GTM для срабатывания тега конверсии при загрузке страницы 'Спасибо'" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 </Accordion>
 

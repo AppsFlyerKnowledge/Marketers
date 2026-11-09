@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Краткий обзор**: Закупайте трафик у сторонних медиа-источников в CM360 и измеряйте конверсии мобильных приложений из этого источника как в AppsFlyer (атрибуция стороннему медиа-источнику), так и в CM360.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 
 <div id="measurement-of-cm360-with-non-dv360-third-party-media-sources" />
 

@@ -198,16 +198,16 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 1. Создайте кроссплатформенную целевую страницу, как описано в [разделе «Ссылка атрибуции»](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab).
 2. Войдите в Google Ads и создайте новую кампанию.
 3. Выберите цель кампании.  
-   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png" />
    * Применимы все цели, кроме «Продвижения приложений» (которая может быть использована только для кампаний с мобильными приложениями).
    * Мы рекомендуем установить цель кампании «Продажи» для оптимизации на основе конкретных событий в приложении.
 4. Выберите цели конверсии.  
-   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)
+   <Image align="center" alt="" src="https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png" />
    * По умолчанию вы видите предопределенные цели кампании на уровне аккаунта. Вы можете оставить их или удалить те, которые не подходят к вашей кампании.
    * Если вы не видите нужной цели, [добавьте действие конверсии и цель конверсии](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals).
    * Вы также можете редактировать предопределенные цели на странице «Конверсии».
 5. Выберите тип кампании.  
-   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)
+   <Image align="center" alt="" src="https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png" />
    * Применимы все типы кампаний, кроме «Покупки», которая требует наличия каталога товаров и доступна только для проверенных доменов.
 6. Введите URL кроссплатформенной целевой страницы в качестве конечного URL в Google.
 
@@ -222,16 +222,16 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 1. Установите прямую ссылку атрибуции, как описано в [разделе «Ссылка атрибуции»](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab).
 2. Войдите в Google Ads и создайте новую кампанию.
 3. Выберите цель кампании.  
-   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png" />
    * Применимы все цели, кроме «Продвижения приложений» (которая может быть использована только для кампаний с мобильными приложениями).
    * Мы рекомендуем установить цель кампании «Продажи» для оптимизации на основе конкретных событий в приложении.
 4. Выберите цели конверсии.  
-   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)
+   <Image align="center" alt="" src="https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png" />
    * По умолчанию вы видите предопределенные цели кампании на уровне аккаунта. Вы можете оставить их или удалить те, которые не подходят к вашей кампании.
    * Если вы не видите нужной цели, [добавьте действие конверсии и цель конверсии](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals).
    * Вы также можете редактировать предопределенные цели на странице «Конверсии».
 5. Выберите тип кампании.  
-   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)
+   <Image align="center" alt="" src="https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png" />
    * Применимы все типы кампаний, кроме «Покупки», которая требует наличия каталога товаров и доступна только для проверенных доменов.
 6. Введите ссылку, которая будет использоваться в качестве конечного URL-адреса в Google.
    * Это должно быть конечное место в вебе, куда вы хотите перенаправить своих пользователей. Это может быть любой веб-адрес, включая целевую страницу или URL магазина. Например, `https://store.steampowered.com/app/{appid}/{myapp}/`.

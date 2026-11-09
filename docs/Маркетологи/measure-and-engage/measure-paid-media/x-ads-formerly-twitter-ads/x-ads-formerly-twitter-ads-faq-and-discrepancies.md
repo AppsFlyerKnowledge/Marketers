@@ -81,21 +81,21 @@ x-zendesk:
 1. Женя входит в учетную запись <Anchor target="_blank" href="http://ads.twitter.com/">ads.twitter.com</Anchor>.
 2. Она нажимает пункт **Account** (Аккаунт) и выбирает **Edit access to account** (Изменить доступ к аккаунту).
 
-   ![twitter_assign_account2.PNG](https://files.readme.io/cd2aa0b7a700fd0eee8754ac850adb99cc22b1c42d0d94f18d31ca71901ff31f-50903273809937.png)
+   <Image align="center" alt="twitter_assign_account2.PNG" src="https://files.readme.io/cd2aa0b7a700fd0eee8754ac850adb99cc22b1c42d0d94f18d31ca71901ff31f-50903273809937.png" />
 3. Затем Женя предоставляет @nivi доступ к своему аккаунту X Ads на правах администратора (Account administrator).  
 
-   [![twitter_edit_access_to_account.png](https://files.readme.io/d1f650ed870e9749984cae9ff2500859479981ae4a7cbd58f42163536f99226f-49929519902993.png)](https://support.appsflyer.com/hc/article_attachments/49929523995665)
+   [<Image align="center" alt="twitter_edit_access_to_account.png" src="https://files.readme.io/d1f650ed870e9749984cae9ff2500859479981ae4a7cbd58f42163536f99226f-49929519902993.png" />](https://support.appsflyer.com/hc/article_attachments/49929523995665)
 4. Дженни входит в аккаунт AppsFlyer и переходит в раздел Active Integrations >> X Ads
 5. На этом этапе она видит в списке и свой аккаунт X Ads.
 6. Теперь она видит свой аккаунт X Ads и может настроить интеграцию. Администратор аккаунта может видеть все подключенные аккаунты X Ads.
 
    Что видит Женя:
 
-   ![jennys_ads_account.png](https://files.readme.io/73e3ca9be6090bfd47acb675e4faa634721d9aa75f5ebb8cf736fd56dd9e336b-50903273813137.png)
+   <Image align="center" alt="jennys_ads_account.png" src="https://files.readme.io/73e3ca9be6090bfd47acb675e4faa634721d9aa75f5ebb8cf736fd56dd9e336b-50903273813137.png" />
 
    Что видит администратор учетной записи:
 
-   ![jennys_ads_account__1_.png](https://files.readme.io/d744c0e2de60011a0395a407607ec90f4fac04f76787b430cf1a74eda2342e66-50903273813649.png)
+   <Image align="center" alt="jennys_ads_account__1_.png" src="https://files.readme.io/d744c0e2de60011a0395a407607ec90f4fac04f76787b430cf1a74eda2342e66-50903273813649.png" />
 
 </Accordion>
 
@@ -133,7 +133,7 @@ x-zendesk:
 
 Кроме того, может произойти такая ошибка:  
 
-[![](https://files.readme.io/144dac3346ef8ab507294163ff4b7ff26cfc59fe1c2aa6ce2d2dd2d36e9ba9ae-49929523996561.png)](https://files.readme.io/144dac3346ef8ab507294163ff4b7ff26cfc59fe1c2aa6ce2d2dd2d36e9ba9ae-49929523996561.png)
+<Image align="center" alt="" src="https://files.readme.io/144dac3346ef8ab507294163ff4b7ff26cfc59fe1c2aa6ce2d2dd2d36e9ba9ae-49929523996561.png" />
 
 **Ошибка: При сохранении настроек для Twitter произошла ошибка. Некоторые аккаунты не удалось обновить: ХХ Несколько одинаковых идентификаторов поставщика (аppid, conversionType) для события appid2872.)**
 

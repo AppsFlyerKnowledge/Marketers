@@ -27,7 +27,7 @@ x-zendesk:
 >
 > AppsFlyer поддерживает измерение активности в приложении для [кампаний, не связанных с приложением](#web-to-app-измерение-активности-в-приложении-для-кампаний-не-связанных-с-приложением).
 
-<Image alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
+<Image align="center" alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
 
 <div id="overview" />
 
@@ -361,7 +361,7 @@ AppsFlyer предлагает ряд решений для отложенног
 4. Введите **Идентификатор аккаунта TikTok** вашего агентства. Это позволяет идентифицировать трафик агентства и отличать его от трафика рекламодателя.
 5. Нажмите кнопку **Save Integration** (Сохранить интеграцию).
 
-   <Image alt="tiktok.png" src="https://files.readme.io/b13ee9cd005b97c37019154a0caa10e03b846e7405777d9fc0e3db11bfb233b4-33379202036369.png" width="664px" />
+   <Image align="center" alt="tiktok.png" src="https://files.readme.io/b13ee9cd005b97c37019154a0caa10e03b846e7405777d9fc0e3db11bfb233b4-33379202036369.png" width="664px" />
 
 > 🚧 **Important**
 >

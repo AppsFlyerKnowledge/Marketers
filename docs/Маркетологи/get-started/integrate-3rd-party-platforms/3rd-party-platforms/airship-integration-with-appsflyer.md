@@ -68,7 +68,7 @@ x-zendesk:
 
 Airship подключается к AppsFlyer с помощью уникальных App Key и Token. Если у вас их еще нет, вы можете получить их в Airship, чтобы продолжить интеграцию, или ознакомьтесь с инструкциями ниже о том, как их получить.
 
-![airship-integration-tab.png](https://files.readme.io/dc33feec09fe551700586b9778a037fa0f5d610224944aea5a0fe56a6d288043-360017400878.png)
+<Image align="center" alt="airship-integration-tab.png" src="https://files.readme.io/dc33feec09fe551700586b9778a037fa0f5d610224944aea5a0fe56a6d288043-360017400878.png" />
 
 **Чтобы настроить интеграцию с Airship:**
 
@@ -123,17 +123,17 @@ Airship подключается к AppsFlyer с помощью уникальн
    1. Войдите в свой аккаунт Airship по адресу: [go.airship.com](http://go.urbanairship.com/)
    2. В меню слева перейдите в **Настройки>** **API &** **Интеграции**и нажмите **Airship API**.
 
-      ![airship-appkey-en_us.png](https://files.readme.io/c33611035d8dcadb73e41a3787690726608bddde55edbc38f34990c03948985d-360017666917.png)
+      <Image align="center" alt="airship-appkey-en_us.png" src="https://files.readme.io/c33611035d8dcadb73e41a3787690726608bddde55edbc38f34990c03948985d-360017666917.png" />
    3. Скопируйте ключ приложения.
    4. В AppsFlyer вставьте ключ приложения в поле «App Key».
 3. Получите токен из Airship:
    1. Войдите в свою учетную запись Airship по адресу: [go.airship.com](http://go.urbanairship.com/)
    2. В меню слева перейдите в **Settings >** **APIs &** **Integrations** и нажмите **Tokens**.
 
-      ![airship-token-creation-1.png](https://files.readme.io/b0c22d9844dbc93f7dd158a75916eca98404474a65be0c1528f83e6e4ac7b210-360017480697.png)
+      <Image align="center" alt="airship-token-creation-1.png" src="https://files.readme.io/b0c22d9844dbc93f7dd158a75916eca98404474a65be0c1528f83e6e4ac7b210-360017480697.png" />
    3. Нажмите кнопку **Создать токен**.
 
-      ![airship-token-creation-2.png](https://files.readme.io/656f6f5a6eebe3ccd1a786f6abec62739633e4150722fec41bc1fbdea78f8275-360017549138.png)
+      <Image align="center" alt="airship-token-creation-2.png" src="https://files.readme.io/656f6f5a6eebe3ccd1a786f6abec62739633e4150722fec41bc1fbdea78f8275-360017549138.png" />
    4. Введите имя токена и выберите роль.
    5. Нажмите кнопку **Создать токен**.
    6. В AppsFlyer вставьте токен в поле **Token Authentication**.
@@ -144,7 +144,7 @@ Airship подключается к AppsFlyer с помощью уникальн
 
 AppsFlyer может автоматически отправлять постбэки в Airship после установки пользователем и повторного вовлечения. В этом разделе можно определить **источник пользователей**, который позволяет отправлять постбэки.
 
-![urban_airship_msc_new_3.png](https://files.readme.io/394dd47ff26742092f3012e333f137d706f41bc85cd6875013d792ce7f36b01d-360001900305.png)
+<Image align="center" alt="urban_airship_msc_new_3.png" src="https://files.readme.io/394dd47ff26742092f3012e333f137d706f41bc85cd6875013d792ce7f36b01d-360001900305.png" />
 
 Выберите **Events attributed to any partner or organic**, чтобы отправлять постбэки в Airship для любого пользователя, который загружает приложение.
 

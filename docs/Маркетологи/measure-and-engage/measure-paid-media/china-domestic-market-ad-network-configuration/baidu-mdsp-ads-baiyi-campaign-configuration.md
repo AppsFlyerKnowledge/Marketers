@@ -48,7 +48,7 @@ x-zendesk:
 
 AppsFlyer может отправлять автоматические постбэки в Baidu mDSP Ads (Baiyi) после установок и повторных вовлечений пользователей. В этом разделе можно определить **источник пользователей**, который позволяет отправлять постбэки.
 
-![baidu-mdsp-default-postbacks.png](https://files.readme.io/fdde731527468b9837efa2230c5416f3393024b8c4eec8b44339086a2f31b984-360002069005.png)
+<Image align="center" alt="baidu-mdsp-default-postbacks.png" src="https://files.readme.io/fdde731527468b9837efa2230c5416f3393024b8c4eec8b44339086a2f31b984-360002069005.png" />
 
 <div id="in-app-events-settings" />
 
@@ -56,7 +56,7 @@ AppsFlyer может отправлять автоматические пост�
 
 В этом разделе вы можете сопоставить события AppsFlyer с Baidu mDSP Ads (Baiyi) через постбэки.
 
-![baidu-mdsp-in-app-events.png](https://files.readme.io/fa515fac11e82be11bb55bb9b198ac63681ecdb713f0f6537f4ca7bf0c60e5b1-360002069085.png)
+<Image align="center" alt="baidu-mdsp-in-app-events.png" src="https://files.readme.io/fa515fac11e82be11bb55bb9b198ac63681ecdb713f0f6537f4ca7bf0c60e5b1-360002069085.png" />
 
 1. Включите переключатель «Постбэки по внутренним событиям приложения».
 2. Чтобы добавить в список событие, определенное в SDK, нажмите **Add Event** (Добавить событие).
@@ -109,7 +109,7 @@ AppsFlyer может отправлять автоматические пост�
 
 Подробные сведения об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">окне атрибуции кликов см. здесь</Anchor>.
 
-![baidu-mdsp-click-through.png](https://files.readme.io/19f6616cc1e62ec8888a72625ce936acdb6e8e63e4a4cd4273cdc99fd2297a93-360002075089.png)
+<Image align="center" alt="baidu-mdsp-click-through.png" src="https://files.readme.io/19f6616cc1e62ec8888a72625ce936acdb6e8e63e4a4cd4273cdc99fd2297a93-360002075089.png" />
 
 <div id="click-attribution-link" />
 
@@ -149,17 +149,17 @@ AppsFlyer может отправлять автоматические пост�
 
 Войдите в Baidu mDSP Ads по адресу http://baiyi.baidu.com/ и перейдите в **Tool** >> **Apps**:
 
-![mDSP_4.png](https://files.readme.io/90f99229f6bffe9b9edbf0469f9b4e66ca9c5c55184eb542e250ef6a9bd76aee-115014006086.png)
+<Image align="center" alt="mDSP_4.png" src="https://files.readme.io/90f99229f6bffe9b9edbf0469f9b4e66ca9c5c55184eb542e250ef6a9bd76aee-115014006086.png" />
 
 Нажмите **Create New App**.
 
-![mDSP_5.png](https://files.readme.io/c034e3238fbd6021fefc44ff8b1cf8b4d39c3f9043b02074c3bdccce2747ac48-115014006106.png)
+<Image align="center" alt="mDSP_5.png" src="https://files.readme.io/c034e3238fbd6021fefc44ff8b1cf8b4d39c3f9043b02074c3bdccce2747ac48-115014006106.png" />
 
 Введите в поля всю необходимую информацию.
 
 Добавьте **ссылку атрибуции AppsFlyer в поле Feedback URL**:
 
-![mDSP_6.png](https://files.readme.io/6692275131ee49b62febcb558457f7f1a1fbd167f3d3f61d976e1cb248a61388-115014006906.png)
+<Image align="center" alt="mDSP_6.png" src="https://files.readme.io/6692275131ee49b62febcb558457f7f1a1fbd167f3d3f61d976e1cb248a61388-115014006906.png" />
 
 ***ПРИМЕЧАНИЕ***: Для приложений iOS добавьте приложение, введя **Appid**. Для приложений Android приложение можно добавить двумя способами:  
 1. Подключение к приложению, которое вы загрузили на платформу Baidu для разработчиков ([http://app.baidu.com/](http://app.baidu.com/)), или  
@@ -171,10 +171,10 @@ AppsFlyer может отправлять автоматические пост�
 
 Нажмите **Campaign Management** >> **Create New Campaign**:
 
-![mDSP_7.png](https://files.readme.io/aab8866a1969e403247c97018aae1d65d456ce4e261412035ef91a1862f509b9-115014006926.png)
+<Image align="center" alt="mDSP_7.png" src="https://files.readme.io/aab8866a1969e403247c97018aae1d65d456ce4e261412035ef91a1862f509b9-115014006926.png" />
 
 В разделе **2. &lt;0>Настройте рекламный блок** >> перейдите к разделу **Цели**, выберите «Установка приложения»>> укажите остальные необходимые данные и отправьте рекламную кампанию на проверку:
 
-![mDSP_8.png](https://files.readme.io/da064e6811b4c749a20757d711186dc705070629887cdf2e7b514cc17274af75-115014006946.png)
+<Image align="center" alt="mDSP_8.png" src="https://files.readme.io/da064e6811b4c749a20757d711186dc705070629887cdf2e7b514cc17274af75-115014006946.png" />
 
 <div data-zendesk-anchors="setting-up-baidu-mdso-ads-baiyi=%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-baidu-mdsp-ads-baiyi h_01HKW6TN4YBTMR1ZDH77D7SK7N=%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-baidu-mdsp-ads-baiyi h_01HKW6TN4YM927W1VAKNWFQ0SJ=integration-tab activate-partner=%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D0%B0 h_01HKW6TN4Y4EXABZTJ2VE4QRTK=%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D0%B0 inapp-events-settings=in-app-events-settings-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B8%D1%85-%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B9-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F h_01HKW6TN4YYDKNGCSJB4MARK52=in-app-events-settings-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8-%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B8%D1%85-%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B9-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F h_01HKW6TN4Y2D2K419172AZJXR6=attribution-link-tab attribution-link-parameters=%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%86%D0%B8%D0%B8 h_01HKW6TN4YQTMGSMPGR01FR658=%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D1%8B-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8-%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%86%D0%B8%D0%B8 clickthrough-attribution=%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D0%BA%D0%BB%D0%B8%D0%BA%D0%B0%D0%BC h_01HKW6TN4Y9ZP7SXMTD0XGNPGV=%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D0%BA%D0%BB%D0%B8%D0%BA%D0%B0%D0%BC click-attribution-link=%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%86%D0%B8%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%BA%D0%BB%D0%B8%D0%BA%D0%B0 h_01HKW6TN4Y5A1PT6RCVCFYRG9Q=%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%86%D0%B8%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%BA%D0%BB%D0%B8%D0%BA%D0%B0 h_01HKW6TN4Z02V726B7379TMBC0=cost-tab h_01HKW6TN4Z01YZWHMGF5N1KC50=ad-revenue-tab h_01HKW6TN4Z3KCEFDW9YA2A2BZV=permissions-tab create-conversion-rule-at-baidu-mdsp-ads=%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%B9%D1%82%D0%B5-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE-%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B8-%D0%B2-baidu-mdsp-ads h_01HKW6TN4ZWEA7683C8MFAT4AY=%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%B9%D1%82%D0%B5-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE-%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B8-%D0%B2-baidu-mdsp-ads" />

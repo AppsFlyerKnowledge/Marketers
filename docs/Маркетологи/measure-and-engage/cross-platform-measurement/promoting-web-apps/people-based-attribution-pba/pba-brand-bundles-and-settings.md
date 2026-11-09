@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Пакеты бренда консолидируют данные об атрибуции, событиях, посещениях и доходах по приложениям и сайтам, связанным с брендом. Используйте страницу настроек пакета бренда, чтобы отмечать события конверсии, настроить интеграцию с Google Ads и многое другое.
 
-![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
+<Image align="center" alt="BrandBundles.png" src="https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png" />
 
 <div id="about-brand-bundles" />
 

@@ -43,7 +43,7 @@ x-zendesk:
 >
 > ## Android;
 
-![android_logo.png](https://files.readme.io/ccac58a8cad4bb58890de7781c54ae9ad17184b9f121467a258978a2112aff7d-360001394358.png)
+<Image align="center" alt="android_logo.png" src="https://files.readme.io/ccac58a8cad4bb58890de7781c54ae9ad17184b9f121467a258978a2112aff7d-360001394358.png" />
 
 Ниже приведены ссылки на предыдущие руководства по интеграции SDK для Android:
 
@@ -64,7 +64,7 @@ x-zendesk:
 
 ## https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png
 
-![ios_logo.png](https://files.readme.io/72c2f017636f5ed5b14aa63a83b03062dcd919baffdb2f786423bed1291b93af-360001319257.png)
+<Image align="center" alt="ios_logo.png" src="https://files.readme.io/72c2f017636f5ed5b14aa63a83b03062dcd919baffdb2f786423bed1291b93af-360001319257.png" />
 
 Кликните <Anchor target="_blank" href="/marketers/ru/docs/sdk-integration-overview">здесь</Anchor>, чтобы открыть наше актуальное руководство по интеграции SDK для iOS.
 
@@ -81,7 +81,7 @@ x-zendesk:
 
 ## Windows Phone
 
-![windows_phone_logo.jpg](https://files.readme.io/19886494c67468d413342f829e68194a9128e44f70a92efbc840319765575c13-360001324197.jpg)
+<Image align="center" alt="windows_phone_logo.jpg" src="https://files.readme.io/19886494c67468d413342f829e68194a9128e44f70a92efbc840319765575c13-360001324197.jpg" />
 
 * [Руководство по интеграции AppsFlyer SDK для Windows Phone V.2.0](https://support.appsflyer.com/hc/article_attachments/49929333033361)
 

@@ -48,7 +48,7 @@ x-zendesk:
 
 1. В верхней части главной страницы DCR в AppsFlyer нажмите кнопку **Manage connections**:
 
-   [![dcr_manage_connections_button.png](https://files.readme.io/773e9568a1e9e642f127806fa3b80932699e0db6cc6a124d5a09898577ade645-13909932760593.png)](https://files.readme.io/773e9568a1e9e642f127806fa3b80932699e0db6cc6a124d5a09898577ade645-13909932760593.png)
+   <Image align="center" alt="dcr_manage_connections_button.png" src="https://files.readme.io/773e9568a1e9e642f127806fa3b80932699e0db6cc6a124d5a09898577ade645-13909932760593.png" />
 
    * Если в вашем аккаунте уже есть входящие подключения, откроется диалоговое окно **Manage connections**. В нем нажмите кнопку ![dcr_new_connection_button.png](https://files.readme.io/ea74c7dd6653a544216addddc5fda2a15126a6a26ba2e3ea0a954c58f4fe479e-13916096900753.png), чтобы открыть диалоговое окно **New connection**.
    * Если вы создаете первое входящее подключение в аккаунте, диалоговое окно **New connection** откроется автоматически.
@@ -67,7 +67,7 @@ x-zendesk:
 
 В диалоговом окне **«Новое подключение»** выберите облачный сервис, который вы подключаете к DCR, а затем следуйте инструкциям на соответствующей вкладке ниже.
 
-<Image alt="dcr_create_inbound_connection.png" src="https://files.readme.io/b30606026761528f4a0d3efcc1a3207e8b9c99ca8202f76b2d698a86efaa21ee-13913809617297.png" width="457px" />
+<Image align="center" alt="dcr_create_inbound_connection.png" src="https://files.readme.io/b30606026761528f4a0d3efcc1a3207e8b9c99ca8202f76b2d698a86efaa21ee-13913809617297.png" width="457px" />
 
 <div id="bigquery-inbound" />
 
@@ -77,7 +77,7 @@ x-zendesk:
 
 * Эту информацию можно получить на странице BigQuery в консоли Google Cloud.
 
-  <Image alt="BQ_project_ID.png" src="https://files.readme.io/de295dfc0224ff90f041b1aeaf2996828ec1920a715ba668b46a2f50489fd15b-13910856739857.png" width="457px" />
+  <Image align="center" alt="BQ_project_ID.png" src="https://files.readme.io/de295dfc0224ff90f041b1aeaf2996828ec1920a715ba668b46a2f50489fd15b-13910856739857.png" width="457px" />
 
 </Accordion>
 
@@ -89,7 +89,7 @@ x-zendesk:
 
 * **ACCOUNTADMIN** > **Учетная запись** > наведите курсор на соответствующую учетную запись > **Скопировать идентификатор учетной записи.** <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">См. документацию Snowflake</Anchor>.
 
-![ui-snowsight-account-identifier.png](https://files.readme.io/9995c3fd523548de93bafc7c575203e7d38be3b6be2a5e876d7a0a8495ca04c9-24698313004433.png)
+<Image align="center" alt="ui-snowsight-account-identifier.png" src="https://files.readme.io/9995c3fd523548de93bafc7c575203e7d38be3b6be2a5e876d7a0a8495ca04c9-24698313004433.png" />
 
 </Accordion>
 
@@ -149,7 +149,7 @@ DCR передает отчеты в выбранные вами облачны�
 
 В диалоговом окне **New connection** выберите облачный сервис, к которому вы подключаетесь, а затем следуйте инструкциям на соответствующей вкладке ниже.
 
-[![dcr_dl_new_connection_dialog.png](https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png)](https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png)
+<Image align="center" alt="dcr_dl_new_connection_dialog.png" src="https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png" />
 
 <div id="bigquery-outbound" />
 
@@ -159,7 +159,7 @@ DCR передает отчеты в выбранные вами облачны�
 2. Введите **идентификатор проекта** и **название набора данных** для проекта BigQuery, который содержит <Anchor target="_blank" href="/marketers/ru/docs/data-clean-room-setting-up-cloud-services#bigquery-outbound">созданный вами набор данных</Anchor> для Data Locker.  
    * Эту информацию можно найти на странице BigQuery в консоли Google Cloud.
 
-     <Image alt="BQ_project_ID_dataset_name.png" src="https://files.readme.io/c784b0369c51a6e123279fdc5b2fa1fba255ae371d436e9247cb5e4685387983-13928683779089.png" width="457px" />
+     <Image align="center" alt="BQ_project_ID_dataset_name.png" src="https://files.readme.io/c784b0369c51a6e123279fdc5b2fa1fba255ae371d436e9247cb5e4685387983-13928683779089.png" width="457px" />
 3. Кликните кнопку ![dcr_dl_test_connection_button.png](https://files.readme.io/8c789303491a4524515216aca06dc4b3435b5b0baa3aaa8726ff73cce968c5bc-13928683412241.png), чтобы убедиться, что Data Locker подключен к набору данных.
 4. Чтобы создать подключение, кликните **Сохранить**.
 
@@ -184,7 +184,7 @@ DCR передает отчеты в выбранные вами облачны�
 2. Введите регион вашей учетной записи Snowflake и идентификатор ID учетной записи.
    * Эту информацию можно получить, кликнув имя учетной записи в левом нижнем углу консоли Snowflake, а затем наведя указатель на имя учетной записи во всплывающем окне. **Важно!** Найдите идентификатор с меткой **Locator.** Это **НЕ** тот же идентификатор ID, который используется для создания входящих подключений Snowflake.  
 
-     <Image alt="snowflake_account_locator.png" src="https://files.readme.io/23495b3209129f48ed1ca3442a1e96fac791d46df6f87050ac036893a050e427-13930022354961.png" width="536px" />
+     <Image align="center" alt="snowflake_account_locator.png" src="https://files.readme.io/23495b3209129f48ed1ca3442a1e96fac791d46df6f87050ac036893a050e427-13930022354961.png" width="536px" />
 3. Кликните кнопку ![dcr_dl_test_connection_button.png](https://files.readme.io/8c789303491a4524515216aca06dc4b3435b5b0baa3aaa8726ff73cce968c5bc-13928683412241.png), чтобы убедиться, что Data Locker подключен к вашей учетной записи Snowflake.
 4. Чтобы создать подключение, кликните **Сохранить**.
 

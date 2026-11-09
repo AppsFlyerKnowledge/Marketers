@@ -181,7 +181,7 @@ x-zendesk:
 
 * **Тренд подделки атрибуции**: Отражение обнаружений модуля расширенной безопасности во времени. Этот график отражает общий статус обнаружения спуфинга на уровне приложения/приложений.
 
-<Image alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
 
 </Accordion>
 
@@ -204,7 +204,7 @@ x-zendesk:
 
 #### Страница Модуля расширенной безопасности
 
-<Image alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
 
 Страница модуля расширенной безопасности разбита на три раздела.
 

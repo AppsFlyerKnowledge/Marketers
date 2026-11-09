@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **At a glance:** Oracle Responsys, платформа доставки и аналитики электронной почты, встраивает OneLink AppsFlyer в электронные письма. Получатели электронных писем, перешедшие по ссылке, направляются по диплинку в ваше приложение.
 
-![oracle-responsys-af-logo.png](https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png)
+<Image align="center" alt="oracle-responsys-af-logo.png" src="https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png" />
 
 ESP (поставщики услуг электронной почты) могут быть отличными источниками сегментированного пользовательского трафика.
 
@@ -67,7 +67,7 @@ ESP (поставщики услуг электронной почты) могу
 
 iOSAndroid
 
-![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
+<Image align="center" alt="Oracle-responsys-link-tracking-table.png" src="https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png" />
 
 После настройки доменов кликов в таблице ссылок компания Responsys использует эти домены для упаковывания OneLinks, которые вы включаете в рассылки. Таким образом, Responsys может регистрировать клики в своей системе, сохраняя при этом функциональность OneLink и диплинкинга.
 

@@ -97,10 +97,10 @@ x-zendesk:
 
 1. В AppsFlyer, из бокового меню, выберите **Сотрудничество** > **Data Clean Room**.
 
-   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="644px" />
+   <Image align="center" alt="Click Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="644px" />
 2. Нажмите **+ Новый источник** (на главной странице или на вкладке **Источники**).
 
-   <Image alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
+   <Image align="center" alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
 3. Следуйте пошаговым инструкциям **New source** :
 
 </Accordion>
@@ -198,7 +198,7 @@ x-zendesk:
 
 При выборе расположения источника нажмите **Local file system**, а затем **Next** — появится возможность загружать локальные файлы с вашего устройства.
 
-<Image alt="Select Local file system.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
+<Image align="center" alt="Select Local file system.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
 
 <div id="note" />
 
@@ -217,7 +217,7 @@ x-zendesk:
 * **Snapshot** — при каждом обновлении источника этот метод загружает полный набор данных и полностью заменяет старый набор новым. Выбирайте этот метод только в том случае, если ваши загружаемые файлы всегда содержат полный и актуальный набор данных.
 * **Append** — этот метод загружает только новые или измененные данные, а не полный набор данных. Старые наборы данных не удаляются и не обновляются. Идеально подходит для периодических загрузок, таких как ежедневные или еженедельные отчеты. Преимущества включают меньший объем загрузок (что может снизить стоимость облачного хранилища), более высокую скорость загрузки данных, более удобное управление записями и многое другое.
 
-<Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
+<Image align="center" alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
 <div id="important-1" />
 
@@ -305,7 +305,7 @@ source_name1/
 
 Ниже показано, как должна выглядеть структура папок после загрузки полного снимка файлов источника за 2 дня (а также программного создания папок даты/версии/данных и файлов \_SUCCESS): структура вашего бакета/папок может выглядеть примерно так:
 
-[<Image alt="Пример бакета со снимками bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
+<Image align="center" alt="Пример бакета со снимками bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />
 
 
 <div id="append-upload-requirements" />
@@ -505,7 +505,7 @@ DCP может с помощью ИИ предложить поле DCP для �
 1. Нажмите **+ New field**. Добавляется пустое поле.
 2. Введите имя поля и выберите его тип.
 
-<Image alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
+<Image align="center" alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
 
 **Типы полей включают:**
 
@@ -708,11 +708,11 @@ DCP может с помощью ИИ предложить поле DCP для �
 
 * Нажмите меню с 3 точками (действия) в правом верхнем углу и выберите **DCR key**.
 
-[<Image alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/49929194881425)
+[<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/49929194881425)
 
 После создания папки с ключом DCR, структура корзины и папок будет выглядеть следующим образом:
 
-<Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
 <div id="top-level-input-folder" />
 
@@ -727,7 +727,7 @@ DCP может с помощью ИИ предложить поле DCP для �
 
 После создания папки верхнего уровня для входных данных структура корзины и папок будет выглядеть следующим образом:
 
-<Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
 
 <div id="second-level-folder-for-each-data-source" />
 
@@ -741,7 +741,7 @@ DCP может с помощью ИИ предложить поле DCP для �
 
 После создания папок для двух источников данных структура корзины и папок будет выглядеть следующим образом:
 
-<Image alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
 
 В каждой папке источника данных [должны создаваться вложенные подпапки по дате и версии](#nested-subfolders-for-each-date-and-version) при каждом обновлении источника.
 

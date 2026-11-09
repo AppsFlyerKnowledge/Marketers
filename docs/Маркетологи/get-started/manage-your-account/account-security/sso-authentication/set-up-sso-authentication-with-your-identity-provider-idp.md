@@ -139,7 +139,7 @@ x-zendesk:
 
 Пользователи входят в AppsFlyer при помощи кнопки <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">Страница единого входа в AppsFlyer</Anchor>, нажав на кнопку **Вход через SSO** и указав свой адрес электронной почты. Затем они направляются к поставщику идентификационных данных для аутентификации, и перенаправляются на главную страницу AppsFlyer.
 
-[<Image alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)
+<Image align="center" alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />
 
 <div id="note-4" />
 
@@ -331,7 +331,7 @@ AppsFlyer предлагает два типа сертификатов с от�
 
 Если вы настроили процесс аутентификации для входа через поставщика услуг (AppsFlyer), убедитесь, что пользователи могут входить в AppsFlyer с помощью своей электронной почты:
 
-<Image alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
+<Image align="center" alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
 
 1. Если вы вошли в AppsFlyer и систему IdP, выйдите из них.
 2. Откройте веб-страницу в режиме инкогнито.

@@ -64,7 +64,7 @@ x-zendesk:
 * взаимодействует с кампанией ретаргетинга, проводимой в медиа-источнике
 * переустанавливает приложение
 
-[![re-attribution_1_en-us.png](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)
+<Image align="center" alt="re-attribution_1_en-us.png" src="https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png" />
 
 | Сценарий | Порог неактивностии | Период неактивности пользователя | Результат |
 | --- | --- | --- | --- |
@@ -83,7 +83,7 @@ x-zendesk:
 * неактивен в течение нескольких дней
 * впоследствии взаимодействует с кампанией ретаргетинга. впоследствии взаимодействует с кампанией ретаргетинга, проводимой медиа-источником, и запускает приложение
 
-[![Re-engagement_scenarios_en-us.png](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)
+<Image align="center" alt="Re-engagement_scenarios_en-us.png" src="https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png" />
 
 | Сценарий | Порог неактивности медиа-источника А | Период неактивности пользователя | Результат |
 | --- | --- | --- | --- |
@@ -113,7 +113,7 @@ SRN, поддерживающие периоды неактивности, на�
     (1-30 дней).
 5. Нажмите **Сохранить интеграцию**.
 
-[![Inactivity_window_SRN.png](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)
+<Image align="center" alt="Inactivity_window_SRN.png" src="https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png" />
 
 </Accordion>
 
@@ -129,7 +129,7 @@ SRN, поддерживающие периоды неактивности, на�
 4. Задайте **окно неактивности** (1-30 дней).  
     Параметр **периода неактивности** `af_inactivity_window` добавляется к ссылке атрибуции, например, &af\_inactivity\_window=7d. Если функция отключена, параметра нет в ссылке атрибуции.
 
-[![](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)
+<Image align="center" alt="" src="https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png" />
 
 </Accordion>
 

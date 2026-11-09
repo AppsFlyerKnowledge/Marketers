@@ -28,7 +28,7 @@ x-zendesk:
 
 ## Настройка интеграции с Appodeal
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/appodeal.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/appodeal.png" />
 
 Интеграция AppsFlyer с Appodeal поддерживает атрибуцию по кликам и <Anchor target="_blank" href="/marketers/ru/docs/roi360-guide-ad-revenue-attribution#ad-revenue-raw-data">атрибуцию дохода от рекламы на уровне пользователя.</Anchor>
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Кратко:** Glispa, интегрированный партнер AppsFlyer в категории рекламных сетей, создает решения, которые упрощают для агентств и брендов взаимодействие с целевыми аудиториями, а для паблишеров — монетизацию своих приложений. Помимо мобильной атрибуции по кликам Glispa также предлагает атрибуцию по стоимости и view-through атрибуцию, которую можно регистрировать с помощью AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/glispacpa.png?v=1" width="168px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/glispacpa.png?v=1" width="168px" />
 
 <div id="setting-up-glispa" />
 
@@ -60,7 +60,7 @@ x-zendesk:
 
 **Активация атрибуции по просмотрам**
 
-[![appl013.png](https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png)](https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png)
+<Image align="center" alt="appl013.png" src="https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png" />
 
 Установите этот переключатель в положение «Включено», если хотите атрибутировать установки view-through из Glispa. На вкладке «Ссылка атрибуции» (описана ниже) имеется шкала для окна атрибуции по просмотрам.
 
@@ -132,7 +132,7 @@ x-zendesk:
 
 Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">окне атрибуции по кликам см. здесь</Anchor>.
 
-[![](https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png)](https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png)
+<Image align="center" alt="" src="https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png" />
 
 <div id="click-attribution-link" />
 

@@ -74,7 +74,7 @@ x-zendesk:
 
 Adform подключается к AppsFlyer с помощью уникального идентификатора отслеживания клиента. Если у вас его еще нет, вы должны получить его в Adform, чтобы продолжить интеграцию.
 
-![adform_msc_new_2.png](https://files.readme.io/d3d72b295a6d3bdc7f097128a6399bd4cd60309118750b4e2217a2b01ca5362a-360002140925.png)
+<Image align="center" alt="adform_msc_new_2.png" src="https://files.readme.io/d3d72b295a6d3bdc7f097128a6399bd4cd60309118750b4e2217a2b01ca5362a-360002140925.png" />
 
 **Активация атрибуции по просмотрам**
 

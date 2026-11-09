@@ -37,7 +37,7 @@ x-zendesk:
 
 Когда переключатель <Anchor target="_blank" href="/marketers/ru/docs/partner-activation-deactivation">**Активировать партнера**</Anchor> выключен, конверсии не атрибутируются, а постбэки не отправляются партнерам.
 
-![integration_turned_off.png](https://files.readme.io/d43b4f465749e343d9523e90e87e43b77a85cdd920f0c0770a94bcb7a585d920-14979273403793.png)
+<Image align="center" alt="integration_turned_off.png" src="https://files.readme.io/d43b4f465749e343d9523e90e87e43b77a85cdd920f0c0770a94bcb7a585d920-14979273403793.png" />
 
 **Чтобы активировать интеграцию:**
 
@@ -65,7 +65,7 @@ x-zendesk:
 2. Нажмите значок управления интеграцией партнера.
 3. На вкладке **Интеграция** прокрутите вниз до переключателя **Постбэки по внутренним событиям приложения** и включите его.
 
-   ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
+   <Image align="center" alt="integration-in_app_event_postbacks_toggle.png" src="https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png" />
 
 </Accordion>
 
@@ -81,7 +81,7 @@ x-zendesk:
 
 Проверьте, что событие включено в список настроенных внутренних событий приложения. Если оно не определено, постбэк не отправляется.
 
-[![list_of_in_app_events.png](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)
+<Image align="center" alt="list_of_in_app_events.png" src="https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png" />
 
 1. В AppsFlyer в боковом меню выберите **Сотрудничество** > **Интеграции с партнерами** > **Активные интеграции.**
 2. Нажмите значок управления интеграцией партнера.
@@ -95,7 +95,7 @@ x-zendesk:
 
 Проверьте правильность <Anchor target="_blank" href="/marketers/ru/docs/in-app-event-postback-configuration#сопоставление-событий">сопоставления событий</Anchor>. Постбэки для событий после этого периода не отправляются партнеру, хотя события по-прежнему регистрируются в AppsFlyer.
 
-[![in_app_event_postback_mapping_2.png](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)
+<Image align="center" alt="in_app_event_postback_mapping_2.png" src="https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png" />
 
 </Accordion>
 
@@ -105,7 +105,7 @@ x-zendesk:
 
 Если для события определено условие, то постбэк отправляется в соответствии с условием. Проверьте, есть ли условие, ограничивающее отправку постбэка.
 
-[![in_app_event_condition__1_.png](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)
+<Image align="center" alt="in_app_event_condition__1_.png" src="https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png" />
 
 </Accordion>
 
@@ -115,7 +115,7 @@ x-zendesk:
 
 Проверьте, настроена ли конфигурация событий в приложении на отправку постбэков <Anchor target="_blank" href="/marketers/ru/docs/in-app-event-postback-configuration#опции-для-отправки-постбэков">**Только этому партнеру** или на **Все медиа-источники и органический трафик**</Anchor>. Если установлено **Только этому партнеру**, только атрибутированный партнер получает постбэк.
 
-[![in_app_event_sending_options.png](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)
+<Image align="center" alt="in_app_event_sending_options.png" src="https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png" />
 
 </Accordion>
 
@@ -125,7 +125,7 @@ x-zendesk:
 
 Постбэки отправляются в соответствии с настройками <Anchor target="_blank" href="/marketers/ru/docs/in-app-event-postback-configuration#окно-постбэков-по-внутренним-событиям">окна постбэка</Anchor>. Постбэки для событий после этого периода не отправляются партнеру, хотя события по-прежнему регистрируются в AppsFlyer.
 
-![in_app_event_postback_window.png](https://files.readme.io/21cae7825d557c1ee89c890ec64c922cb36e31be882850a26bfdc4e5595773f0-14661845664401.png)
+<Image align="center" alt="in_app_event_postback_window.png" src="https://files.readme.io/21cae7825d557c1ee89c890ec64c922cb36e31be882850a26bfdc4e5595773f0-14661845664401.png" />
 
 Обратите внимание, что для <Anchor target="_blank" href="/marketers/ru/docs/self-reporting-networks-srns">SRN</Anchor> постбэки по внутренним событиям приложения отправляются в течение всего периода <Anchor target="_blank" href="/marketers/ru/docs/user-level-data-retention#установленные-партнерами-сроки-хранения-данных">хранения данных партнером</Anchor>.
 
@@ -143,7 +143,7 @@ x-zendesk:
 
 Если <Anchor target="_blank" href="/marketers/ru/docs/apply-aggregated-advanced-privacy-framework#partner-advanced-privacy-switch">Расширенная конфиденциальность</Anchor> включена, но партнер не настроил расширенную конфиденциальность на своей стороне или не поддерживает ее, он не будет получать <Anchor target="_blank" href="/partners/ru/docs/advanced-privacy-guide-postback-macros-for-ad-networks#типы-шаблонов-для-отправки-постбэков">агрегированные постбэки по расширенной конфиденциальности</Anchor>.
 
-![partner_not_supporting_ap_postbacks.png](https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png)
+<Image align="center" alt="partner_not_supporting_ap_postbacks.png" src="https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png" />
 
 </Accordion>
 
@@ -180,7 +180,7 @@ x-zendesk:
 1. В AppsFlyer в разделе **Отчеты** перейдите в **Экспорт сырых данных**.
 2. Просмотрите соответствующий отчет в разделе **Постбэки** (Установки, Внутренние события приложения, Конверсии ретаргетинга, Ретаргетинг внутренних событий приложения).
 
-[![postback_reports.JPG](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)
+<Image align="center" alt="postback_reports.JPG" src="https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png" />
 
 </Accordion>
 

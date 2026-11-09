@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **Краткий обзор.** Метрика сеансов (сессий) используется рекламодателями для измерения вовлеченности пользователей приложения за определенный период.
 
-<Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
+<Image align="center" alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 
 <div id="sessions-counting-principles" />
 

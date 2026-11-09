@@ -73,7 +73,7 @@ x-zendesk:
 
 Convertro подключается к AppsFlyer с помощью уникальных URL-адреса страницы, идентификатора ID сайта и имени клиента. Если у вас их еще нет, для продолжения интеграции вы должны получить их в Convertro или выполнить инструкции ниже.
 
-[![](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)
+<Image align="center" alt="" src="https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png" />
 
 <div id="obtaining-the-client-name-page-url--site-id-from-the-convertro-platform" />
 
@@ -83,15 +83,15 @@ Convertro подключается к AppsFlyer с помощью уникаль
 
 **URL-адрес страницы:**
 
-[![](https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png)](https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png)
+<Image align="center" alt="" src="https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png" />
 
 **Тип устройства: xiaomi-Redmi Note 8:**
 
-[![](https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png)](https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png)
+<Image align="center" alt="" src="https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png" />
 
 **Имя клиента:**
 
-![](https://files.readme.io/2e5342006bdfff9e3b3c1dffdaed3e9d83ec2fe4c465b7918023a359776cee91-204595606.png)
+<Image align="center" alt="" src="https://files.readme.io/2e5342006bdfff9e3b3c1dffdaed3e9d83ec2fe4c465b7918023a359776cee91-204595606.png" />
 
 <div id="default-postbacks" />
 
@@ -99,7 +99,7 @@ Convertro подключается к AppsFlyer с помощью уникаль
 
 AppsFlyer может отправлять в Convertro автоматические постбэки об установках пользователей. В этом разделе можно определить отправку этих постбэков.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Выберите **События, атрибутированные любому партнеру или органически**, чтобы отправлять постбэки в Convertro для любого пользователя, который загружает приложение, или выберите **Выкл.**
 
@@ -109,7 +109,7 @@ AppsFlyer может отправлять в Convertro автоматическ�
 
 ### Настройки внутренних событий приложения
 
-[![](https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png)](https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png)
+<Image align="center" alt="" src="https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png" />
 
 В этом разделе можно сопоставить события AppsFlyer с Convertro посредством постбэков.
 

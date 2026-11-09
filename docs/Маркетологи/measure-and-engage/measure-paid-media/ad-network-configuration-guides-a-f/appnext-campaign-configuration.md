@@ -60,7 +60,7 @@ x-zendesk:
 
 Установите этот переключатель в положение "Включено", если хотите атрибутировать установки по просмотрам из Appnext. На вкладке «Ссылка атрибуции» (описана ниже) имеется шкала для окна атрибуции по просмотрам.
 
-![appnext_msc_new_2.png](https://files.readme.io/f974ed2ccc5550cebb87e5070d177fb88efb0c82fe15cbc300979d54b1297a6a-50705658863249.png)
+<Image align="center" alt="appnext_msc_new_2.png" src="https://files.readme.io/f974ed2ccc5550cebb87e5070d177fb88efb0c82fe15cbc300979d54b1297a6a-50705658863249.png" />
 
 <div id="default-postbacks" />
 

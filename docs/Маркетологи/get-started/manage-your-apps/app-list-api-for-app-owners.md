@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Получение активных и ожидающих приложений, связанных с вашим аккаунтом AppsFlyer.
 
-![mceclip0.png](https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png" />
 
 Если вы рекламная сеть, используйте API <Anchor target="_blank" href="/partners/ru/docs/app-list-api-for-ad-networks">списка приложений для рекламных сетей</Anchor>.
 

@@ -109,7 +109,7 @@ x-zendesk:
 * Максимальное количество строк: 1 млн
 * Если вы подготавливаете файл с помощью Excel, сохраните его как **CSV (с разделителями-запятыми) (\*.csv)**, как показано на следующем изображении:
 
-<Image alt="CSV.jpg" src="https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg" width="339px" />
+<Image align="center" alt="CSV.jpg" src="https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg" width="339px" />
 
 <div id="identifier-hash" />
 

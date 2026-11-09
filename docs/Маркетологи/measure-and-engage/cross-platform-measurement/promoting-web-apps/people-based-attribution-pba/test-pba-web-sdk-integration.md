@@ -101,7 +101,7 @@ x-zendesk:
    1. В AppsFlyer в верхнем меню выберите **Мои приложения** > **Просмотр пакетов брендов**.
    2. Выберите необходимый **Тест интеграции веб-SDK.** Откроется страница интеграции. Отобразится веб-ключ разработчика.  
 
-      [![pba_web_sdk_integration_test_web_dev_key_en-us.png](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)
+      <Image align="center" alt="pba_web_sdk_integration_test_web_dev_key_en-us.png" src="https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png" />
    3. В новой вкладке браузера перейдите на свой сайт (на котором установлен веб-SDK).
    4. Нажмите правой кнопкой мыши и выберите «Проверить», чтобы открыть инструменты разработчика в браузере.
    5. Перейдите на вкладку **Консоль**.
@@ -113,7 +113,7 @@ x-zendesk:
 
       Отобразится webAppID.
 
-      [![testing_pba_integration_webappid_check_en-us.png](https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png)](https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png)
+      <Image align="center" alt="testing_pba_integration_webappid_check_en-us.png" src="https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png" />
    7. Убедитесь, что webAppID совпадает с веб-ключом разработчика на странице **тестирования интеграции веб-SDK**.
 2. **Включите тестовый режим**:
    1. На вкладке браузера веб-сайта перейдите на вкладку **Консоль**.
@@ -125,7 +125,7 @@ x-zendesk:
 
       Функция возвращает `undefined`.
 
-      [![testing_pba_integration_turnondevmode.png](https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png)](https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png)
+      <Image align="center" alt="testing_pba_integration_turnondevmode.png" src="https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png" />
 3. **Убедитесь, что тестовый режим включен:**
    * На вкладке **Консоль** введите:  
 
@@ -134,7 +134,7 @@ x-zendesk:
      ```
 
      Возвращаемое значение: `true`. Это означает, что тестовый режим активен.   
-     [![PBATestingWebSDKIntegrationIsDevModeOn_en-us.png](https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png)](https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png)
+     <Image align="center" alt="PBATestingWebSDKIntegrationIsDevModeOn_en-us.png" src="https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png" />
 
 </Accordion>
 

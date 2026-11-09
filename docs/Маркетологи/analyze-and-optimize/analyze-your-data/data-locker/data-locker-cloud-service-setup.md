@@ -54,7 +54,7 @@ Data Locker — это решение AppsFlyer для потоковой пе�
 1. Войдите в консоль GCS.
 2. Перейдите в **Хранилище** > **Браузер хранилища**
 
-   [![mceclip0.png](https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png)](https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png)
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png" />
 3. Выберите бакет, который вы создали ранее, например `data-locker-example`.
 4. Перейдите на вкладку **Разрешения**.
 5. Нажмите **+Добавить**.  
@@ -67,7 +67,7 @@ Data Locker — это решение AppsFlyer для потоковой пе�
       ```
    2. **Выберите роль**: **Cloud storage** > **Storage Object Admin** (Администратор объектов хранилища).
 
-      [![mceclip0.png](https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png)](https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png)
+      <Image align="center" alt="mceclip0.png" src="https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png" />
 7. Нажмите **Сохранить**.
 
 </Accordion>
@@ -92,7 +92,7 @@ Data Locker — это решение AppsFlyer для потоковой пе�
 
 **Пользовательский интерфейс в консоли AWS**
 
-![MyBucket.jpg](https://files.readme.io/b8a16d185279200026388e146cfb3eb03ae3c7737ac26da3aa0d116a0cf9c078-4403551836305.jpg)
+<Image align="center" alt="MyBucket.jpg" src="https://files.readme.io/b8a16d185279200026388e146cfb3eb03ae3c7737ac26da3aa0d116a0cf9c078-4403551836305.jpg" />
 
 После создания бакета предоставьте AppsFlyer необходимые разрешения, используя следующие правила.
 
@@ -311,7 +311,7 @@ Data Locker — это решение AppsFlyer для потоковой пе�
 2. В строке меню выберите свое имя.  
    Появятся регион и идентификатор аккаунта.
 
-   [<Image alt="Детали учетной записи Snowflake" src="https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png" width="875px" />](https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png)
+   <Image align="center" alt="Детали учетной записи Snowflake" src="https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png" width="875px" />
 
 **Чтобы подключить Data Locker к Snowflake**:
 

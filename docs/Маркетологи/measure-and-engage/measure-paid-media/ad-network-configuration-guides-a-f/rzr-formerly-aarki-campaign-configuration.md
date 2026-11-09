@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** RZR — известная мобильная DSP и интегрированный партнер рекламной сети AppsFlyer. RZR предлагает мобильную атрибуцию как по кликам, так и по просмотрам. Кроме того, RZR также предлагает ретаргетинг по кликам, который можно отслеживать с помощью AppsFlyer.
 
-<Image alt="RZR Logo Horizontal gradient black wordmark (3).png" src="https://files.readme.io/b1064bdec0e836399c583c3f55e5e79a81380a9a8d86eeaee19391b6d09f2bbd-small-46161100230545.png" width="58.83%" />
+<Image align="center" alt="RZR Logo Horizontal gradient black wordmark (3).png" src="https://files.readme.io/b1064bdec0e836399c583c3f55e5e79a81380a9a8d86eeaee19391b6d09f2bbd-small-46161100230545.png" width="58.83%" />
 
 <div id="setting-up-rzr" />
 

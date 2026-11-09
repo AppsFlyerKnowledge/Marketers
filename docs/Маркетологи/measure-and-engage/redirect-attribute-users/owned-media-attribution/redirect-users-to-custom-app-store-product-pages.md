@@ -93,7 +93,7 @@ x-zendesk:
 
 1. В настройках ссылки OneLink перейдите в раздел **Deep linking & redirections** (Диплинкинг и перенаправления).
 2. Прокрутите вниз до раздела **When app isn’t installed** (Если приложение не установлено).  
-   ![android_cpp.png](https://files.readme.io/d354feb4d47171b14f0612011b7a52b579bd9062a87544095df226ba58c57ec6-11591784334865.png)
+   <Image align="center" alt="android_cpp.png" src="https://files.readme.io/d354feb4d47171b14f0612011b7a52b579bd9062a87544095df226ba58c57ec6-11591784334865.png" />
 3. Для Android убедитесь, что для опции **Перенаправлять на** установлено значение Google Play.
 4. В текстовом поле **Настраиваемый листинг в магазине** введите значение, которое вы определили для уникального параметра URL листинга в Google Console. Например: abc123
 5. Нажмите **Обновить ссылку**.
@@ -124,7 +124,7 @@ x-zendesk:
 
 1. В настройках ссылки OneLink перейдите в раздел **Deep linking & redirections** (Диплинкинг и перенаправления).
 2. Прокрутите вниз до раздела **When app isn’t installed** (Если приложение не установлено).  
-   ![ios_cpp.png](https://files.readme.io/76f6b46644efc478dc27cb373b3de4a4a80600936db5d7e6725fdb4b9182f6bb-11591824202641.png)
+   <Image align="center" alt="ios_cpp.png" src="https://files.readme.io/76f6b46644efc478dc27cb373b3de4a4a80600936db5d7e6725fdb4b9182f6bb-11591824202641.png" />
 3. Для iOS: убедитесь, что для параметра **Redirect to** (Куда перенаправлять) задано значение App Store.
 4. В текстовом поле **Custom product page** (Настраиваемая страница продукта) укажите идентификатор нужной страницы (ppid) из App Store Connect. Например: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 5. Нажмите **Обновить ссылку**.

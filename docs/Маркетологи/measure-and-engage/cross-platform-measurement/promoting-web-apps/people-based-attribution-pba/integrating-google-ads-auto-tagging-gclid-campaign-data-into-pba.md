@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Кратко:** Обогатите данные PBA информацией о кампаниях с автотегированием gclid, подключив Google Ads.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png" />
 
 <div id="integrating-google-ads-campaign-data-in-pba" />
 
@@ -40,7 +40,7 @@ x-zendesk:
 
 **Дэшборд Website Attribution с заполненной иерархией кампаний**
 
-![PBAWebSite.png](https://files.readme.io/46004298b827d3f4eaa4adae9fb2a8676867e6b5dde44a7ff087fe1bda07f054-4403138621713.png)
+<Image align="center" alt="PBAWebSite.png" src="https://files.readme.io/46004298b827d3f4eaa4adae9fb2a8676867e6b5dde44a7ff087fe1bda07f054-4403138621713.png" />
 
 Данные об иерархии кампаний и рекламных объявлений доступны в дэшбордах и сырых данных следующим образом:
 

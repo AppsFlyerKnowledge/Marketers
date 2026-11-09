@@ -42,7 +42,7 @@ x-zendesk:
 
 Если вы не видите конверсии first\_open в Google Ads, как показано на рисунке ниже:
 
-![AW_13.png](https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png)
+<Image align="center" alt="AW_13.png" src="https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png" />
 
 значит, вам нужно импортировать конверсии в Google Ads. Следуйте инструкции по <Anchor target="_blank" href="/marketers/ru/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">импорту конверсий</Anchor>.
 
@@ -132,7 +132,7 @@ x-zendesk:
 
 1. Перейдите на страницу <Anchor target="_blank" href="https://myaccount.google.com/permissions">разрешений аккаунта Google</Anchor>.
 2. Нажмите кнопку Удалить рядом со строкой AppsFlyer Google Cost (Затраты AppsFlyer в Google).  
-   ![remove_appsflyer_cost.png](https://files.readme.io/56840e708c98875c8db176c642dd324150a76aef9697fcc2756f524b2a6c0a16-33743128661137.png)
+   <Image align="center" alt="remove_appsflyer_cost.png" src="https://files.readme.io/56840e708c98875c8db176c642dd324150a76aef9697fcc2756f524b2a6c0a16-33743128661137.png" />
 
 </Accordion>
 

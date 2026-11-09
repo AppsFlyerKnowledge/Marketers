@@ -79,7 +79,7 @@ x-zendesk:
 >
 > В результате ваш Android Manifest должен выглядеть так:
 >
-> [![](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)
+> <Image align="center" alt="" src="https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png" />
 >
 > **Важно:** Из-за некоторых ограничений в <Anchor target="_blank" href="https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html">ADT</Anchor> после сборки APK в нём отсутствуют некоторые важные файлы.
 >

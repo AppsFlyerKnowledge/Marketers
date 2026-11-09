@@ -45,7 +45,7 @@ X Ads — это расширенная сеть самоотчетности (A
    * IP-адреса;
    * User Agent.
 
-   [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
+   <Image align="center" alt="_- visual selection.png" src="https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png" />
 
 <div id="connecting-your-x-ads-account-to-appsflyer" />
 
@@ -62,11 +62,11 @@ X Ads — это расширенная сеть самоотчетности (A
 2. Когда появится запрос на выбор кампании **Simple (NEW)** (Простая (Новое)) или **Advanced** (Расширенная), выберите **Advanced**.
 3. В разделе **Campaign objective** (Цели кампании) выберите **App Installs** (Установки приложения) или **App re-engagements** (Повторное взаимодействие с приложением), затем нажмите **Далее**.
 
-   ![X-Ads-campaign-objective.png](https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png)
+   <Image align="center" alt="X-Ads-campaign-objective.png" src="https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png" />
 4. Выберите свое приложение, затем нажмите ссылку **Mobile measurement partners** (Партнеры по мобильным измерениям).
 5. На странице **Conversion tracking** (Отслеживание конверсий) нажмите **Go to AppsFlyer** (Перейти в AppsFlyer).
 
-   ![X-Ads-mmp-selection.png](https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png)
+   <Image align="center" alt="X-Ads-mmp-selection.png" src="https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png" />
 6. На экране появится уведомление о том, что вы собираетесь покинуть X Ads и перейти на сайт AppsFlyer. Нажмите кнопку **Go to AppsFlyer** (Перейти в AppsFlyer) и войдите в свой дэшборд.
 7. В AppsFlyer в боковом меню выберите **Collaborate** > **Partner Integrations > Marketplace** вкладку.
 8. Найдите **X Ads** и выберите его.
@@ -95,7 +95,7 @@ X Ads — это расширенная сеть самоотчетности (A
 
 Выберите аккаунты, для которых нужно активировать атрибуцию.
 
-![X-Ads_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
+<Image align="center" alt="X-Ads_msc_new_4.png" src="https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png" />
 
 **Примечание:** Вы можете подключить до 200 рекламных аккаунтов в AppsFlyer. Чтобы избежать превышения лимита и обеспечить непрерывную атрибуцию для всех активных аккаунтов, мы рекомендуем удалять все неиспользуемые рекламные аккаунты.
 
@@ -124,7 +124,7 @@ X Ads — это расширенная сеть самоотчетности (A
 
 Это значение можно задать в часах (от 1 до 23) или в днях (от 1 до 30). Мы рекомендуем задать для окна атрибуции по кликам значение 14 дней, что соответствует стандартному значению этого параметра в X Ads.
 
-![X-Ads_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
+<Image align="center" alt="X-Ads_msc_new_6.png" src="https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png" />
 
 <div id="view-through-attribution-lookback-window" />
 
@@ -134,7 +134,7 @@ X Ads — это расширенная сеть самоотчетности (A
 
 Это значение можно задать в часах (от 1 до 23) или в днях (от 1 до 7). Мы рекомендуем установить значение окна атрибуции по просмотрам на 1 день, что соответствует стандартному значению этого параметра в X Ads.
 
-![X-Ads_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
+<Image align="center" alt="X-Ads_msc_new_7.png" src="https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png" />
 
 <div id="reinstall-settings" />
 
@@ -166,7 +166,7 @@ X Ads — это расширенная сеть самоотчетности (A
 
 Установите продолжительность **окна атрибуции повторного вовлечения по кликам** — максимальный период времени после клика по объявлению, в течение которого пользователя, на которого нацелен ретаргетинг, можно атрибутировать этому объявлению. Это значение можно задать в часах (до 23) или днях (1–30).
 
-![X-Ads-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+<Image align="center" alt="X-Ads-reengagement-activate.png" src="https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png" />
 
 <div id="re-engagement-view-through-lookback-window" />
 
@@ -176,7 +176,7 @@ X Ads — это расширенная сеть самоотчетности (A
 
 Установите продолжительность **окна атрибуции повторного вовлечения по просмотрам** — максимальный период времени после показа объявления, в течение которого пользователя, на которого нацелен ретаргетинг, можно атрибутировать этому объявлению. Это значение можно задать в часах (до 23) или днях (1-7):
 
-![X-Ads-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
+<Image align="center" alt="X-Ads-reengagement-view-through.png" src="https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png" />
 
 <div id="re-engagement-window" />
 
@@ -184,7 +184,7 @@ X Ads — это расширенная сеть самоотчетности (A
 
 Установите продолжительность **Окно повторного вовлечения** — временной интервал, в течение которого внутренние события приложения пользователя будут атрибутироваться медиа-источнику ретаргетинга. Это значение можно задавать в днях (от 1 до 90), часах (до 23) или даже на весь период использования приложения.
 
-<Image alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
+<Image align="center" alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -198,7 +198,7 @@ X Ads — это расширенная сеть самоотчетности (A
 
 В этом разделе можно настроить отправку партнёру постбэков о своих событиях в AppsFlyer.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png" />
 
 **Чтобы настроить постбэки по внутренним событиям:**
 

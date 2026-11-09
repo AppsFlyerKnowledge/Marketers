@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Кратко:** Ibotta — партнер рекламной сети, интегрированной с AppsFlyer, который упрощает пользователям получение кэшбэка за повседневные покупки через одно приложение для смартфона.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ibotta.png?v=1" width="119px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ibotta.png?v=1" width="119px" />
 
 <div id="setting-up-ibotta" />
 

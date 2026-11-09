@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Кратко:** Jampp — компания Affle и интегрированный партнер AppsFlyer — предоставляет платформу для performance-маркетинга, чтобы привлекать клиентов приложения и выполнять ретаргетинг. Помимо мобильной атрибуции по кликам, Jampp также предлагает атрибуцию по стоимости, ретаргетингу и просмотрам, данные которой можно регистрировать с помощью AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/jampp.png" width="213px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/jampp.png" width="213px" />
 
 <div id="setting-up-jampp-integration" />
 

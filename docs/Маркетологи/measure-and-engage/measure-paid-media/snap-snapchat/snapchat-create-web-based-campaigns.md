@@ -166,7 +166,7 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 2. Нажмите **Создать параметр URL**, чтобы добавить параметры URL к URL (будь то URL-адрес целевой страницы или ссылка атрибуции AF).
 3. В разделе **Настраиваемые параметры** нажмите **Добавить параметр**.
 
-   [<Image alt="Screenshot 2025-11-26 at 8.56.29.png" src="https://files.readme.io/cb3ceba75974f7a57d7f26c3587fd0d0c401427d26fcacff40f2514981b9b02f-small-41366139737873.png" width="2810px" />](https://files.readme.io/cb3ceba75974f7a57d7f26c3587fd0d0c401427d26fcacff40f2514981b9b02f-small-41366139737873.png)
+   <Image align="center" alt="Screenshot 2025-11-26 at 8.56.29.png" src="https://files.readme.io/cb3ceba75974f7a57d7f26c3587fd0d0c401427d26fcacff40f2514981b9b02f-small-41366139737873.png" width="2810px" />
 4. Сопоставьте параметры AppsFlyer с их значениями в Snapchat.
    * Если в качестве целевого URL используется **целевая страница, атрибуционная ссылка OneLink или одноплатформенная атрибуционная ссылка**, сопоставьте следующие параметры AF с их эквивалентами в Snapchat:
 
@@ -244,7 +244,7 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 
 <Accordion title="Сквозной поток данных">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. URL-адрес рекламы Snapchat включает в себя `pid=snapweb_int` `pid=snapweb_int` параметр. Когда пользователь нажимает на рекламу, параметр `pid=snapweb_int` автоматически добавляется к URL-адресу.
 2. Пользователь перенаправляется на целевой URL-адрес — целевую страницу, содержащую Smart Script.

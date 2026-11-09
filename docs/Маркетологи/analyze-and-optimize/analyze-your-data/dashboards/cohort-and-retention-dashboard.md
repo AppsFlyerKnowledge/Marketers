@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Краткий обзор**: На дэшборде когорт пользователи приложений группируются по дате привлечения. Это позволяет выполнять анализ эффективности всего жизненного цикла пользователя. Используйте дэшборд, чтобы просмотреть, как различия между кампаниями влияют на метрики кампаний.
 
-[![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
+<Image align="center" alt="cohort main (2).png" src="https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png" />
 
 <div id="cohort-and-retention-dashboard" />
 
@@ -50,7 +50,7 @@ x-zendesk:
 
 1. Перейдите в **Dashboard** (Дэшборд) > **Cohort** (Когорты).  
    Откроется дэшборд когорт. Отображается детализация и диапазон дат конверсии.  
-   ![mceclip0__1_.png](https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png)
+   <Image align="center" alt="mceclip0__1_.png" src="https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png" />
 2. Выберите [детализацию периода когорты](/docs/cohort-and-retention-dashboard#cohort-periods):
    * Часы
    * DaysPost.jpg
@@ -59,7 +59,7 @@ x-zendesk:
 3. Установите период атрибуции (привлечение пользователей или ретаргетинг). Данные, относящиеся к самым последним датам, могут привести к [частичным данным,](/docs/cohort-and-retention-dashboard#partial-data) в диаграммах и таблицах такие данные выделены дефисами.
 4. Нажмите кнопку **Редактировать когорту**.  
    Появится окно настройки когорты.  
-   <Image alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
+   <Image align="center" alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
 5. Выполните следующее:
    * [**Тип представления когорты**](/docs/cohort-and-retention-dashboard#view-types):
      * **Привлечение пользователей.**
@@ -150,7 +150,7 @@ x-zendesk:
 * **Привлечение пользователей:** данные об эффективности по установкам (исключая повторные установки, если только они не <Anchor target="_blank" href="/marketers/ru/docs/measure-reinstalls#attributed-to-the-first-install">включены специально</Anchor>)
 * **Ретаргетинг:** данные об эффективности по реатрибуции или повторному вовлечению
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 </Accordion>
 
@@ -184,7 +184,7 @@ x-zendesk:
 
 В этом примере одни и те же исходные данные используются для генерации двух типов трендов когорт. Таблица сырых данных содержит события атрибуции, относящиеся к разным пользователям A, B, C и D. Пользователи вовлекаются рекламой, устанавливают приложение и после конверсии совершают одну или несколько покупок. Когортный день 0 - день установки.
 
-[<Image alt="CohortExample_en-us.jpg" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />](https://support.appsflyer.com/hc/article_attachments/49929144259089)
+[<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />](https://support.appsflyer.com/hc/article_attachments/49929144259089)
 
 </Accordion>
 
@@ -294,11 +294,11 @@ x-zendesk:
 
 **Диаграмма: кумулятивная прибыль на одного пользователя**
 
-[![Screenshot 2023-10-31 at 16.56.31.png](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)
+<Image align="center" alt="Screenshot 2023-10-31 at 16.56.31.png" src="https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png" />
 
 **Таблица: доход за день**
 
-[![cohort use case 2.2.png](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)
+<Image align="center" alt="cohort use case 2.2.png" src="https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png" />
 
 <div id="in-app-event-conversion" />
 
@@ -306,7 +306,7 @@ x-zendesk:
 
 Рекламодатель определяет событие внутри приложения af\_purchase. Диаграмма когорт показывает процент пользователей приложения в когорте, которые совершили мобильную покупку. Мы можем видеть на 10-й день, например , что около 30% (11,11%+9.71%+7,47%) от пользователей когорты провели мобильную покупку
 
-[![cohort use case 2.2.png](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)
+<Image align="center" alt="cohort use case 2.2.png" src="https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png" />
 
 </Accordion>
 

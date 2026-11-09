@@ -164,7 +164,7 @@ partnerInfo:brazeInfo];
 
 После настройки входящего подключения Braze определенные вами события вовлеченности будут доступны как параметры в <Anchor target="_blank" href="/marketers/ru/docs/audiences-guide#ruleset-filters">фильтрах набора правил</Anchor> для определения аудиторий.
 
-![audiences_braze_ruleset.png](https://files.readme.io/766a5ec25de3cf82c1411ce25864a5c8ce6c77ac338c20699e61be1c45ae3d98-33375723752337.png)
+<Image align="center" alt="audiences_braze_ruleset.png" src="https://files.readme.io/766a5ec25de3cf82c1411ce25864a5c8ce6c77ac338c20699e61be1c45ae3d98-33375723752337.png" />
 
 **Примечание:** События вовлечения с сообщениями Braze станут доступны в AppsFlyer примерно через 24 часа после запуска Current в Braze.
 

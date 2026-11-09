@@ -76,22 +76,22 @@ x-zendesk:
 
 1. В App Store Connect перейдите в **Пользователи и доступ**
 
-   [![](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)
+   <Image align="center" alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" />
 2. Перейдите в **Пользователи и доступ** > **Интеграции**, и в списке **Ключи** выберите **In-App Purchase**.
 
-   [![](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" />
 3. Нажмите + чтобы сгенерировать новый ключ In-App Purchase.
 
-   [![](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" />
 4. Введите название для вашего ключа API.
 5. Нажмите **Создать**.
 6. Нажмите **Download In-App Purchase Key** рядом с ключом, который вы только что сгенерировали, чтобы загрузить его. **Примечание**: Вы можете скачать ключ только один раз.
 7. Скопируйте **Key ID** ключа, который вы только что сгенерировали, и вставьте его в настройках покупок & подписок AppsFlyer в поле **Key ID**.
 
-   [![](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)
+   <Image align="center" alt="" src="https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png" />
 8. Скопируйте **Issuer ID**. **Примечание**: если **Issuer ID** не отображается вверху страницы, создайте API-ключ App Store Connect (с любым уровнем доступа). После этого идентификатор эмитента появится в верхней части страницы для ключа покупки в приложении.
 
-   [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
+   <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" />
 
 </Accordion>
 
@@ -134,7 +134,7 @@ x-zendesk:
 2. Привяжите аккаунт к своему проекту вGoogle Cloud. Инструкции см. в этом <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">разделе справки Google</Anchor>.
 3. Активируйте API разработчика Google Play. Инструкции см. в <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">этом разделе справки Google</Anchor>.
 
-   [![](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)
+   <Image align="center" alt="" src="https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png" />
 
 </Accordion>
 
@@ -149,36 +149,36 @@ x-zendesk:
 1. Создайте или найдите **Service Account**:
    1. <span class="af-ol-a"></span>Перейдите в **Service accounts** раздел в Google Cloud Platform и нажмите **Create Service Account**.
 
-      [![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
+      <Image align="center" alt="" src="https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png" />
    2. Введите данные для сервисного аккаунта.
 
-      [![](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)
+      <Image align="center" alt="" src="https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png" />
    3. Скопируйте адрес электронной почты.
 
-      [![](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)
+      <Image align="center" alt="" src="https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png" />
    4. Нажмите **Create and continue**.
 
-      [![](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)
+      <Image align="center" alt="" src="https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png" />
    5. На шаге **Grant this service account access to the project** step выберите роль подписчика **Pub/sub** .
 
-      [![](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)
+      <Image align="center" alt="" src="https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png" />
    6. Нажмите **Continue** > **Done**.
 
-      [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
+      <Image align="center" alt="" src="https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png" />
 2. Скачайте **Service Account Private Key**:
    1. <span class="af-ol-a"></span>В Google Cloud Platform перейдите в раздел **Service accounts** , найдите в списке нужный аккаунт (тот, который вы только что создали) и кликните значок **More actions** .
    2. Кликните **Управление ключами**.
 
-      [![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)
+      <Image align="center" alt="" src="https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png" />
    3. Нажмите **Add key** > **Create new key**.
 
-      [![](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)
+      <Image align="center" alt="" src="https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png" />
    4. Во всплывающем окне **Create private key** в разделе **Key type**, выберите **JSON**, и нажмите **Create**.
 
-      [![](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)
+      <Image align="center" alt="" src="https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png" />
    5. Нажмите **Создать**. Загрузится файл JSON закрытого ключа.
 
-      [![](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)
+      <Image align="center" alt="" src="https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png" />
    6. Сохраните файл ключа JSON, который нужно будет загрузить в AppsFlyer позже. **Важно!** Ключ необходимо сохранить; его нельзя будет загрузить позже. Если вы его не сохраните, вам придётся генерировать ключ заново.
 
 </Accordion>
@@ -195,23 +195,23 @@ x-zendesk:
 
 1. В Google Play Console перейдите в раздел **Пользователи и разрешения**, найдите созданный сервисный аккаунт и нажмите кнопку **Пригласить новых пользователей**.
 
-   [![](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)
+   <Image align="center" alt="" src="https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png" />
 2. Введите **адрес электронной почты** который вы скопировали при настройке сервисного аккаунта на шаге 1.2.1.3.
 
-   [![](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)
+   <Image align="center" alt="" src="https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png" />
 3. В разделе **Разрешения** перейдите на вкладку **Разрешения аккаунта** и выберите оба варианта:
 
    * Просматривать финансовые данные, заказы и ответы на анкетирование после отмены.
    * Управление заказами и подписками.[![](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)
 4. На вкладке **Разрешения приложения** нажмите **Добавить приложение,** затем выберите ваше приложение. Добавьте несколько приложений, если необходимо.
 
-   [![](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)
+   <Image align="center" alt="" src="https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png" />
 5. Нажмите **Пригласить пользователя.**
 
-   [![](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)
+   <Image align="center" alt="" src="https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png" />
 6. Во всплывающем окне подтверждения нажмите **Отправить приглашение**.
 
-   [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
+   <Image align="center" alt="" src="https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png" />
 
 </Accordion>
 
@@ -297,16 +297,16 @@ x-zendesk:
 
 1. В **App Store Connect**, в разделе **Информация о приложении** прокрутите до **Уведомления сервера App Store** и рядом с **URL-адресом производственного сервера**, нажмите **Изменить**.
 
-   [![](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)
+   <Image align="center" alt="" src="https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png" />
 2. Вставьте [конечную точку уведомлений сервера AppsFlyer, скопированную из AppsFlyer](#21-copy-the-appsflyer-server-notifications-endpoint), выберите **Уведомления версии 2** и нажмите **Сохранить**. **Примечание:** Уведомления версии 1 больше не поддерживаются. Если селектор версии уведомлений не отображается в Apple Store Connect, это означает, что вы уже используете версию 2.
 
-   [![](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)
+   <Image align="center" alt="" src="https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png" />
 3. В разделе **Информация о приложении** прокрутите до **Уведомления сервера App Store** и рядом с **URL-адресом тестового сервера**, нажмите **Изменить**.
 
-   [![](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)
+   <Image align="center" alt="" src="https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png" />
 4. Вставьте [конечную точку уведомлений сервера AppsFlyer, скопированную из AppsFlyer](#21-copy-the-appsflyer-server-notifications-endpoint), выберите **Уведомления версии 2** и нажмите **Сохранить**. **Примечание:** Уведомления версии 1 больше не поддерживаются. Если селектор версии уведомлений не отображается в App Store Connect, это означает, что вы уже используете версию 2.
 
-   [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
+   <Image align="center" alt="" src="https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png" />
 
 </Accordion>
 
@@ -322,18 +322,18 @@ x-zendesk:
 
 1. В **App Store Connect**, в разделе **Информация о приложении** прокрутите до **Уведомления сервера App Store**, и рядом с **URL-адресом производственного сервера** нажмите **Изменить**.
 
-   [![](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)
+   <Image align="center" alt="" src="https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png" />
 2. Вставьте **свой URL-адрес конечной точки сервера**.
 
-   [![](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)
+   <Image align="center" alt="" src="https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png" />
 3. Выберите **Уведомления версии 2. Note:** уведомления версии 1 **больше не поддерживаются**. Если селектор версии уведомлений не отображается в Apple Store Connect, это означает, что вы уже используете версию 2.
 4. Нажмите **Сохранить**.
 5. В **App Store Connect**, в разделе **Информация о приложении** прокрутите до **Уведомления сервера App Store**, и рядом с **URL-адресом тестового сервера** нажмите **Изменить**.
 
-   [![](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)
+   <Image align="center" alt="" src="https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png" />
 6. Вставьте **свой URL-адрес конечной точки сервера**.
 
-   [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
+   <Image align="center" alt="" src="https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png" />
 7. Выберите **Уведомления версии 2. Примечание:** Уведомления версии 1 **больше не поддерживаются**.
 8. Нажмите **Сохранить**.
 9. Настройте бэкенд так, чтобы он пересылал уведомления сервера Apple на URL-адрес конечной точки уведомлений AppsFlyer. Запросы должны в точности соответствовать полезной нагрузке App Store в том виде, в котором она получена от Apple. См. <Anchor target="_blank" href="https://developer.apple.com/documentation/appstoreserverapi/signedpayload#discussion">требования к формату Apple</Anchor>.
@@ -383,16 +383,16 @@ x-zendesk:
 2. Скопируйте тему AppsFlyer в буфер обмена.
 3. В **Google Play Console** > **Главная**, выберите приложение для просмотра. Откроется дэшборд.
 
-   [![](https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png)](https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png)
+   <Image align="center" alt="" src="https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png" />
 4. Перейдите в **Monetize with Play** > **Monetization setup**, и в **Google Play Billing** разделе убедитесь, что **Enable real-time notification** отмечено.
 
-   [![](https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png)](https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png)
+   <Image align="center" alt="" src="https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png" />
 5. В поле **Название темы** вставьте адрес темы AppsFlyer, который вы скопировали.
 
-   [![](https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png)](https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png)
+   <Image align="center" alt="" src="https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png" />
 6. Для **Содержания уведомлений** выберите **Подписки, аннулированные покупки и все одноразовые продукты**.
 
-   [![](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)
+   <Image align="center" alt="" src="https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png" />
 7. Нажмите **Save changes**. Чтобы изменения вступили в силу, может потребоваться время (иногда вплоть до 24 часов). Поэтому не спешите проводить тестирование.
 
 </Accordion>
@@ -415,43 +415,43 @@ x-zendesk:
 4. Скопируйте URL конечной точки в буфер обмена.
 5. В Google Cloud Platform в вашем проекте найдите **Pub/Sub**.
 
-   [![](https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png)](https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png)
+   <Image align="center" alt="" src="https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png" />
 6. В **Pub/Sub** перейдите в **Topics** раздел и убедитесь, что у вас есть специальная тема pub/sub для подписок.
 
-   [![](https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png)](https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png)
+   <Image align="center" alt="" src="https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png" />
 7. В **Pub/Sub,** перейдите в **Subscriptions** раздел и нажмите **Create Subscriptions**.
 
-   [![](https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png)](https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png)
+   <Image align="center" alt="" src="https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png" />
 8. Введите **идентификатор ID подписки**.
 
-   [![](https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png)](https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png)
+   <Image align="center" alt="" src="https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png" />
 9. Выберите соответствующую тему pub/sub подписки из раскрывающегося списка.
 
-   [![](https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png)](https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png)
+   <Image align="center" alt="" src="https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png" />
 10. Для **Типа доставки** выберите **Push**.
 
-    [![](https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png)](https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png)
+    <Image align="center" alt="" src="https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png" />
 11. Вставьте **URL-адрес конечной точки** который вы скопировали из AppsFlyer.
 
-    [![](https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png)](https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png)
+    <Image align="center" alt="" src="https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png" />
 12. В разделе **Expiration period** выберите **Never expire**.
 
-    [![](https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png)](https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png)
+    <Image align="center" alt="" src="https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png" />
 13. Нажмите **Создать**.
 
-    [![](https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png)](https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png)
+    <Image align="center" alt="" src="https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png" />
 14. Перейдите в раздел **Подписки** и нажмите на название нужной темы.
 
-    [![](https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png)](https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png)
+    <Image align="center" alt="" src="https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png" />
 15. Скопируйте название темы в буфер обмена.
 
-    [![](https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png)](https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png)
+    <Image align="center" alt="" src="https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png" />
 16. В **Google Play Console** перейдите в **Monetize with Play** > **Monetization setup.** и в разделе **Google Play Billing** вставьте в поле Topic name название темы, которое вы скопировали на предыдущем шаге.
 
-    [![](https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png)](https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png)
+    <Image align="center" alt="" src="https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png" />
 17. Для **Notification content**, выберите **Subscriptions, voided purchases, and all one-time products**.
 
-    [![](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)
+    <Image align="center" alt="" src="https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png" />
 18. Нажмите **Сохранить изменения**. Чтобы изменения вступили в силу, может потребоваться время (иногда вплоть до 24 часов). Поэтому не спешите проводить тестирование.
 
 </Accordion>
@@ -464,7 +464,7 @@ x-zendesk:
 
 1. Нажмите **Send test notification**. При этом в тему Pub/Sub, настроенную для AppsFlyer, отправляется тестовое сообщение RTDN.
 
-   <Image alt="image (33).png" src="https://files.readme.io/4d7aa79eb963373223cfde1d32db16b739119a86d8d4f0cf6ce026d42a709bf3-42170040528657.png" width="1444px" />
+   <Image align="center" alt="image (33).png" src="https://files.readme.io/4d7aa79eb963373223cfde1d32db16b739119a86d8d4f0cf6ce026d42a709bf3-42170040528657.png" width="1444px" />
 2. В разделе **Google Play Billing** найдите раздел Topic name.
 3. В меню слева перейдите в **Monetise with Play** → **Monetisation setup**.
 4. Перейдите в Google Play Console.
@@ -572,7 +572,7 @@ x-zendesk:
 
 * Для iOS убедитесь, что в App Store Connect в разделе App Store Server Notifications эндпоинт AppsFlyer указан в качестве **Sandbox Server URL**.
 
-  [![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+  <Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 **Чтобы протестировать доход от покупок в приложении и подписок**:
 
@@ -619,7 +619,7 @@ x-zendesk:
 * Внутренние события приложения, которые вы хотите регистрировать как покупки в приложении или подписки, не блокируются одним из правил проверки, которые вы настроили в AppsFlyer.
 * Ваш разработчик должен отметить все флажки безопасной среды как false.
 
-[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 После релиза приложения с коннектором SDK будут генерироваться <Anchor target="_blank" href="/marketers/ru/docs/about-roi360-store-revenue#iaprelated-events-and-parameters">события покупок в приложении</Anchor> и <Anchor target="_blank" href="/marketers/ru/docs/about-roi360-store-revenue#subscriptionrelated-events-and-parameters">события подписок</Anchor> и будут доступны на всех дэшбордах AppsFlyer, а также в агрегированных отчетах и отчетах о сырых данных, включая <Anchor target="_blank" href="/marketers/ru/docs/revenue-etl-reports">Revenue ETL</Anchor>.
 

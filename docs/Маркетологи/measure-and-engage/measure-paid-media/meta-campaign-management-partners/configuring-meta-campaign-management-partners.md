@@ -54,7 +54,7 @@ x-zendesk:
 
 **Чтобы настроить постбэки по внутренним событиям приложения**:
 
-[![in-app_event_mapping.png](https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png)](https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png)
+<Image align="center" alt="in-app_event_mapping.png" src="https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png" />
 
 1. Активируйте **Постбэки по внутренним событиям приложения**.
 2. Заполните необходимые параметры в соответствии с <Anchor target="_blank" href="/marketers/ru/docs/in-app-event-postback-configuration#методы-сопоставления">методом сопоставления</Anchor>.

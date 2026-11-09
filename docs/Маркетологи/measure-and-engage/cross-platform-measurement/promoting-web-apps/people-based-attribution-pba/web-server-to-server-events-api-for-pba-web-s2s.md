@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Используйте API межсерверных событий в вебе (веб-S2S), чтобы сообщать в PBA о событиях и конверсиях, о которых не сообщает веб-SDK.
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="web-server-to-server-events-api-for-pba" />
 
@@ -259,7 +259,7 @@ print(response.text.encode('utf8'))
 1. В AppsFlyer перейдите на вкладку ***Мои приложения***.
 2. Нажмите Просмотреть пакет бренда.
 
-   [![GetWebDevKeyPba_us-en.pn](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)
+   <Image align="center" alt="GetWebDevKeyPba_us-en.pn" src="https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png" />
 3. Скопируйте необходимый ***веб-ключ разработчика*.**
 
 </Accordion>
@@ -293,7 +293,7 @@ print(response.text.encode('utf8'))
 2. Нажмите правой кнопкой мыши, выберите ***Inspect.***  
    Откроется окно браузера для проверки элементов.
 
-   [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
+   <Image align="center" alt="S2S_inspect.jpg" src="https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg" />
 3. Перейти на вкладку (A) ***Application***.
 4. В боковом меню (B) раскройте Cookies.
 5. Выберите свой сайт. Если он не отображается, обновите браузер.

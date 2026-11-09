@@ -109,7 +109,7 @@ x-zendesk:
 * **О партере** (открывает страницу партнера)
 * **Интеграция / Управление интеграцией** (начинает настройку или открывает конфигурацию интеграции)
 
-<Image alt="partner card.png" src="https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png" width="1598px" />
+<Image align="center" alt="partner card.png" src="https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png" width="1598px" />
 
 <div id="filter-the-list-of-partners" />
 
@@ -131,7 +131,7 @@ x-zendesk:
 
 Используйте строку поиска, чтобы найти конкретных партнеров.
 
-<Image alt="serach for partners.png" src="https://files.readme.io/6590e14e35e75bef7450489ec5ff06d1cabc0671a82043e4fb5fb467c67d2b8a-45767176965393.png" width="876px" />
+<Image align="center" alt="serach for partners.png" src="https://files.readme.io/6590e14e35e75bef7450489ec5ff06d1cabc0671a82043e4fb5fb467c67d2b8a-45767176965393.png" width="876px" />
 
 При использовании строки поиска на вкладке Marketplace:
 
@@ -146,7 +146,7 @@ x-zendesk:
 
 Вы можете узнать больше о каждом партнере и связаться с ним на странице партнера. Чтобы открыть страницу партнера, нажмите кнопку **О партнере** [на карточке партнера](#карточки-партнеров).
 
-<Image alt="new croped partner image.png" src="https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png" width="3270px" />
+<Image align="center" alt="new croped partner image.png" src="https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png" width="3270px" />
 
 <div id="what-you-can-do-from-the-partner-page" />
 
@@ -231,7 +231,7 @@ AppsFlyer может помогать вам связаться с партне�
 
 1. В AppsFlyer в боковом меню выберите **Сотрудничество** > **Интеграции партнеров**.
 2. В правом верхнем углу страницы маркетплейса партнеров нажмите на значок буквы.  
-   <Image alt="invite_new_partner.png" src="https://files.readme.io/f0208f3f19f7102ba8174eea064f88db1fe14732334fe58ced0b0a373ce3f1c8-45767201404433.png" width="893px" />
+   <Image align="center" alt="invite_new_partner.png" src="https://files.readme.io/f0208f3f19f7102ba8174eea064f88db1fe14732334fe58ced0b0a373ce3f1c8-45767201404433.png" width="893px" />
 3. Введите имя партнера и актуальный адрес электронной почты.
 
 Партнер получит электронное сообщение со ссылкой на регистрацию для начала процесса регистрации.

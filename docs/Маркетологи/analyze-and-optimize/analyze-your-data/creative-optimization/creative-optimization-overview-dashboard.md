@@ -24,7 +24,7 @@ x-zendesk:
 
 > **Краткий обзор:** Используйте обзорный дэшборд оптимизации креативов для анализа эффективности креативов, чтобы выбрать наиболее эффективные креативы и добиться максимальной отдачи от кампаний.
 
-[![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
+<Image align="center" alt="Main image -Default view.jpg" src="https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg" />
 
 <div id="about-the-creative-optimization-overview-dashboard" />
 
@@ -86,7 +86,7 @@ x-zendesk:
 
 На следующем рисунке показан стандартный вид таблицы, в которой отображаются креативы в соответствии с выбранными критериями фильтрации. Буквы на изображении соответствуют буквам и описаниям в следующей таблице.
 
-[![Table_main_image_doctored_final_copy__download_table_.jpg](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)
+<Image align="center" alt="Table_main_image_doctored_final_copy__download_table_.jpg" src="https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg" />
 
 |  | Элемент | Описание |
 | --- | --- | --- |
@@ -145,7 +145,7 @@ x-zendesk:
 
 *Обратите внимание, что метрики будут отображаться в отдельных строках данных, которые отображаются под агрегированными строками в таблице.
 
-[![](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)
+<Image align="center" alt="" src="https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png" />
 
 </Accordion>
 

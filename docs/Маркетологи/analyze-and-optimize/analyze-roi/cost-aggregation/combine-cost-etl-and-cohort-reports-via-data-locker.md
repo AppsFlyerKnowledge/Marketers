@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Комбинируйте отчеты Cost ETL и когорты через Data Locker (обычные и расширенные агрегированные), чтобы получить полную картину ваших маркетинговых кампаний с наилучшей доступной актуальностью, точностью и детализацией.
 
-![](https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png)
+<Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" />
 
 <div id="about-combining-cost-etl-and-cohort-reports" />
 

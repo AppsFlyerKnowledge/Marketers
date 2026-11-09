@@ -38,11 +38,11 @@ x-zendesk:
 
 1. В **App Store Connect**, в разделе **Информация о приложении**, прокрутите до **App Store Server Notifications.**
 
-   <Image alt="image (24).png" src="https://files.readme.io/8e9c92cdf87303b58a6b604640b4f7adb3cf56c03e57df053e9d486b89345547-33812520143505.png" width="2009px" />
+   <Image align="center" alt="image (24).png" src="https://files.readme.io/8e9c92cdf87303b58a6b604640b4f7adb3cf56c03e57df053e9d486b89345547-33812520143505.png" width="2009px" />
 2. Для **URL производственного сервера** нажмите **Редактировать**.
 3. Не изменяйте URL в поле **URL производственного сервера**.
 
-   <Image alt="image (25).png" src="https://files.readme.io/fc7737793f2e7982e3e92d30dec45d7def98ef8ec6c3186ebbdf32a78f217a3d-33812683240977.png" width="1182px" />
+   <Image align="center" alt="image (25).png" src="https://files.readme.io/fc7737793f2e7982e3e92d30dec45d7def98ef8ec6c3186ebbdf32a78f217a3d-33812683240977.png" width="1182px" />
 4. В разделе **Версия уведомлений** выберите **Версию 2**.
 5. Нажмите **Сохранить**.
 6. В разделе **App Store Server Notifications** нажмите **Редактировать** для **URL-адреса тестового сервера**.
@@ -69,9 +69,9 @@ x-zendesk:
 
 1. В App Store Connect перейдите в **Пользователи и доступ** <Image alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" width="486px" />
 2. Перейдите к **Пользователи и доступ** > **Интеграции**, и из списка **Ключи** выберите **Покупка в приложении**.  
-   <Image alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" width="532px" />
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" width="532px" />
 3. Нажмите +, чтобы сгенерировать новый ключ для покупки в приложении.  
-   <Image alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" width="384px" />
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" width="384px" />
 4. Введите название для вашего ключа API.
 5. Нажмите **Генерировать**.
 6. Нажмите на **Скачать ключ для покупок в приложении** рядом с ключом, который вы только что сгенерировали, чтобы скачать его. **Примечание**: Вы можете скачать ключ только один раз.
@@ -82,7 +82,7 @@ x-zendesk:
 11. В App Store Connect скопируйте **Идентификатор ключа** того ключа, который вы только что сгенерировали, и вставьте его в поле **Идентификатор ключа** в настройках покупок и подписок AppsFlyer. <Image alt="" src="https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png" width="484px" />
 12. В App Store Connect скопируйте **Эмитент ключа** и вставьте его в поле **Эмитент ключа** в настройках покупок и подписок AppsFlyer.  **Примечание**: Если **Идентификатор эмитента** не отображается вверху страницы, создайте ключ API для App Store Connect (с любым уровнем доступа). После этого идентификатор эмитента появится в верхней части страницы для ключа покупки в приложении. .
 
-    <Image alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" width="474px" />
+    <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" width="474px" />
 13. В настройках покупок и подписок AppsFlyer нажмите **Проверить ключи**, чтобы убедиться, что введенные вами ключи верны.
 14. Нажмите **Обновить ключи**. Как только ключи будут обновлены, ваше приложение будет полностью переведено на новый процесс валидации на iOS от Apple.
 

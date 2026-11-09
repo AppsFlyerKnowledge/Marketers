@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Insider, интегрированный партнер AppsFlyer, — это маркетинговая и аналитическая платформа для мобильных и веб-приложений. Insider обеспечивает прогнозную сегментацию и персонализацию в реальном времени в вебе, мобильном вебе, мобильном приложении и рекламных каналах.
 
-![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/useinsider.png?v=1)
+<Image align="center" alt="rockerbox-logo_en-us.png" src="https://cdn.appsflyer.com/marketplace/static/logo/useinsider.png?v=1" />
 
 <div id="important" />
 
@@ -66,7 +66,7 @@ Insider подключается к AppsFlyer с помощью уникальн
 
 **Чтобы получить идентификатор,** войдите на платформу **Insider** и скопируйте свой идентификатор в правом верхнем углу дэшборда.
 
-![insider-partner-ID_en-us.png](https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png)
+<Image align="center" alt="insider-partner-ID_en-us.png" src="https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png" />
 
 <div id="default-postbacks" />
 
@@ -80,7 +80,7 @@ AppsFlyer может отправлять автоматические пост�
 
 ### In-App Events Settings (Настройки внутренних событий приложения)
 
-![insider-partner-field.png](https://files.readme.io/ad4b4a5e9d688be93b20ccf645c779c361390cc95e2a2acbab7299408b7478bf-4403354160785.png)
+<Image align="center" alt="insider-partner-field.png" src="https://files.readme.io/ad4b4a5e9d688be93b20ccf645c779c361390cc95e2a2acbab7299408b7478bf-4403354160785.png" />
 
 В этом разделе вы настроите отправку партнеру постбэков о своих событиях в AppsFlyer. Узнать больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">постбэках по событиям в приложении.</Anchor>
 
@@ -88,7 +88,7 @@ AppsFlyer может отправлять автоматические пост�
 
 1. Введите **идентификатор партнера Insider**, который находится в правом верхнем углу дэшборда **Insider**.
 
-   ![insider-partner-ID_en-us.png](https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png)
+   <Image align="center" alt="insider-partner-ID_en-us.png" src="https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png" />
 2. В AppsFlyer активируйте **постбэк по событию в приложении.**
 3. Нажмите **Add Event** , чтобы добавить SDK-событие в список.
 4. Выберите **имя SDK-события** из выпадающего меню.

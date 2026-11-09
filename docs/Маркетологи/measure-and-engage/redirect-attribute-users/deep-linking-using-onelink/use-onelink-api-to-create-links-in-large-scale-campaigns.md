@@ -59,7 +59,7 @@ OneLink API — это премиум-функция, которая позво�
 1. Скопируйте <Anchor target="_blank" href="/marketers/ru/docs/managing-appsflyer-tokens#типы-токенов">токен API OneLink</Anchor>.
 2. <Anchor target="_blank" href="/marketers/ru/docs/create-a-onelink-template#создание-шаблонов-onelink">Создайте шаблон OneLink</Anchor>.
 3. Скопируйте идентификатор ID шаблона.    
-   [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg" />
 4. Передайте разработчику идентификатор шаблона и токен API и попросите его следовать этим <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview">инструкциям</Anchor>.
 
 <div id="dashboard" />

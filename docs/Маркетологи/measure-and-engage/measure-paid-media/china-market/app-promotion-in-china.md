@@ -59,4 +59,4 @@ x-zendesk:
 
 **Ведущие медиаисточники в Китае**
 
-[![mceclip0.png](https://files.readme.io/2f4e6946c1003c0a94e3bc5fbe9d4ffd9b506032c631b7ae6fc154dd260bdd84-360003554077.png)](https://files.readme.io/2f4e6946c1003c0a94e3bc5fbe9d4ffd9b506032c631b7ae6fc154dd260bdd84-360003554077.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/2f4e6946c1003c0a94e3bc5fbe9d4ffd9b506032c631b7ae6fc154dd260bdd84-360003554077.png" />

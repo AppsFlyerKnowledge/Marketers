@@ -98,17 +98,17 @@ AppsFlyer может регистрировать один идентифика�
 
 Во время настройки MCC можно настроить, кто будет управлять конверсиями — управляющий аккаунт или субаккаунты.
 
-[![MCC_1_new.png](https://files.readme.io/dd57bcc12b8f65a815bd0a3c0b82aed28adcb6eaaedd66f547f86578f858e7d0-49929447610129.png)](https://files.readme.io/dd57bcc12b8f65a815bd0a3c0b82aed28adcb6eaaedd66f547f86578f858e7d0-49929447610129.png)
+<Image align="center" alt="MCC_1_new.png" src="https://files.readme.io/dd57bcc12b8f65a815bd0a3c0b82aed28adcb6eaaedd66f547f86578f858e7d0-49929447610129.png" />
 
 При необходимости эта настройка может быть изменена впоследствии.
 
-![mmc-googleads-settings.png](https://files.readme.io/4d0fc829004804f3b46ea675dbeaf3de9d2a613c66b917908c80ddd424ed4923-49929447611409.png)
+<Image align="center" alt="mmc-googleads-settings.png" src="https://files.readme.io/4d0fc829004804f3b46ea675dbeaf3de9d2a613c66b917908c80ddd424ed4923-49929447611409.png" />
 
 <div id="mcc-of-mccs" />
 
 ## MCC для MCC
 
-[![](https://files.readme.io/4b37aeb7d5efdaa0c1a737a0bb197488ab642e74a706c04c4a7e0a9b343c93c1-49929447611793.png)](https://files.readme.io/4b37aeb7d5efdaa0c1a737a0bb197488ab642e74a706c04c4a7e0a9b343c93c1-49929447611793.png)
+<Image align="center" alt="" src="https://files.readme.io/4b37aeb7d5efdaa0c1a737a0bb197488ab642e74a706c04c4a7e0a9b343c93c1-49929447611793.png" />
 
 Крупные рекламодатели, работающие с несколькими агентствами, могут использовать аккаунт MCC для других MCC. Аналогично стандартному аккаунту MCC. Рекомендуется, чтобы идентификатор ссылки генерировал MCC самого высокого уровня или рекламодатель. Правильная настройка этой структуры требует, чтобы субаккаунты выбрали правильный уровень MCC (скорее всего, самый высокий уровень MCC) в качестве менеджера записи. Если используется именно такая настройка, то идентификатор ссылки не нужно передавать субаккаунтам, и достаточно импортировать конверсии на самом высоком уровне.
 

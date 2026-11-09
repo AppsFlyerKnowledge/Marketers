@@ -86,7 +86,7 @@ Data Locker предоставляет два отчета для Web Performanc
 * Оставшиеся 30 минут используются **только для обогащения** атрибутированных событий идентификаторами пользователей клиентов (CUIDs).
 * События за последние 30 минут **пока не атрибутированы** — они будут включены в следующий пакет.
 
-[![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
+<Image align="center" alt="" src="https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png" />
 
 <div id="when-will-these-events-appear-in-the-report" />
 

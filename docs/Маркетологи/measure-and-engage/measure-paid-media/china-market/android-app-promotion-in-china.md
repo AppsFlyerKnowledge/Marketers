@@ -54,7 +54,7 @@ x-zendesk:
 
 Например, если вы хотите продвигать свое Android-приложение через Tencent Social Ads, Tencent Tui Ads и Wechat Ads, загрузите Android-приложение в MyApp (магазин приложений Tencent для Android), что одновременно принесет вам органические установки. Рекламные сети Baidu, 360 Ads, Xiaomi Ads и OPPO Ads работают схожим образом.
 
-[![](https://files.readme.io/46e1ad701d488a9c279afedca31ad42522056a328557365f06d7e29eefe60ae2-115015245283.png)](https://files.readme.io/46e1ad701d488a9c279afedca31ad42522056a328557365f06d7e29eefe60ae2-115015245283.png)
+<Image align="center" alt="" src="https://files.readme.io/46e1ad701d488a9c279afedca31ad42522056a328557365f06d7e29eefe60ae2-115015245283.png" />
 
 При этом многие установки Android генерируются по ссылкам на загрузку APK на страницах мобильного веба или в рекламных местах внутри приложения.
 

@@ -62,7 +62,7 @@ x-zendesk:
 
 ### Постбэки по умолчанию
 
-![mceclip2.png](https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" />
 
 <div id="in-app-events-settings" />
 
@@ -70,7 +70,7 @@ x-zendesk:
 
 В этом разделе вы можете сопоставить события AppsFlyer с Zhihu Ads с помощью постбэков.
 
-![mceclip2.png](https://files.readme.io/39f3b95126da7107b2972b5811d0367d51191eed76cc6ddbef52ffb3a0c1e137-50900503184017.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/39f3b95126da7107b2972b5811d0367d51191eed76cc6ddbef52ffb3a0c1e137-50900503184017.png" />
 
 1. Установите переключатель "Постбэки внутренних событий приложения" в положение "Включено"
 2. Чтобы добавить в список событие, определенное в SDK, нажмите **Добавить событие**.
@@ -90,7 +90,7 @@ x-zendesk:
 
 На этой вкладке вы можете создать ссылки атрибуции, которые нужно отправить в Zhihu Ads, чтобы атрибутировать кампании, группы объявлений или даже отдельные объявления Zhihu Ads. Обратите внимание, что AppsFlyer НЕ сохраняет ссылки атрибуции, созданные для вашего партнера.
 
-![mceclip1.png](https://files.readme.io/3f946bccf687826dd2e9ebc318e2510ee5bef5641e9cbfaa1f4b231089ebfee5-50900523405713.png)
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/3f946bccf687826dd2e9ebc318e2510ee5bef5641e9cbfaa1f4b231089ebfee5-50900523405713.png" />
 
 На этой вкладке есть несколько разделов:
 
@@ -113,7 +113,7 @@ x-zendesk:
 * **Subscriber Parameters** — используйте любой из 5 параметров подписчика, чтобы вставить полезные значения. Обратите внимание: эти параметры анализируются и отображаются в отчете о сырых данных, что делает их очень удобными для агрегации или фильтрации данных.  
   **Параметры ссылки атрибуции:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 Если нужно добавить в ссылку атрибуции другой параметр, просто введите его в поле нового параметра. Дополнительные сведения см. в статье <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">**Структура и параметры ссылки атрибуции в AppsFlyer**</Anchor>.
 
@@ -127,7 +127,7 @@ x-zendesk:
 
 Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">окне лукбэка по кликам см. здесь</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png" />
 
 <div id="click-attribution-link" />
 
@@ -147,7 +147,7 @@ x-zendesk:
 
 Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">атрибуции по просмотрам см. здесь</Anchor>.
 
-[![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+<Image align="center" alt="" src="https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png" />
 
 <div id="impressions-attribution-link" />
 
@@ -180,7 +180,7 @@ x-zendesk:
 
 На этой вкладке можно выбрать разрешения для Zhihu Ads в зависимости от того, в каком качестве выступает партнер: как рекламная сеть, агентство или и то, и другое. Обратите внимание: даже если атрибуция для Zhihu Ads отключена, вкладка разрешений остается активной, и вы можете предоставить Zhihu Ads разрешение на управление.
 
-![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png" />
 
 <div id="ad-network-permissions" />
 

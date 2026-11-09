@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Hotstar — крупный стриминговый сервис с рекламной поддержкой в Индии и интегрированный партнер AppsFlyer.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/hotstar.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hotstar.png" />
 
 <div id="hotstar-integration-in-appsflyer" />
 

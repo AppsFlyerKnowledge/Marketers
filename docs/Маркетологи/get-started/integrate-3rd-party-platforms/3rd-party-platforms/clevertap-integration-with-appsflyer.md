@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Кратко:** CleverTap — это современное интегрированное облачное решение для удержания, которое помогает цифровым потребительским брендам повышать удержание клиентов и их пожизненную ценность.
 
-<Image alt="clevertap-logo.png" src="https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png" width="193px" />
+<Image align="center" alt="clevertap-logo.png" src="https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png" width="193px" />
 
 <div id="important" />
 
@@ -78,7 +78,7 @@ CleverTap подключается к AppsFlyer с помощью уникаль
 > * Заполните как минимум **одно** из следующих полей: account\_token, account\_passcode или account\_id
 > * В SDK AppsFlyer задайте значение Customer User ID (<Anchor target="_blank" href="/marketers/ru/docs/customer-user-id-field-cuid#установка-cuid">iOS, Android</Anchor>). Рекомендации о том, какой параметр лучше использовать в качестве Customer User ID, см. в [документации CleverTap](https://developer.clevertap.com/docs/appsflyer#section-step-2-integration). Обратите внимание: если Customer User ID пуст, постбэки не будут отправляться в CleverTap.
 
-![CleverTap_msc_new_2.png](https://files.readme.io/dd3f79fdce7dc4d48605f18021e328754d3e78aae98cb5214466c7489fd29fdf-360002305685.png)
+<Image align="center" alt="CleverTap_msc_new_2.png" src="https://files.readme.io/dd3f79fdce7dc4d48605f18021e328754d3e78aae98cb5214466c7489fd29fdf-360002305685.png" />
 
 <div id="obtain-clevertap-account-token" />
 
@@ -88,10 +88,10 @@ CleverTap подключается к AppsFlyer с помощью уникаль
 
 1. В дэшборде CleverTap перейдите в **Settings** в правом верхнем углу.
 
-   ![CleverTap_msc_new_4.png](https://files.readme.io/2fd248582c3e267b2eaacfc6bf49068bdd4c6811b066c8286f0059e18d8535ae-360002541969.png)  
+   <Image align="center" alt="CleverTap_msc_new_4.png" src="https://files.readme.io/2fd248582c3e267b2eaacfc6bf49068bdd4c6811b066c8286f0059e18d8535ae-360002541969.png" />
    В самом верху страницы “Settings” вы увидите идентификатор аккаунта CleverTap, токен аккаунта и код-пароль рядом с полями "Account ID", “Account token” и “Passcode” соответственно:
 
-   ![CleverTap_msc_new_5.png](https://files.readme.io/795086dfc16cdee369b470e0b598b5089fff6469c77d0ccbf929e230d94191c8-360002537945.png)
+   <Image align="center" alt="CleverTap_msc_new_5.png" src="https://files.readme.io/795086dfc16cdee369b470e0b598b5089fff6469c77d0ccbf929e230d94191c8-360002537945.png" />
 2. Чтобы отобразить значения, нажмите на значки «глаза» рядом с каждым полем.
 3. Скопируйте значения и вставьте их на страницу CleverTap в AppsFlyer.
 
@@ -112,7 +112,7 @@ CleverTap подключается к AppsFlyer с помощью уникаль
 
 AppsFlyer может отправлять автоматические постбэки в CleverTap после установок пользователей. В этом разделе можно определить источник пользователей, которому нужно отправлять постбэки. Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#default-postbacks">постбэках по умолчанию</Anchor>.
 
-![clevertap-default-postbacks_en-us.png](https://files.readme.io/58424df9f5e8ba0e30e2390e26e0ecec7fc827baa43f3b812181caa2283dca0a-360014085238.png)
+<Image align="center" alt="clevertap-default-postbacks_en-us.png" src="https://files.readme.io/58424df9f5e8ba0e30e2390e26e0ecec7fc827baa43f3b812181caa2283dca0a-360014085238.png" />
 
 **Чтобы отправлять постбэки в CleverTap для любого пользователя, который загружает приложение:** выберите **Все медиаисточники, включая органические**.
 
@@ -120,7 +120,7 @@ AppsFlyer может отправлять автоматические пост�
 
 ### In-App Events Settings (Настройки внутренних событий приложения)
 
-![clevertap-in-app-events_en-us.png](https://files.readme.io/2ccc8a5a62cd601c45647d72caff0d94af814f78d9e1a8ae1548f973ed4c554f-360014005017.png)
+<Image align="center" alt="clevertap-in-app-events_en-us.png" src="https://files.readme.io/2ccc8a5a62cd601c45647d72caff0d94af814f78d9e1a8ae1548f973ed4c554f-360014005017.png" />
 
 В этом разделе вы сопоставляете события AppsFlyer с партнером через постбэки.  
 Узнать больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">постбэках по событиям в приложении.</Anchor>

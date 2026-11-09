@@ -74,7 +74,7 @@ x-zendesk:
 
 IBM подключается к AppsFlyer с помощью уникального ключа авторизации. Если у вас ещё нет этого ключа, для продолжения интеграции вы должны получить его в IBM или выполнить следующие шаги.
 
-![IBM_msc_new_2.png](https://files.readme.io/d6dddd7232ba7ecba2ed5bd944f98669902689fc0953afc558fbc6586be8b5cf-360002219269.png)
+<Image align="center" alt="IBM_msc_new_2.png" src="https://files.readme.io/d6dddd7232ba7ecba2ed5bd944f98669902689fc0953afc558fbc6586be8b5cf-360002219269.png" />
 
 <div id="obtaining-the-authorization-key" />
 
@@ -84,27 +84,27 @@ IBM подключается к AppsFlyer с помощью уникальног
 
 Для этого войдите в свою учетную запись UBX и перейдите на вкладку **Endpoints**
 
-![](https://files.readme.io/8c0833f890c5e2ed2df1c0a8904e1764b341a82f3381c0a1a3fb6effe4f76673-205128323.png)
+<Image align="center" alt="" src="https://files.readme.io/8c0833f890c5e2ed2df1c0a8904e1764b341a82f3381c0a1a3fb6effe4f76673-205128323.png" />
 
 Затем нажмите **Зарегистрировать новую конечную точку**.
 
-![](https://files.readme.io/23c8d4a88eda765fce1b42f9eb2e74b1325160e6d0602dc65a8ab05488598b9e-205053206.png)
+<Image align="center" alt="" src="https://files.readme.io/23c8d4a88eda765fce1b42f9eb2e74b1325160e6d0602dc65a8ab05488598b9e-205053206.png" />
 
 Затем выберите **AppsFlyer** и нажмите**Далее**.
 
-![IBM_1.png](https://files.readme.io/f30b7b27d2ffecf3e562cbe651367306a581d1881325dd141c950b39efac016c-115002600286.png)
+<Image align="center" alt="IBM_1.png" src="https://files.readme.io/f30b7b27d2ffecf3e562cbe651367306a581d1881325dd141c950b39efac016c-115002600286.png" />
 
 Создайте информативное название для эксперимента, затем нажмите **Далее**
 
-![Pasted_image_at_2017_02_23_02_48_PM.png](https://files.readme.io/11a94c4d9f4c9282c230e4cf69f31e0d39f4eb88196313b3cfc103a5bbaba9a4-115002600326.png)
+<Image align="center" alt="Pasted_image_at_2017_02_23_02_48_PM.png" src="https://files.readme.io/11a94c4d9f4c9282c230e4cf69f31e0d39f4eb88196313b3cfc103a5bbaba9a4-115002600326.png" />
 
 Кликните на 3 точки справа в только что созданной конечной точкеAppsFlyer и кликните **детали конечной точки**.
 
-![IBM_3.png](https://files.readme.io/70edd2e14c6c344188dcc65b65b3a8d92081401dd34909f5a4e0dd6bd137b8df-115002599203.png)
+<Image align="center" alt="IBM_3.png" src="https://files.readme.io/70edd2e14c6c344188dcc65b65b3a8d92081401dd34909f5a4e0dd6bd137b8df-115002599203.png" />
 
 Скопируйте ключ аутентификации:
 
-![IBM_Endpoint_details.png](https://files.readme.io/3706f4dd665d8d2a26de9013b03c0e6575d051f2fa5500033e172312a63f09ea-115002601006.png)
+<Image align="center" alt="IBM_Endpoint_details.png" src="https://files.readme.io/3706f4dd665d8d2a26de9013b03c0e6575d051f2fa5500033e172312a63f09ea-115002601006.png" />
 
 <div id="default-postbacks" />
 
@@ -112,7 +112,7 @@ IBM подключается к AppsFlyer с помощью уникальног
 
 AppsFlyer может отправлять автоматические постбэки об установках пользователей IBM. В этом разделе можно определить отправку этих постбэков.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Выберите **События, атрибутированные любому партнеру или органическому трафику**, чтобы отправлять в IBM постбэки по всем пользователям, скачавшим приложение, или выберите **Выкл.**.
 
@@ -122,7 +122,7 @@ AppsFlyer может отправлять автоматические пост�
 
 ### Настройки внутренних событий приложения
 
-[![](https://files.readme.io/c945ee3c04f49076e54c9966389506aea441406e01daa49d737a86da9f5bd2bc-360002219429.png)](https://files.readme.io/c945ee3c04f49076e54c9966389506aea441406e01daa49d737a86da9f5bd2bc-360002219429.png)
+<Image align="center" alt="" src="https://files.readme.io/c945ee3c04f49076e54c9966389506aea441406e01daa49d737a86da9f5bd2bc-360002219429.png" />
 
 В этом разделе вы можете сопоставить свои события AppsFlyer с IBM с помощью постбэков.
 

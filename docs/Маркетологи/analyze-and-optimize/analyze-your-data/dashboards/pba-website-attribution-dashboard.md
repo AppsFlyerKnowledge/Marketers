@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **Краткий обзор**. Измеряйте результаты маркетинговых активностей и привлекайте на сайт эффективный трафик. Доступные метрики: какие медиа-источники, типы и каналы трафика приносят посещения сайта, события конверсии и метрики на уровне приложения.
 
-[![Website_Attribution.jpg](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)
+<Image align="center" alt="Website_Attribution.jpg" src="https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg" />
 
 <div id="pba-website-attribution" />
 

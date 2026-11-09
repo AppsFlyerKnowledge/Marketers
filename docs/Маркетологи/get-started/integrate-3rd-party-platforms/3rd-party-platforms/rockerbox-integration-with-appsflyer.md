@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Кратко:** Узнайте, как автоматически передавать данные из AppsFlyer в Rockerbox — маркетинговую и аналитическую платформу для мобильных и веб-приложений.
 
-![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
+<Image align="center" alt="rockerbox-logo_en-us.png" src="https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png" />
 
 <div id="important" />
 
@@ -79,7 +79,7 @@ AppsFlyer может отправлять автоматические пост�
 
 ### In-App Events Settings (Настройки внутренних событий приложения)
 
-![rockerbox-in-app-events_en-us.png](https://files.readme.io/3fc74bb16d6a1222d1d244bbb1083ff247e3315d0fc7060e0ec3e8ad30a07233-360013891517.png)
+<Image align="center" alt="rockerbox-in-app-events_en-us.png" src="https://files.readme.io/3fc74bb16d6a1222d1d244bbb1083ff247e3315d0fc7060e0ec3e8ad30a07233-360013891517.png" />
 
 В этом разделе вы настроите отправку партнеру постбэков о своих событиях в AppsFlyer. Узнать больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">постбэках по событиям в приложении</Anchor>
 

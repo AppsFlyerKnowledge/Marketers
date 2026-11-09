@@ -112,22 +112,22 @@ x-zendesk:
 
 1. В App Store Connect перейдите в **Users and Access**.
 
-   [![](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)
+   <Image align="center" alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" />
 2. Перейдите в **Users and Access** > **Integrations** и в списке **Keys** выберите **In-App Purchase**.
 
-   [![](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" />
 3. Нажмите + , чтобы сгенерировать новый ключ In-App Purchase.
 
-   [![](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" />
 4. Введите название для вашего ключа API.
 5. Нажмите **Создать**.
 6. Нажмите **Download In-App Purchase Key** next to the key you just generated to download it. **Примечание**: Вы можете скачать ключ только один раз.
 7. Скопируйте **Key ID** ключа, который вы только что сгенерировали, и вставьте его в настройки покупок & подписок AppsFlyer в поле **Key ID**.
 
-   [![](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)
+   <Image align="center" alt="" src="https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png" />
 8. Скопируйте **Issuer ID**. **Примечание**: если **Issuer ID** не отображается в верхней части страницы, создайте ключ API App Store Connect (с любым уровнем доступа). После этого Issuer ID появится в верхней части страницы ключа In-App Purchase.
 
-   [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
+   <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" />
 
 </Accordion>
 
@@ -169,7 +169,7 @@ x-zendesk:
 2. Привяжите аккаунт к своему проекту вGoogle Cloud. Инструкции см. в этом <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">разделе справки Google</Anchor>.
 3. Активируйте API разработчика Google Play. Инструкции см. в <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">этом разделе справки Google</Anchor>.
 
-   [![](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)
+   <Image align="center" alt="" src="https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png" />
 
 </Accordion>
 
@@ -190,18 +190,18 @@ x-zendesk:
    5. На шаге **Grant this service account access to the project** выберите роль подписчика **Pub/Sub**.[![](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)
    6. Нажмите **Continue** > **Done**.
 
-      [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
+      <Image align="center" alt="" src="https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png" />
 2. Скачайте service account private key:
 
    1. <span class="af-ol-a"></span>В Google Cloud Platform перейдите в раздел **Service accounts**, найдите в списке нужный аккаунт (тот, который вы только что создали) и нажмите значок **More actions**.
    2. Нажмите **Manage keys**.[![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)
    3. Нажмите 0**Добавить ключ** 0> 0**Создать новый ключ**.
 
-      [![](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)
+      <Image align="center" alt="" src="https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png" />
    4. Во всплывающем окне **Create private key** в разделе **Key type** выберите **JSON** и нажмите **Create**.[![](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)
    5. Нажмите 0**Create**. Загрузится файл JSON закрытого ключа.
 
-      [![](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)
+      <Image align="center" alt="" src="https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png" />
    6. Сохраните файл ключа JSON, который вы позже загрузите в AppsFlyer. **Важно!** Вы должны сохранить ключ. его нельзя будет получить позже. Если вы его не сохраните, вам придётся создать совершенно новый ключ.
 
 </Accordion>
@@ -218,23 +218,23 @@ x-zendesk:
 
 1. В Google Play Console перейдите в раздел 0**Пользователи и разрешения**, найдите созданный сервисный аккаунт и нажмите 0**Пригласить новых пользователей**.
 
-   [![](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)
+   <Image align="center" alt="" src="https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png" />
 2. Введите **адрес электронной почты** , который вы скопировали при настройке учётной записи службы на шаге 1.2.1.3.
 
-   [![](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)
+   <Image align="center" alt="" src="https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png" />
 3. В разделе 0**Разрешения** 0перейдите на вкладку 0**Разрешения аккаунта** 0и выберите оба варианта:
 
    * Просматривать финансовые данные, заказы и ответы на анкетирование после отмены.
    * Управление заказами и подписками.[![](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)
 4. На вкладке 0**Разрешения приложения** 0нажмите 0**Добавить приложение, 0**затем выберите ваше приложение. Добавьте несколько приложений, если необходимо.
 
-   [![](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)
+   <Image align="center" alt="" src="https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png" />
 5. Нажмите 0**Пригласить пользователя**.
 
-   [![](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)
+   <Image align="center" alt="" src="https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png" />
 6. Во всплывающем окне подтверждения нажмите 0**Отправить приглашение**.
 
-   [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
+   <Image align="center" alt="" src="https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png" />
 
 </Accordion>
 
@@ -312,7 +312,7 @@ x-zendesk:
 
 <Accordion title="Тестирование измерения доходов от внутренних покупок (IAP) и подписок">
 
-[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 **Чтобы протестировать доходы от покупок в приложении и подписок**:
 
@@ -359,7 +359,7 @@ x-zendesk:
 * События в приложении, которые вы хотите регистрировать как <Anchor target="_blank" href="/marketers/ru/docs/about-receipt-validation#события-покупок-в-приложении-и-параметры-валидации-чека">покупки в приложении или подписки</Anchor>, не блокируются ни одним из правил валидации, настроенных в AppsFlyer.
 * У всех ваших разработчиков все sandbox-флаги установлены в значение `false`.
 
-[<Image alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />
 
 После релиза приложения с SDK API validateAndLog <Anchor target="_blank" href="/marketers/ru/docs/about-receipt-validation#события-покупок-в-приложении-и-параметры-валидации-чека">события покупок в приложении и подписок</Anchor> генерируются и становятся доступны на всех дэшбордах AppsFlyer, а также в агрегированных отчетах и отчетах о сырых данных.
 

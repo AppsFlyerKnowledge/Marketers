@@ -162,7 +162,7 @@ let customerUserID = AppsFlyerLib.shared().customerUserID
 5. Настройте постбэки по умолчанию, отправляемые в Adobe Analytics. AppsFlyer может отправлять автоматические постбэки как для установок, так и для повторных вовлечений (включая повторные атрибуции). Узнайте больше о <Anchor target="_blank" href="/marketers/ru/docs/set-up-an-integrated-partner#default-postbacks">постбэках по умолчанию</Anchor>.
 6. Из **SDK Adobe Analytics** как часть файла **ADBMobileConfig.XML** скопируйте **Report\_Suite\_ID** (выделено синим цветом) и **Adobe\_Analytic\_server\_URL** (выделено зеленым цветом) и вставьте их в соответствующие поля на странице интеграции Adobe Analytics в AppsFlyer.
 
-   ![](https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png)
+   <Image align="center" alt="" src="https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png" />
 7. Нажмите **Сохранить интеграцию**.
 
 После сохранения AppsFlyer отправляет в Adobe Analytics следующие данные для каждой органической и неорганической установки:

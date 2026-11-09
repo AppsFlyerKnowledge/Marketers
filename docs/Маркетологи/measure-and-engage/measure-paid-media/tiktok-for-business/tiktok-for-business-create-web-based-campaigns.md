@@ -254,7 +254,7 @@ AppsFlyer поддерживает атрибуцию по просмотрам 
 
 <Accordion title="Сквозной поток данных">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. URL-адрес рекламы TikTok включает  `pid=tiktokweb_int` параметр. Когда пользователь нажимает на рекламу, к URL-адресу автоматически добавляется `ttclid` параметр.
 2. Пользователь перенаправляется на целевой URL-адрес — целевую страницу, содержащую Smart Script.

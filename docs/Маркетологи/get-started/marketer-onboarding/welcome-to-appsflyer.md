@@ -46,7 +46,7 @@ x-zendesk:
 
 При первом создании пользователя по электронной почте приходит приглашение активировать аккаунт. После активации вы можете войти в систему, и аккаунт станет активным. Обратите внимание, что ссылка на активацию действительна в течение 48 часов.
 
-<Image alt="login page.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
+<Image align="center" alt="login page.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
 
 Есть несколько способов входа в аккаунт AppsFlyer:
 
@@ -79,7 +79,7 @@ x-zendesk:
 
 Основной аккаунт — это исходный аккаунт, который был создан первым и используется как аккаунт для входа в систему по умолчанию. Войдя в один аккаунт, вы сможете переключиться на другой.
 
-<Image alt="primary-account1.jpg" src="https://files.readme.io/8f1d88543b4797b584fa781bf2dd2563ed91f6eaff45393b186d8da98ccc0c33-51073397865233.jpg" width="672px" />
+<Image align="center" alt="primary-account1.jpg" src="https://files.readme.io/8f1d88543b4797b584fa781bf2dd2563ed91f6eaff45393b186d8da98ccc0c33-51073397865233.jpg" width="672px" />
 
 **Для переключения между аккаунтами:**
 
@@ -92,13 +92,13 @@ x-zendesk:
 ### Переключение между аккаунтами
 
 1. Выйдите из текущего аккаунта: в строке меню нажмите на **выпадающий список под адресом эл. почты** > **Выйти из аккаунта**.  
-   <Image alt="image (73).png" src="https://files.readme.io/b9aaf81a586da0240bb3813a0ad416ac1cf5badc0f976ddc0156e1bd798036df-51074002494481.png" width="313px" />
+   <Image align="center" alt="image (73).png" src="https://files.readme.io/b9aaf81a586da0240bb3813a0ad416ac1cf5badc0f976ddc0156e1bd798036df-51074002494481.png" width="313px" />
 2. Войдите в систему и выберите другой аккаунт из списка связанных аккаунтов.  
-   <Image alt="image (74).png" src="https://files.readme.io/7ff19bd9db1b1f72e06b594ce536200cd6139a1882e56e72877200542944d6f8-51074002495505.png" width="75%" />
+   <Image align="center" alt="image (74).png" src="https://files.readme.io/7ff19bd9db1b1f72e06b594ce536200cd6139a1882e56e72877200542944d6f8-51074002495505.png" width="75%" />
 3. Введите 6-значный код подтверждения, отправленный на ваш адрес электронной почты.  
-   <Image alt="image (769).png" src="https://files.readme.io/ccb2c3e8f8724f95e6ec265697b3851efeaf33ff6aabde4599e3d17c57949a44-51074002496017.png" width="75%" />
+   <Image align="center" alt="image (769).png" src="https://files.readme.io/ccb2c3e8f8724f95e6ec265697b3851efeaf33ff6aabde4599e3d17c57949a44-51074002496017.png" width="75%" />
 4. Нажмите «Сменить аккаунт».   
-   <Image alt="image (75).png" src="https://files.readme.io/81e6f17ed80eddcc1d3e55ca9336ed62b82fd1c6694a30a347ba24ae8bed57e4-51074025826705.png" width="75%" />
+   <Image align="center" alt="image (75).png" src="https://files.readme.io/81e6f17ed80eddcc1d3e55ca9336ed62b82fd1c6694a30a347ba24ae8bed57e4-51074025826705.png" width="75%" />
 
 <div id="note-2" />
 

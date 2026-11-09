@@ -46,23 +46,23 @@ AppsFlyer поддерживает различные параметры фил�
 
 Для каждого фильтра (медиа-источник, регион, кампания) можно выбрать несколько параметров для одновременной фильтрации. Рядом с каждым выбранным параметром появляется X.
 
-![](https://files.readme.io/ec865c2e963879815dd25e4c3f3870c4539d22a470c099c256d7e33ea9a0df59-208034063.png)
+<Image align="center" alt="" src="https://files.readme.io/ec865c2e963879815dd25e4c3f3870c4539d22a470c099c256d7e33ea9a0df59-208034063.png" />
 
 В самом поле отображается информация о количестве выбранных фильтров.
 
-![](https://files.readme.io/aabcbc881f0f18ae64a4b29af903dafaa27abd31dcaf17d97a0f8e89de30f416-208032403.png)
+<Image align="center" alt="" src="https://files.readme.io/aabcbc881f0f18ae64a4b29af903dafaa27abd31dcaf17d97a0f8e89de30f416-208032403.png" />
 
 Используя переключатель даты, вы можете ограничить свой поиск определёнными временными рамками. Вы можете выбрать свой собственный диапазон дат или нажать на одну из кнопок готовых диапазонов.
 
-![](https://files.readme.io/a80d29a742e80686701669de77e63392239d4694e8c8646e7aae0fd22e11e5de-206060926.png)
+<Image align="center" alt="" src="https://files.readme.io/a80d29a742e80686701669de77e63392239d4694e8c8646e7aae0fd22e11e5de-206060926.png" />
 
 Выберите медиа-источник, по которому хотите просмотреть данные.
 
-![](https://files.readme.io/362d109b0b6f1d54b6393b577b34137df3d3b45017aa6dac488caed898468b85-206119563.png)
+<Image align="center" alt="" src="https://files.readme.io/362d109b0b6f1d54b6393b577b34137df3d3b45017aa6dac488caed898468b85-206119563.png" />
 
 В списке **Регион** выберите соответствующий регион и просмотрите действия в приложении по этому региону.
 
-![](https://files.readme.io/1bac25d4068cceaaaecc8ccb558e2eb0660dd9a9276c090b6f4b82d003b18197-24507378603153.png)
+<Image align="center" alt="" src="https://files.readme.io/1bac25d4068cceaaaecc8ccb558e2eb0660dd9a9276c090b6f4b82d003b18197-24507378603153.png" />
 
 <div id="group-by-options" />
 
@@ -74,7 +74,7 @@ AppsFlyer поддерживает различные параметры фил�
 
 * Используется для сравнения источников привлечения пользователей. Например, если для Google и Meta Ads используется один и тот же таргетинг, то можно увидеть, какой источник эффективнее, когда кампания направлена на одну и ту же целевую аудиторию. Кроме того, нажав на название кампании, вы можете перейти к просмотру набора объявлений, а затем – к уровню объявления, чтобы просмотреть подробные данные кампании. Это доступно только для тех медиа-источников, которые предоставляют такую информацию.
 
-![](https://files.readme.io/d9437c102866d0966682477e15c1ba61e95898fc40e96f7f5bea1db36c5eb863-207209326.png)
+<Image align="center" alt="" src="https://files.readme.io/d9437c102866d0966682477e15c1ba61e95898fc40e96f7f5bea1db36c5eb863-207209326.png" />
 
 * **Идентификатор сайта**
 
@@ -93,7 +93,7 @@ AppsFlyer поддерживает различные параметры фил�
 
 По умолчанию отображается **Медиа-источник/кампания**.
 
-![](https://files.readme.io/07b4a1ef6dbfe48d5011157e0799a117d383da0eaea409417a70b715dd5eb09a-115001055266.png)
+<Image align="center" alt="" src="https://files.readme.io/07b4a1ef6dbfe48d5011157e0799a117d383da0eaea409417a70b715dd5eb09a-115001055266.png" />
 
 Когда вы выбираете **Идентификатор сайта**, данные отображаются с учётом фильтров, заданных вами для идентификатора сайта.
 
@@ -103,15 +103,15 @@ AppsFlyer поддерживает различные параметры фил�
 >
 > Данные по site\_id доступны с 16 мая 2016 г.
 
-![](https://files.readme.io/7f1dcfa333e63c16a44be5ce04a7ecbe7bf1f656a2edb6bb719cb55ea4dd50b1-206156066.png)
+<Image align="center" alt="" src="https://files.readme.io/7f1dcfa333e63c16a44be5ce04a7ecbe7bf1f656a2edb6bb719cb55ea4dd50b1-206156066.png" />
 
 Затем вам будет представлена дальнейшая разбивка данных по идентификатору сайта.
 
-![](https://files.readme.io/bc331dd1c8a611741a75a5a176a7b1a4b72edf08219dfe2a611d14bea3440231-206122143.png)
+<Image align="center" alt="" src="https://files.readme.io/bc331dd1c8a611741a75a5a176a7b1a4b72edf08219dfe2a611d14bea3440231-206122143.png" />
 
 При выбора опции **Регион** отображается разбивка данных по странам.
 
-![](https://files.readme.io/5eb0847fddd0592b2d130df2b97349da7afd0a5f2e03cc7bfdbf2da6becde67d-206064206.png)
+<Image align="center" alt="" src="https://files.readme.io/5eb0847fddd0592b2d130df2b97349da7afd0a5f2e03cc7bfdbf2da6becde67d-206064206.png" />
 
 <div id="advanced-filtering" />
 
@@ -121,7 +121,7 @@ AppsFlyer поддерживает различные параметры фил�
 
 Параметры фильтров расширяются следующим образом:
 
-![](https://files.readme.io/3f10672f949e1fc18347632912ff04977d1733ccd25d0fa8a7d4b57ee9bb53ae-211309586.png)
+<Image align="center" alt="" src="https://files.readme.io/3f10672f949e1fc18347632912ff04977d1733ccd25d0fa8a7d4b57ee9bb53ae-211309586.png" />
 
 <div id="note-1" />
 
@@ -129,7 +129,7 @@ AppsFlyer поддерживает различные параметры фил�
 >
 > Если вы выберете кампанию/канал, не указав медиа-источник, появится предупреждение о том, что сначала следует выбрать медиа-источник.
 
-![](https://files.readme.io/d082084e0be1ec0e47525d55b07518249a5ff6d3ded9bf13dbd7ff7f56d6cc5c-206066866.png)
+<Image align="center" alt="" src="https://files.readme.io/d082084e0be1ec0e47525d55b07518249a5ff6d3ded9bf13dbd7ff7f56d6cc5c-206066866.png" />
 
 Когда отображаются результаты, значок расширенной фильтрации меняет цвет с голубого на зелёный ![](https://files.readme.io/5d9e7c2aa155bd2ffeed093f13afab52fd7ce3c4de1a5387ec7be7b692066cb1-206128223.png)
 
@@ -141,7 +141,7 @@ AppsFlyer поддерживает различные параметры фил�
 
 На верхнем уровне он может просматривать все кампании, сгруппированные по медиа-источникам.
 
-![](https://files.readme.io/e46dec817d252776dcc6ab29a72ce4cdfdfeaed48e2f7c2783908a932494418e-206163486.png)
+<Image align="center" alt="" src="https://files.readme.io/e46dec817d252776dcc6ab29a72ce4cdfdfeaed48e2f7c2783908a932494418e-206163486.png" />
 
 Затем он хочет уточнить поиск, чтобы просмотреть данные по странам, в которых у него проводятся активные кампании.
 
@@ -149,10 +149,10 @@ AppsFlyer поддерживает различные параметры фил�
 
 Просмотрев эту информацию, он хочет сосредоточиться на конкретной стране. Сгруппировав свои кампании по региону и медиа-источникам, он может затем отфильтровать данные по региону.
 
-![](https://files.readme.io/36af4e06c37648c7777df302e26b9d350f572132abbd367394cda39c944bf9ce-206114886.png)
+<Image align="center" alt="" src="https://files.readme.io/36af4e06c37648c7777df302e26b9d350f572132abbd367394cda39c944bf9ce-206114886.png" />
 
 Г-н А. Г-н А. Затем Александр может добавить фильтр по идентификатору сайта, что позволит ему уточнить поиск. Так он увидит, как работает конкретный идентификатор сайта и оценит качество трафика, поступающего с этого сайта.
 
-![](https://files.readme.io/6b1f87913bd8e873d28c6ce681a5de9d462a44638c7a6adea5b5988d4ec2908e-211309606.png)
+<Image align="center" alt="" src="https://files.readme.io/6b1f87913bd8e873d28c6ce681a5de9d462a44638c7a6adea5b5988d4ec2908e-211309606.png" />
 
 <div data-zendesk-anchors="advanced-filter-by-and-group-by-options-in-dashboards=%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D1%84%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B8-%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BF%D0%BE-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%D0%BC-%D0%BD%D0%B0-%D0%B4%D1%8D%D1%88%D0%B1%D0%BE%D1%80%D0%B4%D0%B0%D1%85 filter-by-options=%D1%84%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%D0%BC group-by-options=%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BF%D0%BE-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0%D0%BC advanced-filtering=%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D1%84%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F example-user-story=%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80" />

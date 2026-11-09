@@ -41,7 +41,7 @@ x-zendesk:
 
 <Accordion title="Активируйте Единый Источник Истины">
 
-![SSOTControl.png](https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png)
+<Image align="center" alt="SSOTControl.png" src="https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png" />
 
 **Для активации SSOT:**
 
@@ -59,7 +59,7 @@ x-zendesk:
 
 ## Обзорный дэшборд с видом на Единый Источник Истины
 
-![SSOTisNowOn.png](https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png)
+<Image align="center" alt="SSOTisNowOn.png" src="https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png" />
 
 Вид «Единый источник истины», доступный через обзорный дэшборд, предоставляет полную картину метрик неорганической эффективности. В этом виде:
 
@@ -79,11 +79,11 @@ x-zendesk:
 
 1. Перед началом убедитесь, что в конверсионной студии активирован параметр <Anchor target="_blank" href="/marketers/ru/docs/skan-conversion-studio#single-source-of-truth">Единый источник истины</Anchor>.
 2. В AppsFlyer перейдите в **Дэшборд** > **Обзор.**   
-   <Image alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
+   <Image align="center" alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
 3. Нажмите ▼.
 4. Выберите Lite обзор.  
    Появится переключатель «Единый источник истины».  
-   <Image alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
+   <Image align="center" alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
 5. Включите «Единый источник истины».
 6. Произойдет одно из следующих действий:
    * Отобразятся метрики и диаграммы на дэшборде.  
@@ -193,7 +193,7 @@ x-zendesk:
 
 Возможные сценарии атрибуции моделей SKAN-AF проиллюстрированы на следующей диаграмме Венна.
 
-![altskan_af_model_diagram.pngalt](https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png)
+<Image align="center" alt="altskan_af_model_diagram.pngalt" src="https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png" />
 
 В следующей таблице описаны причины каждого сценария атрибуции.
 
@@ -209,7 +209,7 @@ x-zendesk:
 
 Работа SSOT подробно показана на следующем рисунке.
 
-![ЕдиныйИсточникИстины.png](https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png)
+<Image align="center" alt="ЕдиныйИсточникИстины.png" src="https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png" />
 
 **Как работает механизм SSOT?**
 

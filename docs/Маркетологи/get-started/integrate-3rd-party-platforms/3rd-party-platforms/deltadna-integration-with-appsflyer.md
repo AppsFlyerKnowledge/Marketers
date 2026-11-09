@@ -76,11 +76,11 @@ AppsFlyer.setCustomerUserID (DDNA.Instance.UserID)
 
 1. Создайте в deltaDNA событие AppsFlyerAttribution с помощью инструмента Event Management
 
-![Delta DNA 1](https://files.readme.io/e5224bbaa730d997699e1a930425946f69a2b86ef94e241b4ba6fdb9ad978c66-206781083.png)
+<Image align="center" alt="Delta DNA 1" src="https://files.readme.io/e5224bbaa730d997699e1a930425946f69a2b86ef94e241b4ba6fdb9ad978c66-206781083.png" />
 
 2. Получите ключ Live environment на странице Game Details в дэшборде deltaDNA:
 
-![Delta DNA 2](https://files.readme.io/6b28184264dfd695000e8bfae9538862a3e17ea6f9d355af0996ccf107b4e6c2-206768886.png)
+<Image align="center" alt="Delta DNA 2" src="https://files.readme.io/6b28184264dfd695000e8bfae9538862a3e17ea6f9d355af0996ccf107b4e6c2-206768886.png" />
 
 **В AppsFlyer активируйте или отредактируйте интеграцию:**
 
@@ -121,17 +121,17 @@ AppsFlyer.setCustomerUserID (DDNA.Instance.UserID)
 
 Фильтр Acquisition Channel в верхней части всех графиков Measure, матриц удержания, а также предикторов LTV и Retention использует медиаисточник AppsFlyer и основан на нем.
 
-![Delta DNA 3](https://files.readme.io/21cf4f1c8641351a1ecc200d8b95d7558b92f4daf38f49975601d996a0fcfb86-206781123.png)
+<Image align="center" alt="Delta DNA 3" src="https://files.readme.io/21cf4f1c8641351a1ecc200d8b95d7558b92f4daf38f49975601d996a0fcfb86-206781123.png" />
 
 AppsFlyer может отправлять в deltaDNA 8 параметров атрибуции для использования в анализе, отчетах и запросах. Все они имеют префикс **afAttr.**   
 *Например. afAttrCampaign, afAttrAgency, afAttrMediaSource — соответственно для кампании, агентства и медиаисточника.*
 
 Все параметры атрибуции перечислены в **appsFlyerAttribution**, добавленном на ваш экран управления событиями.
 
-![Delta DNA 4](https://files.readme.io/e0af8513fdda3268ab799a6ef08396c03970bd0850bde851f07649e459a8b20e-206781143.png)
+<Image align="center" alt="Delta DNA 4" src="https://files.readme.io/e0af8513fdda3268ab799a6ef08396c03970bd0850bde851f07649e459a8b20e-206781143.png" />
 
 Используйте их для создания пользовательских запросов и отчетов для анализа в любом из инструментов deltaDNA Analyze.
 
-![Delta DNA 5](https://files.readme.io/f4b9d0320feb3990182a0c9a835a18565ba959fabf7269c45a4651506666f941-206768946.png)
+<Image align="center" alt="Delta DNA 5" src="https://files.readme.io/f4b9d0320feb3990182a0c9a835a18565ba959fabf7269c45a4651506666f941-206768946.png" />
 
 <div data-zendesk-anchors="integrating-with-deltadna=%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%81-deltadna h_01H9FK6N8V597T8AY0RF0H6CZW=%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%81-deltadna viewing-the-attribution-data-in-the-deltadna-console=%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%86%D0%B8%D0%B8-%D0%B2-%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D0%B8-deltadna h_01H9FK6N8W8011X3JVG2EZ66H4=%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B0%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%86%D0%B8%D0%B8-%D0%B2-%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D0%B8-deltadna" />

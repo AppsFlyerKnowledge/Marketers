@@ -46,7 +46,7 @@ x-zendesk:
    * Если это первая настройка измерения в вашем сотрудничестве, нажмите **Настроить измерение.** Отображается страница **Создать измерение**.
    * Если у вас уже есть набор измерений в вашем сотрудничестве, нажмите знак плюса в панели выбора измерений. Отображается страница **Создать измерение**.
 
-[![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
+<Image align="center" alt="start-measurement.png" src="https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png" />
 
 <div id="select-campaign-type-on-site-off-site-or-both" />
 

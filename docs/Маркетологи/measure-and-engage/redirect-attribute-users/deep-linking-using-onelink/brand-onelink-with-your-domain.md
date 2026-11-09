@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **At a glance:** **Краткий обзор:** Рекламодатели, использующие ссылки OneLink, могут указывать в них свой домен, чтобы повысить эффективность кампаний и узнаваемость бренда. чтобы повысить эффективность кампаний и узнаваемость бренда.
 
-![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
+<Image align="center" alt="Branded_1__3_.jpg" src="https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png" />
 
 <div id="branded-domains" />
 
@@ -76,7 +76,7 @@ x-zendesk:
 
 **Брендированный домен, указывающий на серверы AppsFlyer**
 
-![Позволяют использовать брендинг в диплинках.](https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png)
+<Image align="center" alt="Позволяют использовать брендинг в диплинках." src="https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png" />
 
 **Прежде чем начать:**
 
@@ -154,15 +154,15 @@ SSL, управляемый AppsFlyer, является вариантом по 
 1. [Создайте брндовый домен](/docs/brand-onelink-with-your-domain#настройка-брендированных-доменов).
 2. В AppsFlyer перейдите в **Вовлечение** > **Брендовые домены**, наведите курсор на нужный домен и выберите значок «Пользовательский SSL-сертификат».
 
-   <Image alt="SSL certificate icon Newest minimal.png" src="https://files.readme.io/8b22a41fd755a3f36e8eaf4a869b107661894d81504bbfb44e1fc728b9b06751-45231876708497.png" width="1044px" />
+   <Image align="center" alt="SSL certificate icon Newest minimal.png" src="https://files.readme.io/8b22a41fd755a3f36e8eaf4a869b107661894d81504bbfb44e1fc728b9b06751-45231876708497.png" width="1044px" />
 3. Заполните форму с данными сертификата.
 
-   <Image alt="fill in form to generate CSR file.png" src="https://files.readme.io/4327a4da0cbcc6243c9bbdbec21fe4f91d7fe701ccbffca99e629a5eadd248e8-45231876709649.png" width="722px" />
+   <Image align="center" alt="fill in form to generate CSR file.png" src="https://files.readme.io/4327a4da0cbcc6243c9bbdbec21fe4f91d7fe701ccbffca99e629a5eadd248e8-45231876709649.png" width="722px" />
 4. Нажмите **Загрузить CSR**, чтобы загрузить копию только что заполненной формы. <Image alt="Download CSR file.png" src="https://files.readme.io/9a560d19e38593fbc379efc6bdb1e636e1fa34f894dca4b46a23be30019127dd-45231892701585.png" width="254px" />
 5. Предоставьте только что загруженный CSR-файл выбранному вами центру сертификации SSL.
 6. После того как вам предоставят новый SSL-сертификат, загрузите его обратно в AppsFlyer.
 
-<Image alt="Upload new SSL certificate to AF.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
+<Image align="center" alt="Upload new SSL certificate to AF.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
 
 > 📘 **Note**
 >

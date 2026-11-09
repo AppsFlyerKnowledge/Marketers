@@ -141,7 +141,7 @@ Conversion Studio предоставляет максимальную гибко
 
 Чтобы вручную настроить SKAN 4, поэкспериментируйте с различными параметрами. По мере внесения изменений сводка **емкости значения конверсии** обновляется. Оптимизируйте настройки, чтобы сохранить наиболее значимые для вас данные, не превышая при этом емкость. См. [Расчёт емкости значений конверсии](/docs/skan-conversion-studio#conversion-value-capacity-formula).
 
-![Счётчик емкости.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="Счётчик емкости.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **Примечание: Если вы переходите на SKAN 4 с предыдущего режима SKAN, текущее сопоставление схем переносится для точных измерений, а AppsFlyer автоматически сопоставляет грубые значения. А если вы новичок в SKAN, AppsFlyer предоставляет начальное сопоставление по умолчанию.**
 
@@ -186,7 +186,7 @@ Conversion Studio предоставляет максимальную гибко
 
 Чтобы настроить пользовательский режим, поэкспериментируйте с различными параметрами. По мере внесения изменений обновляется сводка **емкости конверсионного значения**. Оптимизируйте настройки, чтобы сохранить наиболее значимые для вас данные, не превышая при этом емкость. См. [Расчёт емкости значений конверсии](/docs/skan-conversion-studio#conversion-value-capacity-formula).
 
-![Счётчик емкости.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="Счётчик емкости.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 Примечание: по умолчанию AppsFlyer отображает SKAN 4 в Conversion Studio. Чтобы вернуться к предыдущему режиму, кликните по значку параметров (⋮), чтобы открыть меню параметров, и выберите Revert to the previous SKAN version.
 
@@ -229,7 +229,7 @@ Conversion Studio предоставляет максимальную гибко
 
 При внесении изменений в настройки режима обновляется сводка **емкости конверсионного значения**. Оптимизируйте настройки, чтобы сохранить наиболее значимые для вас данные, не превышая при этом емкость. См. [Расчёт емкости значений конверсии](/docs/skan-conversion-studio#conversion-value-capacity-formula).
 
-![Счётчик емкости.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="Счётчик емкости.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **Примечание!**
 
@@ -552,7 +552,7 @@ Conversion Studio предоставляет максимальную гибко
 3. При необходимости нажмите **Удалить**, чтобы удалить текущие настройки.
 4. Нажмите **+ Добавить измерение**. Выберите **Приоритет**.   
    Показывается приоритет 1.  
-   [![CVmapping.png](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)
+   <Image align="center" alt="CVmapping.png" src="https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png" />
 5. Выберите компонент измерения из:
    * Вовлечение
    * Внутреннее событие приложения
@@ -616,7 +616,7 @@ Conversion Studio предоставляет максимальную гибко
 * Загрузите таблицу сопоставления CV в виде файла CSV. Кликните **Загрузить файл сопоставления.**
 * Получите сопоставление CV с помощью <Anchor target="_blank" href="/marketers/ru/docs/skan-cv-schema-api-for-advertisers">API схемы CV SKAN для рекламодателей</Anchor>.
 
-<Image alt="SKAN_download_mapping.png" src="https://files.readme.io/62dc60da0001c0eccc96791f3f3320f8ea0bc24db3977af4390643c5a95a5ad3-46095838352401.png" width="2482px" />
+<Image align="center" alt="SKAN_download_mapping.png" src="https://files.readme.io/62dc60da0001c0eccc96791f3f3320f8ea0bc24db3977af4390643c5a95a5ad3-46095838352401.png" width="2482px" />
 
 <div id="csv-mapping-file-columns" />
 
@@ -1082,7 +1082,7 @@ Conversion Studio предоставляет максимальную гибко
 
 <Accordion title="Отчеты о событие через API сервер-сервер">
 
-![SKAdNetwork_-_S2S__2_.png](https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png)
+<Image align="center" alt="SKAdNetwork_-_S2S__2_.png" src="https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png" />
 
 Как SDK (пакет средств разработки ПО), так и <Anchor target="_blank" href="/marketers/ru/docs/server-to-server-events-api-for-mobile-s2s-mobile">API сервер-сервер (S2S)</Anchor> могут отправлять события в приложении на серверы AppsFlyer.
 

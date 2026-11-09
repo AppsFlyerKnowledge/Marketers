@@ -54,23 +54,23 @@ x-zendesk:
 
 1. Войдите в свой аккаунт Unity Cloud.
 2. В левом боковом меню выберите пункт **Grow (Unity Ads User Acquisition) (Рост (Привлечение пользователей Unity Ads)** > **Settings (Настройки**).  
-    [![](https://files.readme.io/2fcc359913c11a4bcce29e1aaf30cb84161a09e39b14cdcd4ad4f141debd1798-26134832885137.png)](https://files.readme.io/2fcc359913c11a4bcce29e1aaf30cb84161a09e39b14cdcd4ad4f141debd1798-26134832885137.png)
+    <Image align="center" alt="" src="https://files.readme.io/2fcc359913c11a4bcce29e1aaf30cb84161a09e39b14cdcd4ad4f141debd1798-26134832885137.png" />
 3. Найдите, скопируйте и сохраните **основной идентификатор организации**.  
    Пример основного идентификатора организации: 5773102414648
 4. В левом боковом меню выберите пункт **Grow (Unity Ads User Acquisition) (Рост (Привлечение пользователей Unity Ads)** > **`{}` API Management (Управление API)** и в разделе **Stats API v2.0** нажмите **Service Account (Аккаунт службы).**  
-    [![](https://files.readme.io/36dd40e68eeeb6562c1e5a19f92873e8eb99b66f80c45db066e0ff54b66d0080-26369979011985.png)](https://files.readme.io/36dd40e68eeeb6562c1e5a19f92873e8eb99b66f80c45db066e0ff54b66d0080-26369979011985.png)
+    <Image align="center" alt="" src="https://files.readme.io/36dd40e68eeeb6562c1e5a19f92873e8eb99b66f80c45db066e0ff54b66d0080-26369979011985.png" />
 5. Нажмите **+ New (Создать)**, чтобы создать новый аккаунт службы.  
-    [![](https://files.readme.io/3a53e932bf8d023e910b66f74ea6f630c8048787885d45ea4206b2f1f3d4f65e-26136910848785.png)](https://files.readme.io/3a53e932bf8d023e910b66f74ea6f630c8048787885d45ea4206b2f1f3d4f65e-26136910848785.png)
+    <Image align="center" alt="" src="https://files.readme.io/3a53e932bf8d023e910b66f74ea6f630c8048787885d45ea4206b2f1f3d4f65e-26136910848785.png" />
 6. В разделе **Keys (Ключи)** нажмите **+ Add key (Добавить ключ)**, чтобы создать ключ для аккаунта службы.  
-    [![](https://files.readme.io/f528d44a9659372bfeeb8d13538f9caf0a7955f53194194543988af983f9c517-26136957380753.png)](https://files.readme.io/f528d44a9659372bfeeb8d13538f9caf0a7955f53194194543988af983f9c517-26136957380753.png)
+    <Image align="center" alt="" src="https://files.readme.io/f528d44a9659372bfeeb8d13538f9caf0a7955f53194194543988af983f9c517-26136957380753.png" />
 7. Скопируйте и сохраните **идентификатор ключа** и **секретный ключ**. **Примечание.** Это единственный раз, когда вы можете получить доступ к секретному ключу, поэтому обязательно сохраните его сейчас!
    * Пример секретного ключа аккаунта службы: b0de73b1-b3ad-4175-bf9b-4913a0ff83ec
    * Пример идентификатора ключа аккаунта секретной службы: a0X\_cqHiXH4ABPS1Qr9TCy6EJdvG8ql5  
-      [![](https://files.readme.io/6de3cd868541ab5487370dbefc758a375c3395434e07361f74553a1b9a9c7d57-26136957383697.png)](https://files.readme.io/6de3cd868541ab5487370dbefc758a375c3395434e07361f74553a1b9a9c7d57-26136957383697.png)
+      <Image align="center" alt="" src="https://files.readme.io/6de3cd868541ab5487370dbefc758a375c3395434e07361f74553a1b9a9c7d57-26136957383697.png" />
 8. В разделе **Organization roles (Роли организации)** нажмите **+ Manage organization roles (Управление ролями организации)**.  
-    [![](https://files.readme.io/d368d6c611db2a8df76e341c7b6a692128b5ae37f51f6642fa7e60cd00f29689-26136910860689.png)](https://files.readme.io/d368d6c611db2a8df76e341c7b6a692128b5ae37f51f6642fa7e60cd00f29689-26136910860689.png)
+    <Image align="center" alt="" src="https://files.readme.io/d368d6c611db2a8df76e341c7b6a692128b5ae37f51f6642fa7e60cd00f29689-26136910860689.png" />
 9. В разделе **Edit roles in organization (Редактирование ролей в организации)** установите для опции **Growth (Рост)** параметр **Advertise Stats API MMP Viewer**.  
-    [![](https://files.readme.io/f1243cb65978d2f96d148ceb34b528ca005091c38dbed95368923047b3cfbfd1-26136957386513.png)](https://files.readme.io/f1243cb65978d2f96d148ceb34b528ca005091c38dbed95368923047b3cfbfd1-26136957386513.png)
+    <Image align="center" alt="" src="https://files.readme.io/f1243cb65978d2f96d148ceb34b528ca005091c38dbed95368923047b3cfbfd1-26136957386513.png" />
 
 </Accordion>
 

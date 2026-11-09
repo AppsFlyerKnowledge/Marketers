@@ -76,7 +76,7 @@ x-zendesk:
 
 Game Analytics связывается с AppsFlyer с помощью уникального ключа игры. Если у вас его еще нет, вы должны получить его в Game Analytics, чтобы продолжить интеграцию.
 
-![Game_Analytics_msc_new_2.png](https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png)
+<Image align="center" alt="Game_Analytics_msc_new_2.png" src="https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png" />
 
 <div id="default-postbacks" />
 
@@ -84,7 +84,7 @@ Game Analytics связывается с AppsFlyer с помощью уника�
 
 AppsFlyer может автоматически отправлять в Game Analytics постбэки по пользовательским установкам. В этом разделе можно определить отправку этих постбэков.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Выберите **События, атрибутированные любому партнеру или органические**, чтобы отправлять постбэки в Game Analytics для любого пользователя, который загружает приложение, или выберите **Выкл.**
 
@@ -92,7 +92,7 @@ AppsFlyer может автоматически отправлять в Game Ana
 
 ### Настройки внутренних событий приложения
 
-[![](https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png)](https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png)
+<Image align="center" alt="" src="https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png" />
 
 В этом разделе можно настроить сопоставление событий AppsFlyer с Game Analytics через постбэки.
 

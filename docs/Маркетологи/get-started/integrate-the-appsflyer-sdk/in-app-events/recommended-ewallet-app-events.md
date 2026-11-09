@@ -44,7 +44,7 @@ x-zendesk:
 >
 > Дополнительные сведения о регистрации внутренних событий см. в <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview">Руководстве по внутренним событиям приложения</Anchor>.
 
-[![Flowchart_for_recommended_events e-Wallet_app_user_journey](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)](https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png)
+<Image align="center" alt="Flowchart_for_recommended_events e-Wallet_app_user_journey" src="https://files.readme.io/cf1f91f9c89d1f45448a6172e48b7f59fdce767f00c893d91b12a5f2d043945f-4404610923409.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

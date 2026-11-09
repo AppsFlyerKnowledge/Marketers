@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Краткий обзор.** Превращайте пользователей настольных компьютеров, телевизоров, CTV или офлайн в пользователей мобильных приложений с помощью QR-кодов, созданных на базе OneLink.
 
-![6005_QR_code_4.jpg](https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg)
+<Image align="center" alt="6005_QR_code_4.jpg" src="https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg" />
 
 <div id="converting-mobile-non-mobile-and-offline-traffic-into-mobile-app-users" />
 
@@ -79,7 +79,7 @@ QR-коды можно создавать следующими способам�
 
 <Accordion title="Настроить QR-код">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 Вы можете настроить вид QR-кодов, созданных через OneLink:
 
@@ -140,7 +140,7 @@ QR-коды можно создавать следующими способам�
   * Подумайте о том, чтобы добавить инструкции по сканированию QR-кода.
 * Уже пользуетесь OneLink? В *другие* пользовательские ссылки OneLink, используемые в электронных письмах и т. д., добавьте параметр **af\_web\_dp**, значением которого будет URL-адрес страницы, содержащей QR-код. В результате пользователи настольных компьютеров переходят по ссылке на веб-страницу, а не в магазин приложений.
 
-  [![](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)
+  <Image align="center" alt="" src="https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg" />
 
 </Accordion>
 

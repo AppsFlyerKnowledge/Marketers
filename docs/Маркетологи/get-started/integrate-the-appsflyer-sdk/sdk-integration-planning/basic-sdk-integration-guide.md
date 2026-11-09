@@ -44,7 +44,7 @@ AppsFlyer использует ключ разработчика для уник
 1. В AppsFlyer в боковом меню выберите **Настройки** > **Настройки приложения**.
 2. Скопируйте свой ключ разработчика и отправьте его вашему мобильному разработчику.
 
-   ![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
+   <Image align="center" alt="" src="https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png" />
 
 <div id="provide-the-dev-key-to-your-developer" />
 
@@ -309,7 +309,7 @@ AppsFlyer поддерживает атрибуцию в контексте ст
 
 `waitForATTUserAuthorization` позволяет вам настроить, как долго SDK (пакет средств разработки ПО) должен ожидать статус ATT перед передачей данных на серверы AppsFlyer.
 
-![](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)
+<Image align="center" alt="" src="https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png" />
 
 Когда пользователь запускает Приложение, статус ATT — **не определен.** В течение [тайм-аута SDK (пакет средств разработки ПО) временно сохраняет событие запуска и последующие события в Приложении в памяти, аналогично тому, как записываются](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#offline-in-app-events) [офлайн-события](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#offline-in-app-events):
 

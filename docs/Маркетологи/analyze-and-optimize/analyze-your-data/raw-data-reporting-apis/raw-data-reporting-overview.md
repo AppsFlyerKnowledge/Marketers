@@ -122,7 +122,7 @@ x-zendesk:
 
 ## отчёты о пути пользователя
 
-![Raw_data_-_User_acquisition_.png](https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png)
+<Image align="center" alt="Raw_data_-_User_acquisition_.png" src="https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png" />
 
 <div id="user-journey-basics" />
 
@@ -150,7 +150,7 @@ x-zendesk:
   * Данные ретаргетинга всегда неорганические.
   * Внутренние события приложения, произошедшие в результате ретаргетинга, присутствуют как в отчёте по привлечению пользователей, так и в отчёте по внутренним событиям в результате ретаргетинга. См. статью о методологии <Anchor target="_blank" href="/marketers/ru/docs/resolve-retargeting-double-attribution">двойной атрибуции ретаргетинга</Anchor>.
 
-    ![Raw_data_-_Retargeting.png](https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png)
+    <Image align="center" alt="Raw_data_-_Retargeting.png" src="https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png" />
 
 Чтобы отследить путь пользователя, используйте комбинацию отчётов, которые относятся к интересующей вас части пути, например, по установкам и внутренним событиям приложения. Далее отсортируйте отчёт по AppsFlyer ID, времени события и типу отчёта. Так вы получите события по конкретному пользователю за период, т. е. путь пользователя.
 

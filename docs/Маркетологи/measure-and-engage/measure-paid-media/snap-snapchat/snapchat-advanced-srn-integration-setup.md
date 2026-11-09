@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **At a glance:** Узнайте, как настроить интеграцию между AppsFlyer и Snapchat, чтобы обеспечить измерение атрибуции. Snapchat — это расширенная сеть самоотчетности (SRN).
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
 <div id="overview" />
 
@@ -66,7 +66,7 @@ x-zendesk:
 
 Включите переключатель **Активировать партнера**, чтобы разрешить атрибуцию Snapchat.
 
-![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png" />
 
 <div id="general-settings" />
 
@@ -77,7 +77,7 @@ x-zendesk:
 1. В Snap Business Manager перейдите в раздел Apps (Приложения) и скопируйте Snap App ID (прочитайте руководство Snapchat, <Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/a/snap-app-id">как сгенерировать Snap App ID</Anchor>).
 2. Вставьте идентификатор в поле Snap App ID в AppsFlyer.
 
-![snapchat-app-id.png](https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png)
+<Image align="center" alt="snapchat-app-id.png" src="https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png" />
 
 **В случае, если приложение продвигается агентством**:
 
@@ -157,7 +157,7 @@ x-zendesk:
 
 Сопоставляйте события AppsFlyer с партнером с помощью постбэков. Если отправка постбэков активирована, они будут включать отклоненные внутренние события (события, признанные несоответствующими по правилам таргетинга или заблокированные Protect360).
 
-[![mceclip0.png](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png" />
 
 **Чтобы настроить постбэки для внутренних событий приложения:**
 
@@ -282,7 +282,7 @@ x-zendesk:
 1. Перейдите к типу возможности **Drive traffic to app**.
 2. Добавьте URI диплинка:  
      
-   [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+   <Image align="center" alt="" src="https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png" />
 
 <div id="deferred-deep-linking-with-snapchat" />
 
@@ -316,7 +316,7 @@ AppsFlyer предлагает ряд решений для отложенног
 3. Введите **идентификатор аккаунта Snapchat** вашего агентства. Это позволяет идентифицировать трафик агентства и отличать его от трафика рекламодателя. Вы можете ввести до 50 различных идентификаторов аккаунтов Snapchat. Все данные атрибуции, поступающие из указанных вами аккаунтов, отображаются на дэшборде агентства.
 4. Нажмите **Сохранить интеграцию**.
 
-![snapchat-agency-integration.png](https://files.readme.io/261a0246bb7da0899e653a776eb25e17ce3ae8bff1efef33acac0ef0bf99abcf-21074932431505.png)
+<Image align="center" alt="snapchat-agency-integration.png" src="https://files.readme.io/261a0246bb7da0899e653a776eb25e17ce3ae8bff1efef33acac0ef0bf99abcf-21074932431505.png" />
 
 > 🚧 **Important**
 >

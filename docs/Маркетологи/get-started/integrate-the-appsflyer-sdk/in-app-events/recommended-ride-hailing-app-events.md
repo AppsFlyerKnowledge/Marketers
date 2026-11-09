@@ -46,7 +46,7 @@ x-zendesk:
 >
 > Дополнительные сведения о регистрации внутренних событий см. в <Anchor target="_blank" href="/marketers/ru/docs/in-app-events-overview">Руководстве по насыщенным внутренним событиям</Anchor>.
 
-[![Блок-схема маршрута пользователя приложения для заказа поездки с рекомендуемыми событиями](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)](https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png)
+<Image align="center" alt="Блок-схема маршрута пользователя приложения для заказа поездки с рекомендуемыми событиями" src="https://files.readme.io/5ec4efcc699ef8749e1d5cd6e693472713f3d7945a41e1601965d0e7cdb68706-4402678863377.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

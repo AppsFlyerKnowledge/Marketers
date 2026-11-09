@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** InMobi — партнер AppsFlyer, интегрированная рекламная сеть, которая помогает пользователям находить новые продукты и услуги благодаря контекстным и тщательно подобранным рекомендациям на мобильных устройствах. Помимо мобильной атрибуции по кликам, InMobi также предлагает атрибуцию затрат, ретаргетинга и по просмотрам, данные которой можно регистрировать с помощью AppsFlyer.
 
-<Image alt="inmobi_icon.png" src="https://files.readme.io/cbe0e88492041fc8e1781b397b67a3c8c3a09591974f2cf4fa145a18ca9e6a8d-10602685724817.png" width="128px" />
+<Image align="center" alt="inmobi_icon.png" src="https://files.readme.io/cbe0e88492041fc8e1781b397b67a3c8c3a09591974f2cf4fa145a18ca9e6a8d-10602685724817.png" width="128px" />
 
 <div id="setting-up-inmobi" />
 
@@ -78,7 +78,7 @@ x-zendesk:
 
 InMobi подключается к AppsFlyer через уникальный идентификатор сети. Если у вас еще нет идентификатора сети, получите его в InMobi, чтобы продолжить интеграцию.
 
-![Inmobi_msc_new_3.png](https://files.readme.io/9c2efaed833211582a33b3a2bbd7d07336bc78d6e2d4e3a7645b5ca14be2fd73-360001865845.png)
+<Image align="center" alt="Inmobi_msc_new_3.png" src="https://files.readme.io/9c2efaed833211582a33b3a2bbd7d07336bc78d6e2d4e3a7645b5ca14be2fd73-360001865845.png" />
 
 **Активация атрибуции по просмотрам**
 
@@ -121,7 +121,7 @@ InMobi подключается к AppsFlyer через уникальный и�
 
 На этой вкладке можно создать ссылки атрибуции, которые вы хотите отправить в InMobi для атрибуции кампаний, групп объявлений или даже отдельных рекламных объявлений InMobi. Обратите внимание, что AppsFlyer НЕ сохраняет ссылки атрибуции, созданные для вашего партнера. [![](https://files.readme.io/1f198f652bc960ea8d20c58d4bf704b8aff1361d105d9ed72c52c070eb88d2ce-360002187398.png)](https://files.readme.io/1f198f652bc960ea8d20c58d4bf704b8aff1361d105d9ed72c52c070eb88d2ce-360002187398.png)
 
-[![](https://files.readme.io/03371cdc64826e77cee3bd0adb90280aa59ebddd34ec85d8946ae9646ce86ce8-360001866409.png)](https://files.readme.io/03371cdc64826e77cee3bd0adb90280aa59ebddd34ec85d8946ae9646ce86ce8-360001866409.png)
+<Image align="center" alt="" src="https://files.readme.io/03371cdc64826e77cee3bd0adb90280aa59ebddd34ec85d8946ae9646ce86ce8-360001866409.png" />
 
 На этой вкладке есть несколько разделов:
 
@@ -144,7 +144,7 @@ InMobi подключается к AppsFlyer через уникальный и�
 * **Subscriber Parameters** — используйте любой из 5 параметров подписчика, чтобы вставить полезные значения. Обратите внимание, что эти параметры анализируются и отображаются в отчете о сырых данных, что делает их очень удобными для агрегации или фильтрации данных.  
   **Параметры ссылки атрибуции:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-[![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
+<Image align="center" alt="" src="https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png" />
 
 Если нужно добавить в ссылку атрибуции другой параметр, просто введите его в поле нового параметра. Дополнительные сведения см. в статье <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters">**Структура и параметры ссылки атрибуции в AppsFlyer**</Anchor>.
 
@@ -157,7 +157,7 @@ InMobi подключается к AppsFlyer через уникальный и�
 
 Когда ретаргетинг активирован, отображаются следующие настройки.
 
-![msc_new_7.png](https://files.readme.io/b90bbd6e3bea9dd862808343896b005071b7d9e564d31039c188c3ebf8e81077-360002254489.png)
+<Image align="center" alt="msc_new_7.png" src="https://files.readme.io/b90bbd6e3bea9dd862808343896b005071b7d9e564d31039c188c3ebf8e81077-360002254489.png" />
 
 1. Стандартная ссылка и ссылка OneLink
 
@@ -195,7 +195,7 @@ InMobi подключается к AppsFlyer через уникальный и�
 
 Подробнее об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">окне атрибуции по кликам см. здесь</Anchor>.
 
-[![](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)
+<Image align="center" alt="" src="https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png" />
 
 <div id="click-attribution-link" />
 
@@ -215,7 +215,7 @@ InMobi подключается к AppsFlyer через уникальный и�
 
 Подробные сведения об <Anchor target="_blank" href="/marketers/ru/docs/set-up-lookback-windows">атрибуции по просмотрам см. здесь</Anchor>.
 
-[![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+<Image align="center" alt="" src="https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png" />
 
 <div id="impressions-attribution-link" />
 

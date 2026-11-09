@@ -40,7 +40,7 @@ x-zendesk:
 
 Из-за расхождений в моделях атрибуции магазин приложений в некоторых случаях регистрирует больше установок, чем AppsFlyer. В других случаях — больше регистрирует AppsFlyer.
 
-<Image alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
+<Image align="center" alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
 
 <div id="note" />
 

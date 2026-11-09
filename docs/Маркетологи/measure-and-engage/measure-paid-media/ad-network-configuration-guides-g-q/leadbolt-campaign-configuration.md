@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Кратко:** Leadbolt, партнер AppsFlyer по интеграции рекламной сети, — это высокоэффективная платформа мобильной рекламы для привлечения пользователей и монетизации в приложении. Помимо мобильной атрибуции по кликам, Leadbolt также предлагает атрибуцию по просмотрам, которую вы можете регистрировать с помощью AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/leadbolt.png" width="172px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/leadbolt.png" width="172px" />
 
 <div id="setting-up-leadbolt-integration" />
 

@@ -81,16 +81,16 @@ Live Event Viewer (просмотр событий в режиме реальн�
 
 1. В AppsFlyer в боковом меню выберите **Настройки** > **Тестирование интеграции SDK**.
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. Нажмите **События в режиме реального времени.**
 
-   [![](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)
+   <Image align="center" alt="" src="https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png" />
 3. В списке **приложений** выберите приложение, которое вы хотите протестировать.
 4. В списке **тестовых устройств** выберите устройство, которое вы хотите использовать для тестирования своего приложения. Если у вас нет тестового устройства, вы можете зарегистрировать его, нажав на ссылку **Добавить тестовое устройство**.
 5. Нажмите **Продолжить**, чтобы начать запись событий приложения.
 6. Запустите приложение и используйте его, чтобы создавать сеансы и внутренние события приложения.
 
-   [![](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)
+   <Image align="center" alt="" src="https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png" />
 7. Щелкните элемент события, чтобы просмотреть сведения о событии на панели справа.
 8. Если вы хотите остановить запись событий, нажмите **Стоп**. Нажмите кнопку **Пуск** еще раз, когда захотите продолжить.
 
@@ -102,10 +102,10 @@ Live Event Viewer (просмотр событий в режиме реальн�
 
 1. В AppsFlyer в боковом меню выберите **Настройки** > **Тестирование интеграции SDK**.
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. Нажмите Тестирование **неорганических установок**.
 
-   [![](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)
+   <Image align="center" alt="" src="https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png" />
 3. В списке **приложений** выберите приложение, которое вы хотите протестировать.
 4. В списке **тестовых устройств** выберите устройство, которое вы хотите использовать для тестирования своего приложения. Если у вас нет тестового устройства, вы можете зарегистрировать его, нажав на ссылку **Добавить тестовое устройство**.
 5. Если тестируемое приложение установлено на вашем тестовом устройстве, удалите его.
@@ -135,10 +135,10 @@ Live Event Viewer (просмотр событий в режиме реальн�
 
 1. В AppsFlyer в боковом меню выберите **Настройки** > **Тестирование интеграции SDK**.
 
-   [<Image alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/33245182165265)
+   [<Image align="center" alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/33245182165265)
 2. Нажмите **Ретаргетинг**.
 
-   [![](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)
+   <Image align="center" alt="" src="https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png" />
 3. В списке **приложений** выберите приложение, которое вы хотите протестировать.
 4. В списке **тестовых устройств** выберите устройство, которое вы хотите использовать для тестирования своего приложения. Если у вас нет тестового устройства, вы можете зарегистрировать его, нажав на ссылку **Добавить тестовое устройство**.
 5. Нажмите **Продолжить** и следуйте инструкциям мастера.
@@ -240,7 +240,7 @@ Live Event Viewer (просмотр событий в режиме реальн�
 
    Установка, атрибутированная тестовой кампании, должна появиться в данных медиа-источника **Test**. Данные об установке обычно отображаются на дэшборде приложения в течение 30 минут.
 
-   [![Test_Install_Attribution_Link](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)
+   <Image align="center" alt="Test_Install_Attribution_Link" src="https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png" />
 
 > 👍 **Tip**
 >
@@ -312,7 +312,7 @@ OneLink позволяет настроить единую ссылку атри
 
    На дэшборде приложения нажмите **App Settings** (Настройки приложения) и активируйте переключатель **Enable retargeting attribution** (Включить атрибуцию ретаргетинга).
 
-   ![Set_Reattribution_window](https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png)
+   <Image align="center" alt="Set_Reattribution_window" src="https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png" />
 2. Выполните одно из следующих действий:
    * Создайте ссылку атрибуции для приложения. Обязательно включите параметр ретаргетинга, `is_retargeting=true`и рекламный идентификатор. Чтобы просмотреть GAID, IDFA или IDFV, следуйте инструкциям <Anchor target="_blank" href="/marketers/ru/docs/registering-test-devices">по регистрации тестового устройства</Anchor>.    
      Ниже приведен пример ссылки атрибуции, которая включает специфичный для Android параметр в качестве идентификатора устройства (GAID). Дополнительные сведения о добавлении параметров идентификаторов устройств, таких как IDFA или IDFV, см. в статье <Anchor target="_blank" href="/marketers/ru/docs/about-link-structure-and-parameters#ios-специфичные-параметры">Структура и параметры ссылки атрибуции</Anchor>.
@@ -352,7 +352,7 @@ OneLink позволяет настроить единую ссылку атри
 
    Здесь установка должна быть атрибутирована медиа-источнику и кампании. Данные об установке, выполненной в результате ретаргетинга, появятся на дэшборде в течение 30 минут.
 
-   [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+   <Image align="center" alt="Testing_SDK_Reattribution" src="https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png" />
 
 > 👍 **Tip**
 >
@@ -388,7 +388,7 @@ OneLink позволяет настроить единую ссылку атри
 
    На дэшборде повторное вовлечение должно быть атрибутировано медиа-источнику и кампании. Данные о повторном вовлечении появятся в течение 30 минут.
 
-   [![Testing_SDK_Re-engagement](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)
+   <Image align="center" alt="Testing_SDK_Re-engagement" src="https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png" />
 
 **Совет.** Рекомендуем скачать отчет с сырыми данными по конверсиям, чтобы проверить корректно ли повторное вовлечение атрибутировано медиа-источнику. Скачивание отчета занимает несколько минут.
 
@@ -412,7 +412,7 @@ OneLink позволяет настроить единую ссылку атри
 
 На дэшборде приложения отобразится новая органическая установка. Данные об установке должны появиться в течение 30 минут.
 
-[![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+<Image align="center" alt="" src="https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png" />
 
 <div id="testing-ctv" />
 

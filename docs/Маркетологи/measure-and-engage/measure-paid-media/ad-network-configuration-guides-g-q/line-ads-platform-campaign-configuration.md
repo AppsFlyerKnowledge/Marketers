@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Краткий обзор.** LINE Ads Platform, интегрированный партнер AppsFlyer, сочетает в себе систему биддинга и настраиваемого таргетинга. Помимо мобильной атрибуции по кликам, LINE Ads Platform также предлагает атрибуцию ретаргетинга, данные которой можно регистрировать с помощью AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
 
 <div id="setting-up-line-ads-platform" />
 

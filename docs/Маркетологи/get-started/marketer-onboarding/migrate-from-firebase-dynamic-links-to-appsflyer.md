@@ -62,7 +62,7 @@ AppsFlyer OneLink позволяет легко создавать ссылки 
 * <Anchor target="_blank" href="/marketers/ru/docs/adding-an-app-to-appsflyer">Добавьте приложение</Anchor> в AppsFlyer.
 * [Необязательно] Измените заданное по умолчанию <Anchor target="_blank" href="/marketers/ru/docs/set-up-re-attribution-window">окно реатрибуции</Anchor> в 90 дней, чтобы оно соответствовало вашему определению активных пользователей.
 
-![добавление](https://files.readme.io/7f7bab2277d0f45434618d28714c727ccbb9e414192b765dd22551bcbd5b0a37-16950840602769.png)
+<Image align="center" alt="добавление" src="https://files.readme.io/7f7bab2277d0f45434618d28714c727ccbb9e414192b765dd22551bcbd5b0a37-16950840602769.png" />
 
 </Accordion>
 

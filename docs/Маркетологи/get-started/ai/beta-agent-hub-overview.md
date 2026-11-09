@@ -75,11 +75,11 @@ x-zendesk:
 1. В канале Slack, куда вы хотите получать уведомления, напишите: **/invite**
 2. Выберите **Добавить приложения в этот канал.**
 
-<Image alt="Пункт «Add Apps to this channel» в меню сведений о канале Slack" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
+<Image align="center" alt="Пункт «Add Apps to this channel» в меню сведений о канале Slack" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
 
 Выберите **AppsFlyer Agent Hub** -> **Добавить.**
 
-<Image alt="Приложение AppsFlyer Agent Hub выбрано в каталоге приложений Slack, кнопка «Add»" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
+<Image align="center" alt="Приложение AppsFlyer Agent Hub выбрано в каталоге приложений Slack, кнопка «Add»" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
 
 * Следующие роли имеют автоматический полный доступ:
   * Администратор

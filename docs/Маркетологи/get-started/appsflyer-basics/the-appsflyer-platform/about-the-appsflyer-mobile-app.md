@@ -37,7 +37,7 @@ x-zendesk:
 
 Чтобы войти в приложение, введите свои учетные данные или войдите через Google.
 
-[![](https://files.readme.io/29379324fa222c862930e05d8c6c052814a8fba0502b88e015be1b583400c11e-115010069186.png)](https://files.readme.io/29379324fa222c862930e05d8c6c052814a8fba0502b88e015be1b583400c11e-115010069186.png)
+<Image align="center" alt="" src="https://files.readme.io/29379324fa222c862930e05d8c6c052814a8fba0502b88e015be1b583400c11e-115010069186.png" />
 
 <div id="my-apps" />
 
@@ -47,7 +47,7 @@ x-zendesk:
 
 На этом экране перечислены все приложения в вашем аккаунте. Вы можете легко отфильтровать приложения с разных платформ (iOS, Android, Windows) и даже отфильтровать приложения, ожидающие публикации.
 
-[![](https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png)](https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png)
+<Image align="center" alt="" src="https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png" />
 
 <div id="app-overview-ltv" />
 
@@ -74,7 +74,7 @@ x-zendesk:
 
 Нажмите вне панели, чтобы сбросить выбор.
 
-[![](https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png)](https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png)
+<Image align="center" alt="" src="https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png" />
 
 <div id="filters" />
 
@@ -84,7 +84,7 @@ x-zendesk:
 
 Меню фильтров позволяет фильтровать по медиаисточнику и региону. Кроме того, вы можете изменить группировку данных в зависимости от медиаисточника, региона и органических/неорганических данных. Наконец, для ещё более точного контроля вы можете исключить органические установки из выборки или просмотреть сгруппированные остальные точки данных, которые не вошли в выбранные вами топ-5 фильтров.
 
-[![](https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png)](https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png)
+<Image align="center" alt="" src="https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png" />
 
 <div id="date-selector" />
 
@@ -92,7 +92,7 @@ x-zendesk:
 
 Нажатие на диапазон дат открывает окно выбора даты. В окне выбора дат можно быстро переключаться между предустановленными периодами или задать собственный диапазон (выберите нужные даты в календаре).
 
-[![](https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png)](https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png)
+<Image align="center" alt="" src="https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png" />
 
 <div id="account-overview" />
 
@@ -102,7 +102,7 @@ x-zendesk:
 
 Нажатие на название приложения из списка позволяет глубже изучить обзор приложения для этого приложения, сохраняя текущие настроенные даты и фильтры.
 
-![Account_Overview.png](https://files.readme.io/2d425fcb0f53c794a8eeaddd1aebfa8172e51d634d5f90bed74016663adef664-115010568289.png)
+<Image align="center" alt="Account_Overview.png" src="https://files.readme.io/2d425fcb0f53c794a8eeaddd1aebfa8172e51d634d5f90bed74016663adef664-115010568289.png" />
 
 <div id="known-limitations" />
 
@@ -112,6 +112,6 @@ x-zendesk:
 * В настоящее время приложение не поддерживает двухфакторную аутентификацию. Если в вашем аккаунте включена 2FA, вы не сможете войти в систему с помощью приложения.
 * Приложение AppsFlyer позволяет просматривать данные приложения только в том случае, если вы являетесь владельцем приложения. В противном случае вы увидите следующее:  
     
-  [<Image alt="" src="https://files.readme.io/ead6e6d3ff75fa9e9f1ee7d7880de5edbccd81f664d1a76d97eb5a55cd3900c2-115016922303.png" width="337px" />](https://files.readme.io/ead6e6d3ff75fa9e9f1ee7d7880de5edbccd81f664d1a76d97eb5a55cd3900c2-115016922303.png)
+  <Image align="center" alt="" src="https://files.readme.io/ead6e6d3ff75fa9e9f1ee7d7880de5edbccd81f664d1a76d97eb5a55cd3900c2-115016922303.png" width="337px" />
 
 <div data-zendesk-anchors="the-appsflyer-mobile-app=%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-appsflyer h_01HX9M4JG2VQVV5RC6X7FGNWWE=%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-appsflyer log-in=%D0%B2%D1%85%D0%BE%D0%B4 h_01HX9M4JG21CWAKPQTXQXR3K9X=%D0%B2%D1%85%D0%BE%D0%B4 my-apps=%D0%BC%D0%BE%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F h_01HX9M4JG245C02PATKGQCBH9F=%D0%BC%D0%BE%D0%B8-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F app-overview-ltv=%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-ltv h_01HX9M4JG2ZJBG3NZVMFCP8C17=%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-ltv filters=%D1%84%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D1%8B h_01HX9M4JG2Z6T6RCG20YXQSPM7=%D1%84%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D1%8B date-selector=%D0%B2%D1%8B%D0%B1%D0%BE%D1%80-%D0%B4%D0%B0%D1%82%D1%8B h_01HX9M4JG21MQ8EEM3N0B0ASM9=%D0%B2%D1%8B%D0%B1%D0%BE%D1%80-%D0%B4%D0%B0%D1%82%D1%8B account-overview=%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0 h_01HX9M4JG2CK8KRCBMMJG15J52=%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%B0 known-limitations=%D0%B8%D0%B7%D0%B2%D0%B5%D1%81%D1%82%D0%BD%D1%8B%D0%B5-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F h_01HX9M4JG2K1J2D1YYQC55Z8MA=%D0%B8%D0%B7%D0%B2%D0%B5%D1%81%D1%82%D0%BD%D1%8B%D0%B5-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F" />

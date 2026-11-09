@@ -29,7 +29,7 @@ x-zendesk:
 
 Интеграция AppsFlyer с Outbrain поддерживает атрибуцию по кликам.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/outbrain.png?v=1)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/outbrain.png?v=1" />
 
 **Необходимые условия:** Перед настройкой интеграции обязательно [свяжитесь с партнёром](#) и откройте у него аккаунт. Перед настройкой интеграции необходимо <Anchor target="_blank" href="/marketers/ru/docs/partner-integrations#contact-details">связаться с партнером</Anchor> и открыть у него аккаунт.
 

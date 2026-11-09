@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **Краткий обзор:** Amazon Ads (amazondsp\_int) – это интегрированный партнёр AppsFlyer, являющийся <Anchor target="_blank" href="/marketers/ru/docs/self-reporting-networks-srns">SRN</Anchor>, и предоставляющий владельцам приложений возможность с помощью AppsFlyer измерять атрибуцию на основе кликов и просмотров для ТВ, планшетов и мобильных устройств.
 
-![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png" />
 
 <div id="activate-partner" />
 
