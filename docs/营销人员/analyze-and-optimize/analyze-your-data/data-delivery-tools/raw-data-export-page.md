@@ -28,7 +28,7 @@ x-zendesk:
 
 下图展示了您首次进入**原始数据导出**页面时所看到的界面；当您有可下载或复制的报告时，界面会展示**我的报告**页面。
 
-[![RawDataSplash.png](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)
+<Image align="center" alt="RawDataSplash.png" src="https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png" />
 
 **我的报告**
 
@@ -38,7 +38,7 @@ x-zendesk:
 
 如需生成或下载报告，请参考本文中的流程说明部分。
 
-[![MyReportsRawDataExport.png](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)
+<Image align="center" alt="MyReportsRawDataExport.png" src="https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png" />
 
 <div id="raw-data-export-page-features-and-filter-options" />
 

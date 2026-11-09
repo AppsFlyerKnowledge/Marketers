@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要**：ironSource是AppsFlyer的对接渠道之一，该平台所提供的各种工具可帮助应用开发人员、设备生产商、移动运营商和广告主开展变现、促活、分析和拓展工作。除了点击型移动归因外，ironSource还支持成本、广告收入、再营销和浏览型归因，您可以通过AppsFlyer记录相关的数据。
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
 <div id="note-1" />
 

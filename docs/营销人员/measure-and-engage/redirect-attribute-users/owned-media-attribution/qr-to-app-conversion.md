@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** 概要：通过OneLink生成二维码，用于引导PC端、电视、CTV或线下流量转化为移动端应用用户。
 
-![6005_QR_code_4.jpg](https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg)
+<Image align="center" alt="6005_QR_code_4.jpg" src="https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg" />
 
 <div id="converting-mobile-non-mobile-and-offline-traffic-into-mobile-app-users" />
 
@@ -86,7 +86,7 @@ x-zendesk:
 
 <Accordion title="定制化二维码">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 您可以通过以下方式对OneLink生成的二维码进行定制：
 
@@ -145,7 +145,7 @@ x-zendesk:
   * 考虑添加二维码的扫描方式说明。
 * 若您已经在使用OneLink，在您的*其它*OneLink自定义链接（如用于邮件等）中添加参数**af\_web\_dp**，并将参数值设为带有相关二维码的网页地址。这样，在PC端点击链接的用户就会跳转到该网页，而非应用商店。  
 
-  [![](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)
+  <Image align="center" alt="" src="https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg" />
 
 </Accordion>
 

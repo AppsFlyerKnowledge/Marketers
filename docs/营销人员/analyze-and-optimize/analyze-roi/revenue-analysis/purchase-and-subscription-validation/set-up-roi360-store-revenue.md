@@ -70,22 +70,22 @@ x-zendesk:
 
 1. **在App Store Connect中，进入用户和访问权限**页面
 
-   [![](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)
+   <Image align="center" alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" />
 2. 前往**用户和访问权限**> **对接**，在**密钥**列表中，选择**应用内购买**。
 
-   [![](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" />
 3. 点击+生成一个新的应用内购买密钥。
 
-   [![](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" />
 4. 输入您的API密钥名称。
 5. 点击**生成**。
 6. 在生成的密钥旁边，点击**下载应用内购买密钥**。 **注意**：该密钥只能下载一次，请妥善保存。
 7. 在App Store Connect中，复制生成的密钥的**Key ID**，并将其粘贴到AppsFlyer购买和订阅设置中的**Key ID**字段里。
 
-   [![](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)
+   <Image align="center" alt="" src="https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png" />
 8. 复制**发行者 ID**。 **注意**： 如果页面顶部未显示**Issuer ID**，请创建一个App Store Connect API私钥（具有任意权限级别）。之后，Issuer ID将出现在应用内购买私钥的页面顶部。
 
-   [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
+   <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" />
 
 </Accordion>
 
@@ -128,7 +128,7 @@ x-zendesk:
 2. 将该账号关联到您的Google Cloud项目。详细指南请参考<Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">Google提供的说明文档</Anchor>。
 3. 启用Google Play Developer API。详细指南请参考<Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">Google提供的说明文档</Anchor>。
 
-   [![](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)
+   <Image align="center" alt="" src="https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png" />
 
 </Accordion>
 
@@ -143,36 +143,36 @@ x-zendesk:
 1. 创建或找到**服务账号**：
    1. <span class="af-ol-a"></span>在Google Cloud Platform中，前往<strong>Service accounts（服务账号）</strong>部分，点击 **“Create Service Account（创建服务账号）”**。
 
-      [![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
+      <Image align="center" alt="" src="https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png" />
    2. 填写服务账号的详细信息。
 
-      [![](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)
+      <Image align="center" alt="" src="https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png" />
    3. 复制电子邮件地址。
 
-      [![](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)
+      <Image align="center" alt="" src="https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png" />
    4. 点击**Create and continue（创建并继续）**，进入下一步。
 
-      [![](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)
+      <Image align="center" alt="" src="https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png" />
    5. 在**Grant this service account access to the project**（为该服务账号开放项目权限）部分的“Select a role”（选择角色）字段中，选择**Pub/Sub subscriber**。
 
-      [![](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)
+      <Image align="center" alt="" src="https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png" />
    6. 点击**Continue** > **Done**，完成服务账号的创建。
 
-      [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
+      <Image align="center" alt="" src="https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png" />
 2. 下载**服务账号私钥**：
    1. <span class="af-ol-a"></span>在Google Cloud Platform中，进入<strong>Service accounts（服务账号）</strong>部分，从列表中找到你刚创建的服务账号，点击 **“更多操作”** 图标。
    2. 点击 **“管理私钥（Manage keys）”**。
 
-      [![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)
+      <Image align="center" alt="" src="https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png" />
    3. 点击 **添加私钥** > **创建新私钥**。
 
-      [![](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)
+      <Image align="center" alt="" src="https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png" />
    4. 在**创建私钥**窗口中，
 
       在
    5. ![](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)私钥类型下，选择**JSON**，然后单击**创建**。**![](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)** 点击**Create**，下载JSON格式的密钥文件。
 
-      [![](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)
+      <Image align="center" alt="" src="https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png" />
    6. 保存JSON私钥文件，稍后您需要将该文件将上传至AppsFlyer。 **请注意**：请务必保存密钥，关闭窗口后将无法再次获取。如未保存，您需要重新创建新密钥。
 
 </Accordion>
@@ -189,23 +189,23 @@ x-zendesk:
 
 1. 在Google Play Console中，进入**Users and permissions（用户和权限）**，找到您创建的服务账号并点击**Invite new users（邀请新用户）**。
 
-   [![](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)
+   <Image align="center" alt="" src="https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png" />
 2. 在<strong>Email address（邮箱地址）</strong>字段中，填写您在第1.2.1.3步创建服务账号时复制的邮箱地址。
 
-   [![](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)
+   <Image align="center" alt="" src="https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png" />
 3. 在**Permissions**（权限）部分，进入**Account permissions**（账号权限）选项卡，然后同时勾选以下两项：
 
    * View financial data, orders, and cancellation survey responses（查看财务数据、订单和取消订阅问卷答复）
    * Manage orders and subscriptions（管理订单和订阅）[![](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)
 4. 在**App permissions**（应用权限）标签页中，点击**Add app**（添加应用），然后选择应用。如有需要可添加多个应用。
 
-   [![](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)
+   <Image align="center" alt="" src="https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png" />
 5. 点击**Invite user**（邀请用户）。
 
-   [![](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)
+   <Image align="center" alt="" src="https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png" />
 6. 在确认弹出窗口中，点击**Send invite**（发送邀请）。
 
-   [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
+   <Image align="center" alt="" src="https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png" />
 
 </Accordion>
 
@@ -282,16 +282,16 @@ x-zendesk:
 
 1. 在**App Store Connect**中，进入**App Information**部分，向下滚动至**App Store Server Notifications**，在**Production Server URL**右侧点击**Edit**。
 
-   [![](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)
+   <Image align="center" alt="" src="https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png" />
 2. 粘贴[从AppsFlyer复制的AppsFlyer服务器通知端点](#21-copy-the-appsflyer-server-notifications-endpoint)，选择**版本2通知**，然后点击 **保存**。 **注意：** 系统已不再支持版本1通知。如果 Apple Store Connect 中未显示“通知版本”选择器，则说明您已使用第 2 版。
 
-   [![](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)
+   <Image align="center" alt="" src="https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png" />
 3. 进入**App Information**部分，向下滚动至**App Store Server Notifications**，在**Sandbox Server URL**右侧点击Edit。
 
-   [![](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)
+   <Image align="center" alt="" src="https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png" />
 4. 粘贴[从AppsFlyer复制的AppsFlyer服务器通知端点](#21-copy-the-appsflyer-server-notifications-endpoint)，选择**版本2通知**，然后点击 **保存**。**注意：** 系统已不再支持版本1通知。如果 Apple Store Connect 中未显示“通知版本”选择器，则说明您已使用第 2 版。
 
-   [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
+   <Image align="center" alt="" src="https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png" />
 
 </Accordion>
 
@@ -307,18 +307,18 @@ x-zendesk:
 
 1. 在**App Store Connect**中，进入**App Information**部分，向下滚动至**App Store Server Notifications**，在**Production Server URL**右侧点击**Edit**。
 
-   [![](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)
+   <Image align="center" alt="" src="https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png" />
 2. 粘贴**您的服务器端点URL**。
 
-   [![](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)
+   <Image align="center" alt="" src="https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png" />
 3. 选择**版本2通知。请注意：** 系统已**不再支持**版本1通知。如果 Apple Store Connect 中未显示“通知版本”选择器，则说明您已使用第 2 版。
 4. 点击**Save**保存。
 5. **同样在App Store Connect的App Information部分，找到Sandbox Server URL，点击Edit。**
 
-   [![](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)
+   <Image align="center" alt="" src="https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png" />
 6. 粘贴**您的服务器端点URL**。
 
-   [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
+   <Image align="center" alt="" src="https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png" />
 7. 选择**版本2通知。请注意：** 系统已**不再支持**版本1通知。
 8. 点击**Save**保存。
 9. 请配置您的后端，将 Apple 服务器通知转发至 AppsFlyer 通知端点 URL。请求必须与从 Apple 接收到的 App Store 有效负载完全一致，请参阅 <Anchor target="_blank" href="https://developer.apple.com/documentation/appstoreserverapi/signedpayload#discussion">Apple 的格式要求</Anchor>。
@@ -368,16 +368,16 @@ x-zendesk:
 2. 将AppsFlyer topic复制到剪贴板。
 3. 在**Google Play Console** > **主页**中，选择查看您的应用程序。打开面板。
 
-   [![](https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png)](https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png)
+   <Image align="center" alt="" src="https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png" />
 4. 前往**Monetize with Play** > **Monetization setup**，在**Google Play Billing**部分，确认已勾选Enable real-time notification（启用实时通知）
 
-   [![](https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png)](https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png)
+   <Image align="center" alt="" src="https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png" />
 5. 在**Topic name**（主题名称）字段中，粘贴您复制的AppsFlyer topic地址。
 
-   [![](https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png)](https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png)
+   <Image align="center" alt="" src="https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png" />
 6. 在**Notification content**部分选择**Subscriptions, voided purchases, and all one-time products**（订阅、作废的购买交易以及所有一次性付费产品）。
 
-   [![](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)
+   <Image align="center" alt="" src="https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png" />
 7. 点击**Save Changes**，保存更改。设置可能需要一些时间才能生效（最长可达24小时），请等待设置生效后再进行测试。
 
 </Accordion>
@@ -400,43 +400,43 @@ x-zendesk:
 4. 将端点URL复制到剪贴板。
 5. 进入Google Cloud Platform，在相关项目下搜索**Pub/Sub**。
 
-   [![](https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png)](https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png)
+   <Image align="center" alt="" src="https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png" />
 6. 进入**Pub/Sub**的**Topics**部分，确认您有一个专用于订阅的pub/sub topic。
 
-   [![](https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png)](https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png)
+   <Image align="center" alt="" src="https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png" />
 7. 进入**Pub/Sub**的**Subscriptions**部分，点击**Create subscription**。
 
-   [![](https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png)](https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png)
+   <Image align="center" alt="" src="https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png" />
 8. 输入**Subscription ID**。
 
-   [![](https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png)](https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png)
+   <Image align="center" alt="" src="https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png" />
 9. 从下拉列表中选择相关订阅的pub/sub主题。
 
-   [![](https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png)](https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png)
+   <Image align="center" alt="" src="https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png" />
 10. 在**Delivery type**（发送方式）部分中，选择**Push**（推送）。
 
-    [![](https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png)](https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png)
+    <Image align="center" alt="" src="https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png" />
 11. 粘贴从AppsFlyer复制的**端点 URL**。
 
-    [![](https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png)](https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png)
+    <Image align="center" alt="" src="https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png" />
 12. 在**Expiry period**（期限）部分，选择**Never expire**（永不过期）。
 
-    [![](https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png)](https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png)
+    <Image align="center" alt="" src="https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png" />
 13. 点击**Create**，
 
-    [![](https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png)](https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png)
+    <Image align="center" alt="" src="https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png" />
 14. 进入**Subscriptions**部分，点击您选择的Topic name（主题名称）。
 
-    [![](https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png)](https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png)
+    <Image align="center" alt="" src="https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png" />
 15. 将主题名称复制到剪贴板。
 
-    [![](https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png)](https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png)
+    <Image align="center" alt="" src="https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png" />
 16. 从**Google Play Console**进入**Monetization setup**> **Monetization setup.** ，在**Google Play Billing**部分中，将前一步中复制的topic名称粘贴到Topic name字段中。
 
-    [![](https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png)](https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png)
+    <Image align="center" alt="" src="https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png" />
 17. 在**Notification content**部分选择**Subscriptions, voided purchases, and all one-time products**（订阅、作废的购买交易以及所有一次性付费产品）。
 
-    [![](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)
+    <Image align="center" alt="" src="https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png" />
 18. 点击**保存更改**。设置可能需要一些时间才能生效（最长可达24小时），请等待设置生效后再进行测试。
 
 </Accordion>
@@ -557,7 +557,7 @@ x-zendesk:
 
 * 对于iOS应用，请确保App Store connect中“App Store Server Notifications”（应用商店服务器通知）部分下的**Sandbox Server URL**（沙盒服务器地址）配置为AppsFlyer端点。
 
-  [![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+  <Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 **测试应用内购买和订阅收入**：
 
@@ -604,7 +604,7 @@ x-zendesk:
 * 您在AppsFlyer中配置的验证规则不会拦截您想要记录的IAP或订阅事件。
 * 您的开发人员已将所有沙盒标签设置为“false”。
 
-[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 一旦包含SDK connector的应用版本发布，相关的<Anchor target="_blank" href="/marketers/zh/docs/about-roi360-store-revenue#iaprelated-events-and-parameters">应用内购买</Anchor>和<Anchor target="_blank" href="/marketers/zh/docs/about-roi360-store-revenue#subscriptionrelated-events-and-parameters">订阅事件</Anchor>将开始生成，并出现在所有AppsFlyer面板中，以及汇总数据和原始数据报告（<Anchor target="_blank" href="/marketers/zh/docs/revenue-etl-reports">包括Revenue ETL</Anchor>）中。
 

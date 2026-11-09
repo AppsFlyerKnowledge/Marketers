@@ -25,7 +25,7 @@ x-zendesk:
 
 > **概要：** 您可以在受众共享面板中添加用户特征信息，从而提升人群分组的精准度。
 
-[![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
+<Image align="center" alt="UserAttributionNavigationXL3_us-en.png" src="https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png" />
 
 <div id="about-user-attributes" />
 
@@ -58,7 +58,7 @@ x-zendesk:
   * 当前游戏得分：在当前游玩的游戏中获得15分及以上
 
 下表为您CRM中的用户特征数据。创建人群包规则组合时需要这些数据的访问权限。    
-![UserAttributuesExample_us-en.png](https://files.readme.io/6f86d8659ef089ac82bb8401b4af650fbc590d2293ac93de30e6f9b4fc2ceb86-33375683035281.png)
+<Image align="center" alt="UserAttributuesExample_us-en.png" src="https://files.readme.io/6f86d8659ef089ac82bb8401b4af650fbc590d2293ac93de30e6f9b4fc2ceb86-33375683035281.png" />
 
 **在规则组合中使用CRM数据**
 
@@ -77,7 +77,7 @@ x-zendesk:
 
 用户特征在受众共享面板的人群包规则组合中用作用户筛选条件。此示例场景中使用的是营销人员设置的标准（“最喜欢的运动”和“游戏得分”）。
 
-[<Image alt="UserAttributedExample.jpg" src="https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg" width="276px" />](https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg)
+<Image align="center" alt="UserAttributedExample.jpg" src="https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg" width="276px" />
 
 </Accordion>
 
@@ -116,7 +116,7 @@ x-zendesk:
 2. 点击用户特征选项卡。
 3. 点击**添加用户特征**。  
 
-   ![UserAttributeAdd.png](https://files.readme.io/6c7f25bb23d47e67aaef34264029daa9ab058f08e218a441ab9dde8240b0b384-33375683046033.png)
+   <Image align="center" alt="UserAttributeAdd.png" src="https://files.readme.io/6c7f25bb23d47e67aaef34264029daa9ab058f08e218a441ab9dde8240b0b384-33375683046033.png" />
 4. 填写下列字段。各字段说明详见下表。   
    * **用户特征名称**
    * **格式**
@@ -137,7 +137,7 @@ x-zendesk:
 
 如需管理用户特征配置，请进入**受众共享** > **用户特征**选项卡。
 
-[![AudiencesUserAttributes_us-en.png](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)
+<Image align="center" alt="AudiencesUserAttributes_us-en.png" src="https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png" />
 
 | 功能 | 说明 |
 | --- | --- |
@@ -185,7 +185,7 @@ x-zendesk:
 
 <Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/360012423857">User-attribute-example.csv</Anchor>
 
-![FileForAttributes.png](https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png)
+<Image align="center" alt="FileForAttributes.png" src="https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png" />
 
 **CSV文件要求**
 

@@ -24,7 +24,7 @@ x-zendesk:
 
 > **概要：** 您可以使用素材优化总览面板分析素材效果，选择效果最优的素材，充分发挥广告投放的影响力。
 
-[![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
+<Image align="center" alt="Main image -Default view.jpg" src="https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg" />
 
 <div id="about-the-creative-optimization-overview-dashboard" />
 
@@ -86,7 +86,7 @@ x-zendesk:
 
 下图展示了默认的表格视图，按所选筛选条件列出相关素材。图中的字母与下表各部分说明一一对应。
 
-[![Table_main_image_doctored_final_copy__download_table_.jpg](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)
+<Image align="center" alt="Table_main_image_doctored_final_copy__download_table_.jpg" src="https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg" />
 
 |  | 注意事项 | 说明 |
 | --- | --- | --- |
@@ -145,7 +145,7 @@ x-zendesk:
 
 *请注意：表格中的指标数据在汇总行下分行显示。
 
-[![](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)
+<Image align="center" alt="" src="https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png" />
 
 </Accordion>
 

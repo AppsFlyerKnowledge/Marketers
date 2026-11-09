@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** 向不活跃的用户定向投放再营销广告，可有效提升增量效果。您可以分渠道设置用户的不活跃窗口期，精准衡量再营销广告的效果。
 >
-> ![](https://files.readme.io/c96cda4d05b2724c6f8b30b5ec19f218eb763bd6d9cbf1cb842e0b57ad0902db-51911937664913.png)
+> <Image align="center" alt="" src="https://files.readme.io/c96cda4d05b2724c6f8b30b5ec19f218eb763bd6d9cbf1cb842e0b57ad0902db-51911937664913.png" />
 
 <div id="inactivity-period" />
 
@@ -66,7 +66,7 @@ x-zendesk:
 * 与某渠道投放的再营销广告发生交互
 * 重新安装并激活该应用
 
-[![re-attribution_1_en-us.png](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)
+<Image align="center" alt="re-attribution_1_en-us.png" src="https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png" />
 
 | 场景 | 不活跃时长阈值 | 用户沉睡时长 | 归因结果 |
 | --- | --- | --- | --- |
@@ -85,7 +85,7 @@ x-zendesk:
 * 在数天内处于不活跃状态
 * 与某渠道投放的再营销广告发生交互，然后再次打开该应用
 
-[![Re-engagement_scenarios_en-us.png](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)
+<Image align="center" alt="Re-engagement_scenarios_en-us.png" src="https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png" />
 
 | 场景 | 渠道A的不活跃时长阈值 | 用户沉睡时长 | 归因结果 |
 | --- | --- | --- | --- |
@@ -112,7 +112,7 @@ x-zendesk:
 4. 设置**不活跃窗口**。可用范围为1-30天。
 5. 点击**保存对接**。
 
-[![Inactivity_window_SRN.png](https://files.readme.io/158a1c56acc330dc8bb25a2199e1ad8b643e4f94a22d55caadae485d4a8a753d-51911937665553.png)](https://files.readme.io/158a1c56acc330dc8bb25a2199e1ad8b643e4f94a22d55caadae485d4a8a753d-51911937665553.png)
+<Image align="center" alt="Inactivity_window_SRN.png" src="https://files.readme.io/158a1c56acc330dc8bb25a2199e1ad8b643e4f94a22d55caadae485d4a8a753d-51911937665553.png" />
 
 </Accordion>
 
@@ -128,7 +128,7 @@ x-zendesk:
 4. 设置**不活跃窗口**。可用范围为1-30天。  
    该设置会将**不活跃时长阈值**参数`af_inactivity_window`添加到归因链接中，如“&af\_inactivity\_window=7d”。该功能关闭时，归因链接中不会带有这个参数。
 
-[![Inactivity_window_non-SRN.png](https://files.readme.io/10c1921e449c0cfbaed7d0fc07837f8dd9720dc2316d44c966d91b5baddcfbf4-51911937666193.png)](https://files.readme.io/10c1921e449c0cfbaed7d0fc07837f8dd9720dc2316d44c966d91b5baddcfbf4-51911937666193.png)
+<Image align="center" alt="Inactivity_window_non-SRN.png" src="https://files.readme.io/10c1921e449c0cfbaed7d0fc07837f8dd9720dc2316d44c966d91b5baddcfbf4-51911937666193.png" />
 
 </Accordion>
 

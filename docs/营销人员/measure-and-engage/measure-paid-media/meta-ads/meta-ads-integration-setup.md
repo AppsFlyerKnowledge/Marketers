@@ -61,7 +61,7 @@ x-zendesk:
 2. 点击所需的应用。
 3. 点击并复制屏幕左上方的App ID。
 
-   [![](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg" />
 
 AppsFlyer是根据App ID来归因数据的，您可以使用同一个Facebook App ID对某个应用的[安卓和iOS版本](https://developers.facebook.com/docs/app-ads/app-setup/)进行归因。但需要注意，Meta ads限制iOS 14+应用的广告账户数量，一个应用不能超过9个账户。
 
@@ -106,7 +106,7 @@ AppsFlyer是根据App ID来归因数据的，您可以使用同一个Facebook Ap
    <strong>注意：</strong> 在您与该渠道合作期间，请确保该开关总是处于打开（即<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">启用</Anchor>）状态。
 5. 在**通用设置**部分：
 
-   [![](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
+   <Image align="center" alt="" src="https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png" />
 
    * 将[Facebook App ID](#create-and-retreive-facebook-app-id)粘贴到对应字段中。
    * 将Meta ads中的Install Referrer[解密密钥](/docs/meta-ads-integration-setup#来自google-play-referrer-api或meta-install-referrer的加密数据)[粘贴到对应的字段框中。](/docs/meta-ads-integration-setup#来自google-play-referrer-api或meta-install-referrer的加密数据)
@@ -119,7 +119,7 @@ AppsFlyer是根据App ID来归因数据的，您可以使用同一个Facebook Ap
 
 <Accordion title="【可选】以下为推荐设置的配置方法：">
 
-[![](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)
+<Image align="center" alt="" src="https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png" />
 
 * 将点击回溯窗口期设置为7天，与Meta ads的窗口期对齐。  
   （请注意：[某些情况下，默认窗口期会有所变化](https://www.facebook.com/business/help/395050428485124?id=428636648170202)）。
@@ -239,7 +239,7 @@ Meta ads的基础归因设置完成之后，您可以进一步设置一些高级
 
 <Accordion title="成本、点击和展示">
 
-[![meta_cost_tab.png](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)
+<Image align="center" alt="meta_cost_tab.png" src="https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png" />
 
 该对接可针对成本、点击和展示提供广告系列、广告组、广告和国家/地区维度的汇总数据。详情请见<Anchor target="_blank" href="/marketers/zh/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">广告平台成本对接表</Anchor>，其中详细说明了适用维度、指标和功能。
 
@@ -279,7 +279,7 @@ Meta ads的基础归因设置完成之后，您可以进一步设置一些高级
 
 <Accordion title="应用内事件映射">
 
-[![meta_iae_postbacks.png](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)
+<Image align="center" alt="meta_iae_postbacks.png" src="https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png" />
 
 **请按以下步骤映射应用内事件：**
 
@@ -324,13 +324,13 @@ Meta ads的基础归因设置完成之后，您可以进一步设置一些高级
 3. 设置**点击型再互动回溯窗口** 。   
    用户点击广告后，在再互动回溯窗口期内完成打开应用时，AppsFlyer才会将该应用打开记录为再互动。  
    选择归因窗口期的单位（小时或天），并将滑块滑动到所需值。  
-   [![](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)
+   <Image align="center" alt="" src="https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png" />
 4. 启用浏览型再互动归因。
 5. 使用滑动条根据您的需求设置**浏览型再互动回溯窗口期**（最长为24小时）。用户浏览广告后在该窗口期内打开应用时，AF会将其记录为一次再互动。[![](https://files.readme.io/82028408b7475e6ad5bcd35f2d597b7f5344b9eca432157559265cf73bdb952c-30354145625873.png)](https://files.readme.io/82028408b7475e6ad5bcd35f2d597b7f5344b9eca432157559265cf73bdb952c-30354145625873.png)
 6. 设置**再互动窗口**。  
    在此期间，用户的应用内事件主要归因到再营销媒体渠道。   
    这个值可以设置为数天（1-90天）、数小时（至多23小时）或用户的整个生命周期。默认值为30天。  
-   [![](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)
+   <Image align="center" alt="" src="https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png" />
 
 深入了解<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide">AppsFlyer再营销归因</Anchor>。
 
@@ -388,7 +388,7 @@ CCPA隐私条例规定限制来自美国加州Meta ads用户的数据。
 
 <Accordion title="广告收入记录">
 
-[![](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)
+<Image align="center" alt="" src="https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png" />
 
 如果您的应用通过Meta Audience Network Ad Revenue进行广告变现，您就可以使用AppsFlyer记录来自Meta ads的收入。无论您的应用是否存在应用内购数据，该方法都可以让您**全面了解用户带来的收入**。
 
@@ -462,7 +462,7 @@ Facebook App ID在AppsFlyer后台中配置有误。
 
 您必须将Meta ads上的应用状态设置为**Live**（已上线）而不是**In development**（开发中），否则无法正常归因。
 
-[![](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)
+<Image align="center" alt="" src="https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png" />
 
 </Accordion>
 
@@ -490,11 +490,11 @@ Facebook App ID在AppsFlyer后台中配置有误。
 
 下图为正确的设置方法，按此方法设置后AppsFlyer可正常归因。
 
-[![](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)
+<Image align="center" alt="" src="https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png" />
 
 下图为错误的设置方式，按此方式设置后AppsFlyer无法正常归因。
 
-[![](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)
+<Image align="center" alt="" src="https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png" />
 
 </Accordion>
 

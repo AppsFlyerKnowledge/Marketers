@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要**：按照本文指南完成相关操作后，您就能开始使用ROI360的成本的收入数据。
 
-![](https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png)
+<Image align="center" alt="" src="https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png" />
 
 <div id="about-roi360" />
 
@@ -40,7 +40,7 @@ ROI360产品套件具有独一无二的成本和收入数据上报功能，以�
 
 <Accordion title="启用成本数据上报">
 
-![](https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png)
+<Image align="center" alt="" src="https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png" />
 
 开通ROI360成本解决方案后，您就能获得详细的成本数据以及关键的ROI信息，而且这些数据会以每天数次的频率进行更新，帮助您有效管理投放成本并查看各个渠道（广告平台）、广告系列、国家/地区的预算配置。无论您使用的是广告平台、自有媒体或代理，都可使用这一解决方案。
 
@@ -64,7 +64,7 @@ ROI360产品套件具有独一无二的成本和收入数据上报功能，以�
 
 <Accordion title="启用广告收入上报">
 
-![](https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png)
+<Image align="center" alt="" src="https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png" />
 
 启用ROI360广告收入解决方案后，您就可以获得详细实用的广告收入数据，这些数据以每天数次的频率更新。
 
@@ -88,7 +88,7 @@ ROI360产品套件具有独一无二的成本和收入数据上报功能，以�
 
 <Accordion title="启用应用内购买和订阅收入上报">
 
-![](https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png)
+<Image align="center" alt="" src="https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png" />
 
 您可以使用ROI360的收入解决方案对您的收入来源进行前瞻性的管控。
 

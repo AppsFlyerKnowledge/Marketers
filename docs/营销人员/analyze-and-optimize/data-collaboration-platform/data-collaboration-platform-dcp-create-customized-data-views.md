@@ -41,7 +41,7 @@ x-zendesk:
 
 ## 数据视图构建器
 
-[![](https://files.readme.io/281dbd296fee9118ca4dc9729a624f9127e9b4d05436448f06d235e2a7d762ea-51911637005457.png)](https://files.readme.io/281dbd296fee9118ca4dc9729a624f9127e9b4d05436448f06d235e2a7d762ea-51911637005457.png)
+<Image align="center" alt="" src="https://files.readme.io/281dbd296fee9118ca4dc9729a624f9127e9b4d05436448f06d235e2a7d762ea-51911637005457.png" />
 
 数据视图构建器页面包括两个部分：
 
@@ -191,7 +191,7 @@ x-zendesk:
 
 您想指示从合作者处购买的产品，同时掩盖与您合作的其他品牌的购买。
 
-[![](https://files.readme.io/1ce74573ea075baa4d7bf8299abc7dbf01fdb4afce870bc9282ed7c3ab1f5bd9-51911620451217.png)](https://files.readme.io/1ce74573ea075baa4d7bf8299abc7dbf01fdb4afce870bc9282ed7c3ab1f5bd9-51911620451217.png)
+<Image align="center" alt="" src="https://files.readme.io/1ce74573ea075baa4d7bf8299abc7dbf01fdb4afce870bc9282ed7c3ab1f5bd9-51911620451217.png" />
 
 <div id="aggregate-functions" />
 
@@ -209,7 +209,7 @@ x-zendesk:
 
 您想计算每个用户的总购买次数，并汇总他们支付的总价格。
 
-[![](https://files.readme.io/e9ed7aa29fb6e25d16076089b848496aa9a42355ceba17c18210d0d6596a677f-51911637008017.png)](https://files.readme.io/e9ed7aa29fb6e25d16076089b848496aa9a42355ceba17c18210d0d6596a677f-51911637008017.png)
+<Image align="center" alt="" src="https://files.readme.io/e9ed7aa29fb6e25d16076089b848496aa9a42355ceba17c18210d0d6596a677f-51911637008017.png" />
 
 <div id="example-aggregation-with-a-condition" />
 
@@ -217,7 +217,7 @@ x-zendesk:
 
 您想获取位于德国的用户最近购买的 P&G 产品的数据。
 
-[![](https://files.readme.io/9d7e3774e21d6f48deeef05eb3f1ef98de4cc44b590cb23603e8ed8679f8a7fd-51911620451729.png)](https://files.readme.io/9d7e3774e21d6f48deeef05eb3f1ef98de4cc44b590cb23603e8ed8679f8a7fd-51911620451729.png)
+<Image align="center" alt="" src="https://files.readme.io/9d7e3774e21d6f48deeef05eb3f1ef98de4cc44b590cb23603e8ed8679f8a7fd-51911620451729.png" />
 
 </Accordion>
 

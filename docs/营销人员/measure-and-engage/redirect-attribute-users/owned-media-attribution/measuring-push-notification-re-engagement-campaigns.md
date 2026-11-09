@@ -100,7 +100,7 @@ AppsFlyer可以衡量所有推送服务平台的推送消息广告，以及直�
 >
 > Firebase中的配置界面如下：
 >
-> [![appsflyer-push-custom-data-firebase.png](https://files.readme.io/b2a753e8ec88ef0d0e0a71fe222a8ecc4f03786297696d150f185720b8f4e248-49839256715025.png)](https://files.readme.io/b2a753e8ec88ef0d0e0a71fe222a8ecc4f03786297696d150f185720b8f4e248-49839256715025.png)
+> <Image align="center" alt="appsflyer-push-custom-data-firebase.png" src="https://files.readme.io/b2a753e8ec88ef0d0e0a71fe222a8ecc4f03786297696d150f185720b8f4e248-49839256715025.png" />
 
 </Tab>
 
@@ -130,7 +130,7 @@ AppsFlyer可以衡量所有推送服务平台的推送消息广告，以及直�
 >
 > Firebase中的配置界面如下：
 >
-> [![appsflyer-push-custom-data-firebase-json.png](https://files.readme.io/138aa2abb70cdb0b8a2c1a4b4ce0a8b83b2faae58e29f3223d5653a4d575012b-49839256716049.png)](https://files.readme.io/138aa2abb70cdb0b8a2c1a4b4ce0a8b83b2faae58e29f3223d5653a4d575012b-49839256716049.png)
+> <Image align="center" alt="appsflyer-push-custom-data-firebase-json.png" src="https://files.readme.io/138aa2abb70cdb0b8a2c1a4b4ce0a8b83b2faae58e29f3223d5653a4d575012b-49839256716049.png" />
 
 </Tab>
 </Tabs>

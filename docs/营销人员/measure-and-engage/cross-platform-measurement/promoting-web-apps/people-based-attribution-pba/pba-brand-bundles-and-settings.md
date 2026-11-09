@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **概要：** 品牌套件可用于整合特定品牌下多个应用和网站的转化归因、事件、访问量和收入数据。您可以通过品牌套件的配置页面标记转化事件、对接Google Ads或实现其他功能。
 
-![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
+<Image align="center" alt="BrandBundles.png" src="https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png" />
 
 <div id="about-brand-bundles" />
 

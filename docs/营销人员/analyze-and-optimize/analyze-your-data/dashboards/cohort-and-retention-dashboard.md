@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** 群组与留存面板（简称“群组面板”）会根据激活日期将用户分组，并对用户整个生命周期（LTV）内的投放效果进行分析。您可以通过该面板深入了解投放差异对效果指标的影响。
 
-[![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
+<Image align="center" alt="cohort main (2).png" src="https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png" />
 
 <div id="cohort-and-retention-dashboard" />
 
@@ -50,7 +50,7 @@ x-zendesk:
 
 1. 从AppsFlyer后台的侧边栏中选择**分析** > **群组与留存**。  
    界面会打开群组面板，并显示颗粒度和转化日期范围的选项。  
-   ![mceclip0__1_.png](https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png)
+   <Image align="center" alt="mceclip0__1_.png" src="https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png" />
 2. 选择[群组周期颗粒度](/docs/cohort-and-retention-dashboard#cohort-periods)：
    * 小时数
    * 天数
@@ -59,7 +59,7 @@ x-zendesk:
 3. 设置归因时间段（用户获取或再营销互动）。如果您选择的日期离当前日期很近，可能会出现[数据不完整](/docs/cohort-and-retention-dashboard#partial-data)的情况，在图标和表格中会以破折号来标记。
 4. 点击**编辑群组**。  
    界面会打开群组设置窗口。  
-   <Image alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
+   <Image align="center" alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
 5. 请设置以下各项内容：
    * [**面板视图类型**](/docs/cohort-and-retention-dashboard#view-types)：
      * **用户获取**
@@ -150,7 +150,7 @@ x-zendesk:
 * **用户获取：** 来自激活（不含重装激活，除非<Anchor target="_blank" href="/marketers/zh/docs/measure-reinstalls#attributed-to-the-first-install">额外开通</Anchor>）的效果数据
 * **再营销**：来自再归因（重装激活）或再互动（应用打开）的效果数据
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 </Accordion>
 
@@ -184,7 +184,7 @@ x-zendesk:
 
 在此示例中，面板基于相同的原始数据生成了两种不同的群组趋势图。原始数据表中包含了A、B、C、D四位用户的归因事件。这些用户与某个广告互动后下载了应用，并在激活后完成了一次或多次购买事件。用户激活当天即同类群组第0天。
 
-[![CohortExample_en-us.jpg](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)
+<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg" />
 
 </Accordion>
 
@@ -294,11 +294,11 @@ x-zendesk:
 
 **图表：用户人均累计收入**
 
-[![Screenshot 2023-10-31 at 16.56.31.png](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)
+<Image align="center" alt="Screenshot 2023-10-31 at 16.56.31.png" src="https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png" />
 
 **表格：每日收入**
 
-[![cohort use case 2.2.png](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)
+<Image align="center" alt="cohort use case 2.2.png" src="https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png" />
 
 <div id="in-app-event-conversion" />
 
@@ -306,7 +306,7 @@ x-zendesk:
 
 如果广告主将某个应用内事件定义为af\_purchase，群组数据表就会显示该群组中完成购买事件的用户占比。以下图为例，根据图中数据表可知：在第10天时，归因到Facebook Ads的群组用户中有36.27%完成了购买[。](https://files.readme.io/e365c6b930d765d97155b1fd4384a608cb7eb0339b2b61e4598ee2d5d17d3249-32127949502481.png)
 
-[![cohort use case 3.png](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)
+<Image align="center" alt="cohort use case 3.png" src="https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png" />
 
 </Accordion>
 

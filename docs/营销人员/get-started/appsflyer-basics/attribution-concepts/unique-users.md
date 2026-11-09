@@ -43,7 +43,7 @@ Although the unique user calculation is usually straightforward, questions somet
 
 <Accordion title="Install and reinstall">
 
-![](https://files.readme.io/8b9f3c442f98c056069b4449c7e5115cbea828a64ace3a98e0090fb0d8d1d8d6-27455116159889.png)
+<Image align="center" alt="" src="https://files.readme.io/8b9f3c442f98c056069b4449c7e5115cbea828a64ace3a98e0090fb0d8d1d8d6-27455116159889.png" />
 
 The install and reinstall have the same device ID/AppsFlyer ID. Therefore, only 1 unique user is counted. Both in-app events are attributed to the same unique user as the first install.
 
@@ -58,7 +58,7 @@ The install and reinstall have the same device ID/AppsFlyer ID. Therefore, only 
 
 <Accordion title="Install and re-attribution">
 
-![](https://files.readme.io/40420c5ea201ba7cf13d03e5968d20c2fffaa31b74c47ae36cd917cccbaae353-27453973190289.png)
+<Image align="center" alt="" src="https://files.readme.io/40420c5ea201ba7cf13d03e5968d20c2fffaa31b74c47ae36cd917cccbaae353-27453973190289.png" />
 
 The install and re-attribution have the same device ID (AppsFlyer ID is the same). However, in this case, AppsFlyer also takes into account the parameter `is_retargeting=true` so the event after the re-attribution is counted as an additional unique user. Therefore, 2 unique users are counted.
 
@@ -72,7 +72,7 @@ The install and re-attribution have the same device ID (AppsFlyer ID is the same
 
 <Accordion title="Install and re-engagement">
 
-![](https://files.readme.io/17b2bcd5365defb92e330ef8ce9cbcaf462912477704eca25439ade81f01e424-51165279253393.png)
+<Image align="center" alt="" src="https://files.readme.io/17b2bcd5365defb92e330ef8ce9cbcaf462912477704eca25439ade81f01e424-51165279253393.png" />
 
 The install and re-engagement have the same device ID/AppsFlyer ID. However, in this case (just like for re-attributions), AppsFlyer also takes into account the parameter `is_retargeting=true` so the event after the re-engagement is counted as an additional unique user. Therefore, 2 unique users are counted.
 
@@ -86,7 +86,7 @@ The install and re-engagement have the same device ID/AppsFlyer ID. However, in 
 
 <Accordion title="Unattributed in-app events">
 
-![](https://files.readme.io/94bf078bcf4ba26a1dc4ca323a1b4a7543cfb4e3fc8b780d0d29713c4266aa95-27455116170001.png)
+<Image align="center" alt="" src="https://files.readme.io/94bf078bcf4ba26a1dc4ca323a1b4a7543cfb4e3fc8b780d0d29713c4266aa95-27455116170001.png" />
 
 When an in-app event is unattributed, meaning it's following a reinstall but for whatever reason isn't linked to the first install, it's not included in the unique user count at all. This can occur when there isn't a device ID available for the reinstall, but **there could be other reasons as well**. <Anchor target="_blank" href="/marketers/zh/docs/measure-reinstalls#unattributed-organic-inapps">Learn more</Anchor>
 

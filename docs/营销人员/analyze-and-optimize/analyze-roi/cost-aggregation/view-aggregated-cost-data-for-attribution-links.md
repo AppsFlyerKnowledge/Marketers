@@ -48,7 +48,7 @@ AppsFlyer会对归因链接中上报的成本数据进行汇总，并通过面�
 
 *数据总览面板中的汇总效果报告*包含成本、点击、展示、ROI和平均eCPI数据。
 
-[![CostReporting.jpg](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)
+<Image align="center" alt="CostReporting.jpg" src="https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg" />
 
 AppsFlyer还提供可<Anchor target="_blank" href="/marketers/zh/docs/raw-data-reporting-overview">下载</Anchor>的效果数据和原始数据报告。
 

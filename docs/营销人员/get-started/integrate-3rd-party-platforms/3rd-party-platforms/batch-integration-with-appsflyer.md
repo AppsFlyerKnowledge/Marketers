@@ -131,7 +131,7 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 
 ### 常规设置
 
-![batch-general-settings-keys.png](https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png)
+<Image align="center" alt="batch-general-settings-keys.png" src="https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png" />
 
 <div id="viewing-appsflyer-data-in-the-batch-dashboard" />
 
@@ -139,7 +139,7 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 
 ### 默认回传
 
-![batch-default-postbacks.png](https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png)
+<Image align="center" alt="batch-default-postbacks.png" src="https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png" />
 
 </Accordion>
 
@@ -174,6 +174,6 @@ Snapchat不支持归因链接。
 </Accordion>
 
 
-[![Userbase.png](https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png)](https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png)
+<Image align="center" alt="Userbase.png" src="https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png" />
 
 <div data-zendesk-anchors="h_01H9FK389FZGSK6XPYE73MYEDH=%E9%87%8D%E8%A6%81%E6%8F%90%E7%A4%BA integrating-batch-and-appsflyer=%E8%8E%B7%E5%8F%96%E5%AE%A2%E6%88%B7%E7%94%A8%E6%88%B7id setting-customer-user-id=%E8%8E%B7%E5%8F%96%E5%AE%A2%E6%88%B7%E7%94%A8%E6%88%B7id h_01H9FK389GXG3CDFPNM5ASKJ3N=%E8%8E%B7%E5%8F%96%E5%AE%A2%E6%88%B7%E7%94%A8%E6%88%B7id h_01H9FK389MPKFN8J74BX1E3MGG=%E8%8E%B7%E5%8F%96%E5%AE%A2%E6%88%B7%E7%94%A8%E6%88%B7id batch=%E6%89%B9%E6%AC%A1 h_01H9FK389MK1HM1460VAT6X82Y=%E6%89%B9%E6%AC%A1 h_01H9FK389MPGNEX8B3923KYDB3=appsflyer batch::28a946d0=%E6%89%B9%E6%AC%A1 h_01H9FK389MC4K8PNVPAGC00TBW=%E6%89%B9%E6%AC%A1 appsflyer::3f0aa95b=appsflyer h_01H9FK389M7V83A66M6T9EV8QT=appsflyer batch::24c5c955=%E6%89%B9%E6%AC%A1 h_01H9FK389MRV4ARHMHXPAXVXQ9=%E6%89%B9%E6%AC%A1 appsflyer::deb78dd1=appsflyer h_01H9FK389MT6PD8FW21SYHBPCV=appsflyer h_01H9FK389MCSR5YDSF4RKFDSDZ=setting-up-batch-in-appsflyer-dashboard h_01H9FK389MG9459909JZBDN77E=integration-tab activate-partner=%E6%B8%A0%E9%81%93%E6%BF%80%E6%B4%BB h_01H9FK389M19AVM63DEX5JTTQK=%E6%B8%A0%E9%81%93%E6%BF%80%E6%B4%BB general-settings=%E5%B8%B8%E8%A7%84%E8%AE%BE%E7%BD%AE h_01H9FK389MN82EKHVGMM9Z6H58=%E5%B8%B8%E8%A7%84%E8%AE%BE%E7%BD%AE default-postbacks=%E9%BB%98%E8%AE%A4%E5%9B%9E%E4%BC%A0 h_01H9FK389MXA3DS403VXRRK5NX=%E9%BB%98%E8%AE%A4%E5%9B%9E%E4%BC%A0 h_01H9FK389MERP4XBF19T28E6DN=attribution-link-tab h_01H9FK389M3E05PVMNA83TBFJZ=cost-tab h_01H9FK389M06FEQ4RZJ04HTH33=ad-revenue-tab h_01H9FK389MB31S8BR8WX178GHX=permissions-tab viewing-appsflyer-data-in-the-batch-dashboard=%E9%BB%98%E8%AE%A4%E5%9B%9E%E4%BC%A0 h_01H9FK389M8BNRFECN0WG23BCD=%E9%BB%98%E8%AE%A4%E5%9B%9E%E4%BC%A0" />

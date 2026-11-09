@@ -64,7 +64,7 @@ x-zendesk:
 
 #### **链路图**
 
-![Copy_of_Ios_fall_back_-_browsers_that_can_use_URI_schemes_by_default__2_.png](https://files.readme.io/0059288afb39247fd2d08ff2a1d1bef6f43d958b7f5d20bc921a431b65dacc58-51911709482641.png)
+<Image align="center" alt="Copy_of_Ios_fall_back_-_browsers_that_can_use_URI_schemes_by_default__2_.png" src="https://files.readme.io/0059288afb39247fd2d08ff2a1d1bef6f43d958b7f5d20bc921a431b65dacc58-51911709482641.png" />
 
 </Accordion>
 
@@ -77,7 +77,7 @@ x-zendesk:
 **用户未安装相关应用：**
 
 1. Safari界面会弹出报错消息。  
-   [![](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg" />
 2. 用户点击**OK**关闭该对话框后，会短暂地看到在背景中加载的落地页，并会在1秒内自动跳转到App Store或af\_ios\_ur参数中指定的网址。
 
 **若用户已安装相关应用：**
@@ -85,17 +85,17 @@ x-zendesk:
 * 如果链接中没有`af_force_deeplink=true`，则用户会跳转到App Store，或af\_ios\_url参数中指定的网址。
 * 如果链接中包含`af_force_deeplink=true`：
   1. Safari界面会弹出下图对话框。  
-     [![](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)
+     <Image align="center" alt="" src="https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg" />
   2. 如果用户点击**Open**（打开），就会打开相关应用。
   3. 如果用户点击**Cancel**（取消）：
      * 如果链接中设置了af\_ios\_url参数，则用户会跳转到相应的网址。
-     * [![](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)
+     * <Image align="center" alt="" src="https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg" />
   4. 用户点击**OK**后会看到带有CTA按钮的落地页。
   5. 用户点击CTA按钮后，界面会显示下图对话框。  
-     [![](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)
+     <Image align="center" alt="" src="https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg" />
   6. 如果用户点击**Open**（打开），就会打开相关应用。
   7. 如果用户点击**Cancel**（取消），界面会显示下图对话框。  
-     [![](https://files.readme.io/dd3aa8492bdf1883246bd740118e1b8d2f075a77a164e3ad55843f7c4d44d2b9-360016210038.jpg)](https://files.readme.io/dd3aa8492bdf1883246bd740118e1b8d2f075a77a164e3ad55843f7c4d44d2b9-360016210038.jpg)
+     <Image align="center" alt="" src="https://files.readme.io/dd3aa8492bdf1883246bd740118e1b8d2f075a77a164e3ad55843f7c4d44d2b9-360016210038.jpg" />
   8. 如果用户点击**OK**，就会跳转到App Store。
   9. 如果用户点击**Cancel**（取消），就会留在落地页中。
 
@@ -103,7 +103,7 @@ x-zendesk:
 
 #### **链路图**
 
-![Copy_of_Ios_fall_back_-_safari.png](https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png)
+<Image align="center" alt="Copy_of_Ios_fall_back_-_safari.png" src="https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png" />
 
 </Accordion>
 
@@ -120,22 +120,22 @@ x-zendesk:
 **若用户未安装相关应用**：
 
 1. 若您未配置社交媒体应用的落地页，或用户点击了社媒应用落地页（SALP）中的CTA按钮，界面会显示下图对话框，并在背景中加载落地页。  
-   [![](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg" />
 2. 用户点击“Open App”（打开应用）后，会根据链接配置触发以下任一链路：
    * 如果链接中设置了`af_ios_url`参数，则用户会跳转到该参数指定的网址。
    * 如果链接中既未设置`af_ios_url`参数，也不包含`af_force_deeplink=true`，则用户会跳转到App Store。
    * 如果链接中未设置af\_ios\_url参数，但包含`af_force_deeplink=true`，则界面会再次弹出下图对话框，并在背景中加载落地页。  
-     [![](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)
+     <Image align="center" alt="" src="https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg" />
 3. 如果用户点击**Open**（打开），就会跳转到App Store。
 4. 如果用户点击**Close**（关闭），则界面会显示背景中的落地页。  
-   [![](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg" />
 5. 用户点击App Store徽章后跳转到App Store。
 
 <div id="flowchart-2" />
 
 #### **链路图**
 
-![diagram-X.png](https://files.readme.io/0c8040d27bbf34fdf1374b4b40a8239b6af7b6c7719db9666f36dd2829bc3217-small-17710399441553.png)
+<Image align="center" alt="diagram-X.png" src="https://files.readme.io/0c8040d27bbf34fdf1374b4b40a8239b6af7b6c7719db9666f36dd2829bc3217-small-17710399441553.png" />
 
 </Accordion>
 

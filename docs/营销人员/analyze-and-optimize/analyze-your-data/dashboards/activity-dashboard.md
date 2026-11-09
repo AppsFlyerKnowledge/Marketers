@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要：** 您可以在活跃数据面板中查看选定时间范围内的应用使用情况、互动情况以及应用内事件指标。当日指标实时更新。
 
-![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
+<Image align="center" alt="ActivityDB.png" src="https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png" />
 
 <div id="activity-dashboard" />
 
@@ -193,7 +193,7 @@ x-zendesk:
 
 <Accordion title="月度选项卡：过去12个月">
 
-![ActivityHiLevel.png](https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png)
+<Image align="center" alt="ActivityHiLevel.png" src="https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png" />
 
 该选项卡中包含过去12个月的历史数据，便于您查看总体的应用使用情况，其中会呈现以下图表：
 

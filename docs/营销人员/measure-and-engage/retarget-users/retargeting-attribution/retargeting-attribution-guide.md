@@ -37,7 +37,7 @@ x-zendesk:
 * **再互动：再互动（沉睡用户唤醒）：用户设备上仍装有相关应用，这时用户与再营销广告互动后打开该应用，则展示该广告的媒体渠道就会获得一次再互动归因。**
 * 再归因（流失用户召回）：即再营销广告带来的重装激活。如果上述情况发生在<Anchor target="_blank" href="/marketers/zh/docs/set-up-re-attribution-window">再归因窗口期</Anchor>内，那么AF会将这次重装激活归因给展示相关广告的再营销渠道，并记录为一次再归因。相关文档：重装激活
 
-![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 在投放再营销广告之前，请先查看下一节中的再互动归因规则以及示例，然后再根据本文所述的再营销流程设置再营销归因。建议您先熟悉AppsFlyer的<Anchor target="_blank" href="/marketers/zh/docs/appsflyer-attribution-model">归因模型</Anchor>以及相关的归因窗口期，以便于理解本文内容。
 
@@ -90,7 +90,7 @@ x-zendesk:
 
 #### 再营销归因链路示例
 
-![](https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png)
+<Image align="center" alt="" src="https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png" />
 
 点击和浏览型再互动归因的规则列表：
 
@@ -139,7 +139,7 @@ x-zendesk:
 2. 选择相关广告平台。
 3. 打开**启用再营销设置**开关。   
 
-   [![](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)
+   <Image align="center" alt="" src="https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png" />
 4. 请根据需要选择
    * **使用标准归因链接**进行单平台（分应用）跳转。
    * **使用OneLink**。

@@ -98,17 +98,17 @@ AppsFlyer针对每个应用记录一个Link ID。<strong>如果有多个账户�
 
 在设置MCC的过程中，可以选择让MCC或子账户来管理转化。
 
-[![MCC_1_new.png](https://files.readme.io/2d2acf07f8706f1b2259b602e9dbc917f5bb7a68ab467e49001035951012f938-51165519587601.png)](https://files.readme.io/2d2acf07f8706f1b2259b602e9dbc917f5bb7a68ab467e49001035951012f938-51165519587601.png)
+<Image align="center" alt="MCC_1_new.png" src="https://files.readme.io/2d2acf07f8706f1b2259b602e9dbc917f5bb7a68ab467e49001035951012f938-51165519587601.png" />
 
 设置完毕后，仍可以根据实际需求进行更改。
 
-![mmc-googleads-settings.png](https://files.readme.io/279e31bff45a5d8cbc95cf472f905a5c07179b9a648ecb2f4687dcb29a6bb0e8-51165480047377.png)
+<Image align="center" alt="mmc-googleads-settings.png" src="https://files.readme.io/279e31bff45a5d8cbc95cf472f905a5c07179b9a648ecb2f4687dcb29a6bb0e8-51165480047377.png" />
 
 <div id="mcc-of-mccs" />
 
 ## 多级MCC
 
-[![](https://files.readme.io/3024bbf6848c56502c90040e280f92cdf23c284b215f28e08e050f241409afd9-51165480047889.png)](https://files.readme.io/3024bbf6848c56502c90040e280f92cdf23c284b215f28e08e050f241409afd9-51165480047889.png)
+<Image align="center" alt="" src="https://files.readme.io/3024bbf6848c56502c90040e280f92cdf23c284b215f28e08e050f241409afd9-51165480047889.png" />
 
 与多个代理合作的大型广告主可能会通过一个MCC账户来管理多个MCC。这跟常规的MCC账户类似。这种情况中，建议由级别最高的MCC或广告主来生成Link ID。在这类结构中，子账户必须正确选择对应级别的MCC作为Recording Manager（一般是最高级别的MCC）。如果该结构设置无误，则无需再将Link ID共享给子账户，且只需通过级别最高的MCC导入转化即可。
 

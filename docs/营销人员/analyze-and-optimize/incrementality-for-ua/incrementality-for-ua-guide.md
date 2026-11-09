@@ -225,13 +225,13 @@ B并肩使用经典归因和增量数据
 
 1. 点击即可访问UA的增量性**优化**> **UA的增量性**， 在 AppsFlyer 侧菜单中。
 
-   <Image alt="Click Inc for UA new.png" src="https://files.readme.io/4170287cc98e038272fd91ee36cbf775a33b8a418920c7fabe54e32cff5789cd-41021731857041.png" width="254px" />
+   <Image align="center" alt="Click Inc for UA new.png" src="https://files.readme.io/4170287cc98e038272fd91ee36cbf775a33b8a418920c7fabe54e32cff5789cd-41021731857041.png" width="254px" />
 2. 咔哒 **+ 新实验**.
 3. **填写实验表格：**
    1. **输入实验名称** - 为实验创建描述性名称，然后单击**下一步**。
    2. **定义你的地理设计** — 选择你想测量的应用、国家和主要指标。AppsFlyer利用这些数据计算实验中暴露区和滞留区的最佳分配。
 
-      <Image alt="step 2 geo design.png" src="https://files.readme.io/3a901bd4dcccb788b1d0cc8f118cbdb0c682b570b470d13deba4f6ce0f852c3b-41021758781713.png" width="335px" />
+      <Image align="center" alt="step 2 geo design.png" src="https://files.readme.io/3a901bd4dcccb788b1d0cc8f118cbdb0c682b570b470d13deba4f6ce0f852c3b-41021758781713.png" width="335px" />
 
       提交后，AppsFlyer会审核你的地理设计——通常只需几分钟。你的地理设计要么可用，要么无法使用：
 
@@ -272,7 +272,7 @@ B并肩使用经典归因和增量数据
   * 所有被选中的竞选活动将共享相同的保留区域。
   * 增量性洞察将在单元层面呈现，而非单个活动层面。
 
-    <Image alt="Inc for UA - Set 战役详情.png" src="https://files.readme.io/c92c2b785ea80d2c89fd06033b008a3618e04d88a3cc286e923acf88b5924261-45947468030097.png" width="64.57%" />
+    <Image align="center" alt="Inc for UA - Set 战役详情.png" src="https://files.readme.io/c92c2b785ea80d2c89fd06033b008a3618e04d88a3cc286e923acf88b5924261-45947468030097.png" width="64.57%" />
 * 一旦地理设计获批，你将看到实验的详细分解：
   * **保留地区** - 实验期间未暴露于你战役的区域
   * **暴露区域** - 暴露于你的广告活动的区域，作为测量基线
@@ -309,10 +309,10 @@ B并肩使用经典归因和增量数据
 
 1. 点击你的增量实验，点击即可进入你的增量实验**优化**> **UA的增量性**， 在 AppsFlyer 侧菜单中。 
 
-   <Image alt="from Oprimize click Incrementality UA.png" src="https://files.readme.io/922e084c955b3220a5bc3ac82079515f2c07bc4bc1bc3861343132452cc4fc08-41021731858321.png" width="210px" />
+   <Image align="center" alt="from Oprimize click Incrementality UA.png" src="https://files.readme.io/922e084c955b3220a5bc3ac82079515f2c07bc4bc1bc3861343132452cc4fc08-41021731858321.png" width="210px" />
 2. 点击特定实验以访问实验控制面板。
 
-   ![实验表(1).png](https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png)
+   <Image align="center" alt="实验表(1).png" src="https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png" />
 
 <div id="a-tour-of-the-dashboard" />
 
@@ -344,7 +344,7 @@ B并肩使用经典归因和增量数据
 * 所有被选中的竞选活动将共享相同的保留区域。
 * 增量性洞察将在单元层面呈现，而非单个活动层面。
 
-[<Image alt="频道级实验仪表盘裁剪narrower.png" src="https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png" width="2862px" />](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)
+<Image align="center" alt="频道级实验仪表盘裁剪narrower.png" src="https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png" width="2862px" />
 
 </Accordion>
 
@@ -365,10 +365,10 @@ B并肩使用经典归因和增量数据
 1. 通过点击AppsFlyer侧菜单中的“**优化** ⁇ >**UA增量**”来访问UA增量。
 2. 点击**连接**选项卡, 然后 **+ 新建连接**。
 
-   <Image alt="从连接选项卡中点击 + 新建连接 w arrow.png" src="https://files.readme.io/e9df79d34ec3d94e89f51f42b132f8ba475225b46246d044d2a720991b0900e0-41021731865745.png" width="465px" />
+   <Image align="center" alt="从连接选项卡中点击 + 新建连接 w arrow.png" src="https://files.readme.io/e9df79d34ec3d94e89f51f42b132f8ba475225b46246d044d2a720991b0900e0-41021731865745.png" width="465px" />
 3. 选择要连接的媒体渠道
 
-   <Image alt="Add connection.png" src="https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png" width="409px" />
+   <Image align="center" alt="Add connection.png" src="https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png" width="409px" />
 4. 输入您的凭据以登录并创建连接。
 
 </Accordion>
@@ -464,7 +464,7 @@ B并肩使用经典归因和增量数据
 
 在**UA增量**中，点击**实验**选项卡。
 
-[![Experiments table.png](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)
+<Image align="center" alt="Experiments table.png" src="https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png" />
 
 对于每个实验，您可以看到：
 
@@ -489,7 +489,7 @@ B并肩使用经典归因和增量数据
 
 将鼠标悬停在实验上以访问<Image alt="Action menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" />动作图标。
 
-<Image alt="Experiments menu.png" src="https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png" width="254px" />
+<Image align="center" alt="Experiments menu.png" src="https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png" width="254px" />
 
 您可以通过这个页面完成以下操作：
 
@@ -507,7 +507,7 @@ B并肩使用经典归因和增量数据
 
 在实验中，点击<Image alt="Action menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" />操作图标（右上角），然后选择**延长实验持续时间**。
 
-<Image alt="Extend experiment.png" src="https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png" width="336px" />
+<Image align="center" alt="Extend experiment.png" src="https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png" width="336px" />
 
 这将使试验再延长14天。
 
@@ -521,7 +521,7 @@ B并肩使用经典归因和增量数据
 
 在实验中，点击右上角的⠇操作图标，然后选择**停止实验**。
 
-<Image alt="Stop experiment.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
+<Image align="center" alt="Stop experiment.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
 
 </Accordion>
 

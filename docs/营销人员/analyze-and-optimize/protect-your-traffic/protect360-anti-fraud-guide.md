@@ -31,7 +31,7 @@ x-zendesk:
 
 > **概要：** 概要：归因作弊不但会对广告主造成严重的营销资金浪费，而且还会扭曲投放效果，导致投放策略的误判。**Protect360能通过实时拦截和归因后检测来保护广告主不受假量侵扰。**
 
-![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
+<Image align="center" alt="p360intro2.jpg" src="https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg" />
 
 <div id="protect360-overview" />
 

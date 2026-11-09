@@ -108,7 +108,7 @@ x-zendesk:
 * 行数上限：1千万
 * 如果您使用Excel制作该文件，请将其另存为**CSV (Comma delimited) (\*.csv)** 文件，如下图所示：
 
-  <Image alt="CSV.jpg" src="https://support.appsflyer.com/hc/article_attachments/18502652300561" width="339px" />
+  <Image align="center" alt="CSV.jpg" src="https://support.appsflyer.com/hc/article_attachments/18502652300561" width="339px" />
 
 <div id="note" />
 

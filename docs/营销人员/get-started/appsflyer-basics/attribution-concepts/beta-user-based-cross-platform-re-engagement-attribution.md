@@ -65,7 +65,7 @@ x-zendesk:
 
 假设某个用户的旅程横跨三个平台。用户通过Google广告安装移动应用，随后使用Customer User ID完成注册。之后，同一用户通过Meta广告访问网页端平台，并使用相同的Customer User ID登录。登录后，该用户在移动端完成了两笔购买：$100和$50。
 
-[![](https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png)](https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png)
+<Image align="center" alt="" src="https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png" />
 
 由于此场景未启用再互动，所有活跃数据都会归因到原始获客渠道Google Ads。$100和$50两笔购买，以及两个平台激活（移动端和网页端），都会归因到Google。尽管Meta广告促成了网页端激活，但在跨平台归因中，Meta不会获得任何归因。
 
@@ -82,7 +82,7 @@ x-zendesk:
 
 该用户旅程与上述示例完全相同。区别在于，该产品线已选择启用再互动。
 
-[![](https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png)](https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png)
+<Image align="center" alt="" src="https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png" />
 
 在这种情况下，系统会根据再营销不活跃窗口期判定，用户通过Meta广告完成的网页端登录，是否符合再互动事件的条件。该窗口期从上一次识别到Customer User ID时（用户在移动端注册时）开始计算。如果用户在网页端登录前已经过足够长的时间，也就是说，该登录发生在再互动不活跃窗口期之外，则Meta会获得再互动归因。
 

@@ -45,7 +45,7 @@ x-zendesk:
 
 以下用户旅程示例说明了以设备为中心的归因与以用户为中心的归因之间的区别：
 
-[<Image alt="user-journey.png" src="https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png" width="2048px" />](https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png)
+<Image align="center" alt="user-journey.png" src="https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png" width="2048px" />
 
 用户在网页上点击 Meta 广告，被重定向到广告主的网站，注册并创建账户。后来，同一用户安装广告主的 iOS 应用，登录并进行 50 美元的购买。几天后，用户看到 YouTube 广告，安装广告主的 PC 应用，再次登录，并进行 100 美元的购买。
 

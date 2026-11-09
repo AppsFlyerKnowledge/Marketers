@@ -137,7 +137,7 @@ AppsFlyer SDK为应用所有者提供多种保护用户隐私和控制数据收�
 
 下图展示了经匿名化处理（删除或哈希加密）后的原始数据样例。
 
-[![](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)
+<Image align="center" alt="" src="https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png" />
 
 <div id="impact-on-attribution-2" />
 

@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **概要：** 本文说明了CTV、PC和主机端的归因原理，帮助您在投放跨平台广告时向AppsFlyer发送归因和事件数据。
 
-<Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
+<Image align="center" alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
 <div id="tv-screens" />
 
@@ -79,7 +79,7 @@ AppsFlyer为广告主提供全面的跨端归因解决方案，可配合传统�
 
 直接归因链接同时支持概率模型和确定性匹配（通过链接提供ID时）的归因模式，将一个用户的一次激活归因到一个广告点击或展示。具体归因流程如下图所示。
 
-![CTV attribution flow - Direct attribution link flow.png](https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png)
+<Image align="center" alt="CTV attribution flow - Direct attribution link flow.png" src="https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png" />
 
 由于直接归因链接用于固定平台中单个应用的单一终点跳转，因此其URL中总是包含相关的应用ID和平台信息。
 
@@ -97,7 +97,7 @@ AppsFlyer为广告主提供全面的跨端归因解决方案，可配合传统�
 
 跨平台OneLink链接仅支持概率模型归因（以IP地址为基础），因此可以将多个用户的多次激活归因到同一个广告展示。具体归因流程如下图所示。
 
-![CTV attribution flow - Cross-platform Onelink link attribution flow (1).png](https://files.readme.io/926ecf50c96dc72b05d107f1cf7b17b8c343b6e31f3755a1c39c801496568f50-51911195677329.png)
+<Image align="center" alt="CTV attribution flow - Cross-platform Onelink link attribution flow (1).png" src="https://files.readme.io/926ecf50c96dc72b05d107f1cf7b17b8c343b6e31f3755a1c39c801496568f50-51911195677329.png" />
 
 由于OneLink模板中含有所有可能出现的应用端/平台，因此跨平台OneLink链接的URL中不包含具体的应用ID或平台信息，而是使用相关的OneLink模板ID，以传递模板中配置的应用端/平台信息。
 
@@ -115,7 +115,7 @@ AppsFlyer为广告主提供全面的跨端归因解决方案，可配合传统�
 
 对于SRN的归因是通过确定性匹配完成的。广告主与SRN对接后，其归因流程如下图所示。
 
-![CTV attribution flow - SRN attribution flow (1).png](https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png)
+<Image align="center" alt="CTV attribution flow - SRN attribution flow (1).png" src="https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png" />
 
 SRN归因目前仅适用于同平台投放，也就是说营销触点（点击或展示）的平台必须与用户完成激活的平台一致。举例来说，如果AppsFlyer向Roku Endemic Media（即Roku的SRN）查询了Roku CTV上的某个激活，并发现Roku设备上发生了广告展示，这时该次激活会被纳入归因流程，但如果广告展示发生在其他平台（如移动端），则该次激活会被排除在归因流程之外。
 
@@ -136,7 +136,7 @@ SRN归因目前仅适用于同平台投放，也就是说营销触点（点击�
 
 落地页同时支持概率模型和确定性匹配（链接中提供ID时）两种归因模式。使用概率模型归因时，可将多个用户的多次激活归因到同一个广告展示。具体归因流程如下图所示。
 
-![CTV attribution flow - Landing page attribution flow.png](https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png)
+<Image align="center" alt="CTV attribution flow - Landing page attribution flow.png" src="https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png" />
 
 使用场景示例:
 

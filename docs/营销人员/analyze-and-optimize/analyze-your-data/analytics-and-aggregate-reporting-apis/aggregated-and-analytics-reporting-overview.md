@@ -196,7 +196,7 @@ CSV文件中的日期字段格式为yyyy-mm-dd。当您在Excel中打开CSV文�
 
 <Accordion title="Protect360—已拦截的假量">
 
-![](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)
+<Image align="center" alt="" src="https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png" />
 
 已拦截的假量汇总报告中包含通过<Anchor target="_blank" href="/marketers/zh/docs/protect360-anti-fraud-guide">Protect360</Anchor>功能拦截的事件信息。
 

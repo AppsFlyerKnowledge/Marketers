@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **概要**：概要：自iOS 14.5上线后，Apple就开始要求广告主使用<Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency">AppTrackingTransparency</Anchor>（应用跟踪透明度，简称ATT）弹窗，并遵守相关规定。ATT要求广告主必须同时在流量方应用（Publisher App）和广告主应用（Advertiser App）中都通过ATT授权弹窗获得终端用户的授权，然后才能收集其数据并与其他公司分享该数据，用以进行跨应用、跨网站的跟踪。如果不跟踪，则无需显示该弹窗。
 
-![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
+<Image align="center" alt="iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg" src="https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg" />
 
 <div id="attribution-measurement-in-an-att-environment" />
 
@@ -55,7 +55,7 @@ AppsFlyer的<Anchor target="_blank" href="/marketers/zh/docs/skadnetwork-skan-so
 
 **SKAN归因链路**
 
-![SKAN_flow_-_Affinity_diagram_2.png](https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png)
+<Image align="center" alt="SKAN_flow_-_Affinity_diagram_2.png" src="https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png" />
 
 1. 广告主在AppsFlyer的转化值操作台中完成SKAN衡量设置。
 2. 用户首次打开应用。
@@ -199,7 +199,7 @@ iOS 14平台中的激活可能会同时由传统归因方式和SKAN面板重复�
 
 下图展示了回传的详细流程：
 
-![SKAN_4_matrix_-_Page_8__1_.png](https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png)
+<Image align="center" alt="SKAN_4_matrix_-_Page_8__1_.png" src="https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png" />
 
 </Accordion>
 

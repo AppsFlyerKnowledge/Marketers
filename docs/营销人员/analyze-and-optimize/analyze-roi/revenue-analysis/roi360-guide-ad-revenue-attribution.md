@@ -29,7 +29,7 @@ x-zendesk:
 
 > **概要：** 对广告收入进行归因，全面了解LTV维度的变现效果。
 
-[![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
+<Image align="center" alt="Attributes_ad_revenue.png" src="https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png" />
 
 <div id="ad-revenue-attribution" />
 
@@ -87,7 +87,7 @@ x-zendesk:
 1. 从AppsFlyer后台的侧边栏中选择**配置** > **收入设置** > **广告收入。**
 2. 在广告收入配置页面中，点击**新建广告收入对接**。
 3. 选择要添加的广告收入合作渠道，然后点击**下一步**。  
-   [![ad revenue 3.6(2).png](https://files.readme.io/8ccba7d0909c15e92507bc55c7bf2bf003e1a9431fb6bd1d32a0f41959f7a904-47792643579153.png)](https://files.readme.io/8ccba7d0909c15e92507bc55c7bf2bf003e1a9431fb6bd1d32a0f41959f7a904-47792643579153.png)
+   <Image align="center" alt="ad revenue 3.6(2).png" src="https://files.readme.io/8ccba7d0909c15e92507bc55c7bf2bf003e1a9431fb6bd1d32a0f41959f7a904-47792643579153.png" />
 4. 选择您想要接收的广告收入数据类型。**请注意**：并非所有广告平台都能提供下列所有数据类型。
    * 归因收入（Attributed Revenue）是指可归因到获客渠道的收入数据。归因记录报告分为以下两种：
      * [汇总数据](/docs/roi360-guide-ad-revenue-attribution#aggregate-granularity-using-app-open-or-inapp-events)（通过S2S API上报）
@@ -119,7 +119,7 @@ x-zendesk:
 
 <Accordion title="查看、修改或删除广告收入对接渠道">
 
-![delete_edit_adi.png](https://files.readme.io/2d2153ec3248061dab4072e1d981e237f553e32824a68e392ae239778b307610-47792653636113.png)
+<Image align="center" alt="delete_edit_adi.png" src="https://files.readme.io/2d2153ec3248061dab4072e1d981e237f553e32824a68e392ae239778b307610-47792653636113.png" />
 
 **如需查看、修改或删除您与广告收入平台的对接，请按以下方式操作**：
 
@@ -146,7 +146,7 @@ x-zendesk:
       * 两个聚合平台使用不同的广告样式进行聚合。比如平台1展示横幅和插屏广告，而平台2展示开屏和原生广告，这时就无需进行去重。
       * 两个聚合平台都使用展示级别的SDK对接。
 
-[![dedup.png](https://files.readme.io/a739bc7e3557913bf6a67afa74a71dd72673d5b4e4d6bbe1d3ef872e46609422-47792653637265.png)](https://files.readme.io/a739bc7e3557913bf6a67afa74a71dd72673d5b4e4d6bbe1d3ef872e46609422-47792653637265.png)
+<Image align="center" alt="dedup.png" src="https://files.readme.io/a739bc7e3557913bf6a67afa74a71dd72673d5b4e4d6bbe1d3ef872e46609422-47792653637265.png" />
 
 </Accordion>
 
@@ -235,7 +235,7 @@ x-zendesk:
 
 #### **数据总览面板——汇总效果报告**
 
-[![](https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png)](https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png)
+<Image align="center" alt="" src="https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png" />
 
 数据总览面板：
 
@@ -318,7 +318,7 @@ x-zendesk:
 
 <Accordion title="广告收入原始数据">
 
-<Image alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
+<Image align="center" alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
 
 广告收入原始数据报告中的数据来自与AppsFlyer对接的变现平台，对接类型可以是设备级别，也可以是展示级别。
 

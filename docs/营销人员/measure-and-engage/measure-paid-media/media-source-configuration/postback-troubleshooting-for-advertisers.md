@@ -37,7 +37,7 @@ x-zendesk:
 
 启用该渠道开关
 
-![integration_turned_off.png](https://files.readme.io/d43b4f465749e343d9523e90e87e43b77a85cdd920f0c0770a94bcb7a585d920-14979273403793.png)
+<Image align="center" alt="integration_turned_off.png" src="https://files.readme.io/d43b4f465749e343d9523e90e87e43b77a85cdd920f0c0770a94bcb7a585d920-14979273403793.png" />
 
 **请按以下步骤激活对接：**
 
@@ -65,7 +65,7 @@ Meta install referrer与 AppsFlyer就不会向渠道发送事件回传。
 2. 点击该渠道的“管理对接”图标。
 3. 进入**渠道对接**选项卡，向下滚动页面。   
 
-   ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
+   <Image align="center" alt="integration-in_app_event_postbacks_toggle.png" src="https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png" />
 
 </Accordion>
 
@@ -81,7 +81,7 @@ Meta install referrer与 AppsFlyer就不会向渠道发送事件回传。
 
 请检查您配置的应用内事件列表中是否已包含需要回传的事件。对于未配置的事件，AppsFlyer不会发送回传。
 
-[![list_of_in_app_events.png](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)
+<Image align="center" alt="list_of_in_app_events.png" src="https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png" />
 
 1. 从AppsFlyer的侧边栏中选择**协作** > **活跃对接**。
 2. 点击该渠道的“管理对接”图标。
@@ -95,7 +95,7 @@ Meta install referrer与 AppsFlyer就不会向渠道发送事件回传。
 
 检查<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#事件映射">事件映射</Anchor>是否正确无误。请确保AppsFlyer事件<strong>（即AppsFlyer通过S2S或从您的应用侧接收到的事件名称）与渠道映射事件（即渠道对该事件使用的名称）之间的对应关系正确无误。</strong>
 
-[![in_app_event_postback_mapping_2.png](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)
+<Image align="center" alt="in_app_event_postback_mapping_2.png" src="https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png" />
 
 </Accordion>
 
@@ -105,7 +105,7 @@ Meta install referrer与 AppsFlyer就不会向渠道发送事件回传。
 
 如果您为某个事件设置了回传条件，那么AppsFlyer就会根据这个条件来发送回传。请检查您是否设置了可能会限制事件回传的条件。
 
-[![in_app_event_condition__1_.png](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)
+<Image align="center" alt="in_app_event_condition__1_.png" src="https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png" />
 
 </Accordion>
 
@@ -115,7 +115,7 @@ Meta install referrer与 AppsFlyer就不会向渠道发送事件回传。
 
 检查相关回传的事件来源是否配置为<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#回传中的事件来源选项">**仅该合作渠道**还是**所有媒体渠道，包括自然流量**</Anchor>。如果是仅该合作渠道，那么AppsFlyer仅发送归因到该渠道的事件回传。
 
-[![in_app_event_sending_options.png](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)
+<Image align="center" alt="in_app_event_sending_options.png" src="https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png" />
 
 </Accordion>
 
@@ -125,7 +125,7 @@ Meta install referrer与 AppsFlyer就不会向渠道发送事件回传。
 
 AppsFlyer会根据您设置的<Anchor target="_blank" href="/marketers/zh/docs/in-app-event-postback-configuration#应用内事件回传窗口期">回传窗口期</Anchor>来发送回传数据。对于在窗口期结束后发生的事件，AppsFlyer仍会进行记录，但不会向相关渠道发送其回传。
 
-![in_app_event_postback_window.png](https://files.readme.io/21cae7825d557c1ee89c890ec64c922cb36e31be882850a26bfdc4e5595773f0-14661845664401.png)
+<Image align="center" alt="in_app_event_postback_window.png" src="https://files.readme.io/21cae7825d557c1ee89c890ec64c922cb36e31be882850a26bfdc4e5595773f0-14661845664401.png" />
 
 请注意，在<Anchor target="_blank" href="/marketers/zh/docs/self-reporting-networks-srns">SRN</Anchor>对接中，应用内事件的回传<Anchor target="_blank" href="/marketers/zh/docs/user-level-data-retention#渠道的数据保留期限">期限</Anchor>为相关SRN的数据保留期限。
 
@@ -156,7 +156,7 @@ AppsFlyer会根据您设置的<Anchor target="_blank" href="/marketers/zh/docs/i
 
 如果您启用了<Anchor target="_blank" href="/marketers/zh/docs/apply-aggregated-advanced-privacy-framework#partner-advanced-privacy-switch">高级隐私模式</Anchor>（Advanced Privacy），但渠道侧不支持或未配置高级隐私，他们就无法接收到<Anchor target="_blank" href="/partners/zh/docs/advanced-privacy-guide-postback-macros-for-ad-networks#用于发送回传的各类模版">高级隐私汇总回传</Anchor>。
 
-![partner_not_supporting_ap_postbacks.png](https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png)
+<Image align="center" alt="partner_not_supporting_ap_postbacks.png" src="https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png" />
 
 </Accordion>
 
@@ -193,7 +193,7 @@ SDK中部署了数据共享的筛选条件，阻止相关渠道接收信息。�
 1. 从A**ppsFlyer后台的侧边栏中选择报告** > 原始数据导出。
 2. 在**回传**部分查看相关报告（激活、应用内事件、再营销转化、应用内事件再营销）。
 
-[![postback_reports.JPG](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)
+<Image align="center" alt="postback_reports.JPG" src="https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png" />
 
 </Accordion>
 

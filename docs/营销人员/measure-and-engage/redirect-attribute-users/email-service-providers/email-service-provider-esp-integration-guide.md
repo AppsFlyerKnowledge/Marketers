@@ -41,7 +41,7 @@ x-zendesk:
 * 用户跳转至移动网页，而非直接跳转至应用内目标页面
 * 广告主不得不使用安全性低、用户体验差的URI scheme链接。
 
-<Image alt="53242 KB.png" src="https://files.readme.io/53db119f60e3fe2dfaf58b8a87e14595eeb9dde375bf87f7617f36a463ee0ced-30227717940753.png" width="688px" />
+<Image align="center" alt="53242 KB.png" src="https://files.readme.io/53db119f60e3fe2dfaf58b8a87e14595eeb9dde375bf87f7617f36a463ee0ced-30227717940753.png" width="688px" />
 
 **如何解决？**
 

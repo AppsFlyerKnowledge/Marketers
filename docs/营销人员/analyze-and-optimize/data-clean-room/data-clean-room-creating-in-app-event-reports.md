@@ -112,7 +112,7 @@ If the report includes more than one custom source, only one of them needs to be
 
 > 📄 **Example**
 >
-> ![dcr_mapping_identifiers_in-app events.png](https://files.readme.io/73d0e929663bda4e6f142c64d0228fdf1eeec3b02ef1560f6f03f2a089d00664-9969546429713.png)
+> <Image align="center" alt="dcr_mapping_identifiers_in-app events.png" src="https://files.readme.io/73d0e929663bda4e6f142c64d0228fdf1eeec3b02ef1560f6f03f2a089d00664-9969546429713.png" />
 >
 > In the scenario shown above:
 >

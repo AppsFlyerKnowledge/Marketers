@@ -51,7 +51,7 @@ x-zendesk:
 
 举例来说，假设您为用户激活后15天内发生的事件付费，则窗口期设置如下：
 
-<Image alt="15-day_in_app_event_postback_setting.png" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
+<Image align="center" alt="15-day_in_app_event_postback_setting.png" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
 
 窗口期过后不再发送回传，也不会通知广告平台，但AppsFlyer仍会记录相关事件，并归因到对应的广告平台。
 
@@ -138,7 +138,7 @@ x-zendesk:
 > * 事件名称区分大小写。为避免出现数据差异，请确保所有媒体渠道和应用程序的各个版本中使用的事件名称完全一致。
 > * 手动输入的事件名称名称前后可以带下划线，但必须与AppsFlyer发送的事件名称一致。
 
-[![enter_event_name.png](https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png)](https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png)
+<Image align="center" alt="enter_event_name.png" src="https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png" />
 
 </Accordion>
 
@@ -149,7 +149,7 @@ x-zendesk:
 * **AppsFlyer事件**：**从应用事件的下拉列表中选择一个事件**。
 * **渠道映射事件**：**从预定义的渠道事件列表中选择与相关应用事件（即AppsFlyer事件）对应的事件**。
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 </Accordion>
 
@@ -179,7 +179,7 @@ x-zendesk:
    * **回传内容**：选择要发送的[回传数据](/docs/in-app-event-postback-configuration#回传内容)。
 3. 然后重复以上步骤，逐个添加所有需要发送的事件。
 
-![send_postbacks_as_is_en-us.png](https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png)
+<Image align="center" alt="send_postbacks_as_is_en-us.png" src="https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png" />
 
 **如需发送所有事件，请完成以下操作：**
 
@@ -188,7 +188,7 @@ x-zendesk:
    * **事件来源**：选择相关事件的[发送方式](/docs/in-app-event-postback-configuration#回传中的事件来源选项)。
    * **回传内容**：选择要发送的[回传数据](/docs/in-app-event-postback-configuration#回传内容)。
 
-![send_postbacsk_as_is_no_mapping.png](https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png)
+<Image align="center" alt="send_postbacsk_as_is_no_mapping.png" src="https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png" />
 
 </Accordion>
 
@@ -287,7 +287,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 >
 > 某游戏应用的广告主想要优化在某广告平台上投放的广告系列，同时需要使优化范围精确到已通关10级或50级的用户，或应用内购金额达3美金的用户。
 >
-> [![in_app_event_condition__1_.png](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)
+> <Image align="center" alt="in_app_event_condition__1_.png" src="https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png" />
 >
 > **该广告主应对相关事件及其条件做如下设置：**
 >
@@ -363,7 +363,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
      * 仅发送值
      * 发送值与收入
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png" />
 
 <div id="custom-events" />
 
@@ -405,7 +405,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 1. 在**活跃对接**页中找到您要授权的渠道。
 2. **打开**“权限”选项卡中的**允许配置应用内事件回传**开关。
 
-![adnetwork-permissions-postbacks.png](https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png)
+<Image align="center" alt="adnetwork-permissions-postbacks.png" src="https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png" />
 
 广告平台获得权限后，就能按[在文本字段中输入事件ID](/docs/in-app-event-postback-configuration#映射方式)的方式进行事件映射。
 
@@ -428,7 +428,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 3. 选择代理的事件收入发送权限。
 4. 选择该代理可共享的具体事件。
 
-![agency-events.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+<Image align="center" alt="agency-events.png" src="https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png" />
 
 <div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
 

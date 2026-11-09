@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance:** MediaMath, an AppsFlyer integrated partner, specializes in programmatic marketing technology, with data management platforms and omnichannel DSPs. In addition to click-based mobile attribution, MediaMath also offers retargeting and view-through attribution, which you can record with AppsFlyer.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/mediamath.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mediamath.png" />
 
 ## Setting up Mediamath
 

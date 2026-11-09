@@ -76,7 +76,7 @@ x-zendesk:
 
 2. 咔哒 **创作人脉**.
 
-<Image alt="点击创意connection.png" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
+<Image align="center" alt="点击创意connection.png" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
 
 3. 点击**添加连接**。
 4. 精选 **谷歌云端硬盘**.
@@ -107,7 +107,7 @@ x-zendesk:
 6. 在连接模态中，点击 **选择文件夹**然后选择你想连接的文件夹。
    * 创意管理会同步选定文件夹及其子文件夹中的创意。
 
-<Image alt="点击选择folders.png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
+<Image align="center" alt="点击选择folders.png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
 
 7. 为每个文件夹选择相应的应用。这一步是可选的，但我们推荐这样做，因为它有助于正确组织和匹配创意。
 8. 点击**连接**。
@@ -180,7 +180,7 @@ x-zendesk:
 8. 检查设置和任何验证信息。
 9. 咔哒 **上传到谷歌广告**.
 
-<Image alt="点击上传到谷歌Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
+<Image align="center" alt="点击上传到谷歌Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
 
 <div id="note" />
 
@@ -202,7 +202,7 @@ x-zendesk:
 6. 从中选择创意人员 **所有创意人士** 并将它们分配给广告。
 7. 如果一个创意有多个版本，选择你想上传的相关版本。
 
-<Image alt="Meta Ads.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
+<Image align="center" alt="Meta Ads.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
 
 8. 检查设置和任何验证信息。
 9. 点击**Next**。

@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **At a glance:** OneSignal is the market-leading push notification and in-app messaging provider, supporting over 1 million developers and marketers with a best-of-breed engagement platform.
 
-![onesignal-logo-stack__3_.png](https://files.readme.io/49c50c481c00391f25cf8cc7eb2c35cc166f6a88a10db9120769a7d11affa26a-13013733757841.png)
+<Image align="center" alt="onesignal-logo-stack__3_.png" src="https://files.readme.io/49c50c481c00391f25cf8cc7eb2c35cc166f6a88a10db9120769a7d11affa26a-13013733757841.png" />
 
 OneSignal delivers 8 billion messages every day across the globe. Powered by superior architecture and an easy-to-use platform, the OneSignal delivers messages faster, more efficiently, and at a greater scale than any other solution in the world. Learn more at [onesignal.com](https://onesignal.com/?utm_medium=partner&utm_source=appsflyer)
 
@@ -139,7 +139,7 @@ When using Android, integrating with OneSignal requires that the OneSignal Playe
 
 <Accordion title="Integration tab">
 
-![onesignal-integration-tab.png](https://files.readme.io/95ec88041360d492367ed383aa3242bebe1cd5c5abcff8fba64e7888f0a9c052-360017329277.png)
+<Image align="center" alt="onesignal-integration-tab.png" src="https://files.readme.io/95ec88041360d492367ed383aa3242bebe1cd5c5abcff8fba64e7888f0a9c052-360017329277.png" />
 
 The Integration Tab is divided into different sections as described below.
 
@@ -155,11 +155,11 @@ Learn more about <Anchor target="_blank" href="/marketers/zh/docs/partner-activa
 To connect your OneSignal account with AppsFlyer, enter your app ID in **OneSignal AppID** field.  
 Your OneSignal app ID is available in the OneSignal platform under **Settings** > **Keys & IDs**.
 
-![onesignal-app-id-en_us.png](https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png)
+<Image align="center" alt="onesignal-app-id-en_us.png" src="https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png" />
 
 ### Default postbacks
 
-![onesignal-default-postbacks_en-us.png](https://files.readme.io/07e40365685543a318be8a16c9ea83638634d4a60333338eca0f76d140f84bef-360014377697.png)
+<Image align="center" alt="onesignal-default-postbacks_en-us.png" src="https://files.readme.io/07e40365685543a318be8a16c9ea83638634d4a60333338eca0f76d140f84bef-360014377697.png" />
 
 AppsFlyer can send automatic postbacks to OneSignal following user installs. Use this section to define the source of the users that the postbacks are sent to for each event.  
 Learn more about <Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
@@ -215,6 +215,6 @@ Permissions are not available for this partner.
 
 You can view attribution in the Segment Editor under the OneSignal tags either as the individual device level or when creating a segment to use in a campaign.
 
-![onesignal-view-attribution_en-us.png](https://files.readme.io/ac23c9310cad560f692598127f3e9efb7c2b905efb6fd5de21efabe90bf58eea-360014377737.png)
+<Image align="center" alt="onesignal-view-attribution_en-us.png" src="https://files.readme.io/ac23c9310cad560f692598127f3e9efb7c2b905efb6fd5de21efabe90bf58eea-360014377737.png" />
 
 <div data-zendesk-anchors="h_01H9HWJTEYDEZ8AGVQBHZZTP7K=setting-up-onesignal h_01H9HWJTEY71PTXR1YSAK709QT=set-up-the-appsflyer-sdk h_01H9HWJTEZC62F9JW1KD4Y1CYS=integration-tab h_01H9HWJTEZH60AEPE7AB43X4YG=activate-partner h_01H9HWJTEZJAK2PTF4HQP3DQ1X=general-settings h_01H9HWJTEZCNZX17K86H9KCRFN=onesignal-appid h_01H9HWJTEZ91KR3ZA8NX5BVZCF=default-postbacks h_01H9HWJTEZZYRBS6PPRBBQAXZ5=attribution-link-tab h_01H9HWJTEZNT0EHJ7G4SFRD8K5=cost-tab h_01H9HWJTEZS7TN4FCAN40QB1NT=ad-revenue-tab h_01H9HWJTEZEY5VKCKDZ1Q7APRG=permissions-tab h_01H9HWJTEZZTJFTZC1Z2A6F5QM=view-user-attribution-data-in-onesignal" />

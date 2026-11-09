@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：** AppsFlyer可将您配置的转化值解析为具体事件，并将这些事件信息填充到SKAN面板、原始数据报告以及渠道回传中。
 
-![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
+<Image align="center" alt="SKAdNetwork_-_Custom__1_.png" src="https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png" />
 
 <div id="decode-skan-conversion-value" />
 
@@ -244,7 +244,7 @@ CSV文件的内容须反映转化值的映射方式，一个转化值可以映�
 
 如下图所示，Excel对数值单元格进行格式化时，通常使用逗号作为千位分隔符。此格式不适用于CSV文件上传。 此外，您还需要删除$符号。
 
-![mceclip0.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 您可以在Excel中对这些单元格进行格式化，便可更正此问题。
 
@@ -255,7 +255,7 @@ CSV文件的内容须反映转化值的映射方式，一个转化值可以映�
    界面会打开单元格格式调整窗口。
 3. 选择**Number**。  
 
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 
 1. 取消**Use 1000 separator (,)**（使用逗号为千位分隔符）的勾选。
 2. 【可选】设置数值的**小数点后位数**，默认值为2，最多可精确到小数点后5位。
@@ -277,14 +277,14 @@ CSV文件的内容须反映转化值的映射方式，一个转化值可以映�
 
 **编辑器视图**
 
-![SKCustomeEditor.png](https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png)
+<Image align="center" alt="SKCustomeEditor.png" src="https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png" />
 
 在编辑器中检查CSV文件时请特别注意以下几点：
 
 * **空格：** 请确保字段分隔符（即逗号）的前后没有空格。您可以在Excel中使用@trim命令来删除空格。
 * **event\_revenue\_usd：** 确保event\_revenue\_usd一列中没有逗号或$符号。  
 
-  ![mceclip1.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+  <Image align="center" alt="mceclip1.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 </Accordion>
 

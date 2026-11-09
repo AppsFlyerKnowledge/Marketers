@@ -96,7 +96,7 @@ x-zendesk:
 
 ### 速览
 
-[![](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg" />
 
 用户在重装激活后完成的应用内事件可分为归因的自然量、归因的非自然量以及未归因的自然量，具体取决于重装激活后的事件归因状态（见下表）。
 

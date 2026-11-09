@@ -133,7 +133,7 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 #### 测试Claude连接
 
 1. 在任意聊天窗口中，点击设置按钮。   
-   <Image alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
 2. 如果 AppsFlyer MCP 设置正确，菜单中会出现 AppsFlyer 工具。
 
 </Accordion>

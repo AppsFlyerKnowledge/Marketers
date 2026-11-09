@@ -76,7 +76,7 @@ Referrer可以用来对预装激活和点击下载进行归因。详情请见下
 1. 从AppsFlyer的侧边栏中选择**协作** > **活跃对接**。
 2. 选择一个预装渠道。
 3. 在**渠道对接**选项卡中打开**预装归因**开关。  
-   [<Image alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />](https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png)
+   <Image align="center" alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />
 4. 设置**预装回溯窗口**的时长，范围：60天。
 5. 【可选】打开**预装具有同等归因优先级**的开关。  
    该开关打开后，确定性点击与预装具有相同的归因优先级。也就是说，如果AppsFlyer在预装Referrer互动与应用激活之间记录到一次确定性点击，会根据末次触达的归因逻辑将该次激活归因到点击而非预装referrer。

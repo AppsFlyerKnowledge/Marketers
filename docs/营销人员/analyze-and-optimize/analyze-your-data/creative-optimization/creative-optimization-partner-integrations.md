@@ -24,7 +24,7 @@ x-zendesk:
 
 > **概要：** 配置渠道对接后，您就能自动将所有素材数据导入素材优化面板。
 
-![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
+<Image align="center" alt="Creative integrations New.jpg" src="https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg" />
 
 <div id="about-partner-integrations" />
 
@@ -70,7 +70,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材效果对接**部分。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**Adikteev**。
 4. 选择您要推广的应用。
@@ -96,7 +96,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**Adjoe GmbH**。
 4. 选择您要推广的应用。
@@ -121,7 +121,7 @@ x-zendesk:
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。
 
-   ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+   <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**AppLovin**。
 4. 选择您要推广的应用。
@@ -154,7 +154,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 点击**渠道**列表并选择**Google Ads (AdWords)**。
 4. 选择您要推广的应用。
@@ -183,7 +183,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**ironSource**。
 4. 选择您要推广的应用。
@@ -203,7 +203,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**Liftoff**。
 4. 选择您要推广的应用。
@@ -226,7 +226,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**Meta Ads**。
 4. 选择您要推广的应用。
@@ -257,7 +257,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 在 **合作伙伴** 列表中，选择 **Mintegral**。
 4. 选择您要推广的应用。
@@ -303,7 +303,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. 点击 **+新对接**。
 3. 在**合作伙伴**列表中，选择 **Persona.ly**。
 4. 选择您要推广的应用。
@@ -325,7 +325,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**Reddit**。
 4. 选择您要推广的应用。
@@ -369,7 +369,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**Reddit**。
 4. 选择您要推广的应用。
@@ -412,7 +412,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**Snapchat**。
 4. 选择您要推广的应用。
@@ -438,7 +438,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**TikTok**。
 4. 选择您要推广的应用。
@@ -490,17 +490,17 @@ x-zendesk:
 4. 点击 **+ Add key**。  
    这样界面就会显示Key ID和Secret key。
 5. 复制该**Key ID**和**Secret key**。  
-   ![Unity get Key ID & Secret key image.jpg](https://files.readme.io/9c4d1b1e0e476546b8f8be3a7375c610c48db6f94344a3dbe48277a6d115f52e-20344146224401.jpg)
+   <Image align="center" alt="Unity get Key ID & Secret key image.jpg" src="https://files.readme.io/9c4d1b1e0e476546b8f8be3a7375c610c48db6f94344a3dbe48277a6d115f52e-20344146224401.jpg" />
 
 <Anchor target="_blank" href="https://services.docs.unity.com/advertise/v1/index.html#section/General-Information/Resource-IDs-Used-in-the-API-Calls">**Organization core ID**</Anchor>的获取方式如下：
 
 1. 在Unity Ads后台的侧边栏中点击**Products**。
 2. 点击**Grow**。  
-   ![Unity Org ID step 1 cropped.jpg](https://files.readme.io/5e8d2f54f5999c58b2e2b3591ae889f5051cae4073aa6c5ef17e16da6a60131f-22859368875153.jpg)
+   <Image align="center" alt="Unity Org ID step 1 cropped.jpg" src="https://files.readme.io/5e8d2f54f5999c58b2e2b3591ae889f5051cae4073aa6c5ef17e16da6a60131f-22859368875153.jpg" />
 3. 点击**Unity Ads User Acquisition**。  
-   <Image alt="Unity Org ID step 2 cropped.jpg" src="https://files.readme.io/07a1c8e878a9ed7b6832012b3261866477b825d3b23e4973b8c5dadd675973e2-22859368883473.jpg" width="347px" />
+   <Image align="center" alt="Unity Org ID step 2 cropped.jpg" src="https://files.readme.io/07a1c8e878a9ed7b6832012b3261866477b825d3b23e4973b8c5dadd675973e2-22859368883473.jpg" width="347px" />
 4. 点击**Settings**。  
-   ![Get Organization core ID instructions 2 arrows.jpg](https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg)
+   <Image align="center" alt="Get Organization core ID instructions 2 arrows.jpg" src="https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg" />
 5. 复制该**Organization core ID**。
 
 <div id="to-select-a-service-account-organization-role" />
@@ -518,7 +518,7 @@ x-zendesk:
      * Advertise API Admin
      * Advertise API Viewer
      * Advertise API Creative Packs Editor  
-       <Image alt="Org roles step 3 without role names.jpg" src="https://files.readme.io/7b46417e6389f7c3675cc6f72b33e9b2833d5c561ef1d79122ed24605533b265-20347535827217.jpg" width="471px" />
+       <Image align="center" alt="Org roles step 3 without role names.jpg" src="https://files.readme.io/7b46417e6389f7c3675cc6f72b33e9b2833d5c561ef1d79122ed24605533b265-20347535827217.jpg" width="471px" />
 5. 点击**Save**。
 
 **请注意：** 如果您没有这些角色的访问权限，请联系您的Unity客户成功经理或发送邮件至[unityads-support@unity3d.com](mailto:unityads-support@unity3d.com)让Unity侧开放必要权限。
@@ -530,7 +530,7 @@ x-zendesk:
 1. 在**素材优化**面板中完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**Unity Ads**。
 4. 选择您要推广的应用。
@@ -553,7 +553,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**X Ads**。
 4. 选择您要推广的应用。
@@ -579,7 +579,7 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入**素材对接**部分。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. 点击 **+新对接**。
 3. 在**渠道**列表中选择**YouAppi**。
 4. 选择您要推广的应用。
@@ -624,11 +624,11 @@ x-zendesk:
 1. 登入AF后台，进入**素材优化**面板，并根据实际情况完成以下任一操作：
    * 如果您尚未配置任何渠道对接，请点击 + **添加新对接**。
    * 否则请点击面板右上方的⋮图标，进入素材效果对接部分。  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. 点击 **+新对接**。
 3. 在渠道对接窗口中选择相关的渠道和应用，然后打开**代理**开关。在代理 下拉菜单中，选择相关代理。  
 
-   <Image alt="创意代理.png" src="https://files.readme.io/74f0dc492bc530278687becdd0061e9c06081653b69ed525f237b97a9568e413-38395601553169.png" width="288px" />
+   <Image align="center" alt="创意代理.png" src="https://files.readme.io/74f0dc492bc530278687becdd0061e9c06081653b69ed525f237b97a9568e413-38395601553169.png" width="288px" />
 4. 点击**保存**。  
    完成上述步骤后代理对接即已添加完毕。
 
@@ -651,7 +651,7 @@ x-zendesk:
    **<Image alt="从 “协作” 中单击 “合作伙伴 Marketplace.png”" src="https://files.readme.io/96485cefae79412a680915810c16b23619f73d9109212bfc45d1c0d42c2e529a-39258887136785.png" width="33.9%" />**
 2. 从页面顶部的搜索栏中搜索相关的合作伙伴代理，然后点击该合作伙伴。
 
-   <Image alt="Search bar.png" src="https://files.readme.io/f1ff34a547af45eec73e7abd41105bbab9ff12d4a2636ed4b99634985ec58044-39258887138449.png" width="1210px" />
+   <Image align="center" alt="Search bar.png" src="https://files.readme.io/f1ff34a547af45eec73e7abd41105bbab9ff12d4a2636ed4b99634985ec58044-39258887138449.png" width="1210px" />
 3. 在合作伙伴页面上，转到**权限**选项卡并启用**代理权限**
 
    agency\_permissions.png

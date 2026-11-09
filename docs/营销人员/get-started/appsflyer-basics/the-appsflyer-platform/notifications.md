@@ -155,7 +155,7 @@ x-zendesk:
 3. 查看并批准权限请求。
    1. **如果您是Slack管理员**。
       1. 在Slack中点击相应的Slack工作区以完成授权。  
-         <Image alt="" src="https://a.slack-edge.com/8e8e4/helpcenter/img/workspace-picker@2x.jpg" width="263px" />  
+         <Image align="center" alt="" src="https://a.slack-edge.com/8e8e4/helpcenter/img/workspace-picker@2x.jpg" width="263px" />
          注意：确保您连接了正确的Slack工作区。
       2. 前往**工具与设置** -> **管理应用**
       3. 在**管理面板**中，选择**请求** 。

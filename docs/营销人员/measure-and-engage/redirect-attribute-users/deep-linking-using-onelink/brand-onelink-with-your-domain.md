@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：** 使用OneLink链接的广告主可以为链接打上品牌域名，从而优化投放效果并提升品牌曝光。
 
-![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
+<Image align="center" alt="Branded_1__3_.jpg" src="https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png" />
 
 <div id="branded-domains" />
 
@@ -76,7 +76,7 @@ x-zendesk:
 
 **指向AppsFlyer服务器的品牌域名**
 
-[![](https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png)](https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png)
+<Image align="center" alt="" src="https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png" />
 
 **前期准备：**
 
@@ -153,15 +153,15 @@ AppsFlyer 管理的 SSL 是大多数客户的默认和推荐选项，无需额�
 
 1. [创建品牌域名](/docs/brand-onelink-with-your-domain#品牌域名的设置)。
 2. 在 AppsFlyer 中，从 **“互动”** > **“品牌域名”** 中，将鼠标悬停在相关域名上，然后选择“自定义 SSL 证书”图标。   
-   <Image alt="SSL证书图标 最新极简.png" src="https://files.readme.io/8b22a41fd755a3f36e8eaf4a869b107661894d81504bbfb44e1fc728b9b06751-45231876708497.png" width="1044px" />
+   <Image align="center" alt="SSL证书图标 最新极简.png" src="https://files.readme.io/8b22a41fd755a3f36e8eaf4a869b107661894d81504bbfb44e1fc728b9b06751-45231876708497.png" width="1044px" />
 3. 填写证书详情表。   
-   <Image alt="填写表格以生成 CSR 文件.png" src="https://files.readme.io/4327a4da0cbcc6243c9bbdbec21fe4f91d7fe701ccbffca99e629a5eadd248e8-45231876709649.png" width="66.18%" />
+   <Image align="center" alt="填写表格以生成 CSR 文件.png" src="https://files.readme.io/4327a4da0cbcc6243c9bbdbec21fe4f91d7fe701ccbffca99e629a5eadd248e8-45231876709649.png" width="66.18%" />
 4. 点击 **“下载 CSR”** 下载您刚刚填写的表格副本。  
    下载CSR文件
 5. 请将您刚刚下载的 CSR 文件提供给您选择的 SSL 证书颁发机构。
 6. 一旦他们给你新的 SSL 证书，就把它上传回 AppsFlyer。
 
-<Image alt="上传新的 SSL 证书到 AF.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
+<Image align="center" alt="上传新的 SSL 证书到 AF.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
 
 <div id="note-4" />
 

@@ -85,7 +85,7 @@ Meta Web对接仅支持发送激活和应用内事件的回传。
      **请注意：** 请确保您在右上角的下拉菜单中选择的业务（Business）正确无误。
   2. 从**Events Manager**侧边栏菜单中选择**Data sources**。您会看到一个pixel列表。如果您选定的业务尚无pixel，可以在该窗口中创建一个pixel。
   3. 复制相关pixel名称下方的pixel ID，并将其粘贴到AppsFlyer后台对接页面的Pixel ID字段中。  
-     <Image alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
+     <Image align="center" alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
 * **Access token（访问令牌）：** 输入相关的token。您可以按照[这里的操作说明](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)来获取此信息。
 * **限制Meta ads对用户个人信息的使用（CCPA）：** 打开此开关可确保数据的使用方式符合相关的<Anchor target="_blank" href="/marketers/zh/docs/send-opendsr-api-requests">数据保护法</Anchor>规定。  
   **请注意：** 在CCPA隐私条例合规的情况下，来自美国加州Meta ads用户的数据会受到限制。

@@ -141,7 +141,7 @@ Meta安装引用提供存储在设备本地的额外活动元数据。这可以�
 安全。无论您在效果报告中选择哪些媒体渠道的组合，报告的字段结构都是不变的，其中的数据可一直细分到广告系列层级。  
 但是如果您仅选择Meta ads，AppsFlyer就会在报告中添加4个字段，其中包含的信息可一直深入到广告级别。新增的列包括广告组名称、广告组 ID、广告组（即单个广告）名称和广告组 ID。
 
-[![](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)
+<Image align="center" alt="" src="https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png" />
 
 </Accordion>
 
@@ -159,7 +159,7 @@ Meta安装引用提供存储在设备本地的额外活动元数据。这可以�
 
 <Accordion title="收到以下警告时该怎么办？">
 
-[![](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)
+<Image align="center" alt="" src="https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png" />
 
 * 请检查您的FacebookApp ID是否正确无误，并检查该ID是否受地理或年龄限制。
 * 如果归因已正常生效，就表示该应用已在Meta Developer Portal中上架，您可以忽略上述报错消息。
@@ -297,7 +297,7 @@ AppsFlyer可以获取Meta ads上的广告消耗数据（包括点击和展示）
 
 如果广告主使用Meta投放广告，就会在AppsFlyer后台看到以下信息：
 
-![mceclip2.png](https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png" />
 
 The cost information is provided by Meta ads to AppsFlyer.而**激活**数据则是由AppsFlyer基于我们自己的归因逻辑计算得出的，因此Meta ads和AppsFlyer后台的eCPI数据一般都会有一定差异。
 
@@ -434,7 +434,7 @@ Meta ads不支持在<Anchor target="_blank" href="/marketers/zh/docs/master-api-
 1. 从Meta ads后台进入**Settings** > **Business Integration**。
 2. 在**Active**选项卡中删除AppsFlyer对接。  
 
-   [![](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)
+   <Image align="center" alt="" src="https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png" />
 3. 进入AppsFlyer面板，然后使用新账户连接成本数据。
 
 </Accordion>
@@ -511,7 +511,7 @@ Meta ads不支持在<Anchor target="_blank" href="/marketers/zh/docs/master-api-
 
 广告主需完成下图所示的所有配置后，代理才能管理其Meta ads上的广告投放：
 
-[![advertiser-vs-agency-facebook-int-new.png](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)
+<Image align="center" alt="advertiser-vs-agency-facebook-int-new.png" src="https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png" />
 
 </Accordion>
 
@@ -573,7 +573,7 @@ Meta Ads是通过Meta ads账号来识别用户的，而有些用户会将同一�
 
 您可以使用流量入口维度来比较各流量入口的用户质量。
 
-![Facebook_channels.png](https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png)
+<Image align="center" alt="Facebook_channels.png" src="https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png" />
 
 </Accordion>
 

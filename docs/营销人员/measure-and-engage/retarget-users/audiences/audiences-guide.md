@@ -27,7 +27,7 @@ x-zendesk:
 
 > **概要：** 本文介绍了如何使用AppsFlyer的受众共享（Audiences）功能创建人群包，并将其连接到渠道平台用于投放，从而提升拉新和再营销广告的投放效率。
 
-![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
+<Image align="center" alt="Intro_image.png" src="https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png" />
 
 <div id="audiences-basics" />
 
@@ -128,7 +128,7 @@ AppsFlyer的受众共享产品（Audiences）能帮助您快速完成人群分�
 >
 > 常见的使用场景如下：假设您想要促使您应用中尚未购买任何商品的活跃用户完成首次购买，您可以选择“吸引用户购买”的人群包，并在其中定义具体的应用内购买事件。然后您可以将该人群包连接到您使用的渠道，并投放一系列推广广告，吸引用户购买产品，并将其引导至应用中的购买页面。
 >
-> ![Encourage_purchase_image_this_one.jpeg](https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg)
+> <Image align="center" alt="Encourage_purchase_image_this_one.jpeg" src="https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg" />
 
 **请按以下步骤创建推荐人群包：**
 
@@ -199,7 +199,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
     * 如果某个设备ID关联到了两个不同的CUID，则取最近关联的那个CUID。
     * 将CUID作为标识符创建人群包时，须确保AppsFlyer接收到的相关激活（而不仅仅是激活后事件）中包含其关联的CUID数据，从而完成CUID与相关设备的完整关联，同时添加其它设备标识符（即GAID、IDFA），实现数据扩充。<Anchor target="_blank" href="/marketers/zh/docs/customer-user-id-field-cuid#设置cuid">了解更多</Anchor>
 
-<Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+<Image align="center" alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
 
 <div id="h_01K0PAQ4SFXBK0TZ3MH07PWN4A" />
 
@@ -365,7 +365,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 
 <Accordion title="用于人群细分的规则组合">
 
-![audience_segmentation_rulesets.jpg](https://support.appsflyer.com/hc/article_attachments/30259018214801)
+<Image align="center" alt="audience_segmentation_rulesets.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018214801" />
 
 * 人群细分规则组合由一条或多条规则组成，帮助广告主实现精准的人群筛选。
 * 通过逻辑运算符来组合规则：and（并且）、or（或者）、exclude（排除）。
@@ -388,7 +388,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 >
 > 上个月卸载了该应用的纽约用户
 >
-> ![example_location_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/30258966552209)
+> <Image align="center" alt="example_location_based_rule.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966552209" />
 
 <div id="example-user-attributes-based-rule" />
 
@@ -396,7 +396,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 >
 > 选出具有以下特征的用户：在最近七天内至少打开应用一次，且最喜欢的武器是剑。
 >
-> ![example_user_attributes_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/30258966566801)
+> <Image align="center" alt="example_user_attributes_based_rule.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966566801" />
 
 <div id="example-revenue" />
 
@@ -404,7 +404,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 >
 > 选出在过去7天内激活应用并消费1美元的用户。
 >
-> ![example_revenue.jpg](https://support.appsflyer.com/hc/article_attachments/30258966567825)
+> <Image align="center" alt="example_revenue.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966567825" />
 
 <div id="example-owned-media-filter" />
 
@@ -414,7 +414,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 >
 > 下图示例中筛选出的用户具有以下特征：在最近7天内至少打开过一次应用，他们的激活被归因到某次邮件营销的某个广告系列的某些广告组的某些广告。
 >
-> ![Owned_media_example.jpg](https://support.appsflyer.com/hc/article_attachments/30258966580753)
+> <Image align="center" alt="Owned_media_example.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966580753" />
 >
 > 您可以使用人群包在自有或付费媒体上进行定向投放，通过个性化广告内容吸引这些用户再次使用您的应用，或在投放广告时将这些用户列入禁投名单，避免无效广告打扰用户。
 
@@ -426,7 +426,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 >
 > 选出那些在最近两天内点击了广告但没有激活应用的潜在用户，建立人群包。
 >
-> ![example_remarketing.jpg](https://support.appsflyer.com/hc/article_attachments/30259018231313)
+> <Image align="center" alt="example_remarketing.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018231313" />
 >
 > 这些用户最近点击过您的广告，表示他们对您的应用感兴趣，但出于某些原因没有安装应用，或者安装了应用但没有打开。有些用户可能只需要一个小小的提醒，就能推动其激活应用。其他人可能需要查看您应用的更多展示或功能才能实现最终转换。因此，对于那些已点击而未激活的用户，建议您不要投放用于拉新的主素材，而是使用其他素材来做再营销。
 
@@ -497,7 +497,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 6. 选择您向该渠道开放共享的用户标识符。
    * 各渠道支持的标识符可能会有所不同。该列表中仅显示选定渠道支持的标识符。
    * AF仅会上传符合您<Anchor target="_blank" href="/marketers/zh/docs/audiences-user-identifier-policy">账户层级用户标识符规定</Anchor>的标识符。如果您选择的标识符不符合账户层级的规定，界面会显示警告消息。  
-     ![doctored_connection_image.jpg](https://support.appsflyer.com/hc/article_attachments/30258966624017)
+     <Image align="center" alt="doctored_connection_image.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966624017" />
 7. 点击**保存**。
 
 </Accordion>
@@ -531,7 +531,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 
 <Accordion title="受众共享面板">
 
-[![new_dashboard_image_doctored.jpg](https://support.appsflyer.com/hc/article_attachments/30258966628625)](https://support.appsflyer.com/hc/article_attachments/30258966628625)
+<Image align="center" alt="new_dashboard_image_doctored.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966628625" />
 
 | 栏位 | 描述 |
 | --- | --- |
@@ -579,7 +579,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 
 初始的**投放指标**视图会呈现各人群包的投放数据摘要：
 
-[<Image alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018286225" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30258966633233)
+[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018286225" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30258966633233)
 
 | 表头 | 描述 |
 | --- | --- |
@@ -595,7 +595,7 @@ AF会通过用户标识符来统计符合指定规则的用户。可选的用户
 
 详情视图会显示按适用渠道和广告系列进行细分的数据。
 
-[![campaign_metrics_detailed_view.jpg](https://support.appsflyer.com/hc/article_attachments/30259018293649)](https://support.appsflyer.com/hc/article_attachments/30259018290321)
+[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018293649" />](https://support.appsflyer.com/hc/article_attachments/30259018290321)
 
 如果您选定的人群包被用于多个应用的定向推广，请使用下拉菜单![pin_A.png](https://support.appsflyer.com/hc/article_attachments/30259018295697)按应用筛选数据。
 

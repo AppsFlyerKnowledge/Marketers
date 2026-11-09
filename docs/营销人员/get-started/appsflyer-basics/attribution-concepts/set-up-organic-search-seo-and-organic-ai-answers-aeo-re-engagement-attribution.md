@@ -33,7 +33,7 @@ x-zendesk:
 
 #### 链路
 
-![自然量](https://files.readme.io/4b33060cfa30a4e2786c4a3a213ca41223ae276d63c97ab7c2cb5a997a4b010c-16540659217809.png)
+<Image align="center" alt="自然量" src="https://files.readme.io/4b33060cfa30a4e2786c4a3a213ca41223ae276d63c97ab7c2cb5a997a4b010c-16540659217809.png" />
 
 1. 用户在其移动端浏览器的搜索引擎（Google、Bing等等）中搜索某个关键词后，该搜索引擎显示了数条可点击的搜索结果。
 2. 您的网页开发人员对部分搜索结果进行了映射配置，使其通过安卓的App Link或iOS的Universal Link吊起相关应用。如果用户已安装相关应用，则点击这些搜索结果时就会直接吊起应用（不会先跳转到应用商店）。

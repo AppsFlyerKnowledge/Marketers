@@ -67,7 +67,7 @@ AppsFlyer的SDK支持多种功能，包括：追踪激活与卸载、referral、
    1. 从AppsFlyer后台进入**用户体验与深度链接** > **OneLink 自定义链接。**
    2. 在**OneLink 模板**菜单中，选择所需的模板。
    3. 复制右侧显示的ID。   
-       [![OneLink-template-id.png](https://files.readme.io/bb9524b5aecacba00c7f4801f7c854567119c032fa99a6d39122079e3f7956d1-small-4631542470673.png)](https://files.readme.io/bb9524b5aecacba00c7f4801f7c854567119c032fa99a6d39122079e3f7956d1-small-4631542470673.png)
+       <Image align="center" alt="OneLink-template-id.png" src="https://files.readme.io/bb9524b5aecacba00c7f4801f7c854567119c032fa99a6d39122079e3f7956d1-small-4631542470673.png" />
 3. **OneLink URL：** 在AppsFlyer中为某一特定广告活动生成的专属OneLink链接。了解更多关于<Anchor target="_blank" href="/marketers/zh/docs/onelink-guide">生成OneLink</Anchor>的信息。
 
 <div data-zendesk-anchors="introduction=%E7%AE%80%E4%BB%8B h_01JQ6D9NCM8K3E6GS12V2CR1CH=%E7%AE%80%E4%BB%8B integrating-tapcart-with-appsflyer=%E5%B0%86tapcart%E5%AF%B9%E6%8E%A5%E8%87%B3appsflyer h_01JQ6D9NCM95VJB19G2F7SDRG1=%E5%B0%86tapcart%E5%AF%B9%E6%8E%A5%E8%87%B3appsflyer default-inapp-events-configured-in-the-appsflyer-sdk=appsflyer-sdk%E4%B8%AD%E9%A2%84%E8%AE%BE%E7%9A%84%E5%BA%94%E7%94%A8%E5%86%85%E4%BA%8B%E4%BB%B6 h_01JQ6D9NCMYBNJ6WJ09R1EHXH4=appsflyer-sdk%E4%B8%AD%E9%A2%84%E8%AE%BE%E7%9A%84%E5%BA%94%E7%94%A8%E5%86%85%E4%BA%8B%E4%BB%B6 enable-deep-linking-with-appsflyer=%E5%90%AF%E7%94%A8%E4%B8%8Eappsflyer%E7%9A%84%E6%B7%B1%E5%BA%A6%E9%93%BE%E6%8E%A5 h_01JQ6D9NCMC97JQ759B44M9TDJ=%E5%90%AF%E7%94%A8%E4%B8%8Eappsflyer%E7%9A%84%E6%B7%B1%E5%BA%A6%E9%93%BE%E6%8E%A5" />

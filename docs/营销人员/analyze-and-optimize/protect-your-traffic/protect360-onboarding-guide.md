@@ -74,7 +74,7 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 >
 > <Anchor target="_blank" href="/marketers/zh/docs/user-management">管理员账号</Anchor>可根据业务目标，随时在**已实施**和**已标记**模式之间进行切换。<Anchor target="_blank" href="/marketers/zh/docs/beta-fraud-protection-studio#key-concepts">点击此处了解详情</Anchor>。
 
-<Image alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
 
 提示：在熟悉Protect360的过程中，我们强烈建议您的团队前往作弊防护操作台中的“应用检测评估”（App detection evaluation）卡片，基于应用层级测试并理解各项设置。
 
@@ -84,7 +84,7 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 
 您可以通过三种方式导出Protect360数据：<Anchor target="_blank" href="/marketers/zh/docs/protect360-raw-data-reports#protect360原始数据报告简介">原始数据报告</Anchor>、<Anchor target="_blank" href="/marketers/zh/docs/protect360-raw-data-reports#pull-api">Pull API</Anchor>或<Anchor target="_blank" href="/marketers/zh/docs/protect360-raw-data-reports#data-locker">Data Locker</Anchor>。无论选择哪种方式，请务必正确配置数据连接，以确保作弊数据报告的准确性和分析的有效性。
 
-<Image alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
 
 <div id="important" />
 
@@ -124,7 +124,7 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 > * 已标记的应用内事件
 > * 归因后标记的应用内事件
 
-<Image alt="" src="https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png" width="624px" />
 
 #### **Pull API**
 
@@ -172,7 +172,7 @@ Protect360是一款先进的广告作弊防护解决方案，具备对作弊活�
 
 <Anchor target="_blank" href="/marketers/zh/docs/protect360-dashboard">Protect360面板</Anchor>可为您提供作弊数据的可视化概览，助您深入调查各类作弊行为，更清晰地理解检测机制及其对广告活动的影响。
 
-<Image alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
 
 </Accordion>
 

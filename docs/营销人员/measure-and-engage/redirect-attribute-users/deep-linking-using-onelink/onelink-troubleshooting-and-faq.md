@@ -142,7 +142,7 @@ Universal Link、App Link和URI scheme都是安全的应用**打开**方式。�
 **要删除模板：**
 
 2. 选择OneLink模板。
-3. <Image alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
+3. <Image align="center" alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
 
 **请注意：** 如果被删除的模板下还有在用的OneLink链接，<strong>这些链接会失效，无法让用户跳转到应用商店。</strong>因此，在删除任何模板之前，请务必确保当前没有正在使用该模板的OneLink链接。此外，您也可以尝试根据实际需求更改现有模板的配置，省去删除模板的麻烦。
 
@@ -295,7 +295,7 @@ AppsFlyer将Chromebooks上的应用视为安卓应用。
 
 启用备用URL时，请在OneLink模板或自定义链接设置中专门为未安装应用的用户配置相关的链接行为，让其跳转到其他URL。
 
-[![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
+<Image align="center" alt="different_url.png" src="https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png" />
 
 该设置会在备用链接中添加`af_ios_url`和`af_android_url`参数，表示跳转终点，让iOS用户跳转到`af_ios_url`参数中指定的页面，安卓用户跳转到`af_android_url`参数中指定的页面。
 
@@ -684,11 +684,11 @@ Facebook等社交媒体应用在部分情况下会阻止iOS的Universal Link完�
 
 为了克服这个问题，OneLink会识别出微信中发生的点击，并打开一个专用的落地页，引导用户点击选项按钮并选择**在浏览器中打开**。完成该操作后，界面就会打开OneLink模板中设置的跳转链接页面。
 
-![WeChat_a.jpg](https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg)
+<Image align="center" alt="WeChat_a.jpg" src="https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg" />
 
 如果用户将微信的语言设置为中文，OneLink会生成本地化版的落地页：
 
-![WeChat_b.jpg](https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg)
+<Image align="center" alt="WeChat_b.jpg" src="https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg" />
 
 </Accordion>
 

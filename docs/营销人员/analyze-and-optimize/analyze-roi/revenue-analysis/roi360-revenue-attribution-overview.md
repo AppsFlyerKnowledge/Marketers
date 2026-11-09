@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概览：** 收入数据可帮助您清晰、全面地了解 ROI 和 ROAS。我们提供多种不同的产品和功能，帮助广告主汇总并查看收入数据。
 
-![roi_revenue.png](https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png)
+<Image align="center" alt="roi_revenue.png" src="https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png" />
 
 <div id="overview" />
 

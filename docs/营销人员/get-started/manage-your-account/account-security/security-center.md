@@ -40,7 +40,7 @@ x-zendesk:
 | <span id="appsflyer-api-and-s2s-tokens"></span><Anchor target="_blank" href="/marketers/zh/docs/managing-appsflyer-tokens">AppsFlyer token</Anchor> | 使用AppsFlyer token，对API和S2S的调用请求进行验证。管理并定期更换token，充分保障数据安全。 |
 | <span id="audit-log"></span><Anchor target="_blank" href="/marketers/zh/docs/audit-log">审计日志</Anchor> | 审核账户使用情况，识别未经授权的访问，包括登录、用户管理操作和API调用。 |
 
-[![new-security-center.jpg](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)
+<Image align="center" alt="new-security-center.jpg" src="https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg" />
 
 **安全中心的访问方式：**
 

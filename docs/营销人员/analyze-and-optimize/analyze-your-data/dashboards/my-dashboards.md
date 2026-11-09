@@ -65,14 +65,14 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 1. 在 AppsFlyer 中，从侧边菜单进入 **My Dashboards** 并点击 +（创建新面板）。
    * 或者，在面板的右上角，点击**新建** > + 创建新面板。  
-     [<Image alt="" src="https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png" width="222px" />](https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png)
+     <Image align="center" alt="" src="https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png" width="222px" />
 2. 输入您的面板名称，选择您希望包含的应用，然后单击**保存**。
 3. 单击 **+ 新微件**并选择您想要添加的微件类型（表格、KPI、折线图、条形图、柱状图或环形图）。
 4. 通过添加您想要的指标和按维度分组来配置微件，然后单击**应用**。
 5. 在面板的右上角，单击**保存**。  
-   [<Image alt="" src="https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png" width="354px" />](https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png)
+   <Image align="center" alt="" src="https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png" width="354px" />
 6. 在面板的右上角，单击**共享**按钮，选择是将面板设为私密还是与其他团队成员共享，然后单击**完成**。  
-   [<Image alt="" src="https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png" width="354px" />](https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png)
+   <Image align="center" alt="" src="https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png" width="354px" />
 
 </Accordion>
 
@@ -87,10 +87,10 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 1. 在面板的右上角，单击 **+ 创建新微件**并选择您想要创建的微件类型：表格、KPI、图表、应用内事件表、应用内事件标、文本或自定义指标。  
    **请注意：应用内事件图表可快速显示头部事件和用户行为。**
 
-   [<Image alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33445429021073)
+   [<Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33445429021073)
 
    * 如果您选择图表，当图表打开时，您还可以选择图表的类型：折线图、条形图、柱状图、甜甜圈图、堆叠区域图或组合图（折线图和柱状图的混合）。  
-     [<Image alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/33733674242449)
+     [<Image align="center" alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/33733674242449)
    * 文本微件的特性在于，它能够帮助您为面板各部分添加标题，分享使用指南、知识、洞察、目标或使用说明，帮助团队成员更好地理解内容，从而将面板打造成为清晰、便于使用的报告。
    * **事件插件**允许您按事件名称进行分组，以并排比较 LTV 和实际（活动）时段内不同来源、地理位置和其他维度的活动、收入和参与度。使用事件小工具查看哪些应用内事件带来了最独特的用户和收入，按媒体来源衡量收入趋势，并通过多达 4 个分组级别深入了解事件表现。
 2. [可选] 输入您的微件名称。
@@ -178,7 +178,7 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 1. 在 AppsFlyer 中，前往 “**我的**控制面板”。
 2. 打开自定义维度入口点：
    * 在仪表板菜单中，单击 “**菜单”** 图标 > “**自定义维度**”。  
-     <Image alt="" src="https://files.readme.io/9dc64c842f35fb65978f6687fbd9f6a9ea03c7f1b689eb35b3eecfbf696ff3b0-47097227614481.png" width="25%" />
+     <Image align="center" alt="" src="https://files.readme.io/9dc64c842f35fb65978f6687fbd9f6a9ea03c7f1b689eb35b3eecfbf696ff3b0-47097227614481.png" width="25%" />
    * 或者，在小组件设置的 “**分组依**据” 或 “**过滤器**” 字段中，单击 “**创建自定义维度**”。
 3. 单击 “**新建维度**”。
 4. 选择基本尺寸：
@@ -205,7 +205,7 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 1. 在 AppsFlyer 中，前往 “**我的**控制面板”。
 2. 点击 **菜单图标** > **自定义维度**。  
-   <Image alt="" src="https://files.readme.io/6368f5ba2dcd0d9db622a5502f6f1ba120c506725f82fb522947fdf9652218b8-47097241547793.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/6368f5ba2dcd0d9db622a5502f6f1ba120c506725f82fb522947fdf9652218b8-47097241547793.png" width="25%" />
 3. 选择自定义维度。
 4. 根据是否使用智能横幅，执行以下步骤：
    * 要编辑自定义维度，请更新设置并单击 “**保存**”。
@@ -219,7 +219,7 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 4. 在**分组依据**中，打开维度选择器。
 5. 将鼠标悬停在自定义维度上。
 6. 单击 “**编辑”** 图标。  
-   <Image alt="" src="https://files.readme.io/89f253d8545855cf12411f66ee81c8abe51d49c65823bcb1b7de52bcee74af75-47097241548433.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/89f253d8545855cf12411f66ee81c8abe51d49c65823bcb1b7de52bcee74af75-47097241548433.png" width="25%" />
 7. 更新自定义维度。
 8. 点击**保存**。
 
@@ -238,7 +238,7 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 3. 打开小部件设置。
 4. 要按自定义维度对数据进行分组，请在**分组依**据中选择自定义维度。
 5. 要按自定义维度筛选数据，请在**筛选**器中选择自定义维度。  
-   <Image alt="" src="https://files.readme.io/1bcd074f316d91eb956e689e45d1199978a9dee57d266019dfb5bb5bfb02a578-47097241548945.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/1bcd074f316d91eb956e689e45d1199978a9dee57d266019dfb5bb5bfb02a578-47097241548945.png" width="25%" />
 6. 点击**启用**。
 
 点击**保存**。
@@ -394,7 +394,7 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 当前的视图类型是**统一**和**用户获取**。
 
-<Image alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
 
 <div id="widgets" />
 
@@ -470,7 +470,7 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 1. 在 AppsFlyer 左侧菜单中，点击 **My Dashboards**。
 2. 从已固定和最近查看的面板列表中选择您想查看的面板。
 3. 如果您想要的面板视图不在已固定和最近查看的面板列表中，请在当前显示的面板顶部，从下拉菜单中选择您想要查看的面板。  
-   [![](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)
+   <Image align="center" alt="" src="https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png" />
 4. 选择应用、视图类型、归因日期范围和展示筛选条件。  
    [<Image alt="" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />image\_\_9\_.png](https://support.appsflyer.com/hc/article_attachments/33445413132561)
 
@@ -488,7 +488,7 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 2. 单击 “**新建**” <Image alt="" src="https://files.readme.io/2e083cda3a0ec69461d3cc520e2d7b7c4189561af5585e15d7f6f9bd06f18f2a-46312758928785.png" width="3.57%" /> 旁边的三个点。
 3. 选择 “**首选项”**。
 
-   <Image alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
+   <Image align="center" alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
 
 <div id="theme" />
 
@@ -806,7 +806,7 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 #### 面板级别
 
-<Image alt="image__9_.png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
+<Image align="center" alt="image__9_.png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
 
 * 默认情况下，面板采用**按微件设置**（Per widget）的日期范围。在此模式下，每个微件根据其各自的设置显示数据。
 * 每个微件选定的时间范围会显示在副标题中。
@@ -816,7 +816,7 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 #### 微件层级
 
-<Image alt="image__9_.png" src="https://files.readme.io/88853ed907a3a36854a3dc888acedb4063b036da6b026b4f6eccd69de26824c0-small-33835112650769.png" width="6016px" />
+<Image align="center" alt="image__9_.png" src="https://files.readme.io/88853ed907a3a36854a3dc888acedb4063b036da6b026b4f6eccd69de26824c0-small-33835112650769.png" width="6016px" />
 
 * 每个微件配有独立的日期选择器，用户可为特定可视化内容**自定义**时间范围。
 * 每个控件都有一个独立的视图类型选择器，允许用户为特定的可视化定义自定义视图类型。
@@ -857,7 +857,7 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 <Embed title="My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/QN34vDC8gtY?si=0IWgOX2oZ0Gmphid" providerUrl="https://www.youtube.com" />
 
-[<Image alt="" src="https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png" width="1083px" />](https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png)
+<Image align="center" alt="" src="https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png" width="1083px" />
 
 对于条形图、柱状图、折线图和组合图，您可以添加多个指标。
 
@@ -883,7 +883,7 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 <Accordion title="对比">
 
-![对比-动画图像（大）（1）.gif](https://files.readme.io/456530b09e6914ea4eb90658aee27408fad5bc3a208f9a4a68a99fbf0f823f13-29064704463761.gif)
+<Image align="center" alt="对比-动画图像（大）（1）.gif" src="https://files.readme.io/456530b09e6914ea4eb90658aee27408fad5bc3a208f9a4a68a99fbf0f823f13-29064704463761.gif" />
 
 “对比”功能适用于折线图。可帮助你将选定的数据与其历史数据并排展示，便于可视化识别趋势、变化、模式或异常。
 
@@ -991,7 +991,7 @@ My Dashboards 的交互式界面支持用户自定义设置面板。你可以参
 
 总览面板提供三种数据显示模式，即统一、用户获取以及再营销（见下图）。
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 这三种视图类型分别包含以下各种LTV数据：
 

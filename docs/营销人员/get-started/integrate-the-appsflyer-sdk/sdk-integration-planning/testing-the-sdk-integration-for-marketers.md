@@ -78,16 +78,16 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 
 1. 从AppsFlyer后台的侧边栏中选择**配置** > **SDK对接测试**。
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. 点击**实时事件**。
 
-   [![](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)
+   <Image align="center" alt="" src="https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png" />
 3. 在**应用**列表中，选择您需要测试的应用。
 4. 在**测试设备**列表中，选择同于测试相关应用的设备。若尚无测试设备，请点击**添加测试设备**链接，添加测试设备。
 5. 点击**继续**，开始记录您的应用事件。
 6. 打开应用并完成相关操作，生成应用打开事件（session）以及后续的应用内事件。
 
-   [![](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)
+   <Image align="center" alt="" src="https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png" />
 7. 点击所需事件，在右侧面板中查看该事件的详细信息。
 8. 如需停止记录事件，则点击**停止**。如需继续记录事件，再次点击**开始**。
 
@@ -101,10 +101,10 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 
 1. 从AppsFlyer后台的侧边栏中选择**配置** > **SDK对接测试**。
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. 点击**非自然激活**测试。
 
-   [![](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)
+   <Image align="center" alt="" src="https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png" />
 3. 在**应用**列表中，选择您需要测试的应用。
 4. 在**测试设备**列表中，选择同于测试相关应用的设备。若尚无测试设备，请点击**添加测试设备**链接，添加测试设备。
 5. 如果您的测试设备上已安装要测试的应用，请先将其删除。
@@ -136,10 +136,10 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 
 1. 从AppsFlyer后台的侧边栏中选择**配置** > **SDK对接测试**。
 
-   [<Image alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/36361369975185)
+   [<Image align="center" alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/36361369975185)
 2. 点击**再营销**。
 
-   [![](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)
+   <Image align="center" alt="" src="https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png" />
 3. 在**应用**列表中，选择您需要测试的应用。
 4. 在**测试设备**列表中，选择同于测试相关应用的设备。若尚无测试设备，请点击**添加测试设备**链接，添加测试设备。
 5. 点击**继续**，然后按照向导工具的提示，完成各个步骤的操作。
@@ -247,7 +247,7 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 
    您会看到在名为**Test**的渠道下，用于测试的广告系列获得了一个新增激活的归因。面板显示新增激活最多需要30分钟，请耐心等待。
 
-   [![Test_Install_Attribution_Link](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)
+   <Image align="center" alt="Test_Install_Attribution_Link" src="https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png" />
 
 <div id="tip" />
 
@@ -331,7 +331,7 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 
    点击应用面板中的**应用配置**，然后打开**启用再营销归因**的开关。
 
-   ![Set_Reattribution_window](https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png)
+   <Image align="center" alt="Set_Reattribution_window" src="https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png" />
 2. 此时可完成以下任一操作：
    * 创建一条专用于测试应用的归因链接。确保该链接中包含再营销参数`is_retargeting=true`以及设备ID（advertising ID）。如需查看GAID、IDFA或IDFV，请按照<Anchor target="_blank" href="/marketers/zh/docs/registering-test-devices">测试设备加白</Anchor>说明完成操作。   
      以下示例中的归因链接带有安卓专用的设备ID（GAID）参数。如需了解其他的设备ID参数（如IDFA或IDFV），请参考<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters#ios专用参数">归因链接的结构及参数</Anchor>。
@@ -377,7 +377,7 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 
    您会看到该次激活被归因到了测试渠道和广告系列。再营销激活显示到面板上最多需要30分钟的时间，请耐心等待。
 
-   [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+   <Image align="center" alt="Testing_SDK_Reattribution" src="https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png" />
 
 <div id="tip-1" />
 
@@ -417,7 +417,7 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 
    面板会显示新增一次再互动，且该次再互动被归因到相应的渠道和广告系列。面板显示再互动最多需要30分钟时间，请耐心等待。
 
-   [![Testing_SDK_Re-engagement](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)
+   <Image align="center" alt="Testing_SDK_Re-engagement" src="https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png" />
 
 **小贴士：** 您可以下载转化原始数据报告，检查该次再互动是否被归因到正确的渠道。下载过程可能需要数分钟。
 
@@ -441,7 +441,7 @@ CTV应用也可以进行SDK对接测试。详情请见[CTV测试说明](#测试c
 
 该应用的面板上会显示一个新增自然激活。自然激活的数据更新最多会有30分钟的延时，请耐心等待。
 
-[![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+<Image align="center" alt="" src="https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png" />
 
 <div id="traits-and-limitations" />
 

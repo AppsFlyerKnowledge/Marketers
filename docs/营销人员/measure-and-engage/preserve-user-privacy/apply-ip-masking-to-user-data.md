@@ -68,6 +68,6 @@ x-zendesk:
 
 ## 在原始数据报告中启用IP屏蔽
 
-![ip_masking.png](https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png)
+<Image align="center" alt="ip_masking.png" src="https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png" />
 
 <div data-zendesk-anchors="ip-masking=%E6%8E%A9%E7%9B%96ip h_01HA91HHADCTT7QS2K79TJEY2C=%E6%8E%A9%E7%9B%96ip h_01HA92HF3ZYR2NBTXQ1S2AHCAA=%E6%B3%A8%E6%84%8F h_01HA91HHAD7BCXRZW6AD9NRDBN=%E7%A4%BA%E4%BE%8B enabling-ip-masking=%E7%A4%BA%E4%BE%8B h_01HA91HHAEM220CE8805GFQYKR=%E7%A4%BA%E4%BE%8B ip-masking-in-raw-data-reports=%E5%9C%A8%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%91%8A%E4%B8%AD%E5%90%AF%E7%94%A8ip%E5%B1%8F%E8%94%BD h_01HA91HHAE14D6ES1ERNK93VY9=%E5%9C%A8%E5%8E%9F%E5%A7%8B%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%91%8A%E4%B8%AD%E5%90%AF%E7%94%A8ip%E5%B1%8F%E8%94%BD" />

@@ -163,7 +163,7 @@ AppsFlyer认证的可上报`engaged_clicks`和`engaged_views`的广告平台如�
 
 AppsFlyer面板中已新增广告交互类型维度。
 
-[![eet-dashboard.png](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)
+<Image align="center" alt="eet-dashboard.png" src="https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png" />
 
 <div id="note-3" />
 

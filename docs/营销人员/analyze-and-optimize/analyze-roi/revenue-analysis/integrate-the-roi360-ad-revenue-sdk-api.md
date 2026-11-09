@@ -28,7 +28,7 @@ x-zendesk:
 ---
 > **概要：** 广告主可使用AppsFlyer ad revenue SDK API获取广告平台上报的展示级别广告收入数据。
 
-![mceclip1__1_.png](https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png)
+<Image align="center" alt="mceclip1__1_.png" src="https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png" />
 
 <div id="impression-level-ad-revenue-reporting-by-sdk-api" />
 

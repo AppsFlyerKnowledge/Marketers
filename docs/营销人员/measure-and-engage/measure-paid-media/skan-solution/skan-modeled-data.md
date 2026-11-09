@@ -84,7 +84,7 @@ SKAN模型推算数据可通过以下方式解决上述问题：
 
 <Accordion title="LTV收入">
 
-[![modeled_d7.png](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)
+<Image align="center" alt="modeled_d7.png" src="https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png" />
 
 SKAN上报机制仅可在SKAN衡量窗口内根据转化值操作台中收入维度的CV配置来提供收入数据。SKAN模型推算机制则能够推算出激活后7天（168小时）内的收入数据。
 

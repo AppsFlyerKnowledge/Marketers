@@ -97,15 +97,15 @@ AppsFlyer 通过 ESP 集成解决方案解决了这个问题，使 AppsFlyer 能
 
 1. 在 **AppsFlyer** 中，从侧边菜单选择 **Engage** > **ESP 集成**。
 
-<Image alt="从 Engage 点击 ESP 集成.png" src="https://files.readme.io/7b731446ce6158d5033020b63be5f386105e7899a8c1b291aa3cb13662a59ee5-27063684942481.png" width="196px" />
+<Image align="center" alt="从 Engage 点击 ESP 集成.png" src="https://files.readme.io/7b731446ce6158d5033020b63be5f386105e7899a8c1b291aa3cb13662a59ee5-27063684942481.png" width="196px" />
 
 2. 选择您的 ESP。
 
-<Image alt="select ESP.png" src="https://files.readme.io/526fed3aaf1e6fdbf2404243619159984e298752fdf5913fd3a65cc5a2ed9e1d-27086632495761.png" width="482px" />
+<Image align="center" alt="select ESP.png" src="https://files.readme.io/526fed3aaf1e6fdbf2404243619159984e298752fdf5913fd3a65cc5a2ed9e1d-27086632495761.png" width="482px" />
 
 3.选择您想用于电子邮件活动的 OneLink 模板，然后点击 **下一步**。
 
-![select OneLink template.png](https://files.readme.io/4f96b999740be8596a424ce9108a8f702bda2a7ed025ec1869c553393432d87d-27086632499729.png)
+<Image align="center" alt="select OneLink template.png" src="https://files.readme.io/4f96b999740be8596a424ce9108a8f702bda2a7ed025ec1869c553393432d87d-27086632499729.png" />
 
 4.确保您在所选的 ESP 上有一个有效的帐户。
 
@@ -118,7 +118,7 @@ AppsFlyer 通过 ESP 集成解决方案解决了这个问题，使 AppsFlyer 能
 
 5.输入您的点击跟踪域和 ESP 端点，然后点击 **验证连接**。这验证了点击跟踪域指向您输入的端点。
 
-![输入您的 ctd 和 esp 端点.png](https://files.readme.io/d068b7de020bed7ba979b25e0fe866c40a118b00bbfde06a36a4c097485ac885-27086632503441.png)
+<Image align="center" alt="输入您的 ctd 和 esp 端点.png" src="https://files.readme.io/d068b7de020bed7ba979b25e0fe866c40a118b00bbfde06a36a4c097485ac885-27086632503441.png" />
 
 添加完毕后，点击**下一步**。
 
@@ -128,7 +128,7 @@ a.<strong>复制并将 AppsFlyer 中的定制预制说明发送给您的 IT 或�
 
 因此，每次点击链接时，点击将被重定向到 AppsFlyer，AppsFlyer 将其重定向到 ESP 端点。
 
-<Image alt="点击从 Af 到 ESP 的图像.png" src="https://files.readme.io/8a53fa7e8e2574246ea6b1344cfec0ac2d8f319bb181f6956ecb6db5b05cd0c5-26982377140369.png" width="374px" />
+<Image align="center" alt="点击从 Af 到 ESP 的图像.png" src="https://files.readme.io/8a53fa7e8e2574246ea6b1344cfec0ac2d8f319bb181f6956ecb6db5b05cd0c5-26982377140369.png" width="374px" />
 
 b.复制并发送说明后，点击 **完成**。
 
@@ -229,7 +229,7 @@ AppsFlyer 为您的应用托管应用关联文件，以启用 <Anchor target="_b
 
 1. 在 AppsFlyer 中，在您之前创建的 OneLink 模板内的 OneLink 管理页面（或手动）创建一个“电子邮件到应用” OneLink 链接。这是您将在电子邮件活动中使用的链接，将根据您的规格归因和重定向用户。了解如何创建 <Anchor target="_blank" href="/marketers/zh/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#创建onelink链接">OneLink 链接</Anchor>。
 
-<Image alt="email-to-app.png" src="https://files.readme.io/4e30986e039ed4cc13b9963ef3d1bb7b933061176bed812dced45a7240023d54-27082280943761.png" width="652px" />
+<Image align="center" alt="email-to-app.png" src="https://files.readme.io/4e30986e039ed4cc13b9963ef3d1bb7b933061176bed812dced45a7240023d54-27082280943761.png" width="652px" />
 
 **推荐方法：** 在 ESP 电子邮件活动和该活动中使用的 AppsFlyer OneLink 链接中使用相同的活动名称。
 

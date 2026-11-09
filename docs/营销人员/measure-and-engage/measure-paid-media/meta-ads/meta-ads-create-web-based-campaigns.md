@@ -172,7 +172,7 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
 
 1. 在**Destination**下的**Website URL**部分中，输入相关URL，作为用户点击广告后访问的页面。请将此处的URL设置为以下任一网址：
 
-   [![](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)
+   <Image align="center" alt="" src="https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png" />
 
    * **落地页 -** 适用于以下场景：
 
@@ -192,7 +192,7 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
 2. 点击**Build a URL parameter**，将链接参数添加到该URL中（落地页地址或AF归因链接都适用）。
 3. 在**Custom parameters**下点击**Add parameter**。
 
-   [![4.png](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)
+   <Image align="center" alt="4.png" src="https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png" />
 4. 将AppsFlyer参数映射到Meta中对应的值。
 
    * 如果您的目标网址是**落地页、OneLink归因链接或单平台归因链接**，请将以下AF参数映射到Meta侧的对应参数： 
@@ -266,7 +266,7 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
 
 在Tracking部分中选择需通过相关广告促成的转化事件（这些事件的设置在[Event Manager](https://www.facebook.com/business/help/898185560232180?id=1205376682832142)中完成）。
 
-[![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)
+<Image align="center" alt="" src="https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png" />
 
 <div id="important-1" />
 
@@ -288,7 +288,7 @@ AppsFlyer支持通过启用[智能脚本](#set-up-smart-script-crossplatform-lan
 
 <Accordion title="整个链路中的数据流">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. Meta广告的URL中包含`pid=metaweb_int`参数。当用户点击该广告时，`fbclid`参数会被自动添加到该广告URL的末尾。
 2. 用户跳转到指定的目标网址——即一个带有智能脚本的落地页。

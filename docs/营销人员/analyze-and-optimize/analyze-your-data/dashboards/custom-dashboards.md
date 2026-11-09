@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要：**
 
-[![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
+<Image align="center" alt="CustomDashboard_us-en.png" src="https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png" />
 
 <div id="custom-dashboards" />
 
@@ -59,7 +59,7 @@ x-zendesk:
 4. 点击**Add**（添加）。
 
 
-2. [![WidgetConfigure_us-en.png](https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png)](https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png)
+2. <Image align="center" alt="WidgetConfigure_us-en.png" src="https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png" />
 
 | 配置 | 说明 |
 | --- | --- |

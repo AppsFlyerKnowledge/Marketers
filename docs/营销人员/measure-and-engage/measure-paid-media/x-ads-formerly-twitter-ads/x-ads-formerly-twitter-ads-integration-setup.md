@@ -45,7 +45,7 @@ X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所
    * IP address（IP地址）
    * User Agent（用户代理）
 
-   [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
+   <Image align="center" alt="_- visual selection.png" src="https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png" />
 
 <div id="connecting-your-x-ads-account-to-appsflyer" />
 
@@ -64,11 +64,11 @@ X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所
 2. 当界面提示您选择**Simple (NEW)**（简易）或**Advanced**（高级）投放选项时，请选择**Advanced**。
 3. **在Campaign objective（投放目标）下选择App Installs（应用激活）或App re-engagements（应用再互动），然后点击Next（下一步）。**
 
-   ![X-Ads-campaign-objective.png](https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png)
+   <Image align="center" alt="X-Ads-campaign-objective.png" src="https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png" />
 4. 选择您的应用，然后点击<strong>mobile measurement partner（移动衡量合作伙伴）</strong>链接。
 5. 在<strong>Conversion tracking（转化跟踪）</strong>页中点击**Go to AppsFlyer（前往AppsFlyer）**。
 
-   ![X-Ads-mmp-selection.png](https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png)
+   <Image align="center" alt="X-Ads-mmp-selection.png" src="https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png" />
 6. 界面会提示您即将离开X Ads并进入AppsFlyer网站。点击**Go to AppsFlyer**并登录到您的面板。
 7. 从AppsFlyer的侧边栏中选择**协作** > **活跃对接**。
 8. 搜索并选择**X Ads**。
@@ -97,7 +97,7 @@ X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所
 
 请选择要启用归因的账户。
 
-![X-Ads_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
+<Image align="center" alt="X-Ads_msc_new_4.png" src="https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png" />
 
 **请注意：** 您可以在AppsFlyer中连接最多200个广告账户。为了避免达到此限制并确保所有活跃账户的持续归因，我们建议删除任何不再使用的广告账户。
 
@@ -126,7 +126,7 @@ X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所
 
 您可以将这个值自定义为1-23小时或1-30天。建议您将点击型回溯窗口设置为14天，与X Ads的归因窗口保持一致。
 
-![X-Ads_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
+<Image align="center" alt="X-Ads_msc_new_6.png" src="https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png" />
 
 <div id="view-through-attribution-lookback-window" />
 
@@ -136,7 +136,7 @@ X Ads是一个高级自归因平台（SRN），AppsFlyer可通过该平台对所
 
 您可以将这个值自定义为1-23小时或1-7天。 建议将浏览型回溯窗口设置为1天，与X Ads的归因窗口保持一致。
 
-![X-Ads_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
+<Image align="center" alt="X-Ads_msc_new_7.png" src="https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png" />
 
 <div id="reinstall-settings" />
 
@@ -168,7 +168,7 @@ X Ads的再营销归因仅支持再互动转化。
 
 请设置**点击型再互动回溯窗口**，界定用户从点击广告到再互动转化之间的最长时限，仅在该窗口期中发生的再互动转化才会被归因到相关的再营销广告。您可以在1-23小时或1-30天的范围内自行调整该窗口期。
 
-![X-Ads-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+<Image align="center" alt="X-Ads-reengagement-activate.png" src="https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png" />
 
 <div id="re-engagement-view-through-lookback-window" />
 
@@ -178,7 +178,7 @@ X Ads的再营销归因仅支持再互动转化。
 
 请设置**浏览型再互动回溯窗口**，界定用户从浏览广告到再互动转化之间的最长时限，仅在该窗口期中发生的再互动转化才会被归因到相关的再营销广告。您可以在1-23小时或1-7天的范围内自行调整该窗口期。
 
-![X-Ads-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
+<Image align="center" alt="X-Ads-reengagement-view-through.png" src="https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png" />
 
 <div id="re-engagement-window" />
 
@@ -186,7 +186,7 @@ X Ads的再营销归因仅支持再互动转化。
 
 请设置**再互动窗口期**。仅在该窗口期内发生的应用内事件才会被归因到相关的再营销渠道。这个值可以设置为数天（1-90天）、数小时（至多23小时）甚至是终生：
 
-<Image alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
+<Image align="center" alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -200,7 +200,7 @@ X Ads的再营销归因仅支持再互动转化。
 
 这部分选项用于设置AppsFlyer事件与渠道之间的映射与回传。
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png" />
 
 **请按以下步骤配置应用内事件回传：**
 

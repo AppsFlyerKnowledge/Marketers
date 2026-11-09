@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** 使用Web服务器到服务器（Web-S2S）事件API报告未通过Web SDK报告的事件和转化到PBA。
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="web-server-to-server-events-api-for-pba" />
 
@@ -259,7 +259,7 @@ print(response.text.encode('utf8'))
 1. 在AppsFlyer中，转到***我的应用***选项卡。
 2. 点击*查看品牌套件。*
 
-   [![GetWebDevKeyPba_us-en.pn](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)
+   <Image align="center" alt="GetWebDevKeyPba_us-en.pn" src="https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png" />
 3. 复制所需的*Web Dev Key*
 
 </Accordion>
@@ -293,7 +293,7 @@ print(response.text.encode('utf8'))
 2. 右键单击，选择 ***检查***  
    浏览器的检查元素窗口打开。
 
-   [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
+   <Image align="center" alt="S2S_inspect.jpg" src="https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg" />
 3. 转到 (A) ***应用程序*** 选项卡。
 4. 在侧边菜单中，(B) 展开 Cookies。
 5. 选择您的网站。如果未显示，请刷新浏览器。

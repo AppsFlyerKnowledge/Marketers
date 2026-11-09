@@ -101,7 +101,7 @@ x-zendesk:
 2. 搜索并选择Meta ads。
 3. 进入**SKAN**标签页。
 
-   ![skan_repprtiing_-_connected_accounts.png](https://files.readme.io/41514c220de398871292c990e448e2bc8ce450a17512649842cdb2bc4fd78846-40032591356817.png)
+   <Image align="center" alt="skan_repprtiing_-_connected_accounts.png" src="https://files.readme.io/41514c220de398871292c990e448e2bc8ce450a17512649842cdb2bc4fd78846-40032591356817.png" />
 4. 点击**f login**。您必须使用<Anchor target="_blank" href="https://www.facebook.com/business/help/155909647811305?id=829106167281625">具备以下权限</Anchor>的管理员或广告主账户登录：
    * Ads\_read权限。详见[如何确认广告读取权限](/docs/skadnetwork-skan-interoperation-with-meta-ads#verifying-the-ads_read-permission)。
    * 从Meta企业入口获取广告主应用ID的权限。
@@ -121,7 +121,7 @@ x-zendesk:
 
 <Accordion title="与Meta ads分享CV值映射构架">
 
-![SKAdNetwork-Facebook-AppsFlyer_integration__5_.png](https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png)
+<Image align="center" alt="SKAdNetwork-Facebook-AppsFlyer_integration__5_.png" src="https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png" />
 
 <div id="enabling-appsflyer-skan-interoperation-with-meta-ads" />
 

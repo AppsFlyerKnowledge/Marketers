@@ -32,7 +32,7 @@ x-zendesk:
 ---
 > **概要：** 您可以使用OneLink智能脚本推动移动端网页用户转化为应用用户，并将其准确归因到对应的流量来源渠道。
 
-![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
+<Image align="center" alt="7901_Smart_Script_flow_1920x1080_2__1_.png" src="https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png" />
 
 <div id="about-onelink-smart-script" />
 

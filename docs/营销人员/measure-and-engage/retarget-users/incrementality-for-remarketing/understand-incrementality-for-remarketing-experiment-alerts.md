@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：** 本文解释了增量分析实验中会出现的提醒消息，解决消息中提示的问题有助于保障实验结果的准确性。
 
-![exp_alerts_doctored.jpg](https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg)
+<Image align="center" alt="exp_alerts_doctored.jpg" src="https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg" />
 
 <div id="about-experiment-alerts" />
 

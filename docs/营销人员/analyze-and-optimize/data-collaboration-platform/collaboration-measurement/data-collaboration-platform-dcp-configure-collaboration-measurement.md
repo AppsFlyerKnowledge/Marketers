@@ -44,7 +44,7 @@ x-zendesk:
    * 如果这是您在协作中设置的第一个测量，请单击<strong>设置测量。</strong>将显示**创建测量**页面。
    * 如果您在协作中已经有一个测量，请单击测量选择面板中的加号。将显示**创建测量**页面。
 
-[![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
+<Image align="center" alt="start-measurement.png" src="https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png" />
 
 <div id="select-campaign-type-on-site-off-site-or-both" />
 

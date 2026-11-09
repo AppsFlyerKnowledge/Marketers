@@ -75,7 +75,7 @@ AAP启用时对数据可用性的影响如下：
 
 下图及下文中使用了上述概念来说明广告主和渠道的可用数据。
 
-![Advanced Privacy Framework - Advertisers (4).png](https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png)
+<Image align="center" alt="Advanced Privacy Framework - Advertisers (4).png" src="https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png" />
 
 高级隐私保护模式对于网页广告和应用内广告的生效方式有所不同，因此必须使用af\_media\_type=web或af\_media\_type=app参数来说明媒体类型。点击<Anchor target="_blank" href="/partners/zh/docs/advanced-privacy-guide-postback-macros-for-ad-networks#网页广告">这里了解更多信息。</Anchor>
 
@@ -117,7 +117,7 @@ Apple的AppTrackingTransparency（应用跟踪透明度，简称ATT）框架仅�
 
 AAP是一个用于调控应用级别高级隐私保护设置的开关。您在选定应用中打开/关闭该开关后，相应的AAP设置就会对该应用下所有的渠道生效。您可以在**应用配置**页面中看到AAP开关。该开关打开时，该应用下所有渠道的**高级隐私保护**开关都会自动打开，且不能在渠道层级更改该设置。该开关处于关闭状态时，广告主可以在具体渠道的对接页面中单独打开该渠道的**高级隐私保护**功能。
 
-![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
+<Image align="center" alt="AAPcontrol.png" src="https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png" />
 
 <div id="aap-enabled" />
 
@@ -150,7 +150,7 @@ AAP是一个用于调控应用级别高级隐私保护设置的开关。您在�
 
 AAP关闭时，广告主仍可为各广告平台单独设置高级隐私保护。
 
-![APControl.png](https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png)
+<Image align="center" alt="APControl.png" src="https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png" />
 
 **请按以下步骤关闭渠道的高级隐私保护：**
 
@@ -201,7 +201,7 @@ AAP关闭时，广告主仍可为各广告平台单独设置高级隐私保护�
 
 下图详细说明了各种用户授权场景及其对应的回传类型。
 
-![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
+<Image align="center" alt="AAP - Attributed ad networks.png" src="https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png" />
 
 高级隐私保护模式对于网页广告和应用内广告的生效方式有所不同，因此必须使用af\_media\_type=web或af\_media\_type=app参数来说明媒体类型。点击<Anchor target="_blank" href="/partners/zh/docs/advanced-privacy-guide-postback-macros-for-ad-networks#网页广告">这里了解更多信息。</Anchor>
 
@@ -211,11 +211,11 @@ AAP关闭时，广告主仍可为各广告平台单独设置高级隐私保护�
 
 如果某渠道“合作伙伴配置”页的“对接”选项卡中的发送选项设置为*所有媒体渠道，包括自然流量*，即使该渠道未获得指定事件的归因（如下图所示），AF也会向其发送未归因到该渠道的回传。
 
-![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+<Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 以下流程图解释了各种用户授权场景及其对应的回传类型。
 
-![AAP - Unattributed ad networks.png](https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png)
+<Image align="center" alt="AAP - Unattributed ad networks.png" src="https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png" />
 
 高级隐私保护模式对于网页广告和应用内广告的生效方式有所不同，因此必须使用af\_media\_type=web或af\_media\_type=app参数来说明媒体类型。如需了解详情，请参阅<Anchor target="_blank" href="/partners/zh/docs/advanced-privacy-guide-postback-macros-for-ad-networks#网页广告">此文档</Anchor>。
 
@@ -236,7 +236,7 @@ AAP会影响数据分析平台接收到的共享数据，其原理与AAP对广�
 
 下图详细说明了各种用户授权场景及其对应的回传类型。
 
-![AAP - Analytics partner.png](https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png)
+<Image align="center" alt="AAP - Analytics partner.png" src="https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png" />
 
 高级隐私保护模式对于网页广告和应用内广告的生效方式有所不同，因此必须使用af\_media\_type=web或af\_media\_type=app参数来说明媒体类型。如需了解详情，请参阅<Anchor target="_blank" href="/partners/zh/docs/advanced-privacy-guide-postback-macros-for-ad-networks#网页广告">此文档</Anchor>。
 
@@ -255,7 +255,7 @@ AAP会影响数据分析平台接收到的共享数据，其原理与AAP对广�
 
 **为代理商开放高级隐私保护的设置权限**
 
-![agency_advanced_privacy.png](https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png)
+<Image align="center" alt="agency_advanced_privacy.png" src="https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png" />
 
 **请按以下步骤为代理开放AP设置权限**：
 

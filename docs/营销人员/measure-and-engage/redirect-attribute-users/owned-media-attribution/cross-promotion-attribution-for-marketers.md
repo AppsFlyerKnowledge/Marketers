@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **概要：** 您可以在您的应用中推广其他应用，并对这类交叉营销广告带来的激活进行归因。
 
-![CrossPromo_userJourney](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
+<Image align="center" alt="CrossPromo_userJourney" src="https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png" />
 
 <div id="about-cross-promotion" />
 
@@ -35,7 +35,7 @@ x-zendesk:
 
 下图针对交叉推广的应用展示了相应的面板数据，其中对自有媒体（**af\_cross\_promotion**）及其他渠道上的广告投放指标进行了拆解。您可以看到交叉推广的激活数量和转化率要显著高于其他渠道。
 
-[![CrossPromo_mediaSource](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+<Image align="center" alt="CrossPromo_mediaSource" src="https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png" />
 
 <div id="how-does-cross-promotion-work" />
 
@@ -115,7 +115,7 @@ x-zendesk:
 >
 > 您查看面板时发现Golfing的转化率高达18.22%，大幅超越Bowling，因此可以判断Golfing与受推广应用Billiards的亲和度要高于Bowling。
 >
-> [![CrossPromo_conversionRate](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)
+> <Image align="center" alt="CrossPromo_conversionRate" src="https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png" />
 >
 > 基于以上关键信息，您可以按以下方式对您的广告投放进行优化：
 >
@@ -140,6 +140,6 @@ x-zendesk:
 >
 > 为了在同一个界面中查看所有3个受推广应用的指标，您创建了一个自定义面板。通过下图所示的面板截屏，您可以看到Sport Shoes的转化率达到20.23%，表明Shoes与Sport Shoes的亲和度远高于另两个应用。
 >
-> ![CrossPromo_customWidget](https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png)
+> <Image align="center" alt="CrossPromo_customWidget" src="https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png" />
 
 <div data-zendesk-anchors="about-crosspromotion=%E4%BA%A4%E5%8F%89%E6%8E%A8%E5%B9%BF h_01HE7RXZ2CZCYENE4K40W5YSHF=%E4%BA%A4%E5%8F%89%E6%8E%A8%E5%B9%BF how-does-crosspromotion-work=%E4%BA%A4%E5%8F%89%E6%8E%A8%E5%B9%BF%E7%9A%84%E5%8E%9F%E7%90%86 h_01HE7RXZ2CE5EQV42Y4B9SK4FN=%E4%BA%A4%E5%8F%89%E6%8E%A8%E5%B9%BF%E7%9A%84%E5%8E%9F%E7%90%86 attributing-crosspromotion=%E4%BA%A4%E5%8F%89%E6%8E%A8%E5%B9%BF%E7%9A%84%E5%BD%92%E5%9B%A0 h_01HE7RXZ2CWB2GZ8HV6447RVV1=%E4%BA%A4%E5%8F%89%E6%8E%A8%E5%B9%BF%E7%9A%84%E5%BD%92%E5%9B%A0 setting-up-crosspromotion=%E4%BA%A4%E5%8F%89%E6%8E%A8%E5%B9%BF%E5%BD%92%E5%9B%A0%E7%9A%84%E9%85%8D%E7%BD%AE h_01HE7RXZ2C9JGFYV8K8FECFFJN=%E4%BA%A4%E5%8F%89%E6%8E%A8%E5%B9%BF%E5%BD%92%E5%9B%A0%E7%9A%84%E9%85%8D%E7%BD%AE viewing-crosspromotion-data=%E4%BA%A4%E5%8F%89%E6%8E%A8%E5%B9%BF%E6%95%B0%E6%8D%AE%E7%9A%84%E6%9F%A5%E7%9C%8B%E6%96%B9%E5%BC%8F h_01HE7RXZ2CE9NWMQ1PT3G98QVN=%E4%BA%A4%E5%8F%89%E6%8E%A8%E5%B9%BF%E6%95%B0%E6%8D%AE%E7%9A%84%E6%9F%A5%E7%9C%8B%E6%96%B9%E5%BC%8F promoted-app-dashboard=%E5%8F%97%E6%8E%A8%E5%B9%BF%E5%BA%94%E7%94%A8%E7%9A%84%E9%9D%A2%E6%9D%BF h_01HE7RXZ2CQG9M35Y2FJNPZWDA=%E5%8F%97%E6%8E%A8%E5%B9%BF%E5%BA%94%E7%94%A8%E7%9A%84%E9%9D%A2%E6%9D%BF analysis=%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90 h_01HE7RXZ2CVQD8H0J6EVRJM5T7=%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90 h_01HE7RXZ2CW1P0QNA8FFXP5KBS=%E7%A4%BA%E4%BE%8B custom-dashboard=%E8%87%AA%E5%AE%9A%E4%B9%89%E9%9D%A2%E6%9D%BF h_01HE7RXZ2C7N3DKNPF898WM4AD=%E8%87%AA%E5%AE%9A%E4%B9%89%E9%9D%A2%E6%9D%BF h_01HE7RXZ2C51KJMP795QYS26YK=%E7%A4%BA%E4%BE%8B-1" />

@@ -56,7 +56,7 @@ x-zendesk:
 >
 > 用户可以通过显示在Google Ads面板右上角的登录电子邮件地址来确认他们使用Google Ads帐号是否正确。
 >
-> ![short.png](https://files.readme.io/512cc4bf1cfb1b269e9bb4a4fa0028f615de7a1a9e832d835f2632c2412124d0-51911559512337.png)
+> <Image align="center" alt="short.png" src="https://files.readme.io/512cc4bf1cfb1b269e9bb4a4fa0028f615de7a1a9e832d835f2632c2412124d0-51911559512337.png" />
 >  如果相关Google Ads帐号是某个MCC帐号的子帐号，则面板右上角的ID是MCC帐号的ID，子帐号的ID在左上角。
 >
 > 如果账号不正确，请先登出当前账号，然后换一个邮箱地址登入其他Google账号。

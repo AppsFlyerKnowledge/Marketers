@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要：** Liftoff是AppsFlyer的已对接合作伙伴，是品牌和应用开发人员合作最多的渠道之一。Liftoff支持点击归因和展示归因，以及基于点击和展示的再营销归因，广告主可以在AppsFlyer后台直接查看这些数据。
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png" />
 
 <div id="important" />
 

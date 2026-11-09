@@ -25,7 +25,7 @@ x-zendesk:
 
 > **概要：** 您可以通过素材优化（Creative Optimization）功能获取您广告投放中所有素材资产（asset）的数据，并将其汇总到同一个平台，便于您分析素材效果，找出最高效的素材，利用数据改善营销决策。该面板呈现LTV维度的数据，也就是说其中的指标与相关素材在选定时间段内产生的转化有关。
 
-[![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
+<Image align="center" alt="Main image -Default view.jpg" src="https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg" />
 
 <div id="about-creative-optimization" />
 
@@ -114,7 +114,7 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
 > AppsFlyer共将50个激活归因到该广告素材，同时会保留Meta侧的素材资产层级细分数据。也就是说在上述示例中，我们可以知道**资产A**产生的激活量大于**资产B**。
 > 收入和ROAS等深层漏斗指标也会根据这个比例来计算。
 >
-> ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
+> <Image align="center" alt="Creative_data_example_en-us.png" src="https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png" />
 
 </Accordion>
 
@@ -124,7 +124,7 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
 
 本节全面介绍了主面板中的各种内容和功能，包括筛选条件及可用指标和维度的的使用方式以及面板视图的保存方式，帮助您获取所需的素材数据并与同事分享关键信息。
 
-[![Filter bar and metrics -Default view.jpg](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)
+<Image align="center" alt="Filter bar and metrics -Default view.jpg" src="https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg" />
 
 <div id="filter-bar" />
 
@@ -132,7 +132,7 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
 
 面板设置的第一步就是选择数据筛选条件。您指定的所有筛选条件会对素材优化总览和解析面板同时生效。
 
-[![filter_bar.jpg](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)
+<Image align="center" alt="filter_bar.jpg" src="https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg" />
 
 **面板筛选条件的设置方式如下**：
 
@@ -160,7 +160,7 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
 * **用户获取**——仅显示与UA广告/广告组有关的素材数据。
 * **再营销**——仅显示与再营销广告/广告组有关的素材数据。同时也可呈现成本数据。
 
-[![View_types.jpg](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)
+<Image align="center" alt="View_types.jpg" src="https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg" />
 
 </Accordion>
 
@@ -247,7 +247,7 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
      * *指标*包括展示、点击、激活、CTR、CVR、CPM、IPM、成本、eCPI、再归因、再互动、收入、ROAS、留存、独立用户、广告数量、渠道指标
      * 结合使用各种*运算符、数字*和/或*应用内事件*
      * 您可以从下拉菜单中选择具体的应用内事件，并针对每个应用内事件分别添加各种指标，以得出极为具体的分析信息，如af\_purchase revenue + af\_login count（购买收入+登录次数）。  
-       <Image alt="" src="https://files.readme.io/2b8bdaa8c1fb47c7e78b59e7e24f37aa3248800c7a3ed5cc821c2e11622a93fe-30129836915729.png" width="892px" />
+       <Image align="center" alt="" src="https://files.readme.io/2b8bdaa8c1fb47c7e78b59e7e24f37aa3248800c7a3ed5cc821c2e11622a93fe-30129836915729.png" width="892px" />
 3. 点击**保存**。  
    完成以上步骤后，您自定义的新指标即创建成功，会显示在筛选条件栏以及表格设置选项中，一旁标有“自定义”字样。
 
@@ -261,14 +261,14 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
 **修改方式如下：**
 
 1. 点击**编辑现有自定义指标**下拉菜单（位于**自定义指标**表格中），选择您需要修改的指标。  
-   <Image alt="" src="https://files.readme.io/b792e08152482bed11ea8ce5ea5795c3df961c257d07397b5b4d787f40a8ea2e-30129836916369.png" width="892px" />
+   <Image align="center" alt="" src="https://files.readme.io/b792e08152482bed11ea8ce5ea5795c3df961c257d07397b5b4d787f40a8ea2e-30129836916369.png" width="892px" />
 2. 根据实际需求进行修改，然后点击**保存**。  
    **请注意：** 您也可以点击**另存为**，将其保存为新的自定义指标。
 
 **删除方式：**
 
 * 从下拉菜单中选择您需要删除的自定义指标后，点击删除图标。  
-  <Image alt="" src="https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png" width="546px" />
+  <Image align="center" alt="" src="https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png" width="546px" />
 
 </Accordion>
 
@@ -292,7 +292,7 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
 
 只需添加一个新的<Anchor target="_blank" href="/marketers/zh/docs/creative-optimization-partner-integrations">渠道对接</Anchor>，适配渠道的指标就会自动同步到素材优化面板（**Unity Ads除外，详见特别说明**）。设置完毕后，这些指标一旁会标有“渠道”字样。
 
-![partner metrics image.jpg](https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg)
+<Image align="center" alt="partner metrics image.jpg" src="https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg" />
 
 **特别说明及注意事项：**
 
@@ -337,28 +337,28 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
 **如需获取Unity Ads**
 
 1. 点击素材优化面板右上方的⋮图标，进入**素材对接**部分。  
-   ![icon for creative integrations.jpg](https://files.readme.io/5af3cc395743cf305a9d19dca41dc53c7cbf82e18434d2eb335c9e58a4245456-21366803702033.jpg)
+   <Image align="center" alt="icon for creative integrations.jpg" src="https://files.readme.io/5af3cc395743cf305a9d19dca41dc53c7cbf82e18434d2eb335c9e58a4245456-21366803702033.jpg" />
 2. 点击 **+新对接**。
 3. 在**渠道**下拉列表中选择**Unity Ads**。  
-   ![New integration - Unity Ads.jpg](https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg)
+   <Image align="center" alt="New integration - Unity Ads.jpg" src="https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg" />
 4. 输入用于该对接的Unity **Key ID**、 **Secret Key**以及**Organization Core ID**（请参考Unity对接说明，了解获取这些信息的方式）。
 5. 在**渠道指标**部分输入Unity的**API Key**以及**Organization ID**。您可以按照下文说明来获取这些证书信息。**请注意：** 如果您有Unity Ads的ROI360成本对接，也可以使用其中的证书完成上述操作。
    * **API key的获取方式如下：**
      1. 登入您的Unity Gaming Service账号。
      2. 点击侧边栏中的**Products**，然后点击**Grow**。  
-        ![Unity Org ID step 1.jpg](https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg)
+        <Image align="center" alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" />
      3. 点击**Unity Ads User Acquisition**。  
-        <Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="312px" />
+        <Image align="center" alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="312px" />
      4. 点击**API management**。  
-        ![Unity-from API mngmt, get API key w arrow.jpg](https://files.readme.io/c617593d5935fbe8072d9fac0146fb3257c395c8dcf173130b97cc2a4a043285-20348783332881.jpg)
+        <Image align="center" alt="Unity-from API mngmt, get API key w arrow.jpg" src="https://files.readme.io/c617593d5935fbe8072d9fac0146fb3257c395c8dcf173130b97cc2a4a043285-20348783332881.jpg" />
      5. 复制该API key。
    * **Organization ID的获取方式如下：**
      1. 进入Unity Ads后台，点击侧边栏中的**Products**，然后点击**Grow**。  
-        <Image alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="583px" />
+        <Image align="center" alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="583px" />
      2. 点击**Unity Ads User Acquisition**。
-     3. <Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="336px" />
+     3. <Image align="center" alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="336px" />
      4. 点击**Settings**。  
-        ![Get Organization ID instructions 2 arrows.jpg](https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg)
+        <Image align="center" alt="Get Organization ID instructions 2 arrows.jpg" src="https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg" />
      5. 复制该**Organization ID**。
 
 <div id="note" />
@@ -386,7 +386,7 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
 **请按以下方式保存私人面板视图（即仅对自己可见）：**
 
 1. 点击当前所示面板顶部的下拉菜单图标，选择菜单中的私人图标，然后点击 **+保存为新的私人面板**。  
-   ![](https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png)
+   <Image align="center" alt="" src="https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png" />
 2. 为您的面板命名，然后点击**保存**。
 3. 后续您可以使用菜单图标编辑或删除面板视图、更改共享设置（将“私人”切换为“共享”），或收藏视图使其在登入时默认呈现。
 
@@ -409,7 +409,7 @@ Meta Advantage+（动态素材）以及Google Universal App Campaigns（UAC）�
 **请按以下方式与账户下的其他用户分享视图链接：**
 
 * 点击面板右上方的“复制页面链接”图标，便可分享该页面。  
-  <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />  
+  <Image align="center" alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
   **请注意**：即使是私人面板，也可以通过链接进行分享。当其他人打开您的私人面板链接时，报告名称会显示为“未保存的报告”。
 
 </Accordion>
@@ -441,7 +441,7 @@ CSV文件的下载和上传流程如下：
 **如需从面板下载含有当前素材信息的CSV文件，请按以下方式操作：**
 
 1. 单击仪表板右上角的<Image alt="3_dots_icon.png" src="https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png" width="16px" />菜单。  
-   ![Main menu highlighted.jpg](https://files.readme.io/be14a3ab1a9aba6dc20816e53ad692b1697d15a185053cf523d2ae8451842350-21367268248465.jpg)
+   <Image align="center" alt="Main menu highlighted.jpg" src="https://files.readme.io/be14a3ab1a9aba6dc20816e53ad692b1697d15a185053cf523d2ae8451842350-21367268248465.jpg" />
 2. 点击**下载自定义标签文件**。
 3. 选择该文件中需要包含的素材（可包含所有素材，或仅包含面板当前呈现的素材——即剔除不符合筛选条件的素材）。
 4. 点击**下载**。
@@ -466,7 +466,7 @@ CSV文件的下载和上传流程如下：
 
 下方展示了自定义维度CSV文件的样例（可从面板下载该文件）。各标题列（第1行）即自定义维度的名称（如“Theme”和“Variant”）。您可以添加其他维度或更改现有维度，也可以添加或更改标签（如“3 Moves”或“DarkPalette”）。
 
-[![Screen_Shot_2022-08-08_at_16.25.23.png](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)
+<Image align="center" alt="Screen_Shot_2022-08-08_at_16.25.23.png" src="https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png" />
 
 </Accordion>
 
@@ -476,7 +476,7 @@ CSV文件的下载和上传流程如下：
 
 * 自定义维度会在筛选条件和表格中以“自定义”字样标出。
 
-<Image alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
+<Image align="center" alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
 
 * 您最多可以在素材优化面板中添加15个自定义维度。
 * 上传的文件不能超过1 MB。
@@ -505,7 +505,7 @@ CSV文件的下载和上传流程如下：
 
 1. 点击面板右上方的 ⋮ 图标，选择**命名模式标签**。  
    界面会显示**管理命名模式标签**的窗口。  
-   <Image alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
+   <Image align="center" alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
 2. 在**创建新的命名模式类型**下输入以下信息：
    * **名称**——为新的命名模式类型赋予具有唯一性的名称。
    * **分隔符**——用于分隔名称各段的字符，比如在名为“enUS\_bluegalaxy\_launch.mp4”的素材中，其名称的各段以“\_”分隔，这时“\_”即为分隔符。

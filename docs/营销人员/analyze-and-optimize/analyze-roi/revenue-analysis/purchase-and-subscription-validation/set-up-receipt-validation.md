@@ -64,22 +64,22 @@ x-zendesk:
 
 1. **在App Store Connect中，进入用户和访问权限**页面
 
-   [![](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)
+   <Image align="center" alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" />
 2. 前往**用户和访问权限**> **对接**，在**密钥**列表中，选择**应用内购买**。
 
-   [![](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" />
 3. 点击+生成一个新的应用内购买密钥。
 
-   [![](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" />
 4. 输入您的API密钥名称。
 5. 点击**生成**。
 6. 在生成的密钥旁边，点击**下载应用内购买密钥**。 **注意**：该密钥只能下载一次，请妥善保存。
 7. 在App Store Connect中，复制生成的密钥的**Key ID**，并将其粘贴到AppsFlyer购买和订阅设置中的**Key ID**字段里。
 
-   [![](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)
+   <Image align="center" alt="" src="https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png" />
 8. 复制**发行者 ID**。 **注意**： 如果页面顶部未显示**Issuer ID**，请创建一个App Store Connect API私钥（具有任意权限级别）。之后，Issuer ID将出现在应用内购买私钥的页面顶部。
 
-   [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
+   <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" />
 
 </Accordion>
 
@@ -121,7 +121,7 @@ x-zendesk:
 2. 将该账号关联到您的Google Cloud项目。详细指南请参考<Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">Google提供的说明文档</Anchor>。
 3. 启用Google Play Developer API。详细指南请参考<Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">Google提供的说明文档</Anchor>。
 
-   [![](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)
+   <Image align="center" alt="" src="https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png" />
 
 </Accordion>
 
@@ -142,14 +142,14 @@ x-zendesk:
    5. 在**Grant this service account access to the project**（为该服务账号开放项目权限）部分的“Select a role”（选择角色）字段中，选择**Pub/Sub subscriber**。
    6. 点击**Continue** > **Done**，完成服务账号的创建。
 
-      [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
+      <Image align="center" alt="" src="https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png" />
 2. 下载服务账号私钥：
 
    1. <span class="af-ol-a"></span>在Google Cloud Platform中，进入<strong>Service accounts（服务账号）</strong>部分，从列表中找到你刚创建的服务账号，点击 **“更多操作”** 图标。
    2. 点击 **“管理私钥（Manage keys）”**。
    3. 点击 **添加私钥** > **创建新私钥**。
 
-      [![](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)
+      <Image align="center" alt="" src="https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png" />
    4. 在**创建私钥**窗口中，
    5. 在**私钥类型**下，选择**JSON**，
 
@@ -170,23 +170,23 @@ x-zendesk:
 
 1. 在Google Play Console中，进入**Users and permissions（用户和权限）**，找到您创建的服务账号并点击**Invite new users（邀请新用户）**。
 
-   [![](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)
+   <Image align="center" alt="" src="https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png" />
 2. 在<strong>Email address（邮箱地址）</strong>字段中，填写您在第1.2.1.3步创建服务账号时复制的邮箱地址。
 
-   [![](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)
+   <Image align="center" alt="" src="https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png" />
 3. 在**Permissions**（权限）部分，进入**Account permissions**（账号权限）选项卡，然后同时勾选以下两项：
 
    * View financial data, orders, and cancellation survey responses（查看财务数据、订单和取消订阅问卷答复）
    * Manage orders and subscriptions（管理订单和订阅）
 4. 在**App permissions**（应用权限）标签页中，点击**Add app**（添加应用），然后选择应用。如有需要可添加多个应用。
 
-   [![](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)
+   <Image align="center" alt="" src="https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png" />
 5. 点击**Invite user**（邀请用户）。
 
-   [![](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)
+   <Image align="center" alt="" src="https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png" />
 6. 在确认弹出窗口中，点击**Send invite**（发送邀请）。
 
-   [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
+   <Image align="center" alt="" src="https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png" />
 
 </Accordion>
 
@@ -264,7 +264,7 @@ x-zendesk:
 
 <Accordion title="测试应用内购买（IAP）和订阅收入数据">
 
-[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 **测试应用内购买和订阅收入**：
 
@@ -311,7 +311,7 @@ x-zendesk:
 * 您在AppsFlyer中配置的验证规则不会拦截您想要记录的IAP或订阅事件。
 * 您的开发人员已将所有沙盒标志设置为`false`。
 
-[<Image alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />
 
 一旦包含validateAndLog SDK API的应用程序发布，<Anchor target="_blank" href="/marketers/zh/docs/about-receipt-validation#收据验证的应用内购买事件和参数">应用内购买和订阅事件</Anchor>将生成并在所有AppsFlyer仪表板上可用，同时也会出现在汇总和原始数据报告中。
 

@@ -30,7 +30,7 @@ x-zendesk:
 
 > 🚧 **重要提示！**
 >
-> ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)
+> <Image align="center" alt="AppsFlyerAdmin_us-en.png" src="https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png" />
 >
 > * 只有AppsFlyer账户的管理员才能查看和管理token。账户用户无法访问令牌页面。
 > * 请妥善保存好您的token，因为这关系到您的数据读取权限。切勿在公共代码库中发布这些token。

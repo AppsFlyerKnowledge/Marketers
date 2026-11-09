@@ -56,7 +56,7 @@ OneLink模板具有以下特点：
    [![](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png)](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png) **请注意**：如果您还未创建任何模板，系统会弹出新客户使用指引。这时请根据指引操作，无需参照本流程。
 2. 点击菜单图标 > **添加OneLink模板**。  
    进入 OneLink模板设置页面。  
-   [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
+   <Image align="center" alt="OneLink_template_page_en-us.png" src="https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png" />
 3. 在**OneLink模板名称**字段中为其命名。
 
    <div id="note" />
@@ -153,7 +153,7 @@ OneLink模板具有以下特点：
       * 把<Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links">这些指南</Anchor>发送给开发人员。
       * 开发人员会把Team ID（或称Apple App ID Prefix，结构为PF23MIWNTW）返回给您。
       * 如果您的应用还未上架，还需要让开发人员将Bundle Identifier发送给您（结构为：com.myapp.something）。  
-        [![](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)
+        <Image align="center" alt="" src="https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png" />
    2. 在OneLink模板页面中，点击**改用Universal Link打开应用** 。
    3. 在新窗口中，选取**使用通用链接开启应用程序**。
    4. 在**Team ID**字段中，输入开发人员提供的Team ID。
@@ -238,7 +238,7 @@ OneLink模板具有以下特点：
 
 <Accordion title="定制化二维码">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 您可以通过以下方式对OneLink生成的二维码进行定制：
 

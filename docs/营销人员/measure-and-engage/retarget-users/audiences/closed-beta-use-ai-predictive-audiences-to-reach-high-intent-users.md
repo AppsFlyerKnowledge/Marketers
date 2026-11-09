@@ -59,7 +59,7 @@ x-zendesk:
 2. 在 **“受众**”中，点击 **“新建预测受众”**。
 3. 输入受众名称 。
 
-   [<Image alt="定义目标（已输入的数值）.png" src="https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png" width="1666px" />](https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png)
+   <Image align="center" alt="定义目标（已输入的数值）.png" src="https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png" width="1666px" />
 4. 选择应用
 5. 选择目标事件。
 6. 选择一个预测目标（**“可能购买**”）。
@@ -83,7 +83,7 @@ x-zendesk:
 
 2. 要自定义范围，请拖动图表上的最小值和最大值标记。
 
-   <Image alt="设置概率范围 正确版本.png" src="https://files.readme.io/8dd9b6368d86e5641e99e7fe66e137b1137adf8fdf7760d597826f7c2d5be745-45796825322385.png" width="1898px" />
+   <Image align="center" alt="设置概率范围 正确版本.png" src="https://files.readme.io/8dd9b6368d86e5641e99e7fe66e137b1137adf8fdf7760d597826f7c2d5be745-45796825322385.png" width="1898px" />
 
    **预计受众规模**会根据您的选择实时更新。
 

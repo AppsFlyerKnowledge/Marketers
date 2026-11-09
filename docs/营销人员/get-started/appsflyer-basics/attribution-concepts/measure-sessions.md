@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **概要**：广告主可以使用session（应用打开）指标衡量指定时间段内的用户互动情况。
 
-<Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
+<Image align="center" alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 
 <div id="sessions-counting-principles" />
 

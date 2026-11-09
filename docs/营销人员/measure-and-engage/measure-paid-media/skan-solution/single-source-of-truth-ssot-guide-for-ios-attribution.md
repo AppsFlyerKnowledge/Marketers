@@ -41,7 +41,7 @@ SSOT机制会标记出同时被SKAN和非SKAN方式重复归因的激活。AF会
 
 <Accordion title="启用单一可信数据源（SSOT）机制">
 
-![SSOTControl.png](https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png)
+<Image align="center" alt="SSOTControl.png" src="https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png" />
 
 **请按以下步骤启用SSOT：**
 
@@ -59,7 +59,7 @@ SSOT机制会标记出同时被SKAN和非SKAN方式重复归因的激活。AF会
 
 ## 数据总览面板的SSOT视图
 
-![SSOTisNowOn.png](https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png)
+<Image align="center" alt="SSOTisNowOn.png" src="https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png" />
 
 您可以在数据总览面板中查看SSOT试图，全面掌握非自然量的投放指标。该视图可确保：
 
@@ -79,11 +79,11 @@ SSOT机制会标记出同时被SKAN和非SKAN方式重复归因的激活。AF会
 
 1. 请事先检查转化值操作台中的<Anchor target="_blank" href="/marketers/zh/docs/skan-conversion-studio#single-source-of-truth">SSOT</Anchor>开关是否已打开。
 2. 从AppsFlyer后台进入**面板** > **数据总览面板**。   
-   <Image alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
+   <Image align="center" alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
 3. 点击▼。
 4. 选择数据总览轻量版。  
    界面会显示SSOT开关。  
-   <Image alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
+   <Image align="center" alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
 5. 启用单一可信数据源（SSOT）机制
 6. 完成操作后会出现以下两种结果：
    * 界面会显示面板指标和图表，  
@@ -193,7 +193,7 @@ SKAN归因和AF模型归因的作用机制不同，且具有不同的特点和�
 
 下图说明了可能出现的SKAN- AF模型归因场景。
 
-![skan_af_model_diagram.png](https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png)
+<Image align="center" alt="skan_af_model_diagram.png" src="https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png" />
 
 下表说明了每个归因场景的原理。
 
@@ -209,7 +209,7 @@ SKAN归因和AF模型归因的作用机制不同，且具有不同的特点和�
 
 下图详细描述了SSOT的作用机制
 
-![SingleSourceOfTruth.png](https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png)
+<Image align="center" alt="SingleSourceOfTruth.png" src="https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png" />
 
 **SSOT机制的作用原理**
 

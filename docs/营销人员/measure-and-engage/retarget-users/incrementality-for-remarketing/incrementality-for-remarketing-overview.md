@@ -176,7 +176,7 @@ AppsFlyer增量分析在非SRN（基于归因链接的广告平台）中采用�
 
 ## 增量分析面板
 
-[![New_Incrementality_Guide_image.jpg](https://files.readme.io/a14fa7ae346177dbdd7de5fde4917d7300cbc148097a2239e29460a67eacd9a6-15317247527569.jpg)](https://files.readme.io/a14fa7ae346177dbdd7de5fde4917d7300cbc148097a2239e29460a67eacd9a6-15317247527569.jpg)
+<Image align="center" alt="New_Incrementality_Guide_image.jpg" src="https://files.readme.io/a14fa7ae346177dbdd7de5fde4917d7300cbc148097a2239e29460a67eacd9a6-15317247527569.jpg" />
 
 <div id="accessing-the-dashboard" />
 

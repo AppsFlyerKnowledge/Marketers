@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要**：在CM360中购买来自第三方媒体渠道的流量，并在AppsFlyer和CM360中同时衡量该流量入口带来的移动应用转化（AppsFlyer将其归因于该第三方媒体渠道）。
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 
 <div id="measurement-of-cm360-with-non-dv360-third-party-media-sources" />
 

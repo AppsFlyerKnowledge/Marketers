@@ -45,14 +45,14 @@ x-zendesk:
 
 1. 通过单击 **合作** > **数据洁净室**，在AppsFlyer侧边菜单中。 
 
-   <Image alt="from Collaborate.png" src="https://support.appsflyer.com/hc/article_attachments/32328511584529" width="37.55%" />
+   <Image align="center" alt="from Collaborate.png" src="https://support.appsflyer.com/hc/article_attachments/32328511584529" width="37.55%" />
 2. 转到 **合作** 选项卡> **+ 新的合作**.
 
-   <Image alt="在协作选项卡中，单击新建协作arrow.png" src="https://support.appsflyer.com/hc/article_attachments/32348047403665" width="1240px" />
+   <Image align="center" alt="在协作选项卡中，单击新建协作arrow.png" src="https://support.appsflyer.com/hc/article_attachments/32348047403665" width="1240px" />
 
    将显示新的协作屏幕。
 
-   [![全新合作 - 空state.png](https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png)](https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png)
+   <Image align="center" alt="全新合作 - 空state.png" src="https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png" />
 
 </Accordion>
 
@@ -64,7 +64,7 @@ x-zendesk:
 
 1. 点击 **设置** （在 **设置协作详细信息**).
 
-   <Image alt="设置.png" src="https://files.readme.io/e47781f360714e539ed54c6a8bfaa32b282f4609dc2c91d77021034f46dfb23a-32348709077393.png" width="951px" />
+   <Image align="center" alt="设置.png" src="https://files.readme.io/e47781f360714e539ed54c6a8bfaa32b282f4609dc2c91d77021034f46dfb23a-32348709077393.png" width="951px" />
 2. 输入协作名称。这也是您的协作者将看到的初始名称（您以后可以随时更改它）。然后，单击 **救**.
 
 设置协作细节
@@ -81,10 +81,10 @@ x-zendesk:
 
 1. 点击 **加** （在 **添加协作者**).   
 
-   <Image alt="添加协作者 点击Add.png" src="https://files.readme.io/958f88782e8cd36bbfa1962b51de72824200952be183a968d311fa6ef164553e-34014450760465.png" width="2088px" />
+   <Image align="center" alt="添加协作者 点击Add.png" src="https://files.readme.io/958f88782e8cd36bbfa1962b51de72824200952be183a968d311fa6ef164553e-34014450760465.png" width="2088px" />
 2. 输入协作者的电子邮件。
 
-   <Image alt="add a collaborator.png" src="https://support.appsflyer.com/hc/article_attachments/32324746219537" width="83.55%" />
+   <Image align="center" alt="add a collaborator.png" src="https://support.appsflyer.com/hc/article_attachments/32324746219537" width="83.55%" />
 3. 设置您的 **数据权限策略**.<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources#共享权限">详情请见此处说明。</Anchor>  
    该策略将适用于与协作关联的所有源，除非根据单个源进行修改。权限包括：
    * **对协作者可见** - 允许协作者查看您与协作关联的源。禁用后，您的源将仅对您可见。
@@ -93,7 +93,7 @@ x-zendesk:
    * **合作伙伴联系** - 允许协作者将受众发送到 <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-add-connections">合作伙伴目的地</Anchor>.
    * **文件导出** - 允许协作者将受众文件导出到他们的云存储桶。
 
-     <Image alt="数据permissions.png" src="https://support.appsflyer.com/hc/article_attachments/34012032112913" width="93.74%" />
+     <Image align="center" alt="数据permissions.png" src="https://support.appsflyer.com/hc/article_attachments/34012032112913" width="93.74%" />
 
      设置权限后，单击 **救**.
 4. 点击 **救** 再。创建协作后，协作者将在其收件箱中收到协作邀请。当他们通过电子邮件登录 AppsFlyer 时，他们将能够开始与您合作。
@@ -111,7 +111,7 @@ x-zendesk:
 1. 在 **数据协作平台** > **合作** 选项卡>单击相关协作以访问它。
 2. 点击 **副** 下 **关联来源**.  
 
-   <Image alt="关联来源 单击associate.png" src="https://files.readme.io/ed192e758d04c3f48dd70877f90c39428f72460247d4a5940c1217393ae5f686-34014749769617.png" width="2080px" />
+   <Image align="center" alt="关联来源 单击associate.png" src="https://files.readme.io/ed192e758d04c3f48dd70877f90c39428f72460247d4a5940c1217393ae5f686-34014749769617.png" width="2080px" />
 3. 选择要关联的源（或 <Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources">创建新源</Anchor>).  
 
    关联数据源  
@@ -122,11 +122,11 @@ x-zendesk:
 
    点击 **编辑权限** 在源旁边。  
 
-   <Image alt="edit permissions.png" src="https://support.appsflyer.com/hc/article_attachments/33579354753425" width="81.53%" />
+   <Image align="center" alt="edit permissions.png" src="https://support.appsflyer.com/hc/article_attachments/33579354753425" width="81.53%" />
 
    根据您的偏好设置权限（<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">了解权限</Anchor>），然后单击 **救**.  
 
-   <Image alt="权限source1.png" src="https://files.readme.io/e4b025bf9cd944024e578ac4bcfd60c46d847b3e403b1da737e3451eb708e5a9-34019077412369.png" width="90.08%" />
+   <Image align="center" alt="权限source1.png" src="https://files.readme.io/e4b025bf9cd944024e578ac4bcfd60c46d847b3e403b1da737e3451eb708e5a9-34019077412369.png" width="90.08%" />
 
    **注意：** 您还可以通过转到 **关联来源**，然后点击源>右侧的作（3点）菜单 **编辑权限**.
 
@@ -150,10 +150,10 @@ x-zendesk:
 
 1. 在数据协作平台（数据洁净室）中，转到 **合作** 选项卡>特定协作。   
 
-   <Image alt="从合作到特定collaboration.png" src="https://support.appsflyer.com/hc/article_attachments/34019991093649" width="82.25%" />
+   <Image align="center" alt="从合作到特定collaboration.png" src="https://support.appsflyer.com/hc/article_attachments/34019991093649" width="82.25%" />
 2. 在协作仪表板中，单击 **相关来源** 部分或右上角的作菜单> **相关来源**.  
 
-   <Image alt="actions menu open.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+   <Image align="center" alt="actions menu open.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
 
 
 <div id="associate-new-sources" />
@@ -162,7 +162,7 @@ x-zendesk:
 
 **要关联新源，请执行以下作：** 点击 **+ 关联来源** > 从下拉菜单中选择来源>单击 **救**.  
 
-<Image alt="将源关联到现有collaboration.png" src="https://files.readme.io/4ecd2b8d33195d79c93848b8b1385f504b2c8ee78f509b99d7e4f3b1910bf81e-34127880603921.png" width="574px" />
+<Image align="center" alt="将源关联到现有collaboration.png" src="https://files.readme.io/4ecd2b8d33195d79c93848b8b1385f504b2c8ee78f509b99d7e4f3b1910bf81e-34127880603921.png" width="574px" />
 
 <div id="manage-sources" />
 
@@ -185,10 +185,10 @@ x-zendesk:
 
 1. 在数据协作平台（数据洁净室）中，转到 **合作** 选项卡>特定协作。  
 
-   <Image alt="从合作到特定collaboration.png" src="https://support.appsflyer.com/hc/article_attachments/34019991093649" width="82.25%" />
+   <Image align="center" alt="从合作到特定collaboration.png" src="https://support.appsflyer.com/hc/article_attachments/34019991093649" width="82.25%" />
 2. 在协作仪表板中，单击右上角的作（3 个点）菜单，然后选择特定作。   
 
-   <Image alt="actions menu open.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+   <Image align="center" alt="actions menu open.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
 
 <div id="terms-and-conditions" />
 
@@ -220,15 +220,15 @@ x-zendesk:
 
 1. 在数据协作平台（数据洁净室）中，转到 **合作** 选项卡>特定协作。  
 
-   <Image alt="从合作到特定collaboration.png" src="https://support.appsflyer.com/hc/article_attachments/34019991093649" width="574px" />
+   <Image align="center" alt="从合作到特定collaboration.png" src="https://support.appsflyer.com/hc/article_attachments/34019991093649" width="574px" />
 2. 点击 **管理访问权限** （在右上角）。   
 
-   <Image alt="管理access.png" src="https://files.readme.io/e9cfaf5da2b147f68255d6d442078a3770db4c9873109d1188b9a2b5c0f4e65f-36132545995281.png" width="475px" />
+   <Image align="center" alt="管理access.png" src="https://files.readme.io/e9cfaf5da2b147f68255d6d442078a3770db4c9873109d1188b9a2b5c0f4e65f-36132545995281.png" width="475px" />
 3. **要允许公司中的任何人（具有 DCP 权限）访问协作，请执行以下作：**   
 
    将 **一般访问** settings 设置为 **“贵公司”的任何人**  
 
-   <Image alt="协作是草稿 - 管理访问下拉列表 w arrow.png" src="https://files.readme.io/6358d272f675d9f6f7ad4b07637db7361d772d34738bbd54488212c9870598b4-36132546008209.png" width="623px" />
+   <Image align="center" alt="协作是草稿 - 管理访问下拉列表 w arrow.png" src="https://files.readme.io/6358d272f675d9f6f7ad4b07637db7361d772d34738bbd54488212c9870598b4-36132546008209.png" width="623px" />
 
    **要邀请特定用户：**   
 

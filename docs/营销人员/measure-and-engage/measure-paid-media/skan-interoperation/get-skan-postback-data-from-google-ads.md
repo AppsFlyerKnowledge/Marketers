@@ -75,10 +75,10 @@ x-zendesk:
 3. 搜索并选择**Google Ads**。
 4. 进入**SKAN**选项卡。
 
-   <Image alt="mceclip0.png" src="https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png" width="309px" />
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png" width="309px" />
 5. 如果界面弹出消息显示“**目前暂时不可用**”，一般是因为启用了广告屏蔽插件。发生这种情况时，请关闭广告屏蔽工具，然后刷新页面。如仍不可用，请联系 AppsFlyer 获取支持。
 
-   ![mceclip1.png](https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png)
+   <Image align="center" alt="mceclip1.png" src="https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png" />
 6. 点击**Google Ads登录**。
    * 您必须使用管理员账户登录到Google Ads。
    * 如果Google账户关联了多个应用，只需登录一次即可为所有应用授权，无需分应用逐个授权。
@@ -86,7 +86,7 @@ x-zendesk:
 7. 请按照用户界面的说明进行操作。
 8. 某些情况下，界面可能会弹出提示消息，让您为AppsFlyer授权**管理您的AdWords广告投放**， 这时请开放该权限。不用担心，我们不会对您的投放设置做任何更改。
 
-   [<Image alt="GoogleManageAdWords.png" src="https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png" width="182px" />](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)
+   <Image align="center" alt="GoogleManageAdWords.png" src="https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png" width="182px" />
 9. 确认账户状态显示为**waiting for sync**（等待同步）。  
    在AppsFlyer成功从Google Ads拉取到数据前，界面会一直显示该消息（最多需要24小时）。
 10. 请在第二天的UTC时间02:00之后检查账户状态是否变为**活跃**。  

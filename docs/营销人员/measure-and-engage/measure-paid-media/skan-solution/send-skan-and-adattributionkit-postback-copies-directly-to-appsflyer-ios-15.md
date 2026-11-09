@@ -62,7 +62,7 @@ x-zendesk:
 >
 > 您能判断以下说法的正误吗？
 >
-> ![TrueOrFalse.png](https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png)
+> <Image align="center" alt="TrueOrFalse.png" src="https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png" />
 >
 > * 广告主不再需要通过广告平台来获得回传数据。
 >   * **False。** 广告主仍需依赖广告平台来解析部分关键数据。例如，只有广告平台能够将SKAN中的campaign ID与对应的广告系列名称进行映射。

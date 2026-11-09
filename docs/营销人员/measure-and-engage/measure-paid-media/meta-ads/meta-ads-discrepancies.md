@@ -53,7 +53,7 @@ AppsFlyer支持点击型归因和浏览型归因。为了尽量减少Meta ads和
 
 Meta ads中默认的点击型回溯窗口为7天。虽然[在某些情况下默认窗口期会有所不同](https://www.facebook.com/business/help/395050428485124?id=428636648170202)，但仍建议您将AppsFlyer中的点击型回溯窗口设为7天，与Meta ads的默认设置保持一致。
 
-![image__4_.png](https://files.readme.io/215d2234aae1ec6b4e1c6ac922915851bf8ab02574a874119d286fa49c64f9ba-25899749062033.png)
+<Image align="center" alt="image__4_.png" src="https://files.readme.io/215d2234aae1ec6b4e1c6ac922915851bf8ab02574a874119d286fa49c64f9ba-25899749062033.png" />
 
 <div id="example" />
 

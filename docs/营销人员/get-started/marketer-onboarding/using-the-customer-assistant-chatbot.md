@@ -31,10 +31,10 @@ Customer Assistant Chatbot 能够根据您遇到的问题类型，将您引导�
 
 1. 在页面顶部的菜单中选择帮助 > 联系我们。客服助手机器人将自动弹出。
 
-   <Image alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
+   <Image align="center" alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
 2. 从列表项中选择 **服务单类型** 并填写所有信息。
 
-   <Image alt="Bildschirmfoto 2026-08-26 um 12.17.34.png" src="https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png" width="75%" />
+   <Image align="center" alt="Bildschirmfoto 2026-08-26 um 12.17.34.png" src="https://files.readme.io/a80a1a1e74d8acf01d32a931581925cf0b787a17782791e58e5634779ed7207e-50372534624529.png" width="75%" />
 
    3. 点击**提交**
 

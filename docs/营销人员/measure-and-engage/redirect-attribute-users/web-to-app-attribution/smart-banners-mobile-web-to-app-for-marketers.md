@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **概要：** 本文介绍了如何通过智能横幅将您的网页用户转化为应用用户。
 
-[![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg" />
 
 <div id="note" />
 
@@ -286,7 +286,7 @@ x-zendesk:
 
       界面会打开一个横幅模板选择窗口。
 
-      [![](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)
+      <Image align="center" alt="" src="https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png" />
    2. 将鼠标悬停在某个**素材模板**上，然后点击**创建**，进入**搭建素材**页面。
    3. 智能横幅素材中的所有元素都可以调整。您只需选择要编辑的元素名称，或在预览页面点击相应元素便可进行配置。 **请注意：** 部分模板中可能会有一些元素不可用。
       * 标题

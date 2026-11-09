@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **At a glance:** Enrich PBA data with auto-tagging gclid campaign information by connecting to Google Ads.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png" />
 
 ## Integrating Google Ads campaign data in PBA
 
@@ -38,7 +38,7 @@ Connect your Google Ads account (1 or more) to your brand bundle. Google Ads ca
 
 **Website Attribution dashboard with campaign hierarchy populated**
 
-![PBAWebSite.png](https://files.readme.io/46004298b827d3f4eaa4adae9fb2a8676867e6b5dde44a7ff087fe1bda07f054-4403138621713.png)
+<Image align="center" alt="PBAWebSite.png" src="https://files.readme.io/46004298b827d3f4eaa4adae9fb2a8676867e6b5dde44a7ff087fe1bda07f054-4403138621713.png" />
 
 Campaign and ad hierarchy data is available in dashboards and raw data as follows:
 

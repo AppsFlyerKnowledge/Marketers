@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **At a glance:** Add Instagram mobile app installs to your Meta ads account.
 
-<Image alt="instagram_logo.jpg" src="https://files.readme.io/55ab80e2b1ba9d164d978116f3aaaacb9fe7e4571f71e0130a40e1ded16679db-360000492725.jpg" width="101px" />
+<Image align="center" alt="instagram_logo.jpg" src="https://files.readme.io/55ab80e2b1ba9d164d978116f3aaaacb9fe7e4571f71e0130a40e1ded16679db-360000492725.jpg" width="101px" />
 
 ## Setting up Instagram
 
@@ -37,13 +37,13 @@ Meta documentation can be found <Anchor target="_blank" href="https://developers
 
 1. Link your Instagram account to Meta Business Manager  
 
-   ![link-inst-with_fb-account.png](https://files.readme.io/c6c7fe17274f0b9af008c4452b4b7ea2233cc5bca8773307fef6afaeb7d06015-11212956311441.png)
+   <Image align="center" alt="link-inst-with_fb-account.png" src="https://files.readme.io/c6c7fe17274f0b9af008c4452b4b7ea2233cc5bca8773307fef6afaeb7d06015-11212956311441.png" />
 2. Once added in Business Manager, Assign an Ad Account to your Instagram Account  
 
-   <Image alt="assign-inst-ad-to-fb.png" src="https://files.readme.io/658dc57d0056a2217a9f0f5c785b87e24c297158b75c5815eddb64930d00ea17-11213052873745.png" width="550px" />
+   <Image align="center" alt="assign-inst-ad-to-fb.png" src="https://files.readme.io/658dc57d0056a2217a9f0f5c785b87e24c297158b75c5815eddb64930d00ea17-11213052873745.png" width="550px" />
 3. Configure Meta ads under the Active Integrations Configuration by adding your Facebook App ID.
 4. If you do not have a Facebook App ID, create one <Anchor target="_blank" href="https://developers.facebook.com/apps">here</Anchor>.  
-   [![facebook_app_id.png](https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png)](https://support.appsflyer.com/hc/article_attachments/51165506352913)
+   [<Image align="center" alt="facebook_app_id.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />](https://support.appsflyer.com/hc/article_attachments/51165506352913)
 
 ## Instagram landing page for deep linking
 

@@ -29,7 +29,7 @@ x-zendesk:
 
 > **概要：** 本文重点解释如何将已归因事件的原始数据实时发送到您的服务器端点。
 
-![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
+<Image align="center" alt="6970_Push_API_image.png" src="https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png" />
 
 ## Push API
 
@@ -148,7 +148,7 @@ x-zendesk:
 
 **端点**
 
-[![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
+<Image align="center" alt="PushAPI_us-en.png" src="https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png" />
 
 <div id="endpoint-planning-table" />
 
@@ -297,7 +297,7 @@ x-zendesk:
 
 <Accordion title="应用内事件消息不可用">
 
-[![InappSelectionDisabled_us-en.png](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)
+<Image align="center" alt="InappSelectionDisabled_us-en.png" src="https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png" />
 
 * 应用内事件必须至少被记录到一次，相应的消息选项才会显示为可选。
 * 使用测试设备生成应用内事件，或使用 <Anchor target="_blank" href="/marketers/zh/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S API</Anchor>手动生成事件。

@@ -63,7 +63,7 @@ Partner Marketplace为您呈现已与AppsFlyer对接的渠道，其中囊括了�
 * 使用[筛选条件](/docs/partner-integrations#筛选渠道列表)对渠道列表进行筛选
 * [搜索](/docs/partner-integrations#深入了解具体渠道)具体渠道
 
-[![partner marketplace updated.png](https://support.appsflyer.com/hc/article_attachments/30603947718801)](https://support.appsflyer.com/hc/article_attachments/30603947718801)
+<Image align="center" alt="partner marketplace updated.png" src="https://support.appsflyer.com/hc/article_attachments/30603947718801" />
 
 ### 探索Partner Marketplace平台
 
@@ -80,7 +80,7 @@ Partner Marketplace为您呈现已与AppsFlyer对接的渠道，其中囊括了�
 
 #### 渠道简介卡片
 
-![google_meta.png](https://support.appsflyer.com/hc/article_attachments/30603947722129)
+<Image align="center" alt="google_meta.png" src="https://support.appsflyer.com/hc/article_attachments/30603947722129" />
 
 您可以在渠道简介卡片中快速了解关于渠道服务的基础信息。
 
@@ -123,7 +123,7 @@ DCR合作平台是指提供第一方和第三方数据的技术平台。<Anchor 
 
 ### 搜索渠道
 
-![partner search3.png](https://support.appsflyer.com/hc/article_attachments/30603976116369)
+<Image align="center" alt="partner search3.png" src="https://support.appsflyer.com/hc/article_attachments/30603976116369" />
 
 您可以通过Partner Marketplace中的搜索栏找到具体的渠道。在Partner Marketplace中使用搜索栏时：
 
@@ -189,7 +189,7 @@ AppsFlyer可以代您向相关渠道发送介绍函，帮助您与其取得联�
 
 #### 渠道表现
 
-[![Partner performance page.png](https://support.appsflyer.com/hc/article_attachments/30603976126097)](https://support.appsflyer.com/hc/article_attachments/30603976126097)
+<Image align="center" alt="Partner performance page.png" src="https://support.appsflyer.com/hc/article_attachments/30603976126097" />
 
 为了便于广告主判断是否要与某个具体渠道对接，我们会在这部分展示该渠道在各个方面的投放效果指标，以说明其质量水平。
 
@@ -253,7 +253,7 @@ AppsFlyer可以代您向相关渠道发送介绍函，帮助您与其取得联�
 
 1. 从AppsFlyer后台的侧边栏中选择**协作** > **Partner Marketplace**。
 2. 点击Partner Marketplace页面右上角的三个竖点图标，并选择**邀请新渠道**。   
-   [![invite_new_partner.png](https://support.appsflyer.com/hc/article_attachments/30603976129297)](https://support.appsflyer.com/hc/article_attachments/30603976129297)
+   <Image align="center" alt="invite_new_partner.png" src="https://support.appsflyer.com/hc/article_attachments/30603976129297" />
 3. 输入渠道名称和对应的邮箱地址。  
    该渠道会收到一封带有注册链接的邮件，他们可以使用该链接进行注册。
 
@@ -287,7 +287,7 @@ AppsFlyer可以代您向相关渠道发送介绍函，帮助您与其取得联�
 
 #### 活跃对接页面
 
-[![active integratins page.png](https://support.appsflyer.com/hc/article_attachments/30603976137617)](https://support.appsflyer.com/hc/article_attachments/30603976137617)
+<Image align="center" alt="active integratins page.png" src="https://support.appsflyer.com/hc/article_attachments/30603976137617" />
 
 **活跃对接渠道**页面仅呈现您正在使用的所有<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">活跃</Anchor>渠道。您可以通过此页面管理现有对接，搜索具体的活跃渠道，并针对尚未连接到当前选定应用的渠道创建新对接。**活跃对接**页面分为以下两个部分；
 

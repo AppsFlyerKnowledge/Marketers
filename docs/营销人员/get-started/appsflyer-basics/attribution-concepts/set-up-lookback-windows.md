@@ -152,7 +152,7 @@ AppsFlyer为广告主提供可以自行配置的归因回溯窗口，便于广�
 
 下图展示了用户与广告互动之后的应用激活时间分布情况，
 
-[![](https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png)](https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png)
+<Image align="center" alt="" src="https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png" />
 
 您可以通过上图更好地理解回溯窗口的意义，及其在衡量激活数量时的作用。
 
@@ -172,7 +172,7 @@ AppsFlyer为广告主提供可以自行配置的归因回溯窗口，便于广�
 
 您在X Ads上设置了一个广告系列，并在AppsFlyer后台将其点击回溯窗口设为7天，但X Ads的默认回溯窗口为14天。
 
-[![srn-discrepancy-srn-lookback-larger-than-appsflyer.png](https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png)](https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png)
+<Image align="center" alt="srn-discrepancy-srn-lookback-larger-than-appsflyer.png" src="https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png" />
 
 </Accordion>
 
@@ -182,7 +182,7 @@ AppsFlyer为广告主提供可以自行配置的归因回溯窗口，便于广�
 
 您在X Ads上设置了一个广告系列，并在AppsFlyer后台将其点击回溯窗口设为28天，但X Ads的默认回溯窗口为14天。
 
-[![srn-lookback-smaller-than-appsflyer.png](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)
+<Image align="center" alt="srn-lookback-smaller-than-appsflyer.png" src="https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png" />
 
 </Accordion>
 

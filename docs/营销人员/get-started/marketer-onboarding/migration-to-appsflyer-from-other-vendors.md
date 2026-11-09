@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概览：** 规划从其他归因服务商迁移至 AppsFlyer 的流程。了解如何在迁移期间避免重复扣费、数据重复和数据丢失等问题。
 
-![迁移流程](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
+<Image align="center" alt="迁移流程" src="https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png" />
 
 <div id="about-migrating-to-appsflyer-from-other-vendors" />
 

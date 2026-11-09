@@ -243,7 +243,7 @@ AppsFlyer支持网页端获客广告专用的Meta Ads对接（`snapweb_int`）�
 
 <Accordion title="整个链路中的数据流">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. Snapchat广告的URL中包含`pid=snapweb_int`参数。当用户点击该广告时，参数会被自动添加到该广告URL的末尾。
 2. 用户跳转到指定的目标网址——即一个带有智能脚本的落地页。

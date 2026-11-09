@@ -90,7 +90,7 @@ Appsflyer.setCustomerUserID(SwrveComponent.Instance.SDK.UserId);
 
 ### 通用设置
 
-![Swrve_msc_new_3.png](https://files.readme.io/feb1d5f846629d1909727b70b66e4b36138704ebbe4518e2dc03652b9fe5c57a-360001902065.png)
+<Image align="center" alt="Swrve_msc_new_3.png" src="https://files.readme.io/feb1d5f846629d1909727b70b66e4b36138704ebbe4518e2dc03652b9fe5c57a-360001902065.png" />
 
 <div id="swrve-reporting-with-appsflyer-data" />
 
@@ -98,7 +98,7 @@ Appsflyer.setCustomerUserID(SwrveComponent.Instance.SDK.UserId);
 
 ### 默认回传
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 点击**保存**。
 
@@ -139,8 +139,8 @@ Snapchat不支持归因链接。
 </Accordion>
 
 
-[![](https://files.readme.io/6a3e4cf709f58b20f2932ab47e6fa9289653504d85a0b6eec2580718e2a4dc7c-49839257162769.png)](https://files.readme.io/6a3e4cf709f58b20f2932ab47e6fa9289653504d85a0b6eec2580718e2a4dc7c-49839257162769.png)
+<Image align="center" alt="" src="https://files.readme.io/6a3e4cf709f58b20f2932ab47e6fa9289653504d85a0b6eec2580718e2a4dc7c-49839257162769.png" />
 
-[![](https://files.readme.io/561403abefae9e98e24934c96dd25b1ee34ae24cf30695354c4930404e0a7f19-49839257163537.png)](https://files.readme.io/561403abefae9e98e24934c96dd25b1ee34ae24cf30695354c4930404e0a7f19-49839257163537.png)
+<Image align="center" alt="" src="https://files.readme.io/561403abefae9e98e24934c96dd25b1ee34ae24cf30695354c4930404e0a7f19-49839257163537.png" />
 
 <div data-zendesk-anchors="h_01H9HWK5DM87JTDVFND0KB965G=%E9%87%8D%E8%A6%81%E6%8F%90%E7%A4%BA integrating-swrve-and-appsflyer=%E9%87%8D%E8%A6%81%E6%8F%90%E7%A4%BA h_01H9HWK5DM1K9P5XXC6S7ENAGV=%E9%87%8D%E8%A6%81%E6%8F%90%E7%A4%BA h_01H9HWK5DMS8HAK25BF5EXZT51=setting-up-swrve h_01H9HWK5DN9D0DS46X72EDAW54=integration-tab activate-partner=%E5%90%AF%E7%94%A8%E6%B8%A0%E9%81%93 h_01H9HWK5DN375XJVHQCZ8Y3K13=%E5%90%AF%E7%94%A8%E6%B8%A0%E9%81%93 general-settings=%E9%80%9A%E7%94%A8%E8%AE%BE%E7%BD%AE h_01H9HWK5DN0XK2E0HXS61GRECE=%E9%80%9A%E7%94%A8%E8%AE%BE%E7%BD%AE default-postbacks=%E9%BB%98%E8%AE%A4%E5%9B%9E%E4%BC%A0 h_01H9HWK5DNH6SYY8T9NX09MRYS=%E9%BB%98%E8%AE%A4%E5%9B%9E%E4%BC%A0 h_01H9HWK5DNZVQDZ0Q1Z9WSKRSR=attribution-link-tab h_01H9HWK5DNPG89HSB0107TKHED=cost-tab h_01H9HWK5DNARD4K0MPHPXKBPXZ=ad-revenue-tab h_01H9HWK5DNFKAT0J98JWVRPQ1G=permissions-tab swrve-reporting-with-appsflyer-data=%E9%BB%98%E8%AE%A4%E5%9B%9E%E4%BC%A0 h_01H9HWK5DN3QB9V593EV566GAQ=%E9%BB%98%E8%AE%A4%E5%9B%9E%E4%BC%A0" />

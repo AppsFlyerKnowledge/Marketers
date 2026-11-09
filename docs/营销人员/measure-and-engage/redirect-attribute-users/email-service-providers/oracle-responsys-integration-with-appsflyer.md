@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **At a glance:** Oracle Responsys, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. Email recipients who click the link are deep linked into your app.
 
-![oracle-responsys-af-logo.png](https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png)
+<Image align="center" alt="oracle-responsys-af-logo.png" src="https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png" />
 
 ESPs (Email Service Providers) can be excellent sources for segmented user traffic.
 
@@ -61,7 +61,7 @@ To set up a click domain, follow Oracle Responsys official guide on how to <Anch
 
 **Note**, in Link tables, you can define **IOS link URL** to be the same as the Link URL:
 
-![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
+<Image align="center" alt="Oracle-responsys-link-tracking-table.png" src="https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png" />
 
 Once you set click domains in Link Tables, Responsys uses these domains to wrap OneLinks that you include in email campaigns. This way, Responsys can record clicks in their system while preserving OneLink and deep linking functionality.
 

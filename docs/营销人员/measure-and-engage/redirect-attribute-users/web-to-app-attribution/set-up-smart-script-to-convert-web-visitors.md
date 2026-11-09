@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概览：** 设置 OneLink 智能脚本，将来自任意来源的移动网站访客转化为移动应用用户，并进行归因。
 
-![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
+<Image align="center" alt="7901_Smart_Script_flow_1920x1080_2__1_.png" src="https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png" />
 
 <div id="setup" />
 
@@ -128,7 +128,7 @@ OneLink 智能脚本 有两个版本：
 1. 点击 智能脚本 名称旁边的下拉箭头 <Image alt="Down_arrow.jpg" src="https://files.readme.io/a82023665721be681f985548857c4c329f626435780bb1bff7a3821b32b69078-42045468433041.jpg" width="28px" />。  
    您可以在此查看所有已保存的脚本  
 
-   <Image alt="脚本步骤.jpg" src="https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg" width="1732px" />
+   <Image align="center" alt="脚本步骤.jpg" src="https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg" width="1732px" />
 2. 点击您要编辑的脚本旁边的铅笔图标
    1. 按照[如何创建 OneLink 智能脚本](/docs/set-up-smart-script-to-convert-web-visitors#设置-onelink-智能脚本)中的步骤操作
 3. 点击垃圾桶图标以删除智能脚本
@@ -419,7 +419,7 @@ Web referrer 映射可帮助您了解用户是从哪个页面进入您的网站�
 >
 > **传出二维码**：
 >
-> <Image alt="" src="https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png" width="48.07%" />
+> <Image align="center" alt="" src="https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png" width="48.07%" />
 
 </Accordion>
 
@@ -480,7 +480,7 @@ OneLink 智能脚本 可用于统计您网站上的曝光。为此，开发人�
 
 例如，要将 is\_retargeting 添加为参数，应在 **mapping for** 字段中选择「自定义参数」，然后将 is\_retargeting 参数添加到 **传出 URL 参数** 字段中。
 
-![Smart_Script_Custom.jpg](https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg)
+<Image align="center" alt="Smart_Script_Custom.jpg" src="https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg" />
 
 <div id="adset-and-other-parameters-are-not-showing-in-the-dropdown" />
 

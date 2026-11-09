@@ -198,16 +198,16 @@ AppsFlyer支持通过启用<Anchor target="_blank" href="/marketers/zh/docs/goog
 1. 按[归因链接部分](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab)的说明，创建一个跨平台落地页。
 2. 登入Google Ads并创建一个新的广告系列。
 3. 选择投放目标（campaign objective）。  
-   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png" />
    * 除“App promotion”之外，所有目标均适用（“App promotion”仅适用于移动端应用的广告）。
    * 建议您将投放目标设置为“Sales”，以便根据具体的应用内事件进行优化。
 4. 选择转化目标（conversion goals）。  
-   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)
+   <Image align="center" alt="" src="https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png" />
    * 默认情况下，您会看到账户层级的预定义投放目标（campaign goals）。您可以根据实际的投放需求保留或移除相关目标。
    * 如果您没有在预定义列表中看到所需目标，请手动[添加相应的转化行为和转化目标](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals)。
    * 您还可以在Conversion页面中修改您的预定义目标。
 5. 选择所需的campaign type（广告系列类型）  
-   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)
+   <Image align="center" alt="" src="https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png" />
    * 除“Shopping”之外的所有广告系列类型均适用（“Shopping”类广告系列要求广告主配置商品目录，且仅限已验证的域名）。
 6. 输入跨平台落地页的网址，作为Google广告的跳转终点（Final URL）。
 
@@ -222,16 +222,16 @@ AppsFlyer支持通过启用<Anchor target="_blank" href="/marketers/zh/docs/goog
 1. 按[归因链接部分](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab)的说明，创建一条直接归因链接。
 2. 登入Google Ads并创建一个新的广告系列。
 3. 选择投放目标（campaign objective）。  
-   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png" />
    * 除“App promotion”之外，所有目标均适用（“App promotion”仅适用于移动端应用的广告）。
    * 建议您将投放目标设置为“Sales”，以便根据具体的应用内事件进行优化。
 4. 选择转化目标（conversion goals）。  
-   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)
+   <Image align="center" alt="" src="https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png" />
    * 默认情况下，您会看到账户层级的预定义投放目标（campaign goals）。您可以根据实际的投放需求保留或移除相关目标。
    * 如果您没有在预定义列表中看到所需目标，请手动[添加相应的转化行为和转化目标](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals)。
    * 您还可以在Conversion页面中修改您的预定义目标。
 5. 选择所需的campaign type（广告系列类型）  
-   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)
+   <Image align="center" alt="" src="https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png" />
    * 除“Shopping”之外的所有广告系列类型均适用（“Shopping”类广告系列要求广告主配置商品目录，且仅限已验证的域名）。
 6. 输入链接，作为Google广告的跳转终点（Final URL）。
    * 请确保该网址是您需要引导用户进入的页面。您可以使用网站落地页或商店页面等的任何网址，例如：`https://store.steampowered.com/app/{appid}/{myapp}/`。

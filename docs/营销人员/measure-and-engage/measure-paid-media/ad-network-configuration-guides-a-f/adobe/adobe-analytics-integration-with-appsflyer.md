@@ -161,7 +161,7 @@ let customerUserID = AppsFlyerLib.shared().customerUserIDp
    **请注意：** 在您与该渠道合作期间，请确保该开关始终处于打开 <Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">（启用）</Anchor> 状态。
 5. 打开**Adobe Analytics SDK**中的配置文件（**ADBMobileConfig.XML**），复制**Report\_Suite\_ID**（蓝框标记）和**Adobe\_Analytic\_server\_URL**（绿框标记），并将以上信息分别粘贴至AppsFlyer Adobe Analytics对接设置页面的相应字段。  
 
-   ![](https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png)
+   <Image align="center" alt="" src="https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png" />
 6. 点击**保存对接**。
 
 保存后，AppsFlyer将在每次自然或非自然激活发生时，向Adobe Analytics发送以下数据：

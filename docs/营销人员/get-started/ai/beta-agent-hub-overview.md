@@ -75,11 +75,11 @@ Agent Hub 的部分功能需额外配置，具体视您使用的通知渠道而�
 1. 在用于接收通知的 Slack 频道中输入 **/invite**
 2. 选择 **Add Apps to this channel**。
 
-<Image alt="Slack 频道详情菜单中的 Add Apps to this channel 选项" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
+<Image align="center" alt="Slack 频道详情菜单中的 Add Apps to this channel 选项" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
 
 选择 **AppsFlyer Agent Hub** -> **添加**
 
-<Image alt="Slack 应用目录中选中的 AppsFlyer Agent Hub 应用及 Add 按钮Slack" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
+<Image align="center" alt="Slack 应用目录中选中的 AppsFlyer Agent Hub 应用及 Add 按钮Slack" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
 
 * 以下角色默认拥有完整访问权限：
   * 管理员

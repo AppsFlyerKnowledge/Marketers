@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **At a glance:** 账户管理员可以按照本文介绍的步骤，在不同的 AppsFlyer 账户之间迁移应用，迁移双方的账户管理员均需参与此流程。
 
-![应用迁移流程动画：展示应用迁移向导的各个操作步骤。](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
+<Image align="center" alt="应用迁移流程动画：展示应用迁移向导的各个操作步骤。" src="https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif" />
 
 <div id="app-transfer-between-accounts" />
 
@@ -92,7 +92,7 @@ x-zendesk:
    * 如果申请需要 AppsFlyer 协助处理，系统会通过弹出提示告知您。
    * 申请提交后，待迁移的应用会显示在您的<strong>「我的应用」</strong>页面中，并标记为「正在迁移至 `<接收方邮箱地址>`」。此时，您仍然可以删除申请，取消此次迁移。
 
-     ![示意图：转出方的「我的应用」页面显示待迁移的应用及「删除申请」选项。](https://files.readme.io/5e4762461afd7953657b91074054bd79a63ad5bf8a06d084ee4c655ac60088aa-360010128998.jpg)
+     <Image align="center" alt="示意图：转出方的「我的应用」页面显示待迁移的应用及「删除申请」选项。" src="https://files.readme.io/5e4762461afd7953657b91074054bd79a63ad5bf8a06d084ee4c655ac60088aa-360010128998.jpg" />
 
 </Accordion>
 
@@ -102,7 +102,7 @@ x-zendesk:
 2. 收到转出方发起迁移申请的电子邮件通知。
 3. 在<strong>「我的应用」</strong>页面中，点击**审核申请**。一份申请可以包含一个或多个应用。
 
-   ![示意图：接收方的「我的应用」页面显示待处理的应用迁移申请及「审核申请」选项。](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)
+   <Image align="center" alt="示意图：接收方的「我的应用」页面显示待处理的应用迁移申请及「审核申请」选项。" src="https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg" />
 4. 审核每项申请，并选择批准或拒绝。
 5. 阅读条款与条件；如果接受相关条款，请签署确认。
 6. 申请获批后，您和转出方都会收到电子邮件通知。

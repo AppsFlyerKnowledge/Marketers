@@ -30,7 +30,7 @@ x-zendesk:
 
 下文所示的归因流程重点说明了从广告互动到归因的用户链路中最关键的几个环节。其中还包含AppsFlyer推荐的跨平台落地页。 **请注意**：请注意：虽然我们建议您使用跨平台落地页，但您仍可以选择直接归因链接。
 
-![Epic_journey.jpg](https://files.readme.io/c5807442cff142ceb4aa3c4d55628e75b37627a011ca531fa390e46ccc3e23b8-small-14241275857553.jpg)
+<Image align="center" alt="Epic_journey.jpg" src="https://files.readme.io/c5807442cff142ceb4aa3c4d55628e75b37627a011ca531fa390e46ccc3e23b8-small-14241275857553.jpg" />
 
 1. 营销触点 这些营销触点可包括定期/不定期邮件、社交媒体、移动端网页等等。
 2. 您可以通过游戏落地页让用户跳转到您的Steam游戏页面。这个步骤对于UTM及其他URL参数的收集至关重要。有了这些参数，AppsFlyer就能将来自相关点击/激活的用户归因到带量的媒体渠道或广告主的自有媒体。  

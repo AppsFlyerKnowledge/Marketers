@@ -30,7 +30,7 @@ x-zendesk:
 
 ## 速览
 
-![6133DataLockerForAdvertisers.png](https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png)
+<Image align="center" alt="6133DataLockerForAdvertisers.png" src="https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png" />
 
 您可以在Data Locker中选择您需要AppsFlyer传输到指定宿端的数据，可用的维度包括应用、媒体渠道、事件和报告。然后您就能通过程序化的方式将这些数据从云端入库到您的系统中。
 
@@ -290,7 +290,7 @@ x-zendesk:
 
 1. 在所选报告的编辑窗口中，在**字段**将鼠标悬停在字段上，可查看字段说明。
 
-   [![HQ1_2024-08-26_15.44.23.png](https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png)](https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png)
+   <Image align="center" alt="HQ1_2024-08-26_15.44.23.png" src="https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png" />
 2. 勾选要包含的字段，取消勾选要排除的字段。
 3. 点击**应用**保存设置。
 
@@ -437,7 +437,7 @@ Data Locker会将数据写入您指定的存储工具中。如果您使用云存
 
 Data Locker以分级的目录结构将数据写入存储桶中，分级维度为报告类型、日期和时间。下图为目录结构示例：下图为目录结构示例：
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 具体报告的数据保存在该报告类型下的小时数（h）文件夹中：
 
@@ -728,7 +728,7 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
 3. 点击**Save changes**。
 4. 点击**Buckets** > **Add External Bucket（添加外部存储桶）**。  
    界面打开Add External Bucket窗口。  
-   <Image alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
+   <Image align="center" alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
 5. 输入**Bucket name**（存储桶名称）。桶名称的格式如下：`{桶名称}/{主文件夹}`。您可以在在证书窗口中看到存储桶名称和主文件夹的值。
 6. 点击**Add External bucket**（添加外部存储桶）。系统创建存储桶并将其展示在窗口左侧边栏中。  
    完成上述操作后，您就能访问Data Locker文件了。

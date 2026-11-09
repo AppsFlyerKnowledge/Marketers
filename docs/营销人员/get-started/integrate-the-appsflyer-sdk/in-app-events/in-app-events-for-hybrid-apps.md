@@ -55,7 +55,7 @@ x-zendesk:
 >
 > 原生代码收集这些数据，并使用AppsFlyer SDK发送这些订阅事件。
 >
-> [![](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)
+> <Image align="center" alt="" src="https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png" />
 
 <div id="recording-in-app-events-in-hybrid-apps" />
 

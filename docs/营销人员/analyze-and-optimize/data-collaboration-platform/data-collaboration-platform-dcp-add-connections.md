@@ -55,7 +55,7 @@ DCP 为不同的连接方向支持不同的云服务。使用下表查看每种�
 1. 在 AppsFlyer 中，前往 “**协作**” > “**数据整理室**”。
 2. 点击右上角的**管理连接**。
 3. 转到**来源**选项卡，然后单击 **+ 新建连接**。  
-   <Image alt="2026-07-27_13-30-46.png" src="https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png" width="529px" />
+   <Image align="center" alt="2026-07-27_13-30-46.png" src="https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png" width="529px" />
 4. 继续使用[云服务连接，获取以下源数据说明](#源数据的云服务连接)。
 
 您也可以在设置源时直接创建源连接。有关说明，请参阅<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources">创建和管理来源</Anchor>。
@@ -117,7 +117,7 @@ Snowflake在 “**新建连接**” 对话框中，输入包含源**数据的账
 1. 在 AppsFlyer 中，前往 “**协作**” > “**数据整理室**”。
 2. 点击右上角的**管理连接**。
 3. 转到**云存储**选项卡，然后单击 **+ 新建连接**。  
-   <Image alt="2026-07-27_13-30-34.png" src="https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png" width="533px" />
+   <Image align="center" alt="2026-07-27_13-30-34.png" src="https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png" width="533px" />
 4. **新的云存储连接**模式打开。
 5. **在新云存储连接**模式中，选择您的云提供商：**谷歌云存储**或**亚马逊简单存储**。
 6. 请输入您的存储桶名称

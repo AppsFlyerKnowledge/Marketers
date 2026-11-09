@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **At a glance:** 本文介绍如何设置 AppsFlyer 与 Snapchat 的对接，以进行归因衡量。 Snapchat 属于高级 SRN（自归因渠道，Self-Reporting Network）。
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
 <div id="overview" />
 
@@ -66,7 +66,7 @@ x-zendesk:
 
 开启**启用渠道（Activate Partner）**，以允许 AppsFlyer 对 Snapchat 流量进行归因。
 
-![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png" />
 
 <div id="general-settings" />
 
@@ -77,7 +77,7 @@ x-zendesk:
 1. 登录 Snap Business Manager，进入 Apps，复制 Snap App ID（有关如何生成 Snap App ID 的说明，请参阅 Snapchat 的<Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/a/snap-app-id">官方指南</Anchor>）。
 2. 将该 ID 粘贴到 AppsFlyer 中的 Snap App ID 字段。
 
-![snapchat-app-id.png](https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png)
+<Image align="center" alt="snapchat-app-id.png" src="https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png" />
 
 **如果 App 由代理推广，请注意以下事项**：
 
@@ -157,7 +157,7 @@ x-zendesk:
 
 通过回传，将 AppsFlyer 事件映射给渠道。开启回传后，被拦截的应用内事件（包括被 Protect360 拦截的事件，或未通过目标验证规则的事件）也会一并发送。
 
-[![mceclip0.png](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png" />
 
 **配置应用内事件回传：**
 
@@ -282,7 +282,7 @@ Snapchat 深度链接的原理是：在 Snapchat 平台原生深度链接的基�
 1. 进入**Drive traffic to app** 推广类型。
 2. 添加深度链接 URI：  
      
-   [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+   <Image align="center" alt="" src="https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png" />
 
 <div id="deferred-deep-linking-with-snapchat" />
 
@@ -316,7 +316,7 @@ AppsFlyer 提供多种延迟深度链接方案：
 3. 输入代理的**Snapchat Account ID**。此 ID 用于识别代理流量，并将其与广告主流量区分开来。最多可输入 50 个不同的 Snapchat 账户 ID。此后这些账户产生的所有归因数据都会显示在代理的数据面板中。
 4. 点击**保存对接**。
 
-![snapchat-agency-integration.png](https://files.readme.io/261a0246bb7da0899e653a776eb25e17ce3ae8bff1efef33acac0ef0bf99abcf-21074932431505.png)
+<Image align="center" alt="snapchat-agency-integration.png" src="https://files.readme.io/261a0246bb7da0899e653a776eb25e17ce3ae8bff1efef33acac0ef0bf99abcf-21074932431505.png" />
 
 > 🚧 **Important**
 >

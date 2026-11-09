@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** 概要：为了评估再营销广告在再互动窗口期间的投放效果，AppsFlyer会对相关的应用内事件和session（应用打开）进行双重归因，即同时归因到拉新渠道和再营销渠道。
 
-![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
+<Image align="center" alt="" src="https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png" />
 
 <div id="overview" />
 
@@ -60,7 +60,7 @@ x-zendesk:
 
 部分面板和群组报告提供多种视图选项，包括统一、用户获取和再营销。这些视图类型所使用的归因逻辑与原始数据相同。
 
-![](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 <div id="data-filtering-by-view-type-using-the-conversion_type-field" />
 

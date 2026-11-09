@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **概要：** 您可以合并Cost ETL和Data Locker中的群组报告（常规及高级汇总均适用），获得时效性最强、准确性最高、颗粒度最细的数据，全面掌握投放情况。
 
-![](https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png)
+<Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" />
 
 <div id="about-combining-cost-etl-and-cohort-reports" />
 

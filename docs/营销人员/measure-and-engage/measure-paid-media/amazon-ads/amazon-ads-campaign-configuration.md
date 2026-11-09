@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **概要：** Amazon Ads（amazondsp\_int）是AppsFlyer的<Anchor target="_blank" href="/marketers/zh/docs/self-reporting-networks-srns">SRN</Anchor>对接渠道之一。广告主可以通过AppsFlyer，将电视、平板和移动设备上的转化与来自Amazon Ads的点击或展示进行匹配。
 
-![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png" />
 
 <div id="activate-partner" />
 

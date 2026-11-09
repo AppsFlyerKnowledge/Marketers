@@ -45,7 +45,7 @@ x-zendesk:
 
 创建应用内事件时，您需要填写事件名称，也可以添加事件参数。事件参数能针对正在发生的事件提供更多背景和信息。比如，在用户预订机票后，您不仅能看到这个订票事件，还能通过事件参数了解订单详情，如购买类型、目的地和收入金额等。
 
-![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
+<Image align="center" alt="travel.png" src="https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png" />
 
 <div id="tip" />
 
@@ -133,7 +133,7 @@ AppsFlyer处理货币设置和货币换算的方式是非常重要的知识点�
 
 AppsFlyer会通过货币换算来调和应用配置中的指定货币与应用内事件货币之间的差异。
 
-![revenue_normalization_flow.png](https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png)
+<Image align="center" alt="revenue_normalization_flow.png" src="https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png" />
 
 上图说明了货币换算的大致流程，具体内容如下：
 

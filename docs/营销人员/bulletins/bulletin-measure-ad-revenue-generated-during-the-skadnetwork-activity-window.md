@@ -22,7 +22,7 @@ x-zendesk:
   section_id: 6551161473041
   url: https://support.appsflyer.com/hc/zh-cn/articles/4404213118481
 ---
-![iOS15.png](https://files.readme.io/b61770f82edee601aec1fba95c93bbf5b7e4ad3615a82205aa9c7da8cfe547f0-20445082158609.png)
+<Image align="center" alt="iOS15.png" src="https://files.readme.io/b61770f82edee601aec1fba95c93bbf5b7e4ad3615a82205aa9c7da8cfe547f0-20445082158609.png" />
 
 | **更新内容** | 在SKAN用户行为窗口期内产生的收入会归因到获取用户的广告。目前只有通过SDK对接常规展示层级广告收入数据的广告主才能使用收入归因功能。 |
 | --- | --- |

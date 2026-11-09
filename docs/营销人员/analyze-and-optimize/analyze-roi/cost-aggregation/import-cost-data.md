@@ -216,7 +216,7 @@ x-zendesk:
 1. 选中需要设置格式的单元格。
 2. 右击并选择**设置单元格格式**（Format cells）。  
    界面会打开设置单元格格式的窗口。  
-   <Image alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
+   <Image align="center" alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
 3. 选择**自定义**（Custom）。
 4. 在类型（Type）字段中，输入**YYYY-MM-DD**
 5. 点击**OK**。  
@@ -228,7 +228,7 @@ x-zendesk:
 
 如下图所示，Excel对数值单元格进行格式化时，通常使用逗号作为千位分隔符。此格式不适用于成本导入文件。
 
-<Image alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
 
 **如需设置广告消耗单元格的格式，使其不带千位分隔符：**
 
@@ -236,7 +236,7 @@ x-zendesk:
 2. 右击并选择**设置单元格格式**（Format cells）。  
    界面会打开设置单元格格式的窗口。
 3. 选择**Number**。  
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 4. 取消**千位分隔符 (,)**。
 5. 【可选】设置数值的**小数点后位数**，默认值为2，最多可精确到小数点后5位。
 6. 点击**OK**。  
@@ -262,7 +262,7 @@ x-zendesk:
 
 下图为[CSV示例文件](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0oJTWdlNyT1gBHkGaN1QP-tUatugbPBzC2qYVNmjl_T_i3fKo1abYzTp6F7OqGeN_f7bBAJa3hxVz/pub?gid=0&single=true&output=csv)在编辑器中的截屏。
 
-<Image alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
 
 </Accordion>
 

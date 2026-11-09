@@ -128,7 +128,7 @@ AppsFlyer处理数据后，会显示在UTC时区（默认时间）或根据你�
 
 <Accordion title="成本优先级排序机制">
 
-![](https://files.readme.io/8dbea1b8561d67f77d27cad85ab109e5203930273f32d2a9b04900b810c46ec2-25433450962577.png)
+<Image align="center" alt="" src="https://files.readme.io/8dbea1b8561d67f77d27cad85ab109e5203930273f32d2a9b04900b810c46ec2-25433450962577.png" />
 
 一个渠道的成本数据可以通过多种方式进行上报。为了避免后台的成本数据虚高，AF会通过广告成本优先级排序机制来判断数据的取舍。这一机制按汇总方式对数据进行优先级排序，从高到低依次为：通过归因链接上报成本 > Cost API > 成本导入
 

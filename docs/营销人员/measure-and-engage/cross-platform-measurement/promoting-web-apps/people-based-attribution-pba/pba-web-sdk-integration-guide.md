@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：** 通过Web SDK将AppsFlyer对接到您的网站，记录和衡量访问、事件、转化以及收入。
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="web-sdk-user-and-integration-guide" />
 
@@ -263,7 +263,7 @@ x-zendesk:
 1. <Anchor target="_blank" href="https://developers.google.com/tag-manager/quickstart">进入Google Tag Manager。</Anchor>
 2. 为AppsFlyer Web SDK创建一个新标签。
 
-   [![](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)
+   <Image align="center" alt="" src="https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png" />
 3. 选择**自定义HTML**标签类型。
 4. 给标签起一个有意义的名称。
 5. 根据是否使用智能横幅，执行以下步骤：
@@ -278,7 +278,7 @@ x-zendesk:
    * **要将触发条件添加到所有页面：**
      1. 点击**添加触发条件**。
 
-        [![gtm-af-tag-sdk-trigger.png](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)
+        <Image align="center" alt="gtm-af-tag-sdk-trigger.png" src="https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png" />
      2. 选择**所有页面**。
      3. 点击**保存**。
      4. 输入标签名称并点击**保存**。  
@@ -288,7 +288,7 @@ x-zendesk:
      2. 在GTM主界面中，选择<strong>触发条件。</strong>点击**新建**。
      3. 点击铅笔图标。
      4. 选择**页面视图**作为触发条件类型。  
-        [![PBAselectTrigger_us-en.jpg](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)
+        <Image align="center" alt="PBAselectTrigger_us-en.jpg" src="https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg" />
      5. 选择**部分页面视图。**
      6. 根据需要设置页面和触发条件。
      7. 点击**保存**。
@@ -298,7 +298,7 @@ x-zendesk:
         3. 在触发面板中，点击铅笔图标。
         4. 选择您之前创建的页面视图触发条件。
 
-           [![](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)
+           <Image align="center" alt="" src="https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png" />
         5. 点击**保存**。
 
 </Tab>
@@ -314,7 +314,7 @@ x-zendesk:
 
 <Accordion title="在Adobe Experience Cloud后台创建一个Property（即标签）。">
 
-![adobe_create_property.png](https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png)
+<Image align="center" alt="adobe_create_property.png" src="https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png" />
 
 1. 进入**Adobe Experience Cloud** > Launch。
 2. 点击**Adobe Experience Cloud Launch**下的**Go to Launch**。
@@ -330,7 +330,7 @@ x-zendesk:
 
 <Accordion title="将Web SDK添加到Adobe Launch标签">
 
-<Image alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
+<Image align="center" alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
 
 1. 在**My web property**页面中，选择**Rules**选项卡。
 2. 为该规则命名。推荐使用，**加载Web SDK**。
@@ -349,7 +349,7 @@ x-zendesk:
 
 <Accordion title="将Adobe Launch标签添加到网站">
 
-[![adobe_tag.png](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)
+<Image align="center" alt="adobe_tag.png" src="https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png" />
 
 1. 在**My web property**页面中选择**Environments**选项卡。
 2. 找到您想要发布的环境（Development或Production）所在的那一行。
@@ -366,7 +366,7 @@ x-zendesk:
 
 <Accordion title="发布Adobe Launch环境">
 
-[![adobe_publishing_env.png](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)
+<Image align="center" alt="adobe_publishing_env.png" src="https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png" />
 
 1. 从**My web property**进入**Publishing**选项卡。
 2. 在**Development**部分下点击**Add New Library**。
@@ -404,7 +404,7 @@ x-zendesk:
 1. 打开网站。
 2. 打开浏览器开发者工具。
 
-   ![WebSDK_us-en.jpg](https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg)
+   <Image align="center" alt="WebSDK_us-en.jpg" src="https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg" />
 3. 转到（A）**广告平台**选项卡。
 4. 刷新页面。
 5. 按（B）**wa.** appsflyer筛选。
@@ -426,7 +426,7 @@ x-zendesk:
 
 <Accordion title="事件发送的启用与停用">
 
-![5578-VistiorPrivacyOptIn_us-en.png](https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png)
+<Image align="center" alt="5578-VistiorPrivacyOptIn_us-en.png" src="https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png" />
 
 Web SDK会将访客事件数据发送至AppsFlyer。您可以根据需要开启、关闭或控制事件发送。
 
@@ -705,7 +705,7 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 4. 触发事件。
 5. 按消息筛选。
 
-   ![pba_af_event.png](https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png)
+   <Image align="center" alt="pba_af_event.png" src="https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png" />
 6. 查找发送到wa.appsflyer.com的网络请求。
 7. 检查以下内容：
    1. Status code = 200。
@@ -840,7 +840,7 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
    上述代码加载了GTM，进而加载了Web SDK。接下来脚本中会发生两个操作：一个是从服务器获取用户详细信息的函数。另一个是将数据设置到本地存储的函数。GTM可以访问函数和localStorage。您可以通过GTM调用该函数并访问localStorage。
 2. 在感谢页面加载后，添加一个新的标签用于归因订阅事件。
 
-   [![](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 3. 给标签起一个唯一的名称，并选择**自定义HTML**标签类型。
 4. 将以下代码放入**自定义HTML**中。
 
@@ -849,13 +849,13 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
    AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'subscription'}); </script>
    ```
 
-   ![gtm_tag_after_subscribe.png](https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png)
+   <Image align="center" alt="gtm_tag_after_subscribe.png" src="https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png" />
 5. 展开**高级设置**控件，然后在**标签顺序**控件中确保设置正确，以便在该标签执行后触发转化事件。
 
-   [![](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. 要触发转换标签，请设置一个触发条件。在本示例中，触发条件为感谢页面加载。
 
-   [![](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 **用户与网站互动时记录事件**
 
@@ -902,13 +902,13 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
    代码通过GTM加载Web SDK，其余部分为模拟的购物车HTML页面。**结账**按钮的ID为checkout。在GTM中配置点击事件时需要用到。
 2. 在GTM中，点击<strong>Variables（变量）</strong>中的**Configure（配置）**，勾选**Built-In Variables**中的**Click Element（点击元素）**。  
 
-   [![gtm-create-variable.png](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)
+   <Image align="center" alt="gtm-create-variable.png" src="https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png" />
 3. 新建变量，设置有意义的名称，类型选择All Elements（所有元素）。  
 
-   [![gtm-checkout-all-elements.png](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)
+   <Image align="center" alt="gtm-checkout-all-elements.png" src="https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png" />
 4. 在触发条件配置中，选择**Some Clicks（部分点击）**，根据#checkout的**CSS Selector**选择**Click Element（点击元素）**。  
 
-   [![gtm-checkout-click-elememt.png](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)
+   <Image align="center" alt="gtm-checkout-click-elememt.png" src="https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png" />
 5. 为结账操作创建一个新标签，选择自定义HTML类型，并将触发条件设置为结账。
 
    ```html
@@ -916,7 +916,7 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
     AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'}); </script>
    ```
 
-   ![gtm-checkout-tag.png](https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png)
+   <Image align="center" alt="gtm-checkout-tag.png" src="https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png" />
 
 </Tab>
 </Tabs>
@@ -1111,10 +1111,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 5. 展开**高级设置**控件，然后在**标签顺序**控件中确保设置正确，以便在该标签执行后触发转化事件。
 
-   [![](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. 为转化标签配置一个触发条件，用来规定该标签在何时触发（在本示例中，触发条件会在 “感谢页面”加载时触发）。
 
-   [![](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 </Tab>
 </Tabs>

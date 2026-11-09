@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **概要：概要：基于用户的归因（即PBA）能够为您呈现跨流量入口、跨平台、跨设备的完整用户链路。**
 
-![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
+<Image align="center" alt="PBANoSilos_us-en.gif" src="https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif" />
 
 <div id="pba-principles" />
 
@@ -49,7 +49,7 @@ x-zendesk:
 
 ### <Anchor target="_blank" href="/marketers/zh/docs/pba-website-attribution-dashboard">网页广告归因</Anchor>
 
-[![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)
+<Image align="center" alt="WebsiteAttributionTable_us-en.jpg" src="https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg" />
 
 用于分析哪些网页流量来源和营销投放带来了网页端的访问和转化。可深入到广告层级，分析不同广告的效果差异。PBA支持广告链接中所有的AppsFlyer查询参数，无需让用户跳转到AppsFlyer服务器。
 
@@ -57,7 +57,7 @@ x-zendesk:
 
 ### <Anchor target="_blank" href="/marketers/zh/docs/pba-web-assisted-installs">网页助攻激活</Anchor>
 
-[![AppsFlyer-Web-to-App_us.en.gif](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)
+<Image align="center" alt="AppsFlyer-Web-to-App_us.en.gif" src="https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif" />
 
 您可以使用网页助攻激活数据考察您的网页端营销投放对移动端应用激活的作用和效果。
 

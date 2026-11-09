@@ -35,9 +35,9 @@ x-zendesk:
    * Purchase
    * 添加到购物车
 
-![wechat-configuration.png](https://files.readme.io/228ee10ef3dc113ae8af8de0f283b144206db1857f6d1f9169355f294155b8f8-50900431174033.png)
+<Image align="center" alt="wechat-configuration.png" src="https://files.readme.io/228ee10ef3dc113ae8af8de0f283b144206db1857f6d1f9169355f294155b8f8-50900431174033.png" />
 
-![wechat-keys.png](https://files.readme.io/cd7a2406ae9981eaabb4089813c9a1b847f0e6f750b9c0c0a0ac5e726dfe44be-50900431177361.png)
+<Image align="center" alt="wechat-keys.png" src="https://files.readme.io/cd7a2406ae9981eaabb4089813c9a1b847f0e6f750b9c0c0a0ac5e726dfe44be-50900431177361.png" />
 
 
 
@@ -90,7 +90,7 @@ x-zendesk:
 
 **合作伙伴 ID**
 
-<Image alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
+<Image align="center" alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
 
 <div id="default-postbacks" />
 
@@ -98,7 +98,7 @@ x-zendesk:
 
 AppsFlyer可以在用户安装和再互动后自动给AD\_NETWORK发送回传。您可以在这个板块中设置可用回传的**事件来源**。
 
-![wechat-default-postbacks.png](https://files.readme.io/1a2703b97a71bf82bcc77f5393459bc94b5443b83a4c4965d2624eda0e9f166f-50900402778129.png)
+<Image align="center" alt="wechat-default-postbacks.png" src="https://files.readme.io/1a2703b97a71bf82bcc77f5393459bc94b5443b83a4c4965d2624eda0e9f166f-50900402778129.png" />
 
 若选择**仅该合作渠道**，则仅回传由ironSource带来的用户所完成的事件。  
 若选择**所有媒体渠道，包括自然流量**：将所有用户的相关事件数据都上报给ironSource。
@@ -109,7 +109,7 @@ AppsFlyer可以在用户安装和再互动后自动给AD\_NETWORK发送回传。
 
 在这里，您可以通过回传来描绘AppsFlyer的Twitter事件。
 
-![wechat_in_app_event_postbacks.png](https://files.readme.io/cd6234df4809b27044e361ad8835d4ae92100c491e0aa7c8f003336cdf2ad49d-50900431180561.png)
+<Image align="center" alt="wechat_in_app_event_postbacks.png" src="https://files.readme.io/cd6234df4809b27044e361ad8835d4ae92100c491e0aa7c8f003336cdf2ad49d-50900431180561.png" />
 
 4. 将应用内事件回传切换为 "打开"
 5. 界定需要发送的SDK事件的来源。  
@@ -153,7 +153,7 @@ AppsFlyer可以在用户安装和再互动后自动给AD\_NETWORK发送回传。
 * **订阅者参数**-使用5个订阅者参数中的任何一个来插入有用的值。请注意，这些参数会被解析并出现在原始数据报告中，便于汇总或筛选数据。  
   **归因链接参数:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 只需在新参数框中输入, 即可将任何其他参数添加到归因链接中。更多详情, 请参阅 **<Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">AppsFlyer 归因链接结构和参数</Anchor>。**
 
@@ -167,7 +167,7 @@ AppsFlyer可以在用户安装和再互动后自动给AD\_NETWORK发送回传。
 
 点击查看更多关于<Anchor target="_blank" href="/marketers/zh/docs/set-up-lookback-windows">点击归因窗口</Anchor>的信息。
 
-[![](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)
+<Image align="center" alt="" src="https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png" />
 
 <div id="click-attribution-link" />
 

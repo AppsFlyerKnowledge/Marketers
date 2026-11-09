@@ -108,7 +108,7 @@ AppsFlyer报告中包含由Meta ads上报的下列归因数据参数：
 
 对于可以使用AEM的应用，在其广告组（Ad Set）创建流程中，系统会默认选择**Aggregated Event Measurement**。在这种情况下，AEM和SKAN会同时对相关的广告系列生效。但如果广告主选择了**Apple的SKAdNetwork**，则只有SKAN会对相关广告系列生效。这种情况下，对于Meta ads上的应用使用情况，AppsFlyer的衡量能力有限。
 
-<Image alt="aem_meta_ads_platform.png" src="https://support.appsflyer.com/hc/article_attachments/19228698538769" width="563px" />
+<Image align="center" alt="aem_meta_ads_platform.png" src="https://support.appsflyer.com/hc/article_attachments/19228698538769" width="563px" />
 
 <div id="note-1" />
 

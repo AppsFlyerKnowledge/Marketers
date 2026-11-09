@@ -42,7 +42,7 @@ Google Ads的点击和展示数据于2018年8月发布，先用于Android应用�
 
 如果您在Google Ads上看不到如下所示的first\_open转化：
 
-![AW_13.png](https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png)
+<Image align="center" alt="AW_13.png" src="https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png" />
 
 这表示您需要在Google Ads中导入转化，具体操作请参考<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">导入转化指南</Anchor>。
 
@@ -132,7 +132,7 @@ Google Ads的点击和展示数据于2018年8月发布，先用于Android应用�
 
 1. 进入<Anchor target="_blank" href="https://myaccount.google.com/permissions">Google Account Permissions</Anchor>（帐户权限）部分。
 2. 点击“AppsFlyer Google Cost”旁边的“Remove”（移除）按钮。  
-   ![remove_appsflyer_cost.png](https://files.readme.io/56840e708c98875c8db176c642dd324150a76aef9697fcc2756f524b2a6c0a16-33743128661137.png)
+   <Image align="center" alt="remove_appsflyer_cost.png" src="https://files.readme.io/56840e708c98875c8db176c642dd324150a76aef9697fcc2756f524b2a6c0a16-33743128661137.png" />
 
 </Accordion>
 

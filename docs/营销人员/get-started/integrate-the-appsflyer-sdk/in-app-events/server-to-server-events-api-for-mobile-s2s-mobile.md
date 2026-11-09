@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **概要：** 本文讲解了如何从广告主服务器向AppsFlyer发送事件数据，以衡量在应用外部发生的移动事件。
 
-[![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
+<Image align="center" alt="S2S_us-en.png" src="https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png" />
 
 <div id="server-to-server-events-api-for-mobile" />
 
@@ -136,7 +136,7 @@ AppsFlyer ID与CUID之间形成映射后，就可以将用户匹配到他们完�
 
 <Accordion title="S2S事件 的时间戳">
 
-[![时间戳逻辑示意图](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)
+<Image align="center" alt="时间戳逻辑示意图" src="https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png" />
 
 AppsFlyer批量接收S2S事件，并根据其`eventTime`的参数值和送达时间设置时间戳。`eventTime`参数值表示应用内事件发生的时间。
 

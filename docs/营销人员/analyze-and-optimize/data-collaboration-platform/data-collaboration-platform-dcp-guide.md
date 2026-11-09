@@ -24,7 +24,7 @@ x-zendesk:
 
 > **概要：** AppsFlyer 数据协作平台为商业媒体平台和协作品牌提供了以隐私为中心的无缝解决方案，利用其综合数据实现营销活动最大化，并创造强大的新广告收入来源。
 
-<Image alt="53877 需要 KB 图片来制作新的 DCP KB (1).png" src="https://files.readme.io/27a6b28b44ac27fdfb811a72a14f1b8ee1470d877b042c23b80550c81d8ed576-51911266419729.png" width="798px" />
+<Image align="center" alt="53877 需要 KB 图片来制作新的 DCP KB (1).png" src="https://files.readme.io/27a6b28b44ac27fdfb811a72a14f1b8ee1470d877b042c23b80550c81d8ed576-51911266419729.png" width="798px" />
 
 <div id="about-the-data-collaboration-platform-dcp" />
 

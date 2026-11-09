@@ -158,7 +158,7 @@ x-zendesk:
 
 <Accordion title="查看数据透视报告">
 
-[![](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)
+<Image align="center" alt="" src="https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png" />
 
 **数据透视报告的查看方式**：
 

@@ -95,10 +95,10 @@ x-zendesk:
 
 1. 在 AppsFlyer 中，从侧边菜单选择 **协作** > **数据净室**。
 
-   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="644px" />
+   <Image align="center" alt="Click Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="644px" />
 2. 点击 **+ 新数据源** （在主界面或在**数据源**标签页中）。
 
-   <Image alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
+   <Image align="center" alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
 3. 继续完成 **新数据源** 的操作步骤：
 
 </Accordion>
@@ -196,7 +196,7 @@ Amazon S3 或 GCS 的数据源位置由两部分组成：连接所指定的云�
 
 1. **数据源文件夹设置**
 
-<Image alt="Select Local file system.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
+<Image align="center" alt="Select Local file system.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
 
 <div id="note" />
 
@@ -215,7 +215,7 @@ Amazon S3 或 GCS 的数据源位置由两部分组成：连接所指定的云�
 * **Snapshot** - 此方法会在每次更新数据源时上传完整数据集，并以新数据集完全替换旧数据集。仅当您每次上传的文件始终包含完整且最新的数据集时，才选择此方法。
 * **Append** - 此方法仅上传新增或已更改的数据，而不是完整数据集。旧数据集不会被删除或更新。此方法非常适合每日或每周报告等定期上传的场景。其优势包括上传量更小（可能降低云存储成本）、数据上传更快、更便于记录管理等。
 
-<Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
+<Image align="center" alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
 <div id="important-1" />
 
@@ -306,7 +306,7 @@ source_name1/
 
 上传 2 天的数据源文件完整快照后（并以程序化方式创建日期/版本/data 文件夹及 \_SUCCESS 文件），您的存储桶/文件夹结构可能如下所示：
 
-[<Image alt="Snapshot example bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
+<Image align="center" alt="Snapshot example bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />
 
 
 <div id="append-upload-requirements" />
@@ -513,7 +513,7 @@ DCP 可以基于列名，使用 AI 为每个数据源列建议一个 DCP 字段�
 1. 点击 **+ New field**。系统会添加一个空字段。
 2. 输入字段名称并选择其类型。
 
-<Image alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
+<Image align="center" alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
 
 **字段类型包括：**
 
@@ -716,11 +716,11 @@ DCR 密钥文件夹通常需要通过您所选云服务的界面手动创建。
 
 * 点击右上角的 3 点（操作）菜单，然后选择 **DCR key**。
 
-[<Image alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/50255899579281)
+[<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/50255899579281)
 
 创建 DCR 密钥文件夹后，您的存储桶/文件夹结构大致如下：
 
-<Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
 <div id="top-level-input-folder" />
 
@@ -735,7 +735,7 @@ DCR 密钥文件夹通常需要通过您所选云服务的界面手动创建。
 
 创建顶层输入文件夹后，您的存储桶/文件夹结构可能如下所示：
 
-<Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
 
 <div id="second-level-folder-for-each-data-source" />
 
@@ -749,7 +749,7 @@ DCR 密钥文件夹通常需要通过您所选云服务的界面手动创建。
 
 创建这 2 个数据源文件夹后，您的存储桶/文件夹结构可能如下：
 
-<Image alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
 
 每次数据源更新时，都必须在各个数据源文件夹下创建[按日期和版本划分的嵌套子文件夹](#nested-subfolders-for-each-date-and-version)。
 

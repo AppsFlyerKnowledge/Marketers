@@ -24,7 +24,7 @@ x-zendesk:
 
 > **概要：** 您可以使用该API拉取CSV格式的原始数据报告。本文为您介绍了具体的使用方法。
 
-[![PullAPIRaw_us-en.png](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)](https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png)
+<Image align="center" alt="PullAPIRaw_us-en.png" src="https://files.readme.io/1e68c85ee7d41a275ac6e09b35f6913fc10d974fc51c7c9c1357d3fd4d6d561c-33379479618705.png" />
 
 <div id="pull-api-raw-data" />
 

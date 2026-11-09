@@ -85,7 +85,7 @@ iOS应用的面板中会显示<Anchor target="_blank" href="/marketers/zh/docs/a
   **请注意：** Xsolla与AppsFlyer的对接时不要求发送激活回调。因此，建议您将其设置为关闭。
 * **所有媒体渠道，包括自然流量：** 发送来自所有渠道以及自然流量的激活回传。
 
-![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+<Image align="center" alt="default_postbacks.png" src="https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png" />
 
 <div id="in-app-event-postbacks" />
 
@@ -93,7 +93,7 @@ iOS应用的面板中会显示<Anchor target="_blank" href="/marketers/zh/docs/a
 
 这部分选项用于设置AppsFlyer事件与渠道之间的映射与回传。
 
-![xsolla-af-login-3.jpg](https://files.readme.io/6b694389980e67023a506e0fc8c302f0512d12681e44d3d3a414c511d6dd83e4-26908967996177.jpg)
+<Image align="center" alt="xsolla-af-login-3.jpg" src="https://files.readme.io/6b694389980e67023a506e0fc8c302f0512d12681e44d3d3a414c511d6dd83e4-26908967996177.jpg" />
 
 1. 打开**应用内事件回传**开关。
 2. 点击**添加事件**，将SDK事件或S2S事件添加到列表中。
@@ -161,7 +161,7 @@ Xsolla的渠道对接不支持广告收入数据。
    2. 选择您的站点并单击**配置**。
    3. 在**站点设置**选项卡中，转到**应用程序**部分。
    4. 在**AppsFlyer**模块中，点击**连接**。  
-      [![xsolla-connect.jpg](https://files.readme.io/e29b2444769092cc6ea8e6b0fe0cf7753b65c6d5eef5770b920d5604f922d6c0-28569784464913.jpg)](https://files.readme.io/e29b2444769092cc6ea8e6b0fe0cf7753b65c6d5eef5770b920d5604f922d6c0-28569784464913.jpg)
+      <Image align="center" alt="xsolla-connect.jpg" src="https://files.readme.io/e29b2444769092cc6ea8e6b0fe0cf7753b65c6d5eef5770b920d5604f922d6c0-28569784464913.jpg" />
    5. 在**AppsFlyer Dev Key**字段中，输入 AppsFlyer 网络开发者密钥。请参见下文了解如何[在 AppsFlyer 中获取密钥](/docs/xsolla-integration-with-appsflyer#在appsflyer中查找网络开发者密钥)。
    6. 点击**连接**。
 
@@ -172,7 +172,7 @@ Xsolla的渠道对接不支持广告收入数据。
 1. 在**我的应用**页面，点击**查看品牌套件**。
 2. 点击Xsolla套件上的复制图标。
 
-![xsolla-brand-bundle2.jpg](https://files.readme.io/9cb6a9e872e482f7e426aea7e615afb1f91017c569e7cd67286cdb946d9d2445-26923253273361.jpg)
+<Image align="center" alt="xsolla-brand-bundle2.jpg" src="https://files.readme.io/9cb6a9e872e482f7e426aea7e615afb1f91017c569e7cd67286cdb946d9d2445-26923253273361.jpg" />
 
 <div id="identifying-xsollas-events-in-appsflyer" />
 

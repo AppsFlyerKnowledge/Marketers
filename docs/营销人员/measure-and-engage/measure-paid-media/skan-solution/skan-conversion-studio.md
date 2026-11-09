@@ -141,7 +141,7 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 
 如需手动配置SKAN 4，建议您先探索一下SKAN 4中的各种选项。您更改配置时，**转化值额度**总结也会随之更新。您可以通过优化设置，以有限的转化值攫取最有价值的数据。详情请见[转化值额度的计算方式](/docs/skan-conversion-studio#conversion-value-capacity-formula)。
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **请注意：如果您从之前的SKAN模式升级到SKAN 4，则SKAN 4中的细粒度衡量配置会沿用您当前使用的CV值映射架构。AppsFlyer会自动映射粗略值。如果您之前没有使用过SKAN，AppsFlyer会提供初始默认映射配置。**
 
@@ -186,7 +186,7 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 
 如需配置自定义模式（Custom），建议您先探索一下其中的各种选项。您更改配置时，**转化值额度**总结也会随之更新。您可以通过优化设置，以有限的转化值攫取最有价值的数据。详情请见[转化值额度的计算方式](/docs/skan-conversion-studio#conversion-value-capacity-formula)。
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 请注意：
 
@@ -229,7 +229,7 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 
 您更改配置时，**转化值额度**总结也会随之更新。您可以通过优化设置，以有限的转化值攫取最有价值的数据。详情请见[转化值额度的计算方式](/docs/skan-conversion-studio#conversion-value-capacity-formula)。
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **请注意：**
 
@@ -550,7 +550,7 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 3. 如有必要，请点击**删除**以清除当前设置。
 4. 点击 **+ 添加衡量维度**。 选择优先级。   
    界面显示优先级1。  
-   [![Priority1.png](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)
+   <Image align="center" alt="Priority1.png" src="https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png" />
 5. 从以下衡量维度中选择一个：
    * 收入
    * 应用内事件
@@ -614,7 +614,7 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 * 点击**下载映射文件**，就能下载CSV格式的CV映射表。
 * 您也可以使用<Anchor target="_blank" href="/marketers/zh/docs/skan-cv-schema-api-for-advertisers">广告主的SKAN CV映射构架API</Anchor>获取CV映射信息。
 
-![CVmapping.png](https://files.readme.io/b337ac089f70a5eff76ac6a56841b420cff9f4bff7aba8c18acddd04acfd82f6-51911424397585.png)
+<Image align="center" alt="CVmapping.png" src="https://files.readme.io/b337ac089f70a5eff76ac6a56841b420cff9f4bff7aba8c18acddd04acfd82f6-51911424397585.png" />
 
 <div id="csv-mapping-file-columns" />
 
@@ -1011,7 +1011,7 @@ SKAN转化值操作台提供多种衡量模式，用于设置转化值：
 
 <Accordion title="通过S2S API上报事件">
 
-![SKAdNetwork_-_S2S__2_.png](https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png)
+<Image align="center" alt="SKAdNetwork_-_S2S__2_.png" src="https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png" />
 
 SDK和<Anchor target="_blank" href="/marketers/zh/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S API</Anchor>都可以向AppsFlyer服务器发送应用内事件。
 

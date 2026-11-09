@@ -148,7 +148,7 @@ Signal Hub 提供了丰富的指标，可帮助您了解可以将多少汇总的
 
 在共享给协作的数据源中，**身份丰富**百分比显示供应商的ZIP+4数据中有多少与可用于激活的隐私安全标识符成功匹配。
 
-<Image alt="Identity enrich.png" src="https://files.readme.io/fce84b456682695e1896a99749d08ba26ff885cf3e3c16ba661b2c93ff7fa8c9-40890476677521.png" width="1090px" />
+<Image align="center" alt="Identity enrich.png" src="https://files.readme.io/fce84b456682695e1896a99749d08ba26ff885cf3e3c16ba661b2c93ff7fa8c9-40890476677521.png" width="1090px" />
 
 * **数据提供方：** 购买信号供应商（例如Mastercard）共享的ZIP+4组数。
 * **身份数据：身份解析合作伙伴成功匹配到加密标识符（例如，加密电子邮件）的ZIP+4组**的数量。

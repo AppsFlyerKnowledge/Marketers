@@ -133,7 +133,7 @@ AppsFlyer SDK（Android - v6.13.0+, iOS - v6.13.1+）可在每个事件中发送
 2. 搜索合作渠道并点击**管理对接**。
 3. 在对接设置选项卡中，打开**非欧盟用户**开关。
 
-<Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="595px" />
+<Image align="center" alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="595px" />
 
 </Accordion>
 

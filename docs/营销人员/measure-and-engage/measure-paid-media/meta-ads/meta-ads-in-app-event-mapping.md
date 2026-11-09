@@ -41,7 +41,7 @@ Meta ads提供<Anchor target="_blank" href="https://developers.facebook.com/docs
 
 如需进一步了解Meta事件映射的具体操作，请参考<Anchor target="_blank" href="/marketers/zh/docs/meta-ads-integration-setup#inapp-event-mapping">此文档</Anchor>。
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 请注意：Meta ads没有预定义的卸载事件。如需发送卸载事件，请使用[自定义事件](/docs/meta-ads-in-app-event-mapping#自定义应用内事件的映射)进行配置。
 
@@ -77,7 +77,7 @@ AppsFlyer会将SDK中配置的事件名称和事件值（包括事件参数）�
 
 您可以<Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">利用这些事件来优化您的广告投放</Anchor>。
 
-[![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
+<Image align="center" alt="" src="https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png" />
 
 <div id="automatic-parameter-mapping-with-the-custom-event" />
 

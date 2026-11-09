@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **概要：** 概要：对于预装到设备出厂设置中的应用，AppsFlyer可以将其激活归因到相应的设备厂商。**请注意**：注意：另请参见其它预装归因原理。
 
-![pre-install-intro-breakdown.png](https://files.readme.io/bf586f87419027778cae169e8c19b7f188326173417550fe3a747db8c7dab72d-51165335908369.png)
+<Image align="center" alt="pre-install-intro-breakdown.png" src="https://files.readme.io/bf586f87419027778cae169e8c19b7f188326173417550fe3a747db8c7dab72d-51165335908369.png" />
 
 <div id="introduction" />
 
@@ -426,9 +426,9 @@ OR
 
 在Android Studio中构建应用程序，然后将其安装到测试设备上。应用程序启动后，在Android Studio中打开Logcat，然后按“AppsFlyer”筛选，您会看到被归因的激活及其详细信息。如下图所示：
 
-![pre_install_logcat.png](https://files.readme.io/cecab55ddad6e2a1fe3bdba1257670312a8cd230434ab6a899661a5cd8879b33-51165335909265.png)
+<Image align="center" alt="pre_install_logcat.png" src="https://files.readme.io/cecab55ddad6e2a1fe3bdba1257670312a8cd230434ab6a899661a5cd8879b33-51165335909265.png" />
 
-![pre_install_logcat_2.png](https://files.readme.io/716eda668aec4d74e82ac774a42f8be329bb6bca9d7ad83ecb13e8f04b330ec7-51165335912337.png)
+<Image align="center" alt="pre_install_logcat_2.png" src="https://files.readme.io/716eda668aec4d74e82ac774a42f8be329bb6bca9d7ad83ecb13e8f04b330ec7-51165335912337.png" />
 
 </Accordion>
 
@@ -442,11 +442,11 @@ OR
 
 1. 在数据总览面板中按媒体渠道筛选数据，并选择相应的渠道：  
 
-   ![choose_media_source.png](https://files.readme.io/2343bbe2faea37d804232ef711062dbd933c981d928addfc2759e5f85bcc92f6-51165335913361.png)
-2. [![](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)  
+   <Image align="center" alt="choose_media_source.png" src="https://files.readme.io/2343bbe2faea37d804232ef711062dbd933c981d928addfc2759e5f85bcc92f6-51165335913361.png" />
+2. <Image align="center" alt="" src="https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png" />
    在该报告中，您可以看到媒体渠道和广告系列信息。如下图截屏所示，媒体渠道为“My Media Source”，广告系列为Pre-install：  
 
-    [![](https://files.readme.io/0634afa35fbc6bb24f310f9efd6d1af7b9d376b711ffe87a72eccf157cf92d5a-51165335913489.png)](https://files.readme.io/0634afa35fbc6bb24f310f9efd6d1af7b9d376b711ffe87a72eccf157cf92d5a-51165335913489.png)
+    <Image align="center" alt="" src="https://files.readme.io/0634afa35fbc6bb24f310f9efd6d1af7b9d376b711ffe87a72eccf157cf92d5a-51165335913489.png" />
 3. 针对各个预装推广合作厂商和渠道分别完成上述流程。
 
 </Accordion>

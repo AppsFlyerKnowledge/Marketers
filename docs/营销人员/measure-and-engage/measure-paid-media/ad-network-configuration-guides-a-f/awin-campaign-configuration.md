@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **概要：** Awin（affiliatewindow\_int）是一个集成合作伙伴，允许广告主进行用户获取和重定向活动。Awin的营销平台帮助商家（广告主）与联盟（发布者）连接。
 
-![awin icon.png](https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png)
+<Image align="center" alt="awin icon.png" src="https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png" />
 
 <div id="activate-partner" />
 

@@ -66,7 +66,7 @@ x-zendesk:
 >
 > 而渠道B虽然只带来了5,949个激活，但其卸载率要比渠道A低很多（12%）。
 >
-> [![Uninstall rates.png](https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png)](https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png)
+> <Image align="center" alt="Uninstall rates.png" src="https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png" />
 >
 > 基于以上信息，您决定在渠道B上投入更多预算，以获取更多深度用户。
 
@@ -176,7 +176,7 @@ x-zendesk:
    2. 选择一个项目。
    3. 进入**Project Overview**（项目总览）> **Project settings（项目设置）。**  
 
-      ![UninstallFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
+      <Image align="center" alt="UninstallFirebase.png" src="https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png" />
    4. 复制Project ID。您会在后面的步骤中用到这个ID。
 2. FCM API的启用方式如下：
    1. 进入**Cloud Messaging**选项卡。
@@ -192,7 +192,7 @@ x-zendesk:
       * ID：输入`af_uninstalls`。
       * 角色启用阶段：选择**General availability**（全量启用）。
    6. 单击**Add permissions**，添加权限。
-   7. [![](https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png)](https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png)
+   7. <Image align="center" alt="" src="https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png" />
    8. 点击**Add**（添加），然后再点击**Create**（创建）。
 4. **将AppsFlyer指定为FCM卸载角色：**
    1. 在边栏菜单中选择**IAM**。
@@ -228,7 +228,7 @@ Android SDK V4.7.0及以上版本支持通过Firebase Messaging进行卸载衡�
 2. 打开 Firebase <Anchor target="_blank" href="https://console.firebase.google.com">Console</Anchor>.
 3. 在Firebase 控制台页面，导航至项目设置（点击项目总览旁边的设置图标）。  
 
-   ![firebase_cloud_messaging_server_key.png](https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png)
+   <Image align="center" alt="firebase_cloud_messaging_server_key.png" src="https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png" />
 4. 您会在Cloud Messaging选项卡中看到两个Server Key（服务器密钥）。
 5. 复制该**服务器密钥**。
 
@@ -251,7 +251,7 @@ Android SDK V4.7.0及以上版本支持通过Firebase Messaging进行卸载衡�
 2. 请根据业务需要启用**卸载衡量**。
 3. 选择**HTTP V1并输入上一步中取得的项目ID**。
 
-   ![UninstallHTTPV1.png](https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png)
+   <Image align="center" alt="UninstallHTTPV1.png" src="https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png" />
 4. 点击**测试连接**。  
    界面显示“Success!”（对接成功）的消息。
 5. 点击**保存设置** 。
@@ -269,7 +269,7 @@ Android SDK V4.7.0及以上版本支持通过Firebase Messaging进行卸载衡�
 3. 向下滚动到卸载板块。
 4. 打开**卸载衡量**开关。
 
-   ![Uninstall_iOS_p2.png](https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png)
+   <Image align="center" alt="Uninstall_iOS_p2.png" src="https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png" />
 5. 点击上传图标，并选择相关的P12文件。
 6. 【可选】如果P12证书受密码保护，请输入密码。
 7. 点击**验证**，将证书发送到AppsFlyer进行验证。
@@ -327,7 +327,7 @@ Android SDK V4.7.0及以上版本支持通过Firebase Messaging进行卸载衡�
 
 ## 卸载事件映射
 
-![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
+<Image align="center" alt="Uninstall_event_postback.png" src="https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png" />
 
 您需要将<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">af\_uninstall事件</Anchor>映射到渠道，才能与其共享卸载数据。卸载事件不是实时发送的，这与常规应用内事件的回传不同。上报的事件时间是AppsFlyer判定用户已卸载应用的时间，而非实际卸载的时间。
 

@@ -34,12 +34,12 @@ x-zendesk:
 
 1. 前往 <Anchor target="_blank" href="https://adsmanager.facebook.com/">Ads Manager</Anchor>，然后选择 **设置**。
 
-[![广告管理工具栏，显示「设置」按钮](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)
+<Image align="center" alt="广告管理工具栏，显示「设置」按钮" src="https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png" />
 
 2. 在“创建”视图面板中，选择 **Delivery（投放）**。
 3. 在 Delivery（投放）下，找到 **Additional Breakdowns（其他细分维度）**。
 4. 在 Additional Breakdowns （其他细分维度）下，检查 **展示设备** (`impression_device`) 旁边的加号是否已选中。如果已选中，说明该账户已启用此功能。
 
-[![Ads Manager 中的其他细分维度面板，显示 Time of Day（时段）、Impression Device（展示设备）和 Frequency Value（频次值）旁的加号图标](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)
+<Image align="center" alt="Ads Manager 中的其他细分维度面板，显示 Time of Day（时段）、Impression Device（展示设备）和 Frequency Value（频次值）旁的加号图标" src="https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png" />
 
 <div data-zendesk-anchors="check-impression-device-in-ads-manager=%E5%9C%A8-ads-manager-%E4%B8%AD%E6%A3%80%E6%9F%A5%E5%B1%95%E7%A4%BA%E8%AE%BE%E5%A4%87 h_01KZ63J08GPADE2AH0KV9NNESC=%E5%9C%A8-ads-manager-%E4%B8%AD%E6%A3%80%E6%9F%A5%E5%B1%95%E7%A4%BA%E8%AE%BE%E5%A4%87" />

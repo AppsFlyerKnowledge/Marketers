@@ -30,7 +30,7 @@ x-zendesk:
 
 AI 助手是您的自助分析与指导伙伴，旨在帮助您发掘洞察，并借助 AppsFlyer 做出更明智的决策。结合面板中的数据使用 AI 助手，可以快速分析营销表现，了解关键指标及其变化趋势。
 
-<Image alt="AppsFlyer 中 AI 助手聊天窗口的动画演示" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
+<Image align="center" alt="AppsFlyer 中 AI 助手聊天窗口的动画演示" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
 
 <div id="what-you-can-do" />
 

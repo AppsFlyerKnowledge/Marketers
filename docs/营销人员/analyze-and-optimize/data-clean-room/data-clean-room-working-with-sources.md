@@ -357,7 +357,7 @@ AppsFlyer会反复查找**当天和2天前的**数据源文件更新版本，且
 
 2天内的数据源文件上传完毕（且以程序化方式创建日期/版本/数据文件夹和`_SUCCESS`\_SUCCESS\_SUCCESS文件）后的存储桶/文件夹结构如下：
 
-<Image alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" width="308px" />
 
 </Accordion>
 
@@ -447,11 +447,11 @@ DCR密钥文件夹一般需要通过云服务平台的界面手动创建。
 
 **如需获取您账户的DCR密钥，请点击DCR主页面顶部的DCR密钥按钮。**
 
-[![dcr_key_button.png](https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png)](https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png)
+<Image align="center" alt="dcr_key_button.png" src="https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png" />
 
 创建DCR密钥文件夹后，您的存储桶/文件夹结构如下：
 
-<Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
 <div id="top-level-input-folder" />
 
@@ -466,7 +466,7 @@ DCR密钥文件夹一般需要通过云服务平台的界面手动创建。
 
 创建顶层输入型文件夹后，您的存储桶/文件夹架构入下：
 
-<Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
 
 <div id="second-level-folder-for-each-data-source" />
 
@@ -478,7 +478,7 @@ DCR密钥文件夹一般需要通过云服务平台的界面手动创建。
 
 上述2个数据源文件夹创建完毕后，您的存储桶/文件夹结构如下：
 
-<Image alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
 
 必须在每次数据源发生更新时[在各个数据源文件夹下按日期和版本](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version)创建子文件夹。
 

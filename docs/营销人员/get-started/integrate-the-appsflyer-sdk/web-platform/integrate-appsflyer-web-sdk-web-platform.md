@@ -574,7 +574,7 @@ Make sure the SDK loads once per page load and set it to load as soon as the pag
 
 After installation, verify that the SDK sends requests by checking network requests in your browser's developer tools.
 
-[<Image alt="DevTools screenshot" src="https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png" width="1015px" />](https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png)
+<Image align="center" alt="DevTools screenshot" src="https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png" width="1015px" />
 
 **To make sure the SDK is working, follow these steps:**
 
@@ -967,10 +967,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 3. Add a new tag for attributing subscriptions after the thank-you page loads.
 
-   [![Adding a new GTM tag for the CUID conversion event](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="Adding a new GTM tag for the CUID conversion event" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 4. Give the tag a distinct name and select the **Custom HTML** tag type option.
 
-   [![Naming the tag and selecting the Custom HTML tag type in GTM](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)
+   <Image align="center" alt="Naming the tag and selecting the Custom HTML tag type in GTM" src="https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg" />
 
    ```html
    <script>
@@ -985,10 +985,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 5. Expand **Advanced Settings** and then **Tag Sequencing** below the text area, and make sure it is set up to fire the conversion after the tag is executed.
 
-   [![Configuring GTM Tag Sequencing for the conversion tag](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="Configuring GTM Tag Sequencing for the conversion tag" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. Set a trigger for the conversion tag to indicate when the conversion tag should be fired (in the example below, it is fired on "Thank you" page load).
 
-   [![Setting the GTM trigger to fire the conversion tag on Thank You page load](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="Setting the GTM trigger to fire the conversion tag on Thank You page load" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 </Accordion>
 

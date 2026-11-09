@@ -41,7 +41,7 @@ Steam\_user\_journey.jpg
 1. 营销触点这些营销触点可包括定期/不定期邮件、社交媒体、移动端网页等等。
 2. 您可以通过游戏落地页让用户跳转到您的Steam游戏页面。这个步骤对于UTM及其他URL参数的收集至关重要。有了这些参数，AppsFlyer就能将来自相关点击/激活的用户归因到带量的媒体渠道或广告主的自有媒体。  
    如果您的游戏支持多个平台，可以在落地页中提供跳转到各个平台的链接，比如Xbox、Microsoft商店以及Steam页面等。  
-   ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
+   <Image align="center" alt="awesome_game.png" src="https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png" />
 3. <span id="marketing-touchpoint"></span>Steam应用页面即您的Steam商店页面，其中包含可供用户下载的Steam应用。
 4. 游戏激活游戏激活：用户激活游戏时即会触发归因，并开始记录应用内事件和应用打开（session）。
 

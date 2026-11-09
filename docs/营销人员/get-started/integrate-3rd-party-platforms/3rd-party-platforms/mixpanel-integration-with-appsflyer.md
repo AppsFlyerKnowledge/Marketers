@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **概要：** 了解如何自动将数据从AppsFlyer共享到Mixpanel，一个产品分析平台。
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png" />
 
 AppsFlyer与Mixpanel之间的集成使您能够将来自AppsFlyer的获取活动信息导入到Mixpanel。
 
@@ -67,7 +67,7 @@ AppsFlyer与Mixpanel之间的集成使您能够将来自AppsFlyer的获取活动
 
 ### 通用设置
 
-<Image alt="mixpanel-general-settings.png" src="https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png" width="542px" />
+<Image align="center" alt="mixpanel-general-settings.png" src="https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png" width="542px" />
 
 * * * **欧盟数据驻留**：默认情况下，AppsFlyer将数据发送到Mixpanel的美国服务器。要将数据发送到Mixpanel的欧盟服务器，请打开此切换。  
       \_token Mixpanel通过唯一的Token与AppsFlyer连接。如果您还没有Token，您必须从Mixpanel获取它以继续集成。
@@ -77,10 +77,10 @@ AppsFlyer与Mixpanel之间的集成使您能够将来自AppsFlyer的获取活动
       1. 登录到您的Mixpanel账户： https://mixpanel.com/login/
       2. 在**Mixpanel**中，转到**分析**仪表板并点击齿轮图标。
 
-         ![mixpanel-token-1.png](https://files.readme.io/f1fbc76fff621e12a7d91fed5ba49eb20f2b049de65c70b0ab32cadd997287d2-small-360014578477.png)
+         <Image align="center" alt="mixpanel-token-1.png" src="https://files.readme.io/f1fbc76fff621e12a7d91fed5ba49eb20f2b049de65c70b0ab32cadd997287d2-small-360014578477.png" />
       3. 从项目的访问密钥部分复制您的Token，并将其粘贴到AppsFlyer Mixpanel集成选项卡中的**token**字段中。
 
-         ![mixpanel-token-2.png](https://files.readme.io/e8e633ec87d963244652a53b9b21c495b0a850e234621a44d93b3034c640bff7-360014578757.png)
+         <Image align="center" alt="mixpanel-token-2.png" src="https://files.readme.io/e8e633ec87d963244652a53b9b21c495b0a850e234621a44d93b3034c640bff7-360014578757.png" />
     * **发送广告主ID**：
       * 如果您使用AppsFlyer的customer\_user\_id参数，则在每次安装时都会将其发送到Mixpanel（请保持**发送广告主ID**禁用）。
       * 如果您没有使用AppsFlyer的customer\_user\_id - 启用<strong>发送广告主ID。</strong>设备ID作为customer\_user\_id（Mixpanel中的unique\_id）发送到Mixpanel。  
@@ -102,13 +102,13 @@ AppsFlyer与Mixpanel之间的集成使您能够将来自AppsFlyer的获取活动
 
 AppsFlyer 可以在用户安装后自动将回调发送到 Mixpanel，包括安装和重新参与。重新参与发生在已经安装应用的用户通过活动点击后打开应用时。了解更多关于 <Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#default-postbacks">默认回调</Anchor> 的信息。
 
-[![](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)
+<Image align="center" alt="" src="https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png" />
 
 <div id="in-app-events-settings" />
 
 ### 应用内事件设置
 
-![mixpanel-in-app-events-settings.png](https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png)
+<Image align="center" alt="mixpanel-in-app-events-settings.png" src="https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png" />
 
 在此部分，您通过回调将 AppsFlyer 事件与 Mixpanel 进行映射。
 
@@ -252,8 +252,8 @@ AppsFlyer 可以在用户安装后自动将回调发送到 Mixpanel，包括安�
 
 下面的截图是一个漏斗报告，用于查看从安装到价值事件的转化，按媒体来源细分。此外，还可以查看每个媒体来源的转化时间。
 
-[![](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)
+<Image align="center" alt="" src="https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png" />
 
-[![](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)
+<Image align="center" alt="" src="https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png" />
 
 <div data-zendesk-anchors="h_01H9FKEWTEN4F8FM5C9A9ES6HN=%E9%87%8D%E8%A6%81%E6%8F%90%E7%A4%BA setting-up-mixpanel=%E8%AE%BE%E7%BD%AEmixpanel h_01H9FKEWTEGMEVH3SK739DD719=%E8%AE%BE%E7%BD%AEmixpanel h_01H9FKEWTE90WR75PMNN93JAXE=integration-tab general-settings=%E9%80%9A%E7%94%A8%E8%AE%BE%E7%BD%AE h_01H9FKEWTEMT7VGTTFWFMJHYA8=%E9%80%9A%E7%94%A8%E8%AE%BE%E7%BD%AE h_01H9FKEWTEV3RWKMWZN0EXFFNP=%E6%B3%A8%E6%84%8F default-postbacks=%E9%BB%98%E8%AE%A4%E5%9B%9E%E4%BC%A0 h_01H9FKEWTER31RXAH216TRXQPM=%E9%BB%98%E8%AE%A4%E5%9B%9E%E4%BC%A0 inapp-events-settings=%E5%BA%94%E7%94%A8%E5%86%85%E4%BA%8B%E4%BB%B6%E8%AE%BE%E7%BD%AE h_01H9FKEWTERRVKPQFF1B8QQERE=%E5%BA%94%E7%94%A8%E5%86%85%E4%BA%8B%E4%BB%B6%E8%AE%BE%E7%BD%AE h_01H9FKEWTEEMMQ0KKRZXRJRE25=%E6%B3%A8%E6%84%8F-1 h_01H9FKEWTEEQ0GHF87V20TX9W0=attribution-link-tab h_01H9FKEWTEJ61197SN3R6JXYCP=cost-tab h_01H9FKEWTEA7GN2HHK3QD62A3A=ad-revenue-tab h_01H9FKEWTET4QD1RE0HJZM64D4=permissions-tab integrating-with-mixpanel-when-using-a-login-mechanism=%E5%9C%A8%E4%BD%BF%E7%94%A8%E7%99%BB%E5%BD%95%E6%9C%BA%E5%88%B6%E6%97%B6%E4%B8%8E-mixpanel-%E9%9B%86%E6%88%90 h_01H9FKEWTE9DEANTXKPD286GD2=%E5%9C%A8%E4%BD%BF%E7%94%A8%E7%99%BB%E5%BD%95%E6%9C%BA%E5%88%B6%E6%97%B6%E4%B8%8E-mixpanel-%E9%9B%86%E6%88%90 h_01H9FKEWTFZ107Y999WEMB3409=%E6%B3%A8%E6%84%8F-2 viewing-appsflyer-data-in-mixpanel=%E5%9C%A8-mixpanel-%E4%B8%AD%E6%9F%A5%E7%9C%8B-appsflyer-%E6%95%B0%E6%8D%AE h_01H9FKEWTF9PFNVHTZGDKBX75Y=%E5%9C%A8-mixpanel-%E4%B8%AD%E6%9F%A5%E7%9C%8B-appsflyer-%E6%95%B0%E6%8D%AE" />

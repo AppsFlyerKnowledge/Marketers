@@ -40,7 +40,7 @@ x-zendesk:
 
 下图显示了归因生态系统中的各种渠道类型。
 
-[![Ecosystem.jpg](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)
+<Image align="center" alt="Ecosystem.jpg" src="https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg" />
 
 **扩展阅读**：<Anchor target="_blank" href="https://www.appsflyer.com/performance-index/">AppsFlyer的《广告平台综合表现报告》</Anchor>为您提供分类别和地区的移动端媒体渠道排名。
 
@@ -143,7 +143,7 @@ x-zendesk:
 
 各类渠道的对接要求各不相同，有的可能会涉及到本章所述的所有选项。iOS和安卓的设置之间也存在差异。
 
-![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
+<Image align="center" alt="set_up_an_integrated_partner.png" src="https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png" />
 
 请填写完成必填字段。
 
@@ -437,7 +437,7 @@ x-zendesk:
 
 #### 归因链接参数
 
-[![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
+<Image align="center" alt="attribution-link-parameters-en_us.png" src="https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png" />
 
 在归因链接中添加参数后，您可以对数据进行深度剖析。归因链接中预定义的参数，可以通过添加参数和定义新值的方式进行编辑。保存归因链接时，系统会保存此选项卡中配置的所有参数。
 
@@ -492,7 +492,7 @@ x-zendesk:
 
 **点击归因链接**
 
-[![click-through-attribution-link_en-us.png](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)
+<Image align="center" alt="click-through-attribution-link_en-us.png" src="https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png" />
 
 上方截图中显示了包含所有设置信息的归因链接。您可以点击**保存归因链接**进行保存，以留作参考。
 
@@ -517,7 +517,7 @@ x-zendesk:
 
 **展示归因链接**
 
-[![impressions-attribution-link_en-us.png](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)
+<Image align="center" alt="impressions-attribution-link_en-us.png" src="https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png" />
 
 展示归因链接里含有与点击归因链接相似的归因数据（除了窗口期不同之外）。您可以点击**保存归因链接**进行保存，以留作参考。
 

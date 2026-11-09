@@ -52,11 +52,11 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 WiFi Master Key Ads connects with AppsFlyer via a unique clientid and secretkey. If you don't already have the clientid and secretkey, you must obtain it from WiFi Master Key Ads to continue with the integration.
 
-<Image alt="mceclip2.png" src="https://files.readme.io/8b486a98e25837a0d64e0a27e9b3aa7b66b426e8bad3fbae07b7436b91351db5-50900288875153.png" width="406px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/8b486a98e25837a0d64e0a27e9b3aa7b66b426e8bad3fbae07b7436b91351db5-50900288875153.png" width="406px" />
 
 ### Default Postbacks
 
-<Image alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="509px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="509px" />
 
 ### In-app events settings
 
@@ -66,7 +66,7 @@ In this section you can map your AppsFlyer events with WiFi Master Key Ads via p
 
 WiFi Master Key Ads connects with AppsFlyer via a unique clientid and secretkey. If you don't already have the clientid and secretkey, you must obtain it from WiFi Master Key Ads to continue with the integration.
 
-![mceclip3.png](https://files.readme.io/035ce248d6876cf31870abc49e949fc887f6bef08efd6e132e43b8c74e3aaf45-50900269524881.png)
+<Image align="center" alt="mceclip3.png" src="https://files.readme.io/035ce248d6876cf31870abc49e949fc887f6bef08efd6e132e43b8c74e3aaf45-50900269524881.png" />
 
 1. Set the WiFi Master Key Ads clientid and secretkey here
 2. Toggle In-App Event Postbacks to ON
@@ -106,7 +106,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/zh/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
@@ -118,7 +118,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/zh/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png" />
 
 ### Click Attribution Link
 
@@ -148,7 +148,7 @@ Ad Revenue is not supported in the integration with this partner.
 
 In this tab, you can select the permissions to grant WiFi Master Key Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for WiFi Master Key Ads, the permissions tab is active and you can grant control to WiFi Master Key Ads.
 
-![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png" />
 
 ### Ad Network Permissions
 

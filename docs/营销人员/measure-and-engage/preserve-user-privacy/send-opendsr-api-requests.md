@@ -522,7 +522,7 @@ https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 1. 从页面顶部导航栏打开账户菜单（点击右上角的邮箱地址，打开下拉菜单）> E-GDPR日志。
 2. 系统将打开以下窗口：
 
-![GDPR_Table.png](https://files.readme.io/5c2b2695b5c273e16a0396f0df2d227a0a0f61af6ad0626c0a911b77edc6a0d2-13949567038481.png)
+<Image align="center" alt="GDPR_Table.png" src="https://files.readme.io/5c2b2695b5c273e16a0396f0df2d227a0a0f61af6ad0626c0a911b77edc6a0d2-13949567038481.png" />
 
 </Accordion>
 

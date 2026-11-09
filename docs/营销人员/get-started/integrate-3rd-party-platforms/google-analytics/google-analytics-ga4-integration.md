@@ -442,7 +442,7 @@ API reference: <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/
 
   有关流量获取报告的更多信息，请参见[Google文档](https://support.google.com/analytics/answer/12923437?hl=en&sjid=5454549956257318969-NC#zippy=%2Chow-do-i-filter-out-traffic-sources-from-the-report)。
 
-  [![](https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png)](https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png)
+  <Image align="center" alt="" src="https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png" />
 
 </Accordion>
 

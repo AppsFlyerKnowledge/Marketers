@@ -37,7 +37,7 @@ x-zendesk:
 
 ## Google Ads 归因流程与高级数据共享
 
-[![Google ads attribution flow.png](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)
+<Image align="center" alt="Google ads attribution flow.png" src="https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png" />
 
 1. AppsFlyer 像往常一样将安装事件发送给 Google。如果 **高级数据共享** 开启，安装将带有或不带设备 ID 发送。如果关闭，安装仅在存在设备 ID 时发送 。
 2. Google 尝试通过确定性声明（ID 匹配，使用设备 ID 如果可用）或非确定性声明（当设备 ID 不可用时）来声称安装，使用概率模型。
@@ -98,7 +98,7 @@ x-zendesk:
    **请注意：** 在您与该渠道合作期间，请确保该开关总是处于打开（<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">即启用</Anchor>）状态<Anchor target="_blank" href="/marketers/zh/docs/partner-activation-deactivation">。</Anchor>
 5. 将您在上一步流程中复制的**Link ID**粘贴到相关字段中。
 6. 确定是否打开<Anchor target="_blank" href="/marketers/zh/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**非欧盟用户**</Anchor>开关。  
-   <Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
+   <Image align="center" alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
 7. 将 **高级数据共享** 打开 或 关闭.当打开时，Google Ads 会接收带有设备级标识符的回调和事件，适用于所有设备，包括未提供其广告 ID（IDFA 或 Google 广告 ID）的设备。
 
    此外，启用**高级数据共享**后，AppsFlyer 会对这些事件进行归因。该功能关闭时，仅限带有IDFA的设备所产生的回传和事件才会得到共享和归因。
@@ -120,7 +120,7 @@ x-zendesk:
    4. 选择归因窗口期的单位（小时或天），并将滑块滑动到所需值。建议将浏览型窗口期设置为1天，以便与Google Ads的窗口期相匹配。   
       **请注意：** Google不认领iOS应用的展示，因此对于iOS应用，您无需使用浏览型激活归因开关和回溯窗口期滑动条。
 
-      [![](https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png)](https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png)
+      <Image align="center" alt="" src="https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png" />
 9. **重新安装归因** 切换默认情况下为新集成开启。重新安装归因让您可以衡量在重新归因窗口期间重新安装您应用的用户。
 
    不需要单独的回顾窗口配置，因为重新安装归因使用您安装归因设置中的值。有关更多信息，请参见 <Anchor target="_blank" href="/marketers/zh/docs/measure-reinstalls">衡量重新安装</Anchor>。
@@ -139,11 +139,11 @@ x-zendesk:
        **请注意：** Google不认领iOS应用的展示，因此对于iOS应用，您无需使用浏览型激活归因开关和回溯窗口期滑动条。
     5. 设置**浏览型再互动窗口期**。用户浏览广告后在该窗口期内打开应用时，AF会将其记录为再互动。选择归因窗口期的单位（小时或天），并将滑块滑动到所需值。
     6. 设置 **再互动窗口期**。用户点击或浏览广告后在该窗口期内完成的应用内事件会被归因到再营销渠道。这个值可以设置为数天（1-90天）、数小时（至多23小时）或用户的整个生命周期。默认值为30天。  
-       [![](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)
+       <Image align="center" alt="" src="https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png" />
 11. 如果拥有 <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2402582?hl=en">Google Ads iOS 应用资源</Anchor>（即此前的应用扩展）：  
     如需通过广告链接获取归因信息，请在<Anchor target="_blank" href="/marketers/zh/docs/set-up-an-integrated-partner#attribution-link-tab">**归因链接**</Anchor>选项卡中创建一个单平台的AppsFlyer归因链接，然后将其添加到该Google Ads扩展程序中。  
     **请注意：** 请务必添加一个静态的广告系列名称（必须配置）。  
-    [![](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)
+    <Image align="center" alt="" src="https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png" />
 12. 进入**成本**选项卡。
 13. 打开**获取成本、点击和展示数据**开关。
 14. 点击**Connect Google Ads**按钮并登录到您的Google帐户，这样您就能在AppsFlyer上查看所有的Google Ads投放成本了。 更多详情, 请<Anchor target="_blank" href="/marketers/zh/docs/google-ads-adwords-cost-and-ad-revenue">点击此处</Anchor>
@@ -199,7 +199,7 @@ x-zendesk:
 
 **（AppsFlyer帐户中的任何成员）**
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png" />
 
 1. 进入**对接**选项卡，向下滚动到**应用内事件回传**部分。
 

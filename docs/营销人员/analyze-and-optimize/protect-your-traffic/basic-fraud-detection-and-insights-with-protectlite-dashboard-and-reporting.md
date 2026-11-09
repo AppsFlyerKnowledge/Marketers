@@ -90,7 +90,7 @@ For the Estimated savings and Identified installs KPIs, there is a percentage va
 
 #### Estimated savings
 
-[![](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)
+<Image align="center" alt="" src="https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg" />
 
 Estimated savings metrics:
 
@@ -102,13 +102,13 @@ For more details on how this amount is calculated read this <Anchor target="_bla
 
 #### Identified installs
 
-[![](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg" />
 
 Identified installs metrics display the number of installs identified and blocked in real-time by ProtectLITE and Validation Rules.
 
 #### Suspected overall fraud threat
 
-[![](https://files.readme.io/bb6a33cfea1dbff695d46a4b2f6547b756740cf35b750db25097d7ec772cc3d8-360019091058.jpg)](https://files.readme.io/bb6a33cfea1dbff695d46a4b2f6547b756740cf35b750db25097d7ec772cc3d8-360019091058.jpg)
+<Image align="center" alt="" src="https://files.readme.io/bb6a33cfea1dbff695d46a4b2f6547b756740cf35b750db25097d7ec772cc3d8-360019091058.jpg" />
 
 The suspected overall threat level:
 
@@ -139,7 +139,7 @@ Click **Export CSV** to download the table to your desktop in CSV format.
 
 The table is presented in a general overview format, as shown in the image that follows.
 
-[![plite_fraud_table.jpg](https://files.readme.io/81246675ce8f0e1243e0c0d64e1cf347246bb403894718ad9e23c56fc594eb84-360019038257.jpg)](https://files.readme.io/81246675ce8f0e1243e0c0d64e1cf347246bb403894718ad9e23c56fc594eb84-360019038257.jpg)
+<Image align="center" alt="plite_fraud_table.jpg" src="https://files.readme.io/81246675ce8f0e1243e0c0d64e1cf347246bb403894718ad9e23c56fc594eb84-360019038257.jpg" />
 
 The dynamic table structure lets you:
 
@@ -147,7 +147,7 @@ The dynamic table structure lets you:
   If you make any changes, make sure to click the Save button afterward so your customizations are saved for your future visits.
 * Change the order of the columns by dragging the columns sections in the columns settings.
 
-[![plite_edit_columns.jpg](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)
+<Image align="center" alt="plite_edit_columns.jpg" src="https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg" />
 
 #### Content of the identified fraud breakdown table
 

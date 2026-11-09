@@ -50,7 +50,7 @@ Learn more about <Anchor target="_blank" href="/marketers/zh/docs/set-up-an-inte
 2. Set the configuration according to the guidelines <Anchor target="_blank" href="/marketers/zh/docs/meta-ads-in-app-event-mapping#预定义事件的映射">here</Anchor>.
 3. Click **Save**.
 
-[![meta_campaign_management_partner_settings.png](https://files.readme.io/776ce8b6017e1f39186df6a9e1614b6eeed7585327156369c9650d2f9645f42b-14238309599121.png)](https://support.appsflyer.com/hc/article_attachments/51165492115601)
+[<Image align="center" alt="meta_campaign_management_partner_settings.png" src="https://files.readme.io/776ce8b6017e1f39186df6a9e1614b6eeed7585327156369c9650d2f9645f42b-14238309599121.png" />](https://support.appsflyer.com/hc/article_attachments/51165492115601)
 
 ## Configuring on Adquant
 

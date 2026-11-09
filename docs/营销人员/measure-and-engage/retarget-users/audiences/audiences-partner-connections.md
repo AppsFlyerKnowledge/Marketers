@@ -210,7 +210,7 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 2. 进入**Manage Data** > **Data Sources**。
 3. 在**Data Sources**页面中创建一个新的**Data Source**。
 
-   [![](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg" />
 4. 请按以下方式填写表格：
 
    * 将**ID Type**设置为Device Advertising ID 。
@@ -221,13 +221,13 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 7. 点击左侧菜单中的**Administration**  > **Groups**。
 8. 进入**Permissions**选项卡。
 
-   [![](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)
+   <Image align="center" alt="" src="https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png" />
 9. 创建一个新的分组。
 10. 选择您创建的Data Source。
 11. 点击**Save Object** 。
 12. 进入**Admin** > **Users**。
 
-    [![](https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png)](https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png)
+    <Image align="center" alt="" src="https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png" />
 13. 创建新用户，专供AppsFlyer受众共享使用，并填写必填字段。
 14. 在**Assigned Groups**中选择您之前创建的分组。
 15. 记录该新建用户的**邮箱**和**密码**。
@@ -264,7 +264,7 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 5. 选择 **Amazon S3**。  
    界面会打开**添加连接**的窗口。
 
-   ![image__9_.png](https://files.readme.io/790f8a50bf14fbb4065d9dcee05e31fa866bc73f236f439ec73f2bc833b31be6-31237653533201.png)
+   <Image align="center" alt="image__9_.png" src="https://files.readme.io/790f8a50bf14fbb4065d9dcee05e31fa866bc73f236f439ec73f2bc833b31be6-31237653533201.png" />
 6. 输入**Cross-account role ARN**（跨账号角色的Amazon资源名称）、**Bucket name**（存储桶名称）以及**Region name**（地区名称）。  
    **请注意：** 建议总是输入Region name（地区名称）。如果AWS中没有默认自动使用地区名称，则必须在此处手动输入，否则无法创建该连接。如需在AWS面板主页中查找地区名称，请点击页面右上方的国家下拉菜单，其中会显示地区选项。<Image alt="region_name.jpg" src="https://files.readme.io/a3b65660a638674cbbe0da2802b4f926929d167d0b528c25c12ded6a90b0e981-31237648137489.jpg" width="355px" />
 7. 记录**Account ID**和**External ID**，留待后用。
@@ -300,17 +300,17 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 15. 点击**Create policy**（创建策略）。
 16. 从AWS面板进入 **Access management** > **Roles**。
 
-    [![](https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png)](https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png)
+    <Image align="center" alt="" src="https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png" />
 17. 点击 **+Create role**（创建角色）。
 18. 选择**Another AWS account**，提供您的AWS账号与AppsFlyer AWS账号之间的跨账号权限。
 
-    [![](https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png)](https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png)
+    <Image align="center" alt="" src="https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png" />
 19. 输入**Account ID**（即您从AppsFlyer面板中复制的Account ID）。
 20. 选择**Require external ID** （即您从AppsFlyer面板中复制的External ID）。
 21. 当界面提示您从AWS账户中选择一个现有存储桶策略时，请选择您之前创建的策略。
 22. 点击新创建的角色名称，打开其属性窗口。
 
-    [![](https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png)](https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png)
+    <Image align="center" alt="" src="https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png" />
 23. 记录这个角色的**Role ARN**。
 24. 在AppsFlyer S3对接窗口的对应字段内输入该ARN和存储桶名称。
 
@@ -383,17 +383,17 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
    * **请注意：** 如果此界面中显示了密钥，则无需在生成新的密钥。
    * <strong>重要提示！</strong>请务必在该页面中的**Data Import Using Cohort Import**部分进行操作（切勿在“install attribution”部分中操作）。
 
-     ![data_import_key.png](https://files.readme.io/4d288e6696da600d0e402b86a0986b3951f2cd35efd12084aa8feaeeb526fddf-31237653537681.png)
+     <Image align="center" alt="data_import_key.png" src="https://files.readme.io/4d288e6696da600d0e402b86a0986b3951f2cd35efd12084aa8feaeeb526fddf-31237653537681.png" />
 3. 复制**Data Import Key**和**REST Endpoint** ，之后在AppsFlyer面板中配置连接时会用到这些信息。
 4. 从AppsFlyer后台的受众共享面板进入**连接**选项卡，并点击 **+ 添加新连接**。
 5. 在“合作伙伴名称”中选择Braze，并为该连接命名。
 6. 输入您在第3步中从Braze后台复制的Data Import Key和REST Endpoint。
 
-   ![braze_connection.png](https://files.readme.io/200d1a1bef906ea50e40b3d8113bb9fd72068b6fda25a2f70b95b4510bd992de-31237653538449.png)
+   <Image align="center" alt="braze_connection.png" src="https://files.readme.io/200d1a1bef906ea50e40b3d8113bb9fd72068b6fda25a2f70b95b4510bd992de-31237653538449.png" />
 7. 该连接保存完毕后即可用于任何新建或现存人群包。
 8. AppsFlyer侧的人群包上传到Braze后，您就可以在Braze中使用该人群包作为筛选条件，来定义人群分组。
 
-   ![cohorts_as_filter.png](https://files.readme.io/eec9e014afcb488bb7ebe31167cd5871c38207c8f4542e20ea313b7019e8b43a-31237653538961.png)
+   <Image align="center" alt="cohorts_as_filter.png" src="https://files.readme.io/eec9e014afcb488bb7ebe31167cd5871c38207c8f4542e20ea313b7019e8b43a-31237653538961.png" />
 
 </Accordion>
 
@@ -490,7 +490,7 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
    界面会显示受众共享渠道列表。
 3. 在Google Ads部分中选择一个连接名称。
 
-   [![AcceptTermsAudiences_us-en.png](https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png)](https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png)
+   <Image align="center" alt="AcceptTermsAudiences_us-en.png" src="https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png" />
 4. 点击**服务条款**。
 5. 查看相关条款，若同意条款内容，请点击**我接受**。
 6. 点击**保存更改**。
@@ -548,7 +548,7 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 
 1. 从您的Leanplum账户进入**Partner Integrations > AppsFlyer**。在**Audiences**下生成一个新的**Secret**。
 
-   [![audiences_leanplum_integration.png](https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png)](https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png)
+   <Image align="center" alt="audiences_leanplum_integration.png" src="https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png" />
 2. 选择是否要在Leanplum中为**非现有用户**创建画像。
    * 非现有用户 = 由AppsFlyer受众共享发送的用户ID在 Leanplum中不存在
 3. 复制**App ID**和新生成的**Secret**，在AppsFlyer面板中配置相关连接时会用到这些信息。
@@ -556,7 +556,7 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 5. 在“合作伙伴名称”中选择**Leanplum**，并为该连接命名。
 6. 将您在第3步中从相关Leanplum账号复制的**App ID**和**Secret**粘贴到对应的字段。
 
-   [![leanplum_integration_af_dashboard.png](https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png)](https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png)
+   <Image align="center" alt="leanplum_integration_af_dashboard.png" src="https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png" />
 7. 该连接保存完毕后即可用于任何新建或现存人群包。
 
 相关人群包将在30分钟内出现在Leanplum的Audiences面板中。
@@ -585,7 +585,7 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
    * **Data API ID**（即下图中的<Image alt="A.png" src="https://files.readme.io/66b5bb0c4ea35f232f65dbc8dcbdfd6a91c12cf94915b19d33dae44834127058-31237653543313.png" width="16px" />）
    * **Data API Key** （即下图中的<Image alt="B.png" src="https://files.readme.io/f63914d3fefb55b627559c6e4c7d7cdef89239c0376a14c25c713a0a76dbad1b-31237653544337.png" width="16px" />）
 
-   [![moengage_dashboard.png](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)
+   <Image align="center" alt="moengage_dashboard.png" src="https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png" />
 3. 在网页浏览器的地址栏中查看MoEngage面板的地址，从中获取**MoEngage Data Center**的编号：
    * 如果您MoEngage面板的地址是[https://dashboard-01.moengage.com](https://dashboard-01.moengage.com)，表示您的账户被分配到Data Center 1。
    * 如果该地址是[https://dashboard-02.moengage.com](https://dashboard-02.moengage.com)，表示您的账户被分配到Data Center 2。
@@ -593,7 +593,7 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 4. 从AppsFlyer后台的受众共享面板进入**连接**选项卡，并点击**添加新连接**。
 5. 在“合作伙伴名称”中选择**MoEngage**，并为该连接命名。
 
-   [![moengage_outgoing_connection.png](https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png)](https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png)
+   <Image align="center" alt="moengage_outgoing_connection.png" src="https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png" />
 6. 将您在第2步中从相关MoEngage账号复制的**Data API ID**和**Data API Key**填入相关字段。
 7. 根据您在第3步中查到的编号选择相应的**Data Center**。
 8. 该连接保存完毕后即可用于任何新建或现存人群包。
@@ -624,12 +624,12 @@ AppsFlyer会通过您在AAM中选定的**数据源**（Data Source）创建**用
 
 1. 添加新的Oracle Data Cloud连接, 如下图所示:
 
-   [![](https://files.readme.io/cbb2cbc3559d73c2446da2a59cfdedb1ee631165c189d2bf87e8ef4c625914f6-51911738713233.png)](https://files.readme.io/cbb2cbc3559d73c2446da2a59cfdedb1ee631165c189d2bf87e8ef4c625914f6-51911738713233.png)
+   <Image align="center" alt="" src="https://files.readme.io/cbb2cbc3559d73c2446da2a59cfdedb1ee631165c189d2bf87e8ef4c625914f6-51911738713233.png" />
 2. 复制**AppsFlyer的Seat ID**，然后请您的Oracle Data Cloud客户经理将其列入白名单。加白后，AppsFlyer就可以代您创建对应的类别。
 3. 添加**Seat ID**和**Site ID** （您可以咨询Oracle Data Cloud客户经理获取这两个ID）。
 4. 验证您的**SeatID**之后 ，下拉列表中会显示所有的**Parent Categories**：
 
-   [![](https://files.readme.io/a91a14c8d37b8ec399c58722e3083d6f6c050699352b58e6db5255894a0d84a2-51911721849745.png)](https://files.readme.io/a91a14c8d37b8ec399c58722e3083d6f6c050699352b58e6db5255894a0d84a2-51911721849745.png)
+   <Image align="center" alt="" src="https://files.readme.io/a91a14c8d37b8ec399c58722e3083d6f6c050699352b58e6db5255894a0d84a2-51911721849745.png" />
 5. 选择一个**Parent Category**，在其中创建所需的子类别。
 6. 点击**Add Connection**。
 
@@ -706,7 +706,7 @@ AppsFlyer会以CSV文件的形式将设备ID上传到您的Slack公共频道（P
 1. 让您的Tapjoy客户经理提供相关**Partner ID**。
 2. 从Tapjoy后台的**App Settings**页面中获取您的**Publisher Reporting API Key**。
 
-   [![](https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png)](https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png)
+   <Image align="center" alt="" src="https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png" />
 3. 从AppsFlyer后台进入**受众共享**。选择一个人群包，然后进入**连接**选项卡。
 4. 点击**添加渠道连接**。
 5. 输入**连接名称**。

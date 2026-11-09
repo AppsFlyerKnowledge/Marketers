@@ -41,17 +41,17 @@ x-zendesk:
 
 1. 从页面顶部导航栏打开账户菜单（点击右上角的邮箱地址，打开下拉菜单）> **安全中心**。
 
-![from account click security center Cropped.jpg](https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg)
+<Image align="center" alt="from account click security center Cropped.jpg" src="https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg" />
 
 2. 在**跳转白名单**部分，点击 **管理跳转白名单**。
 
-<Image alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="549px" />  
+<Image align="center" alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="549px" />
 
 界面会打开**跳转白名单**的页面。
 
 3.在**手动**选项卡的**域名**字段中输入一个根域名或子域名，然后点击**域名加白**。
 
-<Image alt="Manually add domains.jpg" src="https://files.readme.io/95b37db2064ddba8c787d2dd5ac5ab2aa7698605f5c6eb3b4a59dd6324dee355-25103405228689.jpg" width="403px" />
+<Image align="center" alt="Manually add domains.jpg" src="https://files.readme.io/95b37db2064ddba8c787d2dd5ac5ab2aa7698605f5c6eb3b4a59dd6324dee355-25103405228689.jpg" width="403px" />
 
 * 仅可使用字母、数字、连字符和句点。
 * 域名的开头和结尾必须使用字母或数字，且不能超过253个字符。
@@ -75,15 +75,15 @@ x-zendesk:
 
 1. 从页面顶部导航栏打开账户菜单（点击右上角的邮箱地址，打开下拉菜单）> **安全中心**。  
 
-![from account click security center Cropped.jpg](https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg)
+<Image align="center" alt="from account click security center Cropped.jpg" src="https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg" />
 
 2. 在**跳转白名单**部分，点击 **管理跳转白名单**。  
-<Image alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="530px" />  
+<Image align="center" alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="530px" />
 
 界面会打开**跳转白名单**的页面。
 
 3.点击**CSV文件**选项卡，然后按照**CSV文件说明**，创建一个包含可靠域名列表的文件。  
-![CSV file upload.jpg](https://files.readme.io/2be73080048545f79e102e6f48df0db956e6739f156153c172c4fef5a2ea339f-25381979219345.jpg)
+<Image align="center" alt="CSV file upload.jpg" src="https://files.readme.io/2be73080048545f79e102e6f48df0db956e6739f156153c172c4fef5a2ea339f-25381979219345.jpg" />
 
 4. 在文件上传字段中，上传您准备好的CSV文件。
 

@@ -72,7 +72,7 @@ OneLink API的调用频次上限取决于您的账户类型。您可以在OneLin
 
 1. <Anchor target="_blank" href="/marketers/zh/docs/create-a-onelink-template#创建onelink模板">创建一个OneLink模板</Anchor>。
 2. 复制OneLink模板ID。  
-   [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg" />
 3. 复制<Anchor target="_blank" href="/marketers/zh/docs/managing-appsflyer-tokens#token类型">OneLink API token</Anchor>。为了保障数据安全，必须由管理员用户来提取这个API key，因为账户下的其他用户没有API key的访问权限。
 4. 将OneLink ID和OneLink API token发送给开发人员。
 5. 请开发人员按照<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelink_rest_api">开发者资源中心中的指南进行操作</Anchor> 。

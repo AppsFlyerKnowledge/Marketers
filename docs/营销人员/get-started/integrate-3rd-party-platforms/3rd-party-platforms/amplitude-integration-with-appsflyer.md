@@ -285,12 +285,12 @@ appsFlyerSdk.setAdditionalData(data);
 1. 在 AppsFlyer 中，转到 **协作** >**合作伙伴市场**。
 2. 要设置 Amplitude V1 集成，请选择 **Amplitude V1**（技术合作伙伴）。  
      
-   <Image alt="选择 Amplitude V1 doctored.png" src="https://files.readme.io/71721bb1a48dda061ce2a099522edf9baed39ef2d67edad8ac14277b42cd2d70-36713632837777.png" width="511px" />  
+   <Image align="center" alt="选择 Amplitude V1 doctored.png" src="https://files.readme.io/71721bb1a48dda061ce2a099522edf9baed39ef2d67edad8ac14277b42cd2d70-36713632837777.png" width="511px" />
      
      
    要设置 Amplitude V2 集成，请选择 **Amplitude V2** （技术合作伙伴）。   
      
-   <Image alt="选择 Amplitude V2.png" src="https://files.readme.io/4bbf57727a2b6e16e5205505b459a78f8642f02d1bb1c4e8f72e26b3bd9e1bd3-36713631187857.png" width="503px" />
+   <Image align="center" alt="选择 Amplitude V2.png" src="https://files.readme.io/4bbf57727a2b6e16e5205505b459a78f8642f02d1bb1c4e8f72e26b3bd9e1bd3-36713631187857.png" width="503px" />
 3. 选择 Amplitude 版本后，单击 **设置集成**。  
      
    点击![](https://files.readme.io/c13fef10fb4cf0ea12f44d56f8c3b64936376ce181a1d12c9f096ad6103c29a6-36713632857617.png)设置对接，
@@ -298,7 +298,7 @@ appsFlyerSdk.setAdditionalData(data);
    * 选择您的应用。
    * 打开 **激活合作伙伴** 切换。  
        
-     <Image alt="激活合作伙伴模糊.png" src="https://files.readme.io/5e0e7ae537cd89b2c561c8561de9ebc160f6d6eb0fedc5c7ba0c761ddb73632a-36713631194641.png" width="521px" />
+     <Image align="center" alt="激活合作伙伴模糊.png" src="https://files.readme.io/5e0e7ae537cd89b2c561c8561de9ebc160f6d6eb0fedc5c7ba0c761ddb73632a-36713631194641.png" width="521px" />
 5. 在其余选项卡中完成配置:
 
 <div id="integration-tab" />
@@ -431,7 +431,7 @@ Amplitude 不提供权限。
 
 从 AppsFlyer 发送到 Amplitude 的归因数据在您的仪表板中显示为以 **[AppsFlyer]** 为前缀的事件和属性：
 
-![amplitude-properties.png](https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png)
+<Image align="center" alt="amplitude-properties.png" src="https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png" />
 
 <div id="important-1" />
 

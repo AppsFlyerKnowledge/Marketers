@@ -25,7 +25,7 @@ x-zendesk:
 
 > **概要：** 增量分析实验能帮助您了解再营销广告的真实效果。本文将为您介绍增量分析实验中所涉及的各项操作。
 
-![KB_toggle_final.jpg](https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg)
+<Image align="center" alt="KB_toggle_final.jpg" src="https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg" />
 
 <div id="about-the-experiment" />
 
@@ -98,14 +98,14 @@ AppsFlyer的增量分析测试从人群包创建开始，该流程完全自动�
 2. 在**连接**选项卡中为指定人群包完成以下配置：
    * 将该人群包关联到1-3个广告平台。
    * 确保<Anchor target="_blank" href="/marketers/zh/docs/audiences-guide#audience-split-and-control-groups">拆分人群包</Anchor>开关已打开（**对于购买了增量分析功能的客户在2023年1月11日以后创建的人群包，该开关会自动打开**）。  
-     ![Measure_inc_impact_toggle.jpg](https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg)
+     <Image align="center" alt="Measure_inc_impact_toggle.jpg" src="https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg" />
    * 对照组默认设为15%（推荐）。
    * 人群包中的其余流量会自动平均分配到您指定的渠道。
      * 各拆分比例（包括对照组）的加总必须为100%。
 
 人群包拆分完毕并成功保存后，AF会自动开启增量分析实验（仅限购买了增量分析功能的客户）。这些实验会以“[Auto]”为标题前缀呈现在增量分析面板中。
 
-![Auto_before_title.jpg](https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg)
+<Image align="center" alt="Auto_before_title.jpg" src="https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg" />
 
 **重要说明：**
 
@@ -118,10 +118,10 @@ Meta ads和Google Ads提供的可选功能可让广告主将相关广告投放�
 
 该功能在Meta ads中称为“Advantage custom audience”，在广告组级别设置，且默认打开。
 
-<Image alt="image__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />  
+<Image align="center" alt="image__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />
 该功能在Google Ads中成为“Audience expansion”。
 
-<Image alt="Google_Ads_Incrementality_limitation_cropped.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
+<Image align="center" alt="Google_Ads_Incrementality_limitation_cropped.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
 
 </Accordion>
 
@@ -150,17 +150,17 @@ Meta ads和Google Ads提供的可选功能可让广告主将相关广告投放�
 
 1. 进入**增量分析面板** > 需要调整的实验 > 点击**编辑实验**
 
-<Image alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
+<Image align="center" alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
 
 或
 
 在**受众共享**面板中找到您需要的人群包，然后点击“增量分析”一栏中的 **+ 关联广告系列**。
 
-<Image alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
+<Image align="center" alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
 
 界面会弹出“关联广告系列”窗口。
 
-<Image alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
+<Image align="center" alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
 
 2. 为每个广告平台选择相关的广告系列
 
@@ -186,7 +186,7 @@ Meta ads和Google Ads提供的可选功能可让广告主将相关广告投放�
 
   > 📘 **注意**
   >
-  > [<Image alt="" src="https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png" width="603px" />](https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png)
+  > <Image align="center" alt="" src="https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png" width="603px" />
   >
   > 进入第2步时，页面向导工具会让您选择**实验目标人群的起始日期**。
   >
@@ -197,7 +197,7 @@ Meta ads和Google Ads提供的可选功能可让广告主将相关广告投放�
   >
   > **页面向导第3步 – 设置目标**
   >
-  > ![Step_3_Set_targets.jpg](https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg)
+  > <Image align="center" alt="Step_3_Set_targets.jpg" src="https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg" />
   >
   > 上图显示了目标应用和KPI的配置界面。
   >
@@ -205,7 +205,7 @@ Meta ads和Google Ads提供的可选功能可让广告主将相关广告投放�
   >
   > **页面向导第4步–检查配置**
   >
-  > [<Image alt="" src="https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png" width="583px" />](https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png)
+  > <Image align="center" alt="" src="https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png" width="583px" />
   >
   > 进入第4步时，页面向导工具会让您设置**实验时长**。
   >

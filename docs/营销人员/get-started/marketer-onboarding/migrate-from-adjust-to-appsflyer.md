@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **内容概要：** 规划从 Adjust 迁移至 AppsFlyer 的流程。了解如何在迁移期间避免重复收费、数据重复和数据丢失。
 
-<Image alt="" src="https://files.readme.io/cc012894dd05255c0b7fa448b1c95d925d556ddb43dc461086bb71e9279da90d-30633481029137.png" width="1765px" />
+<Image align="center" alt="" src="https://files.readme.io/cc012894dd05255c0b7fa448b1c95d925d556ddb43dc461086bb71e9279da90d-30633481029137.png" width="1765px" />
 
 <div id="about-migrating-to-appsflyer" />
 

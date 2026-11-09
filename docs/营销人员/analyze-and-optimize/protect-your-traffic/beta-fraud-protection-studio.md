@@ -22,7 +22,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
 
-<Image alt="beta_feature.png" src="https://files.readme.io/d57432ddeb4d168760f9acd97f4287473658a8528edc1114ecee8ee2f8e9c9b2-16484830033425.png" width="805px" />
+<Image align="center" alt="beta_feature.png" src="https://files.readme.io/d57432ddeb4d168760f9acd97f4287473658a8528edc1114ecee8ee2f8e9c9b2-16484830033425.png" width="805px" />
 
 > **概要：** Protect360的作弊防护操作台（简称FPS）能让广告主自主管控假量检测的生效方式，与常规模式相比提供更高的自由度。FPS配置针对假量检测数据提供多种可选的处理方式，包括拦截、上报为假量或进行流量标记，让广告主能够按需定制假量管理方式。
 
@@ -65,7 +65,7 @@ FPS有两种模式，**已实施**和**已标记**。广告主可以根据自己
   * 实时**拦截**
   * 作为归因后识别的假量**上报**
 
-[<Image alt="Image description" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)   
+<Image align="center" alt="Image description" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />
 <strong>在FPS检测机制中，</strong>激活流量的归类分为以下两种：
 
 * **有效**转化
@@ -75,7 +75,7 @@ FPS有两种模式，**已实施**和**已标记**。广告主可以根据自己
     * 实时**拦截**
     * 作为归因后识别的假量**上报**
 
-[<Image alt="Image description" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)
+<Image align="center" alt="Image description" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />
 
 <div id="note" />
 
@@ -98,7 +98,7 @@ FPS有两种模式，**已实施**和**已标记**。广告主可以根据自己
 
 **Protect360面板**：
 
-[<Image alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />](https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png)
+<Image align="center" alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />
 
 * 页面上方显示已标记的数据总量（1）
 * 一段时间内的“检测状态”变化趋势（2）
@@ -187,7 +187,7 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 1. 在“点击撞库”窗口中，选择[检测模式](/docs/beta-fraud-protection-studio#fps模式)。
 2. 点击页面底部的**保存**按钮。
 
-   [<Image alt="可放大的图像" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />](https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png)
+   <Image align="center" alt="可放大的图像" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />
 
 <div id="current-detection-status" />
 
@@ -271,7 +271,7 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 1. 进入“最新发布”窗口，从下拉菜单中选择您想要让未来更新包在正式生效前处于标记模式的天数（默认为14天，最长可调节到14天）。
 2. 点击**保存**。
 
-<Image alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
+<Image align="center" alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
 
 <div id="note-2" />
 
@@ -300,7 +300,7 @@ FPS是一个配置页面，您可以通过该页面指定检测结果的处理�
 1. 在FPS选项卡中打开**最新发布**窗口。
 2. 使用该数据表以及可导出的报告监测假量检测效果。
 3. 准备就绪后，点击**立即实施**，启用更新。  
-   [![](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)
+   <Image align="center" alt="" src="https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png" />
 
 <div id="note-3" />
 
@@ -414,7 +414,7 @@ Protect360中的再参与劫持检测扩展了针对重新参与活动的标准�
     * 总归因中的排名——所有应用归因中再参与归因的比例
   * 媒体来源的再参与检测——最高检测媒体来源的再参与劫持检测次数
 
-<Image alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
 
 </Accordion>
 
@@ -454,7 +454,7 @@ Protect360中的再参与劫持检测扩展了针对重新参与活动的标准�
 
 * **基于应用的媒体源检测** - 顶级媒体来源的安装数量。
 
-<Image alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
 
 </Accordion>
 

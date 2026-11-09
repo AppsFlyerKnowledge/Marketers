@@ -75,7 +75,7 @@ Data Locker为网页端效果衡量提供两类报表：**终端用户事件**�
 * 剩余30分钟的数据**仅用于**为已归因事件补充Customer User ID（CUID）。
 * 最近30分钟内发生的事件**暂未归因**，将在下一批数据中处理。
 
-[![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
+<Image align="center" alt="" src="https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png" />
 
 <div id="when-will-these-events-appear-in-the-report" />
 

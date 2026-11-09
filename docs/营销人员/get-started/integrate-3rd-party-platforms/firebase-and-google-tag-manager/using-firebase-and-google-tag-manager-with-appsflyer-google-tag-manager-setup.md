@@ -62,7 +62,7 @@ Whenever Google Tag Manager sends an event to AppsFlyer, it must send it with th
 >
 > Below is a screenshot from GTM UI. It shows the event parameter's final configuration:
 >
-> ![event_parameter_variable_dev_key.png](https://files.readme.io/f5030ce110ec4459f673a4088c2c09a4e3f90a35976f4fbfccb8750cb112e69e-49839295695889.png)
+> <Image align="center" alt="event_parameter_variable_dev_key.png" src="https://files.readme.io/f5030ce110ec4459f673a4088c2c09a4e3f90a35976f4fbfccb8750cb112e69e-49839295695889.png" />
 
 > 🚧 **Important**
 >
@@ -86,7 +86,7 @@ Most in-app events require event value parameters. In this case, it is the af\_r
 >
 > Below is a screenshot from GTM UI. It shows the event parameter's final configuration:
 >
-> ![event_parameter_variable_revenue.png](https://files.readme.io/40e6ccd8d2df9370210847d6ff54a5a44c04f295dac9ece18dac715e5fc335a1-49839295696657.png)
+> <Image align="center" alt="event_parameter_variable_revenue.png" src="https://files.readme.io/40e6ccd8d2df9370210847d6ff54a5a44c04f295dac9ece18dac715e5fc335a1-49839295696657.png" />
 
 > 📘 **Note**
 >
@@ -116,7 +116,7 @@ In order for Google Tag Manager to know if the event should be sent to AppsFlyer
 >
 > Below is a screenshot from GTM UI. It shows the trigger's final configuration:
 >
-> ![trigger_purchase_event.png](https://files.readme.io/ef2e70fb2aa0b25f1243d6fa565e3cdb1df407fd2d4b3105dee412ccad7f2704-49839256428689.png)
+> <Image align="center" alt="trigger_purchase_event.png" src="https://files.readme.io/ef2e70fb2aa0b25f1243d6fa565e3cdb1df407fd2d4b3105dee412ccad7f2704-49839256428689.png" />
 
 </Accordion>
 
@@ -152,7 +152,7 @@ Now that the required variables and the event trigger are set, you can create th
 >
 > Below is a screenshot from GTM UI. It shows the Tag's final configuration:
 >
-> ![purchase_tag.png](https://files.readme.io/893bdf6ce65bf6bd0435f4e7c02ff044b35e5e14ebea131f547040f763d7512d-49839295697169.png)
+> <Image align="center" alt="purchase_tag.png" src="https://files.readme.io/893bdf6ce65bf6bd0435f4e7c02ff044b35e5e14ebea131f547040f763d7512d-49839295697169.png" />
 
 </Accordion>
 

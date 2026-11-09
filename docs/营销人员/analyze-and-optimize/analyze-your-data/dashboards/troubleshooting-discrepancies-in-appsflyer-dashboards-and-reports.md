@@ -83,7 +83,7 @@ x-zendesk:
 >
 > **活跃数据：** 假设一列火车从您眼前驶过。在这列火车的行驶过程中，您只能看到车上乘客在某一瞬间的行为。这就好比是活跃维度的数据。
 >
-> <Image alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
+> <Image align="center" alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
 >
 > **LTV数据**：假设您登上了这列火车，观察内部情况。这列火车分为多节车厢。
 >
@@ -91,7 +91,7 @@ x-zendesk:
 > * 在这趟行程中，您可以看到车厢内乘客的所有行为。您对车厢内乘客的观察到乘客下车为止（用户卸载应用）。
 > * 您无法观察到其他车厢内的乘客，因为他们上车的时间与您不同。这就好比是LTV维度的数据。
 >
-> <Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
+> <Image align="center" alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
 
 <div id="appsflyer-dashboards-and-reportsltv-or-activity" />
 

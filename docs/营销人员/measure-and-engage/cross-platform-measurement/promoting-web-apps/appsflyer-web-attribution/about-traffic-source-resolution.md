@@ -84,7 +84,7 @@ AppsFlyer 会根据引荐来源的类型检查应用打开状态，并决定是�
   * 如果应用打开状态为活跃，且 URL 中包含非直接流量来源信息（例如 UTM、PID、点击 ID），则记录此次访问。此次再次访问可能触发再营销转化（重新互动），用于归因后续事件。
   * 如果应用打开状态为活跃，但没有媒体渠道信息，则本次应用打开期间不会记录新的访问。
 
-<Image alt="流量来源解析流程图" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
+<Image align="center" alt="流量来源解析流程图" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
 
 <div id="step-2-media-source-resolution" />
 

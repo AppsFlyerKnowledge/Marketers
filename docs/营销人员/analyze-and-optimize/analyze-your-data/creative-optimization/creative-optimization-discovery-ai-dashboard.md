@@ -25,7 +25,7 @@ x-zendesk:
 
 > **概要：** 借助素材优化的解析面板分析素材及其场景和元素的投放效果，基于数据维护高效素材。
 
-[![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
+<Image align="center" alt="Main Discovery image.jpg" src="https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg" />
 
 <div id="about-the-creative-optimization-discovery-ai-dashboard" />
 
@@ -68,7 +68,7 @@ x-zendesk:
 6. 查看符合筛选和搜索条件的所有素材、元素、场景或文本。
    1. [可选] 要更改卡片上显示的指标，请点击**设置**图标，最多可选择5个指标进行展示。[了解关于卡片设置的更多信息](/docs/creative-optimization-discovery-ai-dashboard#discovery-tabs)。
    2. 您可根据在Discovery卡片设置中所选的指标对已选指标按照从高到低或从低到高的顺序进行排序。点击卡片即可查看该素材的具体表现数据。  
-      <Image alt="Sort by new.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
+      <Image align="center" alt="Sort by new.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
 7. 点击卡片即可查看该素材的具体表现数据。
 
 </Accordion>
@@ -83,7 +83,7 @@ x-zendesk:
 
 1. 单击右上角的<Image alt="齿轮" src="https://files.readme.io/b54f4534bc513b597f7cdda1fb4db7dd811d71b1466ddd3b50b9efe751cf68d3-24287873747857.jpg" width="31px" />图标（位于**排序方式**旁）。
 2. 选择您希望展示的指标（最多5个）并单击**应用**。  
-   <Image alt="Discovery card settings.jpg" src="https://files.readme.io/7b05960fde8159a6e5a53917e2e972ea059d6a6dc165ee66c7d6d390c4148786-24289299704081.jpg" width="738px" />  
+   <Image align="center" alt="Discovery card settings.jpg" src="https://files.readme.io/7b05960fde8159a6e5a53917e2e972ea059d6a6dc165ee66c7d6d390c4148786-24289299704081.jpg" width="738px" />
    所选指标将显示在每张素材卡片上。
 
 **可用指标包括：**
@@ -268,7 +268,7 @@ AI驱动的搜索栏让您分析特定创意元素如何影响表现，从单个
 
 您可以在这部分中看到包含所有素材及其表现数据的素材库，其中根据您选定的主要素材筛选条件呈现相应素材的预览图。此外，卡片所显示的指标及排序方式均可自定义。详见设置和排序。
 
-![creatives.png](https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png)
+<Image align="center" alt="creatives.png" src="https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png" />
 
 |  | 维度/指标 | 说明 |
 | --- | --- | --- |
@@ -290,7 +290,7 @@ AI驱动的搜索栏让您分析特定创意元素如何影响表现，从单个
 
 **请注意**：其中根据您选定的主要素材筛选条件呈现相应素材的预览图。此外，卡片所显示的指标及排序方式均可自定义。详见设置和排序。
 
-<Image alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
+<Image align="center" alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
 
 |  | 维度/指标 | 说明 |
 | --- | --- | --- |
@@ -311,7 +311,7 @@ AI驱动的搜索栏让您分析特定创意元素如何影响表现，从单个
 
 **请注意**：其中根据您选定的主要素材筛选条件呈现相应素材的预览图。此外，卡片所显示的指标及排序方式均可自定义。详见设置和排序。
 
-![elements.png](https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png)
+<Image align="center" alt="elements.png" src="https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png" />
 
 |  | 维度/指标 | 说明 |
 | --- | --- | --- |
@@ -331,7 +331,7 @@ AI驱动的搜索栏让您分析特定创意元素如何影响表现，从单个
 
 **请注意**：其中根据您选定的主要素材筛选条件呈现相应素材的预览图。此外，卡片所显示的指标及排序方式均可自定义。详见设置和排序。
 
-<Image alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
+<Image align="center" alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
 
 |  | 维度/指标 | 说明 |
 | --- | --- | --- |

@@ -35,7 +35,7 @@ x-zendesk:
 
 再归因窗口期从用户首次激活应用开始计算，其时长由广告主设定（默认为90天）。AF不会将再归因窗口期内发生的重装激活记录为新增激活，也不会生成新增激活的回传（由**再营销广告**带来的重装激活除外）。
 
-[![ReAttributionWindow_us-en.png](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)
+<Image align="center" alt="ReAttributionWindow_us-en.png" src="https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png" />
 
 <div id="setting-the-re-attribution-window" />
 

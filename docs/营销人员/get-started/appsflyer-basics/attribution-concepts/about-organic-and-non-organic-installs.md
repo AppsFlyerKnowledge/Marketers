@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **At a glance:** Understand the difference between organic and non-organic installs.
 
-![6453OrganicvsNon-organic.jpg](https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg)
+<Image align="center" alt="6453OrganicvsNon-organic.jpg" src="https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg" />
 
 Non-organic users are attributed to the media source motivating the install or engagement. In the case of organic users, there is no media source identified with install or engagement.
 

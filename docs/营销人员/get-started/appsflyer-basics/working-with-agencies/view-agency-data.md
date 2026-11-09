@@ -71,6 +71,6 @@ x-zendesk:
 
 您可以使用**分组维度**选项，将数据按代理和媒体渠道进行分组，即可查看代理的流量。
 
-[![transparent-agency-retention.png](https://files.readme.io/8137dbf39a8de019a85028fd98898086318072383c9477f75e988bd0bdf43d53-32354172434449.png)](https://files.readme.io/8137dbf39a8de019a85028fd98898086318072383c9477f75e988bd0bdf43d53-32354172434449.png)
+<Image align="center" alt="transparent-agency-retention.png" src="https://files.readme.io/8137dbf39a8de019a85028fd98898086318072383c9477f75e988bd0bdf43d53-32354172434449.png" />
 
 <div data-zendesk-anchors="agency-transparency-in-reports=%E4%BB%A3%E7%90%86%E6%95%B0%E6%8D%AE h_01HKA2A2BYF409JV71QY4QVE0R=%E4%BB%A3%E7%90%86%E6%95%B0%E6%8D%AE viewing-agency-traffic-in-reports=%E5%9C%A8%E6%8A%A5%E5%91%8A%E4%B8%AD%E6%9F%A5%E7%9C%8B%E4%BB%A3%E7%90%86%E6%B5%81%E9%87%8F h_01HKA2A2BYF378MG9GCWMMTMS9=%E5%9C%A8%E6%8A%A5%E5%91%8A%E4%B8%AD%E6%9F%A5%E7%9C%8B%E4%BB%A3%E7%90%86%E6%B5%81%E9%87%8F viewing-agency-traffic-in-the-overview-dashboard=%E5%9C%A8%E6%80%BB%E8%A7%88%E9%9D%A2%E6%9D%BF%E4%B8%AD%E6%9F%A5%E7%9C%8B%E4%BB%A3%E7%90%86%E6%B5%81%E9%87%8F h_01HKA2A2BYYM4FBC0XTVMB6Q16=%E5%9C%A8%E6%80%BB%E8%A7%88%E9%9D%A2%E6%9D%BF%E4%B8%AD%E6%9F%A5%E7%9C%8B%E4%BB%A3%E7%90%86%E6%B5%81%E9%87%8F viewing-agency-traffic-in-the-retention-dashboard=%E5%9C%A8%E7%95%99%E5%AD%98%E9%9D%A2%E6%9D%BF%E4%B8%AD%E6%9F%A5%E7%9C%8B%E4%BB%A3%E7%90%86%E6%B5%81%E9%87%8F h_01HKA2A2BY1E0PKNXWRXEHVN78=%E5%9C%A8%E7%95%99%E5%AD%98%E9%9D%A2%E6%9D%BF%E4%B8%AD%E6%9F%A5%E7%9C%8B%E4%BB%A3%E7%90%86%E6%B5%81%E9%87%8F" />

@@ -48,7 +48,7 @@ x-zendesk:
 >
 > 如果应用接入页面尚未打开，请在顶部菜单栏中点击电子邮件地址下拉菜单，然后选择 **App onboarding（应用接入）**。
 
-![onboarding page.png](https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png)
+<Image align="center" alt="onboarding page.png" src="https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png" />
 
 **通过平台进入添加应用向导：**
 
@@ -56,7 +56,7 @@ x-zendesk:
 * 在 AppsFlyer 首页点击 **+ Add app（添加应用）**。
 * 在顶部菜单栏中打开账户菜单（电子邮件地址下拉菜单），选择 **App onboarding（应用接入）**，然后点击 **+ Onboard another app（接入另一个应用）**。
 
-<Image alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
+<Image align="center" alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
 <div id="adding-an-app" />
 
@@ -245,7 +245,7 @@ x-zendesk:
 
 **完整 URL：** 输入您希望衡量流量的网站完整 URL。您需要在该网站上部署或计划部署 <Anchor target="_blank" href="/marketers/zh/docs/onboarding-guide-to-people-based-attribution#2">PBA网页端SDK</Anchor>。
 
-[<Image alt="URL_diagram" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)
+<Image align="center" alt="URL_diagram" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />
 
 URL 需要包含 –
 
@@ -399,7 +399,7 @@ URL 需要包含 –
   * 打开 <Anchor target="_blank" href="https://developer.roku.com/developer">Roku Developer Dashboard</Anchor>，点击要添加到 AppsFlyer 的频道名称，进入该频道的 Roku Preview & Publish 页面。这将打开该频道的 Roku Preview & Publish 页面。
   * 页面 URL 末尾的数字就是频道 ID：
 
-    ![](https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png)
+    <Image align="center" alt="" src="https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png" />
 
 </Accordion>
 
@@ -446,7 +446,7 @@ URL 需要包含 –
 
 例如，如果 Bundle ID 为“G15147002586”，对应的网页 URL 为：“[https://www.samsung.com/us/appstore/app/G15147002586/](https://www.samsung.com/us/appstore/app/G15147002586/)”。该页面的元数据中会显示开发者 URL、Bundle ID 和应用商店 ID。
 
-![](https://files.readme.io/ee4b192abab24e064013a4a034bda38fb3ed49497ae333e327e1b78dd05d5349-33198275491729.png)
+<Image align="center" alt="" src="https://files.readme.io/ee4b192abab24e064013a4a034bda38fb3ed49497ae333e327e1b78dd05d5349-33198275491729.png" />
 
 </Accordion>
 
@@ -475,7 +475,7 @@ URL 需要包含 –
 
 **应用 ID：** PlayStation concept ID，即分配给游戏或其他内容项目的唯一标识符。该 ID 是 PlayStation 商店 URL 中的一个 5–9 位数字。该 ID 位于应用商店 URL 的末尾：
 
-![playstation_app_id_url.png](https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png)
+<Image align="center" alt="playstation_app_id_url.png" src="https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png" />
 
 </Accordion>
 
@@ -497,7 +497,7 @@ URL 需要包含 –
 
 **应用 ID：** Steam 应用 ID。即 Steam 商店 URL 中显示的 5–8 位数字：
 
-![steam_store_app_url.png](https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png)
+<Image align="center" alt="steam_store_app_url.png" src="https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png" />
 
 </Accordion>
 
@@ -509,7 +509,7 @@ URL 需要包含 –
 
 **应用 ID：** Meta Quest 应用 ID，显示在下载该应用的 Meta 应用商店 URL 末尾。长度为 3–50 个字符，可使用 `A-Z` `a-z0-9._-`
 
-<Image alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
+<Image align="center" alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
 
 </Accordion>
 
@@ -533,7 +533,7 @@ URL 需要包含 –
 
 **应用 ID：** Xbox 应用 ID，显示在下载该应用的 Xbox 商店 URL 末尾。仅包含 12 位字母和数字（`A-Z` `a-z0-9`）。
 
-![](https://files.readme.io/c33ffcb35d4488b9340cfa8b475097eab7b79bfeaf94e8cf8ce6478dda07d341-33198275505041.png)
+<Image align="center" alt="" src="https://files.readme.io/c33ffcb35d4488b9340cfa8b475097eab7b79bfeaf94e8cf8ce6478dda07d341-33198275505041.png" />
 
 **注意：** 应用 ID 区分大小写。
 
@@ -547,7 +547,7 @@ URL 需要包含 –
 
 **应用 ID：** Epic Games 应用 ID，可在下载该应用的商店中找到。长度为 3–50 个字符，可使用：`A-Z` `a-z0-9._-`。
 
-![](https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png)
+<Image align="center" alt="" src="https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png" />
 
 </Accordion>
 
@@ -565,7 +565,7 @@ URL 需要包含 –
 
 ### 填写其他信息（不适用于网页端应用）：
 
-<Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
+<Image align="center" alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
 
 <div id="select-currency" />
 

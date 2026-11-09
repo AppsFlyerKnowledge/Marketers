@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要：** 验证规则（Validation Rules）可针对广告误投和作弊强化防护。广告主可以通过自定义的规则，把控应用内事件的拦截和归因修正。
 
-![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
+<Image align="center" alt="5906_animation-750x330__1_.gif" src="https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif" />
 
 <div id="overview" />
 
@@ -96,7 +96,7 @@ x-zendesk:
 
 规则配置界面旨在为您提供更具互动性的规则配置体验。**小贴士：** 建议您在细读本文前先探索一下规则配置界面中的各种选项，熟悉其中的内容。
 
-![New Validation Rule page.jpg](https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png)
+<Image align="center" alt="New Validation Rule page.jpg" src="https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png" />
 
 规则配置界面中包含以下几个板块：
 

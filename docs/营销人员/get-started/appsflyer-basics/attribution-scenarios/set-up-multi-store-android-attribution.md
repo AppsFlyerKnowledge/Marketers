@@ -43,7 +43,7 @@ AppsFlyer的归因支持多家应用商店的场景。（英文表述中，我�
 >
 > * AppsFlyer的安卓归因解决方案全面支持各设备ID，包括GAID和<Anchor target="_blank" href="/marketers/zh/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor> 等。
 
-![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
+<Image align="center" alt="DashboardType_us-en-new.jpg" src="https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg" />
 
 <div id="single-dashboard-vs-dashboard-per-store" />
 
@@ -246,7 +246,7 @@ AF\_STORE对应AppsFlyer原始数据中的install\_app\_store字段。目前包�
 3. 进入设置页面找到您的Android设置，如果您还没有配置Android的话，先添加该平台。
 4. 填写所有内容，包括该应用的amazon应用商店URL。   
 
-   [![outofstore_1.png](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)
+   <Image align="center" alt="outofstore_1.png" src="https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png" />
 
 </Accordion>
 

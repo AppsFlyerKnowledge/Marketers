@@ -86,7 +86,7 @@ DCR的数据传入和传出连接支持两种类型的云服务：
 
    2. 选择**Create dataset**。
 
-      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
+      <Image align="center" alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. 界面会打开**右侧**边栏，请在其中输入数据集的名称，并根据实际需求选择其他选项。
       * 您可以选用任何一个适合您要求的名称，但其中仅可包含字母、数字和下划线（\_）。
         * **建议：** 推荐方法：建议在该数据集名称中使用可表示数据传入连接的字样。
@@ -97,7 +97,7 @@ DCR的数据传入和传出连接支持两种类型的云服务：
    4. `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
    5. 在**Assign roles**部分中，选择**BigQuery > BigQuery Data Viewer**。
 
-      <Image alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
+      <Image align="center" alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
    6. 点击**保存**。
    7. 点击**CLOSE**，关闭右侧边栏。
 
@@ -117,7 +117,7 @@ DCR的数据传入和传出连接支持两种类型的云服务：
 4. 界面打开的新页面中选择Shared By Your Account选项卡。
 
    snowflake\_private\_sharing.png
-5. <Image alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
+5. <Image align="center" alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
 6. 选择您需要与DCR共享的表格和/或视图，然后点击Done。
 7. 根据实际需求更改Secure Share Identifier并添加额外说明。
 8. 在Add accounts in your region by name字段中根据您的Snowflake账户地区输入对应的AppsFlyer Snowflake账户： 
@@ -238,7 +238,7 @@ DCR的数据传入和传出连接支持两种类型的云服务：
    4. `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
    5. 从**角色**列表中选择**云存储** > **存储工具管理员**。  
 
-      ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
+      <Image align="center" alt="dcr_gcs_permissions.png" src="https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png" />
    6. 点击**保存**。
 
 </Accordion>
@@ -271,7 +271,7 @@ DCR会通过<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-mar
 
    2. 选择**Create dataset**。
 
-      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
+      <Image align="center" alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. 界面会打开**右侧**边栏，请在其中输入数据集的名称，并根据实际需求选择其他选项。
       * 您可以选用任何一个适合您要求的名称，但其中仅可包含字母、数字和下划线（\_）。
         * **建议：** 推荐方法：建议在该数据集名称中使用可表示数据传出连接的字样。
@@ -282,7 +282,7 @@ DCR会通过<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-mar
    4. `datalocker-bq-admin-prod@datalocker-bq-prod.iam.gserviceaccount.com`
    5. 在**Assign roles**部分中，选择**BigQuery > BigQuery Data Editor**。
 
-      <Image alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
+      <Image align="center" alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
    6. 点击**保存**。
    7. 点击**CLOSE**，关闭右侧边栏。
 
@@ -423,7 +423,7 @@ DCR会通过<Anchor target="_blank" href="/marketers/zh/docs/data-locker-for-mar
 6. `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
 7. 从**角色**列表中选择**云存储** > **存储工具管理员**。  
 
-   ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
+   <Image align="center" alt="dcr_gcs_permissions.png" src="https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png" />
 8. 点击**保存**。
 
 </Accordion>

@@ -46,7 +46,7 @@ App 归因用于确定哪些广告活动、合作伙伴和渠道为您的 App �
 
 创建用户账户后，您会收到一封电子邮件邀请，用于激活账户。完成激活后，您即可登录，账户也会随之启用。请注意，账户激活链接的有效期为 48 小时。
 
-<Image alt="登录页面.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
+<Image align="center" alt="登录页面.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
 
 您可以通过以下任一方式登录 AppsFlyer 账户：
 
@@ -79,7 +79,7 @@ App 归因用于确定哪些广告活动、合作伙伴和渠道为您的 App �
 
 主账户是最初创建的账户，也是默认登录的账户。您可以将其他任意账户设为主账户。
 
-<Image alt="primary-account1.jpg" src="https://files.readme.io/8f1d88543b4797b584fa781bf2dd2563ed91f6eaff45393b186d8da98ccc0c33-51073397865233.jpg" width="672px" />
+<Image align="center" alt="primary-account1.jpg" src="https://files.readme.io/8f1d88543b4797b584fa781bf2dd2563ed91f6eaff45393b186d8da98ccc0c33-51073397865233.jpg" width="672px" />
 
 **更改主账户：**
 
@@ -92,13 +92,13 @@ App 归因用于确定哪些广告活动、合作伙伴和渠道为您的 App �
 ### 在账户之间切换
 
 1. 在顶部菜单栏中，点击电子邮箱地址下拉菜单 > 切换账户（Switch accounts）。  
-   <Image alt="image (73).png" src="https://files.readme.io/b9aaf81a586da0240bb3813a0ad416ac1cf5badc0f976ddc0156e1bd798036df-51074002494481.png" width="313px" />
+   <Image align="center" alt="image (73).png" src="https://files.readme.io/b9aaf81a586da0240bb3813a0ad416ac1cf5badc0f976ddc0156e1bd798036df-51074002494481.png" width="313px" />
 2. 选择要登录的账户。  
-   <Image alt="image (74).png" src="https://files.readme.io/7ff19bd9db1b1f72e06b594ce536200cd6139a1882e56e72877200542944d6f8-51074002495505.png" width="75%" />
+   <Image align="center" alt="image (74).png" src="https://files.readme.io/7ff19bd9db1b1f72e06b594ce536200cd6139a1882e56e72877200542944d6f8-51074002495505.png" width="75%" />
 3. 输入发送至您邮箱的 6 位验证码。  
-   <Image alt="image (769).png" src="https://files.readme.io/ccb2c3e8f8724f95e6ec265697b3851efeaf33ff6aabde4599e3d17c57949a44-51074002496017.png" width="75%" />
+   <Image align="center" alt="image (769).png" src="https://files.readme.io/ccb2c3e8f8724f95e6ec265697b3851efeaf33ff6aabde4599e3d17c57949a44-51074002496017.png" width="75%" />
 4. 点击 Switch account（切换账户）。  
-   <Image alt="image (75).png" src="https://files.readme.io/81e6f17ed80eddcc1d3e55ca9336ed62b82fd1c6694a30a347ba24ae8bed57e4-51074025826705.png" width="75%" />
+   <Image align="center" alt="image (75).png" src="https://files.readme.io/81e6f17ed80eddcc1d3e55ca9336ed62b82fd1c6694a30a347ba24ae8bed57e4-51074025826705.png" width="75%" />
 
 <div id="note-2" />
 

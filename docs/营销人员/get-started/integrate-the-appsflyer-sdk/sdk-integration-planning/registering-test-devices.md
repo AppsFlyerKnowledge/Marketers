@@ -91,7 +91,7 @@ x-zendesk:
 
    <Accordion title="安卓">
 
-   [<Image alt="" src="https://files.readme.io/a3fd43836c7f489ab37a2d03263e9e873f1ec700c4f6a9c10771775b38295333-51911871701649.png" width="233px" />](https://files.readme.io/a3fd43836c7f489ab37a2d03263e9e873f1ec700c4f6a9c10771775b38295333-51911871701649.png)
+   <Image align="center" alt="" src="https://files.readme.io/a3fd43836c7f489ab37a2d03263e9e873f1ec700c4f6a9c10771775b38295333-51911871701649.png" width="233px" />
 
    **链接：** [Google Play](https://play.google.com/store/apps/details?id=com.appsflyer.android.deviceid&hl=en)和[第三方商店](https://apkpure.com/my-device-id-by-appsflyer/com.appsflyer.android.deviceid)
 
@@ -101,7 +101,7 @@ x-zendesk:
 
    <Accordion title="iOS">
 
-   [<Image alt="" src="https://files.readme.io/bdd0aaaf73063815527e0b44784db783e88a99dd7430ec48dad90bb67cebc696-51911871705489.png" width="233px" />](https://files.readme.io/bdd0aaaf73063815527e0b44784db783e88a99dd7430ec48dad90bb67cebc696-51911871705489.png)
+   <Image align="center" alt="" src="https://files.readme.io/bdd0aaaf73063815527e0b44784db783e88a99dd7430ec48dad90bb67cebc696-51911871705489.png" width="233px" />
 
    </Accordion>
 
@@ -120,7 +120,7 @@ x-zendesk:
 
    <Accordion title="安卓">
 
-   [![](https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png)](https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png)
+   <Image align="center" alt="" src="https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png" />
 
    </Accordion>
 
@@ -128,7 +128,7 @@ x-zendesk:
 
    <Accordion title="iOS">
 
-   [![](https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png)](https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png)
+   <Image align="center" alt="" src="https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png" />
 
    </Accordion>
 
@@ -136,7 +136,7 @@ x-zendesk:
 
    <Accordion title="Windows">
 
-   [![](https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg)](https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg" />
 
    </Accordion>
 
@@ -155,7 +155,7 @@ x-zendesk:
 2. 选择**测试设备**。
 3. 点击 **+添加设备**。
 
-   [![](https://files.readme.io/e28ef06002e423d4cf7863d4c7fd2b269a0ede5c4b996a50cee25ffbedfcd9d1-31773630618769.png)](https://files.readme.io/e28ef06002e423d4cf7863d4c7fd2b269a0ede5c4b996a50cee25ffbedfcd9d1-31773630618769.png)
+   <Image align="center" alt="" src="https://files.readme.io/e28ef06002e423d4cf7863d4c7fd2b269a0ede5c4b996a50cee25ffbedfcd9d1-31773630618769.png" />
 4. 请填写以下字段：
    * **名称（仅限英文字母）：** 输入一个具有唯一性的设备名称，用于识别该设备。
    * **操作系统：** 选择设备的操作系统。
@@ -225,7 +225,7 @@ x-zendesk:
 
 以下流程图展示了iOS测试设备加白时会出现的几种路径。
 
-[![](https://files.readme.io/214818cd73ebc8cd5d3479d27e3074fec55ec7f9e3d4702b17f3c8811270f54e-31773630621585.png)](https://files.readme.io/214818cd73ebc8cd5d3479d27e3074fec55ec7f9e3d4702b17f3c8811270f54e-31773630621585.png)
+<Image align="center" alt="" src="https://files.readme.io/214818cd73ebc8cd5d3479d27e3074fec55ec7f9e3d4702b17f3c8811270f54e-31773630621585.png" />
 
 为iOS测试设备加白时，请从以下几种方式中选择一种：
 

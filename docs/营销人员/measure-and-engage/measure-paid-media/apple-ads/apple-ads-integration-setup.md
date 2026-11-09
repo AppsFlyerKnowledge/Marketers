@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **概要：** Apple Search Ads（ASA）是AppsFlyer的SRN对接渠道。用户在App Store使用关键词搜索时，ASA能让他们看到您的应用。
 
-<Image alt="apple_search_ads.png" src="https://files.readme.io/20c980a800209d1ba77cec42ccfdb8c0d5659562f2c30b2aaa6ec36cae52ab50-51911955934097.png" width="217px" />
+<Image align="center" alt="apple_search_ads.png" src="https://files.readme.io/20c980a800209d1ba77cec42ccfdb8c0d5659562f2c30b2aaa6ec36cae52ab50-51911955934097.png" width="217px" />
 
 用户在App Store搜索后是否会出现您的广告取决于广告相关性。用户对于广告的反应是广告相关性的一种体现，因此ASA会通过用户对广告的反应来判定最常显示哪些广告。
 
@@ -316,11 +316,11 @@ ASA的归因不依赖IDFA，而是通过来自设备的token完成（确定性�
 
 **再营销启用时**
 
-[![ASA R Enabled2.jpg](https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg)](https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg)
+<Image align="center" alt="ASA R Enabled2.jpg" src="https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg" />
 
 **再营销停用时**
 
-[![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+<Image align="center" alt="ASA_R_Disabled.png" src="https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png" />
 
 <div id="20260901" />
 

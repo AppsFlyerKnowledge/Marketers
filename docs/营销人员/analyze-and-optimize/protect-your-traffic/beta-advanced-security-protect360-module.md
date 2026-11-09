@@ -173,7 +173,7 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 
 * **归属欺骗趋势**：高级安全模块检测随时间推移的反映。此图反映了应用程序/秒级欺骗检测的高级别状态。
 
-<Image alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
 
 </Accordion>
 
@@ -198,7 +198,7 @@ SDK 欺骗是一种高级欺诈策略，攻击者直接向 AppsFlyer 服务器�
 
 #### “高级安全模块”页面
 
-<Image alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
 
 高级安全模块页面分为三个部分。
 

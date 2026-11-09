@@ -75,7 +75,7 @@ Unity\_msc\_new\_2.png
 
 Unity Ads要求广告主使用其专属的Game ID与AppsFlyer进行对接。如果您还不知道您的Game ID，请在Unity Ads后台查看该信息，也可以在上传游戏后进入**Apps** > **Campaigns**查看该信，如下图所示。
 
-[![](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)
+<Image align="center" alt="" src="https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png" />
 
 Unity Ads平台中每个账户下的各个应用只有一个对应的Unity Ads Game ID（同一个应用在广告主账户和代理账户下会有不同的Game ID）。如果您在Unity Ads平台上有多个账户，不能使用不同的Game ID来投放同一个应用的广告。
 
@@ -89,7 +89,7 @@ Unity\_ads\_msc\_new\_3.png
 
 ### 默认回传
 
-![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
+<Image align="center" alt="Screen_Shot_2022-07-28_at_13.07.25.png" src="https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png" />
 
 您可以在这个板块中设置可用回传的事件来源：
 
@@ -108,7 +108,7 @@ Unity\_ads\_msc\_new\_3.png
 
 通过回传将AppsFlyer事件映射到渠道。启用回传后，被拦截的应用内事件（被Protect360屏蔽的事件或未通过验证的事件）也会被一并发送。
 
-[![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+<Image align="center" alt="" src="https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png" />
 
 <div id="important" />
 

@@ -43,7 +43,7 @@ A few things are required before integrating AppsFlyer Adobe SDK Extension.
 
 <Accordion title="Get your AppsFlyer dev key">
 
-![dev_key.png](https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png)
+<Image align="center" alt="dev_key.png" src="https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png" />
 
 1. In your app's dashboard, click on ***App Settings*** under ***Configuration*** in the left-hand menu.
 2. Under ***SDK Installation***, copy the ***Dev Key***.
@@ -67,7 +67,7 @@ Follow the instructions here to configure Adobe Launch.
 
 <Accordion title="1.1 Creating a new property in Adobe Launch">
 
-![Creating a new property in Adobe Launch](https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png)
+<Image align="center" alt="Creating a new property in Adobe Launch" src="https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png" />
 
 1. Log in to Adobe Experience Cloud.
 2. Select ***Launch***.
@@ -84,7 +84,7 @@ Follow the instructions here to configure Adobe Launch.
 
 Install the following extensions in Adobe Launch:
 
-![adboe_extensions.png](https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png)
+<Image align="center" alt="adboe_extensions.png" src="https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png" />
 
 * Adobe Analytics - connects the recorded data from the SDK to the Adobe Analytics module.
 * AppsFlyer SDK Extension - sends data and events to both Adobe and AppsFlyer using the Adobe Launch SDK.
@@ -128,7 +128,7 @@ Follow the instructions in this section to Implement the Adobe SDK Extension int
 
 <Accordion title="2.1 Adding the SDK to the app">
 
-![adobe_sdk.png](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)
+<Image align="center" alt="adobe_sdk.png" src="https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png" />
 
 1. Inside your Adobe property, select ***Environments***.
 2. Select the environment for which you want to deploy the SDK.
@@ -143,7 +143,7 @@ Follow the instructions in this section to Implement the Adobe SDK Extension int
 
 To complete the SDK implementation, you need to publish the environment to a library.
 
-![adobe_publishing.png](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)
+<Image align="center" alt="adobe_publishing.png" src="https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png" />
 
 1. Inside your Adobe property, select ***Publishing***.
 2. Click ***Add New Library***.
@@ -357,7 +357,7 @@ Conversion data is sent with events to the Adobe platform. These variables allow
 
 1. Log in to your Adobe Analytics account.
 
-   ![Adobe Analytics login screenshot](https://files.readme.io/d56f170695893dbbde00c50c838ce8a5c2cfe418a17692f372e208d458ed2d6c-31205379096465.png)
+   <Image align="center" alt="Adobe Analytics login screenshot" src="https://files.readme.io/d56f170695893dbbde00c50c838ce8a5c2cfe418a17692f372e208d458ed2d6c-31205379096465.png" />
 2. Navigate to **Admin** > **Report Suites**
 3. Select the Report Suite that was configured during the Adobe Analytics implementation.
 4. Select **General** > **Processing rules**.

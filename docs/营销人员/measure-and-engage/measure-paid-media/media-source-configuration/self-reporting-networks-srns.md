@@ -102,7 +102,7 @@ AppsFlyer完成归因后，会该<Anchor target="_blank" href="/marketers/zh/doc
 
 <Accordion title="示例A：助攻归因">
 
-![SRN_1.png](https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png)
+<Image align="center" alt="SRN_1.png" src="https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png" />
 
 **星期一：** 广告平台A上报了一个用户点击。
 
@@ -120,7 +120,7 @@ AppsFlyer会向广告主提供助攻数据（即在激活之前发生但未获�
 
 <Accordion title="示例B：末次点击归因">
 
-![SRN_2.png](https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png)
+<Image align="center" alt="SRN_2.png" src="https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png" />
 
 **广告平台D**（SRN）比广告平台C早几分钟上报了一个点击。
 
@@ -273,7 +273,7 @@ AppsFlyer的数据分析师考察了某月内Meta ads中的**拉新**广告投�
 * 在5%的广告投放中，至少有40%看到广告的用户是相关应用的现有用户。
 * **结论：在SRN的拉新投放中，有10%看到广告的用户是现有用户。**
 
-[![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+<Image align="center" alt="mistargeted_users.png" src="https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png" />
 
 <div id="solving-the-mistargeting-problem" />
 

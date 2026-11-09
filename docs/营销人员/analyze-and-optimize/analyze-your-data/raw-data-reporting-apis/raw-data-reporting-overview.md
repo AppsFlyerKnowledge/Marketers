@@ -122,7 +122,7 @@ x-zendesk:
 
 ## 用户链路报告
 
-![Raw_data_-_User_acquisition_.png](https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png)
+<Image align="center" alt="Raw_data_-_User_acquisition_.png" src="https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png" />
 
 <div id="user-journey-basics" />
 
@@ -150,7 +150,7 @@ x-zendesk:
   * 再营销数据仅记录非自然量。
   * UA和再营销应用内事件报告都包含再营销应用内事件，详见<Anchor target="_blank" href="/marketers/zh/docs/resolve-retargeting-double-attribution">再营销双重归因法</Anchor>。
 
-    ![Raw_data_-_Retargeting.png](https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png)
+    <Image align="center" alt="Raw_data_-_Retargeting.png" src="https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png" />
 
 如果您需要追溯某条用户链路，可以将链路重点环节的相关报告合并查看（比如激活和应用内事件），然后从AppsFlyer ID、事件时间和报告类型这几个维度来梳理报告，这样就能得到用户在过去一段时间内所完成的事件，即用户链路。
 

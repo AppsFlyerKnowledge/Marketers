@@ -35,7 +35,7 @@ x-zendesk:
 ---
 > **概要：** 通过AppsFlyer归因模型，我们能判断哪些媒体渠道有效促成了拉新或促活，并将相关的激活或互动行为归因给这些渠道。
 
- [![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
+ <Image align="center" alt="" src="https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png" />
 
 <div id="what-is-attribution" />
 
@@ -83,7 +83,7 @@ AppsFlyer使用以下各种方法进行归因：
 
 如果在一个新增激活前发生了多个有效互动，**AppsFlyer会把该激活优先归因到点击，其次是展示；并会优先使用确定性归因，其次是概率匹配**。下图展示了Appsflyer的归因优先级。
 
-![Attribution method priorities 23.png](https://files.readme.io/d88dcebc9095b2f92e24817ab0041d015c80201ab8cda6233a41ea4b626aa998-51911487537937.png)
+<Image align="center" alt="Attribution method priorities 23.png" src="https://files.readme.io/d88dcebc9095b2f92e24817ab0041d015c80201ab8cda6233a41ea4b626aa998-51911487537937.png" />
 
 以下内容详细阐释了AppsFlyer的各个归因模型。
 
@@ -338,7 +338,7 @@ AppsFlyer会将这些形成助攻的渠道作为促成激活的辅助方记录�
 
 <Accordion title="再营销归因">
 
-![Retargeting_-_Flow__2_.png](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="Retargeting_-_Flow__2_.png" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 用户如果在<Anchor target="_blank" href="/marketers/zh/docs/set-up-re-attribution-window">再归因窗口</Anchor>（默认为90天）内重新激活应用程序，AF会把该行为视作重装激活进行归因。如果用户与再营销广告互动后重新激活应用，AF会将该行为计为再营销重装激活（即再归因），您可以在<Anchor target="_blank" href="/marketers/zh/docs/retargeting-attribution-guide">再营销</Anchor>报告中查看相关数据。
 

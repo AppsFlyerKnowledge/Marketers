@@ -131,7 +131,7 @@ SSO 配置在 IdP 平台和 AppsFlyer 中完成，具体步骤如下。 配置�
 
 用户通过点击 <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">AppsFlyer SSO 登录页面</Anchor> 中的 **使用 SSO 登录** 并输入他们的电子邮件地址进入 AppsFlyer。然后，他们被引导到 IdP 进行认证，并重定向到 AppsFlyer 主页。
 
-[<Image alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)
+<Image align="center" alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />
 
 <div id="note-4" />
 
@@ -238,7 +238,7 @@ AppsFlyer 提供两种类型的公共加密密钥证书来加密数据和签署 
 
 如果您已配置通过服务提供商（AppsFlyer）登录的认证流程，请检查用户是否可以使用他们的电子邮件进入 AppsFlyer：
 
-<Image alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
+<Image align="center" alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
 
 1. 如果您已登录到 AppsFlyer 和 IdP，请从两者中注销。
 2. 在隐身模式下打开网页。

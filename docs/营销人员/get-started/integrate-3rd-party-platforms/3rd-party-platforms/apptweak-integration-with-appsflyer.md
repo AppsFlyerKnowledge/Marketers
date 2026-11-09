@@ -40,7 +40,7 @@ This integration allows you to grant AppTweak permission to access your aggregat
    * Aggregate analytics reporting
    * SKAN reporting (for iOS apps)
 
-     <Image alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
+     <Image align="center" alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
 6. Click **Save API access**.
 7. Notify AppTweak that you've enabled their access.
 

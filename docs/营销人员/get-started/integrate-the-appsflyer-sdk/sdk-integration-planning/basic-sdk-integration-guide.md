@@ -306,7 +306,7 @@ AppsFlyer支持第三方应用商店的归因，具体如下：
 
 您可以通过`waitForATTUserAuthorization`来设定让SDK延迟多久再将数据发送给AppsFlyer服务器，并在此期间等待ATT授权状态。
 
-[![](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)
+<Image align="center" alt="" src="https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png" />
 
 当终端用户打开应用时，ATT状态为**notDetermined**。 在`waitForATTUserAuthorization`响应超时期间，SDK会将激活和后续的应用内事件组成队列保存在缓存中，这与离线事件的记录方式相似。
 

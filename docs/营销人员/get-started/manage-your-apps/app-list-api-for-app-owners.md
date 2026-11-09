@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概览：** 获取与您的 AppsFlyer 账户关联的已启用和待处理应用列表。
 
-![mceclip0.png](https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png" />
 
 如果您是广告平台，请使用<Anchor target="_blank" href="/partners/zh/docs/app-list-api-for-ad-networks">广告平台专用的应用列表</Anchor> API。
 

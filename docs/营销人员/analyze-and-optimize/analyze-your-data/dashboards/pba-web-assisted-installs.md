@@ -25,7 +25,7 @@ x-zendesk:
 
 **Web-Assisted Installs use case**
 
-![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
+<Image align="center" alt="web_to_app_image.png" src="https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png" />
 
 ## Web-Assisted Installs analysis
 
@@ -35,7 +35,7 @@ Web-Assisted Installs measures the impact of web marketing efforts to drive user
 
 The headline metrics display the total number of app installs relative to the number of website-assisted installs divided into organic and non-organic app installs.
 
-[![WAIHeadline_en-us.png](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)
+<Image align="center" alt="WAIHeadline_en-us.png" src="https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png" />
 
 Consider the use-case scenarios, in the table that follows, to Web-Assisted Installs analysis.
 
@@ -57,7 +57,7 @@ Consider the use-case scenarios, in the table that follows, to Web-Assisted Inst
 
 <Accordion title="Website assisted installs and reinstalls">
 
-![30day_us-en.png](https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png)
+<Image align="center" alt="30day_us-en.png" src="https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png" />
 
 Installs are considered to have been influenced by a website if they occur within 30 days of a website visit. Installs and reinstalls including retargeting installs (reattributions) can be organic or non-organic.
 

@@ -32,7 +32,7 @@ x-zendesk:
 ---
 > **概要：** 概要：本文重点讲解了如何使用Pull API来拉取CSV格式的AppsFlyer汇总报告。
 
-[![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
+<Image align="center" alt="PullAPIAverage_us-en.png" src="https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png" />
 
 <div id="looking-for-pull-api-raw-data" />
 

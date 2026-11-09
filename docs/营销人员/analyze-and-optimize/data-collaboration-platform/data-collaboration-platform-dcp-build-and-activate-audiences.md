@@ -71,14 +71,14 @@ x-zendesk:
 
 1. 在AppsFlyer中，从侧边菜单选择**协作** > **数据清理室**。
 
-   <Image alt="from Collaborate.png" src="https://support.appsflyer.com/hc/article_attachments/32455804422545" width="266px" />
+   <Image align="center" alt="from Collaborate.png" src="https://support.appsflyer.com/hc/article_attachments/32455804422545" width="266px" />
 2. 在**协作**选项卡中，点击相关的协作。
 
-   <Image alt="点击相关协作.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
+   <Image align="center" alt="点击相关协作.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
 3. 在协作中，点击**新受众** > **可视化受众构建器**。  
    **请注意：** 在你可以建立受众之前，必须关联至少一个数据源。
 
-   <Image alt="新受众可视化受众构建器.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
+   <Image align="center" alt="新受众可视化受众构建器.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. 继续进行以下**受众构建器**的逐步指导：
 
 <div id="note-1" />
@@ -103,7 +103,7 @@ x-zendesk:
 
      **请注意：** 只有在来源权限已启用 "**构建观众**" > "**可以使用所有数据** - **通用数据集**" 时，所有三个选项才会可用。<Anchor target="_blank" href="/marketers/zh/docs/data-collaboration-platform-dcp-create-and-manage-sources#共享权限">了解更多关于来源权限的信息</Anchor>  
 
-     <Image alt="可以使用所有数据权限已启用 w arrow.png" src="https://support.appsflyer.com/hc/article_attachments/34588579107345" width="87.42%" />
+     <Image align="center" alt="可以使用所有数据权限已启用 w arrow.png" src="https://support.appsflyer.com/hc/article_attachments/34588579107345" width="87.42%" />
 4. 点击**Next**。
 
 <div id="step-2-define-the-audience" />
@@ -138,7 +138,7 @@ x-zendesk:
 4. 点击**Next**。
 5. 继续下一步 [发送受众](#发送受众以进行激活) 以激活受众。
 
-<Image alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
+<Image align="center" alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
 
 </Accordion>
 
@@ -156,13 +156,13 @@ x-zendesk:
 
 1. 在AppsFlyer中，从侧边菜单选择**协作** > **数据清理室**。
 
-   <Image alt="from Collaborate.png" src="https://support.appsflyer.com/hc/article_attachments/32455804422545" width="266px" />
+   <Image align="center" alt="from Collaborate.png" src="https://support.appsflyer.com/hc/article_attachments/32455804422545" width="266px" />
 2. 在**协作**选项卡中，点击相关的协作。
 
-   <Image alt="点击相关协作.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
+   <Image align="center" alt="点击相关协作.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
 3. 在协作中，点击 **新受众** > **SQL 受众构建器**。
 
-   <Image alt="新受众 SQL 受众构建器.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
+   <Image align="center" alt="新受众 SQL 受众构建器.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
 4. 继续进行 **受众构建器** 的演练步骤：
 
 <div id="set-details" />
@@ -246,7 +246,7 @@ x-zendesk:
 
 1. 在受众构建器中，启用 **将受众连接到媒体合作伙伴**。  
      
-   ![连接受众到媒体合作伙伴.png](https://files.readme.io/d1e6558183eed8f239f1d61efd81cd71db7a2c7f6acfdef7e1c029dea51af172-37184169230097.png)
+   <Image align="center" alt="连接受众到媒体合作伙伴.png" src="https://files.readme.io/d1e6558183eed8f239f1d61efd81cd71db7a2c7f6acfdef7e1c029dea51af172-37184169230097.png" />
 2. 点击**添加渠道连接**。
 3. 如果没有建立合作伙伴连接，请创建一个新的合作伙伴连接：
    1. 点击**Add Connection**。
@@ -257,7 +257,7 @@ x-zendesk:
    6. 点击**保存**。
 4. 点击 **保存并发送**.
 
-<Image alt="选择媒体合作伙伴连接.png" src="https://support.appsflyer.com/hc/article_attachments/35682279443857" width="610px" />
+<Image align="center" alt="选择媒体合作伙伴连接.png" src="https://support.appsflyer.com/hc/article_attachments/35682279443857" width="610px" />
 
 #### 将受众导出到云服务
 
@@ -283,7 +283,7 @@ x-zendesk:
 
 您可以从相关协作仪表板的 **受众** 部分查看和管理相关受众。
 
-<Image alt="Audiences section.png" src="https://support.appsflyer.com/hc/article_attachments/32456187667345" width="2836px" />
+<Image align="center" alt="Audiences section.png" src="https://support.appsflyer.com/hc/article_attachments/32456187667345" width="2836px" />
 
 **您可以从此页面执行的操作：**
 
@@ -329,7 +329,7 @@ x-zendesk:
 
 您可以查看与协作相关的观众状态。
 
-![观众状态 - doctored w arrow.png](https://support.appsflyer.com/hc/article_attachments/36573611849361)
+<Image align="center" alt="观众状态 - doctored w arrow.png" src="https://support.appsflyer.com/hc/article_attachments/36573611849361" />
 
 观众可以有多种状态：
 
@@ -347,7 +347,7 @@ x-zendesk:
 
 单击特定观众旁边的下拉菜单并选择 **查看历史**。
 
-![查看历史 doctored .png](https://files.readme.io/7840f05fd8f6a98445c29e5a59813776378d842dd54fab4e3f66111c34dd89dd-36573637043089.png)
+<Image align="center" alt="查看历史 doctored .png" src="https://files.readme.io/7840f05fd8f6a98445c29e5a59813776378d842dd54fab4e3f66111c34dd89dd-36573637043089.png" />
 
 **上传历史状态包括:**
 

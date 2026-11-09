@@ -258,7 +258,7 @@ AppsFlyer提供了一系列社交应用落地页的模板。模板中元素的�
 1. 从自定义链接的配置页面进入**社媒到应用**部分。
 2. 在**社交应用落地页**部分，点击**创建社交应用落地页**。  
    操作界面会打开一个窗口，让您选择落地页模板。  
-   [![](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg" />
 3. 将鼠标悬停在选中的模板上，然后点击**创建**。**建议**：可以将鼠标悬停在模板的 🛈 图标上，查看每个模板的使用场景。建议在Instagram中使用Clustered Poster和ShowAndTell模板。
 4. 自定义目标网页广告素材中的所有元素。您只需选择要编辑的元素名称，或在预览页面点击相应元素便可进行配置。    
    **建议**：请保存文本，以防更换素材模板时丢失文案。
@@ -275,10 +275,10 @@ AppsFlyer提供了一系列社交应用落地页的模板。模板中元素的�
 | <ul><li>Flyer</li><li>Poster</li><li>Blurry Poster</li><li>Clustered Poster</li></ul> | 300 KB | 9:16（竖屏） |
 
    4. 如果图片URL不正确，系统会报错，且无法显示素材。   
-      [![](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)
+      <Image align="center" alt="" src="https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png" />
 6. 点击**查看**，查看落地页素材。   
    如需修改素材，请点击**返回编辑器**。  
-   [![](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)
+   <Image align="center" alt="" src="https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png" />
 7. 点击**完成**，保存落地页。  
    **重要提示**：新建/更新后的落地页素材仅在自定义链接生成/更新后才会生效。
 8. 【可选】如需修改您的落地页，请点击**修改社交应用落地页**。
@@ -571,7 +571,7 @@ Apple新上线的iOS 15系统为iCloud用户提供了<Anchor target="_blank" hre
    * 用户是否启用了Private Relay
    * 该链接是否包含`af_cp_lp=true`参数
 4. AppsFlyer确认以上信息后，打开落地页。其中包含应用图标、图像以及CTA按钮，引导用户去App Store下载应用，同时跳出弹窗信息，向用户解释复制URL是为了让他们跳转到应用具体页面时享受最流畅的用户体验。  
-   ![ios_15_ip_masking__1_.png](https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png)
+   <Image align="center" alt="ios_15_ip_masking__1_.png" src="https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png" />
 5. 用户点击**下载应用**。
 6. 用户跳转到App Store并下载应用，然后在首次启动应用时进入指定的页面。
 

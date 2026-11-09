@@ -28,7 +28,7 @@ x-zendesk:
 > * 2023年1月30日，我们上线了新的**TikTok for Business高级SRN**对接`tiktokglobal_int`，**TikTok for Business的历史对接**`bytedanceglobal_int`将逐步下线，到2024年3月20日正式停用。此次变更的过渡事宜将由TikTok负责处理，他们会通知所有相关客户，引导其删除历史对接。<strong>为了避免出现数据丢失问题，请确保新对接和历史对接在过渡期间都处于启用状态。</strong>详情请见相关的<Anchor target="_blank" href="/marketers/zh/docs/bulletin-tiktok-for-business-advanced-srn">公告文档</Anchor>。
 > * AppsFlyer可衡量TikTok[非应用广告系列](#网页到应用衡量非应用广告带来的应用流量)（non-app campaign)带来的应用流量。
 
-<Image alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
+<Image align="center" alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
 
 <div id="overview" />
 
@@ -384,7 +384,7 @@ AppsFlyer与TikTok的集成使得对应用活动的全面测量成为可能—�
 4. 输入您代理的**TikTok账户ID**。这是为了识别代理流量，并将其与广告主的流量区分开来。
 5. 点击**保存对接**。
 
-   <Image alt="tiktok.png" src="https://files.readme.io/b13ee9cd005b97c37019154a0caa10e03b846e7405777d9fc0e3db11bfb233b4-33379202036369.png" width="60.92%" />
+   <Image align="center" alt="tiktok.png" src="https://files.readme.io/b13ee9cd005b97c37019154a0caa10e03b846e7405777d9fc0e3db11bfb233b4-33379202036369.png" width="60.92%" />
 
 > ❗️ **重要提示**
 >
