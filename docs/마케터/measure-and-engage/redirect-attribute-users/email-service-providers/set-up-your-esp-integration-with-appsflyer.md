@@ -24,7 +24,7 @@ x-zendesk:
 
 > **한눈에 보기:** AppsFlyer와의 ESP 통합을 설정하여 이메일 캠페인에서 원활하고 안전한 딥 링크를 활성화하여 사용자 참여 및 전환율을 향상시킵니다.
 
-## <Image alt="ESP final main KB image.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
+<Image align="center" alt="ESP final main KB image.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
 
 <div id="about-the-appsflyer-esp-integration" />
 

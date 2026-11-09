@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **간단히 보기**: 사용자 디바이스, 운영 체제, 채널, 플랫폼에 관계없이 캠페인에서 강력하고 사용자 맞춤화된 리디렉션, 딥링킹, 어트리뷰션을 위해 원링크를 사용하여 최대 전환과 수익을 달성하세요.
 
-## ![53010_원링크.jpg](https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg)
+<Image align="center" alt="53010_원링크.jpg" src="https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg" />
 
 <div id="about-onelink" />
 

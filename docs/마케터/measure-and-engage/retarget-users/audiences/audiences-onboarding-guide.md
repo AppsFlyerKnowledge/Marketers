@@ -24,7 +24,7 @@ x-zendesk:
 
 > **간단히 보기**: 앱스플라이어 오디언스를 사용하여 귀사의 네트워크와 커스텀 오디언스 세그먼트를 연결하면 가장 효과적인 유저 유입 및 리마케팅 캠페인을 구현할 수 있습니다.
 
-## ![53010_오디언스.jpg](https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg)
+<Image align="center" alt="53010_오디언스.jpg" src="https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg" />
 
 <div id="about-audiences" />
 
