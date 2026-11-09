@@ -30,7 +30,7 @@ x-zendesk:
 
 ## Data Locker
 
-![6133DataLockerForAdvertisers.png](https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png)
+<Image align="center" alt="6133DataLockerForAdvertisers.png" src="https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png" />
 
 Trong Data Locker, hãy chọn ứng dụng, nguồn truyền thông, sự kiện và báo cáo của bạn để đưa vào dữ liệu mà AppsFlyer cung cấp cho các tùy chọn lưu trữ đám mây bạn đã chọn. Sau đó, tải dữ liệu theo cách lập trình từ bộ lưu trữ vào hệ thống của bạn.
 
@@ -131,7 +131,7 @@ Dữ liệu được ghi vào tùy chọn lưu trữ bạn đã chọn. Trong tr
 
 Dữ liệu trong kho lưu trữ đám mây có bộ chứa được sắp xếp theo cấu trúc thư mục phân cấp dựa vào loại báo cáo, ngày và giờ. Hình sau đây là một ví dụ về cấu trúc này:
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 Dữ liệu của một báo cáo nhất định được chứa trong các thư mục giờ (h) được liên kết với báo cáo đó:
 
@@ -391,7 +391,7 @@ Quản trị viên có thể đặt lại thông tin đăng nhập của bộ ch
   2. <Anchor target="_blank" href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html">Làm mới bộ nhớ đệm thông tin đăng nhập AWS</Anchor>.  
      **Ảnh chụp màn hình từ AWS**
 
-     ![mceclip0.png](https://files.readme.io/e6608b196c39cb71e0a02e0eabe95378f24659a1578a16fd381bfd0053ca309e-32966264043537.png)
+     <Image align="center" alt="mceclip0.png" src="https://files.readme.io/e6608b196c39cb71e0a02e0eabe95378f24659a1578a16fd381bfd0053ca309e-32966264043537.png" />
 
 </Accordion>
 
@@ -481,7 +481,7 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
 2. Chọn **New Bookmark** (Dấu trang Mới). Sẽ có cửa sổ mở ra.
 3. Trong trường đầu tiên, (được đánh dấu [1] trong ảnh chụp màn hình bên dưới), hãy chọn **Amazon S3.**
 
-   [![DataDuckSmall2.png](https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png)](https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png)
+   <Image align="center" alt="DataDuckSmall2.png" src="https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png" />
 4. Điền vào các trường như sau:
    * **Biệt danh** : Văn bản tự do
    * **Server** (Máy chủ): s3.amazonaws.com
@@ -508,7 +508,7 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
 1. Trong trình duyệt S3, hãy nhấp vào **Accounts** (Tài khoản) > **Add** **New Account** (Thêm Tài khoản Mới).  
    Cửa sổ Thêm Tài khoản Mới sẽ mở ra.
 
-   [![mceclip0.png](https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png)](https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png)
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png" />
 2. Điền vào các trường như sau:
    * **Account Name** (Tên Tài khoản): văn bản tự do.
    * **Access Key ID** (ID Mã khóa Truy cập): sao chép Mã khóa Truy cập AWS như xuất hiện trong bảng thông tin đăng nhập.
@@ -519,7 +519,7 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
 4. Nhấp vào **Buckets** (Bộ chứa) > **Add External** **Bucket** (Thêm Bộ chứa Ngoài).  
    Cửa sổ Thêm Bộ chứa Ngoài sẽ mở ra.  
 
-   <Image alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
+   <Image align="center" alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
 5. Nhập **Bucket name** (Tên Bộ chứa).Tên Bộ chứa có định dạng sau: `{Bucket Name}/{Home Folder}`. Các giá trị cần thiết cho tên bộ chứa và thư mục gốc hiện trong cửa sổ thông tin đăng nhập.
 6. Nhấp vào **Add External bucket**  
     (Thêm Bộ chứa Ngoài).Bộ chứa được tạo và xuất hiện trong bảng điều khiển bên trái của cửa sổ.  

@@ -55,13 +55,13 @@ General Settings
 
 Toggle this to ON if you want to attribute view-through installs from Xiaomi. The view-through lookback slider is available on the attribution link tab (described below).
 
-![](https://files.readme.io/c01732abe8d1bb3c68acdf84bab50cc46d4f4923b7220e3ca51c399074113c1e-50899866307217.png)
+<Image align="center" alt="" src="https://files.readme.io/c01732abe8d1bb3c68acdf84bab50cc46d4f4923b7220e3ca51c399074113c1e-50899866307217.png" />
 
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to Xiaomi following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
-![xiaomi-default-postbacks.png](https://files.readme.io/ae215140550604649e4345729a7106fa08c15713e003cec534199e3889122b5e-50899866309265.png)
+<Image align="center" alt="xiaomi-default-postbacks.png" src="https://files.readme.io/ae215140550604649e4345729a7106fa08c15713e003cec534199e3889122b5e-50899866309265.png" />
 
 </Accordion>
 
@@ -98,7 +98,7 @@ Ad revenue integration is currently not supported with Xiaomi.
 
 In this tab, you can select the permissions to grant Xiaomi, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Xiaomi, the permissions tab is active and you can grant control to Xiaomi.
 
-![ad_network_permissions.png](https://files.readme.io/2532b798bacccf9028a157e44a9785a285cd81dd521c0c5ec5303ae420827620-50899913924113.png)
+<Image align="center" alt="ad_network_permissions.png" src="https://files.readme.io/2532b798bacccf9028a157e44a9785a285cd81dd521c0c5ec5303ae420827620-50899913924113.png" />
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
 

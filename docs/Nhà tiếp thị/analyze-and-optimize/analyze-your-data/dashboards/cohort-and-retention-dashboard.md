@@ -26,7 +26,7 @@ x-zendesk:
 
 **Doanh thu theo ngày sau cài đặt được chia ra theo nguồn truyền thông**
 
-![Full_cohort2_us-en.png](https://files.readme.io/b60e18dcd68ca4b1831c56b69ad667931ca52610a456f8612f44d4fac51150f6-14583921567377.png)
+<Image align="center" alt="Full_cohort2_us-en.png" src="https://files.readme.io/b60e18dcd68ca4b1831c56b69ad667931ca52610a456f8612f44d4fac51150f6-14583921567377.png" />
 
 <div id="tip" />
 
@@ -46,7 +46,7 @@ x-zendesk:
 
 <Accordion title="Nguyên tắc nhóm người">
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 * **Loại nhóm người**
   * **Thống nhất**:
@@ -80,7 +80,7 @@ x-zendesk:
 
 Trong ví dụ này, cùng một dữ liệu thô được sử dụng để tạo ra hai loại xu hướng nhóm người. Bảng dữ liệu thô chứa các sự kiện phân bổ liên quan đến những người dùng khác nhau A, B, C và D. Người dùng tương tác với cùng một quảng cáo, cài đặt ứng dụng và hậu chuyển đổi đã thực hiện một hoặc nhiều giao dịch mua. Ngày nhóm người 0 là ngày cài đặt.
 
-[![CohortExample_en-us.jpg](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)
+<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg" />
 
 </Accordion>
 
@@ -112,13 +112,13 @@ Trong ví dụ này, cùng một dữ liệu thô được sử dụng để t�
 
 1. Đi tới **Dashboard** (Bảng điều khiển) > **Cohort** (Nhóm người).  
    Bảng điều khiển Nhóm người sẽ mở ra. Mức độ chi tiết và phạm vi ngày chuyển đổi được hiển thị.  
-   ![mceclip0__1_.png](https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png)
+   <Image align="center" alt="mceclip0__1_.png" src="https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png" />
 2. Chọn mức độ chi tiết.
 3. Đặt khoảng thời gian phân bổ (thu hút người dùng hoặc thu hút nhắm mục tiêu lại). Dữ liệu liên quan đến các ngày gần đây nhất có thể dẫn đến [dữ liệu không hoàn chỉnh](/docs/cohort-and-retention-dashboard#partial-data) được biểu thị bằng dấu gạch ngang trong biểu đồ và bảng.
 4. Nhấp vào **Edit Cohort** (Chỉnh sửa Nhóm người).  
    Cửa sổ thiết lập Nhóm người sẽ mở ra.  
 
-   <Image alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
+   <Image align="center" alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
 5. Hoàn thành các trường sau:
    * **Loại nhóm người:**
      * **Thu hút người dùng**
@@ -149,7 +149,7 @@ Người dùng được nhóm thành các nhóm người theo **ngày** sau chuy
 * Đối với độ chi tiết theo tuần, số tuần tối đa là 156
 * Đối với độ chi tiết theo tháng, số tháng tối đa là 36
 
-![DaysPost.jpg](https://files.readme.io/dbeb30f800b198ea0ce2c7b69f2d3652f54384630dab9e8e77a7960a3d9471fb-360005455377.jpg)
+<Image align="center" alt="DaysPost.jpg" src="https://files.readme.io/dbeb30f800b198ea0ce2c7b69f2d3652f54384630dab9e8e77a7960a3d9471fb-360005455377.jpg" />
 
 * **Chọn số liệu, hàm và mỗi người dùng**: **Lưu ý:** Không phải tất cả các giá trị kết hợp số liệu, hàm và mỗi người dùng đều có sẵn.
   * Số liệu: Doanh thu, <Anchor target="_blank" href="/marketers/vi/docs/measure-sessions">Phiên</Anchor>, Lượt gỡ cài đặt, ROI, Sự kiện trong ứng dụng, ROAS.
@@ -176,7 +176,7 @@ Người dùng được nhóm thành các nhóm người theo **ngày** sau chuy
 
 Người dùng được nhóm thành các nhóm người theo **thời gian phân bổ.**
 
-![KPIdays.jpg](https://files.readme.io/dfac4a4f84aad39d6526cdb416e8a2ec6c9e95dd6a2ca06e3c7fd10d31b76272-360005458837.jpg)
+<Image align="center" alt="KPIdays.jpg" src="https://files.readme.io/dfac4a4f84aad39d6526cdb416e8a2ec6c9e95dd6a2ca06e3c7fd10d31b76272-360005458837.jpg" />
 
 * **Chọn số liệu, hàm, ngày KPI và mỗi người dùng**:   
   **Lưu ý:** Không phải tất cả các giá trị kết hợp số liệu, hàm và mỗi người dùng đều có sẵn.
@@ -300,11 +300,11 @@ Dữ liệu không hoàn chỉnh là gì?
 
 **Biểu đồ: Doanh thu tích lũy trên mỗi người dùng**
 
-[![CohortGraph.png](https://files.readme.io/1142844a9312498e4fc229502cbdf86d46bd61007d62837d38ba1b66fb2e00aa-360003206697.png)](https://files.readme.io/1142844a9312498e4fc229502cbdf86d46bd61007d62837d38ba1b66fb2e00aa-360003206697.png)
+<Image align="center" alt="CohortGraph.png" src="https://files.readme.io/1142844a9312498e4fc229502cbdf86d46bd61007d62837d38ba1b66fb2e00aa-360003206697.png" />
 
 **Bảng: Doanh thu mỗi ngày**
 
-[![CohortTable.png](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)
+<Image align="center" alt="CohortTable.png" src="https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png" />
 
 <div id="in-app-event-conversion" />
 

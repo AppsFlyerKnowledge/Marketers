@@ -44,26 +44,26 @@ x-zendesk:
 2. Khi được nhắc chọn chiến dịch **Simple (NEW)** hoặc **Advanced** , hãy chọn **Advanced**.
 3. Trong **Campaign objective**, hãy chọn **App Installs** hoặc **App re-engagements**, sau đó nhấp vào **Next**.  
 
-   ![twitter-campaign-objective.png](https://files.readme.io/d91bd357dea4878f098086a573191f64c2d1a38af8a6a809c6de7c468e04e043-6148255768337.png)
+   <Image align="center" alt="twitter-campaign-objective.png" src="https://files.readme.io/d91bd357dea4878f098086a573191f64c2d1a38af8a6a809c6de7c468e04e043-6148255768337.png" />
 4. Chọn ứng dụng của bạn, sau đó nhấp vào liên kết **mobile measurement partner**.
 5. Trên trang **Conversion tracking** , hãy nhấp vào **Go to AppsFlyer**.   
 
-   ![twitter-mmp-selection.png](https://files.readme.io/ebe8e97971c01e0d87c694d2ca1fcc996abf608309d96badcbcda2713ab80d3e-6148393350033.png)
+   <Image align="center" alt="twitter-mmp-selection.png" src="https://files.readme.io/ebe8e97971c01e0d87c694d2ca1fcc996abf608309d96badcbcda2713ab80d3e-6148393350033.png" />
 6. Một thông báo hiển thị cho bạn biết rằng bạn sắp rời khỏi X Ads để truy cập trang web AppsFlyer. Nhấp vào **Go to AppsFlyer** và đăng nhập vào Bảng điều khiển của bạn.  
 
-   <Image alt="twitter-go-to-appsflyer.png" src="https://support.appsflyer.com/hc/article_attachments/4411046208401" width="576px" />
+   <Image align="center" alt="twitter-go-to-appsflyer.png" src="https://support.appsflyer.com/hc/article_attachments/4411046208401" width="576px" />
 7. Trong AppsFlyer, dưới phần **Configuration (Cấu hình)** đi đến **Partner Marketplace (Thị trường Đối tác)**.
 8. Tìm kiếm **X Ads** và chọn.
 9. Trong tab **Integration** , chấp nhận các Điều khoản và Điều kiện của X Ads để Ghi nhận Chuyển đổi Ứng dụng Di động (MACT), sau đó nhấp vào **Save integration**.
 10. Bật **Activate partner** và nhấp vào **Log in with X Ads**.
 11. Cho phép AppsFlyer sử dụng tài khoản X Ads của bạn bằng cách nhấp vào **Authorize app**.   
 
-    [<Image alt="" src="https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png" width="476px" />](https://support.appsflyer.com/hc/vi/article_attachments/4411037924497/Twitter_Ads_6.png)
+    <Image align="center" alt="" src="https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png" width="476px" />
 12. Bật lại **Activate Partner** để hiển thị cài đặt tab **Integration** và bật phân bổ.  
     **Lưu ý:** Nút bật/tắt phải luôn ở trạng thái bật (được kích hoạt) trong thời gian bạn làm việc với đối tác. Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">kích hoạt đối tác.</Anchor>
 13. Chọn tài khoản X Ads của bạn để kích hoạt chúng, sau đó nhấp vào **Save & Close**.  
 
-    ![twitter_account_name.png](https://support.appsflyer.com/hc/article_attachments/4411046818193)
+    <Image align="center" alt="twitter_account_name.png" src="https://support.appsflyer.com/hc/article_attachments/4411046818193" />
 
 </Accordion>
 
@@ -89,7 +89,7 @@ Tab **Integration** được chia thành các phần khác nhau như được m�
 
 Chọn tài khoản để cho phép phân bổ.
 
-![Twitter_msc_new_4.png](https://files.readme.io/c64dd5ddc51f35ce195c689b3d14ec4ed4010133662096926f4e8c45e48d60c4-4411049509137.png)
+<Image align="center" alt="Twitter_msc_new_4.png" src="https://files.readme.io/c64dd5ddc51f35ce195c689b3d14ec4ed4010133662096926f4e8c45e48d60c4-4411049509137.png" />
 
 <div id="click-through-attribution" />
 
@@ -99,7 +99,7 @@ Sử dụng thanh trượt để đặt **thời gian tối đa từ khi nhấp 
 
 Bạn có thể tùy chỉnh giá trị này thành 1-23 giờ hoặc 1-30 ngày. Bạn nên đặt thời gian xem lại lượt nhấp qua thành 14 ngày, để phù hợp với X Ads.
 
-![Twitter_msc_new_6.png](https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png)
+<Image align="center" alt="Twitter_msc_new_6.png" src="https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png" />
 
 <div id="reinstall-settings" />
 
@@ -111,7 +111,7 @@ Thanh trượt này cho phép bạn đặt **thời gian tối đa từ khi hi�
 
 Bạn có thể tùy chỉnh giá trị này thành 1-23 giờ hoặc 1-7 ngày. Bạn nên đặt thời gian xem lại Lượt xem qua thành 1 ngày, để phù hợp với X Ads.
 
-![Twitter_msc_new_7.png](https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png)
+<Image align="center" alt="Twitter_msc_new_7.png" src="https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png" />
 
 <div id="important" />
 
@@ -129,7 +129,7 @@ Bật **Re-engagement attribution** để bắt đầu phân bổ tương tác l
 
 Đặt thời lượng cho **Re-engagement click-through lookback window** (thời gian tối đa sau khi một quảng cáo được nhấp vào, trong thời gian đó người dùng được nhắm lại mục tiêu có thể được phân bổ cho quảng cáo). Bạn có thể đặt giá trị theo giờ (tối đa 23 giờ) hoặc ngày (1-30 ngày).
 
-![twitter-reengagement-activate.png](https://files.readme.io/9272c626eceeb8457584d2f1bd1d2adb16f9022994a2efa22eeaeb5b584e2149-4411049796625.png)
+<Image align="center" alt="twitter-reengagement-activate.png" src="https://files.readme.io/9272c626eceeb8457584d2f1bd1d2adb16f9022994a2efa22eeaeb5b584e2149-4411049796625.png" />
 
 <div id="re-engagement-view-through-lookback-window" />
 
@@ -139,7 +139,7 @@ Bật **Re-engagement attribution** để bắt đầu phân bổ tương tác l
 
 Đặt thời lượng cho **Thời gian xem lại lượt xem hết tương tác lại** (thời gian tối đa sau khi một quảng cáo được xem, trong thời gian đó người dùng được nhắm lại mục tiêu có thể được phân bổ cho quảng cáo). Bạn có thể đặt giá trị theo giờ (tối đa 23) hoặc ngày (1-7):
 
-![twitter-reengagement-view-through.png](https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png)
+<Image align="center" alt="twitter-reengagement-view-through.png" src="https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -149,7 +149,7 @@ Bật **Re-engagement attribution** để bắt đầu phân bổ tương tác l
 
 Đặt thời lượng cho **Re-engagement window** (Khung thời gian tương tác lại) (thời gian khi sự kiện trong ứng dụng của người dùng được phân bổ cho nguồn truyền thông nhắm lại mục tiêu). Bạn có thể đặt giá trị theo ngày (1-90), giờ (tối đa 23) hoặc thậm chí là trọn đời:
 
-![Twitter-reengagement-window.png](https://files.readme.io/de80d79c777fc97caa0a28a342657475f0a05c14e30b1f96d24898a4638e1af8-4411047581201.png)
+<Image align="center" alt="Twitter-reengagement-window.png" src="https://files.readme.io/de80d79c777fc97caa0a28a342657475f0a05c14e30b1f96d24898a4638e1af8-4411047581201.png" />
 
 <div id="in-app-event-postback-settings" />
 
@@ -157,7 +157,7 @@ Bật **Re-engagement attribution** để bắt đầu phân bổ tương tác l
 
 Trong phần này, bạn có thể ánh xạ các sự kiện AppsFlyer của mình với đối tác của mình qua các postback.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png" />
 
 **Để cấu hình đăng lại sự kiện trong ứng dụng:**
 

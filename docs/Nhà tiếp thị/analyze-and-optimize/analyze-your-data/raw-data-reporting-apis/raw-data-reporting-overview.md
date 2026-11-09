@@ -122,7 +122,7 @@ Từ điển trường <Anchor target="_blank" href="/marketers/vi/docs/raw-data
 
 ## Báo cáo hành trình của người dùng
 
-![Raw_data_-_User_acquisition_.png](https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png)
+<Image align="center" alt="Raw_data_-_User_acquisition_.png" src="https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png" />
 
 <div id="user-journey-basics" />
 
@@ -150,7 +150,7 @@ Báo cáo hành trình của người dùng chứa dữ liệu được thu th�
   * Dữ liệu nhắm mục tiêu lại luôn là không tự nhiên.
   * Sự kiện trong ứng dụng nhắm mục tiêu lại có trong cả báo cáo UA và báo cáo sự kiện trong ứng dụng nhắm mục tiêu lại. Xem phương pháp <Anchor target="_blank" href="/marketers/vi/docs/resolve-retargeting-double-attribution">phân bổ kép nhắm mục tiêu lại</Anchor>.
 
-    ![Raw_data_-_Retargeting.png](https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png)
+    <Image align="center" alt="Raw_data_-_Retargeting.png" src="https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png" />
 
 Để theo dõi hành trình của người dùng, hãy kết hợp các báo cáo liên quan đến phần hành trình mà bạn quan tâm, chẳng hạn như lượt cài đặt và sự kiện trong ứng dụng. Sau khi kết hợp, hãy sắp xếp báo cáo bằng cách sử dụng ID AppsFlyer, thời gian sự kiện và loại báo cáo. Kết quả sẽ là các sự kiện của một người dùng nhất định theo thời gian, có nghĩa là hành trình của người dùng.
 

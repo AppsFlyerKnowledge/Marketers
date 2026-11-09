@@ -53,7 +53,7 @@ Khoảng thời gian đăng lại sự kiện trong ứng dụng cho phép các 
 
 Ví dụ: nếu bạn bị tính phí cho các sự kiện xảy ra trong vòng 15 ngày kể từ thời điểm người dùng cài đặt, hãy đặt khoảng thời gian như sau:
 
-<Image alt="15-day_in_app_event_postback_setting.png" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
+<Image align="center" alt="15-day_in_app_event_postback_setting.png" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
 
 Các đăng lại sau khoảng thời gian này sẽ không được gửi đi và mạng không được thông báo, nhưng các sự kiện vẫn được ghi nhận trong AppsFlyer và được phân bổ cho mạng.
 
@@ -134,7 +134,7 @@ Mỗi đối tác sẽ tự quyết định sử dụng phương thức nào tro
 > * Tên sự kiện có phân biệt chữ hoa và chữ thường. Để tránh sai lệnh, hãy đảm bảo bạn sử dụng chính xác tên sự kiện cho tất cả các nguồn truyền thông và phiên bản ứng dụng.
 > * Khi nhập tên sự kiện, bạn có thể sử dụng các khoảng trắng được gạch chân (dấu gạch ngang dưới) trước hoặc sau tên sự kiện. Đảm bảo chỉ sử dụng khoảng trắng được gạch chân khi tên sự kiện được gửi từ AppsFlyer có cùng khoảng trắng được gạch chân.
 
-[![enter_event_name.png](https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png)](https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png)
+<Image align="center" alt="enter_event_name.png" src="https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png" />
 
 </Accordion>
 
@@ -145,7 +145,7 @@ Mỗi đối tác sẽ tự quyết định sử dụng phương thức nào tro
 * **Sự kiện AppsFlyer**: Từ danh sách các sự kiện trong ứng dụng của bạn, hãy chọn một sự kiện.
 * **được ánh xạ tới sự kiện đối tác**: Từ danh sách các sự kiện đối tác được xác định trước, hãy chọn sự kiện tương ứng với sự kiện trong ứng dụng của bạn (sự kiện AppsFlyer).
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 </Accordion>
 
@@ -175,7 +175,7 @@ Bạn có thể chọn những sự kiện chưa được ánh xạ để gửi 
    * **bao gồm**: Chọn [dữ liệu cần đưa](/docs/in-app-event-postback-configuration#dữ-liệu-cần-đưa-vào-đăng-lại) vào đăng lại.
 3. Lặp lại quy trình này cho nhiều sự kiện hơn.
 
-![send_postbacks_as_is_en-us.png](https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png)
+<Image align="center" alt="send_postbacks_as_is_en-us.png" src="https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png" />
 
 **Để gửi tất cả các sự kiện:**
 
@@ -184,7 +184,7 @@ Bạn có thể chọn những sự kiện chưa được ánh xạ để gửi 
    * **đối với người dùng nguồn**: Chọn [tùy chọn gửi](/docs/in-app-event-postback-configuration#tùy-chọn-để-gửi-đăng-lại) cho tất cả các sự kiện.
    * **bao gồm**: Chọn [dữ liệu cần đưa vào](/docs/in-app-event-postback-configuration#dữ-liệu-cần-đưa-vào-đăng-lại) cho tất cả các sự kiện trong đăng lại.
 
-![send_postbacsk_as_is_no_mapping.png](https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png)
+<Image align="center" alt="send_postbacsk_as_is_no_mapping.png" src="https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png" />
 
 </Accordion>
 
@@ -256,7 +256,7 @@ Lọc đăng lại sự kiện trong ứng dụng bằng nhiều điều kiện 
 >
 > Một nhà tiếp thị có ứng dụng trò chơi muốn tối ưu hóa các chiến dịch chạy qua mạng quảng cáo, nhưng chỉ dành cho người dùng vượt qua cấp 10 hoặc cấp 50 hoặc cho người dùng chi 3 đô la để mua ứng dụng.
 >
-> [![in_app_event_condition__1_.png](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)
+> <Image align="center" alt="in_app_event_condition__1_.png" src="https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png" />
 >
 > **Đây là cách thiết lập các điều kiện cho sự kiện này:**
 >
@@ -332,7 +332,7 @@ Trong khi ánh xạ các sự kiện, giá trị trong các trường **dành ch
      * Giá trị không có doanh thu
      * Giá trị và doanh thu
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png" />
 
 <div id="custom-events" />
 
@@ -349,7 +349,7 @@ Danh sách các sự kiện có sẵn để ánh xạ chỉ hiển thị các s�
 1. Nhập tên của sự kiện.
 2. Nhấp vào **Create custom**
 
-   [![In-app_event_postbacks_en-us.png](https://files.readme.io/73ad7c6a34a292056ddd750901ce1e0a2975d6ce6f235610f0bee28aecd05d53-7901768117905.png)](https://files.readme.io/73ad7c6a34a292056ddd750901ce1e0a2975d6ce6f235610f0bee28aecd05d53-7901768117905.png)
+   <Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/73ad7c6a34a292056ddd750901ce1e0a2975d6ce6f235610f0bee28aecd05d53-7901768117905.png" />
 3. Ánh xạ sự kiện với mã định danh đối tác.
 4. Hãy nhấp vào **Save Integration** để đảm bảo ánh xạ được ghi lại.
 
@@ -374,7 +374,7 @@ Nhà tiếp thị có thể tự cho phép các mạng quảng cáo ánh xạ c�
 1. Trên trang **Active Integration**, hãy tìm đối tác mà bạn muốn cấp quyền.
 2. Trong tab Quyền, hãy chuyển nút chuyển đổi **Cho phép định cấu hình đăng lại sự kiện trong ứng dụng** thành **BẬT**.
 
-![adnetwork-permissions-postbacks.png](https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png)
+<Image align="center" alt="adnetwork-permissions-postbacks.png" src="https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png" />
 
 Khi đã được cấp quyền, mạng quảng cáo có thể ánh xạ các sự kiện theo hướng dẫn trong phần [Nhập ID sự kiện vào trường văn bản](/docs/in-app-event-postback-configuration#phương-thức-ánh-xạ).
 
@@ -391,7 +391,7 @@ Nhà tiếp thị có thể cho phép các đại lý định cấu hình đăng
 3. Chọn xem đại lý có được phép gửi doanh thu sự kiện hay không.
 4. Chọn các sự kiện cụ thể mà đại lý được phép chia sẻ.
 
-![agency-events.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+<Image align="center" alt="agency-events.png" src="https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png" />
 
 <div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
 

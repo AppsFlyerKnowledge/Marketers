@@ -79,7 +79,7 @@ Prepare your selected cloud services for use with DCR inbound connections accord
    1. In the **left-side** panel, click the **View actions** button <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> to the right of the project ID.
    2. Select **Create dataset.**
 
-      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
+      <Image align="center" alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. In the **right-side** panel that opens, enter the name of the dataset and select other options as you require.
       * You can use any name that suits you – using letters, numbers, and underscores (\_) only.
         * **Recommended:** Use a name that indicates the dataset is being used for an inbound connection.
@@ -93,7 +93,7 @@ Prepare your selected cloud services for use with DCR inbound connections accord
       `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
    5. In the **Assign roles** section, select **BigQuery > BigQuery Data Viewer.**
 
-      <Image alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
+      <Image align="center" alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
    6. Click **Save.**
    7. Click **CLOSE** to close the right-side panel.
 
@@ -112,10 +112,10 @@ Prepare your selected cloud services for use with DCR inbound connections accord
 3. From the left-side panel, select **Private Sharing.**
 4. In the page that opens, select the **Shared By Your Account** tab.
 
-   <Image alt="snowflake_private_sharing.png" src="https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png" width="609px" />
+   <Image align="center" alt="snowflake_private_sharing.png" src="https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png" width="609px" />
 5. Click the **Share** button. From the list that opens, select **Create a Direct Share.**
 
-   <Image alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
+   <Image align="center" alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
 6. Select the tables and/or views that you want to share with the DCR, then click **Done.**
 7. According to your needs, change the **Secure Share Identifier** and add an optional description.
 8. In the field **Add accounts in your region by name**, enter one of the following AppsFlyer Snowflake accounts, according to your Snowflake account region:
@@ -231,7 +231,7 @@ You can use one or more buckets for uploading data to the DCR (on Amazon S3, GCS
       `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
    5. From the **Role** list, select **Cloud storage** > **Storage Admin.**  
 
-      ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
+      <Image align="center" alt="dcr_gcs_permissions.png" src="https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png" />
    6. Click **Save.**
 
 </Accordion>
@@ -260,7 +260,7 @@ Your DCR reports can be delivered to one or more locations on your cloud service
    1. In the **left-side** panel, click the **View actions** button <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> to the right of the project ID.
    2. Select **Create dataset.**
 
-      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
+      <Image align="center" alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. In the **right-side** panel that opens, enter the name of the dataset and select other options as you require.
       * You can use any name that suits you – using letters, numbers, and underscores (\_) only.
         * **Recommended:** Use a name that indicates the dataset is being used for an outbound connection.
@@ -274,7 +274,7 @@ Your DCR reports can be delivered to one or more locations on your cloud service
       `datalocker-bq-admin-prod@datalocker-bq-prod.iam.gserviceaccount.com`
    5. In the **Assign roles** section, select **BigQuery > BigQuery Data Editor.**
 
-      <Image alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
+      <Image align="center" alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
    6. Click **Save.**
    7. Click **CLOSE** to close the right-side panel.
 
@@ -404,7 +404,7 @@ Modifying an existing bucket that you used previously only for Data Locker requi
    `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
 7. From the **Role** list, select **Cloud storage** > **Storage Admin.**  
 
-   ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
+   <Image align="center" alt="dcr_gcs_permissions.png" src="https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png" />
 8. Click **Save.**
 
 </Accordion>

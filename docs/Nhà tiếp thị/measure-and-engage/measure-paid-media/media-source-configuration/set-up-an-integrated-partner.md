@@ -40,7 +40,7 @@ x-zendesk:
 
 Hình ảnh sau chứa các loại đối tác khác nhau tạo thành hệ sinh thái phân bổ.
 
-[![Ecosystem.jpg](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)
+<Image align="center" alt="Ecosystem.jpg" src="https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg" />
 
 **Bài viết liên quan**: <Anchor target="_blank" href="https://www.appsflyer.com/performance-index/">Chỉ số Hiệu suất của AppsFlyer</Anchor> xếp hạng các nguồn truyền thông di động theo danh mục và khu vực.
 
@@ -143,7 +143,7 @@ Trang này có cấu trúc như sau:
 
 Tích hợp đối tác sẽ có yêu cầu khác nhau và có thể chứa một tập hợp con của tất cả các tùy chọn có thể được mô tả trong phần này. Có một số khác biệt giữa cài đặt iOS và Android.
 
-![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
+<Image align="center" alt="set_up_an_integrated_partner.png" src="https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png" />
 
 Hoàn thành các mục theo yêu cầu.
 
@@ -417,7 +417,7 @@ Tạo và lưu các đường dẫn phân bổ để sử dụng mạng quảng 
 
 #### Thông số đường dẫn phân bổ
 
-[![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
+<Image align="center" alt="attribution-link-parameters-en_us.png" src="https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png" />
 
 Việc thêm thông số vào đường dẫn phân bổ này cho phép bạn thực hiện việc phân tích truy cập sâu toàn diện. Các thông số đã được xác định trên đường dẫn phân bổ có thể được chỉnh sửa bằng cách thêm chúng và các giá trị mới của chúng ở đây. Khi lưu đường dẫn phân bổ, tất cả các thông số được cấu hình trong tab này cũng sẽ được lưu.
 
@@ -472,7 +472,7 @@ Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/set-up-l
 
 **Liên kết Phân bổ Nhấp chuột**
 
-[![click-through-attribution-link_en-us.png](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)
+<Image align="center" alt="click-through-attribution-link_en-us.png" src="https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png" />
 
 Đây là liên kết phân bổ chứa tất cả thông tin thiết lập bạn đã đặt. Bạn có thể lưu đường dẫn để tham khảo sau này bằng cách nhấp vào **Save attribution link** (Lưu đường dẫn phân bổ).
 
@@ -497,7 +497,7 @@ Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/set-up-l
 
 **Liên kết Phân bổ Số lần hiển thị**
 
-[![impressions-attribution-link_en-us.png](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)
+<Image align="center" alt="impressions-attribution-link_en-us.png" src="https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png" />
 
 Đường dẫn phân bổ lượt hiển thị chứa dữ liệu phân bổ tương tự với liên kết ghi nhận lượt nhấp (bên cạnh khung thời gian xem lại khác). Bạn có thể lưu đường dẫn để tham khảo sau này bằng cách nhấp vào **Save attribution link** (Lưu đường dẫn phân bổ).
 

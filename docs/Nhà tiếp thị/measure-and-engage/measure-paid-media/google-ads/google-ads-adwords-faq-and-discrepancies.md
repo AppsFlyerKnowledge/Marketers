@@ -56,7 +56,7 @@ Dữ liệu nhấp chuột và hiển thị từ Google Ads đã được cung c
 
 Nếu bạn không thấy lượt chuyển đổi first\_open trên Google Ads như được minh họa trong ảnh chụp màn hình bên dưới:
 
-![AW_13.png](https://support.appsflyer.com/hc/article_attachments/4417310093457)  
+<Image align="center" alt="AW_13.png" src="https://support.appsflyer.com/hc/article_attachments/4417310093457" />
 
 điều đó có nghĩa là bạn cần nhập lượt chuyển đổi vào Google Ads. Thực hiện theo hướng dẫn về <Anchor target="_blank" href="/marketers/vi/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">nhập lượt chuyển đổi</Anchor>.
 
@@ -68,7 +68,7 @@ Nếu bạn không thấy lượt chuyển đổi first\_open trên Google Ads n
 
 Bạn có thấy màn hình này trên Google Ads sau khi ánh xạ các sự kiện trong ứng dụng ưa thích của bạn trên bảng điều khiển của AppsFlyer (<Anchor target="_blank" href="/marketers/vi/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended">bước cấu hình 3</Anchor>) không?
 
-[![adwords missing events 2.png](https://support.appsflyer.com/hc/article_attachments/18726174138001)](https://support.appsflyer.com/hc/article_attachments/18726174138001)  
+<Image align="center" alt="adwords missing events 2.png" src="https://support.appsflyer.com/hc/article_attachments/18726174138001" />
 
 Nếu vậy, hãy thực hiện một trong những thao tác sau:
 
@@ -91,7 +91,7 @@ Nếu vậy, hãy thực hiện một trong những thao tác sau:
 1. Đi tới <Anchor target="_blank" href="https://myaccount.google.com/permissions">Quyền tài khoản Google</Anchor> của bạn.
 2. Nhấp vào Remove bên cạnh AppsFlyer Google Cost.  
 
-   ![remove_appsflyer_cost.png](https://support.appsflyer.com/hc/article_attachments/4417304127249)
+   <Image align="center" alt="remove_appsflyer_cost.png" src="https://support.appsflyer.com/hc/article_attachments/4417304127249" />
 
 </Accordion>
 

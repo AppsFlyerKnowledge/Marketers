@@ -56,13 +56,13 @@ Google Analytics has a powerful tool to create user-level segmentation called cu
 2. Select ***Admin*** at the top bar on GA dashboard
 3. On the ***PROPERTY*** column select ***Custom Definition***
 4. Select ***Custom Dimensions***  
-   ![Custom Dimensions option in the Google Analytics Admin panel](https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png)
+   <Image align="center" alt="Custom Dimensions option in the Google Analytics Admin panel" src="https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png" />
 5. Create a new dimension. Call it **AppsFlyer Media Source** and make sure you select ***User*** scope. This ensures the data is saved over multiple sessions.
-   ![ga2.png](https://files.readme.io/b2d85fd068e5523265a2b49b4218234fc77d5896ad41801cbe0e017752763cf2-4413121449873.png)
+   <Image align="center" alt="ga2.png" src="https://files.readme.io/b2d85fd068e5523265a2b49b4218234fc77d5896ad41801cbe0e017752763cf2-4413121449873.png" />
 
    Each dimension is created with an index that you must remember so you can later use it in the GA API from your app. In this example, the index of the new dimension is 10.
 
-   ![ga3](https://files.readme.io/6efc2249ede92291a2aadd16eccbc5b38b580723c6277e3746bdd467de29764a-11179413394193.png)
+   <Image align="center" alt="ga3" src="https://files.readme.io/6efc2249ede92291a2aadd16eccbc5b38b580723c6277e3746bdd467de29764a-11179413394193.png" />
 
    Repeat this step and create another dimension and call it **AppsFlyer Campaign**
 
@@ -130,6 +130,6 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 
 Most GA reports have a drill-down option called ***Custom Dimensions***. You can select the dimensions ***AppsFlyer Media Source*** or ***AppsFlyer Campaign*** ([set in step 1](/docs/google-analytics-integration-custom-dimensions#step-1-define-it-on-google-analytics)) to see which media sources and campaigns bring users that install your app.
 
-![G_analytics1.png](https://files.readme.io/dde9219a7a8eec5c861b5031ad741ff7377d85ba9c3693bcbc455fd735f8af2d-4413121449617.png)
+<Image align="center" alt="G_analytics1.png" src="https://files.readme.io/dde9219a7a8eec5c861b5031ad741ff7377d85ba9c3693bcbc455fd735f8af2d-4413121449617.png" />
 
 <div data-zendesk-anchors="h_01HDP3FHGNR06EV1KS8F1PFQ09=custom-dimensions-on-google-analytics h_01HDP3FHGP9H18VJKNSR27HXEZ=setting-media-source-as-a-custom-dimension-on-google-analytics h_01HDP3FHGPTJ4EVYPDA7RWPJF9=step-1-define-it-on-google-analytics h_01HDP3FHGPF3BJZSG6G0QP5T1R=step-2-setting-and-sending-the-data-from-the-app h_01HDP3FHGP9G9BP956KM4ACDRC=step-3-see-the-results-in-google-analytics" />

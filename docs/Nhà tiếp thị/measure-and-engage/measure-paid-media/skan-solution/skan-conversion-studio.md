@@ -140,7 +140,7 @@ Nếu bạn đang nâng cấp lên SKAN 4 từ chế độ SKAN trước đó, �
 
 Để cài chế độ SKAN 4 thủ công, hãy thử nghiệm với các tùy chọn khác nhau. Khi bạn thực hiện các thay đổi, tóm tắt **Conversion-value capacity** sẽ cập nhật. Hãy tối ưu hóa cài đặt của bạn để thu thập dữ liệu có giá trị nhất mà không vượt quá dung lượng. Xem phần [Conversion value capacity calculation.](/docs/skan-conversion-studio#conversion-value-capacity-formula)
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 Lưu ý: **Nếu bạn đang nâng cấp lên SKAN 4 từ chế độ SKAN trước đó, ánh xạ lược đồ hiện tại của bạn sẽ được mang sang các phép đo lường mịn và AppsFlyer tự động ánh xạ các giá trị thô cho bạn. Và nếu bạn mới sử dụng SKAN, AppsFlyer sẽ cung cấp ánh xạ mặc định ban đầu.**
 
@@ -186,7 +186,7 @@ Trong Tuỳ chỉnh, bạn sử dụng các thành phần đo lường khác nha
 
 Để đặt chế độ Tùy chỉnh, hãy thử nghiệm với các tùy chọn khác nhau. Khi bạn thực hiện các thay đổi, tóm tắt **Conversion-value capacity** sẽ cập nhật. Hãy tối ưu hóa cài đặt của bạn để thu thập dữ liệu có giá trị nhất mà không vượt quá dung lượng. Xem phần [Conversion value capacity calculation.](/docs/skan-conversion-studio#conversion-value-capacity-formula)
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) Cách đặt giá trị chuyển đổi thủ công trong Conversion Studio bằng chế độ Tùy chỉnh:**
 
@@ -222,7 +222,7 @@ Trong chế độ cố định, bạn có thể đo lường giá trị người
 
 Khi bạn thay đổi các cài đặt chế độ, tóm tắt **Conversion-value capacity** sẽ cập nhật. Hãy tối ưu hóa cài đặt của bạn để thu thập dữ liệu có giá trị nhất mà không vượt quá dung lượng. Xem phần [Conversion value capacity calculation.](/docs/skan-conversion-studio#conversion-value-capacity-formula)
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **Lưu ý!**
 
@@ -553,7 +553,7 @@ Mỗi ưu tiên (tối đa 63) có thể chứa doanh thu, sự kiện trong ứ
 4. Nhấp vào **+ Add measurement**. Chọn **Priority**.   
    Ưu tiên 1 hiển thị.  
 
-   [![Priority1.png](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)
+   <Image align="center" alt="Priority1.png" src="https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png" />
 5. Chọn một thành phần đo lường từ:
    * Doanh thu
    * Sự kiện trong Ứng dụng
@@ -606,7 +606,7 @@ Mỗi ưu tiên (tối đa 63) có thể chứa doanh thu, sự kiện trong ứ
 * Tải xuống bảng ánh xạ CV dưới dạng tệp tin CSV. Nhấp vào **Download mapping file.**
 * Nhận ánh xạ CV bằng <Anchor target="_blank" href="/marketers/vi/docs/skan-cv-schema-api-for-advertisers">API lược đồ SKAN CV dành cho nhà quảng cáo</Anchor>.
 
-![CVmapping.png](https://files.readme.io/97ec2570636897a6274f7750c7f77c92d8457cab51660de496bec6cb7504c4a3-4407788932113.png)
+<Image align="center" alt="CVmapping.png" src="https://files.readme.io/97ec2570636897a6274f7750c7f77c92d8457cab51660de496bec6cb7504c4a3-4407788932113.png" />
 
 <div id="csv-mapping-file-columns" />
 
@@ -1017,7 +1017,7 @@ Cân nhắc:
 
 <Accordion title="Báo cáo sự kiện bằng API từ máy chủ đến máy chủ">
 
-![SKAdNetwork_-_S2S__2_.png](https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png)
+<Image align="center" alt="SKAdNetwork_-_S2S__2_.png" src="https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png" />
 
 Cả SDK và <Anchor target="_blank" href="/marketers/vi/docs/server-to-server-events-api-for-mobile-s2s-mobile">API từ máy chủ đến máy chủ (S2S)</Anchor> đều có thể gửi các sự kiện trong ứng dụng đến máy chủ AppsFlyer. 
 

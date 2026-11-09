@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Khái quát:** Tích hợp AppsFlyer vào các trang web sử dụng SDK Web để ghi nhận và đo lường lượt truy cập, sự kiện, lượt chuyển đổi và doanh thu.
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="advanced-verification-with-smart-banners" />
 
@@ -163,7 +163,7 @@ AF('banners', 'showBanner');
 1. <Anchor target="_blank" href="https://developers.google.com/tag-manager/quickstart">Đi đến Trình quản lý Thẻ của Google.</Anchor>
 2. Tạo thẻ mới cho SDK web AppsFlyer.  
 
-   [![](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)
+   <Image align="center" alt="" src="https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png" />
 3. Chọn loại thẻ **Custom HTML** (HTML Tùy chỉnh).
 4. Đặt tên có ý nghĩa cho thẻ.
 5. Thực hiện một trong những việc sau:
@@ -201,7 +201,7 @@ AF('banners', 'showBanner');
    * **Để thêm trình kích hoạt cho tất cả các trang:**
      1. Nhấp vào **Add Trigger** (Thêm Trình kích hoạt).
 
-        [![gtm-af-tag-sdk-trigger.png](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)
+        <Image align="center" alt="gtm-af-tag-sdk-trigger.png" src="https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png" />
      2. Chọn **All Pages** (Tất cả các Trang).
      3. Nhấp vào **Save** (Lưu).
      4. Nhập tên thẻ, nhấp vào **Save** (Lưu).  
@@ -212,7 +212,7 @@ AF('banners', 'showBanner');
      2. Trong cửa sổ chính của GTM, hãy chọn **Triggers** (Trình kích hoạt).Nhấp vào **New** (Mới).
      3. Nhấp vào biểu tượng cây bút.
      4. Chọn loại trình kích hoạt **Page View** (Lượt Xem trang).  
-        [![PBAselectTrigger_us-en.jpg](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)
+        <Image align="center" alt="PBAselectTrigger_us-en.jpg" src="https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg" />
      5. Chọn **Some Page Views** (Một số Lượt xem Trang).
      6. Đặt trang và điều kiện trình kích hoạt nếu cần.
      7. Nhấp vào **Save** (Lưu).
@@ -222,7 +222,7 @@ AF('banners', 'showBanner');
         3. Trong bảng kích hoạt, hãy nhấp vào bút.
         4. Chọn trình kích hoạt lượt xem trang mà bạn đã tạo trước đó.  
 
-           [![](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)
+           <Image align="center" alt="" src="https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png" />
         5. Nhấp vào **Save** (Lưu).
 
 </Tab>
@@ -238,7 +238,7 @@ AF('banners', 'showBanner');
 
 <Accordion title="Tạo thuộc tính trong Adobe Experience Cloud">
 
-![adobe_create_property.png](https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png)
+<Image align="center" alt="adobe_create_property.png" src="https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png" />
 
 1. Đi đến **Adobe Experience Cloud** > **Launch** (Khởi chạy).
 2. Trong mục **Adobe Experience Cloud Launch** (Khởi chạy Adobe Experience Cloud), nhấp vào **Go to Launch** (Đi tới mục Khởi chạy).
@@ -254,7 +254,7 @@ AF('banners', 'showBanner');
 
 <Accordion title="Thêm SDK Web vào thuộc tính Khởi chạy Adobe">
 
-<Image alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
+<Image align="center" alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
 
 1. Trên trang **My web property** (Thuộc tính web của tôi), hãy chọn tab **Rules** (Quy tắc).
 2. Đặt tên cho quy tắc. Nên sử dụng, **Load web SDK** (Tải SDK web).
@@ -273,7 +273,7 @@ AF('banners', 'showBanner');
 
 <Accordion title="Thêm thẻ Khởi chạy Adobe vào trang web">
 
-[![adobe_tag.png](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)
+<Image align="center" alt="adobe_tag.png" src="https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png" />
 
 1. Trên trang **My web property** (Thuộc tính web của tôi), chọn tab **Environments** (Môi trường).
 2. Tìm đến hàng có môi trường bạn muốn phát hành (phát triển hoặc sản xuất).
@@ -290,7 +290,7 @@ AF('banners', 'showBanner');
 
 <Accordion title="Phát hành môi trường Adobe Launch">
 
-[![adobe_publishing_env.png](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)
+<Image align="center" alt="adobe_publishing_env.png" src="https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png" />
 
 1. Trên trang **My web property** (Thuộc tính web của tôi), đi đến tab **Publishing** (Phát hành).
 2. Trong phần **Development** (Phát triển), nhấp vào **Add New Library** (Thêm Thư viện Mới).
@@ -328,7 +328,7 @@ Sau khi cài đặt, hãy xác nhận rằng SDK web AppsFlyer được trình d
 1. Đi đến trang web.
 2. Mở công cụ dành cho nhà phát triển trong trình duyệt.
 
-   ![WebSDK_us-en.jpg](https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg)
+   <Image align="center" alt="WebSDK_us-en.jpg" src="https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg" />
 3. Đi đến tab (A) **Network** (Mạng).
 4. Làm mới trang.
 5. Lọc theo (B) **wa.appsflyer**.
@@ -350,7 +350,7 @@ Sau khi cài đặt, hãy xác nhận rằng SDK web AppsFlyer được trình d
 
 <Accordion title="Gửi sự kiện lựa chọn tham gia/lựa chọn không tham gia">
 
-![5578-VistiorPrivacyOptIn_us-en.png](https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png)
+<Image align="center" alt="5578-VistiorPrivacyOptIn_us-en.png" src="https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png" />
 
 SDK Web gửi dữ liệu sự kiện của khách truy cập tới AppsFlyer. Bạn có thể kiểm soát, dừng hoặc bắt đầu sự kiện như được mô tả trong phần này.
 
@@ -535,7 +535,7 @@ Phần này dành cho các nhà phát triển web.
 4. Kích hoạt sự kiện.
 5. Lọc theo thông báo.
 
-   ![pba_af_event.png](https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png)
+   <Image align="center" alt="pba_af_event.png" src="https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png" />
 6. Tìm kiếm một yêu cầu mạng bắt đầu bằng đích wa.appsflyer.com (xem ảnh chụp màn hình bên dưới).
 7. Đảm bảo rằng:
    1. Mã trạng thái là 200.
@@ -670,7 +670,7 @@ Mã được cung cấp chỉ dành cho mục đích minh họa. Không sử d�
    Mã trước đó tải GTM, sau đó sẽ tải SDK Web. Sau đó, hai hành động khác diễn ra trong tập lệnh. Một là hàm nhận phản hồi từ máy chủ với thông tin chi tiết về người dùng. Hai là thiết lập dữ liệu thành bộ nhớ cục bộ. GTM có quyền truy cập vào cả hàm và localStorage. Bạn có thể gọi ra hàm và truy cập localstorage bằng GTM.
 2. Thêm thẻ mới để phân bổ các lượt đặt mua dài hạn sau khi tải trang cảm ơn  
 
-   [![](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 3. Đặt tên riêng cho thẻ và chọn tùy chọn loại thẻ **Custom HTML** (HTML Tùy chỉnh).
 4. Cho mã sau vào **Custom HTML** (HTML Tùy chỉnh).  
 
@@ -679,13 +679,13 @@ Mã được cung cấp chỉ dành cho mục đích minh họa. Không sử d�
    AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'subscription'}); </script>
    ```
 
-   ![gtm_tag_after_subscribe.png](https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png)
+   <Image align="center" alt="gtm_tag_after_subscribe.png" src="https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png" />
 5. Mở rộng tùy chọn điều khiển **Advanced Settings** (Cài đặt Nâng cao) và sau đó là tùy chọn điều khiển **Tag Sequencing** (Sắp xếp thứ tự Thẻ) bên dưới vùng văn bản và đảm bảo tùy chọn đó được thiết lập để kích hoạt chuyển đổi sau khi thẻ được thực thi.  
 
-   [![](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](//hc/article_attachments/360002902065/gtm_fire_before.png)
+   <Image align="center" alt="" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. Để kích hoạt thẻ chuyển đổi, hãy đặt một trình kích hoạt. Trong ví dụ này, trình kích hoạt được kích hoạt khi tải trang Thank you (Cảm ơn).  
 
-   [![](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 **Ghi nhận các sự kiện khi người dùng tương tác với trang web**
 
@@ -732,12 +732,12 @@ Mã được cung cấp chỉ dành cho mục đích minh họa. Không sử d�
    Đoạn mã trước tải SDK Web bằng GTM Phần còn lại chỉ đơn giản là HTML mô phỏng trang giỏ hàng. Chú ý nút **Checkout** (Thanh toán) có ID thanh toán. Yêu cầu ID này khi thiết lập GTM để xử lý lượt nhấp vào nút đó.
 2. Trong GTM, nhấp vào **Variables** (Biến), **Configure** (Cấu hình) rồi chọn **Click Element** (Phần tử Nhấp) trong danh sách **Built-In Variables** (Biến Tích hợp).  
 
-    [![gtm-create-variable.png](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)
+    <Image align="center" alt="gtm-create-variable.png" src="https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png" />
 3. Tạo một biến mới, đặt tên có ý nghĩa và chọn loại **All Elements**(Tất cả các Phần tử)  
    [![gtm-checkout-all-elements.png](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png).
 4. Trong cấu hình trình kích hoạt, hãy chọn **Some Clicks** (Một số Lượt nhấp), **Click Element** (Phần tử Nhấp) **phù hợp với Bộ chọn CSS** của #checkout.  
 
-    [![gtm-checkout-click-elememt.png](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)
+    <Image align="center" alt="gtm-checkout-click-elememt.png" src="https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png" />
 5. Tạo thẻ mới cho hành động thanh toán, chọn loại HTML Tùy chỉnh và đặt trình kích hoạt thành trình kích hoạt thanh toán.  
 
    ```html
@@ -745,7 +745,7 @@ Mã được cung cấp chỉ dành cho mục đích minh họa. Không sử d�
     AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'}); </script>
    ```
 
-   ![gtm-checkout-tag.png](https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png)
+   <Image align="center" alt="gtm-checkout-tag.png" src="https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png" />
 
 </Tab>
 </Tabs>
@@ -940,10 +940,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 5. Mở rộng tùy chọn điều khiển **Advanced Settings** (Cài đặt Nâng cao) và sau đó là tùy chọn điều khiển **Tag Sequencing** (Sắp xếp thứ tự Thẻ) bên dưới vùng văn bản và đảm bảo tùy chọn đó được thiết lập để kích hoạt chuyển đổi sau khi thẻ được thực thi.  
 
-   [![](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](//hc/article_attachments/360002902065/gtm_fire_before.png)
+   <Image align="center" alt="" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. Đặt trình kích hoạt cho thẻ chuyển đổi để cho biết khi nào thẻ chuyển đổi sẽ được kích hoạt (trong ví dụ bên dưới, thẻ này được kích hoạt khi tải trang "Cảm ơn")  
 
-   [![](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 </Tab>
 </Tabs>

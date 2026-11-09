@@ -31,7 +31,7 @@ Những dữ liệu bạn thu thập được từ việc ghi nhận sự kiện
 
 Để biết thêm thông tin về cách ghi lại các sự kiện trong ứng dụng, hãy xem <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview">Hướng dẫn sự kiện phong phú trong ứng dụng</Anchor>.
 
-[![Flowchart_for_recommended_events P2P_lending_app_user_journey](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
+<Image align="center" alt="Flowchart_for_recommended_events P2P_lending_app_user_journey" src="https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png" />
 
 ## Cấu trúc đề xuất cho các sự kiện đã xác định trước
 

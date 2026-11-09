@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **Sơ lược**: Bắt đầu từ iOS 14.5, Apple yêu cầu bạn triển khai và tuân thủ các điều khoản của <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency">AppTrackingTransparency</Anchor> (ATT). ATT có nghĩa là *Nếu ứng dụng của bạn thu thập dữ liệu về người dùng cuối và chia sẻ dữ liệu đó với các công ty khác nhằm mục đích theo dõi trên các ứng dụng và trang web,* bạn phải sử dụng lời nhắc chấp thuận ATT và nhận được sự đồng ý của người dùng trong cả ứng dụng dành cho nhà xuất bản và nhà quảng cáo. Nếu bạn không theo dõi thì không cần hiển thị lời nhắc.
 
-![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
+<Image align="center" alt="iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg" src="https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg" />
 
 <div id="attribution-measurement-in-an-att-environment" />
 
@@ -58,7 +58,7 @@ AppsFlyer cung cấp kết quả phân bổ hợp nhất trên thiết bị iOS 
 
 **Quy trình SKAN**
 
-![SKAN_flow_-_Affinity_diagram_2.png](https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png)
+<Image align="center" alt="SKAN_flow_-_Affinity_diagram_2.png" src="https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png" />
 
 1. Nhà quảng cáo thiết lập cài đặt đo lường SKAN trong AppsFlyer Conversion Studio.
 2. Người dùng mở ứng dụng lần đầu.
@@ -204,7 +204,7 @@ Những yếu tố này tác động:
 
 Lưu đồ sau đây giải thích điều này chi tiết hơn.
 
-![SKAN_4_matrix_-_Page_8__1_.png](https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png)
+<Image align="center" alt="SKAN_4_matrix_-_Page_8__1_.png" src="https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png" />
 
 </Accordion>
 

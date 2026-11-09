@@ -43,7 +43,7 @@ Hiểu đơn giản là cơ chế SSOT gắn cờ hiệu các lượt cài đặ
 
 <Accordion title="Bật Nguồn dữ liệu tin cậy duy nhất">
 
-![SSOTControl.png](https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png)
+<Image align="center" alt="SSOTControl.png" src="https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png" />
 
 **Để bật SSOT:**
 
@@ -61,7 +61,7 @@ Xem <Anchor target="_blank" href="/marketers/vi/docs/skan-conversion-studio">SKA
 
 ## Chế độ xem Nguồn dữ liệu tin cậy duy nhất trên Bảng điều khiển tổng quan
 
-![SSOTisNowOn.png](https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png)
+<Image align="center" alt="SSOTisNowOn.png" src="https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png" />
 
 Chế độ xem Nguồn dữ liệu tin cậy duy nhất có sẵn trên Bảng điều khiển tổng quan cung cấp bức tranh toàn cảnh về các số liệu hiệu suất không tự nhiên. Trong chế độ xem này:
 
@@ -82,12 +82,12 @@ Dữ liệu trong chế độ xem SSOT có sẵn 3-5 ngày sau khi bật Nguồn
 1. Trước khi bắt đầu, hãy xác minh rằng <Anchor target="_blank" href="/marketers/vi/docs/skan-conversion-studio#single-source-of-truth">Nguồn dữ liệu tin cậy duy nhất</Anchor> đã được bật trong Conversion Studio.
 2. Trong AppsFlyer, đi đến **Dashboard** > **Overview.**   
 
-   <Image alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
+   <Image align="center" alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
 3. Nhấp vào ▼.
 4. Chọn **Lite overview**.  
    Nút chuyển Nguồn dữ liệu tin cậy duy nhất sẽ hiển thị.  
 
-   <Image alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
+   <Image align="center" alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
 5. Bật Nguồn dữ liệu tin cậy duy nhất.
 6. Một trong những điều sau đây xảy ra:
    * Số liệu và biểu đồ của bảng điều khiển sẽ hiển thị.  
@@ -191,7 +191,7 @@ Phân bổ SKAN và phân bổ theo mô hình AF hoạt động khác nhau và c
 
 Tình huống phân bổ theo SKAN-mô hình AF khả thi được minh hoạ trong sơ đồ Venn bên dưới.
 
-![skan_af_model_diagram.png](https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png)
+<Image align="center" alt="skan_af_model_diagram.png" src="https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png" />
 
 Bảng dưới đây mô tả các lý do cho mỗi tình huống phân bổ.
 
@@ -207,7 +207,7 @@ Bảng dưới đây mô tả các lý do cho mỗi tình huống phân bổ.
 
 SSOT hoạt động như được nêu chi tiết trong hình ảnh dưới đây.
 
-![SingleSourceOfTruth.png](https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png)
+<Image align="center" alt="SingleSourceOfTruth.png" src="https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png" />
 
 **Cơ chế SSOT hoạt động như thế nào?**
 

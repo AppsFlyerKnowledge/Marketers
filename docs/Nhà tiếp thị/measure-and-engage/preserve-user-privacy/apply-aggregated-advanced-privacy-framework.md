@@ -77,7 +77,7 @@ Khi AAP áp dụng đối với dữ liệu của một người dùng nhất đ
 
 Các thuật ngữ đã xác định được sử dụng trong hình và các phần tiếp theo để mô tả dữ liệu khả dụng đối với các nhà quảng cáo và đối tác.
 
-![Advanced Privacy Framework - Advertisers (4).png](https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png)
+<Image align="center" alt="Advanced Privacy Framework - Advertisers (4).png" src="https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png" />
 
 Tính năng Bảo mật Nâng cao sẽ hoạt động khác khi được dùng trên web và phải sử dụng thông số af\_media\_type=web hoặc af\_media\_type=app. Xem <Anchor target="_blank" href="/partners/vi/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">tại đây</Anchor> để biết thêm thông tin chi tiết.
 
@@ -119,7 +119,7 @@ Truyền thông sở hữu bao gồm các chiến dịch tiếp thị kỹ thu�
 
 AAP là một nút chuyển đổi cấp ứng dụng kiểm soát cài đặt Quyền riêng tư Nâng cao đối với tất cả các đối tác của ứng dụng đã chọn. Nút chuyển đổi AAP nằm trên trang **App Settings**. Khi nút chuyển đổi AAP ở trạng thái bật, các nút chuyển đổi **Quyền riêng tư Nâng cao** đối với tất cả các đối tác của ứng dụng đã chọn sẽ tự động được bật và không sửa đổi được. Khi tắt, nhà quảng cáo có thể đi đến từng tích hợp đối tác riêng lẻ và bật **Quyền riêng tư Nâng cao**.
 
-![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
+<Image align="center" alt="AAPcontrol.png" src="https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png" />
 
 <div id="advanced-aggregated-privacy-implications-for-your-partners" />
 
@@ -155,7 +155,7 @@ AAP là một nút chuyển đổi cấp ứng dụng kiểm soát cài đặt Q
 
 Nếu AAP bị tắt, các nhà quảng cáo có thể đặt cài đặt Quyền riêng tư Nâng cao cho từng mạng quảng cáo riêng.
 
-![APControl.png](https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png)
+<Image align="center" alt="APControl.png" src="https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png" />
 
 **Để tắt Quyền riêng tư Nâng cao của đối tác:**
 
@@ -203,7 +203,7 @@ Trong trường hợp mạng được phân bổ, loại đăng lại được s
 
 Các tình huống khác nhau về sự đồng ý của người dùng và loại đăng lại được sử dụng được minh họa trong hình sau đây.
 
-![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
+<Image align="center" alt="AAP - Attributed ad networks.png" src="https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png" />
 
 Tính năng Bảo mật Nâng cao sẽ hoạt động khác khi được dùng trên web và phải sử dụng thông số af\_media\_type=web hoặc af\_media\_type=app. Xem <Anchor target="_blank" href="/partners/vi/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">tại đây</Anchor> để biết thêm thông tin chi tiết.
 
@@ -213,11 +213,11 @@ Tính năng Bảo mật Nâng cao sẽ hoạt động khác khi được dùng t
 
 Đăng lại không được phân bổ được gửi tới một mạng khi tùy chọn gửi trong tab tích hợp của đối tác tích hợp được đặt thành *tất cả các nguồn truyền thông, bao gồm cả nguồn tự nhiên* và đối tác đó không được phân bổ cho sự kiện như được minh họa trong hình bên dưới.
 
-![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+<Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 Các tình huống khác nhau về sự đồng ý của người dùng và loại đăng lại được sử dụng được minh họa trong sơ đồ sau đây.
 
-![AAP - Unattributed ad networks.png](https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png)
+<Image align="center" alt="AAP - Unattributed ad networks.png" src="https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png" />
 
 Tính năng Bảo mật Nâng cao sẽ hoạt động khác khi được dùng trên web và phải sử dụng thông số af\_media\_type=web hoặc af\_media\_type=app. Xem <Anchor target="_blank" href="/partners/vi/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">tại đây</Anchor> để biết thêm thông tin chi tiết.
 
@@ -238,7 +238,7 @@ Các quy tắc chia sẻ dữ liệu được mô tả áp dụng cho một đ�
 
 Các tình huống khác nhau về sự đồng ý của người dùng và loại đăng lại được sử dụng được minh họa trong hình sau đây.
 
-![AAP - Analytics partner.png](https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png)
+<Image align="center" alt="AAP - Analytics partner.png" src="https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png" />
 
 Tính năng Bảo mật Nâng cao sẽ hoạt động khác khi được dùng trên web và phải sử dụng thông số af\_media\_type=web hoặc af\_media\_type=app. Xem <Anchor target="_blank" href="/partners/vi/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">tại đây</Anchor> để biết thêm thông tin chi tiết.
 
@@ -257,7 +257,7 @@ Tính năng Bảo mật Nâng cao sẽ hoạt động khác khi được dùng t
 
 **Cấp quyền cho đại lý để thiết lập Quyền riêng tư Nâng cao**
 
-![agency_advanced_privacy.png](https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png)
+<Image align="center" alt="agency_advanced_privacy.png" src="https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png" />
 
 **Để cho phép một đại lý thiết lập Quyền riêng tư Nâng cao**:
 

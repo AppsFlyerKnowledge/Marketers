@@ -31,7 +31,7 @@ x-zendesk:
 
 > **Khái quát:** Gian lận phân bổ làm cạn kiệt ngân sách tiếp thị, xâm phạm dữ liệu hiệu suất tiếp thị và có thể biến các chiến dịch thành công thành chiến dịch thất bại. **Protect360 cung cấp cho chủ sở hữu ứng dụng khả năng chống gian lận và phát hiện hậu phân bổ theo thời gian thực.**
 
-![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
+<Image align="center" alt="p360intro2.jpg" src="https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg" />
 
 <div id="protect360-overview" />
 

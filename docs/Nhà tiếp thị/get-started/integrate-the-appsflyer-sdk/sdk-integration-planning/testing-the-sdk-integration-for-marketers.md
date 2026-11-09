@@ -149,7 +149,7 @@ Chúng tôi khuyến cáo bạn nên bắt đầu bằng cách thử nghiệm l�
 
 Bảng điều khiển của ứng dụng sẽ hiển thị một lượt cài đặt tự nhiên mới. Chờ tối đa 30 phút để xuất hiện lượt cài đặt.
 
-![Test_SDK_Organic_install](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+<Image align="center" alt="Test_SDK_Organic_install" src="https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png" />
 
 </Accordion>
 
@@ -171,7 +171,7 @@ Sử dụng trang Thử nghiệm Tích hợp SDK để thử nghiệm lượt c�
 1. Trong bảng điều khiển, hãy chọn ứng dụng.
 2. Đi đến **Integration (Tích hợp) > SDK Integration Tests (Thử nghiệm Tích hợp SDK).**   
    Trang thử nghiệm tích hợp SDK sẽ mở ra.   
-   [![](https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png)](https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png)
+   <Image align="center" alt="" src="https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png" />
 3. Chạy thử nghiệm **Lượt Cài đặt Không Tự nhiên**.
 4. Chọn một thiết bị thử nghiệm trong danh sách.
 5. Chọn cửa hàng để cài đặt ứng dụng:
@@ -187,7 +187,7 @@ Sử dụng trang Thử nghiệm Tích hợp SDK để thử nghiệm lượt c�
 7. Nếu bạn đã chọn **Khác**, hãy cài đặt ứng dụng từ môi trường phát triển của bạn.
 8. Đợi cho đến khi lượt cài đặt không tự nhiên được đăng ký trên trang **Thử nghiệm Tích hợp SDK** cho biết thử nghiệm thành công. Thao tác này có thể kéo dài lên tới 2 phút.
 
-   ![NonOrganic_install](https://files.readme.io/3faf784b3d6014e223fdce7b703c6d328ba09af0ea1dde77a8a1f366529e1e00-4406213597585.png)
+   <Image align="center" alt="NonOrganic_install" src="https://files.readme.io/3faf784b3d6014e223fdce7b703c6d328ba09af0ea1dde77a8a1f366529e1e00-4406213597585.png" />
 
    Nếu ứng dụng không ghi lại lượt cài đặt không tự nhiên, thì lý do có thể là:
    * IDFA khả dụng nhưng thiết bị thử nghiệm không được <Anchor target="_blank" href="/marketers/vi/docs/registering-test-devices#đăng-ký-thiết-bị-thử-nghiệm-ios">đăng ký với mã định danh này trên trang Thiết bị thử nghiệm</Anchor>.
@@ -208,7 +208,7 @@ Sử dụng trang Thử nghiệm Tích hợp SDK để thử nghiệm lượt c�
 3. Khởi chạy ứng dụng của bạn và bắt đầu tạo các sự kiện trong ứng dụng.
 4. Bạn sẽ thấy một bản ghi của những sự kiện này khi chúng được đăng ký trong thời gian thực.
 
-   ![Test_SDK_Integration_Inapp_events](https://files.readme.io/c501389bcbffd2859a2cb20e5232d57218fc0b75875f9425934c56bc13c12968-4406219047825.png)
+   <Image align="center" alt="Test_SDK_Integration_Inapp_events" src="https://files.readme.io/c501389bcbffd2859a2cb20e5232d57218fc0b75875f9425934c56bc13c12968-4406219047825.png" />
 
 #### **Bước 3: Thử nghiệm liên kết sâu (nhắm mục tiêu lại)**
 
@@ -227,7 +227,7 @@ Sử dụng trang Thử nghiệm Tích hợp SDK để thử nghiệm lượt c�
 4. Nhấp vào **Next** (Tiếp theo).
 5. Quét mã QR bằng thiết bị thử nghiệm đã được đăng ký của bạn và làm theo hướng dẫn trên thiết bị. Sau khi thử nghiệm kết thúc thì Thử nghiệm Liên kết Sâu sẽ được đăng ký là thành công.
 
-   ![TestSDK_DeepLinks_en-us.png](https://files.readme.io/40c26ce173d14bd34771164fa32f6f26e8035fc26d4043fb9c78eef52d6451fa-4406221370385.png)
+   <Image align="center" alt="TestSDK_DeepLinks_en-us.png" src="https://files.readme.io/40c26ce173d14bd34771164fa32f6f26e8035fc26d4043fb9c78eef52d6451fa-4406221370385.png" />
 
 </Accordion>
 
@@ -345,7 +345,7 @@ Việc thử nghiệm sự kiện trong ứng dụng cho phép bạn xác nhận
 
    Bạn sẽ thấy các sự kiện, doanh thu của sự kiện (nếu doanh thu được liên kết với các sự kiện) và nguồn truyền thông mà các sự kiện được liên kết đến. Chờ tối đa 60-70 phút để các sự kiện xuất hiện trong bảng điều khiển.
 
-   ![Testing_InAppEvents_Attribution](https://support.appsflyer.com/hc/article_attachments/4406219144593)
+   <Image align="center" alt="Testing_InAppEvents_Attribution" src="https://support.appsflyer.com/hc/article_attachments/4406219144593" />
 
 **Mẹo!** Nên cân nhắc tải xuống <Anchor target="_blank" href="/marketers/vi/docs/raw-data-reporting-overview">báo cáo dữ liệu thô về sự kiện trong ứng dụng</Anchor> để xác minh rằng các sự kiện được phân bổ chính xác. Thời gian tải xuống báo cáo này sẽ là vài phút.
 
@@ -404,7 +404,7 @@ Trước khi chạy thử nghiệm nhắm mục tiêu lại, cần thiết lập
 
    Trong bảng điều khiển của ứng dụng, nhấp vào **App Settings** (Cài đặt của Ứng dụng) và bật tùy chọn **Enable retargeting attribution** (Bật nhắm mục tiêu lại cho phân bổ).
 
-   ![Set_Reattribution_window](https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png)
+   <Image align="center" alt="Set_Reattribution_window" src="https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png" />
 2. Thực hiện một trong các thao tác sau: 
    * Tạo đường dẫn phân bổ dành riêng cho ứng dụng. Đảm bảo phải bao gồm thông số nhắm mục tiêu lại, `is_retargeting=true` và ID quảng cáo. Để xem GAID, IDFA hoặc IDFV, hãy làm theo hướng dẫn <Anchor target="_blank" href="/marketers/vi/docs/registering-test-devices">Đăng ký thiết bị thử nghiệm</Anchor>.    
      Dưới đây là ví dụ về đường dẫn phân bổ bao gồm thông số dành riêng cho Android làm mã định danh thiết bị (GAID). Để biết thêm thông tin về cách thêm các thông số mã định danh thiết bị khác, chẳng hạn như IDFA hoặc IDFV, hãy xem phần <Anchor target="_blank" href="/marketers/vi/docs/about-link-structure-and-parameters#các-thông-số-cụ-thể-cho-ios">Cấu trúc và thông số đường dẫn phân bổ</Anchor>.
@@ -414,7 +414,7 @@ Trước khi chạy thử nghiệm nhắm mục tiêu lại, cần thiết lập
      ```
    * Truy xuất <Anchor target="_blank" href="/marketers/vi/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#tạo-liên-kết-onelink">URL đầy đủ của liên kết tùy chỉnh</Anchor> từ <Anchor target="_blank" href="/marketers/vi/docs/create-a-onelink-template#quy-trình">mẫu OneLink</Anchor>. Đảm bảo kích hoạt <Anchor target="_blank" href="/marketers/vi/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">Chiến dịch nhắm mục tiêu lại</Anchor>. Hình ảnh sau đây minh họa một ví dụ về URL đầy đủ tùy chỉnh:
 
-     ![Testing_LongLink_en-us.png](https://files.readme.io/19c706b0cc11b83a5cb08d51b3418654c6fa1e597ee7ff9e631db21c33c00b82-31828933632401.png)
+     <Image align="center" alt="Testing_LongLink_en-us.png" src="https://files.readme.io/19c706b0cc11b83a5cb08d51b3418654c6fa1e597ee7ff9e631db21c33c00b82-31828933632401.png" />
 
 Giờ đây, bạn có thể thử nghiệm phân bổ lại và thu hút lại.
 
@@ -448,7 +448,7 @@ Giờ đây, bạn có thể thử nghiệm phân bổ lại và thu hút lại.
 
    Bạn sẽ thấy lượt cài đặt được phân bổ cho nguồn truyền thông và chiến dịch. Cho phép tối đa 30 phút để lượt cài đặt nhắm mục tiêu lại xuất hiện trong bảng điều khiển.
 
-   [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+   <Image align="center" alt="Testing_SDK_Reattribution" src="https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png" />
 
 <div id="tip-1" />
 
@@ -475,7 +475,7 @@ Giờ đây, bạn có thể thử nghiệm phân bổ lại và thu hút lại.
 * Thực hiện theo các [hướng dẫn](/docs/testing-the-sdk-integration-for-marketers#prerequisites-to-run-retargeting-tests) để thiết lập thử nghiệm nhắm mục tiêu lại.
 * Vì mục đích thử nghiệm, hãy đặt thời gian tối thiểu giữa các lần chuyển đổi thành **None** (Không). Điều này cho phép tất cả các lượt chuyển đổi thu hút lại được ghi nhận và phân bổ trong quá trình thử nghiệm.
 
-  ![Testing_Reattribution_window](https://files.readme.io/ec8c7c923093dbed0e99aa5ef57d0239217ead5a9db41f42fe4af8a70eb04551-4406211661841.png)
+  <Image align="center" alt="Testing_Reattribution_window" src="https://files.readme.io/ec8c7c923093dbed0e99aa5ef57d0239217ead5a9db41f42fe4af8a70eb04551-4406211661841.png" />
 * Đảm bảo ứng dụng được cài đặt trên thiết bị thử nghiệm của bạn và đã được khởi chạy nhiều lần. Nếu bạn vừa cài đặt ứng dụng, hãy đợi trong vài phút.
 
 **Để thử nghiệm mức độ thu hút lại (liên kết sâu trực tiếp):**
@@ -492,7 +492,7 @@ Giờ đây, bạn có thể thử nghiệm phân bổ lại và thu hút lại.
 
    Trong bảng điều khiển, bạn sẽ thấy mức độ thu hút lại được phân bổ cho nguồn truyền thông và chiến dịch. Chờ tối đa 30 phút để hành động thu hút lại xuất hiện.
 
-   [![Testing_SDK_Re-engagement](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)
+   <Image align="center" alt="Testing_SDK_Re-engagement" src="https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png" />
 
 **Mẹo!** Nên cân nhắc tải xuống báo cáo dữ liệu thô về lượt chuyển đổi để xác minh rằng lượt thu hút lại được phân bổ cho đúng nguồn truyền thông. Thời gian tải xuống báo cáo này sẽ là vài phút.
 

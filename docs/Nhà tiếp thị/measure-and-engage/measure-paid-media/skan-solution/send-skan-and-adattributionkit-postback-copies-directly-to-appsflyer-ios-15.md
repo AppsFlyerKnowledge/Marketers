@@ -60,7 +60,7 @@ Theo tài liệu của Apple, bạn có thể đặt một điểm cuối đăng
 >
 > Những nhận định này đúng hay sai?
 >
-> ![TrueOrFalse.png](https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png)
+> <Image align="center" alt="TrueOrFalse.png" src="https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png" />
 >
 > * Các nhà quảng cáo giờ không còn phụ thuộc vào các mạng quảng cáo để nhận đăng lại nữa.
 >   * **Sai.** Nhà quảng cáo vẫn phụ thuộc vào mạng quảng cáo để giải mã các phần dữ liệu quan trọng. Ví dụ: chỉ mạng quảng cáo mới có thể ánh xạ ID chiến dịch SKAN với tên chiến dịch.

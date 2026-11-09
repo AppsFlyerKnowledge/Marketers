@@ -81,21 +81,21 @@ Giả sử tên thành viên nhóm của bạn là Jenny và tên tài khoản c
 1. Jenny đăng nhập vào <Anchor target="_blank" href="http://ads.twitter.com/">ads.twitter.com</Anchor>
 2. Cô nhấp vào **Account** rồi chọn **Edit access to account**  
 
-   ![twitter_assign_account2.PNG](https://support.appsflyer.com/hc/article_attachments/4416810336785)
+   <Image align="center" alt="twitter_assign_account2.PNG" src="https://support.appsflyer.com/hc/article_attachments/4416810336785" />
 3. Sau đó, Jenny cấp quyền truy cập cho @nivi vào Tài khoản Twitter Ads của mình với tư cách là Quản trị viên tài khoản  
 
-   [![twitter_edit_access_to_account.png](https://support.appsflyer.com/hc/article_attachments/4416810307601/twitter_edit_access_to_account.png)](https://support.appsflyer.com/hc/article_attachments/360002514658/twitter_edit_access_to_account.png)
+   <Image align="center" alt="twitter_edit_access_to_account.png" src="https://support.appsflyer.com/hc/article_attachments/4416810307601/twitter_edit_access_to_account.png" />
 4. Jenny đăng nhập vào tài khoản AppsFlyer và đi tới tùy chọn Active Integrations >> Twitter
 5. Ở bước này, cô có thể thấy Tài khoản quảng cáo Twitter của mình cũng được liệt kê.
 6. Giờ cô có thể thấy tài khoản Quảng cáo Twitter của mình và cấu hình tích hợp. Quản trị viên tài khoản có thể thấy tất cả các tài khoản Quảng cáo Twitter được kết nối.  
 
    Jenny nhìn thấy:
 
-   ![jennys_ads_account.png](https://support.appsflyer.com/hc/article_attachments/4416824257041)
+   <Image align="center" alt="jennys_ads_account.png" src="https://support.appsflyer.com/hc/article_attachments/4416824257041" />
 
    Quản trị viên tài khoản nhìn thấy:
 
-   ![jennys_ads_account__1_.png](https://support.appsflyer.com/hc/article_attachments/4416833416337)
+   <Image align="center" alt="jennys_ads_account__1_.png" src="https://support.appsflyer.com/hc/article_attachments/4416833416337" />
 
 </Accordion>
 
@@ -134,7 +134,7 @@ Nếu ứng dụng của bạn đã từng được đăng ký với một nhà 
 
 Ngoài ra, các lỗi sau cũng có thể xuất hiện:  
 
- [![](https://support.appsflyer.com/hc/article_attachments/360001502209/Twitter_error_2.png)](https://support.appsflyer.com/hc/article_attachments/360001502209/Twitter_error_2.png)
+ <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360001502209/Twitter_error_2.png" />
 
 **Lỗi:  Đã xảy ra lỗi trong khi lưu cấu hình Twitter.  Không thể cập nhật một số tài khoản:  XX Nhiều ID nhà cung cấp giống nhau (appid, conversionType) cho sự kiện appid2872.**
 

@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Sơ lược:** Bảng điều khiển SKAdNetwork (SKAN) hiển thị các số liệu chiến dịch được báo cáo thông qua các bài đăng lại SKAN iOS và các điểm dữ liệu bổ sung trong khung thời gian đo lường người dùng ban đầu. Các số liệu theo mô hình xem xét chuyển đổi rỗng cũng có sẵn. Dữ liệu hiển thị bằng cách sử dụng ngày cài đặt hoặc ngày có bài đăng lại.
 
-![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
+<Image align="center" alt="SKAdHeadling8_us-en.png" src="https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png" />
 
 <div id="dashboard-principles" />
 
@@ -231,7 +231,7 @@ Các biểu đồ có sẵn phụ thuộc vào loại phép đo đã chọn.
 * Chọn các số liệu từ những số liệu có sẵn. [Các số liệu theo mô hình](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#modeled-metrics-and-null-cv) xem xét tỷ lệ CV rỗng.
 * Đặt nhóm chính và nhóm phụ theo phương diện để phân tích sâu vào các số liệu hiệu suất.
 
-[![SKAdNetwork_Dashboard_AppsFlyer7_us-en.png](https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png)](https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png)
+<Image align="center" alt="SKAdNetwork_Dashboard_AppsFlyer7_us-en.png" src="https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png" />
 
 Giới thiệu về bảng số liệu:
 

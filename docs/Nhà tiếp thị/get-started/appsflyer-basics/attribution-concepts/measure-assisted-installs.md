@@ -50,7 +50,7 @@ Dữ liệu phân tích về số lượt cài đặt được hỗ trợ có s�
 4. Chọn chỉ số **Assisted installs**.  
    Biểu đồ cài đặt được hỗ trợ sẽ hiển thị. Màu xanh lam biểu thị các lượt cài đặt không tự nhiên và màu cam biểu thị các lượt cài đặt được hỗ trợ.
 
-   ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
+   <Image align="center" alt="AssitedInstallWidget.png" src="https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png" />
 
 <div id="why-are-assists-important" />
 
@@ -66,7 +66,7 @@ Trong nhiều trường hợp, người dùng tiềm năng biết đến một �
 
 AppsFlyer phân bổ tối đa ba mạng đóng góp ngoài nguồn cài đặt được phân bổ. Dữ liệu về các mạng đóng góp và lượt cài đặt được hỗ trợ có sẵn trong báo cáo dữ liệu thô.
 
-[![](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)
+<Image align="center" alt="" src="https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png" />
 
 Đối với mỗi mạng trong số các mạng đóng góp, báo cáo dữ liệu thô bao gồm những nội dung sau:
 

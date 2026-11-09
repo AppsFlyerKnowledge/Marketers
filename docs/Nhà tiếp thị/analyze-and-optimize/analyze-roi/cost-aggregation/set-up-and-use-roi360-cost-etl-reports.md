@@ -32,7 +32,7 @@ x-zendesk:
 
 > **Sơ lược:** ETL Chi phí, một phần của AppsFlyer ROI360, cung cấp cho nhà quảng cáo dữ liệu chi phí chiến dịch có độ chi tiết tốt nhất hiện có trên mỗi nguồn truyền thông. Dữ liệu, được cập nhật 4 lần mỗi ngày, được cung cấp vào bộ chứa AWS S3 hoặc GCS của bạn để sẵn sàng tải vào các hệ thống BI của nhà quảng cáo.
 
-![5896_CostETL_graphic__2_.png](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)
+<Image align="center" alt="5896_CostETL_graphic__2_.png" src="https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png" />
 
 ## Nguyên tắc của ETL Chi phí
 
@@ -90,7 +90,7 @@ Bạn có thể tùy chỉnh các phương diện và số liệu khác có tron
 
 **Cấu trúc thư mục ví dụ**
 
-![cost_etl_structure_4.jpg](https://support.appsflyer.com/hc/article_attachments/360019240077)
+<Image align="center" alt="cost_etl_structure_4.jpg" src="https://support.appsflyer.com/hc/article_attachments/360019240077" />
 
 **Cấu trúc thư mục**
 
@@ -212,14 +212,14 @@ Quy trình cấu hình này phải được thực hiện bởi người dùng q
 6. Trong phần **Lịch báo cáo**, chọn thời điểm bạn muốn nhận báo cáo đầu tiên. Các báo cáo tiếp theo sẽ được gửi cách nhau khoảng 6 giờ.
 7. Đi tới **cài đặt Amazon S3**.  
 
-   [![](https://support.appsflyer.com/hc/article_attachments/360019202837)](https://support.appsflyer.com/hc/article_attachments/360019202837)
+   <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360019202837" />
 8. Chọn vùng bộ chứa S3 của bạn từ danh sách thả xuống.  
    Nếu khu vực của bạn không được hiển thị, hãy liên hệ với CSM của bạn.
 9. Nhập tên bộ chứa Amazon S3 của bạn.
 10. Nhấp vào **Next** (Tiếp theo).  
     Đoạn mã chính sách bộ chứa sẽ hiển thị.  
 
-    [![](https://support.appsflyer.com/hc/article_attachments/360019263058)](https://support.appsflyer.com/hc/article_attachments/360019263058)
+    <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360019263058" />
 11. Sao chép đoạn mã chính sách bộ chứa và dán vào cài đặt AWS của bạn.
     1. Trong AWS, Chọn bộ chứa bạn đã tạo cho ETL Chi phí.
     2. Đi tới tab **Permissions** (Quyền).
@@ -236,10 +236,10 @@ Quy trình cấu hình này phải được thực hiện bởi người dùng q
 17. Chọn ít nhất một **Phương diện được đảm bảo**: Kênh và/hoặc Địa lý.
 18. Chọn ít nhất một phương diện bổ sung.  
 
-    [![](https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png)](https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png)
+    <Image align="center" alt="" src="https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png" />
 19. Chọn ít nhất một chỉ số để đưa vào báo cáo.   
 
-    [![](https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg)](https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg)
+    <Image align="center" alt="" src="https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg" />
 20. Nhấp vào **Apply** (Áp dụng).
 
 </Accordion>
@@ -284,10 +284,10 @@ Quy trình cấu hình này phải được thực hiện bởi người dùng q
 15. Chọn ít nhất một **Phương diện được đảm bảo**: Kênh và/hoặc Địa lý.
 16. Chọn ít nhất một phương diện bổ sung.  
 
-    [![](https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png)](https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png)
+    <Image align="center" alt="" src="https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png" />
 17. Chọn ít nhất một chỉ số để đưa vào báo cáo.   
 
-    [![](https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg)](https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg)
+    <Image align="center" alt="" src="https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg" />
 18. Nhấp vào **Apply** (Áp dụng).
 
 </Accordion>

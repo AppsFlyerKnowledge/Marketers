@@ -85,7 +85,7 @@ Các số liệu được lập mô hình có sẵn dựa trên giá trị chuy�
 
 <Accordion title="LTV doanh thu">
 
-[![modeled_d7.png](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)
+<Image align="center" alt="modeled_d7.png" src="https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png" />
 
 Bản thân báo cáo SKAN chỉ có thể cung cấp doanh thu dựa trên khung thời gian đo lường SKAN và cấu hình CV cho doanh thu trong Conversion Studio. Tính năng Lập mô hình SKAN có thể lập mô hình doanh thu trong tối đa 7 ngày (168 giờ) sau khi cài đặt.
 

@@ -91,7 +91,7 @@ Việc tạo ID liên kết cần phải có **quyền truy cập quản trị c
 5. Dán **ID Liên kết** bạn đã sao chép ở bước trước.
 6. Quyết định có bật <Anchor target="_blank" href="/marketers/vi/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**người dùng ngoài khu vực Châu Âu**</Anchor> hay không.  
 
-   <Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
+   <Image align="center" alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
 7. Định cấu hình **Phân bổ lượt cài đặt**:
    1. Thiết lập **khung thời gian xem lại lượt nhấp qua cài đặt**.  
       Chọn đơn vị khung thời gian xem lại (giờ hoặc ngày) và đặt thanh trượt về giá trị mong muốn. Bạn nên đặt khung thời gian xem lại thành 30 ngày để khớp với Google Ads.
@@ -100,7 +100,7 @@ Việc tạo ID liên kết cần phải có **quyền truy cập quản trị c
    4. Chọn đơn vị khung thời gian xem lại (giờ hoặc ngày) và đặt thanh trượt về giá trị mong muốn. Chúng tôi đề nghị bạn nên đặt khung thời gian xem lại lượt xem hết thành 1 ngày để khớp với Google Ads.  
       **Lưu ý:** Google không gửi xác nhận quyền sở hữu đối với lượt hiển thị ứng dụng iOS. Nút chuyển phân bổ lượt xem hết/lượt cài đặt và thanh trượt khung thời gian xem lại không còn phù hợp với các ứng dụng iOS.  
 
-      [![](https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png)](https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png)
+      <Image align="center" alt="" src="https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png" />
 8. Để bật phân bổ lượt cài đặt lại, hãy bật **Reinstall attribution**.  
    Không cần định cấu hình khung thời gian xem lại đối với phân bổ lượt cài đặt lại, vì các giá trị được lấy từ các tùy chọn cài đặt phân bổ lượt cài đặt.  
 
@@ -119,12 +119,12 @@ Việc tạo ID liên kết cần phải có **quyền truy cập quản trị c
    5. Đặt **Re-engagement view-through lookback window**, đó là khoảng thời gian bắt đầu từ khi hiển thị quảng cáo, trong đó ứng dụng phải được khởi chạy để lượt hiển thị được ghi nhận như một lượt thu hút lại. Chọn khung thời gian xem lại theo giờ hoặc ngày và đặt thanh trượt về giá trị mong muốn.
    6. Thiết lập **Khung thời gian tương tác lại**. Đây là khoảng thời gian các sự kiện trong ứng dụng của người dùng được phân bổ cho nguồn phương tiện nhắm lại mục tiêu, theo sau một lượt nhấp hoặc một lượt hiển thị. Bạn có thể đặt giá trị theo ngày (1-90), giờ (tối đa 23) hoặc thậm chí là trọn đời. Thời gian mặc định là 30 ngày.  
 
-      [![](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)
+      <Image align="center" alt="" src="https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png" />
 10. Nếu bạn có tiện ích mở rộng ứng dụng iOS cho Google Ads:  
     Để nhận phân bổ từ liên kết quảng cáo, hãy chuyển đến tab **<Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#attribution-link-tab">Attribution link</Anchor>**, tạo liên kết phân bổ nền tảng đơn AppsFlyer và chèn liên kết đó vào tiện ích mở rộng ứng dụng Google Ads.  
     **Lưu ý:** Đảm bảo thêm tên chiến dịch tĩnh (bắt buộc).  
 
-    [![](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)
+    <Image align="center" alt="" src="https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png" />
 11. Truy cập tab **Cost**.
 12. Bật tùy chọn **Get cost, clicks, and impressions data**.
 13. Nhấp vào nút **Connect Google Ads** và đăng nhập vào tài khoản Google của bạn để nhận tất cả chi phí chiến dịch Google Ads trên AppsFlyer. <Anchor target="_blank" href="/marketers/vi/docs/google-ads-adwords-cost-and-ad-revenue">Thông tin chi tiết tại đây</Anchor>.
@@ -145,7 +145,7 @@ Việc tạo ID liên kết cần phải có **quyền truy cập quản trị c
 
 **(Bất kỳ thành viên nào được liên kết với tài khoản AppsFlyer)**
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png" />
 
 1. Chuyển đến tab **Integration** và cuộn xuống phần **In-app event postbacks**.
 

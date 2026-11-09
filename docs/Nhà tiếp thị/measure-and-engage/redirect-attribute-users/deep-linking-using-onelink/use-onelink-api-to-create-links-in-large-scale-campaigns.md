@@ -59,7 +59,7 @@ Bạn có thể liên hệ với CSM của mình để tăng giới hạn truy v
 1. <Anchor target="_blank" href="/marketers/vi/docs/create-a-onelink-template#quy-trình">Tạo mẫu OneLink</Anchor>.
 2. Ghi nhận ID OneLink.   
 
-   [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg" />
 3. Ghi nhận mã khóa API OneLink. Người dùng quản trị cần truy xuất khóa API; người dùng tài khoản không có quyền truy cập. 
    * Trong bảng điều khiển AppsFlyer, đi tới **Experiences & Deep Linking** > **OneLink API** > **View OneLink API key**
    * Nếu mã khóa API OneLink không có trong đó cho người dùng quản trị, thì điều đó có nghĩa là bạn không có gói cần thiết và bạn cần liên hệ với CSM của mình.

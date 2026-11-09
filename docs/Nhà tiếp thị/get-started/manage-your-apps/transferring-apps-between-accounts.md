@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **At a glance:** Transfer apps between AppsFlyer accounts by following the steps described in this article (for admins of both the sender and receiver accounts).
 
-![5638-Transfering-an-app-NEW1.gif](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
+<Image align="center" alt="5638-Transfering-an-app-NEW1.gif" src="https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif" />
 
 <div id="app-transfer-process" />
 
@@ -95,7 +95,7 @@ To request the transfer of one or more apps to another AppsFlyer account, start 
 1. Contact the sender admin to review and agree on the [app transfer scope](/docs/transferring-apps-between-accounts#app-transfer-scope). Make sure that you both understand what is and isn't transferred and that you both are properly prepared.
 2. You will receive an email notification that the sender has initiated the transfer request.
 3. On the **My apps** page, click **Review request**. A request can include one or more apps.  
-   [![App_transfer_receiver_side.JPG](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)
+   <Image align="center" alt="App_transfer_receiver_side.JPG" src="https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg" />
 4. Review and approve or reject each request.
 5. Read and, if acceptable, sign the terms and conditions.
 6. You and the sender are notified by email that the request has been accepted.

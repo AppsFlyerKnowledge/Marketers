@@ -187,7 +187,7 @@ Các trường ngày trong tệp tin CSV có định dạng yyyy-mm-dd (năm-th�
 
 <Accordion title="Protect360—gian lận bị chặn">
 
-![](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)
+<Image align="center" alt="" src="https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png" />
 
 * Các báo cáo hợp nhất về gian lận bị chặn cung cấp thông tin chi tiết về các sự kiện bị chặn bởi <Anchor target="_blank" href="/marketers/vi/docs/protect360-anti-fraud-guide">Protect360</Anchor>.
 * Các báo cáo có sẵn thông qua API Pull. Các báo cáo này không có sẵn trên trang Export Data.

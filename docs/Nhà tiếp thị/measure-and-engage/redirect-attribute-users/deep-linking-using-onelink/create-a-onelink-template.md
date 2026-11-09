@@ -56,13 +56,13 @@ Mẫu OneLink:
 1. Trong bảng điều khiển AppsFlyer, chuyển đến **Experiences & deep linking** > **OneLink management**.  
    Bộ ứng dụng OneLink là một tính năng cấp tài khoản, cho phép bạn tạo mẫu OneLink và các liên kết tùy chỉnh của chúng cho tất cả các ứng dụng của bạn.  
 
-   [![](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png)](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png)
+   <Image align="center" alt="" src="https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png" />
 
    **Lưu ý**: Nếu bạn chưa tạo bất kỳ mẫu nào, một trình hướng dẫn làm quen sẽ mở ra. Làm theo hướng dẫn trong trình hướng dẫn và bỏ qua phần còn lại của quy trình này.
 2. Nhấp vào biểu tượng menu > **Add OneLink template**.  
    Trang thiết lập mẫu OneLink sẽ được mở ra.  
 
-   [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
+   <Image align="center" alt="OneLink_template_page_en-us.png" src="https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png" />
 3. Trong trường tên mẫu của **OneLink**, hãy nhập tên.  
 
    <div id="note" />
@@ -126,7 +126,7 @@ Người dùng ứng dụng hiện có thường mong đợi được chuyển h
 2. Di chuột qua mẫu OneLink bạn muốn chỉnh sửa và nhấp vào biểu tượng **Edit**.
 3. Cuộn xuống **When app is installed** (Khi ứng dụng được cài đặt).
 
-   [![](https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png)](https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png" />
 4. Thực hiện theo các hướng dẫn về thiết lập iOS, Android và dự phòng:  
 
    <Tabs>
@@ -142,7 +142,7 @@ Người dùng ứng dụng hiện có thường mong đợi được chuyển h
       * Nhà phát triển sẽ trả về cho bạn ID Nhóm (còn được gọi là Tiền tố ID Ứng dụng Apple, ví dụ: PF23MIWNTW).
       * Nếu ứng dụng chưa được phát hành, nhà phát triển cũng phải cung cấp cho bạn Mã định danh Gói (ví dụ: com.myapp.something).  
 
-        [![](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)
+        <Image align="center" alt="" src="https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png" />
    2. Trong trang mẫu OneLink, hãy nhấp vào **Change to launch the app using Universal Links** (Đổi thành khởi chạy ứng dụng bằng Liên kết Chung).
    3. Trong cửa sổ mới, chọn **Launch the app using Universal Links (Khởi chạy ứng dụng bằng Liên kết Chung)**.
    4. Trong trường **Team ID** (ID Nhóm), nhập ID nhóm do nhà phát triển cung cấp.
@@ -226,7 +226,7 @@ Người dùng ứng dụng hiện có thường mong đợi được chuyển h
 
 <Accordion title="Tùy chỉnh mã QR">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 Bạn có thể tùy chỉnh mã QR được tạo qua OneLink bằng cách:
 

@@ -77,7 +77,7 @@ Use these details to understand when new data is added and when recent events be
 * The remaining 30 minutes are used **solely to enrich** attributed events with Customer User IDs (CUIDs).
 * The most recent 30 minutes of events are **not attributed yet**—they’ll be included in the next batch.
 
-[![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
+<Image align="center" alt="" src="https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png" />
 
 ### When will these events appear in the report?
 

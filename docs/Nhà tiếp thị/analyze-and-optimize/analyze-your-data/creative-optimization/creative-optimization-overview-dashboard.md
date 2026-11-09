@@ -24,7 +24,7 @@ x-zendesk:
 
 > **Tổng quan:** Sử dụng bảng điều khiển Tổng quan Tối ưu hóa Quảng cáo để phân tích hiệu suất quảng cáo, qua đó bạn có thể lựa chọn những quảng cáo hiệu quả nhất và tối đa hóa tác động từ chiến dịch của mình.
 
-[![Main KB image 2023-11-14_10-07-47.jpg](https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg)](https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg)
+<Image align="center" alt="Main KB image 2023-11-14_10-07-47.jpg" src="https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg" />
 
 <div id="about-the-creative-optimization-overview-dashboard" />
 
@@ -86,7 +86,7 @@ Sử dụng bảng để truy cập sâu vào thông tin chi tiết. Nhóm theo 
 
 Hình ảnh sau đây cho thấy chế độ xem bảng mặc định, trong đó hiển thị quảng cáo theo tiêu chí lọc đã chọn. Các chữ cái trong hình ảnh tương ứng với các chữ cái và mô tả trong bảng sau đây.
 
-[![Table_main_image_doctored_final_copy__download_table_.jpg](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)
+<Image align="center" alt="Table_main_image_doctored_final_copy__download_table_.jpg" src="https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg" />
 
 |  | Mục | Mô tả |
 | --- | --- | --- |
@@ -141,7 +141,7 @@ Tùy chỉnh bảng bằng cách nhấp vào biểu tượng<Image alt="Creative
 
 *Lưu ý rằng phép đo sẽ hiển thị trong các hàng dữ liệu riêng lẻ, được hiển thị dưới các hàng hợp nhất trong bảng.
 
-[![](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)
+<Image align="center" alt="" src="https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png" />
 
 </Accordion>
 

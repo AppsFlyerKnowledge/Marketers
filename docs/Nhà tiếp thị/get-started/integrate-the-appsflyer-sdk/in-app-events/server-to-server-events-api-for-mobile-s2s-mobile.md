@@ -31,7 +31,7 @@ x-zendesk:
 ---
 > **Khái quát:** Gửi các sự kiện từ máy chủ của bạn tới AppsFlyer để đo lường các sự kiện trên thiết bị di động xảy ra bên ngoài ứng dụng.
 
-[![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
+<Image align="center" alt="S2S_us-en.png" src="https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png" />
 
 <div id="server-to-server-events-api-for-mobile" />
 
@@ -146,7 +146,7 @@ Sau khi bạn ánh xạ ID AppsFlyer với CUID, bạn có thể so khớp ngư�
 
 <Accordion title="Ghi nhãn thời gian các sự kiện S2S">
 
-[![sơ đồ logic đánh dấu thời gian](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)
+<Image align="center" alt="sơ đồ logic đánh dấu thời gian" src="https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png" />
 
 Khi đến AppsFlyer với số lượng lớn, các sự kiện S2S được ghi nhãn thời gian theo giá trị thuộc tính `eventTime` và thời gian đến của sự kiện. Thuộc tính `eventTime` biểu thị thời gian xảy ra sự kiện trong ứng dụng.
 

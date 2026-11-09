@@ -71,7 +71,7 @@ Creative Management currently supports Google Drive and Dropbox. Each source has
 
 2. Click **Creative connections**.
 
-<Image alt="click Creative connection.png" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
+<Image align="center" alt="click Creative connection.png" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
 
 3. Click **Add connections**.
 4. Select **Google Drive**.
@@ -82,7 +82,7 @@ Creative Management currently supports Google Drive and Dropbox. Each source has
 8. Click **Add URL**.
 9. Repeat the previous two steps to connect multiple folders at once.
 
-<Image alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
+<Image align="center" alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
 
 10. Click **Connect**.
 
@@ -100,7 +100,7 @@ Before connecting Dropbox, make sure you're logged in to Dropbox with the accoun
 6. In the connection modal, click **Choose folders**, then select the folders you want to connect.
    * Creative Management syncs creatives from the selected folders and their subfolders.
 
-<Image alt="click Choose folders.png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
+<Image align="center" alt="click Choose folders.png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
 
 7. Select the relevant app for each folder. This step is optional, but we recommend it because it helps organize and match creatives correctly.
 8. Click **Connect**.
@@ -117,7 +117,7 @@ The Creative Management gallery is where you review, search, filter, and select 
 
 Each creative card represents one creative. A creative may include multiple versions, such as different resolutions or formats. From the card, you can quickly understand whether the creative is new, active, or inactive across media sources, and view high-level metadata such as when it was first launched and when it was synced to Creative Management. Each new creative is automatically analyzed and scored to help you choose the best ones before launch. Scores range from C (less likely to succeed) to A (ready to scale), helping you prioritize top-performing creatives with confidence.
 
-<Image alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
+<Image align="center" alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
 
 #### Filter creatives
 
@@ -172,7 +172,7 @@ For Google Ads, you can upload creatives to existing app promotion ad groups.
 8. Review the setup and any validation messages.
 9. Click **Upload to Google Ads**.
 
-<Image alt="click Upload to Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
+<Image align="center" alt="click Upload to Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
 
 > 📘 **Note**
 >
@@ -192,7 +192,7 @@ For Meta, you can create ads inside existing ad sets.
 6. Select the creatives from the **All creatives** section and assign them to the ads.
 7. If a creative has multiple versions, select the relevant ones you want to upload.
 
-<Image alt="Meta Ads.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
+<Image align="center" alt="Meta Ads.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
 
 8. Review the setup and any validation messages.
 9. Click **Next**.
@@ -200,7 +200,7 @@ For Meta, you can create ads inside existing ad sets.
     * By default, this setup applies to all new ads created. You can edit specific ads by choosing them from the **Customize a specific ad** dropdown.
 11. Click **Create ads in Meta**.
 
-<Image alt="image (55).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
+<Image align="center" alt="image (55).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
 
 #### TikTok Ads
 

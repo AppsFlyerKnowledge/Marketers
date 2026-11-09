@@ -411,7 +411,7 @@ Mặt khác, các URL rút gọn dùng cho truyền thông sở hữu, không tr
 
 Nếu bạn đã từng gặp thông báo lỗi sau trong Cửa hàng Play sau khi vào một liên kết phân bổ:
 
-![TL_error_message.png](https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png)
+<Image align="center" alt="TL_error_message.png" src="https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png" />
 
 Nguyên nhân là do liên kết phân bổ có chứa ký tự #. Ví dụ:
 

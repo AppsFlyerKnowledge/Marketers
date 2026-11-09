@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Sơ lược:** Tìm hiểu về cách phân bổ hoạt động cho các nền tảng CTV, PC và bảng điều khiển để cho phép AppsFlyer nhận dữ liệu phân bổ và sự kiện cho các chiến dịch của bạn trên các thiết bị đa nền tảng này.
 
-<Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
+<Image align="center" alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
 <div id="tv-screens" />
 
@@ -71,7 +71,7 @@ Liên kết phân bổ trực tiếp là các liên kết AppsFlyer hỗ trợ c
 
 Liên kết phân bổ trực tiếp hỗ trợ cả phương pháp phân bổ mô hình xác suất và đối sánh xác định (khi ID được cung cấp trong liên kết), theo đó một lượt cài đặt của một người dùng được khớp với lượt nhấp hoặc lần hiển thị quảng cáo. Quy trình phân bổ được minh họa trong sơ đồ sau.
 
-![Quy trình phân bổ CTV - Liên kết phân bổ trực tiếp flow.png](https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png)
+<Image align="center" alt="Quy trình phân bổ CTV - Liên kết phân bổ trực tiếp flow.png" src="https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png" />
 
 Vì các liên kết phân bổ trực tiếp dành cho một ứng dụng trên một nền tảng xác định trước cụ thể và dẫn đến một điểm đến cụ thể, chúng luôn chứa ID ứng dụng và thông tin nền tảng trong URL.
 
@@ -89,7 +89,7 @@ Liên kết OneLink đa nền tảng hỗ trợ chuyển hướng và phân bổ
 
 Liên kết OneLink đa nền tảng chỉ hỗ trợ phương pháp phân bổ mô hình xác suất (dựa trên địa chỉ IP). Vì lý do này, nhiều lượt cài đặt bởi nhiều người dùng có thể được quy cho cùng một ấn tượng. Quy trình phân bổ được minh họa trong sơ đồ sau.
 
-![Quy trình phân bổ CTV - Quy trình phân bổ liên kết Onelink đa nền tảng (1) .png](https://files.readme.io/d1d92c740510435582dbfe6e736493a4e5f132d8987fde4c95593ea5e7de1662-19374961369873.png)
+<Image align="center" alt="Quy trình phân bổ CTV - Quy trình phân bổ liên kết Onelink đa nền tảng (1) .png" src="https://files.readme.io/d1d92c740510435582dbfe6e736493a4e5f132d8987fde4c95593ea5e7de1662-19374961369873.png" />
 
 Tất cả các điểm đến/nền tảng ứng dụng có thể được cấu hình trong mẫu OneLink. Vì vậy, các liên kết OneLink đa nền tảng không chứa ID ứng dụng cụ thể hoặc thông tin nền tảng cụ thể trong URL. Thay vào đó, URL bao gồm ID mẫu nơi tất cả các điểm đến/nền tảng ứng dụng có thể được cấu hình.
 
@@ -107,7 +107,7 @@ Với các liên kết phân bổ trực tiếp và liên kết OneLink đa nề
 
 Ghi công cho SRN là thông qua đối sánh xác định. Khi nhà quảng cáo tích hợp SRN, phân bổ hoạt động như minh họa trong sơ đồ sau.
 
-![Quy trình phân bổ CTV - Quy trình phân bổ SRN (1) .png](https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png)
+<Image align="center" alt="Quy trình phân bổ CTV - Quy trình phân bổ SRN (1) .png" src="https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png" />
 
 Hiện tại, phân bổ SRN chỉ hoạt động cho cùng một nền tảng với cùng một nền tảng quảng cáo. Có nghĩa là, khi điểm tiếp xúc (nhấp chuột hoặc hiển thị) xảy ra trên cùng một nền tảng với cài đặt. Ví dụ: nếu cài đặt Roku CTV được kiểm tra bằng Roku Endemic Media (SRN cho Roku) và phát hiện có ấn tượng trên thiết bị Roku. Nếu ấn tượng xảy ra trên một nền tảng khác, chẳng hạn như di động, nó không được xem xét để ghi công.
 
@@ -128,7 +128,7 @@ Tập lệnh thông minh trong trang đích đa nền tảng sử dụng liên k
 
 Trang đích hỗ trợ cả phương pháp phân bổ mô hình xác suất và khớp xác định (khi ID được cung cấp trong liên kết). Với mô hình xác suất, có thể nhiều lượt cài đặt của nhiều người dùng có thể được quy cho cùng một ấn tượng. Quy trình phân bổ được minh họa trong sơ đồ sau.
 
-![Quy trình phân bổ CTV - Ghi công trang đích flow.png](https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png)
+<Image align="center" alt="Quy trình phân bổ CTV - Ghi công trang đích flow.png" src="https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png" />
 
 Ví dụ:
 

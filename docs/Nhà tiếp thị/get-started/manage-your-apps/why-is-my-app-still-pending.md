@@ -28,7 +28,7 @@ Khi bạn <Anchor target="_blank" href="/marketers/vi/docs/adding-an-app-to-apps
 
 Các ứng dụng đang chờ xử lý trong AppsFlyer sẽ trông giống như các ứng dụng đang hoạt động. Chúng có các bảng điều khiển có thể truy cập và tất cả các phép do phân bổ. Sự khác biệt duy nhất là logo của ứng dụng hiển thị logo của AppsFlyer thay vì logo ứng dụng thực tế.
 
-![Pending_App.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
+<Image align="center" alt="Pending_App.png" src="https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png" />
 
 <div id="whats-happening" />
 
@@ -51,7 +51,7 @@ Trạng thái ứng dụng trong bảng điều khiển không ảnh hưởng đ
 **Để cập nhật trạng thái ứng dụng theo cách thủ công:**
 
 1. Trong bảng điều khiển, nhấp vào **My Apps** (Ứng dụng của tôi) ở góc phía trên bên phải.  
-   ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
+   <Image align="center" alt="app-refersh-status.png" src="https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png" />
 2. Cạnh ứng dụng đang chờ xử lý, nhấp vào **Refresh Status (Làm mới Trạng thái).**  
    Nếu trạng thái ứng dụng không thay đổi, thì ứng dụng vẫn hiển thị ở trạng thái Đang chờ xử lý. Nếu ứng dụng đã được cập nhật, trạng thái được hiển thị là Đang hoạt động và logo được cập nhật.
 

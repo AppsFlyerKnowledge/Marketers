@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **Sơ lược:** Snapchat đã trở thành SRN Nâng cao từ giữa tháng 9 năm 2023. Tìm hiểu cách thiết lập tích hợp giữa AppsFlyer và Snapchat để cho phép đo lường phân bổ.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
 <div id="overview" />
 
@@ -87,14 +87,14 @@ Trong **first visit** tại đây, bạn phải bật **Activate Partner** để
 
 Bật **Activate Partner** để cho phép phân bổ cho Snapchat.
 
-![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png" />
 
 **ID ứng dụng Snap**
 
 1. Trong Trình quản lý doanh nghiệp trên Snap, đi tới Apps và sao chép ID ứng dụng Snap (đọc hướng dẫn của Snapchat về <Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/a/snap-app-id">cách tạo ID ứng dụng Snap</Anchor>).
 2. Dán ID vào trường Snap App ID trong AppsFlyer.
 
-![snapchat-app-id.png](https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png)
+<Image align="center" alt="snapchat-app-id.png" src="https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png" />
 
 **Trong trường hợp ứng dụng được quảng cáo bởi một đại lý**,
 
@@ -110,7 +110,7 @@ Bạn có thể tùy chỉnh giá trị này thành 1-23 giờ hoặc 1-30 ngày
 
 Để biết thêm chi tiết về <Anchor target="_blank" href="/marketers/vi/docs/set-up-lookback-windows">khung thời gian xem lại lượt nhấp tại đây</Anchor>.
 
-![snap-click-window.png](https://files.readme.io/07eb4b7d4a5ec37791cdef31e0fbb77e22f0b65cd189a426bf293d166827b44a-360011563618.png)
+<Image align="center" alt="snap-click-window.png" src="https://files.readme.io/07eb4b7d4a5ec37791cdef31e0fbb77e22f0b65cd189a426bf293d166827b44a-360011563618.png" />
 
 #### Khung thời gian xem lại phân bổ lượt xem hết
 
@@ -120,7 +120,7 @@ Bạn có thể tùy chỉnh giá trị này thành 1-23 giờ hoặc 1-7 ngày.
 
 Thông tin chi tiết về <Anchor target="_blank" href="/marketers/vi/docs/set-up-lookback-windows">phân bổ lượt xem hết tại đây</Anchor>.
 
-![snap-viewthrough-window.png](https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png)
+<Image align="center" alt="snap-viewthrough-window.png" src="https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png" />
 
 <div id="note-3" />
 
@@ -139,20 +139,20 @@ Nếu bạn là đại lý, hãy yêu cầu nhà quảng cáo làm điều đó 
 
 Đặt thời lượng cho **Re-engagement click-through lookback window** (Thời gian xem lại lượt nhấp tương tác lại) (thời gian tối đa sau khi một quảng cáo được nhấp vào, trong thời gian đó người dùng được nhắm lại mục tiêu có thể được phân bổ cho quảng cáo). Bạn có thể đặt giá trị theo giờ (tối đa 23) hoặc ngày (1-30):
 
-![snap-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+<Image align="center" alt="snap-reengagement-activate.png" src="https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png" />
 
 #### Thời gian xem lại lượt xem hết tương tác lại
 
 Để bắt đầu phân bổ các lượt hiển thị quảng cáo nhắm lại mục tiêu, hãy kích hoạt **Re-engagement view-through attribution**.  
 Đặt thời lượng cho Khung thời gian xem lại lượt xem hết thu hút lại (thời gian tối đa sau khi một quảng cáo được xem, trong thời gian đó người dùng được nhắm lại mục tiêu có thể được phân bổ cho quảng cáo). Bạn có thể đặt giá trị theo giờ (tối đa 23) hoặc ngày (1-7):
 
-![snap-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
+<Image align="center" alt="snap-reengagement-view-through.png" src="https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png" />
 
 #### Khung thời gian thu hút lại
 
 Đặt thời lượng cho **Re-engagement window** (khoảng thời gian khi sự kiện trong ứng dụng của người dùng được phân bổ cho nguồn truyền thông nhắm lại mục tiêu). Bạn có thể đặt giá trị theo ngày (1-90), giờ (tối đa 23) hoặc thậm chí là trọn đời:
 
-![snap-reengagement-window.png](https://files.readme.io/99aab0e0e808514d1450fd297a1e7d2217be4e21d8ca85bd5a922e797f39755e-360008512418.png)
+<Image align="center" alt="snap-reengagement-window.png" src="https://files.readme.io/99aab0e0e808514d1450fd297a1e7d2217be4e21d8ca85bd5a922e797f39755e-360008512418.png" />
 
 <div id="in-app-event-postbacks" />
 
@@ -160,7 +160,7 @@ Nếu bạn là đại lý, hãy yêu cầu nhà quảng cáo làm điều đó 
 
 Ánh xạ các sự kiện AppsFlyer với đối tác qua các đăng lại. Nếu bật tính năng gửi đăng lại, điều này bao gồm các sự kiện trong ứng dụng bị từ chối (các sự kiện bị Protect360 chặn hoặc các sự kiện bị phát hiện là không tuân thủ theo quy tắc xác thực mục tiêu).
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 **Cách cấu hình đăng lại sự kiện trong ứng dụng:**
 
@@ -326,7 +326,7 @@ Cách thực hiện liên kết sâu với Snapchat:
 1. Đi tới loại cơ hội **Drive traffic to app**.
 2. Thêm URI liên kết sâu:  
      
-    [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+    <Image align="center" alt="" src="https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png" />
 
 <div id="deferred-deep-linking-with-snapchat" />
 

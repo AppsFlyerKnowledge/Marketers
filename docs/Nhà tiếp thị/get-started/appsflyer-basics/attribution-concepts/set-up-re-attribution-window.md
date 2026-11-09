@@ -34,7 +34,7 @@ x-zendesk:
 
 The re-attribution window is a time window that begins the first time a user installs the app and continues for a duration set by the advertiser (default 90 days.) During the re-attribution window app reinstalls aren't recorded as new installs and don't generate a new install postback unless they originate from a **retargeting** campaign.
 
-[![ReAttributionWindow_us-en.png](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)
+<Image align="center" alt="ReAttributionWindow_us-en.png" src="https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png" />
 
 ### Setting the re-attribution window
 

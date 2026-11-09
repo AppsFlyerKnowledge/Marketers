@@ -37,7 +37,7 @@ Nhắm mục tiêu lại cho phân bổ xảy ra khi một người dùng thu h�
 * **Thu hút lại:** Nếu ứng dụng có trên thiết bị, nguồn truyền thông thúc đẩy người dùng mở ứng dụng sẽ được ghi nhận lượt thu hút lại.
 * **Phân bổ lại (còn gọi là lượt cài đặt lại nhắm mục tiêu lại)**: Nếu ứng dụng không có trên thiết bị của người dùng (nghĩa là người dùng đã gỡ cài đặt ứng dụng), thì việc thu hút với chiến dịch nhắm mục tiêu lại sẽ khiến người dùng cài đặt lại và mở ứng dụng. Nếu điều này xảy ra trong <Anchor target="_blank" href="/marketers/vi/docs/set-up-re-attribution-window">khung thời gian phân bổ lại:</Anchor> nguồn truyền thông nhắm mục tiêu lại được ghi có cho phân bổ lại đó. Bài viết liên quan: <Anchor target="_blank" href="/marketers/vi/docs/appsflyer-attribution-model#reinstalls">Lượt cài đặt lại.</Anchor>
 
-![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 Trước khi chạy các chiến dịch nhắm mục tiêu lại, hãy xem lại các quy tắc thu hút lại và các trường hợp ví dụ trong các phần tiếp theo, sau đó thiết lập tính năng nhắm mục tiêu lại như được mô tả trong phần quy trình nhắm mục tiêu lại. Để dễ hiểu, bạn nên làm quen với <Anchor target="_blank" href="/marketers/vi/docs/appsflyer-attribution-model">mô hình phân bổ</Anchor> của AppsFlyer và các khung thời gian phân bổ liên quan.
 
@@ -90,7 +90,7 @@ Các bảng sau chứa thông tin tham khảo về các khung thời gian liên 
 
 #### **Quy trình mẫu thực hiện các quy tắc**
 
-![](https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png)
+<Image align="center" alt="" src="https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png" />
 
 Danh sách kiểm tra quy tắc thu hút lại người dùng để phân bổ lượt nhấp qua và lượt xem hết:
 
@@ -139,7 +139,7 @@ Yêu cầu các tùy chọn cài đặt sau tùy thuộc vào tình huống.
 2. Chọn mạng quảng cáo.
 3. Bật **Enable** **retargeting settings**. Điều này sẽ sửa đổi đường dẫn phân bổ thành một URL nhắm mục tiêu lại, bằng cách thêm `is_retargeting=true` vào đường dẫn.   
 
-   [![](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)
+   <Image align="center" alt="" src="https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png" />
 4. Hãy chọn một trong các mục sau:
    * **Sử dụng đường dẫn phân bổ tiêu chuẩn cho các liên kết** đơn nền tảng (dành riêng cho ứng dụng).
    * **Sử dụng OneLink**.

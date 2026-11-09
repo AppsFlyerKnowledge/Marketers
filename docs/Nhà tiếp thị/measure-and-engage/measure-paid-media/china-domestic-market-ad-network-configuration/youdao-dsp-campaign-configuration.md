@@ -54,7 +54,7 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 ### Default Postbacks
 
-<Image alt="mceclip2.png" src="https://files.readme.io/8e104f89182a421579a067a4904a0d6ddc7ae4fbae7da6a9a8e0c800ccc42e99-50900269840529.png" width="583px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/8e104f89182a421579a067a4904a0d6ddc7ae4fbae7da6a9a8e0c800ccc42e99-50900269840529.png" width="583px" />
 
 </Accordion>
 
@@ -83,7 +83,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-<Image alt="attribution-link-parameters.png" src="https://files.readme.io/132e20e29758b2865ee315e2b185c0689622f2b9e0a01c223253a83bf9ad6ceb-50900241322385.png" width="511px" />
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/132e20e29758b2865ee315e2b185c0689622f2b9e0a01c223253a83bf9ad6ceb-50900241322385.png" width="511px" />
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/vi/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
@@ -95,7 +95,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/vi/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/6b45720763d086c8e2bfc18b7551eabf66b9ec06a7d93d051fa7b3bd67acad07-50900241323025.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/6b45720763d086c8e2bfc18b7551eabf66b9ec06a7d93d051fa7b3bd67acad07-50900241323025.png" />
 
 ### Attribution Link
 
@@ -125,7 +125,7 @@ Ad Revenue is not supported in the integration with this partner.
 
 In this tab, you can select the permissions to grant Youdao DSP, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Youdao DSP, the permissions tab is active and you can grant control to Youdao DSP.
 
-![rtb_house-permissions-new.png](https://files.readme.io/0bad858445c3ecf36204fa24c35f532fb47949cda104ed4535444736962cb1ab-50900269845649.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/0bad858445c3ecf36204fa24c35f532fb47949cda104ed4535444736962cb1ab-50900269845649.png" />
 
 ### Ad Network Permissions
 

@@ -75,7 +75,7 @@ AppsFlyer gửi postback mặc định đến Medialyzer sau các lượt cài �
 * **Off**: Postback cài đặt không được gửi đến Medialyzer.
 * **All media sources, including organic**: Postback cài đặt được gửi cho các sự kiện được phân bổ cho bất kỳ đối tác và sự kiện tự nhiên nào.
 
-![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+<Image align="center" alt="default_postbacks.png" src="https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png" />
 
 <div id="in-app-event-postbacks" />
 
@@ -83,7 +83,7 @@ AppsFlyer gửi postback mặc định đến Medialyzer sau các lượt cài �
 
 Trong phần này, bạn có thể ánh xạ các sự kiện AppsFlyer của mình với đối tác của mình qua các postback.
 
-[![app_event_postbacks.JPG](https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png)](https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png)
+<Image align="center" alt="app_event_postbacks.JPG" src="https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png" />
 
 1. Bật tùy chọn **In-app events postback**.
 2. Nhấp vào **Add event** để thêm một SDK hoặc sự kiện từ máy chủ đến máy chủ vào danh sách.

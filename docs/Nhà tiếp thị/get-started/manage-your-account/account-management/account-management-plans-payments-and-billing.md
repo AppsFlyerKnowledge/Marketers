@@ -215,7 +215,7 @@ Báo cáo mức độ sử dụng hiển thị các lượt chuyển đổi hợ
 > * Dữ liệu trong Báo cáo mức độ sử dụng vẫn **không minh bạch** dù có bật tính năng **<Anchor target="_blank" href="/partners/vi/docs/getting-started-agency-onboarding#transparency">Allow transparency</Anchor>** hay không, nghĩa là dữ liệu hiển thị tên đại lý chứ không phải nguồn truyền thông được phân bổ
 > * [Mẫu báo cáo mức độ sử dụng](https://support.appsflyer.com/hc/vi/article_attachments/13944970354833/Sample_Usage_Report.csv)
 
-[![mẫu báo cáo mức sử dụng](https://files.readme.io/a3c58f1f7f92f5ab883b50b10480e8fe5b0f7702dad59a925e50ccc0ac2bcba7-16148973368081.png)](https://files.readme.io/a3c58f1f7f92f5ab883b50b10480e8fe5b0f7702dad59a925e50ccc0ac2bcba7-16148973368081.png)
+<Image align="center" alt="mẫu báo cáo mức sử dụng" src="https://files.readme.io/a3c58f1f7f92f5ab883b50b10480e8fe5b0f7702dad59a925e50ccc0ac2bcba7-16148973368081.png" />
 
 | Trường | Mô tả |
 | --- | --- |

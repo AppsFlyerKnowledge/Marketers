@@ -29,7 +29,7 @@ x-zendesk:
 
 > **Khái quát:** Phân bổ doanh thu quảng cáo để hoàn thành chế độ xem hiệu suất LTV.
 
-[![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
+<Image align="center" alt="Attributes_ad_revenue.png" src="https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png" />
 
 <div id="ad-revenue-attribution" />
 
@@ -85,7 +85,7 @@ Các phần sau đây mô tả các loại phân bổ doanh thu quảng cáo có
 1. Trong AppsFlyer, đi đến **ROI360** > **Revenue Settings** > **Ad revenue**.
 2. Trong tích hợp Doanh thu quảng cáo, hãy nhấp vào **New ad revenue integration**.
 3. Chọn một đối tác doanh thu quảng cáo và nhấp vào **Next**.  
-   ![ad_revenue_ui.png](https://files.readme.io/d91b886ed5b9715a508a481afbb86a7dd8381894322455214674ba68b483e91b-13751596101649.png)
+   <Image align="center" alt="ad_revenue_ui.png" src="https://files.readme.io/d91b886ed5b9715a508a481afbb86a7dd8381894322455214674ba68b483e91b-13751596101649.png" />
 4. Chọn loại dữ liệu doanh thu quảng cáo bạn muốn nhận. **Lưu ý**: Không phải tất cả các mạng quảng cáo đều cung cấp tất cả các tùy chọn trong danh sách bên dưới.
    * Doanh thu được phân bổ. Có nghĩa là doanh thu dựa trên nguồn thu hút người dùng. Báo cáo doanh thu được phân bổ có thể là:
      * [Cấp hợp nhất](/docs/roi360-guide-ad-revenue-attribution#aggregate-granularity-using-app-open-or-inapp-events) thông qua API S2S. 
@@ -114,7 +114,7 @@ Các phần sau đây mô tả các loại phân bổ doanh thu quảng cáo có
 
 <Accordion title="Xem, chỉnh sửa và xóa đối tác tích hợp doanh thu quảng cáo">
 
-![delete_edit_adi.png](https://support.appsflyer.com/hc/article_attachments/13751607197713)
+<Image align="center" alt="delete_edit_adi.png" src="https://support.appsflyer.com/hc/article_attachments/13751607197713" />
 
 **Cách xem, chỉnh sửa hoặc xóa tích hợp mạng doanh thu quảng cáo**:
 
@@ -135,7 +135,7 @@ Có thể xảy ra tình trạng trùng lặp một phần dữ liệu doanh thu
 1. Trong AppsFlyer, đi đến **ROI360** > **Revenue Settings** > **Ad Revenue**.
 2. Trong **General Settings**, nhấp vào **Deduplicate ad revenue when two mediation partners cross-reference each other**. **Lưu ý**: Không hủy trùng lặp nếu 2 nền tảng trung gian điều giải các định dạng quảng cáo khác nhau. Ví dụ, khi nền tảng 1 hiển thị Biểu ngữ và Xen kẽ, và nền tảng 2 hiển thị các quảng cáo AppOpen và Native.
 
-[![dedup.png](https://support.appsflyer.com/hc/article_attachments/17299804281361)](https://support.appsflyer.com/hc/article_attachments/17299804281361)
+<Image align="center" alt="dedup.png" src="https://support.appsflyer.com/hc/article_attachments/17299804281361" />
 
 </Accordion>
 
@@ -225,7 +225,7 @@ Phân bổ doanh thu quảng cáo có sẵn như sau:
 
 #### **Bảng điều khiển tổng quan - báo cáo hiệu suất hợp nhất**
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002239229)](https://support.appsflyer.com/hc/article_attachments/360002239229)
+<Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360002239229" />
 
 Trong Bảng điều khiển tổng quan:
 
@@ -308,7 +308,7 @@ Trong Bảng điều khiển hoạt động:
 
 <Accordion title="Dữ liệu thô về doanh thu quảng cáo">
 
-<Image alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
+<Image align="center" alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
 
 Báo cáo dữ liệu thô về doanh thu quảng cáo chứa dữ liệu được cung cấp từ các mạng kiếm tiền có tích hợp cấp thiết bị hoặc cấp lượt hiển thị với AppsFlyer.
 

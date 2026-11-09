@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Sơ lược:** ironSource, một đối tác tích hợp của AppsFlyer, xây dựng các công cụ kiếm tiền, tương tác, phân tích và khám phá cho các nhà phát triển ứng dụng, nhà sản xuất thiết bị, nhà cung cấp dịch vụ di động và nhà quảng cáo. Ngoài phân bổ trên thiết bị di động dựa trên lượt nhấp chuột, ironSource còn cung cấp chi phí, doanh thu quảng cáo, nhắm mục tiêu lại và phân bổ qua lượt xem mà bạn có thể ghi lại bằng AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
  Lưu ý: Là một mạng cho tất cả lượt cài đặt, ironSource ưu tiên nhận postback cho tất cả lượt cài đặt mới ứng dụng của bạn từ BẤT KỲ nguồn nào, bao gồm cả nguồn tự nhiên. Để làm vậy, chọn Sự kiện được phân bổ cho bất kỳ đối tác nào để gửi tất cả các postback cài đặt đến ironSource.
 

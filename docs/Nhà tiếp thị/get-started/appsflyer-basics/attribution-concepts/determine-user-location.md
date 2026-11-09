@@ -33,7 +33,7 @@ x-zendesk:
 ---
 > **At a glance:** User location is determined using the device IP address which is mapped to the general location of the user (city, state, country, and so on). User location impacts creatives selection, campaign cost, engagement, and user quality.
 
-![5888ResolveIpAddress_us-en.png](https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png)
+<Image align="center" alt="5888ResolveIpAddress_us-en.png" src="https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png" />
 
 <div id="determining-user-location" />
 
@@ -60,7 +60,7 @@ The IP address is converted by AppsFlyer into geo-location information using dat
 
 > 📘 **Note regarding the United Kingdom (UK)**
 >
-> <Image alt="blobid0.png" src="https://files.readme.io/33ed45ea49e3308e17a237400ea6c6e9d33c495a9c83197041fdae282f9c65a4-360006637538.png" width="62px" />
+> <Image align="center" alt="blobid0.png" src="https://files.readme.io/33ed45ea49e3308e17a237400ea6c6e9d33c495a9c83197041fdae282f9c65a4-360006637538.png" width="62px" />
 >
 > * In the platform, the United Kingdom is denoted using the code UK.
 > * The ISO 3166 code for the United Kingdom is GB. UK is reserved, but not allocated, by ISO for the United Kingdom.

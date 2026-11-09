@@ -27,7 +27,7 @@ x-zendesk:
 
 > **At a glance:** Increase the efficiency of your user acquisition and remarketing campaigns by using AppsFlyer Audiences to build and connect audience segments to your partner networks.
 
-![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
+<Image align="center" alt="Intro_image.png" src="https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png" />
 
 ## Audiences basics
 
@@ -114,7 +114,7 @@ Choose from over 30+ audiences within the **categories of Acquire, Activate, Eng
 >
 > This example illustrates one typical use case. Let’s say you want to urge active users of your app, who haven’t purchased yet, to make their first purchase. You can select the “Encourage purchase” audience and customize it to specify which event defines an in-app purchase. Then you can connect the audience to your partners and run a promotional campaign that nudges them towards making a purchase and leads them to the app's purchase page.
 >
-> ![Encourage_purchase_image_this_one.jpeg](https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg)
+> <Image align="center" alt="Encourage_purchase_image_this_one.jpeg" src="https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg" />
 
 **To create a Suggested Audience:**
 
@@ -188,7 +188,7 @@ Audience rule evaluation is performed using an app user identifier. Select from:
     * If a device ID is associated with two different CUIDs, the most recently associated CUID is used.
     * When building an audience with CUID as the identifier, the CUID association must have been received by AppsFlyer on the install (not just on post-install events) for complete association with the relevant devices and successful enrichment with device identifiers (i.e., GAID, IDFA). <Anchor target="_blank" href="/marketers/vi/docs/customer-user-id-field-cuid#cài-đặt-cuid">Learn more</Anchor>
 
-<Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+<Image align="center" alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
 
 > 📄 **Example: Device ID vs. CUID**
 >
@@ -356,7 +356,7 @@ Learn how to use rulesets to define your audiences.
 
 <Accordion title="Audience segmentation rulesets">
 
-![audience_segmentation_rulesets.jpg](https://files.readme.io/4407da232d372a98afcd30df3a832f6ef38bb55a6b02640587f44c7501b014f2-46335625066897.jpg)
+<Image align="center" alt="audience_segmentation_rulesets.jpg" src="https://files.readme.io/4407da232d372a98afcd30df3a832f6ef38bb55a6b02640587f44c7501b014f2-46335625066897.jpg" />
 
 * An audience segment ruleset consists of one or multiple rules to enable precision filtering.
 * Combine rulesets using operators: and, or, exclude.
@@ -377,19 +377,19 @@ The examples that follow illustrate ruleset implementation in various scenarios.
 >
 > Users from New York who uninstalled the app in the last month
 >
-> ![example_location_based_rule.jpg](https://files.readme.io/7ee7e2b9e8f06dc47c93148767fd67d87855a05cd09ba06f2dd2c0ea9dc29607-46335625068817.jpg)
+> <Image align="center" alt="example_location_based_rule.jpg" src="https://files.readme.io/7ee7e2b9e8f06dc47c93148767fd67d87855a05cd09ba06f2dd2c0ea9dc29607-46335625068817.jpg" />
 
 > 📄 **Example: User attributes-based rule**
 >
 > Users who launched the app in the last 7 days at least once and whose favorite weapon is a sword.
 >
-> ![example_user_attributes_based_rule.jpg](https://files.readme.io/8ab97cdccd2a1b33b671b1f686ca642306197ccf5151ca2ba9836db8ca496d03-46335625073809.jpg)
+> <Image align="center" alt="example_user_attributes_based_rule.jpg" src="https://files.readme.io/8ab97cdccd2a1b33b671b1f686ca642306197ccf5151ca2ba9836db8ca496d03-46335625073809.jpg" />
 
 > 📄 **Example: Revenue**
 >
 > Users who installed the app during the last seven days, and spent $1
 >
-> ![example_revenue.jpg](https://files.readme.io/d7768bec78ff5981639da4e1c8e1a3121961464c0a5932bf8f542f27979358a8-46335625074833.jpg)
+> <Image align="center" alt="example_revenue.jpg" src="https://files.readme.io/d7768bec78ff5981639da4e1c8e1a3121961464c0a5932bf8f542f27979358a8-46335625074833.jpg" />
 
 > 📄 **Example: Owned media filter**
 >
@@ -397,7 +397,7 @@ The examples that follow illustrate ruleset implementation in various scenarios.
 >
 > Here's an example with users who launched the app at least once in the last 7 days and whose install was attributed to a specific email campaign as well as specific ad sets and ads.
 >
-> ![Owned_media_example.jpg](https://files.readme.io/4b9c076f5299f4f59524a7f816964f4db2c8edd73690aa899e34fcac0d145628-46335667611409.jpg)
+> <Image align="center" alt="Owned_media_example.jpg" src="https://files.readme.io/4b9c076f5299f4f59524a7f816964f4db2c8edd73690aa899e34fcac0d145628-46335667611409.jpg" />
 >
 > The audience can be used to re-engage these users with personalized messaging on either owned or paid media, or as an exclusion list to prevent them from seeing irrelevant or unnecessary ads when running campaigns.
 
@@ -407,7 +407,7 @@ The examples that follow illustrate ruleset implementation in various scenarios.
 >
 > Build an audience of potential users that clicked on an ad but did not install in the last two days.
 >
-> ![example_remarketing.jpg](https://files.readme.io/715c42d56c0deffdb4d28acd213f4a5da62de75bbcd6834a927b9226d2fea43e-46335667613329.jpg)
+> <Image align="center" alt="example_remarketing.jpg" src="https://files.readme.io/715c42d56c0deffdb4d28acd213f4a5da62de75bbcd6834a927b9226d2fea43e-46335667613329.jpg" />
 >
 > These are users who, in the recent past, were sufficiently interested in your mobile app to click on your ad, but for some reason did not install the app, or installed the app but did not launch it. Some users just need a reminder (push) to install it. Others may need to see more screens or features of your app to finally convert. Therefore, if you have a primary creative you use on new audiences, it might be better to use a different creative for audiences that clicked but did not install.
 
@@ -476,7 +476,7 @@ The **Connections** tab displays all your partner connections and the status of 
 6. Select the user identifiers that you authorize for sharing with this partner.
    * Supported identifiers vary by partner. Only those identifiers supported by the selected partner will appear in the list.
    * Only identifiers that comply with your <Anchor target="_blank" href="/marketers/vi/docs/audiences-user-identifier-policy">account-level user identifier policy</Anchor> will be uploaded. You will see a caution message if you select an identifier that is disallowed by your account policy.  
-     ![doctored_connection_image.jpg](https://files.readme.io/5de138c4a2c2a3f26bebc6bd14d9703408a986dc4f8c53235d4be337784603af-46335625091345.jpg)
+     <Image align="center" alt="doctored_connection_image.jpg" src="https://files.readme.io/5de138c4a2c2a3f26bebc6bd14d9703408a986dc4f8c53235d4be337784603af-46335625091345.jpg" />
 7. Click **Save.**
 
 </Accordion>
@@ -508,7 +508,7 @@ This section describes the features and campaign metrics that appear on the dash
 
 <Accordion title="Audiences dashboard">
 
-[![new_dashboard_image_doctored.jpg](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)
+<Image align="center" alt="new_dashboard_image_doctored.jpg" src="https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg" />
 
 | Column | Description |
 | --- | --- |
@@ -551,7 +551,7 @@ The **Campaign metrics** section of the Audiences dashboard displays data for ca
 
 The initial **Campaign metrics** view displays summary campaign data for each audience:
 
-[<Image alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />](https://files.readme.io/3b3c1878471a1b77cb7e4296b966302873caa6313f8779b99f4f3687c36bfa5d-46335625093009.png)
+<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />
 
 | Column | Description |
 | --- | --- |
@@ -565,7 +565,7 @@ From the summary view, click on the <Image alt="show_detailed_view_icon.png" src
 
 The detailed view displays data broken down by supported partner and campaign:
 
-[![campaign_metrics_detailed_view.jpg](https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg)](https://files.readme.io/44b5b71c5832a27785a3f8919a05ed9456e02e3f59ee822b021cd3f08089609f-46335625094417.png)
+<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg" />
 
 If the selected audience was used to target more than one app, use the drop-down list ![pin_A.png](https://files.readme.io/dcf60cd17a1135e63f6443728c3d713d9cacd6af0e1c010c226d1a092770c40b-46335667636113.png) to filter the data by app.
 

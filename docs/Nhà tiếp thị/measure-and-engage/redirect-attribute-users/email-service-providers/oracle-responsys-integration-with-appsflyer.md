@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Sơ lược:** Oracle Responsys, một nền tảng phân tích và gửi email, nhúng AppsFlyer OneLink vào các email. Người nhận email nhấp vào liên kết sẽ được liên kết sâu vào ứng dụng của bạn.
 
-![oracle-responsys-af-logo.png](https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png)
+<Image align="center" alt="oracle-responsys-af-logo.png" src="https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png" />
 
 ESP (Nhà cung cấp Dịch vụ Email) có thể là nguồn tuyệt vời cho lưu lượng người dùng được phân đoạn.
 
@@ -67,7 +67,7 @@ Thực hiện theo phần này để thiết lập miền nhấp chuột của b
 
 **Lưu ý**, trong bảng Liên kết, bạn có thể xác định **URL liên kết iOS** giống với URL Liên kết:
 
-![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
+<Image align="center" alt="Oracle-responsys-link-tracking-table.png" src="https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png" />
 
 Sau khi bạn đặt các miền nhấp chuột trong Bảng Liên kết, Responsys sẽ sử dụng các miền này để bao bọc các OneLink mà bạn đưa vào chiến dịch email. Bằng cách này, Responsys có thể ghi lại các lượt nhấp chuột trong hệ thống của họ đồng thời duy trì chức năng OneLink và liên kết sâu.
 

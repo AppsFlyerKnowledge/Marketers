@@ -49,7 +49,7 @@ Một vài điểm cần thực hiện trước khi tích hợp Tiện ích mở
 
 <Accordion title="Nhận dev key AppsFlyer của bạn">
 
-<Image alt="dev_key.png" src="https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png" width="357px" />
+<Image align="center" alt="dev_key.png" src="https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png" width="357px" />
 
 1. Trong bảng điều khiển ứng dụng của bạn, nhấp vào ***App Settings*** trong phần ***Configuration*** ở menu bên trái.
 2. Trong phần ***SDK Installation***, hãy sao chép ***Dev Key***.
@@ -75,7 +75,7 @@ Làm theo hướng dẫn dưới đây để định cấu hình Adobe Launch.
 
 <Accordion title="1.1 Tạo thuộc tính mới trong Adobe Launch">
 
-[![](https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png)](https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png)
+<Image align="center" alt="" src="https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png" />
 
 1. Đăng nhập vào Adobe Experience Cloud.
 2. Chọn ***Launch***.
@@ -92,7 +92,7 @@ Làm theo hướng dẫn dưới đây để định cấu hình Adobe Launch.
 
 Cài đặt các tiện ích mở rộng sau vào Adobe Launch:
 
-[![adboe_extensions.png](https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png)](https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png)
+<Image align="center" alt="adboe_extensions.png" src="https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png" />
 
 * Adobe Analytics - kết nối dữ liệu ghi được từ SDK với mô-đun Adobe Analytics.
 * Tiện ích mở rộng AppsFlyer SDK - gửi dữ liệu và sự kiện đến cả Adobe và AppsFlyer bằng Adobe Launch SDK.
@@ -144,7 +144,7 @@ Làm theo hướng dẫn trong phần này để triển khai Tiện ích mở r
 
 <Accordion title="2.1 Thêm SDK vào ứng dụng">
 
-[![adobe_sdk.png](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)
+<Image align="center" alt="adobe_sdk.png" src="https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png" />
 
 1. Bên trong thuộc tính Adobe của bạn, hãy chọn ***Environments***.
 2. Chọn môi trường mà bạn muốn triển khai SDK.
@@ -159,7 +159,7 @@ Làm theo hướng dẫn trong phần này để triển khai Tiện ích mở r
 
 Để hoàn tất việc triển khai SDK, bạn cần phát hành môi trường lên thư viện.
 
-[![adobe_publishing.png](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)
+<Image align="center" alt="adobe_publishing.png" src="https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png" />
 
 1. Bên trong thuộc tính Adobe, hãy chọn ***Publishing***.
 2. Nhấp vào ***Add New Library***.
@@ -208,7 +208,7 @@ Thêm Liên kết giới thiệu cài đặt Android làm phần phụ thuộc. 
    ```
 2. Đồng bộ hóa dự án để truy xuất các phần phụ thuộc - xem ảnh chụp màn hình sau:  
 
-    [![android_af_sdk_sync_gradle.png](https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png)](https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png)
+    <Image align="center" alt="android_af_sdk_sync_gradle.png" src="https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png" />
 
 Nếu bạn đang sử dụng ProGuard và muốn sử dụng API liên kết giới thiệu mới của Google, hãy đặt quy tắc ProGuard sau: `-dontwarn com.android.installreferrer`
 
@@ -383,7 +383,7 @@ Trong AppDelegate.m, hãy triển khai mã sau:
 
 Dữ liệu chuyển đổi được gửi cùng với các sự kiện đến nền tảng Adobe. Các biến này cho phép bạn áp dụng logic và quy tắc đối với các phương diện, chỉ số hoặc bộ lọc báo cáo.
 
-![adobe_analytics.png](https://files.readme.io/9c4355286d2e5f2254a8a16a49b1b1305b56628b54e738efcd4fdc90a6de8fab-360006050778.png)
+<Image align="center" alt="adobe_analytics.png" src="https://files.readme.io/9c4355286d2e5f2254a8a16a49b1b1305b56628b54e738efcd4fdc90a6de8fab-360006050778.png" />
 
 1. Đăng nhập vào Dịch vụ Adobe Mobile<Anchor target="_blank" href="https://mobilemarketing.adobe.com">.</Anchor>
 2. Chọn ứng dụng có liên quan và vào trang ***Manage Variables & Metrics***.

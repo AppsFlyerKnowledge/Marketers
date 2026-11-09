@@ -46,7 +46,7 @@ Phân bổ ứng dụng **xác định những chiến lược, đối tác và 
 
 Khi người dùng của bạn được tạo lần đầu, bạn sẽ nhận được lời mời qua email để kích hoạt tài khoản của mình. Sau khi kích hoạt, bạn có thể đăng nhập và tài khoản sẽ hoạt động. Lưu ý rằng liên kết kích hoạt có hiệu lực trong vòng 48 giờ.
 
-<Image alt="login page.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
+<Image align="center" alt="login page.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
 
 Có một số cách đăng nhập vào tài khoản AppsFlyer của bạn:
 
@@ -79,7 +79,7 @@ Nếu có nhiều tài khoản thì khi đăng nhập vào một trong số các
 1. Đăng xuất khỏi tài khoản hiện tại của bạn: Từ thanh menu, nhấp vào **menu thả xuống địa chỉ email** > **Logout**.
 2. Đăng nhập và chọn một tài khoản khác từ danh sách các tài khoản được liên kết của bạn.
 
-![multiple accounts.png](https://files.readme.io/017bea85e105d707603468e396d290c09a217c36275244b4b41ea2d5dd601a9e-20347815267601.png)
+<Image align="center" alt="multiple accounts.png" src="https://files.readme.io/017bea85e105d707603468e396d290c09a217c36275244b4b41ea2d5dd601a9e-20347815267601.png" />
 
 <div id="get-started" />
 

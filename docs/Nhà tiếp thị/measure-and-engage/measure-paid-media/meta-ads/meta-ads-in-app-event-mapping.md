@@ -45,7 +45,7 @@ Tìm <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-event-struct
 
 Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/meta-ads-integration-setup#inapp-event-mapping">các sự kiện ánh xạ trên Meta</Anchor>.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 Lưu ý rằng không có sự kiện được xác định trước để gửi lượt gỡ cài đặt tới quảng cáo Meta. Để gửi lượt gỡ cài đặt, hãy sử dụng một [sự kiện tùy chỉnh](/docs/meta-ads-in-app-event-mapping#nối-sự-kiện-tuỳ-chỉnh-trong-ứng-dụng-facebook).
 
@@ -70,7 +70,7 @@ Tên sự kiện và giá trị sự kiện (bao gồm các thông số sự ki�
 
 Lưu ý rằng bạn có thể <Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">sử dụng các sự kiện này để tùy chỉnh các chiến dịch của bạn</Anchor>.
 
-[![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
+<Image align="center" alt="" src="https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png" />
 
 <div id="important" />
 

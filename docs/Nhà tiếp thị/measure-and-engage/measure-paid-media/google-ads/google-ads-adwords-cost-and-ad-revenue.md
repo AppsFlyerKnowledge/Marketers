@@ -71,7 +71,7 @@ Tích hợp chi phí cung cấp dữ liệu tổng hợp sau:
 >
 > Người dùng có thể xác nhận họ đã đăng nhập bằng tài khoản Google Ads chính xác bằng cách kiểm tra địa chỉ email xuất hiện ở góc trên cùng bên phải của bảng điều khiển Google Ads.
 >
-> ![short.png](https://support.appsflyer.com/hc/article_attachments/4417297915537)
+> <Image align="center" alt="short.png" src="https://support.appsflyer.com/hc/article_attachments/4417297915537" />
 >  Nếu tài khoản Google Ads là tài khoản phụ của tài khoản MCC, thì ID bên phải trên cùng là của MCC,  và ID của tài khoản phụ sẽ nằm ở góc trên cùng bên trái.
 >
 > Nếu tài khoản không chính xác, hãy đăng xuất khỏi tài khoản và đăng nhập lại bằng địa chỉ email cho một tài khoản Google khác.

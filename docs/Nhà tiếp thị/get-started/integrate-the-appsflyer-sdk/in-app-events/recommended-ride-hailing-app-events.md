@@ -35,7 +35,7 @@ Việc ghi nhận các sự kiện có thể giúp bạn xác định:
 
 Để biết thêm thông tin về cách ghi lại các sự kiện trong ứng dụng, hãy xem <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview">Hướng dẫn sự kiện phong phú trong ứng dụng</Anchor>.
 
-[![Flowchart_for_recommended_events_ride_hailing_app_user_journey](https://files.readme.io/0224faa0b16301b04b33ae308e8e18e8cb5eb90aa12ff5cf76d819e80587e224-360020064517.png)](https://files.readme.io/0224faa0b16301b04b33ae308e8e18e8cb5eb90aa12ff5cf76d819e80587e224-360020064517.png)
+<Image align="center" alt="Flowchart_for_recommended_events_ride_hailing_app_user_journey" src="https://files.readme.io/0224faa0b16301b04b33ae308e8e18e8cb5eb90aa12ff5cf76d819e80587e224-360020064517.png" />
 
 ## Cấu trúc đề xuất cho các sự kiện đã xác định trước
 

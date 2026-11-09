@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **At a glance:** Mobusi, an AppsFlyer integrated partner, is a mobile user acquisition and marketing services company with expertise in performance advertising.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobusi.png?v=1" width="119px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobusi.png?v=1" width="119px" />
 
 ## Setting up Mobusi
 

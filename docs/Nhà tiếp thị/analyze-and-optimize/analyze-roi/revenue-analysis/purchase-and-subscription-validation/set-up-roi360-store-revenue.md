@@ -69,22 +69,22 @@ To set iOS credentials, follow these step:
 
 1. In the App Store Connect, go to **Users and Access**
 
-   [![](https://files.readme.io/915adbb054060c95ccdf784ecb5690e7f417e5851eda5a652727947698a03c3d-42158608027793.png)](https://files.readme.io/915adbb054060c95ccdf784ecb5690e7f417e5851eda5a652727947698a03c3d-42158608027793.png)
+   <Image align="center" alt="" src="https://files.readme.io/915adbb054060c95ccdf784ecb5690e7f417e5851eda5a652727947698a03c3d-42158608027793.png" />
 2. Go to **Users and Access** > **Integrations**, and from the **Keys** list, select **In-App Purchase**.
 
-   [![](https://files.readme.io/a24c642acd6d2470cd0b7e575e9ecb36c40eaef9d5fa9e8337a758e2b404ba14-42158637491729.png)](https://files.readme.io/a24c642acd6d2470cd0b7e575e9ecb36c40eaef9d5fa9e8337a758e2b404ba14-42158637491729.png)
+   <Image align="center" alt="" src="https://files.readme.io/a24c642acd6d2470cd0b7e575e9ecb36c40eaef9d5fa9e8337a758e2b404ba14-42158637491729.png" />
 3. Click + to generate a new In-App Purchase key.
 
-   [![](https://files.readme.io/2ac7ba9197d1d3f134539eba3f315f497ccd8664a25ed6144606199c125dbba6-42158608030609.png)](https://files.readme.io/2ac7ba9197d1d3f134539eba3f315f497ccd8664a25ed6144606199c125dbba6-42158608030609.png)
+   <Image align="center" alt="" src="https://files.readme.io/2ac7ba9197d1d3f134539eba3f315f497ccd8664a25ed6144606199c125dbba6-42158608030609.png" />
 4. Enter a name for your API key.
 5. Click **Generate**.
 6. Click **Download In-App Purchase Key** next to the key you just generated to download it. **Note**: You can only download the key once.
 7. Copy the **Key ID** of the key you just generated and paste it into the AppsFlyer purchases & subscriptions setting for **Key ID**.
 
-   [![](https://files.readme.io/7a7be640b7b338aba367c37f4eeb01911cba88564f72b88749c19d8e5c31d47c-42158608031633.png)](https://files.readme.io/7a7be640b7b338aba367c37f4eeb01911cba88564f72b88749c19d8e5c31d47c-42158608031633.png)
+   <Image align="center" alt="" src="https://files.readme.io/7a7be640b7b338aba367c37f4eeb01911cba88564f72b88749c19d8e5c31d47c-42158608031633.png" />
 8. Copy the **Issuer ID**. **Note**: If the **Issuer ID** is not displayed at the top of the page, create an App Store Connect API key (with any access level). After that, the Issuer ID will appear at the top of the page for the In-App Purchase key.
 
-   [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
+   <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" />
 
 </Accordion>
 
@@ -125,7 +125,7 @@ In step 1, you can obtain the following credentials from App Store Connect and i
 2. Link the account to your Google Cloud project. For instructions, see this <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">Google help topic</Anchor>.
 3. Enable the Google Play Developer API. For instructions, see <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">this Google help topic</Anchor>.
 
-   [![](https://files.readme.io/f30f2ed9081b4ad0a5455e5592838cb70a47c49767b69eaaaa73011a60bc4b8d-42158637503633.png)](https://files.readme.io/f30f2ed9081b4ad0a5455e5592838cb70a47c49767b69eaaaa73011a60bc4b8d-42158637503633.png)
+   <Image align="center" alt="" src="https://files.readme.io/f30f2ed9081b4ad0a5455e5592838cb70a47c49767b69eaaaa73011a60bc4b8d-42158637503633.png" />
 
 </Accordion>
 
@@ -140,36 +140,36 @@ In step 1, you can obtain the following credentials from App Store Connect and i
 1. Create or locate the **Service Account**:
    1. <span class="af-ol-a"></span>Go to the **Service accounts** section in the Google Cloud Platform and click **Create Service Account**.
 
-      [![](https://files.readme.io/639ded7c1b878913c33b350d9931620b8c1e6d3eda826a35c44141a22a562488-42158637505169.png)](https://files.readme.io/639ded7c1b878913c33b350d9931620b8c1e6d3eda826a35c44141a22a562488-42158637505169.png)
+      <Image align="center" alt="" src="https://files.readme.io/639ded7c1b878913c33b350d9931620b8c1e6d3eda826a35c44141a22a562488-42158637505169.png" />
    2. Complete the service account details.
 
-      [![](https://files.readme.io/7f5cf6b02e8d33bab5fece9170c30be03dea5d27309d716f9017bc9ec418ca6b-42158637508113.png)](https://files.readme.io/7f5cf6b02e8d33bab5fece9170c30be03dea5d27309d716f9017bc9ec418ca6b-42158637508113.png)
+      <Image align="center" alt="" src="https://files.readme.io/7f5cf6b02e8d33bab5fece9170c30be03dea5d27309d716f9017bc9ec418ca6b-42158637508113.png" />
    3. Copy the email address.
 
-      [![](https://files.readme.io/6a1c5e9fe99c89418b6039cd23285e85c41211e154e5000d72347bbf9a26f963-42158608046993.png)](https://files.readme.io/6a1c5e9fe99c89418b6039cd23285e85c41211e154e5000d72347bbf9a26f963-42158608046993.png)
+      <Image align="center" alt="" src="https://files.readme.io/6a1c5e9fe99c89418b6039cd23285e85c41211e154e5000d72347bbf9a26f963-42158608046993.png" />
    4. Click **Create and continue**.
 
-      [![](https://files.readme.io/118bdf5197362d8df8f8c14b59b1c377fb6badc17d152c7ffb8b62037079ec07-42158608050833.png)](https://files.readme.io/118bdf5197362d8df8f8c14b59b1c377fb6badc17d152c7ffb8b62037079ec07-42158608050833.png)
+      <Image align="center" alt="" src="https://files.readme.io/118bdf5197362d8df8f8c14b59b1c377fb6badc17d152c7ffb8b62037079ec07-42158608050833.png" />
    5. In the **Grant this service account access to the project** step, select the **Pub/sub** subscriber role.
 
-      [![](https://files.readme.io/c015aafa83ec986d4ed9de867774ef7a277e34f6b90086580691d884aff28646-42158637513617.png)](https://files.readme.io/c015aafa83ec986d4ed9de867774ef7a277e34f6b90086580691d884aff28646-42158637513617.png)
+      <Image align="center" alt="" src="https://files.readme.io/c015aafa83ec986d4ed9de867774ef7a277e34f6b90086580691d884aff28646-42158637513617.png" />
    6. Click **Continue** > **Done**.
 
-      [![](https://files.readme.io/e6618c1f51dff42982380b1f7ac994c31edaa9862b7ec3343b3c8e5d0207bc71-42158637515537.png)](https://files.readme.io/e6618c1f51dff42982380b1f7ac994c31edaa9862b7ec3343b3c8e5d0207bc71-42158637515537.png)
+      <Image align="center" alt="" src="https://files.readme.io/e6618c1f51dff42982380b1f7ac994c31edaa9862b7ec3343b3c8e5d0207bc71-42158637515537.png" />
 2. Download the **Service Account Private Key**:
    1. <span class="af-ol-a"></span>In the Google Cloud Platform, go to the **Service accounts** section, find the account you want (the one you just created) from the list, and click the **More actions** icon.
    2. Click **Manage keys**.
 
-      [![](https://files.readme.io/9c2e3e6e1e069325c4a47a0e1e638805cfb9235f6c3fca6a32b29e530074b6cf-42158637519889.png)](https://files.readme.io/9c2e3e6e1e069325c4a47a0e1e638805cfb9235f6c3fca6a32b29e530074b6cf-42158637519889.png)
+      <Image align="center" alt="" src="https://files.readme.io/9c2e3e6e1e069325c4a47a0e1e638805cfb9235f6c3fca6a32b29e530074b6cf-42158637519889.png" />
    3. Click **Add key** > **Create new key**.
 
-      [![](https://files.readme.io/beb1e5a984ca5335f51ffa44d2532ddbfa1147ee2a5a88a543de640c7248f7bd-42158637522321.png)](https://files.readme.io/beb1e5a984ca5335f51ffa44d2532ddbfa1147ee2a5a88a543de640c7248f7bd-42158637522321.png)
+      <Image align="center" alt="" src="https://files.readme.io/beb1e5a984ca5335f51ffa44d2532ddbfa1147ee2a5a88a543de640c7248f7bd-42158637522321.png" />
    4. In the **Create private key** popup, under **Key type**, select **JSON**, and click **Create**.
 
-      [![](https://files.readme.io/a3b7c0468b9ba1984a18340519ca59a40b12ee52066a2faae6c5b21931f8828b-42158608067089.png)](https://files.readme.io/a3b7c0468b9ba1984a18340519ca59a40b12ee52066a2faae6c5b21931f8828b-42158608067089.png)
+      <Image align="center" alt="" src="https://files.readme.io/a3b7c0468b9ba1984a18340519ca59a40b12ee52066a2faae6c5b21931f8828b-42158608067089.png" />
    5. Click **Create**. The private key JSON file is downloaded.
 
-      [![](https://files.readme.io/1a577ef4d159c73ff76a6a79a45a7909a3f9ee422abc5990482b3b45e308d666-42158637525649.png)](https://files.readme.io/1a577ef4d159c73ff76a6a79a45a7909a3f9ee422abc5990482b3b45e308d666-42158637525649.png)
+      <Image align="center" alt="" src="https://files.readme.io/1a577ef4d159c73ff76a6a79a45a7909a3f9ee422abc5990482b3b45e308d666-42158637525649.png" />
    6. Save the JSON key file, which will be uploaded to AppsFlyer later. **Note**! You must save the key; it can't be retrieved later. If you don't save it, you will have to create an entirely new key
 
 </Accordion>
@@ -186,23 +186,23 @@ In step 1, you can obtain the following credentials from App Store Connect and i
 
 1. In the Google Play Console, go to **Users and permissions**, find the service account you created, and click **Invite new users**.
 
-   [![](https://files.readme.io/eab4eb0b7357f890d7c86fe4095c031d82de7ba2ab6ddb32a472a521310fdaab-42158637526929.png)](https://files.readme.io/eab4eb0b7357f890d7c86fe4095c031d82de7ba2ab6ddb32a472a521310fdaab-42158637526929.png)
+   <Image align="center" alt="" src="https://files.readme.io/eab4eb0b7357f890d7c86fe4095c031d82de7ba2ab6ddb32a472a521310fdaab-42158637526929.png" />
 2. Enter the **Email address** that you copied when you configured your service account in step 1.2.1.3.
 
-   [![](https://files.readme.io/fbac8546bf697a6efa183217fad16a965752bc2f2c9b0b9051b178c2eac15e40-42158608078609.png)](https://files.readme.io/fbac8546bf697a6efa183217fad16a965752bc2f2c9b0b9051b178c2eac15e40-42158608078609.png)
+   <Image align="center" alt="" src="https://files.readme.io/fbac8546bf697a6efa183217fad16a965752bc2f2c9b0b9051b178c2eac15e40-42158608078609.png" />
 3. In the **Permissions** section, go to the **Account permissions** tab, and select both:
 
    * View financial data, orders, and cancellation survey responses.
    * Manage orders and subscriptions.[![](https://files.readme.io/41c44a10091b60e7ad356d864dd26bf313c8ed9ebfc91a4599be71a510c9f26b-42158637529105.png)](https://files.readme.io/41c44a10091b60e7ad356d864dd26bf313c8ed9ebfc91a4599be71a510c9f26b-42158637529105.png)
 4. On the **App permissions** tab, click **Add app,** then select your app. Add multiple apps if needed.
 
-   [![](https://files.readme.io/51457fad5fab7516d5e8d89867796795fbb4b938f723bcaf62b86b33ef3ce096-42158637538961.png)](https://files.readme.io/51457fad5fab7516d5e8d89867796795fbb4b938f723bcaf62b86b33ef3ce096-42158637538961.png)
+   <Image align="center" alt="" src="https://files.readme.io/51457fad5fab7516d5e8d89867796795fbb4b938f723bcaf62b86b33ef3ce096-42158637538961.png" />
 5. Click **Invite user.**
 
-   [![](https://files.readme.io/1fe2f95c7f0c06fded8cd14628e37b535d52447ef9261e1c02b8ade1139a1546-42158637541137.png)](https://files.readme.io/1fe2f95c7f0c06fded8cd14628e37b535d52447ef9261e1c02b8ade1139a1546-42158637541137.png)
+   <Image align="center" alt="" src="https://files.readme.io/1fe2f95c7f0c06fded8cd14628e37b535d52447ef9261e1c02b8ade1139a1546-42158637541137.png" />
 6. In the confirmation popup, click **Send invite**.
 
-   [![](https://files.readme.io/7e643e577d3134dcf352eeeafc26cacbcb8dcee718892f2ca14132fa593c1015-42158608083729.png)](https://files.readme.io/7e643e577d3134dcf352eeeafc26cacbcb8dcee718892f2ca14132fa593c1015-42158608083729.png)
+   <Image align="center" alt="" src="https://files.readme.io/7e643e577d3134dcf352eeeafc26cacbcb8dcee718892f2ca14132fa593c1015-42158608083729.png" />
 
 </Accordion>
 
@@ -280,16 +280,16 @@ To send notifications directly to AppsFlyer, set up AppsFlyer as the primary App
 
 1. In **App Store Connect**, in the **App Information** section, scroll to **App Store Server Notifications**, and next to **Production Server URL**, click **Edit**.
 
-   [![](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)
+   <Image align="center" alt="" src="https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png" />
 2. Paste [the AppsFlyer server notifications endpoint copied from AppsFlyer](#21-copy-the-appsflyer-server-notifications-endpoint), select **Version 2 Notifications**, and click **Save**. **Note:** Version 1 notifications are no longer supported. If the notification-version selector does not appear in Apple Store Connect, it means you are already using Version 2.
 
-   [![](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)
+   <Image align="center" alt="" src="https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png" />
 3. In the **App Information** section, scroll to **App Store Server Notifications**, and next to **Sandbox Server URL**, click **Edit**.
 
-   [![](https://files.readme.io/fffd184969c2b29d8dfbb7acdcc53482e47ca7da506b44ab5aa65f3328ca21bb-42158608093969.png)](https://files.readme.io/fffd184969c2b29d8dfbb7acdcc53482e47ca7da506b44ab5aa65f3328ca21bb-42158608093969.png)
+   <Image align="center" alt="" src="https://files.readme.io/fffd184969c2b29d8dfbb7acdcc53482e47ca7da506b44ab5aa65f3328ca21bb-42158608093969.png" />
 4. Paste [the AppsFlyer server notifications endpoint copied from AppsFlyer](#21-copy-the-appsflyer-server-notifications-endpoint), select **Version 2 Notifications**, and click **Save**. **Note:** Version 1 notifications are no longer supported. If the notification-version selector does not appear in Apple Store Connect, it means you are already using Version 2.
 
-   [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
+   <Image align="center" alt="" src="https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png" />
 
 </Accordion>
 
@@ -305,18 +305,18 @@ To forward server notifications from your endpoint to AppsFlyer, follow these st
 
 1. In **App Store Connect**, in the **App Information** section, scroll to **App Store Server Notifications**, and next to **Production Server URL**, click **Edit**.
 
-   [![](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)
+   <Image align="center" alt="" src="https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png" />
 2. Paste **your server endpoint URL**.
 
-   [![](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)
+   <Image align="center" alt="" src="https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png" />
 3. Select **Version 2 Notifications. Note:** Version 1 notifications are **no longer supported**. If the notification-version selector does not appear in Apple Store Connect, it means you are already using Version 2.
 4. Click **Save**.
 5. In **App Store Connect**, in the **App Information** section, scroll to **App Store Server Notifications**, and next to **Sandbox Server URL**, click **Edit**.
 
-   [![](https://files.readme.io/fffd184969c2b29d8dfbb7acdcc53482e47ca7da506b44ab5aa65f3328ca21bb-42158608093969.png)](https://files.readme.io/fffd184969c2b29d8dfbb7acdcc53482e47ca7da506b44ab5aa65f3328ca21bb-42158608093969.png)
+   <Image align="center" alt="" src="https://files.readme.io/fffd184969c2b29d8dfbb7acdcc53482e47ca7da506b44ab5aa65f3328ca21bb-42158608093969.png" />
 6. Paste **your server endpoint URL**.
 
-   [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
+   <Image align="center" alt="" src="https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png" />
 7. Select **Version 2 Notifications. Note:** Version 1 notifications are **no longer supported**.
 8. Click **Save**.
 9. Configure your backend to forward Apple server notifications to the AppsFlyer notification endpoint URL. The requests must match the App Store payload exactly as received from Apple, see <Anchor target="_blank" href="https://developer.apple.com/documentation/appstoreserverapi/signedpayload#discussion">Apple format requirements</Anchor>.
@@ -362,16 +362,16 @@ To receive in-app purchase and subscription revenue data from Google Play, selec
 2. Copy the AppsFlyer topic to the clipboard.
 3. In **Google Play Console** > **Home**, select to view your app. The dashboard opens.
 
-   [![](https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png)](https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png)
+   <Image align="center" alt="" src="https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png" />
 4. Go to **Monetize with Play** > **Monetization setup**, and in the **Google Play Billing** section, make sure **Enable real-time notification** is checked.
 
-   [![](https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png)](https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png)
+   <Image align="center" alt="" src="https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png" />
 5. In the **Topic name** field, paste the AppsFlyer topic address you copied.
 
-   [![](https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png)](https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png)
+   <Image align="center" alt="" src="https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png" />
 6. For **Notification content**, select **Subscriptions, voided purchases, and all one-time products**.
 
-   [![](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)
+   <Image align="center" alt="" src="https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png" />
 7. Click **Save Changes**. It can take time (sometimes even 24 hours) for this to take effect. Therefore, wait before testing.
 
 </Accordion>
@@ -394,43 +394,43 @@ If you want to set AppsFlyer as a subscriber to your existing PUB/SUB topic, con
 4. Copy the endpoint URL to the clipboard.
 5. In Google Cloud Platform, under your project, search for **Pub/Sub**.
 
-   [![](https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png)](https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png)
+   <Image align="center" alt="" src="https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png" />
 6. In **Pub/Sub** go to the **Topics** section, and verify you have a dedicated pub/sub topic for subscriptions.
 
-   [![](https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png)](https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png)
+   <Image align="center" alt="" src="https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png" />
 7. In **Pub/Sub,** go to the **Subscriptions** section, and click **Create Subscriptions**.
 
-   [![](https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png)](https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png)
+   <Image align="center" alt="" src="https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png" />
 8. Enter the **Subscription ID**.
 
-   [![](https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png)](https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png)
+   <Image align="center" alt="" src="https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png" />
 9. Select the relevant subscription pub/sub topic from the dropdown.
 
-   [![](https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png)](https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png)
+   <Image align="center" alt="" src="https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png" />
 10. For **Delivery type**, select **Push**.
 
-    [![](https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png)](https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png)
+    <Image align="center" alt="" src="https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png" />
 11. Paste the **Endpoint URL** that you copied from AppsFlyer.
 
-    [![](https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png)](https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png)
+    <Image align="center" alt="" src="https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png" />
 12. Under **Expiration period**, select **Never expire**.
 
-    [![](https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png)](https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png)
+    <Image align="center" alt="" src="https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png" />
 13. Click **Create**.
 
-    [![](https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png)](https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png)
+    <Image align="center" alt="" src="https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png" />
 14. Go to the **Subscriptions** section and click into the Topic name you want.
 
-    [![](https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png)](https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png)
+    <Image align="center" alt="" src="https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png" />
 15. Copy the topic name to the clipboard.
 
-    [![](https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png)](https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png)
+    <Image align="center" alt="" src="https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png" />
 16. In **Google Play Console**, go to **Monetize with Play** > **Monetization setup.** and in the **Google Play Billing** section, paste the topic name that you copied in the previous step in the Topic name field.
 
-    [![](https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png)](https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png)
+    <Image align="center" alt="" src="https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png" />
 17. For **Notification content**, select **Subscriptions, voided purchases, and all one-time products**.
 
-    [![](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)
+    <Image align="center" alt="" src="https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png" />
 18. Click **Save changes**. It can take time (sometimes even 24 hours) for this to take effect. Therefore, wait before testing.
 
 </Accordion>
@@ -443,7 +443,7 @@ To verify that Google Play real-time developer notifications (RTDN) are correctl
 
 1. Click **Send test notification**. This sends a test RTDN message to the Pub/Sub topic configured for AppsFlyer.
 
-   <Image alt="image (33).png" src="https://files.readme.io/4d7aa79eb963373223cfde1d32db16b739119a86d8d4f0cf6ce026d42a709bf3-42170040528657.png" width="1444px" />
+   <Image align="center" alt="image (33).png" src="https://files.readme.io/4d7aa79eb963373223cfde1d32db16b739119a86d8d4f0cf6ce026d42a709bf3-42170040528657.png" width="1444px" />
 2. Under **Google Play Billing**, locate the Topic name section.
 3. In the left menu, navigate to **Monetise with Play** → **Monetisation setup**.
 4. Go to the Google Play Console.
@@ -543,7 +543,7 @@ Ensure that every sandbox purchase event includes:
 
 * For iOS, make sure that under App Store Server Notifications in App Store connect, the AppsFlyer endpoint is configured as your **Sandbox Server URL**.
 
-  [![](https://files.readme.io/1d967de84fb2e506879e444cf04957556fc17b039a1b719467327afd18916fa6-42158637600785.png)](https://files.readme.io/1d967de84fb2e506879e444cf04957556fc17b039a1b719467327afd18916fa6-42158637600785.png)
+  <Image align="center" alt="" src="https://files.readme.io/1d967de84fb2e506879e444cf04957556fc17b039a1b719467327afd18916fa6-42158637600785.png" />
 
 **To test in-app purchase and subscription revenue**:
 
@@ -586,7 +586,7 @@ However, before the developer releases the new app version, make sure that:
 * The in-app events you want to capture as an in-app purchase or subscription aren't blocked by one of the Validation Rules you have configured in AppsFlyer.
 * Your developer should have any sandbox flags marked as false.
 
-[![](https://files.readme.io/1d967de84fb2e506879e444cf04957556fc17b039a1b719467327afd18916fa6-42158637600785.png)](https://files.readme.io/1d967de84fb2e506879e444cf04957556fc17b039a1b719467327afd18916fa6-42158637600785.png)
+<Image align="center" alt="" src="https://files.readme.io/1d967de84fb2e506879e444cf04957556fc17b039a1b719467327afd18916fa6-42158637600785.png" />
 
 Once the app with the SDK connector is released, <Anchor target="_blank" href="/marketers/vi/docs/about-roi360-store-revenue#iaprelated-events-and-parameters">in-app purchase</Anchor> and <Anchor target="_blank" href="/marketers/vi/docs/about-roi360-store-revenue#subscriptionrelated-events-and-parameters">subscription events</Anchor> will be generated and made available across all AppsFlyer dashboards, as well as in aggregated and raw data reports, including <Anchor target="_blank" href="/marketers/vi/docs/revenue-etl-reports">Revenue ETL</Anchor>.
 

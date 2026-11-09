@@ -34,7 +34,7 @@ x-zendesk:
 
 The AppsFlyer SDK provides app installation and event recording functionality.
 
-![SDK_Integration.jpg](https://files.readme.io/11ef01abe55ae3d53d1a3756ffd24bf3262002c3970005cd70047c9d0665b5d1-360001586617.jpg)
+<Image align="center" alt="SDK_Integration.jpg" src="https://files.readme.io/11ef01abe55ae3d53d1a3756ffd24bf3262002c3970005cd70047c9d0665b5d1-360001586617.jpg" />
 
 You can record installs, updates, and sessions (by following the mandatory steps below), and also record additional in-app events beyond app installs (including in-app purchases, game levels, etc.) to evaluate ROI and user engagement levels.
 
@@ -46,7 +46,7 @@ You can record installs, updates, and sessions (by following the mandatory steps
 
 The Windows Universal SDK is installed via the NuGet Package Manager. To install the AppsFlyer Windows SDK via Nuget:
 
-[![](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)
+<Image align="center" alt="" src="https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png" />
 
 1. Right-click the project file.
 2. Click ***Manage NuGet Packages***.
@@ -60,11 +60,11 @@ If you choose to not use the NuGet package you can embed the AppsFlyer SDK into 
 2. Copy the AppsFlyerLib.winmd into your project.
 3. In Visual Studio, click ***Add Reference*** on the Universal Windows Platform project.
 
-[![](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)
+<Image align="center" alt="" src="https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png" />
 
 * Locate AppsFlyerLib.winmd and add it.
 
-[![](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)
+<Image align="center" alt="" src="https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png" />
 
 > 🚧 **Important!**
 >

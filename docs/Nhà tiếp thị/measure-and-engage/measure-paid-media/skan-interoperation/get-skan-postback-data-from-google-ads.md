@@ -75,10 +75,10 @@ Do phương thức báo cáo lượt nhấp chuột của Google và cập nhậ
 3. Tìm kiếm và chọn **Google Ads**.
 4. Chuyển đến tab **SKAN** .
 
-   <Image alt="mceclip0.png" src="https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png" width="309px" />
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png" width="309px" />
 5. Nếu **thông báo tạm thời không khả dụng xuất hiện**, đa phần các trường hợp đó có nghĩa là trình chặn quảng cáo đang hoạt động. Nếu vậy, hãy tắt trình chặn quảng cáo và tải lại trang. Nếu không, hãy liên hệ với bộ phận hỗ trợ của AppsFlyer.
 
-   ![mceclip1.png](https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png)
+   <Image align="center" alt="mceclip1.png" src="https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png" />
 6. Nhấp vào **Google Ads login**.
    * Bạn phải đăng nhập vào Google Ads với vai trò người dùng Quản trị viên trên tài khoản.
    * Nếu tài khoản Google được liên kết với nhiều ứng dụng, hãy đăng nhập một lần và tất cả các ứng dụng đều được cấp quyền. Nói cách khác, không cần phải cấp quyền trên cơ sở từng ứng dụng.
@@ -86,7 +86,7 @@ Do phương thức báo cáo lượt nhấp chuột của Google và cập nhậ
 7. Thực hiện theo các hướng dẫn trong giao diện người dùng.
 8. Trong một số trường hợp, bạn có thể được nhắc cấp cho AppsFlyer quyền **Quản lý chiến dịch AdWords.** Nếu vậy, bạn phải kích hoạt quyền. Đừng lo lắng, chúng tôi sẽ không thực hiện thay đổi đối với tùy chọn cài đặt chiến dịch của bạn.
 
-   [<Image alt="GoogleManageAdWords.png" src="https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png" width="182px" />](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)
+   <Image align="center" alt="GoogleManageAdWords.png" src="https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png" width="182px" />
 9. Kiểm tra đảm bảo rằng trạng thái tài khoản **waiting for sync** hiển thị.  
    Thông báo này vẫn tồn tại cho đến khi chúng tôi nhận được dữ liệu từ Google Ads (tối đa 24 giờ.)
 10. Đợi đến sau 02:00 UTC ngày hôm sau, sau đó xác minh rằng trạng thái chuyển sang **active.**  

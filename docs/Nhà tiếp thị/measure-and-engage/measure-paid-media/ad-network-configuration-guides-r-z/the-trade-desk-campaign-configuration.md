@@ -156,7 +156,7 @@ Trong lần truy cập đầu tiên, bạn sẽ cần bật nút bật/tắt **A
 
 The Trade Desk kết nối với AppsFlyer thông qua ID mạng duy nhất. Nếu bạn chưa có Tracker\_ID và advertiserid, bạn phải lấy chúng từ The Trade Desk để tiếp tục quá trình tích hợp.
 
-![TTD_General_Settings_.png](https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png)
+<Image align="center" alt="TTD_General_Settings_.png" src="https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png" />
 
 **Kích hoạt Phân bổ Lượt xem**
 
@@ -166,7 +166,7 @@ Bật **Enable View-Through attribution** để phân bổ lượt cài đặt l
 
 #### Postback Mặc định
 
-![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
+<Image align="center" alt="default_postbacks_en-us.png" src="https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png" />
 
 Gửi bài đăng lại tự động đến The Trade Desk sau lượt cài đặt và thu hút lại của người dùng. Sử dụng phần này để xác định nguồn của người dùng cho phép gửi các bài đăng lại này:
 
@@ -185,7 +185,7 @@ Gửi bài đăng lại tự động đến The Trade Desk sau lượt cài đ�
 
 Ánh xạ các sự kiện AppsFlyer với TTD qua các bài đăng lại.Nếu bật tính năng gửi đăng lại, điều này bao gồm các sự kiện trong ứng dụng bị từ chối (các sự kiện bị Protect360 chặn hoặc các sự kiện bị phát hiện là không tuân thủ theo quy tắc xác thực mục tiêu).
 
-![the_trade_desk_in_app_event_settings_en-us.png](https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png)
+<Image align="center" alt="the_trade_desk_in_app_event_settings_en-us.png" src="https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png" />
 
 **Để cấu hình đăng lại sự kiện trong ứng dụng**
 
@@ -220,7 +220,7 @@ Việc thêm thông số vào đường dẫn phân bổ này cho phép bạn th
 
 Chọn thông số bạn muốn thêm vào đường dẫn phân bổ.
 
-![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+<Image align="center" alt="ttd_attribution_link_parameters_en-us.png" src="https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png" />
 
 <div id="default-parameters" />
 
@@ -251,7 +251,7 @@ Bạn có thể đo lưu lượng CTV với AppsFlyer bằng cách thêm các th
 
 #### Phân bổ lượt nhấp qua
 
-![click-through_attribution_ttd_en-us.png](https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png)
+<Image align="center" alt="click-through_attribution_ttd_en-us.png" src="https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png" />
 
 Sử dụng thanh trượt để đặt thời gian tối đa từ khi nhấp đến lúc cài đặt. Chỉ các lượt cài đặt (lần khởi chạy đầu tiên) diễn ra trong khung thời gian xem lại mới được phân bổ.
 
@@ -267,7 +267,7 @@ Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/set-up-l
 
 #### Phân bổ lượt xem qua
 
-![view-through_attribution_ttd_en-us.png](https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png)
+<Image align="center" alt="view-through_attribution_ttd_en-us.png" src="https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png" />
 
 Thanh trượt này cho phép bạn đặt thời gian tối đa từ khi hiển thị tới cài đặt. Chỉ các lượt cài đặt (lần khởi chạy đầu tiên) diễn ra trong khung thời gian xem lại này, sau một lượt hiển thị quảng cáo, mới được phân bổ cho đối tác, miễn là không có lượt nhấp quảng cáo có liên quan khác.
 
@@ -303,7 +303,7 @@ Doanh thu quảng cáo không khả dụng đối với The Trade Desk.
 
 Trong thẻ này, bạn có thể chọn các quyền để cấp cho The Trade Desk, cho dù chúng hoạt động như một mạng quảng cáo, đại lý hay thậm chí cả hai. Lưu ý rằng ngay cả khi tính năng phân bổ bị vô hiệu hóa đối với The Trade Desk, thẻ quyền vẫn có thể hoạt động và bạn có thể cấp quyền kiểm soát cho The Trade Desk.
 
-![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
+<Image align="center" alt="" src="https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png" />
 
 Sử dụng các nút chuyển đổi này để cấp quyền cho mạng quảng cáo xử lý cấu hình riêng cho ứng dụng của bạn:
 

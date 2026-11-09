@@ -84,7 +84,7 @@ Cả hai phương pháp đều hữu ích với các nhà quảng, nhưng với 
 
 **Hoạt động**: Tưởng tượng bạn xem một chuyến tàu đi qua. Khi tàu đi qua, bạn chỉ thấy những hành động mà các hành khách trên tàu thực hiện khi họ đi ngang qua. Đây là dữ liệu hoạt động.
 
-<Image alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
+<Image align="center" alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
 
 **LTV**: Bây giờ hãy tưởng tượng, rằng bạn lên tàu với tư cách là một người quan sát. Chiếc tàu được chia thành các toa chở khách.
 
@@ -92,7 +92,7 @@ Cả hai phương pháp đều hữu ích với các nhà quảng, nhưng với 
 * Trong suốt chuyến hành trình, bạn có thể quan sát được tất cả các hành động mà các hành khách trên toa thực hiện. Bạn có thể quan sát hành động của tất cả hành khách trong toa cho đến khi một hành khách xuống tàu, đây là hoạt động gỡ cài đặt.
 * Bạn không thể xem hành động của hành khách trên các toa tàu khác vì họ đã lên tàu trước hoặc sau bạn. Và đây là LTV.
 
-<Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
+<Image align="center" alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
 
 ## Bảng điều khiển AppsFlyer—LTV hay hoạt động?
 
@@ -106,7 +106,7 @@ Hãy khám phá dữ liệu nào là LTV và dữ liệu là Hoạt động.
 * Số liệu khả dụng: Điểm tiếp xúc, lượt cài đặt, tỷ lệ chuyển đổi và doanh thu LTV
 * Biểu đồ: Xu hướng thu hút sử dụng, lượt cài đặt, người dùng trung thành trọn đời và doanh thu trọn đời
 
-[![](https://files.readme.io/5e9d7025c7d8b3ca11270cabd348cba3ffa166df674548803b84efb4b11ab6ab-115014844503.png)](https://files.readme.io/5e9d7025c7d8b3ca11270cabd348cba3ffa166df674548803b84efb4b11ab6ab-115014844503.png)
+<Image align="center" alt="" src="https://files.readme.io/5e9d7025c7d8b3ca11270cabd348cba3ffa166df674548803b84efb4b11ab6ab-115014844503.png" />
 
 Phần dưới cùng của bảng điều khiển tổng quan chứa dữ liệu sự kiện bổ sung, cũng ở dạng LTV.
 
@@ -120,7 +120,7 @@ Trong bảng **Báo cáo hiệu suất tổng hợp**, các cột sau đây là 
 * Lượt gỡ cài đặt (số lượng và tỷ lệ)
 * Tất cả các cột sự kiện trong ứng dụng
 
-[![](https://files.readme.io/508f2388e5671fe00181a050a7a7cce1064e3a68470fea1b91b89647c76a9e2d-115014673026.png)](https://files.readme.io/508f2388e5671fe00181a050a7a7cce1064e3a68470fea1b91b89647c76a9e2d-115014673026.png)
+<Image align="center" alt="" src="https://files.readme.io/508f2388e5671fe00181a050a7a7cce1064e3a68470fea1b91b89647c76a9e2d-115014673026.png" />
 
 Widget **Sự kiện hàng đầu** cũng là dữ liệu LTV.
 
@@ -130,7 +130,7 @@ Widget **Sự kiện hàng đầu** cũng là dữ liệu LTV.
 
 Tất cả dữ liệu trong trang này, được truy cập từ widget **Top Events** (Sự kiện hàng đầu) hoặc từ liên kết **Events** (Sự kiện) trên thanh bên trái, là dữ liệu sự kiện LTV. Để được giải thích chi tiết hơn về Trang Sự kiện, nhấp vào đây .
 
-[![](https://files.readme.io/5d144a104c8bb0bdd287e916534f619fc2f8ad76f895803f61b69dc36a581fd2-115014673046.png)](https://files.readme.io/5d144a104c8bb0bdd287e916534f619fc2f8ad76f895803f61b69dc36a581fd2-115014673046.png)
+<Image align="center" alt="" src="https://files.readme.io/5d144a104c8bb0bdd287e916534f619fc2f8ad76f895803f61b69dc36a581fd2-115014673046.png" />
 
 </Accordion>
 
@@ -144,11 +144,11 @@ Tất cả dữ liệu trong trang này, được truy cập từ widget **Top E
 
 Ngay cả khi bạn chọn một ngày dữ liệu giữ chân người dùng, bạn có thể truy xuất dữ liệu phiên có giá trị nhiều ngày hoặc nhiều tuần chỉ liên quan đến các lượt cài đặt từ ngày đó, đó là KPI tuyệt vời cho chất lượng người dùng. LTV cổ điển. Nhấp vào liên kết để biết mô tả chi tiết hơn về Báo cáo giữ chân người dùng và <Anchor target="_blank" href="/marketers/vi/docs/cohort-and-retention-dashboard">Báo cáo đoàn hệ</Anchor>.
 
-[![](https://files.readme.io/e72add1e5b77439f0ba744cbf739846e4de8a03f3923dfd9b256c50b526402ae-115014673066.png)](https://files.readme.io/e72add1e5b77439f0ba744cbf739846e4de8a03f3923dfd9b256c50b526402ae-115014673066.png)
+<Image align="center" alt="" src="https://files.readme.io/e72add1e5b77439f0ba744cbf739846e4de8a03f3923dfd9b256c50b526402ae-115014673066.png" />
 
 Báo cáo nhóm người tương tự như báo cáo giữ chân nhưng có nhiều số liệu theo phiên hơn. Các số liệu, chẳng hạn như doanh thu, phiên và sự kiện trong ứng dụng đều là LTV.
 
-[![CohortForLTV_us-en.jpg](https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg)](https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg)
+<Image align="center" alt="CohortForLTV_us-en.jpg" src="https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg" />
 
 </Accordion>
 
@@ -156,7 +156,7 @@ Báo cáo nhóm người tương tự như báo cáo giữ chân nhưng có nhi�
 
 Dữ liệu sự kiện trong <Anchor target="_blank" href="/marketers/vi/docs/activity-dashboard">Activity dashboard</Anchor> được dựa trên các phiên và doanh thu và là **cơ sở hoạt động**. Có nghĩa là theo thời gian và liên quan đến người dùng ứng dụng hoạt động trong một phạm vi ngày đã xác định.
 
-[![Activity_us-en.jpg](https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg)](https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg)
+<Image align="center" alt="Activity_us-en.jpg" src="https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg" />
 
 </Accordion>
 
@@ -182,7 +182,7 @@ Báo cáo Sự kiện trong ứng dụng bị từ chối là dữ liệu **dự
 
 Cùng với trang Tổng quan của bảng điều khiển, tất cả dữ liệu của các sự kiện trên trang <Anchor target="_blank" href="/marketers/vi/docs/custom-dashboards">Bảng điều khiển tùy chỉnh</Anchor> đều **dựa trên LTV**.
 
-[![](https://files.readme.io/c9ee8de9a03e8ed64ec305b6de3ab235f7b1ca6a996478837d4c4d323ed911dc-115014844623.png)](https://files.readme.io/c9ee8de9a03e8ed64ec305b6de3ab235f7b1ca6a996478837d4c4d323ed911dc-115014844623.png)
+<Image align="center" alt="" src="https://files.readme.io/c9ee8de9a03e8ed64ec305b6de3ab235f7b1ca6a996478837d4c4d323ed911dc-115014844623.png" />
 
 </Accordion>
 

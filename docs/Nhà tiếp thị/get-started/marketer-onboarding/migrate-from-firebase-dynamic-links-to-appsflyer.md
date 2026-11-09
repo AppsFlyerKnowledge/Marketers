@@ -59,7 +59,7 @@ Before you begin, you'll need your:
 * <Anchor target="_blank" href="/marketers/vi/docs/adding-an-app-to-appsflyer">Add your app</Anchor> in AppsFlyer.
 * [Optional] Change the default 90-day <Anchor target="_blank" href="/marketers/vi/docs/set-up-re-attribution-window">re-attribution window</Anchor> to align with your definition of active users.
 
-![add](https://files.readme.io/7f7bab2277d0f45434618d28714c727ccbb9e414192b765dd22551bcbd5b0a37-16950840602769.png)
+<Image align="center" alt="add" src="https://files.readme.io/7f7bab2277d0f45434618d28714c727ccbb9e414192b765dd22551bcbd5b0a37-16950840602769.png" />
 
 </Accordion>
 

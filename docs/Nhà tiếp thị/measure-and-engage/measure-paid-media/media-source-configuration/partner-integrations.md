@@ -63,7 +63,7 @@ Có một số cách để khám phá các đối tác trên thị trường và
 * [Bộ lọc](/docs/partner-integrations#lọc-danh-sách-đối-tác) Danh sách đối tác
 * [Tìm kiếm](/docs/partner-integrations#tìm-hiểu-về-đối-tác) Dành cho đối tác cụ thể
 
-[![partner marketplace updated.png](https://support.appsflyer.com/hc/article_attachments/20378873828625)](https://support.appsflyer.com/hc/article_attachments/20378873828625)
+<Image align="center" alt="partner marketplace updated.png" src="https://support.appsflyer.com/hc/article_attachments/20378873828625" />
 
 ### Khám phá Thị trường đối tác
 
@@ -80,7 +80,7 @@ Có một số cách để khám phá các đối tác trên thị trường và
 
 #### Thẻ đối tác
 
-![google_meta.png](https://support.appsflyer.com/hc/article_attachments/20687080901009)
+<Image align="center" alt="google_meta.png" src="https://support.appsflyer.com/hc/article_attachments/20687080901009" />
 
 Duyệt qua thẻ đối tác để biết thông tin cơ bản về dịch vụ đối tác:
 
@@ -123,7 +123,7 @@ Sử dụng các bộ lọc ở đầu trang để tìm đối tác có liên qu
 
 ### Tìm kiếm đối tác
 
-![partner search3.png](https://support.appsflyer.com/hc/article_attachments/18891644678417)
+<Image align="center" alt="partner search3.png" src="https://support.appsflyer.com/hc/article_attachments/18891644678417" />
 
 Sử dụng thanh tìm kiếm trên Trung tâm đối tác để tìm các đối tác cụ thể. Khi sử dụng thanh tìm kiếm trong Thị trường đối tác:
 
@@ -189,7 +189,7 @@ AppsFlyer có thể giúp bạn kết nối với đối tác bằng cách thay 
 
 #### Hiệu suất của đối tác
 
-[![Partner performance page.png](https://support.appsflyer.com/hc/article_attachments/20440065104017)](https://support.appsflyer.com/hc/article_attachments/20440065104017)
+<Image align="center" alt="Partner performance page.png" src="https://support.appsflyer.com/hc/article_attachments/20440065104017" />
 
 Để giúp các nhà tiếp thị quyết định có nên tích hợp với đối tác hay không, phần này hiển thị các khía cạnh khác nhau trong số liệu hiệu suất của họ, cho biết mức độ chất lượng của họ.
 
@@ -253,7 +253,7 @@ Trước khi có thể thêm tích hợp mạng quảng cáo mới vào Thị tr
 
 1. Trong AppsFlyer, từ menu bên, chọn **Collaborate** > **Partner Marketplace**.
 2. Từ góc trên cùng bên phải của trang Thị trường đối tác, nhấp vào dấu 3 chấm và chọn **Mời đối tác mới**.   
-    [![invite_new_partner.png](https://support.appsflyer.com/hc/article_attachments/11264293319825)](https://support.appsflyer.com/hc/article_attachments/11264293319825)
+    <Image align="center" alt="invite_new_partner.png" src="https://support.appsflyer.com/hc/article_attachments/11264293319825" />
 3. Nhập tên của đối tác và địa chỉ email có liên quan.  
    Đối tác sẽ nhận được email có liên kết đăng ký để bắt đầu quá trình đăng ký.
 
@@ -287,7 +287,7 @@ Nhấp vào **Hiển thị tất cả** Mở **Tích hợp hoạt động** , n�
 
 #### Tích hợp tích cực
 
-[![active integratins page.png](https://support.appsflyer.com/hc/article_attachments/20439646101649)](https://support.appsflyer.com/hc/article_attachments/20439646101649)
+<Image align="center" alt="active integratins page.png" src="https://support.appsflyer.com/hc/article_attachments/20439646101649" />
 
 Các **Tích hợp hoạt động** trang hiển thị tất cả <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">hoạt động</Anchor> Đối tác tích hợp. Từ trang này, bạn có thể quản lý bất kỳ tiện ích tích hợp nào, tìm kiếm trong các đối tác đang hoạt động và tạo tiện ích tích hợp mới cho các đối tác chưa được kết nối với ứng dụng hiện được chọn. Các **Tích hợp hoạt động** Trang được chia thành hai phần:
 

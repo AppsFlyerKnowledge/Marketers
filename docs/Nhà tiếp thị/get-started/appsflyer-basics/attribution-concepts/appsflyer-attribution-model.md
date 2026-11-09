@@ -35,7 +35,7 @@ x-zendesk:
 ---
 > **Khái quát:** AppsFlyer xác định nguồn truyền thông thúc đẩy người dùng cài đặt hoặc thu hút lại với một ứng dụng và phân bổ hành động của người dùng cho nguồn đó bằng cách sử dụng mô hình phân bổ của AppsFlyer.
 
-[![Mobile_user_journey.png](https://support.appsflyer.com/hc/article_attachments/19544107641105)](https://support.appsflyer.com/hc/article_attachments/19544107641105)
+<Image align="center" alt="Mobile_user_journey.png" src="https://support.appsflyer.com/hc/article_attachments/19544107641105" />
 
 <div id="what-is-attribution" />
 
@@ -81,7 +81,7 @@ AppsFlyer sử dụng một số phương thức phân bổ được liệt kê 
 
 Các phương thức phân bổ được sử dụng theo mức độ ưu tiên được hiển thị trong bảng. Khi có lượt cài đặt mới, nếu có nhiều hơn một hành động thu hút hợp lệ, **AppsFlyer sẽ ưu tiên lượt nhấp thay vì lượt hiển thị và phương thức xác định hơn là phương pháp xác suất**.
 
-![Attribution method priorities 23.png](https://support.appsflyer.com/hc/article_attachments/19910400460561)
+<Image align="center" alt="Attribution method priorities 23.png" src="https://support.appsflyer.com/hc/article_attachments/19910400460561" />
 
 Xem mô tả chi tiết bên dưới về các mô hình phân bổ của AppsFlyer.
 
@@ -338,7 +338,7 @@ Khi một ứng dụng được sao lưu bằng iCloud và sau đó được kh�
 
 <Accordion title="Phân bổ Nhắm lại mục tiêu (Retargeting Attribution)">
 
-![Retargeting_-_Flow__2_.png](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="Retargeting_-_Flow__2_.png" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 Người dùng cài đặt lại ứng dụng trong <Anchor target="_blank" href="/marketers/vi/docs/set-up-re-attribution-window">khung thời gian phân bổ lại</Anchor> (90 ngày theo mặc định) được coi là phân bổ lại. Nếu lượt cài đặt này xảy ra sau khi thu hút với chiến dịch nhắm mục tiêu lại, thì lượt đó sẽ được ghi nhận dưới dạng lượt cài đặt lại nhắm mục tiêu lại hay còn gọi là phân bổ lại và được báo cáo trong <Anchor target="_blank" href="/marketers/vi/docs/retargeting-attribution-guide">nhắm mục tiêu lại</Anchor>.
 

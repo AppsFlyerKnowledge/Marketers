@@ -79,7 +79,7 @@ Trước khi nhà phát triển của bạn có thể cài đặt và tích hợ
 1. Trong AppsFlyer, đi tới **Configuration** (Cấu hình) > **App Settings** (Cài đặt của Ứng dụng).
 2. Sao chép dev key và gửi cho nhà phát triển ứng dụng thiết bị di động của bạn.
 
-   ![af_devkey.png](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
+   <Image align="center" alt="af_devkey.png" src="https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png" />
 3. Cung cấp cho nhà phát triển thiết bị di động các hướng dẫn <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">cài đặt</Anchor> và <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-integration">tích hợp SDK</Anchor>.
 
 <div id="attribution" />
@@ -180,7 +180,7 @@ Khi phân bổ xảy ra bằng cách sử dụng IDFA, quan trọng là IDFA ph�
 
 `waitForATTUserAuthorization` cho phép bạn định cấu hình thời gian SDK sẽ trì hoãn và chờ trạng thái ATT trước khi gửi dữ liệu đến máy chủ AppsFlyer.
 
-[![ATT-flowchart_en-us.png](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)
+<Image align="center" alt="ATT-flowchart_en-us.png" src="https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png" />
 
 Khi người dùng khởi chạy ứng dụng, trạng thái ATT là **notDetermined.** Trong thời gian chờ `waitForATTUserAuthorization`, SDK sẽ tạo hàng đợi sự kiện khởi chạy và các sự kiện trong ứng dụng liên tiếp trong bộ nhớ, tương tự như cách <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/in-app-events-sdk#offline-in-app-events">ghi nhận các sự kiện ngoại tuyến</Anchor>:
 

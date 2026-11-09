@@ -45,13 +45,13 @@ Default Postbacks
 
 AppsFlyer can send automatic postbacks to Baidu mDSP Ads (Baiyi) following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
-![baidu-mdsp-default-postbacks.png](https://files.readme.io/fdde731527468b9837efa2230c5416f3393024b8c4eec8b44339086a2f31b984-360002069005.png)
+<Image align="center" alt="baidu-mdsp-default-postbacks.png" src="https://files.readme.io/fdde731527468b9837efa2230c5416f3393024b8c4eec8b44339086a2f31b984-360002069005.png" />
 
 ### In-app events settings
 
 In this section, you can map your AppsFlyer events with Baidu mDSP Ads (Baiyi) via postbacks.
 
-![baidu-mdsp-in-app-events.png](https://files.readme.io/fa515fac11e82be11bb55bb9b198ac63681ecdb713f0f6537f4ca7bf0c60e5b1-360002069085.png)
+<Image align="center" alt="baidu-mdsp-in-app-events.png" src="https://files.readme.io/fa515fac11e82be11bb55bb9b198ac63681ecdb713f0f6537f4ca7bf0c60e5b1-360002069085.png" />
 
 1. Toggle In-App Event Postbacks to ON.
 2. Click **Add Event** to add an SDK Event to the list.
@@ -100,7 +100,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/vi/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
-![baidu-mdsp-click-through.png](https://files.readme.io/19f6616cc1e62ec8888a72625ce936acdb6e8e63e4a4cd4273cdc99fd2297a93-360002075089.png)
+<Image align="center" alt="baidu-mdsp-click-through.png" src="https://files.readme.io/19f6616cc1e62ec8888a72625ce936acdb6e8e63e4a4cd4273cdc99fd2297a93-360002075089.png" />
 
 ### Click attribution link
 
@@ -136,17 +136,17 @@ Permissions configuration is not available for Baidu mDSP Ads (Baiyi).
 
 Log in to Baidu mDSP Ads at http://baiyi.baidu.com/ and go to **Tool** >> **Apps**:
 
-![mDSP_4.png](https://files.readme.io/90f99229f6bffe9b9edbf0469f9b4e66ca9c5c55184eb542e250ef6a9bd76aee-115014006086.png)
+<Image align="center" alt="mDSP_4.png" src="https://files.readme.io/90f99229f6bffe9b9edbf0469f9b4e66ca9c5c55184eb542e250ef6a9bd76aee-115014006086.png" />
 
 Click **Create New App**.
 
-![mDSP_5.png](https://files.readme.io/c034e3238fbd6021fefc44ff8b1cf8b4d39c3f9043b02074c3bdccce2747ac48-115014006106.png)
+<Image align="center" alt="mDSP_5.png" src="https://files.readme.io/c034e3238fbd6021fefc44ff8b1cf8b4d39c3f9043b02074c3bdccce2747ac48-115014006106.png" />
 
 Enter all the relevant information in the fields.
 
 Add the AppsFlyer **Attribution Link in the box of Feedback URL**:
 
-![mDSP_6.png](https://files.readme.io/6692275131ee49b62febcb558457f7f1a1fbd167f3d3f61d976e1cb248a61388-115014006906.png)
+<Image align="center" alt="mDSP_6.png" src="https://files.readme.io/6692275131ee49b62febcb558457f7f1a1fbd167f3d3f61d976e1cb248a61388-115014006906.png" />
 
 ***NOTE***: For iOS Apps, add the app by entering the **Appid**. For Android Apps, add the app in two ways:  
 1. Connecting with the App that you have uploaded to Baidu Developer Platform ([http://app.baidu.com/](http://app.baidu.com/)), or  
@@ -158,10 +158,10 @@ Then click submit button at the end of the page.
 
 Click **Campaign Management** >> **Create New Campaign**:
 
-![mDSP_7.png](https://files.readme.io/aab8866a1969e403247c97018aae1d65d456ce4e261412035ef91a1862f509b9-115014006926.png)
+<Image align="center" alt="mDSP_7.png" src="https://files.readme.io/aab8866a1969e403247c97018aae1d65d456ce4e261412035ef91a1862f509b9-115014006926.png" />
 
 In section **2. Set Up Ad Unit** >> Process to **Objectives**, choose App Install >> Complete other related information and submit the Ad campaign for verification:
 
-![mDSP_8.png](https://files.readme.io/da064e6811b4c749a20757d711186dc705070629887cdf2e7b514cc17274af75-115014006946.png)
+<Image align="center" alt="mDSP_8.png" src="https://files.readme.io/da064e6811b4c749a20757d711186dc705070629887cdf2e7b514cc17274af75-115014006946.png" />
 
 <div data-zendesk-anchors="h_01HKW6TN4YBTMR1ZDH77D7SK7N=setting-up-baidu-mdso-ads-baiyi h_01HKW6TN4YM927W1VAKNWFQ0SJ=integration-tab h_01HKW6TN4Y4EXABZTJ2VE4QRTK=activate-partner inapp-events-settings=in-app-events-settings h_01HKW6TN4YYDKNGCSJB4MARK52=in-app-events-settings h_01HKW6TN4Y2D2K419172AZJXR6=attribution-link-tab h_01HKW6TN4YQTMGSMPGR01FR658=attribution-link-parameters clickthrough-attribution=click-through-attribution h_01HKW6TN4Y9ZP7SXMTD0XGNPGV=click-through-attribution h_01HKW6TN4Y5A1PT6RCVCFYRG9Q=click-attribution-link h_01HKW6TN4Z02V726B7379TMBC0=cost-tab h_01HKW6TN4Z01YZWHMGF5N1KC50=ad-revenue-tab h_01HKW6TN4Z3KCEFDW9YA2A2BZV=permissions-tab h_01HKW6TN4ZWEA7683C8MFAT4AY=create-conversion-rule-at-baidu-mdsp-ads" />

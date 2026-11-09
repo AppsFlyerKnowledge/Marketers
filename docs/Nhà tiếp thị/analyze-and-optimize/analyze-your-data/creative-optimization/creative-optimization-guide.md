@@ -25,7 +25,7 @@ x-zendesk:
 
 > **Sơ lược:** Creative Optimization cho phép bạn kéo tất cả các dữ liệu về nội dung mục sáng tạo từ tất cả các chiến dịch của mình vào một nền tảng duy nhất, để bạn có thể phân tích hiệu suất của chúng, khám phá hiệu suất của mục sáng tạo nào là tốt nhất và ra quyết định dựa trên dữ liệu tốt hơn.
 
-[![Main KB image 2023-11-14_10-07-47.jpg](https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg)](https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg)
+<Image align="center" alt="Main KB image 2023-11-14_10-07-47.jpg" src="https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg" />
 
 **<span id="about-creative-optimization"></span><span id="overview"></span>Các bài viết liên quan:** <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-overview-dashboard">Creative Optimization—Bảng điều khiển Tổng quan</Anchor> | <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-discovery-ai-dashboard">Creative Optimization—Bảng điều khiển Khám phá</Anchor> | <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-partner-integrations">Creative Optimization—tích hợp đối tác</Anchor> | <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-etl-reporting">Creative Optimization—Báo cáo ETL</Anchor>
 
@@ -111,7 +111,7 @@ Meta Advantage+ (mục sáng tạo động) và Google Universal App Campaigns (
 >
 > Giả sử có một mục sáng tạo quảng cáo trên Facebook có nhiều nội dung. Nội dung A có 60 lượt cài đặt và Nội dung B có 40 lượt cài đặt. Trong AppsFlyer, mục sáng tạo quảng cáo có 50 lượt cài đặt. AppsFlyer phân phối dữ liệu hiệu suất (số lần hiển thị, số lần nhấp, số lượt cài đặt, chi phí và doanh thu) dựa trên tỷ lệ số liệu từ tổng số. Vì vậy, đối với Nội dung A có 60/(60+40)=0,6*50=30 lượt cài đặt và đối với Nội dung B có 40/(60+40)=0,4*50=20 lượt cài đặt. Các chỉ số ở kênh dưới, chẳng hạn như Doanh thu và ROAS, được tính toán dựa trên tỷ lệ cài đặt.
 >
-> ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
+> <Image align="center" alt="Creative_data_example_en-us.png" src="https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png" />
 
 </Accordion>
 
@@ -123,7 +123,7 @@ Meta Advantage+ (mục sáng tạo động) và Google Universal App Campaigns (
 
 Phần này cung cấp thông tin tổng quan toàn diện về các bộ lọc bảng điều khiển chính cũng như các số liệu và phương diện khác nhau có sẵn để nhận dữ liệu mục sáng tạo mà bạn đang tìm kiếm. 
 
-[![Filter bar and metrics New.jpg](https://files.readme.io/f2fbccaefa76bd5c9543902a2b670ee67c9edd6271fab141083ddd6f331fe138-20126434102801.jpg)](https://files.readme.io/f2fbccaefa76bd5c9543902a2b670ee67c9edd6271fab141083ddd6f331fe138-20126434102801.jpg)
+<Image align="center" alt="Filter bar and metrics New.jpg" src="https://files.readme.io/f2fbccaefa76bd5c9543902a2b670ee67c9edd6271fab141083ddd6f331fe138-20126434102801.jpg" />
 
 <div id="filter-bar" />
 
@@ -131,7 +131,7 @@ Phần này cung cấp thông tin tổng quan toàn diện về các bộ lọc 
 
 Bước đầu tiên để thiết lập bảng điều khiển là chọn các tùy chọn lọc. Tất cả các bộ lọc được áp dụng cho cả bảng điều khiển Tổng quan và bảng điều khiển Khám phá.
 
-[![filter_bar.jpg](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)
+<Image align="center" alt="filter_bar.jpg" src="https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg" />
 
 Bắt đầu bằng cách chọn:
 
@@ -160,7 +160,7 @@ Dữ liệu mục sáng tạo trong bảng điều khiển được thể hiện
 * **Chuyển đổi Người dùng** - Chỉ hiển thị dữ liệu mục sáng tạo được liên kết với quảng cáo/bộ quảng cáo UA.
 * **Nhắm mục tiêu lại** - Chỉ hiển thị dữ liệu mục sáng tạo được liên kết với quảng cáo/bộ quảng cáo nhắm mục tiêu lại. Dữ liệu chi phí cũng có sẵn ở đây.
 
-[![View_types.jpg](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)
+<Image align="center" alt="View_types.jpg" src="https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg" />
 
 </Accordion>
 
@@ -228,7 +228,7 @@ Tạo số liệu tùy chỉnh để đánh giá hiệu suất mục sáng tạo
 
 1. Nhấp vào menu thả xuống ở phía trên bên phải của bảng điều khiển và chọn **Custom metrics**
 
-![Custom_metric_select.jpg](https://files.readme.io/99ca0ee30d09e42ef2798188e8d95fc4cf56ee31ad055209efadc47c9df8a859-18564742772625.jpg)
+<Image align="center" alt="Custom_metric_select.jpg" src="https://files.readme.io/99ca0ee30d09e42ef2798188e8d95fc4cf56ee31ad055209efadc47c9df8a859-18564742772625.jpg" />
 
 2. **Điền vào biểu mẫu:**
 
@@ -240,7 +240,7 @@ Tạo số liệu tùy chỉnh để đánh giá hiệu suất mục sáng tạo
   * Kết hợp với nhiều *Toán tử, Số* và/hoặc *Sự kiện trong ứng dụng*
   * Các sự kiện trong ứng dụng cụ thể được chọn từ menu thả xuống. Đối với mỗi sự kiện trong ứng dụng, bạn có thể thêm riêng bất kỳ số liệu nào cho mỗi sự kiện để nhận được thông tin chi tiết cụ thể, ví dụ: doanh thu af\_purchase + số lượng af\_login.
 
-<Image alt="Custom_metrics_form.jpg" src="https://files.readme.io/2fdbcd2e8fcc17b6a47fd3ae252d03b1eec5099400ed46855b3b4ae83a4c8e00-18564718424209.jpg" width="625px" />
+<Image align="center" alt="Custom_metrics_form.jpg" src="https://files.readme.io/2fdbcd2e8fcc17b6a47fd3ae252d03b1eec5099400ed46855b3b4ae83a4c8e00-18564718424209.jpg" width="625px" />
 
 3. Nhấp vào **Save**
 
@@ -257,7 +257,7 @@ Bạn cũng có thể dễ dàng chỉnh sửa hoặc xóa số liệu tùy ch�
 
 1. Nhấp vào menu thả xuống **Edit existing custom metric** (trên biểu mẫu **Số liệu tùy chỉnh** ) và chọn số liệu bạn muốn chỉnh sửa.
 
-<Image alt="Edit_cstom_metric_full_window.jpg" src="https://files.readme.io/26a33b98ded52599d420be3860c6129b7c748ef0867bcffc351ad1c526641c97-18564744997905.jpg" width="623px" />
+<Image align="center" alt="Edit_cstom_metric_full_window.jpg" src="https://files.readme.io/26a33b98ded52599d420be3860c6129b7c748ef0867bcffc351ad1c526641c97-18564744997905.jpg" width="623px" />
 
 2. Thực hiện bất kỳ thay đổi nào bạn muốn, sau đó nhấp vào **Save**
 
@@ -265,7 +265,7 @@ Bạn cũng có thể dễ dàng chỉnh sửa hoặc xóa số liệu tùy ch�
 
 **Để xóa:** Sau khi chọn số liệu tùy chỉnh bạn muốn xóa từ menu thả xuống, hãy nhấp vào biểu tượng xóa.
 
-<Image alt="Delete_custom_metric.jpg" src="https://files.readme.io/185b9c3f071518ff2da549b6c34c4ddfecf12bc442b2f7990eb11f04fae10925-18564742779921.jpg" width="514px" />
+<Image align="center" alt="Delete_custom_metric.jpg" src="https://files.readme.io/185b9c3f071518ff2da549b6c34c4ddfecf12bc442b2f7990eb11f04fae10925-18564742779921.jpg" width="514px" />
 
 </Accordion>
 
@@ -311,7 +311,7 @@ Số liệu của đối tác hiện khả dụng cho các đối tác sau:
 
 Chỉ cần thêm tích hợp đối tác mới và số liệu dành cho đối tác được hỗ trợ sẽ tự động được đưa vào Mục quảng cáo (Unity Ads là một ngoại lệ và có hướng dẫn đặc biệt). Sau khi thiết lập, các số liệu này được biểu thị bằng "Đối tác" bên cạnh số liệu đó.
 
-![partner metrics image.jpg](https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg)
+<Image align="center" alt="partner metrics image.jpg" src="https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg" />
 
 **Hướng dẫn và lưu ý đặc biệt:**
 
@@ -357,13 +357,13 @@ Chỉ cần thêm tích hợp đối tác mới và số liệu dành cho đối
 
 1. Từ bảng điều khiển Creative Optimization, hãy nhấp vào biểu tượng  ⋮  ở phía trên bên phải để truy cập **Creative integrations**.
 
-![3 dots icon.jpg](https://files.readme.io/ed1f8ac5cee987a10a81b70c97e88a04897a6102c61ee4a0c87fde0a658354e0-18564744949393.jpg)
+<Image align="center" alt="3 dots icon.jpg" src="https://files.readme.io/ed1f8ac5cee987a10a81b70c97e88a04897a6102c61ee4a0c87fde0a658354e0-18564744949393.jpg" />
 
 2. Nhấp vào **+Add new integration**.
 
 3. Chọn **Unity Ads** trong danh sách thả xuống **Partner** .
 
-<Image alt="New integration - Unity Ads.jpg" src="https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg" width="493px" />
+<Image align="center" alt="New integration - Unity Ads.jpg" src="https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg" width="493px" />
 
 4. Nhập Unity **Key ID**, **Secret Key** và **Organization Core ID** cho tích hợp (xem hướng dẫn tích hợp đối tác ở trên để biết cách nhập).
 
@@ -376,7 +376,7 @@ Chỉ cần thêm tích hợp đối tác mới và số liệu dành cho đối
 a. Đăng nhập vào nền tảng Unity Gaming Services của bạn.  
 b. Nhấp vào **Tăng trưởng** ở bảng điều khiển bên trái.
 
-<Image alt="Partner metrics -Unity Ads - get API key.jpg" src="https://files.readme.io/d4b546bc3a67bff7e64971f65c7c3169a038d7f99ef57ff8a8dd1b3048249148-18564702173969.jpg" width="353px" />  
+<Image align="center" alt="Partner metrics -Unity Ads - get API key.jpg" src="https://files.readme.io/d4b546bc3a67bff7e64971f65c7c3169a038d7f99ef57ff8a8dd1b3048249148-18564702173969.jpg" width="353px" />
 c. Chọn **API management**.  
 d. Nhấp vào **Create** (hoặc **Regenerate**) để tạo khóa API.  
 e. Sao chép và dán khóa vào cửa sổ tích hợp mới Creative Optimization.
@@ -385,11 +385,11 @@ e. Sao chép và dán khóa vào cửa sổ tích hợp mới Creative Optimizat
 
 1. Trong **Suites** (trên menu bên trái), nhấp vào **Growth** > **Settings**
 
-<Image alt="click_Groth_then_Settings.jpg" src="https://files.readme.io/fd2d9266ff5eaad3212c1b0ff7d7f1d9f27535d04aa640e6d3e98ffe0b46192f-18564718389649.jpg" width="325px" />
+<Image align="center" alt="click_Groth_then_Settings.jpg" src="https://files.readme.io/fd2d9266ff5eaad3212c1b0ff7d7f1d9f27535d04aa640e6d3e98ffe0b46192f-18564718389649.jpg" width="325px" />
 
 2. Sao chép **ID của tổ chức**
 
-<Image alt="Unity - tìm ID tổ chức.jpg" src="https://files.readme.io/2cab075ad07eec5d0acdadea27400133dd5edff168c2728e1f624132158a47cf-18564718445969.jpg" width="455px" />
+<Image align="center" alt="Unity - tìm ID tổ chức.jpg" src="https://files.readme.io/2cab075ad07eec5d0acdadea27400133dd5edff168c2728e1f624132158a47cf-18564718445969.jpg" width="455px" />
 
 <div id="share-view-url" />
 
@@ -425,7 +425,7 @@ Bạn có thể tạo nhiều chế độ xem cũng như chỉnh sửa và xóa 
 
 Nhấp vào biểu tượng ở phía trên bên phải trang tổng quan để sao chép URL trang, sau đó chia sẻ.
 
-<Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
+<Image align="center" alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
 
 </Accordion>
 
@@ -461,7 +461,7 @@ Quy trình tải xuống và tải lên tệp CSV được mô tả dưới đâ
 
 1. Nhấp vào<Image alt="3_dots_icon.png" src="https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png" width="16px" />menu ở góc trên cùng bên phải của trang tổng quan.  
 
-   ![Main menu highlighted.jpg](https://files.readme.io/9461227252c0e9100b43f2a7fbecbea803effd4f9ab2f5d903810ce682b11240-20126844522641.jpg)
+   <Image align="center" alt="Main menu highlighted.jpg" src="https://files.readme.io/9461227252c0e9100b43f2a7fbecbea803effd4f9ab2f5d903810ce682b11240-20126844522641.jpg" />
 2. Nhấp vào **Tải xuống tệp thẻ tùy chỉnh**.
 3. Chọn những mục quảng cáo bạn muốn đưa vào tệp (tất cả các quảng cáo hoặc chỉ những quảng cáo hiện được hiển thị trên trang tổng quan - ngoại trừ những quảng cáo đã được lọc ra).
 4. Nhấp vào **Download**.
@@ -486,7 +486,7 @@ Dữ liệu sẽ khả dụng trong khoảng 30 phút.
 
 Dưới đây là ví dụ về tệp CSV phương diện tùy chỉnh (mà bạn tải xuống từ trang tổng quan). Mỗi tiêu đề cột (ở hàng 1) là tên của thứ nguyên tùy chỉnh (ví dụ: “Chủ đề” hoặc "Biến thể"). Bạn có thể thêm các kích thước bổ sung hoặc thay đổi các kích thước hiện có. Bạn cũng có thể thêm hoặc thay đổi thẻ (ví dụ: “3 Moves” hoặc “DarkPalette”).
 
-[![Screen_Shot_2022-08-08_at_16.25.23.png](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)
+<Image align="center" alt="Screen_Shot_2022-08-08_at_16.25.23.png" src="https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png" />
 
 </Accordion>
 
@@ -496,7 +496,7 @@ Dưới đây là ví dụ về tệp CSV phương diện tùy chỉnh (mà bạ
 
 * Phương diện tùy chỉnh xuất hiện cùng với thẻ “Custom” trong bộ lọc và bảng.
 
-<Image alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
+<Image align="center" alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
 
 * Bạn có thể thêm tối đa 15 phương diện tùy chỉnh vào bảng điều khiển Creative Optimization.
 * Kích thước tệp tải lên được giới hạn ở 1 MB.
@@ -529,7 +529,7 @@ Bạn có thể tạo thẻ tùy chỉnh dựa trên quy ước đặt tên nộ
 
 Cửa sổ **Quản lý thẻ quy ước tên** sẽ xuất hiện.
 
-<Image alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
+<Image align="center" alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
 
 2. Trong phần **Tạo loại quy ước tên mới**, nhập thông tin chi tiết:
 

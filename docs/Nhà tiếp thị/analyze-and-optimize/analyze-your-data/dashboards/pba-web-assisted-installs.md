@@ -24,7 +24,7 @@ x-zendesk:
 
 **Trường hợp sử dụng Lượt cài đặt được Web Hỗ trợ**
 
-![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
+<Image align="center" alt="web_to_app_image.png" src="https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png" />
 
 Tìm hiểu thêm về các bảng điều khiển PBA khác: <Anchor target="_blank" href="/marketers/vi/docs/pba-website-attribution-dashboard">Phân bổ Trang web</Anchor> | Đường dẫn chuyển đổi
 
@@ -40,7 +40,7 @@ Lượt cài đặt được Web Hỗ trợ đo lường tác động của các
 
 Số liệu dạng tiêu đề hiển thị tổng số lượt cài đặt ứng dụng so với số lượt cài đặt được web hỗ trợ chia cho lượt cài đặt ứng dụng tự nhiên và không tự nhiên.
 
-[![WAIHeadline_en-us.png](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)
+<Image align="center" alt="WAIHeadline_en-us.png" src="https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png" />
 
 Xem xét các trường hợp sử dụng, trong bảng sau đây, để phân tích Lượt cài đặt được Web Hỗ trợ.
 
@@ -64,7 +64,7 @@ Xem xét các trường hợp sử dụng, trong bảng sau đây, để phân t
 
 <Accordion title="Lượt cài đặt và cài đặt lại được trang web hỗ trợ">
 
-![30day_us-en.png](https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png)
+<Image align="center" alt="30day_us-en.png" src="https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png" />
 
 Các lượt cài đặt được coi là đã bị ảnh hưởng bởi một trang web nếu chúng xảy ra trong vòng 30 ngày kể từ ngày truy cập trang web. Lượt cài đặt và cài đặt lại bao gồm lượt cài đặt nhắm mục tiêu lại (phân bổ lại) có thể là tự nhiên hoặc không tự nhiên.
 

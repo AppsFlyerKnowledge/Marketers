@@ -23,7 +23,7 @@ x-zendesk:
 
 ## Overview
 
-[![New-My-apps.jpg](https://files.readme.io/df286b15b469cb78093b3d2517f64f61246396bedf44932b5a344ac360242e19-small-27448775025937.jpg)](https://files.readme.io/df286b15b469cb78093b3d2517f64f61246396bedf44932b5a344ac360242e19-small-27448775025937.jpg)
+<Image align="center" alt="New-My-apps.jpg" src="https://files.readme.io/df286b15b469cb78093b3d2517f64f61246396bedf44932b5a344ac360242e19-small-27448775025937.jpg" />
 
 Explore the actions and functionalities available on the My Apps page:
 

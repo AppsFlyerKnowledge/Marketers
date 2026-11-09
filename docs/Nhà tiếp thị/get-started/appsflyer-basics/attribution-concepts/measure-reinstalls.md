@@ -98,7 +98,7 @@ Trường hợp sau đây sẽ xảy ra:
 
 ### Tổng quan
 
-[![](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg" />
 
 Các sự kiện trong ứng dụng do người dùng thực hiện sau khi cài đặt lại sẽ là tự nhiên và được phân bổ hoặc không tự nhiên và được phân bổ hoặc tự nhiên và không được phân bổ tùy thuộc vào trạng thái **phân bổ Sự kiện hậu cài đặt lại** (xem bên dưới).
 
@@ -174,7 +174,7 @@ Một người dùng cài đặt ứng dụng (ngày 0), mua hàng với giá 10
 
 Ngày hôm sau (ngày 1), người dùng cài đặt lại ứng dụng và có giao dịch mua 5 USD.
 
-![Reinstall_1.jpg](https://files.readme.io/7e8eccb3a6873b42a1d8503c0f027386728adb2eecbe457451d2e37c0a7b6774-10225445609873.jpg)
+<Image align="center" alt="Reinstall_1.jpg" src="https://files.readme.io/7e8eccb3a6873b42a1d8503c0f027386728adb2eecbe457451d2e37c0a7b6774-10225445609873.jpg" />
 
 Vì người dùng đã có giao dịch mua trước khi cài đặt lại nên sẽ không cộng thêm một người dùng duy nhất nữa.
 

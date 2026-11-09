@@ -159,7 +159,7 @@ Perform the next steps in Meta Ads Manager.
 
 1. Under **Destination,** in the **Website URL** field, enter the URL that serves as the destination for your ad. The URL should be for one of the following:
 
-   [![](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)
+   <Image align="center" alt="" src="https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png" />
 
    * **Web landing page:** Using a landing page is recommended when:
 
@@ -177,7 +177,7 @@ Perform the next steps in Meta Ads Manager.
 2. Click **Build a URL parameter** to add the URL parameters to the URL (whether it is a landing page URL or an AF attribution link).
 3. Under **Custom parameters**, click **Add parameter**
 
-   [![4.png](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)
+   <Image align="center" alt="4.png" src="https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png" />
 4. Map the AppsFlyer parameters to their Meta values.
 
    * If your destination URL is **a landing page, a OneLink attribution link, or a single platform attribution link**, map the following AF parameters to their Meta counterparts: 
@@ -245,7 +245,7 @@ Perform the next steps in Meta Ads Manager.
 
 Use the Tracking section to select the conversion events promoted by your ad (setting up of the events is done via the [Event Manager](https://www.facebook.com/business/help/898185560232180?id=1205376682832142)).
 
-[![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)
+<Image align="center" alt="" src="https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png" />
 
 > 🚧 **Important!**
 >
@@ -261,7 +261,7 @@ Use the Tracking section to select the conversion events promoted by your ad (se
 
 <Accordion title="End-to-end data flow">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. The Meta ad URL includes the the `pid=metaweb_int` parameter. When the user clicks on the ad an `fbclid` parameter is automatically appended to the clicked URL.
 2. The User is redirected to the URL destination - a landing page containing a Smart Script.

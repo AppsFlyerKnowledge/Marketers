@@ -29,7 +29,7 @@ x-zendesk:
 
 > **Khái quát:** Truyền trực tuyến các sự kiện phân bổ dữ liệu thô tới các điểm cuối phía máy chủ của bạn.
 
-![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
+<Image align="center" alt="6970_Push_API_image.png" src="https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png" />
 
 <div id="push-api" />
 
@@ -98,7 +98,7 @@ Phần này mô tả các thông báo (loại báo cáo) có sẵn cho SKAN và 
 
 **Lưu ý:** Điều này không áp dụng cho các thông báo sao chép đăng lại đến trực tiếp từ iOS.
 
-![PushAPI-2_en-us.png](https://files.readme.io/7a3ede8da87e48cc640e6e61d8f42011174122140ca63ace37c1d5c25ceadc19-20274836865809.png)
+<Image align="center" alt="PushAPI-2_en-us.png" src="https://files.readme.io/7a3ede8da87e48cc640e6e61d8f42011174122140ca63ace37c1d5c25ceadc19-20274836865809.png" />
 
 </Accordion>
 
@@ -154,7 +154,7 @@ Phần này mô tả các thông báo (loại báo cáo) có sẵn cho SKAN và 
 
 **Điểm cuối**
 
-[![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
+<Image align="center" alt="PushAPI_us-en.png" src="https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png" />
 
 <div id="configure-authentication-token" />
 
@@ -193,7 +193,7 @@ Phần này mô tả các thông báo (loại báo cáo) có sẵn cho SKAN và 
    * Các trường bắt buộc luôn được gửi đi, đó là: ID ứng dụng, Tên sự kiện, Thời gian sự kiện, IDFA (iOS) hoặc ID quảng cáo (Android)
    * Sử dụng các tùy chọn kiểm soát được mô tả trong hình dưới đây để chọn các trường tùy chọn.
 
-     [![PushAPIFieldSelect1.jpg](https://files.readme.io/316bdfcb4740d870875176e7806f969c89784406c3abc5ca34c9fa0c675a5497-360007416298.jpg)](https://files.readme.io/316bdfcb4740d870875176e7806f969c89784406c3abc5ca34c9fa0c675a5497-360007416298.jpg)
+     <Image align="center" alt="PushAPIFieldSelect1.jpg" src="https://files.readme.io/316bdfcb4740d870875176e7806f969c89784406c3abc5ca34c9fa0c675a5497-360007416298.jpg" />
 
      * Các trường phổ biến nhất được chọn trước theo mặc định. Bạn có thể hủy các lựa chọn đó.
      * Chọn các trường tùy chọn khi cần.
@@ -304,7 +304,7 @@ Bạn sẽ chỉ nhận được sự kiện trùng lặp nếu đã bật cả:
 
 <Accordion title="Chức năng chọn thông báo sự kiện trong ứng dụng bị tắt">
 
-[![InappSelectionDisabled_us-en.png](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)
+<Image align="center" alt="InappSelectionDisabled_us-en.png" src="https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png" />
 
 * Chỉ có thể chọn thông báo sự kiện trong ứng dụng sau khi có một sự kiện trong ứng dụng được ghi nhận.
 * Sử dụng thiết bị thử nghiệm để tạo sự kiện trong ứng dụng hoặc sử dụng <Anchor target="_blank" href="/marketers/vi/docs/server-to-server-events-api-for-mobile-s2s-mobile">API S2S</Anchor> để thực hiện theo cách thủ công.

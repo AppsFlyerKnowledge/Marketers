@@ -32,7 +32,7 @@ x-zendesk:
 ---
 > **Khái quát:** Sử dụng API Pull này để nhận báo cáo hợp nhất AppsFlyer của bạn trong các tệp tin CSV.
 
-[![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
+<Image align="center" alt="PullAPIAverage_us-en.png" src="https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png" />
 
 <div id="looking-for-pull-api-raw-data" />
 

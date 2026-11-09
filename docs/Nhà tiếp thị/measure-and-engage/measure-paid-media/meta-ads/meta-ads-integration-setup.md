@@ -54,7 +54,7 @@ Bạn không cần thực hiện Đăng nhập Facebook hoặc tích hợp ứng
 1. Trên **quảng cáo Meta**, hãy chuyển đến <Anchor target="_blank" href="https://developers.facebook.com/apps">App Dashboard</Anchor> của bạn.
 2. Nhấp vào ứng dụng được yêu cầu.
 3. Nhấp vào App ID xuất hiện ở trên cùng bên trái của màn hình để sao chép.  
-   ![meta-ads-for-developters.jpg](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)
+   <Image align="center" alt="meta-ads-for-developters.jpg" src="https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg" />
 
 AppsFlyer phân bổ dữ liệu cho mỗi ID Ứng dụng. Có thể sử dụng cùng một ID Ứng dụng Facebook cho [cả ứng dụng Android và iOS](https://developers.facebook.com/docs/app-ads/app-setup/). Lưu ý rằng, đối với phiên bản iOS 14 trở lên, quảng cáo Meta giới hạn số lượng tài khoản quảng cáo ở mức 9 tài khoản cho mỗi ứng dụng.
 
@@ -86,10 +86,10 @@ AppsFlyer phân bổ dữ liệu cho mỗi ID Ứng dụng. Có thể sử dụn
    1. Đi tới ứng dụng của bạn trên [Meta dành cho nhà phát triển](https://developers.facebook.com/apps).
    2. Chọn ứng dụng.  
 
-      ![find-fb-app-id.jpg](https://support.appsflyer.com/hc/article_attachments/25899320112017)
+      <Image align="center" alt="find-fb-app-id.jpg" src="https://support.appsflyer.com/hc/article_attachments/25899320112017" />
    3. Để sao chép ID ứng dụng của bạn, hãy nhấp vào ID đó ở trên cùng của màn hình. màn.  
 
-      ![meta-ads-copy-app-id.jpg](https://support.appsflyer.com/hc/article_attachments/25899342893585)
+      <Image align="center" alt="meta-ads-copy-app-id.jpg" src="https://support.appsflyer.com/hc/article_attachments/25899342893585" />
    4. Trong AppsFlyer, từ menu bên, chọn **Collaborate** > **Partner Marketplace**
    5. Tìm kiếm và chọn quảng cáo Meta.
    6. Nhấp vào **Set up integration**. Bạn đang được chuyển đến trang thiết lập tích hợp.
@@ -97,7 +97,7 @@ AppsFlyer phân bổ dữ liệu cho mỗi ID Ứng dụng. Có thể sử dụn
        **Lưu ý:** Nút bật/tắt phải luôn ở trạng thái bật (<Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">activated (được kích hoạt)</Anchor>) trong thời gian bạn làm việc với đối tác<Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">.</Anchor>
    8. Trong phần **Cài đặt chung**:  
 
-      ![meta_ads_general_settings2.png](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
+      <Image align="center" alt="meta_ads_general_settings2.png" src="https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png" />
 
       * Dán ID ứng dụng của bạn vào **ID ứng dụng Facebook** Trường
       * Dán liên kết giới thiệu cài đặt Để nhận khóa giải mã của bạn từ Meta ads:
@@ -105,7 +105,7 @@ AppsFlyer phân bổ dữ liệu cho mỗi ID Ứng dụng. Có thể sử dụn
    10. Nhấp vào **Save Integration**.
 2. [tùy chọn] **Cấu hình các tùy chọn cài đặt đề xuất:**  
 
-   ![meta_ads_install_attribution.png](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)
+   <Image align="center" alt="meta_ads_install_attribution.png" src="https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png" />
 
    * Để khớp với cửa sổ xem lại nhấp qua của Quảng cáo meta, đặt thành 7 ngày.  
       Lưu ý rằng: (Lưu ý rằng [có một số trường hợp riêng thì cài đặt mặc định sẽ khác](https://www.facebook.com/business/help/395050428485124?id=428636648170202)).
@@ -211,7 +211,7 @@ Cần nhắm mục tiêu rộng để nhận dữ liệu cài đặt lượt xem
 * Đối tượng tùy chỉnh: Đặt là tùy thích.
 * Đối với "thoải mái", "Nhắm mục tiêu chi tiết lợi thế" Hộp cho các chiến dịch quảng cáo phải được chọn:  
 
-  <Image alt="" src="https://support.appsflyer.com/hc/article_attachments/22950622532497" width="569px" />
+  <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/22950622532497" width="569px" />
 
 <div id="encrypted-data-from-google-play-referrer-api-or-meta-install-referrer" />
 
@@ -232,7 +232,7 @@ Lưu ý rằng nếu bạn không cung cấp hoặc đã xóa mã khóa, thì s�
 3. Chọn ứng dụng mà bạn muốn truy cập khóa giải mã của mình.
 4. Điều hướng đến mục **Settings** > **Basic** ở bên trái của trang.  
 
-   [![](https://files.readme.io/253be6d4cd2a75cc2c038c5b14ed3df067612c46bea174475adba3d196f25789-30354101891985.png)](https://files.readme.io/253be6d4cd2a75cc2c038c5b14ed3df067612c46bea174475adba3d196f25789-30354101891985.png)
+   <Image align="center" alt="" src="https://files.readme.io/253be6d4cd2a75cc2c038c5b14ed3df067612c46bea174475adba3d196f25789-30354101891985.png" />
 5. Cuộn xuống phần Android và bạn sẽ xem khóa giải mã của bạn có nhãn Cài đặt liên kết giới thiệu khóa giải mã bên dưới trường Tên gói. Lưu ý: Đây là cùng một phần mà bạn đã định cấu hình tên gói của bạn và Cửa hàng Google Play.
 
 **Để thiết lập khóa giải mã trong AppsFlyer:**
@@ -240,7 +240,7 @@ Lưu ý rằng nếu bạn không cung cấp hoặc đã xóa mã khóa, thì s�
 1. [Bắt buộc] Xác minh rằng AppsFlyer SDK V5.4+ là được áp dụng trong ứng dụng của bạn. Không phụ thuộc vào các phiên bản cũ hơn.
 2. Trong AppsFlyer, từ menu bên, chọn **Collaborate** > **Active Integrations**.
 3. Chọn **Meta ads**.  
-    [![meta_ads_general_settings2.png](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
+    <Image align="center" alt="meta_ads_general_settings2.png" src="https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png" />
 4. Trong tab **Integration (Tích hợp):** Đặt khóa giải mã liên kết giới thiệu cài đặt Thao tác này chỉ cần thực hiện một lần cho mỗi ứng dụng.
 5. Nhấp vào **Save integration**.
 
@@ -250,7 +250,7 @@ Lưu ý rằng nếu bạn không cung cấp hoặc đã xóa mã khóa, thì s�
 
 <Accordion title="Chi phí, lượt nhấp và lượt hiển thị">
 
-[![meta_cost_tab.png](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)  
+<Image align="center" alt="meta_cost_tab.png" src="https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png" />
 
 Tích hợp này cung cấp dữ liệu tổng hợp về chi phí, nhấp chuột và hiển thị cho các chiến dịch, nhóm quảng cáo của bạn, quảng cáo và địa lý/quốc gia. Xem <Anchor target="_blank" href="/marketers/vi/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">Bảng tích hợp chi phí mạng quảng cáo</Anchor> để biết đầy đủ thông tin chi tiết về thứ nguyên, chỉ số được hỗ trợ, và các tính năng.
 
@@ -292,7 +292,7 @@ Tìm hiểu thêm về cách làm phong phú thêm dữ liệu của bạn với
 
 <Accordion title="Ánh xạ sự kiện trong ứng dụng">
 
-[![meta_iae_postbacks.png](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)
+<Image align="center" alt="meta_iae_postbacks.png" src="https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png" />
 
 **Để ánh xạ các sự kiện trong ứng dụng:**
 
@@ -351,16 +351,16 @@ Phân bổ nhắm mục tiêu lại AppsFlyer cho quảng cáo Meta cho phép Nh
     Cửa sổ nhìn lại tương tác lại là khoảng thời gian thời gian, bắt đầu từ lần nhấp vào quảng cáo, trong thời gian đó Ứng dụng phải được khởi chạy để nhấp chuột được ghi nhận là tái đính hôn.  
     Chọn đơn vị cửa sổ xem lại (giờ hoặc ngày), và đặt thanh trượt thành giá trị mong muốn.  
 
-   ![re-engagement_attribution_toggle.png](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)
+   <Image align="center" alt="re-engagement_attribution_toggle.png" src="https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png" />
 4. Bật tính năng **Phân bổ lượt xem hết tương tác lại**.
 5. Đặt thanh trượt **Khoảng thời gian xem lại lượt xem hết tương tác lại** về giá trị mong muốn (tối đa 24 giờ). Đó là khoảng thời gian bắt đầu từ lúc hiển thị quảng cáo, trong đó ứng dụng phải được khởi chạy để lượt hiển thị được ghi nhận như một lượt tương tác lại.
 
-   ![re-engagement_view-through_toggle.png](https://support.appsflyer.com/hc/article_attachments/13880480985489)
+   <Image align="center" alt="re-engagement_view-through_toggle.png" src="https://support.appsflyer.com/hc/article_attachments/13880480985489" />
 6. Thiết lập **Khoảng thời gian tương tác lại**.  
     Đây là khoảng thời gian diễn ra sự kiện trong ứng dụng của người dùng Tất cả các sự kiện trong ứng dụng được phân bổ cho nguồn truyền thông nhắm mục tiêu lại làm nguồn chính.  
     Bạn có thể đặt giá trị theo ngày (1-90), giờ (tăng đến 23), hoặc thậm chí cả đời. Thời gian mặc định là 30 ngày.  
 
-   ![re-engagement_window.png](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)
+   <Image align="center" alt="re-engagement_window.png" src="https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png" />
 
 Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/retargeting-attribution-guide">Phân bổ nhắm mục tiêu lại AppsFlyer</Anchor>.
 
@@ -396,7 +396,7 @@ Tìm hiểu thêm về <Anchor target="_blank" href="/marketers/vi/docs/send-ope
 
 <Accordion title="Ghi nhận doanh thu quảng cáo">
 
-![meta_ads_ad_revenue.png](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)
+<Image align="center" alt="meta_ads_ad_revenue.png" src="https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png" />
 
 Nếu ứng dụng của bạn sử dụng Doanh thu quảng cáo trên Meta Audience Network Để kiếm tiền từ quảng cáo, bạn có thể ghi lại doanh thu của mình từ quảng cáo Meta trên AppsFlyer. Điều này, có hoặc không có Dữ liệu doanh thu mua hàng trong ứng dụng cung cấp cho bạn **Bức tranh toàn cảnh về doanh thu của người dùng**.
 
@@ -474,7 +474,7 @@ Lưu ý - bạn cũng có thể sử dụng <Anchor target="_blank" href="https:
 
 Ứng dụng phải được xác định trên quảng cáo Meta là **Live** thay vì **In development** để phân bổ hoạt động.
 
-![fb-app-status.png](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)
+<Image align="center" alt="fb-app-status.png" src="https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png" />
 
 </Accordion>
 
@@ -494,11 +494,11 @@ Khi thiết lập chiến dịch cài đặt ứng dụng quảng cáo Meta, b�
 
 Thiết lập chính xác - phân bổ có hiệu quả.
 
-<Image alt="fb-app-install.png" src="https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png" width="496px" />
+<Image align="center" alt="fb-app-install.png" src="https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png" width="496px" />
 
 Thiết lập không đúng cách - phân bổ không thành công.
 
-![fb-app-incorrect_setup.png](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)
+<Image align="center" alt="fb-app-incorrect_setup.png" src="https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png" />
 
 </Accordion>
 

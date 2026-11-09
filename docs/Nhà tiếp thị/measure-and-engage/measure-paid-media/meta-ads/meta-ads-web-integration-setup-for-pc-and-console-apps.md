@@ -72,7 +72,7 @@ To configure the integration, you must first turn on the **Activate partner** to
      **Note:** Make sure you have the correct business selected from the drop-down on the top right.
   2. From the **Events Manager** side menu, select **Data sources**. You'll see a list of your pixels. If you don’t have a pixel for the selected business, you can create one through the same view.
   3. Copy the pixel ID showing under the pixel name and paste it into the Pixel ID field of the AppsFlyer integration.  
-     <Image alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
+     <Image align="center" alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
 * **Access token:** Enter the access token. To retrieve it, follow [these instructions](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)
 * **Limit Meta ads use of users’ personal information (CCPA):** Turn on this toggle to enable compliance with <Anchor target="_blank" href="/marketers/vi/docs/send-opendsr-api-requests">data protection laws</Anchor>.  
   **Note:** Complying with CCPA privacy regulations limits the data coming from Meta ads users based in California.

@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **At a glance:** Use the Web Server-to-Server (Web-S2S) events API to report events and conversions to PBA that aren't reported by the Web SDK.
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg)](https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/4694c3141c85a0dc62a29a3ace7b1986fa4cf7140cc5cdc532553b66dc100ff9-360007753757.jpg" />
 
 ## Web Server-to-server events API for PBA
 
@@ -244,7 +244,7 @@ For testing purposes, send several events as follows:
 1. In AppsFlyer, go to the ***My Apps*** tab.
 2. Click View brand bundles.
 
-   [![GetWebDevKeyPba_us-en.pn](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)
+   <Image align="center" alt="GetWebDevKeyPba_us-en.pn" src="https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png" />
 3. Copy the required ***Web Dev Key*.**
 
 </Accordion>
@@ -274,7 +274,7 @@ For testing purposes, send several events as follows:
 2. Right-click, select ***Inspect***  
    The browser's inspect element window opens.
 
-   [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
+   <Image align="center" alt="S2S_inspect.jpg" src="https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg" />
 3. Go to the (A) ***Application*** tab.
 4. In the side menu, (B) expand Cookies.
 5. Select your website. If it does not display, refresh the browser.

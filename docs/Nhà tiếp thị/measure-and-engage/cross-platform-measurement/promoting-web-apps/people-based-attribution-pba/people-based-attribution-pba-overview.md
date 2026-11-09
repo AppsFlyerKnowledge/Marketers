@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Khái quát:** Phân bổ trên Cơ sở Người dùng (PBA) cung cấp giao diện tổng hợp về hành trình của khách hàng trên các kênh, nền tảng và thiết bị.
 
-![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
+<Image align="center" alt="PBANoSilos_us-en.gif" src="https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif" />
 
 <div id="pba-principles" />
 
@@ -51,7 +51,7 @@ x-zendesk:
 
 ### <Anchor target="_blank" href="/marketers/vi/docs/pba-website-attribution-dashboard">Phân bổ Trang web</Anchor>
 
-[![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
+<Image align="center" alt="WebsiteAttributionTable_us-en.jpg" src="https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg" />
 
 Phân tích các nguồn lưu lượng truy cập web và các chiến dịch tiếp thị thúc đẩy lượt truy cập và chuyển đổi của người dùng trên trang web của bạn. Khám phá sự khác biệt về hiệu suất chi tiết đến cấp quảng cáo. Hỗ trợ tất cả các thông số truy vấn AppsFlyer trong liên kết mà không cần chuyển hướng người dùng đến máy chủ AppsFlyer.
 
@@ -59,7 +59,7 @@ Phân tích các nguồn lưu lượng truy cập web và các chiến dịch ti
 
 ### <Anchor target="_blank" href="/marketers/vi/docs/pba-web-assisted-installs">Lượt cài đặt được Web Hỗ trợ</Anchor>
 
-[![AppsFlyer-Web-to-App_us.en.gif](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)
+<Image align="center" alt="AppsFlyer-Web-to-App_us.en.gif" src="https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif" />
 
 Sử dụng Lượt cài đặt được Web Hỗ trợ để kiểm tra tác động và kết quả của các nỗ lực tiếp thị web của bạn đối với việc thúc đẩy lượt cài đặt ứng dụng dành cho thiết bị di động.
 

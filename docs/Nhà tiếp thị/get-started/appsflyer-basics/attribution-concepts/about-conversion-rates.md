@@ -31,7 +31,7 @@ x-zendesk:
 
 New users go through a marketing funnel, from the first ad view until revenue is generated. Each of the funnel stages has its own level of success. The more progress a user makes, the better the results for the mobile advertiser. The following image sets out marketing funnel stages.
 
-![ua_funnel_2_en-us.png](https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png)
+<Image align="center" alt="ua_funnel_2_en-us.png" src="https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png" />
 
 ## Marketing funnel stages and conversion rates
 

@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **Khái quát:** Apple Search Ads (ASA), một đối tác SRN của AppsFlyer, hỗ trợ người dùng tìm ứng dụng của bạn trong App Store bằng cách sử dụng từ khóa.
 
-<Image alt="apple_search_ads.png" src="https://support.appsflyer.com/hc/article_attachments/17210504660625" width="217px" />
+<Image align="center" alt="apple_search_ads.png" src="https://support.appsflyer.com/hc/article_attachments/17210504660625" width="217px" />
 
 Mức độ liên quan của ứng dụng xác định xem quảng cáo của bạn có phải là quảng cáo được hiển thị theo một truy vấn tìm kiếm trong Cửa hàng Ứng dụng hay không. Phản hồi của người dùng đối với một quảng cáo là một tín hiệu về mức độ liên quan của quảng cáo. ASA sử dụng phản hồi của người dùng làm tín hiệu để quyết định quảng cáo nào sẽ hiển thị nhiều nhất.
 
@@ -164,7 +164,7 @@ Sử dụng danh sách kiểm tra sau để đảm bảo rằng bạn hoàn thà
    3. Nhấp vào **Lưu**.
 2. **Trong bảng điều khiển Apple Search Ads**: Nhận thông số ID Nhóm Chiến dịch Apple Search Ads liên quan đến đối tác tiếp thị. Sử dụng ảnh chụp màn hình sau đây làm hướng dẫn để xác định vị trí ID.
 
-   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 3. **Trong AppsFlyer, hãy cấu hình đối tác tiếp thị ASA:**
    1. Trong AppsFlyer, đi đến **Configuration** > **Active integrations.**
    2. Tìm kiếm ***đối tác tiếp thị của* Apple Search Ads.**  
@@ -221,7 +221,7 @@ Nhà quảng cáo cho phép các đại lý thay mặt họ chạy các chiến 
 
 1. **Trong bảng điều khiển Apple Search Ads**: Lấy ID Nhóm Chiến dịch của bạn. Sử dụng ảnh chụp màn hình sau đây làm hướng dẫn để xác định vị trí ID. Chỉ lấy các chữ số.
 
-   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 2. Trong AppsFlyer, chọn một Ứng dụng.
 3. Đi đến **Configuration** > **Active integrations**.
 4. Chọn **Apple Search Ads.**
@@ -309,11 +309,11 @@ Các số liệu sau đây minh họa sự khác biệt có thể xảy ra như 
 
 **Tính năng nhắm mục tiêu lại bật**
 
-[![ASA_R_Enabled.png](https://files.readme.io/ced87f066490d95631f352ef7905c5c812ac7736c9763d08792eedb383afb8c7-360002911777.png)](https://files.readme.io/ced87f066490d95631f352ef7905c5c812ac7736c9763d08792eedb383afb8c7-360002911777.png)
+<Image align="center" alt="ASA_R_Enabled.png" src="https://files.readme.io/ced87f066490d95631f352ef7905c5c812ac7736c9763d08792eedb383afb8c7-360002911777.png" />
 
 **Tính năng nhắm mục tiêu lại tắt**
 
-[![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+<Image align="center" alt="ASA_R_Disabled.png" src="https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png" />
 
 <div id="20260901" />
 

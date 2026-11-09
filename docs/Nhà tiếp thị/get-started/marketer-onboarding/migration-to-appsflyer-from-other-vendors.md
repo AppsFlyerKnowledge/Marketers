@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Khái quát:** Lập kế hoạch di chuyển sang AppsFlyer từ một nhà cung cấp phân bổ khác. Hiểu cách tránh bị tính phí gấp đôi, trùng lặp dữ liệu và mất dữ liệu trong quá trình di chuyển.
 
-![quy trình di chuyển](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
+<Image align="center" alt="quy trình di chuyển" src="https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png" />
 
 <div id="compare-measurement-between-appsflyer-and-other-mmps" />
 

@@ -50,7 +50,7 @@ Trước tiên, bạn sẽ cần đăng ký cả gói Creative Optimization Prem
 
 2. Khi thiết lập Hộp khóa Dữ liệu, hãy chọn **Creative** (ở phần **Select reports**), trên trang cấu hình Hộp khóa Dữ liệu.
 
-![Data Locker - select Creative.jpg](https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg)
+<Image align="center" alt="Data Locker - select Creative.jpg" src="https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg" />
 
 </Accordion>
 
@@ -64,11 +64,11 @@ Phần này mô tả cách chỉnh sửa cấu hình Hộp khóa Dữ liệu hi�
 
 1. Từ phần **Integrations** trên menu bên AppsFlyer chính, hãy nhấp vào **Data Locker**.
 
-<Image alt="from Integration select Data Locker.jpg" src="https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg" width="200px" />
+<Image align="center" alt="from Integration select Data Locker.jpg" src="https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg" width="200px" />
 
 2. Chọn **Creative** (ở phần **Select reports**) trên trang cấu hình Hộp khóa Dữ liệu.
 
-![Data Locker - select Creative.jpg](https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg)
+<Image align="center" alt="Data Locker - select Creative.jpg" src="https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg" />
 
 </Accordion>
 

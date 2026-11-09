@@ -39,7 +39,7 @@ Các nút chuyển đổi khác nhau kiểm soát các phần khác nhau của q
 
 Khi tắt nút <Anchor target="_blank" href="/marketers/vi/docs/partner-activation-deactivation">**Activate partner**</Anchor>, dữ liệu chuyển đổi sẽ không được phân bổ và bài đăng lại không được gửi cho đối tác.
 
-![integration_turned_off.png](https://files.readme.io/d43b4f465749e343d9523e90e87e43b77a85cdd920f0c0770a94bcb7a585d920-14979273403793.png)
+<Image align="center" alt="integration_turned_off.png" src="https://files.readme.io/d43b4f465749e343d9523e90e87e43b77a85cdd920f0c0770a94bcb7a585d920-14979273403793.png" />
 
 **Để kích hoạt tích hợp:**
 
@@ -67,7 +67,7 @@ Nút **<Anchor target="_blank" href="/marketers/vi/docs/in-app-event-postback-co
 2. Nhấp vào biểu tượng Manage integration của đối tác.
 3. Trên thẻ **Integration**, cuộn xuống **In-app events postbacks** để bật nút lên.  
 
-   ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
+   <Image align="center" alt="integration-in_app_event_postbacks_toggle.png" src="https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png" />
 
 </Accordion>
 
@@ -83,7 +83,7 @@ Sự kiện có thể được định cấu hình theo cách khiến một số
 
 Kiểm tra xem sự kiện có nằm trong danh sách các sự kiện trong ứng dụng đã định cấu hình hay không. Nếu không thấy trong danh sách, bài đăng lại sẽ không được gửi.
 
-[![list_of_in_app_events.png](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)
+<Image align="center" alt="list_of_in_app_events.png" src="https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png" />
 
 1. Trong phần **Configuration** trên AppsFlyer truy cập **Active Integrations**.
 2. Nhấp vào biểu tượng Manage integration của đối tác.
@@ -97,7 +97,7 @@ Kiểm tra xem sự kiện có nằm trong danh sách các sự kiện trong ứ
 
 Kiểm tra xem <Anchor target="_blank" href="/marketers/vi/docs/in-app-event-postback-configuration#ánh-xạ-sự-kiện">event mapping</Anchor> có chính xác không. Đảm bảo **sự kiện** **AppsFlyer** (tên của sự kiện mà AppsFlyer nhận được từ ứng dụng di động của bạn hoặc qua S2S) khớp với **tên được ánh xạ tới tên đối tác** (tên sự kiện chính xác được đối tác sử dụng). 
 
-[![in_app_event_postback_mapping_2.png](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)
+<Image align="center" alt="in_app_event_postback_mapping_2.png" src="https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png" />
 
 </Accordion>
 
@@ -107,7 +107,7 @@ Kiểm tra xem <Anchor target="_blank" href="/marketers/vi/docs/in-app-event-pos
 
 Nếu một điều kiện được xác định cho sự kiện, bài đăng lại sẽ được gửi theo điều kiện đó. Kiểm tra xem có điều kiện nào giới hạn việc gửi bài đăng lại không.
 
-[![in_app_event_condition__1_.png](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)
+<Image align="center" alt="in_app_event_condition__1_.png" src="https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png" />
 
 </Accordion>
 
@@ -117,7 +117,7 @@ Nếu một điều kiện được xác định cho sự kiện, bài đăng l�
 
 Kiểm tra xem liệu cấu hình sự kiện trong ứng dụng được đặt để gửi các bài đăng lại tới <Anchor target="_blank" href="/marketers/vi/docs/in-app-event-postback-configuration#tùy-chọn-để-gửi-đăng-lại">**chỉ Đối tác này** hay tới **Tất cả các nguồn truyền thông, bao gồm cả nguồn tự nhiên**</Anchor>. Nếu cấu hình được đặt thành **This partner only** thì chỉ đối tác được phân bổ mới nhận được bài đăng lại.
 
-[![in_app_event_sending_options.png](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)
+<Image align="center" alt="in_app_event_sending_options.png" src="https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png" />
 
 </Accordion>
 
@@ -127,7 +127,7 @@ Kiểm tra xem liệu cấu hình sự kiện trong ứng dụng được đặt
 
 Bài đăng lại được gửi theo cài đặt <Anchor target="_blank" href="/marketers/vi/docs/in-app-event-postback-configuration#khung-thời-gian-đăng-lại-sự-kiện-trong-ứng-dụng">postback window</Anchor>. Các bài đăng lại cho sự kiện sau khoảng thời gian này đã được gửi cho đối tác dù sự kiện vẫn được ghi lại trong AppsFlyer.
 
-![in_app_event_postback_window.png](https://files.readme.io/21cae7825d557c1ee89c890ec64c922cb36e31be882850a26bfdc4e5595773f0-14661845664401.png)
+<Image align="center" alt="in_app_event_postback_window.png" src="https://files.readme.io/21cae7825d557c1ee89c890ec64c922cb36e31be882850a26bfdc4e5595773f0-14661845664401.png" />
 
 Lưu ý rằng đối với <Anchor target="_blank" href="/marketers/vi/docs/self-reporting-networks-srns">các SRN</Anchor>, bài đăng lại sự kiện trong ứng dụng được gửi trong khoảng thời gian <Anchor target="_blank" href="/marketers/vi/docs/user-level-data-retention#partner-data-retention-periods">lưu giữ dữ liệu của đối tác</Anchor>.
 
@@ -157,7 +157,7 @@ Trong các trường hợp sau, AppsFlyer không gửi bài đăng lại do các
 
 Nếu bật <Anchor target="_blank" href="/marketers/vi/docs/apply-aggregated-advanced-privacy-framework#partner-advanced-privacy-switch">Advanced Privacy</Anchor> nhưng bên đối tác không định cấu hình Quyền riêng tư nâng cao hoặc không hỗ trợ Quyền riêng tư nâng cao, họ sẽ không nhận được <Anchor target="_blank" href="/partners/vi/docs/advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">các bài đăng lại tổng hợp về Quyền riêng tư nâng cao</Anchor>. 
 
-![partner_not_supporting_ap_postbacks.png](https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png)
+<Image align="center" alt="partner_not_supporting_ap_postbacks.png" src="https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png" />
 
 </Accordion>
 
@@ -194,7 +194,7 @@ Trong một số trường hợp, mặc dù AppsFlyer đã gửi các bài đăn
 1. Trong phần **Reports** trên AppsFlyer hãy đi đến **Raw Data Export**.
 2. Xem báo cáo có liên quan trong phần **Postbacks** (Số lượt cài đặt, Sự kiện trong ứng dụng, Chuyển đổi nhắm lại mục tiêu, Nhắm lại mục tiêu sự kiện trong ứng dụng).
 
-[![postback_reports.JPG](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)
+<Image align="center" alt="postback_reports.JPG" src="https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png" />
 
 </Accordion>
 

@@ -45,7 +45,7 @@ Khi người dùng thực hiện đăng ký, xem xong hướng dẫn, thêm các
 
 Sự kiện trong ứng dụng bao gồm tên sự kiện và có thể gồm cả các thông số sự kiện. Khi bạn thêm thông số sự kiện vào một sự kiện trong ứng dụng thì nó được gọi là sự kiện phong phú trong ứng dụng. Các thông số sự kiện cung cấp cho bạn thêm ngữ cảnh và thông tin về sự kiện đang xảy ra. Ví dụ: mặc dù giúp bạn biết rằng một người dùng đã đặt trước, nhưng các thông số sự kiện có thể cung cấp cho bạn những thông chi tiết như loại giao dịch mua, điểm đến và doanh thu.
 
-![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
+<Image align="center" alt="travel.png" src="https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png" />
 
 <div id="tip" />
 
@@ -109,7 +109,7 @@ Bạn có thể dùng **af\_price** như một thông số tiền tệ mà khôn
 
 AppsFlyer xử lý chênh lệch giữa đơn vị tiền tệ trong cài đặt ứng dụng và đơn vị tiền tệ của sự kiện trong ứng dụng bằng cách quy đổi đơn vị tiền tệ.
 
-![revenue_normalization_flow.png](https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png)
+<Image align="center" alt="revenue_normalization_flow.png" src="https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png" />
 
 Sơ đồ trên thể hiện quá trình sau đây:
 
@@ -304,7 +304,7 @@ Hãy lưu ý những chi tiết sau khi xác định tên và thông số sự k
 * AppsFlyer thu thập địa chỉ IP của thiết bị trong <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy/#engagementinformation">quá trình tương tác</Anchor>. Trong một số khu vực pháp lý hoặc các trường hợp sử dụng, địa chỉ IP có thể được coi là PII. Chúng tôi sử dụng địa chỉ IP để lấy vị trí địa lý rộng (cấp thành phố, quận) của thiết bị nhưng không sử dụng địa chỉ cụ thể. Nếu cần, bạn có thể chọn <Anchor target="_blank" href="/marketers/vi/docs/apply-ip-masking-to-user-data">ẩn địa chỉ IP</Anchor> để chúng không xuất hiện trong báo cáo dữ liệu thô.
 * Sự kiện trong ứng dụng là nguồn dữ liệu doanh thu duy nhất trên AppsFlyer. Bạn có thể gắn một giá trị doanh thu cụ thể cho từng sự kiện và xem nó trên bảng điều khiển của ứng dụng. Tìm hiểu thêm về các [thông số kiếm tiền](/docs/in-app-events-overview#revenue-events).
 
-  ![revenue_data.png](https://support.appsflyer.com/hc/article_attachments/360020607037)
+  <Image align="center" alt="revenue_data.png" src="https://support.appsflyer.com/hc/article_attachments/360020607037" />
 
 </Accordion>
 

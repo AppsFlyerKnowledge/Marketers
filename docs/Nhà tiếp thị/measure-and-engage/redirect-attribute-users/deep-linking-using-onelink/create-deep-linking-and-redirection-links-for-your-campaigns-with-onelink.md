@@ -256,7 +256,7 @@ Phân bổ được xác định dựa trên cài đặt phân bổ của bạn
 2. Trong phần **Social app landing page**, nhấp vào **Create landing page**.  
    Hệ thống sẽ mở một cửa sổ để chọn mẫu trang đích.  
 
-   [![](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg" />
 3. Để chọn mẫu trang đích, hãy di chuột đến mẫu đã chọn và nhấp vào **Create**.
 
    **Mẹo**: Di chuột đến biểu tượng 🛈 của một mẫu để xem nên sử dụng mẫu trong những trường hợp nào. Đề xuất sử dụng Áp phích Gộp và hình thức Trình bày & Chia sẻ dành cho Instagram.
@@ -276,11 +276,11 @@ Phân bổ được xác định dựa trên cài đặt phân bổ của bạn
 
    4. Nếu một hoặc nhiều hình ảnh không phải là một URL chính xác thì sẽ hiển thị lỗi và bạn sẽ không thể xem lại nội dung sáng tạo.  
 
-      [![](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)
+      <Image align="center" alt="" src="https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png" />
 6. Để xem lại nội dung sáng tạo của trang đích, hãy nhấp vào **Review**.  
    Nếu cần thay đổi, hãy nhấp vào **Back to editor**.  
 
-   [![](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)
+   <Image align="center" alt="" src="https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png" />
 7. Để lưu trang đích của bạn, hãy nhấp vào **Done** (Xong).  
    **Quan trọng**: Quảng cáo trang đích cập nhật/mới chỉ áp dụng sau khi tạo/cập nhật liên kết tùy chỉnh.
 8. [Tùy chọn] Để chỉnh sửa trang đích, hãy nhấp vào **Edit social app landing page**.
@@ -580,7 +580,7 @@ Quy trình của giải pháp DDL dựa trên bảng nhớ tạm như sau:
    * Liên kết có chứa tham số `af_cp_lp=true` hay không.
 4. Khi AppsFlyer xác nhận thông tin trên, trang web đích sẽ tải, chứa biểu tượng ứng dụng, ảnh và CTA để tải ứng dụng từ Cửa hàng Ứng dụng. Người dùng cũng sẽ thấy tin nhắn giải thích quy trình: rằng URL được sao chép để đảm bảo trải nghiệm người dùng tốt nhất mà sẽ gửi họ đến trang cụ thể trong ứng dụng.  
 
-   ![ios_15_ip_masking__1_.png](https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png)
+   <Image align="center" alt="ios_15_ip_masking__1_.png" src="https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png" />
 5. Người dùng nhấn vào **Tải ứng dụng**.
 6. Người dùng được đưa đến Cửa hàng Ứng dụng để cài đặt ứng dụng. Sau đó, vào lần khởi chạy đầu tiên, họ được đưa đến trang ứng dụng cụ thể.
 

@@ -100,7 +100,7 @@ Khi một ứng dụng được khởi chạy lần đầu:
 
 <Accordion title="Ví dụ A: Phân bổ được hỗ trợ">
 
-![SRN_1.png](https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png)
+<Image align="center" alt="SRN_1.png" src="https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png" />
 
 **Thứ Hai:** Mạng A báo cáo có lượt nhấp của người dùng.
 
@@ -118,7 +118,7 @@ AppsFlyer cung cấp dữ liệu hỗ trợ cho nhà quảng cáo (các lượt 
 
 <Accordion title="Ví dụ B: Phân bổ nhấp chuột cuối cùng">
 
-![SRN_2.png](https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png)
+<Image align="center" alt="SRN_2.png" src="https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png" />
 
 **Mạng D** (SRN) báo cáo một lượt nhấp chuột trước Mạng C vài phút.
 
@@ -273,7 +273,7 @@ Các nhà phân tích dữ liệu của AppsFlyer đã kiểm tra các chiến d
 * Trong 5% chiến dịch, ít nhất 40% là người dùng ứng dụng hiện có.
 * **Kết luận: Trong các chiến dịch thu hút người dùng trên SRN, cứ 10 người dùng được nhắm mục tiêu thì có 1 người dùng hiện có.**
 
-[![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+<Image align="center" alt="mistargeted_users.png" src="https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png" />
 
 <div id="are-clicks-and-impressions-from-srns-available-in-raw-data-reports" />
 

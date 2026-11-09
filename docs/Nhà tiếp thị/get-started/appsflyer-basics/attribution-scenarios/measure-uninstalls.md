@@ -59,7 +59,7 @@ Bằng cách so sánh chất lượng người dùng có được từ các ngu�
 >
 > Mặt khác, nguồn truyền thông B có 5.949 lượt cài đặt và tỷ lệ lượt gỡ cài đặt thấp nhất (12%).
 >
-> [![Uninstall rates.png](https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png)](https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png)
+> <Image align="center" alt="Uninstall rates.png" src="https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png" />
 >
 > Dựa trên những thông tin chi tiết này, bạn có thể phân bổ lại nhiều ngân sách hơn cho Nguồn truyền thông B và cố gắng có được nhiều người dùng được thu hút hơn.
 
@@ -170,7 +170,7 @@ Việc thực hiện yêu cầu nhà phát triển thiết bị di động tích
    3. Đi đến <strong>Project Overview</strong> (Tổng quan Dự án) > Project settings  
        (Cài đặt dự án).
 
-      ![UninstallFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
+      <Image align="center" alt="UninstallFirebase.png" src="https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png" />
    4. Sao chép ID Dự án. Bạn sẽ cần ID Dự án cho giai đoạn sau này trong quá trình.
 2. **Cách chỉ định vai trò gỡ cài đặt cho AppsFlyer:**
    1. Đi đến tab **Service accounts** (Tài khoản dịch vụ).
@@ -184,7 +184,7 @@ Việc thực hiện yêu cầu nhà phát triển thiết bị di động tích
       * Giai đoạn khởi chạy vai trò: Chọn **General availability** (Tính khả dụng chung).
    6. Tìm rồi chọn `cloudmessaging.messages.create`.  
 
-      ![AddPermissions.png](https://files.readme.io/efd461ecb74a61c15232e30a6e10eaaecac18f2e24a28565ba8b208ce0654d1a-5542178507665.png)
+      <Image align="center" alt="AddPermissions.png" src="https://files.readme.io/efd461ecb74a61c15232e30a6e10eaaecac18f2e24a28565ba8b208ce0654d1a-5542178507665.png" />
    7. Nhấp vào **Add** (Thêm).
    8. Nhấp vào **Create** (Tạo).
 3. **Cách chỉ định vai trò gỡ cài đặt FCM cho AppsFlyer:**
@@ -215,7 +215,7 @@ Việc đo lường lượt gỡ cài đặt sử dụng Firebase Messaging đư
 2. <Anchor target="_blank" href="https://console.firebase.google.com">Mở Bảng điều khiển Firebase</Anchor>.
 3. Trong trang Giao diện điều khiển Firebase, điều hướng tới Cài đặt Dự án (nhấp vào bánh răng kế bên Tổng quan ở ổ vuông bên trái của trang).
 
-   ![firebase_cloud_messaging_server_key.png](https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png)
+   <Image align="center" alt="firebase_cloud_messaging_server_key.png" src="https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png" />
 4. Trong tab Cloud Messaging, bạn sẽ thấy hai Khóa Máy chủ.
 5. Sao chép **Khóa máy chủ**.
 
@@ -238,7 +238,7 @@ Việc đo lường lượt gỡ cài đặt sử dụng Firebase Messaging đư
 2. Nếu cần thiết, hãy bật **Uninstall measurement** (Đo lường lượt gỡ cài đặt).
 3. Chọn **HTTP V1 và nhập ID dự án mà bạn đã chuẩn bị trước đó.**
 
-   ![UninstallHTTPV1.png](https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png)
+   <Image align="center" alt="UninstallHTTPV1.png" src="https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png" />
 4. Nhấp vào **Test connection** (Kiểm tra kết nối).  
    Thông báo thành công sẽ hiện ra.
 5. Nhấp vào **Save settings** (Lưu cài đặt).
@@ -256,7 +256,7 @@ Việc đo lường lượt gỡ cài đặt sử dụng Firebase Messaging đư
 3. Cuộn xuống phần Gỡ cài đặt.
 4. Bật tùy chọn **Uninstall measurement** (Đo lường lượt gỡ cài đặt).
 
-   ![Uninstall_iOS_p2.png](https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png)
+   <Image align="center" alt="Uninstall_iOS_p2.png" src="https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png" />
 5. Nhấp vào biểu tượng tải lên và chọn tập tin P12.
 6. [Tùy chọn] Nếu chứng chỉ P12 được bảo vệ bằng mật khẩu, hãy nhập mật khẩu.
 7. Nhấp vào **Validate** để gửi chứng chỉ tới AppsFlyer để xác minh.
@@ -314,7 +314,7 @@ Hãy ghi nhớ những điều sau đây khi thử nghiệm ứng dụng iOS:
 
 ## Ánh xạ Sự kiện Gỡ cài đặt
 
-![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
+<Image align="center" alt="Uninstall_event_postback.png" src="https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png" />
 
 Để chia sẻ dữ liệu lượt gỡ cài đặt với mạng quảng cáo, cần ánh xạ <Anchor target="_blank" href="/marketers/vi/docs/set-up-an-integrated-partner#g">sự kiện af\_uninstall</Anchor> với một đối tác. Không giống như đăng lại dành cho các sự kiện trong ứng dụng thông thường, sự kiện gỡ cài đặt không được gửi đi trong thời gian thực. Thời gian sự kiện được báo cáo thể hiện thời gian AppsFlyer xác định ứng dụng đã được gỡ cài đặt chứ không phải chính thời gian thực hiện gỡ cài đặt trong thực tế.
 

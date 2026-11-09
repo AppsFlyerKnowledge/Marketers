@@ -36,7 +36,7 @@ Bạn có thể phân bổ các ưu tiên như điểm số khách sạn, mùa, 
 
 Để biết thêm thông tin về cách ghi lại các sự kiện trong ứng dụng, hãy xem <Anchor target="_blank" href="/marketers/vi/docs/in-app-events-overview">Hướng dẫn sự kiện phong phú trong ứng dụng</Anchor>.
 
-[![Flowchart_for_recommended_events_hotel_booking_app_user_journey](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
+<Image align="center" alt="Flowchart_for_recommended_events_hotel_booking_app_user_journey" src="https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png" />
 
 ## Cấu trúc đề xuất cho các sự kiện đã xác định trước
 

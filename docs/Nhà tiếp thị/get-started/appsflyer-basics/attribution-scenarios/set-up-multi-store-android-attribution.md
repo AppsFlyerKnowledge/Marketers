@@ -44,7 +44,7 @@ AppsFlyer phân bổ ứng dụng, không phân biệt cửa hàng ứng dụng.
 > * Mô hình phân bổ Android của AppsFlyer hỗ trợ tất cả các loại mã định danh thiết bị bao gồm GAID và <Anchor target="_blank" href="/marketers/vi/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor>
 > * Đối với các ứng dụng được tiếp thị tại Trung Quốc, hãy xem phần <Anchor target="_blank" href="/marketers/vi/docs/measure-attribution-in-the-chinese-domestic-market">Phân bổ ứng dụng Android tại thị trường nội địa Trung Quốc</Anchor>
 
-![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
+<Image align="center" alt="DashboardType_us-en-new.jpg" src="https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg" />
 
 <div id="single-dashboard-vs-dashboard-per-store" />
 
@@ -259,7 +259,7 @@ Chuẩn bị APK mới cho các cửa hàng bằng cách sử dụng các hướ
 3. Chuyển đến cài đặt và tìm cài đặt Android của bạn hoặc nếu bạn chưa định cấu hình Android, hãy thêm nền tảng.
 4. Điền vào các chi tiết cần thiết, bao gồm URL cửa hàng ứng dụng amazon dành riêng cho ứng dụng của bạn.   
 
-    [![outofstore_1.png](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)
+    <Image align="center" alt="outofstore_1.png" src="https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png" />
 5. Trong bảng điều khiển AppsFlyer, bên dưới Active Integrations, chọn Meta ads và nhập cùng một ID Ứng dụng Facebook mà bạn sử dụng khi ghi lại Quảng cáo Cài đặt Ứng dụng Di động Trong Cửa hàng của Meta với AppsFlyer.
 
 </Accordion>

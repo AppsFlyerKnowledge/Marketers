@@ -25,7 +25,7 @@ x-zendesk:
 
 > **Tổng quan:** Sử dụng bảng điều khiển Khám phá Tối ưu hóa Quảng cáo để phân tích hiệu suất quảng cáo của bạn cũng như các cảnh và thành phần đóng vai trò nền tảng cho chúng, nhằm tạo lập và duy trì quảng cáo thành công dựa trên dữ liệu.
 
-[![Main Discovery image New.jpg](https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg)](https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg)
+<Image align="center" alt="Main Discovery image New.jpg" src="https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg" />
 
 <div id="about-the-creative-optimization-discovery-ai-dashboard" />
 
@@ -91,7 +91,7 @@ Truy vấn Nhanh hoạt động dưới dạng một bộ lọc phụ, cho phép
 
 Chỉ cần nhấp vào truy vấn cụ thể mà bạn mong muốn (có thể chọn nhiều truy vấn) và thư viện sẽ được lọc theo lựa chọn của bạn.
 
-![Quick Queries with arrow New.jpg](https://files.readme.io/2fc12427a721eb8e373e10f95f3cfa1251a600ff33e0616d22af92d8f6ca7380-20131437391121.jpg)
+<Image align="center" alt="Quick Queries with arrow New.jpg" src="https://files.readme.io/2fc12427a721eb8e373e10f95f3cfa1251a600ff33e0616d22af92d8f6ca7380-20131437391121.jpg" />
 
 **Một số truy vấn khả dụng bao gồm:**
 
@@ -125,7 +125,7 @@ Bạn có thể sắp xếp các ô thư viện từ cao nhất đến thấp nh
 
 Nhấp vào menu thả xuống **Sort by** ở phía trên bên phải của thư viện và chọn phương diện/phép đo.
 
-![Sort by.jpg](https://files.readme.io/197b9c059945bf0ea964ece82faf6a72cc8d54d92b6ab4c5d3d30f8a7081d399-18565901526929.jpg)
+<Image align="center" alt="Sort by.jpg" src="https://files.readme.io/197b9c059945bf0ea964ece82faf6a72cc8d54d92b6ab4c5d3d30f8a7081d399-18565901526929.jpg" />
 
 Các phép đo khả dụng bao gồm:
 
@@ -161,7 +161,7 @@ Khám phá dữ liệu hiệu suất cho quảng cáo cũng như các cảnh và
 
 Xem thư viện tất cả các quảng cáo của bạn cùng với dữ liệu hiệu suất của chúng. Các ô được hiển thị dựa trên các lựa chọn Bộ lọc Quảng cáo chính và có thể được sắp xếp theo nhiều phép đo khác nhau. Một số phép đo nhất định chẳng hạn như Chi phí, CTR và IPM luôn xuất hiện trong các ô.
 
-![New Discovery tile image w asset and find similar.jpg](https://files.readme.io/fe410910f8db80adc9ea351cbf2d6fa895167d591b23489e7c63da9fe89076d1-18565941366545.jpg)
+<Image align="center" alt="New Discovery tile image w asset and find similar.jpg" src="https://files.readme.io/fe410910f8db80adc9ea351cbf2d6fa895167d591b23489e7c63da9fe89076d1-18565941366545.jpg" />
 
 |  | Phương diện/phép đo | Mô tả |
 | --- | --- | --- |
@@ -184,7 +184,7 @@ Xem thư viện tất cả các quảng cáo của bạn cùng với dữ liệu
 
 Được AI hỗ trợ, quảng cáo video sẽ tự động được phân chia thành các cảnh và hiển thị cùng với dữ liệu hiệu suất của chúng—mà không cần bất kỳ quy trình thủ công nào. Dữ liệu hiệu suất cảnh được lấy từ quảng cáo nguồn của cảnh. Nếu cùng một cảnh xuất hiện trong nhiều video thì dữ liệu là tổng hợp của tất cả các quảng cáo xuất hiện cảnh đó. Dữ liệu khả dụng trong trang tổng quan khoảng 24 giờ sau khi <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-partner-integrations">tích hợp đối tác</Anchor>. Tính năng này **chỉ khả dụng với các gói đăng ký Cao cấp và Tối ưu hóa Sáng tạo.**
 
-![Scene tile.jpg](https://files.readme.io/840c9ca1266be70d2b3d8714498375c8e4148ade20a36ae525a368834f50da49-18565931828241.jpg)
+<Image align="center" alt="Scene tile.jpg" src="https://files.readme.io/840c9ca1266be70d2b3d8714498375c8e4148ade20a36ae525a368834f50da49-18565931828241.jpg" />
 
 Để biết mô tả về nội dung mỗi ô hiển thị, hãy xem phần [Quảng cáo](/docs/creative-optimization-discovery-ai-dashboard#creatives) ở trên.
 
@@ -196,7 +196,7 @@ Xem thư viện tất cả các quảng cáo của bạn cùng với dữ liệu
 
 Các thuật toán AI hoàn toàn tự động của chúng tôi tiếp tục chia nhỏ quảng cáo video thành các thành phần quan trọng (cấu phần trực quan cơ bản) được xác định và hiển thị để tạo điều kiện cho phân tích chi tiết nhất. Dữ liệu hiệu suất được lấy từ quảng cáo nguồn của thành phần. Nếu cùng một thành phần xuất hiện trong nhiều quảng cáo thì dữ liệu là tổng hợp của tất cả các quảng cáo xuất hiện thành phần đó. Dữ liệu khả dụng trong trang tổng quan khoảng 24 giờ sau khi <Anchor target="_blank" href="/marketers/vi/docs/creative-optimization-partner-integrations">tích hợp đối tác</Anchor>. Tính năng này **chỉ khả dụng với các gói đăng ký Cao cấp và Tối ưu hóa Sáng tạo.**
 
-![Element tile.jpg](https://files.readme.io/05abb3b5534dba24aa06bf1131604c52579ed85c528309bcbb9fa74113ddcae2-18565947438353.jpg)
+<Image align="center" alt="Element tile.jpg" src="https://files.readme.io/05abb3b5534dba24aa06bf1131604c52579ed85c528309bcbb9fa74113ddcae2-18565947438353.jpg" />
 
 Để biết mô tả về nội dung mỗi ô hiển thị, hãy xem phần [Quảng cáo](/docs/creative-optimization-discovery-ai-dashboard#creatives) ở trên.
 

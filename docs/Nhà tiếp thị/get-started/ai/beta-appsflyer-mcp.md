@@ -113,7 +113,7 @@ Use Claude chat and Claude Cowork with browser-based OAuth login. These instruct
 #### Test the Claude connection
 
 1. In any chat window, click the settings button.   
-   <Image alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
 2. If AppsFlyer MCP was set up correctly, the AppsFlyer tools appear in the menu.
 
 > 📘 **Note**

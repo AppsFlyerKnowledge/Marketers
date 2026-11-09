@@ -28,7 +28,7 @@ x-zendesk:
 
 Hình ảnh sau đây hiển thị lần đầu tiên bạn đi đến trang **Raw data export** (Xuất dữ liệu thô); trang **My reports** (Báo cáo của tôi) hiển thị nếu bạn có báo cáo sẵn sàng để tải xuống hoặc sao chép.
 
-[![RawDataSplash.png](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)
+<Image align="center" alt="RawDataSplash.png" src="https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png" />
 
 **Báo cáo của tôi**
 
@@ -38,7 +38,7 @@ Trang **My reports** (Báo cáo của tôi) liệt kê các báo cáo được t
 
 Để tạo hoặc tải xuống báo cáo, hãy xem phần quy trình của bài viết này.
 
-[![MyReportsRawDataExport.png](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)
+<Image align="center" alt="MyReportsRawDataExport.png" src="https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png" />
 
 <div id="raw-data-export-page-features-and-filter-options" />
 

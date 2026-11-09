@@ -25,7 +25,7 @@ x-zendesk:
 >
 > Vào ngày 30 tháng 1 năm 2023, tích hợp mới **TikTok for Business—SRN Nâng cao** `tiktokglobal_int` đã được thêm vào, trong khi tích hợp trên nền tảng **TikTok for Business [Cũ]** `bytedanceglobal_int` đang giảm dần hoạt động và sẽ ngừng hẳn kể từ tháng 3 năm 2024. Quá trình chuyển đổi này do TikTok xử lý và thông báo cho bạn thời điểm có thể xóa tích hợp cũ. **Để tránh mất dữ liệu, hãy đảm bảo duy trì cả hai tích hợp ở trạng thái hoạt động trong giai đoạn chuyển đổi**. Tìm hiểu thêm trong <Anchor target="_blank" href="/marketers/vi/docs/bulletin-tiktok-for-business-advanced-srn">bản tin</Anchor>.
 
-<Image alt="TikTok_logo__2_.png" src="https://files.readme.io/3a081755b08fcf19b60ff178506a083449890cb900821f7f1e4b7ef85426dd45-11844735832081.png" width="193px" />
+<Image align="center" alt="TikTok_logo__2_.png" src="https://files.readme.io/3a081755b08fcf19b60ff178506a083449890cb900821f7f1e4b7ef85426dd45-11844735832081.png" width="193px" />
 
 <div id="overview" />
 
@@ -341,7 +341,7 @@ Các đại lý làm việc thay mặt cho nhà quảng cáo có thể bật ch�
 4. Nhập **ID Tài khoản TikTok** đại lý của bạn. Điều này xác định lưu lượng truy cập của đại lý và phân biệt với lưu lượng truy cập của nhà quảng cáo.
 5. Nhấp vào **Save Integration**.  
 
-   <Image alt="tiktok_agency_account_id.png" src="https://support.appsflyer.com/hc/article_attachments/15195630638609" width="442px" />
+   <Image align="center" alt="tiktok_agency_account_id.png" src="https://support.appsflyer.com/hc/article_attachments/15195630638609" width="442px" />
 
 > ❗️ **Cảnh báo**
 >

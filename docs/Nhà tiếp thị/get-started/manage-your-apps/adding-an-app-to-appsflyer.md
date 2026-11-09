@@ -48,7 +48,7 @@ Bạn có thể thêm tất cả các ứng dụng của mình thông qua trang 
 >
 > Nếu trang giới thiệu chưa mở, từ thanh menu đầu trang > thả xuống địa chỉ email, hãy nhấp vào **App onboarding**.
 
-![onboarding page.png](https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png)
+<Image align="center" alt="onboarding page.png" src="https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png" />
 
 **Để vào trình hướng dẫn Thêm ứng dụng từ nền tảng:**
 
@@ -56,7 +56,7 @@ Bạn có thể thêm tất cả các ứng dụng của mình thông qua trang 
 * Từ Trang chủ AppsFlyer, nhấp vào **+ Add app**
 * Từ thanh menu đầu trang > thả xuống địa chỉ email > App onboarding, nhấp vào **+ Onboard another app**
 
-<Image alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
+<Image align="center" alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
 <div id="adding-an-app" />
 
@@ -160,7 +160,7 @@ Sử dụng tùy chọn này cho các nền tảng sau:
 
 **URL đầy đủ:** URL đầy đủ của trang web mà bạn muốn đo lưu lượng truy cập. Đây là trang web mà bạn đã thực hiện (hoặc sẽ thực hiện) <Anchor target="_blank" href="/marketers/vi/docs/onboarding-guide-to-people-based-attribution#2">SDK Web PBA</Anchor>.
 
-[<Image alt="URL_diagram" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)
+<Image align="center" alt="URL_diagram" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />
 
 Bao gồm –
 
@@ -220,7 +220,7 @@ Bao gồm –
   * Từ <Anchor target="_blank" href="https://developer.roku.com/developer">Bảng điều khiển dành cho Nhà phát triển Roku</Anchor>, hãy nhấp vào tên kênh bạn đang thêm vào AppsFlyer. Thao tác này sẽ mở ra trang Preview & Publish của Roku cho kênh.
   * Số ở cuối URL của trang trong trình duyệt của bạn là ID Kênh:
 
-    <Image alt="find_channel_id.png" src="https://files.readme.io/11ef90a222a1deaf6d4718169e5a29f734f0f05d859c009d47b8ae5cb6519639-4411061399569.png" width="476px" />
+    <Image align="center" alt="find_channel_id.png" src="https://files.readme.io/11ef90a222a1deaf6d4718169e5a29f734f0f05d859c009d47b8ae5cb6519639-4411061399569.png" width="476px" />
 
 </Accordion>
 
@@ -242,7 +242,7 @@ Bao gồm –
 
 **ID Ứng dụng:** ID Gói được Samsung chỉ định cho ứng dụng của bạn. Bạn có thể tìm thấy ID này ở cuối URL cửa hàng ứng dụng của ứng dụng của bạn:
 
-<Image alt="samsung_tizen_url_app_id.png" src="https://files.readme.io/d4789b59faf551cfc1603dd3d8f95f286d5bb45b59927489bdd2263ac03a3a36-7369359502097.png" width="364px" />
+<Image align="center" alt="samsung_tizen_url_app_id.png" src="https://files.readme.io/d4789b59faf551cfc1603dd3d8f95f286d5bb45b59927489bdd2263ac03a3a36-7369359502097.png" width="364px" />
 
 </Accordion>
 
@@ -264,7 +264,7 @@ Bao gồm –
 
 **ID Ứng dụng:** ID khái niệm của PlayStation, một mã định danh duy nhất được gán cho một trò chơi hoặc khái niệm nội dung khác. Mã xuất hiện dưới dạng số 5-9 chữ số trong URL cửa hàng PlayStation:
 
-![playstation_app_id_url.png](https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png)
+<Image align="center" alt="playstation_app_id_url.png" src="https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png" />
 
 </Accordion>
 
@@ -286,7 +286,7 @@ Bao gồm –
 
 **ID ứng dụng:** ID ứng dụng Steam. Đây là số 5-8 chữ số xuất hiện trong URL cửa hàng Steam:
 
-![steam_store_app_url.png](https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png)
+<Image align="center" alt="steam_store_app_url.png" src="https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png" />
 
 </Accordion>
 
@@ -351,7 +351,7 @@ Bao gồm –
 
 ### Nhập thông tin bổ sung (không áp dụng cho ứng dụng web):
 
-<Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
+<Image align="center" alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
 
 1. **Chọn đơn vị tiền tệ**
 

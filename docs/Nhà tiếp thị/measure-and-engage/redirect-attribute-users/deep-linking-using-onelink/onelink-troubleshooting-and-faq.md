@@ -289,7 +289,7 @@ URL Dự phòng đưa người dùng đến các trang web được chỉ địn
 
 Để triển khai URL dự phòng, trong mẫu OneLink hoặc cài đặt liên kết tùy chỉnh, hãy đặt hoạt động liên kết cho trường hợp khi ứng dụng chưa được cài đặt để chuyển hướng đến một URL khác.
 
-[![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
+<Image align="center" alt="different_url.png" src="https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png" />
 
 Việc sử dụng tùy chọn cài đặt này sẽ thêm `af_ios_url` và `af_android_url` làm tham số đích cho phương án dự phòng, điều này sẽ khiến người dùng iOS được chuyển hướng đến trang được chỉ định bởi `af_ios_url` và người dùng Android được chuyển hướng đến trang được chỉ định bởi `af_android_url`.
 
@@ -669,11 +669,11 @@ WeChat ghi đè liên kết sâu Android và iOS và chuyển hướng người 
 
 Để khắc phục, OneLink nhận diện lượt nhấp chuột trong WeChat và tải một trang đích riêng hướng dẫn người dùng nhấp vào nút tùy chọn và nhấp vào **Open in Browser**. Như thế sẽ mở ra URL chuyển hướng được xác định trong thiết lập mẫu OneLink.
 
-![WeChat_a.jpg](https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg)
+<Image align="center" alt="WeChat_a.jpg" src="https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg" />
 
 Nếu ngôn ngữ WeChat của người dùng được đăng ký là tiếng Trung, OneLink sẽ tạo một phiên bản được bản địa hóa của trang đích:
 
-![WeChat_b.jpg](https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg)
+<Image align="center" alt="WeChat_b.jpg" src="https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg" />
 
 </Accordion>
 

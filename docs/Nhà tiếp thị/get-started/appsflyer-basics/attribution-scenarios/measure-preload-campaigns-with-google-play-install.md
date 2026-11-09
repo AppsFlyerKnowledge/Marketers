@@ -44,7 +44,7 @@ AppsFlyer gives the highest priority to preload attribution. This means that if 
 3. The AppsFlyer SDK queries the Google Play referrer API.
 4. AppsFlyer attributes are based on the data retrieved.
 
-![PAI-attribution-flow_en-us.png](https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png)
+<Image align="center" alt="PAI-attribution-flow_en-us.png" src="https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png" />
 
 ### Data availability
 

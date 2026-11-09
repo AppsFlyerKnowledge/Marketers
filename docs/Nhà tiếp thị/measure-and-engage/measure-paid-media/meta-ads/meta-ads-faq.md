@@ -125,7 +125,7 @@ Theo mặc định, Meta ads không cho phép phân bổ dữ liệu ở mức n
 Có. Các báo cáo hiệu suất có cấu trúc cột tĩnh trong mọi kết hợp nguồn phương tiện được chọn, trình bày thông tin xuống cấp chiến dịch.   
 Tuy nhiên, khi bạn tải xuống các báo cáo hiệu suất CHỈ dành cho Meta ads, AppsFlyer sẽ thêm 4 cột vào trong báo cáo, hiển thị thông tin chi tiết đến từng quảng cáo! Các cột được thêm vào là Tên Bộ quảng cáo, ID Bộ quảng cáo, Adgroup (tức là quảng cáo đơn) Tên và ID Adgroup.
 
-[![](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)
+<Image align="center" alt="" src="https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png" />
 
 </Accordion>
 
@@ -143,7 +143,7 @@ Có. AppsFlyer được tích hợp với hàng chục đối tác quản lý ch
 
 <Accordion title="Tôi nên làm gì khi tôi nhận được cảnh báo sau đây?">
 
-[![](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)
+<Image align="center" alt="" src="https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png" />
 
 * Xác minh ID Ứng dụng Facebook và kiểm tra xem bạn có bất kỳ giới hạn địa lý hay độ tuổi nào đối với ID Ứng dụng Facebook của họ không.
 * Nếu hoạt động phân bổ đang diễn ra, điều này cho thấy rằng ứng dụng đã công khai có mặt trong Cổng thông tin của Nhà phát triển Meta và bạn có thể an toàn bỏ qua thông báo lỗi này.
@@ -234,7 +234,7 @@ Nếu một chiến dịch của Meta ads tương tác với nhiều nền tản
 
 Nhà quảng cáo chạy các chiến dịch bằng Meta ads.Trong AppsFlyer, nhà quảng cáo thấy như sau:
 
-![mceclip2.png](https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png" />
 
 Thông tin chi phí được Meta ads cung cấp cho AppsFlyer. Số **lượt cài đặt** được AppsFlyer tính toán bằng cách sử dụng các quy tắc phân bổ của AppsFlyer. Do đó, eCPI do Meta ads tính và do AppsFlyer tính thường khác nhau.
 
@@ -362,7 +362,7 @@ Nếu bạn muốn chuyển sang tài khoản quảng cáo mới nhưng chi phí
 1. Trong Meta ads, đi đến **Settings** > **Business Integration**.
 2. Trên tab **Active** (Hoạt động), bỏ tích hợp với AppsFlyer.  
 
-    [![](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)
+    <Image align="center" alt="" src="https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png" />
 3. Đi đến bảng điều khiển AppsFlyer và kết nối chi phí với tài khoản quảng cáo mới.
 
 </Accordion>
@@ -439,7 +439,7 @@ Bên cạnh đó, các đại lý không thể sửa đổi bất kỳ bài đă
 
 Hình ảnh dưới đây cho thấy tất cả các cài đặt cần được nhà quảng cáo cấu hình cho đại lý để có thể quản lý các chiến dịch Meta ads:
 
-[![advertiser-vs-agency-facebook-int-new.png](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)
+<Image align="center" alt="advertiser-vs-agency-facebook-int-new.png" src="https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png" />
 
 </Accordion>
 
@@ -499,7 +499,7 @@ Với Meta ads, bạn có thể xem dữ liệu được chia nhỏ không chỉ
 
 Sử dụng dữ liệu này để so sánh chất lượng của người dùng mà bạn nhận được từ các kênh khác nhau.
 
-![Facebook_channels.png](https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png)
+<Image align="center" alt="Facebook_channels.png" src="https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png" />
 
 </Accordion>
 

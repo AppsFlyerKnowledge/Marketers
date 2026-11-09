@@ -72,13 +72,13 @@ Trong lần truy cập đầu tiên, bạn sẽ cần bật nút chuyển đổi
 
 Ở đầu thẻ Tích hợp (Integration), có một lưu ý cho biết rằng Unity Ads yêu cầu gửi cho họ ID thiết bị cho mỗi lượt cài đặt—việc này được thực hiện tự động, bạn không cần phải làm gì cả.
 
-[![Unity_msc_new_2.png](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)
+<Image align="center" alt="Unity_msc_new_2.png" src="https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png" />
 
 **ID trò chơi của Unity Ads**
 
 Unity Ads yêu cầu kết nối với AppsFlyer qua một ID trò chơi duy nhất. Nếu bạn không biết ID của mình, bạn có thể nhận ID trực tiếp từ Unity Ads hoặc bạn có thể tìm thấy ID sau khi tải lên trò chơi, dưới phần **Ứng dụng** (Apps) > **Chiến dịch** (Campaigns), như trong hình chụp dưới đây.
 
-[![](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)
+<Image align="center" alt="" src="https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png" />
 
 Nền tảng Unity Ads ánh xạ một ứng dụng tới một ID trò chơi của Unity Ads, cho mỗi cấp độ tài khoản (các nhà quảng cáo và đại lý sẽ có các ID trò chơi khác nhau cho cùng một ứng dụng). Nhiều tài khoản trên Nền tảng Unity Ads không thể chạy cùng một ứng dụng với các ID trò chơi khác nhau.
 
@@ -86,13 +86,13 @@ Nền tảng Unity Ads ánh xạ một ứng dụng tới một ID trò chơi c�
 
 Bật tùy chọn này để phân bổ lượt cài đặt qua lượt xem từ Unity Ads. Thanh trượt xem lại lượt xem có sẵn trên thẻ đường dẫn phân bổ (mô tả dưới đây).
 
-![Unity_ads_msc_new_3.png](https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png)
+<Image align="center" alt="Unity_ads_msc_new_3.png" src="https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png" />
 
 <div id="default-postbacks" />
 
 ### Các bài đăng lại mặc định
 
-![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
+<Image align="center" alt="Screen_Shot_2022-07-28_at_13.07.25.png" src="https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png" />
 
 Gửi postback tự động đến Unity Ads sau lượt cài đặt và tái tương tác của người dùng. Sử dụng phần này để xác định nguồn của người dùng cho phép gửi các postback này:
 
@@ -111,7 +111,7 @@ Gửi postback tự động đến Unity Ads sau lượt cài đặt và tái t�
 
 Ánh xạ các sự kiện AppsFlyer với đối tác qua các đăng lại. Nếu bật tính năng gửi đăng lại, điều này bao gồm các sự kiện trong ứng dụng bị từ chối (các sự kiện bị Protect360 chặn hoặc các sự kiện bị phát hiện là không tuân thủ theo quy tắc xác thực mục tiêu).
 
-[![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+<Image align="center" alt="" src="https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png" />
 
 <div id="to-configure-in-app-event-postbacks" />
 

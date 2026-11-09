@@ -28,7 +28,7 @@ x-zendesk:
 
 > **Khái quát:** Tìm hiểu về các phương thức để nhà quảng cáo tổng hợp và xem dữ liệu về chi phí tiếp thị.
 
-![roi360_image.png](https://files.readme.io/1eaf922de9a1174c1971582dd32f53b995de014c8c2bf288b52a93c83334374e-11245891045777.png)
+<Image align="center" alt="roi360_image.png" src="https://files.readme.io/1eaf922de9a1174c1971582dd32f53b995de014c8c2bf288b52a93c83334374e-11245891045777.png" />
 
 <div id="cost-aggregation" />
 
@@ -122,7 +122,7 @@ Nhằm mục đích hiểu rõ bảng này, các nội dung giải thích sau đ
 
 **Ưu tiên phương pháp tổng hợp chi phí chiến dịch**
 
-![CostPriority.jpg](https://files.readme.io/052420655410713b39c3869a4670465e88d8f7c15a43afc56f11821940fa7c5e-360014470078.jpg)
+<Image align="center" alt="CostPriority.jpg" src="https://files.readme.io/052420655410713b39c3869a4670465e88d8f7c15a43afc56f11821940fa7c5e-360014470078.jpg" />
 
 * Cơ chế này tác động đến các báo cáo dữ liệu hợp nhất và trang tổng quan.
 * Dữ liệu chi phí nhấp chuột có trong báo cáo dữ liệu thô không bị tác động bởi cơ chế ưu tiên.

@@ -29,7 +29,7 @@ x-zendesk:
 
 > **Khái quát**: Bảng điều khiển Protect360 cung cấp những thông tin chuyên sâu về lưu lượng truy cập gian lận và các lượt cài đặt bị chặn do việc áp dụng các quy tắc xác thực.
 
-[![p360_dashboard_main.png](https://support.appsflyer.com/hc/article_attachments/5218491552273)](https://support.appsflyer.com/hc/article_attachments/5218491552273)
+<Image align="center" alt="p360_dashboard_main.png" src="https://support.appsflyer.com/hc/article_attachments/5218491552273" />
 
 <div id="about-protect360-dashboard" />
 
@@ -56,7 +56,7 @@ Bảng điều khiển Protect360:
 
 **Cửa sổ bộ lọc và nhóm**
 
-[![p360_filters_2.png](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)
+<Image align="center" alt="p360_filters_2.png" src="https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png" />
 
 Các tùy chọn lọc và nhóm sau đây có sẵn:
 
@@ -107,7 +107,7 @@ Các số liệu dạng tiêu đề cho phép bạn xem:
 
 **Mức tiết kiệm ước tính**
 
-[![](https://support.appsflyer.com/hc/article_attachments/4403139246993)](https://support.appsflyer.com/hc/article_attachments/4403139246993)
+<Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/4403139246993" />
 
 Số liệu về số tiền tiết kiệm ước tính:
 
@@ -119,7 +119,7 @@ Số liệu về số tiền tiết kiệm ước tính:
 
 **Số lượt phân bổ gian lận được xác định**
 
-[![](https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png)](https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png)
+<Image align="center" alt="" src="https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png" />
 
 Tổng số liệu về gian lận được xác định hiển thị số:
 
@@ -128,7 +128,7 @@ Tổng số liệu về gian lận được xác định hiển thị số:
 
 **Các sự kiện trong ứng dụng bị chặn**
 
-[![](https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png)](https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png)
+<Image align="center" alt="" src="https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png" />
 
 Số liệu sự kiện trong ứng dụng bị chặn hiển thị số sự kiện trong ứng dụng bị AppsFlyer chặn. Các sự kiện này có thể bị chặn do thuộc về các lượt cài đặt bị chặn hoặc do bị đánh dấu là các sự kiện hậu phân bổ đáng ngờ.
 
@@ -201,7 +201,7 @@ Bảng **Phân tích gian lận đã xác định** hiển thị dữ liệu sau
 
 Bảng được trình bày ở định dạng tổng quan chung, như được thể hiện trong hình ảnh sau đây.
 
-[![p360_main_table.png](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)
+<Image align="center" alt="p360_main_table.png" src="https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png" />
 
 Cấu trúc bảng động:
 
@@ -209,7 +209,7 @@ Cấu trúc bảng động:
   Nếu bạn thực hiện bất kỳ thay đổi nào đối với bảng, hãy nhớ nhấp vào nút **Save** (Lưu) sau đó.
 * Là theo mỗi người dùng, vì vậy mọi người dùng tài khoản có quyền truy cập vào Protect360 đều có thể tự tùy chỉnh cấu trúc bảng của riêng họ. Xem [thêm các tùy chọn bảng](/docs/protect360-dashboard#tùy-chọn-bảng-bổ-sung).
 
-[![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+<Image align="center" alt="edit_table.jpg" src="https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg" />
 
 <div id="content-of-the-identified-fraud-breakdown-table" />
 
@@ -307,7 +307,7 @@ Các tính năng của bảng điều khiển được mô tả trong các phầ
 
 <Accordion title="Sự kiện trong ứng dụng —s ố liệu dạng tiêu đề">
 
-[![](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)
+<Image align="center" alt="" src="https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg" />
 
 Các số liệu dạng tiêu đề cho phép bạn xem:
 
@@ -358,7 +358,7 @@ Bảng **Phân tích gian lận sự kiện trong ứng dụng** hiển thị d�
 
 Bảng được trình bày ở định dạng tổng quan chung, như được thể hiện trong hình ảnh sau đây.
 
-[![IAE_fraud_table.jpg](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)
+<Image align="center" alt="IAE_fraud_table.jpg" src="https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg" />
 
 Cấu trúc bảng động:
 
@@ -366,7 +366,7 @@ Cấu trúc bảng động:
   Nếu bạn thực hiện bất kỳ thay đổi nào đối với bảng, hãy nhớ nhấp vào nút **Save** (Lưu) sau đó.
 * Là theo mỗi người dùng, vì vậy mọi người dùng tài khoản có quyền truy cập vào Protect360 đều có thể tự tùy chỉnh cấu trúc bảng của riêng họ. Xem [thêm các tùy chọn bảng](/docs/protect360-dashboard#installs-table).
 
-[![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
+<Image align="center" alt="iae_table_structure.jpg" src="https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg" />
 
 <div id="content-of-the-in-app-event-fraud-breakdown-table" />
 
@@ -418,17 +418,17 @@ Các sự kiện phải trả là các IAE có chi phí. Sau khi được bật 
 
 * Trong phần **Filter by** (Lọc theo) của bảng điều khiển Hoạt động trong ứng dụng, hãy bật Các sự kiện phải trả.  
 
-  [![](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)
+  <Image align="center" alt="" src="https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg" />
 
 **Để cấu hình các sự kiện phải trả**:
 
 1. Trong bảng điều khiển Hoạt động trong ứng dụng, nhấp vào **Configure payable events** (Cấu hình các sự kiện phải trả).  
 
-   [![](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg" />
 
    Cửa sổ bật lên Cấu hình các sự kiện phải trả sẽ được hiển thị.
 
-   [![](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg" />
 2. [Tùy chọn] Nếu bạn cấu hình một sự kiện phải trả mới, hãy nhấp vào **Add new** (Thêm mới).
 3. Tùy bạn muốn hiển thị những IAE phải trả nào trong bảng điều khiển, hãy chọn những mục sau đây từ menu thả xuống:
    * Ứng dụng
@@ -453,7 +453,7 @@ Bảng điều khiển về Bất thường:
 
 <Accordion title="Tab CTIT">
 
-[![Anomalies_CTIT.png](https://files.readme.io/630ff7b8c065a302f86b0c1f69c0d166d3ff28a2833ebde3e79494ba8b283f08-360011641657.png)](https://files.readme.io/630ff7b8c065a302f86b0c1f69c0d166d3ff28a2833ebde3e79494ba8b283f08-360011641657.png)
+<Image align="center" alt="Anomalies_CTIT.png" src="https://files.readme.io/630ff7b8c065a302f86b0c1f69c0d166d3ff28a2833ebde3e79494ba8b283f08-360011641657.png" />
 
 **Để xem thông tin về CTIT** (các số tham chiếu đến ảnh chụp màn hình trước):
 
@@ -480,7 +480,7 @@ Bảng **phân tích bất thường CTIT**  ở cuối trang hiển thị tấ
 
 <Accordion title="Tab thiết bị mới">
 
-[![anomalies_new_devices](https://files.readme.io/5bb108e61e0641cb16ba16720625dfbdf5446f979e6dddc80c9ec179104f5ec7-360011641677.png)](https://files.readme.io/5bb108e61e0641cb16ba16720625dfbdf5446f979e6dddc80c9ec179104f5ec7-360011641677.png)
+<Image align="center" alt="anomalies_new_devices" src="https://files.readme.io/5bb108e61e0641cb16ba16720625dfbdf5446f979e6dddc80c9ec179104f5ec7-360011641677.png" />
 
 Tab **New devices** (Thiết bị mới) cho phép bạn phát hiện trực quan các nguồn truyền thông và ID trang web có <Anchor target="_blank" href="/marketers/vi/docs/protect360-anti-fraud-guide#benchmarks-and-tips">tỷ lệ thiết bị mới cài đặt ứng dụng của bạn cao đáng ngờ</Anchor>.
 

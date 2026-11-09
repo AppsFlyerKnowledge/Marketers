@@ -70,10 +70,10 @@ Organic keyword data is found in the following:
 3. Use a strong keyword to search for your app.   
    This example uses "**hotels tonight**".  
      
-   [<Image alt="organic_keywords_search.jpg" src="https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg" width="426px" />](https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg)
+   <Image align="center" alt="organic_keywords_search.jpg" src="https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg" width="426px" />
 4. Click ***Install*** to be redirected to the Google Play Store.
 5. Install and launch the app.  
-   [<Image alt="Hotels_Tonight_3.png" src="https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png" width="373px" />](https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png)
+   <Image align="center" alt="Hotels_Tonight_3.png" src="https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png" width="373px" />
 6. Search for the keyword in the AppsFlyer sources described above.
 
 <div data-zendesk-anchors="h_01HKA1D1TW1R20X6K05Q9GX904=keyword-data h_01HKA1D1TW9YXBMGERHW4EHZZN=ios-keywords h_01HKA1D1TWT1VQ6NZ789BTCZJX=android-keywords h_01HKA1D1TW7E2RM7SXC9R5SA99=note using-the%C2%A0keyword%C2%A0data=using-thekeyworddata h_01HKA1D1TWRPGTNGJKF7T1R71B=using-thekeyworddata testing-organic%C2%A0keyword%C2%A0data=testing-organickeyworddata h_01HKA1D1TW5W9A72V2NMPX932H=testing-organickeyworddata" />

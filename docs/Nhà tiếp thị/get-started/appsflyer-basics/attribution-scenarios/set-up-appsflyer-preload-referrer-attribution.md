@@ -80,7 +80,7 @@ Dữ liệu hiệu suất chiến dịch tương tác tải trước/nhấp đ�
 2. Chọn đối tác tải trước.
 3. Trong thẻ **Integration**, bật **Preload attribution**.  
 
-   [<Image alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />](https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png)
+   <Image align="center" alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />
 4. Đặt thời lượng **khung thời gian xem lại tải trước**. Phạm vi: 1-180 ngày.
 5. [Tùy chọn] Bật **Preload equal attribution priority**.  
    Điều này mang lại mức độ ưu tiên phân bổ cho các lượt nhấp chuột xác định ngang bằng với mức độ ưu tiên của các lượt phân bổ tải trước, nghĩa là nếu một lượt nhấp chuột xác định được đăng ký giữa lượt tương tác và lượt cài đặt liên kết giới thiệu tải trước, thì lượt nhấp chuột sẽ nhận được phân bổ theo logic phân bổ tương tác cuối cùng tiêu chuẩn, thay vì bị thay thế bởi liên kết giới thiệu tải trước.
