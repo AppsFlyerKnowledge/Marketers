@@ -45,7 +45,7 @@ x-zendesk:
    <Image align="center" alt="assign-inst-ad-to-fb.png" src="https://files.readme.io/658dc57d0056a2217a9f0f5c785b87e24c297158b75c5815eddb64930d00ea17-11213052873745.png" width="550px" />
 3. Настройте Meta ads в разделе «Конфигурация активных интеграций», добавив идентификатор приложения Facebook.
 4. Если у вас нет идентификатора приложения Facebook, создайте его <Anchor target="_blank" href="https://developers.facebook.com/apps">здесь</Anchor> .  
-   [<Image align="center" alt="facebook_app_id.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />](https://support.appsflyer.com/hc/article_attachments/49468456361489)
+   <Image align="center" alt="facebook_app_id.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />
 
 <div id="instagram-landing-page-for-deep-linking" />
 

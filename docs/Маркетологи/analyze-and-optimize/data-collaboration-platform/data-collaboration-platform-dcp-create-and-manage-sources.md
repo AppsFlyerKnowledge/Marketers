@@ -708,7 +708,7 @@ DCP может с помощью ИИ предложить поле DCP для �
 
 * Нажмите меню с 3 точками (действия) в правом верхнем углу и выберите **DCR key**.
 
-[<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/49929194881425)
+<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />
 
 После создания папки с ключом DCR, структура корзины и папок будет выглядеть следующим образом:
 

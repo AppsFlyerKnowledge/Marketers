@@ -184,7 +184,7 @@ x-zendesk:
 
 В этом примере одни и те же исходные данные используются для генерации двух типов трендов когорт. Таблица сырых данных содержит события атрибуции, относящиеся к разным пользователям A, B, C и D. Пользователи вовлекаются рекламой, устанавливают приложение и после конверсии совершают одну или несколько покупок. Когортный день 0 - день установки.
 
-[<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />](https://support.appsflyer.com/hc/article_attachments/49929144259089)
+<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />
 
 </Accordion>
 

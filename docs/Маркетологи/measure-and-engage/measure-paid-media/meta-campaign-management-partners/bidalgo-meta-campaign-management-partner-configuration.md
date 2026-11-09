@@ -51,7 +51,7 @@ x-zendesk:
 2. Настройте конфигурацию в соответствии с рекомендациями, приведенными <Anchor target="_blank" href="/marketers/ru/docs/meta-ads-in-app-event-mapping#сопоставление-предопределенных-событий">здесь</Anchor>.
 3. Нажмите **Сохранить**.
 
-[<Image align="center" alt="meta_campaign_management_partner_settings.png" src="https://files.readme.io/776ce8b6017e1f39186df6a9e1614b6eeed7585327156369c9650d2f9645f42b-14238309599121.png" />](https://support.appsflyer.com/hc/article_attachments/49929462678161)
+<Image align="center" alt="meta_campaign_management_partner_settings.png" src="https://files.readme.io/776ce8b6017e1f39186df6a9e1614b6eeed7585327156369c9650d2f9645f42b-14238309599121.png" />
 
 <div id="configuring-on-bidalgo" />
 
