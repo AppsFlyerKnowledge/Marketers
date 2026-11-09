@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要**：OneLinkを使用すると、ユーザーのデバイス、OS、チャネル、プラットフォームを問わず、キャンペーンからのリダイレクト、ディープリンク、アトリビューションを柔軟に設定し、コンバージョンの最大化を図れます。
 
-## ![53010_Onelink.jpg](https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg)
+<Image align="center" alt="53010_Onelink.jpg" src="https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg" />
 
 <div id="about-onelink" />
 

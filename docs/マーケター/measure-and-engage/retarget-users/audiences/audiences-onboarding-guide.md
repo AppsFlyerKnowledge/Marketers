@@ -24,7 +24,7 @@ x-zendesk:
 
 > **概要**：AppsFlyer Audiencesを使用して、カスタマイズされたオーディエンスセグメントを構築し、パートナーネットワークに接続することで、最も効果的なユーザー獲得およびリマーケティングキャンペーンを実施できます。
 
-## ![53010_Audiences.jpg](https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg)
+<Image align="center" alt="53010_Audiences.jpg" src="https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg" />
 
 <div id="about-audiences" />
 

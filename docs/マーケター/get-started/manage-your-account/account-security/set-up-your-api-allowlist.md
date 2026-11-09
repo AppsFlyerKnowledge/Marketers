@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **概要：** API許可リストを設定し、AppsFlyerアカウントを保護します。
 
-## [<Image alt="API許可リスト" src="https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png" width="609px" />](https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png)
+<Image align="center" alt="API許可リスト" src="https://files.readme.io/05f8c46f81b679e2881bf72255ae835a70d1cb3be1ea862b90053c2c259f25b6-4423224122385.png" width="609px" />
 
 <div id="overview" />
 

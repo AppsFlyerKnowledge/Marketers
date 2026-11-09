@@ -24,7 +24,7 @@ x-zendesk:
 
 > **概要：** AppsFlyerとのESP連携を設定して、メールキャンペーンでシームレスかつ安全なディープリンクを実現し、ユーザーエンゲージメントとコンバージョン率を向上させます。
 
-## <Image alt="ESP final main KB image.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
+<Image align="center" alt="ESP final main KB image.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
 
 <div id="about-the-appsflyer-esp-integration" />
 
