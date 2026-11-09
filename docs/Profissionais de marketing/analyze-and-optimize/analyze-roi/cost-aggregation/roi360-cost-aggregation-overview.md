@@ -142,7 +142,7 @@ Os exemplos a seguir mostram como a janela de ±10 dias afeta onde o custo apare
 
 Para um determinado canal de mídia, o custo pode ser fornecido por mais de um método de agregação. Para evitar a inflação de custos, um mecanismo de priorização do custo da campanha decide quais dados de custo aparecem na plataforma. A AppsFlyer dá prioridade com base no método de agregação. A prioridade, da maior para a menor, é: Custo no link de atribuição > Cost API > Cost Import.
 
-![Diagrama que mostra a ordem de priorização do custo: custo no link de atribuição, depois Cost API e depois Cost Import](https://files.readme.io/8dbea1b8561d67f77d27cad85ab109e5203930273f32d2a9b04900b810c46ec2-25433450962577.png)
+<Image align="center" alt="Diagrama que mostra a ordem de priorização do custo: custo no link de atribuição, depois Cost API e depois Cost Import" src="https://files.readme.io/8dbea1b8561d67f77d27cad85ab109e5203930273f32d2a9b04900b810c46ec2-25433450962577.png" />
 
 O mecanismo de priorização de custos afeta os relatórios de dados agregados e dashboards. Isso não afeta os dados de custo do link de atribuição nos relatórios de dados brutos, conforme observado acima.
 

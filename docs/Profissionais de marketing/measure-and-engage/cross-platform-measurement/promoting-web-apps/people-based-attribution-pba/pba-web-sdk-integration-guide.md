@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **At a glance:** Integre a AppsFlyer a sites usando o Web SDK para registrar e medir visitas, eventos, conversões e receitas.
 
-![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="web-sdk-user-and-integration-guide" />
 
@@ -285,7 +285,7 @@ Integrar o SDK da web usando um dos seguintes métodos.
 1. <Anchor target="_blank" href="https://developers.google.com/tag-manager/quickstart">Acesse o Google Tag Manager.</Anchor>
 2. Crie uma nova tag para o Web SDK da AppsFlyer.
 
-   ![Crie uma nova tag para o SDK Web da AppsFlyer no Google Tag Manager](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)
+   <Image align="center" alt="Crie uma nova tag para o SDK Web da AppsFlyer no Google Tag Manager" src="https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png" />
 3. Selecione o tipo de tag **HTML personalizada**.
 4. Dê um nome significativo à etiqueta.
 5. Siga um dos procedimentos abaixo:
@@ -300,7 +300,7 @@ Integrar o SDK da web usando um dos seguintes métodos.
    * **Para adicionar o gatilho a todas as páginas:**
      1. Clique em **Adicionar gatilho**.
 
-        ![gtm-af-tag-sdk-trigger.png](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)
+        <Image align="center" alt="gtm-af-tag-sdk-trigger.png" src="https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png" />
      2. Selecione **Todas as páginas**.
      3. Clique em **Salvar.**
      4. Digite um nome para a tag e clique em **Salvar**.  
@@ -310,7 +310,7 @@ Integrar o SDK da web usando um dos seguintes métodos.
      2. Na janela principal do GTM, selecione Gatilhos . Clique em **Novo**.
      3. Clique no ícone de caneta.
      4. Escolha o tipo de gatilho **Visualização de página**.  
-        ![PBAselectTrigger_us-en.jpg](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)
+        <Image align="center" alt="PBAselectTrigger_us-en.jpg" src="https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg" />
      5. Selecione **Algumas visualizações de página.**
      6. Defina a página e as condições de gatilho conforme necessário.
      7. Clique em **Salvar.**
@@ -320,7 +320,7 @@ Integrar o SDK da web usando um dos seguintes métodos.
         3. No painel de gatilho, clique na caneta.
         4. Selecione o gatilho da visualização da página que criou anteriormente.
 
-           ![Selecione o gatilho de visualização de página criado anteriormente no Google Tag Manager](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)
+           <Image align="center" alt="Selecione o gatilho de visualização de página criado anteriormente no Google Tag Manager" src="https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png" />
         5. Clique em **Salvar**.
 
 </Tab>
@@ -336,7 +336,7 @@ Integrar o SDK da web usando um dos seguintes métodos.
 
 <Accordion title="Crie uma propriedade na Adobe Experience Cloud">
 
-![adobe_create_property.png](https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png)
+<Image align="center" alt="adobe_create_property.png" src="https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png" />
 
 1. Acesse **Adobe Experience Cloud** > **Inicialização**.
 2. Em **Adobe Experience Cloud Launch**, clique em **Ir para Inicialização**.
@@ -352,7 +352,7 @@ Integrar o SDK da web usando um dos seguintes métodos.
 
 <Accordion title="Adicione o Web SDK à propriedade do Adobe Launch">
 
-<Image alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
+<Image align="center" alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
 
 1. Na página **Minha propriedade da web**, selecione a aba **Regras**.
 2. Nomeie a regra. Recomendado para uso, **Carregar Web SDK**.
@@ -371,7 +371,7 @@ Integrar o SDK da web usando um dos seguintes métodos.
 
 <Accordion title="Adicione a etiqueta do Adobe Launch ao site">
 
-![adobe_tag.png](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)
+<Image align="center" alt="adobe_tag.png" src="https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png" />
 
 1. Na página de **Propriedade da minha web**, selecione a aba **Ambientes** .
 2. Encontre a linha com o ambiente no qual você deseja publicar (desenvolvimento ou produção).
@@ -388,7 +388,7 @@ Integrar o SDK da web usando um dos seguintes métodos.
 
 <Accordion title="Publique o ambiente do Adobe Launch">
 
-![adobe_publishing_env.png](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)
+<Image align="center" alt="adobe_publishing_env.png" src="https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png" />
 
 1. Na página **Propriedade da minha web**, acesse a aba **Publicação** .
 2. Na seção  **Desenvolvimento**, clique em **Adicionar nova biblioteca.**
@@ -426,7 +426,7 @@ Depois de instalado, verifique se o Web SDK da AppsFlyer é chamado pelo navegad
 1. Acesse o site.
 2. Abra as ferramentas de desenvolvimento do navegador.
 
-   ![WebSDK_us-en.jpg](https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg)
+   <Image align="center" alt="WebSDK_us-en.jpg" src="https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg" />
 3. Vá para a aba (A) **Network**.
 4. Atualize a página.
 5. Filtre por (B) **wa.appflyer**.
@@ -448,7 +448,7 @@ Depois de instalado, verifique se o Web SDK da AppsFlyer é chamado pelo navegad
 
 <Accordion title="Eventos de envio opt-in/opt-out">
 
-![5578-VistiorPrivacyOptIn_us-en.png](https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png)
+<Image align="center" alt="5578-VistiorPrivacyOptIn_us-en.png" src="https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png" />
 
 O Web SDK envia dados de eventos do visitante para a AppsFlyer. É possível controlar, parar ou iniciar o envio de eventos, conforme descrito nesta secção.
 
@@ -729,7 +729,7 @@ Esta parte destina-se a desenvolvedores web.
 4. Acione o evento.
 5. Filtrar por mensagem.
 
-   ![pba_af_event.png](https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png)
+   <Image align="center" alt="pba_af_event.png" src="https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png" />
 6. Procure uma solicitação de network que comece com o destino wa.appsflyer.com (veja a imagem abaixo).
 7. Certifique-se de que:
    1. O código de status é 200.
@@ -834,7 +834,7 @@ O código anterior mostra uma página HTML básica. A página web precisa carre
    O código anterior carrega o GTM que, por sua vez, carrega o Web SDK. Depois disso, duas outras ações ocorrem no script. Uma é uma função que obtém uma resposta do servidor com detalhes do usuário. A outra define dados para armazenamento local. GTM tem acesso à função e ao localStorage. Você pode chamar a função e acessar localStorage usando GTM.
 2. Adicione uma nova tag para atribuir assinaturas após o carregamento da página de agradecimento
 
-   ![Adicione uma nova tag para atribuir assinaturas no Google Tag Manager](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="Adicione uma nova tag para atribuir assinaturas no Google Tag Manager" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 3. Dê um nome distinto à tag e selecione a opção de tipo de tag **HTML personalizado**.
 4. Coloque o seguinte código no **HTML personalizado**.
 
@@ -842,13 +842,13 @@ O código anterior mostra uma página HTML básica. A página web precisa carre
    <script> AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'subscription'}); </script>
    ```
 
-   ![gtm_tag_after_subscribe.png](https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png)
+   <Image align="center" alt="gtm_tag_after_subscribe.png" src="https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png" />
 5. Expanda o controle **Configurações avançadas** e, em seguida, o controle **Sequenciamento de tags** abaixo da área de texto e certifique-se de que ele esteja configurado para disparar a conversão após a execução da tag.
 
-   ![Configurações de sequenciamento de tags no Google Tag Manager](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="Configurações de sequenciamento de tags no Google Tag Manager" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. Para disparar a tag de conversão, defina um gatilho. No exemplo, o gatilho é acionado ao carregar a página de agradecimento.
 
-   ![Acionador configurado para disparar no carregamento da página de agradecimento](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="Acionador configurado para disparar no carregamento da página de agradecimento" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 **Registro de eventos quando os usuários interagem com o site**
 
@@ -864,13 +864,13 @@ O código anterior mostra uma página HTML básica. A página web precisa carre
    O código anterior carrega o Web SDK usando GTM. O resto é simplesmente HTML que imita uma página de carrinho de compras. Observe o botão **Checkout** que contém o ID checkout. É necessário ao configurar o GTM para lidar com um clique nesse botão.
 2. No GTM, clique em **Variáveis**, clique em **Configurar** e marque **Clicar element** na lista de **Variáveis internas.**  
 
-   ![gtm-create-variable.png](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)
+   <Image align="center" alt="gtm-create-variable.png" src="https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png" />
 3. Crie uma nova variável, atribua um nome significativo e escolha o tipo Todos os elementos.  
 
-   ![gtm-checkout-all-elements.png](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)
+   <Image align="center" alt="gtm-checkout-all-elements.png" src="https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png" />
 4. Na configuração de gatilho, escolha **Alguns cliques** e **Clicar elemento**, que **corresponda ao seletor CSS** de #checkout.  
 
-   ![gtm-checkout-click-elememt.png](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)
+   <Image align="center" alt="gtm-checkout-click-elememt.png" src="https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png" />
 5. Crie uma nova tag para a ação de checkout, escolha o tipo HTML personalizado e defina o gatilho como gatilho de checkout.
 
    ```html
@@ -878,7 +878,7 @@ O código anterior mostra uma página HTML básica. A página web precisa carre
     AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'}); </script>
    ```
 
-   ![gtm-checkout-tag.png](https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png)
+   <Image align="center" alt="gtm-checkout-tag.png" src="https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png" />
 
 </Tab>
 </Tabs>
@@ -1073,10 +1073,10 @@ O código usa a API fetch. Ele envia ao servidor o endereço de e-mail inserido 
    ```
 5. Expanda o controle **Configurações avançadas** e, em seguida, o controle **Sequenciamento de tags** abaixo da área de texto e certifique-se de que ele esteja configurado para disparar a conversão após a execução da tag
 
-   ![Configurações de sequenciamento de tags no Google Tag Manager](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="Configurações de sequenciamento de tags no Google Tag Manager" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. Defina um gatilho para a tag de conversão para indicar quando a tag de conversão deve ser acionada (no exemplo abaixo, é acionada no carregamento da página "Obrigado")
 
-   ![Acionador configurado para disparar no carregamento da página de agradecimento](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="Acionador configurado para disparar no carregamento da página de agradecimento" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 </Tab>
 </Tabs>

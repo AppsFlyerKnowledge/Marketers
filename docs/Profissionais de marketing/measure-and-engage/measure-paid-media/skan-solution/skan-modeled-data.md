@@ -85,7 +85,7 @@ Métricas modeladas disponíveis com base no valor de conversão:
 
 <Accordion title="LTV de receita">
 
-[![modeled_d7.png](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)
+<Image align="center" alt="modeled_d7.png" src="https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png" />
 
 Os relatórios da SKAN por conta própria só fornecem a receita com base na janela de mensuração da SKAN e na configuração de CVs para receita no Conversion Studio. A modelagem da SKAN pode modelar a receita até 7 dias (168 horas) após a instalação.
 

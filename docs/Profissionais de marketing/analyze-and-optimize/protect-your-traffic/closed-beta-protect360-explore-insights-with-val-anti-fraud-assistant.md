@@ -73,12 +73,12 @@ Observação: depois que um insight é dispensado, ele não aparecerá novamente
 ## Como acessar e usar o Explore Insights (Val)
 
 1. Para acessar o Explore Insights, clique no botão **Explore Insights** no canto superior direito da página do Protect360.
-2. <Image alt="Screenshot 2025-07-27 at 15.51.34.png" src="https://files.readme.io/7fafbd4b22ac860913ff452b81c659cff77170fc400ec8e1f4939e0e2fe1410c-37563710382225.png" width="1962px" />
+2. <Image align="center" alt="Screenshot 2025-07-27 at 15.51.34.png" src="https://files.readme.io/7fafbd4b22ac860913ff452b81c659cff77170fc400ec8e1f4939e0e2fe1410c-37563710382225.png" width="1962px" />
 3. Clique no botão **Take action** para realizar uma ação do usuário no insight.  
    As ações que você pode executar estão listadas em [Tipo de insight](/docs/closed-beta-protect360-explore-insights-with-val-anti-fraud-assistant#tipos-de-insights).
 4. As setas à esquerda e à direita levam você ao próximo item de ação ou ao anterior.
 5. Os widgets abaixo do item de ação fornecem informações para ajudar você a tomar uma decisão.
 
-<Image alt="image (11).png" src="https://files.readme.io/0b3d88e18897b7f38c1f70c779e7e5cdcf09565fb5cb7bdc6d9d72309d58e6ad-37563710384529.png" width="1060px" />
+<Image align="center" alt="image (11).png" src="https://files.readme.io/0b3d88e18897b7f38c1f70c779e7e5cdcf09565fb5cb7bdc6d9d72309d58e6ad-37563710384529.png" width="1060px" />
 
 <div data-zendesk-anchors="about-val-antifraud-assistant=sobre-o-assistente-antifraude-val h_01JYEJW1KXSVXXRA1ZDQQZZ46W=sobre-o-assistente-antifraude-val insight-types=tipos-de-insights h_01JYEJW1M0DT985B1GARTFBPMQ=tipos-de-insights how-val-works=como-o-val-funciona h_01JYEJW1M8CFEKZBHBE70AQD4G=como-o-val-funciona how-to-access-and-use-explore-insights-val=como-acessar-e-usar-o-explore-insights-val h_01JYEJW1MGP0FMS24GVBYJ890R=como-acessar-e-usar-o-explore-insights-val" />

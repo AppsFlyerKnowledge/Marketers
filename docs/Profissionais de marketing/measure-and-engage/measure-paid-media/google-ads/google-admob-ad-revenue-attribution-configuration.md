@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Em resumo:** o Google AdMob, um parceiro integrado da AppsFlyer, permite que os proprietários de aplicativos recebam dados de receita de anúncios para uso na atribuição de receita de anúncios.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadmob.png?v=1" width="74px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadmob.png?v=1" width="74px" />
 
 O AdMob oferece <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution">atribuição de receita de anúncios</Anchor> nos níveis agregado e de impressão. Veja também: <Anchor target="_blank" href="/marketers/pt/docs/integrate-the-roi360-ad-revenue-sdk-api">Guia de integração do conector SDK genérico de receita de anúncios no nível da impressão</Anchor>
 

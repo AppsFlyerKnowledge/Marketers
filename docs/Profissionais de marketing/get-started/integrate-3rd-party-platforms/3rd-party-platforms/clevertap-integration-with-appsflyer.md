@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Em resumo:** o CleverTap é uma nuvem moderna e integrada de retenção que permite que marcas digitais voltadas ao consumidor aumentem a retenção de clientes e o valor do ciclo de vida.
 
-<Image alt="clevertap-logo.png" src="https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png" width="193px" />
+<Image align="center" alt="clevertap-logo.png" src="https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png" width="193px" />
 
 <div id="important" />
 
@@ -78,7 +78,7 @@ O CleverTap se conecta ao AppsFlyer por meio de um token de conta exclusivo, reg
 > * Preencha pelo menos **um** dos seguintes campos: account\_token, account\_passcode ou account\_id
 > * No SDK do AppsFlyer, defina o valor do ID de usuário do cliente (<Anchor target="_blank" href="/marketers/pt/docs/customer-user-id-field-cuid#configuração-do-cuid">iOS, Android</Anchor>). Consulte a [documentação do CleverTap](https://developer.clevertap.com/docs/appsflyer#section-step-2-integration) para ver as orientações sobre qual parâmetro é recomendado usar como Customer User ID. Observe que, se o Customer User ID estiver vazio, os postbacks não serão enviados ao CleverTap.
 
-![CleverTap_msc_new_2.png](https://files.readme.io/dd3f79fdce7dc4d48605f18021e328754d3e78aae98cb5214466c7489fd29fdf-360002305685.png)
+<Image align="center" alt="CleverTap_msc_new_2.png" src="https://files.readme.io/dd3f79fdce7dc4d48605f18021e328754d3e78aae98cb5214466c7489fd29fdf-360002305685.png" />
 
 <div id="obtain-clevertap-account-token" />
 
@@ -88,10 +88,10 @@ O CleverTap se conecta ao AppsFlyer por meio de um token de conta exclusivo, reg
 
 1. No dashboard do CleverTap, acesse **Settings** no canto superior direito.
 
-   ![CleverTap_msc_new_4.png](https://files.readme.io/2fd248582c3e267b2eaacfc6bf49068bdd4c6811b066c8286f0059e18d8535ae-360002541969.png)  
+   <Image align="center" alt="CleverTap_msc_new_4.png" src="https://files.readme.io/2fd248582c3e267b2eaacfc6bf49068bdd4c6811b066c8286f0059e18d8535ae-360002541969.png" />
    Na parte superior da tela “Settings”, você verá o ID da conta do CleverTap, o token da conta e o código de acesso ao lado de "Account ID", “Account token” e “Passcode”, respectivamente:
 
-   ![CleverTap_msc_new_5.png](https://files.readme.io/795086dfc16cdee369b470e0b598b5089fff6469c77d0ccbf929e230d94191c8-360002537945.png)
+   <Image align="center" alt="CleverTap_msc_new_5.png" src="https://files.readme.io/795086dfc16cdee369b470e0b598b5089fff6469c77d0ccbf929e230d94191c8-360002537945.png" />
 2. Para revelar os valores, clique nos ícones de 'olho' ao lado de cada campo.
 3. Copie os valores e cole-os na página CleverTap do AppsFlyer.
 
@@ -112,7 +112,7 @@ O CleverTap se conecta ao AppsFlyer por meio de um token de conta exclusivo, reg
 
 A AppsFlyer pode enviar postbacks automáticos para a CleverTap após instalações de usuários. Use essa seção para definir a fonte de usuários para a qual os postbacks são enviados. Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#default-postbacks">postbacks padrão</Anchor>.
 
-![clevertap-default-postbacks_en-us.png](https://files.readme.io/58424df9f5e8ba0e30e2390e26e0ecec7fc827baa43f3b812181caa2283dca0a-360014085238.png)
+<Image align="center" alt="clevertap-default-postbacks_en-us.png" src="https://files.readme.io/58424df9f5e8ba0e30e2390e26e0ecec7fc827baa43f3b812181caa2283dca0a-360014085238.png" />
 
 **To send postbacks for any user that downloads the app to CleverTap:** select **All media sources, including organic**.
 
@@ -120,7 +120,7 @@ A AppsFlyer pode enviar postbacks automáticos para a CleverTap após instalaç�
 
 ### Configurações de eventos in-app
 
-![clevertap-in-app-events_en-us.png](https://files.readme.io/2ccc8a5a62cd601c45647d72caff0d94af814f78d9e1a8ae1548f973ed4c554f-360014005017.png)
+<Image align="center" alt="clevertap-in-app-events_en-us.png" src="https://files.readme.io/2ccc8a5a62cd601c45647d72caff0d94af814f78d9e1a8ae1548f973ed4c554f-360014005017.png" />
 
 Nesta seção, você mapeia eventos da AppsFlyer com o parceiro por meio de postbacks.  
 Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">postbacks de eventos in-app.</Anchor>

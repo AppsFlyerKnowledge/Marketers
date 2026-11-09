@@ -83,7 +83,7 @@ Comece ativando a integração do Google Ads para campanhas na web e configure o
 
 1. Em **First open conversion ID**, insira o ID da ação de conversão `First open` que você definiu no Google Ads. Para encontrar o ID, acesse o Google Ads e abra a guia **Details** na página da ação de conversão **First open**. Em seguida, copie o valor do parâmetro de consulta `ctid=*` da URL da página. Por exemplo, se `ctid=123456789`, insira `123456789` na caixa **First open conversion action ID**.
 
-   ![](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)
+   <Image align="center" alt="" src="https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png" />
 
 > 👍 **Tip**
 >
@@ -191,12 +191,12 @@ O Google Ads usa o objetivo e as metas do tipo de campanha que você selecionar 
 1. Entre no Google Ads e crie uma campanha.
 2. Selecione um **objetivo para a campanha**:
 
-   ![](https://files.readme.io/90063f7fe5a363ed498271148c4165969cc63c708a73ab25363d2263a79b0828-26324053661201.png)
+   <Image align="center" alt="" src="https://files.readme.io/90063f7fe5a363ed498271148c4165969cc63c708a73ab25363d2263a79b0828-26324053661201.png" />
    * Todos os objetivos são aplicáveis, exceto **Promoção de aplicativos**, que se destina exclusivamente a campanhas de aplicativos mobile.
    * Recomendamos que você configure o objetivo da campanha de “Vendas” para otimização com base em eventos específicos no aplicativo.
 3. Selecione seus **objetivos de conversão**.
 
-   ![](https://files.readme.io/5ca0a0425af24d5926dc0a7a3529632e22bd140423e87c026ff1527e7a0341b3-26324096257169.png)
+   <Image align="center" alt="" src="https://files.readme.io/5ca0a0425af24d5926dc0a7a3529632e22bd140423e87c026ff1527e7a0341b3-26324096257169.png" />
    * Por padrão, os objetivos são apresentados no nível da conta. Você pode mantê-los ou remover aqueles que não são relevantes.
    * Se você não vê o objetivo que deseja que o Google otimize,
 
@@ -204,7 +204,7 @@ O Google Ads usa o objetivo e as metas do tipo de campanha que você selecionar 
    * Você também pode editar suas metas predefinidas na página de conversões.
 4. Selecione o **tipo de campanha**:
 
-   ![](https://files.readme.io/14daea1c1edf92854e21d0a4c5d34372a4e062d68a4613967bb4f40d0d1e720f-26324053659281.png)
+   <Image align="center" alt="" src="https://files.readme.io/14daea1c1edf92854e21d0a4c5d34372a4e062d68a4613967bb4f40d0d1e720f-26324053659281.png" />
    * Todos os tipos de campanha são aplicáveis, exceto **Compras**, que exige um catálogo de produtos e domínios verificados.
 
 </Accordion>
@@ -237,7 +237,7 @@ Etapa 2: Crie ações de conversão
 2. Clique em **Salvar e continuar** e depois em **Concluído**, sem configurar fontes de dados. Sua nova ação de conversão pode aparecer inicialmente como *Inativa*, mas ela mudará para *Ativa* assim que dados reais forem recebidos.
 3. Certifique-se de que os eventos de postback no aplicativo estejam mapeados para o Conversion Action ID certo. Para encontrar o Conversion Action ID no Google Ads, veja a Etapa 2: [Crie ações de conversão](#step-2-create-conversion-actions).
 
-   ![](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)
+   <Image align="center" alt="" src="https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png" />
 4. Na AppsFlyer, cole o valor `ctid` na coluna **Mapeado para eventos de parceiro** do evento de postback que você deseja que o Google otimize. Veja o artigo "Configuração de postback de eventos in-app"
 
 </Accordion>
@@ -257,7 +257,7 @@ O Google <Anchor target="_blank" href="https://support.google.com/google-ads/ans
 1. No Google Ads, abra a página **Campanhas > Anúncios.**
 2. Na linha de anúncios, clique no ícone de edição.
 
-   ![](https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png)
+   <Image align="center" alt="" src="https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png" />
 3. No campo **URL final**, insira o URL da sua landing page.
 
 > ❗️ **Warning**
@@ -294,10 +294,10 @@ Como o Google Ads, por padrão, usa o rastreamento paralelo, a URL do template d
 
 1. No Google Ads, abra a página **Campanhas** > **Campanhas**. Na linha da campanha, clique no ícone de configurações
 
-   ![](https://files.readme.io/ec6503cfb3ff185448f13897240e0eadd7f10fc3678ffa85b4d52d2393b01ca4-26324098054033.png)
+   <Image align="center" alt="" src="https://files.readme.io/ec6503cfb3ff185448f13897240e0eadd7f10fc3678ffa85b4d52d2393b01ca4-26324098054033.png" />
 2. Expanda **Configurações** > **Configurações adicionais** > **Opções de URL da campanha**
 
-   ![](https://files.readme.io/4959b4129749ff282ee3818c3b5724ac2ed3b1d033d06f8557329cafa812720f-26324053658641.png)
+   <Image align="center" alt="" src="https://files.readme.io/4959b4129749ff282ee3818c3b5724ac2ed3b1d033d06f8557329cafa812720f-26324053658641.png" />
 3. Em **Template de rastreamento,** use o seguinte (BaseURL + parâmetros de redirecionamento):
    * **URL base**: defina a URL base de acordo com o destino do clique no anúncio:
      * **Link de atribuição de plataforma única** se o destino do clique no anúncio for o Google Play ou a App Store (veja o exemplo abaixo).
@@ -381,7 +381,7 @@ No entanto, o URL do template de rastreamento não é obrigatório nas campanhas
 
 O caso de uso do W2A Smart Script é composto pelas seguintes fases:
 
-![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. Se você usar apenas uma única conta do Google Ads para executar anúncios, basta colar o ID da conta na caixa de texto "Customer ID" e deixar a "MCC Customer ID" vazia.
    * um `gclid` parâmetro para dispositivos Android e para usuários que consentem em dispositivos iOS.

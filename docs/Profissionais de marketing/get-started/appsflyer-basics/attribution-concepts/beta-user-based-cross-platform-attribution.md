@@ -47,7 +47,7 @@ Esse modelo soluciona uma limitação intrínseca da **atribuição device-based
 
 O exemplo abaixo ilustra a diferença entre os dois tipos de atribuição:
 
-[<Image alt="user-journey.png" src="https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png" width="2048px" />](https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png)
+<Image align="center" alt="user-journey.png" src="https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png" width="2048px" />
 
 Um usuário clica em um anúncio do Meta na web, é redirecionado para o site do anunciante e cria uma conta. Mais tarde, o mesmo usuário instala o aplicativo iOS do anunciante, faz login e faz uma compra de 50 dólares. Alguns dias depois, o usuário vê um anúncio no YouTube, instala o aplicativo de PC do anunciante, faz um novo login e faz uma compra de 100 dólares.
 

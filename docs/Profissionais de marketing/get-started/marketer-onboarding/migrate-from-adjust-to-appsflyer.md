@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **Em resumo:** Planeje sua migração da Adjust para a AppsFlyer. Entenda como evitar cobranças duplas, duplicação de dados e perda de dados durante o período de migração.
 
-<Image alt="" src="https://files.readme.io/cc012894dd05255c0b7fa448b1c95d925d556ddb43dc461086bb71e9279da90d-30633481029137.png" width="1765px" />
+<Image align="center" alt="" src="https://files.readme.io/cc012894dd05255c0b7fa448b1c95d925d556ddb43dc461086bb71e9279da90d-30633481029137.png" width="1765px" />
 
 <div id="about-migrating-to-appsflyer" />
 

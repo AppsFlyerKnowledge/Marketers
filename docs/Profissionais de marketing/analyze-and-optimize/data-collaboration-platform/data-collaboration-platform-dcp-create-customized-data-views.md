@@ -63,11 +63,11 @@ Uma <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">conta</Anc
 
 1. Na AppsFlyer, no menu lateral, vá para **Colaborar** > **Data Clean Room.**
 
-   <Image alt="Clique em Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="34.74%" />
+   <Image align="center" alt="Clique em Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="34.74%" />
 2. Em **Fontes** , passe o mouse sobre a fonte que você deseja usar para criar a visualização de dados e clique em <Image alt="ellipsis.png" src="https://files.readme.io/d3e33f1864edb1d9d2f8e18c9c7887454018a67e9f7fed054e7134231dba60a2-30296671836433.png" width="0.6%" /> (ícone de Menu) no final da linha.
 3. Selecione **Criar visualização de dados**. Você será direcionado para a página **Nova visualização de dados**.
 
-   <Image alt="Criar uma visualização de dados com seta.png" src="https://files.readme.io/f9fbcacabb560da996e1dc009e6cd2c5b78d3ccd42e89e2a3c37e71882577e18-41945719135889.png" width="1500px" />
+   <Image align="center" alt="Criar uma visualização de dados com seta.png" src="https://files.readme.io/f9fbcacabb560da996e1dc009e6cd2c5b78d3ccd42e89e2a3c37e71882577e18-41945719135889.png" width="1500px" />
 4. Preencha os seguintes campos:
    * **Nome da visualização de dados:** escolha um nome para a sua visualização de dados. Pode ser qualquer nome que te ajudará a identificar essa visualização. Veja os [requisitos e diretrizes de nomenclatura](#requisitos-e-diretrizes-de-nomenclatura) abaixo.
    * **Descrição:** Forneça uma descrição. Isso aparece como uma dica quando você passa o mouse sobre o nome da visualização de dados na aba **Fontes** . Recomendamos que você insira os principais objetivos e manipulações de dados realizadas.
@@ -134,7 +134,7 @@ Os campos calculados permitem usar funções para adicionar novos campos, altera
 
 Agrupe seus dados em categorias significativas ao aplicar uma agregação. Quando você adiciona uma função de agregação, a seção Agrupar por é aberta automaticamente e permite selecionar os campos que determinam como os dados são agrupados. Por exemplo, você pode agrupar os resultados por país, ID do usuário ou linha de produto para calcular totais ou contagens para cada grupo.
 
-<Image alt="Agrupar por.png" src="https://files.readme.io/40fc355847acf7269c6fcd2b505ed182b407d4c668f717612b53c5fd88506443-41967849623057.png" width="58.2%" />  
+<Image align="center" alt="Agrupar por.png" src="https://files.readme.io/40fc355847acf7269c6fcd2b505ed182b407d4c668f717612b53c5fd88506443-41967849623057.png" width="58.2%" />
 
 Selecione na aba [Transformar e Agregar](#transform-aggregate-and-filter-data) os campos relevantes para edição e faça as alterações necessáriasSelecione na aba [Transformar e Agregar](#transform-aggregate-and-filter-data) os campos relevantes para edição e faça as alterações necessárias**Observação:** Os primeiros campos selecionados são os identificadores selecionados na fonte original.
 
@@ -244,7 +244,7 @@ Quando um campo é removido da lista, ele é colocado na seção **Removido** . 
 
 O painel lateral (lado direito da página) apresenta dois conjuntos de dados, um da fonte original e outro da visualização de dados criada a partir dela. Cada conjunto inclui o nome da tabela e sua descrição, número de campos e número de linhas, juntamente com uma tabela de amostra que contém cinco linhas de dados. Quando funções e filtros são aplicados à visualização de dados, o painel lateral reflete essas mudanças, permitindo que você verifique os dados enquanto os modifica e os compare com a versão original.
 
-![Visualização de dados - painel lateral.png](https://files.readme.io/c1dae932618bf2ded68a30853474ce9d6107fdb09541a5d12ac3ddcf4def0101-41945719138577.png)
+<Image align="center" alt="Visualização de dados - painel lateral.png" src="https://files.readme.io/c1dae932618bf2ded68a30853474ce9d6107fdb09541a5d12ac3ddcf4def0101-41945719138577.png" />
 
 Você pode salvar a visualização de dados a qualquer momento. Uma vez salvo, ele é adicionado sob a fonte de dados original na lista de fontes, e você pode [editar, compartilhar ou deletar](#gerenciar-visualizações-de-dados).
 
@@ -371,10 +371,10 @@ Compartilhe sua visualização de dados com o colaborador e forneça a ele as pe
 1. Na plataforma Data Collaboration Platform, acesse a guia **Collaborations** > colaboração específica.
 2. No dashboard da colaboração, clique no menu de ações no canto superior direito > **Associated sources**.
 
-   <Image alt="Associate source new UI.png" src="https://files.readme.io/3730b39bb5754260b74632591dffe3fcf54e6c73ff114ba0a8853f277e1e709a-43751907286161.png" width="1539px" />
+   <Image align="center" alt="Associate source new UI.png" src="https://files.readme.io/3730b39bb5754260b74632591dffe3fcf54e6c73ff114ba0a8853f277e1e709a-43751907286161.png" width="1539px" />
 3. Selecione sua visualização de dados (fonte) no menu suspenso para associá-la à colaboração.  
 
-   <Image alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="783px" />  
+   <Image align="center" alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="783px" />
    Feito isso, clique em **Salvar**.
 4. **Opcional:** defina permissões de dados personalizadas na fonte da visualização de dados.
 
@@ -382,7 +382,7 @@ Compartilhe sua visualização de dados com o colaborador e forneça a ele as pe
 
    No menu de 3 pontos ao lado da fonte da visualização de dados, clique em **Editar permissões**.  
 
-   <Image alt="Edit permissions new.png" src="https://files.readme.io/58c785d7fdda52aa159153676d5875e718ceae2f31f987706b79509eb8251151-43752564819985.png" width="1330px" />
+   <Image align="center" alt="Edit permissions new.png" src="https://files.readme.io/58c785d7fdda52aa159153676d5875e718ceae2f31f987706b79509eb8251151-43752564819985.png" width="1330px" />
 5. Selecione as <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources#permissões-de-compartilhamento">permissões de compartilhamento</Anchor> relevantes.
 
 <div id="note-4" />

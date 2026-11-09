@@ -388,7 +388,7 @@ Para arquivos GZIP de multi-partes:
 
 Após o upload dos arquivos da fonte em 2 dias (e após criar programaticamente pastas de data/versão/dados e arquivos `_SUCCESS`), sua estrutura de bucket/pasta deve ficar assim:
 
-![dcr_file_structure_after_uploads.png](https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png)
+<Image align="center" alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" />
 
 </Accordion>
 
@@ -481,11 +481,11 @@ A pasta de chaves DCR geralmente é criada manualmente usando a interface de seu
 
 **Para obter a chave DCR da sua conta, clique no botão da chave DCR na parte superior da página principal do DCR.**
 
-![dcr_key_button.png](https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png)
+<Image align="center" alt="dcr_key_button.png" src="https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png" />
 
 Após criar a pasta de chaves DCR, sua estrutura de bucket/pasta deve ficar assim:
 
-![dcr_file_structure_dcr_key_folder.png](https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png)
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" />
 
 <div id="top-level-input-folder" />
 
@@ -500,7 +500,7 @@ A pasta de entrada de nível superior geralmente é criada manualmente usando a 
 
 Depois de criar a pasta de entrada de nível superior, sua estrutura de bucket/pasta deve ficar assim:
 
-![dcr_file_structure_input_folder.png](https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png)
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" />
 
 <div id="second-level-folder-for-each-data-source" />
 
@@ -514,7 +514,7 @@ As pastas das fontes de dados geralmente são criadas manualmente usando a inter
 
 Após criar 2 pastas de fonte de dados, sua estrutura de bucket/pasta deve ficar assim:
 
-![dcr_file_structure_source_folders.png](https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png)
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" />
 
 Em cada pasta de fonte de dados, [subpastas aninhadas por data e versão](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version) devem ser criadas sempre que a fonte for atualizada.
 

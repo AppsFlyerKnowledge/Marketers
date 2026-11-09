@@ -67,7 +67,7 @@ Nos dashboards e relatórios agregados, as ad networks contribuintes (que podem 
 
 Nos relatórios de dados brutos, os dados das ad networks contribuintes são categorizados em campos separados, dos colaboradores de 1 a 3.
 
-[![](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)
+<Image align="center" alt="" src="https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png" />
 
 Para cada uma das redes contribuintes, o relatório de dados brutos inclui o seguinte:
 

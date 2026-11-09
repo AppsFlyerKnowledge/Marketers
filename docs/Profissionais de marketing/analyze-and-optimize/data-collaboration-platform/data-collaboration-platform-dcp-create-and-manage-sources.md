@@ -95,10 +95,10 @@ Os arquivos de origem armazenados no Amazon S3 ou GCS devem atender a estes requ
 
 1. Na AppsFlyer, no menu lateral, selecione **Colaborar** > **Data Clean Room**.
 
-   <Image alt="Clique em Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="644px" />
+   <Image align="center" alt="Clique em Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="644px" />
 2. Clique em **+ Nova fonte** (na página principal ou na guia **Fontes**).
 
-   <Image alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
+   <Image align="center" alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
 3. Prossiga com as etapas do passo a passo de **Nova fonte** :
 
 </Accordion>
@@ -196,7 +196,7 @@ Você também pode fazer upload de dados da fonte usando um arquivo local. No en
 
 Ao selecionar o local da fonte, clique em **Sistema de arquivos local** e em **Avançar**, o que adiciona a opção de fazer upload de arquivos locais do seu dispositivo.
 
-<Image alt="Selecionar Sistema de arquivos local.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
+<Image align="center" alt="Selecionar Sistema de arquivos local.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
 
 <div id="note" />
 
@@ -215,7 +215,7 @@ Ao configurar uma fonte na Plataforma de colaboração de dados (DCP), você dev
 * **Snapshot** - Esse método faz upload do conjunto de dados completo sempre que a fonte é atualizada, substituindo totalmente o conjunto de dados antigo pelo novo a cada vez. Escolha esse método somente se os uploads do seu arquivo sempre contiverem o conjunto de dados completo e atualizado.
 * **Acrescentar** - Esse método faz upload somente de dados novos ou alterados, não do conjunto de dados completo. Os conjuntos de dados antigos não são removidos nem atualizados. É ideal para uploads recorrentes, como relatórios diários ou semanais. Os benefícios incluem uploads menores (o que pode resultar em custos mais baixos de armazenamento em nuvem), performance de upload de dados mais rápida, gerenciamento de registros mais fácil e muito mais.
 
-<Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
+<Image align="center" alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
 <div id="important-1" />
 
@@ -303,7 +303,7 @@ source_name1/
 
 Exemplo de como a estrutura de pastas deve ficar após fazer upload de um snapshot completo dos arquivos da fonte por 2 dias (e criar programaticamente as pastas de data/versão/dados e os arquivos \_SUCCESS): sua estrutura de bucket/pasta pode ficar assim:
 
-[<Image alt="Snapshot example bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
+<Image align="center" alt="Snapshot example bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />
 
 
 <div id="append-upload-requirements" />
@@ -510,7 +510,7 @@ Essa opção permite incluir um campo na audiência que não está presente no m
 1. Clique em **+ Novo campo**. Um campo vazio é adicionado.
 2. Insira o nome do campo e selecione seu tipo.
 
-<Image alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
+<Image align="center" alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
 
 **Os tipos de campo incluem:**
 
@@ -713,11 +713,11 @@ A pasta de chaves DCR geralmente é criada manualmente usando a interface de seu
 
 * Clique no menu de 3 pontos (ações) no canto superior direito e selecione **chave DCR**.
 
-[<Image alt="Chave DCR.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/49929203409169)
+[<Image align="center" alt="Chave DCR.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/49929203409169)
 
 Após criar a pasta de chaves DCR, sua estrutura de bucket/pasta deve ficar assim:
 
-<Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
 <div id="top-level-input-folder" />
 
@@ -732,7 +732,7 @@ A pasta de entrada de nível superior geralmente é criada manualmente usando a 
 
 Depois de criar a pasta de entrada de nível superior, sua estrutura de bucket/pasta deve ficar assim:
 
-<Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
 
 <div id="second-level-folder-for-each-data-source" />
 
@@ -746,7 +746,7 @@ As pastas das fontes de dados geralmente são criadas manualmente usando a inter
 
 Após criar 2 pastas de fonte de dados, sua estrutura de bucket/pasta deve ficar assim:
 
-<Image alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
 
 Em cada pasta de fonte de dados, [subpastas aninhadas por data e versão](#nested-subfolders-for-each-date-and-version) devem ser criadas sempre que a fonte for atualizada.
 

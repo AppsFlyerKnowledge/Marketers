@@ -57,7 +57,7 @@ Na **primeira visita** aqui, você precisará ativar o botão ***Ativar parceiro
 
 ### Postbacks padrão
 
-<Image alt="netease-default-postback.png" src="https://files.readme.io/0b1db2d0f9e772ad7459c8d28d46cf92bb26501da47b9e5f2f3dd4951a469470-50900350199825.png" width="513px" />
+<Image align="center" alt="netease-default-postback.png" src="https://files.readme.io/0b1db2d0f9e772ad7459c8d28d46cf92bb26501da47b9e5f2f3dd4951a469470-50900350199825.png" width="513px" />
 
 </Accordion>
 
@@ -88,7 +88,7 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 * **Parâmetros de assinantes** - use qualquer um dos 5 parâmetros de assinantes para inserir valores úteis. Observe que esses parâmetros são analisados e aparecem no relatório de dados brutos, o que os torna muito úteis para a realização de agregação ou filtragem de dados.  
   **Parâmetros de link de atribuição:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
 
@@ -102,7 +102,7 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png" />
 
 <div id="click-attribution-link" />
 
@@ -134,7 +134,7 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 
 Nesta aba, você pode selecionar as permissões a serem concedidas à RTB House, independentemente de o parceiro atuar como uma ad network, agência ou ambos. Observe que, mesmo que a atribuição esteja desativada para a RTB House, a guia de permissões estará ativa e você poderá conceder controle à RTB House.
 
-![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png" />
 
 <div id="ad-network-permissions" />
 

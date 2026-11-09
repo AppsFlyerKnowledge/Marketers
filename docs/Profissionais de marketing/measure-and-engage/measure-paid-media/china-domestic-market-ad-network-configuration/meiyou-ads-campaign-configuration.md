@@ -59,7 +59,7 @@ Em sua **primeira visita**, você terá que selecionar as seguintes opções. Cl
 
 O Meiyou Ads se conecta à AppsFlyer por meio de uma **chave** exclusiva. Se você ainda não tiver a chave, deverá obtê-la com o Meiyou Ads para continuar com a integração.
 
-![mceclip3.png](https://files.readme.io/451f74c0a6b45926f89a3f2a5d04b6ef240184c4862b576bee0d0a2b7a832f30-50900150950417.png)
+<Image align="center" alt="mceclip3.png" src="https://files.readme.io/451f74c0a6b45926f89a3f2a5d04b6ef240184c4862b576bee0d0a2b7a832f30-50900150950417.png" />
 
 **Habilitar a atribuição de view-through**
 
@@ -69,7 +69,7 @@ Alterne para LIGADO se quiser atribuir instalações view-through do Meiyou Ads.
 
 ### Postbacks padrão
 
-<Image alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="548px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="548px" />
 
 <div id="in-app-events-settings" />
 
@@ -81,7 +81,7 @@ Nesta seção, você pode mapear os eventos da AppsFlyer com o Meiyou Ads por me
 
 O Meiyou Ads se conecta com a AppsFlyer por meio de uma chave exclusiva. Se você ainda não tiver a chave, deverá obtê-la com o Meiyou Ads para continuar com a integração.
 
-<Image alt="mceclip1.png" src="https://files.readme.io/32b1c68531c7aa752514f9b1c13c4438cddef2e93d2ca04ab287d46acecda15e-50900150956305.png" width="661px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/32b1c68531c7aa752514f9b1c13c4438cddef2e93d2ca04ab287d46acecda15e-50900150956305.png" width="661px" />
 
 1. Defina aqui a chave do Meiyou Ads
 2. Mude o botão Postbacks do evento in-app para ATIVO
@@ -102,7 +102,7 @@ O Meiyou Ads se conecta com a AppsFlyer por meio de uma chave exclusiva. Se voc�
 
 Nesta guia, você pode criar os links de atribuição que deseja enviar ao Meiyou Ads para atribuir campanhas, conjuntos de anúncios ou até mesmo anúncios individuais do Meiyou Ads. Observe que a AppsFlyer NÃO salva seus links de atribuição gerados pelo parceiro.
 
-![mceclip2.png](https://files.readme.io/3a9b086aa1a76dc64289a512eec56885d108dce5c2778580fc0b2962f00c8a95-50900150957201.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/3a9b086aa1a76dc64289a512eec56885d108dce5c2778580fc0b2962f00c8a95-50900150957201.png" />
 
 Essa guia está dividida em diferentes seções:
 
@@ -125,7 +125,7 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 * **Parâmetros de assinantes** - use qualquer um dos 5 parâmetros de assinantes para inserir valores úteis. Observe que esses parâmetros são analisados e aparecem no relatório de dados brutos, o que os torna muito úteis para realizar agregação ou filtragem de dados.  
   **Parâmetros do link de atribuição:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
 
@@ -139,7 +139,7 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png" />
 
 <div id="click-attribution-link" />
 
@@ -159,7 +159,7 @@ Você pode personalizar esse valor para 1 a 23 horas ou 1 a 7 dias.
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">atribuição por visualização aqui</Anchor>.
 
-[![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+<Image align="center" alt="" src="https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png" />
 
 <div id="impressions-attribution-link" />
 
@@ -192,7 +192,7 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 
 Nesta aba, você pode selecionar as permissões a serem concedidas ao Meiyou Ads, seja o parceiro uma ad network, uma agência ou até mesmo ambos. Observe que, mesmo que a atribuição esteja desativada para o Meiyou Ads, a aba de permissões está ativa e você pode conceder controle ao Meiyou Ads.
 
-![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png" />
 
 <div id="ad-network-permissions" />
 

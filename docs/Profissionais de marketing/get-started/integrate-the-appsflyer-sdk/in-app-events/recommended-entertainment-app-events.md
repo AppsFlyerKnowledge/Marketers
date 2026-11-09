@@ -52,7 +52,7 @@ Esses eventos também são relevantes para aplicativos de entretenimento executa
 >
 > Para mais informações sobre como registrar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia de Eventos in-app avançados</Anchor>.
 
-[![Fluxograma_da_jornada_do_usuário_do_app_de_entretenimento_para_eventos_recomendados](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
+<Image align="center" alt="Fluxograma_da_jornada_do_usuário_do_app_de_entretenimento_para_eventos_recomendados" src="https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

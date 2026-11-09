@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **Resumo:** Adicione anúncios de instalação mobile do Instagram à sua conta do Meta Ads.
 
-<Image alt="instagram_logo.jpg" src="https://files.readme.io/55ab80e2b1ba9d164d978116f3aaaacb9fe7e4571f71e0130a40e1ded16679db-360000492725.jpg" width="101px" />
+<Image align="center" alt="instagram_logo.jpg" src="https://files.readme.io/55ab80e2b1ba9d164d978116f3aaaacb9fe7e4571f71e0130a40e1ded16679db-360000492725.jpg" width="101px" />
 
 <div id="setting-up-instagram" />
 
@@ -39,13 +39,13 @@ Você pode conferir a documentação da Meta <Anchor target="_blank" href="https
 
 1. Vincule sua conta do Instagram ao Gerenciador de Negócios da Meta  
 
-   ![vincular-inst-com-conta_fb.png](https://files.readme.io/c6c7fe17274f0b9af008c4452b4b7ea2233cc5bca8773307fef6afaeb7d06015-11212956311441.png)
+   <Image align="center" alt="vincular-inst-com-conta_fb.png" src="https://files.readme.io/c6c7fe17274f0b9af008c4452b4b7ea2233cc5bca8773307fef6afaeb7d06015-11212956311441.png" />
 2. Depois de adicionar no Business Manager, atribua uma conta de anúncios à sua conta do Instagram  
 
-   <Image alt="atribuir-anuncio-inst-ao-fb.png" src="https://files.readme.io/658dc57d0056a2217a9f0f5c785b87e24c297158b75c5815eddb64930d00ea17-11213052873745.png" width="550px" />
+   <Image align="center" alt="atribuir-anuncio-inst-ao-fb.png" src="https://files.readme.io/658dc57d0056a2217a9f0f5c785b87e24c297158b75c5815eddb64930d00ea17-11213052873745.png" width="550px" />
 3. Configure o Meta Ads em “Integrações ativas” ao adicionar seu App ID do Facebook.
 4. Se você não tiver um App ID do Facebook, crie um <Anchor target="_blank" href="https://developers.facebook.com/apps">aqui</Anchor>.  
-   [![id_app_facebook.png](https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png)](https://support.appsflyer.com/hc/article_attachments/49722356592913)
+   [<Image align="center" alt="id_app_facebook.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />](https://support.appsflyer.com/hc/article_attachments/49722356592913)
 
 <div id="instagram-landing-page-for-deep-linking" />
 

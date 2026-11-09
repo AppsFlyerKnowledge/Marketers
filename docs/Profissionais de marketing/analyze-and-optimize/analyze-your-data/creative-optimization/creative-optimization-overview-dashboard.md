@@ -24,7 +24,7 @@ x-zendesk:
 
 > **Resumo:** use esse dashboard para analisar a performance dos seus criativos, escolher os assets mais eficientes e maximizar o impacto das suas campanhas.
 
-[![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
+<Image align="center" alt="Main image -Default view.jpg" src="https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg" />
 
 <div id="about-the-creative-optimization-overview-dashboard" />
 
@@ -86,7 +86,7 @@ A tabela mostra ainda mais informações sobre os seus dados. Agrupe por várias
 
 A imagem a seguir mostra a visualização padrão, que exibe criativos de acordo com os critérios de filtragem selecionados. As letras da imagem correspondem às letras e descrições da tabela a seguir.
 
-[![Table_main_image_doctored_final_copy__download_table_.jpg](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)
+<Image align="center" alt="Table_main_image_doctored_final_copy__download_table_.jpg" src="https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg" />
 
 |  | Item | Descrição |
 | --- | --- | --- |
@@ -145,7 +145,7 @@ Personalize a tabela clicando no ícone <Image alt="Creative_table_settings_en_u
 
 *As métricas serão exibidas nas linhas individuais, que são exibidas sob as linhas agregadas na tabela.
 
-[![](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)
+<Image align="center" alt="" src="https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png" />
 
 </Accordion>
 

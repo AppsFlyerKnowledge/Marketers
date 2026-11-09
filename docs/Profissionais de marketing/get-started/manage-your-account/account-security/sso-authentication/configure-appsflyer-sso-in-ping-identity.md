@@ -46,7 +46,7 @@ A primeira etapa da configuração do processo de SSO da AppsFlyer é realizada 
        <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">https://hq1.appsflyer.com/auth/sso-callback</Anchor>
      * **Entity ID:** Insira o link a seguir: <Anchor target="_blank" href="https://hq1.appsflyer.com/">https://hq1.appsflyer.com/</Anchor>  
 
-       <Image alt="ping" src="https://files.readme.io/8b265666f05bc4f6ab984151d7d73653b9ea5dcb837898d17e96bf9c392fe638-16063467179921.png" width="419px" />
+       <Image align="center" alt="ping" src="https://files.readme.io/8b265666f05bc4f6ab984151d7d73653b9ea5dcb837898d17e96bf9c392fe638-16063467179921.png" width="419px" />
    * Para autenticação iniciada pelo IdP (Ping Identity), selecione **Manually Enter**:
      * **ACS URLs:** Insira o link a seguir usando o ID da sua conta da AppsFlyer:   
        `https://hq1.appsflyer.com/auth/sso-callback/<Insira aqui o ID da sua conta da AppsFlyer>`
@@ -56,7 +56,7 @@ A primeira etapa da configuração do processo de SSO da AppsFlyer é realizada 
    1. Clique em **Download Metadata**.
    2. No canto superior direito, clique no ícone de edição e preencha os campos abaixo:  
 
-      <Image alt="ping" src="https://files.readme.io/386fab01b9389d88ea0c4870ba2ea8e33d9ab6e27322059be5e46efbf248714b-16063435689233.png" width="487px" />
+      <Image align="center" alt="ping" src="https://files.readme.io/386fab01b9389d88ea0c4870ba2ea8e33d9ab6e27322059be5e46efbf248714b-16063435689233.png" width="487px" />
 
       * **CHAVE DE ASSINATURA:**
         * Selecione **Sign Assertion & Response**.
@@ -71,7 +71,7 @@ A primeira etapa da configuração do processo de SSO da AppsFlyer é realizada 
 6. Clique em **Guardar**.
 7. Na guia **Attribute Mappings**, clique no ícone de edição e selecione **Email Address** em **PingOne Mappings**.  
 
-   <Image alt="ping-identity" src="https://files.readme.io/b93ac5463868c8f5f7760b60492a30f7ae59c52b766e76ef57fbe42e00f4bf2b-16292200523025.png" width="620px" />
+   <Image align="center" alt="ping-identity" src="https://files.readme.io/b93ac5463868c8f5f7760b60492a30f7ae59c52b766e76ef57fbe42e00f4bf2b-16292200523025.png" width="620px" />
 8. Clique em **Guardar**.
 
 </Accordion>
@@ -84,7 +84,7 @@ Agora que o aplicativo SAML do Ping Identity foi criado, vamos criar grupos de u
 
 1. No menu de administração do Ping Identity, acesse **Identity** > **<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/group">Groups</Anchor>** e clique em +.  
 
-   <Image alt="ping" src="https://files.readme.io/fcc2a3f035a285d96d7b7c3e83cfeed64e86cb0f0807e6acced75df89bd8dfc4-16292210866705.png" width="216px" />
+   <Image align="center" alt="ping" src="https://files.readme.io/fcc2a3f035a285d96d7b7c3e83cfeed64e86cb0f0807e6acced75df89bd8dfc4-16292210866705.png" width="216px" />
 2. Na seção aberta à direita, insira o nome do grupo e clique em **Salvar**.
 3. Repita as etapas 1 a 2 para todos os grupos de usuários.
 
@@ -96,7 +96,7 @@ Agora que o aplicativo SAML do Ping Identity foi criado, vamos criar grupos de u
 
 1. No menu de administração do Ping Identity, acesse **Identity** > <Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/user">**Users**</Anchor> e clique em +.  
 
-   ![ping](https://files.readme.io/802946a62c1df918b82cccc1cf0855ffea8167ed91aa6b0d6bce8973c37b4e75-16292200536081.png)
+   <Image align="center" alt="ping" src="https://files.readme.io/802946a62c1df918b82cccc1cf0855ffea8167ed91aa6b0d6bce8973c37b4e75-16292200536081.png" />
 2. Na seção aberta à direita:
    1. Insira o nome e o endereço de e-mail do usuário.
    2. Selecione **Administrator Population**.
@@ -117,7 +117,7 @@ Agora que o aplicativo SAML do Ping Identity foi criado, vamos criar grupos de u
 
 1. No menu de administração do Ping Identity, acesse **Connections** > **<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications">Applications</Anchor>** e selecione o aplicativo que você criou.  
 
-   ![pi-applications.png](https://files.readme.io/6c8545bc5334747d7da6a090ca745c1b00cfedc3f48e59ccc304c814885cd183-16522614384785.png)
+   <Image align="center" alt="pi-applications.png" src="https://files.readme.io/6c8545bc5334747d7da6a090ca745c1b00cfedc3f48e59ccc304c814885cd183-16522614384785.png" />
 2. Na seção aberta à direita, selecione a guia **Access** e clique no botão Editar.
 3. Selecione o grupo ou os grupos que você criou e clique em **Save**.
 
@@ -128,7 +128,7 @@ Agora que o aplicativo SAML do Ping Identity foi criado, vamos criar grupos de u
 1. No menu de administração do Ping Identity, acesse **Connections** > **<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications">Applications</Anchor>** e selecione o aplicativo que você criou.
 2. Ative o aplicativo.  
 
-   ![pi-appsflyer](https://files.readme.io/24c34f3426ae7b46301316937ae8485464e0b3810808e3bbcc1be843ba34a616-16523020816657.png)
+   <Image align="center" alt="pi-appsflyer" src="https://files.readme.io/24c34f3426ae7b46301316937ae8485464e0b3810808e3bbcc1be843ba34a616-16523020816657.png" />
 
 </Accordion>
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Em resumo:** a Ligatus, parceira integrada da AppsFlyer como ad network, lidera as Soluções de Publicidade Nativa para publisher, anunciantes e compradores programáticos, oferecendo resultados de alta qualidade e alto desempenho. Além da atribuição mobile baseada em cliques, a Ligatus também oferece atribuição de custo, receita publicitária, retargeting e view-through, que você pode registrar com a AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ligatus.png" width="209px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ligatus.png" width="209px" />
 
 <div id="setting-up-ligatus" />
 

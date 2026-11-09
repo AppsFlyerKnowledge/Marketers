@@ -85,7 +85,7 @@ Para configurar a integração, você deve primeiro habilitar o botão **Ativar 
      **Atenção:** Certifique-se de selecionar a empresa certa no menu suspenso no canto superior direito.
   2. No menu lateral do **Gerenciador de eventos**, selecione **Fontes de dados**. Você verá uma lista dos seus pixels. Caso você não encontre um pixel para o negócio selecionado, você pode criá-lo.
   3. Copie o Pixel ID exibido abaixo do nome do pixel e cole-o no campo Pixel ID na janela de integração da AppsFlyer.  
-     <Image alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
+     <Image align="center" alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
 * **Token de acesso** Insira o token de acesso. Para recuperá-lo, siga [essas instruções](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)
 * **Limitar a utilização de informações pessoais dos usuários pelo Anúncios da Meta (CCPA):** Ative esta opção para permitir a compliance com as <Anchor target="_blank" href="/marketers/pt/docs/send-opendsr-api-requests">leis de proteção de dados</Anchor>.  
   **Observação:** O cumprimento dos regulamentos de privacidade da CCPA limita os dados provenientes de usuários do Anúncios da Meta com sede na Califórnia.

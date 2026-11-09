@@ -71,7 +71,7 @@ Na **primeira visita** aqui, você precisará ativar o botão ***Ativar parceiro
 
 A Eulerian se conecta à AppsFlyer por meio de um Host ID exclusivo. Se você ainda não o tem, deve obtê-lo com a Eulerian para continuar com a integração.
 
-![Eulerian_msc_new_2.png](https://files.readme.io/345b05c3960015bfe1b44dd2a298c4216185c2315fb859378e9e337ba2bf913a-360002665949.png)
+<Image align="center" alt="Eulerian_msc_new_2.png" src="https://files.readme.io/345b05c3960015bfe1b44dd2a298c4216185c2315fb859378e9e337ba2bf913a-360002665949.png" />
 
 Execute as etapas a seguir, conforme necessário:
 
@@ -84,7 +84,7 @@ Execute as etapas a seguir, conforme necessário:
 
 A AppsFlyer pode enviar postbacks automáticos para a Eulerian após instalações de usuários. Use esta seção para definir o envio desses postbacks.
 
-![Eulerian_new_2.png](https://files.readme.io/59cb41cdbec6c06dd4fc2086d238fe2015e5414a474591b23f9a18f8421fb030-360002795789.png)
+<Image align="center" alt="Eulerian_new_2.png" src="https://files.readme.io/59cb41cdbec6c06dd4fc2086d238fe2015e5414a474591b23f9a18f8421fb030-360002795789.png" />
 
 Selecione **Eventos atribuídos a qualquer parceiro** para enviar postbacks à Eulerian.
 
@@ -94,7 +94,7 @@ Selecione **Eventos atribuídos a qualquer parceiro** para enviar postbacks à E
 
 Nesta seção, você pode mapear seus eventos da AppsFlyer com a Eulerian por meio de postbacks.
 
-![Eulerian_new_3.png](https://files.readme.io/c190a6b05c977c8d5fa2a0e5301cdb5be239e56455b066cba93b8c1ffa6fcd9a-360002795829.png)
+<Image align="center" alt="Eulerian_new_3.png" src="https://files.readme.io/c190a6b05c977c8d5fa2a0e5301cdb5be239e56455b066cba93b8c1ffa6fcd9a-360002795829.png" />
 
 1. Digite o HostID novamente.
 2. Mude o botão Postbacks do evento in-app para ATIVO

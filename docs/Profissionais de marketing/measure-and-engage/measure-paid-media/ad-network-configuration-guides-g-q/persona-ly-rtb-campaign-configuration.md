@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **Resumo:** Persona.ly RTB (personalyrtb\_int), um parceiro integrado da AppsFlyer, é uma DSP mobile-first que opera no mundo todo. Usando um bidder proprietário e algoritmos de machine learning, a Persona.ly oferece soluções de UA e retargeting transparentes, orientadas por performance e altamente segmentadas.
 
-<Image alt="persona.ly_logo.png" src="https://files.readme.io/b0dacbdc4c2e884610a040b5049a1410a88214f8275320163764bcf09f90305b-18699636413969.png" width="234px" />
+<Image align="center" alt="persona.ly_logo.png" src="https://files.readme.io/b0dacbdc4c2e884610a040b5049a1410a88214f8275320163764bcf09f90305b-18699636413969.png" width="234px" />
 
 <div id="setting-up-personaly-rtb" />
 

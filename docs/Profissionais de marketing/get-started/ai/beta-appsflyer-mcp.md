@@ -130,7 +130,7 @@ Use o Claude.ai e o Claude Desktop com login OAuth pelo navegador. Estas instru�
 #### Teste a conexão com o Claude
 
 1. Em qualquer janela do chat, clique no botão de configurações.   
-   <Image alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
 2. Se o MCP da AppsFlyer estiver configurado corretamente, as ferramentas da AppsFlyer aparecem no menu.
 
 <div id="note-2" />

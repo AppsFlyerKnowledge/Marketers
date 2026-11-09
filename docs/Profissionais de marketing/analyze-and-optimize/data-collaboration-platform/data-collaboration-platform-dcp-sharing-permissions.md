@@ -32,7 +32,7 @@ Este artigo descreve as permissões disponíveis ao compartilhar dados em uma co
 
 As permissões de dados que você seleciona definem como seu colaborador pode usar seus dados associados e se aplicam a todas as fontes que você associa à colaboração. As permissões também podem ser modificadas individualmente por fonte.
 
-<Image alt="Permissões de dados Dez 2025.png" src="https://files.readme.io/1e33caebbe4a8ff14fe84be6ba7f50b82a5fe7c268ba186db0250c7084718d54-42009477892241.png" width="704px" />
+<Image align="center" alt="Permissões de dados Dez 2025.png" src="https://files.readme.io/1e33caebbe4a8ff14fe84be6ba7f50b82a5fe7c268ba186db0250c7084718d54-42009477892241.png" width="704px" />
 
 <div id="data-permissions-include" />
 

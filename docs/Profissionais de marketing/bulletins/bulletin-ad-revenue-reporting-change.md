@@ -71,6 +71,6 @@ Veja o exemplo a seguir.
 > * Os dados de receita de anúncios são incluídos no relatório no Dia 0.
 >   * No dashboard Atividade, no Data Locker (pasta h=23) e nos relatórios de dados brutos, o horário de exibição do anúncio também está disponível.
 >
-> [![](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)
+> <Image align="center" alt="" src="https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg" />
 
 <div data-zendesk-anchors="ad-revenue-reporting-change=mudan%C3%A7a-nos-relat%C3%B3rios-de-receita-de-an%C3%BAncios before-the-change=antes-da-mudan%C3%A7a after-the-change=depois-da-mudan%C3%A7a" />

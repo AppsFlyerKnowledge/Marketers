@@ -43,15 +43,15 @@ Esta seção descreve como criar uma nova colaboração.
 
 1. Acesse a Plataforma de Colaboração de Dados clicando em **Collaborate** > **Data Clean Room**, no menu lateral da AppsFlyer. 
 
-   <Image alt="Clique em Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="33.49%" />
+   <Image align="center" alt="Clique em Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="33.49%" />
 2. (Opcional) Adicione [Termos e Condições](#terms-and-conditions) da colaboração. Isso também pode ser feito depois.
 3. Acesse a guia **Colaborações** > **+ Nova colaboração**.
 
-   <Image alt="Na guia de colaborações, clique em Nova colaboração w arrow New UI.png" src="https://files.readme.io/63945589565b79f71d82453c00df9e088fc9a9eaef6dd6a14ecc1130b96c19ca-43774064785425.png" width="1240px" />
+   <Image align="center" alt="Na guia de colaborações, clique em Nova colaboração w arrow New UI.png" src="https://files.readme.io/63945589565b79f71d82453c00df9e088fc9a9eaef6dd6a14ecc1130b96c19ca-43774064785425.png" width="1240px" />
 
    A nova tela de colaboração é exibida.
 
-   [![Nova colaboração - estado vazio.png](https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png)](https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png)
+   <Image align="center" alt="Nova colaboração - estado vazio.png" src="https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png" />
 
 </Accordion>
 
@@ -63,10 +63,10 @@ Esta seção descreve como criar uma nova colaboração.
 
 1. Clique em **Definir** (em **Definir detalhes da colaboração**).
 
-   <Image alt="Definir .png" src="https://files.readme.io/e47781f360714e539ed54c6a8bfaa32b282f4609dc2c91d77021034f46dfb23a-32348709077393.png" width="951px" />
+   <Image align="center" alt="Definir .png" src="https://files.readme.io/e47781f360714e539ed54c6a8bfaa32b282f4609dc2c91d77021034f46dfb23a-32348709077393.png" width="951px" />
 2. Insira um nome para a colaboração. Esse também será o nome inicial que seu colaborador verá (você sempre poderá alterá-lo depois). Feito isso, clique em **Salvar**.
 
-<Image alt="Definir detalhes da colaboração.png" src="https://files.readme.io/1af9e94bfac35aa85a8857e8aa117939245cf73f7c83700d2fe1c77bf12d6cc3-32324652610961.png" width="825px" />
+<Image align="center" alt="Definir detalhes da colaboração.png" src="https://files.readme.io/1af9e94bfac35aa85a8857e8aa117939245cf73f7c83700d2fe1c77bf12d6cc3-32324652610961.png" width="825px" />
 
 </Accordion>
 
@@ -80,10 +80,10 @@ Um colaborador é a marca parceira que você convida para a sua colaboração. A
 
 1. Clique em **Adicionar** (em **Adicionar um colaborador**).   
 
-   <Image alt="Adicionar um colaborador clique em Adicionar.png" src="https://files.readme.io/958f88782e8cd36bbfa1962b51de72824200952be183a968d311fa6ef164553e-34014450760465.png" width="2088px" />
+   <Image align="center" alt="Adicionar um colaborador clique em Adicionar.png" src="https://files.readme.io/958f88782e8cd36bbfa1962b51de72824200952be183a968d311fa6ef164553e-34014450760465.png" width="2088px" />
 2. Insira o e-mail do colaborador.
 
-   <Image alt="Definir política de colaboração.png" src="https://files.readme.io/6e5f0f0780cbaa661bcfc711fe2deb53e199db813b78581563d1af566462f33b-41966029775633.png" width="86.66%" />
+   <Image align="center" alt="Definir política de colaboração.png" src="https://files.readme.io/6e5f0f0780cbaa661bcfc711fe2deb53e199db813b78581563d1af566462f33b-41966029775633.png" width="86.66%" />
 3. Clique em **Definir** **política de colaboração** para definir as permissões que você concede ao colaborador, as quais especificam o que o colaborador pode fazer com seus dados e quais recursos ou parceiros de ativação ele pode usar. Além dessa política padrão, permissões de dados personalizadas também podem ser [definidas por fonte](/docs/data-collaboration-platform-dcp-create-a-collaboration#opcional-defina-permissões-de-dados-personalizadas-por-fonte). Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-sharing-permissions">permissões de compartilhamento</Anchor>.
 4. Depois de salvar as permissões relevantes, clique em **Salvar** novamente.   
    Depois que a colaboração for criada, o colaborador receberá um convite para a colaboração na caixa de entrada. Ao acessar o AppsFlyer pelo e-mail, ele poderá começar a colaborar com você.
@@ -101,10 +101,10 @@ Associar fontes significa compartilhar seus dados (que incluem <Anchor target="_
 1. Na guia **Data Collaboration Platform** > **Collaborations** > clique na colaboração relevante para acessá-la.
 2. Clique em **Associar** em **Associar fontes**.  
 
-   <Image alt="Associar fontes clique em associate.png" src="https://files.readme.io/ed192e758d04c3f48dd70877f90c39428f72460247d4a5940c1217393ae5f686-34014749769617.png" width="2080px" />
+   <Image align="center" alt="Associar fontes clique em associate.png" src="https://files.readme.io/ed192e758d04c3f48dd70877f90c39428f72460247d4a5940c1217393ae5f686-34014749769617.png" width="2080px" />
 3. Selecione as fontes que você quer associar (ou <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources">crie uma nova fonte</Anchor>).  
 
-   <Image alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="78.23%" />  
+   <Image align="center" alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="78.23%" />
    Em seguida, clique em **Save**.
 4. #### <span id="optional-set-custom-data-permissions-by-source"></span>**Opcional:** Defina permissões de dados personalizadas por fonte
 
@@ -112,11 +112,11 @@ Associar fontes significa compartilhar seus dados (que incluem <Anchor target="_
 
    No menu de 3 pontos ao lado da fonte, clique em **Editar permissões**.  
 
-   <Image alt="Editar permissões new.png" src="https://files.readme.io/94395905bcd18545dfdaedb3829eafa37e047776ba6ba6d5daf0a2a00ca5afaa-43776633793553.png" width="1330px" />
+   <Image align="center" alt="Editar permissões new.png" src="https://files.readme.io/94395905bcd18545dfdaedb3829eafa37e047776ba6ba6d5daf0a2a00ca5afaa-43776633793553.png" width="1330px" />
 
    Selecione as <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources#permissões-de-compartilhamento">permissões de compartilhamento</Anchor> relevantes.  
 
-   <Image alt="Permissões da fonte1.png" src="https://files.readme.io/e4b025bf9cd944024e578ac4bcfd60c46d847b3e403b1da737e3451eb708e5a9-34019077412369.png" width="90.08%" />
+   <Image align="center" alt="Permissões da fonte1.png" src="https://files.readme.io/e4b025bf9cd944024e578ac4bcfd60c46d847b3e403b1da737e3451eb708e5a9-34019077412369.png" width="90.08%" />
 
    **Observação:** Você também pode personalizar as permissões de fonte de colaborações existentes acessando **Associate sources**, na colaboração, e clicando no menu de ação (3 pontos) à direita da fonte > **Edit permissions**.
 
@@ -140,10 +140,10 @@ Esta seção descreve como gerenciar suas colaborações existentes.
 
 1. Na plataforma de colaboração de dados (Data Clean Room), acesse a guia **Collaborations** > colaboração específica.   
 
-   <Image alt="Em Colaborações, acesse uma colaboração específica New.png" src="https://files.readme.io/b9c153e3e314f7788e942a49e465c9b10725066f50715a6eb0447f6796269328-43777319665169.png" width="876px" />
+   <Image align="center" alt="Em Colaborações, acesse uma colaboração específica New.png" src="https://files.readme.io/b9c153e3e314f7788e942a49e465c9b10725066f50715a6eb0447f6796269328-43777319665169.png" width="876px" />
 2. No dashboard da colaboração, clique na seção **Associated sources** ou no menu de ação no canto superior direito > **Associated sources**.  
 
-   <Image alt="menu de ações aberto.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+   <Image align="center" alt="menu de ações aberto.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
 
 
 <div id="associate-new-sources" />
@@ -152,7 +152,7 @@ Esta seção descreve como gerenciar suas colaborações existentes.
 
 **Para associar novas fontes:** Clique em **+ Associate source** > selecione as fontes no menu suspenso > clique em **Save**.  
 
-<Image alt="Associar fonte em uma colaboração existente.png" src="https://files.readme.io/4ecd2b8d33195d79c93848b8b1385f504b2c8ee78f509b99d7e4f3b1910bf81e-34127880603921.png" width="574px" />
+<Image align="center" alt="Associar fonte em uma colaboração existente.png" src="https://files.readme.io/4ecd2b8d33195d79c93848b8b1385f504b2c8ee78f509b99d7e4f3b1910bf81e-34127880603921.png" width="574px" />
 
 <div id="manage-sources" />
 
@@ -175,10 +175,10 @@ Esta seção descreve como gerenciar suas colaborações existentes.
 
 1. Na plataforma de colaboração de dados (Data Clean Room), acesse a guia **Collaborations** > colaboração específica.  
 
-   <Image alt="Em Colaborações, acesse a colaboração específica New.png" src="https://files.readme.io/b9c153e3e314f7788e942a49e465c9b10725066f50715a6eb0447f6796269328-43777319665169.png" width="876px" />
+   <Image align="center" alt="Em Colaborações, acesse a colaboração específica New.png" src="https://files.readme.io/b9c153e3e314f7788e942a49e465c9b10725066f50715a6eb0447f6796269328-43777319665169.png" width="876px" />
 2. No dashboard de colaboração, clique no menu de ações (3 pontos) no canto superior direito e selecione a ação específica.   
 
-   <Image alt="menu de ações aberto.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+   <Image align="center" alt="menu de ações aberto.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
 
 <div id="notes-on-suspended-collaborations" />
 
@@ -200,15 +200,15 @@ Você pode convidar todos ou alguns membros da sua equipe para a colaboração. 
 
 1. Na plataforma de colaboração de dados (Data Clean Room), acesse a guia **Collaborations** > colaboração específica.  
 
-   <Image alt="Em Colaborações, acesse a colaboração específica New.png" src="https://files.readme.io/b9c153e3e314f7788e942a49e465c9b10725066f50715a6eb0447f6796269328-43777319665169.png" width="876px" />
+   <Image align="center" alt="Em Colaborações, acesse a colaboração específica New.png" src="https://files.readme.io/b9c153e3e314f7788e942a49e465c9b10725066f50715a6eb0447f6796269328-43777319665169.png" width="876px" />
 2. Clique em **Manage access** (no canto superior direito).   
 
-   <Image alt="Manage access.png" src="https://files.readme.io/e9cfaf5da2b147f68255d6d442078a3770db4c9873109d1188b9a2b5c0f4e65f-36132545995281.png" width="475px" />
+   <Image align="center" alt="Manage access.png" src="https://files.readme.io/e9cfaf5da2b147f68255d6d442078a3770db4c9873109d1188b9a2b5c0f4e65f-36132545995281.png" width="475px" />
 3. **Para permitir que qualquer pessoa da sua empresa (com permissões do DCP) acesse a colaboração:**   
 
    Defina as configurações de **General access** como **Anyone at "your company"**  
 
-   <Image alt="A colaboração está em rascunho - menu suspenso de gerenciamento de acesso com seta.png" src="https://files.readme.io/6358d272f675d9f6f7ad4b07637db7361d772d34738bbd54488212c9870598b4-36132546008209.png" width="623px" />
+   <Image align="center" alt="A colaboração está em rascunho - menu suspenso de gerenciamento de acesso com seta.png" src="https://files.readme.io/6358d272f675d9f6f7ad4b07637db7361d772d34738bbd54488212c9870598b4-36132546008209.png" width="623px" />
 
    **Para convidar usuários específicos:**   
 
@@ -241,10 +241,10 @@ Você pode definir e aplicar um acordo legal de Termos e condições que rege to
 
 1. Na guia **Colaborações**, clique no ícone de menu (3 pontos), no canto superior direito.
 
-   <Image alt="Clique em Configurações da conta.png" src="https://files.readme.io/c4fc038d615345fdca6552dc1fd3609298557c237da01512f9329c2f380d1c61-42204335554193.png" width="1776px" />
+   <Image align="center" alt="Clique em Configurações da conta.png" src="https://files.readme.io/c4fc038d615345fdca6552dc1fd3609298557c237da01512f9329c2f380d1c61-42204335554193.png" width="1776px" />
 2. Clique em **Configurações da conta**
 
-   <Image alt="Aplicar Termos e condições com seta.png" src="https://files.readme.io/ec125bae5675efbfc20e16d726767c51894b5d3e4ec5d7d47073b0f14f6df90e-42204339679377.png" width="69.49%" />
+   <Image align="center" alt="Aplicar Termos e condições com seta.png" src="https://files.readme.io/ec125bae5675efbfc20e16d726767c51894b5d3e4ec5d7d47073b0f14f6df90e-42204339679377.png" width="69.49%" />
 3. Na guia **Termos e condições**, insira uma URL válida no campo **Termos e condições**. Essa deve ser a URL dos seus Termos oficiais.
 4. Clique em **Aplicar termos e condições**. Uma mensagem de confirmação é exibida, indicando que todos os colaboradores deverão aceitar os Termos e condições atualizados.
 

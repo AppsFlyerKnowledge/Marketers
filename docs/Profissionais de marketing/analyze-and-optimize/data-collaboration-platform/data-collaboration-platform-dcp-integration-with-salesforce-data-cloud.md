@@ -58,7 +58,7 @@ A integração envolve criar uma conexão com o Salesforce Data Cloud e, em segu
 2. No canto superior direito da página, clique em **Gerenciar conexões** > **+ Nova conexão**.
 3. Na caixa de diálogo **Nova conexão**, selecione **Provedores de dados** > **Salesforce Data Cloud**.  
 
-   <Image alt="salesforce-data-cloud-new-connection.jpg" src="https://files.readme.io/6b240e0cff3f0bc9e6b7f6eaf45520a78252e1619769a696855e8d68d322ce60-23301617982353.jpg" width="517px" />
+   <Image align="center" alt="salesforce-data-cloud-new-connection.jpg" src="https://files.readme.io/6b240e0cff3f0bc9e6b7f6eaf45520a78252e1619769a696855e8d68d322ce60-23301617982353.jpg" width="517px" />
 4. Clique em **Log in to Salesforce**.
 5. Prossiga com o processo de autenticação e permita que o Salesforce acesse a AppsFlyer.   
    **Observação:** Se a autenticação não for bem-sucedida, você retornará à caixa de diálogo **Nova conexão** para tentar novamente.
@@ -89,7 +89,7 @@ Acesse a aba **Fontes** usando os seguintes métodos:
    * **Selecione a conexão:** O Salesforce Data Cloud é preenchido automaticamente após a adição da conexão. Caso contrário, selecione-o na lista de conexões.
    * **Tabela ou visualização:** Depois que a conexão do Salesforce Data Cloud for selecionada, os nomes de tabelas e visualizações da sua conta do Salesforce serão preenchidos automaticamente. Selecione a tabela ou visualização e clique em **Próximo**.  
 
-     ![create-source-sf-3-steps.jpg](https://files.readme.io/44549ef1cd59b99610944c604c1cdfd4d598352cd106877fab3a301ce14650f8-23306070497169.jpg)
+     <Image align="center" alt="create-source-sf-3-steps.jpg" src="https://files.readme.io/44549ef1cd59b99610944c604c1cdfd4d598352cd106877fab3a301ce14650f8-23306070497169.jpg" />
 3. **Configure o esquema da fonte:** Depois que uma tabela ou visualização for selecionada, os nomes e tipos de campo serão preenchidos automaticamente. Você pode editar os tipos de campo ou remover os campos indesejados selecionando o ícone da lixeira no final da linha do campo.  
    **Observação:** Certifique-se de que pelo menos um tipo de campo funcione como identificador. Por exemplo, CUID, ID da plataforma, ID do AppsFlyer e ID com hashing SHA256.
 4. Clique em **Guardar**. A nova fonte é exibida na lista de todas as fontes existentes.

@@ -65,7 +65,7 @@ Os exemplos abaixo mostram a mesma jornada do usuário duas vezes: primeiro sem 
 
 Considere uma jornada do usuário em três plataformas. Um anúncio do Google leva os usuários a instalar um aplicativo mobile, no qual eles se cadastram usando um CUID. Mais tarde, um anúncio da Meta leva o mesmo usuário a visitar a web, na qual ele faz login com o mesmo CUID. Após fazer login, o usuário realiza duas compras no mobile: US$ 100 e US$ 50.
 
-[![](https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png)](https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png)
+<Image align="center" alt="" src="https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png" />
 
 Nesse cenário, como o reengajamento não está habilitado, todas as atividades são atribuídas ao Google Ads: a fonte de aquisição original. As compras de US$ 100 e US$ 50, assim como ambas as ativações de plataforma (mobile e web), são creditadas ao Google. A Meta não recebe crédito dentro da atribuição cross-platform, mesmo que seu anúncio tenha levado à instalação pela web.
 
@@ -82,7 +82,7 @@ Nesse cenário, como o reengajamento não está habilitado, todas as atividades 
 
 A jornada do usuário é idêntica à anterior. A diferença é que a linha de produtos optou pelo reengajamento.
 
-[![](https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png)](https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png)
+<Image align="center" alt="" src="https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png" />
 
 Nesse caso, a janela de inatividade de retargeting determina se o login na web impulsionado pela Meta é considerado um evento de reengajamento. A janela se abre depois da última vez em que o CUID foi registrado, ou seja, no cadastro no mobile. Se houver um intervalo de tempo suficiente antes do login na web, o que significa que o login ocorreu fora da janela de inatividade para reengajamento, a Meta recebe crédito pelo reengajamento.
 

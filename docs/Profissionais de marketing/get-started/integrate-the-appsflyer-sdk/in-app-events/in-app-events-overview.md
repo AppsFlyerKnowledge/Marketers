@@ -45,7 +45,7 @@ Quando os usuários realizam cadastros, concluem tutoriais, adicionam itens ao c
 
 Um evento in-app inclui um nome de evento e pode incluir parâmetros de evento. Quando você adiciona parâmetros de evento a um evento in-app, ele é denominado como um evento avançado no aplicativo. Os parâmetros do evento oferecem mais contexto e informações sobre o evento que ocorre. Por exemplo, embora ele seja útil para saber que um usuário fez uma reserva de hotel, os parâmetros do evento podem oferecer detalhes como o tipo de compra, destino e receita.
 
-![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
+<Image align="center" alt="travel.png" src="https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png" />
 
 <div id="tip" />
 
@@ -125,7 +125,7 @@ O parâmetro `af_net_revenue` oferece uma forma opcional e adicional de reportar
 
 A AppsFlyer lida com a diferença entre a moeda definida no aplicativo e e a moeda dos eventos in-app usando a conversão de moeda.
 
-![revenue_normalization_flow.png](https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png)
+<Image align="center" alt="revenue_normalization_flow.png" src="https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png" />
 
 O diagrama acima ilustra o seguinte processo:
 

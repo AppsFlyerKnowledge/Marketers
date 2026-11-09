@@ -28,7 +28,7 @@ x-zendesk:
 ---
 > **Visão geral:** como enviar eventos relatados pelo SDK do Firebase para a AppsFlyer usando o Google Tag Manager.
 
-<Image alt="gtm.png" src="https://files.readme.io/fbb4e0f83baf6f5f7f8dc83e02986ca011f5cb919b9870768da1606798211dcc-360002517245.png" width="289px" />
+<Image align="center" alt="gtm.png" src="https://files.readme.io/fbb4e0f83baf6f5f7f8dc83e02986ca011f5cb919b9870768da1606798211dcc-360002517245.png" width="289px" />
 
 A integração da AppsFlyer com o Google Tag Manager (GTM) e o Firebase permite ao desenvolvedor enviar eventos in-app para o Firebase usando o Firebase SDK, e ter os eventos enviados para a AppsFlyer através do SDK usando o Google Tag Manager. Isto evita a necessidade de enviar o mesmo evento duas vezes.
 

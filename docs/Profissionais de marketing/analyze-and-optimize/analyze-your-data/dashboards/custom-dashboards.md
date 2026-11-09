@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Num relance:** Crie seus próprios dashboards personalizados dentro da AppsFlyer. Você pode facilmente selecionar, nomear e posicionar os dados em seus próprios relatórios personalizados.
 
-[![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
+<Image align="center" alt="CustomDashboard_us-en.png" src="https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png" />
 
 <div id="custom-dashboards" />
 
@@ -88,7 +88,7 @@ Você pode personalizar um dashboard ao mover e dimensionar widgets.
 1. Clique em Adicionar widget.
 2. A janela do widget é exibida.
 
-   [![WidgetConfigure_us-en.png](https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png)](https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png)
+   <Image align="center" alt="WidgetConfigure_us-en.png" src="https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png" />
 3. Configure o widget. Use o guia de configurações do widget a seguir.
 4. Adicione mais widgets conforme necessário.
 
@@ -111,7 +111,7 @@ Você pode personalizar um dashboard ao mover e dimensionar widgets.
 
 <Accordion title="Exportar dados do widget">
 
-![Widget_table.png](https://files.readme.io/b04e80e16d0d34946e6783103fc6fbbdf89b390842db27226b4fdba6c1f7e506-360015717057.png)
+<Image align="center" alt="Widget_table.png" src="https://files.readme.io/b04e80e16d0d34946e6783103fc6fbbdf89b390842db27226b4fdba6c1f7e506-360015717057.png" />
 
 **Para fazer download dos dados do widget em um arquivo CSV**:
 

@@ -48,7 +48,7 @@ Você pode adicionar todos os seus aplicativos por meio da página de integraç�
 >
 > Se a página de integração ainda não estiver aberta, na barra de menu superior > menu suspenso de endereço de e-mail, clique em **Integração do aplicativo**.
 
-![onboarding page.png](https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png)
+<Image align="center" alt="onboarding page.png" src="https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png" />
 
 **Para entrar no assistente e adicionar um aplicativo da plataforma:**
 
@@ -56,7 +56,7 @@ Você pode adicionar todos os seus aplicativos por meio da página de integraç�
 * Na página inicial da AppsFlyer, clique em **+ Adicionar aplicativo**
 * Na barra de menu superior > menu suspenso de endereço de e-mail > **Integração do aplicativo**, clique em **+ Integrar outro aplicativo**
 
-<Image alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
+<Image align="center" alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
 <div id="adding-an-app" />
 
@@ -245,7 +245,7 @@ Use essa opção para as seguintes plataformas:
 
 **URL completa:** A URL completa do site para o qual você deseja mensurar o tráfego. Este é o site no qual você implementou (ou irá implementar) o <Anchor target="_blank" href="/marketers/pt/docs/onboarding-guide-to-people-based-attribution#2">SDK Web do PBA</Anchor>.
 
-[<Image alt="URL_diagram" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)
+<Image align="center" alt="URL_diagram" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />
 
 Incluir –
 
@@ -399,7 +399,7 @@ Cada **chave legada do Web Dev só pode ser reutilizada para um** novo aplicativ
   * No <Anchor target="_blank" href="https://developer.roku.com/developer">Roku Developer Dashboard</Anchor>, clique no nome do canal que você quer adicionar à AppsFlyer. Isto abrirá a página do Roku Preview & Publish para o canal.
   * O número no final da URL da página é o Channel ID: ID:
 
-    ![](https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png)
+    <Image align="center" alt="" src="https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png" />
 
 </Accordion>
 
@@ -444,7 +444,7 @@ Observação: para acessar sua página web exclusiva da loja de aplicativos, adi
 
 Por exemplo, se o seu Bundle ID for "G15147002586", a URL da sua página será "[https://www.samsung.com/us/appstore/app/G15147002586/](https://www.samsung.com/us/appstore/app/G15147002586/) ". A URL do desenvolvedor, o Bundle ID e o ID da loja de aplicativos são exibidos nos metadados dessa página.
 
-![](https://files.readme.io/ee4b192abab24e064013a4a034bda38fb3ed49497ae333e327e1b78dd05d5349-33198275491729.png)
+<Image align="center" alt="" src="https://files.readme.io/ee4b192abab24e064013a4a034bda38fb3ed49497ae333e327e1b78dd05d5349-33198275491729.png" />
 
 </Accordion>
 
@@ -473,7 +473,7 @@ Se precisar de confirmar o App ID, fale com o seu representante LG WebOS.
 
 **App ID:** O conceito de ID da PlayStation, um identificador único atribuído a um jogo ou a outros conceitos de conteúdo. Aparece como um número de 5 a 9 dígitos na URL da PlayStation store. Pode encontrá-lo no final da URL:
 
-![playstation_app_id_url.png](https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png)
+<Image align="center" alt="playstation_app_id_url.png" src="https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png" />
 
 </Accordion>
 
@@ -495,7 +495,7 @@ Se precisar de confirmar o App ID, fale com o seu representante LG WebOS.
 
 **App ID:** O App ID da Steam. Este é o número composto por 5 a 8 dígitos que aparece na URL da loja Steam:
 
-![steam_store_app_url.png](https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png)
+<Image align="center" alt="steam_store_app_url.png" src="https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png" />
 
 </Accordion>
 
@@ -507,7 +507,7 @@ Se precisar de confirmar o App ID, fale com o seu representante LG WebOS.
 
 **App ID:** O App ID da Epic Games, conforme aparece na loja de onde o aplicativo é baixado. Inclui entre 3 a 50 caracteres de: `A-Z` `a-z` `0-9` `.`
 
-<Image alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
+<Image align="center" alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
 
 </Accordion>
 
@@ -531,7 +531,7 @@ Se precisar de confirmar o App ID, fale com o seu representante LG WebOS.
 
 **App ID:** O App ID do Xbox, conforme aparece no final da URL da loja do Xbox de onde o aplicativo é baixado. Inclui apenas 12 letras e dígitos (`A-Z` `a-z0-9`).
 
-![](https://files.readme.io/c33ffcb35d4488b9340cfa8b475097eab7b79bfeaf94e8cf8ce6478dda07d341-33198275505041.png)
+<Image align="center" alt="" src="https://files.readme.io/c33ffcb35d4488b9340cfa8b475097eab7b79bfeaf94e8cf8ce6478dda07d341-33198275505041.png" />
 
 **Atenção:** O App ID diferencia letras maiúsculas de minúsculas.
 
@@ -545,7 +545,7 @@ Se precisar de confirmar o App ID, fale com o seu representante LG WebOS.
 
 **App ID:** O App Ide do Native PC. Inclui entre 3 a 50 caracteres de: `A-Z` `a-z` `0-9` `.`
 
-![](https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png)
+<Image align="center" alt="" src="https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png" />
 
 </Accordion>
 
@@ -563,7 +563,7 @@ Se precisar de confirmar o App ID, fale com o seu representante LG WebOS.
 
 ### Insira informações adicionais (não aplicáveis a aplicativos da web):
 
-<Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
+<Image align="center" alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
 
 <div id="select-currency" />
 

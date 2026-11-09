@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Visão geral:** A AppsFlyer descodifica e transforma o valor de conversão definido por você em eventos. Os eventos são usados para preencher o painel do SKAN, os dados brutos e os postbacks para os parceiros.
 
-![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
+<Image align="center" alt="SKAdNetwork_-_Custom__1_.png" src="https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png" />
 
 <div id="decode-skan-conversion-value" />
 
@@ -282,7 +282,7 @@ Após salvar o arquivo CSV, verifique se o conteúdo está formatado corretament
 
 O Excel geralmente formata células de valor com vírgula para separar os milhares, conforme mostrado na figura. Este formato não é adequado para carregar arquivos CSV. Também é necessário remover o símbolo $.
 
-![mceclip0.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 Você pode corrigir isso formatando as células no Excel.
 
@@ -293,7 +293,7 @@ Você pode corrigir isso formatando as células no Excel.
    A janela formatar células é aberta.
 3. Selecione **Número**.  
 
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 
 1. Desmarque **Usar separador de 1000 (,).** Etapa 1:
 2. (Opcional) Defina o número de **Casas decimais**. O padrão é 2. O máximo permitido é 5.
@@ -315,14 +315,14 @@ Veja a captura de tela abaixo com um <Anchor target="_blank" href="https://docs.
 
 **Visualização do editor**
 
-![SKCustomeEditor.png](https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png)
+<Image align="center" alt="SKCustomeEditor.png" src="https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png" />
 
 Usando um editor, examine o arquivo CSV. Preste atenção em:
 
 * **Espaços em branco:** certifique-se de que não há espaços em branco à esquerda ou à direita antes ou depois das vírgulas que separam os campos. No Excel, use o comando @trim para remover espaços em branco.
 * **event\_revenue\_usd:** Certifique-se de que não há vírgula nem o símbolo $ na coluna event\_revenue\_usd.  
 
-  ![mceclip1.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+  <Image align="center" alt="mceclip1.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 </Accordion>
 

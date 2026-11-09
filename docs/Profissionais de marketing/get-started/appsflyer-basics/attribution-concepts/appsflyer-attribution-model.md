@@ -35,7 +35,7 @@ x-zendesk:
 ---
 > **Resumo:** a AppsFlyer determina a fonte de mídia que motiva um usuário a instalar ou reengajar com um aplicativo, atibuindo a ação do usuário a essa fonte usando o modelo de atribuição da AppsFlyer.
 
-[![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
+<Image align="center" alt="" src="https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png" />
 
 <div id="what-is-attribution" />
 
@@ -79,7 +79,7 @@ A AppsFlyer usa vários métodos de atribuição, listados na tabela a seguir:
 
 Em uma nova instalação, se houver mais de um contrato válido, a **AppsFlyer prioriza cliques ao invés de impressões e métodos determinísticos no lugar de métodos probabilísticos**. Os métodos de atribuição são utilizados de acordo com as prioridades mostradas no gráfico.
 
-[<Image alt="watefall.png" src="https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png" width="1378px" />](https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png)
+<Image align="center" alt="watefall.png" src="https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png" width="1378px" />
 
 Veja abaixo as descrições detalhadas dos modelos de atribuição da AppsFlyer.
 
@@ -336,7 +336,7 @@ Quando é feito o backup de um aplicativo usando o iCloud e posteriormente resta
 
 <Accordion title="Atribuição de retargeting">
 
-![Retargeting_-_Flow__2_.png](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="Retargeting_-_Flow__2_.png" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 Um usuário que reinstala um aplicativo dentro da <Anchor target="_blank" href="/marketers/pt/docs/set-up-re-attribution-window">janela de reatribuição</Anchor> (90 dias por padrão) é considerado uma reatribuição. Se essa instalação ocorrer depois do engajamento com uma campanha de retargeting, ela será registrada como reinstalação de retargeting, ou seja, reatribuição, e será relatada em <Anchor target="_blank" href="/marketers/pt/docs/set-up-re-attribution-window">retargeting</Anchor>.
 

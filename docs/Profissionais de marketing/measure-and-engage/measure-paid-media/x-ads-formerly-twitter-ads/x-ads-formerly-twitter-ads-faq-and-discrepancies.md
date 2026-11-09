@@ -122,7 +122,7 @@ Se seu aplicativo foi inscrito em outro provedor de atribuição no passado, que
 
 Como alternativa, o seguinte erro também pode aparecer:  
 
-[![](https://files.readme.io/ce96a20f87dc3033e8abcd6666aeb1a9dd9ea646731cfc70fe808443b68e25e0-49929550177297.png)](https://files.readme.io/ce96a20f87dc3033e8abcd6666aeb1a9dd9ea646731cfc70fe808443b68e25e0-49929550177297.png)
+<Image align="center" alt="" src="https://files.readme.io/ce96a20f87dc3033e8abcd6666aeb1a9dd9ea646731cfc70fe808443b68e25e0-49929550177297.png" />
 
 **Erro:  houve um erro ao salvar a configuração do Twitter. Falha ao atualizar algumas contas:  XX Vários ids de provedor para o mesmo (appid, conversionType) para o evento appid2872.**
 

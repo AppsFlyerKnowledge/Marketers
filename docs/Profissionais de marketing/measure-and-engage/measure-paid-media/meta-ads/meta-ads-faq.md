@@ -143,7 +143,7 @@ Por padrão, o Meta Ads não permite a distribuição de dados device-level que 
 Sim. Os relatórios de performance possuem estruturas de coluna estática em qualquer combinação de fonte de mídia selecionada, que apresentam informações até o nível de campanha.  
 No entanto, quando você faz o download de relatórios de performance APENAS para o Meta Ads, a AppsFlyer adiciona 4 colunas a eles, que apresentam informações até o nível do anúncio único! As colunas adicionadas são Adset Name, Adset ID, Adgroup (por exemplo, anúncio único) Name e Adgroup ID.
 
-[![](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)
+<Image align="center" alt="" src="https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png" />
 
 </Accordion>
 
@@ -161,7 +161,7 @@ Para mais detalhes sobre como configurar a atribuição com <Anchor target="_bla
 
 <Accordion title="O que devo fazer ao receber o seguinte aviso?">
 
-[![](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)
+<Image align="center" alt="" src="https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png" />
 
 * Verifique o Facebook App ID e confira se há alguma restrição geográfica ou de idade no Facebook App ID.
 * Se a atribuição já estiver funcionando, isso significa que o aplicativo já está disponível no Meta Developer Portal e você pode ignorar com segurança essa mensagem de erro.
@@ -299,7 +299,7 @@ Se uma campanha do Meta Ads envolve várias plataformas (Android, iOS, desktop e
 
 Um anunciante executa campanhas usando o Meta Ads. Na AppsFlyer, o anunciante vê o seguinte:
 
-![mceclip2.png](https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png" />
 
 As informações de custo são enviadas pelo Meta Ads para a AppsFlyer. O número de **instalações** é calculado pela AppsFlyer usando as regras de atribuição. Como resultado, o eCPI calculado pelo Meta Ads é geralmente diferente do calculado pela AppsFlyer.
 
@@ -436,7 +436,7 @@ Se você deseja mudar para uma nova conta de anúncios, mas seu custo do Meta Ad
 1. No Meta Ads, vá para **Settings** > **Business Integration**.
 2. Na aba **Active**, remova a integração da AppsFlyer.  
 
-   [![](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)
+   <Image align="center" alt="" src="https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png" />
 3. Acesse o dashboard da AppsFlyer e conecte o custo com a nova conta de anúncio.
 
 </Accordion>
@@ -513,7 +513,7 @@ Além disso, as agências não podem modificar nenhum postback de eventos in-app
 
 A imagem abaixo mostra todas as configurações que precisam ser feitas pelo anunciante para que a agência possa gerenciar as campanhas no Meta Ads:
 
-[![advertiser-vs-agency-facebook-int-new.png](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)
+<Image align="center" alt="advertiser-vs-agency-facebook-int-new.png" src="https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png" />
 
 </Accordion>
 
@@ -575,7 +575,7 @@ Com o Meta Ads, você pode ver os dados divididos não apenas por campanhas, con
 
 Use esses dados para comparar a qualidade dos usuários que você obtém através de diferentes canais.
 
-![Facebook_channels.png](https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png)
+<Image align="center" alt="Facebook_channels.png" src="https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png" />
 
 </Accordion>
 

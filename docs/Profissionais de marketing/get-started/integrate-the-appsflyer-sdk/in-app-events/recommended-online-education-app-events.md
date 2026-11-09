@@ -46,7 +46,7 @@ Gravar eventos pode ajudar a determinar:
 >
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
-[![Fluxograma_da_jornada_do_usuário_do_aplicativo_de_educação_on-line_para_eventos_recomendados](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)
+<Image align="center" alt="Fluxograma_da_jornada_do_usuário_do_aplicativo_de_educação_on-line_para_eventos_recomendados" src="https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

@@ -127,7 +127,7 @@ Atualizações do SO: **Novas atualizações do sistema operacional (iOS e Andro
 2. Selecione o template do OneLink.
 3. Clique na opção 'editar template' no menu de trê pontinhos.
 
-   <Image alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
+   <Image align="center" alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
 4. Clique no ícone da lixeira.
 
 **Atenção:** Se você tiver URLs do OneLink existentes com base no template excluído, **elas não funcionarão nem para levar usuários à loja de aplicativos.** Por isso, é particularmente importante que você não exclua um template sem antes se certificar de que não haja URLs do OneLink ligadas a ele. Como alternativa, considere se é possível obter os resultados necessários alterando a configuração do template existente em vez de excluí-lo.
@@ -252,7 +252,7 @@ A partir de novembro de 2025,
 * O link deixará de funcionar em até 2 minutos após a exclusão.
 * Os links excluídos pela interface após 5 de novembro de 2025 podem ser restaurados pela tabela **Links excluídos**, acessível no gerenciamento do OneLink.
 
-  <Image alt="links excluídos.png" src="https://files.readme.io/d5a2cc7047fda06ba8249cc00b2830c309ec6137f10306cdabca61bcfe3d4d15-small-41829768141713.png" width="2768px" />
+  <Image align="center" alt="links excluídos.png" src="https://files.readme.io/d5a2cc7047fda06ba8249cc00b2830c309ec6137f10306cdabca61bcfe3d4d15-small-41829768141713.png" width="2768px" />
 * Os links podem ser restaurados em até 90 dias a partir da data de exclusão. Se tiverem se passado mais de 90 dias desde a data de exclusão do link, ele não poderá ser restaurado.
 
 </Accordion>
@@ -285,7 +285,7 @@ URLs de fallback enviam usuários para páginas da web especificadas se a abertu
 
 Para implementar uma URL de fallback, no template do OneLink ou nas definições de links personalizado, defina o comportamento do link para quando o aplicativo não estiver instalado para redirecionar para uma URL diferente.
 
-![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
+<Image align="center" alt="different_url.png" src="https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png" />
 
 Essa configuração adiciona `af_ios_url` e `af_android_url` como parâmetros de destino para o fallback, o que fará com que os usuários do iOS sejam redirecionados para a página especificada por `af_ios_url` e os usuários do Android sejam redirecionados para a página especificada por `af_android_url`.
 
@@ -609,11 +609,11 @@ O WeChat substitui deep links do Android e iOS e redireciona os usuários para u
 
 Para superar isso, o OneLink reconhece cliques no WeChat e carrega uma landing page dedicada instruindo o usuário a clicar no botão de opções e clicar em **Abrir no navegador.** Isso, por sua vez, abre a URL de redirecionamento definida na configuração do template do OneLink.
 
-![WeChat_a.jpg](https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg)
+<Image align="center" alt="WeChat_a.jpg" src="https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg" />
 
 Se o idioma do WeChat do usuário estiver cadastrado como Chinês, o OneLink gera uma versão localizada da landing page:
 
-![WeChat_b.jpg](https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg)
+<Image align="center" alt="WeChat_b.jpg" src="https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg" />
 
 </Accordion>
 

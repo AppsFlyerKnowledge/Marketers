@@ -605,7 +605,7 @@ Certifique-se de que o SDK seja carregado uma vez por cada página e configure-o
 
 Após a instalação, certifique-se de que o SDK está enviando solicitações ao conferir as chamadas de rede nas ferramentas de desenvolvedor do navegador.
 
-[<Image alt="DevTools screenshot" src="https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png" width="1015px" />](https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png)
+<Image align="center" alt="DevTools screenshot" src="https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png" width="1015px" />
 
 **Para verificar se o SDK está funcionando, siga estes passos:**
 
@@ -1010,10 +1010,10 @@ O código usa a Fetch API. Ele envia o endereço de e-mail inserido pelo usuári
    ```
 3. Adicione uma nova tag para atribuir assinaturas após o carregamento da página de agradecimento.
 
-   [![Adicionando uma nova tag do GTM para o evento de conversão de CUID](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="Adicionando uma nova tag do GTM para o evento de conversão de CUID" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 4. Dê um nome diferente à tag e selecione a opção de tipo de tag **HTML personalizado**.
 
-   [![Nomeando a tag e selecionando o tipo de tag HTML personalizado no GTM](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)
+   <Image align="center" alt="Nomeando a tag e selecionando o tipo de tag HTML personalizado no GTM" src="https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg" />
 
    ```html
    <script>
@@ -1028,10 +1028,10 @@ O código usa a Fetch API. Ele envia o endereço de e-mail inserido pelo usuári
    ```
 5. Abra **Configurações avançadas** e **Sequenciamento de tags** e certifique-se de que está configurado para disparar a conversão após a execução da tag.
 
-   [![Configurando o sequenciamento de tags do GTM para a tag de conversão](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="Configurando o sequenciamento de tags do GTM para a tag de conversão" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. Defina um gatilho para a tag de conversão para indicar quando deve ser acionada. No exemplo abaixo, ela é acionada no carregamento da página de agradecimento.
 
-   [![Configurando o acionador do GTM para disparar a tag de conversão ao carregar a página de agradecimento](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="Configurando o acionador do GTM para disparar a tag de conversão ao carregar a página de agradecimento" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 </Accordion>
 

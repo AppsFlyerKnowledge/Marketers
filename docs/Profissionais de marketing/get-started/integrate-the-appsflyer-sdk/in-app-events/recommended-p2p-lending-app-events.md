@@ -42,7 +42,7 @@ Os dados que você reunir com a gravação de eventos podem destacar mutuários 
 >
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
-[![Fluxograma_para_eventos_recomendados_jornada_do_usuário_do_aplicativo_de_empréstimo_P2P](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
+<Image align="center" alt="Fluxograma_para_eventos_recomendados_jornada_do_usuário_do_aplicativo_de_empréstimo_P2P" src="https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Visão geral:** a Vungle, um parceiro integrado de ad network da AppsFlyer, oferece uma plataforma de publicidade em vídeo in-app para profissionais de marketing de performance. Além da atribuição mobile baseada em cliques, a Vungle oferece atribuição de custo e view-through, que pode ser registrada na AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/vungle.png?v=1" width="91px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/vungle.png?v=1" width="91px" />
 
 <div id="setting-up-vungle" />
 

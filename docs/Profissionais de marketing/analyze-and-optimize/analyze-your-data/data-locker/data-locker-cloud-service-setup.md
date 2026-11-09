@@ -54,7 +54,7 @@ Nesse procedimento, substitua `data-locker-example` usando o nome do bucket que 
 1. Faça login em seu console do GCS.
 2. Vá para **Storage** > **Storage**browser.
 
-   [![mceclip0.png](https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png)](https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png)
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png" />
 3. Selecione o bucket que você criou anteriormente, por exemplo, `data-locker-example`.
 4. Acesse a aba **Permissions**.
 5. Clique em **+Add**.  
@@ -67,7 +67,7 @@ Nesse procedimento, substitua `data-locker-example` usando o nome do bucket que 
       ```
    2. Selecione uma função: **Cloud storage** > **Storage Object Admin**.
 
-      [![mceclip0.png](https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png)](https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png)
+      <Image align="center" alt="mceclip0.png" src="https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png" />
 7. Clique em **Save**.
 
 </Accordion>
@@ -92,7 +92,7 @@ O Data Locker é a solução da AppsFlyer para a transmissão de dados para arma
 
 **Interface do usuário no console da AWS**
 
-![MyBucket.jpg](https://files.readme.io/b8a16d185279200026388e146cfb3eb03ae3c7737ac26da3aa0d116a0cf9c078-4403551836305.jpg)
+<Image align="center" alt="MyBucket.jpg" src="https://files.readme.io/b8a16d185279200026388e146cfb3eb03ae3c7737ac26da3aa0d116a0cf9c078-4403551836305.jpg" />
 
 Depois de criar o bucket, conceda permissões para a AppsFlyer usando o procedimento a seguir.
 
@@ -311,7 +311,7 @@ Conclua os procedimentos a seguir para conectar o Snowflake ao Data Locker.
 2. Na barra de menus, selecione seu nome.  
    O ID da sua conta e a região são exibidas.
 
-   [<Image alt="Snowflake account details" src="https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png" width="875px" />](https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png)
+   <Image align="center" alt="Snowflake account details" src="https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png" width="875px" />
 
 **Para conectar o Data Locker ao Snowflake**:
 

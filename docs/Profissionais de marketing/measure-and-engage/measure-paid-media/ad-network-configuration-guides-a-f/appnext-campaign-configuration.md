@@ -62,7 +62,7 @@ A guia Integração é dividida em diferentes seções, conforme descrito abaixo
 
 Ative esta opção se quiser atribuir instalações view-through da Appnext. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
-![appnext_msc_new_2.png](https://files.readme.io/f974ed2ccc5550cebb87e5070d177fb88efb0c82fe15cbc300979d54b1297a6a-50705658863249.png)
+<Image align="center" alt="appnext_msc_new_2.png" src="https://files.readme.io/f974ed2ccc5550cebb87e5070d177fb88efb0c82fe15cbc300979d54b1297a6a-50705658863249.png" />
 
 <div id="default-postbacks" />
 

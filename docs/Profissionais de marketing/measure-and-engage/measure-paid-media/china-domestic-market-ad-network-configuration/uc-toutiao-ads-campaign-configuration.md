@@ -58,7 +58,7 @@ Na **primeira visita** aqui, você precisará ativar o botão ***Ativar parceiro
 
 Por padrão, o UC Toutiao recebe postbacks apenas de eventos de nova instalação atribuídos a ele.
 
-![uc-toutiao-integration.png](https://files.readme.io/1ed78bd49d9a49d134f5c48655765ad205515752d88528a0a453bd3a091492c0-360002074869.png)
+<Image align="center" alt="uc-toutiao-integration.png" src="https://files.readme.io/1ed78bd49d9a49d134f5c48655765ad205515752d88528a0a453bd3a091492c0-360002074869.png" />
 
 <div id="in-app-events-settings" />
 
@@ -66,7 +66,7 @@ Por padrão, o UC Toutiao recebe postbacks apenas de eventos de nova instalaçã
 
 Nesta seção, você pode mapear seus eventos da AppsFlyer com o UC Toutiao por meio de postbacks.
 
-[![](https://files.readme.io/ae230875cb4d08e7b58249a9bf61a1fcabe2893b1a338c01bdc57b2043deda55-21594057898769.png)](https://files.readme.io/ae230875cb4d08e7b58249a9bf61a1fcabe2893b1a338c01bdc57b2043deda55-21594057898769.png)
+<Image align="center" alt="" src="https://files.readme.io/ae230875cb4d08e7b58249a9bf61a1fcabe2893b1a338c01bdc57b2043deda55-21594057898769.png" />
 
 1. Defina novamente aqui o ID da network do UC Toutiao
 2. Mude o botão Postbacks do evento in-app para ATIVO
@@ -90,7 +90,7 @@ Nesta seção, você pode mapear seus eventos da AppsFlyer com o UC Toutiao por 
 
 Nesta aba, você pode criar os links de atribuição que deseja enviar ao UC Toutiao para atribuir as campanhas, os conjuntos de anúncios ou até mesmo os anúncios individuais do UC Toutiao. Observe que a AppsFlyer NÃO salva seus links de atribuição gerados pelo parceiro.
 
-[![UC_Toutiao_aba_link_de_atribuição.png](https://files.readme.io/d8e96914bb9bc703fc7540cd8abc82b745a96066493240952720c2c82d7d21d0-360002880397.png)](https://files.readme.io/d8e96914bb9bc703fc7540cd8abc82b745a96066493240952720c2c82d7d21d0-360002880397.png)
+<Image align="center" alt="UC_Toutiao_aba_link_de_atribuição.png" src="https://files.readme.io/d8e96914bb9bc703fc7540cd8abc82b745a96066493240952720c2c82d7d21d0-360002880397.png" />
 
 Essa guia está dividida em diferentes seções:
 
@@ -113,7 +113,7 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 * **Parâmetros de assinante** - use qualquer um dos 5 parâmetros de assinante para inserir valores úteis. Observe que esses parâmetros são analisados e aparecem no relatório de dados brutos, o que os torna muito úteis para a realização de agregação ou filtragem de dados.  
   **Parâmetros do link de atribuição:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-params.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="attribution-link-params.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**estrutura e parâmetros do link de atribuição da AppsFlyer**</Anchor>.
 
@@ -127,7 +127,7 @@ Essa barra deslizante permite que você defina o **tempo máximo entre o clique 
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
 
-![uc-toutiao-click-through.png](https://files.readme.io/8128e80c365aa223105260a25aa99a61bd9eeccdf19d311804ed3e66b744ef39-360002074929.png)
+<Image align="center" alt="uc-toutiao-click-through.png" src="https://files.readme.io/8128e80c365aa223105260a25aa99a61bd9eeccdf19d311804ed3e66b744ef39-360002074929.png" />
 
 <div id="click-attribution-link" />
 
@@ -165,17 +165,17 @@ Nenhuma configuração de permissão está disponível para este parceiro.
 
 Faça login no UC Toutiao Ads (<Anchor target="_blank" href="https://e.uc.cn/">https://e.uc.cn/</Anchor>) e acesse **Click Promotion Tools** >> **Click Conversion Tools** >> **Create Conversion**
 
-![Toutiao_4.png](https://files.readme.io/40e4c3f26faf2cf928fe874398a7e505d100e717669867fc8a55b8b9fec1f021-115016024743.png)
+<Image align="center" alt="Toutiao_4.png" src="https://files.readme.io/40e4c3f26faf2cf928fe874398a7e505d100e717669867fc8a55b8b9fec1f021-115016024743.png" />
 
 Insira as informações relacionadas ao aplicativo >> **Click Confirm** >> **Generate 2-dimension code**
 
 Aplicativo Android:
 
-![Toutiao_5.png](https://files.readme.io/8db1f985882f847aad08e4e46710bd9af8a95b62e0a0b488d5242879cd11b7bd-115015832006.png)
+<Image align="center" alt="Toutiao_5.png" src="https://files.readme.io/8db1f985882f847aad08e4e46710bd9af8a95b62e0a0b488d5242879cd11b7bd-115015832006.png" />
 
 iOS App:
 
-![Toutiao_6.png](https://files.readme.io/18b8ba97b8792db66ec4874269bf1b6ccb21ad68016a57e52534f4e97835cc92-115016025123.png)
+<Image align="center" alt="Toutiao_6.png" src="https://files.readme.io/18b8ba97b8792db66ec4874269bf1b6ccb21ad68016a57e52534f4e97835cc92-115016025123.png" />
 
 Use o aplicativo Alipay ou o aplicativo Dingding para escanear o código de 2 dimensões e instalar seu Aplicativo. Conclua o teste de conversão e então o status dessa conversão ficará ativo.
 
@@ -183,6 +183,6 @@ Use o aplicativo Alipay ou o aplicativo Dingding para escanear o código de 2 di
 
 Crie seu anúncio acessando: **Nível da unidade de anúncio** >> **Seção de configuração de lances** >> **Ative a conversão**
 
-![Toutiao_7.png](https://files.readme.io/f2c49499432c3c358d737544ea02cb5b1e634244313606a62102707dd8a3c31e-115015832146.png)
+<Image align="center" alt="Toutiao_7.png" src="https://files.readme.io/f2c49499432c3c358d737544ea02cb5b1e634244313606a62102707dd8a3c31e-115015832146.png" />
 
 <div data-zendesk-anchors="setting-up-uc-toutiao=configurando-o-uc-toutiao h_01HKW6Y1PVGS22BXK54VW8C488=configurando-o-uc-toutiao h_01HKW6Y1PWJEJHCCY5WM8AYNGE=integration-tab activate-partners=ativar-parceiros h_01HKW6Y1PWX3TMM41S78MJ21C1=ativar-parceiros default-postbacks=postbacks-padr%C3%A3o h_01HKW6Y1PWRZNRX6061KFECTDN=postbacks-padr%C3%A3o inapp-events-settings=configura%C3%A7%C3%B5es-de-eventos-in-app h_01HKW6Y1PWRMK1H7QCW1GQWAA7=configura%C3%A7%C3%B5es-de-eventos-in-app h_01HKW6Y1PW95EWPGP09CCJF97M=attribution-link-tab attribution-link-parameters=par%C3%A2metros-de-link-de-atribui%C3%A7%C3%A3o h_01HKW6Y1PWVTGGNX96AWVZJ9PP=par%C3%A2metros-de-link-de-atribui%C3%A7%C3%A3o clickthrough-attribution=atribui%C3%A7%C3%A3o-de-click-through h_01HKW6Y1PWEW2FWN8K5S8DKQJJ=atribui%C3%A7%C3%A3o-de-click-through click-attribution-link=clique-no-link-de-atribui%C3%A7%C3%A3o h_01HKW6Y1PWKPJ09G70XMQG8H1S=clique-no-link-de-atribui%C3%A7%C3%A3o h_01HKW6Y1PWFS5X835MYJG0CVJ0=cost-tab h_01HKW6Y1PWJW4EW33MYRDN2FJB=ad-revenue-tab h_01HKW6Y1PWDWN4KWMA1KX5FYDT=permissions-tab h_01HKW6Y1PWVMM70F6MJVCJYKT3=create-conversion-at-uc-toutiao-ads" />

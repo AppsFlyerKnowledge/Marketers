@@ -44,7 +44,7 @@ A AppsFlyer atribui aplicativos, independentemente da loja. Ou seja, Google Play
 > * A atribuição Android da AppsFlyer é compatível com todos os tipos de identificador de dispositivo, incluindo GAID e <Anchor target="_blank" href="/marketers/pt/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor>
 > * Para aplicativos comercializados na China, consulte o artigo (em inglês) <Anchor target="_blank" href="/marketers/pt/docs/measure-attribution-in-the-chinese-domestic-market">Como atribuir aplicativos Android no mercado interno da China</Anchor>
 
-![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
+<Image align="center" alt="DashboardType_us-en-new.jpg" src="https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg" />
 
 <div id="single-dashboard-vs-dashboard-per-store" />
 
@@ -253,7 +253,7 @@ Para adicionar um dashboard por loja na AppsFlyer:
 3. Acesse as configurações e encontre suas configurações de Android. Se você ainda não configurou o Android, adicione a plataforma.
 4. Preencha as informações necessárias, incluindo o URL da loja de aplicativos da Amazon específico para seu aplicativo.  
 
-   [![outofstore_1.png](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)
+   <Image align="center" alt="outofstore_1.png" src="https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png" />
 5. No dashboard da AppsFlyer, em “Integrações ativas”, selecione “Meta Ads” e insira o mesmo Facebook App ID usado para registrar anúncios de instalação de aplicativos mobile na loja da Meta com a AppsFlyer.
 
 </Accordion>

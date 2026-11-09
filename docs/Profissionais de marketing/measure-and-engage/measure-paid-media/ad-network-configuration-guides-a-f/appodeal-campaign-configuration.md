@@ -28,7 +28,7 @@ x-zendesk:
 
 ## Como configurar a integração da Appodeal
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/appodeal.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/appodeal.png" />
 
 A integração da AppsFlyer com a Appodeal oferece suporte à atribuição de cliques e à <Anchor target="_blank" href="/marketers/pt/docs/roi360-guide-ad-revenue-attribution#ad-revenue-raw-data">atribuição da receita de anúncios no nível do usuário.</Anchor>
 

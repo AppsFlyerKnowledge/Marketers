@@ -75,7 +75,7 @@ Quando a AAP se aplica aos dados de um determinado usuário, a disponibilidade d
 
 Os termos definidos são usados na figura e nas seções a seguir para descrever os dados disponíveis para anunciantes e parceiros.
 
-![Estrutura de Privacidade Avançada - Anunciantes (4).png](https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png)
+<Image align="center" alt="Estrutura de Privacidade Avançada - Anunciantes (4).png" src="https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png" />
 
 A Privacidade Avançada se comporta de maneira diferente quando veiculada na web e o parâmetro af\_media\_type=web ou af\_media\_type=app deve ser usado. Para obter mais informações, clique <Anchor target="_blank" href="/partners/pt/docs/advanced-privacy-guide-postback-macros-for-ad-networks#campanhas-na-web">aqui</Anchor>.
 
@@ -117,7 +117,7 @@ A mídia própria inclui campanhas de marketing digital usadas pelos anunciantes
 
 A AAP é um toggle no nível do aplicativo que controla as configurações de privacidade avançada para todos os parceiros do aplicativo selecionado. O botão da AAP encontra-se na página **Configurações do aplicativo**. Quando o toggle da AAP está ativado, os botões de **Privacidade avançada** para todos os parceiros do aplicativo selecionado são ativados automaticamente e não podem ser modificados. Quando está desativado, os anunciantes podem acessar cada integração de parceiro individualmente e ativar e **Privacidade avançada**.
 
-![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
+<Image align="center" alt="AAPcontrol.png" src="https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png" />
 
 <div id="aap-enabled" />
 
@@ -150,7 +150,7 @@ Para definir a configuração de privacidade avançada agregada:
 
 Se a AAP estiver desativada, os anunciantes poderão definir a configuração de privacidade avançada para cada ad network individualmente.
 
-![APControl.png](https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png)
+<Image align="center" alt="APControl.png" src="https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png" />
 
 **Para desativar a Privacidade Avançada de um parceiro:**
 
@@ -201,7 +201,7 @@ No caso da rede atribuída, o tipo de postback usado para compartilhar dados dep
 
 Os vários cenários de consentimento do usuário e tipos de postback usados são ilustrados na figura a seguir.
 
-![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
+<Image align="center" alt="AAP - Attributed ad networks.png" src="https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png" />
 
 A Privacidade Avançada se comporta de maneira diferente quando veiculada na web e o parâmetro af\_media\_type=web ou af\_media\_type=app deve ser usado. Para obter mais informações, clique <Anchor target="_blank" href="/partners/pt/docs/advanced-privacy-guide-postback-macros-for-ad-networks#campanhas-na-web">aqui</Anchor>.
 
@@ -211,11 +211,11 @@ A Privacidade Avançada se comporta de maneira diferente quando veiculada na web
 
 Postbacks não atribuídos são enviados para uma rede quando a opção de envio na aba de integração do parceiro integrado é definida como *todas as fontes de mídia, inclusive orgânicas* e esse parceiro não é atribuído ao evento, como ilustrado na figura a seguir.
 
-![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+<Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 Os vários cenários de consentimento do usuário e tipo de postback usados são ilustrados na figura a seguir.
 
-![AAP - Unattributed ad networks.png](https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png)
+<Image align="center" alt="AAP - Unattributed ad networks.png" src="https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png" />
 
 A Privacidade Avançada se comporta de maneira diferente quando veiculada na web e o parâmetro af\_media\_type=web ou af\_media\_type=app deve ser usado. Para obter mais informações, clique <Anchor target="_blank" href="/partners/pt/docs/advanced-privacy-guide-postback-macros-for-ad-networks#campanhas-na-web">aqui</Anchor>.
 
@@ -236,7 +236,7 @@ Postbacks contendo dados de atribuição no nível do usuário, incluindo identi
 
 Os vários cenários de consentimento do usuário e tipo de postback usados são ilustrados na figura a seguir.
 
-![AAP - Analytics partner.png](https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png)
+<Image align="center" alt="AAP - Analytics partner.png" src="https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png" />
 
 A Privacidade Avançada se comporta de maneira diferente quando veiculada na web e o parâmetro af\_media\_type=web ou af\_media\_type=app deve ser usado. Para obter mais informações, clique <Anchor target="_blank" href="/partners/pt/docs/advanced-privacy-guide-postback-macros-for-ad-networks#campanhas-na-web">aqui</Anchor>.
 
@@ -255,7 +255,7 @@ A Privacidade Avançada se comporta de maneira diferente quando veiculada na web
 
 **Para conceder permissão a uma agência para definir a privacidade avançada**
 
-![agency_advanced_privacy.png](https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png)
+<Image align="center" alt="agency_advanced_privacy.png" src="https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png" />
 
 Para permitir que uma agência configure a privacidade avançada:
 

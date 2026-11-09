@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **Resumo:** Com a Amazon Ads (amazondsp\_int), uma parceira de <Anchor target="_blank" href="/marketers/pt/docs/self-reporting-networks-srns">SRN</Anchor> integrada da AppsFlyer, os proprietários de aplicativos conseguem mensurar cliques e atribuição baseada em visualizações com a AppsFlyer para TV, tablet e mobile.
 
-![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png" />
 
 <div id="activate-partner" />
 

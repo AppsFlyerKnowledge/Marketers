@@ -31,7 +31,7 @@ Siga as etapas abaixo para configurar suas campanhas com qualquer um dos parceir
 * Ative a <Anchor target="_blank" href="/marketers/pt/docs/snapchat-advanced-srn-integration-setup">atribuição do Snapchat</Anchor>.
 * No dashboard do Snapchat **Business Manager**, copie o **Snap Account ID** destacado abaixo em verde.
 
-  ![snapchat-dashboard.png](https://files.readme.io/a0942bd27528d4a837edc6eb5d11338bf0622ddc42e382231a8f210aedad1424-50902448760337.png)
+  <Image align="center" alt="snapchat-dashboard.png" src="https://files.readme.io/a0942bd27528d4a837edc6eb5d11338bf0622ddc42e382231a8f210aedad1424-50902448760337.png" />
 
 Depois de ativar o Snapchat e obter o Snap Account ID, configure o parceiro de marketing:
 
@@ -48,7 +48,7 @@ Depois de ativar o Snapchat e obter o Snap Account ID, configure o parceiro de m
 
 A AppsFlyer pode enviar postbacks automáticos de instalação e reengajamento aos parceiros. Use esta seção para definir a **fonte dos usuários** que permitem enviar esses postbacks. Em alguns casos, a fonte dos usuários é predefinida e não pode ser alterada:
 
-![remerge2.png](https://files.readme.io/4f3f52b3610b3e3bcf0adc6e963f1f2c39cdb0b2de27569c890844aac477b3d0-50902448761873.png)
+<Image align="center" alt="remerge2.png" src="https://files.readme.io/4f3f52b3610b3e3bcf0adc6e963f1f2c39cdb0b2de27569c890844aac477b3d0-50902448761873.png" />
 
 Selecione **Somente eventos atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos a este parceiro.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para que toda a sua base de usuários fique disponível para ser reportada a este parceiro.

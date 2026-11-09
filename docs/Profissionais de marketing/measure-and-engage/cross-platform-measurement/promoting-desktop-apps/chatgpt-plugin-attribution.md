@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **Em resumo:** Veja como reportar dados de plug-ins do ChatGPT à AppsFlyer para ter uma visão holística das jornadas dos seus usuários.
 
-![51523_Image_3.jpg](https://files.readme.io/211f85239a4ce3d1da9d7b0f9cb6a3768ca429bfd09f5c3667f1ee419a625b66-15533978285073.jpg)
+<Image align="center" alt="51523_Image_3.jpg" src="https://files.readme.io/211f85239a4ce3d1da9d7b0f9cb6a3768ca429bfd09f5c3667f1ee419a625b66-15533978285073.jpg" />
 
 <div id="what-are-chatgpt-plugins" />
 

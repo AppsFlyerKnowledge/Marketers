@@ -29,7 +29,7 @@ x-zendesk:
 
 > **Resumo:** envie dados brutos de eventos de atribuição para seus endpoints do lado do servidor.
 
-![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
+<Image align="center" alt="6970_Push_API_image.png" src="https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png" />
 
 <div id="push-api" />
 
@@ -150,7 +150,7 @@ Verifique se o seu servidor cumpre com os requisitos listados aqui:
 
 **Ponto final**
 
-[![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
+<Image align="center" alt="PushAPI_us-en.png" src="https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png" />
 
 <div id="endpoint-planning-table" />
 
@@ -300,7 +300,7 @@ Você só receberá eventos duplicados se ambos estiverem ativos:
 
 <Accordion title="A seleção de mensagens de eventos in-app está desativada">
 
-[![InappSelectionDisabled_us-en.png](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)
+<Image align="center" alt="InappSelectionDisabled_us-en.png" src="https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png" />
 
 * Mensagens de eventos in-app só podem ser selecionadas após a gravação de um evento in-app.
 * Use um dispositivo de teste para gerar um evento in-app ou use a <Anchor target="_blank" href="/marketers/pt/docs/server-to-server-events-api-for-mobile-s2s-mobile">API S2S</Anchor> para fazer isso manualmente.

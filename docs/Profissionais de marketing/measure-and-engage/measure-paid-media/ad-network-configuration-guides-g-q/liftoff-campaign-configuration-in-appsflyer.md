@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Visão geral:** A Liftoff, um parceiro integrado de ad network da AppsFlyer, é um dos principais parceiros de demanda para marcas e desenvolvedores de aplicativos. A Liftoff oferece atribuição mobile baseada em clique e view-through, além de retargeting baseado em clique e view-through, que você pode registrar com a AppsFlyer.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png" />
 
 <div id="important" />
 

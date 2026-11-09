@@ -44,7 +44,7 @@ Esta integração permite que você conceda ao AppTweak permissão para acessar 
    * Relatórios analíticos agregados
    * Relatórios do SKAN (para aplicativos iOS)
 
-     <Image alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
+     <Image align="center" alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
 6. Clique em **Salvar acesso à API**.
 7. Notifique o AppTweak de que você habilitou o acesso deles.
 

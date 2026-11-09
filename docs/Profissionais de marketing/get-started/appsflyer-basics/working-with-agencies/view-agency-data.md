@@ -71,6 +71,6 @@ Ao trabalhar com agências, você pode visualizar o tráfego gerado por elas nos
 
 O filtro **agrupar por** permite que você agrupe os dados por agência e fonte de mídia para refletir o tráfego da agência.
 
-[![transparent-agency-retention.png](https://files.readme.io/8137dbf39a8de019a85028fd98898086318072383c9477f75e988bd0bdf43d53-32354172434449.png)](https://files.readme.io/8137dbf39a8de019a85028fd98898086318072383c9477f75e988bd0bdf43d53-32354172434449.png)
+<Image align="center" alt="transparent-agency-retention.png" src="https://files.readme.io/8137dbf39a8de019a85028fd98898086318072383c9477f75e988bd0bdf43d53-32354172434449.png" />
 
 <div data-zendesk-anchors="agency-transparency-in-reports=sobre-os-dados-de-ag%C3%AAncia h_01HKA2A2BYF409JV71QY4QVE0R=sobre-os-dados-de-ag%C3%AAncia viewing-agency-traffic-in-reports=visualizar-o-tr%C3%A1fego-da-ag%C3%AAncia-nos-relat%C3%B3rios h_01HKA2A2BYF378MG9GCWMMTMS9=visualizar-o-tr%C3%A1fego-da-ag%C3%AAncia-nos-relat%C3%B3rios viewing-agency-traffic-in-the-overview-dashboard=visualizar-o-tr%C3%A1fego-da-ag%C3%AAncia-no-dashboard-de-vis%C3%A3o-geral h_01HKA2A2BYYM4FBC0XTVMB6Q16=visualizar-o-tr%C3%A1fego-da-ag%C3%AAncia-no-dashboard-de-vis%C3%A3o-geral viewing-agency-traffic-in-the-retention-dashboard=visualizar-o-tr%C3%A1fego-da-ag%C3%AAncia-no-dashboard-de-reten%C3%A7%C3%A3o h_01HKA2A2BY1E0PKNXWRXEHVN78=visualizar-o-tr%C3%A1fego-da-ag%C3%AAncia-no-dashboard-de-reten%C3%A7%C3%A3o" />

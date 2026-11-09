@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **Visão geral:** Atribuir instalações de aplicativos aos fabricantes de dispositivos para aplicativos adicionados aos dispositivos antes de saírem da fábrica. **Observação**: Ver <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model#preload-campaigns">todos os outros métodos de atribuição de pré-carregamento</Anchor>.
 
-![pre-install-intro-breakdown.png](https://files.readme.io/7932a58ca1cab28601110b0c0e8a11471e71174316bd5786689af288aac37ae7-49929278893585.png)
+<Image align="center" alt="pre-install-intro-breakdown.png" src="https://files.readme.io/7932a58ca1cab28601110b0c0e8a11471e71174316bd5786689af288aac37ae7-49929278893585.png" />
 
 <div id="introduction" />
 
@@ -424,9 +424,9 @@ Esta seção demonstra como testar e verificar a configuração de pré-instala�
 
 Crie seu aplicativo no Android Studio e instale-o no dispositivo de teste. Quando o aplicativo for inicializado, abra o Logcat no Android Studio e filtre por "AppsFlyer". Você deverá ver a instalação atribuída com todos os detalhes. Veja as capturas de tela abaixo como exemplo:
 
-![pre_install_logcat.png](https://files.readme.io/072de6b33e84fe890b7aba44e250346c6e6d65b7e3c836ec4825fa6dcf00b59b-49929298940945.png)
+<Image align="center" alt="pre_install_logcat.png" src="https://files.readme.io/072de6b33e84fe890b7aba44e250346c6e6d65b7e3c836ec4825fa6dcf00b59b-49929298940945.png" />
 
-![pre_install_logcat_2.png](https://files.readme.io/d4fc9f8f3ea5febb5c4a2a2b87ed73b3cf1639ee263214de82d2dd5f57a40fb0-49929298941073.png)
+<Image align="center" alt="pre_install_logcat_2.png" src="https://files.readme.io/d4fc9f8f3ea5febb5c4a2a2b87ed73b3cf1639ee263214de82d2dd5f57a40fb0-49929298941073.png" />
 
 </Accordion>
 
@@ -440,13 +440,13 @@ Acesse sua conta da AppsFlyer e abra o painel do aplicativo que você está test
 
 1. Na página de visão geral, filtre por fontes de mídia e selecione a fonte de mídia:  
 
-   ![choose_media_source.png](https://files.readme.io/cde91cfcae8b984953d819ab9d92c573235b28858b3ee9da94017a6bc2b7422a-49929278893969.png)
+   <Image align="center" alt="choose_media_source.png" src="https://files.readme.io/cde91cfcae8b984953d819ab9d92c573235b28858b3ee9da94017a6bc2b7422a-49929278893969.png" />
 2. Em ***Distribuição por campanha*** é possível ver que a instalação atribuída à "minha fonte de mídia" vem de uma campanha de Pré-instalação:  
 
-    [![](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)  
+    <Image align="center" alt="" src="https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png" />
    Também é possível verificar se a instalação foi atribuída corretamente, visualizando o ***Relatório de desempenho agregado***. Nela, você pode ver a fonte de mídia e a campanha. Veja a captura de tela abaixo, em que "My Media Source" é a fonte de mídia e a campanha é pré-instalação:  
 
-    [![](https://files.readme.io/cfc65f02299effb38af24f794ee68e865c6d4a71b8dd583b367ea23d962c27dc-49929278896657.png)](https://files.readme.io/cfc65f02299effb38af24f794ee68e865c6d4a71b8dd583b367ea23d962c27dc-49929278896657.png)
+    <Image align="center" alt="" src="https://files.readme.io/cfc65f02299effb38af24f794ee68e865c6d4a71b8dd583b367ea23d962c27dc-49929278896657.png" />
 3. Repita o processo para todos os fabricantes ou fontes de mídia com os quais colabora para campanhas de pré-instalação.
 
 </Accordion>

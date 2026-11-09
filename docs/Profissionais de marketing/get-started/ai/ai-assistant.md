@@ -30,7 +30,7 @@ x-zendesk:
 
 O AI Assistant é seu assistente de análises e orientações, desenvolvido para ajudá-lo a acessar insights e tomar decisões mais inteligentes com a AppsFlyer. Use-o para verificar dados do seu dashboard e explorar sua performance de marketing.
 
-<Image alt="Demo animada da janela de chat do AI Assistant na AppsFlyer" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
+<Image align="center" alt="Demo animada da janela de chat do AI Assistant na AppsFlyer" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
 
 <div id="what-you-can-do" />
 

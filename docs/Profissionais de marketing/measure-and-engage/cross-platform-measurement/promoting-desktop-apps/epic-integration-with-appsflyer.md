@@ -33,7 +33,7 @@ Os jogos em execução na Epic podem se integrar à AppsFlyer via API (tanto S2S
 
 A seguir está um exemplo de fluxo que destaca as etapas mais importantes na jornada do usuário, do engajamento do anúncio à atribuição. Inclui a página de destino multiplataforma recomendada pela AppsFlyer. **Observação**: Embora recomendemos usar a página de destino multiplataforma, você também pode usar links de atribuição direta.
 
-![Epic_journey.jpg](https://files.readme.io/c5807442cff142ceb4aa3c4d55628e75b37627a011ca531fa390e46ccc3e23b8-small-14241275857553.jpg)
+<Image align="center" alt="Epic_journey.jpg" src="https://files.readme.io/c5807442cff142ceb4aa3c4d55628e75b37627a011ca531fa390e46ccc3e23b8-small-14241275857553.jpg" />
 
 1. Ponto de contato de marketing: Os clientes interagem com sua marca por meio de pontos de contato de marketing online ou offline. Isso pode incluir e-mails e boletins informativos, mídias sociais, web móvel e muito mais.
 2. Página inicial do jogo:  Uma página inicial de jogo direciona os clientes para a página do seu jogo na Epic. Esta etapa é importante para coletar UTM e outros parâmetros de URL para atribuir clientes do clique/instalação às fontes de mídia originais ou às suas próprias fontes de mídia.  

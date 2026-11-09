@@ -133,7 +133,7 @@ Quando o DMA não se aplica aos seus usuários finais (por exemplo, caso eles es
 2. Procure pelo parceiro e clique em **Gerenciar integração**.
 3. Na aba de configuração da integração, ative **usuários fora da UE**
 
-<Image alt="Alternância para usuários não pertencentes à UE na guia de configuração da integração" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="595px" />
+<Image align="center" alt="Alternância para usuários não pertencentes à UE na guia de configuração da integração" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="595px" />
 
 </Accordion>
 

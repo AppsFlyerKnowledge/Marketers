@@ -37,7 +37,7 @@ A atribuição de retargeting ocorre quando um usuário engaja com uma campanha 
 * Reengajamento:/strong> se o aplicativo estiver no dispositivo, a fonte de mídia que motiva o usuário a abrir o aplicativo é creditada com um reengajamento.
 * **Reatribuição (ou reinstalação de retargeting)**: se o aplicativo não estiver no dispositivo do usuário (ou seja, o usuário desinstalou o aplicativo), o engajamento com a campanha de retargeting fará com que o usuário reinstale e abra o aplicativo. Se isso acontecer durante uma <Anchor target="_blank" href="/marketers/pt/docs/set-up-re-attribution-window">janela de reatribuição:</Anchor> a fonte de mídia de redirecionamento é creditada com a reatribuição. Leitura relacionada: <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model#reinstalls">Reinstalações.</Anchor>
 
-![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 Antes de executar campanhas de retargeting, revise as regras de reengajamento e os casos de exemplo nas seções a seguir e configure o retargeting conforme descrito na seção sobre procedimentos de retargeting. Para facilitar a compreensão, você deve estar familiarizado com o <Anchor target="_blank" href="/marketers/pt/docs/appsflyer-attribution-model">modelo de atribuição</Anchor> da AppsFlyer e com as janelas de atribuição associadas.
 
@@ -90,7 +90,7 @@ As tabelas a seguir contêm informações de referência que dizem respeito às 
 
 #### Exemplo de fluxo de implementação das regras
 
-![](https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png)
+<Image align="center" alt="" src="https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png" />
 
 Checklist de regras de reengajamento para atribuição de click-through e view-through:
 
@@ -139,7 +139,7 @@ As seguintes configurações são necessárias dependendo do cenário.
 2. Selecione a ad network.
 3. Ative **Habilitar** **configurações de retargeting**. Isto altera o link de atribuição para uma URL de retargeting, adicionando `is_retargeting=true` ao link.
 
-   [![](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)
+   <Image align="center" alt="" src="https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png" />
 4. Escolha uma das seguintes opções:
    * **Use um link de atribuição padrão** para links de plataforma única (específicos do aplicativo).
    * **Use o OneLink**.

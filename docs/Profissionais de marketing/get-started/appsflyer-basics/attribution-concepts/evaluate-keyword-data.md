@@ -81,10 +81,10 @@ Os dados de palavras-chave orgânicas são encontrados no seguinte:
 3. Use uma palavra-chave forte para pesquisar seu aplicativo.   
    Este exemplo usa "hotéis hoje à noite".  
      
-   [<Image alt="organic_keywords_search.jpg" src="https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg" width="426px" />](https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg)
+   <Image align="center" alt="organic_keywords_search.jpg" src="https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg" width="426px" />
 4. Clique em Instalar para ser redirecionado para a Google Play Store.
 5. Instale e inicie o aplicativo.  
-   [<Image alt="Hotels_Tonight_3.png" src="https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png" width="373px" />](https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png)
+   <Image align="center" alt="Hotels_Tonight_3.png" src="https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png" width="373px" />
 6. Pesquise a palavra-chave nas fontes do AppsFlyer descritas acima.
 
 <div data-zendesk-anchors="keyword-data=dados-de-palavras-chave h_01HKA1D1TW1R20X6K05Q9GX904=dados-de-palavras-chave ios-keywords=palavras-chave-ios h_01HKA1D1TW9YXBMGERHW4EHZZN=palavras-chave-ios android-keywords=palavras-chave-do-android h_01HKA1D1TWT1VQ6NZ789BTCZJX=palavras-chave-do-android h_01HKA1D1TW7E2RM7SXC9R5SA99=nota using-the%C2%A0keyword%C2%A0data=usando-os-dados-da-palavra-chave h_01HKA1D1TWRPGTNGJKF7T1R71B=usando-os-dados-da-palavra-chave testing-organic%C2%A0keyword%C2%A0data=testando-dados-de-palavras-chave-org%C3%A2nicas h_01HKA1D1TW5W9A72V2NMPX932H=testando-dados-de-palavras-chave-org%C3%A2nicas" />

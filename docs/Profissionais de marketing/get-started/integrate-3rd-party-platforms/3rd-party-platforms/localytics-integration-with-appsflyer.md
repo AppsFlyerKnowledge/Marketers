@@ -62,7 +62,7 @@ A aba Integração está dividida em diferentes seções, conforme descrito abai
 
 Em sua **primeira visita**, você terá que selecionar as seguintes opções. Clique no botão ***ativar parceiro*** para permitir a configuração dos parâmetros na aba de integração. Essa opção deve permanecer ativada enquanto você trabalhar com o parceiro. **Para obter mais detalhes sobre a ativação do parceiro, clique <Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">aqui</Anchor>.**
 
-[![](https://files.readme.io/5064c48a0851c34c51b4cfd28e2808a11e6d8d271f1cd735616f6de0d827cea8-360001902809.png)](https://files.readme.io/5064c48a0851c34c51b4cfd28e2808a11e6d8d271f1cd735616f6de0d827cea8-360001902809.png)
+<Image align="center" alt="" src="https://files.readme.io/5064c48a0851c34c51b4cfd28e2808a11e6d8d271f1cd735616f6de0d827cea8-360001902809.png" />
 
 <div id="general-settings" />
 
@@ -72,7 +72,7 @@ Em sua **primeira visita**, você terá que selecionar as seguintes opções. Cl
 
 O Localytics se conecta à AppsFlyer por meio de um ID de atribuição exclusivo. Se você ainda não o tem, deve obtê-lo com o Localytics para continuar com a integração ou seguir as etapas abaixo.
 
-![Localytics_msc_new_3.png](https://files.readme.io/2a51018b2248a855ed5a86207c18d132addf5ab56449f4c9915df2eb754e39ca-360001902869.png)
+<Image align="center" alt="Localytics_msc_new_3.png" src="https://files.readme.io/2a51018b2248a855ed5a86207c18d132addf5ab56449f4c9915df2eb754e39ca-360001902869.png" />
 
 Como obter a App Key do Localytics
 
@@ -81,7 +81,7 @@ Como obter a App Key do Localytics
 * Selecione **Atribuição de third party**
 * Copie a chave de atribuição
 
-[![](https://files.readme.io/dbac1c9beb6d22f4cf8f2ccfbdc0f6a22fec7e6ccad5a52e77c7c32044cab55c-207223506.png)](https://files.readme.io/dbac1c9beb6d22f4cf8f2ccfbdc0f6a22fec7e6ccad5a52e77c7c32044cab55c-207223506.png)
+<Image align="center" alt="" src="https://files.readme.io/dbac1c9beb6d22f4cf8f2ccfbdc0f6a22fec7e6ccad5a52e77c7c32044cab55c-207223506.png" />
 
 Configure o Localytics no Dashboard da AppsFlyer.
 
@@ -91,7 +91,7 @@ Configure o Localytics no Dashboard da AppsFlyer.
 
 A AppsFlyer pode enviar postbacks automáticos para o Localytics após instalações de usuários. Use esta seção para definir o envio desses postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para enviar postbacks ao Localytics para qualquer usuário que baixar o aplicativo.
 
@@ -143,8 +143,8 @@ As permissões não estão disponíveis para o Localytics.
 
 Acesse a tela de Configurações de Atribuição do Localytics e habilite a Atribuição de third party no Localytics para ver os dados da AppsFlyer.
 
-[![](https://files.readme.io/0c171096b9bfd8a559ba8e1a0ad4296559dc050c7b3b52b8987bd9707e44220a-205662666.png)](https://files.readme.io/0c171096b9bfd8a559ba8e1a0ad4296559dc050c7b3b52b8987bd9707e44220a-205662666.png)
+<Image align="center" alt="" src="https://files.readme.io/0c171096b9bfd8a559ba8e1a0ad4296559dc050c7b3b52b8987bd9707e44220a-205662666.png" />
 
-[![](https://files.readme.io/53524088099556d72e6e7573f3997bbb55b1a89e38a2f7a74eec1a1632125c72-205663286.png)](https://files.readme.io/53524088099556d72e6e7573f3997bbb55b1a89e38a2f7a74eec1a1632125c72-205663286.png)
+<Image align="center" alt="" src="https://files.readme.io/53524088099556d72e6e7573f3997bbb55b1a89e38a2f7a74eec1a1632125c72-205663286.png" />
 
 <div data-zendesk-anchors="h_01H9FKCBM5W16BYJQ6TH9SSBVC=importante setting-up-localytics=configurando-o-localytics h_01H9FKCBM5Z39GPE5772799DB1=configurando-o-localytics h_01H9FKCBM5JZ5V4YMB6S24JA6V=integration-tab activate-partner=ativar-parceiro h_01H9FKCBM5PSZZ5FP1G12M9F63=ativar-parceiro general-settings=configura%C3%A7%C3%B5es-gerais h_01H9FKCBM5N4RB5ZSB61W02368=configura%C3%A7%C3%B5es-gerais default-postbacks=postbacks-padr%C3%A3o h_01H9FKCBM5STZ79NBP3EFYGMB9=postbacks-padr%C3%A3o h_01H9FKCBM54S067F1Z51E4FXQD=attribution-link-tab h_01H9FKCBM591RG57Q80JZ7FJWY=cost-tab h_01H9FKCBM5Q8P53V34QRQMS0BS=ad-revenue-tab h_01H9FKCBM5GGXX04JEH3DHNV78=permissions-tab viewing-the-attribution-data-in-the-localytics-console=visualiza%C3%A7%C3%A3o-dos-dados-de-atribui%C3%A7%C3%A3o-no-console-do-localytics h_01H9FKCBM5VBM87C2PHNZVZ4RJ=visualiza%C3%A7%C3%A3o-dos-dados-de-atribui%C3%A7%C3%A3o-no-console-do-localytics" />

@@ -35,7 +35,7 @@ x-zendesk:
 
 A janela de reatribuição é um período de tempo que começa na primeira vez que um usuário instala o aplicativo e continua por uma duração definida pelo anunciante (padrão de 90 dias). Durante a janela de reatribuição, os aplicativos reinstalados não são registrados como novas instalações e não geram um novo postback de instalação, a menos que tenham origem em uma campanha de **retargeting**.
 
-[![ReAttributionWindow_us-en.png](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)
+<Image align="center" alt="ReAttributionWindow_us-en.png" src="https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png" />
 
 <div id="setting-the-re-attribution-window" />
 

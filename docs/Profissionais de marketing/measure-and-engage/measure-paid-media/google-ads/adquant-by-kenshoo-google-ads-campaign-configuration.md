@@ -52,7 +52,7 @@ x-zendesk:
 
 6. Na sua conta do **Google Ads**, copie o ID do cliente (sem hifens) do canto superior esquerdo e cole-o no parâmetro **Ads Customer ID** da AppsFlyer, conforme mostrado nas capturas de tela abaixo.
 
-[![](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)
+<Image align="center" alt="" src="https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png" />
 
 7. Insira o **Action Identifier**, o **Disable\_Country\_Sending** (fornecido pela Adquant) e o número do **Google Ads Customer ID** nos campos apropriados.
 

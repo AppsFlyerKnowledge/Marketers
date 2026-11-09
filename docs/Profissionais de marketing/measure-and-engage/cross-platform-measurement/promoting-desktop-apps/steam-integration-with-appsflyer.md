@@ -36,12 +36,12 @@ Os aplicativos executados no Steam podem se integrar à AppsFlyer por meio da S2
 
 A seguir está um exemplo de fluxo que destaca as etapas mais importantes na jornada do usuário, do engajamento do anúncio à atribuição. Inclui a página de destino multiplataforma recomendada pela AppsFlyer. **Observação**: Embora recomendemos usar a página de destino multiplataforma, você também pode usar links de atribuição direta
 
-![Steam_user_journey.jpg](https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg)
+<Image align="center" alt="Steam_user_journey.jpg" src="https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg" />
 
 1. Ponto de contato de marketing: Os clientes interagem com sua marca por meio de pontos de contato de marketing online ou offline. Isso pode incluir e-mails e boletins informativos, mídias sociais, web móvel e muito mais.
 2. Página inicial do jogo: Uma página inicial de jogo direciona os clientes para a página do seu jogo no Steam. Esta etapa é importante para coletar UTM e outros parâmetros de URL para atribuir clientes do clique/instalação às fontes de mídia originais ou às suas próprias fontes de mídia.  
    A página de destino também é útil porque fornece links para as diversas plataformas compatíveis com seu jogo. Por exemplo, você pode ter links para sua página do Xbox, da Microsoft Store e do Steam na sua página inicial.  
-   ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
+   <Image align="center" alt="awesome_game.png" src="https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png" />
 3. <span id="marketing-touchpoint"></span>Página do aplicativo Steam: Esta é a página da sua loja Steam que hospeda seu aplicativo Steam para os clientes baixarem.
 4. Instalação do jogo: O usuário instala o jogo, acionando a atribuição e a gravação de eventos e sessões no aplicativo.
 

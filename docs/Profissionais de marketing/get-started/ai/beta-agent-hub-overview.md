@@ -75,11 +75,11 @@ Para convidar o aplicativo para um canal:
 1. No canal do Slack em que você deseja receber as notificações, digite: **/invite**
 2. Escolha a opção de **adicionar um aplicativo ao canal.**
 
-<Image alt="Opção de adicionar um aplicativo ao canal no canal do Slack - detalhes do menu" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
+<Image align="center" alt="Opção de adicionar um aplicativo ao canal no canal do Slack - detalhes do menu" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
 
 Selecione **AppsFlyer Agent Hub** -> **Adicionar.**
 
-<Image alt="Aplicativo AppsFlyer Agent Hub selecionado no diretório de apps do Slack com o botão Adicionar" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
+<Image align="center" alt="Aplicativo AppsFlyer Agent Hub selecionado no diretório de apps do Slack com o botão Adicionar" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
 
 * As seguintes funções têm acesso total automático:
   * Administrador

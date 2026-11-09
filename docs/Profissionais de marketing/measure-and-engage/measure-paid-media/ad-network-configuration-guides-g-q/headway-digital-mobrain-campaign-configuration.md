@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Em resumo:** A Headway Digital, uma parceira de ad network integrada à AppsFlyer, oferece soluções de marketing focadas em dados que impulsionam a execução e fornecem insights poderosos sobre a marca no mobile. Além da atribuição mobile baseada em cliques, eles oferecem atribuição de custo, retargeting e view-through, que você pode registrar com a AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobrain.png?v=1" width="213px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobrain.png?v=1" width="213px" />
 
 <div id="setting-up-headway-digital-mobrain" />
 

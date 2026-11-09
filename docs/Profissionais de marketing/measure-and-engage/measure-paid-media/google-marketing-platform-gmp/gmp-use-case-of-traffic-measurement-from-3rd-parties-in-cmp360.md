@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Visão geral**: compre tráfego de fontes de mídia terceiras no CM360 e mensure as conversões de aplicativos mobile originadas dessa fonte tanto na AppsFlyer (atribuídas à fonte terceira) quanto no CM360.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 
 <div id="measurement-of-cm360-with-non-dv360-third-party-media-sources" />
 

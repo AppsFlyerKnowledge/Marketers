@@ -75,7 +75,7 @@ No **Primeira visita** Aqui, você precisará ativar **Ativar parceiro** para ha
 
 O Game Analytics se conecta à AppsFlyer por meio de uma chave do jogo exclusiva. Se você ainda não a tem, deve obtê-la no Game Analytics para continuar com a integração.
 
-![Game_Analytics_msc_new_2.png](https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png)
+<Image align="center" alt="Game_Analytics_msc_new_2.png" src="https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png" />
 
 <div id="default-postbacks" />
 
@@ -83,7 +83,7 @@ O Game Analytics se conecta à AppsFlyer por meio de uma chave do jogo exclusiva
 
 A AppsFlyer pode enviar postbacks automáticos para instalações de usuários do Game Analytics. Use esta seção para definir o envio desses postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para enviar postbacks ao Game Analytics para qualquer usuário que fizer o download do aplicativo, ou selecione **Off**.
 
@@ -91,7 +91,7 @@ Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para enviar p
 
 ### Configurações de eventos in-app
 
-[![](https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png)](https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png)
+<Image align="center" alt="" src="https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png" />
 
 Nesta seção, você pode mapear os eventos da AppsFlyer com o Game Analytics por meio de postbacks.
 

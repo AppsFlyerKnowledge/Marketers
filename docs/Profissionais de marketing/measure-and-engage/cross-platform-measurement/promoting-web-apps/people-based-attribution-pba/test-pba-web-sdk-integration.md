@@ -102,7 +102,7 @@ Se o modo de teste estiver ativado em um determinado navegador, independentement
    2. Selecione o **Teste de integração do Web SDK requerido.**  
       A página de integração é aberta. A chave do desenvolvedor web é exibida.  
 
-      [![pba_web_sdk_integration_test_web_dev_key_en-us.png](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)
+      <Image align="center" alt="pba_web_sdk_integration_test_web_dev_key_en-us.png" src="https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png" />
    3. Em uma nova aba do navegador, vá para seu site (que tem o Web SDK instalado).
    4. Clique com o botão direito do mouse e selecione inspecionar para abrir as ferramentas de desenvolvedor do navegador.
    5. Ir para a aba **Console**.
@@ -114,7 +114,7 @@ Se o modo de teste estiver ativado em um determinado navegador, independentement
 
       O webAppID é exibido.
 
-      [![testing_pba_integration_webappid_check_en-us.png](https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png)](https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png)
+      <Image align="center" alt="testing_pba_integration_webappid_check_en-us.png" src="https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png" />
    7. Verifique se o webAppID é idêntico à chave do desenvolvedor web na página **Teste de integração do Web SDK** .
 2. **Habilitar o modo de teste**:
    1. Na aba do navegador do site, vá para a aba **Console**.
@@ -126,7 +126,7 @@ Se o modo de teste estiver ativado em um determinado navegador, independentement
 
       A função retorna`undefined`.
 
-      [![testing_pba_integration_turnondevmode.png](https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png)](https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png)
+      <Image align="center" alt="testing_pba_integration_turnondevmode.png" src="https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png" />
 3. **Verifique se o modo de teste está habilitado:**
    * Em **Console**, digite:  
 
@@ -135,7 +135,7 @@ Se o modo de teste estiver ativado em um determinado navegador, independentement
      ```
 
      O valor de retorno é `true`. Isso indica que o modo de teste está ativo.   
-     [![PBATestingWebSDKIntegrationIsDevModeOn_en-us.png](https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png)](https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png)
+     <Image align="center" alt="PBATestingWebSDKIntegrationIsDevModeOn_en-us.png" src="https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png" />
 
 </Accordion>
 

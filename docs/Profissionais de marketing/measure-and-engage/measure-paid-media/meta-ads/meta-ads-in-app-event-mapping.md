@@ -41,7 +41,7 @@ Encontre <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-event-st
 
 Saiba mais sobre como <Anchor target="_blank" href="/marketers/pt/docs/meta-ads-integration-setup#inapp-event-mapping">mapear eventos no Meta</Anchor>.
 
-[![Os postbacks seguem o](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="Os postbacks seguem o" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 Observe que não há evento predefinido para enviar desinstalações para anúncios do Meta. Para enviar desinstalações, use um [evento personalizado](/docs/meta-ads-in-app-event-mapping#mapeamento-de-eventos-in-app-personalizados).
 
@@ -85,7 +85,7 @@ O nome do evento e o valor do evento (incluindo os parâmetros do evento) config
 
 Observe que você pode <Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">usar esses eventos para otimizar suas campanhas</Anchor>.
 
-[![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
+<Image align="center" alt="" src="https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png" />
 
 <div id="automatic-parameter-mapping-with-the-custom-event" />
 

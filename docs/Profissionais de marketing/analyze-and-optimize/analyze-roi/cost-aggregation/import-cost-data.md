@@ -216,7 +216,7 @@ Ao usar o Excel/Google Sheets para criar um arquivo CSV, as colunas de data e ga
 1. Selecione as células a serem formatadas.
 2. Clique com o botão direito e selecione **Formatar células**.  
    A janela formatar células é aberta.  
-   <Image alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
+   <Image align="center" alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
 3. Selecione **Personalizada**.
 4. No campo Tipo, insira **AAAA-MM-DD**
 5. Clique em **OK**.  
@@ -228,7 +228,7 @@ Ao usar o Excel/Google Sheets para criar um arquivo CSV, as colunas de data e ga
 
 O Excel geralmente formata células de valor com vírgula para separar os milhares, conforme mostrado na figura. Esse formato não é adequado para arquivos de Cost Import.
 
-<Image alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
 
 **Para formatar células de gastos sem uma vírgula de milhar:**
 
@@ -236,7 +236,7 @@ O Excel geralmente formata células de valor com vírgula para separar os milhar
 2. Clique com o botão direito e selecione **Formatar células**.  
    A janela formatar células é aberta.
 3. Selecione **Número**.  
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 4. Desmarque **Usar separador de 1000 (,).**
 5. (Opcional) Defina o número de **Casas decimais**. O padrão é 2. O máximo permitido é 5.
 6. Clique em **OK**.  
@@ -262,7 +262,7 @@ Para verificar o formato do conteúdo:
 
 Veja a captura de tela abaixo com um [exemplo de arquivo CSV](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0oJTWdlNyT1gBHkGaN1QP-tUatugbPBzC2qYVNmjl_T_i3fKo1abYzTp6F7OqGeN_f7bBAJa3hxVz/pub?gid=0&single=true&output=csv) exibido em um editor.
 
-<Image alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
 
 </Accordion>
 

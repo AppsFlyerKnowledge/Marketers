@@ -65,7 +65,7 @@ As dimensões personalizadas são criadas no nível da conta, o que significa qu
 
 1. No painel Visão geral, faça uma das opções:
    * Clique no **ícone Menu (⋮)** > **Dimensões personalizadas**.  
-     [![](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)
+     <Image align="center" alt="" src="https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png" />
    * Em qualquer gráfico ou tabela, no dropdown **Mostrar para** ou **Agrupar por**, clique em **+ Criar dimensão personalizada**.
 2. Se esta for a primeira vez que você cria uma dimensão personalizada, clique em **+ Nova dimensão**.  
    A aba **Criar** é aberta.
@@ -92,7 +92,7 @@ As dimensões personalizadas são criadas no nível da conta, o que significa qu
 
 1. No painel Visão geral, faça uma das opções:
    * Clique no **ícone Menu** > **Dimensão personalizada**.  
-     [![](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)
+     <Image align="center" alt="" src="https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png" />
    * Em qualquer gráfico ou tabela, no dropdown **Mostrar para** ou **Agrupar por**, clique em **+ Criar dimensão personalizada**.
 2. Clique na aba **Editar**.
 3. Selecione ou pesquise uma dimensão personalizada.
@@ -111,7 +111,7 @@ Dimensões personalizadas podem ser usadas para agrupar e exibir dados em todos 
 
 1. No painel Visão geral, acesse qualquer widget de gráfico ou painel.
 2. No dropdown **Mostrar topo** ou **Agrupar por**, procure em Dimensões personalizadas a dimensão personalizada que deseja usar.  
-   [![](https://files.readme.io/e34bcb2ca34546347b391f0ad921319f296a21c41c3783e59a7d808b44d0b6a9-17082706166929.png)](https://files.readme.io/e34bcb2ca34546347b391f0ad921319f296a21c41c3783e59a7d808b44d0b6a9-17082706166929.png)
+   <Image align="center" alt="" src="https://files.readme.io/e34bcb2ca34546347b391f0ad921319f296a21c41c3783e59a7d808b44d0b6a9-17082706166929.png" />
 3. Os dados do gráfico ou tabela são exibidos em um agrupamento usando sua dimensão personalizada
 
 </Accordion>

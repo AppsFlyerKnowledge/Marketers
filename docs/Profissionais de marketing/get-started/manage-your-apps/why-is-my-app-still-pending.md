@@ -28,7 +28,7 @@ Ao <Anchor target="_blank" href="/marketers/pt/docs/adding-an-app-to-appsflyer">
 
 Os aplicativos pendentes na AppsFlyer têm a mesma aparência dos aplicativos ativos. Eles possuem dashboards acessíveis e a mensuração de atribuição completa funciona para eles. A única diferença é o logotipo do aplicativo, que é exibido com o logotipo da AppsFlyer em vez do logotipo real do aplicativo.
 
-![Aplicativo_Pendente.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
+<Image align="center" alt="Aplicativo_Pendente.png" src="https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png" />
 
 <div id="whats-happening" />
 
@@ -54,7 +54,7 @@ Para que o status do aplicativo mude para ativo, a AppsFlyer verifica seu status
 2. Ao lado do aplicativo pendente, clique em **Atualizar status.**  
    Se o status do aplicativo não for alterado, o aplicativo ainda será exibido como Pendente. Se tiver sido atualizado, o status será exibido como Online e o logotipo será atualizado.  
 
-   ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
+   <Image align="center" alt="app-refersh-status.png" src="https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png" />
 
 <div id="ios" />
 

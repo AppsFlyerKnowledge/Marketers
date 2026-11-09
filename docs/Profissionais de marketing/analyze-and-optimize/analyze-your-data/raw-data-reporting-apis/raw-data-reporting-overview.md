@@ -122,7 +122,7 @@ Para facilitar a compreensão, os campos de jornada do usuário são divididos e
 
 ## Relatórios de jornada do usuário
 
-![Raw_data_-_User_acquisition_.png](https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png)
+<Image align="center" alt="Raw_data_-_User_acquisition_.png" src="https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png" />
 
 <div id="user-journey-basics" />
 
@@ -150,7 +150,7 @@ Os relatórios de jornada do usuário contêm dados coletados para eventos que o
   * Os dados de retargeting são sempre de origem não orgânica.
   * Os eventos in-app de retargeting estão nos relatórios tanto de UA quanto de eventos in-app de retargeting. Consulte a metodologia de <Anchor target="_blank" href="/marketers/pt/docs/resolve-retargeting-double-attribution">atribuição dupla de retargeting</Anchor>.
 
-    ![Raw_data_-_Retargeting.png](https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png)
+    <Image align="center" alt="Raw_data_-_Retargeting.png" src="https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png" />
 
 Para seguir uma jornada do usuário, combine os relatórios relacionados à parte da jornada que lhe interessa, por exemplo, instalações e eventos in-app. Depois isso, classifique o relatório usando o AppsFlyer ID, o horário do evento e o tipo de relatório. O resultado são os eventos de um determinado usuário ao longo do tempo, ou seja, a jornada do usuário.
 

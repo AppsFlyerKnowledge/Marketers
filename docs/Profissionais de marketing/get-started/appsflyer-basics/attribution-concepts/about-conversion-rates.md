@@ -32,7 +32,7 @@ x-zendesk:
 
 Novos usuários passam por um funil de marketing, desde a primeira visualização do anúncio até a geração de receita. Cada um dos estágios do funil tem seu próprio nível de sucesso. Quanto mais progresso um usuário fizer, melhores serão os resultados para o anunciante mobile. A imagem a seguir apresenta os estágios do funil de marketing.
 
-![ua_funnel_2_en-us.png](https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png)
+<Image align="center" alt="ua_funnel_2_en-us.png" src="https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png" />
 
 <div id="marketing-funnel-stages-and-conversion-rates" />
 

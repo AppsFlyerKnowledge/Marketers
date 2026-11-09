@@ -120,7 +120,7 @@ No **Primeira visita** Aqui, você precisará ativar **Ativar parceiro** para ha
 
 O Swrve se conecta à AppsFlyer por meio de um ID do Aplicativo exclusivo e de uma chave de API. Se você ainda não os tiver, deverá obtê-los com o Swrve para continuar com a integração.
 
-![Swrve_msc_new_3.png](https://files.readme.io/feb1d5f846629d1909727b70b66e4b36138704ebbe4518e2dc03652b9fe5c57a-360001902065.png)
+<Image align="center" alt="Swrve_msc_new_3.png" src="https://files.readme.io/feb1d5f846629d1909727b70b66e4b36138704ebbe4518e2dc03652b9fe5c57a-360001902065.png" />
 
 Execute as seguintes etapas, conforme necessário:
 
@@ -135,7 +135,7 @@ Execute as seguintes etapas, conforme necessário:
 
 A AppsFlyer pode enviar postbacks automáticos à Swrve após a instalação do usuário. Use esta seção para definir o envio desses postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Selecione **Events attributed to any partner or organic** para enviar postbacks à Swrve para qualquer usuário que faça o download do aplicativo.
 
@@ -190,7 +190,7 @@ Depois de configurar os postbacks do servidor para enviar informações de atrib
 
 A página principal do dashboard do seu aplicativo inclui todas as informações vitais do seu aplicativo em um relance. Nesta página, você pode continuar usando os recursos de testes, segmentação e relatórios selecionando as abas relevantes na barra de navegação principal.
 
-![Gráfico de aquisição no dashboard da Swrve](https://files.readme.io/6a3e4cf709f58b20f2932ab47e6fa9289653504d85a0b6eec2580718e2a4dc7c-49839257162769.png)
-![Tabela de dados de aquisição no dashboard da Swrve](https://files.readme.io/561403abefae9e98e24934c96dd25b1ee34ae24cf30695354c4930404e0a7f19-49839257163537.png)
+<Image align="center" alt="Gráfico de aquisição no dashboard da Swrve" src="https://files.readme.io/6a3e4cf709f58b20f2932ab47e6fa9289653504d85a0b6eec2580718e2a4dc7c-49839257162769.png" />
+<Image align="center" alt="Tabela de dados de aquisição no dashboard da Swrve" src="https://files.readme.io/561403abefae9e98e24934c96dd25b1ee34ae24cf30695354c4930404e0a7f19-49839257163537.png" />
 
 <div data-zendesk-anchors="integrating-swrve-and-appsflyer=integrando-o-swrve-e-a-appsflyer h_01H9HWK5DM1K9P5XXC6S7ENAGV=integrando-o-swrve-e-a-appsflyer setting-up-swrve=configurando-o-swrve h_01H9HWK5DMS8HAK25BF5EXZT51=configurando-o-swrve h_01H9HWK5DN9D0DS46X72EDAW54=integration-tab activate-partner=ativar-parceiro h_01H9HWK5DN375XJVHQCZ8Y3K13=ativar-parceiro general-settings=configura%C3%A7%C3%B5es-gerais h_01H9HWK5DN0XK2E0HXS61GRECE=configura%C3%A7%C3%B5es-gerais default-postbacks=postbacks-padr%C3%A3o h_01H9HWK5DNH6SYY8T9NX09MRYS=postbacks-padr%C3%A3o h_01H9HWK5DNZVQDZ0Q1Z9WSKRSR=attribution-link-tab h_01H9HWK5DNPG89HSB0107TKHED=cost-tab h_01H9HWK5DNARD4K0MPHPXKBPXZ=ad-revenue-tab h_01H9HWK5DNFKAT0J98JWVRPQ1G=permissions-tab swrve-reporting-with-appsflyer-data=relat%C3%B3rios-da-swrve-com-dados-da-appsflyer h_01H9HWK5DN3QB9V593EV566GAQ=relat%C3%B3rios-da-swrve-com-dados-da-appsflyer" />

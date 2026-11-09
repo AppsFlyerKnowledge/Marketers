@@ -61,7 +61,7 @@ Esse artigo foca em um cenário híbrido. Vamos falar sobre como você pode cone
 >
 > O código nativo coleta os dados e usa o SDK da AppsFlyer para enviar o evento in-app de inscrição.
 >
-> [![](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)
+> <Image align="center" alt="" src="https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png" />
 
 <div id="recording-in-app-events-in-hybrid-apps" />
 

@@ -68,7 +68,7 @@ Na **primeira visita** aqui, você precisará ativar a opção ***Ativar parceir
 
 O Sojern for Advertisers se conecta à AppsFlyer por meio de um ID de parceiro exclusivo. Se você ainda não tiver o ID de parceiro, deverá obtê-lo com o Sojern for Advertisers para continuar com a integração.
 
-![Sojern_msc_new_2.png](https://files.readme.io/35d02000642f8dc768c5bd1b0ca7846b9575900b2e9b3169673840f438815ef1-360002443905.png)
+<Image align="center" alt="Sojern_msc_new_2.png" src="https://files.readme.io/35d02000642f8dc768c5bd1b0ca7846b9575900b2e9b3169673840f438815ef1-360002443905.png" />
 
 <div id="default-postbacks" />
 

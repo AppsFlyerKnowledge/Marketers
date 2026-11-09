@@ -159,7 +159,7 @@ Para aplicativos de iOS, há a opção <Anchor target="_blank" href="/marketers/
 
 O Trade Desk se conecta com a AppsFlyer através de um ID de rede único. Se você ainda não tem o Tracker\_ID e o advertiserid, você deve obtê-lo do Trade Desk para continuar com a integração.
 
-![TTD_General_Settings_.png](https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png)
+<Image align="center" alt="TTD_General_Settings_.png" src="https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png" />
 
 **Ativar atribuição de exibição**
 
@@ -169,7 +169,7 @@ Habilite **Ativar atribuição de exibição** para atribuir instalações de ex
 
 #### Postbacks padrão
 
-![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
+<Image align="center" alt="default_postbacks_en-us.png" src="https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png" />
 
 Envie postbacks automáticos para o The Trade Desk após as instalações e reengajamentos do usuário. Use esta seção para definir a fonte dos usuários que permitem o envio desses postbacks:
 
@@ -188,7 +188,7 @@ Envie postbacks automáticos para o The Trade Desk após as instalações e reen
 
 Mapeie eventos da AppsFlyer com o TTD através de postbacks. Se o envio de postback estiver ativado, isso inclui eventos in-app rejeitados (eventos bloqueados pelo Protect360 ou eventos considerados não compatíveis com as regras de validação de destino).
 
-![the_trade_desk_in_app_event_settings_en-us.png](https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png)
+<Image align="center" alt="the_trade_desk_in_app_event_settings_en-us.png" src="https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png" />
 
 **Para configurar postbacks de eventos in-app:**
 
@@ -223,7 +223,7 @@ Adicionar parâmetros ao link de atribuição permite realizar análises detalha
 
 Selecione quais parâmetros você deseja adicionar ao link de atribuição.
 
-![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+<Image align="center" alt="ttd_attribution_link_parameters_en-us.png" src="https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png" />
 
 <div id="default-parameters" />
 
@@ -254,7 +254,7 @@ Você pode medir o tráfego de CTV com a AppsFlyer adicionando os seguintes par�
 
 #### Atribuição de cliques
 
-![click-through_attribution_ttd_en-us.png](https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png)
+<Image align="center" alt="click-through_attribution_ttd_en-us.png" src="https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png" />
 
 Use a barra deslizante para definir o tempo máximo entre o clique e a instalação. Somente instalações (primeiras inicializações) que ocorrem dentro da janela de lookback são atribuídas.
 
@@ -270,7 +270,7 @@ Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookb
 
 #### Atribuição de exibição
 
-![view-through_attribution_ttd_en-us.png](https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png)
+<Image align="center" alt="view-through_attribution_ttd_en-us.png" src="https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png" />
 
 Use a barra deslizante para definir o tempo máximo desde a impressão até a instalação. Somente instalações (primeiras inicializações) que acontecerem durante essa janela de lookback, após uma impressão de anúncio, serão atribuídas ao parceiro, desde que não haja outros cliques em relevantes.
 
@@ -306,7 +306,7 @@ A receita de anúncios não está disponível para o The Trade Desk.
 
 Nesta aba, você pode selecionar as permissões para conceder ao The Trade Desk, quer atuem como uma ad network, agência, ou mesmo ambas. Observe que mesmo que a atribuição seja desativada para o Trade Desk, a aba de permissões pode estar ativa e você pode conceder controle ao The Trade Desk.
 
-![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
+<Image align="center" alt="" src="https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png" />
 
 Use estas alavancas para dar à ad network as permissões para lidar com sua própria configuração para seu aplicativo:
 

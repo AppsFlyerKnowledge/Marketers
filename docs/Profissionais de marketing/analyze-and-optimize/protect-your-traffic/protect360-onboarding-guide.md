@@ -74,7 +74,7 @@ Entender essas diferenças e as opções disponíveis é fundamental para tomar 
 >
 > Você pode alternar entre os modos **Implemented** e **Tagged** a qualquer momento (<Anchor target="_blank" href="/marketers/pt/docs/user-management">somente admins</Anchor>), a depender dos seus objetivos de negócios. <Anchor target="_blank" href="/marketers/pt/docs/beta-fraud-protection-studio#key-concepts">Saiba mais aqui</Anchor>.
 
-<Image alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
 
 Dica: Nessa etapa, enquanto sua equipe se familiariza com o Protect360, recomendamos que você veja o card de <Anchor target="_blank" href="/marketers/pt/docs/beta-fraud-protection-studio#app-detection-evaluation">**avaliação da detecção para aplicativos**</Anchor> no Fraud Protection Studio para testar e entender como essas configurações são implementadas no nível do aplicativo.
 
@@ -84,7 +84,7 @@ Dica: Nessa etapa, enquanto sua equipe se familiariza com o Protect360, recomend
 
 Você pode exportar os dados do Protect360 de três formas diferentes: <Anchor target="_blank" href="/marketers/pt/docs/protect360-raw-data-reports#sobre-os-relatórios-de-dados-brutos-do-protect360">Relatório de dados brutos</Anchor>, <Anchor target="_blank" href="/marketers/pt/docs/protect360-raw-data-reports#pull-api">Pull API</Anchor> ou <Anchor target="_blank" href="/marketers/pt/docs/protect360-raw-data-reports#data-locker">Data Locker</Anchor>. Independentemente da sua escolha, é importante configurar suas conexões de dados para garantir relatórios precisos e análises eficazes.
 
-<Image alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
 
 <div id="important" />
 
@@ -124,7 +124,7 @@ Para exibir hijacked installs em seu BI:
 > * Eventos in-app com tags
 > * Tagged post attribution in-app events
 
-![](https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png)
+<Image align="center" alt="" src="https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png" />
 
 <div id="pull-api" />
 
@@ -176,7 +176,7 @@ Entre em contato com seu customer success manager ou account manager para saber 
 
 O <Anchor target="_blank" href="/marketers/pt/docs/protect360-dashboard">dashboard do Protect360</Anchor> oferece uma visão geral dos seus dados de fraude, permitindo que você investigue e entenda melhor a detecção de fraudes e seu impacto em suas atividades.
 
-<Image alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
 
 </Accordion>
 

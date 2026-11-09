@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Resumo:** Use a API de eventos de servidor para servidor Web (Web-S2S) para relatar eventos e conversões para PBA que não são relatados pelo Web SDK.
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="web-server-to-server-events-api-for-pba" />
 
@@ -260,7 +260,7 @@ Para fins de teste, envie vários eventos da seguinte maneira:
 2. No campo (C) ***filtro*** field, enter `afUserId`  
    O valor de afUserID é exibido.
 
-   [![GetWebDevKeyPba_us-en.pn](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)
+   <Image align="center" alt="GetWebDevKeyPba_us-en.pn" src="https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png" />
 3. Copie a chave do desenvolvedor web necessária.
 
 </Accordion>
@@ -294,7 +294,7 @@ Para fins de teste, envie vários eventos da seguinte maneira:
 2. Clique com o botão direito do mouse, selecione ***Inspecionar***  
    A janela do elemento de inspeção do navegador é aberta.
 
-   [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
+   <Image align="center" alt="S2S_inspect.jpg" src="https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg" />
 3. Vá para a aba (A) ***Aplicativo***.
 4. No menu lateral (B), expanda Cookies.
 5. Selecione seu site. Se ele não for exibido, atualize o navegador.

@@ -79,7 +79,7 @@ A AppsFlyer pode enviar postbacks automáticos para o WebEngage após instalaç�
 * **Desativado**: não envie nenhum postback de instalação.
 * **Todos os canais de mídia, incluindo orgânicos**: envie postbacks de eventos atribuídos a qualquer parceiro e de eventos orgânicos.
 
-![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png)
+<Image align="center" alt="web_mo_engage_default_postbacks_en-us.png" src="https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png" />
 
 <div id="note" />
 

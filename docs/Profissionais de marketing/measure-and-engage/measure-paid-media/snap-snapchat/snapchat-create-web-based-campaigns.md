@@ -166,7 +166,7 @@ Você pode escolher qualquer evento in-app predefinido da AppsFlyer como sua met
 2. Clique em **Criar um parâmetro de URL** para adicionar os parâmetros de URL à URL (seja uma URL de landing page ou um link de atribuição da AppsFlyer).
 3. Em **Parâmetros personalizados**, clique em **Adicionar parâmetro**.
 
-   [<Image alt="Screenshot 2025-11-26 at 8.56.29.png" src="https://files.readme.io/cb3ceba75974f7a57d7f26c3587fd0d0c401427d26fcacff40f2514981b9b02f-small-41366139737873.png" width="2810px" />](https://files.readme.io/cb3ceba75974f7a57d7f26c3587fd0d0c401427d26fcacff40f2514981b9b02f-small-41366139737873.png)
+   <Image align="center" alt="Screenshot 2025-11-26 at 8.56.29.png" src="https://files.readme.io/cb3ceba75974f7a57d7f26c3587fd0d0c401427d26fcacff40f2514981b9b02f-small-41366139737873.png" width="2810px" />
 4. Mapeie os parâmetros da AppsFlyer de acordo com os valores do Snapchat.
    * Se a URL de destino for **uma landing page, um link de atribuição do OneLink ou um link de atribuição de plataforma única**, mapeie os seguintes parâmetros da AppsFlyer para os equivalentes no Snapchat:
 
@@ -244,7 +244,7 @@ Você pode escolher qualquer evento in-app predefinido da AppsFlyer como sua met
 
 <Accordion title="Fluxo de dados de ponta a ponta">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. A URL do anúncio do Snapchat inclui o parâmetro `pid=snapweb_int`. Quando o usuário clica no anúncio, um parâmetro `ScCid` é automaticamente anexado à URL.
 2. O usuário é redirecionado para o destino da URL: uma landing page que contém um Smart Script.

@@ -55,7 +55,7 @@ Crie conexões de origem para integrar dados first-party à DCP.
 1. Na AppsFlyer, vá para **Colaborar** > **Data Clean Room.**
 2. Clique em **Gerenciar conexões** no canto superior à direita.
 3. Acesse a aba **Fonte** e clique em **+ Nova conexão**.  
-   <Image alt="2026-07-27_13-30-46.png" src="https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png" width="529px" />
+   <Image align="center" alt="2026-07-27_13-30-46.png" src="https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png" width="529px" />
 4. Continue com as [instruções sobre as conexões de serviços na nuvem para dados de origem](#conexões-dos-serviços-na-nuvem-para-dados-de-origem) abaixo.
 
 Você também pode criar uma conexão de origem ao configurar uma fonte. Veja como <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources">criar e gerenciar fontes</Anchor> para obter mais instruções.
@@ -117,7 +117,7 @@ As conexões de armazenamento na nuvem permitem que você exporte automaticament
 1. Na AppsFlyer, vá para **Colaborar** > **Data Clean Room.**
 2. Clique em **Gerenciar conexões** no canto superior à direita.
 3. Acesse a aba **Armazenamento na nuvem** e clique em **+ Nova conexão**.  
-   <Image alt="2026-07-27_13-30-34.png" src="https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png" width="533px" />
+   <Image align="center" alt="2026-07-27_13-30-34.png" src="https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png" width="533px" />
 4. Você verá o modal **Nova conexão de armazenamento na nuvem**.
 5. No modal **Nova conexão de armazenamento na nuvem**, selecione seu provedor de nuvem: **Google Cloud Storage** ou **Amazon Simple Storage**.
 6. Insira o nome do seu bucket:

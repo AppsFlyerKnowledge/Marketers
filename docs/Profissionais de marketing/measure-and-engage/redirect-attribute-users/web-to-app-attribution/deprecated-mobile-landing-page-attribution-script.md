@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **Visão geral:** Esse script foi descontinuado em 17 de dezembro de 2020 e foi substituído pelo <Anchor target="_blank" href="/marketers/pt/docs/onelink-smart-script-overview">Smart Script do OneLink</Anchor>. Esta versão continua funcionando, mas não será atualizada ou alterada. O script gera URLs que são incorporados atrás de um botão em seu site para dispositivos móveis e redireciona os visitantes para baixar seu aplicativo. Os URLs também são compatíveis com atribuição de instalação e deep linking.
 
-![5648_Sunset_and_deprecation-01.png](https://files.readme.io/f2a154145e26577b698d00c4c3719be3eea7298576e6883bd47e6fb42897c71a-360015062398.png)
+<Image align="center" alt="5648_Sunset_and_deprecation-01.png" src="https://files.readme.io/f2a154145e26577b698d00c4c3719be3eea7298576e6883bd47e6fb42897c71a-360015062398.png" />
 
 **<Anchor target="_blank" href="/marketers/pt/docs/onelink-smart-script-overview">Migrate to OneLink Smart Script</Anchor>**
 
@@ -709,7 +709,7 @@ function generateUrl(isDebug) {
 
 ## Visualizando os resultados
 
-[![dashboard_landing_page_results.png](https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png)](https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png)
+<Image align="center" alt="dashboard_landing_page_results.png" src="https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png" />
 
 Como acontece com qualquer canal de mídia, você pode visualizar os resultados da sua página inicial no painel do seu aplicativo, dados brutos ou por meio das APIs da AppsFlyer.
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Resumo:** os dados de receita ajudam a fornecer uma visão clara e completa do seu ROI e ROAS. Saiba mais sobre os diferentes produtos e recursos disponíveis para a agregação e visualização dos seus dados de receita.
 
-![roi_revenue.png](https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png)
+<Image align="center" alt="roi_revenue.png" src="https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png" />
 
 <div id="overview" />
 

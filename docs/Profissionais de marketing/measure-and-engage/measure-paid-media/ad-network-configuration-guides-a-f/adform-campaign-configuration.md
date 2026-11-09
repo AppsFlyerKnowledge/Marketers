@@ -73,7 +73,7 @@ Em sua **primeira visita**, você terá que selecionar as seguintes opções. Cl
 
 A Adform se conecta à AppsFlyer por meio de um ID de rastreamento do cliente exclusivo. Se você ainda não o tem, deve obtê-lo com a Adform para continuar com a integração.
 
-![adform_msc_new_2.png](https://files.readme.io/d3d72b295a6d3bdc7f097128a6399bd4cd60309118750b4e2217a2b01ca5362a-360002140925.png)
+<Image align="center" alt="adform_msc_new_2.png" src="https://files.readme.io/d3d72b295a6d3bdc7f097128a6399bd4cd60309118750b4e2217a2b01ca5362a-360002140925.png" />
 
 **Habilitar a atribuição de view-through**
 

@@ -81,7 +81,7 @@ Os dados de performance da campanha de preload/click-to-download estão disponí
 1. No AppsFlyer, no menu lateral, selecione **Colaborar** > **Integrações de parceiros** > **Integrações ativas**.
 2. Selecione o parceiro de preload.
 3. Na aba **Integração**, ative **a atribuição de preload**.  
-   [<Image alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />](https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png)
+   <Image align="center" alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />
 4. Configure a duração da **janela de lookback de preload**. Intervalo: 1-180 dias.
 5. [Opcional] Ative a **Prioridade equitativa para atribuição de preload**.  
    Isso dá aos cliques determinísticos a mesma prioridade de atribuição que a atribuição de preload, o que significa que, se um clique determinístico for registrado entre o engajamento do preload referrer e a instalação, o clique receberá a atribuição sob a lógica de atribuição de último toque padrão, em vez de ser substituído pelo preload referrer.

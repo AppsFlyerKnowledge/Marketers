@@ -49,7 +49,7 @@ Antes de começar a configurar o SearchAds.com na AppsFlyer, obtenha sua **api\_
 * Para obter a api\_key, acesse o dashboard do SearchAds.com e clique em **Integrations** > **AppsFlyer**. No pop-up que se abrir, copie o ID. [![Chave de API do SearchAds.com](https://files.readme.io/1acc061c44fe616a4485b576251d1ad64cb05607f4727bbd21b0bf6871720b40-4402869972241.png)](https://files.readme.io/1acc061c44fe616a4485b576251d1ad64cb05607f4727bbd21b0bf6871720b40-4402869972241.png)
 * Para o ID do grupo de campanhas do Apple Ads: no **dashboard do Apple Ads,** obtenha o ID do grupo de campanhas do Apple Ads para o grupo de campanhas relevante:
 
-  ![apple-search-ads-campaign-group-id.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+  <Image align="center" alt="apple-search-ads-campaign-group-id.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 
 <div id="setting-up-campaigns-in-appsflyer" />
 

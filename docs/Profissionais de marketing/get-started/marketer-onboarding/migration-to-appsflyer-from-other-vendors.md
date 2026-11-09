@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Resumo:** planeje sua migração para a AppsFlyer a partir de outro fornecedor de atribuição. Entenda como evitar cobranças duplas, duplicação de dados e perda de dados durante o período de migração.
 
-![fluxo de migração](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
+<Image align="center" alt="fluxo de migração" src="https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png" />
 
 <div id="about-migrating-to-appsflyer-from-other-vendors" />
 

@@ -429,14 +429,14 @@ Certifique-se de que os eventos que você envia nos postbacks para o GA4 foram r
 * O **relatório de eventos** permite que os anunciantes vejam seus eventos de postback. O relatório pode ser encontrado em uma ou mais coleções de relatórios.  
   Por exemplo, os relatórios de eventos podem ser encontrados nas coleções [Ciclo de vida](https://support.google.com/analytics/answer/12924233?hl=en) ou [Reportar jogos](https://support.google.com/analytics/answer/12925133?hl=en&sjid=5454549956257318969-NC), em **engajamento** > **Eventos**. Por exemplo, os relatórios de eventos podem ser encontrados na coleção [Life cycle](https://support.google.com/analytics/answer/12924233?hl=en) ou [Games reporting](https://support.google.com/analytics/answer/12925133?hl=en&sjid=5454549956257318969-NC) em **Engagement** > **Events**.
 
-  ![Relatório de eventos do GA4](https://files.readme.io/01625878b13a46b8a87c34bf465c0ef6494a0f528960d62ce5535b69b29e7d0a-25707728713745.png)
+  <Image align="center" alt="Relatório de eventos do GA4" src="https://files.readme.io/01625878b13a46b8a87c34bf465c0ef6494a0f528960d62ce5535b69b29e7d0a-25707728713745.png" />
 * **O relatório de aquisição de tráfego** ajuda a entender de onde vêm os visitantes do seu site e aplicativo.
 
   Na coleção [Life cycle](https://support.google.com/analytics/answer/12924233?hl=en), vá para **Acquisition** > **Traffic Acquisition**).
 
   Para mais informações sobre o relatório de aquisição de tráfego, consulte a [documentação do Google](https://support.google.com/analytics/answer/12923437?hl=en&sjid=5454549956257318969-NC#zippy=%2Chow-do-i-filter-out-traffic-sources-from-the-report).
 
-  ![Relatório de aquisição de tráfego do GA4](https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png)
+  <Image align="center" alt="Relatório de aquisição de tráfego do GA4" src="https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png" />
 
 </Accordion>
 

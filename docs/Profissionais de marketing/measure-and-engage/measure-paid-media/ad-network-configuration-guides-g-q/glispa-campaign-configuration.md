@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Visão geral:** a Glispa, uma parceira de ad network integrada à AppsFlyer, cria soluções que facilitam a conexão de agências e marcas com audiências-alvo e permitem que publishers monetizem seus aplicativos. Além da atribuição mobile baseada em cliques, a Glispa também oferece atribuição de custo e view-through, que você pode registrar na AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/glispacpa.png?v=1" width="168px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/glispacpa.png?v=1" width="168px" />
 
 <div id="setting-up-glispa" />
 
@@ -60,7 +60,7 @@ Na **primeira visita** aqui, você precisará ativar o botão ***Ativar parceiro
 
 **Habilitar a atribuição de view-through**
 
-[![appl013.png](https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png)](https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png)
+<Image align="center" alt="appl013.png" src="https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png" />
 
 Ative esta opção se quiser atribuir instalações view-through da Glispa. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
@@ -132,7 +132,7 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
 
-[![](https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png)](https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png)
+<Image align="center" alt="" src="https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png" />
 
 <div id="click-attribution-link" />
 

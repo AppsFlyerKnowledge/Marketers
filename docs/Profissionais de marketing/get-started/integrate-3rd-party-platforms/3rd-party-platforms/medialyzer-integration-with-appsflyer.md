@@ -69,7 +69,7 @@ A AppsFlyer envia postbacks padrão para o Medialyzer após as instalações do 
 * **Desativada**: os postbacks de instalação não são enviados ao Medialyzer.
 * **Todas as fontes de mídia, incluindo orgânicas**: postbacks de instalação são enviados para eventos atribuídos a qualquer parceiro e para eventos orgânicos.
 
-![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+<Image align="center" alt="default_postbacks.png" src="https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png" />
 
 <div id="in-app-event-postbacks" />
 
@@ -77,7 +77,7 @@ A AppsFlyer envia postbacks padrão para o Medialyzer após as instalações do 
 
 Nesta seção, você pode mapear seus eventos AppsFlyer com seus parceiros via postbacks.
 
-[![app_event_postbacks.JPG](https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png)](https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png)
+<Image align="center" alt="app_event_postbacks.JPG" src="https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png" />
 
 1. Ative **Postbacks de eventos in-app.**
 2. Clique em **Adicionar evento** para adicionar um SDK ou evento servidor para servidor à lista.

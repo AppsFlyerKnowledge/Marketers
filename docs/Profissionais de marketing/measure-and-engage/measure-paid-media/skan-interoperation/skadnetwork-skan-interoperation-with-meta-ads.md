@@ -101,7 +101,7 @@ Este procedimento precisa de ser realizado uma vez por aplicação.
 2. Procure e selecione anúncios da Meta.
 3. Aceda ao separador **SKAN**.
 
-   ![skan_repprtiing_-_connected_accounts.png](https://files.readme.io/41514c220de398871292c990e448e2bc8ce450a17512649842cdb2bc4fd78846-40032591356817.png)
+   <Image align="center" alt="skan_repprtiing_-_connected_accounts.png" src="https://files.readme.io/41514c220de398871292c990e448e2bc8ce450a17512649842cdb2bc4fd78846-40032591356817.png" />
 4. Clique em **fazer login**. A conta que você usa precisa ser de administrador ou anunciante, <Anchor target="_blank" href="https://www.facebook.com/business/help/155909647811305?id=829106167281625">com as seguintes permissões</Anchor>:
    * Permissão para leitura de anúncios. Consulte [para verificar se você tem a permissão de leitura de anúncios](/docs/skadnetwork-skan-interoperation-with-meta-ads#verifying-the-ads_read-permission).
    * Acesso ao ID da app anunciada nas definições do Meta Business Partner.
@@ -121,7 +121,7 @@ Para atribuição de eventos na app:
 
 <Accordion title="Partilhe o esquema CV com os anúncios Meta.">
 
-![SKAdNetwork-Facebook-AppsFlyer_integration__5_.png](https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png)
+<Image align="center" alt="SKAdNetwork-Facebook-AppsFlyer_integration__5_.png" src="https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png" />
 
 <div id="enabling-appsflyer-skan-interoperation-with-meta-ads" />
 

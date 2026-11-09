@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Visão Geral**: Siga as instruções de integração deste artigo para começar a utilizar o ROI360 para dados de custos e receitas.
 
-![](https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png)
+<Image align="center" alt="" src="https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png" />
 
 <div id="about-roi360" />
 
@@ -40,7 +40,7 @@ Siga as instruções de integração abaixo para ativar os relatórios de custos
 
 <Accordion title="Integração de custos">
 
-![](https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png)
+<Image align="center" alt="" src="https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png" />
 
 Com a solução de custos ROI360, obterá insights detalhados de custos e ROI, atualizados diversas vezes ao dia. Isso permite gerir eficazmente os custos de campanha e visualizar alocações de orçamento em várias fontes de media (redes de anúncios), campanhas e regiões geográficas, quer use redes de anúncios, meios próprios ou agências.
 
@@ -64,7 +64,7 @@ Após concluir a integração de custos, poderá:
 
 <Accordion title="Integração de Receita de Anúncios">
 
-![](https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png)
+<Image align="center" alt="" src="https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png" />
 
 Com a solução de receita publicitária ROI360, receberá dados valiosos e detalhados de receita publicitária, atualizados várias vezes ao dia.
 
@@ -88,7 +88,7 @@ Após completar a integração da receita de anúncios, incluindo a conexão às
 
 <Accordion title="Integração de receita de compras na aplicação e subscrições">
 
-![](https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png)
+<Image align="center" alt="" src="https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png" />
 
 Com a solução de receita ROI360, adquire um controlo proativo sobre os seus fluxos de renda.
 

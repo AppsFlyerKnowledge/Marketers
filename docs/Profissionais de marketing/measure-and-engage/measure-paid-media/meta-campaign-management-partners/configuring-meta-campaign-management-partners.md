@@ -54,7 +54,7 @@ Para que o parceiro receba postbacks, os nomes das campanhas **devem** ser prefi
 
 **Para configurar postbacks de eventos in-app**:
 
-[![in-app_event_mapping.png](https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png)](https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png)
+<Image align="center" alt="in-app_event_mapping.png" src="https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png" />
 
 1. Ative **Postbacks de eventos in-app.**
 2. Complete os parâmetros necessários de acordo com o <Anchor target="_blank" href="/marketers/pt/docs/in-app-event-postback-configuration#métodos-de-mapeamento">método de mapeamento</Anchor>:

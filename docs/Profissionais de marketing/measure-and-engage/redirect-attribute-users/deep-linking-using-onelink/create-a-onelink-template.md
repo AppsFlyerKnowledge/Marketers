@@ -55,7 +55,7 @@ O template do OneLink:
    As ferramentas do OneLink permitem que você crie templates e links personalizados para todos os seus aplicativos.  
    [![](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png)**Atenção:**](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png) se você não tiver nenhum template criado, um assistente de onboarding será aberto. Siga as instruções e desconsidere o restante desse procedimento.
 2. Clique em **salvar template do OneLink** (atualize o template do OneLink para templates editados).A página de configuração abre.  
-   [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
+   <Image align="center" alt="OneLink_template_page_en-us.png" src="https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png" />
 3. No campo **nome do template do OneLink**, insira um nome.
 
    <div id="note" />
@@ -149,7 +149,7 @@ Para oferecer a melhor experiência, segurança e cobertura aos seus usuários, 
       * Peça que ele siga <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links">essas instruções</Anchor>.
       * O desenvolvedor retorna para você o Team ID (também chamada Apple App ID Prefix, por exemplo, PF23MIWNTW).
       * Se o aplicativo ainda não estiver publicado, o desenvolvedor também deverá fornecer o Bundle Identifier (por exemplo, com.meuapp.exemplo).  
-        [![](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)
+        <Image align="center" alt="" src="https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png" />
    2. Na página de template do OneLink, clique em **Alterar para iniciar o aplicativo usando Universal Links**.
    3. Na nova janela, selecione **Inicializar o aplicativo usando Universal Links.**
    4. No campo **Team ID**, insira o Team ID fornecido pelo desenvolvedor.
@@ -232,7 +232,7 @@ Para oferecer a melhor experiência, segurança e cobertura aos seus usuários, 
 
 <Accordion title="Personalização de QR codes">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 Você pode personalizar os QR codes gerados via OneLink:
 

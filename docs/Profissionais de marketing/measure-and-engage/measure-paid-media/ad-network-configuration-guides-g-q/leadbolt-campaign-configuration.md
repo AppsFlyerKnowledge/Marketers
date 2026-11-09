@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Em resumo:** A Leadbolt, uma parceira de ad network integrada à AppsFlyer, é uma plataforma de anúncios mobile de alta performance para aquisição de usuários e monetização in-app. Além da atribuição mobile baseada em cliques, o Leadbolt também oferece atribuição view-through, que você pode registrar com a AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/leadbolt.png" width="172px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/leadbolt.png" width="172px" />
 
 <div id="setting-up-leadbolt-integration" />
 

@@ -51,7 +51,7 @@ Configure a integração Audiences-Amplitude diretamente na plataforma Amplitude
 
    **Importante!** Se já existirem destinos de dados AppsFlyer anteriormente criados na sua conta Amplitude, a caixa de diálogo será uma lista clicável que mostra todos os destinos existentes. Para criar um novo destino, deslize até ao final da lista e clique em **Adicionar outro destino.**
 
-   [![](https://files.readme.io/ba47fc9a411bd55d84ad34ccd5c1d74fecb1648f8f7aed3ae713965bef616ae8-33375708375441.png)](https://files.readme.io/ba47fc9a411bd55d84ad34ccd5c1d74fecb1648f8f7aed3ae713965bef616ae8-33375708375441.png)
+   <Image align="center" alt="" src="https://files.readme.io/ba47fc9a411bd55d84ad34ccd5c1d74fecb1648f8f7aed3ae713965bef616ae8-33375708375441.png" />
 
    
 
@@ -78,7 +78,7 @@ Configure a integração Audiences-Amplitude diretamente na plataforma Amplitude
 
    A janela de diálogo **Definir Destino e Frequência** será aberta.
 
-   [![amplitude_define_destination_and_cadence_dialog.png](https://files.readme.io/e9f726c731e865e6313bf430b1e5506db5a820fc7d3d544747a873cf08139b26-33375708382097.png)](https://files.readme.io/e9f726c731e865e6313bf430b1e5506db5a820fc7d3d544747a873cf08139b26-33375708382097.png)
+   <Image align="center" alt="amplitude_define_destination_and_cadence_dialog.png" src="https://files.readme.io/e9f726c731e865e6313bf430b1e5506db5a820fc7d3d544747a873cf08139b26-33375708382097.png" />
 5. Na lista **Selecione um destino de API para sincronizar**, escolha o nome do destino relevante da AppsFlyer.
 6. Decida se deseja sincronizar esta coorte com a AppsFlyer apenas uma vez ou de forma agendada. (Para sincronizações agendadas, escolha se deseja atualizar diariamente ou a cada hora.)
 7. Clique no botão **Sincronizar** para iniciar a sincronização.
@@ -87,6 +87,6 @@ Após a conclusão bem-sucedida da primeira sincronização, um novo público pa
 
 Por padrão, o nome do novo público é o nome da coorte do Amplitude sincronizada, seguido de um identificador alfanumérico. Pode editar o nome do público no painel de Públicos, se desejar.
 
-[![amplitude_imported_audience.png](https://files.readme.io/a4f8efc6818d94a68b28ca62ae26215f17bfc7edcfb990855a042a2dee71f8b6-33375708383249.png)](https://files.readme.io/a4f8efc6818d94a68b28ca62ae26215f17bfc7edcfb990855a042a2dee71f8b6-33375708383249.png)
+<Image align="center" alt="amplitude_imported_audience.png" src="https://files.readme.io/a4f8efc6818d94a68b28ca62ae26215f17bfc7edcfb990855a042a2dee71f8b6-33375708383249.png" />
 
 <div data-zendesk-anchors="overview=sobre-a-integra%C3%A7%C3%A3o-amplitude h_01HNZP6HDVC5RBMKTCZY81HG4M=sobre-a-integra%C3%A7%C3%A3o-amplitude setting-up-the-integration=configura%C3%A7%C3%A3o-da-integra%C3%A7%C3%A3o h_01HNZP6HDVZH6Q1KGJE7FXSPMT=configura%C3%A7%C3%A3o-da-integra%C3%A7%C3%A3o define-appsflyer-data-destinations=definir-destinos-de-dados-na-appsflyer h_01HNZP6HDVV3GSEPARCY1VABX8=definir-destinos-de-dados-na-appsflyer sync-amplitude-cohorts-to-appsflyer-destinations=sincronizar-coortes-do-amplitude-com-destinos-appsflyer h_01HNZP6HDV6EFPCM5FE5XBAS78=sincronizar-coortes-do-amplitude-com-destinos-appsflyer" />

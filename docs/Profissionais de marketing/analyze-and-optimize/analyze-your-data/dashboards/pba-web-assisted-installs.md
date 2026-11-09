@@ -24,7 +24,7 @@ x-zendesk:
 
 **Caso de uso de instalações auxiliadas pela web**
 
-![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
+<Image align="center" alt="web_to_app_image.png" src="https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png" />
 
 <div id="web-assisted-installs-analysis" />
 
@@ -38,7 +38,7 @@ Instalações assistidas pela web medem o impacto dos esforços de marketing da 
 
 As métricas de título exibem o número total de instalações do aplicativo em relação ao número de instalações auxiliadas pelo site, divididas em instalações orgânicas e não orgânicas do aplicativo.
 
-[![WAIHeadline_en-us.png](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)
+<Image align="center" alt="WAIHeadline_en-us.png" src="https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png" />
 
 Considere os cenários de caso de uso, na tabela a seguir, para a análise de instalações auxiliadas pela web.
 
@@ -62,7 +62,7 @@ Considere os cenários de caso de uso, na tabela a seguir, para a análise de in
 
 <Accordion title="Instalações e reinstalações auxiliadas pela web">
 
-![30day_us-en.png](https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png)
+<Image align="center" alt="30day_us-en.png" src="https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png" />
 
 As instalações são consideradas como tendo sido influenciadas por um site se ocorrerem dentro de 30 dias após uma visita ao site. Instalações e reinstalações, incluindo redirecionamento de instalações (reatribuições), podem ser orgânicas ou não orgânicas.
 

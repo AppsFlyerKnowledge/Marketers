@@ -43,7 +43,7 @@ x-zendesk:
 
 #### Dashboard de status de custo & receita de anúncios
 
-[![dashboard_de_status_de_custo_e_receita_de_anúncios.jpg](https://files.readme.io/da713daae6c7044e8e4f32274520961e1b43c183d8e4cb95f58854cb614efb39-360016000898.jpg)](https://files.readme.io/da713daae6c7044e8e4f32274520961e1b43c183d8e4cb95f58854cb614efb39-360016000898.jpg)
+<Image align="center" alt="dashboard_de_status_de_custo_e_receita_de_anúncios.jpg" src="https://files.readme.io/da713daae6c7044e8e4f32274520961e1b43c183d8e4cb95f58854cb614efb39-360016000898.jpg" />
 
 | Seção | Descrição |
 | --- | --- |

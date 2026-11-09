@@ -137,7 +137,7 @@ Você pode configurar o SDK para solicitar a remoção de todas as informações
 
 A imagem abaixo mostra um exemplo de dados brutos que foram deletados e/ou anonimizados:
 
-![Exemplo de linha de dados brutos mostrando campos excluídos e com hashing após a anonimização](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)
+<Image align="center" alt="Exemplo de linha de dados brutos mostrando campos excluídos e com hashing após a anonimização" src="https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png" />
 
 <div id="impact-on-attribution-2" />
 

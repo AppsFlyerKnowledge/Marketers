@@ -536,7 +536,7 @@ Para acessar o Logs Dashboard:
 1. Na barra superior, abra o menu da conta (menu suspenso do endereço de e-mail) > **E-GDPR log**.
 2. A janela a seguir será aberta:
 
-![GDPR_Table.png](https://files.readme.io/5c2b2695b5c273e16a0396f0df2d227a0a0f61af6ad0626c0a911b77edc6a0d2-13949567038481.png)
+<Image align="center" alt="GDPR_Table.png" src="https://files.readme.io/5c2b2695b5c273e16a0396f0df2d227a0a0f61af6ad0626c0a911b77edc6a0d2-13949567038481.png" />
 
 </Accordion>
 

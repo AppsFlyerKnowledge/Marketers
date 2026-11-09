@@ -83,7 +83,7 @@ Ambos os dados são úteis, mas para diferentes propósitos. Por isso, ambos est
 >
 > **Atividade:** imagine que você está vendo um trem passar. À medida que o trem passa, você vê apenas as ações realizadas pelos passageiros no momento em que o trem passa. Isso são os dados de atividade.
 >
-> <Image alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
+> <Image align="center" alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
 >
 > **LTV**: Agora imagine que você embarca no trem como um observador. O trem é dividido em vagões.
 >
@@ -91,7 +91,7 @@ Ambos os dados são úteis, mas para diferentes propósitos. Por isso, ambos est
 > * Durante a viagem, você observa todas as ações executadas pelos passageiros no vagão. Você pode ver as ações de todos os passageiros no vagão até que um passageiro desembarque do trem; isso é uma desinstalação.
 > * Você não consegue ver as ações dos passageiros em outros vagões porque eles embarcaram no trem antes ou depois de você. Isso é o LTV.
 >
-> <Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
+> <Image align="center" alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
 
 <div id="appsflyer-dashboards-and-reportsltv-or-activity" />
 

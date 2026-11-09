@@ -84,7 +84,7 @@ Com base no tipo de referrer, a AppsFlyer avalia a sessão e decide se a visita 
   * Se houver uma sessão ativa e uma fonte de mídia indireta (UTM, PID, ID de clique, etc.), grave a visita. Essa revisita pode acionar uma conversão de retargeting (reengajamento), que é usada para atribuir eventos posteriores.
   * Se houver uma sessão ativa e nenhuma informação da fonte de mídia, não grave uma nova visita durante essa sessão.
 
-<Image alt="traffic resolution flow" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
+<Image align="center" alt="traffic resolution flow" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
 
 <div id="step-2-media-source-resolution" />
 

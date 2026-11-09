@@ -57,7 +57,7 @@ Configurações gerais
 
 Alterne para LIGADO se desejar atribuir instalações view-through da Xiaomi. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
-![](https://files.readme.io/c01732abe8d1bb3c68acdf84bab50cc46d4f4923b7220e3ca51c399074113c1e-50899866307217.png)
+<Image align="center" alt="" src="https://files.readme.io/c01732abe8d1bb3c68acdf84bab50cc46d4f4923b7220e3ca51c399074113c1e-50899866307217.png" />
 
 <div id="default-postbacks" />
 
@@ -65,7 +65,7 @@ Alterne para LIGADO se desejar atribuir instalações view-through da Xiaomi. O 
 
 A AppsFlyer pode enviar postbacks automáticos para a Xiaomi após as instalações de usuários e os reengajamentos. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
-![xiaomi-default-postbacks.png](https://files.readme.io/ae215140550604649e4345729a7106fa08c15713e003cec534199e3889122b5e-50899866309265.png)
+<Image align="center" alt="xiaomi-default-postbacks.png" src="https://files.readme.io/ae215140550604649e4345729a7106fa08c15713e003cec534199e3889122b5e-50899866309265.png" />
 
 </Accordion>
 
@@ -102,7 +102,7 @@ No momento, a integração de receita de anúncios não é compatível com a Xia
 
 Nessa aba, você pode selecionar as permissões a serem concedidas à Xiaomi, independentemente de o parceiro atuar como ad network, agência ou até mesmo ambos. Observe que, mesmo que a atribuição esteja desativada para a Xiaomi, a aba de permissões está ativa e você pode conceder controle à Xiaomi.
 
-![ad_network_permissions.png](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
+<Image align="center" alt="ad_network_permissions.png" src="https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png" />
 
 Use estas alavancas para dar à ad network as permissões para lidar com sua própria configuração para seu aplicativo:
 

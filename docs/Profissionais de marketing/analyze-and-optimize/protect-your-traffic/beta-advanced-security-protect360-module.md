@@ -181,7 +181,7 @@ Os dados são separados em dois KPIs e um gráfico.
 
 * **Tendência de spoofing de atribuição**: mostra a detecção feita pelo módulo avançado de segurança ao longo do tempo. Esse gráfico reflete o status de alto nível da detecção de spoofing no nível do(s) app(s).
 
-<Image alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
 
 </Accordion>
 
@@ -204,7 +204,7 @@ Para acessar o módulo avançado de segurança:
 
 #### Página do Módulo de segurança avançado
 
-<Image alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
 
 A página do Módulo avançado de segurança é dividida em três seções.
 

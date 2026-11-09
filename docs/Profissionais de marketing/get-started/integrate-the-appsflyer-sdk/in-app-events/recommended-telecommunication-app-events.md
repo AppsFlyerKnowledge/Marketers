@@ -46,7 +46,7 @@ Gravar esse evento pode ajudar a determinar:
 >
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
-[![Fluxograma da jornada do usuário do aplicativo de telecomunicações para eventos recomendados](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)
+<Image align="center" alt="Fluxograma da jornada do usuário do aplicativo de telecomunicações para eventos recomendados" src="https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

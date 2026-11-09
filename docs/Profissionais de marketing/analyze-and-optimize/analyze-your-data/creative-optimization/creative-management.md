@@ -76,7 +76,7 @@ Atualmente, a gestão de criativos é compatível com Google Drive e Dropbox. Ca
 
 2. Clique em **Conexões de criativos**.
 
-<Image alt="clique em Creative connection.png" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
+<Image align="center" alt="clique em Creative connection.png" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
 
 3. Clique em **Adicionar conexões**.
 4. Selecione **Google Drive**.
@@ -87,7 +87,7 @@ Atualmente, a gestão de criativos é compatível com Google Drive e Dropbox. Ca
 8. Clique em **Adicionar URL**.
 9. Repita as duas etapas anteriores para conectar várias pastas de uma só vez.
 
-<Image alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
+<Image align="center" alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
 
 10. Clique em **Conectar**.
 
@@ -107,7 +107,7 @@ Antes de conectar o Dropbox, verifique se você fez login no Dropbox com a conta
 6. No modal de conexão, clique em **Escolher pastas** e depois selecione as pastas que deseja conectar.
    * A gestão de criativos sincroniza os criativos das pastas selecionadas e suas respectivas subpastas.
 
-<Image alt="clique em Choose folders.png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
+<Image align="center" alt="clique em Choose folders.png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
 
 7. Selecione o aplicativo correspondente para cada pasta. Essa etapa é opcional, mas recomendamos segui-la para organizar e combinar os criativos da maneira correta.
 8. Clique em **Conectar**.
@@ -124,7 +124,7 @@ A galeria de gestão de criativos é onde você revisa, busca, filtra e selecion
 
 Cada card representa um criativo. Um criativo pode incluir várias versões, como diferentes resoluções ou formatos. A partir do card, você descobre rapidamente se um criativo é novo e se está ativo ou inativo em todas as fontes de mídia. Você também consegue visualizar metadados de alto nível, como quando um criativo foi lançado pela primeira vez e quando foi sincronizado com a gestão de criativos. Cada criativo novo é automaticamente analisado e pontuado para te ajudar a escolher os melhores assets antes do lançamento. As pontuações variam de C (menos provável de sucesso) a A (maior chance de sucesso), ajudando a priorizar os criativos de melhor performance com confiança.
 
-<Image alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
+<Image align="center" alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
 
 <div id="filter-creatives" />
 
@@ -181,7 +181,7 @@ No caso do Google Ads, você pode enviar criativos para grupos de anúncios de p
 8. Revise a configuração e todas as mensagens de validação.
 9. Clique em **Fazer upload para Google Ads**.
 
-<Image alt="clique em Fazer upload para Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
+<Image align="center" alt="clique em Fazer upload para Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
 
 <div id="note" />
 
@@ -203,7 +203,7 @@ No caso do Meta Ads, você pode criar anúncios dentro de conjuntos de anúncios
 6. Selecione os criativos na seção **Todos os criativos** e atribua-os aos anúncios.
 7. Se um criativo tiver várias versões, selecione as correspondentes.
 
-<Image alt="Meta Ads.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
+<Image align="center" alt="Meta Ads.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
 
 8. Revise a configuração e todas as mensagens de validação.
 9. Clique em **Próximo**.
@@ -211,7 +211,7 @@ No caso do Meta Ads, você pode criar anúncios dentro de conjuntos de anúncios
     * Por padrão, essa configuração aplica-se a todos os anúncios novos criados. Você pode editar anúncios específicos ao escolhê-los na lista suspensa **Personalizar um anúncio específico**.
 11. Clique em **Criar anúncios no Meta**.
 
-<Image alt="image (55).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
+<Image align="center" alt="image (55).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
 
 #### TikTok Ads
 

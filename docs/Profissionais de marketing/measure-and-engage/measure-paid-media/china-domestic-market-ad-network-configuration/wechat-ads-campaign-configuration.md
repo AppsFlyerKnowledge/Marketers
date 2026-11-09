@@ -50,11 +50,11 @@ No WeChat, faça o seguinte:
    Atenção: o WeChat permite apenas um destino de conversão por aplicativo.
 3. Insira a [URL de atribuição de clique](#attribution-link-tab) da AppsFlyer
 
-![wechat-configuration.png](https://files.readme.io/228ee10ef3dc113ae8af8de0f283b144206db1857f6d1f9169355f294155b8f8-50900431174033.png)
+<Image align="center" alt="wechat-configuration.png" src="https://files.readme.io/228ee10ef3dc113ae8af8de0f283b144206db1857f6d1f9169355f294155b8f8-50900431174033.png" />
 
 Depois de inserir essas informações, confirme-as clicando no botão destacado. Na próxima etapa, você receberá a *encrypt\_key* e a *sign\_key*:
 
-![wechat-keys.png](https://files.readme.io/cd7a2406ae9981eaabb4089813c9a1b847f0e6f750b9c0c0a0ac5e726dfe44be-50900431177361.png)
+<Image align="center" alt="wechat-keys.png" src="https://files.readme.io/cd7a2406ae9981eaabb4089813c9a1b847f0e6f750b9c0c0a0ac5e726dfe44be-50900431177361.png" />
 
 Copie as chaves e use-as ao configurar a campanha na AppsFlyer.
 
@@ -117,7 +117,7 @@ O WeChat se conecta à AppsFlyer por meio de três parâmetros exclusivos:
 
 Se você ainda não tiver o Sign ID, o WeChat App ID e a Encrypt Key, deverá obtê-los do WeChat para continuar com a integração.
 
-<Image alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
+<Image align="center" alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
 
 <div id="default-postbacks" />
 
@@ -125,7 +125,7 @@ Se você ainda não tiver o Sign ID, o WeChat App ID e a Encrypt Key, deverá ob
 
 A AppsFlyer pode enviar postbacks automáticos ao WeChat após instalações e reengajamentos de usuários. Use esta seção para definir a **origem dos usuários** que permitem o envio desses postbacks.
 
-![wechat-default-postbacks.png](https://files.readme.io/1a2703b97a71bf82bcc77f5393459bc94b5443b83a4c4965d2624eda0e9f166f-50900402778129.png)
+<Image align="center" alt="wechat-default-postbacks.png" src="https://files.readme.io/1a2703b97a71bf82bcc77f5393459bc94b5443b83a4c4965d2624eda0e9f166f-50900402778129.png" />
 
 Selecione **Somente eventos** **atribuídos a este parceiro** para eventos provenientes apenas de usuários atribuídos ao WeChat.  
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda a sua base de usuários disponível para ser reportada ao WeChat.
@@ -136,7 +136,7 @@ Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para ter toda
 
 Nesta seção, você pode mapear os eventos da AppsFlyer com o WeChat por meio de postbacks.
 
-![wechat_in_app_event_postbacks.png](https://files.readme.io/cd6234df4809b27044e361ad8835d4ae92100c491e0aa7c8f003336cdf2ad49d-50900431180561.png)
+<Image align="center" alt="wechat_in_app_event_postbacks.png" src="https://files.readme.io/cd6234df4809b27044e361ad8835d4ae92100c491e0aa7c8f003336cdf2ad49d-50900431180561.png" />
 
 1. Insira a Encrypt Key novamente.
 2. Insira o Sign ID
@@ -183,7 +183,7 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 * **Parâmetros de assinantes** - use qualquer um dos 5 parâmetros de assinantes para inserir valores úteis. Observe que esses parâmetros são analisados e aparecem no relatório de dados brutos, o que os torna muito úteis para a realização de agregação ou filtragem de dados.  
   **Parâmetros do link de atribuição:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
 
@@ -197,7 +197,7 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
 
-[![](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)
+<Image align="center" alt="" src="https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png" />
 
 <div id="click-attribution-link" />
 

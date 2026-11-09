@@ -44,7 +44,7 @@ Usando o iOS 6 e versões posteriores, você pode implementar Banners de Aplicat
 
 **Exemplo de banner no Safari**
 
-<Image alt="AppleBanner_en-us.jpg" src="https://files.readme.io/50fc3dbbd1071e843654f52d256cf1f41d4f85148c94324c5d1463eb72c3d8de-49929553421073.jpg" width="278px" />
+<Image align="center" alt="AppleBanner_en-us.jpg" src="https://files.readme.io/50fc3dbbd1071e843654f52d256cf1f41d4f85148c94324c5d1463eb72c3d8de-49929553421073.jpg" width="278px" />
 
 Antes de implementar Banners de Aplicativo no iOS, considere o seguinte:
 

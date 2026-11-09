@@ -50,23 +50,23 @@ Para acessar as Configurações do Aplicativo, no menu lateral, selecione **Sett
 
 1. Abra as Configurações do aplicativo cujo ajuste você quer alterar e altere um ajuste (botão de alternância, menu suspenso ou controle deslizante).
 
-   <Image alt="Screenshot 2026-09-16 at 14.31.44.png" src="https://files.readme.io/8a1abce58e1e8da4af5899e2e03a2a7fe9e6e9b8e9a04c240585bfd3e7934126-50944987863825.png" width="2557px" />
+   <Image align="center" alt="Screenshot 2026-09-16 at 14.31.44.png" src="https://files.readme.io/8a1abce58e1e8da4af5899e2e03a2a7fe9e6e9b8e9a04c240585bfd3e7934126-50944987863825.png" width="2557px" />
 2. Ao lado do campo alterado, clique em **Aplicar a aplicativos adicionais**.
 
-   <Image alt="aap.png" src="https://files.readme.io/0f2144ca43c6db7ffe9967df5c2b2f2fe3e8cffdbefa77167ed9262a61511774-50945027652113.png" width="612px" />
+   <Image align="center" alt="aap.png" src="https://files.readme.io/0f2144ca43c6db7ffe9967df5c2b2f2fe3e8cffdbefa77167ed9262a61511774-50945027652113.png" width="612px" />
 3. Pesquise pelo nome do aplicativo ou pelo ID do aplicativo e selecione os aplicativos que devem receber a mesma alteração. Os aplicativos que não são compatíveis com essa alteração continuam visíveis, mas aparecem acinzentados. Passe o cursor sobre um deles para ver o motivo.
 
-   <Image alt="Screenshot 2026-09-16 at 14.32.32.png" src="https://files.readme.io/95c79ce8c176e4a0836661a119ca12b1268b8874181d4fd78c96113e5339d6c9-50945018039953.png" width="1304px" />
+   <Image align="center" alt="Screenshot 2026-09-16 at 14.32.32.png" src="https://files.readme.io/95c79ce8c176e4a0836661a119ca12b1268b8874181d4fd78c96113e5339d6c9-50945018039953.png" width="1304px" />
 4. Clique fora da lista para fechá-la e confirmar sua seleção. O botão **Aplicar a aplicativos adicionais** é substituído por um selo que mostra o número de aplicativos selecionados; clique nele a qualquer momento para alterar sua seleção.
 
-   <Image alt="ssa.png" src="https://files.readme.io/b93174999053cdbbf5591eb215e6cd10becbd2d1bcb699ff286a8b1523f8a8f0-50944987865361.png" width="1238px" />
+   <Image align="center" alt="ssa.png" src="https://files.readme.io/b93174999053cdbbf5591eb215e6cd10becbd2d1bcb699ff286a8b1523f8a8f0-50944987865361.png" width="1238px" />
 5. Repita essas etapas para quantas configurações forem necessárias.
 6. Na parte inferior da página, clique em **Salvar alterações** (se você não selecionou nenhum aplicativo adicional) ou em **Revisar & salvar** (depois que você incluir aplicativos em uma alteração em massa). Qualquer um dos botões mostra o número total de alterações entre parênteses.
 
-   <Image alt="Screenshot 2026-09-16 at 14.33.32.png" src="https://files.readme.io/6dfb050b984932023455af9022364b37534af276d7bb117ddb05ad0fc25d936c-50945018041489.png" width="2269px" />
+   <Image align="center" alt="Screenshot 2026-09-16 at 14.33.32.png" src="https://files.readme.io/6dfb050b984932023455af9022364b37534af276d7bb117ddb05ad0fc25d936c-50945018041489.png" width="2269px" />
 7. Se você incluiu aplicativos adicionais, revise os valores anteriores e posteriores de cada aplicativo na tela **Revisar antes de salvar**. O valor atual de cada aplicativo é usado como base. Você pode remover qualquer alteração do lote antes de confirmar.
 
-   <Image alt="Screenshot 2026-09-16 at 14.33.38.png" src="https://files.readme.io/c22f67575fc8ac9cbd868c923b5addfe8c70529ee1183fa7231f080d1b54d18c-50945018042385.png" width="1286px" />
+   <Image align="center" alt="Screenshot 2026-09-16 at 14.33.38.png" src="https://files.readme.io/c22f67575fc8ac9cbd868c923b5addfe8c70529ee1183fa7231f080d1b54d18c-50945018042385.png" width="1286px" />
 8. Clique em **Confirmar & salvar**. Isso salva o aplicativo em que você começou junto com todos os aplicativos adicionais do lote, em uma única operação.
 
 <div id="note-1" />

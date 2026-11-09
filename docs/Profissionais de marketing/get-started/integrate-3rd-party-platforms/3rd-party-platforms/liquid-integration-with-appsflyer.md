@@ -68,7 +68,7 @@ Em sua **primeira visita**, você terá que selecionar as seguintes opções. Cl
 
 A Liquid se conecta ao AppsFlyer por meio de um token de API exclusivo. Se você ainda não tem esse token, solicite-o à Liquid para continuar com a integração ou siga as instruções abaixo.
 
-[![](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)
+<Image align="center" alt="" src="https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png" />
 
 <div id="obtaining-the-api-token" />
 
@@ -86,7 +86,7 @@ Você pode encontrar o token de API fazendo login no dashboard da Liquid.
 
 O AppsFlyer pode enviar postbacks automáticos para instalações de usuários da Liquid. Use esta seção para definir o envio desses postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para enviar postbacks à Liquid para qualquer usuário que fizer o download do aplicativo ou selecione **Desativado**.
 

@@ -46,7 +46,7 @@ A AppsFlyer pode atribuir instalações de app mobile a qualquer tipo de anúnci
 4. Continue a configurar um **Conjunto de anúncios** e um **Anúncio** normalmente.
 5. Na guia **Anúncios**, associe seu aplicativo em Mobile App Events Recording.
 
-![fb_app_events_ui.jpg](https://files.readme.io/304df530557ddaf6252d9a7c11fcb54b549f5cbdb7ebd4b0da61f847a57867a3-360016319338.jpg)
+<Image align="center" alt="fb_app_events_ui.jpg" src="https://files.readme.io/304df530557ddaf6252d9a7c11fcb54b549f5cbdb7ebd4b0da61f847a57867a3-360016319338.jpg" />
 
 Depois que isso for configurado, você poderá ver, em tempo real, as instalações de app mobile resultantes desses anúncios nos dashboards da Meta e da AppsFlyer.
 

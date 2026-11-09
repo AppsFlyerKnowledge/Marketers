@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **At a glance:** transfira aplicativos entre contas da AppsFlyer, seguindo as etapas descritas neste artigo (esse processo pode ser feito apenas por administradores).
 
-![Animação do processo de transferência de aplicativo mostrando as etapas do assistente de transferência](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
+<Image align="center" alt="Animação do processo de transferência de aplicativo mostrando as etapas do assistente de transferência" src="https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif" />
 
 <div id="app-transfer-between-accounts" />
 
@@ -92,7 +92,7 @@ Para solicitar a transferência de um ou mais aplicativos para outra conta da Ap
    * Você receberá uma notificação (por pop-up) se a solicitação exigir qualquer ação por parte da AppsFlyer.
    * Os apps aparecem na página **Meus apps** como transferência pendente para o `<e-mail do destinatário>`. Nessa fase, ainda é possível excluir a solicitação.
 
-     ![Página Meus aplicativos do remetente mostrando um aplicativo listado como transferência pendente, com a opção Solicitar exclusão](https://files.readme.io/5e4762461afd7953657b91074054bd79a63ad5bf8a06d084ee4c655ac60088aa-360010128998.jpg)
+     <Image align="center" alt="Página Meus aplicativos do remetente mostrando um aplicativo listado como transferência pendente, com a opção Solicitar exclusão" src="https://files.readme.io/5e4762461afd7953657b91074054bd79a63ad5bf8a06d084ee4c655ac60088aa-360010128998.jpg" />
 
 </Accordion>
 
@@ -102,7 +102,7 @@ Para solicitar a transferência de um ou mais aplicativos para outra conta da Ap
 2. Você receberá uma notificação por e-mail informando que o remetente iniciou a solicitação de transferência.
 3. Na página **Meus apps**, clique em **Revisar solicitação**. Uma solicitação pode incluir um ou mais aplicativos.
 
-   ![Página Meus aplicativos do destinatário mostrando uma solicitação de transferência de aplicativo pendente, com a opção Revisar solicitação](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)
+   <Image align="center" alt="Página Meus aplicativos do destinatário mostrando uma solicitação de transferência de aplicativo pendente, com a opção Revisar solicitação" src="https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg" />
 4. Revise e aprove ou rejeite cada solicitação.
 5. Leia e, caso esteja de acordo, assine os termos e condições.
 6. Você e o remetente serão notificados por e-mail de que a solicitação foi aceita.

@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **Em resumo:** Petal Ads Global, um parceiro integrado da AppsFlyer, é um serviço de apresentação pago, fornecido pela Huawei para parceiros de todo o ecossistema. Ele tem como objetivo ajudar os parceiros a estabelecer uma ponte de comunicação com os usuários de dispositivos Huawei, para que possam fornecer informações valiosas e serviços de qualidade aos usuários. O Petal Ads Global oferece espaços para exibição de anúncios populares, como anúncios nativos, anúncios em vídeo recompensado, anúncios de banner e anúncios intersticiais, para mais de 570 milhões de usuários de dispositivos Huawei em todo o mundo.
 
-<Image alt="huaweiadsglobal.png" src="https://files.readme.io/12f1351923768c1afc1ba0f16b267388a8c9b1ae7fc2d6d36b5d1d01381f1bbc-14151449726353.png" width="18.53%" />
+<Image align="center" alt="huaweiadsglobal.png" src="https://files.readme.io/12f1351923768c1afc1ba0f16b267388a8c9b1ae7fc2d6d36b5d1d01381f1bbc-14151449726353.png" width="18.53%" />
 
 <div id="petal-ads-global-introduction" />
 
@@ -184,7 +184,7 @@ Nesta aba, você pode selecionar as permissões para conceder ao Petal Ads Globa
 
 **Observação：** No dashboard do Petal Ads Global, os dados de conversão (por exemplo, instalações/ativações) têm 2 fontes de dados: uma é o AppsFlyer e a outra é o HMS. Quando quiser comparar os dados, como instalações, entre o AppsFlyer e o dashboard do Petal Ads Global, selecione "Activations" em vez de "Activations(HMS)" no dashboard da Huawei.
 
-[![](https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png)](https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png)
+<Image align="center" alt="" src="https://files.readme.io/fd2878d20c78ebc87d8536225882c8613396178b920c570677edc668dabb810e-360015414918.png" />
 
 <div id="data-reporting-on-petal-ads-global-and-faqs-of-data-discrepancy" />
 

@@ -104,7 +104,7 @@ Para sua conta do Yahoo, insira o ID da sua conta do Yahoo. Para o Yahoo DSP, in
 
 Para encontrar o ID da sua conta, faça login no dashboard do Yahoo, clique no ícone de engrenagem para abrir o menu ***Settings*** e selecione ***Billing***:
 
-![gemini-account-number.png](https://files.readme.io/77f464c6dadefc54acb3a84d97ab0d0751610b253d2da90523bc117f1f26683c-50705625726865.png)
+<Image align="center" alt="gemini-account-number.png" src="https://files.readme.io/77f464c6dadefc54acb3a84d97ab0d0751610b253d2da90523bc117f1f26683c-50705625726865.png" />
 
 As janelas de lookback de click-through e view-through estão no modo somente leitura e devem ser configuradas pelo anunciante.
 
@@ -117,7 +117,7 @@ Nesta seção, você pode mapear seus eventos da AppsFlyer com o Yahoo por meio 
 1. Insira o ID da Dot tag fornecido pelo Yahoo.  
    Para encontrá-lo no dashboard do Yahoo, clique no ícone de engrenagem para abrir o menu **Configurações** e selecione **Ver código da Dot tag**. Copie o código do dashboard:
 
-   [![yahoo-dot-tag.png](https://files.readme.io/6ceaea7447d1c3a81451dac3aa7c3c3063a5cf2c0051b4dfad6cf7aeba40ab24-small-50705593680401.png)](https://files.readme.io/6ceaea7447d1c3a81451dac3aa7c3c3063a5cf2c0051b4dfad6cf7aeba40ab24-small-50705593680401.png)
+   <Image align="center" alt="yahoo-dot-tag.png" src="https://files.readme.io/6ceaea7447d1c3a81451dac3aa7c3c3063a5cf2c0051b4dfad6cf7aeba40ab24-small-50705593680401.png" />
 2. Ative postbacks de eventos in-app
 3. Selecione a opção de envio para todos os eventos definidos pelo SDK.  
    **- Somente eventos atribuídos a esse parceiro** **apenas** para eventos de usuários atribuídos a esse parceiro.  
@@ -213,7 +213,7 @@ Saiba mais sobre a concessão de <Anchor target="_blank" href="/marketers/pt/doc
 
 Você pode marcar como conversões os eventos que a AppsFlyer envia ao Yahoo por meio de postbacks de eventos in-app:
 
-![yahoo-conversion-rules.png](https://files.readme.io/17a3fdd1619d4e4d0bfcca35e4fd51e7f270ce7446f9e70fb6f7787291e2e022-50705625729297.png)
+<Image align="center" alt="yahoo-conversion-rules.png" src="https://files.readme.io/17a3fdd1619d4e4d0bfcca35e4fd51e7f270ce7446f9e70fb6f7787291e2e022-50705625729297.png" />
 
 <div id="yahoo-raw-report" />
 

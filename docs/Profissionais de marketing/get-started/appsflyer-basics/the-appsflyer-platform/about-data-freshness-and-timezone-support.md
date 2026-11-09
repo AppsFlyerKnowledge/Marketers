@@ -34,7 +34,7 @@ x-zendesk:
 
 **Fusos horários**
 
-![TimeZoneMap.jpg](https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg)
+<Image align="center" alt="TimeZoneMap.jpg" src="https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg" />
 
 <div id="data-freshness-and-support-for-app-specific-time-zones" />
 

@@ -41,17 +41,17 @@ Você pode configurar sua allowlist manualmente ou via arquivo CSV. Antes da con
 
 1. Na barra superior, abra o menu da conta (menu suspenso no endereço de e-mail) > **Central de segurança.**
 
-![from account click security center Cropped.jpg](https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg)
+<Image align="center" alt="from account click security center Cropped.jpg" src="https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg" />
 
 2. Em **Redirect allowlist** , clique em **gerenciar redirect allowlist**.
 
-<Image alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="549px" />  
+<Image align="center" alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="549px" />
 
 A página **Redirect allowlist** é aberta.
 
 3. Na aba **Manual**, insira um domínio raiz ou subdomínio no campo **Nome de domínio** e clique em **Adicionar domínio à lista**.
 
-<Image alt="Manually add domains.jpg" src="https://files.readme.io/95b37db2064ddba8c787d2dd5ac5ab2aa7698605f5c6eb3b4a59dd6324dee355-25103405228689.jpg" width="403px" />
+<Image align="center" alt="Manually add domains.jpg" src="https://files.readme.io/95b37db2064ddba8c787d2dd5ac5ab2aa7698605f5c6eb3b4a59dd6324dee355-25103405228689.jpg" width="403px" />
 
 * Use apenas letras, números, hífens e pontos.
 * O domínio deve começar e terminar com uma letra ou número e pode ter até 253 caracteres.
@@ -75,15 +75,15 @@ Feito isso, a lista será aplicada aos cliques em cerca de uma hora.
 
 1. Na barra superior, abra o menu da conta (menu suspenso no endereço de e-mail) > **Central de segurança.**  
 
-![from account click security center Cropped.jpg](https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg)
+<Image align="center" alt="from account click security center Cropped.jpg" src="https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg" />
 
 2. Em **Redirect allowlist** , clique em **gerenciar redirect allowlist**.  
-<Image alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="530px" />  
+<Image align="center" alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="530px" />
 
 A página **Redirect allowlist** é aberta.
 
 3. Clique na aba **Arquivo CSV** e siga as **instruções do arquivo** para criar um novo arquivo contendo sua lista de domínios.  
-![CSV file upload.jpg](https://files.readme.io/2be73080048545f79e102e6f48df0db956e6739f156153c172c4fef5a2ea339f-25381979219345.jpg)
+<Image align="center" alt="CSV file upload.jpg" src="https://files.readme.io/2be73080048545f79e102e6f48df0db956e6739f156153c172c4fef5a2ea339f-25381979219345.jpg" />
 
 4. Faça o upload o arquivo CSV no campo de correspondente.
 

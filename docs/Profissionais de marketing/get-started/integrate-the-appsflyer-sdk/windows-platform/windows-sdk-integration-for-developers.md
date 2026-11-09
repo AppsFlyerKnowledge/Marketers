@@ -33,7 +33,7 @@ x-zendesk:
 
 O SDK da AppsFlyer fornece funcionalidade de instalação do aplicativo e registro de eventos.
 
-![SDK_Integration.jpg](https://files.readme.io/11ef01abe55ae3d53d1a3756ffd24bf3262002c3970005cd70047c9d0665b5d1-360001586617.jpg)
+<Image align="center" alt="SDK_Integration.jpg" src="https://files.readme.io/11ef01abe55ae3d53d1a3756ffd24bf3262002c3970005cd70047c9d0665b5d1-360001586617.jpg" />
 
 Você pode registrar instalações, atualizações e sessões (seguindo as etapas obrigatórias abaixo) e também registrar eventos in-app adicionais além das instalações do aplicativo (incluindo compras in-app, níveis de jogo etc.) para avaliar o ROI e os níveis de engajamento do usuário.
 
@@ -49,7 +49,7 @@ Você pode registrar instalações, atualizações e sessões (seguindo as etapa
 
 O SDK Universal do Windows é instalado por meio do Gerenciador de Pacotes NuGet. Para instalar o SDK do Windows da AppsFlyer via NuGet:
 
-[![](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)
+<Image align="center" alt="" src="https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png" />
 
 1. Clique com o botão direito no arquivo do projeto.
 2. Clique em ***Gerenciar Pacotes NuGet***.
@@ -63,11 +63,11 @@ Se você optar por não usar o pacote NuGet, poderá incorporar o SDK da AppsFly
 2. Copie o AppsFlyerLib.winmd para o seu projeto.
 3. No Visual Studio, clique em ***Adicionar Referência*** no projeto da Universal Windows Platform.
 
-[![](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)
+<Image align="center" alt="" src="https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png" />
 
 * Localize o AppsFlyerLib.winmd e adicione-o.
 
-[![](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)
+<Image align="center" alt="" src="https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png" />
 
 <div id="important-1" />
 

@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Em resumo:** Aproveite ao máximo os recursos dos nossos dashboards PBA.
 
-![Atribuição baseada em pessoas da AppsFlyer](https://files.readme.io/d2178dfedb2f67420e66626adbd72dd96ba9edc39fcb0be08648b01656fd2d4b-360010094118.png)
+<Image align="center" alt="Atribuição baseada em pessoas da AppsFlyer" src="https://files.readme.io/d2178dfedb2f67420e66626adbd72dd96ba9edc39fcb0be08648b01656fd2d4b-360010094118.png" />
 
 <div id="pba-dashboards" />
 
@@ -44,7 +44,7 @@ Refine os resultados do dashboard PBA usando o seletor de datas (A), os filtros 
 
 #### Painel de filtros nos dashboards PBA
 
-[![Cabeçalho do PBA](https://files.readme.io/aaa4040b69082c8507c604b530086404080d542b614fd20fcb0d5302221d7586-360019762657.png)](https://files.readme.io/aaa4040b69082c8507c604b530086404080d542b614fd20fcb0d5302221d7586-360019762657.png)
+<Image align="center" alt="Cabeçalho do PBA" src="https://files.readme.io/aaa4040b69082c8507c604b530086404080d542b614fd20fcb0d5302221d7586-360019762657.png" />
 
 **Legenda**:
 

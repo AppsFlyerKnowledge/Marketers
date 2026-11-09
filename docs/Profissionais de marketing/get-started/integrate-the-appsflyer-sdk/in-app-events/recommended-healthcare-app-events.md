@@ -41,7 +41,7 @@ Os aplicativos de saúde permitem que os usuários adquiram seguros de saúde, m
 >
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
-![In_appEvents_UserJourneys_-_Copy_of_Healthcare__1_.png](https://files.readme.io/54174e697c8dfe2d0d388c19fdd5fa0fbf9703c0155b9c250b40b5d0bcf19698-8232949117073.png)
+<Image align="center" alt="In_appEvents_UserJourneys_-_Copy_of_Healthcare__1_.png" src="https://files.readme.io/54174e697c8dfe2d0d388c19fdd5fa0fbf9703c0155b9c250b40b5d0bcf19698-8232949117073.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

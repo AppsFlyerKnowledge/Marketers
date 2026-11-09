@@ -35,11 +35,11 @@ A primeira etapa da configuração do processo de SSO da AppsFlyer é realizada 
 **Pré-requisito:** uma conta Okta com privilégios administrativos.
 
 1. No Console de Administração, acesse **Aplicativos** > **Aplicativos**.  
-   <Image alt="Okta_menu_lateral_aplicativos.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="241px" />
+   <Image align="center" alt="Okta_menu_lateral_aplicativos.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="241px" />
 2. Clique em **Create App Integration**.
 3. Na caixa de diálogo **Create a new app integration**, selecione **SAML 2.0** e clique em **Next**.
 4. Em **(1) General Settings**, no campo **App name**, insira o nome que você quer exibir na lista de aplicativos do plugin do Okta.  
-   <Image alt="Okta_nome_e_ícone_do_aplicativo__1_.png" src="https://files.readme.io/6998e7737b0aa5c4d70ad97ab41e17e471ddaf060e78c44fa2de41be1df17574-13572380565521.png" width="639px" />
+   <Image align="center" alt="Okta_nome_e_ícone_do_aplicativo__1_.png" src="https://files.readme.io/6998e7737b0aa5c4d70ad97ab41e17e471ddaf060e78c44fa2de41be1df17574-13572380565521.png" width="639px" />
 5. [Opcional] **App logo**: adicione um logotipo para aparecer ao lado do nome do aplicativo.
 6. Clique em **próximo**.
 7. Em **(2) Configure SAML Integration**, defina a integração de acordo com os seguintes campos: ![okta-create-saml-integration.png](https://files.readme.io/6c276dd54afd30e828b989fc6796de5eca46282ade015e7a34e0bd1cc95d7fb8-16870970396177.png)
@@ -50,7 +50,7 @@ A primeira etapa da configuração do processo de SSO da AppsFlyer é realizada 
      **Observação:** o e-mail do usuário do Okta deve ser o mesmo e-mail da conta do usuário na AppsFlyer
 8. Clique em **Show Advanced Settings** e defina a integração de acordo com cada um dos campos mostrados na imagem abaixo:
 
-   <Image alt="Okta_configurações_avançadas__1_.png" src="https://files.readme.io/9a3461f700cc50a54237578a304206ed7693e30cdd516398089954321cd44af4-13572576788241.png" width="640px" />
+   <Image align="center" alt="Okta_configurações_avançadas__1_.png" src="https://files.readme.io/9a3461f700cc50a54237578a304206ed7693e30cdd516398089954321cd44af4-13572576788241.png" width="640px" />
 
    * **Assertion Encryption:** Selecione **Encrypted** ou **Unencrypted**.   
      **Observação:** como as asserções são controladas pelo seu IdP, recomendamos selecionar **Encrypted**.
@@ -69,13 +69,13 @@ Agora que o aplicativo SAML do Okta foi criado, vamos adicionar usuários.
 
 1. No console de administração, selecione **Directory** > **People**.
 
-   <Image alt="Okta___directory___people.png" src="https://files.readme.io/d9c5da8787fdb81bf97bc0753b2f7794cdc59060e5026348428545064d138d18-13572579297169.png" width="226px" />
+   <Image align="center" alt="Okta___directory___people.png" src="https://files.readme.io/d9c5da8787fdb81bf97bc0753b2f7794cdc59060e5026348428545064d138d18-13572579297169.png" width="226px" />
 2. Clique em **Adicionar pessoa**.
 
-   <Image alt="Okta___People___Add_person.png" src="https://files.readme.io/6bb8b854cf000259970d63b9eacb28bf6d4079d648939814aaa0e456a96c9bbe-13572600647697.png" width="524px" />
+   <Image align="center" alt="Okta___People___Add_person.png" src="https://files.readme.io/6bb8b854cf000259970d63b9eacb28bf6d4079d648939814aaa0e456a96c9bbe-13572600647697.png" width="524px" />
 3. Na caixa de diálogo **Adicionar pessoa**:
 
-   <Image alt="Okta_Add_person__1_.png" src="https://files.readme.io/d6d7e198fab965872b5a01302a00bdbd0bfb5d561af372fc4390c9882a22a42c-13572617052689.png" width="620px" />
+   <Image align="center" alt="Okta_Add_person__1_.png" src="https://files.readme.io/d6d7e198fab965872b5a01302a00bdbd0bfb5d561af372fc4390c9882a22a42c-13572617052689.png" width="620px" />
 
    * Em **User type**, selecione **usuário**.
    * Preencha todos os campos obrigatórios: **First name**, **Last name**, **Username** (deve ser um e-mail) e **Primary email**.
@@ -90,9 +90,9 @@ Agora que o aplicativo SAML do Okta foi criado, vamos adicionar usuários.
 
 1. No console de administração, volte para **Applications** > **Applications**.
 2. Em **Browse App Catalog**, selecione o aplicativo que você acabou de criar.  
-   <Image alt="Okta_side_menu___applications.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="233px" />
+   <Image align="center" alt="Okta_side_menu___applications.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="233px" />
 3. No aplicativo selecionado, na guia **Assignments**, clique em **Assign** > **Assign to People**.  
-   ![Okta_sso_assign_to_people.png](https://files.readme.io/50930693a4a58ad8162b2ac81e476081c9b0288da4dab5b92bb41fece4aff586-14942267242769.png)
+   <Image align="center" alt="Okta_sso_assign_to_people.png" src="https://files.readme.io/50930693a4a58ad8162b2ac81e476081c9b0288da4dab5b92bb41fece4aff586-14942267242769.png" />
 4. Encontre o usuário que será atribuído ao seu aplicativo e clique em **Assign**.
 5. Repita esta etapa para todos os usuários.
 6. Clique em **Done** quando terminar de adicionar todos os usuários. Os novos usuários agora aparecem em **People**.

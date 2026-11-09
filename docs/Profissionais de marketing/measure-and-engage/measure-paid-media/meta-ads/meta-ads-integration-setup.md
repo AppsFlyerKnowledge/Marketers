@@ -61,7 +61,7 @@ Para integrar o Meta Ads na AppsFlyer, primeiro, crie um <Anchor target="_blank"
 2. Clique no aplicativo desejado.
 3. Clique no App ID, que aparece na parte superior esquerda da tela, para copiá-lo.
 
-   [![](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg" />
 
 A AppsFlyer atribui dados por App ID. O mesmo Facebook App ID pode ser usado para [aplicativos Android e iOS](https://developers.facebook.com/docs/app-ads/app-setup/). Observe que, para iOS 14+, o Meta ads limita as contas de anúncios a nove contas por aplicativo.
 
@@ -106,7 +106,7 @@ A partir de 17 de junho de 2025, o Meta reativou o relatório de **Advanced Mobi
    **Atenção:** O toggle deve permanecer ligado (<Anchor target="_blank" href="/marketers/pt/docs/partner-activation-deactivation">ativado</Anchor>) enquanto você trabalhar com o parceiro.
 5. Em **configurações gerais**:
 
-   [![](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
+   <Image align="center" alt="" src="https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png" />
 
    * Cole seu [Faceboook app ID](#create-and-retreive-facebook-app-id) no campo **Faceboook app ID**.
    * Cole a chave de decodificação do Install Referrer [do Meta ads](/docs/meta-ads-integration-setup#dados-criptografados-da-google-play-referrer-api-ou-do-install-referrer-do-meta).
@@ -120,7 +120,7 @@ A partir de 17 de junho de 2025, o Meta reativou o relatório de **Advanced Mobi
 
 <Accordion title="[Opcional] Defina as configurações recomendadas">
 
-[![](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)
+<Image align="center" alt="" src="https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png" />
 
 * Para fazer a correspondência com a janela de lookback de clique do Meta Ads, defina-a para 7 dias.  
   (Observe que [existem alguns casos específicos em que o padrão é diferente](https://www.facebook.com/business/help/395050428485124?id=428636648170202)).
@@ -241,7 +241,7 @@ Observe que, se a chave não for fornecida ou tiver sido excluída, há alguns c
 
 <Accordion title="Custo, cliques e impressões">
 
-[![meta_cost_tab.png](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)
+<Image align="center" alt="meta_cost_tab.png" src="https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png" />
 
 Essa integração fornece dados agregados sobre custo, cliques e impressões para suas campanhas, conjuntos de anúncios, anúncios e regiões geográficas/países. Consulte a <Anchor target="_blank" href="/marketers/pt/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabela de integração de custos da ad network</Anchor> para obter detalhes completos sobre as dimensões, métricas e recursos compatíveis.
 
@@ -281,7 +281,7 @@ Saiba mais sobre como enriquecer seus dados com <Anchor target="_blank" href="/m
 
 <Accordion title="Mapeamento de eventos in-app">
 
-[![meta_iae_postbacks.png](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)
+<Image align="center" alt="meta_iae_postbacks.png" src="https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png" />
 
 **Para mapear eventos in-app:**
 
@@ -326,13 +326,13 @@ A atribuição de retargeting da AppsFlyer para Meta ads permite que os anuncian
 3. Configure a **janela de lookback de reengajamento por click-through**.  
    Que é o período de tempo que se inicia com o clique no anúncio, durante o qual o aplicativo deve ser iniciado para que o clique seja registrado como um reengajamento.  
    Selecione as unidades da janela de lookback (horas ou dias) e defina a barra deslizante para o valor desejado.  
-   [![](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)
+   <Image align="center" alt="" src="https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png" />
 4. Ative a **atribuição de view-through de reengajamento**.
 5. Defina o slider da **janela de lookback de view-through de reengajamento** para o valor desejado (até 24 horas). Esse é o período de tempo a partir de uma impressão de anúncio, durante o qual o aplicativo deve ser iniciado para que a impressão seja registrada como um reengajamento.[![](https://files.readme.io/82028408b7475e6ad5bcd35f2d597b7f5344b9eca432157559265cf73bdb952c-30354145625873.png)](https://files.readme.io/82028408b7475e6ad5bcd35f2d597b7f5344b9eca432157559265cf73bdb952c-30354145625873.png)
 6. Defina a **janela de reengajamento**.  
    Este é o período em que os eventos in-app do usuário são atribuídos à fonte de mídia de retargeting como fonte principal.  
    Você pode definir o valor em dias (1 a 90), horas (até 23) ou até mesmo por tempo vitalício. O padrão é 30 dias.  
-   [![](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)
+   <Image align="center" alt="" src="https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png" />
 
 Saiba mais sobre a <Anchor target="_blank" href="/marketers/pt/docs/retargeting-attribution-guide">atribuição de retargeting da AppsFlyer</Anchor>.
 
@@ -425,7 +425,7 @@ Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/send-opendsr-a
 
 <Accordion title="Registro de receita de anúncios">
 
-[![](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)
+<Image align="center" alt="" src="https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png" />
 
 Se seu aplicativo usa Audience Network Ad Revenue do Meta para monetização de anúncios, é possível registrar suas receitas do Meta ads na AppsFlyer. É possível, com ou sem os dados de receitas de compras in-app, ter uma **visão completa das receitas de seus usuários**.
 
@@ -499,7 +499,7 @@ Observação - você também pode usar a <Anchor target="_blank" href="https://d
 
 O aplicativo deve ser definido no Meta ads como **Live** em vez de **In development** para que a atribuição funcione.
 
-[![](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)
+<Image align="center" alt="" src="https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png" />
 
 </Accordion>
 
@@ -527,11 +527,11 @@ Ao configurar uma campanha de instalação de aplicativo no Meta ads, é possív
 
 Configuração correta – a atribuição funciona.
 
-[![](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)
+<Image align="center" alt="" src="https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png" />
 
 Configuração incorreta – falha na atribuição.
 
-[![](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)
+<Image align="center" alt="" src="https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png" />
 
 </Accordion>
 

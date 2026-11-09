@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **Em resumo:** a InMobi, uma parceira de ad network integrada à AppsFlyer, permite que os consumidores descubram novos produtos e serviços por meio de recomendações contextuais e selecionadas em dispositivos mobile. Além da atribuição mobile baseada em cliques, a InMobi também oferece atribuição de custo, retargeting e view-through, que você pode registrar com a AppsFlyer.
 
-<Image alt="inmobi_icon.png" src="https://files.readme.io/cbe0e88492041fc8e1781b397b67a3c8c3a09591974f2cf4fa145a18ca9e6a8d-10602685724817.png" width="128px" />
+<Image align="center" alt="inmobi_icon.png" src="https://files.readme.io/cbe0e88492041fc8e1781b397b67a3c8c3a09591974f2cf4fa145a18ca9e6a8d-10602685724817.png" width="128px" />
 
 <div id="setting-up-inmobi" />
 
@@ -76,7 +76,7 @@ Na **primeira visita** aqui, você precisará ativar o botão **Ativar parceiro*
 
 A InMobi se conecta com a AppsFlyer por meio de um ID de network exclusivo. Se você ainda não tiver o ID da network, deverá obtê-lo com a InMobi para continuar com a integração.
 
-![Inmobi_msc_new_3.png](https://files.readme.io/9c2efaed833211582a33b3a2bbd7d07336bc78d6e2d4e3a7645b5ca14be2fd73-360001865845.png)
+<Image align="center" alt="Inmobi_msc_new_3.png" src="https://files.readme.io/9c2efaed833211582a33b3a2bbd7d07336bc78d6e2d4e3a7645b5ca14be2fd73-360001865845.png" />
 
 **Habilitar a atribuição de view-through**
 
@@ -119,7 +119,7 @@ Nesta seção, você pode mapear seus eventos da AppsFlyer com a InMobi por meio
 
 Nesta guia, você pode criar os links de atribuição que deseja enviar à InMobi para atribuir as campanhas, os conjuntos de anúncios ou até mesmo os anúncios individuais da InMobi. Observe que a AppsFlyer NÃO salva seus links de atribuição gerados pelo parceiro. [![](https://files.readme.io/1f198f652bc960ea8d20c58d4bf704b8aff1361d105d9ed72c52c070eb88d2ce-360002187398.png)](https://files.readme.io/1f198f652bc960ea8d20c58d4bf704b8aff1361d105d9ed72c52c070eb88d2ce-360002187398.png)
 
-[![](https://files.readme.io/03371cdc64826e77cee3bd0adb90280aa59ebddd34ec85d8946ae9646ce86ce8-360001866409.png)](https://files.readme.io/03371cdc64826e77cee3bd0adb90280aa59ebddd34ec85d8946ae9646ce86ce8-360001866409.png)
+<Image align="center" alt="" src="https://files.readme.io/03371cdc64826e77cee3bd0adb90280aa59ebddd34ec85d8946ae9646ce86ce8-360001866409.png" />
 
 Essa guia está dividida em diferentes seções:
 
@@ -142,7 +142,7 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 * **Parâmetros de assinantes** - use qualquer um dos 5 parâmetros de assinantes para inserir valores úteis. Observe que esses parâmetros são analisados e aparecem no relatório de dados brutos, o que os torna muito úteis para a realização de agregação ou filtragem de dados.  
   **Parâmetros de link de atribuição:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-[![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
+<Image align="center" alt="" src="https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png" />
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
 
@@ -155,7 +155,7 @@ Quando ativado, o AppsFlyer reconhece um link como um link de atribuição de <A
 
 O exemplo a seguir abaixo é exibido quando o retargeting está ativado.
 
-![msc_new_7.png](https://files.readme.io/b90bbd6e3bea9dd862808343896b005071b7d9e564d31039c188c3ebf8e81077-360002254489.png)
+<Image align="center" alt="msc_new_7.png" src="https://files.readme.io/b90bbd6e3bea9dd862808343896b005071b7d9e564d31039c188c3ebf8e81077-360002254489.png" />
 
 1. Link padrão vs. OneLink
 
@@ -193,7 +193,7 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
 
-[![](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)](https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png)
+<Image align="center" alt="" src="https://files.readme.io/930deba7817e7ede9504624111c3190dcd01a1f6dfb626463a844fcaa2d66930-360002254509.png" />
 
 <div id="click-attribution-link" />
 
@@ -213,7 +213,7 @@ Você pode personalizar esse valor para 1 a 23 horas ou 1 a 7 dias.
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">atribuição view-through aqui</Anchor>.
 
-[![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+<Image align="center" alt="" src="https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png" />
 
 <div id="impressions-attribution-link" />
 

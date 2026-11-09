@@ -112,7 +112,7 @@ Os dados provenientes de atribuições de deep links não estão sujeitos a rest
 
 Quando um aplicativo é elegível para AEM no Meta Ads, a **Aggregated Event Measurement** é selecionada por padrão durante a criação do conjunto de anúncios. Isso significa que tanto a AEM quanto a SKAdNetwork (SKAN) podem ser usadas simultaneamente para a campanha. Se **Apple SKAdNetwork** for selecionada, somente a SKAN se aplicará à campanha. Isso significa que a AppsFlyer tem capacidade limitada para mensurar a atividade do aplicativo no Meta Ads.
 
-<Image alt="aem_meta_ads_platform.png" src="https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png" width="563px" />
+<Image align="center" alt="aem_meta_ads_platform.png" src="https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png" width="563px" />
 
 <div id="note-1" />
 
@@ -129,7 +129,7 @@ Com o **compartilhamento avançado de dados**, você compartilha todos os evento
 * Quando desativado, o compartilhamento avançado de dados fica limitado a eventos de conversão de usuários com um ID do anunciante disponível. Eventos de usuários sem ID de anunciante não são compartilhados nem atribuídos.
 * Quando ativado, o compartilhamento avançado de dados disponibiliza eventos de conversão para o Meta Ads para todos os usuários, incluindo aqueles sem um ID do anunciante. A AppsFlyer atribui esses eventos. Os dados disponibilizados podem incluir informações adicionais relacionadas ao dispositivo que não envolvem o ID do dispositivo. Para saber mais, veja o <Anchor target="_blank" href="/marketers/pt/docs/meta-ads-integration-setup#advanced_data_sharing">compartilhamento avançado de dados</Anchor>.
 
-![aem](https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png)
+<Image align="center" alt="aem" src="https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png" />
 
 <div id="note-2" />
 

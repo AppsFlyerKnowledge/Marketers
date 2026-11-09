@@ -389,7 +389,7 @@ Por outro lado, URLs curtas para mídias próprias não contêm parâmetros dire
 
 Se alguma vez encontrar a seguinte mensagem de erro na Play Store depois de seguir um link de atribuição:
 
-![TL_error_message.png](https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png)
+<Image align="center" alt="TL_error_message.png" src="https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png" />
 
 Isso ocorre porque o link de atribuição inclui um caractere #. Por exemplo:
 

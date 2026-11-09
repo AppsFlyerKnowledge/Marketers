@@ -29,7 +29,7 @@ Use o dashboard de mensuração para visualizar e analisar a performance de camp
 
 ## Dashboard de mensuração
 
-[![](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)
+<Image align="center" alt="" src="https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png" />
 
 O dashboard de mensuração inclui:
 
@@ -84,7 +84,7 @@ Filtros padrão disponíveis:
 
 ### **Gráficos de comparação de performance**
 
-[![](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)
+<Image align="center" alt="" src="https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png" />
 
 **Configurações de exibição**
 
@@ -94,7 +94,7 @@ Filtros padrão disponíveis:
 
 ### **Comparação de tendências ao longo do tempo**
 
-[![](https://files.readme.io/703f0a9ce0a54399a5d36f29119ab99b5f6b2d975781fb9ec4fbb9558af8d761-34052246603665.png)](https://files.readme.io/703f0a9ce0a54399a5d36f29119ab99b5f6b2d975781fb9ec4fbb9558af8d761-34052246603665.png)
+<Image align="center" alt="" src="https://files.readme.io/703f0a9ce0a54399a5d36f29119ab99b5f6b2d975781fb9ec4fbb9558af8d761-34052246603665.png" />
 
 **Configurações de exibição**:
 

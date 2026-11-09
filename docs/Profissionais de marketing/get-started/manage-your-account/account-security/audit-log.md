@@ -43,7 +43,7 @@ O **log de auditoria** fornece uma localização central para rever várias ativ
 
 O quadro seguinte apresenta uma descrição dos dados fornecidos pelo log de auditoria e um resumo das suas capacidades.
 
-[![audit_log.png](https://files.readme.io/4101dfb4dc84e4e916d165a22387bd6a84fa7889bc4e82e636c980fde1cac248-6867050961809.png)](https://files.readme.io/4101dfb4dc84e4e916d165a22387bd6a84fa7889bc4e82e636c980fde1cac248-6867050961809.png)
+<Image align="center" alt="audit_log.png" src="https://files.readme.io/4101dfb4dc84e4e916d165a22387bd6a84fa7889bc4e82e636c980fde1cac248-6867050961809.png" />
 
 |  | Item | Descrição |
 | --- | --- | --- |

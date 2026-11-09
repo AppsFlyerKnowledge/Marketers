@@ -47,7 +47,7 @@ Gravar esse evento pode ajudar a determinar:
 >
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
-[![Fluxograma_para_eventos_recomendados jornada_do_utilizador_da_aplicação_de_finanças_bancárias](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)
+<Image align="center" alt="Fluxograma_para_eventos_recomendados jornada_do_utilizador_da_aplicação_de_finanças_bancárias" src="https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

@@ -158,7 +158,7 @@ let customerUserID = AppsFlyerLib.shared().customerUserID
 5. Configure os postbacks padrão enviados para o Adobe Analytics. A AppsFlyer pode enviar postbacks automáticos tanto para instalações quanto para reengajamentos (incluindo reatribuições). Saiba mais sobre <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#default-postbacks">postbacks padrão</Anchor>.
 6. No **SDK do Adobe Analytics**, como parte do arquivo **ADBMobileConfig.XML**, copie o **Report\_Suite\_ID (destacado em azul) e o Adobe\_Analytic\_Server\_URL** **(destacado em verde) e cole-os nos respectivos campos na página de integração do Adobe Analytics** na AppsFlyer.
 
-   ![](https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png)
+   <Image align="center" alt="" src="https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png" />
 7. Clique em  **Salvar integração**.
 
 Depois de salvar, a AppsFlyer envia os seguintes dados para o Adobe Analytics para cada instalação orgânica e não orgânica:

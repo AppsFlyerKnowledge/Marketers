@@ -419,24 +419,24 @@ Esse processo seguro e automatizado ocorre diretamente no portal da AppsFlyer.
 2. Sua conta tem um saldo de crédito
    1. Clique em **Atualizar pagamento**.  
 
-      <Image alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
+      <Image align="center" alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
    2. **Para pagamento com cartão de crédito:** informe os dados necessários e clique em **Cadastrar cartão de crédito**.  
 
-      <Image alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
+      <Image align="center" alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
 3. Na janela pop-up, selecione **Conta bancária** -> **Próximo.**  
 
-   <Image alt="2025-12-08_12-14-41.png" src="https://files.readme.io/f172ab5d59c98146fb9478668b90495401465b50c4d3d9f5f6c922d974a62a1a-41707949014929.png" width="75%" />
+   <Image align="center" alt="2025-12-08_12-14-41.png" src="https://files.readme.io/f172ab5d59c98146fb9478668b90495401465b50c4d3d9f5f6c922d974a62a1a-41707949014929.png" width="75%" />
 4. Preencha seus dados e selecione seu banco.  
 
-   <Image alt="2025-12-08_12-15-37.png" src="https://files.readme.io/b89b46eaaba05710361f963a27482512eee380b02a9eb01c2e14df050da37129-41707949015825.png" width="50%" />
+   <Image align="center" alt="2025-12-08_12-15-37.png" src="https://files.readme.io/b89b46eaaba05710361f963a27482512eee380b02a9eb01c2e14df050da37129-41707949015825.png" width="50%" />
 5. Você será redirecionado ao portal do seu banco para fazer login e autorizar nosso provedor de ACH, a Stripe, a prestar serviços de processamento de pagamento.  
 
-   <Image alt="2025-12-08_12-16-39.png" src="https://files.readme.io/46265f0a8078c5cc588df2310dede2038a5936f41215edf0e36f711465aae497-41707949017233.png" width="50%" />
+   <Image align="center" alt="2025-12-08_12-16-39.png" src="https://files.readme.io/46265f0a8078c5cc588df2310dede2038a5936f41215edf0e36f711465aae497-41707949017233.png" width="50%" />
 6. Escolha uma das opções:
    1. **Salvar com o Link** - Para salvar o seu login ACH no Stripe Link para usar futuramente em outros sites.
    2. **Agora não** - para não salvar o seu login ACH no Stripe Link.  
 
-      <Image alt="2025-12-08_12-17-44.png" src="https://files.readme.io/d89cd1e7c04f2507272f67fef1e71f18d94ee45703d42fbd354c2033fa97b7e2-41707974850193.png" width="50%" />
+      <Image align="center" alt="2025-12-08_12-17-44.png" src="https://files.readme.io/d89cd1e7c04f2507272f67fef1e71f18d94ee45703d42fbd354c2033fa97b7e2-41707974850193.png" width="50%" />
 7. **Para pagamento com cartão de crédito:** informe os dados necessários e clique em **Cadastrar cartão de crédito**.
 
 </Accordion>
@@ -451,10 +451,10 @@ Este processo seguro e automatizado ocorre diretamente no portal da AppsFlyer.
 2. Insira as informações do cartão e clique em **Enviar pagamento**.
    1. Para atualizar o seu método de pagamento:  
 
-      <Image alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
+      <Image align="center" alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
    2. Na lista de faturas na seção Não pagas, selecione uma ou mais faturas não pagas.  
 
-      <Image alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
+      <Image align="center" alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
 3. Clique em **Pagar com cartão de crédito**.
 4. **Para pagamento por transferência bancária:** insira os dados de cobrança e clique em **Salvar**.
 

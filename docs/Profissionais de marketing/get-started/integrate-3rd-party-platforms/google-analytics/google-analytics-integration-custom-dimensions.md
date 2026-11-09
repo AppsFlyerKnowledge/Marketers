@@ -65,12 +65,12 @@ O Google Analytics tem uma ferramenta poderosa para criar segmentação no níve
 2. Selecione ***Admin*** na barra superior do GA dashboard
 3. Na coluna ***PROPERTY***, selecione ***Custom Definition***
 4. Selecione ***Custom Dimensions***  
-   ![Opção Dimensões personalizadas no painel de administração do Google Analytics](https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png)
+   <Image align="center" alt="Opção Dimensões personalizadas no painel de administração do Google Analytics" src="https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png" />
 5. Crie uma nova dimensão. Chame-a de **AppsFlyer Media Source** e certifique-se de selecionar o escopo ***usuário***. Isso garante que os dados sejam salvos em várias sessões. ![ga2.png](https://files.readme.io/b2d85fd068e5523265a2b49b4218234fc77d5896ad41801cbe0e017752763cf2-4413121449873.png)
 
    Cada dimensão é criada com um índice que você deve lembrar para poder usá-lo depois na API do GA a partir do seu aplicativo. Neste exemplo, o índice da nova dimensão é 10.
 
-   ![ga3](https://files.readme.io/6efc2249ede92291a2aadd16eccbc5b38b580723c6277e3746bdd467de29764a-11179413394193.png)
+   <Image align="center" alt="ga3" src="https://files.readme.io/6efc2249ede92291a2aadd16eccbc5b38b580723c6277e3746bdd467de29764a-11179413394193.png" />
 
    Repita esta etapa e crie outra dimensão e chame-a de **Campanha da AppsFlyer**
 
@@ -142,6 +142,6 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 
 A maioria dos relatórios do GA tem uma opção de análise detalhada chamada ***Dimensões personalizadas***. Você pode selecionar as dimensões ***Canal de mídia da AppsFlyer*** ou ***Campanha da AppsFlyer*** ([definidas na etapa 1](/docs/google-analytics-integration-custom-dimensions#etapa-1-defina-no-google-analytics)) para ver quais canais de mídia e campanhas trazem usuários que instalam seu aplicativo.
 
-![G_analytics1.png](https://files.readme.io/dde9219a7a8eec5c861b5031ad741ff7377d85ba9c3693bcbc455fd735f8af2d-4413121449617.png)
+<Image align="center" alt="G_analytics1.png" src="https://files.readme.io/dde9219a7a8eec5c861b5031ad741ff7377d85ba9c3693bcbc455fd735f8af2d-4413121449617.png" />
 
 <div data-zendesk-anchors="custom-dimensions-on-google-analytics=dimens%C3%B5es-personalizadas-no-google-analytics h_01HDP3FHGNR06EV1KS8F1PFQ09=dimens%C3%B5es-personalizadas-no-google-analytics setting-media-source-as-a-custom-dimension-on-google-analytics=definir-o-canal-de-m%C3%ADdia-como-uma-dimens%C3%A3o-personalizada-no-google-analytics h_01HDP3FHGP9H18VJKNSR27HXEZ=definir-o-canal-de-m%C3%ADdia-como-uma-dimens%C3%A3o-personalizada-no-google-analytics step-1-define-it-on-google-analytics=etapa-1-defina-no-google-analytics h_01HDP3FHGPTJ4EVYPDA7RWPJF9=etapa-1-defina-no-google-analytics step-2-setting-and-sending-the-data-from-the-app=etapa-2-configurando-e-enviando-os-dados-do-aplicativo h_01HDP3FHGPF3BJZSG6G0QP5T1R=etapa-2-configurando-e-enviando-os-dados-do-aplicativo step-3-see-the-results-in-google-analytics=etapa-3-veja-os-resultados-no-google-analytics h_01HDP3FHGP9G9BP956KM4ACDRC=etapa-3-veja-os-resultados-no-google-analytics" />

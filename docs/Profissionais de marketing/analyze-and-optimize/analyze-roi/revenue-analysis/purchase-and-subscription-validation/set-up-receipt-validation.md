@@ -112,22 +112,22 @@ Para definir as credenciais do iOS, siga estas etapas:
 
 1. No App Store Connect, vá para **Users and Access**.
 
-   [![](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)
+   <Image align="center" alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" />
 2. Vá para **Users and Access** > **Integrations** e, na lista **Keys** , selecione **In-App Purchase**.
 
-   [![](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" />
 3. Clique em + para gerar uma nova chave de In-App Purchase.
 
-   [![](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" />
 4. Digite um nome para sua chave de API.
 5. Clique em **Gerar**.
 6. Clique em **Download In-App Purchase Key** ao lado da chave que você acabou de gerar para fazer o download. **Atenção:** você só pode baixar a chave uma vez.
 7. Copie o **Key ID** da chave que você acabou de gerar e cole-o na configuração de compras & assinaturas da AppsFlyer, em **Key ID**.
 
-   [![](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)
+   <Image align="center" alt="" src="https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png" />
 8. Copie o **Issuer ID**. **Observação**: se o **Issuer ID** não aparecer na parte superior da página, crie uma chave de API do App Store Connect (com qualquer nível de acesso). Depois disso, o Issuer ID aparece na parte superior da página da chave de In-App Purchase.
 
-   [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
+   <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" />
 
 </Accordion>
 
@@ -169,7 +169,7 @@ Na etapa 1, obtenha as seguintes credenciais de *Google Play* e *Google Cloud
 2. Vincule a conta ao seu projeto Google Cloud. Para obter instruções, consulte este <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">artigo de ajuda do Google</Anchor>.
 3. Ative a Google Play Developer API. Para obter instruções, consulte <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">este artigo de ajuda do Google</Anchor>.
 
-   [![](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)
+   <Image align="center" alt="" src="https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png" />
 
 </Accordion>
 
@@ -190,18 +190,18 @@ Na etapa 1, obtenha as seguintes credenciais de *Google Play* e *Google Cloud
    5. Na etapa **Grant this service account access to the project** , selecione a função de assinante do **Pub/Sub** .[![](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)
    6. Clique **Continue** > **Done**.
 
-      [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
+      <Image align="center" alt="" src="https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png" />
 2. Faça o download da service account private key:
 
    1. <span class="af-ol-a"></span>Na plataforma Google Cloud, acesse a seção **Service accounts** , localize na lista a conta desejada (a que você acabou de criar) e clique no ícone **More actions** .
    2. Clique **Manage keys**.[![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)
    3. Clique em **Add key** > **Create new key**.
 
-      [![](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)
+      <Image align="center" alt="" src="https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png" />
    4. No pop-up **Create private key** popup, under **Key type**, selecione **JSON**, e clique **Create**.[![](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)
    5. Clique **Create**. O arquivo JSON de chave privada é baixado.
 
-      [![](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)
+      <Image align="center" alt="" src="https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png" />
    6. Salve o arquivo de chave JSON, que você fará o upload para a AppsFlyer mais tarde. **Nota**! Você deve salvar a chave. ela não poderá ser recuperada depois. Se você não salvá-la, terá que criar uma chave totalmente nova.
 
 </Accordion>
@@ -218,23 +218,23 @@ Na etapa 1, obtenha as seguintes credenciais de *Google Play* e *Google Cloud
 
 1. No Google Play Console, vá para **Users and permissions**, encontre a conta de serviço que você criou, e clique **Invite new users**.
 
-   [![](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)
+   <Image align="center" alt="" src="https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png" />
 2. Digite o **endereço de e-mail** que você copiou ao configurar sua conta de serviço na etapa 1.2.1.3.
 
-   [![](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)
+   <Image align="center" alt="" src="https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png" />
 3. Na seção **Permissions** , vá para a aba **Account permissions** , e selecione ambas:
 
    * Visualizar dados financeiros, pedidos e respostas à pesquisa de cancelamento.
    * Gerenciar pedidos e assinaturas[![](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)
 4. Na aba **App permissions** , clique **Add app,** then select your app. Adicione vários aplicativos, se necessário.
 
-   [![](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)
+   <Image align="center" alt="" src="https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png" />
 5. Clique **Invite user**.
 
-   [![](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)
+   <Image align="center" alt="" src="https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png" />
 6. No popup de confirmação, clique **Send invite**.
 
-   [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
+   <Image align="center" alt="" src="https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png" />
 
 </Accordion>
 
@@ -312,7 +312,7 @@ No ambiente sandbox:
 
 <Accordion title="Teste a receita de compras in-app e assinaturas">
 
-[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 **Para testar a receita de compras in-app e assinaturas**:
 
@@ -359,7 +359,7 @@ Antes de os desenvolvedores publicarem a nova versão do aplicativo, certifique-
 * Os eventos in-app que você quer capturar como <Anchor target="_blank" href="/marketers/pt/docs/about-receipt-validation#eventos-de-compras-in-app-e-parâmetros-para-a-validação-de-recibos">compra in-app ou assinatura</Anchor> não sejam bloqueados por nenhuma das regras de validação que você configurou na AppsFlyer.
 * Seus desenvolvedores têm todas as flags de sandbox definidas como `false`.
 
-[<Image alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />
 
 Depois que o aplicativo com a API do SDK validateAndLog for lançado, os <Anchor target="_blank" href="/marketers/pt/docs/about-receipt-validation#eventos-de-compras-in-app-e-parâmetros-para-a-validação-de-recibos">eventos de compra in-app e de assinatura</Anchor> serão gerados e disponibilizados em todos os dashboards da AppsFlyer, bem como em relatórios de dados agregados e relatórios de dados brutos.
 

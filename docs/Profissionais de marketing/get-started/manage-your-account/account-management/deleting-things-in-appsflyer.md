@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Visão geral:** entenda como remover aplicativos e interromper a atribuição, remover canais de mídia ou excluir dados de usuários.
 
-<Image alt="shutterstock_699498934.jpg" src="https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg" width="363px" />
+<Image align="center" alt="shutterstock_699498934.jpg" src="https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg" width="363px" />
 
 <div id="delete-user-history" />
 

@@ -35,7 +35,7 @@ Ter acesso a esses dados exclusivos é muito útil para equipes de SEO (search e
 
 ### Fluxo
 
-![Diagrama que mostra o fluxo de atribuição de busca orgânica, desde o clique de um usuário em um resultado de pesquisa até a abertura do aplicativo ou o usuário chegar a uma página web](https://files.readme.io/4b33060cfa30a4e2786c4a3a213ca41223ae276d63c97ab7c2cb5a997a4b010c-16540659217809.png)
+<Image align="center" alt="Diagrama que mostra o fluxo de atribuição de busca orgânica, desde o clique de um usuário em um resultado de pesquisa até a abertura do aplicativo ou o usuário chegar a uma página web" src="https://files.readme.io/4b33060cfa30a4e2786c4a3a213ca41223ae276d63c97ab7c2cb5a997a4b010c-16540659217809.png" />
 
 O fluxo de atribuição de busca orgânica funciona da seguinte forma:
 

@@ -79,7 +79,7 @@ Se o item a seguir não tiver sido adicionado automaticamente, adicione-o ao APP
 >
 > Como resultado, seu Manifest deve ficar assim:
 >
-> [![](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)
+> <Image align="center" alt="" src="https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png" />
 >
 > **Importante:** devido a algumas limitações no <Anchor target="_blank" href="https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html">ADT</Anchor>, após a criação do APK, faltam alguns arquivos importantes.
 >

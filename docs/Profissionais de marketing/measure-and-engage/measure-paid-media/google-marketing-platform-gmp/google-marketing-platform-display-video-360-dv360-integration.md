@@ -32,7 +32,7 @@ x-zendesk:
 >
 > Veja o novo boletim sobre nosso <Anchor target="_blank" href="/marketers/pt/docs/bulletin-supporting-the-new-google-eu-consent-policy">suporte para a nova política de consentimento do Google na UE</Anchor>.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 
 <div id="overview" />
 
@@ -144,7 +144,7 @@ Para configurar a integração, você deve primeiro habilitar o botão **Ativar 
 
 **Usuários fora da UE:** Decida se você deseja ou não ativar a opção <Anchor target="_blank" href="/marketers/pt/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**Usuários fora da UE**</Anchor>.
 
-<Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="536px" />
+<Image align="center" alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="536px" />
 
 <div id="install-attribution" />
 

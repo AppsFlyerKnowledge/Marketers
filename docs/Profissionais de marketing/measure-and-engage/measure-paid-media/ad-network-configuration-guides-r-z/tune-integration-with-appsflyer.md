@@ -23,7 +23,7 @@ x-zendesk:
 > **Resumo:** A TUNE, um parceiro integrado da AppsFlyer, é uma plataforma de marketing de parceiros.  
 > Integre com a TUNE para mensurar o tráfego recebido e habilitar deep linking no seu aplicativo.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hasoffers.png" width="79px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hasoffers.png" width="79px" />
 
 <div id="setting-up-tune-integration" />
 
@@ -80,11 +80,11 @@ Verifique  as versões do SDK mobile da AppsFlyer:
   * **Subdomínio:** `click.example.com`
   * **CNAME:** `example.appsflyer.com`
 
-    ![link-de-marca-esp-new-en_us.png](https://files.readme.io/a7433ac0e3b343195bac9b4be49d22c18534ec1c145189198c5ec467fea510bb-21323417936145.png)
+    <Image align="center" alt="link-de-marca-esp-new-en_us.png" src="https://files.readme.io/a7433ac0e3b343195bac9b4be49d22c18534ec1c145189198c5ec467fea510bb-21323417936145.png" />
 
     Observe que, ao clicar em **Verificar** para verificar o domínio de marca, é exibida uma mensagem de falha referente ao CNAME da AppsFlyer.
 
-    ![link-de-marca-esp-mensagem-de-falha-cname.png](https://files.readme.io/94f159a089152437111fc6e4308464bc48512ee18f5e249460006bfda05252c2-21323447961105.png)
+    <Image align="center" alt="link-de-marca-esp-mensagem-de-falha-cname.png" src="https://files.readme.io/94f159a089152437111fc6e4308464bc48512ee18f5e249460006bfda05252c2-21323447961105.png" />
 
     Ignore esta mensagem e altere o CNAME conforme as instruções acima.
 
@@ -99,7 +99,7 @@ Verifique  as versões do SDK mobile da AppsFlyer:
 
    > 📄 **Exemplo:**
    >
-   > ![TUNE-link-example2-en_us.png](https://files.readme.io/58f38eb0bb724b66d0c958454651e0950a54f6fd990220f2ac24f93ca89ba344-small-4410086650769.png)
+   > <Image align="center" alt="TUNE-link-example2-en_us.png" src="https://files.readme.io/58f38eb0bb724b66d0c958454651e0950a54f6fd990220f2ac24f93ca89ba344-small-4410086650769.png" />
 
 3. Para concluir a configuração, acesse o <Anchor target="_blank" href="https://support.tune.com/hc/en-us/articles/1500008336641-Managing-Mobile-Offers-with-Appsflyer">guia Managing Mobile Offers with AppsFlyer</Anchor> na central de ajuda da TUNE, role para baixo até Universal Links via OneLink e siga as instruções.
 

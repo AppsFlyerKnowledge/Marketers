@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Visão geral:** a AVOW GmbH (avow1\_int) é um parceiro integrado com contas de ad networks e agências, permitindo que os anunciantes executem campanhas de aquisição de usuários em dispositivos mobile. Além da atribuição mobile baseada em cliques, a Avow GmbH também oferece a atribuição de view-through, que pode ser registrada na AppsFlyer.
 
-![avow_icon.png](https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png)
+<Image align="center" alt="avow_icon.png" src="https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png" />
 
 <div id="activate-partner" />
 

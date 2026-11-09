@@ -160,7 +160,7 @@ Depois de salvar a configuração, o AppsFlyer envia os seguintes dados à Braze
 
 O AppsFlyer pode enviar postbacks automáticos para instalações de usuários da Braze. Use esta seção para definir o envio desses postbacks.
 
- ![Seção de postbacks padrão](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png) 
+ <Image align="center" alt="Seção de postbacks padrão" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Selecione **Eventos atribuídos a qualquer parceiro ou orgânico** para enviar postbacks à Braze para qualquer usuário que baixar o aplicativo.
 
@@ -204,10 +204,10 @@ Permissões não estão disponíveis para a Braze.
 
 Sua base de usuários pode ser segmentada por dados de atribuição no painel da Braze usando os filtros Instalar Atribuição.
 
- ![Filtros de atribuição de instalação no dashboard da Braze](https://files.readme.io/7289491d4d301eb38618298536ac5b895a610024bf162c733409d3f50b10b8f4-360001908045.png) 
+ <Image align="center" alt="Filtros de atribuição de instalação no dashboard da Braze" src="https://files.readme.io/7289491d4d301eb38618298536ac5b895a610024bf162c733409d3f50b10b8f4-360001908045.png" />
 
 Além disso, os dados de atribuição de um usuário específico estão disponíveis no perfil de cada usuário no painel da Braze.
 
- ![Dados de atribuição em um perfil de usuário no Braze](https://files.readme.io/d9ee5206a8bf3c092c5297c361cf38b2c77717fbb9638b282032e4fc4c31091e-360001907289.png)
+ <Image align="center" alt="Dados de atribuição em um perfil de usuário no Braze" src="https://files.readme.io/d9ee5206a8bf3c092c5297c361cf38b2c77717fbb9638b282032e4fc4c31091e-360001907289.png" />
 
 <div data-zendesk-anchors="integration-overview=vis%C3%A3o-geral-da-integra%C3%A7%C3%A3o h_01H9FK453A9W5DCPR4X8PR06MZ=vis%C3%A3o-geral-da-integra%C3%A7%C3%A3o setting-up-braze=configurando-a-braze h_01H9FK453AWXF006KEVKD797QF=configurando-a-braze activate-partner=ativar-parceiro h_01H9FK453AVK4YKF41FEP0YRJN=ativar-parceiro general-settings=configura%C3%A7%C3%B5es-gerais h_01H9FK453AG6AXA7J43X6NGZT1=configura%C3%A7%C3%B5es-gerais default-postbacks=postbacks-padr%C3%A3o h_01H9FK453ASAKVHT7GV8BG56YS=postbacks-padr%C3%A3o viewing-user-attribution-data-in-braze=visualizando-dados-de-atribui%C3%A7%C3%A3o-do-usu%C3%A1rio-na-braze h_01H9FK453AQXG7NNT2841686MJ=visualizando-dados-de-atribui%C3%A7%C3%A3o-do-usu%C3%A1rio-na-braze" />

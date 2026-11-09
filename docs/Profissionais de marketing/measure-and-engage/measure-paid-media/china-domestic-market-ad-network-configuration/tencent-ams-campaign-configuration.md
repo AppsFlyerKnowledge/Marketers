@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **Em resumo:** Tencent AMS, um parceiro integrado de ad network da AppsFlyer, opera propriedades de rede social e utilitários mobile na China e permite que profissionais de marketing executem campanhas de instalação de aplicativos em: WeChat, a plataforma de comunicação mobile da empresa, QQ, o serviço de mensagens instantâneas, QQ Music, QQ Browser, Myapp e muito mais.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/tencentams.png" width="120px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/tencentams.png" width="120px" />
 
 <div id="setting-up-tencent-ams" />
 
@@ -57,7 +57,7 @@ A aba Integração está dividida em diferentes seções, conforme descrito abai
 
 A aba Integração está dividida em diferentes seções, conforme descrito abaixo. Para integrar o TencentAMS à AppsFlyer, você precisará das seguintes credenciais: **account\_id, user\_action\_set\_id e access\_token**. Se você ainda não tiver esses valores, obtenha-os diretamente com o Tencent AMS antes de prosseguir com a integração.
 
-<Image alt="tencent.png" src="https://files.readme.io/56bfdc43b976f1f29f5ba121986aa66228cd79029025e84278cb3c304989fc3e-38300461521041.png" width="248px" />
+<Image align="center" alt="tencent.png" src="https://files.readme.io/56bfdc43b976f1f29f5ba121986aa66228cd79029025e84278cb3c304989fc3e-38300461521041.png" width="248px" />
 
 <div id="note" />
 

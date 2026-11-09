@@ -25,7 +25,7 @@ x-zendesk:
 
 > **Resumo:** use o dashboard Discovery na solução de otimização de criativos para analisar a performance, as cenas e elementos dos seus criativos para produzir e manter excelentes assets.
 
-[![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
+<Image align="center" alt="Main Discovery image.jpg" src="https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg" />
 
 <div id="about-the-creative-optimization-discovery-ai-dashboard" />
 
@@ -68,7 +68,7 @@ Se você ainda não configurou a otimização de criativos, você pode encontrar
 6. Veja a galeria de discovery cards de todos os criativos, elementos, cenas ou textos que correspondem aos seus filtros e configurações de pesquisa.
    1. [Opcional] Para alterar as métricas exibidas nos cartões, clique no ícone **configurações**, e selecione até 5 métricas para exibir. [Saiba mais sobre as configurações do discovery card](/docs/creative-optimization-discovery-ai-dashboard#discovery-tabs).
    2. Organize os blocos da galeria segundo as métricas. As métricas disponíveis para classificação são aquelas selecionadas nas configurações do discovery card.  
-      <Image alt="Sort by new.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
+      <Image align="center" alt="Sort by new.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
 7. Clique em um card específico para acessar mais detalhes e obter dados de performance e insights adicionais.
 
 </Accordion>
@@ -83,7 +83,7 @@ Você pode personalizar quais métricas são exibidas nos blocos do Discovery.
 
 1. Clique no ícone <Image alt="Gear icon.jpg" src="https://files.readme.io/b54f4534bc513b597f7cdda1fb4db7dd811d71b1466ddd3b50b9efe751cf68d3-24287873747857.jpg" width="31px" /> no canto superior direito (ao lado de **classificar por**).
 2. Selecione as métricas desejadas (até 5) e clique em **Aplicar**.  
-   <Image alt="Discovery card settings.jpg" src="https://files.readme.io/7b05960fde8159a6e5a53917e2e972ea059d6a6dc165ee66c7d6d390c4148786-24289299704081.jpg" width="738px" />  
+   <Image align="center" alt="Discovery card settings.jpg" src="https://files.readme.io/7b05960fde8159a6e5a53917e2e972ea059d6a6dc165ee66c7d6d390c4148786-24289299704081.jpg" width="738px" />
    As métricas selecionadas serão exibidas nos blocos.
 
 **As métricas disponíveis incluem:**
@@ -267,7 +267,7 @@ Explore os dados de performance dos criativos e das cenas e elementos que compõ
 
 Acesse uma galeria com todos os seus criativos junto com seus dados de performance. Os blocos exibidos se baseiam nas suas seleções de filtros na solução de criativos. Além disso, as métricas que os blocos exibem e o método de organização usado para exibi-los podem ser personalizados. Veja configurações e organização.
 
-![creatives.png](https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png)
+<Image align="center" alt="creatives.png" src="https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png" />
 
 |  | Dimensão/métrica | Descrição |
 | --- | --- | --- |
@@ -289,7 +289,7 @@ Usando tecnologia de IA, os criativos de vídeo são automaticamente divididos e
 
 **Atenção:** Os blocos exibidos se baseiam nas suas seleções de filtros na solução de criativos. Além disso, as métricas que os blocos exibem e o método de organização usado para exibi-los podem ser personalizados. Veja configurações e organização.
 
-<Image alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
+<Image align="center" alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
 
 |  | Dimensão/métrica | Descrição |
 | --- | --- | --- |
@@ -310,7 +310,7 @@ Nossos algoritmos de IA totalmente automatizados dividem ainda mais os criativos
 
 **Atenção:** Os blocos exibidos se baseiam nas suas seleções de filtros na solução de criativos. Além disso, as métricas que os blocos exibem e o método de organização usado para exibi-los podem ser personalizados. Veja configurações e organização.
 
-![elements.png](https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png)
+<Image align="center" alt="elements.png" src="https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png" />
 
 |  | Dimensão/métrica | Descrição |
 | --- | --- | --- |
@@ -330,7 +330,7 @@ Nossos algoritmos de IA automatizados analisam criativos de vídeo em strings de
 
 **Atenção:** Os blocos exibidos se baseiam nas suas seleções de filtros na solução de criativos. Além disso, as métricas que os blocos exibem e o método de organização usado para exibi-los podem ser personalizados. Veja configurações e organização.
 
-<Image alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
+<Image align="center" alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
 
 |  | Dimensão/métrica | Descrição |
 | --- | --- | --- |

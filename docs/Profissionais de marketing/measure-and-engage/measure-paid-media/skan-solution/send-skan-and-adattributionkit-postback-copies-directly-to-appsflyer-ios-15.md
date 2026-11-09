@@ -69,7 +69,7 @@ De acordo com a documentação da Apple, você pode definir um único endpoint p
 >
 > Essas afirmações são verdadeiras ou falsas?
 >
-> ![TrueOrFalse.png](https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png)
+> <Image align="center" alt="TrueOrFalse.png" src="https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png" />
 >
 > * Os anunciantes não dependem mais de ad networks para obter postbacks.
 >   * **Falso.** O anunciante ainda depende da ad network para decodificar partes significativas de dados. Por exemplo, somente a ad network pode mapear o campaign ID da SKAN para o nome da campanha.

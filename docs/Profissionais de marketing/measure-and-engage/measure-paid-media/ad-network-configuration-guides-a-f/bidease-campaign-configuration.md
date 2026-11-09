@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **Visão geral:** a Bidease (bidease\_int), uma parceira integrada da AppsFlyer, é uma DSP completamente transparente voltada para profissionais de marketing mobile. Usando tecnologias de publicidade programática, machine learning e dados primários, a Bidease otimiza campanhas nos principais formatos mobile com foco no comportamento após a instalação, sem oferecer nenhum risco para seus clientes.
 
-<Image alt="bidease.png" src="https://files.readme.io/4a3373c0fdb73190017601c374ca7634cc0feb1954b6e23fc1bd9693c60605f9-20106376017041.png" width="100px" />
+<Image align="center" alt="bidease.png" src="https://files.readme.io/4a3373c0fdb73190017601c374ca7634cc0feb1954b6e23fc1bd9693c60605f9-20106376017041.png" width="100px" />
 
 <div id="setting-up-bidease" />
 

@@ -42,7 +42,7 @@ Os dados de cliques e impressões do Google Ads foram disponibilizados em agosto
 
 Se você não está vendo as conversões first\_open no Google Ads como na captura de tela abaixo:
 
-![AW_13.png](https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png)
+<Image align="center" alt="AW_13.png" src="https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png" />
 
 Isso significa que você deve importar as conversões no Google Ads. Siga as instruções em <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">Como importar conversões</Anchor>.
 
@@ -132,7 +132,7 @@ Para interromper a sincronização de custos com o Google siga estes passos:
 
 1. Vá para as <Anchor target="_blank" href="https://myaccount.google.com/permissions">permissões de conta no Google</Anchor>.
 2. Clique em Remover ao lado de AppsFlyer Google Cost.  
-   ![remove_appsflyer_cost.png](https://files.readme.io/56840e708c98875c8db176c642dd324150a76aef9697fcc2756f524b2a6c0a16-33743128661137.png)
+   <Image align="center" alt="remove_appsflyer_cost.png" src="https://files.readme.io/56840e708c98875c8db176c642dd324150a76aef9697fcc2756f524b2a6c0a16-33743128661137.png" />
 
 </Accordion>
 

@@ -156,7 +156,7 @@ Você também pode configurar a janela de lookback no OneLink.
 
 Abaixo está um gráfico que mostra a distribuição das primeiras aberturas do aplicativo desde o dia do engajamento.
 
-[![](https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png)](https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png)
+<Image align="center" alt="" src="https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png" />
 
 O gráfico pode fornecer uma noção melhor do número de usuários que instalam o aplicativo em função da janela de lookback.
 
@@ -176,7 +176,7 @@ Abaixo está uma lista de possíveis cenários e exemplos de uso da janela de lo
 
 Você configura uma campanha no X Ads e configura a janela de lookback de click-through para 7 dias. O X Ads, por outro lado, tem uma janela de lookback padrão de 14 dias.
 
-[![srn-discrepancy-srn-lookback-larger-than-appsflyer.png](https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png)](https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png)
+<Image align="center" alt="srn-discrepancy-srn-lookback-larger-than-appsflyer.png" src="https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png" />
 
 </Accordion>
 
@@ -186,7 +186,7 @@ Você configura uma campanha no X Ads e configura a janela de lookback de click-
 
 Você configura uma campanha no X Ads e configura a janela de lookback de click-through para 28 dias. O X Ads, por outro lado, tem uma janela de lookback padrão de 14 dias.
 
-[![srn-lookback-smaller-than-appsflyer.png](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)
+<Image align="center" alt="srn-lookback-smaller-than-appsflyer.png" src="https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png" />
 
 </Accordion>
 

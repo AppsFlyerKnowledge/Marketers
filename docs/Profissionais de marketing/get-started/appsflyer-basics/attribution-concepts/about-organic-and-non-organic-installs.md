@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **Visão geral:** Entenda a diferença entre instalações orgânicas e não orgânicas.
 
-![6453Orgânico vs. não orgânico.jpg](https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg)
+<Image align="center" alt="6453Orgânico vs. não orgânico.jpg" src="https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg" />
 
 Os usuários não orgânicos são atribuídos ao canal de mídia que motivou a instalação ou o engajamento. No caso dos usuários orgânicos, não existe uma canal de mídia identificado com a instalação ou engajamento.
 

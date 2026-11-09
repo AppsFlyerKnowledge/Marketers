@@ -47,7 +47,7 @@ Embora o cálculo de usuário único geralmente seja simples, às vezes surgem d
 
 <Accordion title="Instalar e reinstalar">
 
-![](https://files.readme.io/8b9f3c442f98c056069b4449c7e5115cbea828a64ace3a98e0090fb0d8d1d8d6-27455116159889.png)
+<Image align="center" alt="" src="https://files.readme.io/8b9f3c442f98c056069b4449c7e5115cbea828a64ace3a98e0090fb0d8d1d8d6-27455116159889.png" />
 
 A instalação e a reinstalação têm o mesmo ID do dispositivo/ID da AppsFlyer. Portanto, apenas 1 usuário único é contabilizado. Ambos os eventos in-app são atribuídos ao mesmo usuário único da primeira instalação.
 
@@ -62,7 +62,7 @@ A instalação e a reinstalação têm o mesmo ID do dispositivo/ID da AppsFlyer
 
 <Accordion title="Instalação e reatribuição:">
 
-![](https://files.readme.io/40420c5ea201ba7cf13d03e5968d20c2fffaa31b74c47ae36cd917cccbaae353-27453973190289.png)
+<Image align="center" alt="" src="https://files.readme.io/40420c5ea201ba7cf13d03e5968d20c2fffaa31b74c47ae36cd917cccbaae353-27453973190289.png" />
 
 A instalação e a reatribuição têm o mesmo ID do dispositivo/ID da AppsFlyer. Porém, neste caso, a AppsFlyer também leva em consideração o parâmetro `is_retargeting=true` portanto, o evento após a reatribuição é contado como um usuário único adicional. Portanto, 2 usuários únicos são contabilizados.
 
@@ -76,7 +76,7 @@ A instalação e a reatribuição têm o mesmo ID do dispositivo/ID da AppsFlyer
 
 <Accordion title="Instalação e reengajamento">
 
-![](https://files.readme.io/68da5544f49809910ae4618f509707a99962e601a7d5a6631a771318e33e1248-49929266336529.png)
+<Image align="center" alt="" src="https://files.readme.io/68da5544f49809910ae4618f509707a99962e601a7d5a6631a771318e33e1248-49929266336529.png" />
 
 A instalação e o reengajamento têm o mesmo ID do dispositivo/ID da AppsFlyer. Porém, neste caso (assim como em reatribuições), a AppsFlyer também leva em consideração o parâmetro `is_retargeting=true` portanto, o evento após a reatribuição é contado como um usuário único adicional. Portanto, 2 usuários únicos são contabilizados.
 
@@ -90,7 +90,7 @@ A instalação e o reengajamento têm o mesmo ID do dispositivo/ID da AppsFlyer.
 
 <Accordion title="Eventos in-app não atribuídos">
 
-![](https://files.readme.io/94bf078bcf4ba26a1dc4ca323a1b4a7543cfb4e3fc8b780d0d29713c4266aa95-27455116170001.png)
+<Image align="center" alt="" src="https://files.readme.io/94bf078bcf4ba26a1dc4ca323a1b4a7543cfb4e3fc8b780d0d29713c4266aa95-27455116170001.png" />
 
 Quando um evento in-app não é atribuído, ou seja, ocorre após uma reinstalação, mas por algum motivo não está vinculado à primeira instalação, ele não é incluído na contagem de usuários únicos. Isso pode ocorrer quando não há um ID de dispositivo disponível para a reinstalação, mas também pode haver outros motivos. <Anchor target="_blank" href="/marketers/pt/docs/measure-reinstalls#unattributed-organic-inapps">Saiba mais</Anchor>
 

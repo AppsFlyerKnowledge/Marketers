@@ -55,7 +55,7 @@ Esses eventos também são relevantes para aplicativos de jogos que são executa
 >
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
-[![Fluxograma_para_eventos_recomendados jornada_do_utilizador_da_app_de_jogos](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)](https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png)
+<Image align="center" alt="Fluxograma_para_eventos_recomendados jornada_do_utilizador_da_app_de_jogos" src="https://files.readme.io/18546b2ca811e534d7b15527d3dadb4750edd8e985154543fa156216ad023f78-360020169778.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

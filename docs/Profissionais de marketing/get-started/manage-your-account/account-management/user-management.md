@@ -47,7 +47,7 @@ Os administradores podem [adicionar usuários a várias contas](#multiple-accoun
 
 * Na barra superior, abra o menu da conta (menu suspenso do endereço de e-mail) > **gerenciar usuários**.
 
-[![user-management-page.jpg](https://files.readme.io/0ca6dd472b6f50bfde693bba9c131ce9454dc1df90e3a0fb029e2e05b2330db4-31780969019665.jpg)](https://files.readme.io/0ca6dd472b6f50bfde693bba9c131ce9454dc1df90e3a0fb029e2e05b2330db4-31780969019665.jpg)
+<Image align="center" alt="user-management-page.jpg" src="https://files.readme.io/0ca6dd472b6f50bfde693bba9c131ce9454dc1df90e3a0fb029e2e05b2330db4-31780969019665.jpg" />
 
 <div id="users-tab" />
 
@@ -646,7 +646,7 @@ Inclua as seguintes informações na sua solicitação:
 
 Use este exemplo de e-mail como referência:
 
-![account_owner_change_email.png](https://files.readme.io/eb10736386a7a8cfc274979a3aa933e23288c74d1b26c0f06d72005ceebafe06-31780969048081.png)
+<Image align="center" alt="account_owner_change_email.png" src="https://files.readme.io/eb10736386a7a8cfc274979a3aa933e23288c74d1b26c0f06d72005ceebafe06-31780969048081.png" />
 
 <div id="3next-steps" />
 

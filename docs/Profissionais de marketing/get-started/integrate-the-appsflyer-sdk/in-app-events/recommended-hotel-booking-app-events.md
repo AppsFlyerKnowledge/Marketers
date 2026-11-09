@@ -47,7 +47,7 @@ Você pode atribuir preferências como pontuação do hotel, temporada, país e 
 >
 > Para mais informações sobre como gravar eventos in-app, consulte o <Anchor target="_blank" href="/marketers/pt/docs/in-app-events-overview">guia Eventos avançados dentro do aplicativo</Anchor>.
 
-[![Fluxograma da jornada do utilizador da aplicação de reserva de hotel para eventos recomendados](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
+<Image align="center" alt="Fluxograma da jornada do utilizador da aplicação de reserva de hotel para eventos recomendados" src="https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

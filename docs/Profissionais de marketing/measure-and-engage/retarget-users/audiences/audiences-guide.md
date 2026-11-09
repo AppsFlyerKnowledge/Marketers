@@ -27,7 +27,7 @@ x-zendesk:
 
 > **Resumo:** Aumente a eficiência de suas campanhas de aquisição e remarketing usando o Audiences da AppsFlyer para criar e conectar segmentos de audiência com suas redes parceiras.
 
-![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
+<Image align="center" alt="Intro_image.png" src="https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png" />
 
 <div id="audiences-basics" />
 
@@ -126,7 +126,7 @@ Escolha entre mais de 30 audiências dentro das categorias **Adquirir, Ativar, E
 >
 > Esse exemplo ilustra um caso de uso típico. Vamos supor que você quer incentivar os usuários do seu app, que nunca fizeram uma compra, a comprar um produto pela primeira vez. Você pode selecionar a audiência "Incentivar compras" e personalizá-la para especificar qual evento define uma compra in-app. Então você pode conectar a audiência aos seus parceiros e executar uma campanha promocional que incentiva os usuários a fazer uma compra, direcionando-os para a página de compra.
 >
-> ![Encourage_purchase_image_this_one.jpeg](https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg)
+> <Image align="center" alt="Encourage_purchase_image_this_one.jpeg" src="https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg" />
 
 **Para criar uma audiência sugerida:**
 
@@ -202,7 +202,7 @@ A avaliação das regras de audiências é realizada utilizando um identificador
     * Se um ID de dispositivo for associado a dois CUIDs diferentes, o CUID mais recente é usado.
     * Ao criar uma audiência que possui um CUID como identificador, a associação de CUID deve ter sido recebida pela AppsFlyer na instalação (e não apenas em eventos pós-instalação), garantindo a associação completa com os dispositivos relevantes e um enriquecimento eficaz com os identificadores de dispositivos (como GAID, IDFA, etc.). <Anchor target="_blank" href="/marketers/pt/docs/customer-user-id-field-cuid#configuração-do-cuid">Saiba mais</Anchor>
 
-<Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+<Image align="center" alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
 
 <div id="example-device-id-vs-cuid" />
 
@@ -374,7 +374,7 @@ Saiba como utilizar os conjuntos de regras para definir sua audiência.
 
 <Accordion title="Conjuntos de regras de segmentação de audiências">
 
-![audience_segmentation_rulesets.jpg](https://files.readme.io/4407da232d372a98afcd30df3a832f6ef38bb55a6b02640587f44c7501b014f2-46335625066897.jpg)
+<Image align="center" alt="audience_segmentation_rulesets.jpg" src="https://files.readme.io/4407da232d372a98afcd30df3a832f6ef38bb55a6b02640587f44c7501b014f2-46335625066897.jpg" />
 
 * Um conjunto de regras do segmento de audiência consiste em uma ou várias regras para permitir uma filtragem de precisão.
 * Combine conjuntos de regras usando os operadores: and, or, exclude.
@@ -397,7 +397,7 @@ Os exemplos que se seguem ilustram a implementação do conjunto de regras em v�
 >
 > Usuários de Nova York que desinstalaram o aplicativo no último mês
 >
-> ![example_location_based_rule.jpg](https://files.readme.io/7ee7e2b9e8f06dc47c93148767fd67d87855a05cd09ba06f2dd2c0ea9dc29607-46335625068817.jpg)
+> <Image align="center" alt="example_location_based_rule.jpg" src="https://files.readme.io/7ee7e2b9e8f06dc47c93148767fd67d87855a05cd09ba06f2dd2c0ea9dc29607-46335625068817.jpg" />
 
 <div id="example-user-attributes-based-rule" />
 
@@ -405,7 +405,7 @@ Os exemplos que se seguem ilustram a implementação do conjunto de regras em v�
 >
 > Usuários que inicializaram o aplicativo nos últimos 7 dias pelo menos uma vez e cuja arma favorita é uma espada.
 >
-> ![example_user_attributes_based_rule.jpg](https://files.readme.io/8ab97cdccd2a1b33b671b1f686ca642306197ccf5151ca2ba9836db8ca496d03-46335625073809.jpg)
+> <Image align="center" alt="example_user_attributes_based_rule.jpg" src="https://files.readme.io/8ab97cdccd2a1b33b671b1f686ca642306197ccf5151ca2ba9836db8ca496d03-46335625073809.jpg" />
 
 <div id="example-revenue" />
 
@@ -413,7 +413,7 @@ Os exemplos que se seguem ilustram a implementação do conjunto de regras em v�
 >
 > Usuários que instalaram o aplicativo durante os últimos sete dias e gastaram US$1
 >
-> ![example_revenue.jpg](https://files.readme.io/d7768bec78ff5981639da4e1c8e1a3121961464c0a5932bf8f542f27979358a8-46335625074833.jpg)
+> <Image align="center" alt="example_revenue.jpg" src="https://files.readme.io/d7768bec78ff5981639da4e1c8e1a3121961464c0a5932bf8f542f27979358a8-46335625074833.jpg" />
 
 <div id="example-owned-media-filter" />
 
@@ -423,7 +423,7 @@ Os exemplos que se seguem ilustram a implementação do conjunto de regras em v�
 >
 > Aqui está um exemplo com usuários que inciaram o aplicativo pelo menos uma vez nos últimos 7 dias e cuja instalação foi atribuída a uma campanha de e-mail específica, assim como conjuntos de anúncios e anúncios específicos.
 >
-> ![Owned_media_example.jpg](https://files.readme.io/4b9c076f5299f4f59524a7f816964f4db2c8edd73690aa899e34fcac0d145628-46335667611409.jpg)
+> <Image align="center" alt="Owned_media_example.jpg" src="https://files.readme.io/4b9c076f5299f4f59524a7f816964f4db2c8edd73690aa899e34fcac0d145628-46335667611409.jpg" />
 >
 > A audiência pode ser usada para re-engajar esses usuários com mensagens personalizadas em mídia própria ou paga, ou como uma lista de exclusão para evitar que eles vejam anúncios irrelevantes ou desnecessários ao realizarem campanhas.
 
@@ -435,7 +435,7 @@ Os exemplos que se seguem ilustram a implementação do conjunto de regras em v�
 >
 > Crie uma audiência de usuários potenciais que clicaram em um anúncio, mas não instalaram nos últimos dois dias.
 >
-> ![example_remarketing.jpg](https://files.readme.io/715c42d56c0deffdb4d28acd213f4a5da62de75bbcd6834a927b9226d2fea43e-46335667613329.jpg)
+> <Image align="center" alt="example_remarketing.jpg" src="https://files.readme.io/715c42d56c0deffdb4d28acd213f4a5da62de75bbcd6834a927b9226d2fea43e-46335667613329.jpg" />
 >
 > Esses são aqueles usuários que, recentemente, estavam suficientemente interessados em seu aplicativo mobile para clicar no seu anúncio, mas por algum motivo não instalaram o aplicativo, ou o instalaram, mas não o inicializaram. Alguns usuários só precisam de um lembrete (push) para instalá-lo. Outros podem precisar ver mais exemplos ou recursos do seu aplicativo para finalmente converter. Portanto, se você tiver um criativo primário usado em novas audiências, talvez seja melhor usar um criativo diferente para audiências que clicaram, mas não instalaram.
 
@@ -506,7 +506,7 @@ A aba **Conexões** exibe todas as conexões de parceiros e o status de cada uma
 6. Selecione os identificadores de usuário que você autoriza compartilhar com esse parceiro.
    * Os identificadores compatíveis variam de acordo com o parceiro. Somente os identificadores compatíveis com o parceiro selecionado aparecerão na lista.
    * O download será feito apenas de dados que estejam em conformidade com a sua <Anchor target="_blank" href="/marketers/pt/docs/audiences-user-identifier-policy">política de identificador a nível da conta</Anchor>. Você verá uma mensagem de alerta se selecionar um identificador que não é permitido pela política da sua conta.  
-     ![doctored_connection_image.jpg](https://files.readme.io/5de138c4a2c2a3f26bebc6bd14d9703408a986dc4f8c53235d4be337784603af-46335625091345.jpg)
+     <Image align="center" alt="doctored_connection_image.jpg" src="https://files.readme.io/5de138c4a2c2a3f26bebc6bd14d9703408a986dc4f8c53235d4be337784603af-46335625091345.jpg" />
 7. Clique em **Salvar.** Etapa 1:
 
 </Accordion>
@@ -540,7 +540,7 @@ Esta seção descreve as características e métricas de campanha que aparecem n
 
 <Accordion title="Dashboard do Audiences">
 
-[![new_dashboard_image_doctored.jpg](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)
+<Image align="center" alt="new_dashboard_image_doctored.jpg" src="https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg" />
 
 | Coluna | Descrição |
 | --- | --- |
@@ -589,7 +589,7 @@ A seção **Métricas da campanha** no dashboard do Audiences exibe dados de cam
 
 A visualização inicial das **Métricas da campanha** exibe dados resumidos da campanha para cada audiência:
 
-[<Image alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30626498333457)
+[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30626498333457)
 
 | Coluna | Descrição |
 | --- | --- |
@@ -605,7 +605,7 @@ Na visualização resumida, clique no ícone <Image alt="show_detailed_view_icon
 
 A visualização detalhada exibe dados detalhados por parceiros e campanhas compatíveis:
 
-[![campaign_metrics_detailed_view.jpg](https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg)](https://support.appsflyer.com/hc/article_attachments/30626490281617)
+[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg" />](https://support.appsflyer.com/hc/article_attachments/30626490281617)
 
 Se a audiência selecionada foi usada para direcionar mais de um aplicativo, use a lista suspensa ![pin_A.png](https://files.readme.io/dcf60cd17a1135e63f6443728c3d713d9cacd6af0e1c010c226d1a092770c40b-46335667636113.png) para filtrar os dados por aplicativo.
 

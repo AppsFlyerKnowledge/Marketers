@@ -54,7 +54,7 @@ Usuários de dispositivos Android na China baixam aplicativos de diferentes loja
 
 Por exemplo, se você quiser promover seu aplicativo Android por meio de Tencent Social Ads, Tencent Tui Ads e Wechat Ads, envie o aplicativo Android para o MyApp (loja de aplicativos Android da Tencent), o que também gera instalações orgânicas. As ad networks da série Baidu, 360 Ads, Xiaomi Ads e OPPO Ads operam de forma semelhante.
 
-[![](https://files.readme.io/46e1ad701d488a9c279afedca31ad42522056a328557365f06d7e29eefe60ae2-115015245283.png)](https://files.readme.io/46e1ad701d488a9c279afedca31ad42522056a328557365f06d7e29eefe60ae2-115015245283.png)
+<Image align="center" alt="" src="https://files.readme.io/46e1ad701d488a9c279afedca31ad42522056a328557365f06d7e29eefe60ae2-115015245283.png" />
 
 Enquanto isso, muitas instalações de aplicativos Android são geradas por links de download de APK em páginas da web mobile ou em espaços de anúncios in-app.
 

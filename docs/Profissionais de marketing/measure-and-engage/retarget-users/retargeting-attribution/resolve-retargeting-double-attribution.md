@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Visão geral:** para avaliar a performance durante a janela de reengajamento de uma campanha de retargeting, os eventos e sessões in-app são atribuídos de forma duplicada aos canais de mídia responsáveis pela aquisição de usuários (UA) e retargeting.
 
-![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
+<Image align="center" alt="" src="https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png" />
 
 <div id="overview" />
 
@@ -64,7 +64,7 @@ A tabela abaixo mostra um cenário que explica como os eventos in-app são atrib
 
 Alguns dashboards e relatórios de cohort possuem diversas opções de visualização, como a visão unificada, de aquisição de usuários e retargeting. Essas opções seguem uma lógica semelhante à dos dados brutos.
 
-![](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 <div id="data-filtering-by-view-type-using-the-conversion_type-field" />
 

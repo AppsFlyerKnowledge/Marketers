@@ -48,7 +48,7 @@ Os dados de custo por clique são agregados e estão disponíveis para visualiza
 
 *No **dashboard de Visão Geral,** o Relatório de Performance Agregada inclui:* custo, cliques, impressões, ROI e dados de eCPI médio.
 
-[![RelatórioDeCusto.jpg](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)
+<Image align="center" alt="RelatórioDeCusto.jpg" src="https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg" />
 
 Os relatórios de performance e de dados brutos também estão disponíveis para <Anchor target="_blank" href="/marketers/pt/docs/raw-data-reporting-overview">download</Anchor>.
 

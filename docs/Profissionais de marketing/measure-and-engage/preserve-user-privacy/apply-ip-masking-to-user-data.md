@@ -94,6 +94,6 @@ Quando o mascaramento de IP está ativado:
 
 **Exemplo de relatório de dados brutos**
 
-![ip_masking.png](https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png)
+<Image align="center" alt="ip_masking.png" src="https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png" />
 
 <div data-zendesk-anchors="ip-masking=mascaramento-de-ip h_01HA91HHADCTT7QS2K79TJEY2C=mascaramento-de-ip h_01HA92HF3ZYR2NBTXQ1S2AHCAA=nota h_01HA91HHAD7BCXRZW6AD9NRDBN=exemplo enabling-ip-masking=ativar-mascaramento-de-ip h_01HA91HHAEM220CE8805GFQYKR=ativar-mascaramento-de-ip ip-masking-in-raw-data-reports=mascaramento-de-ip-em-relat%C3%B3rios-de-dados-brutos h_01HA91HHAE14D6ES1ERNK93VY9=mascaramento-de-ip-em-relat%C3%B3rios-de-dados-brutos" />

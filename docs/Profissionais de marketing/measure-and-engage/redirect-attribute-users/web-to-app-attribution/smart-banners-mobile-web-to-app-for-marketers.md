@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **Visão Geral:** converta os visitantes do seu site em usuários mobile com os Smart Banners.
 
-[![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg" />
 
 <div id="note" />
 
@@ -286,7 +286,7 @@ O dashboard de segmentação e comportamento mostra as configurações definidas
 
       Uma janela para escolher um template de banner aparece.
 
-      [![](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)
+      <Image align="center" alt="" src="https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png" />
    2. Passe o mouse sobre **Template de criativo** e clique em **Criar** para acessar a página de configuração de **Montar criativo**.
    3. Personalize todos os elementos do criativo do Smart Banner. Para fazer isso, selecione os elementos por nome ou clique em cada um na imagem de pré-visualização. **Nota:** nem todos os elementos estão disponíveis em todos os templates.
       * Título

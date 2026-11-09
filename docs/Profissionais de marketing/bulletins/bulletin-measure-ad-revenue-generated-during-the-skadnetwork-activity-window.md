@@ -24,7 +24,7 @@ x-zendesk:
   section_id: 6551161473041
   url: https://support.appsflyer.com/hc/pt/articles/4404213118481
 ---
-![iOS15.png](https://files.readme.io/b61770f82edee601aec1fba95c93bbf5b7e4ad3615a82205aa9c7da8cfe547f0-20445082158609.png)
+<Image align="center" alt="iOS15.png" src="https://files.readme.io/b61770f82edee601aec1fba95c93bbf5b7e4ad3615a82205aa9c7da8cfe547f0-20445082158609.png" />
 
 | **O que vai mudar?** | Atribua a receita de anúncios gerada durante a janela de atividade da SKAdNetwork à campanha que trouxe o usuário. Atualmente, essa capacidade é limitada aos anunciantes integrados à receita de anúncios genérica em nível de impressão via SDK. |
 | --- | --- |

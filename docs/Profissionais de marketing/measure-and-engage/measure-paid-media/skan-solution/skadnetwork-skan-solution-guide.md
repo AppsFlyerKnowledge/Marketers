@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Resumo:** como atribuir instalações de aplicativos usando a SkadNetwork.
 
-![5754](https://files.readme.io/a970d7b0e8da300ded2138f941bf2e891f32d396c8500292534992a4b4449d71-30757780264337.png)
+<Image align="center" alt="5754" src="https://files.readme.io/a970d7b0e8da300ded2138f941bf2e891f32d396c8500292534992a4b4449d71-30757780264337.png" />
 
 ## SKAN
 
@@ -87,7 +87,7 @@ A solução da AppsFlyer para SKAN fornece aos anunciantes:
 
 #### **Fluxo de atribuição da SKAN**
 
-![SKAN_flow_-_Affinity_diagram_2.png](https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png)
+<Image align="center" alt="SKAN_flow_-_Affinity_diagram_2.png" src="https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png" />
 
 1. O anunciante define as configurações de mensuração da SKAN no Conversion Studio da AppsFlyer.
 2. O usuário abre o aplicativo pela primeira vez.

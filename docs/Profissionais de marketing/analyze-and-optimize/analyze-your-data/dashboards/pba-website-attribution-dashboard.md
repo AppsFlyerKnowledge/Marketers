@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **Visão geral:** mensure o impacto dos seus esforços de marketing para impulsionar o tráfego ativo do site. Quais fontes, tipos e canais de mídia são responsáveis por visitas, eventos de conversão e métricas em nível de anúncio que estão disponíveis.
 
-[![Website_Atribuição.jpg](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)
+<Image align="center" alt="Website_Atribuição.jpg" src="https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg" />
 
 <div id="pba-website-attribution" />
 

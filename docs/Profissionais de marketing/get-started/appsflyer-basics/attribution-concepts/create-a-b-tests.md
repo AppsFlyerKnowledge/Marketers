@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Visão geral:** Use a AppsFlyer para fazer o teste A/B de canais de mídia, campanhas, criativos, segmentação e posicionamento de anúncios.
 
-![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
+<Image align="center" alt="AB_TESTING.jpg" src="https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg" />
 
 <div id="what-is-ab-testing" />
 
@@ -113,7 +113,7 @@ Abaixo, explicamos dois métodos de teste A/B usando:
 
 ## Teste A/B de posicionamento de anúncios na web mobile
 
-![ad_placement.png](https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png)
+<Image align="center" alt="ad_placement.png" src="https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png" />
 
 A localização dos banners de seus aplicativos em sites móveis pode afetar significativamente as taxas de conversão do usuário. Na maioria dos casos, os anunciantes usam seu próprio web mobile para converter visitantes em usuários mobile.
 
@@ -161,7 +161,7 @@ Ajudar os anunciantes a identificar os canais de mídia com melhor (e pior) dese
 
 > 📄 **Exemplo**
 >
-> [![](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)
+> <Image align="center" alt="" src="https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png" />
 >
 > * 1 e 2 são anúncios diferentes no mesmo canal de mídia de mídia. Compare um único KPI para eles, por exemplo, a taxa de retenção no dia 4, para teste A/B de criativos, segmentação ou posicionamento do anúncio.
 > * 2 e 3 são anúncios em diferentes canais de mídia. Se os criativos e a segmentação dos anúncios forem idênticos, comparar um único KPI fazer o teste A/B do canal de mídia.

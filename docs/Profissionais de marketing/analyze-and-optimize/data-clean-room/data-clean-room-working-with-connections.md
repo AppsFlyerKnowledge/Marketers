@@ -48,7 +48,7 @@ De qualquer forma, o processo é o mesmo, e você pode usar as conexões criadas
 
 1. Na parte superior da página principal do DCR no AppsFlyer, clique no botão **Gerenciar conexões**:
 
-   [![dcr_manage_connections_button.png](https://files.readme.io/773e9568a1e9e642f127806fa3b80932699e0db6cc6a124d5a09898577ade645-13909932760593.png)](https://files.readme.io/773e9568a1e9e642f127806fa3b80932699e0db6cc6a124d5a09898577ade645-13909932760593.png)
+   <Image align="center" alt="dcr_manage_connections_button.png" src="https://files.readme.io/773e9568a1e9e642f127806fa3b80932699e0db6cc6a124d5a09898577ade645-13909932760593.png" />
 
    * Se houver conexões de entrada existentes na sua conta, você verá a caixa de diálogo **Gerenciar conexões**. Nela, clique no botão ![dcr_new_connection_button.png](https://files.readme.io/ea74c7dd6653a544216addddc5fda2a15126a6a26ba2e3ea0a954c58f4fe479e-13916096900753.png) para abrir a caixa de diálogo **Nova conexão**.
    * Se você estiver criando a primeira conexão de entrada da sua conta, a caixa de diálogo **Nova conexão** será aberta automaticamente.
@@ -67,7 +67,7 @@ De qualquer forma, o processo é o mesmo, e você pode usar as conexões criadas
 
 Na caixa de diálogo **Nova conexão**, selecione o serviço de nuvem que você está conectando ao DCR e, em seguida, continue com as instruções na guia relevante abaixo.
 
-<Image alt="dcr_create_inbound_connection.png" src="https://files.readme.io/b30606026761528f4a0d3efcc1a3207e8b9c99ca8202f76b2d698a86efaa21ee-13913809617297.png" width="457px" />
+<Image align="center" alt="dcr_create_inbound_connection.png" src="https://files.readme.io/b30606026761528f4a0d3efcc1a3207e8b9c99ca8202f76b2d698a86efaa21ee-13913809617297.png" width="457px" />
 
 <div id="bigquery-inbound" />
 
@@ -77,7 +77,7 @@ Na caixa de diálogo **Nova conexão**, insira o **ID do projeto** do BigQuery d
 
 * Você pode obter essas informações na página do BigQuery do Console do Google Cloud.
 
-  <Image alt="BQ_project_ID.png" src="https://files.readme.io/de295dfc0224ff90f041b1aeaf2996828ec1920a715ba668b46a2f50489fd15b-13910856739857.png" width="457px" />
+  <Image align="center" alt="BQ_project_ID.png" src="https://files.readme.io/de295dfc0224ff90f041b1aeaf2996828ec1920a715ba668b46a2f50489fd15b-13910856739857.png" width="457px" />
 
 </Accordion>
 
@@ -89,7 +89,7 @@ Na caixa de diálogo **Nova conexão**, insira o **ID da conta do Snowflake** e 
 
 * **ACCOUNTADMIN** > **Conta** > passe o mouse sobre a conta correspondente > **Copiar identificador da conta**. <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">Consulte a documentação do Snowflake aqui</Anchor>.
 
-![ui-snowsight-account-identifier.png](https://files.readme.io/9995c3fd523548de93bafc7c575203e7d38be3b6be2a5e876d7a0a8495ca04c9-24698313004433.png)
+<Image align="center" alt="ui-snowsight-account-identifier.png" src="https://files.readme.io/9995c3fd523548de93bafc7c575203e7d38be3b6be2a5e876d7a0a8495ca04c9-24698313004433.png" />
 
 </Accordion>
 
@@ -149,7 +149,7 @@ De qualquer forma, o processo é praticamente o mesmo, e você pode usar as cone
 
 Na caixa de diálogo **Nova conexão**, selecione o serviço de nuvem ao qual você está se conectando e, em seguida, continue com as instruções na guia relevante abaixo.
 
-[![dcr_dl_new_connection_dialog.png](https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png)](https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png)
+<Image align="center" alt="dcr_dl_new_connection_dialog.png" src="https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png" />
 
 <div id="bigquery-outbound" />
 
@@ -159,7 +159,7 @@ Na caixa de diálogo **Nova conexão**, selecione o serviço de nuvem ao qual vo
 2. Insira o **ID do projeto** e o **nome do conjunto de dados** para o projeto do BigQuery que contém o <Anchor target="_blank" href="/marketers/pt/docs/data-clean-room-setting-up-cloud-services#bigquery-outbound">conjunto de dados que você criou</Anchor> para o Data Locker.  
    * Você pode obter essas informações na página do BigQuery do seu Console do Google Cloud.
 
-     <Image alt="BQ_project_ID_dataset_name.png" src="https://files.readme.io/c784b0369c51a6e123279fdc5b2fa1fba255ae371d436e9247cb5e4685387983-13928683779089.png" width="457px" />
+     <Image align="center" alt="BQ_project_ID_dataset_name.png" src="https://files.readme.io/c784b0369c51a6e123279fdc5b2fa1fba255ae371d436e9247cb5e4685387983-13928683779089.png" width="457px" />
 3. Clique no botão ![dcr_dl_test_connection_button.png](https://files.readme.io/8c789303491a4524515216aca06dc4b3435b5b0baa3aaa8726ff73cce968c5bc-13928683412241.png) para garantir que o Data Locker esteja conectado ao conjunto de dados.
 4. Clique em **Salvar** para criar a conexão.
 
@@ -184,7 +184,7 @@ O procedimento para conectar o Snowflake ao Data Locker é um processo de 2 etap
 2. Insira a região da sua conta do Snowflake e o ID da conta.
    * Você pode obter essas informações clicando no nome da conta no canto inferior esquerdo do console do Snowflake e, em seguida, passando o cursor sobre o nome da conta na janela pop-up. **Importante!** Busque o ID com a etiqueta **Locator.** Este **NÃO** é o mesmo ID que o usado para criar conexões de entrada do Snowflake.  
 
-     <Image alt="snowflake_account_locator.png" src="https://files.readme.io/23495b3209129f48ed1ca3442a1e96fac791d46df6f87050ac036893a050e427-13930022354961.png" width="536px" />
+     <Image align="center" alt="snowflake_account_locator.png" src="https://files.readme.io/23495b3209129f48ed1ca3442a1e96fac791d46df6f87050ac036893a050e427-13930022354961.png" width="536px" />
 3. Clique no botão ![dcr_dl_test_connection_button.png](https://files.readme.io/8c789303491a4524515216aca06dc4b3435b5b0baa3aaa8726ff73cce968c5bc-13928683412241.png) para garantir que o Data Locker esteja conectado à sua conta do Snowflake.
 4. Clique em **Salvar** para criar a conexão.
 

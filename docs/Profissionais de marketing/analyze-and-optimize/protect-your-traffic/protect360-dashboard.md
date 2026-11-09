@@ -53,7 +53,7 @@ Para visualizar o painel do Protect360, na AppsFlyer, acesse **otimizar** > **P
 
 **Janela de filtro e agrupamentos**
 
-[![p360_filters_2.png](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)
+<Image align="center" alt="p360_filters_2.png" src="https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png" />
 
 As seguintes opções de filtros e agrupamento estão disponíveis:
 
@@ -106,7 +106,7 @@ Para cada KPI, há um valor percentual. Esse valor mostra qual é o status do KP
 
 **Atribuições fraudulentas identificadas**
 
-[<Image alt="" src="https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png" width="100%" />](https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png)
+<Image align="center" alt="" src="https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png" width="100%" />
 
 A métrica de total de fraudes identificadas exibe as quantidades de:
 
@@ -115,31 +115,31 @@ A métrica de total de fraudes identificadas exibe as quantidades de:
 
 **Eventos in-app bloqueados**
 
-[<Image alt="" src="https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png" width="100%" />](https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png)
+<Image align="center" alt="" src="https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png" width="100%" />
 
 As métricas de eventos in-app bloqueados exibem a quantidade de eventos in-app bloqueados pela AppsFlyer. Os eventos podem ter sido bloqueados por pertencerem a instalações bloqueadas ou por serem sinalizados como eventos de pós-atribuição suspeitos.
 
 **Total de atribuições marcadas**
 
-[<Image alt="" src="https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png" width="100%" />](https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png)
+<Image align="center" alt="" src="https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png" width="100%" />
 
 As métricas de atribuições marcadas mostram o número total de instalações reconhecidas como fraude, mas que foram marcadas pelo usuário como marcadas e não bloqueadas. isso não inclui eventos in-app.
 
 **Número de eventos fraudulentos (in-app)**
 
-[<Image alt="" src="https://files.readme.io/79650837a722efdc3bea39664f0d5eb774ac6acbfb15e5f64d9a56f7c03b21fe-32637238112145.png" width="100%" />](https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png)
+<Image align="center" alt="" src="https://files.readme.io/79650837a722efdc3bea39664f0d5eb774ac6acbfb15e5f64d9a56f7c03b21fe-32637238112145.png" width="100%" />
 
 As métricas de eventos in-app marcados mostram o número total de instalações reconhecidas como fraude, mas que foram marcadas pelo usuário como marcadas e não bloqueadas.
 
 **Impressões bloqueadas por conta do limite de impressões**
 
-<Image alt="" src="https://files.readme.io/60fdba97e9eb920e26ac2667431b760a7dee62b53396196403d68326bff6c3cc-41459847283729.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/60fdba97e9eb920e26ac2667431b760a7dee62b53396196403d68326bff6c3cc-41459847283729.png" width="624px" />
 
 Instalações em que a lógica de atribuição da AppsFlyer detectou que o dispositivo recebeu um alto volume de engajamentos não autênticos.
 
 **Usa a fórmula: Economias estimadas = número de instalações bloqueadas X eCPI médio de aplicativos**
 
-<Image alt="" src="https://files.readme.io/edb695ad30e16e403d953fd0fad274d5733ca4e2dc411baad7bbe4179cfcd0b0-41459862819857.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/edb695ad30e16e403d953fd0fad274d5733ca4e2dc411baad7bbe4179cfcd0b0-41459862819857.png" width="624px" />
 
  A média de engajamentos por instalação mostra o número médio de engajamentos associados à instalação.
 
@@ -232,7 +232,7 @@ A tabela de **análise de fraudes identificadas** exibe os seguintes dados:
 
 A tabela é apresentada em um formato de visão geral, conforme a imagem abaixo:
 
-[![p360_main_table.png](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)
+<Image align="center" alt="p360_main_table.png" src="https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png" />
 
 A estrutura dinâmica da tabela:
 
@@ -240,7 +240,7 @@ A estrutura dinâmica da tabela:
   Se você fizer alterações na tabela, certifique-se de clicar no botão **Salvar** depois.
 * É por usuário, de modo que cada usuário da conta com acesso ao Protect360 possa personalizar a estrutura da sua própria tabela. Veja [mais opções de tabelas](/docs/protect360-dashboard#opções-adicionais-de-tabela).
 
-[![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+<Image align="center" alt="edit_table.jpg" src="https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg" />
 
 <div id="content-of-the-identified-fraud-breakdown-table" />
 
@@ -338,7 +338,7 @@ Os recursos do painel estão descritos nas seções a seguir.
 
 <Accordion title="Eventos in-app — métricas do título">
 
-[![](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)
+<Image align="center" alt="" src="https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg" />
 
 As métricas do título permitem que você veja:
 
@@ -389,7 +389,7 @@ A tabela de **análise de fraudes de eventos in-app** exibe os seguintes dados:
 
 A tabela é apresentada em um formato de visão geral, conforme a imagem abaixo:
 
-[![IAE_fraud_table.jpg](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)
+<Image align="center" alt="IAE_fraud_table.jpg" src="https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg" />
 
 A estrutura dinâmica da tabela:
 
@@ -397,7 +397,7 @@ A estrutura dinâmica da tabela:
   Se você fizer alterações na tabela, certifique-se de clicar no botão **Salvar** depois.
 * É por usuário, de modo que cada usuário da conta com acesso ao Protect360 possa personalizar a estrutura da sua própria tabela. Veja [mais opções de tabelas](/docs/protect360-dashboard#installs-table).
 
-[![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
+<Image align="center" alt="iae_table_structure.jpg" src="https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg" />
 
 <div id="content-of-the-in-app-event-fraud-breakdown-table" />
 
@@ -448,17 +448,17 @@ Eventos a pagar são IAEs que têm um custo. Uma vez ativado e configurado, o da
 Para ativar eventos a pagar no painel de atividades in-app:
 
 * Na seção Filtrar por **do painel de Atividades in-app, ative Eventos a pagar.**   
-  [![](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)
+  <Image align="center" alt="" src="https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg" />
 
 **Para configurar eventos a pagar**:
 
 1. No painel de Atividades in-app, clique em **Configurar eventos a pagar**.
 
-   [![](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg" />
 
    O pop-up Configurar eventos a pagar é exibido.
 
-   [![](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg" />
 2. [Opcional] Se você configurar um novo evento a pagar, clique em **Adicionar novo**.
 3. Com base nos IAEs a pagar que você deseja exibir no painel, selecione os seguintes itens nos menus suspensos:
    * Aplicativos

@@ -64,7 +64,7 @@ O cenário do usuário é representado na figura a seguir. O usuário:
 * engaja com uma campanha de retargeting executada por um canal de mídia
 * reinstala o aplicativo
 
-[![re-attribution_1_en-us.png](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)
+<Image align="center" alt="re-attribution_1_en-us.png" src="https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png" />
 
 | Cenário | Limite de inatividade | Período de inatividade do usuário | Resultado |
 | --- | --- | --- | --- |
@@ -83,7 +83,7 @@ O cenário do usuário é representado na figura a seguir. O usuário:
 * fica inativo por vários dias
 * posteriormente, engaja-se com uma campanha de retargeting. executado por um canal de mídia e inicia o aplicativo
 
-[![Re-engagement_scenarios_en-us.png](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)
+<Image align="center" alt="Re-engagement_scenarios_en-us.png" src="https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png" />
 
 | Cenário | Canal de mídia Um limite de inatividade | Período de inatividade do usuário | Resultado |
 | --- | --- | --- | --- |
@@ -110,7 +110,7 @@ Os SRNs compatíveis com períodos de inatividade têm esse recurso configurado 
 4. Conifugure **Janela de inatividade.** (1-30 dias.)
 5. Clique em **Salvar integração.**
 
-[![Inactivity_window_SRN.png](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)
+<Image align="center" alt="Inactivity_window_SRN.png" src="https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png" />
 
 </Accordion>
 
@@ -126,7 +126,7 @@ Os SRNs compatíveis com períodos de inatividade têm esse recurso configurado 
 4. Conifugure **Janela de inatividade.** (1-30 dias.)  
    O parâmetro **Período de inatividade** `af_inactivity_window`é adicionado ao link de atribuição, por exemplo, "&af\_inactivity\_window=7d". Se o recurso estiver desativado, ele não estará no link de atribuição.
 
-[![](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)
+<Image align="center" alt="" src="https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png" />
 
 </Accordion>
 

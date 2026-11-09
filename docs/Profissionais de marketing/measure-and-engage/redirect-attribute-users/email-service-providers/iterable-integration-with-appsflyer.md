@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **At a glance:** **Visão geral:** Integre links de atribuição baseados no OneLink com o sistema Iterable para <Anchor target="_blank" href="/marketers/pt/docs/email-service-provider-esp-integration-guide">criar deep link de e-mails</Anchor>. A integração usa o suporte do Iterable para links universais além de domínios de gravação de cliques de marca.
 
-![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
+<Image align="center" alt="iterable-af-logo.png" src="https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png" />
 
 <div id="introduction" />
 

@@ -49,7 +49,7 @@ O Movable Ink é um parceiro de otimização de conteúdo dinâmico que oferece 
      * Clique nos três pontos (“…”) Clique nos três pontos (“…”) na seção **Copy Creative Tag** e escolha **Copy Link URL**.   
        **Observação:** finalize a configuração da sua campanha antes de copiar o URL do link.
      * Copie o URL HREF do link copiado (destacado) e deixe-o de lado. Ele será usado como o valor do deep link no link final.   
-       <Image alt="Imagem do Movableink destacada.png" src="https://files.readme.io/a2ccca4d6053e1448094dd83478610693b13a7f04a77aaaff7d12305533e8fbe-28405439389201.png" width="1130px" />
+       <Image align="center" alt="Imagem do Movableink destacada.png" src="https://files.readme.io/a2ccca4d6053e1448094dd83478610693b13a7f04a77aaaff7d12305533e8fbe-28405439389201.png" width="1130px" />
 4. **Na AppsFlyer:** Acesse o <Anchor target="_blank" href="/marketers/pt/docs/create-a-onelink-template">template do OneLink</Anchor> específico que você usará na campanha e recupere os seguintes pontos de dados para a integração:
    * * **Domínio do OneLink:** o subdomínio para geração do OneLink na AppsFlyer.
      * **ID do template:** ID do template referenciado ou daquele criado para a campanha.

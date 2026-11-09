@@ -68,7 +68,7 @@ A MoEngage se conecta ao AppsFlyer por meio de um ID do Aplicativo, uma chave do
 * **MoEngage Data Center:** Especifique o data center da MoEngage no qual você se cadastrou. Saiba mais sobre <Anchor target="_blank" href="https://help.moengage.com/hc/en-us/articles/360057030512-Data-Centers-in-MoEngage">Data Centers na MoEngage</Anchor>.
 * **APP\_KEY:** Insira a chave de API do aplicativo. Para obtê-la, faça login na sua conta da MoEngage e acesse **Settings** > **Analytics**.
 
-![moengage_general_settings_en-us.png](https://files.readme.io/0180fb4ad22857320200b1f53a01c72c87fc6cc4a3f4aabcd585b2cfb0f7596a-8179576817809.png)
+<Image align="center" alt="moengage_general_settings_en-us.png" src="https://files.readme.io/0180fb4ad22857320200b1f53a01c72c87fc6cc4a3f4aabcd585b2cfb0f7596a-8179576817809.png" />
 
 <div id="default-postbacks" />
 
@@ -79,7 +79,7 @@ A AppsFlyer pode enviar postbacks automáticos para a MoEngage após instalaçõ
 * **Desativado**: Não envie nenhum postback de instalação.
 * **Todos os canais de mídia, incluindo orgânicos**: Envie postbacks para eventos atribuídos a qualquer parceiro e para eventos orgânicos.
 
-![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png)
+<Image align="center" alt="web_mo_engage_default_postbacks_en-us.png" src="https://files.readme.io/9be309d681904a015fc0295b2ee463411f5c8fbaf450145b132e8ab37bda7665-17028057319697.png" />
 
 <div id="note" />
 

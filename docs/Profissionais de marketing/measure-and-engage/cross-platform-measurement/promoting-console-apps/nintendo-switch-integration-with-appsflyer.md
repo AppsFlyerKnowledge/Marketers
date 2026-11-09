@@ -33,7 +33,7 @@ Os aplicativos em execução no Nintendo Switch podem se integrar à AppsFlyer p
 
 A seguir está um exemplo de fluxo que destaca as etapas mais importantes na jornada do usuário, do engajamento do anúncio à atribuição. Inclui a página de destino multiplataforma recomendada pela AppsFlyer. **Observação:** Embora recomendemos usar a página de destino multiplataforma, você também pode usar links de atribuição direta
 
-![User_windows.jpg](https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg)
+<Image align="center" alt="User_windows.jpg" src="https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg" />
 
 1. <span id="marketing-touchpoint"></span>Ponto de contato de marketing: Os clientes interagem com sua marca por meio de pontos de contato de marketing online ou offline. Eles podem incluir email e newsletters, redes sociais, web mobile e muito mais.
 2. Página inicial do jogo: Uma página inicial de um jogo direciona os clientes para a página de download do aplicativo. Esta etapa é importante para coletar UTM e outros parâmetros de URL para atribuir clientes do clique/instalação às fontes de mídia originais ou às suas próprias fontes de mídia.  

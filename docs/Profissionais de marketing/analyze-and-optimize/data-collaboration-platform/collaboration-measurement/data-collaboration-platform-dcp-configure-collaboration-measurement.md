@@ -46,7 +46,7 @@ Para iniciar a configuração de mensuração, siga estas etapas:
    * Se for a primeira mensuração configurada na sua colaboração, clique em **Configurar mensuração.** Você verá a página **Criar mensuração**.
    * Se já existir um conjunto de mensurações em sua colaboração, clique no ícone de mais (+) no painel de seleção. Você verá a página **Criar mensuração**.
 
-[![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
+<Image align="center" alt="start-measurement.png" src="https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png" />
 
 <div id="select-campaign-type-on-site-off-site-or-both" />
 

@@ -62,7 +62,7 @@ A AppsFlyer pode enviar postbacks automáticos para o Baidu App Ads (Baitong) ap
 
 A integração com o Baidu Baitong Ads oferece suporte apenas ao evento de instalação para postbacks padrão.
 
-![baidu-baitong-default-postback.png](https://files.readme.io/c464429db3eae2dac9fbc13df1a56090ef587cd386ed8214eabd21dac653a622-50900467293713.png)
+<Image align="center" alt="baidu-baitong-default-postback.png" src="https://files.readme.io/c464429db3eae2dac9fbc13df1a56090ef587cd386ed8214eabd21dac653a622-50900467293713.png" />
 
 </Accordion>
 

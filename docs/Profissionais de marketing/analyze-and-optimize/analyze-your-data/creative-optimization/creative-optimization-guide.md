@@ -25,7 +25,7 @@ x-zendesk:
 
 > **Resumo:** a otimização de criativos permite reunir todos os dados de recursos de criativos de todas as suas campanhas em uma única plataforma, para que você possa analisar seu desempenho, descobrir quais criativos funcionam melhor e tomar melhores decisões baseadas em dados. Os dados são de LTV, o que significa que as métricas exibidas são para conversões que ocorreram a partir de criativos durante o intervalo de datas selecionado.
 
-[![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
+<Image align="center" alt="Main image -Default view.jpg" src="https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg" />
 
 <div id="about-creative-optimization" />
 
@@ -114,7 +114,7 @@ Meta Advantage + (criativos dinâmicos) e campanhas universais para apps (UAC) d
 > Assim, o criativo do anúncio é atribuído com um total de 50 instalações pela AppsFlyer, mas o volume de instalações por asset é mantido, o que significa que **o asset A** gerou mais instalações do que **o asset B**, em nosso exemplo.
 > As métricas do fundo do funil, como receita e ROAS, também são calculadas com base nessa proporção.
 >
-> ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
+> <Image align="center" alt="Creative_data_example_en-us.png" src="https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png" />
 
 </Accordion>
 
@@ -124,7 +124,7 @@ Meta Advantage + (criativos dinâmicos) e campanhas universais para apps (UAC) d
 
 Essa seção fornece um resumo completo do dashboard principal: como usar filtros, as várias métricas e dimensões disponíveis para obter os dados criativos que você deseja e como salvar e compartilhar a visualização do dashboard.
 
-[![Filter bar and metrics -Default view.jpg](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)
+<Image align="center" alt="Filter bar and metrics -Default view.jpg" src="https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg" />
 
 <div id="filter-bar" />
 
@@ -132,7 +132,7 @@ Essa seção fornece um resumo completo do dashboard principal: como usar filtro
 
 A primeira etapa na configuração do seu dashboard é selecionar as opções de filtros. Todos os filtros se aplicam ao dashboard de visão geral e de descoberta.
 
-[![filter_bar.jpg](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)
+<Image align="center" alt="filter_bar.jpg" src="https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg" />
 
 **Para selecionar filtros do dashboard**:
 
@@ -160,7 +160,7 @@ Os dados criativos nos dashboards são apresentados em 3 tipos de visualização
 * **Aquisição de usuários** - exibe dados de criativos associados apenas a anúncios/conjuntos de anúncios de UA.
 * **Retargeting** - exibe dados de criativos associados apenas a anúncios/conjuntos de anúncios de retargeting. Os dados de custos também estão disponíveis aqui.
 
-[![View_types.jpg](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)
+<Image align="center" alt="View_types.jpg" src="https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg" />
 
 </Accordion>
 
@@ -247,7 +247,7 @@ Crie métricas personalizadas para mensurar a performance dos seus criativos exa
      * *Métricas* incluem impressões, cliques, instalações, CTR, CVR, CPM, IPM, custo, eCPI, reatribuições, reengajamentos, receita, ROAS, retenção, usuários únicos, aparições, métricas de parceiros
      * Combine com vários *Operadores, Números* e/ou *Eventos in-app*
      * Eventos in-app específicos são selecionados no menu suspenso. Para cada evento in-app, você pode adicionar qualquer métrica por evento separadamente para obter insights altamente específicos, por exemplo, receita de af\_purchase + contagem de af\_login.  
-       <Image alt="" src="https://files.readme.io/2b8bdaa8c1fb47c7e78b59e7e24f37aa3248800c7a3ed5cc821c2e11622a93fe-30129836915729.png" width="892px" />
+       <Image align="center" alt="" src="https://files.readme.io/2b8bdaa8c1fb47c7e78b59e7e24f37aa3248800c7a3ed5cc821c2e11622a93fe-30129836915729.png" width="892px" />
 3. Clique em **Salvar**.  
    Sua nova métrica personalizada será criada e exibida na barra de filtros e nas configurações da tabela com "Personalizada" ao lado.
 
@@ -261,7 +261,7 @@ Métricas personalizadas também podem ser editadas ou excluídas.
 **Para editar:**
 
 1. Clique no menu suspenso **Editar métrica personalizada existente** (no formulário **Métricas personalizadas** ) e selecione a que deseja editar.  
-   <Image alt="" src="https://files.readme.io/b792e08152482bed11ea8ce5ea5795c3df961c257d07397b5b4d787f40a8ea2e-30129836916369.png" width="892px" />
+   <Image align="center" alt="" src="https://files.readme.io/b792e08152482bed11ea8ce5ea5795c3df961c257d07397b5b4d787f40a8ea2e-30129836916369.png" width="892px" />
 2. Faça as alterações desejadas e clique em **Salvar**.  
    Faça as alterações desejadas e clique em **Salvar**  
    **Atenção:** você também pode clicar em Salvar como /strong>para salvá-la como uma nova métrica personalizada.
@@ -269,7 +269,7 @@ Métricas personalizadas também podem ser editadas ou excluídas.
 **Para deletar:**
 
 * **Para excluir:** depois de selecionar a métrica personalizada que deseja excluir no menu suspenso, clique no ícone excluir.  
-  <Image alt="" src="https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png" width="546px" />
+  <Image align="center" alt="" src="https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png" width="546px" />
 
 </Accordion>
 
@@ -293,7 +293,7 @@ Baixar arquivo: <Anchor target="_blank" href="https://docs.google.com/spreadshee
 
 Basta adicionar uma nova integração de parceiro e as métricas dos parceiros compatíveis serão automaticamente inseridas na otimização de criativos (o Unity Ads é uma exceção e segue **instruções específicas**). Depois de configuradas, essas métricas são exibidas com a palavra "Parceiro" ao lado.
 
-![partner metrics image.jpg](https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg)
+<Image align="center" alt="partner metrics image.jpg" src="https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg" />
 
 **Instruções e considerações:**
 
@@ -338,28 +338,28 @@ Basta adicionar uma nova integração de parceiro e as métricas dos parceiros c
 **Para obter métricas de parceiros do Unity Ads:**
 
 1. No dashboard de otimização de criativos, clique no ícone  ⋮  no canto superior direito para acessar as **Integrações**.  
-   ![icon for creative integrations.jpg](https://files.readme.io/5af3cc395743cf305a9d19dca41dc53c7cbf82e18434d2eb335c9e58a4245456-21366803702033.jpg)
+   <Image align="center" alt="icon for creative integrations.jpg" src="https://files.readme.io/5af3cc395743cf305a9d19dca41dc53c7cbf82e18434d2eb335c9e58a4245456-21366803702033.jpg" />
 2. Clique em **+ Nova integração**.
 3. Selecione **Unity Ads** na lista suspensa **Parceiro**.  
-   ![New integration - Unity Ads.jpg](https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg)
+   <Image align="center" alt="New integration - Unity Ads.jpg" src="https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg" />
 4. Insira o Unity **Key ID**, **Secret Key** e **Organization Core ID** para a integração (veja as instruções de <Anchor target="_blank" href="/marketers/pt/docs/creative-optimization-partner-integrations#unity-ads">integração de parceiros</Anchor> acima para saber como obtê-los).
 5. Em **Métricas do parceiro** , insira a **chave de API** do Unity e o **Organization ID**. Você pode obter essas credenciais seguindo as instruções abaixo. **Atenção:** se você tiver uma integração de custo ROI360 com Unity Ads, também poderá obter as credenciais de lá.
    * **Para obter a chave da API:**
      1. Faça login na sua plataforma Unity Gaming Services.
      2. Clique em **Products** no menu lateral e, sem seguida, clique em **Grow**.  
-        ![ID da organização do Unity, etapa 1.jpg](https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg)
+        <Image align="center" alt="ID da organização do Unity, etapa 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" />
      3. Clique em **Unity Ads User Acquisition**.  
-        <Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="312px" />
+        <Image align="center" alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="312px" />
      4. Clique em **API management**.  
-        ![Unity-from API mngmt, obtenha a chave API w arrow.jpg](https://files.readme.io/c617593d5935fbe8072d9fac0146fb3257c395c8dcf173130b97cc2a4a043285-20348783332881.jpg)
+        <Image align="center" alt="Unity-from API mngmt, obtenha a chave API w arrow.jpg" src="https://files.readme.io/c617593d5935fbe8072d9fac0146fb3257c395c8dcf173130b97cc2a4a043285-20348783332881.jpg" />
      5. Copie a chave da API
    * **Para obter o Organization ID:**
      1. Na Unity Ads, clique em **Products** no menu lateral e, em seguida, clique em **Grow**.  
-        <Image alt="ID da organização do Unity, etapa 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="583px" />
+        <Image align="center" alt="ID da organização do Unity, etapa 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="583px" />
      2. Clique em **Unity Ads User Acquisition**.
-     3. <Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="336px" />
+     3. <Image align="center" alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="336px" />
      4. Clique em **Configurações**.   
-        ![Obtenha instruções do ID principal da organização 2 arrows.jpg](https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg)
+        <Image align="center" alt="Obtenha instruções do ID principal da organização 2 arrows.jpg" src="https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg" />
      5. Copie o **Organization ID**
 
 <div id="note" />
@@ -387,7 +387,7 @@ Depois de selecionar seus filtros, você pode salvar suas configurações para a
 **Para salvar uma visualização em modo privado (visível apenas para você):**
 
 1. No topo do dashboard que está sendo exibido, clique no ícone de dropdown, certifique-se de que o menu tenha o ícone privado selecionado e, em seguida, clique **+ Salvar como novo dashboard privado.**  
-   ![](https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png)
+   <Image align="center" alt="" src="https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png" />
 2. Digite um nome para o dashboard e clique **Salvar**.
 3. Use os ícones do menu para editar e excluir visualizações, alterar as configurações de compartilhamento de privado para compartilhado ou marcar uma visualização como favorita, definindo-a como a visualização padrão a ser exibida ao fazer login.
 
@@ -411,9 +411,9 @@ Depois de selecionar seus filtros, você pode salvar suas configurações para a
 
 * Clique no ícone no canto superior direito do dashboard para copiar a URL da página e, em seguida, compartilhe-a.  
   Clique no ícone no canto superior direito do dashboard para copiar a URL da página e compartilhe-a.  
-  <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />  
+  <Image align="center" alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
   **Atenção:** URLs de visualização podem ser compartilhadas mesmo para dashboards privados.Clique no ícone no canto superior direito do dashboard para copiar a URL da página e compartilhe-a.  
-  <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />  
+  <Image align="center" alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
   **Atenção:** URLs de visualização podem ser compartilhadas mesmo para dashboards privados. Quando a URL do dashboard privado é aberta, o nome do relatório que é exibido é "Relatório Não Salvo".
 
 </Accordion>
@@ -445,7 +445,7 @@ Os procedimentos para download e upload do arquivo CSV estão descritos abaixo:
 **Para fazer download de um arquivo CSV com criativos atuais:**
 
 1. Clique no<Image alt="3_dots_icon.png" src="https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png" width="16px" />menu no canto superior direito.  
-   ![Main menu highlighted.jpg](https://files.readme.io/be14a3ab1a9aba6dc20816e53ad692b1697d15a185053cf523d2ae8451842350-21367268248465.jpg)
+   <Image align="center" alt="Main menu highlighted.jpg" src="https://files.readme.io/be14a3ab1a9aba6dc20816e53ad692b1697d15a185053cf523d2ae8451842350-21367268248465.jpg" />
 2. Clique em **Download do arquivo de tags personalizadas**
 3. Selecione quais criativos você deseja incluir no arquivo (todos os criativos ou apenas os criativos exibidos atualmente, excluindo os criativos filtrados).
 4. Clique em **Baixar**.
@@ -470,7 +470,7 @@ Os dados estarão disponíveis em cerca de 30 minutos.
 
 Aqui está um exemplo de arquivo CSV de dimensões personalizadas (que você baixa a partir do dashboard). Cada heading de coluna (na linha 1) é o nome de uma dimensão personalizada (por exemplo: “Theme” ou "Variant"). Você pode incluir dimensões adicionais ou alterar as existentes. Você também pode adicionar ou alterar as tags (por exemplo: “3 Moves" ou "DarkPalette").
 
-[![Screen_Shot_2022-08-08_at_16.25.23.png](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)
+<Image align="center" alt="Screen_Shot_2022-08-08_at_16.25.23.png" src="https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png" />
 
 </Accordion>
 
@@ -480,7 +480,7 @@ Aqui está um exemplo de arquivo CSV de dimensões personalizadas (que você bai
 
 * As dimensões personalizadas aparecem com uma tag “Personalizada” nos filtros e na tabela.
 
-<Image alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
+<Image align="center" alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
 
 * Você pode adicionar até 15 dimensões personalizadas.
 * O tamanho do arquivo de upload é limitado a 1 MB.
@@ -509,7 +509,7 @@ Isso é útil para equipes de marketing e de criação cujos criativos são nome
 
 1. Clique no ícone  ⋮  no canto superior direito e selecione **Tags de convenção de nomes**.  
    A janela **Gerenciar tags de convenção de nomes** é exibida.  
-   <Image alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
+   <Image align="center" alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
 2. Em **Criar novo tipo de convenção de nome**, insira os detalhes:
    * **Nome** - Dê ao novo tipo de convenção um nome único.
    * **Separador** - O caractere que separa cada seção. Por exemplo, em um criativo chamado “enUS\_bluegalaxy\_launch.mp4”, cada seção é separada por “\_”. “\_” é o separador.

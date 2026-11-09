@@ -60,7 +60,7 @@ A API OneLink é um recurso premium que permite transformar qualquer canal próp
 2. <Anchor target="_blank" href="/marketers/pt/docs/create-a-onelink-template#como-criar-templates-do-onelink">Crie um template do OneLink</Anchor>.
 3. Todas as solicitações feitas após ultrapassar essa cota não são atendidas, e os links não são criados; a chamada de API recebe o código de erro 429 com a mensagem "Cota mensal excedida".  
 
-   [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg" />
 4. Compartilhe o ID do template e o token da API com o desenvolvedor e peça que ele siga estas <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview">instruções</Anchor>.
 
 <div id="dashboard" />

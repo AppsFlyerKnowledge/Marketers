@@ -43,7 +43,7 @@ Neste artigo, você encontra os guias de integração dos SDKs da AppsFlyer desd
 >
 > ## <span id="ios"></span><span id="android"></span>com o Android
 
-![android_logo.png](https://files.readme.io/ccac58a8cad4bb58890de7781c54ae9ad17184b9f121467a258978a2112aff7d-360001394358.png)
+<Image align="center" alt="android_logo.png" src="https://files.readme.io/ccac58a8cad4bb58890de7781c54ae9ad17184b9f121467a258978a2112aff7d-360001394358.png" />
 
 Veja abaixo os links para os guias de integração de versões mais antigas do SDK para Android:
 
@@ -62,7 +62,7 @@ Veja abaixo os links para os guias de integração de versões mais antigas do S
 
 ## /docs/ctv-pc-and-console-platform-attribution-concepts
 
-![ios_logo.png](https://files.readme.io/72c2f017636f5ed5b14aa63a83b03062dcd919baffdb2f786423bed1291b93af-360001319257.png)
+<Image align="center" alt="ios_logo.png" src="https://files.readme.io/72c2f017636f5ed5b14aa63a83b03062dcd919baffdb2f786423bed1291b93af-360001319257.png" />
 
 Clique <Anchor target="_blank" href="/marketers/pt/docs/sdk-integration-overview">aqui</Anchor> para acessar nosso último guia de integração do SDK para iOS.
 
@@ -79,7 +79,7 @@ Veja abaixo estão os links para os guias de integração de versões mais antig
 
 ## Windows Phone
 
-![windows_phone_logo.jpg](https://files.readme.io/19886494c67468d413342f829e68194a9128e44f70a92efbc840319765575c13-360001324197.jpg)
+<Image align="center" alt="windows_phone_logo.jpg" src="https://files.readme.io/19886494c67468d413342f829e68194a9128e44f70a92efbc840319765575c13-360001324197.jpg" />
 
 * [Guia de integração do SDK para Windows Phone V.2.0](https://support.appsflyer.com/hc/article_attachments/49929333033361)
 

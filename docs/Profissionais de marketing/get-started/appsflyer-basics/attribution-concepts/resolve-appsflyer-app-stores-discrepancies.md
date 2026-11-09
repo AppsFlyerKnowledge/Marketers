@@ -40,7 +40,7 @@ Existem diferenças inerentes nos modelos de atribuição usados por todos os pl
 
 Em alguns casos, por conta das diferenças nos modelos de atribuição, a loja de aplicativos registra mais instalações do que a AppsFlyer. Em acontece o contrário, ou seja, a AppsFlye registra mais instalações que a loja de aplicativos.
 
-<Image alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
+<Image align="center" alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
 
 <div id="note" />
 

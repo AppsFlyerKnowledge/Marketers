@@ -49,7 +49,7 @@ A AppsFlyer dá a maior prioridade à atribuição de pré-carga. Isso significa
 3. O SDK da AppsFlyer consulta a API de referência do Google Play.
 4. Atributos da AppsFlyer com base nos dados recuperados.
 
-![PAI-attribution-flow_en-us.png](https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png)
+<Image align="center" alt="PAI-attribution-flow_en-us.png" src="https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png" />
 
 <div id="data-availability" />
 

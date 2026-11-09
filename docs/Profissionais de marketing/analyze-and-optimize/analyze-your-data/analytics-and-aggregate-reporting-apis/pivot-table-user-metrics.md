@@ -156,7 +156,7 @@ Crie e modifique as tabelas pivot existentes na interface do usuário. Para faz�
 
 <Accordion title="Visualizar um relatório pivot">
 
-[![](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)
+<Image align="center" alt="" src="https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png" />
 
 **Para visualizar um relatório pivot**:
 

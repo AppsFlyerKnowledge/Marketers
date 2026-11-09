@@ -81,16 +81,16 @@ O Live Event Viewer é uma ferramenta de teste que mostra dados em tempo real en
 
 1. Na AppsFlyer, no menu lateral, selecione **configurações** > **Testes de Integração do SDK**.
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. Clique em **Eventos ao vivo.**
 
-   [![](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)
+   <Image align="center" alt="" src="https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png" />
 3. Na lista de **Aplicativos** , selecione o app que você deseja testar.
 4. Na lista de **Dispositivos de teste** , selecione o dispositivo que você quer usar para testar seu aplicativo. Se você não tiver um dispositivo de teste, poderá registrar um clicando no link **Adicionar um dispositivo de teste**.
 5. Clique em **Continuar** para começar a registrar os eventos do seu aplicativo.
 6. Inicie o aplicativo e interaja com ele para gerar sessões e eventos in-app.
 
-   [![](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)
+   <Image align="center" alt="" src="https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png" />
 7. Clique em um item de evento para exibir os detalhes do evento no painel direito.
 8. Se você quiser parar de gravar os eventos, clique em **Parar**. Clique em **Começar** novamente quando você quiser continuar.
 
@@ -102,10 +102,10 @@ O Live Event Viewer é uma ferramenta de teste que mostra dados em tempo real en
 
 1. Na AppsFlyer, no menu lateral, selecione **configurações** > **Testes de Integração do SDK**.
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. Clique em testar **Instalações não orgânicas**.
 
-   [![](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)
+   <Image align="center" alt="" src="https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png" />
 3. Na lista de **Aplicativos** , selecione o app que você deseja testar.
 4. Na lista de **Dispositivos de teste** , selecione o dispositivo que você quer usar para testar seu aplicativo. Se você não tiver um dispositivo de teste, poderá registrar um clicando no link **Adicionar um dispositivo de teste**.
 5. Se o aplicativo testado estiver instalado no seu dispositivo de teste, desinstale-o.
@@ -135,10 +135,10 @@ Para erros de integração, entre em contato com o desenvolvedor.
 
 1. Na AppsFlyer, no menu lateral, selecione **configurações** > **Testes de Integração do SDK**.
 
-   [<Image alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/34664664031505)
+   [<Image align="center" alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/34664664031505)
 2. Clique em **retargeting**.
 
-   [![](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)
+   <Image align="center" alt="" src="https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png" />
 3. Na lista de **Aplicativos** , selecione o app que você deseja testar.
 4. Na lista de **Dispositivos de teste** , selecione o dispositivo que você quer usar para testar seu aplicativo. Se você não tiver um dispositivo de teste, poderá registrar um clicando no link **Adicionar um dispositivo de teste**.
 5. Clique em **Continuar** e siga as etapas do assistente.
@@ -240,7 +240,7 @@ Testar instalações permite que você verifique se o SDK da AppsFlyer está atr
 
    Você verá uma instalação atribuída à campanha de teste no canal de mídia chamado **Test**. Aguarde até 30 minutos para que a instalação apareça no dashboard do aplicativo.
 
-   [![Test_Install_Attribution_Link](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)
+   <Image align="center" alt="Test_Install_Attribution_Link" src="https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png" />
 
 > 👍 **Tip**
 >
@@ -312,7 +312,7 @@ Antes de executar testes de retargeting, a seguinte configuração é necessári
 
    No dashboard do aplicativo, clique em **Configurações do aplicativo** e habilite a opção **Ativar atribuição de retargeting**.
 
-   ![Set_Reattribution_window](https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png)
+   <Image align="center" alt="Set_Reattribution_window" src="https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png" />
 2. Siga um dos procedimentos abaixo:
    * Crie um link de atribuição específico do aplicativo. Certifique-se de incluir o parâmetro de redirecionamento, `is_retargeting=true`e o ID de publicidade. Para visualizar o GAID, IDFA ou IDFV, siga as instruções <Anchor target="_blank" href="/marketers/pt/docs/registering-test-devices">Registrando um dispositivo de teste</Anchor>.    
      Veja a seguir um exemplo de um link de atribuição que inclui um parâmetro específico do Android como o identificador de dispositivo (GAID). Para mais informações sobre como adicionar outros parâmetros de identificador de dispositivo, como IDFA ou IDFV, consulte <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters#parâmetros-específicos-do-ios">Estrutura e parâmetros do link de atribuição</Anchor>.
@@ -352,7 +352,7 @@ Agora você pode prosseguir e testar a reatribuição e o reengajamento.
 
    Você deve ver a instalação atribuída ao canal de mídia e à campanha. Aguarde até 30 minutos para que a instalação de retargeting apareça no dashboard.
 
-   [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+   <Image align="center" alt="Testing_SDK_Reattribution" src="https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png" />
 
 > 👍 **Tip**
 >
@@ -388,7 +388,7 @@ Certifique-se de que seu app esteja configurado para <Anchor target="_blank" hre
 
    No dashboard, você deve ver um reengajamento atribuído ao canal de mídia e à campanha. Espere até 30 minutos para que o reengajamento apareça.
 
-   [![Testing_SDK_Re-engagement](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)
+   <Image align="center" alt="Testing_SDK_Re-engagement" src="https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png" />
 
 **Dica!** Considere fazer o download do relatório de dados brutos de conversões para verificar se o reengajamento foi atribuído ao canal de mídia correto. Esse relatório leva vários minutos para ser baixado.
 
@@ -412,7 +412,7 @@ Recomendamos que você comece testando uma instalação orgânica.
 
 O dashboard do aplicativo exibe uma nova instalação orgânica. Aguarde até 30 minutos para que a instalação apareça.
 
-[![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+<Image align="center" alt="" src="https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png" />
 
 <div id="testing-ctv" />
 

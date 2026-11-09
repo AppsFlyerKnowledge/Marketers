@@ -90,7 +90,7 @@ A integração de receita do Google Ads (AdWords) foi descontinuada no dia 30 de
 
   Certifique-se de que o usuário da agência que fizer login na aba Custo tenha acesso ao ID do cliente do Google Ads, configurado na aba Integração.
 
-  <Image alt="" src="https://files.readme.io/2d17b3dad78e02c76253f30db0c15c18eb837b531becabc07ccad274258c2c61-49938966132753.png" width="457px" />
+  <Image align="center" alt="" src="https://files.readme.io/2d17b3dad78e02c76253f30db0c15c18eb837b531becabc07ccad274258c2c61-49938966132753.png" width="457px" />
 * Usar espaços ou caracteres especiais em pesquisa do iOS ou campanhas de página inicial do Android pode causar problemas de correspondência dos dados de custo com os dados de cliques e levar à falta de relatórios de custo.
 * Quando uma agência desativa uma integração de custos após a coleta dos custos, mas o anunciante ainda tem uma integração de custos ativa, os dados são associados ao anunciante somente a partir do dia em que a agência desativa a integração.
 

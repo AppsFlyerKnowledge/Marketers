@@ -40,7 +40,7 @@ O **Centro de Segurança** oferece uma visão geral do estado de segurança da s
 | <span id="appsflyer-api-and-s2s-tokens"></span><Anchor target="_blank" href="/marketers/pt/docs/managing-appsflyer-tokens">Tokens da AppsFlyer</Anchor> | Utilize tokens da AppsFlyer para autenticar suas chamadas API e S2S. Gerencie os tokens e substitua-os periodicamente para assegurar a máxima segurança. |
 | <span id="audit-log"></span><Anchor target="_blank" href="/marketers/pt/docs/audit-log">Registo de Auditoria</Anchor> | Revise a atividade da conta para identificar acessos não autorizados: logins, ações de gestão de utilizadores e chamadas API. |
 
-[![new-security-center.jpg](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)
+<Image align="center" alt="new-security-center.jpg" src="https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg" />
 
 **Para aceder ao Centro de Segurança:**
 

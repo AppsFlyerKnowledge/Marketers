@@ -31,7 +31,7 @@ x-zendesk:
 
 > **Resumo:** a atribuição fraudulenta drena orçamentos de marketing, poluindo dados de performance de marketing e transformando campanhas bem-sucedidas em fracassos. **O Protect360 oferece aos proprietários de aplicativos proteção contra fraudes em tempo real e detecção pós-atribuição.** Etapa 1:
 
-![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
+<Image align="center" alt="p360intro2.jpg" src="https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg" />
 
 <div id="protect360-overview" />
 

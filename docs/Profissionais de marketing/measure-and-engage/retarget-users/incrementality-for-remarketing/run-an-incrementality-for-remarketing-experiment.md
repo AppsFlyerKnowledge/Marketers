@@ -25,7 +25,7 @@ x-zendesk:
 
 > **Resumo:** Realize uma experiência de Incrementalidade para compreender o verdadeiro impacto das suas campanhas de remarketing.
 
-![KB_toggle_final. jpg](https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg)
+<Image align="center" alt="KB_toggle_final. jpg" src="https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg" />
 
 <div id="about-the-experiment" />
 
@@ -99,14 +99,14 @@ Depois de definir os objetivos, o próximo passo é configurar o público a test
    * Conecte o público a 1 a 3 parceiros de rede de anúncios.
    * Certifique-se que a opção que <Anchor target="_blank" href="/marketers/pt/docs/audiences-guide#audience-split-and-control-groups">divide o público</Anchor> está ativada (é **ativada automaticamente para subscritores de Incrementalidade, em públicos criados após 11 de janeiro de 2023**). Caso contrário, clique no botão para ativá-la.  
       Caso contrário, clique no botão de alternância para ativá-lo.  
-     ![Measure_inc_impact_toggle.jpg](https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg)
+     <Image align="center" alt="Measure_inc_impact_toggle.jpg" src="https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg" />
    * O grupo de controlo é automaticamente definido para 15% (recomendado).
    * O restante público é dividido igualmente entre os parceiros de rede de anúncios selecionados.
      * A percentagem total de divisão deve somar 100% (incluindo o grupo de controlo).
 
 Após guardar o público com a divisão ativada, será automaticamente lançada uma experiência de Incrementalidade (apenas para subscritores de Incrementalidade). Estas experiências podem ser visualizadas no painel Incrementality com o prefixo "[Auto]" antes do título.
 
-![Auto_before_title.jpg](https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg)
+<Image align="center" alt="Auto_before_title.jpg" src="https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg" />
 
 **Notas Importantes:**
 
@@ -119,10 +119,10 @@ Tanto os anúncios do Meta como os do Google Ads possuem uma funcionalidade opci
 
 Nos anúncios Meta, a funcionalidade chama-se “Público-alvo personalizado com vantagem”. Esta aparece ao nível do conjunto de anúncios e vem ativada por predefinição.
 
-<Image alt="imagem__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />  
+<Image align="center" alt="imagem__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />
 No Google Ads, designa-se “Expansão de público-alvo”.
 
-<Image alt="Google_Ads_Incrementality_limitation_cropped.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
+<Image align="center" alt="Google_Ads_Incrementality_limitation_cropped.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
 
 </Accordion>
 
@@ -151,17 +151,17 @@ Uma nova experiência de incrementalidade inicia-se automaticamente quando um no
 
 1. No **painel de Incrementalidade** > experiência específica > clique em **Editar experiência**
 
-<Image alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
+<Image align="center" alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
 
 Ou
 
 Em **Públicos**, localize o público específico > clique em **+ Ligar campanha** na coluna Incrementalidade.
 
-<Image alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
+<Image align="center" alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
 
 Surge uma janela que permite associar campanhas.
 
-<Image alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
+<Image align="center" alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
 
 2. Selecione a campanha relevante para cada rede de anúncios.
 
@@ -189,7 +189,7 @@ Se é assinante do Incrementality e criou o seu público após 11 de janeiro de 
   >
   > Passo 2 do assistente – Configuração da audiência
   >
-  > [<Image alt="" src="https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png" width="603px" />](https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png)
+  > <Image align="center" alt="" src="https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png" width="603px" />
   >
   > No passo 2 do assistente, deve selecionar a **data a partir da qual os membros da audiência serão incluídos no experimento.**
   >
@@ -200,7 +200,7 @@ Se é assinante do Incrementality e criou o seu público após 11 de janeiro de 
   >
   > **Passo 3 do assistente – Definir metas**
   >
-  > ![Step_3_Set_targets.jpg](https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg)
+  > <Image align="center" alt="Step_3_Set_targets.jpg" src="https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg" />
   >
   > É aqui que seleciona a aplicação de destino e os KPIs.
   >
@@ -208,7 +208,7 @@ Se é assinante do Incrementality e criou o seu público após 11 de janeiro de 
   >
   > Passo 4 do assistente – Revisão
   >
-  > [<Image alt="" src="https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png" width="583px" />](https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png)
+  > <Image align="center" alt="" src="https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png" width="583px" />
   >
   > No passo 4 do assistente, pede-se que defina o **período do experimento.**
   >

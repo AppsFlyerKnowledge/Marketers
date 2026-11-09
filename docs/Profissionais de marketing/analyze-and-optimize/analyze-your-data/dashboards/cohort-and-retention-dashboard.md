@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Visão geral**: o dashboard de Cohort agrupa usuários de aplicativo por data de aquisição. Realizar análise de desempenho nos ciclos de vida do usuário. Use o dashboard para obter insights sobre como as diferenças de campanha alteram as métricas da campanha.
 
-[![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
+<Image align="center" alt="cohort main (2).png" src="https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png" />
 
 <div id="cohort-and-retention-dashboard" />
 
@@ -50,7 +50,7 @@ Para usar o Coorte, selecione usuários de um ou mais aplicativos e segmente-os 
 
 1. Acesse **Dashboard**> **Cohort**.  
    O dashboard de Cohort é aberto. O intervalo de datas de conversão e a granularidade são exibidos.  
-   ![mceclip0__1_.png](https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png)
+   <Image align="center" alt="mceclip0__1_.png" src="https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png" />
 2. Selecione a [granularidade do período de cohort](/docs/cohort-and-retention-dashboard#cohort-periods):
    * Horas
    * Dias
@@ -59,7 +59,7 @@ Para usar o Coorte, selecione usuários de um ou mais aplicativos e segmente-os 
 3. Defina o período de atribuição (aquisição do usuário ou engajamento por retargeting). Os dados relativos às datas mais recentes podem resultar em [dados parciais](/docs/cohort-and-retention-dashboard#partial-data) indicados por traços em gráficos e tabelas.
 4. Clique em **Editar Coorte**.  
    A janela de configuração da Coorte é aberta.  
-   <Image alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
+   <Image align="center" alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
 5. Complete o seguinte:
    * [**Tipo de visualização de cohort**](/docs/cohort-and-retention-dashboard#view-types):
      * **Aquisição de usuário.**
@@ -150,7 +150,7 @@ Há 3 tipos de visualização de cohort:
 * **Aquisição de usuário:** dados de desempenho de instalações (reinstalações excluídas, a menos que <Anchor target="_blank" href="/marketers/pt/docs/measure-reinstalls#attributed-to-the-first-install">sejam especialmente habilitadas</Anchor>)
 * **Retargeting:** dados de performance de reatribuições ou reengajamentos
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 </Accordion>
 
@@ -184,7 +184,7 @@ Há 2 tipos de tendência de cohort:
 
 Nesse exemplo, os mesmos dados brutos são usados para gerar os dois tipos de tendência de coorte. A tabela de dados brutos contém eventos de atribuição relacionados a diferentes usuários A, B, C e D. Os usuários engajam com um anúncio, instalam o aplicativo e, após a conversão, fazem uma ou mais compras. O dia de coorte 0 é o dia da instalação.
 
-[<Image alt="CohortExample_en-us.jpg" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />](https://support.appsflyer.com/hc/article_attachments/49929174392337)
+[<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />](https://support.appsflyer.com/hc/article_attachments/49929174392337)
 
 </Accordion>
 
@@ -294,11 +294,11 @@ Use o controle **Cohort em tempo real** para selecionar o modo de exibição de 
 
 **Gráfico: receita acumulada por usuário**
 
-[![Screenshot 2023-10-31 at 16.56.31.png](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)
+<Image align="center" alt="Screenshot 2023-10-31 at 16.56.31.png" src="https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png" />
 
 **Tabela: receita por dia**
 
-[![Full_cohort2_us-en.png](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)
+<Image align="center" alt="Full_cohort2_us-en.png" src="https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png" />
 
 <div id="in-app-event-conversion" />
 
@@ -306,7 +306,7 @@ Use o controle **Cohort em tempo real** para selecionar o modo de exibição de 
 
 Um anunciante define um evento in-app af\_purchase. O gráfico de coorte exibe a porcentagem de usuários de aplicativos na coorte que efetuaram uma compra em mobile. Podemos ver que no dia 10, por exemplo, quase 30% (11,11 %+9.71%+7,47%) dos usuários da coorte realizaram uma compra em mobile
 
-[![cohort use case 3.png](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)
+<Image align="center" alt="cohort use case 3.png" src="https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png" />
 
 </Accordion>
 

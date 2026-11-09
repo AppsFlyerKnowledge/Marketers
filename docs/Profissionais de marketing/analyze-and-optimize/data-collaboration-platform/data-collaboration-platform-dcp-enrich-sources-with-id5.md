@@ -73,7 +73,7 @@ Para usar o enriquecimento do ID5, primeiro crie uma conexão de **Data & Identi
 
 1. Acesse a plataforma de colaboração de dados clicando em **Collaborate** > **Data Clean Room** no menu lateral do AppsFlyer.
 
-   <Image alt="Clique em Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="33.49%" />
+   <Image align="center" alt="Clique em Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="33.49%" />
 2. Vá até **Gerenciar conexões** (no canto superior direito).
 3. Na guia **Data & Identity**, selecione **+ Nova conexão**.
 
@@ -100,7 +100,7 @@ Você pode enriquecer suas fontes usando o fluxo S2S.
 2. Vá para a guia **Fontes** e passe o cursor sobre a fonte relevante.
 3. No menu de ações, selecione **Enriquecer**.
 
-   <Image alt="Enriquecer.png" src="https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png" width="245px" />
+   <Image align="center" alt="Enriquecer.png" src="https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png" width="245px" />
 4. Clique em **Iniciar enriquecimento**.
 5. Depois que o fluxo de enriquecimento for concluído, você terá uma nova fonte conectada à fonte original com a adição de IDs do ID5.  
    **Observação:** Se a fonte original for excluída, a nova fonte também será excluída.
@@ -122,13 +122,13 @@ Os proprietários da colaboração podem permitir que os colaboradores usem uma 
    **<Image alt="Atualizar política de colaboração.png" src="https://files.readme.io/25d707c47bed9f5f60cd1ba521c4b48f41afbb0e36949f0ffa35cecf9a932ddc-42838633495313.png" width="58.95%" />**
 4. Clique em **Editar política de colaboração**.
 
-   <Image alt="Clique em Editar política de colaboração.png" src="https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png" width="80.3%" />
+   <Image align="center" alt="Clique em Editar política de colaboração.png" src="https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png" width="80.3%" />
 5. Clique em **Permissões de acesso**.
 
    **<Image alt="Clique em Permissões de acesso.png" src="https://files.readme.io/b239775d71e1fa1dcc23537e73e35b80bff0184c9ee2aa213f644d90251284f3-42838633499281.png" width="78.62%" />**
 6. Ative a **conexão ID5**.
 
-   <Image alt="ID5 permissions.png" src="https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png" width="79.6%" />
+   <Image align="center" alt="ID5 permissions.png" src="https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png" width="79.6%" />
 7. Clique em **Guardar**.
 
 Depois, os colaboradores podem associar as próprias fontes à colaboração e enriquecê-las usando a conexão ID5 do parceiro.

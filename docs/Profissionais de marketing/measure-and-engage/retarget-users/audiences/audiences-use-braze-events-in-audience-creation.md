@@ -163,7 +163,7 @@ Nesse caso, pode simplesmente selecionar a **opção CUID** como parâmetro do S
 
 Depois que a conexão de entrada do Braze estiver configurada, os eventos de engajamento que você definiu aparecerão como opções nos <Anchor target="_blank" href="/marketers/pt/docs/audiences-guide#ruleset-filters">filtros do conjunto de regras</Anchor> para definir audiências.
 
-![audiences_braze_ruleset.png](https://files.readme.io/766a5ec25de3cf82c1411ce25864a5c8ce6c77ac338c20699e61be1c45ae3d98-33375723752337.png)
+<Image align="center" alt="audiences_braze_ruleset.png" src="https://files.readme.io/766a5ec25de3cf82c1411ce25864a5c8ce6c77ac338c20699e61be1c45ae3d98-33375723752337.png" />
 
 **Nota:** Demora cerca de 24 horas para que os eventos de envolvimento de mensagens do Braze estejam disponíveis na AppsFlyer após lançar a campanha no Braze.
 

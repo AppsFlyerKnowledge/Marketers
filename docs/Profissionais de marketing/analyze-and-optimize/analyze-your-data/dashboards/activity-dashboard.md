@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Resumo:** Veja a atividade da app, o engajamento e as métricas internas durante um determinado período. As métricas do dia atual são atualizadas em tempo real.
 
-![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
+<Image align="center" alt="ActivityDB.png" src="https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png" />
 
 <div id="activity-dashboard" />
 
@@ -195,7 +195,7 @@ A aba de análise detalhada está dividida em seções: métricas principais, te
 
 <Accordion title="Aba de alto nível: últimos doze meses">
 
-![ActivityHiLevel.png](https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png)
+<Image align="center" alt="ActivityHiLevel.png" src="https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png" />
 
 A aba contém um histórico de visão geral de doze meses da performance da atividade do aplicativo e tem os seguintes gráficos: 
 

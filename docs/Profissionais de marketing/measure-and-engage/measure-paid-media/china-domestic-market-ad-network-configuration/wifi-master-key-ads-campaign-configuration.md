@@ -57,13 +57,13 @@ Em sua **primeira visita**, você terá que selecionar as seguintes opções. Cl
 
 O WiFi Master Key Ads se conecta à AppsFlyer por meio de um clientid e uma secretkey exclusivos. Se você ainda não tem o clientid e a secretkey, deve obtê-los com o WiFi Master Key Ads para continuar com a integração.
 
-<Image alt="mceclip2.png" src="https://files.readme.io/8b486a98e25837a0d64e0a27e9b3aa7b66b426e8bad3fbae07b7436b91351db5-50900288875153.png" width="406px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/8b486a98e25837a0d64e0a27e9b3aa7b66b426e8bad3fbae07b7436b91351db5-50900288875153.png" width="406px" />
 
 <div id="default-postbacks" />
 
 ### Postbacks padrão
 
-<Image alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="509px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="509px" />
 
 <div id="in-app-events-settings" />
 
@@ -75,7 +75,7 @@ Nesta seção, você pode mapear seus eventos da AppsFlyer com o WiFi Master Key
 
 O WiFi Master Key Ads se conecta à AppsFlyer por meio de um clientid e uma secretkey exclusivos. Se você ainda não tem o clientid e a secretkey, deve obtê-los com o WiFi Master Key Ads para continuar com a integração.
 
-![mceclip3.png](https://files.readme.io/035ce248d6876cf31870abc49e949fc887f6bef08efd6e132e43b8c74e3aaf45-50900269524881.png)
+<Image align="center" alt="mceclip3.png" src="https://files.readme.io/035ce248d6876cf31870abc49e949fc887f6bef08efd6e132e43b8c74e3aaf45-50900269524881.png" />
 
 1. Defina aqui o clientid e a secretkey do WiFi Master Key Ads
 2. Mude o botão Postbacks do evento in-app para ATIVO
@@ -117,7 +117,7 @@ A adição de parâmetros ao link de atribuição aqui permite que você realize
 * **Parâmetros de assinantes** - use qualquer um dos 5 parâmetros de assinantes para inserir valores úteis. Observe que esses parâmetros são analisados e aparecem no relatório de dados brutos, o que os torna muito úteis para a realização de agregação ou filtragem de dados.  
   **Parâmetros de link de atribuição:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![parametros-de-link-de-atribuicao.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="parametros-de-link-de-atribuicao.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 Adicione qualquer outro parâmetro ao link de atribuição, basta digitá-lo em uma nova caixa de parâmetro. Para mais informações sobre <Anchor target="_blank" href="/marketers/pt/docs/about-link-structure-and-parameters">**a estrutura e os parâmetros do link de atribuição da AppsFlyer**</Anchor>.
 
@@ -131,7 +131,7 @@ Essa barra deslizante permite que você defina o **tempo máximo do clique até 
 
 Mais detalhes sobre a <Anchor target="_blank" href="/marketers/pt/docs/set-up-lookback-windows">janela de lookback de clique aqui</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png" />
 
 <div id="click-attribution-link" />
 
@@ -163,7 +163,7 @@ A receita de anúncios não é compatível com a integração desse parceiro.
 
 Nesta guia, você pode selecionar as permissões a serem concedidas ao WiFi Master Key Ads, caso o parceiro atue como uma ad network, agência ou mesmo ambos. Atenção: mesmo que a atribuição esteja desativada para o WiFi Master Key Ads, a aba de permissões está ativa e você pode conceder controle ao WiFi Master Key Ads.
 
-![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png" />
 
 <div id="ad-network-permissions" />
 

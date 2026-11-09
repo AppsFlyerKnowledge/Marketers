@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Em resumo:** a Nativex, parceira integrada da AppsFlyer, é uma plataforma de marketing mobile que oferece soluções de aquisição de usuários, análises e monetização para desenvolvedores e marcas mobile do mundo todo. Além da atribuição mobile baseada em cliques, a Nativex também oferece atribuição por custo e view-through, que você pode registrar com a AppsFlyer.
 
-![nativex.png](https://files.readme.io/840450215d38dc171452049ce1e9ce8c5f289e489fcb985a8d7ecb745fd11ede-49783409596049.png)
+<Image align="center" alt="nativex.png" src="https://files.readme.io/840450215d38dc171452049ce1e9ce8c5f289e489fcb985a8d7ecb745fd11ede-49783409596049.png" />
 
 <div id="setting-up-nativex" />
 

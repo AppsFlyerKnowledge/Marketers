@@ -46,7 +46,7 @@ A integração da API do PlayStation é compatível com:
 
 A seguir está um exemplo de fluxo que destaca as etapas mais importantes na jornada do usuário, do engajamento do anúncio à atribuição. Ele Inclui a página de destino multiplataforma recomendada pela AppsFlyer. **Observação**: Embora recomendemos usar a página de destino multiplataforma, você também pode usar links de atribuição direta.
 
-<Image alt="Diagrama do fluxo de atribuição, de um touchpoint de marketing por uma landing page cross-platform até a instalação de um aplicativo PlayStation" src="https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg" width="3938px" />
+<Image align="center" alt="Diagrama do fluxo de atribuição, de um touchpoint de marketing por uma landing page cross-platform até a instalação de um aplicativo PlayStation" src="https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg" width="3938px" />
 
 1. <span id="marketing-touchpoint"></span>Touchpoints de marketing: clientes interagem com sua marca por meio de canais online ou offline. Eles podem incluir e-mail e newsletters, redes sociais, web mobile e muito mais.
 2. Página inicial do jogo: Uma página inicial de um jogo direciona os clientes para a página de download do aplicativo. Esta etapa é importante para coletar UTM (Urchin Tracking Module) e outros parâmetros de URL para atribuir clientes do clique/instalação às fontes e campanhas de mídia originais ou às suas mídias próprias.  

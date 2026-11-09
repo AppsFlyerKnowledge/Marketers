@@ -37,7 +37,7 @@ Configure a integração do Google Ads na AppsFlyer para mensurar e atribuir ins
 
 ## Fluxo de atribuição do Google Ads com compartilhamento avançado de dados
 
-![Google ads attribution flow.png](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)
+<Image align="center" alt="Google ads attribution flow.png" src="https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png" />
 
 1. A AppsFlyer envia eventos de instalação para o Google, como de costume. Se a opção **Compartilhamento avançado de dados** estiver ATIVADA, as instalações são enviadas com ou sem um Device ID. Quando estiver DESATIVADA, as instalações são enviadas **apenas quando o Device ID está disponível**.
 2. O Google tenta reivindicar a instalação, seja por meio de um método determinístico (ID matching, usando o Device ID quando disponível) ou uma não determinístico (quando o Device ID não está disponível), ou seja, utilizando modelagem probabilística.
@@ -93,7 +93,7 @@ Para criar um link ID, é necessário **acesso de administrador** à conta do Go
 5. Cole o **link ID** que você copiou no passo anterior.
 6. Decida se você deseja ou não ativar a opção <Anchor target="_blank" href="/marketers/pt/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**Usuários fora da UE**</Anchor>.
 
-   <Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
+   <Image align="center" alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
 7. Ative ou desative o **compartilhamento avançado de dados**. Quando ativado, o Google Ads recebe postbacks e eventos com identificadores a nível de dispositivo para todos os dispositivos, incluindo aqueles que não disponibilizaram o advertising ID (IDFA ou Google advertising ID).
 
    Além disso, quando o **compartilhamento avançado de dados** está ativado, a AppsFlyer atribui esses eventos. Quando desativado, apenas postbacks e eventos de dispositivos com IDFA são enviados e atribuídos.
@@ -105,7 +105,7 @@ Para criar um link ID, é necessário **acesso de administrador** à conta do Go
    4. Selecione as unidades da janela de lookback (horas ou dias) e defina a barra deslizante para o valor desejado. Recomendamos definir a janela de lookback de view-through para 1 dia para alinhar com o Google Ads.  
       **Atenção:** O Google não envia notificações de impressões para aplicações iOS. O toggle de atribuição de view-through de instalação e o slider da janela de lookback não são mais relevantes para aplicativos do iOS.
 
-      ![](https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png)
+      <Image align="center" alt="" src="https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png" />
 9. A opção **atribuição de reinstalação** é ativada por padrão para novas integrações. A atribuição de reinstalação permite que você mensure usuários que reinstalam seu aplicativo na janela de reatribuição.
 
    Não é necessária uma configuração separada da janela de lookback, porque a reinstalação de atribuição utiliza os valores das suas configurações de atribuição de instalação. Para mais informações, leia este artigo sobre a <Anchor target="_blank" href="/marketers/pt/docs/measure-reinstalls">mensuração de reinstalações</Anchor>.
@@ -125,12 +125,12 @@ Para criar um link ID, é necessário **acesso de administrador** à conta do Go
     5. Defina a **janela de lookback de reengajamento para view-through**, que é o período de tempo que se inicia com a impressão do anúncio, durante a qual o aplicativo deve ser iniciado para que a impressão seja registrada como um reengajamento. Selecione uma janela de lookback em horas ou dias e configure a barra deslizante para o valor desejado.
     6. Defina a **janela de reengajamento**. Esse é o período em que os eventos in-app do usuário são atribuídos à fonte de mídia de retargeting após um clique ou uma impressão. Você pode definir o valor em dias (1 a 90), horas (até 23) ou até mesmo vitalício. O padrão é 30 dias.
 
-       ![](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)
+       <Image align="center" alt="" src="https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png" />
 11. Se você tiver um <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2402582?hl=en">asset de aplicativo iOS do Google Ads</Anchor> (anteriormente conhecido como extensão de aplicativo):  
     Para obter atribuições a partir do link do anúncio, vá para a aba <Anchor target="_blank" href="/marketers/pt/docs/set-up-an-integrated-partner#attribution-link-tab">**Link de atribuição**</Anchor> , crie um link de atribuição de plataforma única na AppsFlyer e insira-o no asset do app do Google Ads.  
     **Atenção:** Certifique-se de adicionar um nome de campanha estático (obrigatório).
 
-    ![](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)
+    <Image align="center" alt="" src="https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png" />
 12. Acesse a aba **Custo**.
 13. Ative **Obter dados de custos, cliques e impressões**.
 14. Clique no botão **Conectar Google Ads** e faça login na sua conta Google para obter todos os custos da sua campanha do Google Ads na AppsFlyer. <Anchor target="_blank" href="/marketers/pt/docs/google-ads-adwords-cost-and-ad-revenue">Mais detalhes aqui</Anchor>.
@@ -183,7 +183,7 @@ Parabéns! Agora você está mensurando campanhas mobile do Google Ads com a App
 
 **(Qualquer membro associado à conta da AppsFlyer)**
 
-![Os postbacks seguem o](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
+<Image align="center" alt="Os postbacks seguem o" src="https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png" />
 
 1. Vá até a aba **Integração** e desça até a seção **Postbacks de eventos in-app**.
 

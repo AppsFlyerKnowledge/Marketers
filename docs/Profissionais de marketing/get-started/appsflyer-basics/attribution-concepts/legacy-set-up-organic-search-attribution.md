@@ -45,7 +45,7 @@ Use a atribuição de busca orgânica para atribuir esses usuários existentes q
 
 #### FLUXO
 
-![Organic_SEO_attribution_flow.png](https://files.readme.io/1772808df9d9e521204153d9f0689b3f9f156dd8c0ab8555673b1d321f28aece-15320495862545.png)
+<Image align="center" alt="Organic_SEO_attribution_flow.png" src="https://files.readme.io/1772808df9d9e521204153d9f0689b3f9f156dd8c0ab8555673b1d321f28aece-15320495862545.png" />
 
 1. Um usuário pesquisa um termo (por exemplo, “sapatos masculinos”) no mecanismo de busca do navegador mobile (Google, Bing etc.). O mecanismo de busca exibe vários resultados clicáveis.
 2. Alguns desses resultados de pesquisa são mapeados pelo seu desenvolvedor web para abrir o app mobile usando Android App Links e iOS Universal Links. Se um usuário tiver o aplicativo instalado, quando clicar no resultado da pesquisa, o aplicativo será aberto (sem redirecionar para uma loja de aplicativos primeiro).

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance:** adicione uma camada personalizada de proteção contra campanhas e fraudes direcionadas incorretamente. As regras permitem que os proprietários de aplicativos controlem quais instalações e eventos in-app são bloqueados ou atribuídos à fonte válida mais recente.
 
-![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
+<Image align="center" alt="5906_animation-750x330__1_.gif" src="https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif" />
 
 <div id="overview" />
 
@@ -110,7 +110,7 @@ Os parâmetros que não são relevantes para o tipo de evento selecionado ou nã
 | Evento do usuário final | Nome do evento, Valor do evento, Tempo entre a instalação e o evento, Fonte do evento, Moeda, Receita |
 | Engajamentos | com o anúncios |
 
-![New Validation Rule page.jpg](https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png)
+<Image align="center" alt="New Validation Rule page.jpg" src="https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png" />
 
 O criador de regras contém as seguintes seções:
 

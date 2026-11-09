@@ -61,13 +61,13 @@ Para mais informações sobre a ativação de parceiros, por favor clique <Ancho
 
 Na parte superior da aba Integração, há uma observação informando que o Unity Ads requer o envio do ID do dispositivo para cada instalação. Isso é feito automaticamente, você não precisa fazer nada.
 
-[![Unity_msc_new_2.png](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)
+<Image align="center" alt="Unity_msc_new_2.png" src="https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png" />
 
 **ID do jogo Unity Ads**
 
 Unity Ads requer conexão com a AppsFlyer por meio de um ID de jogo exclusivo. Se você não sabe qual é o seu, pode obtê-lo diretamente no Unity Ads ou encontrá-lo após fazer o upload do jogo, em **Aplicativos** > **Campanhas**, conforme mostrado na captura de tela abaixo.
 
-[![](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)
+<Image align="center" alt="" src="https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png" />
 
 A plataforma do Unity Ads mapeia um aplicativo para um único ID de jogo do Unity Ads, por nível de conta (anunciantes e agências terão diferentes IDs de jogo IDs para o mesmo aplicativo). Várias contas na plataforma do Unity Ads não podem executar o mesmo aplicativo com diferentes IDs de jogo.
 
@@ -75,13 +75,13 @@ A plataforma do Unity Ads mapeia um aplicativo para um único ID de jogo do Unit
 
 Ative esta opção para atribuir instalações de exibição do Unity Ads. O cursor de lookback de view-through está disponível na aba do link de atribuição (conforme descrito abaixo).
 
-![Unity_ads_msc_new_3.png](https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png)
+<Image align="center" alt="Unity_ads_msc_new_3.png" src="https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png" />
 
 <div id="default-postbacks" />
 
 ### Postbacks padrão
 
-![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
+<Image align="center" alt="Screen_Shot_2022-07-28_at_13.07.25.png" src="https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png" />
 
 Envie postbacks automáticos para o Unity Ads após as instalações e reengajamentos do usuário. Use esta seção para definir a fonte dos usuários que permitem o envio desses postbacks:
 
@@ -100,7 +100,7 @@ Envie postbacks automáticos para o Unity Ads após as instalações e reengajam
 
 Mapeie eventos da AppsFlyer com o parceiro via postbacks. Se o envio de postback estiver ativado, isso inclui eventos in-app rejeitados (eventos bloqueados pelo Protect360 ou eventos considerados não compatíveis com as regras de validação de direcionamento).
 
-[![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+<Image align="center" alt="" src="https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png" />
 
 <div id="to-configure-in-app-event-postbacks" />
 

@@ -34,17 +34,17 @@ x-zendesk:
 
 进入您想要推广的产品相应页面, 从左边导航栏点击”Integrated Partners”进入渠道配置页面。
 
-![___1.png](https://files.readme.io/3c2660a155494dce2c9e3e4233f2a98a337495a9954afe5933384e550d17f97d-360001152838.png)
+<Image align="center" alt="___1.png" src="https://files.readme.io/3c2660a155494dce2c9e3e4233f2a98a337495a9954afe5933384e550d17f97d-360001152838.png" />
 
 进入 Integrated Partners 页面后, 在相应搜索框输入 meituchina\_int，进一步点击搜索按钮。
 
-![___2.png](https://files.readme.io/ad218d3343fc2c01d2499934d8a1c8a3f8d51a3c5f01e98b8a14be1a314210e8-360001161377.png)
+<Image align="center" alt="___2.png" src="https://files.readme.io/ad218d3343fc2c01d2499934d8a1c8a3f8d51a3c5f01e98b8a14be1a314210e8-360001161377.png" />
 
 进入Meitu China的配置页面，在“渠道对接-整体配置”版面，点击打开“激活”按钮。
 
 在归因链接版面，可直接取出预配置好的点击归因链接，填写到美图广告后台
 
-![mceclip1.png](https://files.readme.io/c6d051fadb62598f191ce5d9b52a5535f2b0b69b03e56f03b9b746fdba34ad79-360003338638.png)
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/c6d051fadb62598f191ce5d9b52a5535f2b0b69b03e56f03b9b746fdba34ad79-360003338638.png" />
 
 #### 2. 登录美图广告平台账户进行应用广告归因配置
 
@@ -52,15 +52,15 @@ x-zendesk:
 
     下载链接输入APPstore的链接，链接类似[https://apps.apple.com/cn/app/xxxxx/idxxxxxxxxxx](https://apps.apple.com/cn/app/mei-yan-xiang-ji/id592331499) 或者Android 应用下载链接
 
-![meitu_1.png](https://files.readme.io/d4ab96ac25c682f27d2c52315e815499e0dcf495573b2c15bebbf355b3f35e13-360005581238.png)
+<Image align="center" alt="meitu_1.png" src="https://files.readme.io/d4ab96ac25c682f27d2c52315e815499e0dcf495573b2c15bebbf355b3f35e13-360005581238.png" />
 
   b. 在新建广告中进行设置，完成投放目标，投放时段，地域，年龄，性别等定向设定。
 
-![meitu_2.png](https://files.readme.io/644e5359f5ce3ade166b02b923c141f33807865a84f63b344459e09ad8f4f876-360005581258.png)
+<Image align="center" alt="meitu_2.png" src="https://files.readme.io/644e5359f5ce3ade166b02b923c141f33807865a84f63b344459e09ad8f4f876-360005581258.png" />
 
 c. 在APP（iOS/Android）下载地址中，将appsflyer监测链接放在“点击监测”中。
 
-![meitu_3.png](https://files.readme.io/e8fb740a74fc46fb5a0f72fa87843d1401dab40cfa1254842d3995d9271f275d-360005581278.png)
+<Image align="center" alt="meitu_3.png" src="https://files.readme.io/e8fb740a74fc46fb5a0f72fa87843d1401dab40cfa1254842d3995d9271f275d-360005581278.png" />
 
 d. 上传素材，通过审核后进行投放。
 
@@ -76,7 +76,7 @@ d. 上传素材，通过审核后进行投放。
 | 付费 | 2 |
 | 关键事件 | 3 |
 
-![meitu_4.png](https://files.readme.io/73ae920889ed8f725ed1491b724c681caec82d7faf558130cc6283571042609c-360005496957.png)
+<Image align="center" alt="meitu_4.png" src="https://files.readme.io/73ae920889ed8f725ed1491b724c681caec82d7faf558130cc6283571042609c-360005496957.png" />
 
 4. 如何通过美图后台查看转化数据
 

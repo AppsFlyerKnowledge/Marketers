@@ -71,7 +71,7 @@ x-zendesk:
 
 1. Na AppsFlyer, vá para **Links personalizados do OneLink**.  
    A lista de OneLinks é exibida.  
-   [![](https://files.readme.io/53bd68c390389e48eb55802418c601e7523ab7d816d21c1ae672ed55d7ade365-360016243798.jpg)](https://files.readme.io/53bd68c390389e48eb55802418c601e7523ab7d816d21c1ae672ed55d7ade365-360016243798.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/53bd68c390389e48eb55802418c601e7523ab7d816d21c1ae672ed55d7ade365-360016243798.jpg" />
 2. Vá para o link para o qual você deseja o URL longo e na coluna **Ações** , clique em **Obter URL**.  
    O URL longo é exibido.
 

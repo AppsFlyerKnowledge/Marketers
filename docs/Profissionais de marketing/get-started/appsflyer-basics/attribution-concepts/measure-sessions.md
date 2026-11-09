@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **Visão geral**: A métrica das sessões é utilizada pelos anunciantes para medir o engajamento dos usuários do app durante um determinado período.
 
-<Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
+<Image align="center" alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 
 <div id="sessions-counting-principles" />
 

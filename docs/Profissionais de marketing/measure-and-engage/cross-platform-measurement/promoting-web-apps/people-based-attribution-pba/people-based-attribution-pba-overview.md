@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Visão geral:** People-Based Attribution (PBA) oferece uma visão unificada da jornada do cliente por diferentes canais, plataformas e dispositivos.
 
-![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
+<Image align="center" alt="PBANoSilos_us-en.gif" src="https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif" />
 
 <div id="pba-principles" />
 
@@ -50,7 +50,7 @@ x-zendesk:
 
 ### <Anchor target="_blank" href="/marketers/pt/docs/pba-website-attribution-dashboard">Atribuição do site</Anchor>
 
-[![WebsiteAttributionTable](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)
+<Image align="center" alt="WebsiteAttributionTable" src="https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg" />
 
 Analise fontes de tráfego da web e campanhas de marketing que impulsionam visitas e conversões de usuários no seu site. Descubra diferenças entre as performances a nível de anúncio. Compatível com todos os parâmetros de consulta (query) da AppsFlyer no link sem a necessidade de redirecionar os usuários para servidores da AppsFlyer.
 
@@ -58,7 +58,7 @@ Analise fontes de tráfego da web e campanhas de marketing que impulsionam visit
 
 ### <Anchor target="_blank" href="/marketers/pt/docs/pba-web-assisted-installs">Instalações Auxiliadas pela Web</Anchor>
 
-[![AppsFlyer-Web-to-App_us.en.gif](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)
+<Image align="center" alt="AppsFlyer-Web-to-App_us.en.gif" src="https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif" />
 
 Use as Instalações Auxiliadas pela Web para analisar o impacto e os resultados de seus esforços de marketing na web na condução de instalações de aplicativos mobile.
 

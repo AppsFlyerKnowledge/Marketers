@@ -46,7 +46,7 @@ O Aplicativo de teste do tvOS permite simular um clique em um link de atribuiç�
 
    A seguinte janela é exibida:
 
-   ![](https://files.readme.io/7ed3c5e8165e6d27c9d87db8b026c0898536b145def6bfedd0dc5f78c7804669-205289963.png)
+   <Image align="center" alt="" src="https://files.readme.io/7ed3c5e8165e6d27c9d87db8b026c0898536b145def6bfedd0dc5f78c7804669-205289963.png" />
 3. <Anchor target="_blank" href="/marketers/pt/docs/registering-test-devices">Registre</Anchor> seu dispositivo AppleTV como um dispositivo de teste usando o **IDFA** exibido na parte inferior da tela do Aplicativo.
 4. No Aplicativo de Teste, insira seu AppID como ele aparece no dashboard do seu aplicativo.
 
@@ -55,11 +55,11 @@ O Aplicativo de teste do tvOS permite simular um clique em um link de atribuiç�
 
    Se tudo estiver válido, a seguinte mensagem será exibida:
 
-   ![](https://files.readme.io/27b8b5acfe9691d3704ae36b04e28ecaa643e1b68eb5e0a6f8be70f657b2c0d3-205275743.png)
+   <Image align="center" alt="" src="https://files.readme.io/27b8b5acfe9691d3704ae36b04e28ecaa643e1b68eb5e0a6f8be70f657b2c0d3-205275743.png" />
 6. **Instale** o aplicativo integrado no seu dispositivo.
 
    Uma atribuição não orgânica é mostrada no seu dashboard, no canal de mídia **AppsFlyer\_Test**, se a sua integração estiver correta.
 
-   ![](https://files.readme.io/4c6ab66ebd13556bd764d4e93adbb639be208b8955dd1fe1d3dd60ecd5c01a3b-205275823.png)
+   <Image align="center" alt="" src="https://files.readme.io/4c6ab66ebd13556bd764d4e93adbb639be208b8955dd1fe1d3dd60ecd5c01a3b-205275823.png" />
 
 <div data-zendesk-anchors="overview=escrit%C3%B3rios how-does-the-tvos-test-app-work=como-o-aplicativo-de-teste-do-tvos-funciona" />

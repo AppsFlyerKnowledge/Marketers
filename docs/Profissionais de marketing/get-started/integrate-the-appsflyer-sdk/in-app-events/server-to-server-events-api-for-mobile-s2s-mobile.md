@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **At a glance:** **Resumo:** envie eventos de seus servidores para a AppsFlyer para mensurar eventos mobile que ocorrem fora do aplicativo.
 
-![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
+<Image align="center" alt="S2S_us-en.png" src="https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png" />
 
 <div id="server-to-server-events-api-for-mobile" />
 
@@ -134,7 +134,7 @@ Depois de mapear o ID da AppsFlyer com o seu CUID, você pode associar o usuári
 
 <Accordion title="Eventos S2S com stamping de data e hora">
 
-![time stamping logic diagram](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)
+<Image align="center" alt="time stamping logic diagram" src="https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png" />
 
 Quando os eventos S2S chegam em massa à AppsFlyer, eles recebem um timestamp de data/hora com base nos seus valores da propriedade `eventTime` e na hora de chegada. A propriedade `eventTime` indica o momento em que o evento ocorreu no aplicativo.
 

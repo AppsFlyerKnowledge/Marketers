@@ -225,13 +225,13 @@ O primeiro passo é criar um experimento.
 
 1. Acesse “Incrementalidade para UA” clicando em **Otimizar** > **Incrementalidade para UA**, no menu lateral da AppsFlyer.
 
-   <Image alt="Click Inc for UA new.png" src="https://files.readme.io/4170287cc98e038272fd91ee36cbf775a33b8a418920c7fabe54e32cff5789cd-41021731857041.png" width="254px" />
+   <Image align="center" alt="Click Inc for UA new.png" src="https://files.readme.io/4170287cc98e038272fd91ee36cbf775a33b8a418920c7fabe54e32cff5789cd-41021731857041.png" width="254px" />
 2. Clique em **+ Novo experimento**
 3. **Preencha o formulário do experimento:**
    1. **Insira o nome do experimento:** Crie um nome descritivo para o experimento e clique em **Próximo**.
    2. **Defina seu geodesign:** Selecione o aplicativo, o país e a métrica principal que você deseja mensurar. A AppsFlyer usa isso para calcular a distribuição ideal entre as regiões expostas e as regiões de holdout do seu experimento.
 
-      <Image alt="etapa 2 design de geolocalização.png" src="https://files.readme.io/3a901bd4dcccb788b1d0cc8f118cbdb0c682b570b470d13deba4f6ce0f852c3b-41021758781713.png" width="335px" />
+      <Image align="center" alt="etapa 2 design de geolocalização.png" src="https://files.readme.io/3a901bd4dcccb788b1d0cc8f118cbdb0c682b570b470d13deba4f6ce0f852c3b-41021758781713.png" width="335px" />
 
       Assim que você envia o formulário, a AppsFlyer analisa seu geodesign, o que costuma levar apenas alguns minutos. Seu geodesign estará pronto para uso ou indisponível:
 
@@ -272,7 +272,7 @@ O primeiro passo é criar um experimento.
   * Todas as campanhas selecionadas irão compartilhar as mesmas regiões de holdout.
   * Os insights de incrementalidade serão apresentados a nível de célula, e não a nível de campanha individual.
 
-    <Image alt="Inc para UA - Definir detalhes da campanha.png" src="https://files.readme.io/c92c2b785ea80d2c89fd06033b008a3618e04d88a3cc286e923acf88b5924261-45947468030097.png" width="64.57%" />
+    <Image align="center" alt="Inc para UA - Definir detalhes da campanha.png" src="https://files.readme.io/c92c2b785ea80d2c89fd06033b008a3618e04d88a3cc286e923acf88b5924261-45947468030097.png" width="64.57%" />
 * Assim que um geodesign for aprovado, você verá a análise do experimento:
   * **Regiões de holdout:** As regiões que não foram expostas às suas campanhas durante o experimento
   * **Regiões expostas:** As regiões expostas às suas campanhas, usadas como base de mensuração
@@ -309,10 +309,10 @@ O primeiro passo é criar um experimento.
 
 1. Acesse a Incrementalidade para experimentos de UA clicando em **Otimizar** > **Incrementalidade para UA**, no menu lateral da AppsFlyer.
 
-   <Image alt="from Oprimize click Incrementality UA.png" src="https://files.readme.io/922e084c955b3220a5bc3ac82079515f2c07bc4bc1bc3861343132452cc4fc08-41021731858321.png" width="210px" />
+   <Image align="center" alt="from Oprimize click Incrementality UA.png" src="https://files.readme.io/922e084c955b3220a5bc3ac82079515f2c07bc4bc1bc3861343132452cc4fc08-41021731858321.png" width="210px" />
 2. Clique em um experimento específico para acessar o dashboard do experimento.
 
-   ![Experiments table (1).png](https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png)
+   <Image align="center" alt="Experiments table (1).png" src="https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png" />
 
 <div id="a-tour-of-the-dashboard" />
 
@@ -344,7 +344,7 @@ O gráfico de **instalações incrementais cumulativas** está na parte inferior
 * Todas as campanhas selecionadas irão compartilhar as mesmas regiões de holdout.
 * Os insights de incrementalidade serão apresentados a nível de célula, e não a nível de campanha individual.
 
-[<Image alt="Channel level experiments dashboard cropped narrower.png" src="https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png" width="2862px" />](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)
+<Image align="center" alt="Channel level experiments dashboard cropped narrower.png" src="https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png" width="2862px" />
 
 </Accordion>
 
@@ -365,10 +365,10 @@ Conexões se referem à integração entre a Incrementalidade para UA e seus par
 1. Acesse “Incrementalidade para UA” clicando em **Otimizar** > **Incrementalidade para UA**, no menu lateral da AppsFlyer.
 2. Clique na aba **Conexões** e depois em **+ Nova conexão**.
 
-   <Image alt="from Connections tab click +New connection w arrow.png" src="https://files.readme.io/e9df79d34ec3d94e89f51f42b132f8ba475225b46246d044d2a720991b0900e0-41021731865745.png" width="465px" />
+   <Image align="center" alt="from Connections tab click +New connection w arrow.png" src="https://files.readme.io/e9df79d34ec3d94e89f51f42b132f8ba475225b46246d044d2a720991b0900e0-41021731865745.png" width="465px" />
 3. Selecione uma fonte de mídia para conectar.
 
-   <Image alt="Add connection.png" src="https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png" width="409px" />
+   <Image align="center" alt="Add connection.png" src="https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png" width="409px" />
 4. Insira suas credenciais para fazer login e criar a conexão.
 
 </Accordion>
@@ -464,7 +464,7 @@ Você pode visualizar e gerenciar todos os seus experimentos em um só lugar.
 
 Em **Incrementalidade para UA**, clique na aba **Experimentos**.
 
-[![Experiments table.png](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)
+<Image align="center" alt="Experiments table.png" src="https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png" />
 
 Para cada experimento, você pode ver:
 
@@ -489,7 +489,7 @@ Para cada experimento, você pode ver:
 
 Passe o mouse sobre o experimento para acessar o ícone de<Image alt="action menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" /> ações.
 
-<Image alt="Experiments menu.png" src="https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png" width="254px" />
+<Image align="center" alt="Experiments menu.png" src="https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png" width="254px" />
 
 A partir daqui você pode:
 
@@ -507,7 +507,7 @@ A partir daqui você pode:
 
 No experimento, clique no ícone de <Image alt="action menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" /> ações (no canto superior direito) e selecione **Prolongar duração do experimento**.
 
-<Image alt="Extend experiment.png" src="https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png" width="336px" />
+<Image align="center" alt="Extend experiment.png" src="https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png" width="336px" />
 
 Isso prolongará o experimento por mais 14 dias.
 
@@ -521,7 +521,7 @@ Isso prolongará o experimento por mais 14 dias.
 
 No experimento, clique no ícone de ⠇ ações (no canto superior direito) e selecione **Parar experimento**.
 
-<Image alt="Stop experiment.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
+<Image align="center" alt="Stop experiment.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
 
 </Accordion>
 

@@ -62,14 +62,14 @@ Saiba como <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-p
 
 1. Na AppsFlyer, no menu lateral, vá para **Colaborar** > **Data Clean Room.**
 
-   <Image alt="Clique em Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="245px" />
+   <Image align="center" alt="Clique em Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="245px" />
 2. Em **Colaborações**, clique na colaboração relevante.
 
-   <Image alt="Click the relevant collaboration.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
+   <Image align="center" alt="Click the relevant collaboration.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
 3. Em seguida, clique em **Nova audiência** > **Audience builder visual**.  
    **Atenção:** Pelo menos uma fonte deve ser vinculada antes que você possa criar uma audiência.
 
-   <Image alt="New Aud Visual audience builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
+   <Image align="center" alt="New Aud Visual audience builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. Siga as etapas da demonstração do **Audience builder** abaixo:
 
 <div id="step-1-details-and-sources" />
@@ -78,7 +78,7 @@ Saiba como <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-p
 
 A audiência pode ser criada usando dados de um único colaborador ou mesclando uma fonte de cada colaborador para criar uma fonte de dados combinada.
 
-![New aud.png](https://files.readme.io/c110dcda7524ddcb4ce255ac5eb1f33ffec61103219e35f54f1d5687135cf915-35683488156433.png)
+<Image align="center" alt="New aud.png" src="https://files.readme.io/c110dcda7524ddcb4ce255ac5eb1f33ffec61103219e35f54f1d5687135cf915-35683488156433.png" />
 
 1. **Nome da audiência:** nome escolhido para a colaboração nessa audiência.
 2. **Selecionar fontes -** selecione uma fonte na lista suspensa:
@@ -99,7 +99,7 @@ A audiência pode ser criada usando dados de um único colaborador ou mesclando 
 
      **Atenção:** essas três opções só estarão disponíveis se as permissões da fonte incluírem o seguinte fluxo "**Criar audiências**" > "**Pode usar todos os dados** - **Conjunto de dados universal**", que deve ser ativado. <Anchor target="_blank" href="/marketers/pt/docs/data-collaboration-platform-dcp-create-and-manage-sources#permissões-de-compartilhamento">Saiba mais sobre permissões de fonte</Anchor>  
 
-     <Image alt="can use all data permision enabled w arrow.png" src="https://files.readme.io/6f386c2383c75bf42da6cfdc4d662be0fdf7d623588480825e4a70f453d1f94c-46848627186065.png" width="1556px" />
+     <Image align="center" alt="can use all data permision enabled w arrow.png" src="https://files.readme.io/6f386c2383c75bf42da6cfdc4d662be0fdf7d623588480825e4a70f453d1f94c-46848627186065.png" width="1556px" />
 4. Clique em **Próximo**.
 
 <div id="step-2-define-the-audience" />
@@ -128,7 +128,7 @@ Depois que as fontes de dados forem selecionadas, você deve escolher quais atri
 4. Clique em **Próximo**.
 5. Siga para o próximo passo [Enviar audiência](#enviar-audiência-para-ativação) para ativar a audiência.
 
-<Image alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
+<Image align="center" alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
 
 <div id="summary-right-side-preview-pane" />
 
@@ -181,7 +181,7 @@ O tamanho estimado da audiência reflete o intervalo esperado de usuários únic
 * Considera a sobreposição entre fontes (se aplicável)
 * É ajustado dinamicamente conforme os filtros, as fontes ou as regras mudam
 
-![image (20).png](https://files.readme.io/0ba94f26978e2d3f984bd0c8c2fa8e60159420f5765cff358cdd80d6f05e271c-43432443225489.png)
+<Image align="center" alt="image (20).png" src="https://files.readme.io/0ba94f26978e2d3f984bd0c8c2fa8e60159420f5765cff358cdd80d6f05e271c-43432443225489.png" />
 
 <div id="note-3" />
 
@@ -220,13 +220,13 @@ Siga as etapas abaixo para criar uma audiência usando o Audience builder com SQ
 
 1. Na AppsFlyer, no menu lateral, vá para **Colaborar** > **Data Clean Room.**
 
-   <Image alt="Clique em Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="40.57%" />
+   <Image align="center" alt="Clique em Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="40.57%" />
 2. Em **Colaborações**, clique na colaboração relevante.
 
-   <Image alt="Click the relevant collaboration.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
+   <Image align="center" alt="Click the relevant collaboration.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
 3. Na colaboração, clique em **Nova audiência** > **Audience builder com SQL**.
 
-   <Image alt="New Aud SQL audience builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
+   <Image align="center" alt="New Aud SQL audience builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
 4. Prossiga com as etapas do passo a passo do **Audience builder**:
 
 <div id="set-details" />
@@ -321,7 +321,7 @@ Envie a audiência para ativação diretamente nas plataformas de parceiros de m
 
 1. No audience builder, ative **Conectar audiências aos parceiros de mídia**.  
 
-   ![Connect audience to media partners.png](https://files.readme.io/d1e6558183eed8f239f1d61efd81cd71db7a2c7f6acfdef7e1c029dea51af172-37184169230097.png)
+   <Image align="center" alt="Connect audience to media partners.png" src="https://files.readme.io/d1e6558183eed8f239f1d61efd81cd71db7a2c7f6acfdef7e1c029dea51af172-37184169230097.png" />
 2. Clique em **+ Conexão de parceiro**.
 3. Se nenhuma conexão de parceiro foi estabelecida, crie uma nova:
    1. Clique em **+ Adicionar conexões**.
@@ -332,7 +332,7 @@ Envie a audiência para ativação diretamente nas plataformas de parceiros de m
    6. Clique em **Salvar**.
 4. **[Fazer download do CSV:](#export-audience-to-cloud-services)** faça o download da audiência como um arquivo CSV.
 
-![image (21).png](https://files.readme.io/bb7785936d3e79e18adffe31ca8121b5c0a65392508ef0aea76c7dc75e9ce9eb-43432561109777.png)
+<Image align="center" alt="image (21).png" src="https://files.readme.io/bb7785936d3e79e18adffe31ca8121b5c0a65392508ef0aea76c7dc75e9ce9eb-43432561109777.png" />
 
 </Accordion>
 
@@ -371,7 +371,7 @@ Você pode visualizar os status das audiências associadas a uma colaboração.
 
 1. /docs/data-collaboration-platform-dcp-build-and-activate-audiences#visual-audience-builder
 2. **Não conectada:** a audiência foi recebida de um colaborador para ativação, mas ainda não está conectada.  
-   <Image alt="Audiences section.png" src="https://files.readme.io/8f8170d6848da0158c7db76938bdb4fa64cb3a9702218fe549e6b6e859d64140-small-43777994824977.png" width="2836px" />
+   <Image align="center" alt="Audiences section.png" src="https://files.readme.io/8f8170d6848da0158c7db76938bdb4fa64cb3a9702218fe549e6b6e859d64140-small-43777994824977.png" width="2836px" />
 
 **O que você pode fazer a partir dessa página:**
 
@@ -428,7 +428,7 @@ Você pode excluir uma audiência criada em sua conta. Isso a remove permanentem
 
 Você pode visualizar e gerenciar audiências associadas na seção **Audiences** do dashboard de colaboração relevante.
 
-<Image alt="image (26).png" src="https://files.readme.io/5659a3e30aac91226ecf8d1cf08618b698f063d1412522f2c231459fdfc7fb03-43541066537105.png" width="860px" />
+<Image align="center" alt="image (26).png" src="https://files.readme.io/5659a3e30aac91226ecf8d1cf08618b698f063d1412522f2c231459fdfc7fb03-43541066537105.png" width="860px" />
 
 Uma audiência pode ter diferentes status:
 
@@ -445,7 +445,7 @@ Para visualizar o histórico de upload:
 
 Clique no menu suspenso ao lado de uma audiência específica e selecione **Visualizar histórico**.
 
-![View history doctored .png](https://files.readme.io/7840f05fd8f6a98445c29e5a59813776378d842dd54fab4e3f66111c34dd89dd-36573637043089.png)
+<Image align="center" alt="View history doctored .png" src="https://files.readme.io/7840f05fd8f6a98445c29e5a59813776378d842dd54fab4e3f66111c34dd89dd-36573637043089.png" />
 
 **Esses são os diferentes status possíveis:**
 

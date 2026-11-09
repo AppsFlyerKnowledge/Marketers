@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **Visão geral**: a partir do iOS 14.5, a Apple exige a implementação e compliance com os termos da <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency">AppTrackingTransparency</Anchor> (ATT). Ou seja, *se o seu aplicativo coleta dados sobre usuários finais e os compartilha com outras empresas para fins de rastreamento em aplicativos e sites,* você deverá usar o prompt de consentimento da ATT e obter o consentimento do usuário no aplicativo do publisher e do anunciante. Se esse não for o caso, não é necessário exibir o prompt.
 
-![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
+<Image align="center" alt="iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg" src="https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg" />
 
 <div id="attribution-measurement-in-an-att-environment" />
 
@@ -58,7 +58,7 @@ Nossa <Anchor target="_blank" href="/marketers/pt/docs/skadnetwork-skan-solution
 
 **Fluxo da SKAN**
 
-![SKAN_flow_-_Affinity_diagram_2.png](https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png)
+<Image align="center" alt="SKAN_flow_-_Affinity_diagram_2.png" src="https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png" />
 
 1. O anunciante define as configurações de mensuração da SKAN no Conversion Studio da AppsFlyer.
 2. O usuário abre o aplicativo pela primeira vez.
@@ -202,7 +202,7 @@ Esses fatores podem afetar:
 
 O fluxograma a seguir explica isso em mais detalhes.
 
-![SKAN_4_matrix_-_Page_8__1_.png](https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png)
+<Image align="center" alt="SKAN_4_matrix_-_Page_8__1_.png" src="https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png" />
 
 </Accordion>
 

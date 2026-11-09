@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Em resumo:** Enriqueça os dados do PBA com informações de campanha do gclid de codificação automática ao se conectar ao Google Ads.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png" />
 
 <div id="integrating-google-ads-campaign-data-in-pba" />
 
@@ -42,7 +42,7 @@ Conecte sua conta do Google Ads (1 ou mais) ao seu pacote de marcas. Os dados d
 
 **Dashboard de Atribuição do site com hierarquia de campanha preenchida**
 
-![PBAWebSite.png](https://files.readme.io/46004298b827d3f4eaa4adae9fb2a8676867e6b5dde44a7ff087fe1bda07f054-4403138621713.png)
+<Image align="center" alt="PBAWebSite.png" src="https://files.readme.io/46004298b827d3f4eaa4adae9fb2a8676867e6b5dde44a7ff087fe1bda07f054-4403138621713.png" />
 
 Os dados de hierarquia de campanha e anúncios estão disponíveis nos dashboards e nos dados brutos da seguinte forma:
 

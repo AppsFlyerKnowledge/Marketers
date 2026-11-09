@@ -34,12 +34,12 @@ Para verificar se Impression Device já está ativado para uma conta de anúncio
 
 1. Acesse o <Anchor target="_blank" href="https://adsmanager.facebook.com/">Ads Manager</Anchor> e selecione **Settings**.
 
-[![Barra de ferramentas do Ads Manager mostrando o botão Settings](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)
+<Image align="center" alt="Barra de ferramentas do Ads Manager mostrando o botão Settings" src="https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png" />
 
 2. No painel Create, selecione **Delivery**.
 3. Em Delivery, localize **Additional Breakdowns**.
 4. Em Additional Breakdowns, verifique se o símbolo de mais ao lado de **Impression Device** (`impression_device`) já está selecionado. Se estiver, a adesão estará ativa para esta conta.
 
-[![Painel Additional Breakdowns no Ads Manager com ícones de mais para Time of Day, Impression Device e Frequency Value](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)
+<Image align="center" alt="Painel Additional Breakdowns no Ads Manager com ícones de mais para Time of Day, Impression Device e Frequency Value" src="https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png" />
 
 <div data-zendesk-anchors="check-impression-device-in-ads-manager=como-verificar-impression-device-no-ads-manager h_01KZ63J08GPADE2AH0KV9NNESC=como-verificar-impression-device-no-ads-manager" />
