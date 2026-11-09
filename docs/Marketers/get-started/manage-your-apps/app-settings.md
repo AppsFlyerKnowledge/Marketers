@@ -122,7 +122,7 @@ x-zendesk:
         Localization: Currency
       </td>
       <td>
-        <ul><li>This defines the app-specific currency which is used for the following metrics:<ul><li>Cost</li><li>In-app events revenue</li><li>Ad revenue</li></ul></li><li>The default app setting is USD.<ul><li>Currency change is available to apps with no revenue or cost.</li><li>For new apps, the currency is set when the app is added.</li></ul></li><li>Support for changing this setting for multiple apps at once is coming soon. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.</li></ul>**<span id="reporting-tools-impacted-by-app-currency"></span>Reporting tools impacted by app currency**
+        <ul><li>This defines the app-specific currency which is used for the following metrics:<ul><li>Cost</li><li>In-app events revenue</li><li>Ad revenue</li></ul></li><li>The default app setting is USD.<ul><li>Currency change is available to apps with no revenue or cost.</li><li>For new apps, the currency is set when the app is added.</li></ul></li><li>Support for changing this setting for multiple apps at once is coming soon. Learn more in <Anchor target="_blank" href="/marketers/docs/apply-settings-to-multiple-apps-at-once">Apply settings to multiple apps at once</Anchor>.</li></ul><strong><span id="reporting-tools-impacted-by-app-currency"></span>Reporting tools impacted by app currency</strong>
 
         | Reporting tool | Currency options available |
         | --- | --- |

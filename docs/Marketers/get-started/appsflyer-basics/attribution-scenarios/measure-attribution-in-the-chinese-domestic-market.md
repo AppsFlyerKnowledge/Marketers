@@ -148,7 +148,7 @@ AppsFlyerConversionListener() {
 
 On the first launch of the app, a READ\_PHONE\_STATE permission request is sent to the user in onResume() cal back of the MainActivity.
 
-build.gradle in the app module****
+**build.gradle in the app module**
 
 ```java
 allprojects {
