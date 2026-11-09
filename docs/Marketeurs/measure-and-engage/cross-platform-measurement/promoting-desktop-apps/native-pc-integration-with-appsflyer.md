@@ -37,7 +37,7 @@ Les applications exécutées sur Steam peuvent s’intégrer à AppsFlyer via l�
 
 Voici un exemple de flux qui illustre les étapes les plus importantes du parcours de l'utilisateur, de l'engagement publicitaire à l'attribution. Il utilise la page d'accueil multi-plateforme recommandée par AppsFlyer. **Remarque** : Même si nous vous conseillons d'utiliser la page d'accueil multi-plateforme, vous pouvez aussi utiliser des liens d'attribution directs.
 
-![User_windows.jpg](https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg)
+<Image align="center" alt="User_windows.jpg" src="https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg" />
 
 1. <span id="marketing-touchpoint"></span>Point de contact marketing : Les clients interagissent avec votre marque par le biais de points de contact marketing, en ligne ou hors ligne. Il peut s'agir d’e-mails ou de lettres d'information, de posts sociaux, de sites web mobile, etc.
 2. Page d'accueil de gaming : une page d'accueil de gaming qui dirige les clients vers votre page de téléchargement d'application. Cette étape est importante pour collecter les paramètres UTM et autres paramètres URL afin d'attribuer les clients du clic/de l'installation aux sources média d'origine, ou à vos sources média propriétaire.  

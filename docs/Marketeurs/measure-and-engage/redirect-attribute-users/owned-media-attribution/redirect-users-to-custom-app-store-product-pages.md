@@ -73,7 +73,7 @@ Conditions préalables :
 1. Dans votre lien personnalisé OneLink, allez dans la section **Deep linking et redirections** .
 2. Faites défiler jusqu'aux paramètres **Lorsque l'app n'est pas installée**.  
 
-   [![](https://files.readme.io/21348e79a1cf3eed59d18c8a29d1a48e72ab81ed6209a5112f5bfc9e6ff4d2f4-4413512078993.png)](https://files.readme.io/21348e79a1cf3eed59d18c8a29d1a48e72ab81ed6209a5112f5bfc9e6ff4d2f4-4413512078993.png)
+   <Image align="center" alt="" src="https://files.readme.io/21348e79a1cf3eed59d18c8a29d1a48e72ab81ed6209a5112f5bfc9e6ff4d2f4-4413512078993.png" />
 3. Pour iOS, assurez-vous que l'option **Rediriger vers** est définie sur App Store.
 4. Dans la zone de texte **Page produit personnalisée**, saisissez l'identifiant de votre page produit personnalisée (ppid) tel que défini dans App Store Connect. Par exemple : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 5. Cliquez sur ***Mettre le lien à jour***.

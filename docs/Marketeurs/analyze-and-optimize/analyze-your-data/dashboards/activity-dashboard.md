@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **En bref :** pour accéder à l'activité d’une app, l'engagement et les mesures in-app sur une période donnée. Les données de la journée sont mises à jour en temps réel.
 
-![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
+<Image align="center" alt="ActivityDB.png" src="https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png" />
 
 <div id="activity-dashboard" />
 
@@ -182,7 +182,7 @@ L'onglet *Analyse détaillée* est divisé en plusieurs sections : mesures princ
 
 <Accordion title="Onglet Haut niveau : douze mois précédents">
 
-![ActivityHiLevel.png](https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png)  
+<Image align="center" alt="ActivityHiLevel.png" src="https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png" />
 
 L'onglet contient l’historique sur douze mois des performances de l'activité de l'app, et présente les diagrammes suivants : 
 

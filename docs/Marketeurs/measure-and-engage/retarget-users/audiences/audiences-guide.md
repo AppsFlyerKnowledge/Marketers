@@ -27,7 +27,7 @@ x-zendesk:
 
 > **En bref :** Augmentez l'efficacité de vos campagnes d'acquisition d'utilisateurs et de remarketing en utilisant AppsFlyer Audiences pour construire et connecter des segments d'audience à vos réseaux de partenaires.
 
-![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
+<Image align="center" alt="Intro_image.png" src="https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png" />
 
 <div id="audiences-basics" />
 
@@ -131,7 +131,7 @@ Choisissez parmi plus de 30 audiences dans les catégories **acquisition, activa
 >
 > Cet exemple aborde un cas précis. Supposons que vous souhaitiez inciter les utilisateurs actifs de votre app qui n'ont pas encore acheté, à effectuer leur premier achat. Vous pouvez sélectionner l'audience « Encourager l'achat », puis la personnaliser pour préciser quel événement définit un achat in-app. Vous pouvez ensuite connecter l'audience à vos partenaires et lancer une campagne promotionnelle qui mènera l'utilisateur sur la page d'achat de l'app pour l'inciter à acheter.
 >
-> ![Encourage_purchase_image_this_one.jpeg](https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg)
+> <Image align="center" alt="Encourage_purchase_image_this_one.jpeg" src="https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg" />
 
 **Pour créer une audience suggérée :**
 
@@ -141,7 +141,7 @@ Choisissez parmi plus de 30 audiences dans les catégories **acquisition, activa
 4. Sélectionnez l'app.
 5. Parcourez les différentes catégories et sélectionnez une audience qui correspond à vos objectifs.  Remarque : Certaines audiences nécessitent que vous ajoutiez des <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview">événements in-app</Anchor> précis pour définir les critères de l’audience. Si l’événement <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-event-structure#noms-dévénements-prédéfinis">prédéfini</Anchor> AppsFlyer  a déjà été configuré dans votre application, il sera présélectionné. Dans le cas contraire, vous devrez sélectionner l’événement personnalisé dans le menu déroulant.
 
-   <Image alt="Select_an_event__1_.jpeg" src="https://files.readme.io/b5055ca61791f15efc3a91f3f2d749e1df9e3f5e8b956b9167e186474de57ac4-30258966520721.jpg" width="419px" />
+   <Image align="center" alt="Select_an_event__1_.jpeg" src="https://files.readme.io/b5055ca61791f15efc3a91f3f2d749e1df9e3f5e8b956b9167e186474de57ac4-30258966520721.jpg" width="419px" />
 6. Cliquez sur **Sélectionner et personnaliser**.
 7. Sélectionnez [l'identifiant utilisateur](/docs/audiences-guide#user-identifier-device-id-vs-customer-id) :
    * [Par défaut] **ID de l’appareil** : Évalue les règles par ID d’appareil uniquement.
@@ -200,7 +200,7 @@ L’évaluation des règles d’audience est effectuée à l’aide d’un ident
     * Si un ID d'appareil est associé à deux CUID différents, c'est le CUID associé le plus récent qui est utilisé.
     * Lors de la création d’une audience avec CUID comme identifiant, l’appairage du CUID doit avoir été réceptionné par AppsFlyer lors de l’installation (et pas seulement lors des événements post-installation), ceci afin de garantir une association complète avec les appareils concernés, et un enrichissement réussi avec les ID d’appareil (soit GAID et IDFA). <Anchor target="_blank" href="/marketers/fr/docs/customer-user-id-field-cuid#paramétrer-le-cuid">En savoir plus</Anchor>
 
-<Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+<Image align="center" alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
 
 <div id="pause" />
 
@@ -251,7 +251,7 @@ Activez l'option qui divise l'audience entre les partenaires et un groupe de con
 2. Dans l'onglet **Audiences**, sélectionnez l'audience.
 3. Rendez-vous dans l'onglet **Connecter**.  
 
-   [![audience_split_1200px.png](https://support.appsflyer.com/hc/article_attachments/360018673137)](https://support.appsflyer.com/hc/article_attachments/360018673137)
+   <Image align="center" alt="audience_split_1200px.png" src="https://support.appsflyer.com/hc/article_attachments/360018673137" />
 
    Les paramètres en cours s'affichent :  
    * Le volet en haut à droite donne une estimation de l'audience totale, ainsi que la taille des importations (pour l’ensemble des partenaires).
@@ -372,7 +372,7 @@ Apprenez à utiliser les ensembles de règles pour définir vos audiences.
 
 <Accordion title="Ensembles de règles pour la segmentation d'audience">
 
-![audience_segmentation_rulesets.jpg](https://support.appsflyer.com/hc/article_attachments/8862762173201)
+<Image align="center" alt="audience_segmentation_rulesets.jpg" src="https://support.appsflyer.com/hc/article_attachments/8862762173201" />
 
 * Un ensemble de règles de segment d'audience est constitué d'une ou de plusieurs règles qui permettent un filtrage très précis.
 * Combinez les ensembles de règles à l’aide des opérateurs : et, ou, exclure.
@@ -395,7 +395,7 @@ Les exemples qui suivent illustrent la mise en œuvre d'un ensemble de règles d
 >
 > Utilisateurs de New York qui ont désinstallé l’app au cours du dernier mois
 >
-> ![example_location_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/8862756141713)
+> <Image align="center" alt="example_location_based_rule.jpg" src="https://support.appsflyer.com/hc/article_attachments/8862756141713" />
 
 <div id="example-user-attributes-based-rule" />
 
@@ -403,7 +403,7 @@ Les exemples qui suivent illustrent la mise en œuvre d'un ensemble de règles d
 >
 > Utilisateurs ayant lancé l'app au moins une fois au cours des 7 derniers jours, et dont l'arme préférée est l'épée.
 >
-> ![example_user_attributes_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/8862801164433)
+> <Image align="center" alt="example_user_attributes_based_rule.jpg" src="https://support.appsflyer.com/hc/article_attachments/8862801164433" />
 
 <div id="example-revenue" />
 
@@ -411,7 +411,7 @@ Les exemples qui suivent illustrent la mise en œuvre d'un ensemble de règles d
 >
 > Les utilisateurs qui ont installé l’application au cours des sept derniers jours et qui ont dépensé 1 $
 >
-> ![example_revenue.jpg](https://support.appsflyer.com/hc/article_attachments/8862765137041)
+> <Image align="center" alt="example_revenue.jpg" src="https://support.appsflyer.com/hc/article_attachments/8862765137041" />
 
 <div id="example-remarketing" />
 
@@ -423,7 +423,7 @@ Les exemples qui suivent illustrent la mise en œuvre d'un ensemble de règles d
 >
 > Voici un exemple avec des utilisateurs qui ont lancé l'app au moins une fois au cours des sept derniers jours, et dont l'installation a été attribuée à une certaine campagne d’e-mail, ainsi qu'à des ensembles de publicités et publicités spécifiques.
 >
-> ![Owned_media_example.jpg](https://support.appsflyer.com/hc/article_attachments/8862802677777)
+> <Image align="center" alt="Owned_media_example.jpg" src="https://support.appsflyer.com/hc/article_attachments/8862802677777" />
 >
 > L'audience peut être utilisée pour réengager ces utilisateurs avec des messages personnalisés (que ce soit sur les médias propriétaires ou payés), ou comme liste d'exclusion pour éviter qu'ils ne voient des publicités inutiles lors des campagnes.
 
@@ -433,7 +433,7 @@ Les exemples qui suivent illustrent la mise en œuvre d'un ensemble de règles d
 >
 > Créez une audience d'utilisateurs potentiels qui ont cliqué sur une publicité mais qui n'ont pas effectué d'installation au cours des deux derniers jours.
 >
-> ![example_remarketing.jpg](https://support.appsflyer.com/hc/article_attachments/8862801851409)
+> <Image align="center" alt="example_remarketing.jpg" src="https://support.appsflyer.com/hc/article_attachments/8862801851409" />
 >
 > Il s'agit d'utilisateurs qui étaient récemment suffisamment intéressés par votre app mobile pour cliquer sur votre publicité, mais qui, pour différentes raisons, n'ont pas installé l'app (ou l'ont installée mais sans la lancer). Certains utilisateurs ont simplement besoin d'un rappel (push) pour l'installer. D'autres ont besoin de voir plus d’images ou de fonctionnalités de votre app pour passer le cap. Par conséquent, si vous avez une création principale que vous utilisez sur les nouvelles audiences, il peut être bon d'utiliser une création différente pour les audiences qui ont cliqué mais n'ont pas installé.
 
@@ -512,7 +512,7 @@ L'onglet **Connexions** affiche toutes les connexions de votre partenaire et le 
 1. Sélectionnez un partenaire.
 2. Sélectionnez la connexion.
 
-   ![Edit_connection_screen.jpg](https://support.appsflyer.com/hc/article_attachments/8863066051217)
+   <Image align="center" alt="Edit_connection_screen.jpg" src="https://support.appsflyer.com/hc/article_attachments/8863066051217" />
 3. Effectuez l'une des actions suivantes :
 
 | Option | Marche à suivre |
@@ -534,7 +534,7 @@ Cette section décrit les fonctionnalités et les résultats de campagne qui app
 
 <Accordion title="Tableau de bord des audiences">
 
-[![new_dashboard_image_doctored.jpg](https://support.appsflyer.com/hc/article_attachments/12059490072465)](https://support.appsflyer.com/hc/article_attachments/12059490072465)  
+<Image align="center" alt="new_dashboard_image_doctored.jpg" src="https://support.appsflyer.com/hc/article_attachments/12059490072465" />
 
 | Colonne | Description |
 | --- | --- |
@@ -582,7 +582,7 @@ La section **Métriques de campagne** du tableau de bord des Audiences regroupe 
 
 L’aperçu des **Métriques de campagne** offre un résumé des données de la campagne pour chaque audience :
 
-[<Image alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/8863145932177" width="433px" />](https://support.appsflyer.com/hc/article_attachments/4406917112593)
+[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/8863145932177" width="433px" />](https://support.appsflyer.com/hc/article_attachments/4406917112593)
 
 | Colonne | Description |
 | --- | --- |
@@ -598,7 +598,7 @@ Dans l’aperçu, cliquez sur l’icône <Image alt="show_detailed_view_icon.png
 
 La vue détaillée affiche les données regroupées par partenaire pris en charge et par campagne.
 
-[![campaign_metrics_detailed_view.jpg](https://support.appsflyer.com/hc/article_attachments/8863148809105)](https://support.appsflyer.com/hc/article_attachments/4406917161233)
+[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/8863148809105" />](https://support.appsflyer.com/hc/article_attachments/4406917161233)
 
 Si l'audience sélectionnée a été utilisée pour cibler plusieurs applications, utilisez le menu déroulant ![](https://support.appsflyer.com/hc/article_attachments/4406924702353) pour filtrer les données par application.
 

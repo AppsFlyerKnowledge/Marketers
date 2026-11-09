@@ -46,7 +46,7 @@ L'enregistrement de ces évènements peut vous aider à déterminer :
 >
 > Pour plus d'informations sur l'enregistrement des événements in-app, consultez le <Anchor target="_blank" href="/marketers/fr/docs/in-app-events-overview">guide des événements in-app riches</Anchor>.
 
-[![In_appEvents__Healthcare__en-us.png](https://files.readme.io/43ae6b0684c26ae42d43b0247a547e7f54e18bf1be66d6b188aaaf9e2274ca98-4404607774353.png)](https://files.readme.io/43ae6b0684c26ae42d43b0247a547e7f54e18bf1be66d6b188aaaf9e2274ca98-4404607774353.png)
+<Image align="center" alt="In_appEvents__Healthcare__en-us.png" src="https://files.readme.io/43ae6b0684c26ae42d43b0247a547e7f54e18bf1be66d6b188aaaf9e2274ca98-4404607774353.png" />
 
 <div id="purchase-af_purchase" />
 

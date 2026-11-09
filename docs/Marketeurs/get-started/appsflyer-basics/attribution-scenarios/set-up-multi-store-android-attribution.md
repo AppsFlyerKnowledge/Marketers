@@ -42,7 +42,7 @@ AppsFlyer attribue les apps, quel que soit l'app store.  C'est-à-dire le store
 > * L'attribution Android d'AppsFlyer prend en charge tous les types d'identifiant d'appareil, y compris le GAID et <Anchor target="_blank" href="/marketers/fr/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor>.
 > * Pour les apps commercialisées en Chine, veuillez consulter <Anchor target="_blank" href="/marketers/fr/docs/measure-attribution-in-the-chinese-domestic-market">Attribution des apps Android sur le marché intérieur chinois</Anchor>
 
-![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
+<Image align="center" alt="DashboardType_us-en-new.jpg" src="https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg" />
 
 <div id="single-dashboard-vs-dashboard-per-store" />
 
@@ -254,7 +254,7 @@ Préparez de nouveaux APK pour les stores en suivant les instructions pour table
 3. Allez dans les Paramètres et trouvez vos paramètres Android ou, si vous n'avez pas encore configuré Android, ajoutez la plate-forme.
 4. Remplissez les informations requises, y compris l'URL Amazon App Store spécifique de votre application.  
 
-   [![outofstore_1.png](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)
+   <Image align="center" alt="outofstore_1.png" src="https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png" />
 5. Dans le tableau de bord AppsFlyer, dans Intégrations actives, sélectionnez Meta ads puis entrez le même identifiant d'app Facebook que celui que vous utilisez pour enregistrer les Meta ads d'installations mobile in-store dans AppsFlyer.
 
 </Accordion>

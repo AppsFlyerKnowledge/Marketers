@@ -73,7 +73,7 @@ Paramètres généraux
 
 **Activer l'attribution post-vue**
 
-[![](https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png)](https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png)
+<Image align="center" alt="" src="https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png" />
 
 Basculez cette option sur **ON** si vous souhaitez attribuer les installations après affichage de ByteDance Ads China. Le curseur rétroactif post-vue est disponible dans l'onglet Lien d'attribution (détails ci-dessous).
 
@@ -83,7 +83,7 @@ Basculez cette option sur **ON** si vous souhaitez attribuer les installations a
 
 AppsFlyer peut envoyer des postbacks automatiques à ByteDance Ads China suite aux installations et aux réengagements des utilisateurs. Utilisez cette section pour définir **la source des utilisateurs** autorisant l'envoi de ces postbacks.
 
-![bytedance-default-postbacks.png](https://files.readme.io/5f3cb637fb9ff652533fcfd9c02ea8dc1768e0e1c1686a180ea18c0d2e09309f-50612201121425.png)
+<Image align="center" alt="bytedance-default-postbacks.png" src="https://files.readme.io/5f3cb637fb9ff652533fcfd9c02ea8dc1768e0e1c1686a180ea18c0d2e09309f-50612201121425.png" />
 
 <div id="in-app-events-settings" />
 
@@ -126,19 +126,19 @@ Une fois que vous avez généré le lien d’attribution, terminez le processus 
 
 Connectez-vous à Ocean Engine ([https://ad.oceanengine.com/](https://ad.oceanengine.com/)) > **Bibliothèque** > **Suivi des conversions**.
 
-![OE_dashboard_1.png](https://files.readme.io/fda140ac7e3023033880b04ed500a675ae78187e4eb694ee200922b729ab119f-50612185108497.png)
+<Image align="center" alt="OE_dashboard_1.png" src="https://files.readme.io/fda140ac7e3023033880b04ed500a675ae78187e4eb694ee200922b729ab119f-50612185108497.png" />
 
 Cliquez sur **Application de suivi** et créez une **Transformation de nouvelles applications**.
 
-![OE_dashboard_2.png](https://files.readme.io/dbf0c13c23d21d08c195a4ab747e5de0986cb01f5ebde98f6c701ce731480958-50612185109009.png)
+<Image align="center" alt="OE_dashboard_2.png" src="https://files.readme.io/dbf0c13c23d21d08c195a4ab747e5de0986cb01f5ebde98f6c701ce731480958-50612185109009.png" />
 
 Cliquez sur la méthode **API**.
 
-![OE_dashboard3.png](https://files.readme.io/70e7f6ca01c532fafb8f2ab7d31d6de51494f11749329c1c1333d1da6f28f284-50612185110417.png)
+<Image align="center" alt="OE_dashboard3.png" src="https://files.readme.io/70e7f6ca01c532fafb8f2ab7d31d6de51494f11749329c1c1333d1da6f28f284-50612185110417.png" />
 
 Dans la section Lien de surveillance, saisissez le lien d’attribution des clics et/ou le lien d’attribution des impressions AppsFlyer.
 
-![dashboard4.png](https://files.readme.io/d36ec92a03062fc7ee169bb1ff3863722343577f3ee2b12779065b3e52731348-50612201124369.png)
+<Image align="center" alt="dashboard4.png" src="https://files.readme.io/d36ec92a03062fc7ee169bb1ff3863722343577f3ee2b12779065b3e52731348-50612201124369.png" />
 
 **2. Terminez le test d’attribution en suivant les instructions sur le site web**.
 

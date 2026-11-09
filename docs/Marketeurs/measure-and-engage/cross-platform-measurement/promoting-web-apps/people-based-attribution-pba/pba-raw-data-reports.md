@@ -189,7 +189,7 @@ Use this procedure to:
 1. Open Cyberduck  
    The list of data types available displays.
 
-   ![Duck_us-en.jpg](https://files.readme.io/b8e93ad9423605b3247531d276b9c2d45abd4ea044dde29ee177f4d71b738e9d-360008254377.jpg)
+   <Image align="center" alt="Duck_us-en.jpg" src="https://files.readme.io/b8e93ad9423605b3247531d276b9c2d45abd4ea044dde29ee177f4d71b738e9d-360008254377.jpg" />
 2. **Double-click** on a PBA report type and choose from web\_events, web\_to\_app, or web\_touch\_points.  
    The list of report dates available displays.
 3. **Right-click** on a given date.

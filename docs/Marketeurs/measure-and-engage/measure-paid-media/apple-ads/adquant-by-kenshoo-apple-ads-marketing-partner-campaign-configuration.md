@@ -50,7 +50,7 @@ Both advertisers and agencies can enable Attribution for Apple Ads.
    4. Click **Save Integration**.
 2. **In your Apple Ads dashboard**: Get the Apple Ads Campaign Group ID parameter related to Adquant. Use the screenshot that follows as a guide to locating the ID.
 
-   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 3. **In AppsFlyer, configure Adquant:**
    1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations.**
    2. Search for Adquant by Kenshoo Apple Ads marketing partner.  

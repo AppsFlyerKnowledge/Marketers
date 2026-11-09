@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **En bref :** augmentez le saut incrémentiel en reciblant les utilisateurs inactifs, définissez les fenêtres d'inactivité par source média.
 >
-> ![](https://files.readme.io/f55130956ae4fcb32fff4f0590fc942f3d3c024bc09de99968e1f29933ceb26b-9479865167761.png)
+> <Image align="center" alt="" src="https://files.readme.io/f55130956ae4fcb32fff4f0590fc942f3d3c024bc09de99968e1f29933ceb26b-9479865167761.png" />
 
 <div id="inactivity-period" />
 
@@ -66,7 +66,7 @@ Les actions de l’utilisateur sont les suivantes : L'utilisateur :
 * participe à une campagne de retargeting menée par une source média
 * réinstalle l'application
 
-[![re-attribution_1_en-us.png](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)
+<Image align="center" alt="re-attribution_1_en-us.png" src="https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png" />
 
 | Scénario | Seuil d'inactivité | Période d'inactivité de l'utilisateur | Résultat |
 | --- | --- | --- | --- |
@@ -85,7 +85,7 @@ Les actions de l’utilisateur sont les suivantes : L'utilisateur :
 * reste inactif pendant plusieurs jours
 * suit une campagne de retargeting, menée par une source média, puis lance l'application
 
-[![Re-engagement_scenarios_en-us.png](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)
+<Image align="center" alt="Re-engagement_scenarios_en-us.png" src="https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png" />
 
 | Scénario | Seuil d'inactivité de la source média A | Période d'inactivité de l'utilisateur | Résultat |
 | --- | --- | --- | --- |
@@ -112,7 +112,7 @@ Cette fonctionnalité est configurée dans l'onglet Intégration des SRN qui pre
 4. Définissez la **fenêtre d'inactivité.** (1-30 jours)
 5. Cliquez sur **Enregistrer l'intégration**.
 
-[![Inactivity_window_SRN.png](https://files.readme.io/9390ebcab781c6203dd8137183a20284f3d0943d33e609e00a3902a5ef14d848-9479906225553.png)](https://files.readme.io/9390ebcab781c6203dd8137183a20284f3d0943d33e609e00a3902a5ef14d848-9479906225553.png)
+<Image align="center" alt="Inactivity_window_SRN.png" src="https://files.readme.io/9390ebcab781c6203dd8137183a20284f3d0943d33e609e00a3902a5ef14d848-9479906225553.png" />
 
 </Accordion>
 
@@ -128,7 +128,7 @@ Cette fonctionnalité est configurée dans l'onglet Intégration des SRN qui pre
 4. Définissez la **fenêtre d'inactivité.** (1-30 jours)  
    Le paramètre **Période d'inactivité** `af_inactivity_window` est ajouté au lien d'attribution, exemple : « &af\_inactivity\_window=7d ». Si la fonctionnalité est désactivée, elle ne figure pas dans le lien d'attribution.
 
-[![Inactivity_window_non-SRN.png](https://files.readme.io/36ca6b8903ac80b6bc7bab1dc84ab5d046d0d86a5d3a6fee3cd47da7e3c6d3fb-9479958030353.png)](https://files.readme.io/36ca6b8903ac80b6bc7bab1dc84ab5d046d0d86a5d3a6fee3cd47da7e3c6d3fb-9479958030353.png)
+<Image align="center" alt="Inactivity_window_non-SRN.png" src="https://files.readme.io/36ca6b8903ac80b6bc7bab1dc84ab5d046d0d86a5d3a6fee3cd47da7e3c6d3fb-9479958030353.png" />
 
 </Accordion>
 

@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **En bref :** Amazon DSP (amazondsp\_int), partenaire intégré d'AppsFlyer, permet aux propriétaires d'app de mesurer via AppsFlyer l'attribution basée sur les clics et les vues avec pour la TV, les tablettes et appareils mobile.
 
-![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png" />
 
 <div id="complete-the-setup-in-amazon-ads" />
 

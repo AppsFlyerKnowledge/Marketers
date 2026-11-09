@@ -28,7 +28,7 @@ Lorsque vous <Anchor target="_blank" href="/marketers/fr/docs/adding-an-app-to-a
 
 Les apps en attente dans AppsFlyer s'affichent de la même manière que les apps publiées. Elles ont des tableaux de bord accessibles et peuvent utiliser toutes les mesures d'attribution. La seule différence est le logo : le logo AppsFlyer s'affiche au lieu du logo de l'app elle-même.
 
-![Pending_App.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
+<Image align="center" alt="Pending_App.png" src="https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png" />
 
 <div id="whats-happening" />
 
@@ -51,7 +51,7 @@ Pour que l'app devienne active, AppsFlyer vérifie son statut dans le store. Si 
 **Pour mettre à jour manuellement le statut de l'app :**
 
 1. Dans le coin supérieur droit du tableau de bord, cliquez sur **Mes apps**.  
-   ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
+   <Image align="center" alt="app-refersh-status.png" src="https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png" />
 2. À côté de l'app en attente, cliquez sur **Actualiser le statut.**  
    Si le statut de l'app n'est pas modifié, celle-ci affiche toujours En attente. S'il a été mis à jour, l'app affiche En ligne et le logo est actualisé.
 

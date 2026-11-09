@@ -31,7 +31,7 @@ x-zendesk:
 
 > **En bref :** la fraude par attribution épuise les budgets marketing, pollue les données relatives aux performances marketing et peut faire échouer des campagnes prometteuses. **Protect360 fournit aux propriétaires d'app une protection contre la fraude en temps réel et une détection post-attribution**.
 
-![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
+<Image align="center" alt="p360intro2.jpg" src="https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg" />
 
 <div id="protect360-overview" />
 

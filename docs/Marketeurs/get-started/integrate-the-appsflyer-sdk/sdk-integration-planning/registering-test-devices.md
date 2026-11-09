@@ -102,7 +102,7 @@ Les identifiants des appareils sont les suivants :
    <Tabs>
    <Tab title="Android">
 
-   [<Image alt="" src="https://support.appsflyer.com/hc/article_attachments/360005641117" width="233px" />](https://support.appsflyer.com/hc/article_attachments/360005641117)
+   <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360005641117" width="233px" />
 
    **Liens :** [Google Play](https://play.google.com/store/apps/details?id=com.appsflyer.android.deviceid&hl=en) et [marché hors magasin](https://apkpure.com/my-device-id-by-appsflyer/com.appsflyer.android.deviceid)
 
@@ -110,38 +110,38 @@ Les identifiants des appareils sont les suivants :
 
    <Tab title="iOS">
 
-   [<Image alt="" src="https://support.appsflyer.com/hc/article_attachments/360001988157" width="233px" />](https://support.appsflyer.com/hc/article_attachments/360001988157)
+   <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360001988157" width="233px" />
 
    </Tab>
 
    <Tab title="Windows">
 
-   [<Image alt="" src="https://files.readme.io/6e60bf0e69c0055c5946d111a0a5a2a04dddb268ba777b52097ab0650327d280-31773660950673.png" width="233px" />](https://files.readme.io/6e60bf0e69c0055c5946d111a0a5a2a04dddb268ba777b52097ab0650327d280-31773660950673.png)
+   <Image align="center" alt="" src="https://files.readme.io/6e60bf0e69c0055c5946d111a0a5a2a04dddb268ba777b52097ab0650327d280-31773660950673.png" width="233px" />
 
    </Tab>
    </Tabs>
 
 2. Pour autoriser la collecte de l'IDFA sur un appareil iOS 14.5+, appuyez sur **Autoriser** lorsque l'invitation ATT s'affiche.
 
-   [![](https://files.readme.io/3be1b8f24bf558d022c45913b393cf8c8011639354d8b11d9c591e58024f1c8d-31773660957329.png)](https://files.readme.io/3be1b8f24bf558d022c45913b393cf8c8011639354d8b11d9c591e58024f1c8d-31773660957329.png)
+   <Image align="center" alt="" src="https://files.readme.io/3be1b8f24bf558d022c45913b393cf8c8011639354d8b11d9c591e58024f1c8d-31773660957329.png" />
 3. Sur l'écran Android/iOS/Windows, touchez **Enregistrer** pour enregistrer l'appareil.
 
    <Tabs>
    <Tab title="Android">
 
-   [![](https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png)](https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png)
+   <Image align="center" alt="" src="https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png" />
 
    </Tab>
 
    <Tab title="iOS">
 
-   [![](https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png)](https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png)
+   <Image align="center" alt="" src="https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png" />
 
    </Tab>
 
    <Tab title="Windows">
 
-   [![](https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg)](https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg" />
 
    </Tab>
    </Tabs>
@@ -161,7 +161,7 @@ Les utilisateurs du compte peuvent enregistrer manuellement un appareil des faç
 2. Sélectionnez **Tester** **les appareils**.
 3. Cliquez sur **+ Ajouter un appareil.**
 
-   [![](https://files.readme.io/e28ef06002e423d4cf7863d4c7fd2b269a0ede5c4b996a50cee25ffbedfcd9d1-31773630618769.png)](https://files.readme.io/e28ef06002e423d4cf7863d4c7fd2b269a0ede5c4b996a50cee25ffbedfcd9d1-31773630618769.png)
+   <Image align="center" alt="" src="https://files.readme.io/e28ef06002e423d4cf7863d4c7fd2b269a0ede5c4b996a50cee25ffbedfcd9d1-31773630618769.png" />
 4. Renseignez les paramètres suivants :
    * **Nom (caractères latins uniquement) :** entrez un nom d'identification pour l'appareil.
    * **OS :** sélectionnez un système d'exploitation.
@@ -235,7 +235,7 @@ Un maximum de 200 appareils par compte peut être enregistré. Seul l'admin est 
 
 L'organigramme ci-dessous illustre différentes étapes possibles lors de l'enregistrement de vos appareils de test iOS.
 
-[![](https://files.readme.io/214818cd73ebc8cd5d3479d27e3074fec55ec7f9e3d4702b17f3c8811270f54e-31773630621585.png)](https://files.readme.io/214818cd73ebc8cd5d3479d27e3074fec55ec7f9e3d4702b17f3c8811270f54e-31773630621585.png)
+<Image align="center" alt="" src="https://files.readme.io/214818cd73ebc8cd5d3479d27e3074fec55ec7f9e3d4702b17f3c8811270f54e-31773630621585.png" />
 
 Sélectionnez l'une des options suivantes lors de l'enregistrement de votre appareil de test iOS :
 

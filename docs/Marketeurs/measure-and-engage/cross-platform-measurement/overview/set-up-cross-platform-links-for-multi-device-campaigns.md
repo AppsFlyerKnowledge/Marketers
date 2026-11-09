@@ -54,7 +54,7 @@ Un seul template prend en charge votre app sur plusieurs plateformes (ce qui sig
 2. Dans**Attribution multiplateforme**, cliquez sur l’icône**bouton Modifier ->** **Activer l’attribution multiplateforme**
 3. Dans la liste déroulante de la plateforme à configurer, sélectionnez l’application appropriée. **Remarque** : Chaque app ne peut être ajoutée qu’à un unique template OneLink lorsque l’attribution multiplateforme est activée.
 
-   [<Image alt="Cross-platform attribution.png" src="https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png" width="476px" />](https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png)
+   <Image align="center" alt="Cross-platform attribution.png" src="https://files.readme.io/181eae8e98b26321c8aa46bab296f492ba543d645b4659af21e91fe976c08feb-24170762165521.png" width="476px" />
 
 </Accordion>
 

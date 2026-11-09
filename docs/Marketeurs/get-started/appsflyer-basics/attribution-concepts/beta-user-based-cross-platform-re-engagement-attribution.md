@@ -60,7 +60,7 @@ The following examples show the same user journey twice: first without cross-pla
 
 Consider a user journey across three platforms. A Google ad drives users to install a mobile app, where they sign up using a customer user ID. Later, a Meta ad drives the same user to visit the web platform, where they sign in with the same customer user ID. After signing in, the user makes two purchases on mobile: $100 and $50.
 
-[![](https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png)](https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png)
+<Image align="center" alt="" src="https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png" />
 
 Because re-engagement is not enabled in this scenario, all activity is attributed to Google Ads, the original acquisition source. The $100 and $50 purchases, as well as both platform activations (mobile and web), are credited to Google. Meta receives no credit within cross-platform attribution, even though its ad drove the Web install.
 
@@ -77,7 +77,7 @@ Because re-engagement is not enabled in this scenario, all activity is attribute
 
 The user journey is identical to the one above. The difference is that the product line has opted in to re-engagement.
 
-[![](https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png)](https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png)
+<Image align="center" alt="" src="https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png" />
 
 In this case, the retargeting inactivity window determines whether the Meta-driven Web sign-in qualifies as a re-engagement event. The window opens from the last time the customer's user ID was seen, which was at mobile sign-up. If enough time passes before the Web sign-in, meaning the sign-in occurs outside the inactivity window for re-engagement, Meta receives re-engagement credit.
 

@@ -202,7 +202,7 @@ Les rapports de consommation indiquent les conversions agrégées regroupées pa
 > * Les données des rapports de consommations restent transparentes, que l’option **<Anchor target="_blank" href="/partners/fr/docs/getting-started-agency-onboarding#transparence">Autoriser la transparence</Anchor>** soit activée ou non, les rapports affichent donc toujours le nom de l’agence mais pas la source média.
 > * [Exemple de rapport de consommation](https://support.appsflyer.com/hc/fr/article_attachments/13944970354833/Sample_Usage_Report.csv)
 
-[![exemple de rapport de consommation](https://files.readme.io/a3c58f1f7f92f5ab883b50b10480e8fe5b0f7702dad59a925e50ccc0ac2bcba7-16148973368081.png)](https://files.readme.io/a3c58f1f7f92f5ab883b50b10480e8fe5b0f7702dad59a925e50ccc0ac2bcba7-16148973368081.png)
+<Image align="center" alt="exemple de rapport de consommation" src="https://files.readme.io/a3c58f1f7f92f5ab883b50b10480e8fe5b0f7702dad59a925e50ccc0ac2bcba7-16148973368081.png" />
 
 | Champ | Description |
 | --- | --- |

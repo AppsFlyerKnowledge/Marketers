@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **En bref :** Créez vos propres tableaux de bord personnalisés dans AppsFlyer. Vous pourrez facilement sélectionner, nommer et placer les données dans vos rapports personnalisés.
 
-[![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
+<Image align="center" alt="CustomDashboard_us-en.png" src="https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png" />
 
 <div id="custom-dashboards" />
 
@@ -88,7 +88,7 @@ Vous pouvez personnaliser un tableau de bord en déplaçant et redimensionnant s
 1. Cliquez sur Ajouter un widget.
 2. La fenêtre de widget s'ouvre.   
 
-   [![WidgetConfigure_us-en.png](https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png)](https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png)
+   <Image align="center" alt="WidgetConfigure_us-en.png" src="https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png" />
 3. Configurez le widget. Vous pouvez consulter le guide de configuration des widgets ci-dessous.
 4. Ajoutez autant de widgets que nécessaire.
 
@@ -111,7 +111,7 @@ Vous pouvez personnaliser un tableau de bord en déplaçant et redimensionnant s
 
 <Accordion title="Exporter les données du widget">
 
-![Widget_table.png](https://files.readme.io/b04e80e16d0d34946e6783103fc6fbbdf89b390842db27226b4fdba6c1f7e506-360015717057.png)
+<Image align="center" alt="Widget_table.png" src="https://files.readme.io/b04e80e16d0d34946e6783103fc6fbbdf89b390842db27226b4fdba6c1f7e506-360015717057.png" />
 
 **Pour télécharger les données de widget dans un fichier CSV** :
 

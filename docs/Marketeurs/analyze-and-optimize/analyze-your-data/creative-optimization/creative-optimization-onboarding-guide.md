@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **At a glance**: Follow the onboarding instructions in this article to get Creative Optimization up and running.
 
-![](https://files.readme.io/3fdbee06c41fdcbcadf50fead49a3d3e29e1f56794e3a32a95a28989004024bf-28076554608017.png)
+<Image align="center" alt="" src="https://files.readme.io/3fdbee06c41fdcbcadf50fead49a3d3e29e1f56794e3a32a95a28989004024bf-28076554608017.png" />
 
 ## About Creative Optimization
 

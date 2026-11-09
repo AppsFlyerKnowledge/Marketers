@@ -68,7 +68,7 @@ To use ID5 enrichment, first create a **Data & Identity** connection in DCP.
 
 1. Access the Data Collaboration Platform by clicking **Collaborate** > **Data Clean Room**, in the AppsFlyer side menu.
 
-   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/85fe4d0302563dbf8f887f3b394634c8f41491f236848cf10f257f19c001cb07-42729168895121.png" width="33.49%" />
+   <Image align="center" alt="Click Data Clean Room.png" src="https://files.readme.io/85fe4d0302563dbf8f887f3b394634c8f41491f236848cf10f257f19c001cb07-42729168895121.png" width="33.49%" />
 2. Go to **Manage connections** (on the upper-right).
 3. Under the **Data & Identity** tab, select **+ New connection**.
 
@@ -95,7 +95,7 @@ You can enrich your sources using the S2S flow.
 2. Go to the **Sources** tab and hover over the relevant source.
 3. From the action menu, select **Enrich**.
 
-   <Image alt="Enrich.png" src="https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png" width="245px" />
+   <Image align="center" alt="Enrich.png" src="https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png" width="245px" />
 4. Click **Start enrichment**.
 5. After the enrichment flow is done, you will have a new source that is connected to the original source with the addition of ID5 IDs.  
    **Note:** If the original source is ever deleted, the new source will also be deleted.
@@ -117,13 +117,13 @@ Collaboration owners can allow collaborators to use an ID5 connection in a colla
    **<Image alt="Update collaboration policy.png" src="https://files.readme.io/25d707c47bed9f5f60cd1ba521c4b48f41afbb0e36949f0ffa35cecf9a932ddc-42838633495313.png" width="58.95%" />**
 4. Click **Edit collaboration policy**.
 
-   <Image alt="Click Edit collaboration policy.png" src="https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png" width="80.3%" />
+   <Image align="center" alt="Click Edit collaboration policy.png" src="https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png" width="80.3%" />
 5. Click **Access permissions**.
 
    **<Image alt="Click Access permissions.png" src="https://files.readme.io/b239775d71e1fa1dcc23537e73e35b80bff0184c9ee2aa213f644d90251284f3-42838633499281.png" width="78.62%" />**
 6. Enable **ID5 connection**.
 
-   <Image alt="ID5 permissions.png" src="https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png" width="79.6%" />
+   <Image align="center" alt="ID5 permissions.png" src="https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png" width="79.6%" />
 7. Click **Save**.
 
 Collaborators can then associate their own sources with the collaboration and enrich them using the partner’s ID5 connection.

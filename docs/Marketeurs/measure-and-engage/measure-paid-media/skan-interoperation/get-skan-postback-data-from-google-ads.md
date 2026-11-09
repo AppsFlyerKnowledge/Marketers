@@ -75,10 +75,10 @@ Pour voir les installations SKAN attribuées à Google Ads dans le tableau de bo
 3. Recherchez et sélectionnez **Google Ads**.
 4. Ouvrez l'onglet **SKAN**.
 
-   <Image alt="mceclip0.png" src="https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png" width="309px" />
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png" width="309px" />
 5. Si le **message *Temporairement indisponible* s'affiche**, cela indique souvent qu'un bloqueur de publicité est activé. Si c'est le cas, désactivez le bloqueur de publicité et rechargez la page. Si ce n'est pas le cas, contactez l'assistance AppsFlyer.
 
-   ![mceclip1.png](https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png)
+   <Image align="center" alt="mceclip1.png" src="https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png" />
 6. Cliquez sur **Connexion à Google Ads**.
    * Vous devez vous connecter à Google Ads en utilisant le rôle d'admin du compte .
    * Si le compte Google est associé à plusieurs applications, une seule connexion suffit pour que toutes les applications soient autorisées. En d'autres termes, vous n'avez pas à autoriser chaque application une par une.
@@ -86,7 +86,7 @@ Pour voir les installations SKAN attribuées à Google Ads dans le tableau de bo
 7. Suivez les instructions de l’interface utilisateur.
 8. Dans certains cas, on pourra vous demander de donner à AppsFlyer l'autorisation de **gérer vos campagnes AdWords**. Vous devrez alors activer l'autorisation. Ne vous inquiétez pas : nous ne modifierons pas pour autant les paramètres de votre campagne.
 
-   [<Image alt="GoogleManageAdWords.png" src="https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png" width="182px" />](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)
+   <Image align="center" alt="GoogleManageAdWords.png" src="https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png" width="182px" />
 9. Vérifiez que le statut du compte **En attente de synchronisation** s'affiche.  
    Ce message restera affiché jusqu'à ce que nous recevions des données de Google Ads (maximum 24 heures).
 10. Attendez 02:00 UTC le lendemain, puis vérifiez que le statut est passé à **actif.**  

@@ -287,7 +287,7 @@ Les URL de secours vous permettent de rediriger les utilisateurs vers des pages 
 
 Pour implémenter une URL de secours, dans les paramètres du template OneLink ou du lien personnalisé, définissez le comportement du lien lorsque l'app n'est pas installée pour rediriger vers une autre URL.
 
-[![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
+<Image align="center" alt="different_url.png" src="https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png" />
 
 L’utilisation de ce paramètre ajoute `af_ios_url` et `af_android_url` comme paramètres de destination pour la solution de secours, ce qui entraîne la redirection des utilisateurs iOS vers la page définie par `af_ios_url`, et la redirection des utilisateurs Android vers la page définie par `af_android_url`.
 
@@ -667,11 +667,11 @@ WeChat ignore les deep links Android et IOS et redirige les utilisateurs vers un
 
 Pour résoudre ce problème, OneLink peut reconnaître les clics dans WeChat et charger une page d'accueil dédiée demandant à l'utilisateur de cliquer sur le bouton Options, puis sur **Ouvrir dans le navigateur**. Cette opération ouvre l'URL de redirection définie dans la configuration du template OneLink.
 
-![WeChat_a.jpg](https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg)
+<Image align="center" alt="WeChat_a.jpg" src="https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg" />
 
 Si la langue WeChat de l'utilisateur est le chinois, OneLink génère une version traduite de la page d'accueil :
 
-![WeChat_b.jpg](https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg)
+<Image align="center" alt="WeChat_b.jpg" src="https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg" />
 
 </Accordion>
 

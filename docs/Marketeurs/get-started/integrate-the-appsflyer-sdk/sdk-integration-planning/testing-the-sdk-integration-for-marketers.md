@@ -261,7 +261,7 @@ Le test des événements in-app vous permet de vérifier que les revenus associ�
 
    Vous devriez voir les événements, leurs revenus (si des revenus leur sont associés) et la source média à laquelle ils sont attribués. Prévoyez jusqu'à 60 à 70 minutes pour que les événements apparaissent dans le tableau de bord.
 
-   ![Test_d'attribution_d'événements_in-app](https://support.appsflyer.com/hc/article_attachments/4406219144593)
+   <Image align="center" alt="Test_d'attribution_d'événements_in-app" src="https://support.appsflyer.com/hc/article_attachments/4406219144593" />
 
 **Astuce !** Pensez à télécharger le rapport de données brutes sur les événements in-app  pour vérifier que les événements sont correctement attribués. Le téléchargement de ce rapport peut prendre plusieurs minutes.
 
@@ -320,7 +320,7 @@ Avant de procéder à des tests de retargeting, la configuration suivante est re
 
    Dans le tableau de bord de l'application, cliquez sur **Paramètres de l'application** et activez **Activer l'attribution de retargeting**.
 
-   ![Définir la fenêtre de réattribution](https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png)
+   <Image align="center" alt="Définir la fenêtre de réattribution" src="https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png" />
 2. Effectuez l'une des actions suivantes :
    * Créez un lien d’attribution spécifique à l’application. Assurez-vous d'inclure le paramètre de retargeting, `is_retargeting=true`, et l'ID publicitaire. Pour afficher le GAID, l'IDFA ou l'IDFV, suivez les instructions <Anchor target="_blank" href="/marketers/fr/docs/registering-test-devices">Enregistrement d'un appareil de test</Anchor>.    
      Voici un exemple de lien d’attribution qui inclut un paramètre spécifique à Android comme identifiant de l'appareil (GAID). Pour plus d'informations sur l'ajout d'autres paramètres d'identification de l'appareil, tels que l'IDFA ou l'IDFV, consultez <Anchor target="_blank" href="/marketers/fr/docs/about-link-structure-and-parameters#paramètres-spécifiques-à-ios">Structure et paramètres du lien d'attribution</Anchor>.

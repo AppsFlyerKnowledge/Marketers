@@ -77,7 +77,7 @@ Définitions:
 
 Les termes définis sont utilisés dans la figure et les sections qui suivent pour décrire les données disponibles pour les annonceurs et les partenaires.
 
-![Advanced Privacy Framework - Advertisers (4).png](https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png)
+<Image align="center" alt="Advanced Privacy Framework - Advertisers (4).png" src="https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png" />
 
 Advanced Privacy se comporte différemment lorsqu'il est utilisé sur le web et que le paramètre af\_media\_type=web ou af\_media\_type=app doit être utilisé. Voir <Anchor target="_blank" href="/partners/fr/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">cet article</Anchor> pour en savoir plus.
 
@@ -119,7 +119,7 @@ Les médias propres comprennent les campagnes de marketing numérique utilisées
 
 Le CAA est un commutateur au niveau de l'application qui contrôle les paramètres de confidentialité avancés pour tous les partenaires de l'application sélectionnée. Le CAA se trouve sur la page **Paramètres de l'app**. Lorsque le CAA est activé, les commutateurs **Confidentialité avancée** pour tous les partenaires de l'application sélectionnée sont automatiquement activés et ne peuvent pas être modifiés. Lorsque ce commutateur est désactivé, les annonceurs peuvent aller sur le site de chaque partenaire individuellement et activer **Confidentialité avancée**.
 
-![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
+<Image align="center" alt="AAPcontrol.png" src="https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png" />
 
 <div id="advanced-aggregated-privacy-implications-for-your-partners" />
 
@@ -155,7 +155,7 @@ Le CAA est un commutateur au niveau de l'application qui contrôle les paramètr
 
 Si la CAA est désactivée, les annonceurs peuvent définir individuellement le paramètre de confidentialité avancée pour chaque réseau publicitaire.
 
-![APControl.png](https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png)
+<Image align="center" alt="APControl.png" src="https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png" />
 
 **Pour désactiver la confidentialité avancée d'un partenaire :**
 
@@ -203,7 +203,7 @@ Dans le cas du réseau attribué, le type de postback utilisé pour partager des
 
 Les différents scénarios de consentement de l'utilisateur et les types de postbacks utilisés sont illustrés dans la figure suivante.
 
-![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
+<Image align="center" alt="AAP - Attributed ad networks.png" src="https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png" />
 
 Advanced Privacy se comporte différemment lorsqu'il est utilisé sur le web et que le paramètre af\_media\_type=web ou af\_media\_type=app doit être utilisé. Voir <Anchor target="_blank" href="/partners/fr/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">cet article</Anchor> pour en savoir plus.
 
@@ -213,11 +213,11 @@ Advanced Privacy se comporte différemment lorsqu'il est utilisé sur le web et 
 
 Les postbacks non attribués sont envoyés à un réseau lorsque l'option d'envoi dans l'onglet d'intégration du partenaire intégré est réglée sur *« toutes les sources média, y compris organiques »* et que ce partenaire n'est pas attribué à l'événement, comme l'illustre la figure suivante.
 
-![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+<Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 Les différents scénarios de consentement de l'utilisateur et les types de postbacks utilisés sont illustrés dans la figure suivante.
 
-![AAP - Unattributed ad networks.png](https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png)
+<Image align="center" alt="AAP - Unattributed ad networks.png" src="https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png" />
 
 Advanced Privacy se comporte différemment lorsqu'il est utilisé sur le web et que le paramètre af\_media\_type=web ou af\_media\_type=app doit être utilisé. Cliquez <Anchor target="_blank" href="/partners/fr/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">ici</Anchor> pour obtenir plus d'informations.
 
@@ -238,7 +238,7 @@ Les postbacks contenant des données d'attribution de niveau utilisateur, y comp
 
 Les différents scénarios de consentement de l'utilisateur et les types de postbacks utilisés sont illustrés dans la figure suivante.
 
-![AAP - Analytics partner.png](https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png)
+<Image align="center" alt="AAP - Analytics partner.png" src="https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png" />
 
 Advanced Privacy se comporte différemment lorsqu'il est utilisé sur le web et que le paramètre af\_media\_type=web ou af\_media\_type=app doit être utilisé. Cliquez <Anchor target="_blank" href="/partners/fr/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">ici</Anchor> pour obtenir plus d'informations.
 
@@ -257,7 +257,7 @@ Advanced Privacy se comporte différemment lorsqu'il est utilisé sur le web et 
 
 **Accorder à une agence l'autorisation de définir la confidentialité avancée**
 
-![agency_advanced_privacy.png](https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png)
+<Image align="center" alt="agency_advanced_privacy.png" src="https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png" />
 
 **Pour permettre à une agence de définir la confidentialité avancée** :
 

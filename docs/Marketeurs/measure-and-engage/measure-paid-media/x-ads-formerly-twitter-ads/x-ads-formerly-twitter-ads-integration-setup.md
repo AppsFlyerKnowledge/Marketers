@@ -38,26 +38,26 @@ x-zendesk:
 2. Lorsqu'il vous est demandé de sélectionner une campagne **simple (NOUVELLE)** ou **avancée**, sélectionnez **avancée**.
 3. Dans **Objectif de la campagne**, sélectionnez **Installations** ou **Réengagements d'applications**, puis cliquez sur **Suivant.**  
 
-   ![twitter-campaign-objective.png](https://files.readme.io/d91bd357dea4878f098086a573191f64c2d1a38af8a6a809c6de7c468e04e043-6148255768337.png)
+   <Image align="center" alt="twitter-campaign-objective.png" src="https://files.readme.io/d91bd357dea4878f098086a573191f64c2d1a38af8a6a809c6de7c468e04e043-6148255768337.png" />
 4. Sélectionnez votre application, puis cliquez sur le lien du **partenaire de mesure mobile** .
 5. Sur la page de **suivi des conversions** , cliquez sur **Aller à AppsFlyer**.   
 
-   ![twitter-mmp-selection.png](https://files.readme.io/ebe8e97971c01e0d87c694d2ca1fcc996abf608309d96badcbcda2713ab80d3e-6148393350033.png)
+   <Image align="center" alt="twitter-mmp-selection.png" src="https://files.readme.io/ebe8e97971c01e0d87c694d2ca1fcc996abf608309d96badcbcda2713ab80d3e-6148393350033.png" />
 6. Une notification s'affiche pour vous informer que vous êtes sur le point de quitter X Ads pour accéder au site d'AppsFlyer. Cliquez sur **Aller sur AppsFlyer** et connectez-vous à votre tableau de bord.  
 
-   <Image alt="twitter-go-to-appsflyer.png" src="https://support.appsflyer.com/hc/article_attachments/4411046208401" width="576px" />
+   <Image align="center" alt="twitter-go-to-appsflyer.png" src="https://support.appsflyer.com/hc/article_attachments/4411046208401" width="576px" />
 7. Dans AppsFlyer, allez dans **Configuration** et ouvrez **Marketplace des partenaires**.
 8. Recherchez et sélectionnez **X Ads**.
 9. Dans l'onglet **Integration** , acceptez les conditions générales de X Ads concernant l'enregistrement des conversions des apps mobile (MACT), puis cliquez sur **Enregistrer l'intégration**.
 10. Enclenchez **Activer le partenaire**, puis cliquez sur **Se connecter avec X Ads**.
 11. Autorisez AppsFlyer à utiliser votre compte X Ads en cliquant sur **Autoriser l'application**.   
 
-    [<Image alt="" src="https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png" width="476px" />](https://support.appsflyer.com/hc/fr/article_attachments/4411037924497/Twitter_Ads_6.png)
+    <Image align="center" alt="" src="https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png" width="476px" />
 12. Enclenchez à nouveau l'option **Activer le partenaire** pour afficher les paramètres de l'onglet **Intégration** et activer l'attribution.  
     **Remarque :** La case doit rester cochée (option activée) tant que vous travaillez avec le partenaire. En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">l'activation d'un partenaire.</Anchor>
 13. Sélectionnez vos comptes X Ads pour les activer, puis cliquez sur **Enregistrer et fermer**.  
 
-    ![twitter_account_name.png](https://support.appsflyer.com/hc/article_attachments/4411046818193)
+    <Image align="center" alt="twitter_account_name.png" src="https://support.appsflyer.com/hc/article_attachments/4411046818193" />
 
 
 <div id="x-ads-attribution-setup" />
@@ -82,7 +82,7 @@ L'**onglet Intégration** est divisé en différentes sections, comme indiqué c
 
 Sélectionnez les comptes pour activer l'attribution.
 
-![Twitter_msc_new_4.png](https://files.readme.io/c64dd5ddc51f35ce195c689b3d14ec4ed4010133662096926f4e8c45e48d60c4-4411049509137.png)
+<Image align="center" alt="Twitter_msc_new_4.png" src="https://files.readme.io/c64dd5ddc51f35ce195c689b3d14ec4ed4010133662096926f4e8c45e48d60c4-4411049509137.png" />
 
 <div id="click-through-attribution" />
 
@@ -92,7 +92,7 @@ Utilisez le curseur pour définir la **durée maximale entre le clic et l'instal
 
 Vous pouvez personnaliser cette valeur en heures (de 1 à 23) ou en jours (de 1 à 30). Afin de garantir la correspondance avec X Ads, nous vous recommandons de définir la durée de la fenêtre d'attribution sur 14 jours.
 
-![Twitter_msc_new_6.png](https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png)
+<Image align="center" alt="Twitter_msc_new_6.png" src="https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png" />
 
 <div id="reinstall-settings" />
 
@@ -104,7 +104,7 @@ Ce curseur vous permet de définir le **délai maximum entre l'impression et l'
 
 Vous pouvez personnaliser cette valeur en heures (1 à 23) ou en jours (1 à 7). Nous recommandons de définir la durée de la fenêtre d'attribution sur 1 jour, afin de garantir la correspondance avec X Ads.
 
-![Twitter_msc_new_7.png](https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png)
+<Image align="center" alt="Twitter_msc_new_7.png" src="https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png" />
 
 <div id="important" />
 
@@ -122,7 +122,7 @@ Activez l'option **Attribution de réengagement** pour démarrer l'attribution d
 
 Définissez la durée de la **Fenêtre rétrospective de réengagement post clic** (la période maximale après le clic sur une publicité pendant laquelle un utilisateur reciblé peut être attribué à celle-ci). Vous pouvez définir la valeur en heures (jusqu'à 23) ou en jours (1-30).
 
-![twitter-reengagement-activate.png](https://files.readme.io/9272c626eceeb8457584d2f1bd1d2adb16f9022994a2efa22eeaeb5b584e2149-4411049796625.png)
+<Image align="center" alt="twitter-reengagement-activate.png" src="https://files.readme.io/9272c626eceeb8457584d2f1bd1d2adb16f9022994a2efa22eeaeb5b584e2149-4411049796625.png" />
 
 <div id="re-engagement-view-through-lookback-window" />
 
@@ -132,7 +132,7 @@ Pour commencer à attribuer des impressions d'annonces de retargeting, activez *
 
 Définissez la durée de la **Fenêtre rétrospective de réengagement post vue** (la période maximale pendant laquelle une publicité est vue et pendant laquelle un utilisateur reciblé peut être attribué à la publicité). Vous pouvez définir la valeur en heures (jusqu'à 23) ou en jours (1-7) :
 
-![twitter-reengagement-view-through.png](https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png)
+<Image align="center" alt="twitter-reengagement-view-through.png" src="https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -142,7 +142,7 @@ Définissez la durée de la **Fenêtre rétrospective de réengagement post vue*
 
 Définissez la durée de la **Fenêtre de réengagement** (période au cours de laquelle les événements in-app de l'utilisateur sont attribués à la source média de retargeting). Vous pouvez définir la valeur en jours (1-90), en heures (jusqu'à 23) ou même en valeur vie :
 
-![Twitter-reengagement-window.png](https://files.readme.io/de80d79c777fc97caa0a28a342657475f0a05c14e30b1f96d24898a4638e1af8-4411047581201.png)
+<Image align="center" alt="Twitter-reengagement-window.png" src="https://files.readme.io/de80d79c777fc97caa0a28a342657475f0a05c14e30b1f96d24898a4638e1af8-4411047581201.png" />
 
 <div id="in-app-event-postback-settings" />
 
@@ -150,7 +150,7 @@ Définissez la durée de la **Fenêtre de réengagement** (période au cours de 
 
 Dans cette section, vous pouvez mapper vos événements AppsFlyer avec vos partenaires via des postbacks.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png" />
 
 **Pour configurer les postbacks d'événement in-app :**
 

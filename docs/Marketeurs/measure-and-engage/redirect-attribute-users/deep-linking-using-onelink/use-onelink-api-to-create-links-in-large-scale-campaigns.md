@@ -59,7 +59,7 @@ Vous pouvez contacter votre CSM pour augmenter le nombre de requêtes API autori
 1. <Anchor target="_blank" href="/marketers/fr/docs/create-a-onelink-template#procédures">Créez un modèle OneLink</Anchor>.
 2. Enregistrez l'ID OneLink.   
 
-   [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg" />
 3. Enregistrez la clé API OneLink.Un utilisateur admin doit forcément récupérer la clé API, les utilisateurs du compte n'y ont pas accès. 
    * Dans le tableau de bord AppsFlyer, allez dans **Expériences et deep Linking** > **API OneLink** > **Voir la clé API OneLink**
    * Si l'admin ne peut pas récupérer la clé API OneLink, cela signifie que vous n'avez pas le package requis et que vous devez contacter votre CSM.

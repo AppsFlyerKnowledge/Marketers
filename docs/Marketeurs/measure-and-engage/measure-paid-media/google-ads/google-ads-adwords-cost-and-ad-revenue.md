@@ -68,7 +68,7 @@ En savoir plus sur les <Anchor target="_blank" href="https://support.google.com/
 >
 > <span id="h_01HDP2SMHJF86QK9CJTVABKTYW"></span>Les utilisateurs peuvent confirmer qu'ils sont connectés avec le compte Google Ads correct en vérifiant l'adresse e-mail qui apparaît dans le coin supérieur droit du tableau de bord Google Ads.
 >
-> ![short.png](https://support.appsflyer.com/hc/article_attachments/4417297915537)
+> <Image align="center" alt="short.png" src="https://support.appsflyer.com/hc/article_attachments/4417297915537" />
 > Si le compte Google Ads est un sous-compte d'un compte MCC, l'ID en haut à droite est l'ID du compte MCC, et l'ID du sous-compte se trouve dans le coin supérieur gauche.
 >
 > Si le compte n'est pas correct, déconnectez-vous du compte et connectez-vous à nouveau à l'aide de l'adresse e-mail d'un autre compte Google.

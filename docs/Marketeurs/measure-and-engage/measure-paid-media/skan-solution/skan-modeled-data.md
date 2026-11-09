@@ -85,7 +85,7 @@ Des mesures modélisées sont disponibles sur la base de la valeur de conversion
 
 <Accordion title="Revenus LTV">
 
-[![modeled_d7.png](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)
+<Image align="center" alt="modeled_d7.png" src="https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png" />
 
 Les rapports SKAN peuvent uniquement fournir des revenus basés sur la fenêtre de mesure SKAN et la configuration de la CV pour les revenus dans Conversion Studio. La modélisation SKAN est capable de modéliser les revenus jusqu'à 7 jours (168 heures) après l'installation.
 

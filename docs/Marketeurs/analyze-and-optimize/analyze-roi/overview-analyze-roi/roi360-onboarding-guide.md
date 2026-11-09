@@ -38,7 +38,7 @@ Suivez les instructions d'intégration ci-dessous pour mettre en place les outil
 
 <Accordion title="Coût de l'intégration">
 
-![](https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png)
+<Image align="center" alt="" src="https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png" />
 
 Avec la solution de coûts ROI360, vous obtiendrez des informations détaillées sur les coûts et le retour sur investissement, mises à jour plusieurs fois par jour. Cela vous permet de gérer efficacement les coûts de campagne et de visualiser les allocations budgétaires sur diverses sources médias (réseaux publicitaires), campagnes et zones géographiques, que vous utilisiez des réseaux publicitaires, des médias propriétaires ou des agences.
 
@@ -62,7 +62,7 @@ Après avoir terminé l'intégration des coûts, vous serez en mesure de :
 
 <Accordion title="Intégration des revenus de la publicité">
 
-![](https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png)
+<Image align="center" alt="" src="https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png" />
 
 Avec la solution de revenus publicitaires ROI360, vous recevrez des données précieuses et granulaires sur les revenus publicitaires, actualisées plusieurs fois par jour.
 
@@ -86,7 +86,7 @@ Après avoir terminé l'intégration des revenus publicitaires, y compris la con
 
 <Accordion title="Intégration des revenus des achats in-app et abonnements">
 
-![](https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png)
+<Image align="center" alt="" src="https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png" />
 
 Avec la solution de revenus ROI360, vous obtenez un contrôle proactif sur vos flux de revenus.
 

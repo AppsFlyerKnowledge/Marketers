@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **En bref :** envoyez les événements de vos serveurs à AppsFlyer pour mesurer les événements mobiles qui se produisent en dehors de l'app.
 
-[![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
+<Image align="center" alt="S2S_us-en.png" src="https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png" />
 
 <div id="server-to-server-events-api-for-mobile" />
 
@@ -144,7 +144,7 @@ Après avoir mappé l'ID AppsFlyer à votre CUID, vous pourrez facilement associ
 
 <Accordion title="Horodatage des Événements S2S">
 
-[![diagramme de logique d'horodatage](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)
+<Image align="center" alt="diagramme de logique d'horodatage" src="https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png" />
 
 Lorsque les événements S2S arrivent en groupe sur AppsFlyer, ils sont horodatés en fonction des valeurs de la propriété `eventTime` et de leur heure d'arrivée. La propriété `eventTime` indique l'heure à laquelle l'événement s'est produit dans l'application.
 

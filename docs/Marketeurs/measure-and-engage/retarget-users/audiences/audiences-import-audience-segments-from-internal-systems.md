@@ -96,7 +96,7 @@ Prepare a CSV file, with the following specifications:
 * Maximum number of rows: 1 million
 * If you prepare the file using Excel, save it as a **CSV (Comma delimited) (\*.csv)** file, as shown in the fol following image:
 
-<Image alt="CSV.jpg" src="https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg" width="339px" />
+<Image align="center" alt="CSV.jpg" src="https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg" width="339px" />
 
 #### identifier hash
 

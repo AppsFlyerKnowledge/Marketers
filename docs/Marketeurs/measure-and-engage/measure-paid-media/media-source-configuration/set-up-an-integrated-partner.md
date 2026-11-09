@@ -40,7 +40,7 @@ AppsFlyer s’intègre avec des partenaires, des sources média et des plateform
 
 L'image qui suit présente les différents types de partenaires qui forment l'écosystème d'attribution.
 
-[![Ecosystem.jpg](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)
+<Image align="center" alt="Ecosystem.jpg" src="https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg" />
 
 **Lecture connexe** : <Anchor target="_blank" href="https://www.appsflyer.com/performance-index/">Indice de performance AppsFlyer</Anchor> qui classe les meilleures sources média mobiles par catégorie et région.
 
@@ -139,7 +139,7 @@ Pour accéder aux paramètres et configurer vos campagnes avec le partenaire :
 
 Les intégrations de partenaire varient d'un partenaire à l'autre et peuvent nécessiter une ou plusieurs des options détaillées dans cette section. Il existe certaines différences entre les paramètres iOS et Android.
 
-![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
+<Image align="center" alt="set_up_an_integrated_partner.png" src="https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png" />
 
 Veuillez renseigner les sections tel que demandé.
 
@@ -410,7 +410,7 @@ Générez et enregistrez les liens d'attribution pour l'utilisation des réseaux
 
 #### Paramètres du lien d'attribution
 
-[![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
+<Image align="center" alt="attribution-link-parameters-en_us.png" src="https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png" />
 
 En ajoutant des paramètres au lien d'attribution vous pouvez effectuer des analyses beaucoup plus précises. Il est possible de modifier les paramètres déjà définis sur le lien d'attribution en les ajoutant, ainsi que leurs nouvelles valeurs, ici. Lors de l'enregistrement du lien d'attribution, tous les paramètres configurés dans cet onglet sont sauvegardés.
 
@@ -465,7 +465,7 @@ En savoir plus sur la <Anchor target="_blank" href="/marketers/fr/docs/set-up-lo
 
 **Lien d'attribution de clic**
 
-[![click-through-attribution-link_en-us.png](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)
+<Image align="center" alt="click-through-attribution-link_en-us.png" src="https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png" />
 
 C'est le lien d'attribution qui contient toutes les informations de configuration que vous avez définies pour ce lien. Pour enregistrer le lien pour référence future, cliquez sur **Enregistrer le lien d'attribution**.
 
@@ -490,7 +490,7 @@ En savoir plus sur <Anchor target="_blank" href="/marketers/fr/docs/set-up-lookb
 
 **Lien d'attribution des impressions**
 
-[![impressions-attribution-link_en-us.png](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)
+<Image align="center" alt="impressions-attribution-link_en-us.png" src="https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png" />
 
 Le lien d'attribution des impressions contient des données d'attribution similaires au lien d'enregistrement des clics (en plus de la fenêtre rétrospective différente). Pour enregistrer le lien pour référence future, cliquez sur **Enregistrer le lien d'attribution**.
 

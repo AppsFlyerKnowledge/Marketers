@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **En bref :** Comprendre la différence entre les installations organiques et non organiques.
 
-![6453OrganicvsNon-organic.jpg](https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg)
+<Image align="center" alt="6453OrganicvsNon-organic.jpg" src="https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg" />
 
 Les utilisateurs non organiques sont attribués à la source média qui a porté l'installation ou l'engagement. Dans le cas des utilisateurs organiques, aucune source médiat n'est identifiée comme étant à l'origine de l'installation ou de l'engagement.
 

@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **En bref :** l'attribution basée sur les personnes (PBA) offre une vue d'ensemble du parcours des clients à travers différents canaux, plate-formes et appareils.
 
-![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
+<Image align="center" alt="PBANoSilos_us-en.gif" src="https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif" />
 
 <div id="pba-principles" />
 
@@ -51,7 +51,7 @@ x-zendesk:
 
 ### <Anchor target="_blank" href="/marketers/fr/docs/pba-website-attribution-dashboard">Attribution de site web</Anchor>
 
-[![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
+<Image align="center" alt="WebsiteAttributionTable_us-en.jpg" src="https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg" />
 
 Analysez les sources de trafic web et les campagnes de marketing qui génèrent des visites et des conversions sur votre site. Découvrez les différences de performances jusqu'au niveau de la publicité. Prend en charge l'ensemble des paramètres AppsFlyer de requête de lien sans avoir à rediriger les utilisateurs vers les serveurs AppsFlyer.
 
@@ -59,7 +59,7 @@ Analysez les sources de trafic web et les campagnes de marketing qui génèrent 
 
 ### <Anchor target="_blank" href="/marketers/fr/docs/pba-web-assisted-installs">Installations web-assistées</Anchor>
 
-[![AppsFlyer-Web-to-App_us.en.gif](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)
+<Image align="center" alt="AppsFlyer-Web-to-App_us.en.gif" src="https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif" />
 
 Les installations web-assistées vous permettent d'examiner l'impact et les résultats de vos actions marketing Web sur le nombre d'installations d'app mobile.
 

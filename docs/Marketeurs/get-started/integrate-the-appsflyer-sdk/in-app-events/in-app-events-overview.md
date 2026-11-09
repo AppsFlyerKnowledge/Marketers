@@ -45,7 +45,7 @@ Lorsque vos utilisateurs valident une inscription, complètent un tutoriel, ajou
 
 Un événement in-app comprend un nom d'événement et peut inclure des paramètres d'événement. Lorsque vous ajoutez des paramètres d'événement à un événement in-app, ce dernier devient un événement in-app riche. Les paramètres d'événement vous fournissent plus de contexte et d'informations sur l'événement en cours. Par exemple, en plus de savoir qu'un utilisateur a effectué une réservation, les paramètres d'événement vous donnent accès à des détails tels que le type d'achat, la destination et les revenus.
 
-![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
+<Image align="center" alt="travel.png" src="https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png" />
 
 <div id="tip" />
 
@@ -109,7 +109,7 @@ Il est important de comprendre comment AppsFlyer gère les paramètres et conver
 
 AppsFlyer gère la différence entre la devise des paramètres de l'app et la devise des événements in-app en utilisant la conversion de devise.
 
-![revenue_normalization_flow.png](https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png)
+<Image align="center" alt="revenue_normalization_flow.png" src="https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png" />
 
 Le diagramme ci-dessus illustre le processus suivant :
 
@@ -304,7 +304,7 @@ Gardez à l’esprit les points suivants lorsque vous définissez les noms d’�
 * AppsFlyer collecte l'adresse IP des appareils lors des <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy/#engagementinformation">engagements</Anchor>. Dans certaines juridictions ou certains scénarios d'utilisation, l'adresse IP peut être considérée comme une IPP. Nous utilisons l'adresse IP pour dériver la situation géographique de l'appareil à un niveau large (ville, district), mais pas l'adresse spécifique. Si nécessaire, vous pouvez sélectionner <Anchor target="_blank" href="/marketers/fr/docs/apply-ip-masking-to-user-data">Masquer les adresses IP</Anchor> afin que ces dernières n'apparaissent pas dans les rapports de données brutes.
 * Les événements in-app sont la seule source de données de revenu dans AppsFlyer. Vous pouvez associer une valeur de revenu spécifique à chaque événement et la visualiser sur le tableau de bord de votre application. En savoir plus sur les [paramètres de monétisation](/docs/in-app-events-overview#revenue-events).
 
-  ![revenue_data.png](https://support.appsflyer.com/hc/article_attachments/360020607037)
+  <Image align="center" alt="revenue_data.png" src="https://support.appsflyer.com/hc/article_attachments/360020607037" />
 
 </Accordion>
 

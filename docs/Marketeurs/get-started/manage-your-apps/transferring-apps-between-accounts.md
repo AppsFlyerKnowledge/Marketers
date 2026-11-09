@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **En bref :** Vous pouvez transférer des apps entre des comptes AppsFlyer en suivant les étapes décrites dans cet article (réservé aux admins des comptes expéditeur et destinataire).
 
-![5638-Transfering-an-app-NEW1.gif](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
+<Image align="center" alt="5638-Transfering-an-app-NEW1.gif" src="https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif" />
 
 <div id="app-transfer-between-accounts" />
 
@@ -102,7 +102,7 @@ Pour demander le transfert d'une ou plusieurs apps vers un autre compte AppsFlye
 1. Contactez l'admin de l'expéditeur pour vérifier et accepter le [cadre du transfert de l'app](/docs/transferring-apps-between-accounts#app-transfer-scope). Assurez-vous de bien comprendre ce qui est et n'est pas transféré et que vous êtes tous les deux correctement préparés.
 2. Vous recevrez une notification par e-mail vous indiquant que l'expéditeur a lancé la demande de transfert.
 3. Sur la page **Mes apps**, cliquez sur **Vérifier la demande**. Une demande peut concerner une app, ou plusieurs.  
-   [![App_transfer_receiver_side.JPG](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)
+   <Image align="center" alt="App_transfer_receiver_side.JPG" src="https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg" />
 4. Vérifiez puis et acceptez ou rejeter chaque demande.
 5. Lisez les conditions et, si vous les acceptez, apposez votre signature.
 6. L'expéditeur et vous-même êtes informés par e-mail que la demande a été acceptée.

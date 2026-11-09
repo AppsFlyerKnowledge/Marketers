@@ -29,7 +29,7 @@ x-zendesk:
 
 > **En bref :** attribuez les revenus publicitaires pour compléter l'affichage des performances LTV.
 
-[![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
+<Image align="center" alt="Attributes_ad_revenue.png" src="https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png" />
 
 <div id="ad-revenue-attribution" />
 
@@ -85,7 +85,7 @@ Les sections suivantes décrivent les types d'attribution de revenus publicitair
 1. Dans AppsFlyer, allez dans **ROI360** > **Paramètres des revenus** > **Revenus publicitaires**.
 2. Dans Integration des revenus publicitaires, cliquez sur **Nouvelle intégration des revenus publicitaires**.
 3. Sélectionnez un partenaire des revenus publicitaires et cliquez sur **Suivant**.  
-   ![ad_revenue_ui.png](https://files.readme.io/d91b886ed5b9715a508a481afbb86a7dd8381894322455214674ba68b483e91b-13751596101649.png)
+   <Image align="center" alt="ad_revenue_ui.png" src="https://files.readme.io/d91b886ed5b9715a508a481afbb86a7dd8381894322455214674ba68b483e91b-13751596101649.png" />
 4. Sélectionnez le type de données des revenus publicitaires que vous souhaitez recevoir. **Remarque** : tous les réseaux publicitaires ne proposent pas l'intégralité des options ci-dessous.
    * Revenus attribués. Signifie que le revenu est basé sur la source d'acquisition d'utilisateurs. Les rapports sur les revenus attribués peuvent être soit :
      * [Niveau agrégé](/docs/roi360-guide-ad-revenue-attribution#aggregate-granularity-using-app-open-or-inapp-events) via API S2S. 
@@ -113,7 +113,7 @@ Les sections suivantes décrivent les types d'attribution de revenus publicitair
 
 <Accordion title="Afficher, modifier et supprimer les revenus publicitaires des partenaires intégrés">
 
-![delete_edit_adi.png](https://support.appsflyer.com/hc/article_attachments/13751607197713)
+<Image align="center" alt="delete_edit_adi.png" src="https://support.appsflyer.com/hc/article_attachments/13751607197713" />
 
 **Pour afficher, modifier ou supprimer les intégrations des réseaux de revenus publicitaires :**:
 
@@ -134,7 +134,7 @@ Une partie des données des revenus publicitaires peut se retrouver en double lo
 1. Dans AppsFlyer, allez dans **ROI360** > **Paramètres des revenus** > **Revenus publicitaires**.
 2. Dans **Paramètres généraux**, cliquez sur **Supprimer les doublons quand deux plateformes de médiation se croisent.Remarque** : Ne supprimez pas les doublons si les deux plateformes média gèrent des formats publicitaires différents. Par exemple, lorsque la plateforme 1 affiche des bannières et des interstitiels, et que la plateforme 2 affiche des publicités Natives et AppOpen.
 
-[![dedup.png](https://support.appsflyer.com/hc/article_attachments/17299804281361)](https://support.appsflyer.com/hc/article_attachments/17299804281361)
+<Image align="center" alt="dedup.png" src="https://support.appsflyer.com/hc/article_attachments/17299804281361" />
 
 </Accordion>
 
@@ -224,7 +224,7 @@ L'attribution des revenus publicitaires est disponible comme suit :
 
 #### **Tableau de bord général - rapport de performance agrégé**
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002239229)](https://support.appsflyer.com/hc/article_attachments/360002239229)
+<Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360002239229" />
 
 Dans le tableau Vue d'ensemble :
 
@@ -307,7 +307,7 @@ Dans le tableau de bord Activité :
 
 <Accordion title="Données brutes des revenus publicitaires">
 
-<Image alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
+<Image align="center" alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
 
 Les rapports de données brutes sur les revenus publicitaires contiennent des données fournies par les réseaux de monétisation intégrés à AppsFlyer au niveau appareil et au niveau impression.
 

@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **En bref :** Apple Search Ads (ASA), un partenaire SRN d'AppsFlyer, aide les utilisateurs à trouver votre application dans l'App Store à l'aide de mots-clés.
 
-<Image alt="apple_search_ads.png" src="https://support.appsflyer.com/hc/article_attachments/17210504660625" width="217px" />
+<Image align="center" alt="apple_search_ads.png" src="https://support.appsflyer.com/hc/article_attachments/17210504660625" width="217px" />
 
 C'est la pertinence de l'application qui définit si votre publicité s'affichera en réponse à une recherche dans l'App Store. La manière dont l'utilisateur répond à une publicité indique la pertinence de cette même publicité. ASA utilise la réponse de l'utilisateur comme curseur pour décider quelles publicités afficher en premier.
 
@@ -309,11 +309,11 @@ Les chiffres suivant illustrent les écarts qui peuvent survenir en cas de campa
 
 **Retargeting activé**
 
-[![ASA R Enabled2.jpg](https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg)](https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg)
+<Image align="center" alt="ASA R Enabled2.jpg" src="https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg" />
 
 **Retargeting désactivé**
 
-[![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+<Image align="center" alt="ASA_R_Disabled.png" src="https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png" />
 
 <div id="20260901" />
 

@@ -46,7 +46,7 @@ Vous pouvez accéder à l'assistant d'ajout d'applications depuis la plateforme,
 >
 > Si la page d'onboarding n'est pas encore ouverte, cliquez sur **Onboarding de l'app** dans le menu supérieur > liste déroulante > adresse e-mail
 
-![onboarding page.png](https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png)
+<Image align="center" alt="onboarding page.png" src="https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png" />
 
 **Pour accéder à l'assistant depuis la plateforme :**
 
@@ -54,7 +54,7 @@ Vous pouvez accéder à l'assistant d'ajout d'applications depuis la plateforme,
 * Sur la page d'accueil d'AppsFlyer, cliquez sur **+ Ajouter une app**
 * Dans le menu supérieur > adresse e-mail, menu déroulant > Onboarding de l'app, cliquez sur **+ Onboarding d'une nouvelle app**
 
-<Image alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
+<Image align="center" alt="add an app (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
 <div id="adding-an-app" />
 
@@ -156,7 +156,7 @@ Utilisez cette option pour les plateformes suivantes :
 
 **URL complète :** URL complète du site web dont vous souhaitez mesurer le trafic. Il s'agit du site web sur lequel vous avez ou allez implémenter le <Anchor target="_blank" href="/marketers/fr/docs/onboarding-guide-to-people-based-attribution#2">SDK web PBA</Anchor>.
 
-[<Image alt="URL_diagram" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)
+<Image align="center" alt="URL_diagram" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />
 
 Inclure –
 
@@ -216,7 +216,7 @@ Inclure –
   * À partir du <Anchor target="_blank" href="https://developer.roku.com/developer">tableau de bord de développeur Roku</Anchor>, cliquez sur le nom du canal que vous ajoutez à AppsFlyer. Cela ouvre la page Aperçu et Publication Roku pour le canal.
   * Le numéro qui apparaît à la fin de l'URL de la page dans votre navigateur est l'ID du canal :
 
-    <Image alt="find_channel_id.png" src="https://files.readme.io/11ef90a222a1deaf6d4718169e5a29f734f0f05d859c009d47b8ae5cb6519639-4411061399569.png" width="476px" />
+    <Image align="center" alt="find_channel_id.png" src="https://files.readme.io/11ef90a222a1deaf6d4718169e5a29f734f0f05d859c009d47b8ae5cb6519639-4411061399569.png" width="476px" />
 
 </Accordion>
 
@@ -238,7 +238,7 @@ Inclure –
 
 **ID d'app :** l'ID de bundle attribué à votre application par Samsung. Vous le trouverez à la fin de l'URL de l'app store de votre application :
 
-<Image alt="samsung_tizen_url_app_id.png" src="https://files.readme.io/d4789b59faf551cfc1603dd3d8f95f286d5bb45b59927489bdd2263ac03a3a36-7369359502097.png" width="364px" />
+<Image align="center" alt="samsung_tizen_url_app_id.png" src="https://files.readme.io/d4789b59faf551cfc1603dd3d8f95f286d5bb45b59927489bdd2263ac03a3a36-7369359502097.png" width="364px" />
 
 </Accordion>
 
@@ -260,7 +260,7 @@ Inclure –
 
 **ID d'app :** l'ID du concept PlayStation, un identifiant unique attribué à un jeu ou à un autre concept de contenu. Il apparaît sous la forme d'un numéro de 5 à 9 chiffres dans l'URL du PlayStation Store :
 
-![playstation_app_id_url.png](https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png)
+<Image align="center" alt="playstation_app_id_url.png" src="https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png" />
 
 </Accordion>
 
@@ -282,7 +282,7 @@ Inclure –
 
 **ID d'app :** l'ID d'app Steam. Il s'agit du numéro de 5-8 chiffres qui apparaît dans l'URL de la boutique Steam :
 
-![steam_store_app_url.png](https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png)
+<Image align="center" alt="steam_store_app_url.png" src="https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png" />
 
 </Accordion>
 
@@ -347,7 +347,7 @@ Inclure –
 
 ### #2 – Saisir les infos supplémentaires *(ne concerne pas les apps web) :*
 
-<Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
+<Image align="center" alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
 
 1. **Sélectionner une devise**
 

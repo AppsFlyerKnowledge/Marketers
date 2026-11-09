@@ -105,13 +105,13 @@ Amplitude se connecte à AppsFlyer via une clé API unique. Si vous ne l'avez pa
 1. Connectez-vous à votre compte Amplitude.
 2. En haut à droite de la page, cliquez sur l'icône des paramètres > **Paramètres de l'organisation**.  
 
-   <Image alt="Amplitude" src="https://files.readme.io/214df773c045239924b65a4a1e6b0a1957f6b7ea09e225af80d83ffa0a469c26-16258070772625.png" width="240px" />
+   <Image align="center" alt="Amplitude" src="https://files.readme.io/214df773c045239924b65a4a1e6b0a1957f6b7ea09e225af80d83ffa0a469c26-16258070772625.png" width="240px" />
 3. Cliquez sur **Projets** et sélectionnez le projet à partir duquel vous souhaitez envoyer des données à AppsFlyer.   
 
-   ![amplitude](https://files.readme.io/eaf158e4505f47f8da0fdae4f97be773ab32910352b50cab5ca5d4de3e8782ac-16335170399505.png)
+   <Image align="center" alt="amplitude" src="https://files.readme.io/eaf158e4505f47f8da0fdae4f97be773ab32910352b50cab5ca5d4de3e8782ac-16335170399505.png" />
 4. Dans l'onglet **Projet**, copiez votre clé API.  
 
-   <Image alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
+   <Image align="center" alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
 5. Procédez à la configuration d'Amplitude dans le tableau de bord d'AppsFlyer.
 
 <div id="default-postbacks" />
@@ -186,7 +186,7 @@ Les autorisations ne sont pas disponibles pour Amplitude.
 
 Les données d'attribution envoyées par AppsFlyer à Amplitude s'affichent dans vos tableaux de bord sous forme d'événements et de propriétés préfixés par **[AppsFlyer]** :
 
-![amplitude-properties.png](https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png)
+<Image align="center" alt="amplitude-properties.png" src="https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png" />
 
 > 🚧 **Important !**
 >

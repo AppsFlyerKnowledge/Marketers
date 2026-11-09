@@ -54,7 +54,7 @@ Pour que le partenaire obtienne des postbacks, les noms de campagne **doivent ê
 
 **Pour configurer les postbacks d'événements in-app**:
 
-[![in-app_event_mapping.png](https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png)](https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png)
+<Image align="center" alt="in-app_event_mapping.png" src="https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png" />
 
 1. Activez l’option **Postbacks d'événement in-app.**
 2. Complétez les paramètres requis selon la <Anchor target="_blank" href="/marketers/fr/docs/in-app-event-postback-configuration#les-méthodes-de-mappage">méthode de mappage</Anchor> :  

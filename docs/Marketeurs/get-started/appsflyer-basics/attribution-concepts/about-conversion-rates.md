@@ -32,7 +32,7 @@ x-zendesk:
 
 Les nouveaux utilisateurs passent par un tunnel marketing, du premier visionnage d'une publicité à la génération des revenus. Chaque étape du tunnel a son propre niveau de réussite. Plus l'utilisateur progresse dans ce parcours, meilleurs sont les résultats pour l'annonceur mobile. L'image suivante présente les étapes du tunnel marketing.
 
-![ua_funnel_2_en-us.png](https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png)
+<Image align="center" alt="ua_funnel_2_en-us.png" src="https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png" />
 
 <div id="marketing-funnel-stages-and-conversion-rates" />
 

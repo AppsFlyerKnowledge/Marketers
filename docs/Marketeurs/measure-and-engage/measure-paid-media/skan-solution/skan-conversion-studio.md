@@ -139,7 +139,7 @@ Si vous effectuez une mise à niveau vers SKAN 4 à partir d'un mode SKAN préc�
 
 Pour définir manuellement SKAN 4, tentez différentes options. En fonction des modifications, la jauge de **capacité de la valeur de conversion** évolue. Affinez les paramètres jusqu'à obtenir les données qui vous intéressent le plus, mais sans dépasser la capacité. Cf [Calcul de la capacité de la valeur de conversion.](/docs/skan-conversion-studio#conversion-value-capacity-formula)
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 Remarque **: si vous passez à SKAN 4 à partir d'un mode SKAN précédent, votre mappage de schéma actuel est reporté pour les mesures précises et AppsFlyer mappe automatiquement les valeurs approximatives pour vous. Et si vous êtes nouveau sur SKAN, AppsFlyer fournit un mappage initial par défaut.**
 
@@ -185,7 +185,7 @@ En mode personnalisé, vous utilisez différents composants de mesure (comme les
 
 Pour définir le mode Personnalisé, tentez différents réglages, en fonction des modifications la synthèse de la **capacité de la valeur de conversion** évolue. Affinez les paramètres jusqu'à obtenir les données qui vous intéressent le plus, mais sans dépasser la capacité. Cf [Calcul de la capacité de la valeur de conversion.](/docs/skan-conversion-studio#conversion-value-capacity-formula)
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) Pour définir manuellement les valeurs de conversion dans Conversion Studio en utilisant le mode personnalisé :**
 
@@ -220,7 +220,7 @@ Les modes fixes vous permettent de mesurer la valeur utilisateur en utilisant l'
 
 Au fur et à mesure que vous modifiez les paramètres du mode, la synthèse **de la capacité des valeurs de conversion** se met à jour. Optimisez vos paramètres pour capturer les données les plus importantes, sans dépasser la capacité. Cf [Calcul de la capacité des valeurs de conversion.](/docs/skan-conversion-studio#conversion-value-capacity-formula)
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **Important !**
 
@@ -551,7 +551,7 @@ Le principe de priorité est expliqué plus en détails dans cet [exemple](/docs
 4. Cliquez sur **+ Ajouter une mesure**.Sélectionnez **Priorité**.   
    Priority 1 s'affiche.  
 
-   [![Priority1.png](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)
+   <Image align="center" alt="Priority1.png" src="https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png" />
 5. Sélectionnez un composant de mesure dans :
    * Revenu
    * Évènement in-app
@@ -604,7 +604,7 @@ Le principe de priorité est expliqué plus en détails dans cet [exemple](/docs
 * Téléchargez le tableau de mappage des CV au format .CSV. Cliquez sur **Télécharger le fichier de mappage.**
 * Pour obtenir le mappage des CV utilisez l'<Anchor target="_blank" href="/marketers/fr/docs/skan-cv-schema-api-for-advertisers">API de schéma CV SKAN pour les annonceurs</Anchor>.
 
-![CVmapping.png](https://files.readme.io/97ec2570636897a6274f7750c7f77c92d8457cab51660de496bec6cb7504c4a3-4407788932113.png)
+<Image align="center" alt="CVmapping.png" src="https://files.readme.io/97ec2570636897a6274f7750c7f77c92d8457cab51660de496bec6cb7504c4a3-4407788932113.png" />
 
 <div id="csv-mapping-file-columns" />
 
@@ -1015,7 +1015,7 @@ Pour désactiver la mesure SKAdNetwork :
 
 <Accordion title="Signaler les événements par API de serveur à serveur">
 
-![SKAdNetwork_-_S2S__2_.png](https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png)
+<Image align="center" alt="SKAdNetwork_-_S2S__2_.png" src="https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png" />
 
 Le SDK et <Anchor target="_blank" href="/marketers/fr/docs/server-to-server-events-api-for-mobile-s2s-mobile">l'API de serveur à serveur (S2S)</Anchor> peuvent tous deux envoyer des événements in-app aux serveurs AppsFlyer.
 

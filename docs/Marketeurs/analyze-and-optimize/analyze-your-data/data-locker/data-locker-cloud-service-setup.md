@@ -54,7 +54,7 @@ Dans cette procédure, remplacez `data-locker-example` par le nom du compartimen
 1. Connectez-vous à votre console GCS.
 2. Rendez-vous dans **Stockage** > **Navigateur** **de stockage**.  
 
-   [![mceclip0.png](https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png)](https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png)
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png" />
 3. Sélectionnez le compartiment que vous avez précédemment créé, par exemple `data-locker-example`.
 4. Allez dans l'onglet **Permissions**.
 5. Cliquez sur **+ Ajouter**.  
@@ -67,7 +67,7 @@ Dans cette procédure, remplacez `data-locker-example` par le nom du compartimen
       ```
    2. **Sélectionnez un rôle** : **Stockage Cloud** > **Admin des objets de stockage**.  
 
-      [![mceclip0.png](https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png)](https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png)
+      <Image align="center" alt="mceclip0.png" src="https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png" />
 7. Cliquez sur **Enregistrer**.
 
 </Accordion>
@@ -90,7 +90,7 @@ Data Locker est la solution AppsFlyer permettant d'envoyer les données vers un 
 
 **Interface utilisateur dans la console AWS**
 
-![MyBucket.jpg](https://files.readme.io/b8a16d185279200026388e146cfb3eb03ae3c7737ac26da3aa0d116a0cf9c078-4403551836305.jpg)
+<Image align="center" alt="MyBucket.jpg" src="https://files.readme.io/b8a16d185279200026388e146cfb3eb03ae3c7737ac26da3aa0d116a0cf9c078-4403551836305.jpg" />
 
 Après avoir créé le compartiment, accordez les autorisations AppsFlyer en suivant la procédure ci-dessous.
 
@@ -226,7 +226,7 @@ Data Locker est la solution AppsFlyer permettant d'envoyer les données vers un 
 1. Dans BigQuery, créez un projet ou utilisez un projet existant.
 2. Dans le projet, cliquez sur  **CRÉER UN ENSEMBLE DE DONNÉES**.
 
-   [![GCSCreateDataSEt_1_.png](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)
+   <Image align="center" alt="GCSCreateDataSEt_1_.png" src="https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png" />
 3. Donnez un ID approprié à l'ensemble de données.
 4. Accordez à AppsFlyer l'accès à l'ensemble de données. <Anchor target="_blank" href="https://cloud.google.com/bigquery/docs/control-access-to-resources-iam#grant_access_to_a_resource">Voir les instructions de Big Query</Anchor>
    * Pour **ajouter l'utilisateur principal**, utilisez l'utilisateur AppsFlyer suivant : [datalocker-bq-admin-prod@datalocker-bq-prod.iam.gserviceaccount.com](mailto:datalocker-bq-admin-prod@datalocker-bq-prod.iam.gserviceaccount.com)
@@ -263,7 +263,7 @@ Effectuez les opérations suivantes pour connecter Snowflake à Data Locker.
 2. Dans la barre des menus, sélectionnez votre nom.  
    Votre ID de compte et votre région s'affichent.  
 
-   [![SnowflakeAccountId.png](https://files.readme.io/146dc699865a8a72780ba409d37ca1206767943e27221bec635b9fb49ffc7223-4412207884433.png)](https://files.readme.io/146dc699865a8a72780ba409d37ca1206767943e27221bec635b9fb49ffc7223-4412207884433.png)
+   <Image align="center" alt="SnowflakeAccountId.png" src="https://files.readme.io/146dc699865a8a72780ba409d37ca1206767943e27221bec635b9fb49ffc7223-4412207884433.png" />
 
 **Pour connecter Data Locker à Snowflake** :
 

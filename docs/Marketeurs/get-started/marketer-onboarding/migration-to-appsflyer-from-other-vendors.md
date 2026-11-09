@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **En bref :** planifiez votre migration vers AppsFlyer à partir d'un autre fournisseur d'attribution. Évitez les doubles frais, la duplication et la perte de données pendant la période de migration.
 
-![flux de migration](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
+<Image align="center" alt="flux de migration" src="https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png" />
 
 <div id="compare-measurement-between-appsflyer-and-other-mmps" />
 

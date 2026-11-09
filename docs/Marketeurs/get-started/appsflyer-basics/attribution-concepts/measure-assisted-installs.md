@@ -50,7 +50,7 @@ Les données analytiques des installations assistées sont disponibles au niveau
 4. Sélectionnez la métrique **Installations assistées**.  
    Le graphique des installations assistées s'affiche.La partie bleue indique les installations non organiques et la partie orange les installations assistées.
 
-   ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
+   <Image align="center" alt="AssitedInstallWidget.png" src="https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png" />
 
 <div id="why-are-assists-important" />
 
@@ -66,7 +66,7 @@ Il arrive souvent que des utilisateurs potentiels se familiarisent avec une app 
 
 AppsFlyer attribue jusqu'à trois réseaux contributeurs en plus de la source de l'installation attribuée. Les données sur les réseaux contributeurs et les installations assistées sont disponibles dans les rapports de données brutes.
 
-[![](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)
+<Image align="center" alt="" src="https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png" />
 
 Pour chacun des réseaux contributeurs, le rapport de données brutes contient les éléments suivants :
 

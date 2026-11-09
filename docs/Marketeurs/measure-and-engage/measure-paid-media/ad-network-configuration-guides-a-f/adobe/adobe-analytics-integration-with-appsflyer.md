@@ -191,7 +191,7 @@ NSDictionary *adobeInfo = @{@"external_user_id":@"some-adobe-external-id-value"}
    **Remarque : La case doit rester cochée (activée)/span> tant que vous collaborez avec le partenaire.**
 5. Depuis le **SDK Adobe Analytics**, dans le fichier **ADBMobileConfig.XML**, copiez l’élément **Report\_Suite\_ID** (surligné en bleu) et l'élément **Adobe\_Analytic\_server\_URL** (surligné en vert) et collez-les dans les champs respectifs de la page d'intégration Adobe Analytics dans AppsFlyer.  
 
-   ![](https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png)
+   <Image align="center" alt="" src="https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png" />
 6. Cliquez sur **Enregistrer l'intégration**.
 
 Une fois enregistré, AppsFlyer envoie les données suivantes à Adobe Analytics pour chaque installation organique et non organique :

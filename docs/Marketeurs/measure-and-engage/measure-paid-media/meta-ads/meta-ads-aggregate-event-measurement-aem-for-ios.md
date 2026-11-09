@@ -97,7 +97,7 @@ Data coming from deep link attributions isn't subject to reporting restrictions.
 
 When an app is eligible for AEM on Meta Ads, **Aggregated Event Measurement** is selected by default during Ad Set creation. This means both AEM and SKAdNetwork (SKAN) can be used simultaneously for the campaign. If **Apple SKAdNetwork** is selected instead, only SKAN will apply to the campaign. This means AppsFlyer has limited ability to measure app activity on Meta Ads.
 
-<Image alt="aem_meta_ads_platform.png" src="https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png" width="563px" />
+<Image align="center" alt="aem_meta_ads_platform.png" src="https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png" width="563px" />
 
 > 📘 **Note**
 >
@@ -110,7 +110,7 @@ When an app is eligible for AEM on Meta Ads, **Aggregated Event Measurement** is
 * When turned off, Advanced data sharing is limited to conversion events for users with an available Advertiser ID. Events from users without an Advertiser ID are not shared or attributed.
 * When enabled, Advanced data sharing makes conversion events available to Meta ads for all users, including those without an Advertiser ID. AppsFlyer attributes these events. The data made available might include additional device-related information that does not involve the device ID. To learn more, see <Anchor target="_blank" href="/marketers/fr/docs/meta-ads-integration-setup#advanced_data_sharing">Advanced data sharing</Anchor>.
 
-![aem](https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png)
+<Image align="center" alt="aem" src="https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png" />
 
 > 📘 **Note**
 >

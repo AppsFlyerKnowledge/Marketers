@@ -32,7 +32,7 @@ x-zendesk:
 
 > **En bref :** L’ETL des coûts, qui fait partie de l’offre ROI360 AppsFlyer, offre aux annonceurs des données de coût de campagne par source média d’une grande précision. Les données (actualisées 4 fois par jour) sont transmises à votre compartiment AWS S3 ou GCS où elles peuvent être immédiatement importées dans les systèmes BI des annonceurs.
 
-![5896_CostETL_graphic__2_.png](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)
+<Image align="center" alt="5896_CostETL_graphic__2_.png" src="https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png" />
 
 ## Fonctionnement de l’ETL des coûts
 
@@ -90,7 +90,7 @@ Vous pouvez personnaliser les autres dimensions, ainsi que les mesures disponibl
 
 **Exemple de structure de répertoire**
 
-![cost_etl_structure_4.jpg](https://support.appsflyer.com/hc/article_attachments/360019240077)
+<Image align="center" alt="cost_etl_structure_4.jpg" src="https://support.appsflyer.com/hc/article_attachments/360019240077" />
 
 **Structure du répertoire**
 
@@ -212,14 +212,14 @@ Cette action de configuration doit être réalisée par un utilisateur admin.
 6. Dans **Calendrier des rapports**, sélectionnez le moment où vous souhaitez recevoir le premier rapport. Les rapports qui suivront arriveront environ toutes les 6 heures.
 7. Ouvrez les **paramètres Amazon S3**.  
 
-   [![](https://support.appsflyer.com/hc/article_attachments/360019202837)](https://support.appsflyer.com/hc/article_attachments/360019202837)
+   <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360019202837" />
 8. Sélectionnez la région de votre compartiment S3 dans la liste déroulante.  
    Si votre région n'est pas listée, contactez votre CSM.
 9. Saisissez le nom de votre compartiment Amazon S3.
 10. Cliquez sur **Suivant**.  
     L'extrait de code des règles du compartiment s'affiche.  
 
-    [![](https://support.appsflyer.com/hc/article_attachments/360019263058)](https://support.appsflyer.com/hc/article_attachments/360019263058)
+    <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360019263058" />
 11. Copiez l'extrait de code des règles du compartiment et collez-le dans vos paramètres AWS.
     1. Dans AWS, sélectionnez le compartiment que vous avez créé pour l’ETL des coûts.
     2. Allez dans l'onglet **Autorisations**.
@@ -236,10 +236,10 @@ Cette action de configuration doit être réalisée par un utilisateur admin.
 17. Sélectionnez au moins une **dimension garantie** : Canal et/ou Géo.
 18. Sélectionnez au moins une dimension supplémentaire.  
 
-    [![](https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png)](https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png)
+    <Image align="center" alt="" src="https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png" />
 19. Sélectionnez au moins une mesure à inclure dans les rapports.   
 
-    [![](https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg)](https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg)
+    <Image align="center" alt="" src="https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg" />
 20. Cliquez sur **Appliquer**.
 
 </Accordion>
@@ -284,10 +284,10 @@ Cette action de configuration doit être réalisée par un utilisateur admin.
 15. Sélectionnez au moins une **dimension garantie** : Canal et/ou Géo.
 16. Sélectionnez au moins une dimension supplémentaire.  
 
-    [![](https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png)](https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png)
+    <Image align="center" alt="" src="https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png" />
 17. Sélectionnez au moins une mesure à inclure dans les rapports.   
 
-    [![](https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg)](https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg)
+    <Image align="center" alt="" src="https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg" />
 18. Cliquez sur **Appliquer**.
 
 </Accordion>

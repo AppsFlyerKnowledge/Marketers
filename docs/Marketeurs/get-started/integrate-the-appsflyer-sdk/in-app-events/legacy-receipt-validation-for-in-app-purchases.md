@@ -51,4 +51,4 @@ Le flow de validation est le suivant :
 
 Ci-dessous, un extrait de réponse du validation du reçu:
 
-![Screen Shot 2015-02-26 at 12.26.45.png](/attachments/token/l41yw5RpWECWHtGnSdx3SsUbU/?name=Screen+Shot+2015-02-26+at+12.26.45.png)
+<Image align="center" alt="Screen Shot 2015-02-26 at 12.26.45.png" src="/attachments/token/l41yw5RpWECWHtGnSdx3SsUbU/?name=Screen+Shot+2015-02-26+at+12.26.45.png" />

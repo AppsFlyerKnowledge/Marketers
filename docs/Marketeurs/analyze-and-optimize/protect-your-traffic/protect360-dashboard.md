@@ -29,7 +29,7 @@ x-zendesk:
 
 > **En bref :** Le tableau de bord Protect360 contient les informations relatives au trafic frauduleux et aux installations bloquées suite aux règles de validation.
 
-[![p360_dashboard_main.png](https://support.appsflyer.com/hc/article_attachments/5218491552273)](https://support.appsflyer.com/hc/article_attachments/5218491552273)
+<Image align="center" alt="p360_dashboard_main.png" src="https://support.appsflyer.com/hc/article_attachments/5218491552273" />
 
 <div id="about-protect360-dashboard" />
 
@@ -55,7 +55,7 @@ Pour consulter le tableau de bord Protect360, dans AppsFlyer, rendez-vous dans *
 
 **Fenêtre Filtre et regroupements**
 
-[![p360_filters_2.png](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)
+<Image align="center" alt="p360_filters_2.png" src="https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png" />
 
 Ces options de filtres et de regroupement sont disponibles :
 
@@ -106,7 +106,7 @@ Pour chaque KPI, il existe un pourcentage. Cette valeur indique l'évolution du 
 
 **Estimation des économies**
 
-[![](https://support.appsflyer.com/hc/article_attachments/4403139246993)](https://support.appsflyer.com/hc/article_attachments/4403139246993)
+<Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/4403139246993" />
 
 Métriques des économies estimées :
 
@@ -118,7 +118,7 @@ Pour plus de détails sur le mode de calcul de cette valeur, lisez cette <Anchor
 
 **Attributions frauduleuses identifiées**
 
-[![](https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png)](https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png)
+<Image align="center" alt="" src="https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png" />
 
 Le total des fraudes identifiées indique les montants suivants :
 
@@ -127,7 +127,7 @@ Le total des fraudes identifiées indique les montants suivants :
 
 **Événements in-app bloqués**
 
-[![](https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png)](https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png)
+<Image align="center" alt="" src="https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png" />
 
 Les métriques des événements in-app bloqués affichent le nombre d'événements in-app bloqués par AppsFlyer. Les évènements peuvent avoir été bloqués parce qu'ils appartiennent à des installations bloquées, ou parce qu'ils sont marqués comme événements suspects après l’attribution.
 
@@ -200,7 +200,7 @@ Le tableau de **répartition des fraudes identifiées** affiche les données sui
 
 Le tableau présente un aperçu global, cf image suivante.
 
-[![p360_main_table.png](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)
+<Image align="center" alt="p360_main_table.png" src="https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png" />
 
 Structure du tableau dynamique :
 
@@ -208,7 +208,7 @@ Structure du tableau dynamique :
   Si vous apportez des modifications au tableau, veillez ensuite à bien cliquer sur **Enregistrer**.
 * Correspond à un utilisateur, chaque utilisateur du compte ayant accès à Protect360 peut donc personnaliser la structure de son tableau. Voir [les différentes options du tableau](/docs/protect360-dashboard#options-supplémentaires-du-tableau).
 
-[![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+<Image align="center" alt="edit_table.jpg" src="https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg" />
 
 <div id="content-of-the-identified-fraud-breakdown-table" />
 
@@ -308,7 +308,7 @@ Les fonctionnalités du tableau de bord sont détaillées dans les sections suiv
 
 <Accordion title="Événements in-app — Métriques principales">
 
-[![](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)
+<Image align="center" alt="" src="https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg" />
 
 Les métriques principales vous permettent d’afficher :
 
@@ -359,7 +359,7 @@ Le tableau de **Répartition des événements in-app frauduleux** indique les é
 
 Le tableau présente un aperçu global, cf image suivante.
 
-[![EIA_fraud_table.jpg](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)
+<Image align="center" alt="EIA_fraud_table.jpg" src="https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg" />
 
 Structure du tableau dynamique :
 
@@ -367,7 +367,7 @@ Structure du tableau dynamique :
   Si vous apportez des modifications au tableau, veillez ensuite à bien cliquer sur **Enregistrer**.
 * Correspond à un utilisateur, chaque utilisateur du compte ayant accès à Protect360 peut donc personnaliser la structure de son tableau. Voir [les différentes options du tableau](/docs/protect360-dashboard#installs-table).
 
-[![EIA_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
+<Image align="center" alt="EIA_table_structure.jpg" src="https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg" />
 
 <div id="content-of-the-in-app-event-fraud-breakdown-table" />
 
@@ -419,17 +419,17 @@ Pour activer les événements payables dans le tableau de bord des activités in
 
 * Dans la section Filtrer par du tableau de bord des activités in-app, activez l'option Événements payables.  
 
-  [![](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)
+  <Image align="center" alt="" src="https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg" />
 
 Pour configurer les événements payables :
 
 1. Dans le tableau de bord des activités in-app, cliquez sur **Configurer les événements à payer**.  
 
-   [![](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg" />
 
    La fenêtre contextuelle de Configuration des événements payables s'affiche.
 
-   [![](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg" />
 2. [Facultatif] Si vous configurez un nouvel événement payable, cliquez sur **Ajouter nouveau**.
 3. En fonction des EIA payables que vous souhaitez afficher dans le tableau de bord, sélectionnez dans les menus déroulants les options suivantes :
    * Applications

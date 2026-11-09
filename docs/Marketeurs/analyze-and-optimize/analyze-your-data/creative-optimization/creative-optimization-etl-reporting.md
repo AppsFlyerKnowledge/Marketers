@@ -50,7 +50,7 @@ Tout d'abord, vous devez souscrire au plan Creative Optimization Premium et au D
 
 2. Lors de la configuration de Data Locker, sélectionnez **Créations** (dans **Sélection des rapports**), sur la page de configuration de Data Locker.
 
-![Data Locker - select Creative.jpg](https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg)
+<Image align="center" alt="Data Locker - select Creative.jpg" src="https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg" />
 
 </Accordion>
 
@@ -64,11 +64,11 @@ Cette section décrit comment modifier la configuration de votre Data Locker exi
 
 1. Dans la section **Intégrations** du menu latéral principal d'AppsFlyer, cliquez sur **Data Locker**.
 
-<Image alt="from Integration select Data Locker.jpg" src="https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg" width="200px" />
+<Image align="center" alt="from Integration select Data Locker.jpg" src="https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg" width="200px" />
 
 2. Sélectionnez **Créations** (dans **Sélection des rapports**), sur la page de configuration de Data Locker.
 
-![Data Locker - select Creative.jpg](https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg)
+<Image align="center" alt="Data Locker - select Creative.jpg" src="https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg" />
 
 </Accordion>
 

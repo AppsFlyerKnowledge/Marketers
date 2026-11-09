@@ -98,7 +98,7 @@ Lorsqu'une app est lancée pour la première fois :
 
 <Accordion title="Exemple A : attribution assistée">
 
-![SRN_1.png](https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png)
+<Image align="center" alt="SRN_1.png" src="https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png" />
 
 **Lundi :** le réseau A rapporte un clic d'utilisateur.
 
@@ -116,7 +116,7 @@ AppsFlyer fournit aux annonceurs les données d'assistance (c'est à dire les en
 
 <Accordion title="Exemple B : attribution du dernier clic">
 
-![SRN_2.png](https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png)
+<Image align="center" alt="SRN_2.png" src="https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png" />
 
 **Le réseau D** (SRN) rapporte un clic quelques minutes avant le réseau C.
 
@@ -266,7 +266,7 @@ Les analystes de données AppsFlyer ont surveillé les campagnes **d'acquisition
 * Dans 5 % des campagnes, au moins 40 % d'entre eux étaient des utilisateurs déjà existants de l'app.
 * **Conclusion : dans les campagnes d'acquisition d'utilisateurs SRN, 1 utilisateur ciblé sur 10 est déjà un utilisateur existant.**
 
-[![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+<Image align="center" alt="mistargeted_users.png" src="https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png" />
 
 <div id="are-clicks-and-impressions-from-srns-available-in-raw-data-reports" />
 

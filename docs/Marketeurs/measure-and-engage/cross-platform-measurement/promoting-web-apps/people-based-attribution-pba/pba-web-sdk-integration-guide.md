@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **En bref :** Intégrez AppsFlyer aux sites web à l’aide du SDK Web pour enregistrer et mesurer les visites, les événements, les conversions et les revenus.
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="advanced-verification-with-smart-banners" />
 
@@ -149,7 +149,7 @@ AF('banners', 'showBanner');
 1. <Anchor target="_blank" href="https://developers.google.com/tag-manager/quickstart">Accédez à Google Tag Manager.</Anchor>
 2. Créez une balise pour le SDK web AppsFlyer.  
 
-   [![](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)
+   <Image align="center" alt="" src="https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png" />
 3. Sélectionnez le type de balise **HTML personnalisée**.
 4. Donnez un nom significatif à la balise.
 5. Effectuez l'une des opérations suivantes :
@@ -187,7 +187,7 @@ AF('banners', 'showBanner');
    * **Pour ajouter le déclencheur à toutes les pages :**
      1. Cliquez sur **Ajouter un déclencheur**.
 
-        [![gtm-af-tag-sdk-trigger.png](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)
+        <Image align="center" alt="gtm-af-tag-sdk-trigger.png" src="https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png" />
      2. Sélectionnez **Toutes les pages**.
      3. Cliquez sur **Enregistrer.**
      4. Saisissez un nom de balise, cliquez sur **Enregistrer**.  
@@ -198,7 +198,7 @@ AF('banners', 'showBanner');
      2. Dans la fenêtre principale de GTM, sélectionnez **Déclencheurs.** Cliquez sur **Nouveau**.
      3. Cliquez sur l’icône du stylo.
      4. Choisissez le type de déclencheur **Page vue**.  
-        [![PBAselectTrigger_us-en.jpg](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)
+        <Image align="center" alt="PBAselectTrigger_us-en.jpg" src="https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg" />
      5. Sélectionnez **Certaines pages vues.**
      6. Définissez la page et déclenchez les conditions selon vos besoins.
      7. Cliquez sur **Enregistrer**.
@@ -208,7 +208,7 @@ AF('banners', 'showBanner');
         3. Dans le panneau de déclenchement, cliquez sur le stylet.
         4. Sélectionnez le déclencheur d’affichage de page que vous avez créé précédemment.  
 
-           [![](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)
+           <Image align="center" alt="" src="https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png" />
         5. Cliquez sur **Enregistrer**.
 
 </Tab>
@@ -224,7 +224,7 @@ AF('banners', 'showBanner');
 
 <Accordion title="Création d’une propriété dans Adobe Experience Cloud">
 
-![adobe_create_property.png](https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png)
+<Image align="center" alt="adobe_create_property.png" src="https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png" />
 
 1. Allez sur **Adobe Experience Cloud** > **Lancer**.
 2. Dans **Adobe Experience Cloud Launch**, cliquez sur **Accéder au lancement.**
@@ -240,7 +240,7 @@ AF('banners', 'showBanner');
 
 <Accordion title="Ajout du SDK web à la propriété Adobe Launch">
 
-<Image alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
+<Image align="center" alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
 
 1. Sur la page **Mes propriétés Web**, sélectionnez l’onglet **Règles** .
 2. Nommez la règle. Nous vous recommandons d’utiliser **Charger le SDK web**.
@@ -259,7 +259,7 @@ AF('banners', 'showBanner');
 
 <Accordion title="Ajout de la balise Adobe Launch au site web">
 
-[![adobe_tag.png](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)
+<Image align="center" alt="adobe_tag.png" src="https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png" />
 
 1. Sur la page **Mes propriétés web**, sélectionnez l'onglet **Environnements**.
 2. Trouvez la ligne avec l'environnement que vous voulez publier (développement ou production).
@@ -276,7 +276,7 @@ AF('banners', 'showBanner');
 
 <Accordion title="Publication de l’environnement Adobe Launch">
 
-[![adobe_publishing_env.png](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)
+<Image align="center" alt="adobe_publishing_env.png" src="https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png" />
 
 1. Sur la page **Mes propriétés web**, accédez à l'onglet **Publication**.
 2. Dans la section **Développement** , cliquez sur **Ajouter une nouvelle bibliothèque.**
@@ -314,7 +314,7 @@ Une fois installé, vérifiez que le SDK Web AppsFlyer est appelé par le naviga
 1. Allez sur le site Web.
 2. Ouvrez les outils de développement du navigateur.
 
-   ![WebSDK_us-en.jpg](https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg)
+   <Image align="center" alt="WebSDK_us-en.jpg" src="https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg" />
 3. Accédez à l’onglet **Réseau** (A).
 4. Actualisez la page.
 5. Filtrez par **wa.Appsflyer** (B).
@@ -336,7 +336,7 @@ Une fois installé, vérifiez que le SDK Web AppsFlyer est appelé par le naviga
 
 <Accordion title="Envoi d’événements opt-in/opt-out">
 
-![5578-VistiorPrivacyOptIn_us-en.png](https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png)
+<Image align="center" alt="5578-VistiorPrivacyOptIn_us-en.png" src="https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png" />
 
 Le SDK Web envoie les données d’événement des visiteurs à AppsFlyer. Vous pouvez contrôler, arrêter ou démarrer l’envoi d’événements tel que décrit dans cette section.
 
@@ -541,7 +541,7 @@ Cette section s’adresse aux développeurs web.
 4. Déclenchez l'événement.
 5. Filtrez par message.
 
-   ![pba_af_event.png](https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png)
+   <Image align="center" alt="pba_af_event.png" src="https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png" />
 6. Recherchez une requête réseau qui commence par la destination wa.appsflyer.com (voir capture d’écran ci-dessous).
 7. Assurez-vous que :
    1. Le code d’état est 200.
@@ -676,7 +676,7 @@ Le code précédent ci-dessus montre une page HTML de base. La page web doit ch
    Le code précédent charge GTM, qui charge à son tour le SDK Web. Par la suite, deux autres actions ont lieu dans le script. L’une est une fonction qui reçoit une réponse du serveur avec les détails de l’utilisateur. L’autre définit les données sur le stockage local. GTM a accès à la fois à la fonction et à localStorage. Vous pouvez appeler la fonction et accéder à localStorage à l’aide de GTM.
 2. Ajoutez une nouvelle balise pour attribuer les abonnements après le chargement de la page de remerciement  
 
-   [![](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 3. Donnez un nom distinct à la balise et sélectionnez l’option de type de balise **HTML personnalisée**.
 4. Mettez le code suivant dans le **code HTML personnalisé**.  
 
@@ -685,13 +685,13 @@ Le code précédent ci-dessus montre une page HTML de base. La page web doit ch
    AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'subscription'}); </script>
    ```
 
-   ![gtm_tag_after_subscribe.png](https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png)
+   <Image align="center" alt="gtm_tag_after_subscribe.png" src="https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png" />
 5. Développez le contrôle **Paramètres avancés**, puis le contrôle **Séquencement des balises** sous la zone de texte et assurez-vous qu’il est configuré pour déclencher la conversion après l’exécution de la balise.  
 
-   [![](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. Pour déclencher la balise de conversion, définissez un déclencheur. Dans l’exemple, le déclencheur est déclenché lors du chargement de la page de remerciement.  
 
-   [![](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 **Enregistrement des événements lorsque les utilisateurs interagissent avec le site web**
 
@@ -738,12 +738,12 @@ Le code précédent ci-dessus montre une page HTML de base. La page web doit ch
    Le code précédent charge le SDK Web à l’aide de GTM. Le reste est simplement du HTML qui imite une page de panier. Notez le bouton **Paiement**, qui contient l’ID de paiement. Il est nécessaire lors de la configuration de GTM pour gérer un clic sur ce bouton.
 2. Dans GTM, cliquez sur **Variables**, **Configurer** et cochez **Élément de clic** dans la liste des **variables intégrées.**  
 
-    [![gtm-create-variable.png](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)
+    <Image align="center" alt="gtm-create-variable.png" src="https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png" />
 3. Créez une nouvelle variable, donnez-lui un nom significatif et choisissez le type de **Tous les éléments.**  
-    [![gtm-checkout-all-elements.png](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)
+    <Image align="center" alt="gtm-checkout-all-elements.png" src="https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png" />
 4. Dans la configuration du déclencheur, choisissez **Quelques clics**, choisissez **Élément de clic,** qui **correspond au sélecteur CSS** #checkout.  
 
-    [![gtm-checkout-click-elememt.png](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)
+    <Image align="center" alt="gtm-checkout-click-elememt.png" src="https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png" />
 5. Créez une balise pour l’action de paiement, choisissez le type HTML personnalisé et définissez le déclencheur sur le déclencheur de paiement.  
 
    ```html
@@ -751,7 +751,7 @@ Le code précédent ci-dessus montre une page HTML de base. La page web doit ch
     AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'}); </script>
    ```
 
-   ![gtm-checkout-tag.png](https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png)
+   <Image align="center" alt="gtm-checkout-tag.png" src="https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png" />
 
 </Tab>
 </Tabs>
@@ -946,10 +946,10 @@ Le code utilise l’API fetch. Il envoie au serveur l’adresse e-mail saisie pa
    ```
 5. Développez le contrôle **Paramètres avancés**, puis le contrôle **Séquencement des balises** sous la zone de texte et assurez-vous qu’il est configuré pour déclencher la conversion après l’exécution de la balise.  
 
-   [![](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. Définissez un déclencheur pour la balise de conversion afin d’indiquer quand la balise de conversion doit être déclenchée (dans l’exemple ci-dessous, elle est déclenchée lors du chargement de la page « Merci »).  
 
-   [![](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 </Tab>
 </Tabs>

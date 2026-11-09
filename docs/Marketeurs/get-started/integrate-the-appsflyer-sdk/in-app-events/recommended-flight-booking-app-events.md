@@ -45,7 +45,7 @@ x-zendesk:
 >
 >
 >
-> [![Flowchart_for_recommended_events flight_booking_app_user_journey](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)
+> <Image align="center" alt="Flowchart_for_recommended_events flight_booking_app_user_journey" src="https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png" />
 >
 > ## Structures recommandées pour les événements prédéfinis
 >

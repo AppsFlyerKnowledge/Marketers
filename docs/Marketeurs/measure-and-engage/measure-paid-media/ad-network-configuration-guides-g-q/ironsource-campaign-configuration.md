@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **En bref :** ironSource est un partenaire intégré d'AppsFlyer qui crée des outils de monétisation, d'engagement, d'analyse et de découverte pour les développeurs d'app, les fabricants d'appareils, les opérateurs mobile et les annonceurs. Outre l'attribution mobile basée sur les clics, ironSource offre la possibilité d'enregistrer via AppsFlyer l'attribution des coûts, des revenus publicitaires, du retargeting et post-vue.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
  Remarque : En tant que réseau *toutes-installations*, ironSource préfère recevoir les postbacks pour toute nouvelle installation de votre app, QUELLE QUE SOIT la source, y compris organique. Pour ce faire, sélectionnez *Événements attribués à tout partenaire* pour envoyer tous les postbacks d'installation à ironSource.
 

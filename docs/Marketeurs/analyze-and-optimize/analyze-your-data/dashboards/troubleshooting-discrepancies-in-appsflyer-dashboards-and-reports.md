@@ -84,7 +84,7 @@ Les deux méthodes sont utiles aux annonceurs, mais à des fins différentes. C'
 
 **Activité** : imaginez que vous regardez un train qui passe. Lorsque le train avance, vous voyez uniquement les actions effectuées par les passagers du train au moment où ils passent devant vous. Il s'agit des données d'activité.
 
-<Image alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
+<Image align="center" alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
 
 **LTV** : imaginez maintenant que vous montez à bord d'un train en tant qu'observateur. Le train est divisé en plusieurs wagons.
 
@@ -92,7 +92,7 @@ Les deux méthodes sont utiles aux annonceurs, mais à des fins différentes. C'
 * Pendant le voyage, vous pouvez observer toutes les actions effectuées par les passagers dans le wagon. Vous pouvez observer les actions de tous les passagers de la voiture jusqu'à ce qu'un passager descende du train, c'est une désinstallation.
 * Vous ne pouvez pas voir ce que font les passagers dans les autres wagons du train car ils sont montés avant ou après vous. Il s'agit de la LTV.
 
-<Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
+<Image align="center" alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
 
 ## Tableaux de bord AppsFlyer—LTV ou activité ?
 
@@ -106,7 +106,7 @@ Découvrons quelles données sont des données LTV et lesquelles sont des donné
 * Métriques disponibles : points de contact, installations, taux de conversion et revenus LTV
 * Graphiques : tendances d'acquisition des utilisateurs, installations, utilisateurs fidèles LTV et revenus LTV
 
-[![](https://files.readme.io/5e9d7025c7d8b3ca11270cabd348cba3ffa166df674548803b84efb4b11ab6ab-115014844503.png)](https://files.readme.io/5e9d7025c7d8b3ca11270cabd348cba3ffa166df674548803b84efb4b11ab6ab-115014844503.png)
+<Image align="center" alt="" src="https://files.readme.io/5e9d7025c7d8b3ca11270cabd348cba3ffa166df674548803b84efb4b11ab6ab-115014844503.png" />
 
 Le bas de page de la vue d'ensemble du tableau de bord contient encore plus de données d'évènement, qui sont également des données LTV.
 
@@ -120,7 +120,7 @@ Dans le tableau **Rapport de performances agrégées**, les colonnes suivantes s
 * Désinstallations (nombre et taux)
 * Toutes les colonnes d'évènements in-app
 
-[![](https://files.readme.io/508f2388e5671fe00181a050a7a7cce1064e3a68470fea1b91b89647c76a9e2d-115014673026.png)](https://files.readme.io/508f2388e5671fe00181a050a7a7cce1064e3a68470fea1b91b89647c76a9e2d-115014673026.png)
+<Image align="center" alt="" src="https://files.readme.io/508f2388e5671fe00181a050a7a7cce1064e3a68470fea1b91b89647c76a9e2d-115014673026.png" />
 
 Le widget **Meilleurs évènements** contient également des données LTV.
 
@@ -130,7 +130,7 @@ Le widget **Meilleurs évènements** contient également des données LTV.
 
 Toutes les données de cette page, accessibles à partir du widget **Meilleurs évènements** ou du lien **Évènements** dans la barre de gauche, sont des données d’évènements LTV. Pour une explication plus détaillée de la page d'évènements, cliquez ici.
 
-[![](https://files.readme.io/5d144a104c8bb0bdd287e916534f619fc2f8ad76f895803f61b69dc36a581fd2-115014673046.png)](https://files.readme.io/5d144a104c8bb0bdd287e916534f619fc2f8ad76f895803f61b69dc36a581fd2-115014673046.png)
+<Image align="center" alt="" src="https://files.readme.io/5d144a104c8bb0bdd287e916534f619fc2f8ad76f895803f61b69dc36a581fd2-115014673046.png" />
 
 </Accordion>
 
@@ -144,11 +144,11 @@ Le <Anchor target="_blank" href="/marketers/fr/docs/retargeting-attribution-guid
 
 Même si vous sélectionnez un seul jour de données de rétention, vous pouvez récupérer plusieurs jours ou semaines de données de sessions pertinentes uniquement pour les installations de ce jour, ce qui est un excellent KPI pour la qualité utilisateur. LTV classique. Cliquez sur les liens pour obtenir une description plus détaillée du rapport de rétention et du <Anchor target="_blank" href="/marketers/fr/docs/cohort-and-retention-dashboard">rapport de cohorte</Anchor>.
 
-[![](https://files.readme.io/e72add1e5b77439f0ba744cbf739846e4de8a03f3923dfd9b256c50b526402ae-115014673066.png)](https://files.readme.io/e72add1e5b77439f0ba744cbf739846e4de8a03f3923dfd9b256c50b526402ae-115014673066.png)
+<Image align="center" alt="" src="https://files.readme.io/e72add1e5b77439f0ba744cbf739846e4de8a03f3923dfd9b256c50b526402ae-115014673066.png" />
 
 Le rapport de cohorte est similaire au rapport de rétention, mais comporte plus que les métriques de sessions. Ces métriques, tels que le revenu, les sessions et les évènements in-app, sont des données LTV.
 
-[![CohortForLTV_us-en.jpg](https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg)](https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg)
+<Image align="center" alt="CohortForLTV_us-en.jpg" src="https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg" />
 
 </Accordion>
 
@@ -156,7 +156,7 @@ Le rapport de cohorte est similaire au rapport de rétention, mais comporte plus
 
 Les données d'évènement du Tableau de <Anchor target="_blank" href="/marketers/fr/docs/activity-dashboard">bord d'activité</Anchor> sont basées sur les sessions et les revenus et sont **la base de l'activité**. Elles sont relatives chronologiquement à tous les utilisateurs d'app actifs durant une période donnée.
 
-[![Activity_us-en.jpg](https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg)](https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg)
+<Image align="center" alt="Activity_us-en.jpg" src="https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg" />
 
 </Accordion>
 
@@ -182,7 +182,7 @@ Le rapport sur les évènements in-app rejetés correspond à des données d'**a
 
 Conjointement avec la page de présentation du tableau de bord, toutes les données d'évènements de la page <Anchor target="_blank" href="/marketers/fr/docs/custom-dashboards">Tableau de bord personnalisé</Anchor> sont des **données LTV**.
 
-[![](https://files.readme.io/c9ee8de9a03e8ed64ec305b6de3ab235f7b1ca6a996478837d4c4d323ed911dc-115014844623.png)](https://files.readme.io/c9ee8de9a03e8ed64ec305b6de3ab235f7b1ca6a996478837d4c4d323ed911dc-115014844623.png)
+<Image align="center" alt="" src="https://files.readme.io/c9ee8de9a03e8ed64ec305b6de3ab235f7b1ca6a996478837d4c4d323ed911dc-115014844623.png" />
 
 </Accordion>
 

@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **En bref :** Attribuez les installations des campagnes de promotion croisée qui font la publicité de vos apps sur les différentes apps dont vous êtes propriétaire.
 
-![CrossPromo_userJourney](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
+<Image align="center" alt="CrossPromo_userJourney" src="https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png" />
 
 <div id="about-cross-promotion" />
 
@@ -35,7 +35,7 @@ La campagne de promotion croisée est ce qu’il y a de mieux pour promouvoir vo
 
 L'image suivante montre le tableau de bord de l'app mise en avant, avec la répartition des résultats des campagnes lancées sur les médias propriétaire (**af\_cross\_promotion**) ainsi que les autres sources média. Vous pouvez voir que le nombre d'installations et le taux de conversion de la campagne de promotion croisée sont bien plus importants que chez les autres sources média.
 
-[![CrossPromo_mediaSource](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+<Image align="center" alt="CrossPromo_mediaSource" src="https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png" />
 
 <div id="how-does-cross-promotion-work" />
 
@@ -115,7 +115,7 @@ En consultant les données des installations, clics, impressions et taux de conv
 >
 > Lorsque vous consultez le tableau de bord, vous constatez que le taux de conversion pour Golf (18,22 %) est beaucoup plus élevé que le taux avec Bowling, vous en déduisez donc que Golf est plus associée à Billard, l’app au cœur de la publicité.
 >
-> [![CrossPromo_conversionRate](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)
+> <Image align="center" alt="CrossPromo_conversionRate" src="https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png" />
 >
 > Sur la base de ces informations, vous pourriez optimiser votre campagne comme ceci :
 >
@@ -140,6 +140,6 @@ Un <Anchor target="_blank" href="/marketers/fr/docs/custom-dashboards">tableau d
 >
 > Pour centraliser les résultats des 3 applications mises en avant, vous créez un tableau de bord personnalisé. Dans l'image suivante, vous pouvez voir que Chaussures de sport a un taux de conversion de 20,23 %, ce qui signifie que Chaussures est plus associée à Chaussures de sport qu'aux 2 autres applications dont elle fait la publicité.
 >
-> ![CrossPromo_customWidget](https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png)
+> <Image align="center" alt="CrossPromo_customWidget" src="https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png" />
 
 <div data-zendesk-anchors="about-crosspromotion=%C3%A0-propos-de-la-promotion-crois%C3%A9e h_01HE7RXZ2CZCYENE4K40W5YSHF=%C3%A0-propos-de-la-promotion-crois%C3%A9e how-does-crosspromotion-work=comment-se-passe-la-promotion-crois%C3%A9e h_01HE7RXZ2CE5EQV42Y4B9SK4FN=comment-se-passe-la-promotion-crois%C3%A9e attributing-crosspromotion=attribuer-une-promotion-crois%C3%A9e h_01HE7RXZ2CWB2GZ8HV6447RVV1=attribuer-une-promotion-crois%C3%A9e setting-up-crosspromotion=mettre-en-place-une-promotion-crois%C3%A9e h_01HE7RXZ2C9JGFYV8K8FECFFJN=mettre-en-place-une-promotion-crois%C3%A9e viewing-crosspromotion-data=consulter-les-donn%C3%A9es-des-promotions-crois%C3%A9es h_01HE7RXZ2CE9NWMQ1PT3G98QVN=consulter-les-donn%C3%A9es-des-promotions-crois%C3%A9es promoted-app-dashboard=tableau-de-bord-de-lapp-mise-en-avant h_01HE7RXZ2CQG9M35Y2FJNPZWDA=tableau-de-bord-de-lapp-mise-en-avant analysis=analyse h_01HE7RXZ2CVQD8H0J6EVRJM5T7=analyse h_01HE7RXZ2CW1P0QNA8FFXP5KBS=exemple custom-dashboard=tableau-de-bord-personnalis%C3%A9 h_01HE7RXZ2C7N3DKNPF898WM4AD=tableau-de-bord-personnalis%C3%A9 h_01HE7RXZ2C51KJMP795QYS26YK=exemple-1" />

@@ -103,7 +103,7 @@ Dans votre compte Pinterest Business :
 
 **Remarque** : L’ID de balise n’est requis que pour les postbacks d’événement.
 
-[![](https://files.readme.io/8d5c3b6d1dd7542860d58b2cff8581a8eb72880764b730a4c87b8161eb04edab-360001712765.png)](https://files.readme.io/8d5c3b6d1dd7542860d58b2cff8581a8eb72880764b730a4c87b8161eb04edab-360001712765.png)
+<Image align="center" alt="" src="https://files.readme.io/8d5c3b6d1dd7542860d58b2cff8581a8eb72880764b730a4c87b8161eb04edab-360001712765.png" />
 
 1. Définissez l’ID de la balise Pinterest ici.
 2. Activez les**Postbacks d'événement in-app.**

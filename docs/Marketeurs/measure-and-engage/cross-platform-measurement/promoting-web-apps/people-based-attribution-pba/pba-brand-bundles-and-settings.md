@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **En bref** : les bundles de marque réunissent l'attribution, l'activité, les visites et les revenus des apps et sites web liés à une marque. Utilisez la page des paramètres des bundles de marques pour marquer les événements de conversion, intégrer dans Google Ads, etc.
 
-![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
+<Image align="center" alt="BrandBundles.png" src="https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png" />
 
 <div id="about-brand-bundles" />
 

@@ -80,7 +80,7 @@ Les données de performance des campagnes d'engagement pour télécharger par pr
 2. Sélectionnez le partenaire de préchargement.
 3. Dans l'onglet **Integration**, activez **Attribution de préchargement**.  
 
-   [<Image alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />](https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png)
+   <Image align="center" alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />
 4. Définissez la durée de la **fenêtre rétrospective de préchargement.** Durée : 1-180 jours.
 5. Activez l'option de **priorité égale pour les préchargements.** Cela donne aux clics déterministes la même priorité d'attribution que l'attribution de préchargement, ce qui signifie que si un clic déterministe est enregistré entre l'engagement du référent de préchargement et l'installation, le clic est attribué selon le principe du dernier touch, au lieu du référent de préchargement.
 6. Cliquez sur **Enregistrer l'intégration**.

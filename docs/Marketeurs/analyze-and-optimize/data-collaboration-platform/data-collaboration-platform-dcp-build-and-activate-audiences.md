@@ -55,21 +55,21 @@ Learn how to <Anchor target="_blank" href="/marketers/fr/docs/data-collaboration
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
 
-   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/2c1d9c18f9b28619e3e24cd4743ae0b98c7f04924baa2b915ec6323452a75088-42800679689105.png" width="245px" />
+   <Image align="center" alt="Click Data Clean Room.png" src="https://files.readme.io/2c1d9c18f9b28619e3e24cd4743ae0b98c7f04924baa2b915ec6323452a75088-42800679689105.png" width="245px" />
 2. From the **Collaborations** tab, click the relevant collaboration.
 
-   <Image alt="Click the relevant collaboration.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
+   <Image align="center" alt="Click the relevant collaboration.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
 3. In the collaboration, click **New audience** > **Visual audience builder**.  
    **Note:** At least one source must be associated before you can build an audience.
 
-   <Image alt="New Aud Visual audience builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
+   <Image align="center" alt="New Aud Visual audience builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. Proceed with the **Audience builder** walkthrough steps below:
 
 #### Step 1: Details and sources
 
 The audience can be created using data from a single collaborator or by merging one source from each collaborator to enable a combined data source.
 
-![New aud.png](https://files.readme.io/c110dcda7524ddcb4ce255ac5eb1f33ffec61103219e35f54f1d5687135cf915-35683488156433.png)
+<Image align="center" alt="New aud.png" src="https://files.readme.io/c110dcda7524ddcb4ce255ac5eb1f33ffec61103219e35f54f1d5687135cf915-35683488156433.png" />
 
 1. **Audience name:** Name the audience collaboration.
 2. **Select sources:** Select a source from the dropdown list:
@@ -88,7 +88,7 @@ The audience can be created using data from a single collaborator or by merging 
 
      **Note:** All three options will only be available if the source permissions have "**Build Audiences**" > "**Can use all data** - **Universal dataset**" enabled. <Anchor target="_blank" href="/marketers/fr/docs/data-collaboration-platform-dcp-create-and-manage-sources#sharing-permissions">Learn more about source permissions</Anchor>  
 
-     <Image alt="can use all data permision enabled w arrow.png" src="https://files.readme.io/6f386c2383c75bf42da6cfdc4d662be0fdf7d623588480825e4a70f453d1f94c-46848627186065.png" width="1556px" />
+     <Image align="center" alt="can use all data permision enabled w arrow.png" src="https://files.readme.io/6f386c2383c75bf42da6cfdc4d662be0fdf7d623588480825e4a70f453d1f94c-46848627186065.png" width="1556px" />
 4. Click **Next**.
 
 #### Step 2: Define the audience
@@ -113,7 +113,7 @@ After the data sources are selected, this step involves choosing which attribute
 4. Click **Next**.
 5. Continue with the next step [Send the audience](#send-an-audience-for-activation) to activate the audience.
 
-<Image alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
+<Image align="center" alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
 
 #### Summary (Right-side preview pane)
 
@@ -165,7 +165,7 @@ The Estimated audience size reflects the expected range of unique users that mat
 * Accounts for cross-source overlap (if applicable)
 * Adjusts dynamically as filters, sources, or rules change
 
-![image (20).png](https://files.readme.io/0ba94f26978e2d3f984bd0c8c2fa8e60159420f5765cff358cdd80d6f05e271c-43432443225489.png)
+<Image align="center" alt="image (20).png" src="https://files.readme.io/0ba94f26978e2d3f984bd0c8c2fa8e60159420f5765cff358cdd80d6f05e271c-43432443225489.png" />
 
 > 📘 **Note**
 >
@@ -198,13 +198,13 @@ To use transactional data for audience creation, you must first aggregate it int
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
 
-   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/2c1d9c18f9b28619e3e24cd4743ae0b98c7f04924baa2b915ec6323452a75088-42800679689105.png" width="40.57%" />
+   <Image align="center" alt="Click Data Clean Room.png" src="https://files.readme.io/2c1d9c18f9b28619e3e24cd4743ae0b98c7f04924baa2b915ec6323452a75088-42800679689105.png" width="40.57%" />
 2. From the **Collaborations** tab, click the relevant collaboration.
 
-   <Image alt="Click the relevant collaboration.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
+   <Image align="center" alt="Click the relevant collaboration.png" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
 3. In the collaboration, click **New audience** > **SQL audience builder**.
 
-   <Image alt="New Aud SQL audience builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
+   <Image align="center" alt="New Aud SQL audience builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
 4. Proceed with the **Audience builder** walkthrough steps:
 
 #### Set details
@@ -283,7 +283,7 @@ Send the audience for activation directly in your preferred media partner platfo
 
 1. Within the audience builder, turn on **Connect audiences to media partners**.  
 
-   ![Connect audience to media partners.png](https://files.readme.io/d1e6558183eed8f239f1d61efd81cd71db7a2c7f6acfdef7e1c029dea51af172-37184169230097.png)
+   <Image align="center" alt="Connect audience to media partners.png" src="https://files.readme.io/d1e6558183eed8f239f1d61efd81cd71db7a2c7f6acfdef7e1c029dea51af172-37184169230097.png" />
 2. Click **+ Partner connection**.
 3. If no partner connections were established, create a new partner connection:
    1. Click **+ Add connections**.
@@ -294,7 +294,7 @@ Send the audience for activation directly in your preferred media partner platfo
    6. Click **Save**.
 4. Click **Save & send**.
 
-![image (21).png](https://files.readme.io/bb7785936d3e79e18adffe31ca8121b5c0a65392508ef0aea76c7dc75e9ce9eb-43432561109777.png)
+<Image align="center" alt="image (21).png" src="https://files.readme.io/bb7785936d3e79e18adffe31ca8121b5c0a65392508ef0aea76c7dc75e9ce9eb-43432561109777.png" />
 
 </Accordion>
 
@@ -329,7 +329,7 @@ View and manage audiences associated with a collaboration.
 
 1. In DCP, go to the **Collaborations** tab and click the relevant collaboration.
 2. Click the **Audiences** section.  
-   <Image alt="Audiences section new UI.png" src="https://files.readme.io/8f8170d6848da0158c7db76938bdb4fa64cb3a9702218fe549e6b6e859d64140-small-43777994824977.png" width="2836px" />
+   <Image align="center" alt="Audiences section new UI.png" src="https://files.readme.io/8f8170d6848da0158c7db76938bdb4fa64cb3a9702218fe549e6b6e859d64140-small-43777994824977.png" width="2836px" />
 
 **What you can do from this page:**
 
@@ -386,7 +386,7 @@ You can delete an audience created in your account. Doing so removes it permanen
 
 You can view the **Last upload status** of audiences associated with a collaboration.
 
-<Image alt="image (26).png" src="https://files.readme.io/5659a3e30aac91226ecf8d1cf08618b698f063d1412522f2c231459fdfc7fb03-43541066537105.png" width="860px" />
+<Image align="center" alt="image (26).png" src="https://files.readme.io/5659a3e30aac91226ecf8d1cf08618b698f063d1412522f2c231459fdfc7fb03-43541066537105.png" width="860px" />
 
 There are various statuses an audience can have:
 
@@ -403,7 +403,7 @@ You can also view the **Upload history** status of an audience.
 
 Click the dropdown next to the specific audience and select **View history**.
 
-![View history doctored .png](https://files.readme.io/7840f05fd8f6a98445c29e5a59813776378d842dd54fab4e3f66111c34dd89dd-36573637043089.png)
+<Image align="center" alt="View history doctored .png" src="https://files.readme.io/7840f05fd8f6a98445c29e5a59813776378d842dd54fab4e3f66111c34dd89dd-36573637043089.png" />
 
 **Upload history statuses include:**
 

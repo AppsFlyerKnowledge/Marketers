@@ -37,7 +37,7 @@ L'attribution de retargeting a lieu lorsqu'un utilisateur s'engage dans une camp
 * **Réengagement :** si l'app est déjà sur l'appareil, la source média qui incite l'utilisateur à ouvrir l'application est créditée d'un réengagement.
 * **Réattribution (ou «réinstallation de retargeting»)** : si l'app n'est pas présente sur l'appareil de l'utilisateur (car celui-ci l'a désinstallée), l'engagement dans la campagne de retargeting fait qu'il réinstalle puis ouvre l'application. Si cela se produit au cours d'une <Anchor target="_blank" href="/marketers/fr/docs/set-up-re-attribution-window">fenêtre de réattribution</Anchor> : la réattribution sera imputée à la source média de retargeting. Lecture connexe : <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-attribution-model#reinstalls">Les réinstallations.</Anchor>
 
-![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 Avant de lancer une campagne de retargeting, consultez les règles de réengagement et les exemples pratiques des sections suivantes. Vous pourrez ensuite mettre en place le retargeting en suivant les es instructions du chapitre dédié au retargeting. Pour une meilleure compréhension, nous vous conseillons de prendre connaissance du <Anchor target="_blank" href="/marketers/fr/docs/appsflyer-attribution-model">modèle d'attribution</Anchor> AppsFlyer et des fenêtres d'attribution qui lui sont associées.
 
@@ -90,7 +90,7 @@ Les tableaux suivants contiennent des informations relatives aux fenêtres liée
 
 #### **Exemple d'implémentation des règles**
 
-![](https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png)
+<Image align="center" alt="" src="https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png" />
 
 Liste des règles de réengagement pour l'attribution post clic et post vue :
 
@@ -139,7 +139,7 @@ Les réglages suivants sont requis en fonction des différents cas.
 2. Sélectionnez le réseau publicitaire.
 3. Sélectionnez **Activer** **les paramètres de retargeting**. Cette opération transforme le lien d'attribution en URL de retargeting en ajoutant `is_retargeting=true` au lien.  
 
-   [![](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)
+   <Image align="center" alt="" src="https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png" />
 4. Sélectionnez l'une des options suivantes :
    * **Utilisez un lien d'attribution standard** pour les liens de plate-forme unique (spécifique à l'app)
    * **Utilisez OneLink**.

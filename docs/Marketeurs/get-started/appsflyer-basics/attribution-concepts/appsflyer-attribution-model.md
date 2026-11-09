@@ -35,7 +35,7 @@ x-zendesk:
 ---
 > **En bref :** AppsFlyer détermine la source média qui incite un utilisateur à installer une app ou à s'y ré-engager, AppsFlyer attribue ensuite l'action de l'utilisateur à cette même source en utilisant en se basant sur sa méthode d'attribution.
 
-[![Mobile_user_journey.png](https://support.appsflyer.com/hc/article_attachments/19544107641105)](https://support.appsflyer.com/hc/article_attachments/19544107641105)
+<Image align="center" alt="Mobile_user_journey.png" src="https://support.appsflyer.com/hc/article_attachments/19544107641105" />
 
 <div id="what-is-attribution" />
 
@@ -81,7 +81,7 @@ Un certain nombre de modèles d'attribution sont pris en charge par AppsFlyer (c
 
 Les méthodes d'attribution sont appliquées en fonction de l'ordre des priorités indiqué dans le schéma. Lors d'une nouvelle installation, s'il y a plus d'un engagement valide, **AppsFlyer privilégie les clics sur les impressions et choisit les méthodes déterministes avant les méthodes probabilistes**.
 
-![Attribution method priorities 23.png](https://support.appsflyer.com/hc/article_attachments/19910400460561)
+<Image align="center" alt="Attribution method priorities 23.png" src="https://support.appsflyer.com/hc/article_attachments/19910400460561" />
 
 Vous trouverez ci-dessous une explication détaillée des modèles d'attribution AppsFlyer.
 
@@ -338,7 +338,7 @@ Lorsqu'une application est sauvegardée via iCloud et restaurée ultérieurement
 
 <Accordion title="Attribution de retargeting">
 
-![Retargeting_-_Flow__2_.png](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="Retargeting_-_Flow__2_.png" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 Un utilisateur qui réinstalle une app dans la <Anchor target="_blank" href="/marketers/fr/docs/set-up-re-attribution-window">fenêtre de réattribution</Anchor> (90 jours par défaut) est considéré comme une réattribution. Si cette installation se produit après avoir participé à une campagne de retargeting, elle est enregistrée comme réinstallation de retargeting, autrement dit une réattribution, et est signalée dans le <Anchor target="_blank" href="/marketers/fr/docs/retargeting-attribution-guide">retargeting</Anchor>.
 

@@ -49,7 +49,7 @@ Quelques éléments sont nécessaires avant d'intégrer l’extension SDK AppsFl
 
 <Accordion title="Récupérer votre clé dev">
 
-<Image alt="dev_key.png" src="https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png" width="357px" />
+<Image align="center" alt="dev_key.png" src="https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png" width="357px" />
 
 1. Dans le tableau de bord de votre app, cliquez sur ***Réglages de l'app*** dans ***Configuration*** dans le menu de gauche.
 2. Dans ***Installation du SDK***, copiez votre ***clé dev***.
@@ -75,7 +75,7 @@ Suivez les instructions ici pour configurer Adobe Launch.
 
 <Accordion title="1.1 Création d'une nouvelle propriété dans Adobe Launch">
 
-[![](https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png)](https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png)
+<Image align="center" alt="" src="https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png" />
 
 1. Connectez-vous à Adobe Experience Cloud.
 2. Sélectionner ***Lancer***.
@@ -92,7 +92,7 @@ Suivez les instructions ici pour configurer Adobe Launch.
 
 Installez les extensions suivantes dans Adobe Launch :
 
-[![adboe_extensions.png](https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png)](https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png)
+<Image align="center" alt="adboe_extensions.png" src="https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png" />
 
 * Adobe Analytics - connecte les données enregistrées par le SDK au module Adobe Analytics.
 * Extension SDK AppsFlyer - envoie des données et des événements à la fois à Adobe et à AppsFlyer en utilisant le SDK Adobe Launch.
@@ -144,7 +144,7 @@ Suivez les instructions de cette section pour installer l'extension SDK Adobe da
 
 <Accordion title="2.1 Ajouter le SDK à l'application">
 
-[![adobe_sdk.png](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)
+<Image align="center" alt="adobe_sdk.png" src="https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png" />
 
 1. Dans votre propriété Adobe, sélectionnez ***Environnements***.
 2. Sélectionnez l'environnement pour lequel vous souhaitez déployer le SDK.
@@ -159,7 +159,7 @@ Suivez les instructions de cette section pour installer l'extension SDK Adobe da
 
 Pour compléter la mise en œuvre du SDK, vous devez publier l'environnement dans une bibliothèque.
 
-[![adobe_publishing.png](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)
+<Image align="center" alt="adobe_publishing.png" src="https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png" />
 
 1. Dans votre propriété Adobe, sélectionnez ***Publication***.
 2. Cliquez sur ***Ajouter une nouvelle bibliothèque***.
@@ -208,7 +208,7 @@ Ajoutez le référent d'installation Android en tant que dépendance. Vous pouve
    ```
 2. Synchronisez le projet pour récupérer les dépendances. Voir la capture d'écran suivante :  
 
-    [![android_af_sdk_sync_gradle.png](https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png)](https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png)
+    <Image align="center" alt="android_af_sdk_sync_gradle.png" src="https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png" />
 
 Si vous utilisez ProGuard et souhaitez utiliser la nouvelle API référent d’installation Google, vous devez définir la règle ProGuard suivante : `-dontwarn com.android.installreferrer`
 
@@ -383,7 +383,7 @@ Dans AppDelegate.m, implémentez le code suivant :
 
 Les données de conversion sont envoyées avec les événements à la plateforme Adobe. Ces variables vous permettent d'appliquer une logique et des règles aux dimensions, aux mesures ou aux filtres des rapports.
 
-![adobe_analytics.png](https://files.readme.io/9c4355286d2e5f2254a8a16a49b1b1305b56628b54e738efcd4fdc90a6de8fab-360006050778.png)
+<Image align="center" alt="adobe_analytics.png" src="https://files.readme.io/9c4355286d2e5f2254a8a16a49b1b1305b56628b54e738efcd4fdc90a6de8fab-360006050778.png" />
 
 1. Connectez-vous à vos <Anchor target="_blank" href="https://mobilemarketing.adobe.com">Services Adobe Mobile</Anchor>.
 2. Sélectionnez l'application concernée et ouvrez la page ***Gérer les variables et les métriques***.

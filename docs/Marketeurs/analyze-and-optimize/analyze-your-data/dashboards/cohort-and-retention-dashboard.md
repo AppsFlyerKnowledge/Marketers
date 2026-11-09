@@ -26,7 +26,7 @@ x-zendesk:
 
 **Revenus par nombre de jours post installation, classé par source média**
 
-![Full_cohort2_us-en.png](https://files.readme.io/b60e18dcd68ca4b1831c56b69ad667931ca52610a456f8612f44d4fac51150f6-14583921567377.png)
+<Image align="center" alt="Full_cohort2_us-en.png" src="https://files.readme.io/b60e18dcd68ca4b1831c56b69ad667931ca52610a456f8612f44d4fac51150f6-14583921567377.png" />
 
 <div id="tip" />
 
@@ -46,7 +46,7 @@ Pour utiliser la cohorte, sélectionnez des utilisateurs dans une ou plusieurs a
 
 <Accordion title="Principes de la cohorte">
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 * **Type de cohorte**
   * **Unifié** :
@@ -80,7 +80,7 @@ Pour utiliser la cohorte, sélectionnez des utilisateurs dans une ou plusieurs a
 
 Dans cet exemple, les mêmes données brutes sont utilisées pour générer les deux types de tendance de cohorte. Le tableau de données brutes contient les événements d'attribution liés à différents utilisateurs A, B, C et D. Les utilisateurs suivent une publicité, installent l'app et effectuent un ou plusieurs achats après conversion. Le jour 0 de la cohorte correspond au jour de l'installation.
 
-[![CohortExample_en-us.jpg](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)
+<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg" />
 
 </Accordion>
 
@@ -112,12 +112,12 @@ Dans cet exemple, les mêmes données brutes sont utilisées pour générer les 
 
 1. Allez dans **Tableau de bord** > **Cohorte**.  
    Le tableau de bord des cohortes s'ouvre. La granularité et la période de conversion s'affichent.  
-   ![mceclip0__1_.png](https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png)
+   <Image align="center" alt="mceclip0__1_.png" src="https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png" />
 2. Sélectionnez la granularité.
 3. Définissez la période d'attribution (acquisition d'utilisateur ou engagement de retargeting). Les données relatives aux dates les plus récentes peuvent générer des [données partielles](/docs/cohort-and-retention-dashboard#partial-data), indiquées par des tirets dans les graphiques et les tableaux.
 4. Cliquez sur **Modifier la cohorte**.La fenêtre de configuration de cohorte s'ouvre.  
 
-   <Image alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
+   <Image align="center" alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
 5. Renseignez les paramètres suivants :
    * **Type de cohorte :**
      * **Acquisition d'utilisateur.**
@@ -148,7 +148,7 @@ Les utilisateurs sont classés en cohorte selon le nombre de **jours** qui suit 
 * Pour la granularité hebdomadaire, le nombre maximal de semaines est de 156.
 * Pour la granularité mensuelle, le nombre maximum de mois est de 36.
 
-![DaysPost.jpg](https://files.readme.io/dbeb30f800b198ea0ce2c7b69f2d3652f54384630dab9e8e77a7960a3d9471fb-360005455377.jpg)
+<Image align="center" alt="DaysPost.jpg" src="https://files.readme.io/dbeb30f800b198ea0ce2c7b69f2d3652f54384630dab9e8e77a7960a3d9471fb-360005455377.jpg" />
 
 * **Sélectionnez une métrique, une fonction et cochez «par utilisateur»**— **Remarque :** toutes les combinaisons de métrique, fonction et «par utilisateur» ne sont pas possibles.
   * Métriques : Revenus, <Anchor target="_blank" href="/marketers/fr/docs/measure-sessions">Sessions</Anchor>, Désinstallations, ROI, Événement in-app, ROAS.
@@ -175,7 +175,7 @@ Les utilisateurs sont classés en cohorte selon le nombre de **jours** qui suit 
 
 Les utilisateurs sont regroupés en cohortes par **heure d'attribution.**
 
-![KPIdays.jpg](https://files.readme.io/dfac4a4f84aad39d6526cdb416e8a2ec6c9e95dd6a2ca06e3c7fd10d31b76272-360005458837.jpg)
+<Image align="center" alt="KPIdays.jpg" src="https://files.readme.io/dfac4a4f84aad39d6526cdb416e8a2ec6c9e95dd6a2ca06e3c7fd10d31b76272-360005458837.jpg" />
 
 * **Sélectionnez une métrique, une fonction, les jours de KPI et cochez «par utilisateur»**— **Remarque :** Toutes les combinaisons de métrique, fonction et «par utilisateur» ne sont pas possibles.
   * Métriques : Revenus, Sessions (non disponibles en affichage unifié), Désinstallations, ROI, événement in-app, ROAS.
@@ -298,11 +298,11 @@ Pour un certain jour dans la plage de données de conversion, si le nombre de jo
 
 **Tableau : revenu par utilisateur cumulé**
 
-[![CohortGraph.png](https://files.readme.io/1142844a9312498e4fc229502cbdf86d46bd61007d62837d38ba1b66fb2e00aa-360003206697.png)](https://files.readme.io/1142844a9312498e4fc229502cbdf86d46bd61007d62837d38ba1b66fb2e00aa-360003206697.png)
+<Image align="center" alt="CohortGraph.png" src="https://files.readme.io/1142844a9312498e4fc229502cbdf86d46bd61007d62837d38ba1b66fb2e00aa-360003206697.png" />
 
 **Tableau : revenu par jour**
 
-[![CohortTable.png](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)
+<Image align="center" alt="CohortTable.png" src="https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png" />
 
 <div id="in-app-event-conversion" />
 

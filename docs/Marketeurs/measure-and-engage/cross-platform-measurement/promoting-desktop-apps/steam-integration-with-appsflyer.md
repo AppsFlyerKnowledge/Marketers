@@ -36,12 +36,12 @@ Les applications exécutées sur Steam peuvent s’intégrer à AppsFlyer via l�
 
 Voici un exemple de flux qui illustre les étapes les plus importantes du parcours de l'utilisateur, de l'engagement publicitaire à l'attribution. Il utilise la page d'accueil multi-plateforme recommandée par AppsFlyer. **Remarque** : Même si nous vous conseillons d'utiliser la page d'accueil multi-plateforme, vous pouvez aussi utiliser des liens d'attribution directs.
 
-![Steam_user_journey.jpg](https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg)
+<Image align="center" alt="Steam_user_journey.jpg" src="https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg" />
 
 1. Point de contact marketing : Les clients interagissent avec votre marque par le biais de points de contact marketing, en ligne ou hors ligne. Il peut s'agir d’e-mails ou de lettres d'information, de posts sociaux, de sites web mobile, etc.
 2. Page d'accueil de gaming : la page d'accueil de gaming dirige les clients vers votre page de jeu Steam. Cette étape est importante pour collecter les paramètres UTM et autres paramètres URL afin d'attribuer les clients du clic/de l'installation aux sources média d'origine, ou à vos sources média propriétaire.  
    La page d'accueil sert également à fournir des liens vers les différentes plateformes que votre jeu prend en charge. Par exemple, vous pouvez avoir des liens vers votre page Xbox, Microsoft Store et Steam sur votre page d'accueil.  
-   ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
+   <Image align="center" alt="awesome_game.png" src="https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png" />
 3. <span id="marketing-touchpoint"></span>Page de l'application Steam : il s'agit de votre page d’accueil Steam, elle héberge votre app Steam que les clients peuvent télécharger.
 4. Installation du jeu : l'utilisateur installe le jeu, ce qui déclenche l'attribution et l'enregistrement d'événements et de sessions in-app.
 

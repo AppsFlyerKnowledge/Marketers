@@ -26,7 +26,7 @@ x-zendesk:
 
 **Les mesures d'attribution s'affichent côte à côte dans le tableau de bord Général V2.0**
 
-![SBSDB.png](https://files.readme.io/550c465c329eac484d2b2e5a65c8f48831c350c3c4b967315e3b2059ab95a36d-4409263804049.png)
+<Image align="center" alt="SBSDB.png" src="https://files.readme.io/550c465c329eac484d2b2e5a65c8f48831c350c3c4b967315e3b2059ab95a36d-4409263804049.png" />
 
 <div id="finding-the-best-ios-14-campaign-performance-metrics" />
 
@@ -129,7 +129,7 @@ Cet article offre des conseils basés sur notre expérience dans le secteur et n
 1. Cliquez sur ⚙ (paramètres du tableau).   
    La fenêtre de sélection des mesures s'ouvre.
 
-   ![SelectSkan.png](https://files.readme.io/6b60fa8e2d10a1b61b1bfb4b7a968adb5ee16086d80c9cc8bc097b8e8ed77b51-4408473842833.png)
+   <Image align="center" alt="SelectSkan.png" src="https://files.readme.io/6b60fa8e2d10a1b61b1bfb4b7a968adb5ee16086d80c9cc8bc097b8e8ed77b51-4408473842833.png" />
 2. Cliquez sur **Attribution SKAN**.
 3. Cliquez sur **Installations SKAN**.
 4. Cliquez sur **Revenus SKAN**.

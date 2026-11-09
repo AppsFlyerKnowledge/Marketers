@@ -40,7 +40,7 @@ Use organic search attribution to attribute these existing users who re-engage w
 
 #### FLOW
 
-![Organic_SEO_attribution_flow.png](https://files.readme.io/1772808df9d9e521204153d9f0689b3f9f156dd8c0ab8555673b1d321f28aece-15320495862545.png)
+<Image align="center" alt="Organic_SEO_attribution_flow.png" src="https://files.readme.io/1772808df9d9e521204153d9f0689b3f9f156dd8c0ab8555673b1d321f28aece-15320495862545.png" />
 
 1. A user searches for a term (for example “mens shoes”) on their mobile browser search engine (Google, Bing, etc.). The search engine displays several clickable results.
 2. Some of these search results are mapped by your web developer to open your mobile open using Android App Links and iOS Universal Links. If a user has the app installed, when they click the search result, the app opens (without redirecting to an app store first).

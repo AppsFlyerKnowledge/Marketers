@@ -25,7 +25,7 @@ x-zendesk:
 >
 > le 30 janvier 2023, la nouvelle intégration **TikTok for Business—SRN avancé** `tiktokglobal_in` a été ajoutée. L'ancienne intégration TikTok for Business `bytedanceglobal_int` est quant à elle en cours de suppression et sera définitivement désactivée en mars 2024.Cette transition est gérée par TikTok, qui vous informera lorsque vous pourrez supprimer l'ancienne intégration. **Pour éviter de perdre des données, faites en sorte que les deux intégrations restent actives tout au long de la phase de transition**. Pour en savoir plus, consultez <Anchor target="_blank" href="/marketers/fr/docs/bulletin-tiktok-for-business-advanced-srn">ce bulletin</Anchor> .
 
-<Image alt="TikTok_logo__2_.png" src="https://files.readme.io/3a081755b08fcf19b60ff178506a083449890cb900821f7f1e4b7ef85426dd45-11844735832081.png" width="193px" />
+<Image align="center" alt="TikTok_logo__2_.png" src="https://files.readme.io/3a081755b08fcf19b60ff178506a083449890cb900821f7f1e4b7ef85426dd45-11844735832081.png" width="193px" />
 
 <div id="overview" />
 
@@ -340,7 +340,7 @@ Les agences travaillant pour le compte d'annonceurs peuvent activer l'intégrati
 4. Saisissez l'**ID du compte TikTok** de votre agence. Cela permet d'identifier le trafic de l'agence et de le séparer de celui de l'annonceur .
 5. Cliquez sur **Enregistrer l'intégration**.
 
-   <Image alt="tiktok_agency_account_id.png" src="https://support.appsflyer.com/hc/article_attachments/15195630638609" width="442px" />
+   <Image align="center" alt="tiktok_agency_account_id.png" src="https://support.appsflyer.com/hc/article_attachments/15195630638609" width="442px" />
 
 > ❗️ **Avertissement**
 >

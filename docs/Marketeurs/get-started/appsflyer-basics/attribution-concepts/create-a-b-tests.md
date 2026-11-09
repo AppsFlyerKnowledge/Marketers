@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **En bref :** Utilisez AppsFlyer pour effectuer des tests A/B sur les sources média, les campagnes, les créations, le ciblage et l'emplacement des publicités.
 
-![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
+<Image align="center" alt="AB_TESTING.jpg" src="https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg" />
 
 <div id="what-is-ab-testing" />
 
@@ -113,7 +113,7 @@ Nous expliquons ci-dessous deux méthodes de tests A/B :
 
 ## Tests A/B de l'emplacement des publicités pour le web mobile
 
-![ad_placement.png](https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png)
+<Image align="center" alt="ad_placement.png" src="https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png" />
 
 L'emplacement des bannières de vos applications sur les sites web mobiles peut avoir un impact significatif sur les taux de conversion des utilisateurs. Dans la plupart des cas, les annonceurs utilisent leurs propres sites web mobiles pour convertir les visiteurs en utilisateurs mobiles.
 
@@ -161,7 +161,7 @@ AppsFlyer a été conçu pour aider les annonceurs à identifier les sources mé
 
 > 📄 **Exemple**
 >
-> [![](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)
+> <Image align="center" alt="" src="https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png" />
 >
 > * 1 et 2 sont des publicités différentes sur la même source média. Comparez un indicateur de performance unique, par exemple le taux de fidélisation au quatrième jour, pour tester les créations, le ciblage ou l'emplacement des publicités.
 > * 2 et 3 sont des publicités diffusées sur des supports différents. Si les créations et le ciblage des publicités sont identiques, la comparaison d'un seul KPI permet d'effectuer des tests A/B sur la source média.

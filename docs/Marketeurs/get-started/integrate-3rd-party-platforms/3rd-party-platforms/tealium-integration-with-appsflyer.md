@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **En bref :** la plateforme de données client Tealium connecte les données clients à travers le Web, le mobile, l'IoT et le hors ligne. Découvrez comment partager automatiquement les données de conversion avec Tealium.
 
-<Image alt="Tealium_icon.png" src="https://files.readme.io/e3cc1f95e8ce2de6fa83df63ff78dd4f4f76aebe1acb8e9378aa5b6aa4134364-10820461521681.png" width="276px" />
+<Image align="center" alt="Tealium_icon.png" src="https://files.readme.io/e3cc1f95e8ce2de6fa83df63ff78dd4f4f76aebe1acb8e9378aa5b6aa4134364-10820461521681.png" width="276px" />
 
 <div id="overview" />
 

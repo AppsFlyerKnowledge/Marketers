@@ -29,7 +29,7 @@ x-zendesk:
 
 > **En bref :** transmettez en temps réel les événements d'attribution des données brutes à vos points de terminaison côté serveur.
 
-![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
+<Image align="center" alt="6970_Push_API_image.png" src="https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png" />
 
 <div id="push-api" />
 
@@ -98,7 +98,7 @@ Caractéristiques du message :
 
 **Remarque :** ne s’applique pas aux messages de copie de postbacks acheminés directement depuis iOS.
 
-![PushAPI-2_en-us.png](https://files.readme.io/7a3ede8da87e48cc640e6e61d8f42011174122140ca63ace37c1d5c25ceadc19-20274836865809.png)
+<Image align="center" alt="PushAPI-2_en-us.png" src="https://files.readme.io/7a3ede8da87e48cc640e6e61d8f42011174122140ca63ace37c1d5c25ceadc19-20274836865809.png" />
 
 </Accordion>
 
@@ -154,7 +154,7 @@ Votre serveur doit suivre conformément les exigences suivantes :
 
 **Point de terminaison**
 
-[![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
+<Image align="center" alt="PushAPI_us-en.png" src="https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png" />
 
 <div id="configure-authentication-token" />
 
@@ -193,7 +193,7 @@ Votre serveur doit suivre conformément les exigences suivantes :
    * Les champs obligatoires sont toujours envoyés. Ce sont les suivants : l'ID d'app, le nom de l'événement, l'heure de l'événement, l'IDFA (iOS) ou l'ID Advertising (Android)
    * Utilisez les commandes illustrées dans l'illustration suivante pour sélectionner des champs facultatifs.
 
-     [![PushAPIFieldSelect1.jpg](https://files.readme.io/316bdfcb4740d870875176e7806f969c89784406c3abc5ca34c9fa0c675a5497-360007416298.jpg)](https://files.readme.io/316bdfcb4740d870875176e7806f969c89784406c3abc5ca34c9fa0c675a5497-360007416298.jpg)
+     <Image align="center" alt="PushAPIFieldSelect1.jpg" src="https://files.readme.io/316bdfcb4740d870875176e7806f969c89784406c3abc5ca34c9fa0c675a5497-360007416298.jpg" />
 
      * Les champs les plus courants sont présélectionnés par défaut. Vous pouvez effacer les sélections.
      * Sélectionnez les champs facultatifs selon vos besoins.
@@ -304,7 +304,7 @@ Vous ne recevrez des événements dupliqués que si vous avez activé ces deux o
 
 <Accordion title="La sélection des messages d'événement in-app est désactivée">
 
-[![InappSelectionDisabled_us-en.png](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)
+<Image align="center" alt="InappSelectionDisabled_us-en.png" src="https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png" />
 
 * Les messages d'événement in-app peuvent être sélectionnés uniquement lorsqu'ils ont été enregistrés.
 * Utilisez un appareil de test pour générer un événement in-app, ou utilisez <Anchor target="_blank" href="/marketers/fr/docs/server-to-server-events-api-for-mobile-s2s-mobile">l'API S2S</Anchor> pour le faire manuellement.

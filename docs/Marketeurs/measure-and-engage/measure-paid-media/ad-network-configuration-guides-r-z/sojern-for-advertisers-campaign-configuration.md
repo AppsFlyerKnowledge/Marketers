@@ -61,7 +61,7 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 Sojern for Advertisers connects with AppsFlyer via a unique Partner ID. If you don't already have the Partner ID, you must obtain it from Sojern for Advertisers to continue with the integration.
 
-![Sojern_msc_new_2.png](https://files.readme.io/35d02000642f8dc768c5bd1b0ca7846b9575900b2e9b3169673840f438815ef1-360002443905.png)
+<Image align="center" alt="Sojern_msc_new_2.png" src="https://files.readme.io/35d02000642f8dc768c5bd1b0ca7846b9575900b2e9b3169673840f438815ef1-360002443905.png" />
 
 ### Default postbacks
 

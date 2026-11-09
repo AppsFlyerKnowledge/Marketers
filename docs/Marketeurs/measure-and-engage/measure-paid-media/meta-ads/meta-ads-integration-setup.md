@@ -54,7 +54,7 @@ Pour récupérer l'**ID d'app Facebook** :
 1. Dans **Meta ads**, rendez-vous dans le <Anchor target="_blank" href="https://developers.facebook.com/apps">tableau de bord de votre app.</Anchor>
 2. Cliquez sur l'application concernée.
 3. Cliquez sur l’ID de l’app, qui apparaît en haut à gauche de l’écran, puis copiez-le.  
-   ![meta-ads-for-developters.jpg](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)
+   <Image align="center" alt="meta-ads-for-developters.jpg" src="https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg" />
 
 AppsFlyer attribue les données en fonction des ID d'app. Un même ID d'app Facebook peut être utilisé à la fois pour [vos apps Android et iOS](https://developers.facebook.com/docs/app-ads/app-setup/). Notez que pour iOS 14 et +, Meta Ads limite le nombre de comptes par application à 9.
 
@@ -80,10 +80,10 @@ Pour commencer l'attribution de campagnes Meta Ads avec AppsFlyer, procédez com
    1. Accédez à vos applications sur [Meta pour les développeurs](https://developers.facebook.com/apps).
    2. Sélectionnez l'app.  
 
-      ![find-fb-app-id.jpg](https://support.appsflyer.com/hc/article_attachments/25899320112017)
+      <Image align="center" alt="find-fb-app-id.jpg" src="https://support.appsflyer.com/hc/article_attachments/25899320112017" />
    3. Pour copier l'identifiant de votre application, cliquez dessus en haut de écran.  
 
-      ![meta-ads-copy-app-id.jpg](https://support.appsflyer.com/hc/article_attachments/25899342893585)
+      <Image align="center" alt="meta-ads-copy-app-id.jpg" src="https://support.appsflyer.com/hc/article_attachments/25899342893585" />
    4. Dans AppsFlyer, dans le menu latéral, sélectionnez Collaboration **> Marketplace partenaire**
    5. Recherchez Meta Ads et sélectionnez-le.
    6. Cliquez sur **Configurer l'intégration. Tu es dirigé vers la page de configuration de l'intégration.**
@@ -91,7 +91,7 @@ Pour commencer l'attribution de campagnes Meta Ads avec AppsFlyer, procédez com
        **Remarque :** la case doit rester cochée (<Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">activée</Anchor>) tant que vous travaillez avec le partenaire<Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">.</Anchor>
    8. Dans **Paramètres généraux** :  
 
-      ![meta_ads_general_settings2.png](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
+      <Image align="center" alt="meta_ads_general_settings2.png" src="https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png" />
 
       * Collez l'identifiant de votre application dans l'**identifiant de l'application Facebook** Champ
       * Collez le référent d'installation [clé de déchiffrement de Meta Ads](#données-cryptées-provenant-de-lapi-google-play-referrer-ou-du-référent-meta-install).
@@ -99,7 +99,7 @@ Pour commencer l'attribution de campagnes Meta Ads avec AppsFlyer, procédez com
    10. Cliquez sur **Enregistrer l'intégration**.
 2. [facultatif] **Pour configurer les paramètres recommandés :**  
 
-   ![meta_ads_install_attribution.png](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)
+   <Image align="center" alt="meta_ads_install_attribution.png" src="https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png" />
 
    * Pour correspondre à la fenêtre de visualisation par clic de Meta ads, réglez-le sur 7 jours.  
       Notez que : [il existe des cas spécifiques où la valeur par défaut est différente](https://www.facebook.com/business/help/395050428485124?id=428636648170202)).
@@ -205,7 +205,7 @@ Un ciblage large est nécessaire pour obtenir une visibilité Données d'install
 * Audiences personnalisées : Réglez sur Relaxed.
 * Pour un ciblage « détendu », le « ciblage détaillé Advantage » la case pour les campagnes publicitaires doit être sélectionnée :  
 
-  <Image alt="" src="https://support.appsflyer.com/hc/article_attachments/22950622532497" width="569px" />
+  <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/22950622532497" width="569px" />
 
 <div id="encrypted-data-from-google-play-referrer-api-or-meta-install-referrer" />
 
@@ -226,7 +226,7 @@ Notez que si la clé n'est pas fournie ou a été supprimée, il y a des cas où
 3. Sélectionnez l'app pour laquelle vous souhaitez accéder à votre clé de décryptage.
 4. Accédez à **Paramètres** > **Basique** sur le côté gauche de la page.  
 
-   [![](https://files.readme.io/253be6d4cd2a75cc2c038c5b14ed3df067612c46bea174475adba3d196f25789-30354101891985.png)](https://files.readme.io/253be6d4cd2a75cc2c038c5b14ed3df067612c46bea174475adba3d196f25789-30354101891985.png)
+   <Image align="center" alt="" src="https://files.readme.io/253be6d4cd2a75cc2c038c5b14ed3df067612c46bea174475adba3d196f25789-30354101891985.png" />
 5. Faites défiler la page vers le bas jusqu'à la section Android et vous verrez voir votre clé de déchiffrement intitulée Install Referrer clé de déchiffrement sous le champ Package Names. Remarque : Il s'agit de la même section que celle dans laquelle vous avez configuré le nom de votre package et le Google Play Store.
 
 **Pour définir la clé de décryptage dans AppsFlyer :**
@@ -234,7 +234,7 @@ Notez que si la clé n'est pas fournie ou a été supprimée, il y a des cas où
 1. [Obligatoire] Vérifiez que le SDK AppsFlyer V5.4+ est adopté dans votre application. Ne vous fiez pas aux versions antérieures.
 2. Dans AppsFlyer, dans le menu latéral, sélectionnez **Collaborer** > **Intégrations actives**.
 3. Sélectionnez **Meta ads**.  
-    [![meta_ads_general_settings2.png](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
+    <Image align="center" alt="meta_ads_general_settings2.png" src="https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png" />
 4. Dans l'onglet **Intégration**, collez Définir la clé de décryptage du référent d'installation Cette opération doit être effectuée une seule fois par app.
 5. Cliquez sur **Enregistrer l'intégration**.
 
@@ -244,7 +244,7 @@ Notez que si la clé n'est pas fournie ou a été supprimée, il y a des cas où
 
 <Accordion title="Coûts, clics et impressions">
 
-[![meta_cost_tab.png](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)  
+<Image align="center" alt="meta_cost_tab.png" src="https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png" />
 
 Cette intégration fournit des données agrégées sur les coûts, clics et impressions pour vos campagnes, vos annonces, annonces et géos/pays. Consultez les <Anchor target="_blank" href="/marketers/fr/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tableau d'intégration des coûts des réseaux publicitaires</Anchor> pour plus de détails sur les dimensions, les métriques prises en charge, et fonctionnalités.
 
@@ -286,7 +286,7 @@ En savoir plus sur l'enrichissement de vos données avec les <Anchor target="_bl
 
 <Accordion title="Mappage d'événements in-app">
 
-[![meta_iae_postbacks.png](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)
+<Image align="center" alt="meta_iae_postbacks.png" src="https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png" />
 
 **Pour mapper des événements in-app :**
 
@@ -345,16 +345,16 @@ Attribution de retargeting AppsFlyer pour les méta-annonces les annonceurs attr
     La fenêtre rétrospective de réengagement est la période durée, à compter du clic sur l'annonce, pendant laquelle l'application doit être lancée pour que le clic soit enregistré comme un réengagement.  
     Sélectionnez les unités de la fenêtre rétrospective (heures ou jours), et réglez le curseur sur la valeur souhaitée.  
 
-   ![re-engagement_attribution_toggle.png](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)
+   <Image align="center" alt="re-engagement_attribution_toggle.png" src="https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png" />
 4. Activez **l'attribution de réengagement post-vue**.
 5. Définissez le curseur de la **fenêtre rétrospective post-vue de réengagement** sur la valeur souhaitée (24 heures maximum). Il s’agit de la période qui commence au moment de de l'impression publicitaire, et durant laquelle l’application doit être lancée pour que l’impression soit enregistrée comme réengagement.
 
-   ![re-engagement_view-through_toggle.png](https://support.appsflyer.com/hc/article_attachments/13880480985489)
+   <Image align="center" alt="re-engagement_view-through_toggle.png" src="https://support.appsflyer.com/hc/article_attachments/13880480985489" />
 6. Définissez la **fenêtre de réengagement**.  
     Il s'agit de la période au cours de laquelle les événements intégrés à l'application de l'utilisateur sont attribués à la source média de retargeting, comme source principale.  
     Vous pouvez définir la valeur en jours (1-90), en heures (jusqu'à à 23), voire à vie. La valeur par défaut est 30 jours.  
 
-   ![re-engagement_window.png](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)
+   <Image align="center" alt="re-engagement_window.png" src="https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png" />
 
 En savoir plus sur : Attribution de <Anchor target="_blank" href="/marketers/fr/docs/retargeting-attribution-guide">retargeting AppsFlyer</Anchor>.
 
@@ -390,7 +390,7 @@ En savoir plus sur : <Anchor target="_blank" href="/marketers/fr/docs/send-open
 
 <Accordion title="Enregistrement des revenus publicitaires">
 
-![meta_ads_ad_revenue.png](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)
+<Image align="center" alt="meta_ads_ad_revenue.png" src="https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png" />
 
 Si votre application utilise les revenus publicitaires du réseau Meta Audience pour la monétisation des publicités, vous pouvez enregistrer vos revenus à partir de Meta Ads sur AppsFlyer. Ceci, avec ou sans les données sur les revenus d'achat intégrées à l'application vous offrent un **une image complète des revenus de vos utilisateurs**.
 
@@ -468,7 +468,7 @@ Remarque : vous pouvez également utiliser l'<Anchor target="_blank" href="http
 
 Pour garantir le bon fonctionnement de l'attribution, l'app doit être définie sur Meta ads comme **En ligne** plutôt que **En développement**.
 
-![fb-app-status.png](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)
+<Image align="center" alt="fb-app-status.png" src="https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png" />
 
 </Accordion>
 
@@ -488,11 +488,11 @@ Lors de la configuration de la campagne d'installation d'app Meta ads, vous pouv
 
 Configuration correcte - réussite de l'attribution.
 
-<Image alt="fb-app-install.png" src="https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png" width="496px" />
+<Image align="center" alt="fb-app-install.png" src="https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png" width="496px" />
 
 Configuration incorrecte - échec de l'attribution.
 
-![fb-app-incorrect_setup.png](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)
+<Image align="center" alt="fb-app-incorrect_setup.png" src="https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png" />
 
 </Accordion>
 

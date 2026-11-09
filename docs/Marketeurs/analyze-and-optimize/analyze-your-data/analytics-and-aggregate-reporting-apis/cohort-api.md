@@ -389,7 +389,7 @@ Si la période couverte par votre rapport va du 1er au 11 janvier, les utilisate
 >
 > **Résultats**
 >
-> ![mceclip0.png](https://files.readme.io/c284e5133e4e811b9416c850e399ddefb3c5bfcfcf879f469556b7a6bc0062c6-32131110607249.png)
+> <Image align="center" alt="mceclip0.png" src="https://files.readme.io/c284e5133e4e811b9416c850e399ddefb3c5bfcfcf879f469556b7a6bc0062c6-32131110607249.png" />
 
 </Accordion>
 
@@ -405,11 +405,11 @@ La version API contient les options supplémentaires suivantes :
 * Sélection du fuseau horaire
 * Filtrage par période
 
-[![CohortMapping.jpg](https://files.readme.io/28b5973a6c476407f342cbc55dbf03162fdd3047d4fd9b93b78a6de8dff11cdb-360012218018.jpg)](https://files.readme.io/28b5973a6c476407f342cbc55dbf03162fdd3047d4fd9b93b78a6de8dff11cdb-360012218018.jpg) [![Cohortmapping2.jpg](https://files.readme.io/59f2e9fd5120b7efbb81a937a42ee4a8145fd7ae74ddf855ec6ba13f061ba6c2-360006378018.jpg)](https://files.readme.io/59f2e9fd5120b7efbb81a937a42ee4a8145fd7ae74ddf855ec6ba13f061ba6c2-360006378018.jpg)
+<Image align="center" alt="CohortMapping.jpg" src="https://files.readme.io/28b5973a6c476407f342cbc55dbf03162fdd3047d4fd9b93b78a6de8dff11cdb-360012218018.jpg" /> <Image align="center" alt="Cohortmapping2.jpg" src="https://files.readme.io/59f2e9fd5120b7efbb81a937a42ee4a8145fd7ae74ddf855ec6ba13f061ba6c2-360006378018.jpg" />
 
 Différence entre les types d'agrégation
 
-![CohortRevnueCumulative.jpg](https://files.readme.io/1c9ca17e217a941e989556637d4397147bac9d1ab65e7485a10c0757a70dec41-360006379038.jpg)
+<Image align="center" alt="CohortRevnueCumulative.jpg" src="https://files.readme.io/1c9ca17e217a941e989556637d4397147bac9d1ab65e7485a10c0757a70dec41-360006379038.jpg" />
 
 </Accordion>
 

@@ -90,7 +90,7 @@ For your Yahoo account, enter your Yahoo account ID. For Yahoo DSP, enter the Ad
 
 To find your account ID, log into the Yahoo dashboard, click the cog icon to open the ***Settings*** menu, and select ***Billing***:
 
-![gemini-account-number.png](https://files.readme.io/77f464c6dadefc54acb3a84d97ab0d0751610b253d2da90523bc117f1f26683c-50705625726865.png)
+<Image align="center" alt="gemini-account-number.png" src="https://files.readme.io/77f464c6dadefc54acb3a84d97ab0d0751610b253d2da90523bc117f1f26683c-50705625726865.png" />
 
 Click-through and view-through lookback windows are in read-only mode and should be configured by the advertiser.
 
@@ -101,7 +101,7 @@ In this section, you can map your AppsFlyer events with Yahoo via postbacks.
 1. Enter the Dot Tag ID provided by Yahoo.  
    To find it on the Yahoo dashboard, click the cog icon to open the **Settings** menu and select **View Dot tag code**. Copy the code from the dashboard:
 
-   [![yahoo-dot-tag.png](https://files.readme.io/6ceaea7447d1c3a81451dac3aa7c3c3063a5cf2c0051b4dfad6cf7aeba40ab24-small-50705593680401.png)](https://files.readme.io/6ceaea7447d1c3a81451dac3aa7c3c3063a5cf2c0051b4dfad6cf7aeba40ab24-small-50705593680401.png)
+   <Image align="center" alt="yahoo-dot-tag.png" src="https://files.readme.io/6ceaea7447d1c3a81451dac3aa7c3c3063a5cf2c0051b4dfad6cf7aeba40ab24-small-50705593680401.png" />
 2. Turn on In-App Event Postbacks
 3. Select the Sending Option for all SDK-defined events.  
    **- Only events attributed to this partner** for events coming **only** from users attributed to this partner  
@@ -189,7 +189,7 @@ Learn more about granting <Anchor target="_blank" href="/marketers/fr/docs/set-u
 
 You can mark as conversions the events that AppsFlyer sends to Yahoo through in-app event postbacks:
 
-![yahoo-conversion-rules.png](https://files.readme.io/17a3fdd1619d4e4d0bfcca35e4fd51e7f270ce7446f9e70fb6f7787291e2e022-50705625729297.png)
+<Image align="center" alt="yahoo-conversion-rules.png" src="https://files.readme.io/17a3fdd1619d4e4d0bfcca35e4fd51e7f270ce7446f9e70fb6f7787291e2e022-50705625729297.png" />
 
 ## Yahoo raw report
 

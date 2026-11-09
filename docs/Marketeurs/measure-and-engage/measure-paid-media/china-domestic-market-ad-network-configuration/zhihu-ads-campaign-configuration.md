@@ -55,13 +55,13 @@ Toggle this to ON if you want to attribute view-through installs from Zhihu Ads.
 
 ### Default Postbacks
 
-![mceclip2.png](https://files.readme.io/4f11e674b3e876d5d612a4700163520fa542bd255c3427640d1abe5be7cfaf7a-50900523403153.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/4f11e674b3e876d5d612a4700163520fa542bd255c3427640d1abe5be7cfaf7a-50900523403153.png" />
 
 ### In-app events settings
 
 In this section you can map your AppsFlyer events with Zhihu Ads via postbacks.
 
-![mceclip2.png](https://files.readme.io/39f3b95126da7107b2972b5811d0367d51191eed76cc6ddbef52ffb3a0c1e137-50900503184017.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/39f3b95126da7107b2972b5811d0367d51191eed76cc6ddbef52ffb3a0c1e137-50900503184017.png" />
 
 1. Toggle In-App Event Postbacks to ON
 2. Click **Add Event** to add an SDK Event to the list
@@ -81,7 +81,7 @@ In this section you can map your AppsFlyer events with Zhihu Ads via postbacks.
 
 In this tab, you can create the attribution links you want to send to Zhihu Ads for attributing Zhihu Ads's campaigns, ad sets or even single ads. Note that AppsFlyer DOES NOT save your generated partner's attribution links.
 
-![mceclip1.png](https://files.readme.io/3f946bccf687826dd2e9ebc318e2510ee5bef5641e9cbfaa1f4b231089ebfee5-50900523405713.png)
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/3f946bccf687826dd2e9ebc318e2510ee5bef5641e9cbfaa1f4b231089ebfee5-50900523405713.png" />
 
 This tab is divided into different sections:
 
@@ -102,7 +102,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/3518a235855b8d8a1a673dc6e7266615e16e32b63b3cf5533d02582db16169fe-50900523407633.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/3518a235855b8d8a1a673dc6e7266615e16e32b63b3cf5533d02582db16169fe-50900523407633.png" />
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/fr/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
@@ -114,7 +114,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/fr/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/02473962e9224f0df4339d9848ccae59b2ef2370f15144bb0b36a6de15756558-50900503191185.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/02473962e9224f0df4339d9848ccae59b2ef2370f15144bb0b36a6de15756558-50900503191185.png" />
 
 ### Click Attribution Link
 
@@ -130,7 +130,7 @@ You can customize this value to 1-23 hours or 1-7 days.
 
 More details about the <Anchor target="_blank" href="/marketers/fr/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
 
-[![](https://files.readme.io/7010eb3bfd9dda24550753ee8ef89b72462c2b762cfd1315a741a7e109b69128-50900503192209.png)](https://files.readme.io/7010eb3bfd9dda24550753ee8ef89b72462c2b762cfd1315a741a7e109b69128-50900503192209.png)
+<Image align="center" alt="" src="https://files.readme.io/7010eb3bfd9dda24550753ee8ef89b72462c2b762cfd1315a741a7e109b69128-50900503192209.png" />
 
 ### Impressions attribution link
 
@@ -161,7 +161,7 @@ Ad Revenue is not supported in the integration with this partner.
 
 In this tab, you can select the permissions to grant Zhihu Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Zhihu Ads, the permissions tab is active and you can grant control to Zhihu Ads.
 
-![rtb_house-permissions-new.png](https://files.readme.io/0192ccb7682af8b56c1bb5f8d7d75c87941f94441b644cf6fa7973159bc961a0-50900503192977.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/0192ccb7682af8b56c1bb5f8d7d75c87941f94441b644cf6fa7973159bc961a0-50900503192977.png" />
 
 ### Ad Network Permissions
 

@@ -41,7 +41,7 @@ Les problèmes sont dus à la manière dont les ESP gèrent le plus souvent leur
 * Les utilisateurs sont dirigés vers des sites Web mobile au lieu de les deep linker dans l'application
 * La méthode de deep linking du schéma d'URI est utilisée, or elle est moins sécurisée et altère l’expérience utilisateur
 
-<Image alt="53242 KB.png" src="https://files.readme.io/53db119f60e3fe2dfaf58b8a87e14595eeb9dde375bf87f7617f36a463ee0ced-30227717940753.png" width="688px" />
+<Image align="center" alt="53242 KB.png" src="https://files.readme.io/53db119f60e3fe2dfaf58b8a87e14595eeb9dde375bf87f7617f36a463ee0ced-30227717940753.png" width="688px" />
 
 **Quelle solution ?**
 

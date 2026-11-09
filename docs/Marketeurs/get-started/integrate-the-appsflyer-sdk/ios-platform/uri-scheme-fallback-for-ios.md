@@ -42,7 +42,7 @@ x-zendesk:
 
 ### Les scénarios
 
-![Copy_of_Ios_fall_back_-_scenarios_flowchart__2_.png](https://files.readme.io/4814c80b9622fd33adf32ea649c14e5d9516958cbedb4f1e5dc1a0dcff6682a3-4425164762257.png)
+<Image align="center" alt="Copy_of_Ios_fall_back_-_scenarios_flowchart__2_.png" src="https://files.readme.io/4814c80b9622fd33adf32ea649c14e5d9516958cbedb4f1e5dc1a0dcff6682a3-4425164762257.png" />
 
 <div id="use-cases" />
 
@@ -66,7 +66,7 @@ Parfois, les liens universels ne parviennent pas à ouvrir l'application, soit p
 
 #### **Scénarios**
 
-![Copy_of_Ios_fall_back_-_browsers_that_can_use_URI_schemes_by_default__2_.png](https://files.readme.io/fae8ea628ff8bbfb343bb8de51af01f596e850a2a24afdc08e15e0a1b981e631-4425166478481.png)
+<Image align="center" alt="Copy_of_Ios_fall_back_-_browsers_that_can_use_URI_schemes_by_default__2_.png" src="https://files.readme.io/fae8ea628ff8bbfb343bb8de51af01f596e850a2a24afdc08e15e0a1b981e631-4425166478481.png" />
 
 </Accordion>
 
@@ -80,7 +80,7 @@ Les sections suivantes détaillent le parcours suivi par les utilisateurs lorsqu
 
 1. La boîte du message d'erreur Safari s'affiche.  
 
-   [![](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg" />
 2. L 'utilisateur clique sur **OK** pour fermer la boîte de dialogue, voit brièvement une page d'accueil se charger en arrière-plan, puis, dans la seconde qui suit, est automatiquement redirigé vers l'App Store, ou selon le paramètre af\_ios\_url.
 
 **Si l'application est installée :**
@@ -89,21 +89,21 @@ Les sections suivantes détaillent le parcours suivi par les utilisateurs lorsqu
 * Si le lien contient `af_force_deeplink=true` :
   1. La boîte de dialogue Safari s'affiche.  
 
-     [![](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)
+     <Image align="center" alt="" src="https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg" />
   2. Si l'utilisateur clique sur **Ouvrir**, l'application s'ouvre.
   3. Si l'utilisateur clique sur **Annuler :**
      * Si le paramètre af\_ios\_url est défini, l'utilisateur est redirigé en conséquence.
      * Si le paramètre af\_ios\_url n'est pas défini, la boîte de dialogue du message d'erreur Safari s'affiche en arrière-plan sur une page d'accueil.  
 
-       [![](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)](https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg)
+       <Image align="center" alt="" src="https://files.readme.io/d6b44169a7005fe7068b0692f71fac58bdd16bdca1424eb0a25499511c375caa-360016139237.jpg" />
   4. L'utilisateur clique sur **OK** et voit s’ouvrir une page d'accueil avec un appel à l'action (CTA).
   5. L'utilisateur clique sur le CTA et une boîte de dialogue s'ouvre.  
 
-     [![](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)](https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg)
+     <Image align="center" alt="" src="https://files.readme.io/0f56dfa3c0c9ea65c1d28f7bb4ebc9a1b3fa25ec1a7e8e620dc013b869012386-360016209978.jpg" />
   6. Si l'utilisateur clique sur **Ouvrir**, l'application s'ouvre.
   7. Si l'utilisateur clique sur **Annuler**, une boîte de dialogue s'ouvre.  
 
-     [![](https://files.readme.io/dd3aa8492bdf1883246bd740118e1b8d2f075a77a164e3ad55843f7c4d44d2b9-360016210038.jpg)](https://files.readme.io/dd3aa8492bdf1883246bd740118e1b8d2f075a77a164e3ad55843f7c4d44d2b9-360016210038.jpg)
+     <Image align="center" alt="" src="https://files.readme.io/dd3aa8492bdf1883246bd740118e1b8d2f075a77a164e3ad55843f7c4d44d2b9-360016210038.jpg" />
   8. Si l'utilisateur clique sur **OK**, il est redirigé vers l'App Store.
   9. Si l'utilisateur clique sur **Annuler**, il reste sur la page d’accueil.
 
@@ -111,7 +111,7 @@ Les sections suivantes détaillent le parcours suivi par les utilisateurs lorsqu
 
 #### **Scénarios**
 
-![Copy_of_Ios_fall_back_-_safari.png](https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png)
+<Image align="center" alt="Copy_of_Ios_fall_back_-_safari.png" src="https://files.readme.io/5e50eb558b23a849f02e1ffe5df3181ad7c8d9514f5813fbffcfa6160493de81-360016515318.png" />
 
 </Accordion>
 
@@ -129,24 +129,24 @@ Les paragraphes suivants décrivent le cheminement des utilisateurs lorsque les 
 
 1. Si aucune application de réseaux sociaux n'est configurée, ou une fois que l'utilisateur a cliqué sur le CTA, une boîte de dialogue s'ouvre sur une page d'accueil en arrière-plan.  
 
-   [![](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg" />
 2. Il clique sur Ouvrir l'app. L'un des événements suivants peut se produire :
    * Si le paramètre `af_ios_url` est défini, l'utilisateur est redirigé en fonction.
    * Si le paramètre `af_ios_url` n'est pas défini et si `af_force_deeplink=true` ne figure pas dans le lien, l'utilisateur est redirigé en fonction.
    * Si le paramètre af\_ios\_url n'est pas défini et si `af_force_deeplink=true` est dans le lien, la boîte de dialogue s'affiche à nouveau sur la page d’accueil en arrière-plan.  
 
-     [![](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)](https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg)
+     <Image align="center" alt="" src="https://files.readme.io/200a0baef3755ab58c5385dac5fcb00ae3d72e762fbaa571c1735f7222d3b0b9-360016599277.jpg" />
 3. Si l'utilisateur clique sur **Ouvrir**, il est dirigé vers l'App Store.
 4. Si l'utilisateur clique sur **Fermer**, la page d’accueil en arrière-plan s'affiche.  
 
-   [![](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)](https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/98748f47f3f9df43addc9c871c8165ecf4f849b17bdcfd660b90d4b6ded6727d-360016668478.jpg" />
 5. L'utilisateur clique sur le badge App Store et est redirigé vers l'App Store.
 
 <div id="flowchart-2" />
 
 #### **Scénario**
 
-![diagram-X.png](https://files.readme.io/0c8040d27bbf34fdf1374b4b40a8239b6af7b6c7719db9666f36dd2829bc3217-small-17710399441553.png)
+<Image align="center" alt="diagram-X.png" src="https://files.readme.io/0c8040d27bbf34fdf1374b4b40a8239b6af7b6c7719db9666f36dd2829bc3217-small-17710399441553.png" />
 
 </Accordion>
 

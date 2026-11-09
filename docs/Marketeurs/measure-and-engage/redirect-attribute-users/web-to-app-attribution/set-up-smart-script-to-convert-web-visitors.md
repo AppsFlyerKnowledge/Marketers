@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **En bref :** Utilisez Smart Script OneLink pour convertir et attribuer les visiteurs de votre site web mobile (qu’elle que soit la source) en utilisateurs d'app mobile.
 
-![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
+<Image align="center" alt="7901_Smart_Script_flow_1920x1080_2__1_.png" src="https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png" />
 
 <div id="setup" />
 
@@ -106,7 +106,7 @@ Pour configurer le Smart Script, vous pouvez :
 
 <Accordion title="Comment modifier ou supprimer un script ?">
 
-![Script_steps.jpg](https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg)
+<Image align="center" alt="Script_steps.jpg" src="https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg" />
 
 1. Cliquez sur la flèche déroulante <Image alt="Down_arrow.jpg" src="https://files.readme.io/a82023665721be681f985548857c4c329f626435780bb1bff7a3821b32b69078-42045468433041.jpg" width="28px" /> à côté du titre du Smart Script.  
    Vous verrez s'afficher ici tous vos scripts sauvegardés.
@@ -362,7 +362,7 @@ Smart Script affiche un QR code sur votre page web, au lieu d'un bouton contenan
 >
 > **QR Code sortant** :
 >
-> ![](https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png)
+> <Image align="center" alt="" src="https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png" />
 
 </Accordion>
 
@@ -423,7 +423,7 @@ Oui. Sur votre page Smart Script OneLink, cliquez sur + **Nouveau paramètre** p
 
 Exemple : pour ajouter is\_retargeting comme paramètre, le paramètre Custom sera sélectionné dans le champ **mapping pour**, puis notre paramètre is\_retargeting sera appliqué dans le champ **Paramètres de l'URL sortant**.
 
-![Smart_Script_Custom.jpg](https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg)
+<Image align="center" alt="Smart_Script_Custom.jpg" src="https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg" />
 
 <div id="adset-and-other-parameters-are-not-showing-in-the-dropdown" />
 

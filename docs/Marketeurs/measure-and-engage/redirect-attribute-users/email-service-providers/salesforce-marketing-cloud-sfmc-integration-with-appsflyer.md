@@ -81,7 +81,7 @@ To enable deep linking from SFMC emails:
 2. Click on the **Admin** tab
 3. In the side menu, click on **deep linking**. In this view, you can configure new deep link integration with your app, or modify existing ones.
 
-   <Image alt="[ALT TEXT NEEDED: describe the SFMC deep linking configuration screen]" src="https://files.readme.io/4b7e68abb76163329ab5d487425c4dfe3ee903bb3360893c9b59f40f73486858-50431735587345.png" width="3348px" />
+   <Image align="center" alt="[ALT TEXT NEEDED: describe the SFMC deep linking configuration screen]" src="https://files.readme.io/4b7e68abb76163329ab5d487425c4dfe3ee903bb3360893c9b59f40f73486858-50431735587345.png" width="3348px" />
 4. To create a new configuration, click the **Create** button and enter your AppID. The AppID value is a combination of your Apple developer team ID and the Bundle ID. Both of these values can be retrieved from your Apple Developer account.
 
    > 📄 **Example**
@@ -89,7 +89,7 @@ To enable deep linking from SFMC emails:
    > Given the Team ID prefix *5UABCDFGH* and the Bundle ID *com.your.app*, the following value should be entered:  
    > 5UABCDFGH.com.your.app
    >
-   > <Image alt="[ALT TEXT NEEDED: describe the SFMC deep linking configuration screen shown here]" src="https://files.readme.io/4f5500c6f538b2b8e00db0bae1bcac240fc49b30419f4f4a8b07fb0bd3cf8f4a-50431735587985.png" width="1234px" />
+   > <Image align="center" alt="[ALT TEXT NEEDED: describe the SFMC deep linking configuration screen shown here]" src="https://files.readme.io/4f5500c6f538b2b8e00db0bae1bcac240fc49b30419f4f4a8b07fb0bd3cf8f4a-50431735587985.png" width="1234px" />
 
 5. Your set up of universal links and deep linking is completed once SFMC sets up the Apple App Site Association (AASA) file. This process may take a few hours. You can see your generated file using the following URL:
 
@@ -109,7 +109,7 @@ After configuring your click-recording domain to support Universal Links as desc
 
 1. Associate the click-recording domain in Xcode:
 
-   <Image alt="[ALT TEXT NEEDED: describe the Xcode associated domains screen]" src="https://files.readme.io/02bee3d75c32d494d80719b2718ddf4648440bcb3ebcb2132799e44e38852629-50431735589009.png" width="1135px" />
+   <Image align="center" alt="[ALT TEXT NEEDED: describe the Xcode associated domains screen]" src="https://files.readme.io/02bee3d75c32d494d80719b2718ddf4648440bcb3ebcb2132799e44e38852629-50431735589009.png" width="1135px" />
 2. Provide the click-recording domain to the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information, see the SDK documentation on <Anchor target="_blank" href="/marketers/fr/docs/sdk-integration-overview">resolving deep link URLs</Anchor>.
 
    ```swift
@@ -173,7 +173,7 @@ Complete the steps in the "[Set up Standard SFMC email deep linking](#set-up-sta
 
 Create a separate attribution link for each campaign.
 
-<Image alt="[ALT TEXT NEEDED: currently the filename SFMC-AF-app1-en_us.png; describe the OneLink app screen shown]" src="https://files.readme.io/21d7961d03e822dd2a4ccb426dc7b5c85c3700f81a9530bc8950a67e3f1d6237-50431735591185.png" width="684px" />
+<Image align="center" alt="[ALT TEXT NEEDED: currently the filename SFMC-AF-app1-en_us.png; describe the OneLink app screen shown]" src="https://files.readme.io/21d7961d03e822dd2a4ccb426dc7b5c85c3700f81a9530bc8950a67e3f1d6237-50431735591185.png" width="684px" />
 
 **To create a OneLink link:**
 
@@ -199,13 +199,13 @@ Create a separate attribution link for each campaign.
 2. Click the **Edit** icon, the **Content** tab, then select **Blocks**.
 3. Scroll down to find **AppsFlyer Button CB** or **AppsFlyer Image CB**.
 
-   <Image alt="[ALT TEXT NEEDED: currently the filename sf_email_edit_onelink_new.PNG; describe the Content Blocks panel shown]" src="https://files.readme.io/565a80933451dbdb1606b20f8d71964019a36f14ffd0b0ba295649a96b056cf0-50431751706641.png" width="396px" />
+   <Image align="center" alt="[ALT TEXT NEEDED: currently the filename sf_email_edit_onelink_new.PNG; describe the Content Blocks panel shown]" src="https://files.readme.io/565a80933451dbdb1606b20f8d71964019a36f14ffd0b0ba295649a96b056cf0-50431751706641.png" width="396px" />
 4. Drag the image/button into the body of the email.
 5. Click the image/button to edit.
 6. In the **Title** field, name the image/button.
 7. Select a **OneLink link**.
 
-   <Image alt="[ALT TEXT NEEDED: describe the OneLink link selector shown]" src="https://files.readme.io/1d22268b5ced4d753cb6812decdccd960e92d9d8156213f76fc67db98b52c9c7-50431751707665.png" width="415px" />
+   <Image align="center" alt="[ALT TEXT NEEDED: describe the OneLink link selector shown]" src="https://files.readme.io/1d22268b5ced4d753cb6812decdccd960e92d9d8156213f76fc67db98b52c9c7-50431751707665.png" width="415px" />
 8. Save the email and send it.
 
 > 📄 **Example**

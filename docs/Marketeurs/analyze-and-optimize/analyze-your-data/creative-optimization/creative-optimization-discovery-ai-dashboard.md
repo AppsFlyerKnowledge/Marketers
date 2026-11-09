@@ -25,7 +25,7 @@ x-zendesk:
 
 > **En bref :** utilisez le tableau de bord Découverte de l'optimisation créative pour analyser les performances de vos créations et des scènes et éléments qui les composent, afin de produire des créations performantes basées sur des données.
 
-[![Main Discovery image New.jpg](https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg)](https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg)
+<Image align="center" alt="Main Discovery image New.jpg" src="https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg" />
 
 <div id="about-the-creative-optimization-discovery-ai-dashboard" />
 
@@ -91,7 +91,7 @@ Les requêtes rapides agissent comme un filtre secondaire, vous permettant de vi
 
 Il suffit de cliquer sur la requête spécifique souhaitée (plusieurs requêtes peuvent être sélectionnées) pour filtrer la galerie en fonction de vos sélections.
 
-![Quick Queries with arrow New.jpg](https://files.readme.io/2fc12427a721eb8e373e10f95f3cfa1251a600ff33e0616d22af92d8f6ca7380-20131437391121.jpg)
+<Image align="center" alt="Quick Queries with arrow New.jpg" src="https://files.readme.io/2fc12427a721eb8e373e10f95f3cfa1251a600ff33e0616d22af92d8f6ca7380-20131437391121.jpg" />
 
 **Parmi les requêtes disponibles, on peut citer :**
 
@@ -125,7 +125,7 @@ Vous pouvez trier les tuiles de la galerie en fonction d'un grand nombre de para
 
 Cliquez sur le menu déroulant **Trier par** en haut à droite de la galerie et sélectionnez une dimension/métrique.
 
-![Sort by.jpg](https://files.readme.io/197b9c059945bf0ea964ece82faf6a72cc8d54d92b6ab4c5d3d30f8a7081d399-18565901526929.jpg)
+<Image align="center" alt="Sort by.jpg" src="https://files.readme.io/197b9c059945bf0ea964ece82faf6a72cc8d54d92b6ab4c5d3d30f8a7081d399-18565901526929.jpg" />
 
 Les mesures disponibles sont les suivantes :
 
@@ -161,7 +161,7 @@ Explorez les données relatives aux performances des créations et des scènes e
 
 Consultez une galerie de toutes vos créations, ainsi que leurs données de performance. Les tuiles affichées sont basées sur les sélections du filtre créatif principal et peuvent être triées selon différents paramètres. Certaines métriques telles que le coût, le CTR et l'IPM apparaissent toujours dans les tuiles.
 
-![New Discovery tile image w asset and find similar.jpg](https://files.readme.io/fe410910f8db80adc9ea351cbf2d6fa895167d591b23489e7c63da9fe89076d1-18565941366545.jpg)
+<Image align="center" alt="New Discovery tile image w asset and find similar.jpg" src="https://files.readme.io/fe410910f8db80adc9ea351cbf2d6fa895167d591b23489e7c63da9fe89076d1-18565941366545.jpg" />
 
 |  | Dimension/métrique | Description |
 | --- | --- | --- |
@@ -184,7 +184,7 @@ Consultez une galerie de toutes vos créations, ainsi que leurs données de perf
 
 Grâce à l'IA, les créations vidéo sont automatiquement décomposées en scènes et affichées avec leurs données de performance, sans intervention manuelle. Les données relatives à la performance des scènes sont tirées des créations dont elles sont issues. Si la même scène apparaît dans plusieurs vidéos, les données sont un agrégat de toutes les créations dans lesquelles elle apparaît. Les données sont disponibles dans le tableau de bord environ 24 heures après l'<Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-partner-integrations">intégration du partenaire</Anchor>. Cette fonction **n'est disponible qu'avec les formules d'abonnement Creative Optimization Advanced et Premium**.
 
-![Scene tile.jpg](https://files.readme.io/840c9ca1266be70d2b3d8714498375c8e4148ade20a36ae525a368834f50da49-18565931828241.jpg)
+<Image align="center" alt="Scene tile.jpg" src="https://files.readme.io/840c9ca1266be70d2b3d8714498375c8e4148ade20a36ae525a368834f50da49-18565931828241.jpg" />
 
 Pour une description de ce que chaque tuile affiche, voir [Créations](/docs/creative-optimization-discovery-ai-dashboard#creatives) ci-dessus.
 
@@ -196,7 +196,7 @@ Pour une description de ce que chaque tuile affiche, voir [Créations](/docs/cre
 
 Nos algorithmes d'IA entièrement automatisés décomposent les créations vidéo en éléments significatifs (composants visuels de base) qui sont identifiés et affichés pour permettre l'analyse la plus granulaire possible. Les données relatives à la performance sont tirées des créations dont elles sont issues. Si le même élément apparaît dans plusieurs vidéos, les données sont un agrégat de toutes les créations dans lesquelles elle apparaît. Les données sont disponibles dans le tableau de bord environ 24 heures après l'<Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-partner-integrations">intégration du partenaire</Anchor>. Cette fonction **n'est disponible qu'avec les formules d'abonnement Creative Optimization Advanced et Premium**.
 
-![Element tile.jpg](https://files.readme.io/05abb3b5534dba24aa06bf1131604c52579ed85c528309bcbb9fa74113ddcae2-18565947438353.jpg)
+<Image align="center" alt="Element tile.jpg" src="https://files.readme.io/05abb3b5534dba24aa06bf1131604c52579ed85c528309bcbb9fa74113ddcae2-18565947438353.jpg" />
 
 Pour une description de ce que chaque tuile affiche, voir [Créations](/docs/creative-optimization-discovery-ai-dashboard#creatives) ci-dessus.
 

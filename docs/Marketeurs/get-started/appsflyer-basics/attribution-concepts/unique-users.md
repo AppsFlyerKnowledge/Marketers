@@ -47,7 +47,7 @@ Bien que le calcul de l'utilisateur unique soit généralement simple, des quest
 
 <Accordion title="Installation et réinstallation">
 
-![](https://files.readme.io/8b9f3c442f98c056069b4449c7e5115cbea828a64ace3a98e0090fb0d8d1d8d6-27455116159889.png)
+<Image align="center" alt="" src="https://files.readme.io/8b9f3c442f98c056069b4449c7e5115cbea828a64ace3a98e0090fb0d8d1d8d6-27455116159889.png" />
 
 L'installation et la réinstallation ont le même ID d'appareil/ID AppsFlyer. Par conséquent, 1 utilisateur unique sera comptabilisé. Les deux événements in-app sont attribués au même utilisateur unique que celui de la première installation.
 
@@ -62,7 +62,7 @@ L'installation et la réinstallation ont le même ID d'appareil/ID AppsFlyer. Pa
 
 <Accordion title="Installation et réattribution">
 
-![](https://files.readme.io/40420c5ea201ba7cf13d03e5968d20c2fffaa31b74c47ae36cd917cccbaae353-27453973190289.png)
+<Image align="center" alt="" src="https://files.readme.io/40420c5ea201ba7cf13d03e5968d20c2fffaa31b74c47ae36cd917cccbaae353-27453973190289.png" />
 
 L'installation et la réattribution ont le même ID d'appareil/ID AppsFlyer. Mais dans ce cas précis, AppsFlyer prend aussi en compte le paramètre `is_retargeting=true`, l'événement post- réattribution est donc comptabilisé comme un utilisateur unique supplémentaire. Au final, 2 utilisateurs uniques sont comptabilisés.
 
@@ -76,7 +76,7 @@ L'installation et la réattribution ont le même ID d'appareil/ID AppsFlyer. Mai
 
 <Accordion title="Installation et réengagement">
 
-![](https://files.readme.io/04adbd0d79f5999ca1c39f49f4e0469571c80f1be7918e9e2d8617a0ae8abccf-27458250919441.png)
+<Image align="center" alt="" src="https://files.readme.io/04adbd0d79f5999ca1c39f49f4e0469571c80f1be7918e9e2d8617a0ae8abccf-27458250919441.png" />
 
 L'installation et le ré-engagement ont le même ID d'appareil/ID AppsFlyer. Mais dans ce cas précis (comme pour les réattributions), AppsFlyer prend aussi en compte le paramètre `is_retargeting=true`, l'événement qui se produit après le ré-engagement est donc comptabilisé comme un utilisateur unique supplémentaire. Au final, 2 utilisateurs uniques sont comptabilisés.
 
@@ -90,7 +90,7 @@ L'installation et le ré-engagement ont le même ID d'appareil/ID AppsFlyer. Mai
 
 <Accordion title="Événements in-app non attribués">
 
-![](https://files.readme.io/94bf078bcf4ba26a1dc4ca323a1b4a7543cfb4e3fc8b780d0d29713c4266aa95-27455116170001.png)
+<Image align="center" alt="" src="https://files.readme.io/94bf078bcf4ba26a1dc4ca323a1b4a7543cfb4e3fc8b780d0d29713c4266aa95-27455116170001.png" />
 
 Lorsqu'un événement in-app n'est pas attribué (il suit une réinstallation, pour une raison quelconque, il n'est pas lié à la première installation), il n'est pas pris en compte dans le nombre d'utilisateurs uniques. Cela peut se produire lorsqu'aucun ID d'appareil n'est disponible pour la réinstallation, mais ce n’est pas forcément la seule explication. <Anchor target="_blank" href="/marketers/fr/docs/measure-reinstalls#unattributed-organic-inapps">En savoir plus</Anchor>
 

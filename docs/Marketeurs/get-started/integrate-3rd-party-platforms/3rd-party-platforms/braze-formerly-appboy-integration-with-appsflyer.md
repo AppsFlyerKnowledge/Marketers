@@ -166,12 +166,12 @@ Braze se connecte à AppsFlyer via une clé API unique et un point de terminaiso
 1. Dans votre compte Braze, sous **Partenaires technologiques** , allez à **Attribution**.
 2. Sélectionnez **AppsFlyer**.  
 
-   ![braze-af-API-key.png](https://files.readme.io/db96e8b5e2363f5250c6c1146a1f7a15e1ed6457fe4543dbe649f8818bb5db78-360017328637.png)
+   <Image align="center" alt="braze-af-API-key.png" src="https://files.readme.io/db96e8b5e2363f5250c6c1146a1f7a15e1ed6457fe4543dbe649f8818bb5db78-360017328637.png" />
 3. Sous **Importation de données pour l'attribution d'installation**, cliquez sur Générer la clé API.
 4. Copiez la clé API générée et le point de terminaison REST.
 5. Dans AppsFlyer, insérez la clé API Braze et le point de terminaison REST.  
 
-   ![Braze_msc_new_2.png](https://files.readme.io/b13aba84c394c0b4603e0aad2edd723525dadf204250349620b571bc47b0ba9d-360001907229.png)
+   <Image align="center" alt="Braze_msc_new_2.png" src="https://files.readme.io/b13aba84c394c0b4603e0aad2edd723525dadf204250349620b571bc47b0ba9d-360001907229.png" />
 6. Cliquez sur **Enregistrer et fermer**.
 
 Une fois la configuration enregistrée, AppsFlyer envoie les données suivantes à Braze pour chaque installation organique et non organique :
@@ -190,7 +190,7 @@ Une fois la configuration enregistrée, AppsFlyer envoie les données suivantes 
 
 AppsFlyer peut envoyer des postbacks automatiques aux installations des utilisateurs de Braze. Utilisez cette section pour définir l'envoi de ces postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Sélectionnez **Événements attribués à tout partenaire ou organiques** pour envoyer des postbacks à Braze pour tout utilisateur qui télécharge l'application.
 

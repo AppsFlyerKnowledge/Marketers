@@ -410,14 +410,14 @@ Make sure the events in the postbacks you send to GA4 are registered and read by
   For example, the Events reports can be found in the [Life cycle](https://support.google.com/analytics/answer/12924233?hl=en) or the [Games reporting](https://support.google.com/analytics/answer/12925133?hl=en&sjid=5454549956257318969-NC) collections under **Engagement** > **Events**.   
   For more information on the Events report see [the Google documentation](https://support.google.com/analytics/answer/12926615?sjid=5454549956257318969-NC).
 
-  ![GA4 Events report](https://files.readme.io/01625878b13a46b8a87c34bf465c0ef6494a0f528960d62ce5535b69b29e7d0a-25707728713745.png)
+  <Image align="center" alt="GA4 Events report" src="https://files.readme.io/01625878b13a46b8a87c34bf465c0ef6494a0f528960d62ce5535b69b29e7d0a-25707728713745.png" />
 * **The Traffic acquisition report** helps you understand where your website and app visitors are coming from.
 
   Under the [Life cycle collection](https://support.google.com/analytics/answer/12924233?hl=en) go to **Acquisition** > **Traffic Acquisition**).
 
   For more information on the Traffic acquisition report, see [the Google documentation](https://support.google.com/analytics/answer/12923437?hl=en&sjid=5454549956257318969-NC#zippy=%2Chow-do-i-filter-out-traffic-sources-from-the-report).
 
-  ![GA4 Traffic acquisition report](https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png)
+  <Image align="center" alt="GA4 Traffic acquisition report" src="https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png" />
 
 </Accordion>
 

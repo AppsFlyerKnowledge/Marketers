@@ -19,7 +19,7 @@ x-zendesk:
 ---
 > **At a glance:** Set up an Adobe ESP integration with AppsFlyer to enable seamless and secure deep linking in your email campaigns for better user engagement and conversion rates.
 
-<Image alt="adobe_appsflyer_banner_updated.png" src="https://files.readme.io/95ae69b9b07c2972e03213509fac02516f7ffb300688deb72db5c9aa744e67cf-51180732192401.png" width="1855px" />
+<Image align="center" alt="adobe_appsflyer_banner_updated.png" src="https://files.readme.io/95ae69b9b07c2972e03213509fac02516f7ffb300688deb72db5c9aa744e67cf-51180732192401.png" width="1855px" />
 
 ## About the Adobe ESP integration
 
@@ -74,15 +74,15 @@ Now it's time to set your ESP integration in AppsFlyer. Please note that this st
 
 1. In **AppsFlyer**, from the side menu, select **Engage** > **ESP integration**.
 
-<Image alt="Selecting ESP integration from the Engage menu" src="https://files.readme.io/e4ab3ceaa61ca94b2cc0ed826ee2dd56dfaf58aafd6a73a81d99ec54541d6d8a-51170889009809.png" width="196px" />
+<Image align="center" alt="Selecting ESP integration from the Engage menu" src="https://files.readme.io/e4ab3ceaa61ca94b2cc0ed826ee2dd56dfaf58aafd6a73a81d99ec54541d6d8a-51170889009809.png" width="196px" />
 
 2. Select your ESP (Adobe).
 
-<Image alt="Selecting your ESP from the list" src="https://files.readme.io/12a5ab3adf7a01928a09273fc9921483cc90f88a42ccc73742be70aa3a527b64-51170903613201.png" width="482px" />
+<Image align="center" alt="Selecting your ESP from the list" src="https://files.readme.io/12a5ab3adf7a01928a09273fc9921483cc90f88a42ccc73742be70aa3a527b64-51170903613201.png" width="482px" />
 
 3. Select the OneLink template you want to use for email campaigns, then click **Next**.
 
-![Selecting a OneLink template for the ESP integration](https://files.readme.io/cd614aa582712f07b0817524bfb2495a96a5bc7f048d47152e749d406da1aa49-51170889012113.png)
+<Image align="center" alt="Selecting a OneLink template for the ESP integration" src="https://files.readme.io/cd614aa582712f07b0817524bfb2495a96a5bc7f048d47152e749d406da1aa49-51170889012113.png" />
 
 4. Make sure you have an active account with the selected ESP.
 
@@ -95,7 +95,7 @@ Click **Next**.
 
 5. Enter your click tracking domain and ESP endpoint, then click **Validate connection**. This validates that the click-tracking domain points to the endpoint you entered.
 
-![Entering the click-tracking domain and ESP endpoint](https://files.readme.io/a27e5e380d4ff31aba901a9bb0fc3178d8bcb3fba6627ca06cef89e977afc2e2-51170903614737.png)
+<Image align="center" alt="Entering the click-tracking domain and ESP endpoint" src="https://files.readme.io/a27e5e380d4ff31aba901a9bb0fc3178d8bcb3fba6627ca06cef89e977afc2e2-51170903614737.png" />
 
 When done, click **Next**.
 
@@ -105,7 +105,7 @@ a. **Copy and send the customized pre-fabricated instructions in AppsFlyer to yo
 
 As a result, every time a link is clicked, the click will be redirected to AppsFlyer, which in turn will redirect it to the ESP endpoint.
 
-<Image alt="Diagram of a click being redirected from the ESP to AppsFlyer" src="https://files.readme.io/f718fd8397bcf73a3f02ddc977680c0d14dd8747509b38e20564c48386590080-51170903615761.png" width="374px" />
+<Image align="center" alt="Diagram of a click being redirected from the ESP to AppsFlyer" src="https://files.readme.io/f718fd8397bcf73a3f02ddc977680c0d14dd8747509b38e20564c48386590080-51170903615761.png" width="374px" />
 
 b. After copying and sending the instructions, click **Done**.
 
@@ -205,7 +205,7 @@ We appreciate your assistance with this update.
 
 1. In AppsFlyer, create an "Email-to-app" OneLink link on the OneLink management page (or manually) within the OneLink template you created earlier. This is the link you'll use in your email campaign that will attribute and redirect users per your specifications. Learn how to create a <Anchor target="_blank" href="/marketers/fr/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#créer-un-lien-onelink">OneLink link</Anchor>.
 
-<Image alt="Creating an Email-to-app OneLink link in AppsFlyer" src="https://files.readme.io/5e2e4e38f9490132687370347fa7432f383977ae3ae251fd3a897365eb2843a0-51170903616145.png" width="652px" />
+<Image align="center" alt="Creating an Email-to-app OneLink link in AppsFlyer" src="https://files.readme.io/5e2e4e38f9490132687370347fa7432f383977ae3ae251fd3a897365eb2843a0-51170903616145.png" width="652px" />
 
 **Best practice:** Use the same campaign name in both the ESP email campaign and in the AppsFlyer OneLink links used in that campaign.
 

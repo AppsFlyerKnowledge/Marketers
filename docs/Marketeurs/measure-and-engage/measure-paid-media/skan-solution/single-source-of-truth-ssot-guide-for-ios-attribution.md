@@ -43,7 +43,7 @@ Pour inclure l'indicateur SSOT dans vos données, vous devez d'abord activer SSO
 
 <Accordion title="Activer le SSOT">
 
-![SSOTControl.png](https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png)
+<Image align="center" alt="SSOTControl.png" src="https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png" />
 
 **Pour activer le SSOT :**
 
@@ -61,7 +61,7 @@ Voir <Anchor target="_blank" href="/marketers/fr/docs/skan-conversion-studio">St
 
 ## Tableau de bord général, fenêtre SSOT
 
-![SSOTisNowOn.png](https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png)
+<Image align="center" alt="SSOTisNowOn.png" src="https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png" />
 
 La vue SSOT proposée dans le tableau de bord général offre une vision complète des métriques de performance non organiques. Dans la fenêtre :
 
@@ -82,12 +82,12 @@ Les données s'affichent dans la fenêtre SSOT entre 3 et 5 jours après activat
 1. Avant de démarrer, vérifiez que <Anchor target="_blank" href="/marketers/fr/docs/skan-conversion-studio#single-source-of-truth">SSOT (Single Source of Truth)</Anchor> est bien activé dans le Studio de Conversion.
 2. Dans AppsFlyer, allez dans **Tableau de bord** > **Général.**  
 
-   <Image alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
+   <Image align="center" alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
 3. Cliquez sur ▼.
 4. Sélectionnez **Aperçu réduit**.  
    Le bouton SSOT s'affiche.  
 
-   <Image alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
+   <Image align="center" alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
 5. Activez le **SSOT.**
 6. L'un des événements suivants se produit :  
    * Affichage des chiffres et graphiques du tableau de bord.  
@@ -191,7 +191,7 @@ L'attribution SKAN et l'attribution AF modélisée fonctionnent différemment. E
 
 Les scénarios possibles d'attribution du modèle SKAN-AF sont illustrés dans le diagramme de Venn suivant.
 
-![skan_af_model_diagram.png](https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png)
+<Image align="center" alt="skan_af_model_diagram.png" src="https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png" />
 
 Le tableau suivant décrit les motifs de chaque scénario d'attribution.
 
@@ -207,7 +207,7 @@ Le tableau suivant décrit les motifs de chaque scénario d'attribution.
 
 Le fonctionnement du SSOT est illustré dans le schéma suivant.
 
-![SingleSourceOfTruth.png](https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png)
+<Image align="center" alt="SingleSourceOfTruth.png" src="https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png" />
 
 **Comment fonctionne le procédé SSOT ?**
 

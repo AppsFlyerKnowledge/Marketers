@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **At a glance:** Revenue data helps give you a clear and complete picture of ROI and ROAS. Learn about the different products and features available for advertisers to aggregate and view revenue data.
 
-![roi_revenue.png](https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png)
+<Image align="center" alt="roi_revenue.png" src="https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png" />
 
 ## Overview
 

@@ -47,7 +47,7 @@ AppsFlyer donne la priorité à l'attribution des préchargements. Cela signifie
 3. Le SDK AppsFlyer interroge l'API du référent de Google Play.
 4. AppsFlyer effectue l’attribution en fonction des données reçues.
 
-![PAI-attribution-flow_en-us.png](https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png)
+<Image align="center" alt="PAI-attribution-flow_en-us.png" src="https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png" />
 
 <div id="data-availability" />
 

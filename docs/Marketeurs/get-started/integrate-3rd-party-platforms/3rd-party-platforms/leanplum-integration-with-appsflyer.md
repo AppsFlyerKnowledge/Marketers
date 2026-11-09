@@ -71,7 +71,7 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 Leanplum connects with AppsFlyer via a unique App ID and Client Key. If you don't already have them, you must obtain them from Leanplum to continue with the integration or follow the steps below.
 
-![Leanplum_msc_new_3.png](https://files.readme.io/0ef9adb16568192e922b33688a0525a3e61bc0f18dfc63e3717390adc34a66c4-360001904209.png)
+<Image align="center" alt="Leanplum_msc_new_3.png" src="https://files.readme.io/0ef9adb16568192e922b33688a0525a3e61bc0f18dfc63e3717390adc34a66c4-360001904209.png" />
 
 **Sending IDFA or IDFV**
 
@@ -85,19 +85,19 @@ If neither is available, no postback is sent.
 
 Click on your name at the top right of the screen and select **App Settings**
 
-![](https://files.readme.io/fcb9bb4fab1eec1db130904c2c4856529f58582bd8c9c04f08200ed82c0fcb80-206117303.png)
+<Image align="center" alt="" src="https://files.readme.io/fcb9bb4fab1eec1db130904c2c4856529f58582bd8c9c04f08200ed82c0fcb80-206117303.png" />
 
 Select an app and click **Keys & Settings**
 
-[![](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)](https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png)
+<Image align="center" alt="" src="https://files.readme.io/5608bddb2c31b1569e3d2e262946e239f3e637e5ac5d95bc24a03c3ff0d8d763-206117323.png" />
 
-![](https://files.readme.io/cd638732b197f03c6194b8bae7b8f726a6e4c16661702fdad48054a35ce333e5-206117343.png)
+<Image align="center" alt="" src="https://files.readme.io/cd638732b197f03c6194b8bae7b8f726a6e4c16661702fdad48054a35ce333e5-206117343.png" />
 
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to Leanplum user installs. Use this section to define sending these postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/bb7f10cea006b95701be3fd4beb33fd237e1aa59a148bf2dd88935bf61aed2e1-18274529202193.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/bb7f10cea006b95701be3fd4beb33fd237e1aa59a148bf2dd88935bf61aed2e1-18274529202193.png" />
 
 Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Leanplum.
 
@@ -141,7 +141,7 @@ Permissions are not available for Leanplum.
 
 Once you have set up the integration between Leanplum and Appsflyer, you can access the information by utilizing Leanplum’s targeting and segmentation menu:
 
-[![](https://files.readme.io/5685cfe357930bd57611365d7f47fff1608a8e7c345110070763af26374e01bc-206117523.png)](https://files.readme.io/5685cfe357930bd57611365d7f47fff1608a8e7c345110070763af26374e01bc-206117523.png)
+<Image align="center" alt="" src="https://files.readme.io/5685cfe357930bd57611365d7f47fff1608a8e7c345110070763af26374e01bc-206117523.png" />
 
 This menu is available in the Analytics, Messages, A/B Tests, and Users sections of the Leanplum platform. You can filter by, group by, and cohort by this data in Analytics, filter by this data in the Users section, and target by this data in Analytics and A/B Tests.
 

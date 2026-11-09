@@ -24,7 +24,7 @@ x-zendesk:
 
 **Cas d'utilisation des installations web-assistées**
 
-![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
+<Image align="center" alt="web_to_app_image.png" src="https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png" />
 
 En savoir plus sur les autres tableaux de bord PBA : <Anchor target="_blank" href="/marketers/fr/docs/pba-website-attribution-dashboard">Attribution Web</Anchor> | Chemins de conversion
 
@@ -40,7 +40,7 @@ Les installations web-assistées mesurent l'impact des actions web marketing qui
 
 Les métriques de titre affichent le nombre total d'installations d'app par rapport au nombre d'installations web-assistées, divisé en installations d'app organiques et non organiques.
 
-[![WAIHeadline_en-us.png](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)
+<Image align="center" alt="WAIHeadline_en-us.png" src="https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png" />
 
 Dans le cadre de l'analyse des installations web-assistées, tenez compte des scénarios de cas d'utilisation du tableau qui suit.
 
@@ -64,7 +64,7 @@ Dans le cadre de l'analyse des installations web-assistées, tenez compte des sc
 
 <Accordion title="Installations et réinstallations web-assistées">
 
-![30day_us-en.png](https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png)
+<Image align="center" alt="30day_us-en.png" src="https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png" />
 
 On considère que les installations ont été influencées par un site web si elles se produisent dans les 30 jours qui suivent la visite de celui-ci.Les installations et les réinstallations, dont les installations de retargeting (réattributions), peuvent être organiques ou non organiques.
 

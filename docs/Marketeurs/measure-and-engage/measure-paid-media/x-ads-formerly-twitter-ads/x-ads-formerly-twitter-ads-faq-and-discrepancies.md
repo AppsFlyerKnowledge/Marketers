@@ -83,21 +83,21 @@ Imaginons que votre membre d'équipe s'appelle Jenny et que son identifiant soit
 1. Jenny se connecte à <Anchor target="_blank" href="http://ads.twitter.com/">ads.twitter.com</Anchor>
 2. Elle clique sur **Compte** puis sélectionne **Modifier l'accès au compte**  
 
-   ![twitter_assign_account2.PNG](https://support.appsflyer.com/hc/article_attachments/4416810336785)
+   <Image align="center" alt="twitter_assign_account2.PNG" src="https://support.appsflyer.com/hc/article_attachments/4416810336785" />
 3. Jenny octroie ensuite à @nivi l'accès à son compte X Ads en tant qu'admin du compte  
 
-    [![twitter_edit_access_to_account.png](https://support.appsflyer.com/hc/article_attachments/4416810307601/twitter_edit_access_to_account.png)](https://support.appsflyer.com/hc/article_attachments/360002514658/twitter_edit_access_to_account.png)
+    <Image align="center" alt="twitter_edit_access_to_account.png" src="https://support.appsflyer.com/hc/article_attachments/4416810307601/twitter_edit_access_to_account.png" />
 4. Jenny se connecte à son compte AppsFlyer et va dans Integrations actives >> option Twitter
 5. Elle peut alors voir que son compte X Ads est également listé.
 6. Elle peut maintenant choisir son compte X Ads et configurer l'intégration. L'admin du compte peut voir tous les comptes X Ads connectés.  
 
    Ce que voit Jenny :
 
-   ![jennys_ads_account.png](https://support.appsflyer.com/hc/article_attachments/4416824257041)
+   <Image align="center" alt="jennys_ads_account.png" src="https://support.appsflyer.com/hc/article_attachments/4416824257041" />
 
    Ce que voit l'administrateur :
 
-   ![jennys_ads_account__1_.png](https://support.appsflyer.com/hc/article_attachments/4416833416337)
+   <Image align="center" alt="jennys_ads_account__1_.png" src="https://support.appsflyer.com/hc/article_attachments/4416833416337" />
 
 </Accordion>
 
@@ -134,7 +134,7 @@ Si votre app était abonnée à un autre prestataire d'attribution dans le pass�
 
 L'erreur suivante peut également apparaître :  
 
- [![](https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png)](https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png)
+ <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png" />
 
 **Erreur : Une erreur s'est produite lors de l'enregistrement de la configuration de Twitter. Certains comptes n'ont pas été mis à jour : XX Plusieurs ID de prestataire sont identiques (appid, conversionType) pour l'événement appid2872.**
 

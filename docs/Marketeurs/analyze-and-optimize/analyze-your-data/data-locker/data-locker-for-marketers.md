@@ -31,7 +31,7 @@ x-zendesk:
 
 ## Data Locker
 
-![6133DataLockerForAdvertisers.png](https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png)
+<Image align="center" alt="6133DataLockerForAdvertisers.png" src="https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png" />
 
 Dans Data Locker, sélectionnez vos apps, sources média, événements et rapports à inclure dans les données qu’AppsFlyer envoie aux solutions de stockage Cloud sélectionnées. Chargez les données par programme dans vos systèmes BI à partir du stockage.
 
@@ -132,7 +132,7 @@ Les données sont inscrites dans le stockage que vous avez choisi. Dans le cas d
 
 Les données stockées sont rangées dans une structure de dossiers hiérarchisée selon le type de rapport, la date et l'heure. La figure suivante vous donne un exemple de cette structure :
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 Les données d'un certain rapport sont contenues dans les dossiers «heure» (h) associés à ce rapport :
 
@@ -392,7 +392,7 @@ Un admin peut réinitialiser les identifiants du compartiment AppsFlyer à tout 
   2. <Anchor target="_blank" href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html">Actualisez le cache des identifiants AWS</Anchor>.  
      **Capture d'écran de AWS**
 
-     ![mceclip0.png](https://files.readme.io/e6608b196c39cb71e0a02e0eabe95378f24659a1578a16fd381bfd0053ca309e-32966264043537.png)
+     <Image align="center" alt="mceclip0.png" src="https://files.readme.io/e6608b196c39cb71e0a02e0eabe95378f24659a1578a16fd381bfd0053ca309e-32966264043537.png" />
 
 </Accordion>
 
@@ -482,7 +482,7 @@ Avant de commencer :
 2. Sélectionnez **Nouveau signet**. La fenêtre s'ouvre.
 3. Dans le premier champ, (marqué [1] dans la capture d'écran qui suit), sélectionnez **Amazon S3.**
 
-   [![DataDuckSmall2.png](https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png)](https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png)
+   <Image align="center" alt="DataDuckSmall2.png" src="https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png" />
 4. Remplissez les champs comme suit :
    * **Pseudo :** texte libre
    * **Serveur :** s3.amazonaws.com
@@ -509,7 +509,7 @@ Avant de commencer :
 1. Dans le navigateur S3, cliquez sur **Comptes** > **Ajouter** **Nouveau compte**.  
    La fenêtre Ajouter un nouveau compte s'ouvre.
 
-   [![mceclip0.png](https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png)](https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png)
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png" />
 2. Remplissez les champs comme suit :
    * **Nom de compte** : texte libre.
    * **ID de clé d'accès :** copiez la clé d'accès AWS telle qu'elle apparaît dans le panneau des informations d'identification.
@@ -520,7 +520,7 @@ Avant de commencer :
 4. Cliquez sur **Compartiments** > **Ajouter compartiment** **externe**.  
    La fenêtre Ajouter un compartiment externe s'ouvre.   
 
-   <Image alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
+   <Image align="center" alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
 5. Saisissez le **nom du compartiment.** Le nom de compartiment est au format suivant : `{Bucket Name}/{Home Folder}`. Les valeurs nécessaires pour le nom du compartiment et le dossier racine s'affichent dans la fenêtre des informations d'identification.
 6. Cliquez sur **Ajouter un compartiment externe.**  
    Le compartiment est créé et s'affiche dans le panneau gauche de la fenêtre.   

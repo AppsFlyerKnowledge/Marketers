@@ -72,7 +72,7 @@ L'intégration de l'API Roku prend en charge :
 
 ### Flux d'attribution Roku
 
-![7435_CTV__3_.png](https://files.readme.io/51ab9ce816986134ed118ac7b8dd94336fff53d6a00daf5332eef2934c0048d8-4431541172241.png)
+<Image align="center" alt="7435_CTV__3_.png" src="https://files.readme.io/51ab9ce816986134ed118ac7b8dd94336fff53d6a00daf5332eef2934c0048d8-4431541172241.png" />
 
 ## Procédures d'intégration
 

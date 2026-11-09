@@ -187,7 +187,7 @@ Les champs de date dans les fichiers CSV sont au format aaaa-mm-jj. Lorsque vous
 
 <Accordion title="Fraudes bloquées Protect360">
 
-![](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)
+<Image align="center" alt="" src="https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png" />
 
 * Les rapports agrégés de fraude bloquée donnent des infos détaillées sur les événements bloqués par <Anchor target="_blank" href="/marketers/fr/docs/protect360-anti-fraud-guide">Protect360</Anchor>.
 * Les rapports sont disponibles via API Pull. Ces rapports ne sont pas disponibles via la page des données d'exportation.

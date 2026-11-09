@@ -89,7 +89,7 @@ La création d'un ID de lien nécessite un **accès admin** au compte Google.
 5. Collez **l'ID de lien** que vous avez copié à l'étape précédente.
 6. Faites le choix d'activer ou non les<Anchor target="_blank" href="/marketers/fr/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**Utilisateurs hors UE**</Anchor>.  
 
-   <Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
+   <Image align="center" alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
 7. Configuration des **attributions d'installations** :
    1. Définissez la **fenêtre rétrospective post-clic d’installation.**  
       Sélectionnez les unités de la fenêtre rétrospective (heures ou jours) et réglez le curseur sur la valeur souhaitée. Nous recommandons de définir la durée de la fenêtre rétrospective sur 30 jours, afin de garantir la correspondance avec Google Ads.
@@ -98,7 +98,7 @@ La création d'un ID de lien nécessite un **accès admin** au compte Google.
    4. Sélectionnez les unités de la fenêtre rétrospective (heures ou jours) et réglez le curseur sur la valeur souhaitée. Nous recommandons de définir la durée de la fenêtre rétrospective sur 1 jour, afin de garantir la correspondance avec Google Ads.  
       **Remarque :** Google n'envoie pas de demande pour les impressions des apps iOS. Le bouton d'activation des attributions post vue d'installations ainsi que le curseur pour la fenêtre d'attribution ne font plus partie des applications iOS.  
 
-      [![](https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png)](https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png)
+      <Image align="center" alt="" src="https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png" />
 8. Pour activer l'attribution de réinstallation, activez l'option **Réinstaller l'attribution**.  
    Il est inutile de configurer les fenêtres d'attribution pour les réinstallations, car les valeurs sont extraites des paramètres d'attribution d'installation.  
 
@@ -117,12 +117,12 @@ La création d'un ID de lien nécessite un **accès admin** au compte Google.
    5. Définissez la **fenêtre rétrospective de réengagement post vue**, elle commence au moment de l'impression d'une publicité, c'est la période pendant laquelle l'application doit être lancée pour que l'impression soit enregistrée en tant que réengagement. Sélectionnez une fenêtre rétrospective en heures ou en jours et réglez le curseur sur la valeur souhaitée.
    6. Définissez la **fenêtre de réengagement**. C'est la période pendant laquelle les évènements in-app de l'utilisateur sont attribués à la source média de retargeting après un clic ou une impression. Vous pouvez définir la valeur en jours (1-90), en heures (jusqu'à 23) ou même en valeur Lifetime. La valeur par défaut est 30 jours.  
 
-      [![](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)
+      <Image align="center" alt="" src="https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png" />
 10. Si vous disposez d'une extension de l'app Google Ads iOS :  
     pour obtenir des attributions à partir du lien de la publicité, accédez à l’onglet <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#attribution-link-tab">**Lien d’attribution**</Anchor>, créez un lien d’attribution AppsFlyer sur une plateforme unique et insérez-le dans l’extension de l’app Google Ads.  
     **Remarque :** pensez à ajouter un nom de campagne statique (obligatoire).  
 
-    [![](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)
+    <Image align="center" alt="" src="https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png" />
 11. Rendez-vous dans l'onglet **Coût**.
 12. Activez **Obtenir les données de coût, de clic et d'impression**.
 13. Cliquez sur le bouton **Connecter Google Ads** et connectez-vous à votre compte Google pour obtenir tous les coûts de votre campagne Google Ads sur AppsFlyer. <Anchor target="_blank" href="/marketers/fr/docs/google-ads-adwords-cost-and-ad-revenue">Plus de détails ici</Anchor>.
@@ -143,7 +143,7 @@ La création d'un ID de lien nécessite un **accès admin** au compte Google.
 
 **(Tout membre lié au compte AppsFlyer)**
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png" />
 
 1. Ouvrez l'onglet **Intégration** et faites défiler jusqu'à la section **Postbacks d'événement in-app**.
 

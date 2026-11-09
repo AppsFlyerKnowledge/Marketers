@@ -34,7 +34,7 @@ x-zendesk:
 
 **Fuseaux horaires**
 
-[![TimeZoneMap.jpg](https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg)](https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg)
+<Image align="center" alt="TimeZoneMap.jpg" src="https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg" />
 
 <div id="data-freshness-and-support-for-app-specific-time-zones" />
 
@@ -104,7 +104,7 @@ Il existe des rapports et listes déroulantes qui sont traités une fois par jou
 
 **Hémisphère oriental et fuseau horaire UTC** :
 
-![mceclip9b.png](https://files.readme.io/cbea9d910695b39f59b342da6f56fa51df76afc910c4eea60f6dd49fbee2a0d6-8272818122769.png)
+<Image align="center" alt="mceclip9b.png" src="https://files.readme.io/cbea9d910695b39f59b342da6f56fa51df76afc910c4eea60f6dd49fbee2a0d6-8272818122769.png" />
 
 * Il peut s’écouler jusqu'à 11 heures entre la fin de la journée (heure locale) et le démarrage du traitement. Exemple :
   * Pékin (UTC+8) : il faut attendre huit heures avant le début du traitement
@@ -114,7 +114,7 @@ Il existe des rapports et listes déroulantes qui sont traités une fois par jou
 
 **Hémisphère occidental :**
 
-![mceclip7a.png](https://files.readme.io/ac5e3046b3f55916bb73732801c7e0bdef714cc45b89b6c4d70bbc2009cd64c8-8272698121489.png)
+<Image align="center" alt="mceclip7a.png" src="https://files.readme.io/ac5e3046b3f55916bb73732801c7e0bdef714cc45b89b6c4d70bbc2009cd64c8-8272698121489.png" />
 
 * Il peut s'écouler jusqu'à 23 heures entre la fin de la journée et le début du traitement. Exemple :
   * Los Angeles (UTC -8) : il faut attendre 16 heures avant le début du traitement

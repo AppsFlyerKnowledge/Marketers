@@ -32,7 +32,7 @@ x-zendesk:
 ---
 > **En bref :** La localisation de l’utilisateur est déterminée à l’aide de l’adresse IP de l’appareil qui est mappée à son emplacement général (ville, état, pays, etc.). La position de l’utilisateur a un impact sur la sélection des créations, le coût de la campagne, l’engagement et la qualité de l’utilisateur.
 
-![5888ResolveIpAddress_us-en.png](https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png)
+<Image align="center" alt="5888ResolveIpAddress_us-en.png" src="https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png" />
 
 <div id="determining-user-location" />
 
@@ -59,7 +59,7 @@ L’adresse IP est convertie par AppsFlyer en informations de géolocalisation �
 
 > 📘 **Note concernant le Royaume-Uni (UK)**
 >
-> <Image alt="blobid0.png" src="https://files.readme.io/33ed45ea49e3308e17a237400ea6c6e9d33c495a9c83197041fdae282f9c65a4-360006637538.png" width="62px" />
+> <Image align="center" alt="blobid0.png" src="https://files.readme.io/33ed45ea49e3308e17a237400ea6c6e9d33c495a9c83197041fdae282f9c65a4-360006637538.png" width="62px" />
 >
 > * Dans la plateforme, le Royaume-Uni est désigné par le code UK.
 > * Le code ISO 3166 pour le Royaume-Uni est GB. Le Royaume-Uni est réservé, mais n’a pas été attribué par l’ISO au Royaume-Uni.

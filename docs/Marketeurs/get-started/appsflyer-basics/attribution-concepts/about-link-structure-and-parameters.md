@@ -411,7 +411,7 @@ De plus, les URL courtes des médias propres ne contiennent pas directement de p
 
 Si vous rencontrez le message d'erreur suivant dans le Play Store après avoir suivi un lien d'attribution :
 
-![TL_error_message.png](https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png)
+<Image align="center" alt="TL_error_message.png" src="https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png" />
 
 C'est parce que le lien d'attribution comprend un caractère #. Par exemple :
 

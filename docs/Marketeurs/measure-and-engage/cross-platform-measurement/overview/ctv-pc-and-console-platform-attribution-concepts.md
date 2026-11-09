@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > D'un seul regard Découvrez comment fonctionne l'attribution pour les plateformes CTV, PC et consoles afin de permettre à AppsFlyer de recevoir des données d'attribution et d'événements pour vos campagnes sur ces appareils multiplateformes.
 
-<Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
+<Image align="center" alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
 <div id="tv-screens" />
 
@@ -71,7 +71,7 @@ Les liens d'attribution directe sont des liens AppsFlyer qui prennent en charge 
 
 Les liens d'attribution directe prennent en charge à la fois la modélisation probabiliste et les méthodes d'attribution déterministes (lorsqu'un identifiant est fourni dans le lien), selon lesquelles une installation effectuée par un utilisateur est associée à un clic publicitaire ou à une impression. Le flux d'attribution est illustré dans le diagramme suivant.
 
-![Flux d'attribution CTV - Flux de liens d'attribution directe.png](https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png)
+<Image align="center" alt="Flux d'attribution CTV - Flux de liens d'attribution directe.png" src="https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png" />
 
 Comme les liens d'attribution directe concernent une application sur une plateforme spécifique prédéterminée et mènent à une destination spécifique, ils contiennent toujours l'identifiant de l'application et les informations relatives à la plateforme dans l'URL.
 
@@ -89,7 +89,7 @@ Les liens OneLink multiplateformes permettent la redirection et l'attribution lo
 
 Les liens OneLink multiplateformes ne prennent en charge que la méthode d'attribution par modélisation probabiliste (basée sur l'adresse IP). C'est pourquoi plusieurs installations par plusieurs utilisateurs peuvent être attribuées à la même impression. Le flux d'attribution est illustré dans le diagramme suivant.
 
-![CTV attribution flow - Cross-platform Onelink link attribution flow (1).png](https://files.readme.io/d1d92c740510435582dbfe6e736493a4e5f132d8987fde4c95593ea5e7de1662-19374961369873.png)
+<Image align="center" alt="CTV attribution flow - Cross-platform Onelink link attribution flow (1).png" src="https://files.readme.io/d1d92c740510435582dbfe6e736493a4e5f132d8987fde4c95593ea5e7de1662-19374961369873.png" />
 
 Toutes les destinations/plateformes d'applications possibles sont configurées dans le modèle OneLink. À cette fin, les liens OneLink multiplateformes ne contiennent pas d'identifiant d'application spécifique ni d'informations spécifiques à la plateforme dans l'URL. Au lieu de cela, l'URL inclut l'ID du modèle où toutes les destinations/plateformes possibles de l'application sont configurées.
 
@@ -107,7 +107,7 @@ Avec des liens d'attribution directe et des liens OneLink multiplateformes, Apps
 
 L'attribution aux SRN se fait par le biais d'une correspondance déterministe. Lorsqu'un annonceur intègre un SRN, l'attribution fonctionne comme illustré dans le diagramme suivant.
 
-![Flux d'attribution CTV - Flux d'attribution SRN (1).png](https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png)
+<Image align="center" alt="Flux d'attribution CTV - Flux d'attribution SRN (1).png" src="https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png" />
 
 Actuellement, l'attribution du SRN ne fonctionne que pour la publicité entre deux plates-formes. C'est-à-dire lorsque le point de contact (clic ou impression) se produit sur la même plateforme que l'installation. Par exemple, si l'installation d'un Roku CTV est vérifiée avec Roku Endemic Media (le SRN pour Roku) et qu'une impression est constatée sur un appareil Roku. Si l'impression s'est produite sur une autre plateforme, par exemple mobile, elle n'est pas prise en compte pour l'attribution.
 
@@ -128,7 +128,7 @@ Le Smart Script d'une page d'atterrissage multiplateforme utilise le lien entran
 
 La page de renvoi prend en charge à la fois la modélisation probabiliste et les méthodes d'attribution déterministes (lorsqu'un identifiant est fourni dans le lien). Avec la modélisation probabiliste, il est possible que plusieurs installations par plusieurs utilisateurs puissent être attribuées à la même impression. Le flux d'attribution est illustré dans le diagramme suivant.
 
-![CTV attribution flow - Landing page attribution flow.png](https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png)
+<Image align="center" alt="CTV attribution flow - Landing page attribution flow.png" src="https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png" />
 
 Par exemple :
 

@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **En bref :** associez l'ETL des coûts et les rapports de cohorte via Data Locker (standard et agrégés avancés) pour obtenir des infos complètes et très précises de vos campagnes marketing.
 
-![](https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png)
+<Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" />
 
 <div id="about-combining-cost-etl-and-cohort-reports" />
 

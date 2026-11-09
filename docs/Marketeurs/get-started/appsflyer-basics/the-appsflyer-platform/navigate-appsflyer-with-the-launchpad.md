@@ -41,5 +41,5 @@ x-zendesk:
    The search results display.   
    Launchpad displays links to pages that you have permission to view.
 
-   [![Launchpad_2.png](https://files.readme.io/7d7e3b5f482a723dd2ed9114be43e5a6015f189d46adc4d0895b0f5700cc13da-115010739285.png)](https://files.readme.io/7d7e3b5f482a723dd2ed9114be43e5a6015f189d46adc4d0895b0f5700cc13da-115010739285.png)
+   <Image align="center" alt="Launchpad_2.png" src="https://files.readme.io/7d7e3b5f482a723dd2ed9114be43e5a6015f189d46adc4d0895b0f5700cc13da-115010739285.png" />
 3. Click the link in the search results to send you directly to the required result.

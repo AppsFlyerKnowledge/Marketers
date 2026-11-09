@@ -24,7 +24,7 @@ x-zendesk:
 
 > **En bref :** le tableau de bord général de l'optimisation des créations vous permet d'analyser les performances des créations pour choisir les plus efficaces et maximiser les effets de vos campagnes.
 
-[![Main KB image 2023-11-14_10-07-47.jpg](https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg)](https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg)
+<Image align="center" alt="Main KB image 2023-11-14_10-07-47.jpg" src="https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg" />
 
 <div id="about-the-creative-optimization-overview-dashboard" />
 
@@ -86,7 +86,7 @@ Utilisez le tableau pour approfondir les détails. Regroupez les données par di
 
 L'image suivante montre la vue du tableau par défaut, qui affiche les créations en fonction des filtres sélectionnés. Les lettres inscrites dans l'image correspondent aux lettres et descriptions du tableau suivant.
 
-[![Table_main_image_doctored_final_copy__download_table_.jpg](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)
+<Image align="center" alt="Table_main_image_doctored_final_copy__download_table_.jpg" src="https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg" />
 
 |  | Élément | Description |
 | --- | --- | --- |
@@ -140,7 +140,7 @@ Personnalisez le tableau en cliquant sur l'icône <Image alt="Creative_table_set
 
 *Notez que les mesures apparaissent dans les lignes de données individuelles, qui s'affichent dans le tableau sous les lignes agrégées.
 
-[![](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)
+<Image align="center" alt="" src="https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png" />
 
 </Accordion>
 

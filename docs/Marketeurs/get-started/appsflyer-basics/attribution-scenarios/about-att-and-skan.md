@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **En bref :** Depuis iOS 14.5, Apple exige que vous implémentiez et respectiez les conditions <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency">d’AppTrackingTransparency</Anchor> (ATT). ATT signifie que *si votre app collecte des données sur les utilisateurs finaux et les partage avec d’autres sociétés à des fins de suivi entre les apps et les sites web,* vous devez utiliser la boîte de dialogue de consentement ATT et obtenir le consentement de l’utilisateur dans l’app de l’éditeur et de l’annonceur. En l’absence de suivi, il n’est pas nécessaire d’afficher la boîte de dialogue pour le consentement.
 
-![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
+<Image align="center" alt="iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg" src="https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg" />
 
 <div id="attribution-measurement-in-an-att-environment" />
 
@@ -58,7 +58,7 @@ La <Anchor target="_blank" href="/marketers/fr/docs/skadnetwork-skan-solution-gu
 
 **Flux SKAN**
 
-![SKAN_flow_-_Affinity_diagram_2.png](https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png)
+<Image align="center" alt="SKAN_flow_-_Affinity_diagram_2.png" src="https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png" />
 
 1. L'annonceur définit les paramètres de mesure SKAN dans le Studio de conversion AppsFlyer.
 2. L'utilisateur ouvre l'app pour la première fois.
@@ -200,7 +200,7 @@ Ces facteurs ont un impact sur :
 
 L’organigramme suivant explique cela plus en détail.
 
-![SKAN_4_matrix_-_Page_8__1_.png](https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png)
+<Image align="center" alt="SKAN_4_matrix_-_Page_8__1_.png" src="https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png" />
 
 </Accordion>
 

@@ -39,7 +39,7 @@ There are inherent differences in the attribution models used by all players in 
 
 Because of the differences in attribution models, in some instances, the app store records more installs than AppsFlyer. In other instances, AppsFlyer records more installs than the app store.
 
-<Image alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
+<Image align="center" alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
 
 > 📘 **Note**
 >

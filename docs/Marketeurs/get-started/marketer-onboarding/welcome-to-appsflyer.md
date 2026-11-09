@@ -46,7 +46,7 @@ L'attribution d'app **détermine les campagnes, partenaires et les canaux à l'o
 
 À la création de votre utilisateur, vous recevez un email vous invitant à activer votre compte. Une fois activé, vous pouvez vous connecter. Notez que le lien d'activation est valide pendant 48 heures.
 
-<Image alt="login page.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
+<Image align="center" alt="login page.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
 
 Il y a plusieurs façons de se connecter à votre compte AppsFlyer :
 
@@ -79,7 +79,7 @@ Si vous avez plus d'un compte, lorsque vous vous connectez à l'un d'entre eux, 
 1. Déconnectez-vous de votre compte actuel : dans la barre de menu, cliquez sur le **menu déroulant pour accéder à l'adresse e-mail**. > **Déconnexion**.
 2. Connectez-vous et sélectionnez un autre compte dans votre liste de comptes associés.
 
-![multiple accounts.png](https://files.readme.io/017bea85e105d707603468e396d290c09a217c36275244b4b41ea2d5dd601a9e-20347815267601.png)
+<Image align="center" alt="multiple accounts.png" src="https://files.readme.io/017bea85e105d707603468e396d290c09a217c36275244b4b41ea2d5dd601a9e-20347815267601.png" />
 
 <div id="get-started" />
 

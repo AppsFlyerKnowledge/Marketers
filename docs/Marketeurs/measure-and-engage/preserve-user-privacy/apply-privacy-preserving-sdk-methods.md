@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **En bref :** limiter ou interrompre le transfert des données à AppsFlyer pour vous conformer aux réglementations sur la protection de la vie privée telles que le RGPD ou CCPA.
 
-![OptInOptOut_us-en.png](https://files.readme.io/bd2cd3e2fa3c443b9cc6a736e3c6b60834f165ad13510b829d40005740615496-360010352638.png)
+<Image align="center" alt="OptInOptOut_us-en.png" src="https://files.readme.io/bd2cd3e2fa3c443b9cc6a736e3c6b60834f165ad13510b829d40005740615496-360010352638.png" />
 
 **Questions sur la confidentialité AppsFlyer**: le contrat de confidentialité établi entre vous et AppsFlyer est régi par la <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy">politique de confidentialité des services AppsFlyer.</Anchor> Pour toute question relative à la présente Politique de confidentialité de nos services, ou pour contacter notre délégué à la protection des données, veuillez nous envoyer un e-mail à [privacy@appsflyer.com](mailto:privacy@appsflyer.com). Aux fins de l'article 27 du Règlement général sur la protection des données, le représentant d'AppsFlyer au sein de l'UE est AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Allemagne (e-mail [privacy@appsflyer.com](mailto:privacy@appsflyer.com); tel +49-30-166373500).
 
@@ -124,7 +124,7 @@ Empêcher le partage des données d'événements via :
 
 ### Refus ponctuel
 
-![OpenGDPR-logo-BLK.png](https://files.readme.io/87560c35c45bf34d8eb7ede3e6bbf90fb4391ab41c7f3186e33a93d8f4f68a6e-360002512925.png)
+<Image align="center" alt="OpenGDPR-logo-BLK.png" src="https://files.readme.io/87560c35c45bf34d8eb7ede3e6bbf90fb4391ab41c7f3186e33a93d8f4f68a6e-360002512925.png" />
 
 **Quand** : n'importe quand (RGPD)
 

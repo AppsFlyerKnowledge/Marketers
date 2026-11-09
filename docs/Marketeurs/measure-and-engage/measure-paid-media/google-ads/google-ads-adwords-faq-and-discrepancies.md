@@ -56,7 +56,7 @@ Les données sur les clics et les impressions provenant de Google Ads ont été 
 
 Si vous ne voyez pas les conversions first\_open sur Google Ads, comme illustré dans la capture d'écran ci-dessous :
 
-![AW_13.png](https://support.appsflyer.com/hc/article_attachments/4417310093457)  
+<Image align="center" alt="AW_13.png" src="https://support.appsflyer.com/hc/article_attachments/4417310093457" />
 
 Ce qui signifie que vous devez importer les conversions dans Google Ads. Suivez les instructions concernant <Anchor target="_blank" href="/marketers/fr/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">l'Importation des conversions.</Anchor>
 
@@ -68,7 +68,7 @@ Ce qui signifie que vous devez importer les conversions dans Google Ads. Suivez 
 
 Cet écran apparaît-il sur Google Ads une fois vos principaux évènements in-app mappés dans le tableau de bord AppsFlyer (<Anchor target="_blank" href="/marketers/fr/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended">étape 3 de la configuration</Anchor>) ?
 
-[![adwords missing events 2.png](https://support.appsflyer.com/hc/article_attachments/18726174138001)](https://support.appsflyer.com/hc/article_attachments/18726174138001)  
+<Image align="center" alt="adwords missing events 2.png" src="https://support.appsflyer.com/hc/article_attachments/18726174138001" />
 
 Dans ce cas, procédez de l'une des manières suivantes :
 
@@ -91,7 +91,7 @@ Pour arrêter la synchronisation des coûts avec Google :
 1. Accédez à vos <Anchor target="_blank" href="https://myaccount.google.com/permissions">autorisations de compte Google</Anchor>
 2. Cliquez sur Supprimer (à côté de AppsFlyer Google Cost)  
 
-   ![remove_appsflyer_cost.png](https://support.appsflyer.com/hc/article_attachments/4417304127249)
+   <Image align="center" alt="remove_appsflyer_cost.png" src="https://support.appsflyer.com/hc/article_attachments/4417304127249" />
 
 </Accordion>
 

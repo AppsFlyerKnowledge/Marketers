@@ -156,7 +156,7 @@ To set up Slack notifications, Slack first has to be connected:
 3. Review and approve the permissions request.
    1. **If you are the Slack admin**.
       1. In Slack, click on the Slack Workspace.  
-         <Image alt="" src="https://a.slack-edge.com/8e8e4/helpcenter/img/workspace-picker@2x.jpg" width="263px" />  
+         <Image align="center" alt="" src="https://a.slack-edge.com/8e8e4/helpcenter/img/workspace-picker@2x.jpg" width="263px" />
          Note: Make sure the Slack Workspace shown is the correct one you want to connect to.
       2. Go to **Tools & settings** -> **Manage apps**
       3. In the **Admin panel**, select **Requests**.

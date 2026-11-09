@@ -452,7 +452,7 @@ Follow the instructions detailed <Anchor target="_blank" href="/marketers/fr/doc
 3. Click **New connection**. If you already have existing cloud connections in your account, you'll see them all under **Partner**.
 4. From the **New media partner connection** dialog, select the relevant media partner.
 
-   <Image alt="New media partner connection.png" src="https://files.readme.io/1c50a570d4eb495c3d77ee8e572b14a577e39adad65e41fe20eb3b014cce8989-46196842129425.png" width="91.09%" />
+   <Image align="center" alt="New media partner connection.png" src="https://files.readme.io/1c50a570d4eb495c3d77ee8e572b14a577e39adad65e41fe20eb3b014cce8989-46196842129425.png" width="91.09%" />
 5. Enter a connection name.
 6. Log in to the media partner account with your credentials, and follow their instructions to enable AppsFlyer access.
 7. Click **Select account ID** and select the relevant account for this connection.

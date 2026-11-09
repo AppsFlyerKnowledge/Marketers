@@ -25,7 +25,7 @@ x-zendesk:
 
 > **En bref :** l'optimisation créative vous permet de rassembler toutes les données relatives aux ressources créatives de toutes vos campagnes sur une seule plateforme. Cela vous permet d'analyser leurs performances, de découvrir quelles sont les créations qui fonctionnent le mieux et de prendre de bonnes décisions basées sur les données.
 
-[![Main KB image 2023-11-14_10-07-47.jpg](https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg)](https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg)
+<Image align="center" alt="Main KB image 2023-11-14_10-07-47.jpg" src="https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg" />
 
 <div id="about-creative-optimization" />
 
@@ -122,7 +122,7 @@ Meta Advantage+ (créations dynamiques) et Google Universal App Campaigns (UAC) 
 > Ainsi, la création publicitaire est attribuée à un total de 50 installations par AppsFlyer, mais le volume d'installations par ressource est conservé, ce qui signifie que la **ressource A** a généré plus d'installations que la **ressource B**.
 > Les mesures en aval de l'entonnoir, telles que le revenu et le ROAS, sont également calculées sur ce rapport.
 >
-> ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
+> <Image align="center" alt="Creative_data_example_en-us.png" src="https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png" />
 
 </Accordion>
 
@@ -134,7 +134,7 @@ Meta Advantage+ (créations dynamiques) et Google Universal App Campaigns (UAC) 
 
 Cette section présente les principaux filtres du tableau de bord et les différentes mesures et dimensions disponibles pour obtenir des données de création utiles. 
 
-[![Filter bar and metrics New.jpg](https://files.readme.io/f2fbccaefa76bd5c9543902a2b670ee67c9edd6271fab141083ddd6f331fe138-20126434102801.jpg)](https://files.readme.io/f2fbccaefa76bd5c9543902a2b670ee67c9edd6271fab141083ddd6f331fe138-20126434102801.jpg)
+<Image align="center" alt="Filter bar and metrics New.jpg" src="https://files.readme.io/f2fbccaefa76bd5c9543902a2b670ee67c9edd6271fab141083ddd6f331fe138-20126434102801.jpg" />
 
 <div id="filter-bar" />
 
@@ -142,7 +142,7 @@ Cette section présente les principaux filtres du tableau de bord et les différ
 
 La première étape de configuration de votre tableau de bord consiste à sélectionner vos options de filtrage. Tous les filtres sont appliqués aux tableaux de bord Général et Découvertes.
 
-[![filter_bar.jpg](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)
+<Image align="center" alt="filter_bar.jpg" src="https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg" />
 
 Sélectionnez d'abord votre :
 
@@ -171,7 +171,7 @@ Les données sur les créations du tableau de bord sont disponibles dans 3 types
 * **Acquisition d'utilisateurs** - Affiche les données de création des publicités/adsets pour l'AU uniquement.
 * **Retargeting** - Affiche toutes les données de création des publicités/adsets pour le retargeting uniquement.Les données de coûts sont également accessibles.
 
-[![View_types.jpg](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)
+<Image align="center" alt="View_types.jpg" src="https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg" />
 
 </Accordion>
 
@@ -239,7 +239,7 @@ Créez des mesures personnalisés afin de suivre la performance de vos création
 
 1. Cliquez sur le menu déroulant en haut à droite du tableau de bord, puis sélectionnez **Mesures personnalisées**.
 
-![Custom_metric_select.jpg](https://files.readme.io/99ca0ee30d09e42ef2798188e8d95fc4cf56ee31ad055209efadc47c9df8a859-18564742772625.jpg)
+<Image align="center" alt="Custom_metric_select.jpg" src="https://files.readme.io/99ca0ee30d09e42ef2798188e8d95fc4cf56ee31ad055209efadc47c9df8a859-18564742772625.jpg" />
 
 2. **Remplissez le formulaire :**
 
@@ -251,7 +251,7 @@ Créez des mesures personnalisés afin de suivre la performance de vos création
   * Combinaison avec divers *opérateurs, numéros* et/ou *événements in-app.*
   * Des événements in-app spécifiques sont sélectionnés dans le menu déroulant. Pour chaque événement in-app, vous pouvez ajouter séparément n'importe quelle mesure pour l'événement afin d'obtenir des informations très spécifiques, par exemple, af\_purchase revenue + af\_login count.
 
-<Image alt="Custom_metrics_form.jpg" src="https://files.readme.io/2fdbcd2e8fcc17b6a47fd3ae252d03b1eec5099400ed46855b3b4ae83a4c8e00-18564718424209.jpg" width="625px" />
+<Image align="center" alt="Custom_metrics_form.jpg" src="https://files.readme.io/2fdbcd2e8fcc17b6a47fd3ae252d03b1eec5099400ed46855b3b4ae83a4c8e00-18564718424209.jpg" width="625px" />
 
 3. Cliquez sur **Enregistrer**
 
@@ -268,7 +268,7 @@ Les mesures personnalisées peuvent être facilement modifiées ou supprimées.
 
 1. Cliquez sur le menu déroulant **Modifier une mesure personnalisée existante** (dans le formulaire **Mesures personnalisées** ) puis sélectionnez la mesure à modifier.
 
-<Image alt="Edit_cstom_metric_full_window.jpg" src="https://files.readme.io/26a33b98ded52599d420be3860c6129b7c748ef0867bcffc351ad1c526641c97-18564744997905.jpg" width="623px" />
+<Image align="center" alt="Edit_cstom_metric_full_window.jpg" src="https://files.readme.io/26a33b98ded52599d420be3860c6129b7c748ef0867bcffc351ad1c526641c97-18564744997905.jpg" width="623px" />
 
 2. Apportez les modifications souhaitées, puis cliquez sur **Enregistrer**
 
@@ -276,7 +276,7 @@ Les mesures personnalisées peuvent être facilement modifiées ou supprimées.
 
 **Pour supprimer :** après avoir sélectionné dans la liste déroulante la mesure personnalisée à supprimer, cliquez sur l'icône de suppression.
 
-<Image alt="Delete_custom_metric.jpg" src="https://files.readme.io/185b9c3f071518ff2da549b6c34c4ddfecf12bc442b2f7990eb11f04fae10925-18564742779921.jpg" width="514px" />
+<Image align="center" alt="Delete_custom_metric.jpg" src="https://files.readme.io/185b9c3f071518ff2da549b6c34c4ddfecf12bc442b2f7990eb11f04fae10925-18564742779921.jpg" width="514px" />
 
 </Accordion>
 
@@ -322,7 +322,7 @@ Les mesures des partenaires sont actuellement disponibles pour ces partenaires :
 
 Il suffit d'ajouter une nouvelle intégration de partenaire pour que les mesures des partenaires pris en charge soient automatiquement transférées dans Creative (Unity Ads est une exception et fait l'objet d'instructions particulières).Une fois paramétrées, ces mesures s'affichent avec la mention «*Partenaire*»
 
-![partner metrics image.jpg](https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg)
+<Image align="center" alt="partner metrics image.jpg" src="https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg" />
 
 **Instructions et remarques particulières :**
 
@@ -368,13 +368,13 @@ Il suffit d'ajouter une nouvelle intégration de partenaire pour que les mesures
 
 1. Dans le tableau de bord de Optimisation créative, cliquez sur l'icône  ⋮  en haut à droite pour accéder aux **intégrations créatives**.
 
-![3 dots icon.jpg](https://files.readme.io/ed1f8ac5cee987a10a81b70c97e88a04897a6102c61ee4a0c87fde0a658354e0-18564744949393.jpg)
+<Image align="center" alt="3 dots icon.jpg" src="https://files.readme.io/ed1f8ac5cee987a10a81b70c97e88a04897a6102c61ee4a0c87fde0a658354e0-18564744949393.jpg" />
 
 2. Cliquez sur **+Nouvelle intégration**.
 
 3. Sélectionnez **Unity Ads** dans la liste déroulante des **partenaires**.
 
-<Image alt="New integration - Unity Ads.jpg" src="https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg" width="493px" />
+<Image align="center" alt="New integration - Unity Ads.jpg" src="https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg" width="493px" />
 
 4. Saisissez l'**ID de clé** Unity, la **clé secrète** et l'**ID principal de l'organisation** pour l'intégration (cf instructions concernant <Anchor target="_blank" href="/marketers/fr/docs/creative-optimization-partner-integrations#unity-ads">l'intégration Unity</Anchor> pour savoir comment obtenir ces clés).
 
@@ -390,15 +390,15 @@ b. Cliquez sur **Produits** dans le menu latéral.
 
 c. Cliquez ensuite sur **Développer**.
 
-<Image alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="567px" />
+<Image align="center" alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="567px" />
 
 d. Cliquez sur **Acquisition utilisateurs Unity Ads**.
 
-<Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="312px" />
+<Image align="center" alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="312px" />
 
 e. Cliquez sur **Gestion de l'API**.
 
-![Unity-from API mngmt, get API key w arrow.jpg](https://files.readme.io/c617593d5935fbe8072d9fac0146fb3257c395c8dcf173130b97cc2a4a043285-20348783332881.jpg)
+<Image align="center" alt="Unity-from API mngmt, get API key w arrow.jpg" src="https://files.readme.io/c617593d5935fbe8072d9fac0146fb3257c395c8dcf173130b97cc2a4a043285-20348783332881.jpg" />
 
 f. Copiez la clé API.
 
@@ -408,15 +408,15 @@ f. Copiez la clé API.
 
 2. Cliquez ensuite sur **Développer**.
 
-<Image alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="583px" />
+<Image align="center" alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="583px" />
 
 3. Cliquez sur **Acquisition utilisateurs Unity Ads**.
 
-<Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="336px" />
+<Image align="center" alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="336px" />
 
 4. Cliquez sur **Paramètres**.
 
-![Get Organization ID instructions 2 arrows.jpg](https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg)
+<Image align="center" alt="Get Organization ID instructions 2 arrows.jpg" src="https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg" />
 
 5. Copiez l'**ID de l'organisation**.
 
@@ -454,7 +454,7 @@ Vous pouvez créer plusieurs vues, les modifier et les supprimer en cliquant sur
 
 Cliquez sur l'icône en haut à droite du tableau de bord pour copier l'URL de la page, puis transmettez-la.
 
-<Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
+<Image align="center" alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
 
 </Accordion>
 
@@ -490,7 +490,7 @@ Les procédures de téléchargement et d'importation du fichier CSV se trouvent 
 
 1. Cliquez sur le menu<Image alt="3_dots_icon.png" src="https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png" width="16px" /> en haut à droite du tableau de bord.  
 
-   ![Main menu highlighted.jpg](https://files.readme.io/9461227252c0e9100b43f2a7fbecbea803effd4f9ab2f5d903810ce682b11240-20126844522641.jpg)
+   <Image align="center" alt="Main menu highlighted.jpg" src="https://files.readme.io/9461227252c0e9100b43f2a7fbecbea803effd4f9ab2f5d903810ce682b11240-20126844522641.jpg" />
 2. Cliquez sur **Télécharger le fichier de balises personnalisées**.
 3. Sélectionnez les créations que vous souhaitez inclure dans le fichier (soit toutes les créations, soit uniquement celles actuellement affichées dans le tableau de bord - à l'exclusion des créations filtrées).
 4. Cliquez sur **Télécharger**.
@@ -515,7 +515,7 @@ Les données seront disponibles sous 30 minutes.
 
 Voici un exemple de fichier CSV de dimensions personnalisées (que vous téléchargez à partir du tableau de bord). Chaque titre de colonne (ligne 1) est le nom d'une dimension personnalisée (ex : Thème ou Variation). Vous pouvez ajouter de nouvelles dimensions ou modifier les dimensions existantes. Vous pouvez également ajouter ou modifier les balises (ex : 3 Moves ou DarkPalette).
 
-[![Screen_Shot_2022-08-08_at_16.25.23.png](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)
+<Image align="center" alt="Screen_Shot_2022-08-08_at_16.25.23.png" src="https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png" />
 
 </Accordion>
 
@@ -525,7 +525,7 @@ Voici un exemple de fichier CSV de dimensions personnalisées (que vous téléch
 
 * Les dimensions personnalisées portent la mention *Personnalisée* dans les filtres et le tableau.
 
-<Image alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
+<Image align="center" alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
 
 * Vous pouvez ajouter jusqu'à 15 dimensions personnalisées au tableau de bord d'Optimisation créative.
 * La taille du fichier importé est limitée à 1 Mo.
@@ -558,7 +558,7 @@ Cette fonctionnalité est utile pour les équipes marketing et créatifs dont le
 
 La fenêtre **Gérer les les balises de nomenclature** s'affiche.
 
-<Image alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
+<Image align="center" alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
 
 2. Dans **Créer un nouveau type de nomenclature,** entrez les informations suivantes :
 

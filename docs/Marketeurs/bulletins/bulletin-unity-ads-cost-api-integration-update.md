@@ -52,23 +52,23 @@ Les éléments d'identification requis pour l'intégration de l'API Unity Cost s
 
 1. Connectez-vous à votre compte Unity Cloud.
 2. Dans le menu de gauche, allez dans **Croissance (Acquisition utilisateurs Unity Ads)** > **Paramètres.**  
-    [![](https://files.readme.io/2fcc359913c11a4bcce29e1aaf30cb84161a09e39b14cdcd4ad4f141debd1798-26134832885137.png)](https://files.readme.io/2fcc359913c11a4bcce29e1aaf30cb84161a09e39b14cdcd4ad4f141debd1798-26134832885137.png)
+    <Image align="center" alt="" src="https://files.readme.io/2fcc359913c11a4bcce29e1aaf30cb84161a09e39b14cdcd4ad4f141debd1798-26134832885137.png" />
 3. Recherchez, copiez et enregistrez l'**ID principal de l'organisation**.  
    Exemple d'ID principal d'organisation : 5773102414648
 4. Dans le menu de gauche, allez dans **Croissance (Unity Ads User Acquisition)** > **`{}` Gestion d’API**, puis dans la section **Stats d’API v2.0**, **cliquez sur Compte de service**.  
-    [![](https://files.readme.io/36dd40e68eeeb6562c1e5a19f92873e8eb99b66f80c45db066e0ff54b66d0080-26369979011985.png)](https://files.readme.io/36dd40e68eeeb6562c1e5a19f92873e8eb99b66f80c45db066e0ff54b66d0080-26369979011985.png)
+    <Image align="center" alt="" src="https://files.readme.io/36dd40e68eeeb6562c1e5a19f92873e8eb99b66f80c45db066e0ff54b66d0080-26369979011985.png" />
 5. Cliquez sur **+ Nouveau** pour créer un nouveau compte de service.  
-    [![](https://files.readme.io/3a53e932bf8d023e910b66f74ea6f630c8048787885d45ea4206b2f1f3d4f65e-26136910848785.png)](https://files.readme.io/3a53e932bf8d023e910b66f74ea6f630c8048787885d45ea4206b2f1f3d4f65e-26136910848785.png)
+    <Image align="center" alt="" src="https://files.readme.io/3a53e932bf8d023e910b66f74ea6f630c8048787885d45ea4206b2f1f3d4f65e-26136910848785.png" />
 6. Dans la section **Clés**, cliquez sur **+ Ajouter une clé** afin de créer une clé pour le compte de service.  
-    [![](https://files.readme.io/f528d44a9659372bfeeb8d13538f9caf0a7955f53194194543988af983f9c517-26136957380753.png)](https://files.readme.io/f528d44a9659372bfeeb8d13538f9caf0a7955f53194194543988af983f9c517-26136957380753.png)
+    <Image align="center" alt="" src="https://files.readme.io/f528d44a9659372bfeeb8d13538f9caf0a7955f53194194543988af983f9c517-26136957380753.png" />
 7. Copiez et enregistrez l'**ID de clé** et la **clé secrète**. **Remarque** : C'est la seule fois où vous pourrez accéder à la clé secrète, alors pensez à bien la sauvegarder quelque part !
    * Exemple de clé secrète de compte de service : b0de73b1-b3ad-4175-bf9b-4913a0ff83ec
    * Exemple d'ID de clé secrète de compte de service : A0x\_CQHIxH4ABPS1QR9TCy6EJDVG8QL5  
-      [![](https://files.readme.io/6de3cd868541ab5487370dbefc758a375c3395434e07361f74553a1b9a9c7d57-26136957383697.png)](https://files.readme.io/6de3cd868541ab5487370dbefc758a375c3395434e07361f74553a1b9a9c7d57-26136957383697.png)
+      <Image align="center" alt="" src="https://files.readme.io/6de3cd868541ab5487370dbefc758a375c3395434e07361f74553a1b9a9c7d57-26136957383697.png" />
 8. Dans la section **Rôles de l'organisation**, cliquez sur **+ Gérer les rôles de l'organisation**.  
-    [![](https://files.readme.io/d368d6c611db2a8df76e341c7b6a692128b5ae37f51f6642fa7e60cd00f29689-26136910860689.png)](https://files.readme.io/d368d6c611db2a8df76e341c7b6a692128b5ae37f51f6642fa7e60cd00f29689-26136910860689.png)
+    <Image align="center" alt="" src="https://files.readme.io/d368d6c611db2a8df76e341c7b6a692128b5ae37f51f6642fa7e60cd00f29689-26136910860689.png" />
 9. Dans **Modifier les rôles de l'organisation**, définissez **Croissance sur Publicité** **Stats d’API MMP Lecteur**.  
-    [![](https://files.readme.io/f1243cb65978d2f96d148ceb34b528ca005091c38dbed95368923047b3cfbfd1-26136957386513.png)](https://files.readme.io/f1243cb65978d2f96d148ceb34b528ca005091c38dbed95368923047b3cfbfd1-26136957386513.png)
+    <Image align="center" alt="" src="https://files.readme.io/f1243cb65978d2f96d148ceb34b528ca005091c38dbed95368923047b3cfbfd1-26136957386513.png" />
 
 </Accordion>
 

@@ -56,13 +56,13 @@ Un template OneLink :
 1. Dans le tableau de bord AppsFlyer, allez dans **Experiences et deep linking** > **Gestion OneLink.**  
    La suite OneLink est une fonctionnalité proposée au niveau du compte, elle vous permet de créer des templates OneLink avec leurs liens personnalisés pour l'ensemble de vos apps.  
 
-   [![](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png)](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png)
+   <Image align="center" alt="" src="https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png" />
 
    **Remarque** : si vous n'avez pas créé de templates, un assistant d'accompagnement s'ouvre. Suivez les instructions de l'assistant et ignorez le reste de cette procédure.
 2. Cliquez sur l'icône Menu > **Ajouter un template OneLink**.  
    La page de configuration de template OneLink s'ouvre.  
 
-   [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
+   <Image align="center" alt="OneLink_template_page_en-us.png" src="https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png" />
 3. Dans le champ **nom du template** **One** Link, saisissez un nom.
 
    <div id="tip" />
@@ -126,7 +126,7 @@ Pour optimiser l'expérience utilisateur, la sécurité et la couverture des app
 2. Passez le curseur de la souris sur le template OneLink que vous souhaitez modifier, puis cliquez sur l’icône **Modifier** .
 3. Faites défiler jusqu'à la section **Quand l'app est installée**.
 
-   [![](https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png)](https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png" />
 4. Suivez les instructions pour la configuration iOS, Android et de la solution de secours :  
 
    <Tabs>
@@ -142,7 +142,7 @@ Pour optimiser l'expérience utilisateur, la sécurité et la couverture des app
       * Le développeur vous renvoie l'ID d'équipe (également appelé préfixe d'ID d'app Apple, par exemple, PF23MIWNTW).
       * Si l'app n'est pas encore publiée, le développeur doit également vous donner l'ID de groupe (par exemple, com.myapp.something).  
 
-        [![](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)
+        <Image align="center" alt="" src="https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png" />
    2. Dans la page du template OneLink, cliquez sur **Modifier pour lancer l'app en utilisant les liens universels**.
    3. Dans la nouvelle fenêtre, sélectionnez **Lancer l'app en utilisant les liens universels**.
    4. Dans le champ**ID d'équipe**, entrez l'identifiant d'équipe fourni par le développeur.
@@ -222,7 +222,7 @@ Pour optimiser l'expérience utilisateur, la sécurité et la couverture des app
 
 <Accordion title="Personnalisez les QR codes">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 Les QR codes générés par OneLink peuvent être customisés des manières suivantes :
 

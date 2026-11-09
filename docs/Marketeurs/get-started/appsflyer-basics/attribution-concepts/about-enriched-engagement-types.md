@@ -252,7 +252,7 @@ Pour voir le type d'engagement dans les rapports de données brutes, les annonce
 
 La dimension du type d'engagement est ajoutée dans les tableaux de bord.
 
-[![eet-dashboard.png](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)
+<Image align="center" alt="eet-dashboard.png" src="https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png" />
 
 ## Pour les clients bêta uniquement
 

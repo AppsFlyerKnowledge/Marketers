@@ -133,7 +133,7 @@ AppsFlyer permet aux annonceurs, lorsqu'ils estiment que les exigences de la DMA
 2. Recherchez le partenaire et cliquez sur **Gérer l'intégration**.
 3. Dans l'onglet Configuration de l'intégration, activez l'option **Utilisateurs non-UE**.
 
-<Image alt="non eu usrs.png" src="https://files.readme.io/6e86882f209773d7e8ca0ff801c23fd70ab0e3511c69b1a47c0ea48e0dd710db-22361665421713.png" width="595px" />
+<Image align="center" alt="non eu usrs.png" src="https://files.readme.io/6e86882f209773d7e8ca0ff801c23fd70ab0e3511c69b1a47c0ea48e0dd710db-22361665421713.png" width="595px" />
 
 </Accordion>
 

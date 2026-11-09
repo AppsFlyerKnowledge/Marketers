@@ -98,7 +98,7 @@ Lors de la configuration du MCC, il est possible de définir si le MCC ou les so
 
 Cette configuration peut être modifiée par la suite si nécessaire.
 
-![paramètres-mmc-googleads.png](https://files.readme.io/d0f0ffda25f88d5a37c8466818170243ed9f0040b3a3ad03e860d9a92bf59d4d-11240341292049.png)
+<Image align="center" alt="paramètres-mmc-googleads.png" src="https://files.readme.io/d0f0ffda25f88d5a37c8466818170243ed9f0040b3a3ad03e860d9a92bf59d4d-11240341292049.png" />
 
 <div id="mcc-of-mccs" />
 

@@ -154,7 +154,7 @@ Pour les applications iOS, le bouton <Anchor target="_blank" href="/marketers/fr
 
 The Trade Desk se connecte à AppsFlyer via un ID de réseau unique. Si vous n'avez pas encore le Tracker\_ID et l'ID de l'annonceur, vous devez les récupérer auprès de The Trade Desk pour poursuivre l'intégration.
 
-![TTD_General_Settings_.png](https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png)
+<Image align="center" alt="TTD_General_Settings_.png" src="https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png" />
 
 **Activer l'attribution post-vue**
 
@@ -164,7 +164,7 @@ Enclenchez **Activer l'attribution post-vue** pour attribuer les installations p
 
 #### Postbacks par défaut
 
-![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
+<Image align="center" alt="default_postbacks_en-us.png" src="https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png" />
 
 Pour envoyer des messages automatiques à The Trade Desk lors d'installations et de réengagements d'utilisateurs. Utilisez cette section pour définir la source des utilisateurs qui autorisent l'envoi de ces postbacks :
 
@@ -181,7 +181,7 @@ Pour envoyer des messages automatiques à The Trade Desk lors d'installations et
 
 Mappage des événements AppsFlyer avec TTD via postback. Si l'envoi de postback est activé, il inclut les événements in-app rejetés (événements bloqués par Protect360 ou événements jugés non conformes par les règles de validation de cible).
 
-![the_trade_desk_in_app_event_settings_en-us.png](https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png)
+<Image align="center" alt="the_trade_desk_in_app_event_settings_en-us.png" src="https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png" />
 
 **Pour configurer les postbacks d'événement in-app :**
 
@@ -216,7 +216,7 @@ En ajoutant des paramètres au lien d'attribution vous pouvez effectuer des anal
 
 Sélectionnez les paramètres que vous souhaitez ajouter au lien d'attribution.
 
-![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+<Image align="center" alt="ttd_attribution_link_parameters_en-us.png" src="https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png" />
 
 <div id="default-parameters" />
 
@@ -247,7 +247,7 @@ Vous pouvez mesurer le trafic CTV avec AppsFlyer en ajoutant les paramètres et 
 
 #### Attribution post clic
 
-![click-through_attribution_ttd_en-us.png](https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png)
+<Image align="center" alt="click-through_attribution_ttd_en-us.png" src="https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png" />
 
 Utilisez le curseur pour définir la durée maximale entre le clic et l'installation. Seules les installations (premiers lancements) qui ont lieu dans la fenêtre d'attribution seront attribuées.
 
@@ -263,7 +263,7 @@ En savoir plus sur la <Anchor target="_blank" href="/marketers/fr/docs/set-up-lo
 
 #### Attribution post-vue
 
-![view-through_attribution_ttd_en-us.png](https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png)
+<Image align="center" alt="view-through_attribution_ttd_en-us.png" src="https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png" />
 
 Utilisez le curseur pour définir le délai maximum entre l'impression et l'installation. Seules les installations (premiers lancements) qui ont lieu dans cette fenêtre d'attribution, suite à une impression de publicité, sont attribuées au partenaire, à condition qu'il n'y ait pas eu d'autre clic pertinent sur la publicité.
 
@@ -299,7 +299,7 @@ Les revenus publicitaires ne sont pas disponibles pour The Trade Desk.
 
 Dans cet onglet, vous pouvez sélectionner les autorisations à accorder à The Trade Desk, qu'il agisse en tant que réseau publicitaire, agence ou même les deux. Notez que même si l'attribution est désactivée pour le partenaire, l'onglet des autorisations est actif et vous pouvez accorder le contrôle au partenaire.
 
-![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
+<Image align="center" alt="" src="https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png" />
 
 Utilisez ces boutons pour autoriser le réseau publicitaire à gérer sa propre configuration pour votre application :
 

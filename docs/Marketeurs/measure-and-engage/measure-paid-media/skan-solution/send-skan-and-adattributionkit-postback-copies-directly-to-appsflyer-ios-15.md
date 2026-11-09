@@ -60,7 +60,7 @@ Selon la documentation d'Apple, vous pouvez définir un seul point de terminaiso
 >
 > Ces déclarations sont-elles vraies, ou fausses ?
 >
-> ![TrueOrFalse.png](https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png)
+> <Image align="center" alt="TrueOrFalse.png" src="https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png" />
 >
 > * Les annonceurs ne dépendent plus des réseaux publicitaires pour recevoir des postbacks.
 >   * **Faux.** L'annonceur dépend toujours du réseau publicitaire pour déchiffrer les données sensibles. Exemple : seul le réseau publicitaire pourra mapper un ID de campagne SKAN au nom de la campagne.

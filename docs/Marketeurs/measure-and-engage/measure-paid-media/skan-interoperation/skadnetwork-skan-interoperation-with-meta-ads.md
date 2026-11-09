@@ -101,7 +101,7 @@ Cette procédure doit être effectuée pour chaque app.
 2. Recherchez et sélectionnez Meta ads.
 3. Ouvrez l'onglet **SKAN**.
 
-   ![skan_repprtiing_-_connected_accounts.png](https://files.readme.io/41514c220de398871292c990e448e2bc8ce450a17512649842cdb2bc4fd78846-40032591356817.png)
+   <Image align="center" alt="skan_repprtiing_-_connected_accounts.png" src="https://files.readme.io/41514c220de398871292c990e448e2bc8ce450a17512649842cdb2bc4fd78846-40032591356817.png" />
 4. Cliquez sur **f login**. Le compte que vous utilisez doit être un compte Admin ou Annonceur <Anchor target="_blank" href="https://www.facebook.com/business/help/155909647811305?id=829106167281625">disposant des autorisations suivantes</Anchor> :
    * L'autorisation Ads\_read Cf [Vérifier que vous disposez d’une autorisation de lecture des publicités](/docs/skadnetwork-skan-interoperation-with-meta-ads#verifying-the-ads_read-permission).
    * Accès à l'ID de l'app dont la promotion est faite dans les paramètres Meta Business Partner.
@@ -121,7 +121,7 @@ Pour l'attribution d'événements in-app :
 
 <Accordion title="Partager le schéma du CV avec Meta ads">
 
-![SKAdNetwork-Facebook-AppsFlyer_integration__5_.png](https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png)
+<Image align="center" alt="SKAdNetwork-Facebook-AppsFlyer_integration__5_.png" src="https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png" />
 
 <div id="enabling-appsflyer-skan-interoperation-with-meta-ads" />
 
@@ -318,7 +318,7 @@ L'autorisation ads\_read fournit aux clients Meta Ads un accès API aux données
 2. Sélectionnez un ID d’app Facebook.
 3. Accédez à **Examen de l'app** > **Autorisations et fonctionnalités**.
 
-   [<Image alt="FBad_permission.png" src="https://support.appsflyer.com/hc/article_attachments/4409499084433" width="421px" />](https://support.appsflyer.com/hc/article_attachments/4409499084433)
+   <Image align="center" alt="FBad_permission.png" src="https://support.appsflyer.com/hc/article_attachments/4409499084433" width="421px" />
 4. Vérifiez que **ads\_read** a le statut **Prêt**. Si tel est le cas, aucune autre action n'est requise.
 5. Si vous n'avez pas l'autorisation ads\_read, vous devez la demander comme suit :
    1. Accédez à **Examen de l'app** > **Demandes**.

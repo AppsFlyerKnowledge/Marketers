@@ -135,7 +135,7 @@ Exemple d'ID de compte AppsFlyer : `acc-xxxxxx`. Pour obtenir votre ID de compte
 >
 > Les utilisateurs peuvent également entrer dans AppsFlyer via la <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">page de connexion AppsFlyer SSO</Anchor> en cliquant sur **Connexion avec SSO** et en saisissant leur adresse e-mail. Ils seront dirigés vers l'IdP pour l'authentification, puis redirigés vers la page d'accueil d'AppsFlyer.
 >
-> <Image alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="215px" />
+> <Image align="center" alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="215px" />
 
 </Accordion>
 
@@ -152,7 +152,7 @@ Après avoir configuré la plate-forme IdP, retournez dans AppsFlyer pour termin
    * **Adresse URL :** Collez l'URL que vous avez copiée depuis la plate-forme IdP à l'[étape 1.](/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-1-configure-the-idp-platform)
    * **Télécharger le fichier :** Télécharger le fichier que vous avez téléchargé de la plateforme IdP à l'[étape 1](#step-1-configure-the-idp-platform)  
 
-     <Image alt="IdP_SSO_certificate__1_.png" src="https://files.readme.io/9830320945234cd4f069356c1ff0c7c29d26b2cb00e422a515d98d2035a5d3f2-17233244732817.png" width="443px" />
+     <Image align="center" alt="IdP_SSO_certificate__1_.png" src="https://files.readme.io/9830320945234cd4f069356c1ff0c7c29d26b2cb00e422a515d98d2035a5d3f2-17233244732817.png" width="443px" />
 5. Cliquez sur **Importer**, puis sur **Enregistrer.**
 6. [Facultatif] **Forcer la connexion SSO :** En cochant cette case, vous vous assurez que les utilisateurs se connectent via SSO et non avec leur nom d'utilisateur et leur mot de passe.  
    **Remarque :**
@@ -160,7 +160,7 @@ Après avoir configuré la plate-forme IdP, retournez dans AppsFlyer pour termin
    * L'option **Forcer la connexion SSO** est désactivée après l'activation et enregistré le bouton **Authentification unique.** Cela signifie que, que l'option **Forcer la connexion SSO** soit sélectionné ou non, elle ne peut pas être modifiée. [Voir comment revenir à cette option](/docs/set-up-sso-authentication-with-your-identity-provider-idp#how-can-i-unselect-the-force-sso-login-option)
 7. Activez l'**authentification unique** et cliquez sur **Enregistrer.**
 
-[![idp](https://files.readme.io/82be48b1657ddb9f11ddb578af013d88354da5ab2d4643906773ae755ccc4595-17233244738705.png)](https://files.readme.io/82be48b1657ddb9f11ddb578af013d88354da5ab2d4643906773ae755ccc4595-17233244738705.png)
+<Image align="center" alt="idp" src="https://files.readme.io/82be48b1657ddb9f11ddb578af013d88354da5ab2d4643906773ae755ccc4595-17233244738705.png" />
 
 </Accordion>
 
@@ -205,7 +205,7 @@ Si vous avez configuré l'authentification pour vous connecter via votre IdP, v�
 
 Si vous avez configuré le flux d'authentification pour vous connecter via votre fournisseur de services (AppsFlyer), vérifiez que les utilisateurs peuvent entrer dans AppsFlyer en utilisant leur e-mail :
 
-<Image alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
+<Image align="center" alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
 
 1. Si vous êtes connecté à AppsFlyer et à l'IdP, déconnectez-vous.
 2. Ouvrez une page web en mode incognito.
@@ -267,7 +267,7 @@ Vous pouvez obtenir les données relatives au fichier de certificat soit à part
 1. Ouvrez l'URL <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-metadata">des métadonnées d'AppsFlyer</Anchor> et trouvez `use="encryption"`.
 2. Copiez les données de l’élement `X509Certificate`, de l’élément `use="encryption"` (voir les données de l'élément surlignées dans l'image ci-dessous).
 
-![appsflyer certificate-signing.jpg](https://files.readme.io/989a2a99c54add8a3879cd2f5b4f20121f97f53b103c1a3f53c37d5eafaaa144-24887540886929.jpg)
+<Image align="center" alt="appsflyer certificate-signing.jpg" src="https://files.readme.io/989a2a99c54add8a3879cd2f5b4f20121f97f53b103c1a3f53c37d5eafaaa144-24887540886929.jpg" />
 
 <span id="h_01HVK231WJFS9YWNHJJR18RXBF"></span>**2. Création du fichier texte du certificat :**
 
@@ -420,7 +420,7 @@ Vous pouvez obtenir les données relatives au fichier de certificat soit à part
 1. Ouvrez l'URL <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-metadata">des métadonnées d'AppsFlyer</Anchor> et trouvez `use="encryption"`.
 2. Copiez les données de l’élement `X509Certificate`, de l’élément `use="encryption"` (voir les données de l'élément surlignées dans l'image ci-dessous).
 
-![appsflyer certificate-signing.jpg](https://files.readme.io/989a2a99c54add8a3879cd2f5b4f20121f97f53b103c1a3f53c37d5eafaaa144-24887540886929.jpg)
+<Image align="center" alt="appsflyer certificate-signing.jpg" src="https://files.readme.io/989a2a99c54add8a3879cd2f5b4f20121f97f53b103c1a3f53c37d5eafaaa144-24887540886929.jpg" />
 
 **2. Création du fichier texte du certificat :**
 

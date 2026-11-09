@@ -28,7 +28,7 @@ x-zendesk:
 
 > **En bref :** Découvrez les méthodes permettant aux annonceurs de regrouper et de consulter les données relatives aux coûts marketing.
 
-![roi360_image.png](https://files.readme.io/1eaf922de9a1174c1971582dd32f53b995de014c8c2bf288b52a93c83334374e-11245891045777.png)
+<Image align="center" alt="roi360_image.png" src="https://files.readme.io/1eaf922de9a1174c1971582dd32f53b995de014c8c2bf288b52a93c83334374e-11245891045777.png" />
 
 <div id="cost-aggregation" />
 
@@ -131,7 +131,7 @@ Le mécanisme de hiérarchisation des coûts a une incidence sur les rapports de
 
 **Priorisation de la méthode de calcul du coût des campagnes**
 
-![](https://support.appsflyer.com/hc/article_attachments/24855895951377)  
+<Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/24855895951377" />
 
 <div id="closed-beta--cost-split" />
 

@@ -48,7 +48,7 @@ Les données de coût par clic sont agrégées et disponibles pour consultation 
 
 Dans le ***tableau de bord Vue d’ensemble,** le rapport sur les performances agrégées* contient les données sur le coût, les clics, les impressions, le retour sur investissement et l’eCPI moyen.
 
-[![CostReporting.jpg](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)
+<Image align="center" alt="CostReporting.jpg" src="https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg" />
 
 Les rapports de performance et de données brutes sont également disponibles <Anchor target="_blank" href="/marketers/fr/docs/raw-data-reporting-overview">en téléchargement</Anchor>.
 

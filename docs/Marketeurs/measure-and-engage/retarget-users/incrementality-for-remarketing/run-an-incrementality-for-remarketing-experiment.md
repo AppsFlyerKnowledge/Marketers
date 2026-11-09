@@ -25,7 +25,7 @@ x-zendesk:
 
 > **En bref :** Réalisez une expérience d'incrémentalité pour comprendre l'impact réel de vos campagnes de remarketing.
 
-![KB_toggle_final.jpg](https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg)
+<Image align="center" alt="KB_toggle_final.jpg" src="https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg" />
 
 <div id="about-the-experiment" />
 
@@ -99,14 +99,14 @@ Après avoir défini vos objectifs, l'étape suivante consiste à configurer l'a
    * Connectez l'audience à 1 à 3 partenaires de réseaux publicitaires.
    * Assurez-vous que l'option de division de l'audience est activée (elle est **automatiquement activée pour les abonnés à l'incrémentalité, sur les audiences créées après le 11 janvier 2023**). Sinon, cliquez sur l'interrupteur pour l'activer.  
 
-     ![Mesure_inc_impact_bascule.jpg](https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg)
+     <Image align="center" alt="Mesure_inc_impact_bascule.jpg" src="https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg" />
    * Le groupe témoin est automatiquement fixé à 15 % (recommandé).
    * Le reste de l'audience est automatiquement réparti équitablement entre les partenaires des réseaux publicitaires sélectionnés.
      * Le pourcentage total de répartition doit être égal à 100 % (y compris le groupe témoin).
 
 Une fois que vous avez enregistré votre audience avec la division activée, une expérience d'incrémentalité est automatiquement lancée (réservé aux abonnés à l'incrémentalité). Ces expériences peuvent être visualisées sur le tableau de bord d'incrémentalité avec le préfixe «[Auto]» avant le titre.
 
-![Auto_avant_titre.jpg](https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg)
+<Image align="center" alt="Auto_avant_titre.jpg" src="https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg" />
 
 **Remarques importantes :**
 
@@ -119,10 +119,10 @@ Les publicités Meta et Google Ads ont toutes deux une fonctionnalité optionnel
 
 Dans les publicités Meta, la fonctionnalité s'appelle « Audience personnalisée Advantage ». Elle apparaît au niveau de l'ensemble d'annonces et est activée par défaut.
 
-<Image alt="image__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />  
+<Image align="center" alt="image__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />
 Dans Google Ads, cela s'appelle « élargissement de l'audience ».
 
-<Image alt="Limitation_d'incrémentalité_de_Google_Ads_cropped.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
+<Image align="center" alt="Limitation_d'incrémentalité_de_Google_Ads_cropped.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
 
 </Accordion>
 
@@ -151,17 +151,17 @@ Une nouvelle expérience d'incrémentalité est automatiquement lancée lorsqu'u
 
 1. Depuis le **tableau de bord d'incrémentalité**, accédez à l'expérience spécifique, puis cliquez sur **Modifier l'expérience**.
 
-<Image alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
+<Image align="center" alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
 
 Ou
 
 Dans **Audiences**, localisez l'audience spécifique, puis cliquez sur **+ Lier la campagne** dans la colonne Incrémentalité.
 
-<Image alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
+<Image align="center" alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
 
 Une fenêtre s'affiche, vous permettant de lier des campagnes.
 
-<Image alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
+<Image align="center" alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
 
 2. Sélectionnez la ou les campagnes pertinentes pour chaque réseau publicitaire.
 
@@ -198,7 +198,7 @@ Si vous êtes abonné à Incrementality et avez créé votre audience après le 
   >
   > **Étape 3 de l'assistant – Définir des objectifs**
   >
-  > ![Étape_3_Définir_des_cibles.jpg](https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg)
+  > <Image align="center" alt="Étape_3_Définir_des_cibles.jpg" src="https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg" />
   >
   > C'est ici que vous devez sélectionner l'application cible et les indicateurs clés de performance (KPI).
   >

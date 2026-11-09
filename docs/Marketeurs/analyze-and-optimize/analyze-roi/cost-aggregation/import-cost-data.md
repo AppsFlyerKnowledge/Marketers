@@ -37,7 +37,7 @@ x-zendesk:
 
 ## Importation des coûts
 
-![Adspendimport.jpg](https://files.readme.io/e870005c5f20531a2d06cc78b47a82a8a1f730f2c04728f5d0a5674c1c70129a-24507313816337.jpg)
+<Image align="center" alt="Adspendimport.jpg" src="https://files.readme.io/e870005c5f20531a2d06cc78b47a82a8a1f730f2c04728f5d0a5674c1c70129a-24507313816337.jpg" />
 
 ## Données complètes sur les coûts des campagnes
 
@@ -110,7 +110,7 @@ Le format de fichier CSV, le schéma et les règles de validation des dépenses 
 
 Avant de poursuivre la lecture, prenez note des erreurs les plus courantes commises lors de la préparation du fichier CSV, comme illustré dans la capture d'écran suivante.
 
-![importfile_en-us.png](https://files.readme.io/75f6be4a65a5b9ad3a4faf68d3a65ddda034a0b7ab726ed2fd698e638249d451-360007902297.png)
+<Image align="center" alt="importfile_en-us.png" src="https://files.readme.io/75f6be4a65a5b9ad3a4faf68d3a65ddda034a0b7ab726ed2fd698e638249d451-360007902297.png" />
 
 Le format de fichier CSV, le schéma et les règles de validation des dépenses publicitaires sont décrits en détail dans les sections suivantes. Si vous utilisez Excel ou Google Sheets pour créer le fichier, vous devez consulter les instructions de [mise en forme d'Excel](/docs/import-cost-data#using-excel-to-format-date-and-spend-fields-of-csv-files).
 
@@ -186,7 +186,7 @@ Le jeton Ad Spend est utilisé pour vérifier que l'expéditeur de l'e-mail est 
    À propos de la page partenaire intégré
 2. Sélectionnez le partenaire intégré.
 3. Allez dans l'onglet **Autorisations**.    
-    [<Image alt="PermissionAdNetwork.png" src="https://files.readme.io/c3551ced28104a5576eda62ea0684fa9088349a401f6336d91d1b350c231963a-360004994898.png" width="221px" />](https://files.readme.io/c3551ced28104a5576eda62ea0684fa9088349a401f6336d91d1b350c231963a-360004994898.png)
+    <Image align="center" alt="PermissionAdNetwork.png" src="https://files.readme.io/c3551ced28104a5576eda62ea0684fa9088349a401f6336d91d1b350c231963a-360004994898.png" width="221px" />
 4. Activez **les autorisations du réseau publicitaire** si ce n'est pas déjà fait.
 5. (facultatif) Ajoutez des utilisateurs au compte.
 6. Activez **Autoriser l'importation des dépenses.**
@@ -235,7 +235,7 @@ Le jeton Ad Spend est utilisé pour vérifier que l'expéditeur de l'e-mail est 
 4. Si un message d'erreur s'affiche pendant le téléchargement : rectifiez l'erreur et répétez les étapes correspondantes.
 5. La fenêtre **Importation des coûts : résumé du fichier** s'ouvre.
 
-   ![AdspendInestionFileSummary.png](https://files.readme.io/409f35838ebea83406208d196b42dbe387f933300e40977f0e598c641aa041f8-360005116138.png)
+   <Image align="center" alt="AdspendInestionFileSummary.png" src="https://files.readme.io/409f35838ebea83406208d196b42dbe387f933300e40977f0e598c641aa041f8-360005116138.png" />
 6. Effectuez l'une des opérations suivantes :
    * Abandonnez le téléchargement, cliquez sur **Annuler l'importation**.
    * Terminez le processus d'importation, cliquez sur **Importer le fichier.**  
@@ -275,7 +275,7 @@ Sur la page Importation des coûts, vous pouvez effectuer les actions suivantes.
 * Sélectionnez le fichier.  
   La page au niveau de l'application s'affiche. La liste des applications figurant dans le fichier des dépenses publicitaires s'affiche.
 
-  ![Adspendimports2.png](https://files.readme.io/586cfa3c9dd1b716686e5bf896208ef6a5bf8e674b5dd5a11e27152a88342f93-360005029797.png)
+  <Image align="center" alt="Adspendimports2.png" src="https://files.readme.io/586cfa3c9dd1b716686e5bf896208ef6a5bf8e674b5dd5a11e27152a88342f93-360005029797.png" />
 * Effectuez des actions au niveau du fichier ou de l'application comme décrit ici.
 * **Au niveau du fichier :** Si vous êtes autorisé à accéder à toutes les applications contenues dans le fichier, vous pouvez utiliser les commandes situées en haut à droite de la page pour :
   * **Annulez** (annulez) l'importation des coûts pour toutes les applications du fichier.
@@ -329,7 +329,7 @@ Le rapport Unmatched contient une colonne, is matching, qui peut avoir une valeu
 
 **Page d'importation des coûts affichant le pourcentage de lignes correspondantes**
 
-![Adpsendmatching.png](https://files.readme.io/e29381833db2c632fb0b696b22c4a80d02448e4c02f79463bc518e3b44c0a0b5-360004979278.png)
+<Image align="center" alt="Adpsendmatching.png" src="https://files.readme.io/e29381833db2c632fb0b696b22c4a80d02448e4c02f79463bc518e3b44c0a0b5-360004979278.png" />
 
 </Accordion>
 
@@ -452,7 +452,7 @@ Après avoir enregistré le fichier CSV, vérifiez que le contenu est correcteme
 2. Cliquez avec le bouton droit, sélectionnez **Formater les cellules**.  
    La fenêtre Formater les cellules s'ouvre.  
 
-   <Image alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
+   <Image align="center" alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
 3. Sélectionnez **Personnalisé**.
 4. Dans le champ Type, saisissez **YYYY-MM-DD**
 5. Cliquez sur **OK**.  
@@ -470,7 +470,7 @@ Après avoir enregistré le fichier CSV, vérifiez que le contenu est correcteme
 
 Excel met généralement en forme les cellules de valeur par une virgule pour séparer les milliers, comme indiqué dans la figure. Ce format n'est pas adapté aux fichiers d'importation d'Ad Spend.
 
-<Image alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
 
 Vous pouvez corriger cela en formatant les cellules dans Excel.
 
@@ -481,7 +481,7 @@ Vous pouvez corriger cela en formatant les cellules dans Excel.
    La fenêtre Formater les cellules s'ouvre.
 3. Sélectionnez **Numéro**.  
 
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/d2bfeec87d24739e9d1cea8467d7ce23b56aa9414a96202379f6e774991bf387-360004075458.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/d2bfeec87d24739e9d1cea8467d7ce23b56aa9414a96202379f6e774991bf387-360004075458.png" width="381px" />
 
 1. **Décochez Utiliser le séparateur 1000 (,).**
 2. (Facultatif) Définissez le nombre de **décimales**. La valeur par défaut est 2. Le maximum autorisé est de 5.
@@ -503,7 +503,7 @@ Ce qui suit contient une capture d'écran de l'[exemple de fichier CSV](https://
 
 **Vue de l'éditeur**
 
-<Image alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
 
 À l'aide d'un éditeur, examinez le fichier CSV. Portez une attention particulière aux points suivants :
 
@@ -511,7 +511,7 @@ Ce qui suit contient une capture d'écran de l'[exemple de fichier CSV](https://
 * **Date :** Assurez-vous que le champ de date est au format YYYY-MM-DD.
 * Dépense Assurez-vous qu'il n'y a pas de virgule dans le champ des dépenses.  
 
-  <Image alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="150px" />
+  <Image align="center" alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="150px" />
 
 </Accordion>
 

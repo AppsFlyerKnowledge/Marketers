@@ -377,7 +377,7 @@ Pour les fichiers GZIP en plusieurs parties :
 
 Après avoir importé des fichiers sources pendant deux jours (et créé par programme les dossiers date/version/données et les fichiers `_SUCCESS`), la structure de votre compartiment/dossier doit être celle-ci :
 
-<Image alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" width="308px" />
 
 </Accordion>
 
@@ -470,11 +470,11 @@ Le dossier de la clé DCR est généralement créé manuellement via l'interface
 
 **Pour obtenir la clé DCR de votre compte, cliquez sur le bouton Clé DCR en haut de la page principale DCR.**
 
-[![dcr_key_button.png](https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png)](https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png)
+<Image align="center" alt="dcr_key_button.png" src="https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png" />
 
 Après avoir créé le dossier de la clé DCR, la structure de votre compartiment/dossier sera celle-ci :
 
-<Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
 <div id="top-level-input-folder" />
 
@@ -489,7 +489,7 @@ Le dossier d'entrée de premier niveau est généralement créé manuellement vi
 
 Après avoir créé le dossier d'entrée de premier niveau, la structure de votre compartiment/dossier sera celle-ci :
 
-<Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
 
 <div id="second-level-folder-for-each-data-source" />
 
@@ -503,7 +503,7 @@ Les dossiers de source de données sont généralement créés manuellement via 
 
 Après avoir créé 2 dossiers de source de données, la structure de votre compartiment/dossier sera celle-ci :
 
-<Image alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
 
 Dans chaque dossier de source de données, [des sous-dossiers classés par date et par version](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version) doivent être créés à chaque mise à jour de la source.
 

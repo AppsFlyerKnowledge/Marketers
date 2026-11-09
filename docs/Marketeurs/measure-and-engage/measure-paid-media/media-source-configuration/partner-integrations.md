@@ -63,7 +63,7 @@ Il existe plusieurs façons de découvrir des partenaires sur le marketplace et 
 * [Filtrer](/docs/partner-integrations#filtrer-la-liste-des-partenaires) la liste des partenaires
 * [Rechercher](/docs/partner-integrations#en-savoir-plus-sur-les-partenaires) des partenaires spécifiques
 
-[![partner marketplace updated.png](https://support.appsflyer.com/hc/article_attachments/20378873828625)](https://support.appsflyer.com/hc/article_attachments/20378873828625)
+<Image align="center" alt="partner marketplace updated.png" src="https://support.appsflyer.com/hc/article_attachments/20378873828625" />
 
 ### Utilisation du Marketplace partenaires
 
@@ -80,7 +80,7 @@ Pour vous aider à trouver plus facilement les partenaires les mieux adaptés à
 
 #### Cartes partenaires
 
-![google_meta.png](https://support.appsflyer.com/hc/article_attachments/20687080901009)
+<Image align="center" alt="google_meta.png" src="https://support.appsflyer.com/hc/article_attachments/20687080901009" />
 
 Parcourez les fiches partenaires pour obtenir des informations de base sur les services partenaires :
 
@@ -123,7 +123,7 @@ Utilisez les filtres en haut de la page pour trouver des partenaires pertinents 
 
 ### Rechercher des partenaires
 
-![partner search3.png](https://support.appsflyer.com/hc/article_attachments/18891644678417)
+<Image align="center" alt="partner search3.png" src="https://support.appsflyer.com/hc/article_attachments/18891644678417" />
 
 Utilisez la barre de recherche du Marketplace partenaires pour rechercher des partenaires spécifiques. Lorsque vous utilisez la barre de recherche dans le Marketplace partenaires :
 
@@ -189,7 +189,7 @@ AppsFlyer peut vous aider à vous connecter avec un partenaire en lui envoyant u
 
 #### Performances des partenaires
 
-[![Partner performance page.png](https://support.appsflyer.com/hc/article_attachments/20440065104017)](https://support.appsflyer.com/hc/article_attachments/20440065104017)
+<Image align="center" alt="Partner performance page.png" src="https://support.appsflyer.com/hc/article_attachments/20440065104017" />
 
 Pour aider les spécialistes du marketing à décider d'intégrer ou non le partenaire, cette section présente différents aspects de leurs mesures de performance, indiquant leur niveau de qualité.
 
@@ -253,7 +253,7 @@ Avant que de nouvelles intégrations de réseaux publicitaires puissent être aj
 
 1. **Dans AppsFlyer, dans le menu latéral, sélectionnez** **Collaboration** > Marketplace partenaires.
 2. **Dans le coin supérieur droit de la page Marketplace partenaires, cliquez sur les 3 points et sélectionnez**Inviter un nouveau partenaire.   
-   [![invite_new_partner.png](https://support.appsflyer.com/hc/article_attachments/11264293319825)](https://support.appsflyer.com/hc/article_attachments/11264293319825)
+   <Image align="center" alt="invite_new_partner.png" src="https://support.appsflyer.com/hc/article_attachments/11264293319825" />
 3. Saisissez le nom et l'adresse e-mail du partenaire.  
    Le partenaire recevra un e-mail contenant un lien d'inscription.
 
@@ -287,7 +287,7 @@ En cliquant sur **Afficher tout,** vous ouvrez la page **Intégrations actives**
 
 #### Intégrations actives : page
 
-[![active integrations page.png](https://support.appsflyer.com/hc/article_attachments/20439646101649)](https://support.appsflyer.com/hc/article_attachments/20439646101649)
+<Image align="center" alt="active integrations page.png" src="https://support.appsflyer.com/hc/article_attachments/20439646101649" />
 
 La page **Intégrations actives** affiche tous vos partenaires intégrés <Anchor target="_blank" href="/marketers/fr/docs/partner-activation-deactivation">actifs</Anchor> . À partir de cette page, vous pouvez gérer n'importe laquelle de vos intégrations, rechercher parmi vos partenaires actifs et créer de nouvelles intégrations pour les partenaires qui ne sont pas connectés à l'application actuellement sélectionnée. La page **Intégrations actives** est divisée en deux sections :
 

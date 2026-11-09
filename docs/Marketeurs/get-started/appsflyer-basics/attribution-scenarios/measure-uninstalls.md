@@ -59,7 +59,7 @@ En comparant la qualité des utilisateurs d'après leur source (source média, c
 >
 > La source média B quant à elle, annonce 5 949 installations et possède le taux de désinstallations le plus bas (12%).
 >
-> [![Uninstall rates.png](https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png)](https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png)
+> <Image align="center" alt="Uninstall rates.png" src="https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png" />
 >
 > En vous basant sur ces éléments, vous savez donc que vous pouvez affecter un plus grand budget à la source média B afin de chercher à obtenir des utilisateurs plus engagés.
 
@@ -169,7 +169,7 @@ Pour mesurer les désinstallations sous Android, vous devez configurer la mesure
    2. Sélectionnez un projet.
    3. Allez dans **Aperçu du projet** > **Paramètres du projet.**  
 
-      ![UninstallFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
+      <Image align="center" alt="UninstallFirebase.png" src="https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png" />
    4. Copiez l'ID du projet. Vous en aurez besoin plus tard dans le processus.
 2. **Pour attribuer le rôle de désinstallation à AppsFlyer :**
    1. Allez dans l'onglet **Comptes de service**.
@@ -183,7 +183,7 @@ Pour mesurer les désinstallations sous Android, vous devez configurer la mesure
       * Étape de lancement du rôle  : sélectionnez **Disponibilité générale**.
    6. Recherchez puis sélectionnez `cloudmessaging.messages.create`.  
 
-      ![AddPermissions.png](https://files.readme.io/efd461ecb74a61c15232e30a6e10eaaecac18f2e24a28565ba8b208ce0654d1a-5542178507665.png)
+      <Image align="center" alt="AddPermissions.png" src="https://files.readme.io/efd461ecb74a61c15232e30a6e10eaaecac18f2e24a28565ba8b208ce0654d1a-5542178507665.png" />
    7. Cliquez sur **Ajouter**.
    8. Cliquez sur **Créer** .
 3. **Pour attribuer à AppsFlyer le rôle de désinstallation FCM :**
@@ -214,7 +214,7 @@ La mesure des désinstallations via la messagerie Firebase est prise en charge �
 2. Ouvrez la <Anchor target="_blank" href="https://console.firebase.google.com">Console</Anchor> Firebase.
 3. Sur la page Console Firebase, accédez aux paramètres du projet (cliquez sur la roue dentée à côté de Vue d'ensemble du projet dans le volet gauche de la page).  
 
-   ![firebase_cloud_messaging_server_key.png](https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png)
+   <Image align="center" alt="firebase_cloud_messaging_server_key.png" src="https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png" />
 4. Dans l'onglet Messagerie cloud, vous voyez deux clés serveur.
 5. Copiez la **clé de serveur**.
 
@@ -237,7 +237,7 @@ La mesure des désinstallations via la messagerie Firebase est prise en charge �
 2. Si nécessaire, activez la **mesure des désinstallations**.
 3. Sélectionnez **HTTP V1, puis saisissez l'ID de projet que vous avez préparé.**
 
-   ![UninstallHTTPV1.png](https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png)
+   <Image align="center" alt="UninstallHTTPV1.png" src="https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png" />
 4. Cliquez sur **Test de connexion**.  
    Le message Succès ! s'affiche.
 5. Cliquez sur **Enregistrer les paramètres**.
@@ -255,7 +255,7 @@ La mesure des désinstallations via la messagerie Firebase est prise en charge �
 3. Faites défiler la page jusqu'à la section Désinstallation.
 4. Activez la **mesure des désinstallations**.
 
-   ![Uninstall_iOS_p2.png](https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png)
+   <Image align="center" alt="Uninstall_iOS_p2.png" src="https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png" />
 5. Cliquez sur l’icône de téléchargement puis sélectionnez le fichier P12.
 6. [Facultatif] Si le certificat P12 est protégé par un mot de passe, saisissez le mot de passe.
 7. Cliquez sur **Valider** pour envoyer le certificat à AppsFlyer afin de procéder à sa vérification.
@@ -313,7 +313,7 @@ Gardez à l’esprit les éléments suivants lorsque vous testez une application
 
 ## Mappage de l'évènement de désinstallation
 
-![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
+<Image align="center" alt="Uninstall_event_postback.png" src="https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png" />
 
 Pour partager les données de désinstallations avec un réseau publicitaire, vous devez mapper <Anchor target="_blank" href="/marketers/fr/docs/set-up-an-integrated-partner#g">l’événement af\_uninstall</Anchor> à un partenaire. Contrairement aux postbacks d'événements in-app classiques, les événements de désinstallation ne sont pas envoyés en temps réel. L'heure de l'événement indiquée correspond à l'heure à laquelle AppsFlyer a appris que l'app a été désinstallée, et non à l'heure de la désinstallation en elle-même.
 

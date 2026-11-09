@@ -44,7 +44,7 @@ Avant que votre développeur ne puisse installer et intégrer le SDK, vous devez
 1. Dans AppsFlyer, allez à **Configuration** > **Paramètres de l'app**.
 2. Copiez votre clé dev et transmettez-la à votre développeur mobile.
 
-   [![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
+   <Image align="center" alt="" src="https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png" />
 3. Transférez à votre développeur mobile les instructions concernant <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">l'installation</Anchor> et <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-integration">l'intégration du SDK</Anchor>.
 
 <div id="where-to-start-the-sdk" />
@@ -313,7 +313,7 @@ Lorsque l'attribution se produit à l'aide de l'IDFA, il est important que ce de
 
 `waitForATTUserAuthorization` vous permet de définir combien de temps le SDK doit attendre le statut ATT avant d'envoyer les données aux serveurs AppsFlyer.
 
-[![](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)
+<Image align="center" alt="" src="https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png" />
 
 Lorsqu'un utilisateur lance l'app, le statut de l'ATT est **notDetermined** (non défini). En attendant l'expiration du délai de `waitForATTUserAuthorization`, le SDK stocke en mémoire l'événement de lancement et les événements in-app consécutifs. La même chose se produit lorsque [les événements hors ligne sont enregistrés](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#offline-in-app-events) :
 

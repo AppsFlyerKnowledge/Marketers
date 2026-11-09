@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **En bref :** les règles de validation sont une fonctionnalité premium d'AppsFlyer. Elles ajoutent une couche de protection personnalisée contre les campagnes mal ciblées et la fraude. Les règles permettent aux propriétaires d'apps de contrôler quelles installations et quels événements in-app sont bloqués, ou quelles installations sont attribuées à la source valide la plus récente.
 
-![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
+<Image align="center" alt="5906_animation-750x330__1_.gif" src="https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif" />
 
 ## Présentation
 
@@ -88,7 +88,7 @@ x-zendesk:
 
 L'interface utilisateur du générateur de règles est conçue pour la création interactive de règles. **Astuce !** Familiarisez-vous avec le générateur de règles et expérimentez avant de lire cet article en détail.
 
-[![](https://files.readme.io/ed1bfe9c2d4a806bd1c00449f6245a965d2be4257a39076f1b33abd24ec8836a-360014789398.jpg)](https://files.readme.io/ed1bfe9c2d4a806bd1c00449f6245a965d2be4257a39076f1b33abd24ec8836a-360014789398.jpg)
+<Image align="center" alt="" src="https://files.readme.io/ed1bfe9c2d4a806bd1c00449f6245a965d2be4257a39076f1b33abd24ec8836a-360014789398.jpg" />
 
 Le générateur de règles contient les sections suivantes :
 
@@ -222,7 +222,7 @@ Par exemple, si vous souhaitez valider les installations en fonction de la plate
 
 Visualisez l'impact estimé de vos règles de validation sur le trafic, c'est-à-dire le nombre d'installations et d'attributions bloquées qui pourraient survenir.
 
-![vr_estimate.png](https://support.appsflyer.com/hc/article_attachments/360019928077/vr_estimate.png)
+<Image align="center" alt="vr_estimate.png" src="https://support.appsflyer.com/hc/article_attachments/360019928077/vr_estimate.png" />
 
 > 📘 **Remarque**
 >
@@ -240,7 +240,7 @@ Visualisez l'impact estimé de vos règles de validation sur le trafic, c'est-à
    * L'estimation des nouveaux blocages, ainsi que le pourcentage du trafic nouvellement bloqué en raison de la règle de validation, s'affichent.
    * Lorsque la règle est définie sur des sources non organiques uniquement, l'estimation affiche l'impact de la règle par rapport à l'ensemble de votre trafic. Pour voir l'impact par rapport aux sources uniquement (par exemple, une source média ou une campagne spécifique), dans la légende du graphique, désélectionnez **Autres sources**.  
 
-     [![](https://support.appsflyer.com/hc/article_attachments/360020016218/vr_estimate_other_sources.png)](https://support.appsflyer.com/hc/article_attachments/360020016218/vr_estimate_other_sources.png)
+     <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360020016218/vr_estimate_other_sources.png" />
 
 </Accordion>
 

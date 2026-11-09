@@ -69,7 +69,7 @@ Un modèle OneLink constitue la base de la logique de redirection pour tous les 
 * <Anchor target="_blank" href="/marketers/fr/docs/create-a-onelink-template#procédures">Créer un modèle OneLink</Anchor>
   * Le marketeur doit être un utilisateur administrateur chez AppsFlyer ou disposer des autorisations <Anchor target="_blank" href="/marketers/fr/docs/user-management">pour ajouter\/modifier des modèles OneLink</Anchor>
 
-![OneLink](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
+<Image align="center" alt="OneLink" src="https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png" />
 
 ### 4. Configurer le SDK
 

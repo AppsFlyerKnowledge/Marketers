@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **En bref :** depuis mi-septembre 2023, Snapchat est devenu un SRN avancé. Découvrez comment configurer l'intégration entre AppsFlyer et Snapchat pour permettre la mesure de l'attribution.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
 <div id="overview" />
 
@@ -79,14 +79,14 @@ Pour plus de détails sur l'activation des partenaires, cliquez <Anchor target="
 
 Cochez **Activer le partenaire** pour permettre l'attribution à Snapchat.
 
-![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png" />
 
 **ID d'app Snap**
 
 1. Dans votre Gestionnaire de compte Snap, allez dans Apps, et copiez l'ID d'app Snap (lisez le guide de Snapchat sur <Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/a/snap-app-id">comment générer un ID d'app Snap</Anchor>).
 2. Collez l'ID dans le champ ID d'app Snap dans AppsFlyer.
 
-![snapchat-app-id.png](https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png)
+<Image align="center" alt="snapchat-app-id.png" src="https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png" />
 
 **Dans le cas où l'application est promue par une agence**,
 
@@ -102,7 +102,7 @@ Vous pouvez personnaliser cette valeur en heures (de 1 à 23) ou en jours (de 1 
 
 Obtenez plus de détails concernant la <Anchor target="_blank" href="/marketers/fr/docs/set-up-lookback-windows">fenêtre rétrospective de clic ici</Anchor>.
 
-<Image alt="snap-click-window.png" src="https://files.readme.io/07eb4b7d4a5ec37791cdef31e0fbb77e22f0b65cd189a426bf293d166827b44a-360011563618.png" width="552px" />
+<Image align="center" alt="snap-click-window.png" src="https://files.readme.io/07eb4b7d4a5ec37791cdef31e0fbb77e22f0b65cd189a426bf293d166827b44a-360011563618.png" width="552px" />
 
 #### Fenêtre rétrospective d'attribution post vue
 
@@ -112,7 +112,7 @@ Vous pouvez personnaliser cette valeur en heures (1 à 23) ou en jours (1 à 7).
 
 Obtenez plus de détails concernant <Anchor target="_blank" href="/marketers/fr/docs/set-up-lookback-windows">l'attribution post vue ici</Anchor>.
 
-<Image alt="snap-viewthrough-window.png" src="https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png" width="663px" />
+<Image align="center" alt="snap-viewthrough-window.png" src="https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png" width="663px" />
 
 <div id="note-3" />
 
@@ -131,20 +131,20 @@ Si vous êtes une agence, demandez à l'annonceur de le faire pour vous.
 
 Définissez la durée de la **Fenêtre rétrospective de réengagement post clic** (la période maximale après le clic sur une publicité, pendant laquelle un utilisateur reciblé peut être attribué à celle-ci). Vous pouvez définir la valeur en heures (jusqu'à 23) ou en jours (1-30) :
 
-<Image alt="snap-reengagement-activate.png" src="https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png" width="642px" />
+<Image align="center" alt="snap-reengagement-activate.png" src="https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png" width="642px" />
 
 #### Fenêtre rétrospective de réengagement post vue
 
 Pour commencer à attribuer des impressions d'annonces de retargeting, activez **Attribution de réengagement post vue**.  
 Définissez la durée de la fenêtre rétrospective de réengagement post vue (la période maximale pendant laquelle une publicité est vue et pendant laquelle un utilisateur reciblé peut être attribué à la publicité). Vous pouvez définir la valeur en heures (jusqu'à 23) ou en jours (1-7) :
 
-![snap-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
+<Image align="center" alt="snap-reengagement-view-through.png" src="https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png" />
 
 #### Fenêtre de réengagement
 
 Définissez la durée de la **Fenêtre de réengagement** (période au cours de laquelle les événements in-app de l'utilisateur sont attribués à la source média de retargeting). Vous pouvez définir la valeur en jours (1-90), en heures (jusqu'à 23) ou même en valeur vie :
 
-<Image alt="snap-reengagement-window.png" src="https://files.readme.io/99aab0e0e808514d1450fd297a1e7d2217be4e21d8ca85bd5a922e797f39755e-360008512418.png" width="557px" />
+<Image align="center" alt="snap-reengagement-window.png" src="https://files.readme.io/99aab0e0e808514d1450fd297a1e7d2217be4e21d8ca85bd5a922e797f39755e-360008512418.png" width="557px" />
 
 <div id="in-app-event-postbacks" />
 
@@ -152,7 +152,7 @@ Définissez la durée de la **Fenêtre de réengagement** (période au cours de 
 
 Mappage des événements AppsFlyer avec le partenaire via postback. Si l'envoi de postback est activé, il inclut les événements in-app rejetés (événements bloqués par Protect360 ou événements jugés non conformes par les règles de validation de cible)
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 **Pour configurer les postbacks d'événement in-app :**
 
@@ -323,7 +323,7 @@ Pour utiliser le deep linking avec Snapchat :
 1. Sélectionnez le type d'opportunité **Diriger le trafic vers l'app**.
 2. Ajoutez l'URI de deep linking :  
      
-    [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+    <Image align="center" alt="" src="https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png" />
 
 <div id="deferred-deep-linking-with-snapchat" />
 

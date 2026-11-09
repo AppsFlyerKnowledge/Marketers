@@ -66,7 +66,7 @@ Les dimensions personnalisées que vous créez se trouvent au niveau du compte, 
 1. Dans le tableau de bord général :
    * Cliquez sur l'**icône Menu** (⋮)  > **Dimension personnalisée**.  
 
-     [![](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)
+     <Image align="center" alt="" src="https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png" />
    * Dans un graphique ou un tableau, dans le menu déroulant **Afficher le haut**ou **Regrouper par**, cliquez sur **+ Créer une dimension personnalisée**.
 2. Si vous créez une dimension personnalisée pour la première fois, cliquez sur **+ Nouvelle dimension**.  
    L'onglet **Créer** s'ouvre.
@@ -94,7 +94,7 @@ Les dimensions personnalisées que vous créez se trouvent au niveau du compte, 
 1. Dans le tableau de bord général :
    * Cliquez sur l'**icône Menu** > **Dimension personnalisée**.  
 
-     [![](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)
+     <Image align="center" alt="" src="https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png" />
    * Dans un graphique ou un tableau, dans le menu déroulant **Afficher le haut**ou **Regrouper par**, cliquez sur **+ Créer une dimension personnalisée**.
 2. Cliquez sur l'onglet **Modifier**.
 3. Sélectionnez ou recherchez une dimension personnalisée.
@@ -114,7 +114,7 @@ Les dimensions personnalisées peuvent être utilisées pour regrouper et affich
 1. Dans le tableau de bord général, accédez au graphique ou widget de tableau de bord de votre choix.
 2. Dans le menu déroulant **Afficher le haut** ou **Regrouper par**, **Dimensions personnalisées**, recherchez la dimension personnalisée que vous souhaitez utiliser.  
 
-   [![](https://files.readme.io/e34bcb2ca34546347b391f0ad921319f296a21c41c3783e59a7d808b44d0b6a9-17082706166929.png)](https://files.readme.io/e34bcb2ca34546347b391f0ad921319f296a21c41c3783e59a7d808b44d0b6a9-17082706166929.png)
+   <Image align="center" alt="" src="https://files.readme.io/e34bcb2ca34546347b391f0ad921319f296a21c41c3783e59a7d808b44d0b6a9-17082706166929.png" />
 3. Les données du graphique ou du tableau s'affichent dans un groupe qui utilise votre dimension personnalisée.
 
 </Accordion>

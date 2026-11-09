@@ -252,7 +252,7 @@ L'attribution est déterminée en fonction de vos  paramètres d'attribution.
 2. Dans la section **Page d'accueil de l’app sociale**, cliquez sur **Créer une page d'accueil**.  
    Une fenêtre permettant de choisir un template de page d'accueil s'ouvre.  
 
-   [![](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg" />
 3. Pour choisir un template de page d'accueil, passez la souris sur le template sélectionné et cliquez sur **Créer**.  
 
    **Astuce** : survolez l'icône 🛈d'un template pour voir dans quels cas il doit être utilisé. L'utilisation de Clustered Poster et de ShowAndTell est recommandée pour Instagram.
@@ -272,11 +272,11 @@ L'attribution est déterminée en fonction de vos  paramètres d'attribution.
 
    4. Si une ou plusieurs images n'ont pas une URL exacte, une erreur s'affiche et vous ne pouvez pas consulter la création.   
 
-      [![](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)
+      <Image align="center" alt="" src="https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png" />
 6. Pour modifier la création de la page d'accueil, cliquez sur **Corriger**.  
    Si des modifications sont nécessaires, cliquez sur **Retour à l'éditeur**.  
 
-   [![](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)
+   <Image align="center" alt="" src="https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png" />
 7. Pour enregistrer votre page d'accueil, cliquez sur  **Terminé**.  
    **Important** : les créations de page d'accueil qui sont soit nouvelles soit mises à jour ne s'afficheront qu'après avoir généré/mis à jour le lien personnalisé.
 8. [Facultatif] Pour modifier votre page d'accueil, cliquez sur **Modifier la page d'accueil de l’app sociale**.
@@ -575,7 +575,7 @@ Le flux de la solution DDL basée sur le presse-papier est le suivant :
    * Si le lien contient le paramètre `af_cp_lp=true`.
 4. Une fois qu'AppsFlyer a confirmé ce qui précède, la page d'accueil web se charge et affiche l'icône et l'image de l'app, ainsi qu'un appel à l'action pour obtenir l'app depuis l'App Store. L'utilisateur voit également un message qui explique le processus : l'URL est copiée pour assurer la meilleure expérience utilisateur qui l'enverra vers une page spécifique de l'app.  
 
-   ![ios_15_ip_masking__1_.png](https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png)
+   <Image align="center" alt="ios_15_ip_masking__1_.png" src="https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png" />
 5. L'utilisateur presse **Get the app (Obtenir l'app)**.
 6. L'utilisateur est envoyé sur l'App Store pour installer l'app. Ensuite, au premier lancement, il est envoyé vers la page spécifique de l'app.
 

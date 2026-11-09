@@ -122,7 +122,7 @@ Pour rendre les choses plus claires, les champs du parcours utilisateur sont div
 
 ## Rapports de parcours utilisateur
 
-![Raw_data_-_User_acquisition_.png](https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png)
+<Image align="center" alt="Raw_data_-_User_acquisition_.png" src="https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png" />
 
 <div id="user-journey-basics" />
 
@@ -150,7 +150,7 @@ Les rapports de parcours utilisateur contiennent les données en lien avec les �
   * Les données de retargeting sont toujours non organiques.
   * Les événements in-app de retargeting se trouvent à la fois dans les rapports UA et les rapports d'événements in-app de retargeting. Voir le principe de la <Anchor target="_blank" href="/marketers/fr/docs/resolve-retargeting-double-attribution">double-attribution de retargeting</Anchor>.
 
-    ![Raw_data_-_Retargeting.png](https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png)
+    <Image align="center" alt="Raw_data_-_Retargeting.png" src="https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png" />
 
 Pour suivre un parcours utilisateur, vous devez cumuler les rapports en lien avec les parties du parcours qui vous intéressent, par exemple : les installations et les événements in-app. Une fois fait, vous n'avez qu'à trier le rapport en utilisant l'ID AppsFlyer, l'heure de l'événement et le type de rapport. Le résultat correspond à l'ensemble des événements pour un utilisateur donné au fil du temps, en d'autres termes le parcours utilisateur.
 

@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **En bref :** AppsFlyer décode et transforme la valeur de conversion que vous avez définie en événements. Les événements sont utilisés pour remplir le tableau de bord SKAN, les données brutes et les postbacks pour les partenaires.
 
-![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
+<Image align="center" alt="SKAdNetwork_-_Custom__1_.png" src="https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png" />
 
 <div id="decode-skan-conversion-value" />
 
@@ -244,7 +244,7 @@ Après avoir enregistré le fichier CSV, vérifiez que le contenu est correcteme
 
 Excel formate généralement les cellules de valeur avec une virgule pour séparer les milliers, comme indiqué dans la figure. Ce format ne convient pas au téléchargement de fichiers CSV. Vous devez également supprimer le symbole $.
 
-![mceclip0.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 Vous pouvez corriger cela en formatant les cellules dans Excel.
 
@@ -255,7 +255,7 @@ Vous pouvez corriger cela en formatant les cellules dans Excel.
    La fenêtre de formatage des cellules s'ouvre.
 3. Sélectionnez **Number**.  
 
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 
 1. Désélectionnez**Use 1000 separator (,).**
 2. (Facultatif) Définissez le nombre de **décimales**. La valeur par défaut est 2. Le maximum autorisé est 5.
@@ -277,14 +277,14 @@ Ce qui suit contient une capture d’écran de l’<Anchor target="_blank" href=
 
 **Vue de l'éditeur**
 
-![SKCustomeEditor.png](https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png)
+<Image align="center" alt="SKCustomeEditor.png" src="https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png" />
 
 Examinez le fichier CSV dans un éditeur. Portez une attention particulière aux points suivants :
 
 * **Espaces vides :** Assurez-vous qu'il n'y a pas d'espaces vides au début ou à la fin, avant ou après les virgules qui séparent les champs. Dans Excel, utilisez la commande @trim pour supprimer les espaces vides.
 * **event\_revenue\_usd :** Assurez-vous qu'il n'y a ni virgule ni symbole $ dans la colonne event\_revenue\_usd.  
 
-  ![mceclip1.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+  <Image align="center" alt="mceclip1.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 </Accordion>
 

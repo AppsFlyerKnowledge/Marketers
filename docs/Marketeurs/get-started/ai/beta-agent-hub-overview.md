@@ -68,11 +68,11 @@ To invite an app to a channel:
 1. In the Slack channel you want to receive the notifications to, write: **/invite**
 2. Choose **Add Apps to this channel.**
 
-<Image alt="Add Apps to this channel option in the Slack channel details menu" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
+<Image align="center" alt="Add Apps to this channel option in the Slack channel details menu" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
 
 Select **AppsFlyer Agent Hub** -> **Add.**
 
-<Image alt="AppsFlyer Agent Hub app selected in the Slack app directory with the Add button" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
+<Image align="center" alt="AppsFlyer Agent Hub app selected in the Slack app directory with the Add button" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
 
 * The following roles have automatic full access:
   * Admin
