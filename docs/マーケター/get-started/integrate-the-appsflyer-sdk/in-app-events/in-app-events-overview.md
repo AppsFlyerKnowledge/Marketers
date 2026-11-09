@@ -45,7 +45,7 @@ x-zendesk:
 
 アプリ内イベントはイベント名で構成され、イベントパラメータを含めることもできます。イベントパラメータを含む場合も、呼び方はアプリ内イベントです。イベントパラメータを使うと、イベントの背景や詳細情報を取得できます。たとえば、ユーザーが予約したことはイベントから分かりますが、イベントパラメータを使うと、購入の種類、目的地、収益などの詳細も把握できます。
 
-![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
+<Image align="center" alt="travel.png" src="https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png" />
 
 <div id="tip" />
 
@@ -125,7 +125,7 @@ AppsFlyerが通貨設定と通貨換算をどのように処理するかを理�
 
 AppsFlyerは、アプリ内イベントの通貨がアプリ設定の通貨と異なる場合、通貨換算を行います。
 
-![revenue_normalization_flow.png](https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png)
+<Image align="center" alt="revenue_normalization_flow.png" src="https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png" />
 
 上の図は、次の処理を示しています。
 

@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **概要**：この記事の導入手順に従って、Creative Optimizationの利用を開始しましょう。
 
-![](https://files.readme.io/3fdbee06c41fdcbcadf50fead49a3d3e29e1f56794e3a32a95a28989004024bf-28076554608017.png)
+<Image align="center" alt="" src="https://files.readme.io/3fdbee06c41fdcbcadf50fead49a3d3e29e1f56794e3a32a95a28989004024bf-28076554608017.png" />
 
 <div id="about-creative-optimization" />
 

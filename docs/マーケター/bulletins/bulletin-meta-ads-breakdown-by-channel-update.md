@@ -34,12 +34,12 @@ x-zendesk:
 
 1. <Anchor target="_blank" href="https://adsmanager.facebook.com/">Ads Manager</Anchor>に移動し、**Settings**を選択します。
 
-[![［設定］ボタンが表示された広告マネージャーツールバー](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)
+<Image align="center" alt="［設定］ボタンが表示された広告マネージャーツールバー" src="https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png" />
 
 2. ［作成］ビューパネルで、**Delivery**を選択します。
 3. Delivery の下で、**Additional Breakdowns**を探します。
 4. ［Additional Breakdowns］の下で、**Impression Device**（`impression_device`）の横にあるプラス記号がすでに選択されているかどうかを確認します。選択されている場合、このアカウントではオプトインが有効です。
 
-[![広告マネージャーのAdditional Breakdownsパネル。 Time of Day、Impression Device、Frequency Valueのプラスアイコンが表示されている](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)
+<Image align="center" alt="広告マネージャーのAdditional Breakdownsパネル。 Time of Day、Impression Device、Frequency Valueのプラスアイコンが表示されている" src="https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png" />
 
 <div data-zendesk-anchors="check-impression-device-in-ads-manager=ads-manager%E3%81%A7%E3%82%A4%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B h_01KZ63J08GPADE2AH0KV9NNESC=ads-manager%E3%81%A7%E3%82%A4%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B" />

@@ -46,7 +46,7 @@ AppsFlyerのSSOを設定するには、まずPing Identity側で設定を行い�
        <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">https://hq1.appsflyer.com/auth/sso-callback</Anchor>
      * **Entity ID：** <Anchor target="_blank" href="https://hq1.appsflyer.com/">https://hq1.appsflyer.com/</Anchor>を入力します。  
 
-       <Image alt="ping" src="https://files.readme.io/8b265666f05bc4f6ab984151d7d73653b9ea5dcb837898d17e96bf9c392fe638-16063467179921.png" width="419px" />
+       <Image align="center" alt="ping" src="https://files.readme.io/8b265666f05bc4f6ab984151d7d73653b9ea5dcb837898d17e96bf9c392fe638-16063467179921.png" width="419px" />
    * IdP（Ping Identity）から認証を開始する場合は、**Manually Enter**を選択します。
      * **ACS URLs：** AppsFlyerのアカウントIDを使用して、次のリンクを入力します。  
        `https://hq1.appsflyer.com/auth/sso-callback/<Enter your AppsFlyer account ID here>`
@@ -56,7 +56,7 @@ AppsFlyerのSSOを設定するには、まずPing Identity側で設定を行い�
    1. **Download Metadata**をクリックします。
    2. 右上の編集アイコンをクリックし、次の項目を入力します。  
 
-      <Image alt="ping" src="https://files.readme.io/386fab01b9389d88ea0c4870ba2ea8e33d9ab6e27322059be5e46efbf248714b-16063435689233.png" width="487px" />
+      <Image align="center" alt="ping" src="https://files.readme.io/386fab01b9389d88ea0c4870ba2ea8e33d9ab6e27322059be5e46efbf248714b-16063435689233.png" width="487px" />
 
       * **SIGNING KEY：**
         * **Sign Assertion & Response**を選択します。
@@ -71,7 +71,7 @@ AppsFlyerのSSOを設定するには、まずPing Identity側で設定を行い�
 6. **Save**をクリックします。
 7. **Attribute Mappings**タブで編集アイコンをクリックし、**PingOne Mappings**の**Email Address**を選択します。  
 
-   <Image alt="ping-identity" src="https://files.readme.io/b93ac5463868c8f5f7760b60492a30f7ae59c52b766e76ef57fbe42e00f4bf2b-16292200523025.png" width="620px" />
+   <Image align="center" alt="ping-identity" src="https://files.readme.io/b93ac5463868c8f5f7760b60492a30f7ae59c52b766e76ef57fbe42e00f4bf2b-16292200523025.png" width="620px" />
 8. **Save**をクリックします。
 
 </Accordion>
@@ -84,7 +84,7 @@ Ping IdentityのSAMLアプリを作成したら、ユーザーグループを作
 
 1. Ping Identityの管理メニューで**Identity**＞**<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/group">Groups</Anchor>** に移動し、＋をクリックします。  
 
-   <Image alt="ping" src="https://files.readme.io/fcc2a3f035a285d96d7b7c3e83cfeed64e86cb0f0807e6acced75df89bd8dfc4-16292210866705.png" width="216px" />
+   <Image align="center" alt="ping" src="https://files.readme.io/fcc2a3f035a285d96d7b7c3e83cfeed64e86cb0f0807e6acced75df89bd8dfc4-16292210866705.png" width="216px" />
 2. 右側に開いたセクションでグループ名を入力し、**Save**をクリックします。
 3. すべてのユーザーグループについて、手順1～2を繰り返します。
 
@@ -96,7 +96,7 @@ Ping IdentityのSAMLアプリを作成したら、ユーザーグループを作
 
 1. Ping Identityの管理メニューで**Identity**＞<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/user">**Users**</Anchor>に移動し、＋をクリックします。  
 
-   ![ping](https://files.readme.io/802946a62c1df918b82cccc1cf0855ffea8167ed91aa6b0d6bce8973c37b4e75-16292200536081.png)
+   <Image align="center" alt="ping" src="https://files.readme.io/802946a62c1df918b82cccc1cf0855ffea8167ed91aa6b0d6bce8973c37b4e75-16292200536081.png" />
 2. 右側に開いたセクションで、次の設定を行います。
    1. ユーザーの氏名とメールアドレスを入力します。
    2. **Administrator Population**を選択します。
@@ -117,7 +117,7 @@ Ping IdentityのSAMLアプリを作成したら、ユーザーグループを作
 
 1. Ping Identityの管理メニューで**Connections**＞**<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications">Applications</Anchor>** に移動し、作成したアプリを選択します。  
 
-   ![pi-applications.png](https://files.readme.io/6c8545bc5334747d7da6a090ca745c1b00cfedc3f48e59ccc304c814885cd183-16522614384785.png)
+   <Image align="center" alt="pi-applications.png" src="https://files.readme.io/6c8545bc5334747d7da6a090ca745c1b00cfedc3f48e59ccc304c814885cd183-16522614384785.png" />
 2. 右側に開いたセクションで**Access**タブを選択し、編集ボタンをクリックします。
 3. 作成したグループを選択し、**Save**をクリックします。
 
@@ -128,7 +128,7 @@ Ping IdentityのSAMLアプリを作成したら、ユーザーグループを作
 1. Ping Identityの管理メニューで**Connections**＞**<Anchor target="_blank" href="https://console.pingone.com/index.html?env=7ea15898-af17-4469-8a1e-eba50c4675a1#/7ea15898-af17-4469-8a1e-eba50c4675a1/applications">Applications</Anchor>** に移動し、作成したアプリを選択します。
 2. アプリを有効化します。  
 
-   ![pi-appsflyer](https://files.readme.io/24c34f3426ae7b46301316937ae8485464e0b3810808e3bbcc1be843ba34a616-16523020816657.png)
+   <Image align="center" alt="pi-appsflyer" src="https://files.readme.io/24c34f3426ae7b46301316937ae8485464e0b3810808e3bbcc1be843ba34a616-16523020816657.png" />
 
 </Accordion>
 

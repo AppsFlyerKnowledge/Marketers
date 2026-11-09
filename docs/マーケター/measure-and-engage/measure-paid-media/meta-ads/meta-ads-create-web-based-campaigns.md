@@ -175,7 +175,7 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
 
 1. <strong>［遷移先］</strong>の<strong>［WebサイトURL］</strong>欄に、広告の遷移先となるURLを入力します。以下のいずれかのURLを指定してください。
 
-   [![](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)
+   <Image align="center" alt="" src="https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png" />
 
    * **Webランディングページ：** 以下の場合は、ランディングページの使用を推奨します。
 
@@ -195,7 +195,7 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
 2. <strong>［URLパラメータを作成］</strong>をクリックし、URLにパラメータを追加します。ランディングページURL、AF計測リンクのどちらの場合も同様です。
 3. <strong>［カスタムパラメータ］</strong>で、<strong>［パラメータを追加］</strong>をクリックします。
 
-   [![4.png](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)
+   <Image align="center" alt="4.png" src="https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png" />
 4. AppsFlyerのパラメータを、対応するMetaの値にマッピングします。
 
    * 遷移先URLが**ランディングページ、OneLink計測リンク、単一プラットフォーム計測リンク**の場合は、以下のAFパラメータを、対応するMetaの値にマッピングします。
@@ -269,7 +269,7 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
 
 ［トラッキング］セクションで、広告で促進するコンバージョンイベントを選択します（イベント自体は[イベントマネージャ](https://www.facebook.com/business/help/898185560232180?id=1205376682832142)で設定します）。
 
-[![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)
+<Image align="center" alt="" src="https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png" />
 
 <div id="important-1" />
 
@@ -289,7 +289,7 @@ AppsFlyerは、[Smart Script](#set-up-smart-script-crossplatform-landing-page)�
 
 <Accordion title="データ連携の全体の流れ">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. Meta広告のURLには、`pid=metaweb_int`パラメータが含まれます。ユーザーが広告をクリックすると、クリックしたURLに`fbclid`パラメータが自動的に追加されます。
 2. ユーザーは、URLの遷移先である、Smart Scriptを実装したランディングページにリダイレクトされます。

@@ -94,7 +94,7 @@ x-zendesk:
 
 再インストール後にユーザーが実行したアプリ内イベントは、**再インストール後のイベントのアトリビューション**の設定に応じて、オーガニック、ノンオーガニック、または元のインストールに紐付かないオーガニックとして計測されます（以下のフロー図を参照）。たとえば、アプリを再インストールしたユーザーによるアプリ内購入が、該当するアプリ内イベントです。
 
-[![](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg" />
 
 <div id="postreinstall-events-attribution-state" />
 
@@ -157,7 +157,7 @@ x-zendesk:
 
 翌日（1日目）、アプリを再インストールして5ドルの購入を行います。
 
-![Reinstall_1.jpg](https://files.readme.io/7e8eccb3a6873b42a1d8503c0f027386728adb2eecbe457451d2e37c0a7b6774-10225445609873.jpg)
+<Image align="center" alt="Reinstall_1.jpg" src="https://files.readme.io/7e8eccb3a6873b42a1d8503c0f027386728adb2eecbe457451d2e37c0a7b6774-10225445609873.jpg" />
 
 このユーザーは再インストール前にも購入しているため、ユニークユーザー数は増えません。
 

@@ -88,7 +88,7 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 2. **ソースを関連付ける**の下にある**関連付ける**をクリックします。
 3. 関連付けるソースを選択します（または<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources">新しいソースを作成</Anchor>します）。  
 
-   <Image alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="78.23%" />  
+   <Image align="center" alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="78.23%" />
    続いて**保存**をクリックします。
 4. #### <span id="optional-set-custom-data-permissions-by-source"></span>**［任意］：** ソースごとのカスタムデータ権限の設定
 
@@ -171,7 +171,7 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-
 1. Data Collaboration Platform（Data Clean Room）で、**コラボレーション**タブ > 対象のコラボレーションの順に進みます。
 2. 右上の**アクセスを管理**をクリックします。   
 
-   <Image alt="Manage access.png" src="https://files.readme.io/e9cfaf5da2b147f68255d6d442078a3770db4c9873109d1188b9a2b5c0f4e65f-36132545995281.png" width="475px" />
+   <Image align="center" alt="Manage access.png" src="https://files.readme.io/e9cfaf5da2b147f68255d6d442078a3770db4c9873109d1188b9a2b5c0f4e65f-36132545995281.png" width="475px" />
 3. **社内の誰でも（DCP権限を持つユーザー）がコラボレーションへアクセスできるようにするには：**  
 
    **一般アクセス**を<strong>「自社」の全員</strong>に設定します。

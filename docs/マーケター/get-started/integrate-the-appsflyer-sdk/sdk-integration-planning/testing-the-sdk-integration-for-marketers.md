@@ -81,16 +81,16 @@ CTVアプリもテストできます。[CTVのテスト](#ctvのテスト)を参
 
 1. AppsFlyerのサイドメニューから、**［設定］**＞<strong>［SDK実装テスト］</strong>を選択します。
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. <strong>［リアルタイムイベント（Live Events）］</strong>をクリックします。
 
-   [![](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)
+   <Image align="center" alt="" src="https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png" />
 3. <strong>［アプリ］</strong>の一覧で、テストするアプリを選択します。
 4. <strong>［テストデバイス］</strong>の一覧<strong>で、</strong>アプリのテストに使用するデバイスを選択します。テストデバイスがない場合は、<strong>［テストデバイスを追加］</strong>リンクをクリックして登録できます。
 5. <strong>［続行］</strong>をクリックすると、アプリのイベントの記録が始まります。
 6. アプリを起動して操作し、セッションやアプリ内イベントを発生させます。
 
-   [![](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)
+   <Image align="center" alt="" src="https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png" />
 7. イベントの項目をクリックすると、右側のパネルに詳細が表示されます。
 8. イベントの記録を停止する場合は、<strong>［停止］</strong>をクリックします。再開する場合は、<strong>［開始］</strong>を再度クリックします。
 
@@ -102,10 +102,10 @@ CTVアプリもテストできます。[CTVのテスト](#ctvのテスト)を参
 
 1. AppsFlyerのサイドメニューから、**［設定］**＞<strong>［SDK実装テスト］</strong>を選択します。
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. <strong>［非オーガニックインストール（Non-Organic Installs）］</strong>のテストをクリックします。
 
-   [![](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)
+   <Image align="center" alt="" src="https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png" />
 3. <strong>［アプリ］</strong>の一覧で、テストするアプリを選択します。
 4. <strong>［テストデバイス］</strong>の一覧<strong>で、</strong>アプリのテストに使用するデバイスを選択します。テストデバイスがない場合は、<strong>［テストデバイスを追加］</strong>リンクをクリックして登録できます。
 5. テストデバイスに対象アプリがインストールされている場合は、アンインストールします。
@@ -135,10 +135,10 @@ CTVアプリもテストできます。[CTVのテスト](#ctvのテスト)を参
 
 1. AppsFlyerのサイドメニューから、**［設定］**＞<strong>［SDK実装テスト］</strong>を選択します。
 
-   [<Image alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/52396465173905)
+   [<Image align="center" alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/52396465173905)
 2. <strong>［リターゲティング］</strong>をクリックします。
 
-   [![](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)
+   <Image align="center" alt="" src="https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png" />
 3. <strong>［アプリ］</strong>の一覧で、テストするアプリを選択します。
 4. <strong>［テストデバイス］</strong>の一覧<strong>で、</strong>アプリのテストに使用するデバイスを選択します。テストデバイスがない場合は、<strong>［テストデバイスを追加］</strong>リンクをクリックして登録できます。
 5. <strong>［続行］</strong>をクリックし、画面の案内に従って進めます。
@@ -240,7 +240,7 @@ CTVアプリもテストできます。[CTVのテスト](#ctvのテスト)を参
 
    **Test**というメディアソースのテストキャンペーンに紐付いたインストールが表示されます。アプリのダッシュボードにインストールが表示されるまで、最大30分かかります。
 
-   [![Test_Install_Attribution_Link](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)
+   <Image align="center" alt="Test_Install_Attribution_Link" src="https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png" />
 
 > 👍 **Tip**
 >
@@ -312,7 +312,7 @@ OneLinkでは、AndroidとiOSの両方に対応するアトリビューション
 
    アプリのダッシュボードで<strong>［アプリ設定］</strong>をクリックし、<strong>［リターゲティングのアトリビューションを有効にする］</strong>をオンにします。
 
-   ![Set_Reattribution_window](https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png)
+   <Image align="center" alt="Set_Reattribution_window" src="https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png" />
 2. 次のいずれかを実行します。
    * アプリ専用のアトリビューションリンクを作成します。リターゲティング用のパラメータ`is_retargeting=true`と広告IDを必ず含めてください。 GAID、IDFA、IDFVの確認方法は、<Anchor target="_blank" href="/marketers/ja/docs/registering-test-devices">テストデバイスの登録</Anchor>の手順を参照してください。    
      デバイス識別子として、Android用のパラメータ（GAID）を含むアトリビューションリンクの例を以下に示します。 IDFAやIDFVなど、その他のデバイス識別子のパラメータの追加方法は、<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters#ios専用のパラメータ">アトリビューションリンクの構造とパラメータ</Anchor>を参照してください。
@@ -352,7 +352,7 @@ OneLinkでは、AndroidとiOSの両方に対応するアトリビューション
 
    メディアソースとキャンペーンに紐付いたインストールが表示されます。リターゲティングによるインストールがダッシュボードに表示されるまで、最大30分かかります。
 
-   [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+   <Image align="center" alt="Testing_SDK_Reattribution" src="https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png" />
 
 > 👍 **Tip**
 >
@@ -388,7 +388,7 @@ OneLinkでは、AndroidとiOSの両方に対応するアトリビューション
 
    ダッシュボードに、メディアソースとキャンペーンに紐付いたリエンゲージメントが表示されます。リエンゲージメントが表示されるまで、最大30分かかります。
 
-   [![Testing_SDK_Re-engagement](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)
+   <Image align="center" alt="Testing_SDK_Re-engagement" src="https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png" />
 
 **ヒント：** コンバージョンのローデータレポートをダウンロードし、リエンゲージメントが正しいメディアソースに紐付けられているか確認することを推奨します。レポートのダウンロードには、数分かかります。
 
@@ -412,7 +412,7 @@ OneLinkでは、AndroidとiOSの両方に対応するアトリビューション
 
 アプリのダッシュボードに、新しいオーガニックインストールが表示されます。インストールが表示されるまで、最大30分かかります。
 
-[![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+<Image align="center" alt="" src="https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png" />
 
 <div id="testing-ctv" />
 

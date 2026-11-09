@@ -59,7 +59,7 @@ Predictive Audiencesを利用するには、以下の条件を満たしている
 2. **Audiences**の画面を開いて**New predictive audience**をクリックします。
 3. オーディエンス名を入力します。
 
-   [<Image alt="Define goal (values entered).png" src="https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png" width="1666px" />](https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png)
+   <Image align="center" alt="Define goal (values entered).png" src="https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png" width="1666px" />
 4. アプリを選択します。
 5. ターゲットイベントを選択します。
 6. 予測目標を選択します。（**Likely to purchase**（購入する可能性が高いユーザー））
@@ -83,7 +83,7 @@ Predictive Audiencesを利用するには、以下の条件を満たしている
 
 2. 範囲をカスタマイズする場合は、グラフ上の最小値および最大値のマーカーをドラッグします。
 
-   <Image alt="Set probability range Correct version.png" src="https://files.readme.io/8dd9b6368d86e5641e99e7fe66e137b1137adf8fdf7760d597826f7c2d5be745-45796825322385.png" width="1898px" />
+   <Image align="center" alt="Set probability range Correct version.png" src="https://files.readme.io/8dd9b6368d86e5641e99e7fe66e137b1137adf8fdf7760d597826f7c2d5be745-45796825322385.png" width="1898px" />
 
    選択内容に応じて、**推定オーディエンス規模**がリアルタイムで更新されます。
 
@@ -105,7 +105,7 @@ Predictive Audiencesを利用するには、以下の条件を満たしている
 
 1. 既存のパートナー接続を選択するか、新しい接続を追加します。
 
-   [<Image alt="Connect to partners.png" src="https://files.readme.io/3fd67bfe6d3fd760ad1569c8e0b360432f7874d152804cbef9a4925189837e0c-45796884976401.png" width="1633px" />](https://files.readme.io/3fd67bfe6d3fd760ad1569c8e0b360432f7874d152804cbef9a4925189837e0c-45796884976401.png)
+   <Image align="center" alt="Connect to partners.png" src="https://files.readme.io/3fd67bfe6d3fd760ad1569c8e0b360432f7874d152804cbef9a4925189837e0c-45796884976401.png" width="1633px" />
 2. 右側の**Summary**で設定内容を確認します。
 3. **接続・完了**をクリックします。
 

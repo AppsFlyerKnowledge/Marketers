@@ -47,7 +47,7 @@ x-zendesk:
 
 <Accordion title="インストールと再インストール">
 
-![](https://files.readme.io/8b9f3c442f98c056069b4449c7e5115cbea828a64ace3a98e0090fb0d8d1d8d6-27455116159889.png)
+<Image align="center" alt="" src="https://files.readme.io/8b9f3c442f98c056069b4449c7e5115cbea828a64ace3a98e0090fb0d8d1d8d6-27455116159889.png" />
 
 インストールと再インストールは、同じデバイスID／AppsFlyer IDを持ちます。そのため、ユニークユーザーは1人として計上されます。両方のアプリ内イベントは、初回インストールと同じユニークユーザーに紐付けられます。
 
@@ -62,7 +62,7 @@ x-zendesk:
 
 <Accordion title="インストールとリアトリビューション">
 
-![](https://files.readme.io/40420c5ea201ba7cf13d03e5968d20c2fffaa31b74c47ae36cd917cccbaae353-27453973190289.png)
+<Image align="center" alt="" src="https://files.readme.io/40420c5ea201ba7cf13d03e5968d20c2fffaa31b74c47ae36cd917cccbaae353-27453973190289.png" />
 
 インストールとリアトリビューションは、同じデバイスIDを持ちます（AppsFlyer IDも同じです）。ただし、この場合は`is_retargeting=true`も考慮されるため、リアトリビューション後のイベントは、追加のユニークユーザーとして計上されます。そのため、ユニークユーザーは2人として計上されます。
 
@@ -76,7 +76,7 @@ x-zendesk:
 
 <Accordion title="インストールとリエンゲージメント">
 
-![](https://files.readme.io/a49b8278816429295138e6c6a154194f423512ba2b7ba78fd756d346430dbd12-51444293138065.png)
+<Image align="center" alt="" src="https://files.readme.io/a49b8278816429295138e6c6a154194f423512ba2b7ba78fd756d346430dbd12-51444293138065.png" />
 
 インストールとリエンゲージメントは、同じデバイスID／AppsFlyer IDを持ちます。ただし、リアトリビューションと同様に、`is_retargeting=true`も考慮されるため、リエンゲージメント後のイベントは、追加のユニークユーザーとして計上されます。そのため、ユニークユーザーは2人として計上されます。
 
@@ -90,7 +90,7 @@ x-zendesk:
 
 <Accordion title="元のインストールに紐付かないアプリ内イベント">
 
-![](https://files.readme.io/94bf078bcf4ba26a1dc4ca323a1b4a7543cfb4e3fc8b780d0d29713c4266aa95-27455116170001.png)
+<Image align="center" alt="" src="https://files.readme.io/94bf078bcf4ba26a1dc4ca323a1b4a7543cfb4e3fc8b780d0d29713c4266aa95-27455116170001.png" />
 
 再インストール後のアプリ内イベントが、何らかの理由で初回インストールに紐付かない場合、ユニークユーザー数には一切含まれません。再インストール時にデバイスIDを取得できない場合などに発生しますが、**他の理由でも発生する場合があります**。<Anchor target="_blank" href="/marketers/ja/docs/measure-reinstalls#unattributed-organic-inapps">詳細を見る</Anchor>
 

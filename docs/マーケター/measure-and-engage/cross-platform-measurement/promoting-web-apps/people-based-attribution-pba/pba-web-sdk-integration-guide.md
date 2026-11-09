@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：概要**：Web SDKを使用してAppsFlyerをWebサイトに実装し、サイトトラフィック、イベント、コンバージョン、収益などを計測しましょう。
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="web-sdk-user-and-integration-guide" />
 
@@ -263,7 +263,7 @@ x-zendesk:
 1. <Anchor target="_blank" href="https://developers.google.com/tag-manager/quickstart">Googleタグマネージャーに移動してください。</Anchor>
 2. AppsFlyer Web SDK用に、新しいタグを作成してください。
 
-   [![](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)
+   <Image align="center" alt="" src="https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png" />
 3. **カスタム HTML** のタグタイプを選択してください。
 4. タグに名前を付けます。
 5. 次のいずれかを実行してください：
@@ -278,7 +278,7 @@ x-zendesk:
    * **すべてのページにトリガーを追加するには：**
      1. [**トリガーの追加**] をクリックします。
 
-        [![gtm-af-tag-sdk-trigger.png](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)
+        <Image align="center" alt="gtm-af-tag-sdk-trigger.png" src="https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png" />
      2. [**すべてのページ**] を選択してください。
      3. **保存**をクリックしてください。
      4. タグ名を入力し、**保存**をクリックしてください。  
@@ -288,7 +288,7 @@ x-zendesk:
      2. GTMのメイン画面で、**トリガーを選択し、**［**New**］（新規作成）をクリックしてください。
      3. ペンのアイコンをクリックしてください。
      4. **［Page View］**（ページビュー）のトリガータイプを選択してください。  
-        [![PBAselectTrigger_us-en.jpg](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)
+        <Image align="center" alt="PBAselectTrigger_us-en.jpg" src="https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg" />
      5. [**Some Page Views**]（一部ページビュー）を選択します。
      6. 必要に応じてページとトリガーの条件を設定してください。
      7. **保存**をクリックしてください。
@@ -298,7 +298,7 @@ x-zendesk:
         3. トリガーパネルで、ペンのアイコンをクリックしてください。
         4. 前に作成したページビュートリガーを選択してください。
 
-           [![](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)
+           <Image align="center" alt="" src="https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png" />
         5. **保存**をクリックしてください。
 
 </Tab>
@@ -314,7 +314,7 @@ x-zendesk:
 
 <Accordion title="Adobe Experience Cloudでプロパティを作成してください。">
 
-![adobe_create_property.png](https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png)
+<Image align="center" alt="adobe_create_property.png" src="https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png" />
 
 1. **Adobe Experience Cloud** > **Launch** へ移動
 2. [**Adobe Experience Cloud Launch**] の下にある [**Go to Launch**] をクリックします。
@@ -330,7 +330,7 @@ x-zendesk:
 
 <Accordion title="Adobe LaunchのプロパティにWeb SDKを追加してください。">
 
-<Image alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
+<Image align="center" alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
 
 1. **My web property** ページで、[**Rules**] タブを選択します。
 2. ルールに名前を付けます。使用することを推奨し、 **Load web SDK** 。
@@ -349,7 +349,7 @@ x-zendesk:
 
 <Accordion title="Adobe LaunchのタグをWebサイトに追加してください。">
 
-[![adobe_tag.png](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)
+<Image align="center" alt="adobe_tag.png" src="https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png" />
 
 1. [**My web property**] ページで、[**Environments**] タブを選択します。
 2. 公開する環境（開発または本番）を含む行を見つけます。
@@ -366,7 +366,7 @@ x-zendesk:
 
 <Accordion title="Adobe Launch環境を公開してください。">
 
-[![adobe_publishing_env.png](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)
+<Image align="center" alt="adobe_publishing_env.png" src="https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png" />
 
 1. [**My web property**] ページで、[**Publishing**] タブに移動します。
 2. [**Development**]セクションの、[**Add New Library**] をクリックします。
@@ -404,7 +404,7 @@ x-zendesk:
 1. ウェブサイトに移動してください。
 2. デベロッパーコンソールを開きます。
 
-   ![WebSDK_us-en.jpg](https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg)
+   <Image align="center" alt="WebSDK_us-en.jpg" src="https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg" />
 3. (A)［**Network**］ タブへ移動してください。
 4. ページを更新（リロード）します。
 5. (B) **wa.** appsflyer で絞り込みます。
@@ -426,7 +426,7 @@ x-zendesk:
 
 <Accordion title="オプトイン/オプトアウトのイベント送信">
 
-![5578-VistiorPrivacyOptIn_us-en.png](https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png)
+<Image align="center" alt="5578-VistiorPrivacyOptIn_us-en.png" src="https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png" />
 
 Web SDKは訪問者のイベントデータをAppsFlyerに送信します。このセクションでは、イベント送信の制御、停止、開始の方法について説明します。
 
@@ -705,7 +705,7 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 4. イベントを発火させます。
 5. message で絞り込んでください。
 
-   ![pba_af_event.png](https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png)
+   <Image align="center" alt="pba_af_event.png" src="https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png" />
 6. wa.appsflyer.com で始まるネットワークリクエストを探してください（以下スクリーンショットを参照してください）。
 7. 以下を確認してください。
    1. ステータスコードが200であること
@@ -840,7 +840,7 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
    上記のコードにより、GTMがロードされ、Web SDKもロードします。そのほかに2つのアクションがこのスクリプトで実行されます。1つ目は、ユーザー情報をサーバーから取得します。もう1つは、データをローカルストレージに設定します。GTMはfunctionとlocalStorageの両方にアクセスでき、GTMを使用してfunctionを呼び出し、localStorageにアクセスすることも可能です。
 2. サブスクリプションを計測するために、サンキューページがロード後に発火するタグを追加してください。。
 
-   [![](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 3. タグに名前をつけ、タグタイプは **Custom HTML** を選択してください。
 4. 次のコードを **Custom HTML**に設定します。
 
@@ -849,13 +849,13 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
    AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'subscription'}); </script>
    ```
 
-   ![gtm_tag_after_subscribe.png](https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png)
+   <Image align="center" alt="gtm_tag_after_subscribe.png" src="https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png" />
 5. **Advanced Settings**の中の**Tag Sequencing**を開き、タグが発火した後にのみコンバージョンタグが発火するように設定してください。
 
-   [![](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. コンバージョンタグを発火させるために、トリガーを設定してください。この例では、サンキューページが読み込まれた時にトリガーが発火します。
 
-   [![](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 **ユーザーのウェブサイト上の行動を計測**
 
@@ -902,13 +902,13 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
    上記のコードは、GTMを使ってWeb SDKをロードします。残りのHTMLはショッピングカートページの内容を単にコピーしているだけです。**Checkout**ボタンの箇所に、id='checkout'の記載があることに注意してください。GTMでボタンのクリックを取得したい場合にはこの設定が必須となります。
 2. GTMで、**Variables** をクリックし、**Configure** をクリックして、**Built-In Variables**のリストにある**Click Element** をチェックしてください。  
 
-   [![gtm-create-variable.png](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)
+   <Image align="center" alt="gtm-create-variable.png" src="https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png" />
 3. 新しい変数 (variable) を作成して、名前をつけてください。タイプは**All Elements(全ての要素)** を選択します。  
 
-   [![gtm-checkout-all-elements.png](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)
+   <Image align="center" alt="gtm-checkout-all-elements.png" src="https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png" />
 4. トリガー設定で **Some Clicks** を選択し、#checkout の **CSS Selector に一致する** **Click Element** を選択します。  
 
-   [![gtm-checkout-click-elememt.png](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)
+   <Image align="center" alt="gtm-checkout-click-elememt.png" src="https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png" />
 5. チェックアウトアクションに対して新しいタグを作成してください。タイプはカスタムHTML、トリガーはチェックアウトトリガーにしてください。
 
    ```html
@@ -916,7 +916,7 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
     AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'}); </script>
    ```
 
-   ![gtm-checkout-tag.png](https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png)
+   <Image align="center" alt="gtm-checkout-tag.png" src="https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png" />
 
 </Tab>
 </Tabs>
@@ -1111,10 +1111,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 5. **Advanced Settings** を展開し、その下の **Tag Sequencing** を開いて、タグ実行後にコンバージョンが発火するよう設定されていることを確認してください。
 
-   [![](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. コンバージョンタグをいつ発火させるかを示すため、コンバージョンタグ用のトリガーを設定します（以下の例では、「Thank you」ページの読み込み時 に発火します）。
 
-   [![](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 </Tab>
 </Tabs>

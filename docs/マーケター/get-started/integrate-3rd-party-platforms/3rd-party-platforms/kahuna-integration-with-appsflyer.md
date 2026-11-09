@@ -115,11 +115,11 @@ KahunaとAppsFlyerの接続には、固有のシークレットキーを使用�
 
 2. 管理画面の右上にあるユーザーアイコンをクリックし、**Settings**を選択します。
 
-[![](https://files.readme.io/4962454c4dd428c69e90d4ebcfa20304dc0ea57c7d58a1368c9a9369ba3e563a-207206166.png)](https://files.readme.io/4962454c4dd428c69e90d4ebcfa20304dc0ea57c7d58a1368c9a9369ba3e563a-207206166.png)
+<Image align="center" alt="" src="https://files.readme.io/4962454c4dd428c69e90d4ebcfa20304dc0ea57c7d58a1368c9a9369ba3e563a-207206166.png" />
 
 3. Kahunaのシークレットキーをコピーします。
 
-[![](https://files.readme.io/73d24826e6c55636dafbc22766910fea12fbe7a58c49079c800d5056be45352a-207229823.png)](https://files.readme.io/73d24826e6c55636dafbc22766910fea12fbe7a58c49079c800d5056be45352a-207229823.png)
+<Image align="center" alt="" src="https://files.readme.io/73d24826e6c55636dafbc22766910fea12fbe7a58c49079c800d5056be45352a-207229823.png" />
 
 4. **APIs & Integrations**を選択します。このページでパラメータを確認できます。
 
@@ -135,7 +135,7 @@ KahunaとAppsFlyerの接続には、固有のシークレットキーを使用�
 
 AppsFlyerは、ユーザーのインストール後にKahunaへポストバックを自動送信できます。このセクションで、ポストバックの送信を設定します。
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 アプリをダウンロードしたすべてのユーザーのポストバックをKahunaに送信するには、［**すべてのパートナーまたはオーガニックのイベント**］を選択します。
 
@@ -188,15 +188,15 @@ Kahunaでは、権限の設定は利用できません。
 
 インストールイベントは、KahunaのメインダッシュボードでNewbiesとして確認できます。
 
-[![](https://files.readme.io/ebbb7f265e37ead80dd77a9956b9629ce07eeb2fcc9b283ad7b6cc927fe10758-207230483.png)](https://files.readme.io/ebbb7f265e37ead80dd77a9956b9629ce07eeb2fcc9b283ad7b6cc927fe10758-207230483.png)
+<Image align="center" alt="" src="https://files.readme.io/ebbb7f265e37ead80dd77a9956b9629ce07eeb2fcc9b283ad7b6cc927fe10758-207230483.png" />
 
 特定のユーザーを検索するか、左側のナビゲーションからTop Peopleに移動します。
 
-[![](https://files.readme.io/ea6ae8494f600bb8a9b9b0af3e36a976e65d72b64052da3e7399f9a9b0c9458c-207230503.png)](https://files.readme.io/ea6ae8494f600bb8a9b9b0af3e36a976e65d72b64052da3e7399f9a9b0c9458c-207230503.png)
+<Image align="center" alt="" src="https://files.readme.io/ea6ae8494f600bb8a9b9b0af3e36a976e65d72b64052da3e7399f9a9b0c9458c-207230503.png" />
 
 ユーザーを選択するとMini Profileが開き、Top Eventsセクションにインストールイベント「af\_install」が表示されます。
 
-[![](https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png)](https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png)
+<Image align="center" alt="" src="https://files.readme.io/3e0a99f178cc1a9ab18886a576b4ba56878fecb6dbd0866926730fb32b65bc59-207230563.png" />
 
 <div id="testing-with-sandbox" />
 
@@ -206,7 +206,7 @@ Kahunaでは、権限の設定は利用できません。
 
 1. AppsFlyerでKahunaを設定する際に、Stagingのテキストボックスに「s」と入力してください。
 
-[![](https://files.readme.io/b69fc390ed7f1303ee8ba6dd1345d2c76b5b4c22b4b0b6ec0957a108d709247b-360002217229.png)](https://files.readme.io/b69fc390ed7f1303ee8ba6dd1345d2c76b5b4c22b4b0b6ec0957a108d709247b-360002217229.png)
+<Image align="center" alt="" src="https://files.readme.io/b69fc390ed7f1303ee8ba6dd1345d2c76b5b4c22b4b0b6ec0957a108d709247b-360002217229.png" />
 
 2. 前述の手順に従い、AppsFlyer SDKとKahuna SDKを連携するコードをアプリに追加したことを確認します。
 
@@ -220,12 +220,12 @@ Kahunaでは、権限の設定は利用できません。
 
 7. URLにアクセスすると、以下のような画面が表示される場合があります。
 
-[<Image alt="" src="https://files.readme.io/8b16b6d84f0244db3510e4376bf5fc51b6a737e13df89da82e951e1bda90711a-207230963.png" width="486px" />](https://files.readme.io/8b16b6d84f0244db3510e4376bf5fc51b6a737e13df89da82e951e1bda90711a-207230963.png)
+<Image align="center" alt="" src="https://files.readme.io/8b16b6d84f0244db3510e4376bf5fc51b6a737e13df89da82e951e1bda90711a-207230963.png" width="486px" />
 
 8. デバイスにアプリをインストールします。
 
 9. Kahuna管理画面でユーザーを検索します。Kahunaのデバッグを有効にしてログを確認すると、そのユーザーのKahuna固有のデバイスIDである 「dev\_id」を取得できます。また、アプリでログインが必要で、認証情報をKahunaに渡している場合は、その情報でも検索できます。ユーザーが見つかったら、そのユーザーの「af\_install」イベントが表示されていることを確認します。
 
-[<Image alt="" src="https://files.readme.io/b365a27e7638a6a87e6a5b46a67d329956f6a678b234bd1fd802acaeeceaaeb2-207207606.png" width="629px" />](https://files.readme.io/b365a27e7638a6a87e6a5b46a67d329956f6a678b234bd1fd802acaeeceaaeb2-207207606.png)
+<Image align="center" alt="" src="https://files.readme.io/b365a27e7638a6a87e6a5b46a67d329956f6a678b234bd1fd802acaeeceaaeb2-207207606.png" width="629px" />
 
 <div data-zendesk-anchors="h_01H9FKAF22A3FTGC7CSE5K0CY4=%E9%87%8D%E8%A6%81 h_01H9FKAF22W59PMYJRFW8HKBQ7=%E9%87%8D%E8%A6%81%E3%81%AA%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85 setting-up-kahuna=kahuna%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9FKAF222ES9240V0THQQ5X0=kahuna%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9FKAF227SZWFTCP9P1B7HEK=integration-tab activate-partner=%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%92%E6%9C%89%E5%8A%B9%E5%8C%96 h_01H9FKAF22EFF1F8D2QR1F38PV=%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%92%E6%9C%89%E5%8A%B9%E5%8C%96 general-settings=%E4%B8%80%E8%88%AC%E8%A8%AD%E5%AE%9A h_01H9FKAF221EXQYBJGS8GFRF4S=%E4%B8%80%E8%88%AC%E8%A8%AD%E5%AE%9A obtaining-the-kahuna-secret-key=kahuna%E3%81%AE%E3%82%B7%E3%83%BC%E3%82%AF%E3%83%AC%E3%83%83%E3%83%88%E3%82%AD%E3%83%BC%E3%81%AE%E5%8F%96%E5%BE%97 h_01H9FKAF22XMJW7A89MBD0J276=kahuna%E3%81%AE%E3%82%B7%E3%83%BC%E3%82%AF%E3%83%AC%E3%83%83%E3%83%88%E3%82%AD%E3%83%BC%E3%81%AE%E5%8F%96%E5%BE%97 default-postbacks=%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%AF h_01H9FKAF2258JVR3XS6P7TT8H3=%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%AF h_01H9FKAF22DMF1NNJRY3SJB5XX=attribution-link-tab h_01H9FKAF22KPY1ABFJN63XZ5CM=cost-tab h_01H9FKAF22KRDEFTVBR954JSJT=ad-revenue-tab h_01H9FKAF22HJPHZZM59TQ7RRFM=permissions-tab view-user-attribution-data-in-kahuna=kahuna%E3%81%A7%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B h_01H9FKAF22A5910NXRFDGC1JTG=kahuna%E3%81%A7%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B testing-with-sandbox=%E3%82%B5%E3%83%B3%E3%83%89%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%E3%81%A7%E3%81%AE%E3%83%86%E3%82%B9%E3%83%88 h_01H9FKAF22KW2J6H2B6F9AMDP9=%E3%82%B5%E3%83%B3%E3%83%89%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%E3%81%A7%E3%81%AE%E3%83%86%E3%82%B9%E3%83%88" />

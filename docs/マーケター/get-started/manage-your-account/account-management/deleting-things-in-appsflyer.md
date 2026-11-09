@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：** 広告主が、アプリを削除して計測を停止する方法、メディアソースを削除する方法、ユーザー関連データを削除する方法を説明します。
 
-<Image alt="shutterstock_699498934.jpg" src="https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg" width="363px" />
+<Image align="center" alt="shutterstock_699498934.jpg" src="https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg" width="363px" />
 
 <div id="delete-user-history" />
 

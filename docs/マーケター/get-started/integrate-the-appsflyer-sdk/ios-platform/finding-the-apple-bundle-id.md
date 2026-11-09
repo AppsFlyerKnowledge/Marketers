@@ -35,4 +35,4 @@ AppleのバンドルIDは、iOSアプリを一意に識別するためのIDで�
 3. <strong>［一般］</strong> > ［アプリ情報］に移動します。  
    ［バンドルID］が表示されます。  
 
-   ![iTunes-connect-app-information-en-us.png](https://files.readme.io/236967e7c254e40c3a76565a6da8cc5599e86be1c16e568c7c5b31072b570bd2-360011702958.png)
+   <Image align="center" alt="iTunes-connect-app-information-en-us.png" src="https://files.readme.io/236967e7c254e40c3a76565a6da8cc5599e86be1c16e568c7c5b31072b570bd2-360011702958.png" />

@@ -90,7 +90,7 @@ DCRへの受信接続と送信接続には次の2種類のクラウドサービ�
    1. **左側**のパネルで、プロジェクトIDの右側にある**アクション表示**ボタン<Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> をクリックします。
    2. **Create dataset**を選択します。
 
-      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
+      <Image align="center" alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. 開いた**右側**のパネルで、データセットの名前を入力します。必要に応じて他のオプションを選択します。
       * 文字、数字、アンダースコア (\_) のみを使用して任意の名前を使用できます。
         * **推奨：** データセットが受信接続に使用されていることを示す名前にします。
@@ -104,7 +104,7 @@ DCRへの受信接続と送信接続には次の2種類のクラウドサービ�
       `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
    5. **Assign roles**で **BigQuery> BigQuery Data Viewer**を選択します。
 
-      <Image alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
+      <Image align="center" alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
    6. **Save**をクリックしてください。
    7. **CLOSE**をクリックして、右側のパネルを閉じます。
 
@@ -123,10 +123,10 @@ DCRへの受信接続と送信接続には次の2種類のクラウドサービ�
 3. 左パネルにある **Private Sharing**を選択します。
 4. 開いたページで、**Shared By Your Account**タブを選択します。
 
-   <Image alt="snowflake_private_sharing.png" src="https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png" width="609px" />
+   <Image align="center" alt="snowflake_private_sharing.png" src="https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png" width="609px" />
 5. **Share**ボタンをクリックしてください。 開いたリストから、**Create a Direct Share**を選択します。
 
-   <Image alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
+   <Image align="center" alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
 6. DCRと共有するテーブルやビューを選択し、**Done**をクリックします。
 7. 必要に応じて、 **Secure Share Identifier**を変更し、オプションの説明を追加します。
 8. **Add accounts in your region by name**項目に、Snowflakeアカウントの地域に応じて次のいずれかのAppsFlyer Snowflakeアカウントを入力します：
@@ -246,7 +246,7 @@ DCRへの受信接続と送信接続には次の2種類のクラウドサービ�
       `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
    5. **役割**リストから、**クラウドストレージ** > **ストレージ管理者**を選択します。  
 
-      ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
+      <Image align="center" alt="dcr_gcs_permissions.png" src="https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png" />
    6. **Save**をクリックしてください。
 
 </Accordion>
@@ -279,7 +279,7 @@ DCRレポートは、（受信接続に同じサービスを使用するかど�
    1. **左側**のパネルで、プロジェクトIDの右側にある**アクション表示**ボタン<Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> をクリックします。
    2. **Create dataset**を選択します。
 
-      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
+      <Image align="center" alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. 開いた**右側**のパネルで、データセットの名前を入力します。必要に応じて他のオプションを選択します。
       * 文字、数字、アンダースコア (\_) のみを使用して任意の名前を使用できます。
         * **推奨：** データセットが送信接続に使用されていることを示す名前にします。
@@ -293,7 +293,7 @@ DCRレポートは、（受信接続に同じサービスを使用するかど�
       `datalocker-bq-admin-prod@datalocker-bq-prod.iam.gserviceaccount.com`
    5. **Assign roles**で **BigQuery > BigQuery Data Editor**を選択します。
 
-      <Image alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
+      <Image align="center" alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
    6. **Save**をクリックしてください。
    7. **CLOSE**をクリックして、右側のパネルを閉じます。
 
@@ -434,7 +434,7 @@ DCRレポートは、（受信接続に同じサービスを使用するかど�
    `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
 7. **役割**リストから、**クラウドストレージ** > **ストレージ管理者**を選択します。  
 
-   ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
+   <Image align="center" alt="dcr_gcs_permissions.png" src="https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png" />
 8. **Save**をクリックしてください。
 
 </Accordion>

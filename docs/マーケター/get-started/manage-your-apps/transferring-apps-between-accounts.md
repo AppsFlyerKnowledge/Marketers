@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **概要：** この記事で説明する手順に沿って、AppsFlyerアカウント間でアプリを移管します（移管先と移管元のアカウントアドミンが実行する必要があります）。
 
-![5638-Transfering-an-app-NEW1.gif](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
+<Image align="center" alt="5638-Transfering-an-app-NEW1.gif" src="https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif" />
 
 <div id="app-transfer-between-accounts" />
 
@@ -105,7 +105,7 @@ AppsFlyerアカウント間でアプリを移管するには、送信側およ�
 1. 送信側のアドミンに連絡し、[アプリ移管の範囲](/docs/transferring-apps-between-accounts#app-transfer-scope)を確認し同意するよう依頼してください。双方が、どの設定が転送され、そのための準備が正しくできているかを確認してください。
 2. 送信者が移管リクエストを開始したことを通知するメールが届きます。
 3. **My Apps**ページにて、**リクエストを確認**をクリックしてください。リクエストには1つまたは複数のアプリが含まれます。  
-   [![App_transfer_receiver_side.JPG](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)
+   <Image align="center" alt="App_transfer_receiver_side.JPG" src="https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg" />
 4. 各リクエストを確認し、承認または拒否してください。
 5. 利用規約を読み、同意できる場合は署名してください。
 6. リクエストが受け入れられたことを通知するメールが、受信側と送信側に送信されます。

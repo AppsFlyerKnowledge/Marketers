@@ -37,7 +37,7 @@ AppsFlyerでGoogle Ads連携を設定すると、Google Adsキャンペーンか
 
 ## 高度なデータ共有を使用したGoogle Adsの計測フロー
 
-![Google ads attribution flow.png](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)
+<Image align="center" alt="Google ads attribution flow.png" src="https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png" />
 
 1. AppsFlyerは、これまで通りインストールイベントをGoogleに送信します。［**高度なデータ共有**］がオンの場合、デバイスIDの有無にかかわらずインストールが送信されます。オフの場合は、**デバイスIDがある場合にのみ**インストールが送信されます。
 2. Googleは、利用可能なデバイスIDによる決定論的な照合（IDマッチング）か、デバイスIDがない場合は確率論的モデリングを使った非決定論的な照合により、インストールの成果主張を試みます。
@@ -93,7 +93,7 @@ AppsFlyerを通じてiOSでのGoogle PMODのインストール成果の主張に
 5. 前の手順でコピーした**リンクID**を貼り付けます。
 6. ［<Anchor target="_blank" href="/marketers/ja/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**EU域外のユーザー**</Anchor>］をオンにするかどうかを決めます。
 
-   <Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
+   <Image align="center" alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
 7. ［**高度なデータ共有**］をオン**またはオフ**にします。オンの場合、広告識別子（IDFAまたはGoogle AdsID）を利用できないデバイスも含め、すべてのデバイスについて、デバイスレベルの識別子を含むポストバックとイベントがGoogle Adsに送信されます。
 
    さらに、［**高度なデータ共有**］がオンの場合、AppsFlyerはこれらのイベントの成果を計測します。オフの場合は、IDFAがあるデバイスのポストバックとイベントのみが送信され、成果として計測されます。
@@ -105,7 +105,7 @@ AppsFlyerを通じてiOSでのGoogle PMODのインストール成果の主張に
    4. ルックバック期間の単位（時間または日）を選択し、スライダーを希望の値に設定します。ビュースルールックバック期間はGoogle Adsに合わせて1日に設定することをお勧めします。  
       **注意：** GoogleはiOSアプリのインプレッションに基づく成果の主張を送信しません。インストールのビュースルー計測のトグルとルックバック期間スライダーは、iOSアプリには無効です。
 
-      ![](https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png)
+      <Image align="center" alt="" src="https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png" />
 9. 新規連携では、［**再インストールの計測**］トグルがデフォルトでオンになっています。再インストールの計測では、リアトリビューション期間中にアプリを再インストールしたユーザーを計測できます。
 
    再インストールの計測にはインストール計測の設定値が使用されるため、ルックバック期間を個別に設定する必要はありません。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/measure-reinstalls">再インストールの計測</Anchor>を参照してください。
@@ -125,12 +125,12 @@ AppsFlyerを通じてiOSでのGoogle PMODのインストール成果の主張に
     5. ［**リエンゲージメント：ビュースルールックバック期間**］を設定します。これは広告表示からの期間で、インプレッションをリエンゲージメントとして計測するには、この期間内にアプリが起動される必要があります。時間または日数でルックバック期間を選択し、スライダーを希望の値に設定します。
     6. **リエンゲージメント期間**を設定します。これは、クリックまたはインプレッション後にユーザーのアプリ内イベントがリターゲティングメディアソースにアトリビューションされる期間です。値は日数（1-90）、時間（最大23）、またはライフタイムで設定できます。デフォルトは30日です。
 
-       ![](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)
+       <Image align="center" alt="" src="https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png" />
 11. <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2402582?hl=en">Google AdsのiOSアプリアセット</Anchor>（旧称：アプリ表示オプション）を使用している場合：  
     広告リンク経由の成果を計測するには、［<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#attribution-link-tab">**計測リンク**</Anchor>］タブでAppsFlyerの単一プラットフォーム向け計測リンクを作成し、Google Adsのアプリアセットに挿入します。  
     **注意：** 静的なキャンペーン名を必ず追加してください（必須）。
 
-    ![](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)
+    <Image align="center" alt="" src="https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png" />
 12. **コスト**タブに移動します。
 13. ［**コスト、クリック、インプレッションデータを取得**］をオンにします。
 14. **Google Adsを接続**ボタンをクリックして、Googleアカウントにログインし、AppsFlyerですべてのGoogle Adsのキャンペーンコストを取得します。 <Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-cost-and-ad-revenue">詳細はこちら</Anchor>
@@ -182,7 +182,7 @@ AppsFlyerを通じてiOSでのGoogle PMODのインストール成果の主張に
 
 **（AppsFlyerアカウントに所属するすべてのメンバー）**
 
-![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png" />
 
 1. **連携**タブに移動し、**アプリ内イベントポストバック**セクションまでスクロールしてください。
 

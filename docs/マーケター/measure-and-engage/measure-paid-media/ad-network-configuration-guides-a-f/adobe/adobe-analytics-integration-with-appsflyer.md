@@ -161,7 +161,7 @@ let customerUserID = AppsFlyerLib.shared().customerUserIDp
    **注： パートナーとの作業中はトグルをオン<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">（アクティブ化）</Anchor>にしておいてください。**
 5. **Adobe Analytics SDK**から、**ADBMobileConfig.XML** ファイルの一部として、**Report\_Suite\_ID**（青でハイライト）と **Adobe\_Analytic\_server\_URL**（緑でハイライト）をコピーし、AppsFlyer の Adobe Analytics 連携画面の各項目に貼り付けてください。  
 
-   ![](https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png)
+   <Image align="center" alt="" src="https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png" />
 6. **連携を保存**をクリックしてください。
 
 保存すると、AppsFlyerは、オーガニックおよび非オーガニックインストールを計測したたびに、Adobe Analyticsに以下のデータを送信します：

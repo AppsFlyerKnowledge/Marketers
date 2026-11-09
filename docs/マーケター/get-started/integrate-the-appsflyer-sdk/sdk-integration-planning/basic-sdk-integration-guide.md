@@ -44,7 +44,7 @@ AppsFlyerでは、Devキーを使用してアカウントを一意に識別し�
 1. AppsFlyerのサイドメニューで、**設定** > **アプリ設定** > **Devキー管理**を選択します。
 2. Devキーをコピーし、モバイルアプリの開発者に共有します。
 
-   ![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
+   <Image align="center" alt="" src="https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png" />
 
 <div id="provide-the-dev-key-to-your-developer" />
 
@@ -305,7 +305,7 @@ IDFAを使用してアトリビューションを行う場合は、IDFAを**初�
 
 `waitForATTUserAuthorization`を使用すると、AppsFlyerサーバーへのデータ送信を保留し、SDKがATTのステータスの確定を待つ時間を設定できます。
 
-![](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)
+<Image align="center" alt="" src="https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png" />
 
 ユーザーがアプリを起動すると、ATTのステータスは**notDetermined**です。 `waitForATTUserAuthorization`のタイムアウト時間中、SDKは起動イベントと、その後に発生するアプリ内イベントをメモリ上のキューに保存します。これは、[オフラインイベントを記録する仕組み](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#offline-in-app-events)と同様です。
 

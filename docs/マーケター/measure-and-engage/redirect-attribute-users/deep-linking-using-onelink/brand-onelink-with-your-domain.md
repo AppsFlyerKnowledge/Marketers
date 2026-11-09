@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **At a glance:** OneLinkリンクを使用する広告主は、自社ドメインを使用してリンクをブランド化できます。これにより、キャンペーンのパフォーマンス向上とブランド露出の拡大が期待できます。
 
-![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
+<Image align="center" alt="Branded_1__3_.jpg" src="https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png" />
 
 <div id="branded-domains" />
 
@@ -76,7 +76,7 @@ x-zendesk:
 
 **AppsFlyerサーバーを参照するブランドドメイン**
 
-![AppsFlyerサーバーを参照するブランドドメインの図](https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png)
+<Image align="center" alt="AppsFlyerサーバーを参照するブランドドメインの図" src="https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png" />
 
 **始める前に：**
 
@@ -154,15 +154,15 @@ AppsFlyerが管理するSSLは、デフォルトかつ多くのお客様に推�
 1. [ブランドドメインを作成します](/docs/brand-onelink-with-your-domain#ブランドドメインの設定)。
 2. AppsFlyerで、**エンゲージメント** > **ブランドドメイン**の順に移動し、対象のドメインにカーソルを合わせて「カスタムSSL証明書」アイコンを選択します。
 
-   <Image alt="SSL certificate icon Newest minimal.png" src="https://files.readme.io/8b22a41fd755a3f36e8eaf4a869b107661894d81504bbfb44e1fc728b9b06751-45231876708497.png" width="1044px" />
+   <Image align="center" alt="SSL certificate icon Newest minimal.png" src="https://files.readme.io/8b22a41fd755a3f36e8eaf4a869b107661894d81504bbfb44e1fc728b9b06751-45231876708497.png" width="1044px" />
 3. 証明書情報のフォームに必要事項を入力します。
 
-   <Image alt="fill in form to generate CSR file.png" src="https://files.readme.io/4327a4da0cbcc6243c9bbdbec21fe4f91d7fe701ccbffca99e629a5eadd248e8-45231876709649.png" width="722px" />
+   <Image align="center" alt="fill in form to generate CSR file.png" src="https://files.readme.io/4327a4da0cbcc6243c9bbdbec21fe4f91d7fe701ccbffca99e629a5eadd248e8-45231876709649.png" width="722px" />
 4. **CSRをダウンロード**をクリックし、入力した内容に基づくCSRファイルをダウンロードします。 <Image alt="Download CSR file.png" src="https://files.readme.io/9a560d19e38593fbc379efc6bdb1e636e1fa34f894dca4b46a23be30019127dd-45231892701585.png" width="254px" />
 5. ダウンロードしたCSRファイルを、選択したSSL認証局に提出します。
 6. 認証局から新しいSSL証明書が発行されたら、その証明書をAppsFlyerにアップロードします。
 
-<Image alt="Upload new SSL certificate to AF.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
+<Image align="center" alt="Upload new SSL certificate to AF.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
 
 > 📘 **Note**
 >

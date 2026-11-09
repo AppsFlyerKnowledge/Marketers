@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **At a glance:** OneSignalは、100万人以上の開発者とマーケターが利用する、高機能なプッシュ通知・アプリ内メッセージ配信プラットフォームです。
 
-![onesignal-logo-stack__3_.png](https://files.readme.io/49c50c481c00391f25cf8cc7eb2c35cc166f6a88a10db9120769a7d11affa26a-13013733757841.png)
+<Image align="center" alt="onesignal-logo-stack__3_.png" src="https://files.readme.io/49c50c481c00391f25cf8cc7eb2c35cc166f6a88a10db9120769a7d11affa26a-13013733757841.png" />
 
 OneSignalは、世界中で毎日80億件のメッセージを配信しています。優れたアーキテクチャと使いやすいプラットフォームを基盤に、世界のほかのソリューションよりも高速かつ効率的に、より大規模なメッセージ配信を実現します。詳細は[onesignal.com](https://onesignal.com/?utm_medium=partner&utm_source=appsflyer)をご覧ください。
 
@@ -145,7 +145,7 @@ AndroidでOneSignalと連携するには、OneSignal Player ID（OneSignalでユ
 
 <Accordion title="連携タブ">
 
-![onesignal-integration-tab.png](https://files.readme.io/95ec88041360d492367ed383aa3242bebe1cd5c5abcff8fba64e7888f0a9c052-360017329277.png)
+<Image align="center" alt="onesignal-integration-tab.png" src="https://files.readme.io/95ec88041360d492367ed383aa3242bebe1cd5c5abcff8fba64e7888f0a9c052-360017329277.png" />
 
 ［連携］タブは、以下のセクションで構成されています。
 
@@ -165,13 +165,13 @@ AndroidでOneSignalと連携するには、OneSignal Player ID（OneSignalでユ
 OneSignalアカウントをAppsFlyerに接続するには、**OneSignal AppID**フィールドにアプリIDを入力します。  
 OneSignalのアプリIDは、OneSignalの**Settings**＞**Keys & IDs**で確認できます。
 
-![onesignal-app-id-en_us.png](https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png)
+<Image align="center" alt="onesignal-app-id-en_us.png" src="https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png" />
 
 <div id="default-postbacks" />
 
 ### デフォルトポストバック
 
-![onesignal-default-postbacks_en-us.png](https://files.readme.io/07e40365685543a318be8a16c9ea83638634d4a60333338eca0f76d140f84bef-360014377697.png)
+<Image align="center" alt="onesignal-default-postbacks_en-us.png" src="https://files.readme.io/07e40365685543a318be8a16c9ea83638634d4a60333338eca0f76d140f84bef-360014377697.png" />
 
 AppsFlyerは、ユーザーのインストール後にOneSignalへポストバックを自動送信できます。このセクションでは、イベントごとに、ポストバック送信の対象とするユーザーの流入元を設定します。  
 詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#default-postbacks">デフォルトポストバック</Anchor>を参照してください。
@@ -229,6 +229,6 @@ AppsFlyerはすべてのイベントを送信しますが、OneSignalはオー�
 
 Segment EditorのOneSignalタグで、デバイスごとのアトリビューションデータを確認できます。キャンペーンに使用するセグメントの作成時にも確認できます。
 
-![onesignal-view-attribution_en-us.png](https://files.readme.io/ac23c9310cad560f692598127f3e9efb7c2b905efb6fd5de21efabe90bf58eea-360014377737.png)
+<Image align="center" alt="onesignal-view-attribution_en-us.png" src="https://files.readme.io/ac23c9310cad560f692598127f3e9efb7c2b905efb6fd5de21efabe90bf58eea-360014377737.png" />
 
 <div data-zendesk-anchors="setting-up-onesignal=onesignal%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9HWJTEYDEZ8AGVQBHZZTP7K=onesignal%E3%81%AE%E8%A8%AD%E5%AE%9A set-up-the-appsflyer-sdk=appsflyer-sdk%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9HWJTEY71PTXR1YSAK709QT=appsflyer-sdk%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9HWJTEZC62F9JW1KD4Y1CYS=integration-tab activate-partner=%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%92%E6%9C%89%E5%8A%B9%E5%8C%96 h_01H9HWJTEZH60AEPE7AB43X4YG=%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%92%E6%9C%89%E5%8A%B9%E5%8C%96 general-settings=%E4%B8%80%E8%88%AC%E8%A8%AD%E5%AE%9A h_01H9HWJTEZJAK2PTF4HQP3DQ1X=%E4%B8%80%E8%88%AC%E8%A8%AD%E5%AE%9A h_01H9HWJTEZCNZX17K86H9KCRFN=onesignal-appid default-postbacks=%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%AF h_01H9HWJTEZ91KR3ZA8NX5BVZCF=%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%AF h_01H9HWJTEZZYRBS6PPRBBQAXZ5=attribution-link-tab h_01H9HWJTEZNT0EHJ7G4SFRD8K5=cost-tab h_01H9HWJTEZS7TN4FCAN40QB1NT=ad-revenue-tab h_01H9HWJTEZEY5VKCKDZ1Q7APRG=permissions-tab view-user-attribution-data-in-onesignal=onesignal%E3%81%A7%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B h_01H9HWJTEZZTJFTZC1Z2A6F5QM=onesignal%E3%81%A7%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B" />

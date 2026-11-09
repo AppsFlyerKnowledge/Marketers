@@ -225,13 +225,13 @@ Incrementality for UA の利用を開始するには、次のステップに従�
 
 1. AppsFlyer のサイドメニューから**Optimize** > **Incrementality for UA**をクリックし、Incrementality for UAの画面を開きます。
 
-   <Image alt="Click Inc for UA new.png" src="https://files.readme.io/4170287cc98e038272fd91ee36cbf775a33b8a418920c7fabe54e32cff5789cd-41021731857041.png" width="254px" />
+   <Image align="center" alt="Click Inc for UA new.png" src="https://files.readme.io/4170287cc98e038272fd91ee36cbf775a33b8a418920c7fabe54e32cff5789cd-41021731857041.png" width="254px" />
 2. **+ New experiment**をクリックします。
 3. **表示されたフォームに必要事項を入力します：**
    1. **検証名を入力** - 検証を説明する名前を入力し、**次へ**をクリックします。
    2. **地域デザインを定義します** - 測定するアプリ、国、および主要メトリクスを選択します。AppsFlyer では、これを使用して、エクスポーズされた領域と保持領域の最適な割り当てを計算します。
 
-      <Image alt="step 2 geo design.png" src="https://files.readme.io/3a901bd4dcccb788b1d0cc8f118cbdb0c682b570b470d13deba4f6ce0f852c3b-41021758781713.png" width="335px" />
+      <Image align="center" alt="step 2 geo design.png" src="https://files.readme.io/3a901bd4dcccb788b1d0cc8f118cbdb0c682b570b470d13deba4f6ce0f852c3b-41021758781713.png" width="335px" />
 
       送信後、AppsFlyer は地域デザインを確認します。通常、これには数分かかります。地域デザインは、使用できる状態か、使用できません。
 
@@ -272,7 +272,7 @@ Incrementality for UA の利用を開始するには、次のステップに従�
   * 選択したすべてのキャンペーンs は、同じ保持領域を共有します。
   * 増分的洞察は、個々のキャンペーン レベルではなく、セルレベルで提示されます。
 
-    <Image alt="UA 用Inc - キャンペーン内容を設定します。png" src="https://files.readme.io/c92c2b785ea80d2c89fd06033b008a3618e04d88a3cc286e923acf88b5924261-45947468030097.png" width="64.57%" />
+    <Image align="center" alt="UA 用Inc - キャンペーン内容を設定します。png" src="https://files.readme.io/c92c2b785ea80d2c89fd06033b008a3618e04d88a3cc286e923acf88b5924261-45947468030097.png" width="64.57%" />
 * 地域デザインが承認されると、試験の内訳が表示されます。
   * **ホールドアウトリージョン** - 試験中にキャンペーンs に曝露されたときに保持されていた領域
   * **Exposed regions** - キャンペーンs に曝露されたリージョン(計測基準として使用)
@@ -309,10 +309,10 @@ Incrementality for UA の利用を開始するには、次のステップに従�
 
 1. AppsFlyerのサイドメニューで、 **Optimize** >**Incrementality for UA** をクリックして、［検証］のタブを開いてください。 
 
-   <Image alt="from Oprimize click Incrementality UA.png" src="https://files.readme.io/922e084c955b3220a5bc3ac82079515f2c07bc4bc1bc3861343132452cc4fc08-41021731858321.png" width="210px" />
+   <Image align="center" alt="from Oprimize click Incrementality UA.png" src="https://files.readme.io/922e084c955b3220a5bc3ac82079515f2c07bc4bc1bc3861343132452cc4fc08-41021731858321.png" width="210px" />
 2. 特定の検証をクリックして、ダッシュボードにアクセスしてください。
 
-   ![Experiments table (1).png](https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png)
+   <Image align="center" alt="Experiments table (1).png" src="https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png" />
 
 <div id="a-tour-of-the-dashboard" />
 
@@ -344,7 +344,7 @@ Incrementality for UA の利用を開始するには、次のステップに従�
 * 選択したすべてのキャンペーンs は、同じ保持領域を共有します。
 * 増分的洞察は、個々のキャンペーン レベルではなく、セルレベルで提示されます。
 
-[<Image alt="狭く作った管理画面のチャンネルレベル試験" src="https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png" width="2862px" />](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)
+<Image align="center" alt="狭く作った管理画面のチャンネルレベル試験" src="https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png" width="2862px" />
 
 </Accordion>
 
@@ -365,10 +365,10 @@ Incrementality for UA の利用を開始するには、次のステップに従�
 1. AppsFlyerのサイドメニューで、 **Optimize**  > **Incrementality for UA** をクリックして、Incrementality for UA にアクセスします。
 2. ［**接続**］ タブをクリックし、［**+ 新しい接続**］ をクリックします。
 
-   <Image alt="from Connections tab click +New connection w arrow.png" src="https://files.readme.io/e9df79d34ec3d94e89f51f42b132f8ba475225b46246d044d2a720991b0900e0-41021731865745.png" width="465px" />
+   <Image align="center" alt="from Connections tab click +New connection w arrow.png" src="https://files.readme.io/e9df79d34ec3d94e89f51f42b132f8ba475225b46246d044d2a720991b0900e0-41021731865745.png" width="465px" />
 3. 接続するメディアソースを選択してください。
 
-   <Image alt="Add connection.png" src="https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png" width="409px" />
+   <Image align="center" alt="Add connection.png" src="https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png" width="409px" />
 4. 認証情報を入力してログインし、接続を作成します。
 
 </Accordion>
@@ -464,7 +464,7 @@ Incrementality for UA の利用を開始するには、次のステップに従�
 
 **Incrementality for UA** で、**検証** タブをクリックします。
 
-[![Experiments table.png](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)
+<Image align="center" alt="Experiments table.png" src="https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png" />
 
 各検証について、以下を確認可能です：
 
@@ -489,7 +489,7 @@ Incrementality for UA の利用を開始するには、次のステップに従�
 
 検証にカーソルを合わせ、<Image alt="action menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" />のアイコンをクリックしてください。
 
-<Image alt="Experiments menu.png" src="https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png" width="254px" />
+<Image align="center" alt="Experiments menu.png" src="https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png" width="254px" />
 
 このページでは次のことが可能です：
 
@@ -507,7 +507,7 @@ Incrementality for UA の利用を開始するには、次のステップに従�
 
 検証から、右上の<Image alt="action menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" />アイコンをクリックして、**検証期間の延長** を選択します。
 
-<Image alt="Extend experiment.png" src="https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png" width="336px" />
+<Image align="center" alt="Extend experiment.png" src="https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png" width="336px" />
 
 これにより、検証はさらに14日間延長されます。
 
@@ -521,7 +521,7 @@ Incrementality for UA の利用を開始するには、次のステップに従�
 
 検証のタブから、右上の⠇アクションアイコンをクリックし、**検証を停止** を選択してください。
 
-<Image alt="Stop experiment.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
+<Image align="center" alt="Stop experiment.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
 
 </Accordion>
 

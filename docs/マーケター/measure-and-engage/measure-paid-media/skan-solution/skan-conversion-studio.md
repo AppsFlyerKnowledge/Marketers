@@ -141,7 +141,7 @@ SKAN 4では、収益、アプリ内イベント、優先度、SSOTなどの計�
 
 SKAN 4を手動で設定する場合は、さまざまなオプションを試してみてください。変更に応じて、**CVの使用数**のサマリーが更新されます。 CVの上限を超えずに、最も重要なデータを取得できるよう、設定を調整してください。 [CVの使用数の計算](/docs/skan-conversion-studio#conversion-value-capacity-formula)を参照してください。
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **注意：以前のSKANモードからSKAN 4にアップグレードすると、現在のスキーマのマッピングが細かいCVの計測に引き継がれ、粗いCVはAppsFlyerが自動でマッピングします。 SKANを初めて使用する場合は、AppsFlyerが初期設定のマッピングを提供します。**
 
@@ -186,7 +186,7 @@ SKAN 4を手動で設定する場合は、さまざまなオプションを試�
 
 カスタムモードの設定では、さまざまなオプションを試してみてください。変更に応じて、**CVの使用数**のサマリーが更新されます。 CVの上限を超えずに、最も重要なデータを取得できるよう、設定を調整してください。 [CVの使用数の計算](/docs/skan-conversion-studio#conversion-value-capacity-formula)を参照してください。
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 注意：Conversion Studioには、デフォルトでSKAN 4が表示されます。以前のモードに戻すには、オプション（⋮）をクリックしてメニューを開き、［以前のSKANバージョンに戻す］を選択します。
 
@@ -229,7 +229,7 @@ SKAN 4を手動で設定する場合は、さまざまなオプションを試�
 
 モードの設定を変更すると、**CVの使用数**のサマリーが更新されます。 CVの上限を超えずに、最も重要なデータを取得できるよう、設定を調整してください。 [CVの使用数の計算](/docs/skan-conversion-studio#conversion-value-capacity-formula)を参照してください。
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **注意！**
 
@@ -552,7 +552,7 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 3. 必要に応じて、<strong>［削除］</strong>をクリックして現在の設定を削除します。
 4. <strong>［+計測を追加］</strong>をクリックします。 <strong>［優先度］</strong>を選択します。   
    優先度1が表示されます。  
-   [![Priority1.png](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)
+   <Image align="center" alt="Priority1.png" src="https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png" />
 5. 以下から計測コンポーネントを選択します。
    * 収益
    * アプリ内イベント
@@ -616,7 +616,7 @@ CVとイベントの対応関係を独自に定義し、アプリ側でCVを設�
 * <strong>［コンバージョン値のサマリー］</strong>パネルから、CVのマッピング表をCSVファイルとしてダウンロードできます。<strong>［マッピングファイルをダウンロード］</strong>をクリックします。
 * <Anchor target="_blank" href="/marketers/ja/docs/skan-cv-schema-api-for-advertisers">広告主向けSKAN CVスキーマAPI</Anchor>を使用して、CVマッピングを取得できます。
 
-<Image alt="SKAN_download_mapping.png" src="https://files.readme.io/62dc60da0001c0eccc96791f3f3320f8ea0bc24db3977af4390643c5a95a5ad3-46095838352401.png" width="2482px" />
+<Image align="center" alt="SKAN_download_mapping.png" src="https://files.readme.io/62dc60da0001c0eccc96791f3f3320f8ea0bc24db3977af4390643c5a95a5ad3-46095838352401.png" width="2482px" />
 
 <div id="csv-mapping-file-columns" />
 
@@ -1079,7 +1079,7 @@ SKAdNetwork計測をオフにする手順：
 
 <Accordion title="サーバー間APIによるイベントの報告">
 
-![SKAdNetwork_-_S2S__2_.png](https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png)
+<Image align="center" alt="SKAdNetwork_-_S2S__2_.png" src="https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png" />
 
 SDKと<Anchor target="_blank" href="/marketers/ja/docs/server-to-server-events-api-for-mobile-s2s-mobile">サーバー間API（S2S）</Anchor>のどちらからも、AppsFlyerのサーバーにアプリ内イベントを送信できます。
 

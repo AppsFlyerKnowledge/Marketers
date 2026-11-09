@@ -252,7 +252,7 @@ AppsFlyerは **Traits** を作成し、AAMで選択した **Data Source**と同�
 2. **Manage Data** > **Data Sources**へ進みます。
 3. **Data Sources**画面にて、新しい**Data Source**を作成してください。
 
-   [![](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg" />
 4. 以下のようにフォームを入力します。
    * ID Typeを **Device Advertising ID**に設定してください。
    * インバウンドデータソース設定にて、**Customer ID**を有効にしてください。
@@ -262,13 +262,13 @@ AppsFlyerは **Traits** を作成し、AAMで選択した **Data Source**と同�
 7. 左側のメニュー **Administration** > **Groups**へ進みます。
 8. **権限**タブへ進んでください。
 
-   [![](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)
+   <Image align="center" alt="" src="https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png" />
 9. 新しいグループを作成します。
 10. 作成した Data Source を選択します。
 11. **Save Object**をクリックしてください。
 12. **Admin** > **Users**へ進んでください。
 
-    [![](https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png)](https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png)
+    <Image align="center" alt="" src="https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png" />
 13. AppsFlyerオーディエンスが使用する新しいユーザーを作成し、必要に応じて必須フィールドに入力します。
 14. **Assigned Groups** にて、以前作成したグループを選択してください。
 15. 作成したユーザーの**メールアドレス**と**パスワード**を記録してください。
@@ -305,7 +305,7 @@ S3連携を作成すると、AppsFlyerはオーディエンスのデバイスID�
 5. **Amazon S3**を選択してください。  
    **連携先の追加**画面が表示されます。
 
-   ![image__9_.png](https://files.readme.io/790f8a50bf14fbb4065d9dcee05e31fa866bc73f236f439ec73f2bc833b31be6-31237653533201.png)
+   <Image align="center" alt="image__9_.png" src="https://files.readme.io/790f8a50bf14fbb4065d9dcee05e31fa866bc73f236f439ec73f2bc833b31be6-31237653533201.png" />
 6. **クロスアカウントロールのARN**、**バケット名**、**リージョン名**を入力します。  
    **注：** 常にリージョン名を入力することをお勧めします。AWS でリージョン名がデフォルトで自動的に有効になっていない場合は、ここに入力しないと接続を作成できません。AWS コンソールのホームページでリージョンを見つけるには、ページの右上にある国のドロップダウンをクリックすると、リージョンが表示されます。 <Image alt="region_name.jpg" src="https://files.readme.io/a3b65660a638674cbbe0da2802b4f926929d167d0b528c25c12ded6a90b0e981-31237648137489.jpg" width="355px" />
 7. 後ほど使用するために、**Account ID** と **External ID** を記録してください。
@@ -341,17 +341,17 @@ S3連携を作成すると、AppsFlyerはオーディエンスのデバイスID�
 15. **Create Policy**をクリックしてください。
 16. AWSコンソールで、**Access management** > **Roles** へ進んでください。
 
-    [![](https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png)](https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png)
+    <Image align="center" alt="" src="https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png" />
 17. **Create role** をクリックしてください。
 18. あなたのAWSアカウントとAppsFlyerのAWSアカウント間でクロスアカウントアクセスを提供する **Another AWS account** オプションを選択してください。
 
-    [![](https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png)](https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png)
+    <Image align="center" alt="" src="https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png" />
 19. <strong>Account IDを入力してください。</strong>これはAppsFlyer管理画面から既にコピーしたAccount IDです。
 20. **Require external ID**を選択してください。この外部IDはAppsFlyer管理画面から既にコピーしたものです。
 21. AWSアカウントの既存のポリシーからポリシーを選択するように求められます。以前に作成したポリシーを選択してください。
 22. 新しく作成されたロール名をクリックして、プロパティ画面を開きます。
 
-    [![](https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png)](https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png)
+    <Image align="center" alt="" src="https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png" />
 23. **Role ARN**を記録してください。
 24. AppsFlyer S3 連携画面にて、ARNとバケット名を適切な項目に入力します。
 
@@ -424,17 +424,17 @@ S3連携を作成すると、AppsFlyerはオーディエンスのデバイスID�
    * **注意：** ここにキーが既に表示されている場合は、新しいキーを生成する必要はありません。
    * <strong>重要！</strong>ページの**Data Import Using Cohort Import**セクションで（インストール計測セクションではなく）この作業を行っていることを確認してください。
 
-     ![data_import_key.png](https://files.readme.io/4d288e6696da600d0e402b86a0986b3951f2cd35efd12084aa8feaeeb526fddf-31237653537681.png)
+     <Image align="center" alt="data_import_key.png" src="https://files.readme.io/4d288e6696da600d0e402b86a0986b3951f2cd35efd12084aa8feaeeb526fddf-31237653537681.png" />
 3. AppsFlyer管理画面で連携の設定をする際に使用するため、**Data Import Key** と **REST Endpoint** をコピーしてください。
 4. AppsFlyerのオーディエンス画面にて、**連携先**タブへ進み、**+ 連携先**を追加をクリックしてください。
 5. Brazeをパートナーとして選択し連携名を入力してください。
 6. ステップ3でBrazeアカウントからコピーした Data Import Key と REST Endpoint を入力してください。
 
-   ![braze_connection.png](https://files.readme.io/200d1a1bef906ea50e40b3d8113bb9fd72068b6fda25a2f70b95b4510bd992de-31237653538449.png)
+   <Image align="center" alt="braze_connection.png" src="https://files.readme.io/200d1a1bef906ea50e40b3d8113bb9fd72068b6fda25a2f70b95b4510bd992de-31237653538449.png" />
 7. 連携先を保存すると、新規または既存のオーディエンスを接続できるようになります。
 8. AppsFlyerオーディエンスがBrazeにアップロードされると、Brazeでセグメントを定義する際にフィルタとして使用することができます。
 
-   ![cohorts_as_filter.png](https://files.readme.io/eec9e014afcb488bb7ebe31167cd5871c38207c8f4542e20ea313b7019e8b43a-31237653538961.png)
+   <Image align="center" alt="cohorts_as_filter.png" src="https://files.readme.io/eec9e014afcb488bb7ebe31167cd5871c38207c8f4542e20ea313b7019e8b43a-31237653538961.png" />
 
 </Accordion>
 
@@ -533,7 +533,7 @@ AppsFlyerがオーディエンスをGoogle Adsに送信するためには、次�
    オーディエンスパートナーの一覧が表示されます。
 3. Google Adsにて、連携先の名前を選択してください。
 
-   [![AcceptTermsAudiences_us-en.png](https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png)](https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png)
+   <Image align="center" alt="AcceptTermsAudiences_us-en.png" src="https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png" />
 4. **利用規約**をクリックしてください。
 5. 規約を確認し同意する場合は、**I accept**（同意）をクリックします。
 6. **変更を保存** をクリックします。
@@ -591,7 +591,7 @@ AppsFlyerがオーディエンスをGoogle Adsに送信するためには、次�
 
 1. Leanplumアカウントで、**Partner Integrations > AppsFlyer**へ移動してください。**Audiences**にて、新しい**Secret**を生成してください。
 
-   [![audiences_leanplum_integration.png](https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png)](https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png)
+   <Image align="center" alt="audiences_leanplum_integration.png" src="https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png" />
 2. **存在しないユーザー**のプロファイルを Leanplum で作成するかどうかを選択します。
    * 存在しないユーザー = AppsFlyerオーディエンスによって送信されたユーザーIDがLeanplumに存在しないユーザー
 3. **App ID** と新しく生成された **Secret** をコピーして、AppsFlyer管理画面で連携先を作成する際に使用します。
@@ -599,7 +599,7 @@ AppsFlyerがオーディエンスをGoogle Adsに送信するためには、次�
 5. **Leanplum** をパートナーとして選択し連携名を入力してください。
 6. 手順3で Leanplum アカウントからコピーした **App ID** と**Secret** を入力してください。
 
-   [![leanplum_integration_af_dashboard.png](https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png)](https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png)
+   <Image align="center" alt="leanplum_integration_af_dashboard.png" src="https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png" />
 7. 連携先を保存すると、新規または既存のオーディエンスを接続できるようになります。
 
 最大30分以内に、オーディエンスとそれに含まれるユーザーが Leanplum のオーディエンス管理画面に入力されます。
@@ -629,7 +629,7 @@ AppsFlyerがオーディエンスをGoogle Adsに送信するためには、次�
    * **データAPI ID**（<Image alt="A.png" src="https://files.readme.io/66b5bb0c4ea35f232f65dbc8dcbdfd6a91c12cf94915b19d33dae44834127058-31237653543313.png" width="16px" />は下の画像にあります）
    * **データAPIキー**（<Image alt="B.png" src="https://files.readme.io/f63914d3fefb55b627559c6e4c7d7cdef89239c0376a14c25c713a0a76dbad1b-31237653544337.png" width="16px" />は下の画像にあります）
 
-   [![moengage_dashboard.png](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)
+   <Image align="center" alt="moengage_dashboard.png" src="https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png" />
 3. ウェブブラウザのアドレスバーで、MoEngageダッシュボードのURLをチェックして、**MoEngageデータセンター**の番号を取得します。
    * MoEngage ダッシュボードのURLが https://dashboard-01.moengage.com の場合、アカウントがデータセンター1に割り当てられます。
    * URL が https://dashboard-02.moengage.com の場合、アカウントがデータセンター2に割り当てられます。
@@ -637,7 +637,7 @@ AppsFlyerがオーディエンスをGoogle Adsに送信するためには、次�
 4. AppsFlyerのオーディエンス画面にて、**連携先**タブへ進み、**+ 連携先を追加**をクリックしてください。
 5. パートナーとして **MoEngage**を選択し、接続に名前を付けます。
 
-   [![moengage_outgoing_connection.png](https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png)](https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png)
+   <Image align="center" alt="moengage_outgoing_connection.png" src="https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png" />
 6. 手順 2 で MoEngage アカウントからコピーした**データAPI ID**と**データAPIキー**を入力します。
 7. 手順 3 で決定した MoEngage **データセンター** を選択します。
 8. 連携先を保存すると、新規または既存のオーディエンスを接続できるようになります。
@@ -698,7 +698,7 @@ AppsFlyerは公開SlackチャンネルにデバイスIDのCSVファイルをア�
 1. Tapjoyアカウントマネージャーから**パートナーID** を入手してください。
 2. Tapjoyの **App Settings** ページから **Publisher Reporting API Key**を取得します。
 
-   [![](https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png)](https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png)
+   <Image align="center" alt="" src="https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png" />
 3. AppsFlyerにて**オーディエンス**を開きます。オーディエンスを選択し、**連携先**タブへ進んでください。
 4. **+パートナー接続を追加**をクリックしてください。
 5. **連携名**を入力してください。

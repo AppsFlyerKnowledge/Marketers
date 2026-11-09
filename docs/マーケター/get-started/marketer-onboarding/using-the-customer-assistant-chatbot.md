@@ -31,10 +31,10 @@ x-zendesk:
 
 1. AppsFlyer管理画面の上部メニューバーから ヘルプ > サポートチケットを提出するをクリックします。画面右下に、カスタマーアシスタントチャットボットが開きます。
 
-   <Image alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
+   <Image align="center" alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
 2. **OK**をクリックし、必要なヘルプに従ってメニュー項目番号を選択します。  
 
-   ![](https://files.readme.io/019404755c1e4f4d5c91feb019b7069150bbd9e755d97de0b3318c4117b6c2a0-51909822769809.png)
+   <Image align="center" alt="" src="https://files.readme.io/019404755c1e4f4d5c91feb019b7069150bbd9e755d97de0b3318c4117b6c2a0-51909822769809.png" />
 
 ## メニュー項目
 

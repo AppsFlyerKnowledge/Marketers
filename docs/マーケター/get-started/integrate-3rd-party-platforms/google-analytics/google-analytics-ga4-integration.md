@@ -431,14 +431,14 @@ GA4に送信するポストバックのイベントが、Google Analyticsに登�
   たとえば、[ライフサイクル](https://support.google.com/analytics/answer/12924233?hl=en)または[ゲームレポート](https://support.google.com/analytics/answer/12925133?hl=en&sjid=5454549956257318969-NC)コレクションの、**エンゲージメント**＞**イベント**からアクセスできます。   
   イベントレポートの詳細は、[Googleのドキュメント](https://support.google.com/analytics/answer/12926615?sjid=5454549956257318969-NC)を参照してください。
 
-  ![GA4のイベントレポート](https://files.readme.io/01625878b13a46b8a87c34bf465c0ef6494a0f528960d62ce5535b69b29e7d0a-25707728713745.png)
+  <Image align="center" alt="GA4のイベントレポート" src="https://files.readme.io/01625878b13a46b8a87c34bf465c0ef6494a0f528960d62ce5535b69b29e7d0a-25707728713745.png" />
 * **トラフィック獲得レポート**では、Webサイトやアプリの訪問者の流入元を把握できます。
 
   [ライフサイクルコレクション](https://support.google.com/analytics/answer/12924233?hl=en)で、**集客**＞**トラフィック獲得**に移動します。
 
   トラフィック獲得レポートの詳細は、[Googleのドキュメント](https://support.google.com/analytics/answer/12923437?hl=en&sjid=5454549956257318969-NC#zippy=%2Chow-do-i-filter-out-traffic-sources-from-the-report)を参照してください。
 
-  ![GA4のトラフィック獲得レポート](https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png)
+  <Image align="center" alt="GA4のトラフィック獲得レポート" src="https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png" />
 
 </Accordion>
 

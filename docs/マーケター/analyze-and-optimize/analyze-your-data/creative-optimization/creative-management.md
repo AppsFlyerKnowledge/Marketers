@@ -76,7 +76,7 @@ Creative Managementは現在、Google DriveとDropboxに対応しています。
 
 2. **クリエイティブの接続設定**をクリックします。
 
-<Image alt="click Creative connection.png" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
+<Image align="center" alt="click Creative connection.png" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
 
 3. **接続を追加**をクリックします。
 4. **Google Drive**を選択します。
@@ -87,7 +87,7 @@ Creative Managementは現在、Google DriveとDropboxに対応しています。
 8. **URLを追加**をクリックします。
 9. 複数のフォルダを一度に接続する場合は、直前の2つの手順を繰り返します。
 
-<Image alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
+<Image align="center" alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
 
 10. **接続**をクリックします。
 
@@ -107,7 +107,7 @@ Dropboxに接続する前に、対象のクリエイティブフォルダにア�
 6. 接続ダイアログで**フォルダを選択**をクリックし、接続するフォルダを選択します。
    * Creative Managementは、選択したフォルダとそのサブフォルダからクリエイティブを同期します。
 
-<Image alt="click Choose folders.png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
+<Image align="center" alt="click Choose folders.png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
 
 7. フォルダごとに対象のアプリを選択します。この手順は任意ですが、クリエイティブを正しく整理・マッチングするため、設定をお勧めします。
 8. **接続**をクリックします。
@@ -124,7 +124,7 @@ Creative Managementのギャラリーでは、クリエイティブの確認・�
 
 各クリエイティブカードは、1つのクリエイティブを表します。 1つのクリエイティブに、解像度や形式が異なる複数のバージョンが含まれる場合があります。カードでは、メディアソースを横断してクリエイティブが新規・配信中・配信停止中のいずれかをすばやく把握できます。初回配信日やCreative Managementへの同期日など、主なメタデータも確認できます。新しいクリエイティブはそれぞれ自動的に分析・スコアリングされ、配信開始前に最適なものを選ぶ際の判断材料になります。スコアはC（成果につながる可能性が低い）からA（配信拡大の準備ができている）までの範囲で付与され、高いパフォーマンスが見込めるクリエイティブを優先する際の判断に役立ちます。
 
-<Image alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
+<Image align="center" alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
 
 <div id="filter-creatives" />
 
@@ -181,7 +181,7 @@ Google Adsでは、既存のアプリプロモーション用広告グループ�
 8. 設定内容と、検証に関するメッセージがあればその内容を確認します。
 9. **Google Adsにアップロード**をクリックします。
 
-<Image alt="click Upload to Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
+<Image align="center" alt="click Upload to Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
 
 <div id="note" />
 
@@ -203,7 +203,7 @@ Metaでは、既存の広告セット内に広告を作成できます。
 6. **すべてのクリエイティブ**セクションからクリエイティブを選択し、広告に割り当てます。
 7. クリエイティブに複数のバージョンがある場合は、アップロードするバージョンを選択します。
 
-<Image alt="Meta Ads.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
+<Image align="center" alt="Meta Ads.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
 
 8. 設定内容と、検証に関するメッセージがあればその内容を確認します。
 9. **次へ**をクリックします。
@@ -211,7 +211,7 @@ Metaでは、既存の広告セット内に広告を作成できます。
     * デフォルトでは、この設定は作成するすべての新しい広告に適用されます。**特定の広告をカスタマイズ**ドロップダウンから広告を選択すると、個別に編集できます。
 11. **Metaで広告を作成**をクリックします。
 
-<Image alt="image (55).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
+<Image align="center" alt="image (55).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
 
 #### TikTok Ads
 

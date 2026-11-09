@@ -37,9 +37,9 @@ YouAppi を使ったキャンペーンを設定するには、以下の手順に
    * 購入
    * カート追加
 
-![wechat-configuration.png](https://files.readme.io/228ee10ef3dc113ae8af8de0f283b144206db1857f6d1f9169355f294155b8f8-50900431174033.png)
+<Image align="center" alt="wechat-configuration.png" src="https://files.readme.io/228ee10ef3dc113ae8af8de0f283b144206db1857f6d1f9169355f294155b8f8-50900431174033.png" />
 
-![wechat-keys.png](https://files.readme.io/cd7a2406ae9981eaabb4089813c9a1b847f0e6f750b9c0c0a0ac5e726dfe44be-50900431177361.png)
+<Image align="center" alt="wechat-keys.png" src="https://files.readme.io/cd7a2406ae9981eaabb4089813c9a1b847f0e6f750b9c0c0a0ac5e726dfe44be-50900431177361.png" />
 
 
 
@@ -92,7 +92,7 @@ AppLovinの設定画面には5つのタブがあります：次の項目をク�
 
 **Partner ID（パートナーID）**
 
-<Image alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
+<Image align="center" alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
 
 <div id="default-postbacks" />
 
@@ -100,7 +100,7 @@ AppLovinの設定画面には5つのタブがあります：次の項目をク�
 
 AppsFlyerは、ユーザーインストールとリエンゲージメント後に、自動でYouAppiにポストバックを送信します。このセクションでは、これらのポストバックの**送信を許可するユーザー**を定義してください。
 
-![wechat-default-postbacks.png](https://files.readme.io/1a2703b97a71bf82bcc77f5393459bc94b5443b83a4c4965d2624eda0e9f166f-50900402778129.png)
+<Image align="center" alt="wechat-default-postbacks.png" src="https://files.readme.io/1a2703b97a71bf82bcc77f5393459bc94b5443b83a4c4965d2624eda0e9f166f-50900402778129.png" />
 
 AppLovinに紐づくユーザーからのイベントのみにするには、**このパートナーに紐づくイベントのみ**を選択します。 [オーガニックを含む全メディアソース]**を選択して、ユーザーベース全てをYouAppiにレポートできるようにします。**
 
@@ -110,7 +110,7 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 
 このセクションでは、ポストバックを介して、AppsFlyerイベントをYouAppiとマッピングできます。
 
-![wechat_in_app_event_postbacks.png](https://files.readme.io/cd6234df4809b27044e361ad8835d4ae92100c491e0aa7c8f003336cdf2ad49d-50900431180561.png)
+<Image align="center" alt="wechat_in_app_event_postbacks.png" src="https://files.readme.io/cd6234df4809b27044e361ad8835d4ae92100c491e0aa7c8f003336cdf2ad49d-50900431180561.png" />
 
 4. アプリ内イベントのポストバックのトグルをONにしてください。
 5. SDK に定義済みの全てのイベントに対して、送信オプションを選択してください。  
@@ -154,7 +154,7 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 * **Subscriber Parameter**（サブスクライバーパラメーター）：5つのサブスクライバーパラメーターに値を追加できます。これらのパラメーターは解析されローデータレポートに表示されるため、データの集約やフィルタリングに非常に便利です。  
   **計測リンクパラメーター**： af\_sub1、af\_sub2、af\_sub3、af\_sub4、af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 計測リンクに他のパラメーターを追加するには、新しいパラメーター項目に入力入力してください。詳細は、**<Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">AppsFlyer計測リンクの構造とパラメーター</Anchor>** をご覧ください。
 
@@ -168,7 +168,7 @@ AppLovinに紐づくユーザーからのイベントのみにするには、**�
 
 クリックルックバック期間の詳細については<Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">こちら</Anchor>を参照してください。
 
-[![](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)
+<Image align="center" alt="" src="https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png" />
 
 <div id="click-attribution-link" />
 

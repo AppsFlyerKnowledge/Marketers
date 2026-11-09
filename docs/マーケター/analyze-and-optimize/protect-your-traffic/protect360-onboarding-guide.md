@@ -74,7 +74,7 @@ Fraud Protection Studio（不正対策の設定・検証機能）では、AppsFl
 >
 > ビジネス上の目的の変化に合わせて、いつでも**適用**と**タグ付け**を切り替えられます（<Anchor target="_blank" href="/marketers/ja/docs/user-management">管理者のみ</Anchor>）。<Anchor target="_blank" href="/marketers/ja/docs/beta-fraud-protection-studio#key-concepts">詳しくはこちら</Anchor>。
 
-<Image alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
 
 ヒント：チームがProtect360の使い方に慣れていくこの段階では、Fraud Protection Studioの<Anchor target="_blank" href="/marketers/ja/docs/beta-fraud-protection-studio#app-detection-evaluation">**アプリ単位の不正検知の検証**</Anchor>カードで、アプリ単位の設定をテストし、動作を理解することを強く推奨します。
 
@@ -84,7 +84,7 @@ Fraud Protection Studio（不正対策の設定・検証機能）では、AppsFl
 
 Protect360のデータは、<Anchor target="_blank" href="/marketers/ja/docs/protect360-raw-data-reports#protect360ローデータレポートについて">ローデータレポート</Anchor>、<Anchor target="_blank" href="/marketers/ja/docs/protect360-raw-data-reports#pull-api">Pull API</Anchor>、<Anchor target="_blank" href="/marketers/ja/docs/protect360-raw-data-reports#data-locker">Data Locker</Anchor>の3つの方法で出力できます。どの方法でも、不正データを正確にレポートし、効果的に分析するためには、データ連携を適切に設定することが重要です。
 
-<Image alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
 
 <div id="important" />
 
@@ -124,7 +124,7 @@ BIツールでハイジャックされたインストールを正しく表示す
 > * タグ付けされたアプリ内イベント
 > * ポストアトリビューションでタグ付けされたアプリ内イベント
 
-![](https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png)
+<Image align="center" alt="" src="https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png" />
 
 #### **Pull API**
 
@@ -172,7 +172,7 @@ BIツールでハイジャックされたインストールを正しく表示す
 
 <Anchor target="_blank" href="/marketers/ja/docs/protect360-dashboard">Protect360ダッシュボード</Anchor>では、不正データの概要を視覚的に確認できます。さらに詳しく調べることで、不正検知の内容と施策への影響を把握できます。
 
-<Image alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
 
 </Accordion>
 

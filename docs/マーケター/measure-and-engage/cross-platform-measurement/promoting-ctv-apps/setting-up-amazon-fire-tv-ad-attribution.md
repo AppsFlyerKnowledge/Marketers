@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **概要：** Amazon Fire TV広告によって発生したアプリのインストールとアプリ内イベントをアトリビューションします。
 
-<Image alt="amazon_fire_tv.jpg" src="https://files.readme.io/d9cca1cdc9f0817dc542348d72b39305af4eda4ec05db01749107ae33070c72d-360001663977.jpg" width="229px" />
+<Image align="center" alt="amazon_fire_tv.jpg" src="https://files.readme.io/d9cca1cdc9f0817dc542348d72b39305af4eda4ec05db01749107ae33070c72d-360001663977.jpg" width="229px" />
 
 <div id="setting-up-amazon-fire-tv-ad-attribution" />
 

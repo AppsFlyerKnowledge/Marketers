@@ -54,7 +54,7 @@ x-zendesk:
 
 **アプリ内イベントのポストバックを設定します**:
 
-[![in-app_event_mapping.png](https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png)](https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png)
+<Image align="center" alt="in-app_event_mapping.png" src="https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png" />
 
 1. **アプリ内イベントポストバック**を有効にします。
 2. <Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#マッピング方法">マッピング方法</Anchor>に従って必要なパラメーターを全て入力してください。  

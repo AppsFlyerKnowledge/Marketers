@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **概要：** ブランドバンドルによって、そのブランドに関連するアプリやWebサイトのアトリビューション、イベント、訪問数、収益の情報を統合することが可能です。ブランドバンドルの設定ページを使えば、コンバージョンイベントをマークしたり、Google Adsとの連携もできます。
 
-![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
+<Image align="center" alt="BrandBundles.png" src="https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png" />
 
 <div id="about-brand-bundles" />
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要：** AppsFlyer の連携済みパートナーの一つである LINE 広告プラットフォームは、入札システムとカスタマイズされたターゲティングシステムを組み合わせています。LINE 広告プラットフォームでは、クリックベースのモバイルアトリビューションに加えて、リターゲティング計測も提供しており、AppsFlyer で記録することができます。
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
 
 <div id="setting-up-line-ads-platform" />
 

@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **概要：** Smart Bannersを使って、Webサイトの訪問者をモバイルアプリのユーザーへ誘導します。
 
-[![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg" />
 
 <div id="note" />
 
@@ -287,7 +287,7 @@ Smart Bannersでは、次のことができます。
 
       バナーテンプレートを選択するウィンドウが開きます。
 
-      [![](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)
+      <Image align="center" alt="" src="https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png" />
    2. **クリエイティブテンプレート**にカーソルを合わせて<strong>［作成］</strong>をクリックし、<strong>［クリエイティブを作成］</strong>の設定ページを開きます。
    3. Smart Bannerのクリエイティブの各要素をカスタマイズします。要素名から選択するか、プレビュー画像内の要素をクリックします。 **注意：** テンプレートによって、使用できる要素は異なります。
       * タイトル

@@ -45,7 +45,7 @@ Webのオーガニック検索を経由してアプリを再利用した既存�
 
 #### 処理の流れ
 
-![Organic_SEO_attribution_flow.png](https://files.readme.io/1772808df9d9e521204153d9f0689b3f9f156dd8c0ab8555673b1d321f28aece-15320495862545.png)
+<Image align="center" alt="Organic_SEO_attribution_flow.png" src="https://files.readme.io/1772808df9d9e521204153d9f0689b3f9f156dd8c0ab8555673b1d321f28aece-15320495862545.png" />
 
 1. ユーザーがモバイルブラウザの検索エンジン（Google、Bingなど）で、検索語句（「メンズシューズ」など）を入力して検索します。検索エンジンに、クリックできる検索結果が複数表示されます。
 2. Web開発者が、検索結果の一部をAndroid App LinksやiOSのユニバーサルリンクでモバイルアプリを開くように設定します。アプリをインストール済みのユーザーが検索結果をクリックすると、アプリストアを経由せずにアプリが開きます。

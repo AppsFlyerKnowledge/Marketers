@@ -25,7 +25,7 @@ x-zendesk:
 
 > **概要：** ユーザーの特性に関するデータをオーディエンスに追加することで、ユーザーを適切なグループに分類する機能を向上させます。
 
-[![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
+<Image align="center" alt="UserAttributionNavigationXL3_us-en.png" src="https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png" />
 
 <div id="about-user-attributes" />
 
@@ -58,7 +58,7 @@ x-zendesk:
   * 現在のゲームスコア：いずれかの現行ゲームで15以上
 
 表にはCRMからのユーザー属性データが含まれています。オーディエンスルールセットはこのデータにアクセスする必要があります。   
-![UserAttributuesExample_us-en.png](https://files.readme.io/6f86d8659ef089ac82bb8401b4af650fbc590d2293ac93de30e6f9b4fc2ceb86-33375683035281.png)
+<Image align="center" alt="UserAttributuesExample_us-en.png" src="https://files.readme.io/6f86d8659ef089ac82bb8401b4af650fbc590d2293ac93de30e6f9b4fc2ceb86-33375683035281.png" />
 
 **ルールセットでCRMデータを利用する**
 
@@ -116,7 +116,7 @@ x-zendesk:
 2. ユーザー属性タブをクリックします。
 3. ユーザー属性を追加**をクリックします。**  
 
-   ![UserAttributeAdd.png](https://files.readme.io/6c7f25bb23d47e67aaef34264029daa9ab058f08e218a441ab9dde8240b0b384-33375683046033.png)
+   <Image align="center" alt="UserAttributeAdd.png" src="https://files.readme.io/6c7f25bb23d47e67aaef34264029daa9ab058f08e218a441ab9dde8240b0b384-33375683046033.png" />
 4. フィールドに入力します。フィールドの特性は次の表に記載されています。   
    * **属性名**
    * **フォーマット**
@@ -185,7 +185,7 @@ x-zendesk:
 
 <Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/360012423857">ユーザー属性の例.csv</Anchor>
 
-![属性のファイル.png](https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png)
+<Image align="center" alt="属性のファイル.png" src="https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png" />
 
 **CSVファイルの要件**
 

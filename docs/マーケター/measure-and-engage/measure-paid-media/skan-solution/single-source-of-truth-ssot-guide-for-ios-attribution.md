@@ -41,7 +41,7 @@ SSOTは、別の照合方法でもアトリビューションされたSKANイン
 
 <Accordion title="SSOTの有効化">
 
-![SSOTControl.png](https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png)
+<Image align="center" alt="SSOTControl.png" src="https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png" />
 
 **SSOTをオンにする手順：**
 
@@ -59,7 +59,7 @@ SSOTは、別の照合方法でもアトリビューションされたSKANイン
 
 ## Overview dashboardのSSOTビュー
 
-![SSOTisNowOn.png](https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png)
+<Image align="center" alt="SSOTisNowOn.png" src="https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png" />
 
 Overview dashboardのSSOTビューでは、ノンオーガニックの成果指標を全体的に把握できます。このビューには、以下の特徴があります。
 
@@ -79,11 +79,11 @@ SSOTビューのデータは、Conversion StudioでSSOTを有効にしてから3
 
 1. 開始する前に、Conversion Studioで<Anchor target="_blank" href="/marketers/ja/docs/skan-conversion-studio#single-source-of-truth">［SSOT］</Anchor>がオンになっていることを確認してください。
 2. AppsFlyerで、**［ダッシュボード］**＞<strong>［Overview］</strong>に移動します。  
-   <Image alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
+   <Image align="center" alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
 3. ▼をクリックします。
 4. <strong>［Lite overview］</strong>を選択します。  
    SSOTのスイッチが表示されます。  
-   <Image alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
+   <Image align="center" alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
 5. SSOTをオンにします。
 6. 次のいずれかの状態になります。
    * ダッシュボードに指標とグラフが表示されます。  
@@ -193,7 +193,7 @@ SKANとAppsFlyerのモデリングによるアトリビューションは、動�
 
 SKANとAppsFlyerのモデルによるアトリビューションの各パターンを、以下のベン図に示します。
 
-![skan_af_model_diagram.png](https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png)
+<Image align="center" alt="skan_af_model_diagram.png" src="https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png" />
 
 以下の表では、各パターンが発生する理由を説明します。
 
@@ -209,7 +209,7 @@ SKANとAppsFlyerのモデルによるアトリビューションの各パター�
 
 SSOTは、以下の図に示す流れで動作します。
 
-![SingleSourceOfTruth.png](https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png)
+<Image align="center" alt="SingleSourceOfTruth.png" src="https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png" />
 
 **SSOTはどのように動作するのか**
 

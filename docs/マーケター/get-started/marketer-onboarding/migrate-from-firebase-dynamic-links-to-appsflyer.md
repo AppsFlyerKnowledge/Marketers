@@ -62,7 +62,7 @@ AppsFlyerのOneLinkは、アトリビューションやリダイレクト、デ�
 * AppsFlyerに<Anchor target="_blank" href="/marketers/ja/docs/adding-an-app-to-appsflyer">アプリIDを追加</Anchor>します。
 * （任意） アクティブユーザーの定義に合わせて、デフォルト90日間の<Anchor target="_blank" href="/marketers/ja/docs/set-up-re-attribution-window">リアトリビューション期間</Anchor>を変更します。
 
-![add](https://files.readme.io/7f7bab2277d0f45434618d28714c727ccbb9e414192b765dd22551bcbd5b0a37-16950840602769.png)
+<Image align="center" alt="add" src="https://files.readme.io/7f7bab2277d0f45434618d28714c727ccbb9e414192b765dd22551bcbd5b0a37-16950840602769.png" />
 
 </Accordion>
 

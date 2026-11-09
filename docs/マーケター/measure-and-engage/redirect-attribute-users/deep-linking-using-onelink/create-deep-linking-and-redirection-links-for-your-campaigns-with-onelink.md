@@ -258,7 +258,7 @@ AppsFlyerは、さまざまなソーシャルアプリ向けランディング�
 1. カスタムリンクの設定で、［**Social-to-app**］セクションに移動します。
 2. ［**ソーシャルアプリ向けランディングページ**］セクションで、［**ソーシャルアプリ向けランディングページを作成**］をクリックします。  
    ランディングページのテンプレートを選択するウィンドウが開きます。  
-   [![](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg" />
 3. 使用するランディングページのテンプレートにカーソルを合わせ、［**作成**］をクリックします。**ヒント**：テンプレートの🛈アイコンにカーソルを合わせると、適した用途を確認できます。 Instagramでは、Clustered PosterとShowAndTellをおすすめします。
 4. ランディングページのクリエイティブ内の各要素をカスタマイズします。要素名から選択するか、プレビュー画像内の要素をクリックして編集します。    
    **ヒント**：クリエイティブのテンプレートを変更する場合に備えて、入力したテキストを保存しておいてください。
@@ -275,10 +275,10 @@ AppsFlyerは、さまざまなソーシャルアプリ向けランディング�
 | <ul><li>Flyer</li><li>Poster</li><li>Blurry poster</li><li>Clustered poster</li></ul> | 300KB | 9:16（縦長） |
 
    4. いずれかの画像URLが正確でない場合はエラーが表示され、クリエイティブを確認できません。  
-      [![](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)
+      <Image align="center" alt="" src="https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png" />
 6. ランディングページのクリエイティブを確認するには、［**確認**］をクリックします。  
    修正が必要な場合は、［**エディターに戻る**］をクリックします。  
-   [![](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)
+   <Image align="center" alt="" src="https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png" />
 7. ランディングページを保存するには、［**完了**］をクリックします。  
    **重要**：作成・更新したランディングページのクリエイティブは、カスタムリンクを生成・更新してから適用されます。
 8. （任意）ランディングページを編集するには、［**ソーシャルアプリ向けランディングページを編集**］をクリックします。
@@ -576,7 +576,7 @@ App Clipを利用したDDLの処理の流れは、以下のとおりです。
    * ユーザーがプライベートリレーを有効にしていること
    * リンクに`af_cp_lp=true`パラメータが含まれていること
 4. 上記を確認すると、アプリアイコン、画像、App Storeからアプリを入手するためのCTAを含むWebランディングページが読み込まれます。また、アプリ内の特定のページへ誘導して最適なユーザー体験を提供するために、URLをコピーすることを説明したメッセージも表示されます。  
-   ![ios_15_ip_masking__1_.png](https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png)
+   <Image align="center" alt="ios_15_ip_masking__1_.png" src="https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png" />
 5. ユーザーが［**アプリを入手**］をタップします。
 6. ユーザーはApp Storeへ誘導され、アプリをインストールします。その後、初回起動時にアプリ内の特定のページへ誘導されます。
 

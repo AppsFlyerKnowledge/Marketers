@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：** AppsFlyer アカウントに関連付けられているアクティブなアプリと保留中のアプリを取得します。
 
-![mceclip0.png](https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png" />
 
 アドネットワークの場合は、<Anchor target="_blank" href="/partners/ja/docs/app-list-api-for-ad-networks">アドネットワーク用アプリリストAPIを使用してください</Anchor>。
 

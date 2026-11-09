@@ -63,7 +63,7 @@ FPSには、**適用**と**タグ付け**の2つのモードがあります。�
   * リアルタイムで**ブロック**
   * ポストアトリビューション不正として**レポートに表示**
 
-[<Image alt="図の説明" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)   
+<Image align="center" alt="図の説明" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />
 **FPSでの仕組み：** インストールは、次のいずれかに分類されます。
 
 * **有効**なアトリビューション
@@ -73,7 +73,7 @@ FPSには、**適用**と**タグ付け**の2つのモードがあります。�
     * リアルタイムで**ブロック**
     * ポストアトリビューション不正として**レポートに表示**
 
-[<Image alt="図の説明" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)
+<Image align="center" alt="図の説明" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />
 
 <div id="note" />
 
@@ -96,7 +96,7 @@ FPSには、**適用**と**タグ付け**の2つのモードがあります。�
 
 **Protect360ダッシュボード**：
 
-[<Image alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />](https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png)
+<Image align="center" alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />
 
 * ページ上部の各項目に表示されるタグ付け件数の合計（1）
 * 「検知ステータス」の時系列の推移（2）
@@ -185,7 +185,7 @@ FPSでは、クリック洪水の検知を簡単に管理し、設定を調整�
 1. クリック洪水の画面で、[検知モード](/docs/beta-fraud-protection-studio#fpsのモード)を選択します。
 2. ページ下部の**保存**ボタンをクリックします。
 
-   [<Image alt="拡大表示できる画像" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />](https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png)
+   <Image align="center" alt="拡大表示できる画像" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />
 
 <div id="current-detection-status" />
 
@@ -269,7 +269,7 @@ FPSでは、クリック洪水の検知を簡単に管理し、設定を調整�
 1. 新しい検知機能の画面で、ドロップダウンから、新しいパッケージの適用前にタグ付けを行う日数を選択します（デフォルトは14日、最大14日まで設定可能）。
 2. **保存**をクリックします。
 
-<Image alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
+<Image align="center" alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
 
 <div id="note-2" />
 
@@ -298,7 +298,7 @@ FPSでは、クリック洪水の検知を簡単に管理し、設定を調整�
 1. FPSタブで、**新しい検知機能のカード**を開きます。
 2. 表と出力可能なレポートを使って、検知結果を確認します。
 3. 適用する準備ができたら、**今すぐ適用**をクリックします。  
-   [![](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)
+   <Image align="center" alt="" src="https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png" />
 
 <div id="note-3" />
 
@@ -412,7 +412,7 @@ Protect360のリエンゲージメントハイジャック検知は、標準の�
     * 総アトリビューション数に占める割合：アプリのすべてのアトリビューションに占める、リエンゲージメントのアトリビューションの割合。
   * メディアソース別のリエンゲージメント検知：検知件数が多いメディアソースについて、リエンゲージメントハイジャックの検知件数を表示します。
 
-<Image alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
 
 </Accordion>
 
@@ -454,7 +454,7 @@ Protect360のリエンゲージメントハイジャック検知は、標準の�
 
 * **メディアソース別のアプリ内の行動に基づく不正検知**：上位のメディアソース別にインストール数を表示します。
 
-<Image alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
 
 </Accordion>
 

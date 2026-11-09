@@ -40,7 +40,7 @@ x-zendesk:
 
 モデルの違いにより、アプリストアのインストール数がAppsFlyerより多く記録される場合があります。反対に、AppsFlyerのインストール数がアプリストアより多く記録される場合もあります。
 
-<Image alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
+<Image align="center" alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
 
 <div id="note" />
 

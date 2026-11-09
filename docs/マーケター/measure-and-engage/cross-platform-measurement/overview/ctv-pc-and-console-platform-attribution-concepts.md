@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **概要：** CTV、PC、コンソールプラットフォームでアトリビューションがどのように機能するかを学び、AppsFlyer がこれらのクロスプラットフォームデバイスでキャンペーンのアトリビューションとイベントデータを受信できるようにします。
 
-<Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
+<Image align="center" alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
 <div id="the-appsflyer-cross-platform-solution" />
 
@@ -89,7 +89,7 @@ CTV、PC、コンソールプラットフォーム上でアプリをマーケテ
 
 ダイレクト計測リンクは、確率論的モデリングと決定論的マッチング（リンクにIDが提供されている場合）の両方の計測方法をサポートしており、1人のユーザーによる1つのインストールが広告のクリックまたはインプレッションと照合されます。アトリビューションフローを次の図で説明します。
 
-![CTV attribution flow - Direct attribution link flow.png](https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png)
+<Image align="center" alt="CTV attribution flow - Direct attribution link flow.png" src="https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png" />
 
 ダイレクト計測リンクは、特定の事前に決められたプラットフォーム上のアプリ用であり、１つの特定のリンク先に繋がるため、URLには常にアプリIDとプラットフォームの情報が含まれています。
 
@@ -107,7 +107,7 @@ CTV、PC、コンソールプラットフォーム上でアプリをマーケテ
 
 クロスプラットフォームの OneLink リンクは、確率論的モデリングアトリビューション方法（IPアドレスに基づく）のみに対応しています。このため、複数のユーザーによる複数のインストールは、同一のインプレッションとして計測される可能性があります。アトリビューションフローを次の図で説明します。
 
-![CTV attribution flow - Cross-platform Onelink link attribution flow (1).png](https://files.readme.io/116067569c92e06fec0ed75fa4385e0f3dc6a155cf35e63bd2ed2ebf84c0c73f-51909661153809.png)
+<Image align="center" alt="CTV attribution flow - Cross-platform Onelink link attribution flow (1).png" src="https://files.readme.io/116067569c92e06fec0ed75fa4385e0f3dc6a155cf35e63bd2ed2ebf84c0c73f-51909661153809.png" />
 
 可能なすべてのアプリのリンク先・プラットフォームは、OneLink テンプレートで設定されます。そのため、クロスプラットフォームの OneLink リンクには、URL に特定のアプリIDや特定のプラットフォーム情報が含まれていません。代わりに、可能なすべてのアプリのリンク先・プラットフォームが設定されているテンプレート ID が、URL に含まれています。
 
@@ -125,7 +125,7 @@ CTV、PC、コンソールプラットフォーム上でアプリをマーケテ
 
 SRNへのアトリビューションは、決定論的マッチングによって行われます。広告主が SRN と連携すると、アトリビューションは次の図のように機能します。
 
-![CTV attribution flow - SRN attribution flow (1).png](https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png)
+<Image align="center" alt="CTV attribution flow - SRN attribution flow (1).png" src="https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png" />
 
 現時点で SRN アトリビューションは、同じプラットフォームから同じプラットフォームへの広告でのみ機能します。つまり、タッチポイント（クリックまたはインプレッション）がインストールと同じプラットフォームで発生する場合です。例えば、Roku CTVのインストールが Roku Endemic Media（RokuのSRN）で確認され、Roku デバイスでインプレッションが発生していることが判明した場合です。インプレッションがモバイルなど別のプラットフォームで発生した場合、アトリビューションの対象にはなりません。
 
@@ -146,7 +146,7 @@ SRNへのアトリビューションは、決定論的マッチングによっ�
 
 ランディングページは、確率論的モデリングと決定論的マッチング（リンクでIDが指定されている場合）の両方のアトリビューション方法に対応しています。確率論的モデリングでは、複数のユーザーによる複数のインストールを同じインプレッションに結び付けることができます。アトリビューションフローを次の図で説明します。
 
-![CTV attribution flow - Landing page attribution flow.png](https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png)
+<Image align="center" alt="CTV attribution flow - Landing page attribution flow.png" src="https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png" />
 
 例：
 

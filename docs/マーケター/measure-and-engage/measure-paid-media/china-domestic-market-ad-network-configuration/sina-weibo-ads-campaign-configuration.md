@@ -54,7 +54,7 @@ Default Postbacks
 
 If attribution/integration is enabled for the partner, AppsFlyer can send automatic postbacks to it following user installs, launches, re-engagements, and rejected installs. Use this section to define the **source of the users** that postbacks are sent for.
 
-![Sina_Weibo_msc_new_2.png](https://files.readme.io/0f71568fd13ce9357f07282636e0b86fdbb9e9b1f6ef9db8ba673bb2066881aa-360002277585.png)
+<Image align="center" alt="Sina_Weibo_msc_new_2.png" src="https://files.readme.io/0f71568fd13ce9357f07282636e0b86fdbb9e9b1f6ef9db8ba673bb2066881aa-360002277585.png" />
 
 The option "**Only events attributed to this partner**" for partner attributed users only, is selected by default.
 
@@ -87,7 +87,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-[![](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)](https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png)
+<Image align="center" alt="" src="https://files.readme.io/f026eec1923611f33be47d7ad3b1a8654f697145be30f552cef5578fe895944c-360002234165.png" />
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. More information about <Anchor target="_blank" href="/marketers/ja/docs/about-link-structure-and-parameters">**AppsFlyer Attribution Link Structure and Parameters**</Anchor>.
 
@@ -101,7 +101,7 @@ When enabled, AppsFlyer recognizes a link as a <Anchor target="_blank" href="/ma
 
 The setup below is displayed when retargeting is enabled.
 
-![retargeting_settings.png](https://files.readme.io/b90bbd6e3bea9dd862808343896b005071b7d9e564d31039c188c3ebf8e81077-360002254489.png)
+<Image align="center" alt="retargeting_settings.png" src="https://files.readme.io/b90bbd6e3bea9dd862808343896b005071b7d9e564d31039c188c3ebf8e81077-360002254489.png" />
 
 ***Standard Link*** **vs.** ***OneLink***
 
@@ -139,7 +139,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/ja/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
-[![sina weibo clickthrough settings](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)](https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png)
+<Image align="center" alt="sina weibo clickthrough settings" src="https://files.readme.io/2c6cba9eba0b01cba638707df6bdb94c1a78b4d2b98f65d5210538311458b763-360002715417.png" />
 
 ### Click attribution link
 
@@ -169,7 +169,7 @@ Ad Revenue data is not supported by this partner.
 
 In this tab, you can select the permissions to grant to the partner, whether the partner acts as an ad network, agency, or even both. Note that even if attribution is disabled for the partner, the permissions tab is active and you can grant control to the partner.
 
-![sina-weibo-permissions.png](https://files.readme.io/a22be58687921e80108fe4b2cbd2863d9277a938a751ed5c666f147d78041c05-360002799478.png)
+<Image align="center" alt="sina-weibo-permissions.png" src="https://files.readme.io/a22be58687921e80108fe4b2cbd2863d9277a938a751ed5c666f147d78041c05-360002799478.png" />
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
 
@@ -191,11 +191,11 @@ Login to Sina Weibo Ads, using this link: [https://ad.weibo.com/](https://ad.wei
 
 Go to the **Tools** page to upload your apps in the Apps Management section:
 
-[![](https://files.readme.io/56d413ce75a2a3b4ca78a6928f60b9898bbd892d43d370197189da66ef9b078b-360000449769.png)](https://files.readme.io/56d413ce75a2a3b4ca78a6928f60b9898bbd892d43d370197189da66ef9b078b-360000449769.png)
+<Image align="center" alt="" src="https://files.readme.io/56d413ce75a2a3b4ca78a6928f60b9898bbd892d43d370197189da66ef9b078b-360000449769.png" />
 
 Click to add new apps:
 
-[![](https://files.readme.io/2c372745a5fe9b05325731e29e24f0b5097a43664e9a28e288d0b9300aecee8e-360000441885.png)](https://files.readme.io/2c372745a5fe9b05325731e29e24f0b5097a43664e9a28e288d0b9300aecee8e-360000441885.png)
+<Image align="center" alt="" src="https://files.readme.io/2c372745a5fe9b05325731e29e24f0b5097a43664e9a28e288d0b9300aecee8e-360000441885.png" />
 
 Android: Enter the APK download page (end with .apk) or upload the APK document.
 
@@ -205,21 +205,21 @@ iOS: Enter the iTunes link.
 
 Go to the **Promotions** page and Create New Ad Series
 
-[![](https://files.readme.io/eaf980c1adc0b134265162c114f66b1bf049a80336116db76d353ee5113a9ae5-360000449909.png)](https://files.readme.io/eaf980c1adc0b134265162c114f66b1bf049a80336116db76d353ee5113a9ae5-360000449909.png)
+<Image align="center" alt="" src="https://files.readme.io/eaf980c1adc0b134265162c114f66b1bf049a80336116db76d353ee5113a9ae5-360000449909.png" />
 
 If you want to acquire new users for your app, select **Increase App Installs** ad type, as shown below:
 
-[![](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)](https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png)
+<Image align="center" alt="" src="https://files.readme.io/b9e75ac4c9681cebfa06ba6965032b1ff0dc11b2da6e8c2b11cc9219555fa4e7-360000442105.png" />
 
 ### Setup ad series
 
 Select the app you want to promote:
 
-[![](https://files.readme.io/cf9697b09d8d8b5416b8029cb20c2137eda24d9616bf2db2e1e45a3ec150fcf3-360000450049.png)](https://files.readme.io/cf9697b09d8d8b5416b8029cb20c2137eda24d9616bf2db2e1e45a3ec150fcf3-360000450049.png)
+<Image align="center" alt="" src="https://files.readme.io/cf9697b09d8d8b5416b8029cb20c2137eda24d9616bf2db2e1e45a3ec150fcf3-360000450049.png" />
 
 Set the audience features, budget, and promotion periods:
 
-[![](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)](https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png)
+<Image align="center" alt="" src="https://files.readme.io/709297bb78cbd48218ee5438a40a5a12e78eeeecf4e35414ec36de89420791b6-360000442205.png" />
 
 ### Uploading ad creatives and set the attribution link
 
@@ -232,7 +232,7 @@ Weibo provides four ad formats to promote App installs:
 
 All of the ad formats support AppsFlyer Attribution.
 
-[![](https://files.readme.io/5404349a21a783509e6de074826ace0db0d66248853f229ad444fabec95b8311-360000450369.png)](https://files.readme.io/5404349a21a783509e6de074826ace0db0d66248853f229ad444fabec95b8311-360000450369.png)
+<Image align="center" alt="" src="https://files.readme.io/5404349a21a783509e6de074826ace0db0d66248853f229ad444fabec95b8311-360000450369.png" />
 
 Enter the AppsFlyer attribution link
 
@@ -243,7 +243,7 @@ Enter the AppsFlyer attribution link
 > 	&clickid={IMP}&md5_idfa={idfa_MD5}&md5_imei={imei_MD5}&redirect=false
 > ```
 
-[![](https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png)](https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png)
+<Image align="center" alt="" src="https://files.readme.io/27113a1303fea22bde74527c7103bfbda8e8fd7755c44a52508a02368e0a6407-360000442725.png" />
 
 Complete any additional settings and publish the ad.
 
@@ -256,13 +256,13 @@ Complete any additional settings and publish the ad.
 
 On ad campaign level, set up the targeting, budget, and campaign time:
 
-![sina-weibo-retargeting.png](https://files.readme.io/8225fbfd74d16bb1a3e2e816933cb22d5f581a219ee35dd7f9d5285bacd49d2d-360002715577.png)
+<Image align="center" alt="sina-weibo-retargeting.png" src="https://files.readme.io/8225fbfd74d16bb1a3e2e816933cb22d5f581a219ee35dd7f9d5285bacd49d2d-360002715577.png" />
 
 On the ad level, set up the deep link and AppsFlyer attribution link:
 
 1. Choose ***deeplink+app***, and paste the deep link into the relevant box:
 
-   ![sina-weibo-retargeting-deeplink.png](https://files.readme.io/dc5666893ff99dcb808a15aa2e41396b359617e2f6271f246a10893d4b05eebe-360002715557.png)
+   <Image align="center" alt="sina-weibo-retargeting-deeplink.png" src="https://files.readme.io/dc5666893ff99dcb808a15aa2e41396b359617e2f6271f246a10893d4b05eebe-360002715557.png" />
 
    > 📄 **Example**
    >
@@ -272,7 +272,7 @@ On the ad level, set up the deep link and AppsFlyer attribution link:
 
 2. Copy the attribution link from AppsFlyer dashboard with all the required parameters and paste it into the attribution link box:
 
-   ![sina-weibo-retargeting-links.png](https://files.readme.io/edd0861728e19a0bc0e23641161c2365cf5c41eeccaa801bd4e8c3392215fe83-360002799598.png)
+   <Image align="center" alt="sina-weibo-retargeting-links.png" src="https://files.readme.io/edd0861728e19a0bc0e23641161c2365cf5c41eeccaa801bd4e8c3392215fe83-360002799598.png" />
 
    > 📄 **Example**
    >

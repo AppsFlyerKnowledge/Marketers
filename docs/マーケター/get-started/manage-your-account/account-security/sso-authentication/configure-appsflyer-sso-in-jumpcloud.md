@@ -43,7 +43,7 @@ AppsFlyerのSSOを設定するには、まずJumpCloud側で設定を行いま�
    2. **ACS URLs：** <Anchor target="_blank" href="/marketers/ja/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration">ユーザーの認証方法</Anchor>に対応するコールバックURLを入力します。
    3. **Login URL：** AppsFlyerの<Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">ログインURL</Anchor>を入力します。  
 
-      <Image alt="jumpcloud_sso_tab2__1_.png" src="https://files.readme.io/3b45c98d191a35644c5479a0237e92908ca6f18416f6df2b6e0c84a30940307b-15934671100561.png" width="477px" />
+      <Image align="center" alt="jumpcloud_sso_tab2__1_.png" src="https://files.readme.io/3b45c98d191a35644c5479a0237e92908ca6f18416f6df2b6e0c84a30940307b-15934671100561.png" width="477px" />
 6. **activate**をクリックします。
 7. 公開証明書が作成されます。作成されたことを示す表示が、ページの右上に現れます。 **Download Certificate**をクリックします。この証明書は、<Anchor target="_blank" href="/marketers/ja/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">手順2のAppsFlyer側の設定</Anchor>で必要になります。
 
@@ -55,7 +55,7 @@ AppsFlyerのSSOを設定するには、まずJumpCloud側で設定を行いま�
 
 1. JumpCloudの管理メニューから<Anchor target="_blank" href="https://console.jumpcloud.com/#/users">Users</Anchor>に移動し、＋アイコンをクリックします。
 2. **Manual user entry**を選択します。  
-   <Image alt="cloud_jump_manual_user_entry.png" src="https://files.readme.io/d00299979fa5e036c464c8c6d360965d46e42d5042a31366ced7adc84914c0be-14947838808081.png" width="417px" />
+   <Image align="center" alt="cloud_jump_manual_user_entry.png" src="https://files.readme.io/d00299979fa5e036c464c8c6d360965d46e42d5042a31366ced7adc84914c0be-14947838808081.png" width="417px" />
 3. 必須項目の**Username**と**Company Email**を入力し、**save user**をクリックします。
 4. 自社で認められている方法に従って、ユーザーのパスワードを設定します。
 5. 続けてユーザーを追加する場合は、**Save And Create Another**をクリックし、手順3を繰り返します。すべてのユーザーを追加したら、**Save**をクリックします。

@@ -389,7 +389,7 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 
 計測リンクを開いた後、Playストアで以下のエラーメッセージが表示される場合があります。
 
-![TL_error_message.png](https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png)
+<Image align="center" alt="TL_error_message.png" src="https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png" />
 
 これは、計測リンクに#が含まれているためです。例：
 

@@ -28,7 +28,7 @@ x-zendesk:
 
 ## モバイルWebからアプリへのアトリビューションソリューション
 
-![Web_to_app_.png](https://files.readme.io/deb9ba0dfd18671666e9f06dc27440759844ea365988f80e05ce7ac2817a7299-46646996021777.png)
+<Image align="center" alt="Web_to_app_.png" src="https://files.readme.io/deb9ba0dfd18671666e9f06dc27440759844ea365988f80e05ce7ac2817a7299-46646996021777.png" />
 
 <div id="benefits-of-web-to-app-campaigns" />
 

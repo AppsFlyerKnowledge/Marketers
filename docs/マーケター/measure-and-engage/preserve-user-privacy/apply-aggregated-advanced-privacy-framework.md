@@ -75,7 +75,7 @@ AAPがオンの場合、データの可用性は次のように影響を受け�
 
 定義された用語は、広告主およびパートナーが利用できるデータを説明するために、図および後続のセクションで使用されます。
 
-![高度なプライバシーフレームワーク - 広告主 (4).png](https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png)
+<Image align="center" alt="高度なプライバシーフレームワーク - 広告主 (4).png" src="https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png" />
 
 高プライバシーポストバックは、ウェブ上で配信される場合は動作が異なり、af\_media\_type=web または af\_media\_type=app パラメータを使用する必要があります。詳細は <Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web面での広告配信">こちら</Anchor>を確認してください。
 
@@ -117,7 +117,7 @@ AppleのAppTrackingTransparencyフレームワークは、異なる会社から�
 
 高プライバシー一括設定（AAP）は、選択したアプリのすべてのパートナーのプライバシーの詳細設定を制御するアプリレベルの制御です。「高プライバシー一括設定」トグルは**アプリの設定**画面にあります。高プライバシー一括設定トグルがオンの場合、選択したアプリのすべてのパートナーの **高プライバシーポストバック**トグルが自動的にオンになり、媒体毎にオンオフの変更はできません。高プライバシー一括設定をオフにすると、広告主は各パートナー連携画面に個別に移動し、 **高プライバシーポストバック**を有効・無効に設定できます。
 
-![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
+<Image align="center" alt="AAPcontrol.png" src="https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png" />
 
 <div id="aap-enabled" />
 
@@ -150,7 +150,7 @@ AppleのAppTrackingTransparencyフレームワークは、異なる会社から�
 
 AAPが無効の場合、アドネットワークごとに個別で広告主は高プライバシーポストバックを設定できます。
 
-![APControl.png](https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png)
+<Image align="center" alt="APControl.png" src="https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png" />
 
 **パートナーの高プライバシーポストバックを無効にする方法：**
 
@@ -201,7 +201,7 @@ AAPが無効の場合、アドネットワークごとに個別で広告主は�
 
 さまざまなユーザーの同意シナリオと、使用されるポストバックの種類を次の図に示します。
 
-![AAP - 属性付けされた広告ネットワーク.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
+<Image align="center" alt="AAP - 属性付けされた広告ネットワーク.png" src="https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png" />
 
 高プライバシーポストバックは、ウェブ上で配信される場合は動作が異なり、af\_media\_type=web または af\_media\_type=app パラメータを使用する必要があります。詳細は <Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web面での広告配信">こちら</Anchor>を確認してください。
 
@@ -211,11 +211,11 @@ AAPが無効の場合、アドネットワークごとに個別で広告主は�
 
 次の図に示すように、連携パートナーの連携タブの送信オプションが*オーガニックを含むすべてのメディアソース*に設定され、そのパートナーがイベントの成果に紐づかない場合、成果に紐づかないポストバックがネットワークに送信されます。
 
-![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+<Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 さまざまなユーザーの同意シナリオと、使用されるポストバックの種類を次のフローチャートに示しています。
 
-![AAP - 無名広告ネットワーク.png](https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png)
+<Image align="center" alt="AAP - 無名広告ネットワーク.png" src="https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png" />
 
 高プライバシーポストバックは、ウェブ上で配信される場合は動作が異なり、af\_media\_type=web または af\_media\_type=app パラメータを使用する必要があります。詳細は <Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web面での広告配信">こちら</Anchor>を確認してください。
 
@@ -236,7 +236,7 @@ AAPが無効の場合、アドネットワークごとに個別で広告主は�
 
 さまざまなユーザーの同意シナリオと、使用されるポストバックの種類を次の図に示しています。
 
-![AAP - Analytics partner.png](https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png)
+<Image align="center" alt="AAP - Analytics partner.png" src="https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png" />
 
 高プライバシーポストバックは、ウェブ上で配信される場合は動作が異なり、af\_media\_type=web または af\_media\_type=app パラメータを使用する必要があります。詳細は <Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web面での広告配信">こちら</Anchor>を確認してください。
 
@@ -255,7 +255,7 @@ AAPが無効の場合、アドネットワークごとに個別で広告主は�
 
 **代理店に高プライバシーポストバックを設定する権限を付与する**
 
-![agency_advanced_privacy.png](https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png)
+<Image align="center" alt="agency_advanced_privacy.png" src="https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png" />
 
 **代理店に高プライバシーポリシーの設定を許可する方法**：
 

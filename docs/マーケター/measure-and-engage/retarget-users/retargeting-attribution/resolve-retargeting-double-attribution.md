@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** リターゲティングキャンペーンのリエンゲージメント期間中のパフォーマンスにおいて、アプリ内イベントとセッションデータは、ユーザー獲得（新規インストール）とリターゲティングメディアソースの両方に紐づきます。
 
-![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
+<Image align="center" alt="" src="https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png" />
 
 <div id="overview" />
 
@@ -64,7 +64,7 @@ x-zendesk:
 
 ダッシュボードやコホートレポートの中には、統合、ユーザー獲得、リターゲティングといった複数の表示タイプオプションが含まれているものがあります。これらの表示タイプは、ローデータで使用されるものと同様のロジックを採用しています。
 
-![](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 <div id="data-filtering-by-view-type-using-the-conversion_type-field" />
 

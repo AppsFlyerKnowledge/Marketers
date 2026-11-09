@@ -287,19 +287,19 @@ appsFlyerSdk.setAdditionalData(data);
 1. AppsFlyerで<strong>［連携］</strong>＞<strong>［パートナー連携］＞［マーケットプレイス］</strong>タブに移動します。
 2. Amplitude V1連携を設定する場合は、**Amplitude V1**（テクノロジーパートナー）を選択します。
 
-   <Image alt="Select Amplitude V1 doctored.png" src="https://files.readme.io/71721bb1a48dda061ce2a099522edf9baed39ef2d67edad8ac14277b42cd2d70-36713632837777.png" width="511px" />
+   <Image align="center" alt="Select Amplitude V1 doctored.png" src="https://files.readme.io/71721bb1a48dda061ce2a099522edf9baed39ef2d67edad8ac14277b42cd2d70-36713632837777.png" width="511px" />
 
    Amplitude V2連携を設定する場合は、**Amplitude V2**（テクノロジーパートナー）を選択します。
 
-   <Image alt="Select Amplitude V2.png" src="https://files.readme.io/4bbf57727a2b6e16e5205505b459a78f8642f02d1bb1c4e8f72e26b3bd9e1bd3-36713631187857.png" width="503px" />
+   <Image align="center" alt="Select Amplitude V2.png" src="https://files.readme.io/4bbf57727a2b6e16e5205505b459a78f8642f02d1bb1c4e8f72e26b3bd9e1bd3-36713631187857.png" width="503px" />
 3. Amplitudeのバージョンを選択したら、<strong>［連携を設定］</strong>をクリックします。
 
-   ![Click set up integration.png](https://files.readme.io/c13fef10fb4cf0ea12f44d56f8c3b64936376ce181a1d12c9f096ad6103c29a6-36713632857617.png)
+   <Image align="center" alt="Click set up integration.png" src="https://files.readme.io/c13fef10fb4cf0ea12f44d56f8c3b64936376ce181a1d12c9f096ad6103c29a6-36713632857617.png" />
 4. <strong>［連携］</strong>タブで、次の設定を行います。
    * 対象のアプリを選択します。
    * <strong>［パートナーを有効化］</strong>をオンにします。
 
-     <Image alt="Activate partner blurred.png" src="https://files.readme.io/5e0e7ae537cd89b2c561c8561de9ebc160f6d6eb0fedc5c7ba0c761ddb73632a-36713631194641.png" width="521px" />
+     <Image align="center" alt="Activate partner blurred.png" src="https://files.readme.io/5e0e7ae537cd89b2c561c8561de9ebc160f6d6eb0fedc5c7ba0c761ddb73632a-36713631194641.png" width="521px" />
 5. 残りのタブで設定を完了します。
 
 <Accordion title="連携タブ">
@@ -360,13 +360,13 @@ AmplitudeとAppsFlyerの接続には、固有のAPIキーを使用します。�
 1. Amplitudeアカウントにログインします。
 2. ページ右上の設定アイコン＞**Organization Settings**をクリックします。
 
-   <Image alt="Amplitude" src="https://files.readme.io/214df773c045239924b65a4a1e6b0a1957f6b7ea09e225af80d83ffa0a469c26-16258070772625.png" width="240px" />
+   <Image align="center" alt="Amplitude" src="https://files.readme.io/214df773c045239924b65a4a1e6b0a1957f6b7ea09e225af80d83ffa0a469c26-16258070772625.png" width="240px" />
 3. **Projects**をクリックし、AppsFlyerにデータを送信するプロジェクトを選択します。
 
-   ![amplitude](https://files.readme.io/eaf158e4505f47f8da0fdae4f97be773ab32910352b50cab5ca5d4de3e8782ac-16335170399505.png)
+   <Image align="center" alt="amplitude" src="https://files.readme.io/eaf158e4505f47f8da0fdae4f97be773ab32910352b50cab5ca5d4de3e8782ac-16335170399505.png" />
 4. **Project**タブからAPIキーをコピーします。
 
-   <Image alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
+   <Image align="center" alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
 5. AppsFlyer管理画面でAmplitudeの設定に進みます。
 
 <div id="default-postbacks" />
@@ -375,7 +375,7 @@ AmplitudeとAppsFlyerの接続には、固有のAPIキーを使用します。�
 
 AppsFlyerは、ユーザーのインストール後にAmplitudeへポストバックを自動送信できます。インストールとリエンゲージメント（リアトリビューションを含む）が対象です。リエンゲージメントとは、すでにアプリをインストールしているユーザーが、キャンペーンをクリックした後にアプリを開くことです。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#default-postbacks">デフォルトポストバック</Anchor>を参照してください。
 
-<Image alt="Screenshot 2025-12-03 at 1.57.03 PM.png" src="https://files.readme.io/3454ca573ee63ea076251459a9c619a747fc5640862e83582b2d10a985c2489a-41748033847953.png" width="703px" />
+<Image align="center" alt="Screenshot 2025-12-03 at 1.57.03 PM.png" src="https://files.readme.io/3454ca573ee63ea076251459a9c619a747fc5640862e83582b2d10a985c2489a-41748033847953.png" width="703px" />
 
 <div id="in-app-event-settings" />
 
@@ -431,7 +431,7 @@ Amplitudeでは、権限の設定は利用できません。
 
 AppsFlyerからAmplitudeに送信されたアトリビューションデータは、ダッシュボードに **[AppsFlyer]** で始まるイベントやプロパティとして表示されます。
 
-![amplitude-properties.png](https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png)
+<Image align="center" alt="amplitude-properties.png" src="https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png" />
 
 > 🚧 **Important**
 >

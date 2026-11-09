@@ -49,7 +49,7 @@ AppsFlyer で SearchAds.com の設定を開始する前に、**api\_key** と **
 * api\_key については、SearchAds.com のダッシュボードで**連携** > **AppsFlyer** をクリックします。
 * apple-search-ads-campaign-group-id.png
 
-  ![apple-search-ads-campaign-group-id.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+  <Image align="center" alt="apple-search-ads-campaign-group-id.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 
 <div id="setting-up-campaigns-in-appsflyer" />
 

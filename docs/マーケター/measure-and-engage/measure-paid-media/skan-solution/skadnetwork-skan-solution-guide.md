@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **概要**：SKANを使用したアプリインストールのアトリビューションについて説明します。
 
-![5754](https://files.readme.io/a970d7b0e8da300ded2138f941bf2e891f32d396c8500292534992a4b4449d71-30757780264337.png)
+<Image align="center" alt="5754" src="https://files.readme.io/a970d7b0e8da300ded2138f941bf2e891f32d396c8500292534992a4b4449d71-30757780264337.png" />
 
 ## SKAN
 
@@ -99,7 +99,7 @@ AppsFlyerのSKANソリューションは、広告主に以下を提供します�
 
 #### **SKANアトリビューションの流れ**
 
-![SKAN_flow_-_Affinity_diagram_2.png](https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png)
+<Image align="center" alt="SKAN_flow_-_Affinity_diagram_2.png" src="https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png" />
 
 1. 広告主がAppsFlyer Conversion StudioでSKAN計測を設定します。
 2. ユーザーがアプリを初めて起動します。

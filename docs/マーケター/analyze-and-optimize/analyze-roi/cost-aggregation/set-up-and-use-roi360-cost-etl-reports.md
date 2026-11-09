@@ -32,7 +32,7 @@ x-zendesk:
 
 > **概要：** AppsFlyer ROI360のコストETLでは、メディアソースごとに取得できる最も詳細なキャンペーン広告費データを、広告主に提供します。データは1日最大4回更新され、広告主のBIシステムに取り込める形式でクラウドサービスに配信されます。
 
-[![5896_CostETL_graphic__2_.png](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)](https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png)
+<Image align="center" alt="5896_CostETL_graphic__2_.png" src="https://files.readme.io/3c9b8721fa4aba170c1ed7b7b365b4a5fe1cd74080469b3020d395352cede674-11178721788817.png" />
 
 AppsFlyer ROI360のコストETLでは、メディアソースごとに取得できる最も詳細なキャンペーン広告費データを、広告主に提供します。データは1日最大4回更新され、広告主のBIシステムに取り込める形式で、Data Lockerの配信先クラウドサービスに送信されます。
 
@@ -244,14 +244,14 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
 1. AppsFlyerのサイドメニューから<strong>［エクスポート］</strong>＞<strong>［コストETL］</strong>に移動します。
 2. <strong>［データ接続］</strong>を選択または設定します。
    * データ接続を設定済みの場合は、<strong>［接続］</strong>ドロップダウンから、コストETLで使用する接続を選択します。  
-     [<Image alt="" src="https://files.readme.io/483cc971805232bca48f4da7f4ee6bd98e43cb3f8e70cfb79fd158746b889e35-31233921523601.png" width="700px" />](https://files.readme.io/483cc971805232bca48f4da7f4ee6bd98e43cb3f8e70cfb79fd158746b889e35-31233921523601.png)
+     <Image align="center" alt="" src="https://files.readme.io/483cc971805232bca48f4da7f4ee6bd98e43cb3f8e70cfb79fd158746b889e35-31233921523601.png" width="700px" />
    * まだデータ接続がない場合は、<strong>［＋Data Lockerで新しい接続を作成］</strong>をクリックし、以下の手順で接続を作成します。  
-     [<Image alt="" src="https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png" width="700px" />](https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png)
+     <Image align="center" alt="" src="https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png" width="700px" />
      1. 接続に名前を付けます。  
-        [<Image alt="" src="https://files.readme.io/734060321cf14a4ebbce66fe2abc71ff299218f7c52cb64dc5b8e71c42d3632d-31233921530001.png" width="2100px" />](https://files.readme.io/734060321cf14a4ebbce66fe2abc71ff299218f7c52cb64dc5b8e71c42d3632d-31233921530001.png)
+        <Image align="center" alt="" src="https://files.readme.io/734060321cf14a4ebbce66fe2abc71ff299218f7c52cb64dc5b8e71c42d3632d-31233921530001.png" width="2100px" />
      2. **配信先となるクラウドサービスを選択します**。次のいずれかの操作を行います。
         * <strong>［S3］</strong>を選択します。  
-          [<Image alt="" src="https://files.readme.io/1a78090f00407d44a5b74f3cb3b94e3a28064bc9b991b1cecf506fa0b9053842-31233961351441.png" width="945px" />](https://files.readme.io/1a78090f00407d44a5b74f3cb3b94e3a28064bc9b991b1cecf506fa0b9053842-31233961351441.png)
+          <Image align="center" alt="" src="https://files.readme.io/1a78090f00407d44a5b74f3cb3b94e3a28064bc9b991b1cecf506fa0b9053842-31233961351441.png" width="945px" />
           1. AWS S3のバケット名を入力します。先頭の`af-`は必須です。手動で入力してください。
           2. <strong>［接続をテスト］</strong>をクリックします。
           3. バケットのパスが無効であるというエラーメッセージが表示されないことを確認します。
@@ -259,7 +259,7 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
           5. <strong>［保存］</strong>をクリックします。
           6. コストETLの設定画面で、<strong>［接続］</strong>ドロップダウンから、作成したクラウドサービスの接続を選択します。
         * <strong>［GCS］</strong>を選択します。  
-          [<Image alt="" src="https://files.readme.io/6da526f43131887270136e9fcfa9434ad88c2ce8cebdb896c07dac4a0652d683-31233921536913.png" width="944px" />](https://files.readme.io/6da526f43131887270136e9fcfa9434ad88c2ce8cebdb896c07dac4a0652d683-31233921536913.png)
+          <Image align="center" alt="" src="https://files.readme.io/6da526f43131887270136e9fcfa9434ad88c2ce8cebdb896c07dac4a0652d683-31233921536913.png" width="944px" />
           1. **GCSバケット名**を入力します。
           2. <strong>［接続をテスト］</strong>をクリックします。
           3. バケットのパスが無効であるというエラーメッセージが表示されないことを確認します。
@@ -267,51 +267,51 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
           5. <strong>［保存］</strong>をクリックします。
           6. コストETLの設定画面で、<strong>［接続］</strong>ドロップダウンから、作成したクラウドサービスの接続を選択します。
         * ［ベータ版］<strong>［Azure］</strong>を選択します。  
-          [<Image alt="" src="https://files.readme.io/cd718eeebc5965d24a2d38457d4fa22c5691d6a186464187bea12199fb96671b-31233921550481.png" width="943px" />](https://files.readme.io/cd718eeebc5965d24a2d38457d4fa22c5691d6a186464187bea12199fb96671b-31233921550481.png)
+          <Image align="center" alt="" src="https://files.readme.io/cd718eeebc5965d24a2d38457d4fa22c5691d6a186464187bea12199fb96671b-31233921550481.png" width="943px" />
           1. **接続名**、**ストレージアカウント名**、**キー**を入力します。
           2. バケットのパスが無効であるというエラーメッセージが表示されないことを確認します。
           3. <strong>［この接続をAdobe Experience Platformに対応させる］</strong>かどうかを選択します。
           4. <strong>［保存］</strong>をクリックします。
           5. コストETLの設定画面で、<strong>［接続］</strong>ドロップダウンから、作成したクラウドサービスの接続を選択します。
         * ［ベータ版］<strong>［Yandex］</strong>を選択します。  
-          [<Image alt="" src="https://files.readme.io/230e0d9c0b56b4c9f85da8c97f1ab91818c16ecfbabbf81ecb35f12d41716888-31233961360273.png" width="944px" />](https://files.readme.io/230e0d9c0b56b4c9f85da8c97f1ab91818c16ecfbabbf81ecb35f12d41716888-31233961360273.png)
+          <Image align="center" alt="" src="https://files.readme.io/230e0d9c0b56b4c9f85da8c97f1ab91818c16ecfbabbf81ecb35f12d41716888-31233961360273.png" width="944px" />
           1. **バケット名**、**アクセスキー**、**シークレットキー**を入力します。
           2. バケットのパスが無効であるというエラーメッセージが表示されないことを確認します。
           3. <strong>［この接続をAdobe Experience Platformに対応させる］</strong>かどうかを選択します。
           4. <strong>［保存］</strong>をクリックします。
           5. コストETLの設定画面で、<strong>［接続］</strong>ドロップダウンから、作成したクラウドサービスの接続を選択します。
         * <strong>［BigQuery］</strong>を選択します。  
-          [<Image alt="" src="https://files.readme.io/6989fa8c869c08440da757b3ebb385754a4f23dbe4e2d38c50837448c08ab03b-31233921555857.png" width="945px" />](https://files.readme.io/6989fa8c869c08440da757b3ebb385754a4f23dbe4e2d38c50837448c08ab03b-31233921555857.png)
+          <Image align="center" alt="" src="https://files.readme.io/6989fa8c869c08440da757b3ebb385754a4f23dbe4e2d38c50837448c08ab03b-31233921555857.png" width="945px" />
           1. BigQueryのプロジェクトIDとデータセット名を入力します。
           2. <strong>［接続をテスト］</strong>をクリックします。
           3. バケットのパスが無効であるというエラーメッセージが表示されないことを確認します。
           4. <strong>［保存］</strong>をクリックします。
           5. コストETLの設定画面で、<strong>［接続］</strong>ドロップダウンから、作成したクラウドサービスの接続を選択します。
         * <strong>［Snowflake］</strong>を選択します。  
-          [<Image alt="" src="https://files.readme.io/b0e5f5ece797f46006d6e29a6afd01bc120b035590bd2ee87a54daa8c36bb0ed-31233961363985.png" width="944px" />](https://files.readme.io/b0e5f5ece797f46006d6e29a6afd01bc120b035590bd2ee87a54daa8c36bb0ed-31233961363985.png)
+          <Image align="center" alt="" src="https://files.readme.io/b0e5f5ece797f46006d6e29a6afd01bc120b035590bd2ee87a54daa8c36bb0ed-31233961363985.png" width="944px" />
           1. SnowflakeのリージョンとアカウントIDを入力します。
           2. <strong>［接続をテスト］</strong>をクリックします。
           3. バケットのパスが無効であるというエラーメッセージが表示されないことを確認します。
           4. <strong>［保存］</strong>をクリックします。
           5. コストETLの設定画面で、<strong>［接続］</strong>ドロップダウンから、作成したクラウドサービスの接続を選択します。
 3. <strong>［次へ］</strong>をクリックします。  
-   [<Image alt="" src="https://files.readme.io/4237ca8e7e70e0c04e924b61839d47d88e42075b4c257fcdf5e78870712d3582-31233921563153.png" width="746px" />](https://files.readme.io/4237ca8e7e70e0c04e924b61839d47d88e42075b4c257fcdf5e78870712d3582-31233921563153.png)
+   <Image align="center" alt="" src="https://files.readme.io/4237ca8e7e70e0c04e924b61839d47d88e42075b4c257fcdf5e78870712d3582-31233921563153.png" width="746px" />
 4. <strong>［レポート配信スケジュール（UTC）］</strong>を設定します。  
-   [<Image alt="" src="https://files.readme.io/427b18043c0ab53ea559d53094efb6f04ad7505659c08ba7345b3a647f78d64d-31233961369105.png" width="607px" />](https://files.readme.io/427b18043c0ab53ea559d53094efb6f04ad7505659c08ba7345b3a647f78d64d-31233961369105.png)
+   <Image align="center" alt="" src="https://files.readme.io/427b18043c0ab53ea559d53094efb6f04ad7505659c08ba7345b3a647f78d64d-31233961369105.png" width="607px" />
    1. 1日に受信するレポート数（1～4回）を選択します。
    2. レポートを受信する時刻を選択します。[詳細はこちら](/docs/set-up-and-use-roi360-cost-etl-reports#report-schedule)
    3. <strong>［次へ］</strong>をクリックします。
 5. レポートの詳細を設定します。
    1. レポートに含めるアプリを1つ以上選択します。今後追加するアプリも自動的に含めるには、<strong>［今後追加するすべてのアプリを含める］</strong>を選択します。  
-      [<Image alt="" src="https://files.readme.io/a5d453f40a7c5318f6a4c6cdfc5cf4d645c540c4b684362a796cda41d3c058c6-31233961373585.png" width="566px" />](https://files.readme.io/a5d453f40a7c5318f6a4c6cdfc5cf4d645c540c4b684362a796cda41d3c058c6-31233961373585.png)
+      <Image align="center" alt="" src="https://files.readme.io/a5d453f40a7c5318f6a4c6cdfc5cf4d645c540c4b684362a796cda41d3c058c6-31233961373585.png" width="566px" />
    2. 分析の目的に合ったレポートを選択します。各レポートの説明は、[レポートの種類](#report-types)を参照してください。
       * **サマリーレポート**はデフォルトで選択されています。
       * 全広告費レポートを受信するには、**国別レポート**を選択する必要があります。  
-        [<Image alt="" src="https://files.readme.io/3662c55c71f3390ac651c9269eac519f846b53ad675dab224b62fb09f81d4578-31233921571345.png" width="1921px" />](https://files.readme.io/3662c55c71f3390ac651c9269eac519f846b53ad675dab224b62fb09f81d4578-31233921571345.png)
+        <Image align="center" alt="" src="https://files.readme.io/3662c55c71f3390ac651c9269eac519f846b53ad675dab224b62fb09f81d4578-31233921571345.png" width="1921px" />
    3. レポートに含めるディメンションを選択します。**注意**：国別レポートを選択した場合、geoディメンションはデフォルトで含まれます。チャネル別レポートを選択した場合、channelディメンションはデフォルトで含まれます。   
-      [<Image alt="" src="https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png" width="1921px" />](https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png)
+      <Image align="center" alt="" src="https://files.readme.io/dbbea34c466b2263638a0937392ab004eab471a9e44d4c3713d6487507cef14b-4476081988241.png" width="1921px" />
    4. レポートに含める指標を選択します。  
-      [<Image alt="" src="https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg" width="1863px" />](https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg)
+      <Image align="center" alt="" src="https://files.readme.io/2b865bb9cdb355287d99e81278fed5fd374da80a9f93499bd7b75777c8d5d11e-360019263038.jpg" width="1863px" />
 6. <strong>［適用］</strong>をクリックします。
 
 </Accordion>
@@ -333,9 +333,9 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
 1. AppsFlyerのサイドメニューから<strong>［エクスポート］</strong>＞<strong>［コストETL］</strong>に移動します。
 2. <strong>［データ接続］</strong>セクションで、次のいずれかの操作を行います。
    * Data Locker接続の場合、<strong>［接続］</strong>ドロップダウンで、編集する接続にカーソルを合わせます。接続の詳細が表示されます。 <strong>［Data Lockerで編集］</strong>をクリックします。  
-     [<Image alt="" src="https://files.readme.io/95c76d3bfc4a4db4bb9b4e67e4460680e0039e91dd930903515771e52c00ac7a-31233961377937.png" width="695px" />](https://files.readme.io/95c76d3bfc4a4db4bb9b4e67e4460680e0039e91dd930903515771e52c00ac7a-31233961377937.png)
+     <Image align="center" alt="" src="https://files.readme.io/95c76d3bfc4a4db4bb9b4e67e4460680e0039e91dd930903515771e52c00ac7a-31233961377937.png" width="695px" />
    * コストETL接続の場合、<strong>［接続の詳細］</strong>ドロップダウンをクリックします。接続の詳細が表示されます。  
-     [<Image alt="" src="https://files.readme.io/67a1fb2ce45a49fc75d12eba4d1c3e67875b83883b0fc05307c080c6050be0f2-31233961380369.png" width="651px" />](https://files.readme.io/67a1fb2ce45a49fc75d12eba4d1c3e67875b83883b0fc05307c080c6050be0f2-31233961380369.png)
+     <Image align="center" alt="" src="https://files.readme.io/67a1fb2ce45a49fc75d12eba4d1c3e67875b83883b0fc05307c080c6050be0f2-31233961380369.png" width="651px" />
 3. 画面の案内に従い、接続の詳細を編集します。
 4. 表示される案内に従って、<strong>［変更を保存］</strong>または<strong>［適用］</strong>をクリックします。
 
@@ -348,9 +348,9 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
 1. AppsFlyerのサイドメニューから<strong>［エクスポート］</strong>＞<strong>［コストETL］</strong>に移動します。
 2. <strong>［データ接続］</strong>セクションで、次のいずれかの操作を行います。
    * 使用するData Locker接続が設定済みの場合は、<strong>［接続］</strong>ドロップダウンから、コストETLで使用する接続を選択します。  
-     [<Image alt="" src="https://files.readme.io/483cc971805232bca48f4da7f4ee6bd98e43cb3f8e70cfb79fd158746b889e35-31233921523601.png" width="700px" />](https://files.readme.io/483cc971805232bca48f4da7f4ee6bd98e43cb3f8e70cfb79fd158746b889e35-31233921523601.png)
+     <Image align="center" alt="" src="https://files.readme.io/483cc971805232bca48f4da7f4ee6bd98e43cb3f8e70cfb79fd158746b889e35-31233921523601.png" width="700px" />
    * まだ設定していない場合は、<strong>［＋Data Lockerで新しい接続を作成］</strong>をクリックし、接続を作成します。その後、コストETLの設定画面に戻り、<strong>［接続］</strong>ドロップダウンから選択します。  
-     [<Image alt="" src="https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png" width="700px" />](https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png)
+     <Image align="center" alt="" src="https://files.readme.io/066e0829340c34f1f01fe3f637bc75b4a414cebeecb5257b01df877e6e5da7e3-31233961342865.png" width="700px" />
 3. <strong>［変更を保存］</strong>をクリックします。
 
 <div id="change-from-cost-etl-to-data-locker-connection" />
@@ -368,12 +368,12 @@ AppsFlyer ROI360のコストETLでは、メディアソースごとに取得で�
 
 1. AppsFlyerのサイドメニューから<strong>［エクスポート］</strong>＞<strong>［コストETL］</strong>に移動します。
 2. <strong>［データ接続］</strong>セクションで、<strong>［Data Locker接続］</strong>をクリックします。  
-   [<Image alt="" src="https://files.readme.io/2608d88368579c9fd3aa7648905484a56a7f0d989a96582cee51303409ce427c-31233961382289.png" width="631px" />](https://files.readme.io/2608d88368579c9fd3aa7648905484a56a7f0d989a96582cee51303409ce427c-31233961382289.png)
+   <Image align="center" alt="" src="https://files.readme.io/2608d88368579c9fd3aa7648905484a56a7f0d989a96582cee51303409ce427c-31233961382289.png" width="631px" />
 3. 次のいずれかの方法で、Data Locker接続を設定します。
    * 使用するデータ接続が設定済みの場合は、<strong>［接続］</strong>ドロップダウンから、コストETLで使用する接続を選択します。  
-     [<Image alt="" src="https://files.readme.io/da486f6399e92c49923527da3348f4535691768cebd7a776ec84f7a2a739c204-31233961385617.png" width="501px" />](https://files.readme.io/da486f6399e92c49923527da3348f4535691768cebd7a776ec84f7a2a739c204-31233961385617.png)
+     <Image align="center" alt="" src="https://files.readme.io/da486f6399e92c49923527da3348f4535691768cebd7a776ec84f7a2a739c204-31233961385617.png" width="501px" />
    * まだ設定していない場合は、<strong>［＋Data Lockerで新しい接続を作成］</strong>をクリックし、接続を作成します。その後、コストETLの設定画面に戻り、<strong>［接続］</strong>ドロップダウンから選択します。  
-     [<Image alt="" src="https://files.readme.io/0d48f83f30954f5f68efecf7e6c4cf2b39b295e0b893711bd2e2756406c42461-31233921587985.png" width="631px" />](https://files.readme.io/0d48f83f30954f5f68efecf7e6c4cf2b39b295e0b893711bd2e2756406c42461-31233921587985.png)
+     <Image align="center" alt="" src="https://files.readme.io/0d48f83f30954f5f68efecf7e6c4cf2b39b295e0b893711bd2e2756406c42461-31233921587985.png" width="631px" />
 4. <strong>［変更を保存］</strong>をクリックします。
 
 </Accordion>

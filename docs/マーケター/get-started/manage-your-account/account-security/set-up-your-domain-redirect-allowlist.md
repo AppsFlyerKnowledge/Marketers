@@ -41,17 +41,17 @@ x-zendesk:
 
 1. 上部のバーでアカウントメニュー（メールアドレスのドロップダウン）を開き、<strong>［セキュリティセンター］</strong>を選択します。
 
-![from account click security center Cropped.jpg](https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg)
+<Image align="center" alt="from account click security center Cropped.jpg" src="https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg" />
 
 2. <strong>［リダイレクト先の許可リスト］</strong>セクションで、<strong>［リダイレクト先の許可リストを管理］</strong>をクリックします。
 
-<Image alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="549px" />  
+<Image align="center" alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="549px" />
 
 <strong>［リダイレクト先の許可リスト］</strong>ページが開きます。
 
 3. <strong>［手動］</strong>タブで、<strong>［ドメイン名］</strong>フィールドにルートドメインまたはサブドメインを入力し、<strong>［ドメインをリストに追加］</strong>をクリックします。
 
-<Image alt="Manually add domains.jpg" src="https://files.readme.io/95b37db2064ddba8c787d2dd5ac5ab2aa7698605f5c6eb3b4a59dd6324dee355-25103405228689.jpg" width="403px" />
+<Image align="center" alt="Manually add domains.jpg" src="https://files.readme.io/95b37db2064ddba8c787d2dd5ac5ab2aa7698605f5c6eb3b4a59dd6324dee355-25103405228689.jpg" width="403px" />
 
 * 英数字、ハイフン、ピリオドのみを使用してください。
 * ドメインは、先頭と末尾が英字または数字で、最大253文字である必要があります。
@@ -75,15 +75,15 @@ x-zendesk:
 
 1. 上部のバーでアカウントメニュー（メールアドレスのドロップダウン）を開き、<strong>［セキュリティセンター］</strong>を選択します。  
 
-![from account click security center Cropped.jpg](https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg)
+<Image align="center" alt="from account click security center Cropped.jpg" src="https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg" />
 
 2. <strong>［リダイレクト先の許可リスト］</strong>セクションで、<strong>［リダイレクト先の許可リストを管理］</strong>をクリックします。  
-<Image alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="530px" />  
+<Image align="center" alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="530px" />
 
 <strong>［リダイレクト先の許可リスト］</strong>ページが開きます。
 
 3. <strong>［CSVファイル］</strong>タブをクリックし、**CSVファイルの作成手順**に従って、ドメインの一覧を含むファイルを作成します。  
-![CSV file upload.jpg](https://files.readme.io/2be73080048545f79e102e6f48df0db956e6739f156153c172c4fef5a2ea339f-25381979219345.jpg)
+<Image align="center" alt="CSV file upload.jpg" src="https://files.readme.io/2be73080048545f79e102e6f48df0db956e6739f156153c172c4fef5a2ea339f-25381979219345.jpg" />
 
 4. アップロード欄にCSVファイルをアップロードします。
 

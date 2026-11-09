@@ -155,7 +155,7 @@ Batchとの連携を設定する前に、**Batch Rest API Key**と**Batch API Ke
 
 2つのキーを取得したら、それぞれ対応するフィールドに入力します。<strong>［一般設定］</strong>で、**Batch Rest API Key**を**BATCH\_REST\_API\_KEY**フィールドに、**Batch API Key**を**BATCH\_API\_KEY**フィールドに入力します。
 
-![batch-general-settings-keys.png](https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png)
+<Image align="center" alt="batch-general-settings-keys.png" src="https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png" />
 
 <div id="default-postbacks" />
 
@@ -163,7 +163,7 @@ Batchとの連携を設定する前に、**Batch Rest API Key**と**Batch API Ke
 
 <strong>［デフォルトポストバック］</strong>の<strong>［送信オプション］</strong>ドロップダウンで、<strong>［すべてのパートナーまたはオーガニックのイベント］</strong><em>を選択します。</em>
 
-![batch-default-postbacks.png](https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png)
+<Image align="center" alt="batch-default-postbacks.png" src="https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png" />
 
 画面右下の<strong>［保存］</strong>をクリックします。
 
@@ -209,6 +209,6 @@ AppsFlyerからBatchへのインストールポストバックの送信が始ま
 
 データは、Batch管理画面の**Userbase**タブで確認できます。
 
-![Userbase.png](https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png)
+<Image align="center" alt="Userbase.png" src="https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png" />
 
 <div data-zendesk-anchors="integrating-batch-and-appsflyer=batch%E3%81%A8appsflyer%E3%82%92%E9%80%A3%E6%90%BA%E3%81%99%E3%82%8B h_01H9FK389GXG3CDFPNM5ASKJ3N=batch%E3%81%A8appsflyer%E3%82%92%E9%80%A3%E6%90%BA%E3%81%99%E3%82%8B setting-customer-user-id=%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%83%BC%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BCid%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9FK389MPKFN8J74BX1E3MGG=%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%83%BC%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BCid%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9FK389MK1HM1460VAT6X82Y=batch h_01H9FK389MPGNEX8B3923KYDB3=appsflyer batch::28a946d0=batch h_01H9FK389MC4K8PNVPAGC00TBW=batch appsflyer::3f0aa95b=appsflyer h_01H9FK389M7V83A66M6T9EV8QT=appsflyer batch::24c5c955=batch h_01H9FK389MRV4ARHMHXPAXVXQ9=batch appsflyer::deb78dd1=appsflyer h_01H9FK389MT6PD8FW21SYHBPCV=appsflyer setting-up-batch-in-appsflyer-dashboard=batch%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9FK389MCSR5YDSF4RKFDSDZ=batch%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9FK389MG9459909JZBDN77E=integration-tab activate-partner=%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%92%E6%9C%89%E5%8A%B9%E5%8C%96 h_01H9FK389M19AVM63DEX5JTTQK=%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%92%E6%9C%89%E5%8A%B9%E5%8C%96 general-settings=%E4%B8%80%E8%88%AC%E8%A8%AD%E5%AE%9A h_01H9FK389MN82EKHVGMM9Z6H58=%E4%B8%80%E8%88%AC%E8%A8%AD%E5%AE%9A default-postbacks=%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%AF h_01H9FK389MXA3DS403VXRRK5NX=%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%AF h_01H9FK389MERP4XBF19T28E6DN=attribution-link-tab h_01H9FK389M3E05PVMNA83TBFJZ=cost-tab h_01H9FK389M06FEQ4RZJ04HTH33=ad-revenue-tab h_01H9FK389MB31S8BR8WX178GHX=permissions-tab viewing-appsflyer-data-in-the-batch-dashboard=batch%E7%AE%A1%E7%90%86%E7%94%BB%E9%9D%A2%E3%81%A7appsflyer%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B h_01H9FK389M8BNRFECN0WG23BCD=batch%E7%AE%A1%E7%90%86%E7%94%BB%E9%9D%A2%E3%81%A7appsflyer%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B" />

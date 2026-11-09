@@ -69,7 +69,7 @@ x-zendesk:
 
 AirshipとAppsFlyerの連携には、一意のApp Keyとトークンを使用します。まだ取得していない場合は、以下の手順を参考に、Airshipから取得してください。
 
-![airship-integration-tab.png](https://files.readme.io/dc33feec09fe551700586b9778a037fa0f5d610224944aea5a0fe56a6d288043-360017400878.png)
+<Image align="center" alt="airship-integration-tab.png" src="https://files.readme.io/dc33feec09fe551700586b9778a037fa0f5d610224944aea5a0fe56a6d288043-360017400878.png" />
 
 **Airshipとの連携の設定手順は、以下のとおりです。**
 
@@ -124,17 +124,17 @@ Airship SDKの最低要件：V13.1.0以降。
    1. [go.airship.com](http://go.urbanairship.com/)からAirshipアカウントにログインします。
    2. 左側のメニューで**Settings＞** **APIs &** **Integrations**に進み、**Airship API**をクリックします。
 
-      ![airship-appkey-en_us.png](https://files.readme.io/c33611035d8dcadb73e41a3787690726608bddde55edbc38f34990c03948985d-360017666917.png)
+      <Image align="center" alt="airship-appkey-en_us.png" src="https://files.readme.io/c33611035d8dcadb73e41a3787690726608bddde55edbc38f34990c03948985d-360017666917.png" />
    3. App Keyをコピーします。
    4. AppsFlyerの［App Key］欄に貼り付けます。
 3. Airshipからのトークンの取得
    1. [go.airship.com](http://go.urbanairship.com/)からAirshipアカウントにログインします。
    2. 左側のメニューで**Settings＞** **APIs &** **Integrations**に進み、**Tokens**をクリックします。
 
-      ![airship-token-creation-1.png](https://files.readme.io/b0c22d9844dbc93f7dd158a75916eca98404474a65be0c1528f83e6e4ac7b210-360017480697.png)
+      <Image align="center" alt="airship-token-creation-1.png" src="https://files.readme.io/b0c22d9844dbc93f7dd158a75916eca98404474a65be0c1528f83e6e4ac7b210-360017480697.png" />
    3. ［**トークンを作成**］をクリックします。
 
-      ![airship-token-creation-2.png](https://files.readme.io/656f6f5a6eebe3ccd1a786f6abec62739633e4150722fec41bc1fbdea78f8275-360017549138.png)
+      <Image align="center" alt="airship-token-creation-2.png" src="https://files.readme.io/656f6f5a6eebe3ccd1a786f6abec62739633e4150722fec41bc1fbdea78f8275-360017549138.png" />
    4. トークン名を入力し、ロールを選択します。
    5. ［**トークンを作成**］をクリックします。
    6. AppsFlyerの［**トークン認証**］欄にトークンを貼り付けます。
@@ -145,7 +145,7 @@ Airship SDKの最低要件：V13.1.0以降。
 
 AppsFlyerは、インストールやリエンゲージメントの発生時に、Airshipへポストバックを自動送信できます。このセクションでは、ポストバックを送信する**対象ユーザーの流入元**を指定します。
 
-![urban_airship_msc_new_3.png](https://files.readme.io/394dd47ff26742092f3012e333f137d706f41bc85cd6875013d792ce7f36b01d-360001900305.png)
+<Image align="center" alt="urban_airship_msc_new_3.png" src="https://files.readme.io/394dd47ff26742092f3012e333f137d706f41bc85cd6875013d792ce7f36b01d-360001900305.png" />
 
 アプリをダウンロードしたすべてのユーザーのポストバックをAirshipに送信するには、［**すべてのパートナーまたはオーガニックのイベント**］を選択します。
 

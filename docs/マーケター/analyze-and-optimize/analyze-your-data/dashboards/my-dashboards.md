@@ -65,14 +65,14 @@ x-zendesk:
 
 1. AppsFlyer管理画面左メニュー **マイダッシュボード**に移動し、+（新しいダッシュボードを作成）をクリックします。
    * または、ダッシュボードの右上で**新規** > **+ 新規作成**をクリックします。  
-     [<Image alt="" src="https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png" width="222px" />](https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png)
+     <Image align="center" alt="" src="https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png" width="222px" />
 2. ダッシュボードの名前を入力し、含めたいアプリを選択して、**保存**をクリックします。
 3. **+ 新しいウィジェット**をクリックし、追加したいウィジェットのタイプ（テーブル、KPI、ライン、バー、カラム、またはドーナツ）を選択します。
 4. ウィジェットを構成するには、追加したい指標とグループ化するディメンションを追加し、**適用**をクリックします。
 5. ダッシュボードの右上で、**保存**をクリックします。  
-   [<Image alt="" src="https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png" width="354px" />](https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png)
+   <Image align="center" alt="" src="https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png" width="354px" />
 6. ダッシュボードの右上で、**シェア**ボタンをクリックし、ダッシュボードをプライベートに保つか、他のチームメンバーと共有するかを選択し、**完了**をクリックします。  
-   [<Image alt="" src="https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png" width="354px" />](https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png)
+   <Image align="center" alt="" src="https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png" width="354px" />
 
 </Accordion>
 
@@ -87,10 +87,10 @@ x-zendesk:
 1. ダッシュボードの右上で、**+ 新規作成**をクリックし、作成したいウィジェットのタイプを選択します：表、KPI、グラフ、アプリ内イベントの表、アプリ内イベントのグラフ、イベントウィジェット、テキスト、カスタム指標から選択できます。  
    **注意：** アプリ内イベントの表とグラフでは、[主要なイベントとユーザー行動をすばやく確認できます](/docs/my-dashboards#traits-and-limitations)。
 
-   [<Image alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33707595163537)
+   [<Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33707595163537)
 
    * グラフを選択した場合は、グラフが開いた後に種類も選択します。折れ線、横棒、縦棒、ドーナツ、積み上げ面、複合（折れ線と縦棒の組み合わせ）から選択できます。  
-     [<Image alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/33707580116881)
+     [<Image align="center" alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/33707580116881)
    * テキストウィジェットでは、ダッシュボード内の各セクションにタイトルを付けたり、指針、知識、分析から得られた知見、目標、使い方をほかのチームメンバーと共有したりできます。ダッシュボード自体で内容を説明できるレポートを作成するのに役立ちます。
    * **イベントウィジェット**では、イベント名でグループ化し、LTVとActual（Activity）の両方の期間について、流入元、地域、その他のディメンション別にアクション、収益、エンゲージメントを並べて比較できます。イベントウィジェットでは、ユニークユーザー数や収益に最も貢献しているアプリ内イベントの確認、メディアソース別の収益推移の計測、最大4階層のグループ化によるイベント成果の詳細分析ができます。
 2. [オプション] ウィジェットの名前を入力します。
@@ -178,7 +178,7 @@ x-zendesk:
 1. AppsFlyerで**マイダッシュボード**を開きます。
 2. 次のいずれかの方法で、カスタムディメンションの設定画面を開きます。
    * ダッシュボードのメニューで、**メニュー**アイコン > **カスタムディメンション**をクリックします。  
-     <Image alt="" src="https://files.readme.io/9dc64c842f35fb65978f6687fbd9f6a9ea03c7f1b689eb35b3eecfbf696ff3b0-47097227614481.png" width="25%" />
+     <Image align="center" alt="" src="https://files.readme.io/9dc64c842f35fb65978f6687fbd9f6a9ea03c7f1b689eb35b3eecfbf696ff3b0-47097227614481.png" width="25%" />
    * または、ウィジェット設定の**グループ化**または**フィルター**フィールドで、**カスタムディメンションを作成**をクリックします。
 3. **新規ディメンション**をクリックします。
 4. 基にするディメンションを選択します。
@@ -205,7 +205,7 @@ x-zendesk:
 
 1. AppsFlyerで**マイダッシュボード**を開きます。
 2. **メニュー**アイコン > **カスタムディメンション**をクリックします。  
-   <Image alt="" src="https://files.readme.io/6368f5ba2dcd0d9db622a5502f6f1ba120c506725f82fb522947fdf9652218b8-47097241547793.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/6368f5ba2dcd0d9db622a5502f6f1ba120c506725f82fb522947fdf9652218b8-47097241547793.png" width="25%" />
 3. カスタムディメンションを選択します。
 4. 次のいずれかを行います。
    * 編集する場合は、設定を更新し、**保存**をクリックします。
@@ -219,7 +219,7 @@ x-zendesk:
 4. **グループ化**で、ディメンションの選択欄を開きます。
 5. カスタムディメンションにカーソルを合わせます。
 6. **編集**アイコンをクリックします。  
-   <Image alt="" src="https://files.readme.io/89f253d8545855cf12411f66ee81c8abe51d49c65823bcb1b7de52bcee74af75-47097241548433.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/89f253d8545855cf12411f66ee81c8abe51d49c65823bcb1b7de52bcee74af75-47097241548433.png" width="25%" />
 7. カスタムディメンションを更新します。
 8. **保存**をクリックします。
 
@@ -238,7 +238,7 @@ x-zendesk:
 3. ウィジェット設定を開きます。
 4. カスタムディメンションでデータをグループ化する場合は、**グループ化**で対象のカスタムディメンションを選択します。
 5. カスタムディメンションでデータを絞り込む場合は、**フィルター**で対象のカスタムディメンションを選択します。  
-   <Image alt="" src="https://files.readme.io/1bcd074f316d91eb956e689e45d1199978a9dee57d266019dfb5bb5bfb02a578-47097241548945.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/1bcd074f316d91eb956e689e45d1199978a9dee57d266019dfb5bb5bfb02a578-47097241548945.png" width="25%" />
 6. **適用**をクリックします。
 
 **保存**をクリックします。
@@ -394,7 +394,7 @@ x-zendesk:
 
 現在の表示タイプは、**統合**と**ユーザー獲得**です。
 
-<Image alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
 
 <div id="widgets" />
 
@@ -470,9 +470,9 @@ Webアプリを、クロスプラットフォームアトリビューション�
 1. AppsFlyer管理画面左メニュー **マイダッシュボード**に移動します。
 2. ピン留めされたダッシュボードと最近閲覧したダッシュボードのリストから表示するダッシュボードを選択します。
 3. 表示したいダッシュボードがピン留めされたダッシュボードや最近表示されたダッシュボードのリストにない場合は、現在表示されているダッシュボードの上部で、ドロップダウンから表示したいものを選択します。  
-   [![](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)
+   <Image align="center" alt="" src="https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png" />
 4. アプリ、表示タイプ、計測期間、表示フィルタを選択します。  
-   [<Image alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />](https://support.appsflyer.com/hc/article_attachments/33707580117265)
+   [<Image align="center" alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />](https://support.appsflyer.com/hc/article_attachments/33707580117265)
 
 </Accordion>
 
@@ -488,7 +488,7 @@ Webアプリを、クロスプラットフォームアトリビューション�
 2. **新規作成**の横にある3点メニュー<Image alt="" src="https://files.readme.io/2e083cda3a0ec69461d3cc520e2d7b7c4189561af5585e15d7f6f9bd06f18f2a-46312758928785.png" width="3.57%" />をクリックします。
 3. **表示設定**を選択します。
 
-   <Image alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
+   <Image align="center" alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
 
 <div id="theme" />
 
@@ -806,7 +806,7 @@ Webアプリを、クロスプラットフォームアトリビューション�
 
 #### ダッシュボードレベル
 
-<Image alt="image__9_.png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
+<Image align="center" alt="image__9_.png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
 
 * 初期状態では、ダッシュボードの日付範囲に**ウィジェットごと**が適用されます。このモードでは、各ウィジェットの個別設定に応じてデータが表示されます。
 * 各ウィジェットで選択した期間は、常に補足タイトルとして表示されます。
@@ -816,7 +816,7 @@ Webアプリを、クロスプラットフォームアトリビューション�
 
 #### ウィジェットレベル
 
-<Image alt="image__9_.png" src="https://files.readme.io/88853ed907a3a36854a3dc888acedb4063b036da6b026b4f6eccd69de26824c0-small-33835112650769.png" width="6016px" />
+<Image align="center" alt="image__9_.png" src="https://files.readme.io/88853ed907a3a36854a3dc888acedb4063b036da6b026b4f6eccd69de26824c0-small-33835112650769.png" width="6016px" />
 
 * 各ウィジェットには個別の日付選択欄があり、表示内容ごとに**任意の**期間を指定できます。
 * 各ウィジェットには個別の表示タイプ選択欄があり、表示内容ごとに任意の表示タイプを指定できます。
@@ -857,7 +857,7 @@ Webアプリを、クロスプラットフォームアトリビューション�
 
 <Embed title="マイダッシュボード" typeOfEmbed="youtube" url="https://www.youtube.com/embed/QN34vDC8gtY?si=0IWgOX2oZ0Gmphid" providerUrl="https://www.youtube.com" />
 
-[<Image alt="" src="https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png" width="1083px" />](https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png)
+<Image align="center" alt="" src="https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png" width="1083px" />
 
 横棒、縦棒、折れ線、複合グラフでは、複数の指標を追加できます。
 
@@ -883,7 +883,7 @@ Webアプリを、クロスプラットフォームアトリビューション�
 
 <Accordion title="比較対象">
 
-![Compare-Animated Image (Large) (1).gif](https://files.readme.io/456530b09e6914ea4eb90658aee27408fad5bc3a208f9a4a68a99fbf0f823f13-29064704463761.gif)
+<Image align="center" alt="Compare-Animated Image (Large) (1).gif" src="https://files.readme.io/456530b09e6914ea4eb90658aee27408fad5bc3a208f9a4a68a99fbf0f823f13-29064704463761.gif" />
 
 「過去比較」機能は折れ線グラフのみで利用可能です。選択したデータと過去の対応するデータを並べて表示し、簡単に比較できます。傾向、変化、パターン、異常値を視覚的に確認するのに役立ちます。
 
@@ -953,11 +953,11 @@ Webアプリを、クロスプラットフォームアトリビューション�
 
 * **ヒートマップ：** 同じ列のほかのセルに対する値の大小に応じて、各セルを**2色のグラデーション**（白から青など）で色分けします。高い値と低い値をすばやく見分けられます。
 
-<Image alt="image (20).png" src="https://files.readme.io/09792e4d15d82b59b75edd50638c2f389bec1f8ff96c882bc556655e16a5d4f1-small-42862956716689.png" width="3652px" />
+<Image align="center" alt="image (20).png" src="https://files.readme.io/09792e4d15d82b59b75edd50638c2f389bec1f8ff96c882bc556655e16a5d4f1-small-42862956716689.png" width="3652px" />
 
 * **3色表示：3色のグラデーション**（赤、黄、緑など）で各指標の成果を示し、設定した目標を達成している項目、達成に近い項目、未達の項目を見分けやすくします。
 
-<Image alt="image (21).png" src="https://files.readme.io/c8907965a966d47bdfb0ffd0718ed8868ad8adddace60141d74e80bfe2da2926-small-42862956722577.png" width="3658px" />
+<Image align="center" alt="image (21).png" src="https://files.readme.io/c8907965a966d47bdfb0ffd0718ed8868ad8adddace60141d74e80bfe2da2926-small-42862956722577.png" width="3658px" />
 
 * **条件に基づく色分け**では、「**範囲内**」「**以上**」「**未満**」などの演算子を使用して、独自の条件を定義できます。各条件の数値と色を指定し、事業上の判断基準を視覚的に表示します。
 
@@ -969,7 +969,7 @@ Webアプリを、クロスプラットフォームアトリビューション�
 
   成果の高い施策が明確になり、キャンペーンの最適化や予算配分について、データに基づく判断をすばやく行えます。
 
-  <Image alt="image (22).png" src="https://files.readme.io/bd7babc39324482966d3aa51707a267f37d9df0285e8ee08b43a77805a3cc4f3-42862956725265.png" width="922px" />
+  <Image align="center" alt="image (22).png" src="https://files.readme.io/bd7babc39324482966d3aa51707a267f37d9df0285e8ee08b43a77805a3cc4f3-42862956725265.png" width="922px" />
 
 <div id="how-to-apply-conditional-formatting" />
 
@@ -979,7 +979,7 @@ Webアプリを、クロスプラットフォームアトリビューション�
 2. 色分けを適用する**指標の列**にカーソルを合わせます。
 3. **3点**メニューをクリックし、**条件付き書式**を選択します。
 4. 使用する**書式の種類**（ヒートマップ、3色表示、条件に基づく色分け）を選択し、必要に応じて条件を編集します。  
-   <Image alt="image (23).png" src="https://files.readme.io/eaa4cec02322cef1af40ed8b82691b76c6b33395be9cd0a707c38ccff6043b91-42862956727569.png" width="75%" />
+   <Image align="center" alt="image (23).png" src="https://files.readme.io/eaa4cec02322cef1af40ed8b82691b76c6b33395be9cd0a707c38ccff6043b91-42862956727569.png" width="75%" />
 
 </Accordion>
 
@@ -991,7 +991,7 @@ Webアプリを、クロスプラットフォームアトリビューション�
 
 ダッシュボードのデータは、以下の図のとおり、統合、ユーザー獲得、リターゲティングの表示タイプで表示されます。
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 各表示タイプのLTVデータは、次のように表示されます。
 

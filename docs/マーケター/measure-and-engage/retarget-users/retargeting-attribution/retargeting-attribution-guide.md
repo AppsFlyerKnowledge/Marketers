@@ -37,7 +37,7 @@ x-zendesk:
 * **リエンゲージメントCV：** デバイスにアプリがインストール済みで、ユーザーにアプリ起動を促すメディアソースにリエンゲージメントCVの成果が紐づきます。
 * **リアトリビューションCV：別名リターゲティングインストール：** ユーザーがアプリをアンインストールしたが、リターゲティングキャンペーンに接触してアプリを再インストールします。これが<Anchor target="_blank" href="/marketers/ja/docs/set-up-re-attribution-window">リアトリビューション期間</Anchor>中に実行された場合：リターゲティングメディアソースには「リアトリビューションCV」の成果が紐づきます。関連記事：<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-attribution-model#reinstalls">再インストール</Anchor>
 
-![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 リターゲティングキャンペーンを開始する前に、次のセクションでリエンゲージメントCVのルールと使用例を確認してください。その後、リターゲティングの手順セクションに従って、リターゲティングを設定してください。より良く理解するために、AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-attribution-model">計測モデル</Anchor>と関連する計測期間についてもご確認ください。
 
@@ -90,7 +90,7 @@ x-zendesk:
 
 #### **ルールが適用されるフローの例**
 
-![](https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png)
+<Image align="center" alt="" src="https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png" />
 
 クリックスルーとビュースルー計測のリエンゲージメントルールのチェックリスト：
 
@@ -139,7 +139,7 @@ x-zendesk:
 2. アドネットワークを選択します。
 3. **リターゲティング設定**を**有効化**します。これにより、下のセクションにある計測リンクに `is_retargeting=true` が追加され、計測リンクがリターゲティングURLに変更されます。   
 
-   [![](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)
+   <Image align="center" alt="" src="https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png" />
 4. 次のいずれかから選択します：
    * 一つのプラットフォーム（アプリ固有）のリンクは**通常の計測リンクを使用**します。
    * **OneLinkを使用**します。

@@ -108,7 +108,7 @@ CSVファイルをアップロードするか、オーディエンスインポ�
 * 最大行数:1000万
 * Excelでファイルを準備する場合、以下の画像のように**CSV (カンマ区切り) (\*.csv)** ファイルとして保存してください。
 
-  <Image alt="CSV.jpg" src="https://support.appsflyer.com/hc/article_attachments/18502652300561" width="339px" />
+  <Image align="center" alt="CSV.jpg" src="https://support.appsflyer.com/hc/article_attachments/18502652300561" width="339px" />
 
 <div id="note" />
 

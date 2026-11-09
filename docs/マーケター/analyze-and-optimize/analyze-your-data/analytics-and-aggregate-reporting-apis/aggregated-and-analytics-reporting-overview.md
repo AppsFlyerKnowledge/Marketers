@@ -196,7 +196,7 @@ Pull API経由でリターゲティングレポートを取得する際は、 *
 
 <Accordion title="Protect360 — ブロック済み不正">
 
-![](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)
+<Image align="center" alt="" src="https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png" />
 
 ブロックされた不正データの集計レポートでは、<Anchor target="_blank" href="/marketers/ja/docs/protect360-anti-fraud-guide">Protect360</Anchor> によってブロックされた各種イベントの詳細を確認可能です。
 

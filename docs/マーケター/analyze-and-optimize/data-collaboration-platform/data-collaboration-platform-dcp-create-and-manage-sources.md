@@ -95,10 +95,10 @@ Amazon S3またはGCSに保存するソースファイルは、以下のファ�
 
 1. AppsFlyerのサイドメニューから、［**Collaborate**］>［**Data Clean Room**］の順に選択します。
 
-   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="644px" />
+   <Image align="center" alt="Click Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="644px" />
 2. ［**+ New source**］をクリックします（メインページ、または［**Sources**］タブから操作できます）。
 
-   <Image alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
+   <Image align="center" alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
 3. ［**New source**］の画面に沿って、以下の手順を進めます。
 
 </Accordion>
@@ -196,7 +196,7 @@ AppsFlyerでフォルダを生成する場合、追加で必要なのは**ソー
 
 ソースの保存場所を選択する際に［**Local file system**］をクリックし、［**Next**］を選択します。これにより、デバイスからローカルファイルをアップロードできるようになります。
 
-<Image alt="Select Local file system.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
+<Image align="center" alt="Select Local file system.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
 
 <div id="note" />
 
@@ -215,7 +215,7 @@ Data Collaboration Platform（DCP）でソースを設定する際は、その�
 * **Snapshot** — ソースを更新するたびにデータセット全体をアップロードし、既存のデータセットを新しいデータで完全に置き換える方法です。アップロードするファイルに常に最新かつ完全なデータセットが含まれる場合にのみ、この方法を選択してください。
 * **Append** — データセット全体ではなく、新規または変更されたデータのみをアップロードする方法です。過去のデータセットは削除・更新されません。日次・週次レポートのような定期的なアップロードに適しています。アップロード量の削減（クラウドストレージコストの削減につながる可能性があります）、アップロード処理の高速化、レコード管理の簡素化などのメリットがあります。
 
-<Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
+<Image align="center" alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
 <div id="important-1" />
 
@@ -304,7 +304,7 @@ source_name1/
 
 2日分のソースファイルについて完全なスナップショットをアップロードした場合（日付／バージョン／dataフォルダと \_SUCCESS ファイルをプログラムで作成）、バケット／フォルダ構成は以下のようになります。
 
-[<Image alt="Snapshot example bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
+<Image align="center" alt="Snapshot example bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />
 
 
 <div id="append-upload-requirements" />
@@ -512,7 +512,7 @@ DCPでは、列名をもとにAIが各ソース列に適したDCPフィールド
 1. ［**+ New field**］をクリックします。空のフィールドが追加されます。
 2. フィールド名を入力し、タイプを選択します。
 
-<Image alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
+<Image align="center" alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
 
 **利用できるフィールドタイプ：**
 
@@ -715,11 +715,11 @@ DCRキーフォルダは通常、利用するクラウドサービスの管理�
 
 * 画面右上の3点メニュー（アクション）をクリックし、［**DCR key**］を選択します。
 
-[<Image alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/50232078980881)
+[<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/50232078980881)
 
 DCRキーフォルダを作成すると、バケット／フォルダ構成は次のようになります。
 
-<Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
 <div id="top-level-input-folder" />
 
@@ -734,7 +734,7 @@ DCRキーフォルダを作成すると、バケット／フォルダ構成は�
 
 最上位のinputフォルダを作成すると、バケット／フォルダ構成は次のようになります。
 
-<Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
 
 <div id="second-level-folder-for-each-data-source" />
 
@@ -748,7 +748,7 @@ DCRでは、処理対象となる複数のデータソースファイルを定�
 
 2つのデータソースフォルダを作成すると、バケット／フォルダ構成は次のようになります。
 
-<Image alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
 
 各データソースフォルダの配下には、ソースを更新するたびに[日付とバージョンごとのサブフォルダ](#nested-subfolders-for-each-date-and-version)を作成する必要があります。
 

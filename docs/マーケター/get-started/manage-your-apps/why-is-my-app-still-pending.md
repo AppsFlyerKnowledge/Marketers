@@ -28,7 +28,7 @@ AppsFlyerの管理画面に<Anchor target="_blank" href="/marketers/ja/docs/addi
 
 未リリースアプリは、AppsFlyerの管理画面上ではリリース済みのアプリと同じように見えます。つまり、アクセス可能な管理画面があり、すべての計測機能が機能する状態です。ただし唯一の違いはアプリのロゴ画像で、未リリースアプリの場合実際のロゴではなくAppsFlyerのロゴが表示されます。
 
-![Pending_App.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
+<Image align="center" alt="Pending_App.png" src="https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png" />
 
 <div id="whats-happening" />
 
@@ -53,7 +53,7 @@ AppsFlyerがアプリのステータスを確認した時点でまだストア�
 2. 未リリースのアプリの横にある、 **ステータスを更新**をクリックしてください。  
      
 
-   ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
+   <Image align="center" alt="app-refersh-status.png" src="https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png" />
 
 <div id="store-country" />
 

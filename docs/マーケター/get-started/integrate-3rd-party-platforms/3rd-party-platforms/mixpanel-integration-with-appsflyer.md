@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerのデータを、プロダクト分析プラットフォームのMixpanelに自動で共有する方法を説明します。
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png" />
 
 AppsFlyerとMixpanelを連携すると、AppsFlyerのユーザー獲得キャンペーン情報をMixpanelに取り込めます。
 
@@ -65,7 +65,7 @@ AppsFlyerとMixpanelを連携すると、AppsFlyerのユーザー獲得キャン
 
 ### 一般設定
 
-<Image alt="mixpanel-general-settings.png" src="https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png" width="542px" />
+<Image align="center" alt="mixpanel-general-settings.png" src="https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png" width="542px" />
 
 * **EU域内でのデータ保管**：AppsFlyerは、デフォルトでMixpanelの米国サーバーにデータを送信します。 MixpanelのEUサーバーに送信する場合は、この設定をオンにします。  
   **\*token**：MixpanelとAppsFlyerの接続には、固有のトークンを使用します。まだ取得していない場合は、連携の設定を進める前にMixpanelから取得してください。
@@ -75,10 +75,10 @@ AppsFlyerとMixpanelを連携すると、AppsFlyerのユーザー獲得キャン
   1. https://mixpanel.com/login/ からMixpanelアカウントにログインします。
   2. **Mixpanel**の**Analysis**ダッシュボードに移動し、歯車アイコンをクリックします。
 
-     ![mixpanel-token-1.png](https://files.readme.io/f1fbc76fff621e12a7d91fed5ba49eb20f2b049de65c70b0ab32cadd997287d2-small-360014578477.png)
+     <Image align="center" alt="mixpanel-token-1.png" src="https://files.readme.io/f1fbc76fff621e12a7d91fed5ba49eb20f2b049de65c70b0ab32cadd997287d2-small-360014578477.png" />
   3. プロジェクトのAccess Keysセクションからトークンをコピーし、AppsFlyerのMixpanel連携タブにある**token**フィールドに貼り付けます。
 
-     ![mixpanel-token-2.png](https://files.readme.io/e8e633ec87d963244652a53b9b21c495b0a850e234621a44d93b3034c640bff7-360014578757.png)
+     <Image align="center" alt="mixpanel-token-2.png" src="https://files.readme.io/e8e633ec87d963244652a53b9b21c495b0a850e234621a44d93b3034c640bff7-360014578757.png" />
 * **広告IDを送信**：
   * AppsFlyerのcustomer\_user\_idパラメータを使用している場合、その値がインストールのたびにMixpanelに送信されます（<strong>［広告IDを送信］</strong>は無効のままにしてください）。
   * AppsFlyerのcustomer\_user\_idを使用していない場合は、<strong>［広告IDを送信］</strong>を有効にします。デバイスIDがcustomer\_user\_id（Mixpanelではunique\_id）としてMixpanelに送信されます。  
@@ -100,13 +100,13 @@ AppsFlyerとMixpanelを連携すると、AppsFlyerのユーザー獲得キャン
 
 AppsFlyerは、インストールやリエンゲージメントの発生時に、Mixpanelへポストバックを自動送信できます。リエンゲージメントとは、すでにアプリをインストールしているユーザーが、キャンペーンをクリックした後にアプリを開くことです。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#default-postbacks">デフォルトポストバック</Anchor>を参照してください。
 
-[![](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)
+<Image align="center" alt="" src="https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png" />
 
 <div id="in-app-events-settings" />
 
 ### アプリ内イベントの設定
 
-![mixpanel-in-app-events-settings.png](https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png)
+<Image align="center" alt="mixpanel-in-app-events-settings.png" src="https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png" />
 
 このセクションでは、ポストバックを介してAppsFlyerのイベントをMixpanelのイベントに対応付けます。
 
@@ -250,8 +250,8 @@ AppsFlyerは、インストールやリエンゲージメントの発生時に�
 
 以下のスクリーンショットは、メディアソース別に、インストールから価値のあるイベントまでのコンバージョンを確認するファネルレポートです。各メディアソースのコンバージョンまでの所要時間も確認できます。
 
-[![](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)
+<Image align="center" alt="" src="https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png" />
 
-[![](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)
+<Image align="center" alt="" src="https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png" />
 
 <div data-zendesk-anchors="h_01H9FKEWTEN4F8FM5C9A9ES6HN=%E9%87%8D%E8%A6%81 setting-up-mixpanel=mixpanel%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9FKEWTEGMEVH3SK739DD719=mixpanel%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9FKEWTE90WR75PMNN93JAXE=integration-tab general-settings=%E4%B8%80%E8%88%AC%E8%A8%AD%E5%AE%9A h_01H9FKEWTEMT7VGTTFWFMJHYA8=%E4%B8%80%E8%88%AC%E8%A8%AD%E5%AE%9A h_01H9FKEWTEV3RWKMWZN0EXFFNP=%E6%B3%A8%E6%84%8F default-postbacks=%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%AF h_01H9FKEWTER31RXAH216TRXQPM=%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%AF inapp-events-settings=%E3%82%A2%E3%83%97%E3%83%AA%E5%86%85%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9FKEWTERRVKPQFF1B8QQERE=%E3%82%A2%E3%83%97%E3%83%AA%E5%86%85%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9FKEWTEEMMQ0KKRZXRJRE25=%E6%B3%A8%E6%84%8F-1 h_01H9FKEWTEEQ0GHF87V20TX9W0=attribution-link-tab h_01H9FKEWTEJ61197SN3R6JXYCP=cost-tab h_01H9FKEWTEA7GN2HHK3QD62A3A=ad-revenue-tab h_01H9FKEWTET4QD1RE0HJZM64D4=permissions-tab integrating-with-mixpanel-when-using-a-login-mechanism=%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E6%A9%9F%E8%83%BD%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AEmixpanel%E3%81%A8%E3%81%AE%E9%80%A3%E6%90%BA h_01H9FKEWTE9DEANTXKPD286GD2=%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E6%A9%9F%E8%83%BD%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AEmixpanel%E3%81%A8%E3%81%AE%E9%80%A3%E6%90%BA h_01H9FKEWTFZ107Y999WEMB3409=%E6%B3%A8%E6%84%8F-2 viewing-appsflyer-data-in-mixpanel=mixpanel%E3%81%A7%E3%81%AEappsflyer%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%A2%BA%E8%AA%8D h_01H9FKEWTF9PFNVHTZGDKBX75Y=mixpanel%E3%81%A7%E3%81%AEappsflyer%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%A2%BA%E8%AA%8D" />

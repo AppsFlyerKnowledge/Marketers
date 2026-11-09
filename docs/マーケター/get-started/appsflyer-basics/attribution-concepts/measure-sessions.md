@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **概要**：広告主はセッションの指標を使用して、一定期間内のアプリのユーザーエンゲージメントを計測します。
 
-<Image alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
+<Image align="center" alt="DAU_example.jpg" src="https://files.readme.io/97b845b9e04809dc6b670746c81cf1ca59dce11f492194ee7e7895ada01c0b86-360016015278.jpg" width="461px" />
 
 <div id="sessions-counting-principles" />
 

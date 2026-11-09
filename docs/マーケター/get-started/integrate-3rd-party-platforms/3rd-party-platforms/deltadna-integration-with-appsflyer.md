@@ -76,11 +76,11 @@ AppsFlyer.setCustomerUserID (DDNA.Instance.UserID)
 
 1. deltaDNAのEvent Managementツールで、AppsFlyerAttributionイベントを作成します。
 
-![Delta DNA 1](https://files.readme.io/e5224bbaa730d997699e1a930425946f69a2b86ef94e241b4ba6fdb9ad978c66-206781083.png)
+<Image align="center" alt="Delta DNA 1" src="https://files.readme.io/e5224bbaa730d997699e1a930425946f69a2b86ef94e241b4ba6fdb9ad978c66-206781083.png" />
 
 2. deltaDNA管理画面のGame Detailsページで、Live環境のキーを取得します。
 
-![Delta DNA 2](https://files.readme.io/6b28184264dfd695000e8bfae9538862a3e17ea6f9d355af0996ccf107b4e6c2-206768886.png)
+<Image align="center" alt="Delta DNA 2" src="https://files.readme.io/6b28184264dfd695000e8bfae9538862a3e17ea6f9d355af0996ccf107b4e6c2-206768886.png" />
 
 **AppsFlyerで連携を有効化または編集します。**
 
@@ -121,17 +121,17 @@ AppsFlyerから受信したアトリビューションデータは、以下に�
 
 すべてのMeasureチャート、継続率マトリクス、LTV、継続率予測ツールの上部にあるAcquisition Channelフィルターは、AppsFlyerのメディアソースに基づいています。
 
-![Delta DNA 3](https://files.readme.io/21cf4f1c8641351a1ecc200d8b95d7558b92f4daf38f49975601d996a0fcfb86-206781123.png)
+<Image align="center" alt="Delta DNA 3" src="https://files.readme.io/21cf4f1c8641351a1ecc200d8b95d7558b92f4daf38f49975601d996a0fcfb86-206781123.png" />
 
 AppsFlyerからdeltaDNAに送信できるアトリビューションパラメータは8つあり、分析、レポート、クエリに使用できます。いずれも**afAttrで始まります。**   
 *例：キャンペーンはafAttrCampaign、代理店はafAttrAgency、メディアソースはafAttrMediaSourceです。*
 
 すべてのアトリビューションパラメータは、Event Management画面に追加された**appsFlyerAttribution**に一覧表示されます。
 
-![Delta DNA 4](https://files.readme.io/e0af8513fdda3268ab799a6ef08396c03970bd0850bde851f07649e459a8b20e-206781143.png)
+<Image align="center" alt="Delta DNA 4" src="https://files.readme.io/e0af8513fdda3268ab799a6ef08396c03970bd0850bde851f07649e459a8b20e-206781143.png" />
 
 deltaDNAの各Analyzeツールで、これらのパラメータを使って独自の分析クエリやレポートを作成できます。
 
-![Delta DNA 5](https://files.readme.io/f4b9d0320feb3990182a0c9a835a18565ba959fabf7269c45a4651506666f941-206768946.png)
+<Image align="center" alt="Delta DNA 5" src="https://files.readme.io/f4b9d0320feb3990182a0c9a835a18565ba959fabf7269c45a4651506666f941-206768946.png" />
 
 <div data-zendesk-anchors="integrating-with-deltadna=deltadna%E3%81%A8%E3%81%AE%E9%80%A3%E6%90%BA h_01H9FK6N8V597T8AY0RF0H6CZW=deltadna%E3%81%A8%E3%81%AE%E9%80%A3%E6%90%BA viewing-the-attribution-data-in-the-deltadna-console=deltadna%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E3%81%A7%E3%82%A2%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B h_01H9FK6N8W8011X3JVG2EZ66H4=deltadna%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E3%81%A7%E3%82%A2%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B" />

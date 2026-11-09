@@ -25,7 +25,7 @@ x-zendesk:
 
 > **概要：** Creative Optimizationでは、すべてのキャンペーンのクリエイティブアセットデータを1つのプラットフォームに集約できます。パフォーマンスを分析して最も効果的なクリエイティブを特定し、データに基づいてより適切な判断を下せます。データはLTVベースです。つまり、選択した期間中にクリエイティブ経由で発生したコンバージョンに関する指標を示します。
 
-[![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
+<Image align="center" alt="Main image -Default view.jpg" src="https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg" />
 
 <div id="about-creative-optimization" />
 
@@ -114,7 +114,7 @@ Meta Advantage+（ダイナミッククリエイティブ）、Googleユニバ�
 > このように、AppsFlyerでは広告クリエイティブに合計50件のインストールが紐づきますが、アセット間のインストール数の比率は維持されます。この例では、**アセットA**が**アセットB**より多くのインストールを獲得したことになります。
 > 収益やROASなど、ファネル下部の指標もこの比率に基づいて計算されます。
 >
-> ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
+> <Image align="center" alt="Creative_data_example_en-us.png" src="https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png" />
 
 </Accordion>
 
@@ -124,7 +124,7 @@ Meta Advantage+（ダイナミッククリエイティブ）、Googleユニバ�
 
 このセクションでは、メインダッシュボードの概要を説明します。フィルターの使い方、目的のクリエイティブデータを確認するために利用できる指標やディメンション、ダッシュボードビューの保存・共有方法を紹介します。
 
-[![Filter bar and metrics -Default view.jpg](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)](https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg)
+<Image align="center" alt="Filter bar and metrics -Default view.jpg" src="https://files.readme.io/b68e65ff2cdd2ad2fe0805eb1c2792904af69504d104b6f6ae8a524124272a48-21363121543185.jpg" />
 
 <div id="filter-bar" />
 
@@ -132,7 +132,7 @@ Meta Advantage+（ダイナミッククリエイティブ）、Googleユニバ�
 
 ダッシュボードのセットアップにおける最初のステップは、フィルターオプションを選択することです。すべてのフィルターは、Creative OptimizationのオーバービューダッシュボードとDiscoveryダッシュボードの両方に適用されます。
 
-[![filter_bar.jpg](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)
+<Image align="center" alt="filter_bar.jpg" src="https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg" />
 
 **ダッシュボードのフィルターを選択するには**：
 
@@ -160,7 +160,7 @@ Creative Optimizationダッシュボードでは、[標準の指標とディメ�
 * **ユーザー獲得**－UAの広告・広告セットに関連するクリエイティブデータのみを表示します。
 * **リターゲティング** -リターゲティング広告や広告セットに紐づくクリエイティブデータのみを表示します。コストデータもこちらで入手できます。
 
-[![View_types.jpg](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)
+<Image align="center" alt="View_types.jpg" src="https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg" />
 
 </Accordion>
 
@@ -247,7 +247,7 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
      * *指標*には、インプレッション、クリック、インストール、CTR、CVR、CPM、IPM、コスト、eCPI、リアトリビューション、リエンゲージメント、収益、ROAS、リテンション、ユニークユーザー数、使用数、パートナー指標が含まれます。
      * 各種*演算子、数値*、*アプリ内イベント*を組み合わせます。
      * 特定のアプリ内イベントをドロップダウンメニューから選択します。アプリ内イベントごとに個別の指標を追加し、より詳細に分析できます。たとえば、af\_purchaseの収益＋af\_loginの発生回数という計算式を設定できます。  
-       <Image alt="" src="https://files.readme.io/2b8bdaa8c1fb47c7e78b59e7e24f37aa3248800c7a3ed5cc821c2e11622a93fe-30129836915729.png" width="892px" />
+       <Image align="center" alt="" src="https://files.readme.io/2b8bdaa8c1fb47c7e78b59e7e24f37aa3248800c7a3ed5cc821c2e11622a93fe-30129836915729.png" width="892px" />
 3. **保存**をクリックします。  
    新しいカスタム指標が作成され、フィルターバーと表の設定で、その指標の横に「カスタム」と表示されます。
 
@@ -261,14 +261,14 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
 **編集方法：**
 
 1. **カスタム指標**フォーム上の**既存のカスタム指標を編集**ドロップダウンをクリックし、編集する指標を選択します。  
-   <Image alt="" src="https://files.readme.io/b792e08152482bed11ea8ce5ea5795c3df961c257d07397b5b4d787f40a8ea2e-30129836916369.png" width="892px" />
+   <Image align="center" alt="" src="https://files.readme.io/b792e08152482bed11ea8ce5ea5795c3df961c257d07397b5b4d787f40a8ea2e-30129836916369.png" width="892px" />
 2. 必要な変更を加え、**保存**をクリックします。  
    **注意：名前を付けて保存**をクリックすると、新しいカスタム指標として保存することもできます。
 
 **削除するには：**
 
 * ドロップダウンから削除したいカスタム指標を選択した後、削除アイコンをクリックします。  
-  <Image alt="" src="https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png" width="546px" />
+  <Image align="center" alt="" src="https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png" width="546px" />
 
 </Accordion>
 
@@ -292,7 +292,7 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
 
 新しい<Anchor target="_blank" href="/marketers/ja/docs/creative-optimization-partner-integrations">パートナー連携</Anchor>を追加すると、対応パートナーの指標が自動的にCreative Optimizationへ取り込まれます（**Unity Ads**は**例外で、以下の特別な手順が必要です**）。設定が完了すると、これらの指標は指標の横に「パートナー」と表示されます。
 
-![partner metrics image.jpg](https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg)
+<Image align="center" alt="partner metrics image.jpg" src="https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg" />
 
 **特別な手順と考慮事項：**
 
@@ -337,28 +337,28 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
 **Unity Adsからパートナー指標を取得する方法：**
 
 1. Creative Optimizationダッシュボードの右上にある⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-   ![icon for creative integrations.jpg](https://files.readme.io/5af3cc395743cf305a9d19dca41dc53c7cbf82e18434d2eb335c9e58a4245456-21366803702033.jpg)
+   <Image align="center" alt="icon for creative integrations.jpg" src="https://files.readme.io/5af3cc395743cf305a9d19dca41dc53c7cbf82e18434d2eb335c9e58a4245456-21366803702033.jpg" />
 2. **+新規連携**をクリックします。
 3. ドロップダウンリストの**パートナー**で**Unity Ads**を選択します。  
-   ![New integration - Unity Ads.jpg](https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg)
+   <Image align="center" alt="New integration - Unity Ads.jpg" src="https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg" />
 4. 連携に使用するUnityの**キーID**、**シークレットキー**、**組織コアID**を入力します（取得方法は<Anchor target="_blank" href="/marketers/ja/docs/creative-optimization-partner-integrations#unity-ads">Unity連携</Anchor>の手順を参照してください）。
 5. **パートナー指標**セクションで、Unityの**APIキー**と**組織ID**を入力します。これらの認証情報は、以下の手順に従って取得できます。**注意：** ROI360コストをUnity Adsと連携している場合、そこから認証情報を取得することも可能です。
    * **APIキーを取得する方法：**
      1. Unityゲーミングサービスプラットフォームにログインします。
      2. サイドメニューの**Products**をクリックし、**Grow**をクリックします。  
-        ![Unity Org ID step 1.jpg](https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg)
+        <Image align="center" alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" />
      3. **Unity Ads User Acquisition**をクリックします。  
-        <Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="312px" />
+        <Image align="center" alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="312px" />
      4. **API management**を選択します。  
-        ![Unity-from API mngmt, get API key w arrow.jpg](https://files.readme.io/c617593d5935fbe8072d9fac0146fb3257c395c8dcf173130b97cc2a4a043285-20348783332881.jpg)
+        <Image align="center" alt="Unity-from API mngmt, get API key w arrow.jpg" src="https://files.readme.io/c617593d5935fbe8072d9fac0146fb3257c395c8dcf173130b97cc2a4a043285-20348783332881.jpg" />
      5. APIキーをコピーします。
    * **組織IDを取得する方法：**
      1. Unity Ads管理画面サイドメニューの**Products**をクリックし、**Grow**をクリックします。  
-        <Image alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="583px" />
+        <Image align="center" alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="583px" />
      2. **Unity Ads User Acquisition**をクリックします。
-     3. <Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="336px" />
+     3. <Image align="center" alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="336px" />
      4. **設定**をクリックしてください。  
-        ![Get Organization ID instructions 2 arrows.jpg](https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg)
+        <Image align="center" alt="Get Organization ID instructions 2 arrows.jpg" src="https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg" />
      5. **組織ID**をコピーします。
 
 <div id="note" />
@@ -386,7 +386,7 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
 **自分だけが閲覧できるプライベートダッシュボードビューを保存するには：**
 
 1. 現在表示されている管理画面の上部にあるドロップダウンアイコンをクリックし、メニューにプライベートアイコンが選択されていることを確認し、**+新しいプライベートダッシュボードとして保存**をクリックします。  
-   ![](https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png)
+   <Image align="center" alt="" src="https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png" />
 2. ダッシュボード名を入力し、**保存**をクリックします。
 3. メニューアイコンを使用して、ダッシュボードビューを編集および削除したり、共有設定をプライベートから共有に変更したり、ログイン時に表示されるデフォルトのビューとしてスターマークを付けたりすることができます。
 
@@ -409,7 +409,7 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
 **別のアカウントユーザーと共有URLを共有するには：**
 
 * ダッシュボード右上のアイコンをクリックしてページのURLをコピーし、共有します。  
-  <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />  
+  <Image align="center" alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
   **注意**：プライベートダッシュボードのビューURLも共有できます。プライベートダッシュボードのURLを開くと、レポート名は「未保存レポート」と表示されます。
 
 </Accordion>
@@ -441,7 +441,7 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
 **ダッシュボードから現在のクリエイティブのCSVファイルをダウンロードする方法：**
 
 1. ダッシュボード右上の<Image alt="3_dots_icon.png" src="https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png" width="16px" />メニューをクリックします。  
-   ![Main menu highlighted.jpg](https://files.readme.io/be14a3ab1a9aba6dc20816e53ad692b1697d15a185053cf523d2ae8451842350-21367268248465.jpg)
+   <Image align="center" alt="Main menu highlighted.jpg" src="https://files.readme.io/be14a3ab1a9aba6dc20816e53ad692b1697d15a185053cf523d2ae8451842350-21367268248465.jpg" />
 2. **カスタムタグファイルのダウンロード**をクリックします。
 3. ファイルに含めるクリエイティブを選択します（すべてのクリエイティブ、または現在ダッシュボードに表示されているもののみ。フィルターで除外されたクリエイティブは含まれません）。
 4. **ダウンロード**をクリックしてください。
@@ -466,7 +466,7 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
 
 ダッシュボードからダウンロードしたカスタムディメンションのCSVファイルの例を示します。各列の見出し（1行目）は、カスタムディメンションの名前です（例：「テーマ」や「バリエーション」）。ディメンションを追加したり、既存のディメンションを変更したりすることができます。タグを追加または変更することもできます（例：「3 Moves」または「DarkPalette」）。
 
-[![Screen_Shot_2022-08-08_at_16.25.23.png](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)
+<Image align="center" alt="Screen_Shot_2022-08-08_at_16.25.23.png" src="https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png" />
 
 </Accordion>
 
@@ -476,7 +476,7 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
 
 * カスタムディメンションは、フィルターと表に「カスタム」タグ付きで表示されます。
 
-<Image alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
+<Image align="center" alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
 
 * Creative Optimizationダッシュボードには、最大15個のカスタムディメンションを追加できます。
 * アップロードできるファイルサイズは1MBまでです。
@@ -505,7 +505,7 @@ AppsFlyerのROI360の契約がある場合、Creative Optimizationダッシュ�
 
 1. ダッシュボード右上の⋮アイコンをクリックし、**命名規則に基づくタグ**を選択します。  
    **命名規則に基づくタグの管理**ウィンドウが表示されます。  
-   <Image alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
+   <Image align="center" alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
 2. **新しい命名規則タイプの作成**で、詳細を入力します：
    * **名前**－新しい命名規則タイプに一意の名前を付けます。
    * **区切り文字**－各部分を区切る文字です。例えば、「enUS\_bluegalaxy\_launch.mp4」というクリエイティブでは、各セクションが「\_」で区切られています。「\_」が区切り文字です。

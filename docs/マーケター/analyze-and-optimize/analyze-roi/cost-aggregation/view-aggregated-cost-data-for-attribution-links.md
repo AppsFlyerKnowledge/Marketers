@@ -48,7 +48,7 @@ AppsFlyerへの広告費データの送信方法：
 
 *Overview dashboardの集計パフォーマンスレポート*には、広告費、クリック数、インプレッション数、ROI、平均eCPIのデータが含まれます。
 
-[![CostReporting.jpg](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)
+<Image align="center" alt="CostReporting.jpg" src="https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg" />
 
 パフォーマンスレポートとローデータレポートは、<Anchor target="_blank" href="/marketers/ja/docs/raw-data-reporting-overview">ダウンロード</Anchor>することもできます。
 

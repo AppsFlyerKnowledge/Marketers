@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要：** 特定の期間内に発生したアプリのアクティビティ、エンゲージメント、アプリの指標を確認できます。当日の指標はリアルタイムで更新されます。
 
-![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
+<Image align="center" alt="ActivityDB.png" src="https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png" />
 
 <div id="activity-dashboard" />
 
@@ -194,7 +194,7 @@ x-zendesk:
 
 <Accordion title="月間データ タブ：過去12か月間">
 
-![ActivityHiLevel.png](https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png)
+<Image align="center" alt="ActivityHiLevel.png" src="https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png" />
 
 このタブにはアプリのアクティビティ成果に関する12か月間の履歴概要が表示され、次のグラフを含みます：
 

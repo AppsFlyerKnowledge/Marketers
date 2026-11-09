@@ -598,7 +598,7 @@ SDKがページの読み込みごとに1回だけ読み込まれるようにし�
 
 実装後、ブラウザの開発者ツールでネットワークリクエストを確認し、SDKがリクエストを送信していることを検証します。
 
-[<Image alt="開発者ツールの画面" src="https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png" width="1015px" />](https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png)
+<Image align="center" alt="開発者ツールの画面" src="https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png" width="1015px" />
 
 **SDKの動作を確認するには、次の手順を実行します。**
 
@@ -1009,10 +1009,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 3. 完了ページの読み込み後に購読登録をアトリビューションするための、新しいタグを追加します。
 
-   [![CUIDのコンバージョンイベント用に新しいGTMタグを追加する画面](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="CUIDのコンバージョンイベント用に新しいGTMタグを追加する画面" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 4. 他のタグと区別できる名前を付け、タグの種類として<strong>Custom HTML（カスタムHTML）</strong>を選択します。
 
-   [![GTMでタグ名を設定し、Custom HTML（カスタムHTML）を選択する画面](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)
+   <Image align="center" alt="GTMでタグ名を設定し、Custom HTML（カスタムHTML）を選択する画面" src="https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg" />
 
    ```javascript
    <0>
@@ -1027,10 +1027,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 5. テキスト欄の下にある**Advanced Settings（詳細設定）**、続いて<strong>Tag Sequencing（タグの順序付け）</strong>を展開し、このタグの実行後にコンバージョンのタグが発火するように設定します。
 
-   [![コンバージョンのタグに対してGTMのTag Sequencing（タグの順序付け）を設定する画面](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="コンバージョンのタグに対してGTMのTag Sequencing（タグの順序付け）を設定する画面" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. コンバージョンのタグを発火させるタイミングを指定するトリガーを設定します。以下の例では、完了ページの読み込み時に発火します。
 
-   [![完了ページの読み込み時にコンバージョンのタグを発火させるGTMトリガーの設定画面](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="完了ページの読み込み時にコンバージョンのタグを発火させるGTMトリガーの設定画面" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 </Accordion>
 

@@ -36,11 +36,11 @@ x-zendesk:
 
 1. **App Store Connect**の **App Information** セクションで、**App Store Server Notifications**までスクロールします。
 
-   <Image alt="image__9_.png" src="https://files.readme.io/8e9c92cdf87303b58a6b604640b4f7adb3cf56c03e57df053e9d486b89345547-33812520143505.png" width="2009px" />
+   <Image align="center" alt="image__9_.png" src="https://files.readme.io/8e9c92cdf87303b58a6b604640b4f7adb3cf56c03e57df053e9d486b89345547-33812520143505.png" width="2009px" />
 2. **Production Server URL** で、**Edit** をクリックします。
 3. **Production Server URL** ボックスのURLは変更しないでください。
 
-   <Image alt="image__9_.png" src="https://files.readme.io/fc7737793f2e7982e3e92d30dec45d7def98ef8ec6c3186ebbdf32a78f217a3d-33812683240977.png" width="1182px" />
+   <Image align="center" alt="image__9_.png" src="https://files.readme.io/fc7737793f2e7982e3e92d30dec45d7def98ef8ec6c3186ebbdf32a78f217a3d-33812683240977.png" width="1182px" />
 4. **Notification Version** で、**Version 2 Notifications** を選択します。
 5. **Save**をクリックしてください。
 6. **App Store Server Notifications** セクションで、**Sandbox Server URL** の **Edit** をクリックします。
@@ -67,9 +67,9 @@ iOSのアプリ内購入API連携に必要な認証情報は次のとおりで�
 
 1. App Store Connectで、**Users and Access**へアクセスします。<Image alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" width="486px" />
 2. **Users and Access** > **Integration**を開き、**Keys**リストから**In-App Purchase**を選択します。  
-   <Image alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" width="532px" />
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" width="532px" />
 3. + をクリックして、新しいアプリ内購入キーを生成します。  
-   <Image alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" width="384px" />
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" width="384px" />
 4. APIキーの名前を入力します。
 5. **Generate** をクリックします。
 6. 先ほど生成したキーの横にある **Download In-App Purchase Key** をクリックして、ダウンロードします。　**注：** キーは一度しかダウンロードできません。
@@ -80,7 +80,7 @@ iOSのアプリ内購入API連携に必要な認証情報は次のとおりで�
 11. App Store Connect で、先ほど生成したキーの**キー ID**をコピーし、AppsFlyerの**キーID**のベーシックレシート検証設定に貼り付けます。
 12. App Store Connect で、**Issuer ID** をコピーし、AppsFlyer管理画面「購入とサブスクリプション」タブで**Issuer ID**項目に貼り付けます。　**注：Issuer ID**がページ上部に表示されない場合は、App Store Connect APIキーを（任意のアクセスレベルで）作成します。その後、アプリ内購入キーのページ上部にIssue IDが表示されます。 
 
-    <Image alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" width="474px" />
+    <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" width="474px" />
 13. AppsFlyerの購入とサブスクリプションの設定で、**キーの検証**をクリックして、入力したキーが正しいことを確認します。
 14. **ファイルを更新** をクリックします。キーが更新されると、アプリはAppleの新しいiOS検証フローに完全に移行します。
 

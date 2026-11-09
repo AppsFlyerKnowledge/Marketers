@@ -112,22 +112,22 @@ iOSの認証情報を設定するには、次の手順を実行します。
 
 1. App Store Connectで、<strong>［ユーザとアクセス］</strong>を開きます。
 
-   [![](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)
+   <Image align="center" alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" />
 2. **［ユーザとアクセス］**＞<strong>［統合］</strong>に移動し、<strong>［キー］</strong>の一覧から<strong>［アプリ内課金］</strong>を選択します。
 
-   [![](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" />
 3. ［＋］をクリックし、新しいアプリ内課金キーを生成します。
 
-   [![](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" />
 4. APIキーの名前を入力します。
 5. <strong>［生成］</strong>をクリックします。
 6. 作成したキーの横にある<strong>［アプリ内課金キーをダウンロード］</strong>をクリックし、キーをダウンロードします。 **注意**：キーは1回しかダウンロードできません。
 7. 生成したキーの**キーID**をコピーし、AppsFlyerの購入・サブスクリプション設定の<strong>［キーID］</strong>に貼り付けます。
 
-   [![](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)
+   <Image align="center" alt="" src="https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png" />
 8. **発行者ID**をコピーします。 **注意**：ページ上部に**発行者ID**が表示されない場合は、App Store Connect APIキーを作成します。アクセスレベルは任意です。作成すると、アプリ内課金キーのページ上部に発行者IDが表示されます。
 
-   [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
+   <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" />
 
 </Accordion>
 
@@ -169,7 +169,7 @@ iOSの認証情報を設定するには、次の手順を実行します。
 2. アカウントをGoogle Cloudプロジェクトにリンクします。手順は、<Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">Googleのこちらのヘルプ</Anchor>を参照してください。
 3. Google Play Developer APIを有効にします。手順は、<Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">Googleのこちらのヘルプ</Anchor>を参照してください。
 
-   [![](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)
+   <Image align="center" alt="" src="https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png" />
 
 </Accordion>
 
@@ -190,18 +190,18 @@ iOSの認証情報を設定するには、次の手順を実行します。
    5. <strong>［このサービスアカウントにプロジェクトへのアクセスを許可する］</strong>の手順で、**Pub/Sub**のサブスクライバーロールを選択します。[![](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)
    6. **［続行］**＞<strong>［完了］</strong>の順にクリックします。
 
-      [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
+      <Image align="center" alt="" src="https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png" />
 2. サービスアカウントの秘密鍵をダウンロードします。
 
    1. <span class="af-ol-a"></span>Google Cloudの<strong>［サービスアカウント］</strong>で、先ほど作成したアカウントを一覧から選び、<strong>［その他の操作］</strong>アイコンをクリックします。
    2. <strong>［鍵を管理］</strong>をクリックします。[![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)
    3. **［鍵を追加］**＞<strong>［新しい鍵を作成］</strong>をクリックします。
 
-      [![](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)
+      <Image align="center" alt="" src="https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png" />
    4. <strong>［秘密鍵の作成］</strong>ポップアップで、<strong>［キーのタイプ］</strong>から<strong>［JSON］</strong>を選択し、<strong>［作成］</strong>をクリックします。[![](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)
    5. <strong>［作成］</strong>をクリックします。秘密鍵のJSONファイルがダウンロードされます。
 
-      [![](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)
+      <Image align="center" alt="" src="https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png" />
    6. 後でAppsFlyerにアップロードするため、JSONキーファイルを保存しておきます。 **注意**！キーは必ず保存してください。後から取得することはできません。保存しなかった場合は、キーを新たに作成し直す必要があります。
 
 </Accordion>
@@ -218,23 +218,23 @@ iOSの認証情報を設定するには、次の手順を実行します。
 
 1. Google Play Consoleの<strong>［ユーザーと権限］</strong>で、作成したサービスアカウントを探し、<strong>［新しいユーザーを招待］</strong>をクリックします。
 
-   [![](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)
+   <Image align="center" alt="" src="https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png" />
 2. 手順1.2.1.3でサービスアカウントを設定した際にコピーした**メールアドレス**を入力します。
 
-   [![](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)
+   <Image align="center" alt="" src="https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png" />
 3. <strong>［権限］</strong>セクションの<strong>［アカウントの権限］</strong>タブで、次の両方を選択します。
 
    * 財務データ、注文、解約に関するアンケートの回答の閲覧。
    * 注文と定期購入の管理。[![](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)
 4. <strong>［アプリの権限］</strong>タブで、<strong>［アプリを追加］</strong>をクリックし、対象のアプリを選択します。必要に応じて複数のアプリを追加します。
 
-   [![](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)
+   <Image align="center" alt="" src="https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png" />
 5. <strong>［ユーザーを招待］</strong>をクリックします。
 
-   [![](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)
+   <Image align="center" alt="" src="https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png" />
 6. 確認ポップアップで、<strong>［招待状を送信］</strong>をクリックします。
 
-   [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
+   <Image align="center" alt="" src="https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png" />
 
 </Accordion>
 
@@ -312,7 +312,7 @@ validateAndLog SDK APIを実装するには、次の手順を実行します。
 
 <Accordion title="アプリ内購入とサブスクリプションの収益テスト">
 
-[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 **アプリ内購入とサブスクリプションの収益をテストするには**：
 
@@ -359,7 +359,7 @@ validateAndLog SDK APIを実装するには、次の手順を実行します。
 * <Anchor target="_blank" href="/marketers/ja/docs/about-receipt-validation#レシート検証のアプリ内購入イベントとパラメータ">アプリ内購入またはサブスクリプション</Anchor>として記録したいアプリ内イベントが、AppsFlyerで設定した検証ルールによってブロックされていないこと。
 * 開発者が、すべてのサンドボックスフラグを`false`に設定していること。
 
-[<Image alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />
 
 validateAndLog SDK APIを実装したアプリが公開されると、<Anchor target="_blank" href="/marketers/ja/docs/about-receipt-validation#レシート検証のアプリ内購入イベントとパラメータ">アプリ内購入とサブスクリプションのイベント</Anchor>が生成され、AppsFlyerのすべてのダッシュボード、集計レポート、ローデータレポートで利用できるようになります。
 

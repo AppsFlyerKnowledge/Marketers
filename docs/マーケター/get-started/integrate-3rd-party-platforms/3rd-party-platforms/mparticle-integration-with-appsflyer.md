@@ -51,17 +51,17 @@ x-zendesk:
 
 3. AppsFlyerのタイルをクリックすると、カテゴリ、対応プラットフォーム、必要なmParticle SDKの最小バージョン（該当する場合）、データ型、ユーザーID、デバイスID、利用可能なイベントや設定など、連携の詳細が表示されます。
 
-![mParticleのDirectoryにあるAppsFlyerのタイル](https://files.readme.io/afa886e48f2cddde39007275a72ce03c4a6c4182408bb2ad4c8c183b1591b47d-115015666683.png)
+<Image align="center" alt="mParticleのDirectoryにあるAppsFlyerのタイル" src="https://files.readme.io/afa886e48f2cddde39007275a72ce03c4a6c4182408bb2ad4c8c183b1591b47d-115015666683.png" />
 
 4. ［**Add AppsFlyer to Setup**］をクリックします。
 
 **Add to Setup**ウィンドウが開きます。
 
-![mParticleのAdd to Setupウィンドウ](https://files.readme.io/1eccc4ea365d41d4228eb07f4df88641458244b303ac8805932bf42ef4df5a74-115015476946.png)
+<Image align="center" alt="mParticleのAdd to Setupウィンドウ" src="https://files.readme.io/1eccc4ea365d41d4228eb07f4df88641458244b303ac8805932bf42ef4df5a74-115015476946.png" />
 
 5. Output Event Integration Typeを選択し、**Add to Setup**をクリックします。Event Configuration Setup画面が開き、設定を続けられます。
 
-![mParticleのEvent Configuration Setup画面](https://files.readme.io/9a4720fef99a21a67fd017f4485e73765ebcb7aeb126f5342cc911aff4a345d2-115015476966.png)
+<Image align="center" alt="mParticleのEvent Configuration Setup画面" src="https://files.readme.io/9a4720fef99a21a67fd017f4485e73765ebcb7aeb126f5342cc911aff4a345d2-115015476966.png" />
 
 6. AppsFlyerの設定情報を入力し、**Save**をクリックします。
 
@@ -70,7 +70,7 @@ x-zendesk:
 * Devキー
 * 作成した設定が、AppsFlyer Default Groupの下に表示されます。
 
-![AppsFlyer Default Groupの下に表示されたAppsFlyerの設定](https://files.readme.io/4d82533f311b93373152f046e92fe46c5e515cb8f5084bb89e81bfcae608172c-115015666803.png)
+<Image align="center" alt="AppsFlyer Default Groupの下に表示されたAppsFlyerの設定" src="https://files.readme.io/4d82533f311b93373152f046e92fe46c5e515cb8f5084bb89e81bfcae608172c-115015666803.png" />
 
 次に、入力元のプラットフォームとAppsFlyerの出力イベント設定を接続します。
 
@@ -83,13 +83,13 @@ x-zendesk:
 10. AppsFlyerの接続設定を入力します。  
 Apple App ID（IDの接頭辞を付けず、数字のみを入力します。たとえば、App IDが**id123456789**の場合は、**123456789**と入力します。）
 
-![AppsFlyerの接続設定画面](https://files.readme.io/2fb4c7480c5813bf7d893318de5c4a8edfe3649293bf51c8dae422be65db726e-115015477066.png)
+<Image align="center" alt="AppsFlyerの接続設定画面" src="https://files.readme.io/2fb4c7480c5813bf7d893318de5c4a8edfe3649293bf51c8dae422be65db726e-115015477066.png" />
 
 11. **Add Connection**をクリックします。
 
 AppsFlyerがConnected Outputとして表示されます。Custom Mappingsなどの追加オプションを利用できる場合もあります。詳細は、<Anchor target="_blank" href="https://docs.mparticle.com/guides/getting-started/connect-an-event-output#outputs">mParticleのドキュメント</Anchor>を参照してください。
 
-![Connected Outputとして表示されたAppsFlyer](https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png)
+<Image align="center" alt="Connected Outputとして表示されたAppsFlyer" src="https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png" />
 
 <div id="feed-integrations" />
 
@@ -105,8 +105,8 @@ AppsFlyerとの連携の概要は、[https://docs.mparticle.com/integrations/app
 
 3. AppsFlyerのタイルをクリックすると、連携の詳細が表示されます。
 
-![mParticleのDirectoryにあるAppsFlyerのタイル](https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png)
-![mParticleに表示されたAppsFlyer連携の詳細](https://files.readme.io/afa886e48f2cddde39007275a72ce03c4a6c4182408bb2ad4c8c183b1591b47d-115015666683.png)
+<Image align="center" alt="mParticleのDirectoryにあるAppsFlyerのタイル" src="https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png" />
+<Image align="center" alt="mParticleに表示されたAppsFlyer連携の詳細" src="https://files.readme.io/afa886e48f2cddde39007275a72ce03c4a6c4182408bb2ad4c8c183b1591b47d-115015666683.png" />
 
 4. ［**Add AppsFlyer to Setup**］をクリックします。
 
@@ -119,11 +119,11 @@ Setup画面に移動し、設定を続けられます。
 * 設定名
 * アプリケーションとして動作
 
-![AppsFlyerのフィード設定](https://files.readme.io/b27aff8223a98b0bf4bd73b6a7a04dc73bc245fa062ac9dd47ed6f4bbeece3f2-115015668703.png)
+<Image align="center" alt="AppsFlyerのフィード設定" src="https://files.readme.io/b27aff8223a98b0bf4bd73b6a7a04dc73bc245fa062ac9dd47ed6f4bbeece3f2-115015668703.png" />
 
 7. 表示された認証情報を使って、AppsFlyer管理画面で設定を完了します。
 
-![AppsFlyer管理画面の認証設定](https://files.readme.io/3c751a38c3891f73485375d75eacde3e07f86969a7d44cd33bf29ace6bfa1875-115015478566.png)
+<Image align="center" alt="AppsFlyer管理画面の認証設定" src="https://files.readme.io/3c751a38c3891f73485375d75eacde3e07f86969a7d44cd33bf29ace6bfa1875-115015478566.png" />
 
 <div id="deferred-deep-linking" />
 

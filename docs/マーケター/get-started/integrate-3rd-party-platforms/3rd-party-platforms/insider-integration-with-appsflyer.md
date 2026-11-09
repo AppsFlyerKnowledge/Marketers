@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるInsiderは、モバイルアプリとWebアプリ向けのマーケティング・分析プラットフォームです。 Insiderは、Web、モバイルWeb、モバイルアプリ、広告の各チャネルで、リアルタイムの予測に基づくセグメント分けとパーソナライズを実現します。
 
-![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/useinsider.png?v=1)
+<Image align="center" alt="rockerbox-logo_en-us.png" src="https://cdn.appsflyer.com/marketplace/static/logo/useinsider.png?v=1" />
 
 <div id="important" />
 
@@ -67,7 +67,7 @@ InsiderとAppsFlyerの接続には、固有のパートナー識別子を使用�
 
 **識別子を取得するには、Insider**にログインし、管理画面の右上にある識別子をコピーします。
 
-![insider-partner-ID_en-us.png](https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png)
+<Image align="center" alt="insider-partner-ID_en-us.png" src="https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png" />
 
 <div id="default-postbacks" />
 
@@ -81,7 +81,7 @@ AppsFlyerは、ユーザーのインストール後にInsiderへポストバッ�
 
 ### アプリ内イベントの設定
 
-![insider-partner-field.png](https://files.readme.io/ad4b4a5e9d688be93b20ccf645c779c361390cc95e2a2acbab7299408b7478bf-4403354160785.png)
+<Image align="center" alt="insider-partner-field.png" src="https://files.readme.io/ad4b4a5e9d688be93b20ccf645c779c361390cc95e2a2acbab7299408b7478bf-4403354160785.png" />
 
 このセクションでは、ポストバックを介してAppsFlyerのイベントをパートナーのイベントに対応付けます。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">アプリ内イベントポストバック</Anchor>を参照してください。
 
@@ -89,7 +89,7 @@ AppsFlyerは、ユーザーのインストール後にInsiderへポストバッ�
 
 1. **Insider**管理画面の右上にある**Insider partner**を入力します。
 
-   ![insider-partner-ID_en-us.png](https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png)
+   <Image align="center" alt="insider-partner-ID_en-us.png" src="https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png" />
 2. AppsFlyerで<strong>［アプリ内イベントポストバック］</strong>を有効にします。
 3. ［**イベントを追加**］をクリックし、SDKイベントをリストに追加します。
 4. ドロップダウンメニューから［**SDKイベント名**］を選択します。

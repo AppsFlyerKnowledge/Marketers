@@ -46,7 +46,7 @@ x-zendesk:
 
 ユーザーが最初に作成されると、アカウントを有効化するためのメール招待が届きます。有効化されると、ログインでき、アカウントがアクティブになります。アクティベーションリンクは 48時間有効です。
 
-<Image alt="login page.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
+<Image align="center" alt="login page.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
 
 AppsFlyerアカウントにログインする方法はいくつかあります：
 
@@ -79,7 +79,7 @@ AppsFlyerアカウントにログインする方法はいくつかあります�
 
 メインアカウントは、最初に作成されたアカウントであり、デフォルトのログインアカウントとして機能します。後から他のアカウントをメインアカウントに設定することもできます。
 
-<Image alt="primary-account1.jpg" src="https://files.readme.io/8f1d88543b4797b584fa781bf2dd2563ed91f6eaff45393b186d8da98ccc0c33-51073397865233.jpg" width="672px" />
+<Image align="center" alt="primary-account1.jpg" src="https://files.readme.io/8f1d88543b4797b584fa781bf2dd2563ed91f6eaff45393b186d8da98ccc0c33-51073397865233.jpg" width="672px" />
 
 **メインアカウントを変更する：**
 
@@ -96,7 +96,7 @@ AppsFlyerアカウントにログインする方法はいくつかあります�
 1. **メニューバーから、** メールアドレスのドロップダウン > アカウントの切り替えへ移動します。
 2. ログインするアカウントを選択してください。
 
-![switch between accounts3.jpg](https://files.readme.io/a1ad8bbbd55451f1988420814217b3a48bcf6103121381d69d0a2fcb24353180-51909721461393.jpg)
+<Image align="center" alt="switch between accounts3.jpg" src="https://files.readme.io/a1ad8bbbd55451f1988420814217b3a48bcf6103121381d69d0a2fcb24353180-51909721461393.jpg" />
 
 <div id="get-started" />
 

@@ -85,7 +85,7 @@ CVに基づいて利用できる推定指標：
 
 <Accordion title="収益LTV">
 
-[![modeled_d7.png](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)
+<Image align="center" alt="modeled_d7.png" src="https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png" />
 
 SKANレポートだけで取得できる収益は、SKANの計測期間とConversion Studioの収益用CV設定で計測できる範囲に限られます。 SKANモデリングでは、インストール後30日目までの収益を推定できます。
 

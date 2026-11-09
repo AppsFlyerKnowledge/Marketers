@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：** 概要： SKAdNetwork (SKAN) ダッシュボードには、iOS SKANポストバックを介してレポートされたキャンペーン指標と、初期ユーザー測定ウィンドウ中の追加のデータポイントが表示されます。null コンバージョンを考慮したモデル化（推定）された指標も用意されています。インストールまたはポストバックの到着日を使用してデータを表示します。
 
-![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
+<Image align="center" alt="SKAdHeadling8_us-en.png" src="https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png" />
 
 <div id="dashboard-principles" />
 
@@ -229,7 +229,7 @@ Dashboard 設定は、アプリケーションがレガシー <Anchor target="_b
 * 利用できる指標を選択します。[推定数値](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#modeled-metrics-and-null-cv) は null CV率を考慮します。
 * ディメンション別にプライマリとセカンダリのグループを設定し、パフォーマンス指標をドリルダウンします。
 
-[![SKAdNetwork_Dashboard_AppsFlyer7_us-en.png](https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png)](https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png)
+<Image align="center" alt="SKAdNetwork_Dashboard_AppsFlyer7_us-en.png" src="https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png" />
 
 指標テーブルについて：
 

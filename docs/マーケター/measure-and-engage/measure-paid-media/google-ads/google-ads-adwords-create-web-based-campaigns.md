@@ -83,7 +83,7 @@ Webキャンペーン向けのGoogle Ads連携を有効にする前に、以下�
 
 1. ［**初回起動のコンバージョンID**］に、Google Adsで設定した`First open`コンバージョンアクションのIDを入力します。 IDを確認するには、Google Adsで［**初回起動**］のコンバージョンアクションページの［**詳細**］タブを開きます。次に、ページのURLから`ctid=*`クエリパラメータの値をコピーします。たとえば、`ctid=123456789`の場合、［**初回起動のコンバージョンアクションID**］欄に`123456789`を入力します。
 
-   ![](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)
+   <Image align="center" alt="" src="https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png" />
 
 > 👍 **Tip**
 >
@@ -191,12 +191,12 @@ Google Adsは、ここで選択したキャンペーンの種類・目的・目�
 1. Google Adsにログインし、キャンペーンを作成します。
 2. キャンペーンの目的を選択します。
 
-   ![](https://files.readme.io/90063f7fe5a363ed498271148c4165969cc63c708a73ab25363d2263a79b0828-26324053661201.png)
+   <Image align="center" alt="" src="https://files.readme.io/90063f7fe5a363ed498271148c4165969cc63c708a73ab25363d2263a79b0828-26324053661201.png" />
    * モバイルアプリのキャンペーン専用の［アプリのプロモーション］を除き、すべての目的を選択できます。
    * 特定のアプリ内イベントに基づいて最適化する場合は、キャンペーンの目的を［販売促進］に設定することを推奨します。
 3. コンバージョン目標を選択します。
 
-   ![](https://files.readme.io/5ca0a0425af24d5926dc0a7a3529632e22bd140423e87c026ff1527e7a0341b3-26324096257169.png)
+   <Image align="center" alt="" src="https://files.readme.io/5ca0a0425af24d5926dc0a7a3529632e22bd140423e87c026ff1527e7a0341b3-26324096257169.png" />
    * デフォルトでは、アカウントレベルで定義済みのキャンペーン目標が表示されます。そのまま使用することも、キャンペーンに関係のない目標を削除することもできます。
    * Googleに最適化させたい目標が見当たらない場合：
 
@@ -204,7 +204,7 @@ Google Adsは、ここで選択したキャンペーンの種類・目的・目�
    * 定義済みの目標は、［コンバージョン］ページでも編集できます。
 4. キャンペーンの種類を選択します。
 
-   ![](https://files.readme.io/14daea1c1edf92854e21d0a4c5d34372a4e062d68a4613967bb4f40d0d1e720f-26324053659281.png)
+   <Image align="center" alt="" src="https://files.readme.io/14daea1c1edf92854e21d0a4c5d34372a4e062d68a4613967bb4f40d0d1e720f-26324053659281.png" />
    * 商品カタログが必要で、確認済みのドメインに限定される［ショッピング］を除き、すべての種類を選択できます。
 
 </Accordion>
@@ -237,7 +237,7 @@ Google Adsでカスタムコンバージョンアクションと目標を作成�
 2. データソースを設定せずに［**保存して続行**］をクリックし、［**完了**］をクリックします。作成したコンバージョンアクションは、最初は［無効］と表示される場合がありますが、実際のデータが送信されると［有効］に変わります。
 3. 新しいコンバージョンアクションをAppsFlyerのポストバックイベントにマッピングするため、そのコンバージョンアクションIDを取得します。コンバージョン目標の［**概要**］ページで、作成したコンバージョンアクションをクリックし、ページのURLから`ctid=*`クエリパラメータの値をコピーします。
 
-   ![](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)
+   <Image align="center" alt="" src="https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png" />
 4. AppsFlyerで、Googleに最適化させたいポストバックイベントの［**パートナー側のイベント名**］列に`ctid`の値を貼り付けます。[アプリ内イベントポストバックの設定](#h_01J1MPPMW34GG0EPDWYXA7383C)を参照してください。
 
 </Accordion>
@@ -257,7 +257,7 @@ Googleは<Anchor target="_blank" href="https://support.google.com/google-ads/ans
 1. Google Adsで、［**キャンペーン**］>［**広告**］ページを開きます。
 2. 広告の行で、編集アイコンをクリックします。
 
-   ![](https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png)
+   <Image align="center" alt="" src="https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png" />
 3. ［**最終ページURL**］に、WebランディングページのURLを入力します。
 
 > ❗️ **Warning**
@@ -294,10 +294,10 @@ Google Adsはデフォルトで並行トラッキングを使用するため、�
 
 1. Google Adsで、［**キャンペーン**］>［**キャンペーン**］ページを開きます。キャンペーンの行にある設定アイコンをクリックします。
 
-   ![](https://files.readme.io/ec6503cfb3ff185448f13897240e0eadd7f10fc3678ffa85b4d52d2393b01ca4-26324098054033.png)
+   <Image align="center" alt="" src="https://files.readme.io/ec6503cfb3ff185448f13897240e0eadd7f10fc3678ffa85b4d52d2393b01ca4-26324098054033.png" />
 2. ［**設定**］>［**その他の設定**］>［**キャンペーンURLオプション**］を展開します。
 
-   ![](https://files.readme.io/4959b4129749ff282ee3818c3b5724ac2ed3b1d033d06f8557329cafa812720f-26324053658641.png)
+   <Image align="center" alt="" src="https://files.readme.io/4959b4129749ff282ee3818c3b5724ac2ed3b1d033d06f8557329cafa812720f-26324053658641.png" />
 3. ［**トラッキングテンプレート**］に、以下の形式（ベースURL＋リダイレクトパラメータ）でURLを設定します。
    * **ベースURL**：広告のクリック先に応じて、以下のいずれかを設定します。
      * 広告のクリック先がGoogle PlayまたはApp Storeの場合は、**単一プラットフォーム向けの計測リンク**を設定します（以下の例を参照）。
@@ -381,7 +381,7 @@ https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=tr
 
 Web to App（W2A）でSmart Scriptを使用する場合、データは以下の流れで処理されます。
 
-![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. ユーザーがGoogleの広告をクリックすると、Googleは最終ページURLに以下を自動的に追加します。
    * Androidデバイス、および同意したiOSデバイスユーザーには、`gclid`パラメータ。

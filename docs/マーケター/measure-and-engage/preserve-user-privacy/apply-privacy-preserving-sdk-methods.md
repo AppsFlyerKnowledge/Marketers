@@ -137,7 +137,7 @@ SDKは、初期化（`start`）メソッドが呼び出された後にのみ、�
 
 次の図は、匿名化（削除とハッシュ）後のローデータの行の例を示しています。
 
-[![](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)
+<Image align="center" alt="" src="https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png" />
 
 <div id="impact-on-attribution-2" />
 

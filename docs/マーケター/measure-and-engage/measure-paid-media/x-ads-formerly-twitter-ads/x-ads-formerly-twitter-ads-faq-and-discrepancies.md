@@ -79,21 +79,21 @@ Say your team member is Jenny and her handle is @jenny. Your handle is @nivi and
 1. Jenny signs into <Anchor target="_blank" href="http://ads.twitter.com/">ads.twitter.com</Anchor>
 2. She clicks on **Account** and then chooses **Edit access to account**
 
-   ![twitter_assign_account2.PNG](https://files.readme.io/cd2aa0b7a700fd0eee8754ac850adb99cc22b1c42d0d94f18d31ca71901ff31f-50903273809937.png)
+   <Image align="center" alt="twitter_assign_account2.PNG" src="https://files.readme.io/cd2aa0b7a700fd0eee8754ac850adb99cc22b1c42d0d94f18d31ca71901ff31f-50903273809937.png" />
 3. Jenny then gives @nivi access to her X Ads Account as or Account administrator  
 
-   [![twitter_edit_access_to_account.png](https://files.readme.io/e918cd0a0ad3875c2e34d7cce9d3953b39dc3891c30fe4af98a3b7e25a74783a-51444645965329.png)](https://support.appsflyer.com/hc/article_attachments/51444669598225)
+   [<Image align="center" alt="twitter_edit_access_to_account.png" src="https://files.readme.io/e918cd0a0ad3875c2e34d7cce9d3953b39dc3891c30fe4af98a3b7e25a74783a-51444645965329.png" />](https://support.appsflyer.com/hc/article_attachments/51444669598225)
 4. Jenny logs into the AppsFlyer account and goes to Active Integrations >> X Ads option
 5. At this stage, she can see her X Ads Account also listed.
 6. She can now see her X Ads account and configure the integration. The account admin can see all connected X Ads accounts.
 
    Jenny's view:
 
-   ![jennys_ads_account.png](https://files.readme.io/73e3ca9be6090bfd47acb675e4faa634721d9aa75f5ebb8cf736fd56dd9e336b-50903273813137.png)
+   <Image align="center" alt="jennys_ads_account.png" src="https://files.readme.io/73e3ca9be6090bfd47acb675e4faa634721d9aa75f5ebb8cf736fd56dd9e336b-50903273813137.png" />
 
    Account admin view:
 
-   ![jennys_ads_account__1_.png](https://files.readme.io/d744c0e2de60011a0395a407607ec90f4fac04f76787b430cf1a74eda2342e66-50903273813649.png)
+   <Image align="center" alt="jennys_ads_account__1_.png" src="https://files.readme.io/d744c0e2de60011a0395a407607ec90f4fac04f76787b430cf1a74eda2342e66-50903273813649.png" />
 
 </Accordion>
 
@@ -130,7 +130,7 @@ If your app was subscribed to another attribution provider in the past, which wa
 
 Alternatively, the following error may also appear:  
 
-[![](https://files.readme.io/e7fb5a1a1ea41316b17ac59360090ea8bd6bc5eb9af7c032b1ab105d1264939d-51444645966097.png)](https://files.readme.io/e7fb5a1a1ea41316b17ac59360090ea8bd6bc5eb9af7c032b1ab105d1264939d-51444645966097.png)
+<Image align="center" alt="" src="https://files.readme.io/e7fb5a1a1ea41316b17ac59360090ea8bd6bc5eb9af7c032b1ab105d1264939d-51444645966097.png" />
 
 **Error: Error has occurred while saving X Ads configuration. Some accounts failed to update: XX Multiple provider ids to same (appid, conversionType) for event appid2872.**
 

@@ -59,7 +59,7 @@ AppsFlyerと連携しているその他のGAPP：Blackbox、Appreciate、Marin S
 
 4. **Google Ads**アカウントで、お客様IDをハイフンなしでコピーします。
 
-![](https://files.readme.io/7afd536d06b1aca68744a83925ecac86fcef4cc47225826af20120f128da004f-21414601345681.png)
+<Image align="center" alt="" src="https://files.readme.io/7afd536d06b1aca68744a83925ecac86fcef4cc47225826af20120f128da004f-21414601345681.png" />
 
 5. ［**Google Adsのお客様ID**］欄に、その番号を貼り付けます。
 

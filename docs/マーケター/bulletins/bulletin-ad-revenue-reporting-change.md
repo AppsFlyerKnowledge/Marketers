@@ -70,6 +70,6 @@ x-zendesk:
 > * 広告収益データは Day 0 で報告されます。
 >   * アクティビティ ダッシュボード、Data Locker (h=23 フォルダー)、および生データ レポートでは、広告の表示時間も利用できます。
 >
-> [![](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)
+> <Image align="center" alt="" src="https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg" />
 
 <div data-zendesk-anchors="ad-revenue-reporting-change=%E5%BA%83%E5%91%8A%E5%8F%8E%E7%9B%8A%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E5%A4%89%E6%9B%B4 before-the-change=%E5%A4%89%E6%9B%B4%E5%89%8D after-the-change=%E5%A4%89%E6%9B%B4%E5%BE%8C" />

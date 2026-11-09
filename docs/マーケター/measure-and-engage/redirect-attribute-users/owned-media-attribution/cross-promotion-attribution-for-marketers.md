@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **概要：** 概要：アプリを自社の他のアプリ上で宣伝するクロスプロモーションキャンペーン経由のインストールを計測しましょう。
 
-![CrossPromo_userJourney](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
+<Image align="center" alt="CrossPromo_userJourney" src="https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png" />
 
 <div id="about-cross-promotion" />
 
@@ -35,7 +35,7 @@ x-zendesk:
 
 次の画像には、宣伝されたアプリの管理画面で、オウンドメディア（**af\_cross\_promotion**）と他のメディアソースで実施されたキャンペーン指標の内訳が表示されています。クロスプロモーションキャンペーンのインストールとコンバージョン率は他のメディアソースの値と比べて高いことが確認されます。
 
-[![CrossPromo_mediaSource](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+<Image align="center" alt="CrossPromo_mediaSource" src="https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png" />
 
 <div id="how-does-cross-promotion-work" />
 
@@ -112,7 +112,7 @@ AppsFlyerでは、クロスプロモーションキャンペーンで発生し�
 >
 > ダッシュボードを確認すると、「ゴルフ」のコンバージョン率18.22%で、「ボウリング」のコンバージョン率よりもはるかに高く、「ゴルフ」とプロモーション対象のアプリ「ビリヤード」の親和性が高いと判断できます。
 >
-> [![CrossPromo_conversionRate](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)
+> <Image align="center" alt="CrossPromo_conversionRate" src="https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png" />
 >
 > これらの洞察に基づいて、キャンペーンを以下のように最適化することができます。
 >
@@ -137,6 +137,6 @@ AppsFlyerでは、クロスプロモーションキャンペーンで発生し�
 >
 > 宣伝された3つのアプリの指標をすべて一箇所で確認するために、カスタムダッシュボードを作成します。以下の画像では、「スポーツシューズ」は20.23%のコンバージョン率であり、これは、「靴」と「スポーツシューズ」が他の2つのアプリに比べてはるかに高い親和性があることが分かります。
 >
-> ![CrossPromo_customWidget](https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png)
+> <Image align="center" alt="CrossPromo_customWidget" src="https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png" />
 
 <div data-zendesk-anchors="about-crosspromotion=%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6 h_01HE7RXZ2CZCYENE4K40W5YSHF=%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6 how-does-crosspromotion-work=%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E6%A9%9F%E8%83%BD%E3%81%97%E3%81%BE%E3%81%99%E3%81%8B h_01HE7RXZ2CE5EQV42Y4B9SK4FN=%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E6%A9%9F%E8%83%BD%E3%81%97%E3%81%BE%E3%81%99%E3%81%8B attributing-crosspromotion=%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E8%A8%88%E6%B8%AC h_01HE7RXZ2CWB2GZ8HV6447RVV1=%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E8%A8%88%E6%B8%AC setting-up-crosspromotion=%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E8%A8%AD%E5%AE%9A h_01HE7RXZ2C9JGFYV8K8FECFFJN=%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E8%A8%AD%E5%AE%9A viewing-crosspromotion-data=%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%A2%BA%E8%AA%8D h_01HE7RXZ2CE9NWMQ1PT3G98QVN=%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%97%E3%83%AD%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%A2%BA%E8%AA%8D promoted-app-dashboard=%E5%BA%83%E5%91%8A%E5%AF%BE%E8%B1%A1%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E7%AE%A1%E7%90%86%E7%94%BB%E9%9D%A2 h_01HE7RXZ2CQG9M35Y2FJNPZWDA=%E5%BA%83%E5%91%8A%E5%AF%BE%E8%B1%A1%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E7%AE%A1%E7%90%86%E7%94%BB%E9%9D%A2 analysis=%E5%88%86%E6%9E%90 h_01HE7RXZ2CVQD8H0J6EVRJM5T7=%E5%88%86%E6%9E%90 h_01HE7RXZ2CW1P0QNA8FFXP5KBS=%E4%BE%8B custom-dashboard=%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9C%E3%83%BC%E3%83%89 h_01HE7RXZ2C7N3DKNPF898WM4AD=%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9C%E3%83%BC%E3%83%89 h_01HE7RXZ2C51KJMP795QYS26YK=%E4%BE%8B-1" />

@@ -54,7 +54,7 @@ Data Lockerは、ストレージにデータをストリーミングするため
 1. GCSコンソールにログインします。
 2. **Storage** > **Storage browser**の順に移動します。
 
-   [![mceclip0.png](https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png)](https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png)
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png" />
 3. 事前に作成したバケット（例：`data-locker-example`）を選択します。
 4. **Permissions**タブを開きます。
 5. **+Add**をクリックします。  
@@ -67,7 +67,7 @@ Data Lockerは、ストレージにデータをストリーミングするため
       ```
    2. **Select a role**で、**Cloud storage** > **Storage Object Admin**を選択します。
 
-      [![mceclip0.png](https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png)](https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png)
+      <Image align="center" alt="mceclip0.png" src="https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png" />
 7. **Save**をクリックしてください。
 
 </Accordion>
@@ -92,7 +92,7 @@ Data Lockerは、ストレージにデータをストリーミングするため
 
 **AWSコンソール上の表示例**
 
-![MyBucket.jpg](https://files.readme.io/b8a16d185279200026388e146cfb3eb03ae3c7737ac26da3aa0d116a0cf9c078-4403551836305.jpg)
+<Image align="center" alt="MyBucket.jpg" src="https://files.readme.io/b8a16d185279200026388e146cfb3eb03ae3c7737ac26da3aa0d116a0cf9c078-4403551836305.jpg" />
 
 バケットを作成したら、以下の手順でAppsFlyerに必要な権限を付与します。
 
@@ -311,7 +311,7 @@ Data LockerをSnowflakeアカウントに接続できます。接続すると、
 2. メニューバーから自分の名前を選択します。  
    Account IDとRegionが表示されます。
 
-   [<Image alt="Snowflake account details" src="https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png" width="875px" />](https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png)
+   <Image align="center" alt="Snowflake account details" src="https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png" width="875px" />
 
 **Data LockerをSnowflakeに接続するには：**
 

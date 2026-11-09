@@ -32,7 +32,7 @@ x-zendesk:
 ---
 > **概要：** ユーザーの所在地は、デバイスのIPアドレスを、市区町村、州・都道府県、国などのおおよその所在地に対応付けて判定します。ユーザーの所在地は、クリエイティブの選択、キャンペーンのコスト、エンゲージメント、ユーザーの質に影響します。
 
-![5888ResolveIpAddress_us-en.png](https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png)
+<Image align="center" alt="5888ResolveIpAddress_us-en.png" src="https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png" />
 
 <div id="determining-user-location" />
 
@@ -59,7 +59,7 @@ AppsFlyerは、IP位置情報の世界的な大手企業である<Anchor target=
 
 > 📘 **英国（UK）に関する注意**
 >
-> <Image alt="blobid0.png" src="https://files.readme.io/33ed45ea49e3308e17a237400ea6c6e9d33c495a9c83197041fdae282f9c65a4-360006637538.png" width="62px" />
+> <Image align="center" alt="blobid0.png" src="https://files.readme.io/33ed45ea49e3308e17a237400ea6c6e9d33c495a9c83197041fdae282f9c65a4-360006637538.png" width="62px" />
 >
 > * 管理画面では、英国をUKというコードで表します。
 > * 英国のISO 3166コードはGBです。 UKは、ISOによって英国用に予約されていますが、正式に割り当てられたコードではありません。

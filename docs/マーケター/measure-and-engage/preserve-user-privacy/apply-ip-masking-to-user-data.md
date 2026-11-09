@@ -84,6 +84,6 @@ IPマスキングをオンにした場合：
 
 **ローデータレポートの例**
 
-![ip_masking.png](https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png)
+<Image align="center" alt="ip_masking.png" src="https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png" />
 
 <div data-zendesk-anchors="ip-masking=ip%E3%83%9E%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%B0 h_01HA91HHADCTT7QS2K79TJEY2C=ip%E3%83%9E%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%B0 h_01HA92HF3ZYR2NBTXQ1S2AHCAA=%E6%B3%A8%E6%84%8F h_01HA91HHAD7BCXRZW6AD9NRDBN=%E4%BE%8B h_01HA91HHAEM220CE8805GFQYKR=enabling-ip-masking ip-masking-in-raw-data-reports=%E3%83%AD%E3%83%BC%E3%83%87%E3%83%BC%E3%82%BF%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%A7ip-masking%E3%82%92%E6%9C%89%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B h_01HA91HHAE14D6ES1ERNK93VY9=%E3%83%AD%E3%83%BC%E3%83%87%E3%83%BC%E3%82%BF%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%A7ip-masking%E3%82%92%E6%9C%89%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B" />

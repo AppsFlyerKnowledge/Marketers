@@ -25,7 +25,7 @@ x-zendesk:
 
 > **概要：** Creative Optimization Discovery AIダッシュボードを使用して、クリエイティブと、それを構成するシーンや要素のパフォーマンスを分析します。データに基づき、効果的なクリエイティブを制作・維持できます。
 
-[![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
+<Image align="center" alt="Main Discovery image.jpg" src="https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg" />
 
 <div id="about-the-creative-optimization-discovery-ai-dashboard" />
 
@@ -68,7 +68,7 @@ Creative Optimizationをまだ設定していない場合は、<Anchor target="_
 6. フィルターと検索設定に一致するすべてのクリエイティブ、要素、シーン、テキストのディスカバリーカードギャラリーを表示します。
    1. [オプション]カードに表示される指標を変更するには、**設定**アイコンをクリックし、表示する指標を最大5つ選択します。[ディスカバリーカードの設定の詳細](/docs/creative-optimization-discovery-ai-dashboard#discovery-tabs)をご覧ください。
    2. ギャラリータイルを指標の高い順（またはその逆）に並べ替えます。ソートできる指標は、ディスカバリーカード設定で選択された指標です。  
-      <Image alt="Sort by new.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
+      <Image align="center" alt="Sort by new.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
 7. 特定のカードをクリックすると、さらに深く掘り下げて、パフォーマンスデータやインサイトを得ることができます。
 
 </Accordion>
@@ -83,7 +83,7 @@ Discoveryのタイルに表示する指標をカスタマイズできます。
 
 1. 右上（**並べ替え**の横）の<Image alt="Gear icon.jpg" src="https://files.readme.io/b54f4534bc513b597f7cdda1fb4db7dd811d71b1466ddd3b50b9efe751cf68d3-24287873747857.jpg" width="31px" />アイコンをクリックします。
 2. 必要な指標を最大5つ選択し、**適用**をクリックします。  
-   <Image alt="Discovery card settings.jpg" src="https://files.readme.io/7b05960fde8159a6e5a53917e2e972ea059d6a6dc165ee66c7d6d390c4148786-24289299704081.jpg" width="738px" />  
+   <Image align="center" alt="Discovery card settings.jpg" src="https://files.readme.io/7b05960fde8159a6e5a53917e2e972ea059d6a6dc165ee66c7d6d390c4148786-24289299704081.jpg" width="738px" />
    選択した指標がタイルに表示されます。
 
 **使用可能な指標は次のとおりです：**
@@ -268,7 +268,7 @@ AI搭載の検索バーでは、単語から映像全体のコンセプトやス
 
 すべてのクリエイティブのギャラリーとパフォーマンスデータをご覧ください。表示されるタイルは、メインのクリエイティブフィルター選択に基づいています。さらに、タイルに表示される指標と、タイルの表示に使用されるソート方法をカスタマイズできます。設定とソートを参照してください。
 
-![creatives.png](https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png)
+<Image align="center" alt="creatives.png" src="https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png" />
 
 |  | ディメンション／指標 | 説明 |
 | --- | --- | --- |
@@ -290,7 +290,7 @@ AIによって動画クリエイティブを自動的にシーンへ分割し、
 
 **注意：** 表示されるタイルは、メインのクリエイティブフィルター選択に基づいています。さらに、タイルに表示される指標と、タイルの表示に使用されるソート方法をカスタマイズできます。設定とソートを参照してください。
 
-<Image alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
+<Image align="center" alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
 
 |  | ディメンション／指標 | 説明 |
 | --- | --- | --- |
@@ -311,7 +311,7 @@ AIによって動画クリエイティブを自動的にシーンへ分割し、
 
 **注意：** 表示されるタイルは、メインのクリエイティブフィルター選択に基づいています。さらに、タイルに表示される指標と、タイルの表示に使用されるソート方法をカスタマイズできます。設定とソートを参照してください。
 
-![elements.png](https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png)
+<Image align="center" alt="elements.png" src="https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png" />
 
 |  | ディメンション／指標 | 説明 |
 | --- | --- | --- |
@@ -331,7 +331,7 @@ AIによって動画クリエイティブを自動的にシーンへ分割し、
 
 **注意：** 表示されるタイルは、メインのクリエイティブフィルター選択に基づいています。さらに、タイルに表示される指標と、タイルの表示に使用されるソート方法をカスタマイズできます。設定とソートを参照してください。
 
-<Image alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
+<Image align="center" alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
 
 |  | ディメンション／指標 | 説明 |
 | --- | --- | --- |

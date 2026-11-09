@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要**：
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 
 
 Google Marketing Platform (GMP)は、広告と分析を連携することで、質の高い顧客とのつながりを作り、より深いインサイトを得て、より良いマーケティング結果を導くことができます。

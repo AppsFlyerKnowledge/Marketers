@@ -44,7 +44,7 @@ x-zendesk:
    * 集計分析レポート
    * SKANレポート（iOSアプリ）
 
-     <Image alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
+     <Image align="center" alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
 6. <strong>［APIアクセスを保存］</strong>をクリックします。
 7. アクセス権限を有効にしたことをAppTweakに伝えます。
 

@@ -216,7 +216,7 @@ ExcelまたはGoogleスプレッドシートでCSVファイルを作成する場
 1. 書式を設定するセルを選択します。
 2. 右クリックし、<strong>［セルの書式設定］</strong>を選択します。  
    セルの書式設定ウィンドウが開きます。  
-   <Image alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
+   <Image align="center" alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
 3. <strong>［ユーザー定義］</strong>を選択します。
 4. ［種類］フィールドに**YYYY-MM-DD**と入力します。
 5. <strong>［OK］</strong>をクリックします。  
@@ -228,7 +228,7 @@ ExcelまたはGoogleスプレッドシートでCSVファイルを作成する場
 
 Excelでは通常、以下の画像のように、数値のセルに3桁区切りのカンマが設定されます。この書式はコストインポート用ファイルには適していません。
 
-<Image alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
 
 **spendセルの3桁区切りのカンマを無効にするには**：
 
@@ -236,7 +236,7 @@ Excelでは通常、以下の画像のように、数値のセルに3桁区切�
 2. 右クリックし、<strong>［セルの書式設定］</strong>を選択します。  
    セルの書式設定ウィンドウが開きます。
 3. <strong>［数値］</strong>を選択します。  
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 4. <strong>［桁区切り（,）を使用する］</strong>のチェックを外します。
 5. 任意で、<strong>［小数点以下の桁数］</strong>を設定します。デフォルトは2桁です。最大5桁まで指定できます。
 6. <strong>［OK］</strong>をクリックします。  
@@ -262,7 +262,7 @@ Excelでは通常、以下の画像のように、数値のセルに3桁区切�
 
 以下の画像は、[サンプルCSVファイル](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0oJTWdlNyT1gBHkGaN1QP-tUatugbPBzC2qYVNmjl_T_i3fKo1abYzTp6F7OqGeN_f7bBAJa3hxVz/pub?gid=0&single=true&output=csv)をエディターで開いた画面です。
 
-<Image alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
 
 </Accordion>
 

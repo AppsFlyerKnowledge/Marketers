@@ -45,7 +45,7 @@ Movable Ink is a dynamic content optimization partner that provides personalized
      * Click on the three dots (“…”) under the section **Copy Creative Tag** and choose **Copy Link URL**.   
        **Note:** Finalize your campaign setup before copying the link URL.
      * Copy the HREF URL from the copied link (highlighted) and set it aside. It will be used as the deep link value in the final link.   
-       <Image alt="Movableink image highlighted.png" src="https://files.readme.io/a2ccca4d6053e1448094dd83478610693b13a7f04a77aaaff7d12305533e8fbe-28405439389201.png" width="1130px" />
+       <Image align="center" alt="Movableink image highlighted.png" src="https://files.readme.io/a2ccca4d6053e1448094dd83478610693b13a7f04a77aaaff7d12305533e8fbe-28405439389201.png" width="1130px" />
 4. **In AppsFlyer:** Navigate to the specific <Anchor target="_blank" href="/marketers/ja/docs/create-a-onelink-template">OneLink template</Anchor> that you'll use for the campaign and retrieve the following data points for the integration:
    * * **OneLink Domain:** The subdomain for OneLink generation within AppsFlyer.
      * **Template ID:** ID of the referenced template or the one created for the campaign.

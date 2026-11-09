@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要：** クリックに基づくモバイル計測に加えて、ironSourceでは、AppsFlyerで計測できるコスト、広告収益、リターゲティング、ビュースルー計測を提供しています。
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/mobio.png?v=1)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobio.png?v=1" />
 
 
 **<span id="setting-up-mobio"></span>前提条件:** **連携を設定する前に、必ず<Anchor target="_blank" href="/marketers/ja/docs/partner-integrations#パートナーに連絡する">パートナーに連絡して</Anchor>アカウントを開設してください。**

@@ -33,7 +33,7 @@ x-zendesk:
 
 AppsFlyer SDKはアプリインストールとイベントを記録する機能を提供します。
 
-![SDK_Integration.jpg](https://files.readme.io/11ef01abe55ae3d53d1a3756ffd24bf3262002c3970005cd70047c9d0665b5d1-360001586617.jpg)
+<Image align="center" alt="SDK_Integration.jpg" src="https://files.readme.io/11ef01abe55ae3d53d1a3756ffd24bf3262002c3970005cd70047c9d0665b5d1-360001586617.jpg" />
 
 インストール、アップデート、セッション (起動) に加え（以下の必須のステップを実行）、アプリ内イベント（アプリ内購入、ゲームレベルなど）も計測して、ROIやユーザーのエンゲージメントレベルを評価できます。
 
@@ -49,7 +49,7 @@ AppsFlyer SDKはアプリインストールとイベントを記録する機能�
 
 Windows Universal SDK はNuGet Package Manager経由でインストールされます。AppsFlyer Windows SDKをNuget経由でインストールする方法：
 
-[![](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)
+<Image align="center" alt="" src="https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png" />
 
 1. プロジェクトファイルを右クリックしてください。
 2. ***Manage NuGet Packages*** をクリックしてください。
@@ -62,11 +62,11 @@ NuGetパッケージを使用しない場合は、AppsFlyer SDKをアプリに�
 2. Copy the AppsFlyerLib.winmd をプロジェクトにコピーしてください。
 3. Visual Studioで、Universal Windows Platformプロジェクトの ***Add Reference*** をクリックしてください。
 
-[![](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)](https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png)
+<Image align="center" alt="" src="https://files.readme.io/5606c0bcbaaffdeea5b43f9b0201263a6ad3ab5a610ccb7b7389737e84c22844-21241888352273.png" />
 
 * AppsFlyerLib.winmd を見つけて、追加してください。
 
-[![](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)](https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png)
+<Image align="center" alt="" src="https://files.readme.io/fe03e297291cab276977287701e46d950c7444a47d28c01a75f01112992b57a9-21241904443153.png" />
 
 <div id="important-1" />
 

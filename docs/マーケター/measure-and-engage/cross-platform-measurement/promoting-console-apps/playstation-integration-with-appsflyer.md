@@ -41,7 +41,7 @@ PlayStation APIの連携は以下をサポートします：
 
 **注意**：
 
-![User_windows.jpg](https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg)
+<Image align="center" alt="User_windows.jpg" src="https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg" />
 
 1. <span id="marketing-touchpoint"></span>マーケティングタッチポイント
 2. ゲームのランディングページこの手順は、UTM およびその他の URLパラメータを収集して、クリック / インストールしたユーザーを元のメディアソースまたはオウンドメディアソースに結び付けるために重要です。  

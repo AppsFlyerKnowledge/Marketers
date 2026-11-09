@@ -152,7 +152,7 @@ OneLinkでもルックバック期間を設定できます。
 
 以下のグラフは、広告接触からアプリの初回起動までにかかる時間の分布を示しています。
 
-[![](https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png)](https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png)
+<Image align="center" alt="" src="https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png" />
 
 このグラフから、ルックバック期間の長さによって、アプリをインストールするユーザー数がどのように変わるかを把握できます。
 
@@ -172,7 +172,7 @@ OneLinkでもルックバック期間を設定できます。
 
 X Adsでキャンペーンを設定し、クリックスルーのルックバック期間を7日に設定したとします。一方、X Adsのルックバック期間のデフォルト値は14日です。
 
-[![srn-discrepancy-srn-lookback-larger-than-appsflyer.png](https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png)](https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png)
+<Image align="center" alt="srn-discrepancy-srn-lookback-larger-than-appsflyer.png" src="https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png" />
 
 </Accordion>
 
@@ -182,7 +182,7 @@ X Adsでキャンペーンを設定し、クリックスルーのルックバッ
 
 X Adsでキャンペーンを設定し、クリックスルーのルックバック期間を28日に設定したとします。一方、X Adsのルックバック期間のデフォルト値は14日です。
 
-[![srn-lookback-smaller-than-appsflyer.png](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)
+<Image align="center" alt="srn-lookback-smaller-than-appsflyer.png" src="https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png" />
 
 </Accordion>
 

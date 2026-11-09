@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **概要：** 工場出荷前に端末へインストールされたアプリのインストールを、端末メーカーにアトリビューションします。**注意**：<Anchor target="_blank" href="/marketers/ja/docs/appsflyer-attribution-model#preload-campaigns">その他のプリロードアトリビューション方式</Anchor>も参照してください。
 
-![pre-install-intro-breakdown.png](https://files.readme.io/6f7476f414d3d7ff9428bbf70617f6ac71ffbc27b4c934bcbb6e0c33f870a923-52396539342865.png)
+<Image align="center" alt="pre-install-intro-breakdown.png" src="https://files.readme.io/6f7476f414d3d7ff9428bbf70617f6ac71ffbc27b4c934bcbb6e0c33f870a923-52396539342865.png" />
 
 <div id="introduction" />
 
@@ -426,9 +426,9 @@ AppsFlyerは、次の2つのデフォルトのパスで**pre\_install.appsflyer*
 
 Android Studioでアプリをビルドし、テストデバイスにインストールします。アプリが起動したら、Android StudioでLogcatを開き、「AppsFlyer」でフィルタリングします。アトリビューションされたインストールの詳細が表示されます。以下のスクリーンショットを参照してください。
 
-![pre_install_logcat.png](https://files.readme.io/bc2186117491c79699e08210fd58460f51ae102b7167735d8017fa08e394fd12-52396508410257.png)
+<Image align="center" alt="pre_install_logcat.png" src="https://files.readme.io/bc2186117491c79699e08210fd58460f51ae102b7167735d8017fa08e394fd12-52396508410257.png" />
 
-![pre_install_logcat_2.png](https://files.readme.io/08e09b0a71e91840c98640d4da1b26d9e9a0c857c55607442bcdd324a10d3003-52396539348113.png)
+<Image align="center" alt="pre_install_logcat_2.png" src="https://files.readme.io/08e09b0a71e91840c98640d4da1b26d9e9a0c857c55607442bcdd324a10d3003-52396539348113.png" />
 
 </Accordion>
 
@@ -442,13 +442,13 @@ AppsFlyerアカウントにアクセスし、テスト対象のアプリのダ�
 
 1. オーバービューダッシュボードで、メディアソースのフィルターから対象のメディアソースを選択します。  
 
-   ![choose_media_source.png](https://files.readme.io/f7fc3f24540cdeb8914a64b19fd0c6450827a63eaed5b9eb6c77470e4a129412-52396508413073.png)
+   <Image align="center" alt="choose_media_source.png" src="https://files.readme.io/f7fc3f24540cdeb8914a64b19fd0c6450827a63eaed5b9eb6c77470e4a129412-52396508413073.png" />
 2. <strong><em>［キャンペーン別内訳］</em></strong>グラフでは、「my media source」にアトリビューションされたインストールが、Pre-installキャンペーンによるものであることを確認できます。  
 
-    [![](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)  
+    <Image align="center" alt="" src="https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png" />
    ***集計パフォーマンスレポート***でも、インストールが正しくアトリビューションされているか確認できます。このレポートでは、メディアソースとキャンペーンを確認できます。以下のスクリーンショットでは、メディアソースが「My Media Source」、キャンペーンがPre-installになっています。  
 
-    [![](https://files.readme.io/6eee128de5ea268540fd4672b27dd6e6e7b686d77215096184f2570fd641c6f1-52396508413969.png)](https://files.readme.io/6eee128de5ea268540fd4672b27dd6e6e7b686d77215096184f2570fd641c6f1-52396508413969.png)
+    <Image align="center" alt="" src="https://files.readme.io/6eee128de5ea268540fd4672b27dd6e6e7b686d77215096184f2570fd641c6f1-52396508413969.png" />
 3. プリインストールキャンペーンで連携するすべてのメーカーまたはメディアソースについて、この手順を繰り返します。
 
 </Accordion>

@@ -49,7 +49,7 @@ AppsFlyerで、［**コラボレーション>パートナー連携>アクティ�
 
 6. **Google Ads**アカウントの左上に表示されるお客様IDをハイフンなしでコピーし、以下の画面例のようにAppsFlyerの［**広告のお客様ID**］パラメータに貼り付けます。
 
-[![](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)
+<Image align="center" alt="" src="https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png" />
 
 7. ［**Google Adsのお客様ID**］欄に、その番号を入力します。
 

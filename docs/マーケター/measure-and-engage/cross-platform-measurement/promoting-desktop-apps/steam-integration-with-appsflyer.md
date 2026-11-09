@@ -36,12 +36,12 @@ PC上で稼働するアプリは、S2S APIまたはSDKを介してAppsFlyerと�
 
 **注：**
 
-![Steam_user_journey.jpg](https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg)
+<Image align="center" alt="Steam_user_journey.jpg" src="https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg" />
 
 1. マーケティングタッチポイント
 2. ゲームのランディングページゲームのランディングページは、ユーザーをSteamゲームページに誘導します。この手順は、UTM およびその他の URLパラメータを収集して、クリック / インストールしたユーザーを元のメディアソースまたはオウンドメディアソースに結び付けるために重要です。  
    たとえば、ランディングページにXbox、マイクロソフトストア、およびSteamページへのリンクを含めることができます。  
-   ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
+   <Image align="center" alt="awesome_game.png" src="https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png" />
 3. <span id="marketing-touchpoint"></span>Steamアプリページこれは、ユーザーがダウンロードできるSteamアプリをホストするSteamストアフロントページです。
 4. ゲームのインストールゲームのインストール： ユーザーがゲームをインストールし、アトリビューションをトリガーし、アプリ内イベントとセッションを記録します。
 

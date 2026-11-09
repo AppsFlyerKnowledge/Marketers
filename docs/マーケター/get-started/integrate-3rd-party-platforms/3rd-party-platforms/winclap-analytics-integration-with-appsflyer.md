@@ -70,7 +70,7 @@ Winclap Analyticsの設定で使用するのは、<strong><em>［連携］</em><
 
 AppsFlyerは、ユーザーのインストールとリエンゲージメントの発生時に、Winclap Analyticsへポストバックを自動送信できます。このセクションでは、ポストバックを送信する**対象ユーザーの流入元**を指定します。
 
-![Winclap Analytics連携のデフォルトポストバック](https://files.readme.io/a45d8d7ab4687876d8dea4b026580d80f4b34c151b00c3c47a701771d16582aa-50896714399761.png)
+<Image align="center" alt="Winclap Analytics連携のデフォルトポストバック" src="https://files.readme.io/a45d8d7ab4687876d8dea4b026580d80f4b34c151b00c3c47a701771d16582aa-50896714399761.png" />
 
 **インストール**について、次のいずれかを選択します。
 
@@ -103,7 +103,7 @@ AppsFlyerは、ユーザーのインストールとリエンゲージメント�
 
 このセクションでは、ポストバックでWinclap Analyticsに送信するアプリ内イベントを対応付けます。
 
-[![Winclap Analyticsのアプリ内イベントポストバックの設定](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)
+<Image align="center" alt="Winclap Analyticsのアプリ内イベントポストバックの設定" src="https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png" />
 
 1. <strong><em>［アプリ内イベントポストバック］</em></strong>をオンにします。
 2. 必要に応じて<strong><em>［アプリ内イベントポストバック期間］</em></strong>を設定します（<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#アプリ内イベントポストバック期間">アプリ内イベントポストバック期間の設定</Anchor>の詳細を参照）。

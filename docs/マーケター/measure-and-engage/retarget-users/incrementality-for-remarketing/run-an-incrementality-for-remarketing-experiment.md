@@ -25,7 +25,7 @@ x-zendesk:
 
 > **概要：** 純増検証を実施して、リマーケティングキャンペーンの真の効果を把握します。
 
-![KB_toggle_final.jpg](https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg)
+<Image align="center" alt="KB_toggle_final.jpg" src="https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg" />
 
 <div id="about-the-experiment" />
 
@@ -98,14 +98,14 @@ AppsFlyerは、オーディエンスの作成から始まる自動化された�
 2. 選択したオーディエンスの **接続** タブで次の操作を実行します：
    * オーディエンスを 1～3社のアドネットワークパートナーに接続してください。
    * <Anchor target="_blank" href="/marketers/ja/docs/audiences-guide#audience-split-and-control-groups">オーディエンスの分割</Anchor> するトグルがオンになっていることを確認します（**2023年1月11日以降に作成されたオーディエンス：自動的に有効**）。有効になっていない場合は、トグルをクリックして有効化してください。  
-     ![Measure_inc_impact_toggle.jpg](https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg)
+     <Image align="center" alt="Measure_inc_impact_toggle.jpg" src="https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg" />
    * コントロールグループは自動的に15%（推奨）に設定されます。
    * 残りのオーディエンスは選択したアドネットワークパートナー間で自動的に均等に分割されます。
      * 合計の分割比率は100%に等しくならなければなりません（コントロールグループを含みます）。
 
 分割を有効にしてオーディエンスを保存すると、Incrementality検証が自動的に開始されます（Incrementality契約者のみ）。これらの検証は、「[Auto]」という接頭辞がタイトルの前に付けられた状態でIncrementality管理画面で確認できます。
 
-![Auto_before_title.jpg](https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg)
+<Image align="center" alt="Auto_before_title.jpg" src="https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg" />
 
 **重要な注意事項：**
 
@@ -118,10 +118,10 @@ Meta広告とGoogle広告には、キャンペーンのリーチを拡大する�
 
 Meta広告では、この機能は「Advantageカスタムオーディエンス」と呼ばれています。これは広告セットレベルで表示され、デフォルトで有効になっています。
 
-<Image alt="image__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />  
+<Image align="center" alt="image__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />
 Google広告では「オーディエンス拡張」と呼ばれています。
 
-<Image alt="Google_Ads_Incrementality_limitation_cropped.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
+<Image align="center" alt="Google_Ads_Incrementality_limitation_cropped.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
 
 </Accordion>
 
@@ -150,17 +150,17 @@ Google広告では「オーディエンス拡張」と呼ばれています。
 
 1. **インクリメンタリティ管理画面**から、特定の検証を選択し、**検証の編集**をクリックします。
 
-<Image alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
+<Image align="center" alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
 
 または
 
 **オーディエンス**から特定のオーディエンスを見つけ、インクリメンタリティの列の **+ キャンペーンの接続**をクリック。
 
-<Image alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
+<Image align="center" alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
 
 キャンペーンを接続できる画面が表示されます。
 
-<Image alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
+<Image align="center" alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
 
 2. 各アドネットワークにおける適切なキャンペーンを選択します。
 
@@ -188,7 +188,7 @@ Google広告では「オーディエンス拡張」と呼ばれています。
   >
   > – **オーディエンス設定**
   >
-  > [<Image alt="" src="https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png" width="603px" />](https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png)
+  > <Image align="center" alt="" src="https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png" width="603px" />
   >
   > ウィザードのステップ 2 では、**オーディエンスに含める日付**を選択する必要があります。
   >
@@ -199,7 +199,7 @@ Google広告では「オーディエンス拡張」と呼ばれています。
   >
   > **ウィザード ステップ 3 – ターゲット設定**
   >
-  > ![Step_3_Set_targets.jpg](https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg)
+  > <Image align="center" alt="Step_3_Set_targets.jpg" src="https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg" />
   >
   > ここでは、ターゲットアプリとKPIを選びます。
   >
@@ -207,7 +207,7 @@ Google広告では「オーディエンス拡張」と呼ばれています。
   >
   > **ウィザード ステップ 4  – レビュー**
   >
-  > [<Image alt="" src="https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png" width="583px" />](https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png)
+  > <Image align="center" alt="" src="https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png" width="583px" />
   >
   > ウィザードのステップ 4 では、**検証期間**を設定する必要があります。
   >

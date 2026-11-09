@@ -70,7 +70,7 @@ Spoteffectsの設定で使用するのは、<strong><em>［連携］</em></stron
 
 AppsFlyerは、ユーザーのインストール後にSpoteffectsへポストバックを自動送信できます。このセクションで、ポストバックの送信を設定します。
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 アプリをダウンロードしたすべてのユーザーのポストバックをSpoteffectsに送信するには、<strong>［すべてのパートナーまたはオーガニックのイベント］</strong>を選択します。送信しない場合は、<strong>［オフ］</strong>を選択します。
 
@@ -80,7 +80,7 @@ AppsFlyerは、ユーザーのインストール後にSpoteffectsへポストバ
 
 ### アプリ内イベントの設定
 
-[![](https://files.readme.io/97da1d47ab9bfa3855d18dcd60f3a263b8a631c477b354dc32486170b7708e96-360002201165.png)](https://files.readme.io/97da1d47ab9bfa3855d18dcd60f3a263b8a631c477b354dc32486170b7708e96-360002201165.png)
+<Image align="center" alt="" src="https://files.readme.io/97da1d47ab9bfa3855d18dcd60f3a263b8a631c477b354dc32486170b7708e96-360002201165.png" />
 
 このセクションでは、ポストバックを介してAppsFlyerのイベントをSpoteffectsのイベントに対応付けます。
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要：** 概要：効果的なWebサイトトラフィックを促進するためのマーケティング施策の成果を測定します。訪問やコンバージョンイベントをもたらしたメディアソース、タイプ、チャネルはどれかを分析します。広告レベルの粒度で指標を確認できます。
 
-![Touchpoints_us-en.png](https://files.readme.io/45c45c9a1b108ea31e450df4c2aaab20482c9829726d9860e55e2c9ca32c401a-360008629017.png)
+<Image align="center" alt="Touchpoints_us-en.png" src="https://files.readme.io/45c45c9a1b108ea31e450df4c2aaab20482c9829726d9860e55e2c9ca32c401a-360008629017.png" />
 
 <div id="website-visits-and-web-events" />
 
@@ -45,7 +45,7 @@ x-zendesk:
 
 PBA管理画面とローデータレポートは、成果が紐づくメディアソース、タイプ、チャネル、キャンペーンを利用します。
 
-![MediaSource_us-en.png](https://files.readme.io/bcb3e471753809b0fdf1a0e1dc9783002004b1988f4701ab30524c1eb7b9fbfc-360008629057.png)
+<Image align="center" alt="MediaSource_us-en.png" src="https://files.readme.io/bcb3e471753809b0fdf1a0e1dc9783002004b1988f4701ab30524c1eb7b9fbfc-360008629057.png" />
 
 分かりやすいように、次の表には決定されたメディアソースとそのタイプおよびチャネルの例を示しています。
 
@@ -213,7 +213,7 @@ Webサイトへの訪問は、以下のルールを使用し、現在のセッ�
 
 **PBA訪問記録ルール**
 
-![PBA_-_PBA-vist.png](https://files.readme.io/651c3ee4d39832297b7d6dc871aa281f1fa3219264ba264851ad0cc643b8baee-360015532817.png)
+<Image align="center" alt="PBA_-_PBA-vist.png" src="https://files.readme.io/651c3ee4d39832297b7d6dc871aa281f1fa3219264ba264851ad0cc643b8baee-360015532817.png" />
 
 </Accordion>
 

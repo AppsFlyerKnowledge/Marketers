@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **概要：** オーガニックインストールとノンオーガニックインストールの違いを説明します。
 
-![6453OrganicvsNon-organic.jpg](https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg)
+<Image align="center" alt="6453OrganicvsNon-organic.jpg" src="https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg" />
 
 ノンオーガニックユーザーは、インストールや広告接触につながったメディアソースに紐付けられます。オーガニックユーザーは、インストールや広告接触に関連するメディアソースが特定されていません。
 

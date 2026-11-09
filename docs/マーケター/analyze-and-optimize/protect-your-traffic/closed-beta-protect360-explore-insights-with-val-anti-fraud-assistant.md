@@ -71,12 +71,12 @@ Explore Insightsは毎週、過去7～14日間のトラフィックを分析し�
 ## 分析結果を確認する方法とExplore Insights（Val）の使い方
 
 1. 分析結果を確認するには、Protect360ページ右上の<strong>分析結果を確認（Explore Insights）</strong>ボタンをクリックします。
-2. <Image alt="Screenshot 2025-07-27 at 15.51.34.png" src="https://files.readme.io/7fafbd4b22ac860913ff452b81c659cff77170fc400ec8e1f4939e0e2fe1410c-37563710382225.png" width="1962px" />
+2. <Image align="center" alt="Screenshot 2025-07-27 at 15.51.34.png" src="https://files.readme.io/7fafbd4b22ac860913ff452b81c659cff77170fc400ec8e1f4939e0e2fe1410c-37563710382225.png" width="1962px" />
 3. 分析結果に対して対応するには、<strong>対応する（Take action）</strong>ボタンをクリックします。  
    実行できる対応は、[分析結果の種類](/docs/closed-beta-protect360-explore-insights-with-val-anti-fraud-assistant#分析結果の種類)に記載されています。
 4. 左右の矢印をクリックすると、前後の対応項目に切り替えられます。
 5. 対応項目の下にあるウィジェットには、判断に役立つ情報が表示されます。
 
-<Image alt="image (11).png" src="https://files.readme.io/0b3d88e18897b7f38c1f70c779e7e5cdcf09565fb5cb7bdc6d9d72309d58e6ad-37563710384529.png" width="1060px" />
+<Image align="center" alt="image (11).png" src="https://files.readme.io/0b3d88e18897b7f38c1f70c779e7e5cdcf09565fb5cb7bdc6d9d72309d58e6ad-37563710384529.png" width="1060px" />
 
 <div data-zendesk-anchors="about-val-antifraud-assistant=%E4%B8%8D%E6%AD%A3%E5%AF%BE%E7%AD%96%E3%82%A2%E3%82%B7%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%88val%E3%81%A8%E3%81%AF h_01JYEJW1KXSVXXRA1ZDQQZZ46W=%E4%B8%8D%E6%AD%A3%E5%AF%BE%E7%AD%96%E3%82%A2%E3%82%B7%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%88val%E3%81%A8%E3%81%AF insight-types=%E5%88%86%E6%9E%90%E7%B5%90%E6%9E%9C%E3%81%AE%E7%A8%AE%E9%A1%9E h_01JYEJW1M0DT985B1GARTFBPMQ=%E5%88%86%E6%9E%90%E7%B5%90%E6%9E%9C%E3%81%AE%E7%A8%AE%E9%A1%9E how-val-works=val%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF h_01JYEJW1M8CFEKZBHBE70AQD4G=val%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF how-to-access-and-use-explore-insights-val=%E5%88%86%E6%9E%90%E7%B5%90%E6%9E%9C%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%A8explore-insightsval%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9 h_01JYEJW1MGP0FMS24GVBYJ890R=%E5%88%86%E6%9E%90%E7%B5%90%E6%9E%9C%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%A8explore-insightsval%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9" />

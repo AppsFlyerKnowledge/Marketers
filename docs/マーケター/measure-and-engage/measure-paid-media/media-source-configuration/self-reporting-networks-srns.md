@@ -102,7 +102,7 @@ AppsFlyerがアトリビューションを実行した後、<Anchor target="_bla
 
 <Accordion title="例A：アシストアトリビューション">
 
-![SRN_1.png](https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png)
+<Image align="center" alt="SRN_1.png" src="https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png" />
 
 **月曜日：** ネットワークAがユーザーのクリックをレポートします。
 
@@ -120,7 +120,7 @@ AppsFlyerは、広告主に対してインストール前のエンゲージメ�
 
 <Accordion title="例B：ラストクリックアトリビューション">
 
-![SRN_2.png](https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png)
+<Image align="center" alt="SRN_2.png" src="https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png" />
 
 **ネットワークD** (SRN) はネットワークCより数分前にクリックをレポートします。
 
@@ -273,7 +273,7 @@ AppsFlyerのデータアナリストが、特定の月におけるMeta広告**�
 * キャンペーンの5％では、少なくとも40％が既存のアプリユーザーでした。
 * **結論：SRNのユーザー獲得キャンペーンでは、10人に1人がすでに既存のユーザーです。**
 
-[![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+<Image align="center" alt="mistargeted_users.png" src="https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png" />
 
 <div id="solving-the-mistargeting-problem" />
 

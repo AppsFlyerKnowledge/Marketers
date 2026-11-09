@@ -52,23 +52,23 @@ UnityコストAPI連携に必要な資格情報は次のとおりです：
 
 1. Unity Cloudアカウントにログインします。
 2. 左側のメニューから、**Grow (Unity Ads User Acquisition)**>**設定**に移動します。  
-    [![](https://files.readme.io/2fcc359913c11a4bcce29e1aaf30cb84161a09e39b14cdcd4ad4f141debd1798-26134832885137.png)](https://files.readme.io/2fcc359913c11a4bcce29e1aaf30cb84161a09e39b14cdcd4ad4f141debd1798-26134832885137.png)
+    <Image align="center" alt="" src="https://files.readme.io/2fcc359913c11a4bcce29e1aaf30cb84161a09e39b14cdcd4ad4f141debd1798-26134832885137.png" />
 3. **Organization Core ID**を見つけてコピーし、保存します。  
    Organization Core IDの例（形式）：5773102414648
 4. 左側のメニューから、**Grow (Unity Ads User Acquisition)**> **`{ }` API Management** に移動し、**Stats API v2.0**セクションで **Service Account**をクリックします。  
-    [![](https://files.readme.io/36dd40e68eeeb6562c1e5a19f92873e8eb99b66f80c45db066e0ff54b66d0080-26369979011985.png)](https://files.readme.io/36dd40e68eeeb6562c1e5a19f92873e8eb99b66f80c45db066e0ff54b66d0080-26369979011985.png)
+    <Image align="center" alt="" src="https://files.readme.io/36dd40e68eeeb6562c1e5a19f92873e8eb99b66f80c45db066e0ff54b66d0080-26369979011985.png" />
 5. 新しいサービスアカウントを作成するには、**+ New** をクリックします。  
-    [![](https://files.readme.io/3a53e932bf8d023e910b66f74ea6f630c8048787885d45ea4206b2f1f3d4f65e-26136910848785.png)](https://files.readme.io/3a53e932bf8d023e910b66f74ea6f630c8048787885d45ea4206b2f1f3d4f65e-26136910848785.png)
+    <Image align="center" alt="" src="https://files.readme.io/3a53e932bf8d023e910b66f74ea6f630c8048787885d45ea4206b2f1f3d4f65e-26136910848785.png" />
 6. **Keys**セクションで、**+ Add Key** をクリックして、サービスアカウントのキーを作成します。  
-    [![](https://files.readme.io/f528d44a9659372bfeeb8d13538f9caf0a7955f53194194543988af983f9c517-26136957380753.png)](https://files.readme.io/f528d44a9659372bfeeb8d13538f9caf0a7955f53194194543988af983f9c517-26136957380753.png)
+    <Image align="center" alt="" src="https://files.readme.io/f528d44a9659372bfeeb8d13538f9caf0a7955f53194194543988af983f9c517-26136957380753.png" />
 7. **Key ID**と**Secret Key**を保存します。　**注：** シークレットキーにアクセスできるのはこのときだけなので、必ず保存してください。
    * サービスアカウントのシークレットキーの例： b0de73b1-b3ad-4175-bf9b-4913a0ff83ec
    * サービス アカウントのシークレットキーのキー ID の例： a0X\_cqHiXH4ABPS1Qr9TCy6EJdvG8ql5  
-      [![](https://files.readme.io/6de3cd868541ab5487370dbefc758a375c3395434e07361f74553a1b9a9c7d57-26136957383697.png)](https://files.readme.io/6de3cd868541ab5487370dbefc758a375c3395434e07361f74553a1b9a9c7d57-26136957383697.png)
+      <Image align="center" alt="" src="https://files.readme.io/6de3cd868541ab5487370dbefc758a375c3395434e07361f74553a1b9a9c7d57-26136957383697.png" />
 8. **組織の役割** セクションで、**+ 組織の役割の管理**をクリックします。  
-    [![](https://files.readme.io/d368d6c611db2a8df76e341c7b6a692128b5ae37f51f6642fa7e60cd00f29689-26136910860689.png)](https://files.readme.io/d368d6c611db2a8df76e341c7b6a692128b5ae37f51f6642fa7e60cd00f29689-26136910860689.png)
+    <Image align="center" alt="" src="https://files.readme.io/d368d6c611db2a8df76e341c7b6a692128b5ae37f51f6642fa7e60cd00f29689-26136910860689.png" />
 9. **組織内の役割の編集**で、 **グロースをAdvertise Stats APIMMPViewer**に設定します。  
-    [![](https://files.readme.io/f1243cb65978d2f96d148ceb34b528ca005091c38dbed95368923047b3cfbfd1-26136957386513.png)](https://files.readme.io/f1243cb65978d2f96d148ceb34b528ca005091c38dbed95368923047b3cfbfd1-26136957386513.png)
+    <Image align="center" alt="" src="https://files.readme.io/f1243cb65978d2f96d148ceb34b528ca005091c38dbed95368923047b3cfbfd1-26136957386513.png" />
 
 </Accordion>
 

@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **概要：** CleverTapは、デジタル分野の消費者向けブランドが顧客継続率と顧客生涯価値を高めるための、先進的な統合型クラウドプラットフォームです。
 
-<Image alt="clevertap-logo.png" src="https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png" width="193px" />
+<Image align="center" alt="clevertap-logo.png" src="https://files.readme.io/ee01a7da1ae0c77758e279c47f2f588d90fdb7f52dce51161fce3891cc5fd498-4405112002833.png" width="193px" />
 
 <div id="important" />
 
@@ -79,7 +79,7 @@ CleverTapとAppsFlyerの接続には、固有のAccount Token、Region、Account
 > * account\_token、account\_passcode、account\_idのうち、少なくとも**1つ**のフィールドを入力します。
 > * AppsFlyer SDKでカスタマーユーザーIDを設定します（<Anchor target="_blank" href="/marketers/ja/docs/customer-user-id-field-cuid#cuidの設定">iOS、Android</Anchor>）。カスタマーユーザーIDに使用する推奨パラメータについては、[CleverTapのドキュメント](https://developer.clevertap.com/docs/appsflyer#section-step-2-integration)を参照してください。カスタマーユーザーIDが空の場合、CleverTapにポストバックは送信されません。
 
-![CleverTap_msc_new_2.png](https://files.readme.io/dd3f79fdce7dc4d48605f18021e328754d3e78aae98cb5214466c7489fd29fdf-360002305685.png)
+<Image align="center" alt="CleverTap_msc_new_2.png" src="https://files.readme.io/dd3f79fdce7dc4d48605f18021e328754d3e78aae98cb5214466c7489fd29fdf-360002305685.png" />
 
 <div id="obtain-clevertap-account-token" />
 
@@ -89,10 +89,10 @@ CleverTapとAppsFlyerの接続には、固有のAccount Token、Region、Account
 
 1. CleverTap管理画面の右上にある**Settings**に移動します。
 
-   ![CleverTap_msc_new_4.png](https://files.readme.io/2fd248582c3e267b2eaacfc6bf49068bdd4c6811b066c8286f0059e18d8535ae-360002541969.png)  
+   <Image align="center" alt="CleverTap_msc_new_4.png" src="https://files.readme.io/2fd248582c3e267b2eaacfc6bf49068bdd4c6811b066c8286f0059e18d8535ae-360002541969.png" />
    Settings画面の最上部で、Account ID、Account token、Passcodeの各欄に、CleverTapのアカウントID、アカウントトークン、パスコードが表示されます。
 
-   ![CleverTap_msc_new_5.png](https://files.readme.io/795086dfc16cdee369b470e0b598b5089fff6469c77d0ccbf929e230d94191c8-360002537945.png)
+   <Image align="center" alt="CleverTap_msc_new_5.png" src="https://files.readme.io/795086dfc16cdee369b470e0b598b5089fff6469c77d0ccbf929e230d94191c8-360002537945.png" />
 2. 各フィールドの横にある目のアイコンをクリックすると、値を表示できます。
 3. 値をコピーし、AppsFlyerのCleverTap設定ページに貼り付けます。
 
@@ -113,7 +113,7 @@ CleverTapとAppsFlyerの接続には、固有のAccount Token、Region、Account
 
 AppsFlyerは、ユーザーのインストール後にCleverTapへポストバックを自動送信できます。このセクションでは、イベントごとに、ポストバック送信の対象とするユーザーの流入元を設定します。詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#default-postbacks">デフォルトポストバック</Anchor>を参照してください。
 
-![clevertap-default-postbacks_en-us.png](https://files.readme.io/58424df9f5e8ba0e30e2390e26e0ecec7fc827baa43f3b812181caa2283dca0a-360014085238.png)
+<Image align="center" alt="clevertap-default-postbacks_en-us.png" src="https://files.readme.io/58424df9f5e8ba0e30e2390e26e0ecec7fc827baa43f3b812181caa2283dca0a-360014085238.png" />
 
 <strong>アプリをダウンロードしたすべてのユーザーのポストバックをCleverTapに送信するには、［オーガニックを含むすべてのメディアソース］</strong>を選択します。
 
@@ -121,7 +121,7 @@ AppsFlyerは、ユーザーのインストール後にCleverTapへポストバ�
 
 ### アプリ内イベントの設定
 
-![clevertap-in-app-events_en-us.png](https://files.readme.io/2ccc8a5a62cd601c45647d72caff0d94af814f78d9e1a8ae1548f973ed4c554f-360014005017.png)
+<Image align="center" alt="clevertap-in-app-events_en-us.png" src="https://files.readme.io/2ccc8a5a62cd601c45647d72caff0d94af814f78d9e1a8ae1548f973ed4c554f-360014005017.png" />
 
 このセクションでは、ポストバックを介してAppsFlyerのイベントをパートナーのイベントに対応付けます。  
 詳しくは、<Anchor target="_blank" href="/marketers/ja/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">アプリ内イベントポストバック</Anchor>を参照してください。

@@ -101,7 +101,7 @@ Meta AdsからAppsFlyerへのSKANデータの共有を許可します。共有�
 2. Meta Adsを検索して選択します。
 3. ［**SKAN**］タブに移動します。
 
-   ![skan_repprtiing_-_connected_accounts.png](https://files.readme.io/41514c220de398871292c990e448e2bc8ce450a17512649842cdb2bc4fd78846-40032591356817.png)
+   <Image align="center" alt="skan_repprtiing_-_connected_accounts.png" src="https://files.readme.io/41514c220de398871292c990e448e2bc8ce450a17512649842cdb2bc4fd78846-40032591356817.png" />
 4. ［**f login**］をクリックします。使用するアカウントは、<Anchor target="_blank" href="https://www.facebook.com/business/help/155909647811305?id=829106167281625">次の権限を持つ</Anchor>管理者アカウントまたは広告主アカウントである必要があります。
    * ads\_read権限。[ads\_read権限の確認方法](/docs/skadnetwork-skan-interoperation-with-meta-ads#verifying-the-ads_read-permission)を参照してください。
    * Meta Business Partnerの設定で、広告対象のアプリIDにアクセスする権限
@@ -121,7 +121,7 @@ Meta AdsからAppsFlyerへのSKANデータの共有を許可します。共有�
 
 <Accordion title="Meta AdsとのCVの設定ルールの共有">
 
-![SKAdNetwork-Facebook-AppsFlyer_integration__5_.png](https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png)
+<Image align="center" alt="SKAdNetwork-Facebook-AppsFlyer_integration__5_.png" src="https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png" />
 
 <div id="enabling-appsflyer-skan-interoperation-with-meta-ads" />
 

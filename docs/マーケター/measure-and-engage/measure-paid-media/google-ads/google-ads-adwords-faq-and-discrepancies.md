@@ -42,7 +42,7 @@ Google Adsのクリックとインプレッションデータは、2018年8月�
 
 以下のスクリーンショットのように、Google Adsでfirst\_openコンバージョンが表示されない場合：
 
-![AW_13.png](https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png)
+<Image align="center" alt="AW_13.png" src="https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png" />
 
 Google Adsでコンバージョンをインポートする必要があります。以下の<Anchor target="_blank" href="/marketers/ja/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">コンバージョンをインポート</Anchor>する手順を実施してください。
 
@@ -132,7 +132,7 @@ Googleのコスト同期を停止するには：
 
 1. <Anchor target="_blank" href="https://myaccount.google.com/permissions">Googleアカウントの権限</Anchor>へ移動します。
 2. AppsFlyer Google Costの横にある［削除］をクリックします。  
-   ![remove_appsflyer_cost.png](https://files.readme.io/56840e708c98875c8db176c642dd324150a76aef9697fcc2756f524b2a6c0a16-33743128661137.png)
+   <Image align="center" alt="remove_appsflyer_cost.png" src="https://files.readme.io/56840e708c98875c8db176c642dd324150a76aef9697fcc2756f524b2a6c0a16-33743128661137.png" />
 
 </Accordion>
 

@@ -28,7 +28,7 @@ x-zendesk:
 ---
 > **概要：** Firebase SDKで記録したイベントを、Googleタグマネージャーを使ってAppsFlyerに送信する方法を説明します。
 
-<Image alt="gtm.png" src="https://files.readme.io/fbb4e0f83baf6f5f7f8dc83e02986ca011f5cb919b9870768da1606798211dcc-360002517245.png" width="289px" />
+<Image align="center" alt="gtm.png" src="https://files.readme.io/fbb4e0f83baf6f5f7f8dc83e02986ca011f5cb919b9870768da1606798211dcc-360002517245.png" width="289px" />
 
 AppsFlyerとGoogleタグマネージャー（GTM）、Firebaseを連携すると、Firebase SDKからFirebaseに送信したアプリ内イベントを、Googleタグマネージャーを通じてSDK経由でAppsFlyerにも送信できます。同じイベントを二重に送信する処理を実装する必要がなくなります。
 

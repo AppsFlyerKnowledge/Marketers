@@ -181,7 +181,7 @@ BrazeとAppsFlyerの接続には、固有のAPIキーとRESTエンドポイン�
 
 AppsFlyerは、ユーザーのインストール後にBrazeへポストバックを自動送信できます。このセクションで、ポストバックの送信を設定します。
 
- ![デフォルトポストバックセクション](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png) 
+ <Image align="center" alt="デフォルトポストバックセクション" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 アプリをダウンロードしたすべてのユーザーのポストバックをBrazeに送信するには、<strong>［すべてのパートナーまたはオーガニックのイベント］</strong>を選択します。
 
@@ -225,10 +225,10 @@ Brazeでは、権限の設定は利用できません。
 
 Braze管理画面のInstall Attributionフィルターを使うと、アトリビューションデータに基づいてユーザーを分類できます。
 
- ![Braze管理画面のInstall Attributionフィルター](https://files.readme.io/7289491d4d301eb38618298536ac5b895a610024bf162c733409d3f50b10b8f4-360001908045.png) 
+ <Image align="center" alt="Braze管理画面のInstall Attributionフィルター" src="https://files.readme.io/7289491d4d301eb38618298536ac5b895a610024bf162c733409d3f50b10b8f4-360001908045.png" />
 
 また、Braze管理画面の各ユーザープロファイルでも、そのユーザーのアトリビューションデータを確認できます。
 
- ![Brazeのユーザープロファイルに表示されるアトリビューションデータ](https://files.readme.io/d9ee5206a8bf3c092c5297c361cf38b2c77717fbb9638b282032e4fc4c31091e-360001907289.png)
+ <Image align="center" alt="Brazeのユーザープロファイルに表示されるアトリビューションデータ" src="https://files.readme.io/d9ee5206a8bf3c092c5297c361cf38b2c77717fbb9638b282032e4fc4c31091e-360001907289.png" />
 
 <div data-zendesk-anchors="integration-overview=%E9%80%A3%E6%90%BA%E3%81%AE%E6%A6%82%E8%A6%81 h_01H9FK453A9W5DCPR4X8PR06MZ=%E9%80%A3%E6%90%BA%E3%81%AE%E6%A6%82%E8%A6%81 setting-up-braze=braze%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9FK453AWXF006KEVKD797QF=braze%E3%81%AE%E8%A8%AD%E5%AE%9A activate-partner=%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%92%E6%9C%89%E5%8A%B9%E5%8C%96 h_01H9FK453AVK4YKF41FEP0YRJN=%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%92%E6%9C%89%E5%8A%B9%E5%8C%96 general-settings=%E4%B8%80%E8%88%AC%E8%A8%AD%E5%AE%9A h_01H9FK453AG6AXA7J43X6NGZT1=%E4%B8%80%E8%88%AC%E8%A8%AD%E5%AE%9A default-postbacks=%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%AF h_01H9FK453ASAKVHT7GV8BG56YS=%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%AF viewing-user-attribution-data-in-braze=braze%E3%81%A7%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B h_01H9FK453AQXG7NNT2841686MJ=braze%E3%81%A7%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AE%E3%82%A2%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B" />

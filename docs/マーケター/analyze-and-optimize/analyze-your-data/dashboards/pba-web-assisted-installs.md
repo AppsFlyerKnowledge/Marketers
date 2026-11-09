@@ -24,7 +24,7 @@ x-zendesk:
 
 **Webアシストインストールのユースケース**
 
-![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
+<Image align="center" alt="web_to_app_image.png" src="https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png" />
 
 <div id="web-assisted-installs-analysis" />
 
@@ -38,7 +38,7 @@ Webアシストインストールは、ユーザーにアプリのインスト�
 
 画面上部の主要指標では、アプリのインストール数の合計と、Webサイトを利用したインストール数をオーガニックアプリと非オーガニックアプリに分けて相対的に表示します。
 
-[![WAIHeadline_en-us.png](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)
+<Image align="center" alt="WAIHeadline_en-us.png" src="https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png" />
 
 Webアシストインストールの分析には、次の表のようなユースケースのシナリオがあります。
 
@@ -62,7 +62,7 @@ Webアシストインストールの分析には、次の表のようなユー�
 
 <Accordion title="Webアシストインストールと再インストール">
 
-![30day_us-en.png](https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png)
+<Image align="center" alt="30day_us-en.png" src="https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png" />
 
 Webサイトを訪問してから30日以内にインストールが発生した場合、Webサイトの影響を受けたとみなされます。 リターゲティングインストール（リアトリビューション）を含むインストールと再インストールは、オーガニックと非オーガニックの両方を含みます。
 

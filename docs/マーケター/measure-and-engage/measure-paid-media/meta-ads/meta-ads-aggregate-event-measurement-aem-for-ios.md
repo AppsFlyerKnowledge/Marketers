@@ -112,7 +112,7 @@ Meta広告から共有される以下のアトリビューションデータの�
 
 アプリがMeta広告のAEM利用要件を満たしている場合、広告セットの作成時に、デフォルトで<strong>［合算イベント測定］</strong>が選択されます。この場合、キャンペーンでAEMとSKANを併用できます。代わりに<strong>［AppleのSKAdNetwork］</strong>を選択すると、キャンペーンに適用されるのはSKANのみになります。その場合、AppsFlyerでMeta広告のアプリ内アクティビティを計測できる範囲が限られます。
 
-<Image alt="aem_meta_ads_platform.png" src="https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png" width="563px" />
+<Image align="center" alt="aem_meta_ads_platform.png" src="https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png" width="563px" />
 
 <div id="note-1" />
 
@@ -129,7 +129,7 @@ Meta広告から共有される以下のアトリビューションデータの�
 * 拡張データ共有がオフの場合、対象は広告IDを取得できるユーザーのコンバージョンイベントに限られます。広告IDのないユーザーのイベントは、共有もアトリビューションもされません。
 * 拡張データ共有がオンの場合、広告IDを取得できないユーザーも含め、すべてのユーザーのコンバージョンイベントをMeta広告で利用できるようになります。 AppsFlyerは、これらのイベントをアトリビューションします。提供するデータには、デバイスID以外の追加のデバイス関連情報が含まれる場合があります。詳細は、<Anchor target="_blank" href="/marketers/ja/docs/meta-ads-integration-setup#advanced_data_sharing">拡張データ共有</Anchor>を参照してください。
 
-![AEM](https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png)
+<Image align="center" alt="AEM" src="https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png" />
 
 <div id="note-2" />
 

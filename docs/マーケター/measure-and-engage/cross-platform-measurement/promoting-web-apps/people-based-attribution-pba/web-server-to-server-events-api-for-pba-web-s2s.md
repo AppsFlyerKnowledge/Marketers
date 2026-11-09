@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** Web Server-to-Server（Web-S2S）イベントAPIを使用すると、Web SDKでは送信されないイベントやコンバージョンをPBAへ送信できます。
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="web-server-to-server-events-api-for-pba" />
 
@@ -258,7 +258,7 @@ print(response.text.encode('utf8'))
 1. AppsFlyerの管理画面内で、[ ***My Apps*** ]のタブに移動してください。
 2. [ブランドバンドルを表示]をクリックします。
 
-   [![GetWebDevKeyPba_us-en.pn](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)
+   <Image align="center" alt="GetWebDevKeyPba_us-en.pn" src="https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png" />
 3. 必要な ***Web Dev Key*** をコピーしてください。
 
 </Accordion>
@@ -291,7 +291,7 @@ print(response.text.encode('utf8'))
 1. ブラウザで自社Webサイトを開きます。
 2. 右クリックし、<strong><em>Inspect（検証）を選択します。</em></strong>ブラウザの検査ウィンドウが開きます。
 
-   [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
+   <Image align="center" alt="S2S_inspect.jpg" src="https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg" />
 3. (A) ***Application***タブを開きます。
 4. サイドメニューにて、(B) [Cookie] を展開します。
 5. 自社Webサイトを選択します。表示されない場合は、ブラウザをリフレッシュしてください。

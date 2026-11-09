@@ -86,7 +86,7 @@ Web Performance Measurementのデータをエクスポートするには、ま�
 * 残り30分間は、アトリビューション済みイベントへCustomer User ID（CUID）を**付与するためだけに使用**されます。
 * 直近30分間に発生したイベントは**まだアトリビューションされず**、次回のバッチ処理で処理されます。
 
-[![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
+<Image align="center" alt="" src="https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png" />
 
 <div id="when-will-these-events-appear-in-the-report" />
 

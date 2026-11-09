@@ -81,10 +81,10 @@ Google Playへのリンクの一部として、Googleがリファラの*&utm\_te
 3. アプリを見つけやすいキーワードで検索します。   
    この例では「**hotels tonight**」を使用します。  
      
-   [<Image alt="organic_keywords_search.jpg" src="https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg" width="426px" />](https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg)
+   <Image align="center" alt="organic_keywords_search.jpg" src="https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg" width="426px" />
 4. ***インストール***をクリックすると、Google Playストアに移動します。
 5. アプリをインストールして起動します。  
-   [<Image alt="Hotels_Tonight_3.png" src="https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png" width="373px" />](https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png)
+   <Image align="center" alt="Hotels_Tonight_3.png" src="https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png" width="373px" />
 6. 前述のAppsFlyerのレポートやAPIで、キーワードを探します。
 
 <div data-zendesk-anchors="keyword-data=%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89%E3%83%87%E3%83%BC%E3%82%BF h_01HKA1D1TW1R20X6K05Q9GX904=%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89%E3%83%87%E3%83%BC%E3%82%BF ios-keywords=ios%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89 h_01HKA1D1TW9YXBMGERHW4EHZZN=ios%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89 android-keywords=android%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89 h_01HKA1D1TWT1VQ6NZ789BTCZJX=android%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89 h_01HKA1D1TW7E2RM7SXC9R5SA99=%E6%B3%A8%E6%84%8F using-the%C2%A0keyword%C2%A0data=%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E6%B4%BB%E7%94%A8 h_01HKA1D1TWRPGTNGJKF7T1R71B=%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E6%B4%BB%E7%94%A8 testing-organic%C2%A0keyword%C2%A0data=%E3%82%AA%E3%83%BC%E3%82%AC%E3%83%8B%E3%83%83%E3%82%AF%E6%A4%9C%E7%B4%A2%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%86%E3%82%B9%E3%83%88 h_01HKA1D1TW5W9A72V2NMPX932H=%E3%82%AA%E3%83%BC%E3%82%AC%E3%83%8B%E3%83%83%E3%82%AF%E6%A4%9C%E7%B4%A2%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E3%83%86%E3%82%B9%E3%83%88" />

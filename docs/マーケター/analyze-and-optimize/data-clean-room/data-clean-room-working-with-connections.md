@@ -48,7 +48,7 @@ x-zendesk:
 
 1. AppsFlyerのメインDCRページ上部の <strong>[Manage connections]（接続管理）</strong>ボタンをクリックします。
 
-   [![dcr_manage_connections_button.png](https://files.readme.io/773e9568a1e9e642f127806fa3b80932699e0db6cc6a124d5a09898577ade645-13909932760593.png)](https://files.readme.io/773e9568a1e9e642f127806fa3b80932699e0db6cc6a124d5a09898577ade645-13909932760593.png)
+   <Image align="center" alt="dcr_manage_connections_button.png" src="https://files.readme.io/773e9568a1e9e642f127806fa3b80932699e0db6cc6a124d5a09898577ade645-13909932760593.png" />
 
    * アカウントに既存の受信接続がある場合は、接続の管理ダイアログが表示されます。
    * アカウントの初めての受信接続を作成する場合は、新規接続ダイアログが自動的に開きます。
@@ -66,7 +66,7 @@ x-zendesk:
 
 新規接続ダイアログで、DCRに接続するクラウドサービスを選択し、以下の関連項目の手順に進みます。
 
-<Image alt="dcr_create_inbound_connection.png" src="https://files.readme.io/b30606026761528f4a0d3efcc1a3207e8b9c99ca8202f76b2d698a86efaa21ee-13913809617297.png" width="457px" />
+<Image align="center" alt="dcr_create_inbound_connection.png" src="https://files.readme.io/b30606026761528f4a0d3efcc1a3207e8b9c99ca8202f76b2d698a86efaa21ee-13913809617297.png" width="457px" />
 
 <div id="bigquery-inbound" />
 
@@ -76,7 +76,7 @@ x-zendesk:
 
 * この情報は、Google Cloud ConsoleのBig Queryページから取得できます。
 
-  <Image alt="BQ_project_ID.png" src="https://files.readme.io/de295dfc0224ff90f041b1aeaf2996828ec1920a715ba668b46a2f50489fd15b-13910856739857.png" width="457px" />
+  <Image align="center" alt="BQ_project_ID.png" src="https://files.readme.io/de295dfc0224ff90f041b1aeaf2996828ec1920a715ba668b46a2f50489fd15b-13910856739857.png" width="457px" />
 
 </Accordion>
 
@@ -86,7 +86,7 @@ x-zendesk:
 
 **新規接続**ダイアログで、カスタムソースデータを含むアカウントの**SnowflakeアカウントID**および**地域**を入力します。この情報は、Snowflakeコンソールの左下隅にあるアカウント名をクリックすると取得できます。
 
-![ui-snowsight-account-identifier.png](https://files.readme.io/9995c3fd523548de93bafc7c575203e7d38be3b6be2a5e876d7a0a8495ca04c9-24698313004433.png)
+<Image align="center" alt="ui-snowsight-account-identifier.png" src="https://files.readme.io/9995c3fd523548de93bafc7c575203e7d38be3b6be2a5e876d7a0a8495ca04c9-24698313004433.png" />
 
 </Accordion>
 
@@ -146,7 +146,7 @@ DCRは<Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers
 
 新規接続ダイアログで、接続するクラウドサービスを選択し、以下の関連する項目の手順に進みます。
 
-[![dcr_dl_new_connection_dialog.png](https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png)](https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png)
+<Image align="center" alt="dcr_dl_new_connection_dialog.png" src="https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png" />
 
 <div id="bigquery-outbound" />
 
@@ -156,7 +156,7 @@ DCRは<Anchor target="_blank" href="/marketers/ja/docs/data-locker-for-marketers
 2. Data Lockerに**作成したデータセット**を含む BigQuery プロジェクトの **プロジェクト ID** および <Anchor target="_blank" href="/marketers/ja/docs/data-clean-room-setting-up-cloud-services#bigquery-outbound">データセット名</Anchor>を入力します。  
    * この情報は、Google Cloud ConsoleのBig Queryページから取得できます。
 
-     <Image alt="BQ_project_ID_dataset_name.png" src="https://files.readme.io/c784b0369c51a6e123279fdc5b2fa1fba255ae371d436e9247cb5e4685387983-13928683779089.png" width="457px" />
+     <Image align="center" alt="BQ_project_ID_dataset_name.png" src="https://files.readme.io/c784b0369c51a6e123279fdc5b2fa1fba255ae371d436e9247cb5e4685387983-13928683779089.png" width="457px" />
 4. **[Save]（保存）** をクリックして接続を作成します。
 
 </Accordion>
@@ -180,7 +180,7 @@ Snowflakeをデータロッカーに接続する手順は、2段階のプロセ�
 2. Snowflakeのアカウント地域とアカウントIDを入力します。
    * この情報を取得するには、Snowflakeコンソールの左下隅にあるアカウント名をクリックし、ポップアップのアカウント名にカーソルを合わせます。**重要！**[Locator]（ロケーター） というID を探します。これは、受信のSnowflake接続作成に使用されるものと同じIDではありません 。  
 
-     <Image alt="snowflake_account_locator.png" src="https://files.readme.io/23495b3209129f48ed1ca3442a1e96fac791d46df6f87050ac036893a050e427-13930022354961.png" width="536px" />
+     <Image align="center" alt="snowflake_account_locator.png" src="https://files.readme.io/23495b3209129f48ed1ca3442a1e96fac791d46df6f87050ac036893a050e427-13930022354961.png" width="536px" />
 4. **[Save]（保存）** をクリックして接続を作成します。
 
 <span id="step-2"></span>**ステップ#2（共有からデータベースを作成します）**

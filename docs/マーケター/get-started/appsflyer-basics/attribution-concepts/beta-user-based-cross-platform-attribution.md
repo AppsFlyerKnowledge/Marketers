@@ -47,7 +47,7 @@ CUIDを使うことで、プラットフォームが変わっても同じユー�
 
 以下のユーザージャーニーの例で、デバイス単位とユーザー単位のアトリビューションの違いを説明します。
 
-[<Image alt="user-journey.png" src="https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png" width="2048px" />](https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png)
+<Image align="center" alt="user-journey.png" src="https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png" width="2048px" />
 
 ユーザーがWeb上でMetaの広告をクリックすると、広告主のWebサイトにリダイレクトされ、会員登録してアカウントを作成します。その後、同じユーザーが広告主のiOSアプリをインストールし、ログインして50ドルの購入を行います。数日後、ユーザーはYouTube広告を見て広告主のPCアプリをインストールし、再度ログインして100ドルの購入を行います。
 

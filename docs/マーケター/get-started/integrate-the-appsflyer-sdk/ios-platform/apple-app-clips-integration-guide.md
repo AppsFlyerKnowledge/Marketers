@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：** App Clipsを使うと、iOS 14以降のユーザーが、すぐにアプリにアクセスし、その機能を体験できます。 AppsFlyerはApp Clipのアトリビューションに対応し、AndroidユーザーなどApp Clipsを利用できないユーザーを、必要に応じて適切なページにリダイレクトします。
 
-![app_clip_flow_3.png](https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png)
+<Image align="center" alt="app_clip_flow_3.png" src="https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png" />
 
 <div id="app-clip-integration" />
 

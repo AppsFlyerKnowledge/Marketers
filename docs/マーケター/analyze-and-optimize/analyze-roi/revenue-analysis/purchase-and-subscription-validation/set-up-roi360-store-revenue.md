@@ -76,22 +76,22 @@ iOSの認証情報を設定するには、次の手順を実行します。
 
 1. App Store Connectで、<strong>［ユーザとアクセス］</strong>を開きます。
 
-   [![](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)
+   <Image align="center" alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" />
 2. **［ユーザとアクセス］**＞<strong>［統合］</strong>に移動し、<strong>［キー］</strong>の一覧から<strong>［アプリ内課金］</strong>を選択します。
 
-   [![](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" />
 3. ［＋］をクリックし、新しいアプリ内課金キーを生成します。
 
-   [![](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" />
 4. APIキーの名前を入力します。
 5. <strong>［生成］</strong>をクリックします。
 6. 作成したキーの横にある<strong>［アプリ内課金キーをダウンロード］</strong>をクリックし、キーをダウンロードします。 **注意**：キーは1回しかダウンロードできません。
 7. 生成したキーの**キーID**をコピーし、AppsFlyerの購入・サブスクリプション設定の<strong>［キーID］</strong>に貼り付けます。
 
-   [![](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)
+   <Image align="center" alt="" src="https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png" />
 8. **発行者ID**をコピーします。 **注意**：ページ上部に**発行者ID**が表示されない場合は、App Store Connect APIキーを作成します。アクセスレベルは任意です。作成すると、アプリ内課金キーのページ上部に発行者IDが表示されます。
 
-   [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
+   <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" />
 
 </Accordion>
 
@@ -134,7 +134,7 @@ iOSの認証情報を設定するには、次の手順を実行します。
 2. アカウントをGoogle Cloudプロジェクトにリンクします。手順は、<Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">Googleのこちらのヘルプ</Anchor>を参照してください。
 3. Google Play Developer APIを有効にします。手順は、<Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">Googleのこちらのヘルプ</Anchor>を参照してください。
 
-   [![](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)
+   <Image align="center" alt="" src="https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png" />
 
 </Accordion>
 
@@ -149,36 +149,36 @@ iOSの認証情報を設定するには、次の手順を実行します。
 1. **サービスアカウント**を作成するか、既存のサービスアカウントを使用します。
    1. <span class="af-ol-a"></span>Google Cloudの<strong>［サービスアカウント］</strong>で、<strong>［サービスアカウントを作成］</strong>をクリックします。
 
-      [![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
+      <Image align="center" alt="" src="https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png" />
    2. サービスアカウントの詳細を入力します。
 
-      [![](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)
+      <Image align="center" alt="" src="https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png" />
    3. メールアドレスをコピーします。
 
-      [![](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)
+      <Image align="center" alt="" src="https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png" />
    4. <strong>［作成して続行］</strong>をクリックします。
 
-      [![](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)
+      <Image align="center" alt="" src="https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png" />
    5. <strong>［このサービスアカウントにプロジェクトへのアクセスを許可する］</strong>の手順で、**Pub/Sub**のサブスクライバーロールを選択します。
 
-      [![](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)
+      <Image align="center" alt="" src="https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png" />
    6. **［続行］**＞<strong>［完了］</strong>の順にクリックします。
 
-      [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
+      <Image align="center" alt="" src="https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png" />
 2. **サービスアカウントの秘密鍵**をダウンロードします。
    1. <span class="af-ol-a"></span>Google Cloudの<strong>［サービスアカウント］</strong>で、先ほど作成したアカウントを一覧から選び、<strong>［その他の操作］</strong>アイコンをクリックします。
    2. <strong>［鍵を管理］</strong>をクリックします。
 
-      [![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)
+      <Image align="center" alt="" src="https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png" />
    3. **［鍵を追加］**＞<strong>［新しい鍵を作成］</strong>をクリックします。
 
-      [![](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)
+      <Image align="center" alt="" src="https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png" />
    4. <strong>［秘密鍵の作成］</strong>ポップアップで、<strong>［キーのタイプ］</strong>から<strong>［JSON］</strong>を選択し、<strong>［作成］</strong>をクリックします。
 
-      [![](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)
+      <Image align="center" alt="" src="https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png" />
    5. <strong>［作成］</strong>をクリックします。秘密鍵のJSONファイルがダウンロードされます。
 
-      [![](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)
+      <Image align="center" alt="" src="https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png" />
    6. 後でAppsFlyerにアップロードするため、JSONキーファイルを保存しておきます。 **注意**！キーは必ず保存してください。後から取得することはできません。保存しなかった場合は、キーを新たに作成し直す必要があります。
 
 </Accordion>
@@ -195,23 +195,23 @@ iOSの認証情報を設定するには、次の手順を実行します。
 
 1. Google Play Consoleの<strong>［ユーザーと権限］</strong>で、作成したサービスアカウントを探し、<strong>［新しいユーザーを招待］</strong>をクリックします。
 
-   [![](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)
+   <Image align="center" alt="" src="https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png" />
 2. 手順1.2.1.3でサービスアカウントを設定した際にコピーした**メールアドレス**を入力します。
 
-   [![](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)
+   <Image align="center" alt="" src="https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png" />
 3. <strong>［権限］</strong>セクションの<strong>［アカウントの権限］</strong>タブで、次の両方を選択します。
 
    * 財務データ、注文、解約に関するアンケートの回答の閲覧。
    * 注文と定期購入の管理。[![](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)
 4. <strong>［アプリの権限］</strong>タブで、<strong>［アプリを追加］</strong>をクリックし、対象のアプリを選択します。必要に応じて複数のアプリを追加します。
 
-   [![](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)
+   <Image align="center" alt="" src="https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png" />
 5. <strong>［ユーザーを招待］</strong>をクリックします。
 
-   [![](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)
+   <Image align="center" alt="" src="https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png" />
 6. 確認ポップアップで、<strong>［招待状を送信］</strong>をクリックします。
 
-   [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
+   <Image align="center" alt="" src="https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png" />
 
 </Accordion>
 
@@ -297,16 +297,16 @@ AppsFlyerのサーバー通知用エンドポイントをコピーするには�
 
 1. **App Store Connect**の<strong>［アプリ情報］</strong>セクションで、<strong>［App Storeサーバ通知］</strong>までスクロールし、<strong>［本番環境サーバURL］</strong>の横にある<strong>［編集］</strong>をクリックします。
 
-   [![](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)
+   <Image align="center" alt="" src="https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png" />
 2. [AppsFlyerからコピーしたサーバー通知用エンドポイント](#21-copy-the-appsflyer-server-notifications-endpoint)を貼り付け、<strong>［バージョン2の通知］</strong>を選択して、<strong>［保存］</strong>をクリックします。 **注意：** バージョン1の通知には対応していません。 App Store Connectに通知のバージョンの選択肢が表示されない場合は、すでにバージョン2を使用しています。
 
-   [![](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)
+   <Image align="center" alt="" src="https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png" />
 3. <strong>［アプリ情報］</strong>セクションで、<strong>［App Storeサーバ通知］</strong>までスクロールし、<strong>［サンドボックスサーバURL］</strong>の横にある<strong>［編集］</strong>をクリックします。
 
-   [![](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)
+   <Image align="center" alt="" src="https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png" />
 4. [AppsFlyerからコピーしたサーバー通知用エンドポイント](#21-copy-the-appsflyer-server-notifications-endpoint)を貼り付け、<strong>［バージョン2の通知］</strong>を選択して、<strong>［保存］</strong>をクリックします。**注意：** バージョン1の通知には対応していません。 App Store Connectに通知のバージョンの選択肢が表示されない場合は、すでにバージョン2を使用しています。
 
-   [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
+   <Image align="center" alt="" src="https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png" />
 
 </Accordion>
 
@@ -322,18 +322,18 @@ App Storeのサーバー通知をAppsFlyerに直接送信せず、自社のエ�
 
 1. **App Store Connect**の<strong>［アプリ情報］</strong>セクションで、<strong>［App Storeサーバ通知］</strong>までスクロールし、<strong>［本番環境サーバURL］</strong>の横にある<strong>［編集］</strong>をクリックします。
 
-   [![](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)
+   <Image align="center" alt="" src="https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png" />
 2. **自社サーバーのエンドポイントURL**を貼り付けます。
 
-   [![](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)
+   <Image align="center" alt="" src="https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png" />
 3. **［バージョン2の通知］を選択します。注意：** バージョン1の通知には**対応していません**。 App Store Connectに通知のバージョンの選択肢が表示されない場合は、すでにバージョン2を使用しています。
 4. <strong>［保存］</strong>をクリックします。
 5. **App Store Connect**の<strong>［アプリ情報］</strong>セクションで、<strong>［App Storeサーバ通知］</strong>までスクロールし、<strong>［サンドボックスサーバURL］</strong>の横にある<strong>［編集］</strong>をクリックします。
 
-   [![](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)
+   <Image align="center" alt="" src="https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png" />
 6. **自社サーバーのエンドポイントURL**を貼り付けます。
 
-   [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
+   <Image align="center" alt="" src="https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png" />
 7. **［バージョン2の通知］を選択します。注意：** バージョン1の通知には**対応していません**。
 8. <strong>［保存］</strong>をクリックします。
 9. Appleのサーバー通知をAppsFlyerの通知用エンドポイントURLに転送するよう、バックエンドを設定します。リクエストは、Appleから受信したApp Storeのデータと完全に一致する必要があります。<Anchor target="_blank" href="https://developer.apple.com/documentation/appstoreserverapi/signedpayload#discussion">Appleの形式要件</Anchor>を参照してください。
@@ -383,16 +383,16 @@ Google Playからアプリ内購入とサブスクリプションの収益デー
 2. AppsFlyerのトピックをクリップボードにコピーします。
 3. **Google Play Console**＞<strong>［ホーム］</strong>で、対象のアプリを選択して開きます。ダッシュボードが開きます。
 
-   [![](https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png)](https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png)
+   <Image align="center" alt="" src="https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png" />
 4. **［Google Playで収益化］**＞<strong>［収益化の設定］</strong>に移動し、<strong>［Google Play Billing］</strong>セクションで、<strong>［リアルタイム通知を有効にする］</strong>にチェックが入っていることを確認します。
 
-   [![](https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png)](https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png)
+   <Image align="center" alt="" src="https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png" />
 5. <strong>［トピック名］</strong>フィールドに、コピーしたAppsFlyerのトピックアドレスを貼り付けます。
 
-   [![](https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png)](https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png)
+   <Image align="center" alt="" src="https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png" />
 6. <strong>［通知の内容］</strong>で、<strong>［定期購入、無効になった購入、すべての1回限りの購入商品］</strong>を選択します。
 
-   [![](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)
+   <Image align="center" alt="" src="https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png" />
 7. <strong>［変更を保存］</strong>をクリックします。設定が反映されるまで、24時間ほどかかる場合があります。そのため、反映を待ってからテストしてください。
 
 </Accordion>
@@ -415,43 +415,43 @@ Google Playからアプリ内購入とサブスクリプションの収益デー
 4. エンドポイントURLをクリップボードにコピーします。
 5. Google Cloudで対象のプロジェクトを開き、**Pub/Sub**を検索します。
 
-   [![](https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png)](https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png)
+   <Image align="center" alt="" src="https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png" />
 6. **Pub/Sub**の<strong>［トピック］</strong>セクションを開き、定期購入用の専用Pub/Subトピックがあることを確認します。
 
-   [![](https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png)](https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png)
+   <Image align="center" alt="" src="https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png" />
 7. **Pub/Sub**の<strong>［サブスクリプション］</strong>セクションで、<strong>［サブスクリプションを作成］</strong>をクリックします。
 
-   [![](https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png)](https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png)
+   <Image align="center" alt="" src="https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png" />
 8. **サブスクリプションID**を入力します。
 
-   [![](https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png)](https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png)
+   <Image align="center" alt="" src="https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png" />
 9. ドロップダウンから、該当する定期購入用のPub/Subトピックを選択します。
 
-   [![](https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png)](https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png)
+   <Image align="center" alt="" src="https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png" />
 10. <strong>［配信タイプ］</strong>で<strong>［プッシュ］</strong>を選択します。
 
-    [![](https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png)](https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png)
+    <Image align="center" alt="" src="https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png" />
 11. AppsFlyerでコピーした**エンドポイントURL**を貼り付けます。
 
-    [![](https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png)](https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png)
+    <Image align="center" alt="" src="https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png" />
 12. <strong>［有効期限］</strong>で<strong>［無期限］</strong>を選択します。
 
-    [![](https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png)](https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png)
+    <Image align="center" alt="" src="https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png" />
 13. <strong>［作成］</strong>をクリックします。
 
-    [![](https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png)](https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png)
+    <Image align="center" alt="" src="https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png" />
 14. <strong>［サブスクリプション］</strong>セクションに移動し、対象のトピック名をクリックします。
 
-    [![](https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png)](https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png)
+    <Image align="center" alt="" src="https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png" />
 15. トピック名をクリップボードにコピーします。
 
-    [![](https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png)](https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png)
+    <Image align="center" alt="" src="https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png" />
 16. **Google Play Console**で、**［Google Playで収益化］**＞<strong>［収益化の設定］</strong>に移動します。 <strong>［Google Play Billing］</strong>セクションの［トピック名］に、前の手順でコピーしたトピック名を貼り付けます。
 
-    [![](https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png)](https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png)
+    <Image align="center" alt="" src="https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png" />
 17. <strong>［通知の内容］</strong>で、<strong>［定期購入、無効になった購入、すべての1回限りの購入商品］</strong>を選択します。
 
-    [![](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)
+    <Image align="center" alt="" src="https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png" />
 18. <strong>［変更を保存］</strong>をクリックします。設定が反映されるまで、24時間ほどかかる場合があります。そのため、反映を待ってからテストしてください。
 
 </Accordion>
@@ -464,7 +464,7 @@ Google Playのリアルタイムデベロッパー通知（RTDN）をAppsFlyer�
 
 1. <strong>［テスト通知を送信］</strong>をクリックします。 AppsFlyer用に設定したPub/Subトピックに、テスト用のRTDNメッセージが送信されます。
 
-   <Image alt="image (33).png" src="https://files.readme.io/4d7aa79eb963373223cfde1d32db16b739119a86d8d4f0cf6ce026d42a709bf3-42170040528657.png" width="1444px" />
+   <Image align="center" alt="image (33).png" src="https://files.readme.io/4d7aa79eb963373223cfde1d32db16b739119a86d8d4f0cf6ce026d42a709bf3-42170040528657.png" width="1444px" />
 2. <strong>［Google Play Billing］</strong>で、［トピック名］セクションを探します。
 3. 左側のメニューから<strong>［Google Playで収益化］</strong>＞<strong>［収益化の設定］</strong>に移動します。
 4. Google Play Consoleを開きます。
@@ -572,7 +572,7 @@ SDK Connectorを実装するには、次の手順を実行します。
 
 * iOSでは、App Store Connectの［App Storeサーバ通知］で、AppsFlyerのエンドポイントが<strong>［サンドボックスサーバURL］</strong>に設定されていることを確認します。
 
-  [![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+  <Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 **アプリ内購入とサブスクリプションの収益をテストするには**：
 
@@ -619,7 +619,7 @@ SDK Connectorを実装するには、次の手順を実行します。
 * アプリ内購入またはサブスクリプションとして記録したいアプリ内イベントが、AppsFlyerで設定した検証ルールによってブロックされていないこと。
 * 開発者が、すべてのサンドボックスフラグをfalseに設定していること。
 
-[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 SDK Connectorを実装したアプリが公開されると、<Anchor target="_blank" href="/marketers/ja/docs/about-roi360-store-revenue#iaprelated-events-and-parameters">アプリ内購入</Anchor>と<Anchor target="_blank" href="/marketers/ja/docs/about-roi360-store-revenue#subscriptionrelated-events-and-parameters">サブスクリプションのイベント</Anchor>が生成され、AppsFlyerのすべてのダッシュボード、集計レポート、ローデータレポート（<Anchor target="_blank" href="/marketers/ja/docs/revenue-etl-reports">収益ETL</Anchor>を含む）で利用できるようになります。
 

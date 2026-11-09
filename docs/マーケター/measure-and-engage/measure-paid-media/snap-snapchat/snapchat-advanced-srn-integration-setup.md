@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **概要：** 2023年9月中旬より、SnapchatはAdvanced SRNとなりました。Snapchatとの連携設定、およびアトリビューション測定に関する情報をこのページでご確認いただけます。
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
 <div id="overview" />
 
@@ -75,7 +75,7 @@ x-zendesk:
 
 **パートナー連携を有効にする**を有効にして、Snapchatへのアトリビューションを許可します。
 
-![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png" />
 
 <div id="advanced-matching-data-sharing" />
 
@@ -92,7 +92,7 @@ x-zendesk:
 1. Snapビジネスマネージャーで、[アプリ]　に移動し、Snap App IDをコピーします（Snap App IDの生成方法については、<Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/a/snap-app-id">Snapchatのガイド</Anchor>をお読みください）。
 2. AppsFlyerのSnap App ID項目にIDを貼り付けます。
 
-![snapchat-app-id.png](https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png)
+<Image align="center" alt="snapchat-app-id.png" src="https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png" />
 
 **代理店によってキャンペーン配信する場合**
 
@@ -158,7 +158,7 @@ x-zendesk:
 
 ポストバック経由でAppsFlyerイベントとパートナーをマッピングします。ポストバックの送信が有効になっている場合、これは拒否されたアプリ内イベント（Protect360によりブロックされたイベント、またはターゲット検証ルールにより条件を満たしていないと判断されたイベント）を含んでいます。
 
-[![mceclip0.png](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png" />
 
 **アプリ内イベントのポストバックを設定する：**
 
@@ -296,7 +296,7 @@ Snapchatでディープリンクを実行するには：
 1. **Drive traffic to app** オポチュニティタイプへ移動します。
 2. ディープリンクURIを追加します。  
      
-   [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+   <Image align="center" alt="" src="https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png" />
 
 <div id="deferred-deep-linking-with-snapchat" />
 
@@ -334,7 +334,7 @@ Snapchatでディープリンクを実行するには：
 3. 代理店の**SnapchatアカウントID**を入力します。これにより、代理店のトラフィックが識別され、広告主のトラフィックと区別されます。最大50個の異なるSnapchatアカウントIDを入力できます。入力したアカウントからのすべてのアトリビューションデータは、代理店の管理画面に表示されます。
 4. **連携を保存** をクリックします。
 
-![snapchat-agency-integration.png](https://files.readme.io/261a0246bb7da0899e653a776eb25e17ce3ae8bff1efef33acac0ef0bf99abcf-21074932431505.png)
+<Image align="center" alt="snapchat-agency-integration.png" src="https://files.readme.io/261a0246bb7da0899e653a776eb25e17ce3ae8bff1efef33acac0ef0bf99abcf-21074932431505.png" />
 
 > ❗️ **要注意**
 >

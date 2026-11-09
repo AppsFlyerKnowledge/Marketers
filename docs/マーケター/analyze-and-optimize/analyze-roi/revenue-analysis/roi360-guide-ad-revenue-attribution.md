@@ -29,7 +29,7 @@ x-zendesk:
 
 > **At a glance:** 広告収益をユーザーの獲得元に紐づけ、LTV（顧客生涯価値）に基づいてマーケティング施策の成果を把握します。
 
-![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
+<Image align="center" alt="Attributes_ad_revenue.png" src="https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png" />
 
 <div id="ad-revenue-attribution" />
 
@@ -80,7 +80,7 @@ x-zendesk:
 2. ［広告収益連携］で、<strong>［新しい広告収益連携］</strong>をクリックします。
 3. 広告収益パートナーを選択し、<strong>［次へ］</strong>をクリックします。
 
-   ![ad revenue 3.6(2).png](https://files.readme.io/8ccba7d0909c15e92507bc55c7bf2bf003e1a9431fb6bd1d32a0f41959f7a904-47792643579153.png)
+   <Image align="center" alt="ad revenue 3.6(2).png" src="https://files.readme.io/8ccba7d0909c15e92507bc55c7bf2bf003e1a9431fb6bd1d32a0f41959f7a904-47792643579153.png" />
 
    <div id="note" />
 
@@ -116,7 +116,7 @@ x-zendesk:
 
 <Accordion title="広告収益パートナー連携の確認・編集・削除">
 
-![delete_edit_adi.png](https://files.readme.io/2d2153ec3248061dab4072e1d981e237f553e32824a68e392ae239778b307610-47792653636113.png)
+<Image align="center" alt="delete_edit_adi.png" src="https://files.readme.io/2d2153ec3248061dab4072e1d981e237f553e32824a68e392ae239778b307610-47792653636113.png" />
 
 **広告収益パートナーとの連携を確認・編集・削除するには**：
 
@@ -149,7 +149,7 @@ x-zendesk:
      > これらの連携ではデータが重複しないため、重複排除は不要です。
 
 
-![dedup.png](https://files.readme.io/a739bc7e3557913bf6a67afa74a71dd72673d5b4e4d6bbe1d3ef872e46609422-47792653637265.png)
+<Image align="center" alt="dedup.png" src="https://files.readme.io/a739bc7e3557913bf6a67afa74a71dd72673d5b4e4d6bbe1d3ef872e46609422-47792653637265.png" />
 
 </Accordion>
 
@@ -241,7 +241,7 @@ x-zendesk:
 
 #### **Overview dashboard｜集計パフォーマンスレポート**
 
-![](https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png)
+<Image align="center" alt="" src="https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png" />
 
 Overview dashboardでは、次のように表示されます。
 
@@ -251,7 +251,7 @@ Overview dashboardでは、次のように表示されます。
 
 **イベントダッシュボード**
 
-![](https://files.readme.io/c7c8fddb68f705a7be694afdde6faf387cf34b79abfbc68c39e53823549a385d-47792643591057.png)
+<Image align="center" alt="" src="https://files.readme.io/c7c8fddb68f705a7be694afdde6faf387cf34b79abfbc68c39e53823549a385d-47792643591057.png" />
 
 アクティビティダッシュボードでは、次のように表示されます。
 
@@ -312,7 +312,7 @@ Overview dashboardでは、次のように表示されます。
 
 <Accordion title="広告収益のローデータ">
 
-<Image alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
+<Image align="center" alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
 
 広告収益のローデータレポートには、AppsFlyerと端末単位または広告表示単位で連携する、広告収益化ネットワークのデータが含まれます。
 

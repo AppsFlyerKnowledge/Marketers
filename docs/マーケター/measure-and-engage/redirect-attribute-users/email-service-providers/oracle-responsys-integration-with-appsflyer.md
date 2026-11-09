@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** 概要: メール配信および分析プラットフォームであるOracle Responsysは、AppsFlyer OneLinkをメールに埋め込みます。リンクをクリックしたメール受信者は、アプリにディープリンクされます。
 
-![oracle-responsys-af-logo.png](https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png)
+<Image align="center" alt="oracle-responsys-af-logo.png" src="https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png" />
 
 ESP (Email Service Providers) は、セグメント化されたユーザートラフィックを獲得するための有効な手段です。
 
@@ -67,7 +67,7 @@ ESPの課題の1つは、正しいアトリビューションとディープリ�
 
 リンクテーブルでは、IOSリンクURLを**リンクURL**と同じに定義できる**ことに注意してください**。
 
-![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
+<Image align="center" alt="Oracle-responsys-link-tracking-table.png" src="https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png" />
 
 リンク表にクリックドメインを設定すると、Responsysはこれらのドメインを使用して、Eメールキャンペーンに含めるOneLinksをラップします。このようにして、ResponsysはOneLinkとディープリンク機能を維持しながら、システムにクリックを記録できます。
 

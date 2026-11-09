@@ -50,7 +50,7 @@ cohort main (2).png
 
 1. AppsFlyerのサイドメニューから、**分析**>**リテンション**を選択します。  
    コホートダッシュボードが開きます。粒度とコンバージョン日の範囲が表示されます。  
-   ![mceclip0__1_.png](https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png)
+   <Image align="center" alt="mceclip0__1_.png" src="https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png" />
 2. [コホート期間の粒度](/docs/cohort-and-retention-dashboard#cohort-periods)を選択します：
    * 時間別
    * 日数
@@ -59,7 +59,7 @@ cohort main (2).png
 3. 計測期間（ユーザー獲得またはリターゲティングエンゲージメント）を設定します。最新の日付に関連するデータは、グラフと表では点線で表示され、[部分的なデータ](/docs/cohort-and-retention-dashboard#partial-data)が含まれる可能性があります。
 4. [**コホートの編集**] をクリックします。  
    コホート設定ウィンドウが開きます。   
-   <Image alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
+   <Image align="center" alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
 5. 以下を完了してください。
    * * **ユーザー獲得**
      * **リターゲティング**
@@ -148,7 +148,7 @@ cohort main (2).png
 * **ユーザー獲得：** ユーザー獲得： 新規インストールのパフォーマンスデータ（<Anchor target="_blank" href="/marketers/ja/docs/measure-reinstalls#attributed-to-the-first-install">特別に有効</Anchor>にしない限り、再インストールは除外されます）
 * **リターゲティング：リターゲティング：リアトリビューションまたはリエンゲージメントからのパフォーマンスデータ**
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 </Accordion>
 
@@ -182,7 +182,7 @@ cohort main (2).png
 
 この例では、同一のローデータを使用して2つのコホートトレンドタイプを生成しています。ローデータのテーブルには、A, B, C, Dというそれぞれ違うユーザに関連するアトリビューションイベントが含まれています。ユーザーは、広告に接触し、アプリをインストール、そして購入をしています。コホート0日はインストール日です。
 
-[![CohortExample_en-us.jpg](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)
+<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg" />
 
 </Accordion>
 

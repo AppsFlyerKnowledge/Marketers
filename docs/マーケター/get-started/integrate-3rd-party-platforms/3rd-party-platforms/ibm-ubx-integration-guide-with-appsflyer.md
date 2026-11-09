@@ -75,7 +75,7 @@ IBMの設定で使用するのは、<strong>［連携］</strong>タブのみで
 
 IBMとAppsFlyerの接続には、固有の認証キーを使用します。まだ取得していない場合は、連携の設定を進める前にIBMから取得するか、以下の手順で取得してください。
 
-![IBM_msc_new_2.png](https://files.readme.io/d6dddd7232ba7ecba2ed5bd944f98669902689fc0953afc558fbc6586be8b5cf-360002219269.png)
+<Image align="center" alt="IBM_msc_new_2.png" src="https://files.readme.io/d6dddd7232ba7ecba2ed5bd944f98669902689fc0953afc558fbc6586be8b5cf-360002219269.png" />
 
 <div id="obtaining-the-authorization-key" />
 
@@ -85,27 +85,27 @@ IBMとAppsFlyerの接続には、固有の認証キーを使用します。ま�
 
 UBXアカウントにログインし、**Endpoints**タブに移動します。
 
-![](https://files.readme.io/8c0833f890c5e2ed2df1c0a8904e1764b341a82f3381c0a1a3fb6effe4f76673-205128323.png)
+<Image align="center" alt="" src="https://files.readme.io/8c0833f890c5e2ed2df1c0a8904e1764b341a82f3381c0a1a3fb6effe4f76673-205128323.png" />
 
 次に、**Register new endpoint**をクリックします。
 
-![](https://files.readme.io/23c8d4a88eda765fce1b42f9eb2e74b1325160e6d0602dc65a8ab05488598b9e-205053206.png)
+<Image align="center" alt="" src="https://files.readme.io/23c8d4a88eda765fce1b42f9eb2e74b1325160e6d0602dc65a8ab05488598b9e-205053206.png" />
 
 **AppsFlyer**を選択し、**Next**をクリックします。
 
-![IBM_1.png](https://files.readme.io/f30b7b27d2ffecf3e562cbe651367306a581d1881325dd141c950b39efac016c-115002600286.png)
+<Image align="center" alt="IBM_1.png" src="https://files.readme.io/f30b7b27d2ffecf3e562cbe651367306a581d1881325dd141c950b39efac016c-115002600286.png" />
 
 **Next**をクリックします。
 
-![Pasted_image_at_2017_02_23_02_48_PM.png](https://files.readme.io/11a94c4d9f4c9282c230e4cf69f31e0d39f4eb88196313b3cfc103a5bbaba9a4-115002600326.png)
+<Image align="center" alt="Pasted_image_at_2017_02_23_02_48_PM.png" src="https://files.readme.io/11a94c4d9f4c9282c230e4cf69f31e0d39f4eb88196313b3cfc103a5bbaba9a4-115002600326.png" />
 
 新しく作成されたAppsFlyerエンドポイントの右側にある3点メニューをクリックし、**endpoint details**をクリックします。
 
-![IBM_3.png](https://files.readme.io/70edd2e14c6c344188dcc65b65b3a8d92081401dd34909f5a4e0dd6bd137b8df-115002599203.png)
+<Image align="center" alt="IBM_3.png" src="https://files.readme.io/70edd2e14c6c344188dcc65b65b3a8d92081401dd34909f5a4e0dd6bd137b8df-115002599203.png" />
 
 認証キーをコピーします。
 
-![IBM_Endpoint_details.png](https://files.readme.io/3706f4dd665d8d2a26de9013b03c0e6575d051f2fa5500033e172312a63f09ea-115002601006.png)
+<Image align="center" alt="IBM_Endpoint_details.png" src="https://files.readme.io/3706f4dd665d8d2a26de9013b03c0e6575d051f2fa5500033e172312a63f09ea-115002601006.png" />
 
 <div id="default-postbacks" />
 
@@ -113,7 +113,7 @@ UBXアカウントにログインし、**Endpoints**タブに移動します。
 
 AppsFlyerは、ユーザーのインストール後にIBMへポストバックを自動送信できます。このセクションで、ポストバックの送信を設定します。
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 アプリをダウンロードしたすべてのユーザーのポストバックをIBMに送信するには、<strong>［すべてのパートナーまたはオーガニックのイベント］</strong>を選択します。送信しない場合は、<strong>［オフ］</strong>を選択します。
 
@@ -123,7 +123,7 @@ AppsFlyerは、ユーザーのインストール後にIBMへポストバック�
 
 ### アプリ内イベントの設定
 
-[![](https://files.readme.io/c945ee3c04f49076e54c9966389506aea441406e01daa49d737a86da9f5bd2bc-360002219429.png)](https://files.readme.io/c945ee3c04f49076e54c9966389506aea441406e01daa49d737a86da9f5bd2bc-360002219429.png)
+<Image align="center" alt="" src="https://files.readme.io/c945ee3c04f49076e54c9966389506aea441406e01daa49d737a86da9f5bd2bc-360002219429.png" />
 
 このセクションでは、ポストバックを介してAppsFlyerのイベントをIBMのイベントに対応付けます。
 

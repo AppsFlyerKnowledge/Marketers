@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要：** 概要: AVOW GmbH (avow1\_int) は、アドネットワークおよび代理店両方のアカウントを持つ連携パートナーです。これによって広告主がモバイルデバイスでユーザー獲得キャンペーンを実施できるようになります。Avow GmbHは、クリックベースのモバイルアトリビューションに加えて、広告主がAppsFlyerで記録できるビュースルーアトリビューションも提供しています。
 
-![avow_icon.png](https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png)
+<Image align="center" alt="avow_icon.png" src="https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png" />
 
 <div id="activate-partner" />
 

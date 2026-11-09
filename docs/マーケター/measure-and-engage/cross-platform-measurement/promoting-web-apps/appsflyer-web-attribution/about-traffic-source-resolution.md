@@ -86,7 +86,7 @@ AppsFlyerはリファラーを以下の3種類に分類します：
   * アクティブなセッションが存在し、かつダイレクト流入以外のメディアソース情報（UTM、PID、クリックIDなど）が存在する場合、訪問を記録します。この再訪問はリターゲティングコンバージョン（リエンゲージメント）を発生させる可能性があり、その後のイベントのアトリビューションに利用されます。
   * アクティブなセッションが存在し、かつメディアソース情報が存在しない場合、そのセッション内では新しい訪問は記録されません。
 
-<Image alt="traffic resolution flow" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
+<Image align="center" alt="traffic resolution flow" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
 
 <div id="step-2-media-source-resolution" />
 

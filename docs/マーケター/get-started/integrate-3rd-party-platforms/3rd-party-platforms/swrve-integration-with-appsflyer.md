@@ -122,7 +122,7 @@ Swrveの設定で使用するのは、<strong>［連携］</strong>タブのみ�
 
 SwrveとAppsFlyerの接続には、固有のアプリIDとAPIキーを使用します。まだ取得していない場合は、連携の設定を進める前にSwrveから取得してください。
 
-![Swrve_msc_new_3.png](https://files.readme.io/feb1d5f846629d1909727b70b66e4b36138704ebbe4518e2dc03652b9fe5c57a-360001902065.png)
+<Image align="center" alt="Swrve_msc_new_3.png" src="https://files.readme.io/feb1d5f846629d1909727b70b66e4b36138704ebbe4518e2dc03652b9fe5c57a-360001902065.png" />
 
 必要に応じて、以下の手順を実施します。
 
@@ -137,7 +137,7 @@ SwrveとAppsFlyerの接続には、固有のアプリIDとAPIキーを使用し�
 
 AppsFlyerは、ユーザーのインストール後にSwrveへポストバックを自動送信できます。このセクションで、ポストバックの送信を設定します。
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 アプリをダウンロードしたすべてのユーザーのポストバックをSwrveに送信するには、［**すべてのパートナーまたはオーガニックのイベント**］を選択します。
 
@@ -192,7 +192,7 @@ AppsFlyerからSwrveにアトリビューション情報を送信するサーバ
 
 アプリのメインダッシュボードでは、重要な情報をひと目で確認できます。メインのナビゲーションバーで該当するタブを選択すると、テスト、ターゲティング、レポートの各機能を利用できます。
 
-![Swrveダッシュボードの獲得グラフ](https://files.readme.io/6a3e4cf709f58b20f2932ab47e6fa9289653504d85a0b6eec2580718e2a4dc7c-49839257162769.png)
-![Swrveダッシュボードの獲得データ表](https://files.readme.io/561403abefae9e98e24934c96dd25b1ee34ae24cf30695354c4930404e0a7f19-49839257163537.png)
+<Image align="center" alt="Swrveダッシュボードの獲得グラフ" src="https://files.readme.io/6a3e4cf709f58b20f2932ab47e6fa9289653504d85a0b6eec2580718e2a4dc7c-49839257162769.png" />
+<Image align="center" alt="Swrveダッシュボードの獲得データ表" src="https://files.readme.io/561403abefae9e98e24934c96dd25b1ee34ae24cf30695354c4930404e0a7f19-49839257163537.png" />
 
 <div data-zendesk-anchors="integrating-swrve-and-appsflyer=swrve%E3%81%A8appsflyer%E3%82%92%E9%80%A3%E6%90%BA%E3%81%99%E3%82%8B h_01H9HWK5DM1K9P5XXC6S7ENAGV=swrve%E3%81%A8appsflyer%E3%82%92%E9%80%A3%E6%90%BA%E3%81%99%E3%82%8B setting-up-swrve=swrve%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9HWK5DMS8HAK25BF5EXZT51=swrve%E3%81%AE%E8%A8%AD%E5%AE%9A h_01H9HWK5DN9D0DS46X72EDAW54=integration-tab activate-partner=%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%92%E6%9C%89%E5%8A%B9%E5%8C%96 h_01H9HWK5DN375XJVHQCZ8Y3K13=%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E3%82%92%E6%9C%89%E5%8A%B9%E5%8C%96 general-settings=%E4%B8%80%E8%88%AC%E8%A8%AD%E5%AE%9A h_01H9HWK5DN0XK2E0HXS61GRECE=%E4%B8%80%E8%88%AC%E8%A8%AD%E5%AE%9A default-postbacks=%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%AF h_01H9HWK5DNH6SYY8T9NX09MRYS=%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E3%83%9D%E3%82%B9%E3%83%88%E3%83%90%E3%83%83%E3%82%AF h_01H9HWK5DNZVQDZ0Q1Z9WSKRSR=attribution-link-tab h_01H9HWK5DNPG89HSB0107TKHED=cost-tab h_01H9HWK5DNARD4K0MPHPXKBPXZ=ad-revenue-tab h_01H9HWK5DNFKAT0J98JWVRPQ1G=permissions-tab swrve-reporting-with-appsflyer-data=appsflyer%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9Fswrve%E3%81%AE%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88 h_01H9HWK5DN3QB9V593EV566GAQ=appsflyer%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%9Fswrve%E3%81%AE%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88" />

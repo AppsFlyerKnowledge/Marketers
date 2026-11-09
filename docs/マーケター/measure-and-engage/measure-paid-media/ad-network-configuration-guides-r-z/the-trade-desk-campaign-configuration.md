@@ -151,7 +151,7 @@ iOS アプリの場合、<Anchor target="_blank" href="/marketers/ja/docs/apply-
 
 The Trade Deskは、一意のネットワークIDを介してAppsFlyerに接続します。Tracker\_ID と advertiserid をまだお持ちでない場合は、連携を続行するためにThe Trade Deskから入手する必要があります。
 
-![TTD_General_Settings_.png](https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png)
+<Image align="center" alt="TTD_General_Settings_.png" src="https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png" />
 
 **ビュースルーアトリビューションの有効化：**
 
@@ -161,7 +161,7 @@ The Trade Deskからのビュースルーインストールを計測するには
 
 #### デフォルトのポストバック
 
-![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
+<Image align="center" alt="default_postbacks_en-us.png" src="https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png" />
 
 ユーザーインストールおよびリエンゲージメント後に、ポストバックをThe Trade Deskに自動送信します。このセクションでは、これらのポストバックの送信を許可するユーザーを定義してください：
 
@@ -180,7 +180,7 @@ The Trade Deskからのビュースルーインストールを計測するには
 
 ポストバックを介してTTDを使用してAppsFlyerイベントをマッピングします。ポストバック送信が有効な場合、これには拒否されたアプリ内イベント（Protect360 によってブロックされたイベントや、ターゲット検証ルールに準拠していないと判断されたイベント）が含まれます。
 
-![the_trade_desk_in_app_event_settings_en-us.png](https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png)
+<Image align="center" alt="the_trade_desk_in_app_event_settings_en-us.png" src="https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png" />
 
 **アプリ内イベントポストバックを設定する：**
 
@@ -215,7 +215,7 @@ The Trade Deskからのビュースルーインストールを計測するには
 
 アトリビューションリンクに追加するパラメーターを選択します。
 
-![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+<Image align="center" alt="ttd_attribution_link_parameters_en-us.png" src="https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png" />
 
 <div id="default-parameters" />
 
@@ -246,7 +246,7 @@ The Trade Deskからのビュースルーインストールを計測するには
 
 #### クリックスルーアトリビューション
 
-![click-through_attribution_ttd_en-us.png](https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png)
+<Image align="center" alt="click-through_attribution_ttd_en-us.png" src="https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png" />
 
 スライダーを使用して、クリックからインストールまでの最大時間を設定してください。ルックバック期間内に行われたインストール（初回起動）のみがアトリビューションされます。
 
@@ -262,7 +262,7 @@ The Trade Deskからのビュースルーインストールを計測するには
 
 #### ビュースルーアトリビューション
 
-![view-through_attribution_ttd_en-us.png](https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png)
+<Image align="center" alt="view-through_attribution_ttd_en-us.png" src="https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png" />
 
 スライダーを使用して、 インプレッションからインストールまでの最大時間を設定します。このルックバック期間内で、広告インプレッション後に他の関連広告がクリックされなかった場合のみ、インストール（初回起動）がパートナーにアトリビュートされます。
 
@@ -298,7 +298,7 @@ The Trade Deskでは広告収益をサポートしていません。
 
 このタブでは、The Trade Deskに付与する権限を、広告ネットワーク、代理店、またはその両方として機能するかどうかを選択できます。The Trade Deskのアトリビューションがオフになっている場合でも、権限タブはアクティブで、The Trade Deskに権限を付与することができます。
 
-![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
+<Image align="center" alt="" src="https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png" />
 
 これらのトグルを使用して、アプリごとにアドネットワークへの権限付与を設定してください：
 

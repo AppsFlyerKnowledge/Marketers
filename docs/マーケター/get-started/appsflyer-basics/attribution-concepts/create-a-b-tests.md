@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerを使って、メディアソース、キャンペーン、クリエイティブ、ターゲティング、広告掲載位置のA/Bテストを実施できます。
 
-![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
+<Image align="center" alt="AB_TESTING.jpg" src="https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg" />
 
 <div id="what-is-ab-testing" />
 
@@ -113,7 +113,7 @@ A/Bテストとは、広告やキャンペーンのさまざまな要素を比�
 
 ## モバイルWebで広告掲載位置をA/Bテストする
 
-![ad_placement.png](https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png)
+<Image align="center" alt="ad_placement.png" src="https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png" />
 
 モバイルWebサイト上でアプリのバナーをどこに表示するかによって、ユーザーのコンバージョン率が大きく変わる可能性があります。多くの場合、広告主は自社のモバイルWebサイトを使って、訪問者をモバイルユーザーへ誘導します。
 
@@ -161,7 +161,7 @@ AppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/smart-banners-mobil
 
 > 📄 **例**
 >
-> [![](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)
+> <Image align="center" alt="" src="https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png" />
 >
 > * 1と2は、同じメディアソース上の異なる広告です。クリエイティブ、ターゲティング、広告掲載位置のA/Bテストを行うには、例えば4日目のリテンション率など、1つのKPIを比較します。
 > * 2と3は、異なるメディアソース上の広告です。広告のクリエイティブとターゲティングが同一であれば、1つのKPIを比較することでメディアソースのA/Bテストを行えます。

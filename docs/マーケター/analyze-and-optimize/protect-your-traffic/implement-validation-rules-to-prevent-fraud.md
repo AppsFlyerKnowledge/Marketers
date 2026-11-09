@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance:** 検証ルールを使うと、ターゲット条件に合わないキャンペーンの流入や不正に対して、独自の条件による保護を追加できます。アプリ所有者は、インストールやアプリ内イベントのアトリビューションをブロックする条件や、最後の有効な流入元に成果を付け替える条件を設定できます。
 
-![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
+<Image align="center" alt="5906_animation-750x330__1_.gif" src="https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif" />
 
 <div id="overview" />
 
@@ -110,7 +110,7 @@ x-zendesk:
 | エンドユーザーのイベント | イベント名、イベント値、インストールからイベントまでの時間、イベントの送信元、通貨、収益 |
 | エンゲージメント | エンゲージメント |
 
-![New Validation Rule page.jpg](https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png)
+<Image align="center" alt="New Validation Rule page.jpg" src="https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png" />
 
 ルール作成画面は、次のセクションで構成されています。
 

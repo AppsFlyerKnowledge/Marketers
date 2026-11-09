@@ -44,7 +44,7 @@ x-zendesk:
    * これがコラボレーション内で最初の測定設定である場合は、<strong>測定を設定します。</strong>をクリックします。**測定を作成**ページが表示されます。
    * コラボレーション内にすでに測定セットがある場合は、測定選択パネルのプラス記号をクリックします。**測定を作成**ページが表示されます。
 
-[![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
+<Image align="center" alt="start-measurement.png" src="https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png" />
 
 <div id="select-campaign-type-on-site-off-site-or-both" />
 

@@ -69,7 +69,7 @@ Appleのドキュメントによると、SKANポストバックの送信先エ�
 >
 > 次の説明は正しいでしょうか？
 >
-> ![TrueOrFalse.png](https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png)
+> <Image align="center" alt="TrueOrFalse.png" src="https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png" />
 >
 > * 広告主は、ポストバックの取得をアドネットワークに頼る必要がなくなる。
 >   * **誤りです。** 重要な情報を読み解くには、引き続きアドネットワークからの情報が必要です。たとえば、SKANキャンペーンIDとキャンペーン名を対応付けられるのは、アドネットワークだけです。

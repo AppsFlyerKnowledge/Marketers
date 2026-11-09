@@ -73,6 +73,6 @@ x-zendesk:
 
 **iOS14におけるLATとATTの対応関係**
 
-[<Image alt="LATtoiOS14.5.png" src="https://files.readme.io/872b3acdcd975337ff4de791a9fc98cd45eb50a487e80b3dfad6a1c7d9495739-360017977837.png" width="522px" />](https://files.readme.io/872b3acdcd975337ff4de791a9fc98cd45eb50a487e80b3dfad6a1c7d9495739-360017977837.png)
+<Image align="center" alt="LATtoiOS14.5.png" src="https://files.readme.io/872b3acdcd975337ff4de791a9fc98cd45eb50a487e80b3dfad6a1c7d9495739-360017977837.png" width="522px" />
 
 <div data-zendesk-anchors="att-values=att%E3%81%AE%E5%80%A4 h_01HGX9468F5YF0KSHB3S49CW2Y=att%E3%81%AE%E5%80%A4 att-values-defined-by-apple=apple%E3%81%8C%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8Batt%E3%81%AE%E5%80%A4 h_01HGX9468F0TFTMKP1W2J6GEBV=apple%E3%81%8C%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8Batt%E3%81%AE%E5%80%A4 additional-att-values-defined-by-appsflyer=appsflyer%E3%81%8C%E7%8B%AC%E8%87%AA%E3%81%AB%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8Batt%E3%81%AE%E5%80%A4 h_01HGX96RG9NX9QM2WTX8789DDR=appsflyer%E3%81%8C%E7%8B%AC%E8%87%AA%E3%81%AB%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8Batt%E3%81%AE%E5%80%A4 is-lat-in-ios%E2%80%94considerations-and-how-lat-translates-to-att-in-ios-14=ios%E3%81%AEis-lat%E6%B3%A8%E6%84%8F%E7%82%B9%E3%81%A8ios14%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8Batt%E3%81%A8%E3%81%AE%E5%AF%BE%E5%BF%9C h_01HGX9468F0VTYNXBJRSTNBCMB=ios%E3%81%AEis-lat%E6%B3%A8%E6%84%8F%E7%82%B9%E3%81%A8ios14%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8Batt%E3%81%A8%E3%81%AE%E5%AF%BE%E5%BF%9C" />

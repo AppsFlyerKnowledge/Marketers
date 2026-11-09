@@ -22,7 +22,7 @@ x-zendesk:
   section_id: 6551161473041
   url: https://support.appsflyer.com/hc/ja/articles/4404213118481
 ---
-![iOS15.png](https://files.readme.io/b61770f82edee601aec1fba95c93bbf5b7e4ad3615a82205aa9c7da8cfe547f0-20445082158609.png)
+<Image align="center" alt="iOS15.png" src="https://files.readme.io/b61770f82edee601aec1fba95c93bbf5b7e4ad3615a82205aa9c7da8cfe547f0-20445082158609.png" />
 
 | **変更点** | SKAdNetworkの計測期間内に発生した広告収益を、そのユーザーをもたしたキャンペーンに紐付けて計測します。現在、この機能は、SDKを介してMoPubのインプレッションレベルの広告収益と統合された広告主に限定されています。 |
 | --- | --- |

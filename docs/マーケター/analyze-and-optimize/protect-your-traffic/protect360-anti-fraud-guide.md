@@ -31,7 +31,7 @@ x-zendesk:
 
 > **概要：** アトリビューション不正は、マーケティング予算を浪費させ、成果データの正確性を損ない、好調なキャンペーンを赤字に転じさせるおそれがあります。 **Protect360は、アプリ所有者にリアルタイムの不正対策と、ポストアトリビューションでの不正検知（アトリビューション後の不正検知）を提供します。**
 
-![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
+<Image align="center" alt="p360intro2.jpg" src="https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg" />
 
 <div id="protect360-overview" />
 

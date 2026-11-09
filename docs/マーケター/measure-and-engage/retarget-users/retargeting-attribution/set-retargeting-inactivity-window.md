@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要：** 概要：休眠（非アクティブ）ユーザーをリターゲティングすることで、キャンペーン効果を向上させます。メディアソースごとに休眠期間を設定しましょう。
 >
-> ![](https://files.readme.io/1029124dc36a3881628f870cc725315afc262a20dc8652e5ff6cdd47653e7984-51910196789521.png)
+> <Image align="center" alt="" src="https://files.readme.io/1029124dc36a3881628f870cc725315afc262a20dc8652e5ff6cdd47653e7984-51910196789521.png" />
 
 <div id="inactivity-period" />
 
@@ -66,7 +66,7 @@ x-zendesk:
 * ユーザーが該当メディアのリターゲティング広告に接触
 * アプリを再インストール
 
-[![re-attribution_1_en-us.png](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)
+<Image align="center" alt="re-attribution_1_en-us.png" src="https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png" />
 
 | シナリオ | 設定された休眠期間 | ユーザーの休眠期間 | 結果 |
 | --- | --- | --- | --- |
@@ -85,7 +85,7 @@ x-zendesk:
 * その後、数日間休眠の状態
 * リターゲティング広告に接触し、アプリを起動
 
-[![Re-engagement_scenarios_en-us.png](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)
+<Image align="center" alt="Re-engagement_scenarios_en-us.png" src="https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png" />
 
 | シナリオ | 媒体Aで設定された休眠期間 | ユーザーの休眠期間 | 結果 |
 | --- | --- | --- | --- |
@@ -112,7 +112,7 @@ x-zendesk:
 4. **休眠期間**を設定します（1-30日間）。
 5. **連携を保存**をクリックします。
 
-[![Inactivity_window_SRN.png](https://files.readme.io/29e80edb6f42ae129b24b05280e9c1605ef5b089ccecf1c0a7f2888b1a4f593a-51910208455057.png)](https://files.readme.io/29e80edb6f42ae129b24b05280e9c1605ef5b089ccecf1c0a7f2888b1a4f593a-51910208455057.png)
+<Image align="center" alt="Inactivity_window_SRN.png" src="https://files.readme.io/29e80edb6f42ae129b24b05280e9c1605ef5b089ccecf1c0a7f2888b1a4f593a-51910208455057.png" />
 
 </Accordion>
 
@@ -128,7 +128,7 @@ x-zendesk:
 4. **休眠期間**を設定します（1-30日間）。  
    この機能が無効の場合、計測リンクには追加されません。
 
-[![Inactivity_window_non-SRN.png](https://files.readme.io/6670efad2795ddb22197506d8d98050f23c9d515375d99b012a6e7426de9470f-51910208455953.png)](https://files.readme.io/6670efad2795ddb22197506d8d98050f23c9d515375d99b012a6e7426de9470f-51910208455953.png)
+<Image align="center" alt="Inactivity_window_non-SRN.png" src="https://files.readme.io/6670efad2795ddb22197506d8d98050f23c9d515375d99b012a6e7426de9470f-51910208455953.png" />
 
 </Accordion>
 

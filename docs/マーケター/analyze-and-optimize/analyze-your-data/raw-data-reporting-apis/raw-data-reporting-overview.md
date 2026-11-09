@@ -122,7 +122,7 @@ x-zendesk:
 
 ## ユーザージャーニーレポート
 
-![Raw_data_-_User_acquisition_.png](https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png)
+<Image align="center" alt="Raw_data_-_User_acquisition_.png" src="https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png" />
 
 <div id="user-journey-basics" />
 
@@ -150,7 +150,7 @@ x-zendesk:
   * リターゲティングデータは常に非オーガニックです。
   * リターゲティングのアプリ内イベントは、UAのアプリ内イベントレポートとリターゲティングのアプリ内イベントレポートの両方に含まれます。詳しくは<Anchor target="_blank" href="/marketers/ja/docs/resolve-retargeting-double-attribution">詳しくは、リターゲティングの二重アトリビューションの仕組み</Anchor>をご覧ください。
 
-    ![Raw_data_-_Retargeting.png](https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png)
+    <Image align="center" alt="Raw_data_-_Retargeting.png" src="https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png" />
 
 ユーザージャーニーを追跡するには、インストールやアプリ内イベントなど、確認したいジャーニーの区間に関連するレポートを組み合わせます。その後、AppsFlyer ID、イベント時刻、レポートタイプの順にレポートを並べ替えることで、特定のユーザーについて時系列に並んだイベント、つまりユーザージャーニーを確認できます。
 

@@ -62,14 +62,14 @@ x-zendesk:
 
 1. AppsFlyer管理画面 左メニュー **連携** > **データクリーンルーム**へ移動します。
 
-   <Image alt="「データクリーン Room.png」をクリックします" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="245px" />
+   <Image align="center" alt="「データクリーン Room.png」をクリックします" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="245px" />
 2. **コラボレーション**タブから、関連するコラボレーションをクリックします。
 
-   <Image alt="関連する collaboration.png をクリックします。" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
+   <Image align="center" alt="関連する collaboration.png をクリックします。" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
 3. コラボレーションで、[**New audience]** > [**Visual audience builder**] をクリックします。  
    **注：オーディエンスを構築する前に、少なくとも1つのソースを関連付ける必要**があります。
 
-   <Image alt="New Aud Visual audience builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
+   <Image align="center" alt="New Aud Visual audience builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. 次の**オーディエンスビルダー**のウォークスルー手順に進みます。
 
 <div id="step-1-details-and-sources" />
@@ -78,7 +78,7 @@ x-zendesk:
 
 オーディエンスは、単一のコラボレーターからのデータを使用して作成するか、各コラボレーターから1つのソースをマージして結合されたデータソースを有効にすることで作成できます。
 
-![New aud.png](https://files.readme.io/c110dcda7524ddcb4ce255ac5eb1f33ffec61103219e35f54f1d5687135cf915-35683488156433.png)
+<Image align="center" alt="New aud.png" src="https://files.readme.io/c110dcda7524ddcb4ce255ac5eb1f33ffec61103219e35f54f1d5687135cf915-35683488156433.png" />
 
 1. オーディエンス名オーディエンス・コラボレーション名
 2. ソースを選択ドロップダウンリストからソースを選択します。
@@ -99,7 +99,7 @@ x-zendesk:
 
      **注：** 3つのオプションはすべて、ソース権限で「**Build Audiences**」>「**Can use all data** - **Universal dataset**」が有効になっている場合にのみ利用できます。<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources#共有権限">ソース権限の詳細</Anchor>  
 
-     <Image alt="arrow.png で有効になっているすべてのデータ権限を使用できます" src="https://files.readme.io/6f386c2383c75bf42da6cfdc4d662be0fdf7d623588480825e4a70f453d1f94c-46848627186065.png" width="1556px" />
+     <Image align="center" alt="arrow.png で有効になっているすべてのデータ権限を使用できます" src="https://files.readme.io/6f386c2383c75bf42da6cfdc4d662be0fdf7d623588480825e4a70f453d1f94c-46848627186065.png" width="1556px" />
 4. **次へ**をクリックします。
 
 <div id="step-2-define-the-audience" />
@@ -128,7 +128,7 @@ x-zendesk:
 4. **次へ**をクリックします。
 5. 次のステップに進みます [オーディエンスを送信](#オーディエンスを送信してアクティベーションを行う)してオーディエンスを有効にします 。
 
-<Image alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
+<Image align="center" alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
 
 <div id="summary-right-side-preview-pane" />
 
@@ -182,7 +182,7 @@ DCP では、オーディエンスサイズを最小から最大までの範囲�
 * ソース間の重複の勘定 (該当する場合)
 * フィルター、ソース、またはルールの変更に応じて動的に調整
 
-![image (20).png](https://files.readme.io/0ba94f26978e2d3f984bd0c8c2fa8e60159420f5765cff358cdd80d6f05e271c-43432443225489.png)
+<Image align="center" alt="image (20).png" src="https://files.readme.io/0ba94f26978e2d3f984bd0c8c2fa8e60159420f5765cff358cdd80d6f05e271c-43432443225489.png" />
 
 <div id="note-3" />
 
@@ -221,13 +221,13 @@ DCP では、オーディエンスサイズを最小から最大までの範囲�
 
 1. AppsFlyer管理画面 左メニュー **連携** > **データクリーンルーム**へ移動します。
 
-   <Image alt="「データクリーン Room.png」をクリックします" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="40.57%" />
+   <Image align="center" alt="「データクリーン Room.png」をクリックします" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="40.57%" />
 2. **コラボレーション**タブから、関連するコラボレーションをクリックします。
 
-   <Image alt="関連する collaboration.png をクリックします。" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
+   <Image align="center" alt="関連する collaboration.png をクリックします。" src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
 3. コラボレーションで、[**New audience]** > [**SQL audience builder**] をクリックします。
 
-   <Image alt="New Aud SQL audience builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
+   <Image align="center" alt="New Aud SQL audience builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
 4. **オーディエンスビルダー**のウォークスルー手順に進みます。
 
 <div id="set-details" />
@@ -322,7 +322,7 @@ Meta 広告や <Anchor target="_blank" href="https://support.google.com/google-a
 
 1. オーディエンスビルダー内で、**オーディエンスをメディアパートナー**に接続をオンにします。  
 
-   ![オーディエンスをメディアパートナーに連携.png](https://files.readme.io/d1e6558183eed8f239f1d61efd81cd71db7a2c7f6acfdef7e1c029dea51af172-37184169230097.png)
+   <Image align="center" alt="オーディエンスをメディアパートナーに連携.png" src="https://files.readme.io/d1e6558183eed8f239f1d61efd81cd71db7a2c7f6acfdef7e1c029dea51af172-37184169230097.png" />
 2. **+パートナー接続を追加**をクリックしてください。
 3. パートナー接続が確立されていない場合は、新しいパートナー接続を作成します。
    1. **接続の追加**をクリックします。
@@ -333,7 +333,7 @@ Meta 広告や <Anchor target="_blank" href="https://support.google.com/google-a
    6. **保存**をクリックしてください。
 4. **Save & send** をクリックします。
 
-![image (21).png](https://files.readme.io/bb7785936d3e79e18adffe31ca8121b5c0a65392508ef0aea76c7dc75e9ce9eb-43432561109777.png)
+<Image align="center" alt="image (21).png" src="https://files.readme.io/bb7785936d3e79e18adffe31ca8121b5c0a65392508ef0aea76c7dc75e9ce9eb-43432561109777.png" />
 
 </Accordion>
 
@@ -372,7 +372,7 @@ Meta 広告や <Anchor target="_blank" href="https://support.google.com/google-a
 
 1. DCP で、[**コラボレーション**] タブに移動し、関連するコラボレーションクリック。
 2. **オーディエンスセクションをクリックします**。  
-   <Image alt="オーディエンスセクション新規 UI.png" src="https://files.readme.io/8f8170d6848da0158c7db76938bdb4fa64cb3a9702218fe549e6b6e859d64140-small-43777994824977.png" width="2836px" />
+   <Image align="center" alt="オーディエンスセクション新規 UI.png" src="https://files.readme.io/8f8170d6848da0158c7db76938bdb4fa64cb3a9702218fe549e6b6e859d64140-small-43777994824977.png" width="2836px" />
 
 **このページからできること：**
 
@@ -429,7 +429,7 @@ Meta 広告や <Anchor target="_blank" href="https://support.google.com/google-a
 
 コラボレーションに関連するオーディエンス**スの最終アップロードステータスを表示できます**。
 
-<Image alt="image (33).png" src="https://files.readme.io/5659a3e30aac91226ecf8d1cf08618b698f063d1412522f2c231459fdfc7fb03-43541066537105.png" width="860px" />
+<Image align="center" alt="image (33).png" src="https://files.readme.io/5659a3e30aac91226ecf8d1cf08618b698f063d1412522f2c231459fdfc7fb03-43541066537105.png" width="860px" />
 
 オーディエンスにはさまざまなステータスがあります。
 
@@ -446,7 +446,7 @@ Meta 広告や <Anchor target="_blank" href="https://support.google.com/google-a
 
 特定のオーディエンスの横にあるドロップダウンをクリックし、**View history** を選択します。
 
-![View history Doctored .png](https://files.readme.io/7840f05fd8f6a98445c29e5a59813776378d842dd54fab4e3f66111c34dd89dd-36573637043089.png)
+<Image align="center" alt="View history Doctored .png" src="https://files.readme.io/7840f05fd8f6a98445c29e5a59813776378d842dd54fab4e3f66111c34dd89dd-36573637043089.png" />
 
 **アップロード履歴のステータスは次のとおりです。**
 

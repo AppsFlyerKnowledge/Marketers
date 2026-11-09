@@ -51,7 +51,7 @@ x-zendesk:
 
 例えば、ユーザーがインストールしてから15日以内に発生するイベントに課金される場合、このように期間を設定します。
 
-<Image alt="15-day_in_app_event_postback_setting.png" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
+<Image align="center" alt="15-day_in_app_event_postback_setting.png" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
 
 この期間を超えるとポストバックは送信されず、ネットワークにも通知されませんが、イベントはAppsFlyerに記録され続け、ネットワークに帰属します。
 
@@ -138,7 +138,7 @@ x-zendesk:
 > * イベント名では大文字と小文字が区別されます。不一致を避けるために、すべてのメディアソースとアプリバージョンで正しいイベント名を使用するようにしましょう。
 > * イベント名を入力する際、イベント名の前後にアンダースコア（低いダッシュ）を使用できます。AppsFlyerから送信されるイベント名が正確に同じアンダースコアを持っている場合にのみ、アンダースコアを使用してください。
 
-[![enter_event_name.png](https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png)](https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png)
+<Image align="center" alt="enter_event_name.png" src="https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png" />
 
 </Accordion>
 
@@ -149,7 +149,7 @@ x-zendesk:
 * **AppsFlyerイベント**: アプリイベントのリストからイベントを選択します。
 * **パートナーイベントにマッピング済み**:定義済みのパートナーイベントのリストから、アプリイベント（AppsFlyerイベント）に対応するイベントを選択します。
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 </Accordion>
 
@@ -179,7 +179,7 @@ x-zendesk:
    * **含む**:ポストバックに含める[データ](/docs/in-app-event-postback-configuration#ポストバックに含めるデータ)を選択します。
 3. さらにイベントに対してこの手順を繰り返してください。
 
-![send_postbacks_as_is_en-us.png](https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png)
+<Image align="center" alt="send_postbacks_as_is_en-us.png" src="https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png" />
 
 **すべてのイベントを送信するには:**
 
@@ -188,7 +188,7 @@ x-zendesk:
    * **ユーザー向け**:すべてのイベントの[送信オプション](/docs/in-app-event-postback-configuration#ポストバック送信のオプション)を選択します。
    * **含む**:ポストバックに含めるすべてのイベントの[データを選択します。](/docs/in-app-event-postback-configuration#ポストバックに含めるデータ)
 
-![send_postbacsk_as_is_no_mapping.png](https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png)
+<Image align="center" alt="send_postbacsk_as_is_no_mapping.png" src="https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png" />
 
 </Accordion>
 
@@ -287,7 +287,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 >
 > ゲームアプリのマーケティング担当者は、アドネットワークを通じて行っているキャンペーンを最適化しようとしていますが、その対象はレベル10またはレベル50に到達したユーザーや、アプリ購入に3ドルを使うユーザーのみです。
 >
-> [![in_app_event_condition__1_.png](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)
+> <Image align="center" alt="in_app_event_condition__1_.png" src="https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png" />
 >
 > **このイベントの条件は次のように設定されています:**
 >
@@ -363,7 +363,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
      * 収益のない価値
      * 価値と収益
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png" />
 
 <div id="custom-events" />
 
@@ -405,7 +405,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 1. **アクティブ統合**ページで、権限を付与したいパートナーを見つけます。
 2. [権限]タブで、[**アプリ内イベントのポストバック構成を許可**]トグルを[**オン**]に切り替えます。
 
-![広告ネットワーク権限ポストバック.png](https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png)
+<Image align="center" alt="広告ネットワーク権限ポストバック.png" src="https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png" />
 
 アドネットワークが権限を取得すると、「[イベントIDをテキストフィールドに入力](/docs/in-app-event-postback-configuration#マッピング方法)」の指示に従ってイベントをマッピングできます。
 
@@ -428,7 +428,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 3. 代理店がイベントの収益を送信できるかを選択します。
 4. 代理店が共有できる特定のイベントを選択します。
 
-![代理店イベント.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+<Image align="center" alt="代理店イベント.png" src="https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png" />
 
 <div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
 

@@ -133,7 +133,7 @@ AppsFlyer は、GDPRがエンドユーザーに適用されないと思われる
 2. 関連する媒体名を検索し、**連携設定**をクリックします。
 3. 連携タブで、**Non EU users**トグルをオンにします。
 
-<Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="595px" />
+<Image align="center" alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="595px" />
 
 </Accordion>
 

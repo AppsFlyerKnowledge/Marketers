@@ -181,7 +181,7 @@ Advanced Security Moduleによる検知結果は、<strong>［アトリビュー
 
 * **アトリビューション偽装の推移（Attribution spoofing trend）**：Advanced Security Moduleによる検知結果の時系列の変化を示します。このグラフでは、アプリ単位で偽装の検知状況の概要を確認できます。
 
-<Image alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
 
 </Accordion>
 
@@ -204,7 +204,7 @@ Advanced Security Moduleにアクセスするには、次の手順を実行し�
 
 #### 設定画面：Advanced Security Module
 
-<Image alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
 
 Advanced Security Moduleのページは、3つのセクションで構成されています。
 

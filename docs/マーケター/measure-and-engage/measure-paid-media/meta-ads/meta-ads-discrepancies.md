@@ -55,7 +55,7 @@ Meta広告のクリックスルールックバック期間のデフォルト値�
 
 AppsFlyerのアトリビューション期間は、Meta広告の設定値に合わせることを推奨します。<Anchor target="_blank" href="https://www.facebook.com/business/help/654970342692714">アトリビューション設定の比較については、Meta for Developersのドキュメントを参照してください。</Anchor>
 
-![image (13).png](https://files.readme.io/215d2234aae1ec6b4e1c6ac922915851bf8ab02574a874119d286fa49c64f9ba-25899749062033.png)
+<Image align="center" alt="image (13).png" src="https://files.readme.io/215d2234aae1ec6b4e1c6ac922915851bf8ab02574a874119d286fa49c64f9ba-25899749062033.png" />
 
 <div id="example" />
 

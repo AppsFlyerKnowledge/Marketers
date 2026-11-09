@@ -155,7 +155,7 @@ Slack通知を設定するには、まずSlackが接続されている必要が�
 3. 権限リクエストを確認して承認します。
    1. **あなたがSlack管理者の場合：**
       1. Slackにて、Slack Workspaceをクリックします。  
-         <Image alt="" src="https://a.slack-edge.com/8e8e4/helpcenter/img/workspace-picker@2x.jpg" width="263px" />  
+         <Image align="center" alt="" src="https://a.slack-edge.com/8e8e4/helpcenter/img/workspace-picker@2x.jpg" width="263px" />
          注記：表示されているSlack Workspaceが接続先の正しいワークスペースであることを確認してください。
       2. **ツールと設定** -> **アプリの管理**へ進みます。
       3. **Adminパネル**で、**Requests**を選択します。

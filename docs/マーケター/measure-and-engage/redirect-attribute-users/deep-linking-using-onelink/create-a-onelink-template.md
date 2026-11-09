@@ -151,7 +151,7 @@ OneLinkテンプレートには、次の特徴があります。
       * <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links">こちらの手順</Anchor>に従って作業するよう依頼します。
       * 開発者からTeam ID（Apple App ID Prefixとも呼ばれます。例：PF23MIWNTW）を受け取ります。
       * アプリが未公開の場合は、Bundle Identifier（例：com.myapp.something）も開発者から受け取る必要があります。  
-        [![](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)
+        <Image align="center" alt="" src="https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png" />
    2. OneLinkテンプレートのページで、［**Universal Linksを使用してアプリを開く設定に変更**］をクリックします。
    3. 開いたウィンドウで、［**Universal Linksを使用してアプリを開く**］を選択します。
    4. ［**Team ID**］フィールドに、開発者から受け取ったTeam IDを入力します。
@@ -232,7 +232,7 @@ OneLinkテンプレートには、次の特徴があります。
 
 <Accordion title="QRコードのカスタマイズ">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 OneLinkで生成したQRコードには、次のカスタマイズが可能です。
 

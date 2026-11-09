@@ -77,7 +77,7 @@ Game Analyticsの設定で使用するのは、<strong><em>［連携］</em></st
 
 Game AnalyticsとAppsFlyerの接続には、固有のゲームキーを使用します。まだ取得していない場合は、連携の設定を進める前にGame Analyticsから取得してください。
 
-![Game_Analytics_msc_new_2.png](https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png)
+<Image align="center" alt="Game_Analytics_msc_new_2.png" src="https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png" />
 
 <div id="default-postbacks" />
 
@@ -85,7 +85,7 @@ Game AnalyticsとAppsFlyerの接続には、固有のゲームキーを使用し
 
 AppsFlyerは、ユーザーのインストール後にGame Analyticsへポストバックを自動送信できます。このセクションで、ポストバックの送信を設定します。
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 アプリをダウンロードしたすべてのユーザーのポストバックをGame Analyticsに送信するには、<strong>［すべてのパートナーまたはオーガニックのイベント］</strong>を選択します。送信しない場合は、<strong>［オフ］</strong>を選択します。
 
@@ -93,7 +93,7 @@ AppsFlyerは、ユーザーのインストール後にGame Analyticsへポスト
 
 ### アプリ内イベントの設定
 
-[![](https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png)](https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png)
+<Image align="center" alt="" src="https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png" />
 
 このセクションでは、ポストバックを介してAppsFlyerのイベントをGame Analyticsのイベントに対応付けます。
 

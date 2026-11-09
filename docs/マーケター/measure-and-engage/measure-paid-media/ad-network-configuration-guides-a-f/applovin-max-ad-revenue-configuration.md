@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **概要：** 概要：AppsFlyerの連携済みパートナーであるAppLovin MAXでは、アプリ所有者向けに広告収益を生み出すソリューションを提供しています。
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/applovinmax.png" width="265px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/applovinmax.png" width="265px" />
 
 <div id="setting-up-applovin-max-integration" />
 

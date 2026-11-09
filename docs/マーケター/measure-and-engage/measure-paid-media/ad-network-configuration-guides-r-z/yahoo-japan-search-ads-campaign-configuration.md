@@ -24,7 +24,7 @@ x-zendesk:
 >
 > * 202年12月15日、ヤフー検索広告（*yahoojapansearch\_int*） との従来の連携は、新しい連携 *yjsearch\_int*に置き換えられました。この記事では、新しいAPIの使用を開始する方法について説明します。 新APIでの連携方法の詳細については、[こちら](/docs/yahoo-japan-search-ads-campaign-configuration#integrating-with-the-new-api)をご確認ください。
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yjsearch.png" width="121px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yjsearch.png" width="121px" />
 
 <div id="yahoo-japan-search-ads-integration-principles" />
 

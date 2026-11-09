@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要**：AppsFlyerの連携パートナーであるironSourceは、アプリ開発者やデバイスメーカー、モバイル通信業者、広告主向けに、収益化、エンゲージメント、アナリティクス、ディスカバリーツールを構築しています。クリックに基づくモバイル計測に加えて、ironSourceでは、AppsFlyerで計測できるコスト、広告収益、リターゲティング、ビュースルー計測を提供しています。
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
 <div id="note-1" />
 

@@ -32,7 +32,7 @@ x-zendesk:
 
 新規ユーザーは、最初の広告閲覧から収益の発生に至るまで、マーケティングファネルの各段階を進みます。各段階で、次の段階に進む割合は異なります。ユーザーが先の段階まで進むほど、モバイル広告主にとっての成果が高まります。マーケティングファネルの各段階を以下の図に示します。
 
-![ua_funnel_2_en-us.png](https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png)
+<Image align="center" alt="ua_funnel_2_en-us.png" src="https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png" />
 
 <div id="marketing-funnel-stages-and-conversion-rates" />
 

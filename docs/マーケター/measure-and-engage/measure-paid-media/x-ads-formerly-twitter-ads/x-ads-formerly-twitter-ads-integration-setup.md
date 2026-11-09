@@ -45,7 +45,7 @@ X広告はアドバンスSRNであり、AppsFlyerは、広告IDを取得でき�
    * IPアドレス
    * ユーザーエージェント
 
-   [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
+   <Image align="center" alt="_- visual selection.png" src="https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png" />
 
 <div id="connecting-your-x-ads-account-to-appsflyer" />
 
@@ -64,11 +64,11 @@ X広告はアドバンスSRNであり、AppsFlyerは、広告IDを取得でき�
 2. **Simple (NEW)** または **Advanced** キャンペーンのいずれかを選択するように求められたら、**Advaned** を選択します。
 3. **キャンペーンの目的**で、**アプリインストール**または**アプリエンゲージメント**を選択し、**次へ**をクリックします。
 
-   ![X-Ads-campaign-objective.png](https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png)
+   <Image align="center" alt="X-Ads-campaign-objective.png" src="https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png" />
 4. アプリを選択し、**モバイル測定パートナー**をクリックします。
 5. **コンバージョントラッキング**画面で、**AppsFlyerへ移動**をクリックします。
 
-   ![X-Ads-mmp-selection.png](https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png)
+   <Image align="center" alt="X-Ads-mmp-selection.png" src="https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png" />
 6. X広告からAppsFlyerのウェブサイトに移動することを知らせるメッセージが表示されます。**AppsFlyerに移動**をクリックしてAppsFlyer管理画面にログインします。
 7. AppsFlyer管理画面 左メニュー **連携** > **連携済みパートナー**へ移動します。
 8. **X広告**を検索して選択します。
@@ -97,7 +97,7 @@ X広告はアドバンスSRNであり、AppsFlyerは、広告IDを取得でき�
 
 アトリビューションを有効にする広告アカウントを選択してください。
 
-![X-Ads_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
+<Image align="center" alt="X-Ads_msc_new_4.png" src="https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png" />
 
 **注記：** AppsFlyerでは最大200個の広告アカウントを接続できます。この上限に達しないようにし、すべてのアクティブなアカウントのアトリビューションを継続するために、使用されていない広告アカウントを削除することをお勧めします。
 
@@ -126,7 +126,7 @@ iOSアプリのみ：<strong>高プライバシーポストバック（AP）</st
 
 この値は、1～23時間または1～30日間のいずれかに設定できます。X広告管理画面の設定に合わせて、クリックスルーのルックバック期間を14日に設定することをお勧めします。
 
-![X-Ads_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
+<Image align="center" alt="X-Ads_msc_new_6.png" src="https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png" />
 
 <div id="view-through-attribution-lookback-window" />
 
@@ -136,7 +136,7 @@ iOSアプリのみ：<strong>高プライバシーポストバック（AP）</st
 
 この値は1～23時間または1～7日間で設定できます。  X広告管理画面の設定に合わせて、ビュースルーのルックバック期間を1日に設定することをお勧めします。
 
-![X-Ads_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
+<Image align="center" alt="X-Ads_msc_new_7.png" src="https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png" />
 
 <div id="reinstall-settings" />
 
@@ -168,7 +168,7 @@ X広告のリターゲティング計測は、リエンゲージメントコン�
 
 **リエンゲージメントCVのクリックスルー ルックバック期間**を設定します（広告がクリックされてからの最大期間。この期間内に、リターゲティングされたユーザーを広告に紐づけることができます）。値は、時間数（最大23時間）または日数（1～30日）を設定できます。
 
-![X-Ads-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+<Image align="center" alt="X-Ads-reengagement-activate.png" src="https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png" />
 
 <div id="re-engagement-view-through-lookback-window" />
 
@@ -178,7 +178,7 @@ X広告のリターゲティング計測は、リエンゲージメントコン�
 
 **リエンゲージメントCV - ビュースルー：ルックバック期間**を設定します（広告が閲覧されてからの最大期間。この期間内に、リターゲティングされたユーザーを広告に紐づけることができます）。値は、時間数（最大23）または日数（1～7）を設定できます。
 
-![X-Ads-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
+<Image align="center" alt="X-Ads-reengagement-view-through.png" src="https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png" />
 
 <div id="re-engagement-window" />
 
@@ -186,7 +186,7 @@ X広告のリターゲティング計測は、リエンゲージメントコン�
 
 **リエンゲージメント期間**（アプリ内イベントをリターゲティング媒体の成果に紐づける期間）の長さを設定します。値は、日数（1～90）、時間数（最大23）または lifetime（ライフタイム）を設定できます。
 
-<Image alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
+<Image align="center" alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -200,7 +200,7 @@ X広告のリターゲティング計測は、リエンゲージメントコン�
 
 このセクションでは、パートナーへポストバックするAppsFlyerのイベントをマッピングできます。
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png" />
 
 **アプリ内イベントのポストバックを設定する：**
 

@@ -41,7 +41,7 @@ Meta広告には、マッピングに使用できる<Anchor target="_blank" href
 
 詳細は、<Anchor target="_blank" href="/marketers/ja/docs/meta-ads-integration-setup#inapp-event-mapping">Meta広告へのイベントのマッピング</Anchor>を参照してください。
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 Meta広告には、アンインストール送信用の定義済みイベントはありません。アンインストールを送信するには、[カスタムイベント](/docs/meta-ads-in-app-event-mapping#カスタムアプリ内イベントのマッピング)を使用してください。
 
@@ -85,7 +85,7 @@ SDKで設定したイベント名とイベント値（イベントパラメー�
 
 これらのイベントを<Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">キャンペーンの最適化に利用することもできます</Anchor>。
 
-[![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
+<Image align="center" alt="" src="https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png" />
 
 <div id="automatic-parameter-mapping-with-the-custom-event" />
 

@@ -30,7 +30,7 @@ x-zendesk:
 
 ## 概要
 
-![6133DataLockerForAdvertisers.png](https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png)
+<Image align="center" alt="6133DataLockerForAdvertisers.png" src="https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png" />
 
 Data Locker設定画面で、クラウドストレージに格納するAppsFlyerから配信するデータに含めたいアプリ、メディアソース、イベント、レポートを柔軟に選択することができます。その後、ストレージから自社システムへプログラムで読み込ませる形で自社データなどと連携します。
 
@@ -290,7 +290,7 @@ Data Locker設定画面で、クラウドストレージに格納するAppsFlyer
 
 1. 選択したレポートダイアログの**フィールド**タブの下で、任意のフィールドにカーソルを合わせると、その説明が表示されます。HQ1\_2024-08-26\_15.44.23.png
 
-   [![HQ1_2024-08-26_15.44.23.png](https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png)](https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png)
+   <Image align="center" alt="HQ1_2024-08-26_15.44.23.png" src="https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png" />
 2. レポートに含めたいフィールドをチェックするか、レポートから除外したいフィールドのチェックを外してください。
 3. **適用**をクリックして設定を保存します。
 
@@ -437,7 +437,7 @@ Data Locker接続の所有者をデータアクセス制限のあるユーザー
 
 クラウドバケットストレージ内のデータは、レポートタイプ、日付、時刻に従って階層フォルダ構造に編成されます。次の図は、この構造の例を示しています：
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 特定のレポートのデータは、そのレポートに紐付けられた時間 (h) フォルダに格納されます。
 
@@ -728,7 +728,7 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
 3. **変更を保存**をクリックします。
 4. Buckets **> Add External Bucket**をクリックします。   
    「外部バケットの追加」ウィンドウが開きます。   
-   <Image alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
+   <Image align="center" alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
 5. <strong>バケット名を入力します。</strong>バケット名は以下の形式です： `{Bucket Name}/{Home Folder}`.バケット名とホームフォルダに必要な値は認証情報ウィンドウに表示されます。
 6. **Add External bucket**をクリックします。バケットが作成され、ウィンドウの左側のパネルに表示されます。   
    これで、Data Lockerファイルにアクセスできます。

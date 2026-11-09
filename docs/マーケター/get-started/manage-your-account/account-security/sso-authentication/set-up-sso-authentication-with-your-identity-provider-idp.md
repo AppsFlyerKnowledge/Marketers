@@ -139,7 +139,7 @@ IdP側の設定が完了したら、以下の手順でAppsFlyerにSSO認証を�
 
 ユーザーは<Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">AppsFlyerのSSOログインページ</Anchor>で<strong>［SSOでログイン］</strong>をクリックし、メールアドレスを入力します。認証のためにIdPへ移動し、認証後にAppsFlyerのホームページへ戻ります。
 
-[<Image alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)
+<Image align="center" alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />
 
 <div id="note-4" />
 
@@ -331,7 +331,7 @@ IdPからログインする方式を設定した場合は、IdPのプラグイ�
 
 サービスプロバイダー（AppsFlyer）からログインする方式を設定した場合は、次の手順で、メールアドレスを使ってAppsFlyerにアクセスできることを確認します。
 
-<Image alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
+<Image align="center" alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
 
 1. AppsFlyerとIdPにログインしている場合は、両方からログアウトします。
 2. ブラウザでシークレットモードのページを開きます。

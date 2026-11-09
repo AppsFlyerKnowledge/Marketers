@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **概要：** Amazon Ads（amazondsp\_int）はAppsFlyerの<Anchor target="_blank" href="/marketers/ja/docs/self-reporting-networks-srns">SRN</Anchor>連携パートナーで、TV・タブレット・モバイルデバイスにおけるクリックおよびインプレッションベースのアトリビューションをAppsFlyer上で計測できます。
 
-![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png" />
 
 <div id="activate-partner" />
 

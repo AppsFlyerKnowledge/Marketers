@@ -56,7 +56,7 @@ x-zendesk:
 2. ページ右上からクリック **接続管理**> **+ 新しい接続**.
 3. では **新しい接続** ダイアログ、選択 **データプロバイダー**> **Salesforce Data Cloud**.  
 
-   <Image alt="salesforce-data-cloud-new-connection.jpg" src="https://files.readme.io/6b240e0cff3f0bc9e6b7f6eaf45520a78252e1619769a696855e8d68d322ce60-23301617982353.jpg" width="517px" />
+   <Image align="center" alt="salesforce-data-cloud-new-connection.jpg" src="https://files.readme.io/6b240e0cff3f0bc9e6b7f6eaf45520a78252e1619769a696855e8d68d322ce60-23301617982353.jpg" width="517px" />
 4. カチッ **Salesforceにログイン**.
 5. 認証プロセスを進め、SalesforceにAppsFlyerへのアクセスを許可してください。   
    **注記：** 認証が失敗した場合、次のサイトに戻されます。 **新しい接続** ダイアログで再挑戦してください。
@@ -87,7 +87,7 @@ Salesforceアカウントを認証し、Salesforce Data Cloudとの接続を設�
    * 接続の選択接続を追加した後、Salesforce Data Cloudは自動で登録されます。もしなければ、接続リストから選択してください。
    * *テーブルまたはビューSalesforce Data Cloud接続を選択すると、Salesforceアカウントのテーブル名やビューが自動で入力されます。テーブルまたはビューを選択し、クリック **次**.  
 
-     ![create-source-sf-3-steps.jpg](https://files.readme.io/44549ef1cd59b99610944c604c1cdfd4d598352cd106877fab3a301ce14650f8-23306070497169.jpg)
+     <Image align="center" alt="create-source-sf-3-steps.jpg" src="https://files.readme.io/44549ef1cd59b99610944c604c1cdfd4d598352cd106877fab3a301ce14650f8-23306070497169.jpg" />
 3. **ソーススキーマの設定:** テーブルやビューを選択すると、フィールド名とタイプは自動的に入力されます。フィールドの列の最後にあるビンアイコンを選択することで、フィールドタイプを編集したり不要なフィールドを削除したりできます。  
    **注記：** 少なくとも1種類のフィールドタイプが識別子として使われるようにしてください。例えば、CUID、Platform ID、AppsFlyer ID、SHA256ハッシュIDなどです。
 4. **保存**をクリックしてください。新しいソースは既存のすべてのソースのリストに表示されます。

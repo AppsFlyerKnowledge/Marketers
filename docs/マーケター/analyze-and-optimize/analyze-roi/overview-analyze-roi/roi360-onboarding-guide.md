@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **概要**：この記事の導入手順に従って、ROI360で広告費と収益のデータを取得するための設定を行います。
 
-![](https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png)
+<Image align="center" alt="" src="https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png" />
 
 <div id="about-roi360" />
 
@@ -40,7 +40,7 @@ ROI360は、広告費と収益のレポートに特化したツール群で、�
 
 <Accordion title="広告費データの取得設定">
 
-![](https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png)
+<Image align="center" alt="" src="https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png" />
 
 ROI360の広告費ソリューションでは、広告費とROIの詳細なデータを取得できます。データは1日に複数回更新されます。アドネットワーク、自社メディア、代理店のいずれを利用する場合でも、キャンペーンの広告費を効果的に管理し、メディアソース（アドネットワーク）、キャンペーン、地域ごとの予算配分を確認できます。
 
@@ -64,7 +64,7 @@ ROI360の広告費ソリューションでは、広告費とROIの詳細なデ�
 
 <Accordion title="広告収益データの取得設定">
 
-![](https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png)
+<Image align="center" alt="" src="https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png" />
 
 ROI360の広告収益ソリューションでは、分析に役立つ詳細な広告収益データを取得できます。データは1日に複数回更新されます。
 
@@ -88,7 +88,7 @@ ROI360の広告収益ソリューションでは、分析に役立つ詳細な�
 
 <Accordion title="アプリ内課金・サブスクリプション収益の取得設定">
 
-![](https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png)
+<Image align="center" alt="" src="https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png" />
 
 ROI360の収益ソリューションを使用すると、収益状況を把握し、計画的に管理できます。
 

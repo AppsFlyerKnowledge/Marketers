@@ -320,7 +320,7 @@ AppsFlyerは、補完されたレコードをもとにアトリビューショ�
 
 DCPのオンサイト／オフサイトのアトリビューションフローでは、すべてのコンバージョンデータに対して重複排除、アトリビューション、情報の補完、統合を行い、1つの統合パフォーマンスデータセットを生成します。
 
-[<Image alt="Notion 2025-08-25 16.10.35.png" src="https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png" width="1622px" />](https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png)
+<Image align="center" alt="Notion 2025-08-25 16.10.35.png" src="https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png" width="1622px" />
 
 <div id="1-on-site-and-off-site-record-processing-is-performed" />
 

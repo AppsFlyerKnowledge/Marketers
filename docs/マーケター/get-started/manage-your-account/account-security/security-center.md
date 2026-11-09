@@ -40,7 +40,7 @@ x-zendesk:
 | <span id="appsflyer-api-and-s2s-tokens"></span><Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens">AppsFlyerトークン</Anchor> | AppsFlyerトークンを使って、APIやS2Sの呼び出しを認証します。トークンを管理し、定期的に切り替えることで、安全性を高めます。 |
 | <span id="audit-log"></span><Anchor target="_blank" href="/marketers/ja/docs/audit-log">監査ログ</Anchor> | ログイン、ユーザー管理、API呼び出しなど、アカウント内の操作を確認し、不正アクセスを特定します。 |
 
-[![new-security-center.jpg](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)](https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg)
+<Image align="center" alt="new-security-center.jpg" src="https://files.readme.io/7e67e2d954ebaef755a63360a2f2a20983cbd4617383aca9e32a7efd083263ba-51409516770705.jpg" />
 
 **セキュリティセンターを開くには、次の手順に従います。**
 

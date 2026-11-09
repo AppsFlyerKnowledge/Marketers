@@ -35,7 +35,7 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerは、アプリのインストールやリエンゲージメントにつながったメディアソースを特定し、AppsFlyerのアトリビューションモデルに基づいて、そのユーザー行動を当該メディアソースに紐付けます。
 
-[![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
+<Image align="center" alt="" src="https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png" />
 
 <div id="what-is-attribution" />
 
@@ -79,7 +79,7 @@ AppsFlyerは、以下の表に示す複数のアトリビューション方法�
 
 新規インストールに対して、有効な広告接触が複数ある場合、**AppsFlyerはインプレッションよりもクリックを、確率論的計測よりも決定論的計測を優先します**。各アトリビューション方法は、図に示す優先順位に従って適用されます。
 
-[<Image alt="watefall.png" src="https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png" width="1378px" />](https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png)
+<Image align="center" alt="watefall.png" src="https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png" width="1378px" />
 
 以下では、AppsFlyerの各アトリビューションモデルについて詳しく説明します。
 
@@ -336,7 +336,7 @@ iCloudにバックアップされたアプリを、同じデバイスまたは�
 
 <Accordion title="リターゲティング計測">
 
-![Retargeting_-_Flow__2_.png](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="Retargeting_-_Flow__2_.png" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 <Anchor target="_blank" href="/marketers/ja/docs/set-up-re-attribution-window">リアトリビューション期間</Anchor>内（デフォルトは90日）にアプリを再インストールしたユーザーは、リアトリビューションとして扱われます。リターゲティングキャンペーンへの接触後にこのインストールが発生した場合は、リターゲティングによる再インストール（リアトリビューション）として記録され、<Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide">リターゲティング</Anchor>のレポートに表示されます。
 

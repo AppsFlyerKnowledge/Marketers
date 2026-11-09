@@ -37,7 +37,7 @@ x-zendesk:
 
 パートナーの有効化
 
-![integration_turned_off.png](https://files.readme.io/d43b4f465749e343d9523e90e87e43b77a85cdd920f0c0770a94bcb7a585d920-14979273403793.png)
+<Image align="center" alt="integration_turned_off.png" src="https://files.readme.io/d43b4f465749e343d9523e90e87e43b77a85cdd920f0c0770a94bcb7a585d920-14979273403793.png" />
 
 **連携を有効にする方法：**
 
@@ -65,7 +65,7 @@ x-zendesk:
 2. パートナーの「統合の管理」アイコンをクリックします。
 3. **連携** タブにて、スクロールダウンします。   
 
-   ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
+   <Image align="center" alt="integration-in_app_event_postbacks_toggle.png" src="https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png" />
 
 </Accordion>
 
@@ -81,7 +81,7 @@ x-zendesk:
 
 設定したアプリ内イベントのリストにイベントが含まれていることを確認します。設定されていないアプリ内イベントのデータは、ポストバックは送信されません。
 
-[![list_of_in_app_events.png](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)
+<Image align="center" alt="list_of_in_app_events.png" src="https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png" />
 
 1. AppsFlyer管理画面 左メニュー **連携** > **連携済みパートナー**を選択します。
 2. パートナーの「統合の管理」アイコンをクリックします。
@@ -95,7 +95,7 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#イベントマッピング">イベントマッピング</Anchor>が間違っていないかどうか確認します。AppsFlyer SDKイベント<strong>（モバイルアプリまたはS2S経由でAppsFlyer上で計測したイベント名）が、パートナー側のイベント名（パートナーによって使用される正確なイベント名）と一致することを確認してください。</strong>
 
-[![in_app_event_postback_mapping_2.png](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)
+<Image align="center" alt="in_app_event_postback_mapping_2.png" src="https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png" />
 
 </Accordion>
 
@@ -105,7 +105,7 @@ x-zendesk:
 
 イベントに条件が定義されている場合は、その条件に従ってポストバックが送信されます。ポストバック送信を制限する条件があるかどうかを確認します。
 
-[![in_app_event_condition__1_.png](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)
+<Image align="center" alt="in_app_event_condition__1_.png" src="https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png" />
 
 </Accordion>
 
@@ -115,7 +115,7 @@ x-zendesk:
 
 アプリ内イベントの設定が、<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#ポストバック送信のオプション">**このパートナーのみ**にポストバックを送信するか、**オーガニックを含むすべてのメディアソース**に送信する</Anchor>よう設定されているかどうかを確認します。このパートナーのみに設定されている場合は、アトリビューションされたデータのみがポストバックを取得します。
 
-[![in_app_event_sending_options.png](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)
+<Image align="center" alt="in_app_event_sending_options.png" src="https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png" />
 
 </Accordion>
 
@@ -125,7 +125,7 @@ x-zendesk:
 
 ポストバックは、<Anchor target="_blank" href="/marketers/ja/docs/in-app-event-postback-configuration#アプリ内イベントポストバック期間">ポストバック期間</Anchor>の設定に基づいて送信されます。この期間以降のイベントのポストバックはパートナーに送信されませんが、イベントは引き続きAppsFlyerに記録されます。
 
-![in_app_event_postback_window.png](https://files.readme.io/21cae7825d557c1ee89c890ec64c922cb36e31be882850a26bfdc4e5595773f0-14661845664401.png)
+<Image align="center" alt="in_app_event_postback_window.png" src="https://files.readme.io/21cae7825d557c1ee89c890ec64c922cb36e31be882850a26bfdc4e5595773f0-14661845664401.png" />
 
 <Anchor target="_blank" href="/marketers/ja/docs/self-reporting-networks-srns">SRN</Anchor>の場合、アプリ内イベントのポストバックは 、パートナーのデータ保持期間中のみ送信されます 。
 
@@ -155,7 +155,7 @@ x-zendesk:
 
 <Anchor target="_blank" href="/marketers/ja/docs/apply-aggregated-advanced-privacy-framework#partner-advanced-privacy-switch">高プライバシーポストバック</Anchor>が有効になっているが、パートナー側で高プライバシーポストバックに対応していない場合、<Anchor target="_blank" href="/partners/ja/docs/advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">高度なプライバシーポストバック</Anchor>は受信されません。
 
-![partner_not_supporting_ap_postbacks.png](https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png)
+<Image align="center" alt="partner_not_supporting_ap_postbacks.png" src="https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png" />
 
 </Accordion>
 

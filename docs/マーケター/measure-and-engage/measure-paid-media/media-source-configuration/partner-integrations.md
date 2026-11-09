@@ -61,7 +61,7 @@ x-zendesk:
 * パートナーリストを[フィルター](/docs/partner-integrations#パートナーリストのフィルター)する
 * 特定のパートナーを[検索](/docs/partner-integrations#パートナーについて学ぶ)する
 
-[![partner marketplace updated.png](https://support.appsflyer.com/hc/article_attachments/30603947718801)](https://support.appsflyer.com/hc/article_attachments/30603947718801)
+<Image align="center" alt="partner marketplace updated.png" src="https://support.appsflyer.com/hc/article_attachments/30603947718801" />
 
 ### パートナーマーケットプレイスを探索する
 
@@ -78,7 +78,7 @@ x-zendesk:
 
 #### パートナーカード
 
-![google_meta.png](https://support.appsflyer.com/hc/article_attachments/30603947722129)
+<Image align="center" alt="google_meta.png" src="https://support.appsflyer.com/hc/article_attachments/30603947722129" />
 
 パートナーサービスに関する基本情報については、パートナーカードを参照してください。
 
@@ -121,7 +121,7 @@ DCRパートナーは、ファーストパーティおよびサードパーテ�
 
 ### パートナーを探す
 
-![パートナー検索3.png](https://support.appsflyer.com/hc/article_attachments/30603976116369)
+<Image align="center" alt="パートナー検索3.png" src="https://support.appsflyer.com/hc/article_attachments/30603976116369" />
 
 特定のパートナーを検索するには、パートナーマーケットプレイスの検索バーを使用してください。パートナーマーケットプレイスで検索バーを使用する場合：
 
@@ -187,7 +187,7 @@ AppsFlyerは、お客様に代わって紹介メールを送信することで�
 
 #### パートナーのパフォーマンス
 
-[![Partner performance page.png](https://support.appsflyer.com/hc/article_attachments/30603976126097)](https://support.appsflyer.com/hc/article_attachments/30603976126097)
+<Image align="center" alt="Partner performance page.png" src="https://support.appsflyer.com/hc/article_attachments/30603976126097" />
 
 マーケターの判断をサポートするために、このセクションではパートナーのパフォーマンスメトリックを示し、品質レベルを明示しています。
 
@@ -251,7 +251,7 @@ AppsFlyerは、お客様に代わって紹介メールを送信することで�
 
 1. AppsFlyer管理画面 左メニュー **連携** > **パートナーマーケットプレイス** を選択します。
 2. パートナーマーケットプレイスページの右上隅にある3つのドットをクリックして、**新規パートナーの招待**を選択します。   
-   [![invite_new_partner.png](https://support.appsflyer.com/hc/article_attachments/30603976129297)](https://support.appsflyer.com/hc/article_attachments/30603976129297)
+   <Image align="center" alt="invite_new_partner.png" src="https://support.appsflyer.com/hc/article_attachments/30603976129297" />
 3. パートナーの名前と関連するメールアドレスを入力します。  
    パートナーには、登録リンクが記載されたメールが送信され、サインアッププロセスが始まります。
 
@@ -285,7 +285,7 @@ AppsFlyerは、お客様に代わって紹介メールを送信することで�
 
 #### 連携済みパートナー — ページ
 
-[![active integratins page.png](https://support.appsflyer.com/hc/article_attachments/30603976137617)](https://support.appsflyer.com/hc/article_attachments/30603976137617)
+<Image align="center" alt="active integratins page.png" src="https://support.appsflyer.com/hc/article_attachments/30603976137617" />
 
 **連携済みパートナー**画面には、すべての<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">アクティブな</Anchor>連携パートナーが表示されます。このページから、連携の管理、アクティブなパートナー内の検索、および現在選択されているアプリに接続されていないパートナーの新しい連携を作成することができます。**連携済みパートナー**画面は2つのセクションに分かれています：
 

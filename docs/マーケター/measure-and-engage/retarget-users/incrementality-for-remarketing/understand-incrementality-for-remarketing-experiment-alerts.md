@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：**
 
-![exp_alerts_doctored.jpg](https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg)
+<Image align="center" alt="exp_alerts_doctored.jpg" src="https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg" />
 
 
 <Anchor target="_blank" href="/marketers/ja/docs/run-an-incrementality-for-remarketing-experiment"><span id="about-experiment-alerts"></span>Incrementality純増検証を設定</Anchor>すると、Incrementalityダッシュボードでアラートが表示される場合があります。これらのアラートは、テスト結果の整合性と正確性を損なう可能性のある問題を特定するのに役立つように設計されています。アラートは、問題に関する具体的な情報を提供し、それらに対処することで、正確な実験結果を確実にするために取ることができる行動を提案します。この記事では、さまざまな種類のアラートの包括的な概要と、問題を解決するための推奨アクションについて説明します。

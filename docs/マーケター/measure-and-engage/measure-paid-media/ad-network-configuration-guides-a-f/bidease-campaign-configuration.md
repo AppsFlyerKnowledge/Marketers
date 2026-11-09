@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **概要：**
 
-<Image alt="bidease.png" src="https://files.readme.io/4a3373c0fdb73190017601c374ca7634cc0feb1954b6e23fc1bd9693c60605f9-20106376017041.png" width="298px" />
+<Image align="center" alt="bidease.png" src="https://files.readme.io/4a3373c0fdb73190017601c374ca7634cc0feb1954b6e23fc1bd9693c60605f9-20106376017041.png" width="298px" />
 
 <div id="setting-up-bidease" />
 

@@ -60,7 +60,7 @@ OneLink APIは、あらゆるオウンドチャネルをモバイルアプリへ
 1. <Anchor target="_blank" href="/marketers/ja/docs/managing-appsflyer-tokens#トークンの種類">OneLink APIトークン</Anchor>を生成します（管理者権限が必要です）。
 2. <Anchor target="_blank" href="/marketers/ja/docs/create-a-onelink-template#onelinkテンプレートの作成">OneLinkテンプレートを作成</Anchor>します。
 3. テンプレートIDをコピーします。   
-   [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg" />
 4. テンプレートIDとAPIトークンを開発者に共有し、<Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview">こちらの手順</Anchor>に従って実装するよう依頼します。
 
 <div id="dashboard" />

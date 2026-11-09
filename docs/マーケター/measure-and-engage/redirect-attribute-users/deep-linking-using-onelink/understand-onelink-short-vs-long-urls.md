@@ -73,7 +73,7 @@ x-zendesk:
 
 1. AppsFlyerで［**OneLinkカスタムリンク**］に移動します。  
    OneLinkの一覧が表示されます。  
-   [![](https://files.readme.io/53bd68c390389e48eb55802418c601e7523ab7d816d21c1ae672ed55d7ade365-360016243798.jpg)](https://files.readme.io/53bd68c390389e48eb55802418c601e7523ab7d816d21c1ae672ed55d7ade365-360016243798.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/53bd68c390389e48eb55802418c601e7523ab7d816d21c1ae672ed55d7ade365-360016243798.jpg" />
 2. ロングURLを取得するリンクの［**アクション**］列で、［**URLを取得**］をクリックします。  
    ロングURLが表示されます。
 

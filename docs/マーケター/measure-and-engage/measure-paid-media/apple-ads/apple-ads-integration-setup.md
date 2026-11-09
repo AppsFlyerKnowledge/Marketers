@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerのSRN媒体であるApple Search Ads（ASA）は、ユーザーがキーワードを使用してApp Storeでアプリを見つけるのに役立ちます。
 
-<Image alt="apple_search_ads.png" src="https://files.readme.io/5f884c88c860c7fa0c987c1a9108c2c54aff319bd143d37516ff3556940bcd81-51910174096657.png" width="217px" />
+<Image align="center" alt="apple_search_ads.png" src="https://files.readme.io/5f884c88c860c7fa0c987c1a9108c2c54aff319bd143d37516ff3556940bcd81-51910174096657.png" width="217px" />
 
 アプリとの関連性は、App Store上での検索クエリに応じて表示される広告があなたの広告であるかどうかを判断します。アプリ広告に対するユーザーの反応が、広告の関連性を判定する要素になります。ASAは、ユーザーの反応をシグナルとしてどの広告を最も多く表示するかを決定します。
 
@@ -316,11 +316,11 @@ AppsFlyerリターゲティング計測メカニズムにより、広告主は�
 
 **リターゲティングがオン**
 
-[![ASA R Enabled2.jpg](https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg)](https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg)
+<Image align="center" alt="ASA R Enabled2.jpg" src="https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg" />
 
 **リターゲティングがオフ**
 
-[![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+<Image align="center" alt="ASA_R_Disabled.png" src="https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png" />
 
 <div id="20260901" />
 

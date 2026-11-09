@@ -46,7 +46,7 @@ AppsFlyerでは、どの種類のMeta広告から発生したモバイルアプ�
 4. 続いて、通常どおり**広告セット**と**広告**を設定します。
 5. <strong>［広告］</strong>タブの［モバイルアプリイベントの記録］で、必ずアプリを関連付けてください。
 
-![fb_app_events_ui.jpg](https://files.readme.io/304df530557ddaf6252d9a7c11fcb54b549f5cbdb7ebd4b0da61f847a57867a3-360016319338.jpg)
+<Image align="center" alt="fb_app_events_ui.jpg" src="https://files.readme.io/304df530557ddaf6252d9a7c11fcb54b549f5cbdb7ebd4b0da61f847a57867a3-360016319338.jpg" />
 
 設定が完了すると、これらの広告から発生したモバイルアプリのインストールが、Meta広告とAppsFlyerの両方のダッシュボードにリアルタイムで表示されます。
 

@@ -49,7 +49,7 @@ AppsFlyer Adobe SDK 拡張機能を統合する前に、いくつかのことが
 
 <Accordion title="AppsFlyer 開発キー の取得">
 
-<Image alt="dev_key.png" src="https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png" width="357px" />
+<Image align="center" alt="dev_key.png" src="https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png" width="357px" />
 
 1. アプリの管理画面上で、左メニュー内の***設定***の下にある***アプリ設定***をクリックしてください。
 2. ***SDK のインストール***の下にある、***開発キー***をコピーしてください。
@@ -75,7 +75,7 @@ Adobe Launch を設定するには、こちらの手順に従ってください�
 
 <Accordion title="1.1 Adobe Launch で新しいプロパティを作成する">
 
-[![](https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png)](https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png)
+<Image align="center" alt="" src="https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png" />
 
 1. Adobe Experience Cloud にログインします。
 2. ***起動***を選択します。
@@ -92,7 +92,7 @@ Adobe Launch を設定するには、こちらの手順に従ってください�
 
 Adobe Launch に以下の拡張機能をインストールします：
 
-[![adboe_extensions.png](https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png)](https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png)
+<Image align="center" alt="adboe_extensions.png" src="https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png" />
 
 * Adobe Analytics - SDK から記録されたデータを Adobe Analytics モジュールに接続します。
 * AppsFlyer SDK E拡張機能 - Adobe Launch SDK を使用して、Adobe と AppsFlyer の両方にデータとイベントを送信します。
@@ -144,7 +144,7 @@ Adobe Launch に以下の拡張機能をインストールします：
 
 <Accordion title="2.1 SDK をアプリに追加する">
 
-[![adobe_sdk.png](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)
+<Image align="center" alt="adobe_sdk.png" src="https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png" />
 
 1. Adobe のプロパティで ***環境***を選択します。
 2. SDK をデプロイする環境を選択します。
@@ -159,7 +159,7 @@ Adobe Launch に以下の拡張機能をインストールします：
 
 SDK の実装を完了するには、環境をライブラリに公開する必要があります。
 
-[![adobe_publishing.png](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)
+<Image align="center" alt="adobe_publishing.png" src="https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png" />
 
 1. Adobe のプロパティで、 ***公開***を選択します。
 2. ***新しいライブラリの追加***をクリックします。
@@ -208,7 +208,7 @@ dependency としてAndroid インストールリファラを追加します。�
    ```
 2. 次のスクリーンショットを参考に dependencies を取得して、プロジェクトを同期してください。  
 
-   [![android_af_sdk_sync_gradle.png](https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png)](https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png)
+   <Image align="center" alt="android_af_sdk_sync_gradle.png" src="https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png" />
 
 ProGuard を使用中で、Google の新しいリファラ API を使用したい場合は、以下の ProGuard ルールを設定する必要があります。`-dontwarn com.android.installreferrer`
 
@@ -381,7 +381,7 @@ AppDelegate.m で、以下のコードを実装します：
 
 コンバージョンデータは、イベントとともに Adobe プラットフォームに送信されます。これらの変数を使用すると、レポートのディメンション、メトリクス、またはフィルタにロジックやルールを適用できます。
 
-1. [![](https://files.readme.io/d56f170695893dbbde00c50c838ce8a5c2cfe418a17692f372e208d458ed2d6c-31205379096465.png)](https://files.readme.io/d56f170695893dbbde00c50c838ce8a5c2cfe418a17692f372e208d458ed2d6c-31205379096465.png)
+1. <Image align="center" alt="" src="https://files.readme.io/d56f170695893dbbde00c50c838ce8a5c2cfe418a17692f372e208d458ed2d6c-31205379096465.png" />
 
 AppsFlyer Context 変数のマッピングについては、以下の表を参照してください：
 

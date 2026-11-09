@@ -53,7 +53,7 @@ Protect360ダッシュボードを開くには、AppsFlyerで**最適化** > **P
 
 **フィルタとグループ化の画面**
 
-[![p360_filters_2.png](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)
+<Image align="center" alt="p360_filters_2.png" src="https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png" />
 
 次のフィルタとグループ化の項目を利用できます。
 
@@ -106,7 +106,7 @@ Protect360ダッシュボードを開くには、AppsFlyerで**最適化** > **P
 
 **検知された不正なアトリビューション**
 
-[<Image alt="" src="https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png" width="100%" />](https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png)
+<Image align="center" alt="" src="https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png" width="100%" />
 
 検知された不正の合計指標には、次の件数が表示されます。
 
@@ -115,31 +115,31 @@ Protect360ダッシュボードを開くには、AppsFlyerで**最適化** > **P
 
 **ブロックされたアプリ内イベント**
 
-[<Image alt="" src="https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png" width="100%" />](https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png)
+<Image align="center" alt="" src="https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png" width="100%" />
 
 ブロックされたアプリ内イベントの指標には、AppsFlyerがブロックしたアプリ内イベントの件数が表示されます。イベントがブロックされる理由には、ブロックされたインストールに紐づいている場合や、ポストアトリビューションで不審なイベントと判定された場合があります。
 
 **タグ付けされたアトリビューションの総数**
 
-[<Image alt="" src="https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png" width="100%" />](https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png)
+<Image align="center" alt="" src="https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png" width="100%" />
 
 タグ付けされたアトリビューションの指標には、不正と判定されたものの、ユーザーの設定によりブロックせずにタグ付けされたインストールの件数が表示されます。アプリ内イベントは含まれません。
 
 **タグ付けされたアプリ内イベントの総数**
 
-[<Image alt="" src="https://files.readme.io/79650837a722efdc3bea39664f0d5eb774ac6acbfb15e5f64d9a56f7c03b21fe-32637238112145.png" width="100%" />](https://files.readme.io/49e705c39b88c243af92c88e33d1939d1ec54b6a83e94724bdef702c9442a6a6-32184720638097.png)
+<Image align="center" alt="" src="https://files.readme.io/79650837a722efdc3bea39664f0d5eb774ac6acbfb15e5f64d9a56f7c03b21fe-32637238112145.png" width="100%" />
 
 タグ付けされたアプリ内イベントの指標には、不正と判定されたものの、ユーザーの設定によりブロックせずにタグ付けされたインストールの件数が表示されます。
 
 **不正な広告接触の影響を受けたインストール**
 
-<Image alt="" src="https://files.readme.io/60fdba97e9eb920e26ac2667431b760a7dee62b53396196403d68326bff6c3cc-41459847283729.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/60fdba97e9eb920e26ac2667431b760a7dee62b53396196403d68326bff6c3cc-41459847283729.png" width="624px" />
 
 AppsFlyerのアトリビューション判定ロジックにより、デバイスに大量の偽の広告接触が送信されたと判定されたインストールです。
 
 **インストールあたりの平均エンゲージメント数**
 
-<Image alt="" src="https://files.readme.io/edb695ad30e16e403d953fd0fad274d5733ca4e2dc411baad7bbe4179cfcd0b0-41459862819857.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/edb695ad30e16e403d953fd0fad274d5733ca4e2dc411baad7bbe4179cfcd0b0-41459862819857.png" width="624px" />
 
  インストールあたりの平均エンゲージメント数は、インストールに関連する広告接触の平均件数を示します。
 
@@ -230,7 +230,7 @@ AppsFlyerの新しい**Affiliate Attribution Model**（アフィリエイト向�
 
 表には、次の画像のように全体の概要が表示されます。
 
-[![p360_main_table.png](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)
+<Image align="center" alt="p360_main_table.png" src="https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png" />
 
 表の表示項目は変更できます。
 
@@ -238,7 +238,7 @@ AppsFlyerの新しい**Affiliate Attribution Model**（アフィリエイト向�
   表を変更した場合は、必ず**保存**ボタンをクリックしてください。
 * 表の設定はユーザーごとに保存されるため、Protect360にアクセスできる各アカウントユーザーが、自分の表の表示項目を個別に設定できます。[表のその他の操作](/docs/protect360-dashboard#表のその他の操作)もご覧ください。
 
-[![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+<Image align="center" alt="edit_table.jpg" src="https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg" />
 
 <div id="content-of-the-identified-fraud-breakdown-table" />
 
@@ -336,7 +336,7 @@ CPIダッシュボードのアプリ内イベントデータはLTVベースで�
 
 <Accordion title="アプリ内イベント：主要指標">
 
-[![](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)
+<Image align="center" alt="" src="https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg" />
 
 主要指標では、次の情報を確認できます。
 
@@ -387,7 +387,7 @@ CPIダッシュボードのアプリ内イベントデータはLTVベースで�
 
 表には、次の画像のように全体の概要が表示されます。
 
-[![IAE_fraud_table.jpg](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)
+<Image align="center" alt="IAE_fraud_table.jpg" src="https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg" />
 
 表の表示項目は変更できます。
 
@@ -395,7 +395,7 @@ CPIダッシュボードのアプリ内イベントデータはLTVベースで�
   表を変更した場合は、必ず**保存**ボタンをクリックしてください。
 * 表の設定はユーザーごとに保存されるため、Protect360にアクセスできる各アカウントユーザーが、自分の表の表示項目を個別に設定できます。[表のその他の操作](/docs/protect360-dashboard#installs-table)もご覧ください。
 
-[![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
+<Image align="center" alt="iae_table_structure.jpg" src="https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg" />
 
 <div id="content-of-the-in-app-event-fraud-breakdown-table" />
 
@@ -446,17 +446,17 @@ CPIダッシュボードのアプリ内イベントデータはLTVベースで�
 **アプリ内アクティビティダッシュボードで課金対象イベントを有効にするには**：
 
 * アプリ内アクティビティダッシュボードの**絞り込み**セクションで、課金対象イベントを有効にします。  
-  [![](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)
+  <Image align="center" alt="" src="https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg" />
 
 **課金対象イベントを設定するには**：
 
 1. アプリ内アクティビティダッシュボードで、**課金対象イベントの設定**をクリックします。
 
-   [![](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg" />
 
    課金対象イベントの設定画面が表示されます。
 
-   [![](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg" />
 2. ［任意］新しい課金対象イベントを設定する場合は、**新規追加**をクリックします。
 3. ダッシュボードに表示したい課金対象イベントに応じて、ドロップダウンから次の項目を選択します。
    * アプリ

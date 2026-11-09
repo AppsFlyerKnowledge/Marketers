@@ -196,16 +196,16 @@ Google Ads Webに送信するアプリ内イベントポストバックのマッ
 1. [計測リンクのセクション](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab)の説明に従って、クロスプラットフォーム向けランディングページを設定します。
 2. Google Adsにログインし、新しいキャンペーンを作成します。
 3. キャンペーンの目的を選択してください。  
-   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png" />
    * アプリプロモーション（モバイルアプリのキャンペーンにのみ使用可能）以外の、すべてのキャンペーンの目的が利用可能です。
    * 特定のアプリ内イベントに基づいて最適化するには、キャンペーンの目的を［販売促進］に設定することを推奨します。
 4. コンバージョン目標を選択します。  
-   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)
+   <Image align="center" alt="" src="https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png" />
    * デフォルト設定では、事前に設定されたアカウントレベルのキャンペーン目標が表示されます。そのまま使用することも、キャンペーンに関係のない目標を削除することもできます。
    * 必要な目標が見当たらない場合は、[コンバージョンアクションとコンバージョン目標を追加](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals)します。
    * 定義済みの目標は、［コンバージョン］ページでも編集できます。
 5. キャンペーンタイプを選択してください。  
-   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)
+   <Image align="center" alt="" src="https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png" />
    * 商品カタログが必要で、確認済みのドメインに限定される「ショッピング」を除き、すべてのキャンペーンの種類を選択できます。
 6. Googleの最終ページURLとして、クロスプラットフォーム向けランディングページのURLを入力します。
 
@@ -220,16 +220,16 @@ Google Ads Webに送信するアプリ内イベントポストバックのマッ
 1. [計測リンクのセクション](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab)の説明に従って、ダイレクト計測リンクを設定します。
 2. Google Adsにログインし、新しいキャンペーンを作成します。
 3. キャンペーンの目的を選択してください。  
-   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png" />
    * アプリプロモーション（モバイルアプリのキャンペーンにのみ使用可能）以外の、すべてのキャンペーンの目的が利用可能です。
    * 特定のアプリ内イベントに基づいて最適化するには、キャンペーンの目的を［販売促進］に設定することを推奨します。
 4. コンバージョン目標を選択します。  
-   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)
+   <Image align="center" alt="" src="https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png" />
    * デフォルト設定では、事前に設定されたアカウントレベルのキャンペーン目標が表示されます。そのまま使用することも、キャンペーンに関係のない目標を削除することもできます。
    * 必要な目標が見当たらない場合は、[コンバージョンアクションとコンバージョン目標を追加](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals)します。
    * 定義済みの目標は、［コンバージョン］ページでも編集できます。
 5. キャンペーンタイプを選択してください。  
-   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)
+   <Image align="center" alt="" src="https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png" />
    * 商品カタログが必要で、確認済みのドメインに限定される「ショッピング」を除き、すべてのキャンペーンの種類を選択できます。
 6. Googleの最終ページURLとして使用するリンクを入力します。
    * ユーザーを最終的に誘導したいWeb上の場所を指定する必要があります。 WebランディングページやストアのURLなど、任意のWeb URLを使用できます。例：`https://store.steampowered.com/app/{appid}/{myapp}/`。

@@ -40,7 +40,7 @@ x-zendesk:
 
 以下の画像には、アトリビューションエコシステムを構成するさまざまなパートナータイプが表示されています。
 
-[![Ecosystem.jpg](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)
+<Image align="center" alt="Ecosystem.jpg" src="https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg" />
 
 **関連記事**：<Anchor target="_blank" href="https://www.appsflyer.com/performance-index/">AppsFlyerパフォーマンスインデックス</Anchor>で、カテゴリおよび地域別にモバイルメディアソースのランキングを確認できます。
 
@@ -143,7 +143,7 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 
 パートナー連携の要件はそれぞれ異なり、このセクションで説明されているすべての可能なオプションのサブセットを含めることができます。iOSとAndroidの設定にはいくつか違いがあります。
 
-![連携パートナーの設定.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
+<Image align="center" alt="連携パートナーの設定.png" src="https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png" />
 
 必要に応じて各セクションを完了してください。
 
@@ -437,7 +437,7 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 
 #### 計測リンクパラメーター
 
-[![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
+<Image align="center" alt="attribution-link-parameters-en_us.png" src="https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png" />
 
 計測リンクにパラメーターを追加すると、詳細なドリルダウン分析を実行できます。計測リンクですでに定義されているパラメーターは、それらと新しい値をここで追加することで編集できます。計測リンクを保存すると、このタブで設定したすべてのパラメーターが保存されます。
 
@@ -492,7 +492,7 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 
 **クリック計測リンク**
 
-[![click-through-attribution-link_en-us.png](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)
+<Image align="center" alt="click-through-attribution-link_en-us.png" src="https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png" />
 
 これは、設定したすべての情報を含む計測リンクです。計測リンクを保存するには、**計測リンクを保存**をクリックしてください。
 
@@ -517,7 +517,7 @@ AppsFlyerと連携しているすべてのパートナー、メディアソー�
 
 **インプレッションの計測リンク**
 
-[![impressions-attribution-link_en-us.png](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)
+<Image align="center" alt="impressions-attribution-link_en-us.png" src="https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png" />
 
 インプレッション計測リンクは、異なるルックバック期間を除いて、クリック記録リンクと同様のアトリビューションデータを含んでいます。計測リンクを保存するには、**計測リンクを保存**をクリックしてください。
 

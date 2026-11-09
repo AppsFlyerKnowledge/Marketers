@@ -69,13 +69,13 @@ Unity Adsでキャンペーンを設定するには、以下の手順に従っ�
 
 [連携] タブの上部には、「Unity Adsではインストールごとに端末IDを送信する必要がある」というメモがありますが、これは自動的に行われ、ユーザー側で何もする必要はありません。
 
-[![Unity_msc_new_2.png](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)
+<Image align="center" alt="Unity_msc_new_2.png" src="https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png" />
 
 **Unity Ads Game ID**
 
 Unity Adsでは、一意のゲームIDを介してAppsFlyerに接続する必要があります。**ゲームIDが分からない場合は、Unity Adsから直接入手するか、以下のスクリーンショットに示すように、ゲームをアップロードした後、** アプリ **> キャンペーンで見つけることができます。**
 
-[![](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)
+<Image align="center" alt="" src="https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png" />
 
 Unity Adsプラットフォームは、アカウントレベルごとに 1つのアプリを 1つの Unity Ads ゲーム ID にマッピングします（広告主と代理店は同じアプリに対して異なるゲーム IDを持ちます）。Unity Adsプラットフォームの複数のアカウントで、同じアプリを異なるゲーム IDで実行することはできません。
 
@@ -83,13 +83,13 @@ Unity Adsプラットフォームは、アカウントレベルごとに 1つの
 
 このオプションをオンにすると、Unity Adsからのビュースルーインストールを計測できます。ビュースルールックバック期間は、計測リンクタブ（下記参照）にて設定できます。
 
-![Unity_ads_msc_new_3.png](https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png)
+<Image align="center" alt="Unity_ads_msc_new_3.png" src="https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png" />
 
 <div id="default-postbacks" />
 
 ### デフォルトのポストバック
 
-![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
+<Image align="center" alt="Screen_Shot_2022-07-28_at_13.07.25.png" src="https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png" />
 
 このセクションでは、これらのポストバックの送信を許可するユーザーを定義してください：
 
@@ -108,7 +108,7 @@ Unity Adsプラットフォームは、アカウントレベルごとに 1つの
 
 ポストバック経由でAppsFlyerイベントとパートナーをマッピングします。ポストバック送信が有効な場合、これには拒否されたアプリ内イベント（Protect360 によってブロックされたイベントや、ターゲット検証ルールに準拠していないと判断されたイベント）が含まれます。
 
-[![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+<Image align="center" alt="" src="https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png" />
 
 <div id="important" />
 

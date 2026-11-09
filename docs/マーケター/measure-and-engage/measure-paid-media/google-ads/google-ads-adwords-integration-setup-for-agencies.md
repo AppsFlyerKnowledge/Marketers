@@ -67,31 +67,31 @@ AppsFlyerで 代理店のGoogle Ads計測を開始するには、次のステ�
 
 1. Google Ads管理画面を開き、***ツール***アイコンをクリックします。
 
-![Google_Ag_1.png](https://files.readme.io/3a1188bc11e09779076c880c1b4d5e933845ee642393ff1367b2368c1199d8a2-50897694578449.png)
+<Image align="center" alt="Google_Ag_1.png" src="https://files.readme.io/3a1188bc11e09779076c880c1b4d5e933845ee642393ff1367b2368c1199d8a2-50897694578449.png" />
 
 2. ***リンク済みアカウント*** を選択します。
 
-![Google_Ag_2.png](https://files.readme.io/5bf0fb06df3263bc65a4e7e78539c06f2fce552b24b2913c18e155eff56f18ad-50897658813841.png)
+<Image align="center" alt="Google_Ag_2.png" src="https://files.readme.io/5bf0fb06df3263bc65a4e7e78539c06f2fce552b24b2913c18e155eff56f18ad-50897658813841.png" />
 
 3. ［アプリ分析プロバイダ］でAppsFlyerを探します。[オプション] を選択します。
 
 4. ［***別のアカウントと共有***］をクリックします。
 
-![Google_Ag_3.png](https://files.readme.io/0659fc1f193ffc668f18f13641d07e085c94a97fb9e5c6c0f35188e1c18c632b-50897694583441.png)
+<Image align="center" alt="Google_Ag_3.png" src="https://files.readme.io/0659fc1f193ffc668f18f13641d07e085c94a97fb9e5c6c0f35188e1c18c632b-50897694583441.png" />
 
 5. **代理店のGoogle Adsのお客様ID**を入力します。
 
-![Google_Ag_4.png](https://files.readme.io/cce6c7aa387f354c004682c6d46b804897654c99b3346ce6c27a2bcf43259c2e-50897694584849.png)
+<Image align="center" alt="Google_Ag_4.png" src="https://files.readme.io/cce6c7aa387f354c004682c6d46b804897654c99b3346ce6c27a2bcf43259c2e-50897694584849.png" />
 
 6. [***次へ***] をクリックします。［***招待を送信**］をクリックします。*
 
-![Google_Ag_5.png](https://files.readme.io/d3da1850913f2c2a9b9125460cebd7e61922a177178c48cf23904d5a42445972-50897658822801.png)
+<Image align="center" alt="Google_Ag_5.png" src="https://files.readme.io/d3da1850913f2c2a9b9125460cebd7e61922a177178c48cf23904d5a42445972-50897658822801.png" />
 
 広告主側で、代理店に招待リクエストが送信されたことが確認できます。代理店が招待を承認すると、ステータスが［共有中］に変わります。
 
 Google AdsのリンクIDの共有については、<Anchor target="_blank" href="https://support.google.com/adwords/answer/7365001">こちら</Anchor>を参照してください。
 
-![Google_Ag_6.png](https://files.readme.io/b205e5b2771a128846b22d653998da09f8d600b6b60efb6ca1e90042ffba5ee7-50897694593041.png)
+<Image align="center" alt="Google_Ag_6.png" src="https://files.readme.io/b205e5b2771a128846b22d653998da09f8d600b6b60efb6ca1e90042ffba5ee7-50897694593041.png" />
 
 </Accordion>
 
@@ -101,11 +101,11 @@ Google AdsのリンクIDの共有については、<Anchor target="_blank" href=
 
 Google Ads管理画面にて、代理店は招待を受け取り、リンクを承認する必要があります。
 
-![Google_Ag_7.png](https://files.readme.io/f64942b5f67d9cb3ce692380626d9b87fb43a98ce825544b84e49c36162e349d-50897694593937.png)
+<Image align="center" alt="Google_Ag_7.png" src="https://files.readme.io/f64942b5f67d9cb3ce692380626d9b87fb43a98ce825544b84e49c36162e349d-50897694593937.png" />
 
 代理店側で、リンクのステータスが［有効］になっていることを確認できます。
 
-![Google_ag_8.png](https://files.readme.io/e44b590d4720accfde2ac95b97b18250ba2aab07f12651749592d4ad5aa8c947-50897658832017.png)
+<Image align="center" alt="Google_ag_8.png" src="https://files.readme.io/e44b590d4720accfde2ac95b97b18250ba2aab07f12651749592d4ad5aa8c947-50897658832017.png" />
 
 </Accordion>
 
@@ -118,27 +118,27 @@ Google Ads管理画面にて、代理店は招待を受け取り、リンクを�
 1. AppsFlyerのサイドメニューから、［**コラボレーション**］>［**パートナー連携**］を選択します。
 2. **Google Ads**を検索し、選択してください。
 
-   ![gads-search.png](https://files.readme.io/97f9abe0e6bf4e07b81341f1c0a9978f6387747b412c53f7755c53a76ba0eaeb-50897694596881.png)
+   <Image align="center" alt="gads-search.png" src="https://files.readme.io/97f9abe0e6bf4e07b81341f1c0a9978f6387747b412c53f7755c53a76ba0eaeb-50897694596881.png" />
 
    広告主によって［***パートナーを有効にする***］がオンになっており、［***リンクID***］が設定されていることを確認します。代理店向けには、これらの設定はグレー表示され変更できません。
 
-   ![gads_agency-integration-link-id.png](https://files.readme.io/6d59ccad7fb3a4a0269b9e868e30b0b87eb23a83e07e6ef1d2603815352786bf-50897658836625.png)
+   <Image align="center" alt="gads_agency-integration-link-id.png" src="https://files.readme.io/6d59ccad7fb3a4a0269b9e868e30b0b87eb23a83e07e6ef1d2603815352786bf-50897658836625.png" />
 3. 代理店側でGoogle Adsのお客様IDを設定します。
 
    代理店が広告主のアプリのキャンペーンを運用しているGoogle Adsアカウント（**サブアカウント**）のGoogle Adsのお客様IDを**すべて**入力します。
 
    Google Adsのお客様IDは、左上の矢印をクリックしてナビゲーションパネルを開くと確認できます。
 
-   [![](https://files.readme.io/5cc63138208e0ba55a59b4c2514dff373e45a25f50d92f9e6d8316356d078ed3-50897658839185.png)](https://files.readme.io/5cc63138208e0ba55a59b4c2514dff373e45a25f50d92f9e6d8316356d078ed3-50897658839185.png)
+   <Image align="center" alt="" src="https://files.readme.io/5cc63138208e0ba55a59b4c2514dff373e45a25f50d92f9e6d8316356d078ed3-50897658839185.png" />
 4. Google Adsで配信中のリターゲティングキャンペーンを計測するには、広告主に**Google Adsのリターゲティング**を有効にするよう依頼してください。有効になると、**リエンゲージメント期間**を設定できます。
 
-   ![gads-agency-retargeting.png](https://files.readme.io/42008f063585b0a1dff553b8391b9dca48c2a3657786c263459c717cc94b5b19-50897658842385.png)
+   <Image align="center" alt="gads-agency-retargeting.png" src="https://files.readme.io/42008f063585b0a1dff553b8391b9dca48c2a3657786c263459c717cc94b5b19-50897658842385.png" />
 5. Google Adsの設定値に合わせ、クリックスルー計測のルックバック期間を**30日**に設定することを推奨します。
 
-   ![gads-click-through.png](https://files.readme.io/9bf0456ecb003e4b2750e4e5c1455d4418de00b8815ae08e9e580763948e3721-50897694603025.png)
+   <Image align="center" alt="gads-click-through.png" src="https://files.readme.io/9bf0456ecb003e4b2750e4e5c1455d4418de00b8815ae08e9e580763948e3721-50897694603025.png" />
 6. Google Adsの設定値に合わせ、ビュースルー計測のルックバック期間を**1日**に設定することを推奨します。スライダーで、広告が表示されてから、そのインプレッションをこのパートナーの成果として計測できる時間数または日数を設定します。
 
-   ![gads-view-through.png](https://files.readme.io/c26b18ff2d51ade48a9e57e0bb5097e4a0671f0ba78583cfeaa17848bebf9a34-50897658845969.png)
+   <Image align="center" alt="gads-view-through.png" src="https://files.readme.io/c26b18ff2d51ade48a9e57e0bb5097e4a0671f0ba78583cfeaa17848bebf9a34-50897658845969.png" />
 7. ***再インストールの計測***：
    * 再インストールを計測するには、この設定をオンにします。
    * 再インストールの計測にはインストール計測の設定値が使用されるため、ビュースルー計測の有効化やルックバック期間の設定は不要です。
@@ -153,11 +153,11 @@ Google Ads管理画面にて、代理店は招待を受け取り、リンクを�
 1. ［**アプリ内イベント**］タブをクリックします。
 
 2. Google Adsインストール経由のみのアプリ内イベントを送信するか、すべてのアプリ内イベントをGoogleに送信するかを選択します。  
-[![](https://files.readme.io/c2d22406f549db47de21beb54b7f9c8f94419702d0f78f46b2dbf0785e2ba94a-50897694609297.png)](https://files.readme.io/c2d22406f549db47de21beb54b7f9c8f94419702d0f78f46b2dbf0785e2ba94a-50897694609297.png)
+<Image align="center" alt="" src="https://files.readme.io/c2d22406f549db47de21beb54b7f9c8f94419702d0f78f46b2dbf0785e2ba94a-50897694609297.png" />
 
 3. 事前に定義されているGoogle Adsイベントを使用して、Google Adsに送信したいすべてのイベントをマップします。
 
-[![](https://files.readme.io/036b4f1cef8fa9b537b3aeaaab3f4072a099f94b3a8bbc539838d7898185a1ad-50897694610065.png)](https://files.readme.io/036b4f1cef8fa9b537b3aeaaab3f4072a099f94b3a8bbc539838d7898185a1ad-50897694610065.png)
+<Image align="center" alt="" src="https://files.readme.io/036b4f1cef8fa9b537b3aeaaab3f4072a099f94b3a8bbc539838d7898185a1ad-50897694610065.png" />
 
 4. ［***保存***］をクリックします。
 
@@ -192,11 +192,11 @@ Google Ads管理画面にて、代理店は招待を受け取り、リンクを�
 > Google Adsで新しいコンバージョンを登録するには、少なくとも1回、**アプリを起動してマッピングしたアプリ内イベントを実行する**必要があります。 iOSアプリをテストする場合、イベントを確認するにはIDFAを収集する必要があります。イベントコンバージョンがキューに追加されるまでに最大6時間かかる場合があります。キューに追加されるとインポートできるようになり、新しいコンバージョンのステータスが［最近のコンバージョンなし］から［コンバージョンの記録中］に変わります。
 
 1. Google Adsアカウントの［**概要**］ページに戻り、［**ツールと設定**］>［**測定**］>［**コンバージョン**］に移動します。  
-   [![conversions_overview_en-us__1_.png](https://files.readme.io/8e4217e0fc2d9696b9aaee3e247ce38fbd5bafd70f05101b31b4ab8de524b3cb-50897694610833.png)](https://files.readme.io/8e4217e0fc2d9696b9aaee3e247ce38fbd5bafd70f05101b31b4ab8de524b3cb-50897694610833.png)
+   <Image align="center" alt="conversions_overview_en-us__1_.png" src="https://files.readme.io/8e4217e0fc2d9696b9aaee3e247ce38fbd5bafd70f05101b31b4ab8de524b3cb-50897694610833.png" />
 2. [ **+ 新しいコンバージョンアクション**] をクリックします。  
-   [![New_conversion_action_en-us__2_.png](https://files.readme.io/e4140f9a279c53bed9f0b576cc006bccd30fe737ea791ade47cd4d42c3e2074b-50897694612113.png)](https://files.readme.io/e4140f9a279c53bed9f0b576cc006bccd30fe737ea791ade47cd4d42c3e2074b-50897694612113.png)
+   <Image align="center" alt="New_conversion_action_en-us__2_.png" src="https://files.readme.io/e4140f9a279c53bed9f0b576cc006bccd30fe737ea791ade47cd4d42c3e2074b-50897694612113.png" />
 3. コンバージョンタイプのリストから**アプリ**を選択し、**第三者アプリ分析ツール**を選択して、**続行**をクリックします。  
-   [![select_app_en-us__3_.png](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)
+   <Image align="center" alt="select_app_en-us__3_.png" src="https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png" />
 4. すべてのアプリの**first\_open**と、インポートする各イベントの横にあるチェックボックスをオンにします。
 
    <div id="note-1" />
@@ -207,11 +207,11 @@ Google Ads管理画面にて、代理店は招待を受け取り、リンクを�
 
 
    **インポートして続行**をクリックし、**完了**をクリックします。  
-   [![select_events_to_import_en-us__4_.png](https://files.readme.io/efe5458d26e6085aa0c228b98f63d37ef932e672e83ebc9050437b3b1259eea1-50897658853905.png)](https://files.readme.io/efe5458d26e6085aa0c228b98f63d37ef932e672e83ebc9050437b3b1259eea1-50897658853905.png)
+   <Image align="center" alt="select_events_to_import_en-us__4_.png" src="https://files.readme.io/efe5458d26e6085aa0c228b98f63d37ef932e672e83ebc9050437b3b1259eea1-50897658853905.png" />
 5. 第三者アプリ分析ツールのコンバージョンイベントは、**コンバージョン** > **概要**ページで確認できるようになりました。イベントがリストに表示されない場合、またはGoogle Adsのコンバージョンリストから削除されている場合は、［**すべてのコンバージョンアクションを表示**］をクリックします。［**ステータス**］フィルタが表示されます。   
-   [![conversions_summary_en-us__5_.png](https://files.readme.io/406121cc793f06d778192f8c8b191d7db0f11f91614cc4cf411a940ea176cd95-50897694614801.png)](https://files.readme.io/406121cc793f06d778192f8c8b191d7db0f11f91614cc4cf411a940ea176cd95-50897694614801.png)
+   <Image align="center" alt="conversions_summary_en-us__5_.png" src="https://files.readme.io/406121cc793f06d778192f8c8b191d7db0f11f91614cc4cf411a940ea176cd95-50897694614801.png" />
 6. ［**ステータス**］をクリックして［**すべて**］を選択すると、無効化または削除されたものを含むすべてのイベントが表示されます。  
-   [![conversion_action_status__6_.png](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)
+   <Image align="center" alt="conversion_action_status__6_.png" src="https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png" />
 7. おめでとうございます！これで、AppsFlyerでGoogle Adsモバイルキャンペーンの計測ができるようになりました！
 
 <div id="note-2" />

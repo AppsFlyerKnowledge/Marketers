@@ -38,7 +38,7 @@ AppsFlyerのSSOを設定するには、まずOneLogin側で設定を行います
 2. 右上の**Add App**をクリックします。
 3. **SAML Custom Connector (Advanced)** を検索して選択します。  
 
-   <Image alt="onelogin_saml_app.png" src="https://files.readme.io/c1e5ec122e21f05e860486ad280ba9e692b3d05b05105d9c1ca700b8921ee6ab-15045173609745.png" width="601px" />
+   <Image align="center" alt="onelogin_saml_app.png" src="https://files.readme.io/c1e5ec122e21f05e860486ad280ba9e692b3d05b05105d9c1ca700b8921ee6ab-15045173609745.png" width="601px" />
 4. **Display Name**フィールドに、OneLoginプラグインのアプリ一覧に表示する名前を入力します。
 5. ［任意］**App logo**：アプリ名の横に表示するロゴを追加します。
 6. ［任意］説明を追加します。
@@ -95,7 +95,7 @@ AppsFlyerのSSOを設定するには、まずOneLogin側で設定を行います
 2. **Applications**の横にある＋をクリックします。
 3. 作成したAppsFlyerアプリを選択し、**Continue**をクリックします。  
 
-   <Image alt="onelogin_assign_app.png" src="https://files.readme.io/a1769673f3f167f728a00fb1cccb951bd246798fd7327c51b021f73987bc8fb2-15552909316241.png" width="326px" />
+   <Image align="center" alt="onelogin_assign_app.png" src="https://files.readme.io/a1769673f3f167f728a00fb1cccb951bd246798fd7327c51b021f73987bc8fb2-15552909316241.png" width="326px" />
 4. 上部メニューで、**Applications**＞**<Anchor target="_blank" href="https://appsflyer-dev.onelogin.com/admin2/apps">Applications</Anchor>** に移動します。
 5. 作成したアプリを選択します。
 6. **Save**をクリックします。

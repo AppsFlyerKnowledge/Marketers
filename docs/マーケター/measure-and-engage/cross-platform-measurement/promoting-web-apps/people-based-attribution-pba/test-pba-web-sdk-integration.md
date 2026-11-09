@@ -104,7 +104,7 @@ Web SDKは、ウェブイベントをPBAに送信します。これらのイベ�
    2. 必要な**Web SDK integration test**を選択します。  
       実装テストページが開きます。Web Devキーが表示されます。  
 
-      [![pba_web_sdk_integration_test_web_dev_key_en-us.png](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)
+      <Image align="center" alt="pba_web_sdk_integration_test_web_dev_key_en-us.png" src="https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png" />
    3. 新しいブラウザタブにて、Web SDKが実装されているWebサイトを開きます。
    4. 右クリックをし、検証を選択して、ブラウザ開発者ツールを開きます。
    5. **Console** タブを開きます。
@@ -116,7 +116,7 @@ Web SDKは、ウェブイベントをPBAに送信します。これらのイベ�
 
       WebAppID が表示されます。
 
-      [![testing_pba_integration_webappid_check_en-us.png](https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png)](https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png)
+      <Image align="center" alt="testing_pba_integration_webappid_check_en-us.png" src="https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png" />
    7. WebAppIDが、**Web SDK integration test**ページに表示されるWeb Devキーと同じであることを確認します。
 2. **テストモードを有効にする**：
    1. ウェブサイトブラウザタブにて、**Console**タブを開きます。
@@ -126,7 +126,7 @@ Web SDKは、ウェブイベントをPBAに送信します。これらのイベ�
       window.AF_SDK.PLUGINS.PBA.turnOnDevMode()
       ```
 
-      [![testing_pba_integration_turnondevmode.png](https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png)](https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png)
+      <Image align="center" alt="testing_pba_integration_turnondevmode.png" src="https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png" />
 3. **テストモードが有効になっていることを確認します。**
    * **Console**タブで、以下を入力します。  
 
@@ -135,7 +135,7 @@ Web SDKは、ウェブイベントをPBAに送信します。これらのイベ�
      ```
 
      これは、テストモードがアクティブであることを示します。   
-     [![PBATestingWebSDKIntegrationIsDevModeOn_en-us.png](https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png)](https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png)
+     <Image align="center" alt="PBATestingWebSDKIntegrationIsDevModeOn_en-us.png" src="https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png" />
 
 </Accordion>
 

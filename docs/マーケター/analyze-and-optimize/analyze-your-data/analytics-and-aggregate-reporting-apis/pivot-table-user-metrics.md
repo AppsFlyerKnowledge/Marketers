@@ -27,7 +27,7 @@ x-zendesk:
 
 > **概要**：異なるユーザーメトリクスを表示—LTV、アクティビティ、Protect360、およびリテンション。自社BIシステムに取り込むためにCSVファイルをダウンロードできます。Pivotレポートでは、1つのクエリに複数アプリを含めることができます。Pivotは、Master APIコールを生成するために使用されます。
 
-![Full_Funnel.gif](https://files.readme.io/ff9cf90460ac2cc695ad5d1d9c2c35fa9843cb221c3a096fdfb9d92f4364f208-51909644198929.gif)
+<Image align="center" alt="Full_Funnel.gif" src="https://files.readme.io/ff9cf90460ac2cc695ad5d1d9c2c35fa9843cb221c3a096fdfb9d92f4364f208-51909644198929.gif" />
 
 <div id="about-pivot-reports-page" />
 
@@ -158,7 +158,7 @@ x-zendesk:
 
 <Accordion title="ピボットレポートの表示">
 
-[![](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)
+<Image align="center" alt="" src="https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png" />
 
 **ピボットレポートを表示する方法**：
 

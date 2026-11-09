@@ -35,7 +35,7 @@ x-zendesk:
 
 リアトリビューション期間は、ユーザーがアプリを初めてインストールした時点から始まり、広告主が設定した期間にわたって継続します。デフォルトは90日です。リアトリビューション期間内の再インストールは、新規インストールとして記録されません。また、**リターゲティング**キャンペーン経由の場合を除き、新たなインストールポストバックも送信されません。
 
-[![ReAttributionWindow_us-en.png](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)](https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png)
+<Image align="center" alt="ReAttributionWindow_us-en.png" src="https://files.readme.io/cc3c4286be2721571329a08cf13bb93acd0dc3ada4f5bc52f0ffd263eff671ca-360011750637.png" />
 
 <div id="setting-the-re-attribution-window" />
 

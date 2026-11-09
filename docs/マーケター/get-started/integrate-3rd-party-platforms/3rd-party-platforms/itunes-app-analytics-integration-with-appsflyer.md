@@ -33,11 +33,11 @@ x-zendesk:
 
 ## 連携の有効化
 
-![itunes-connect-app-analytics.png](https://files.readme.io/e1e480c1af63a3404e40ba4049dac13497a4db8b298a1735812524392232f2d9-11523192862353.png)
+<Image align="center" alt="itunes-connect-app-analytics.png" src="https://files.readme.io/e1e480c1af63a3404e40ba4049dac13497a4db8b298a1735812524392232f2d9-11523192862353.png" />
 
 連携を有効にするには、iTunes Provider IDをAppsFlyerのアカウントマネージャーに送信してください。
 
-![itunes-connect-app-analytics2.png](https://files.readme.io/7ae2c205b45a9084752a85c4bec93cb052f0e288a1dbee97c1eb5e51cd66d730-11523234132753.png)
+<Image align="center" alt="itunes-connect-app-analytics2.png" src="https://files.readme.io/7ae2c205b45a9084752a85c4bec93cb052f0e288a1dbee97c1eb5e51cd66d730-11523234132753.png" />
 
 **既知の制限事項：** この連携に対応するのは、クリックをAppsFlyer経由でリダイレクトするアドネットワークのみです。 SRN（Meta広告、X広告、Google広告など）には、現在対応していません。
 

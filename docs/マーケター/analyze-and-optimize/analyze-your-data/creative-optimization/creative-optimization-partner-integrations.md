@@ -24,7 +24,7 @@ x-zendesk:
 
 > **概要：** パートナー連携を設定し、すべてのクリエイティブデータをCreative Optimizationへ自動的に取り込みます。
 
-![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
+<Image align="center" alt="Creative integrations New.jpg" src="https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg" />
 
 <div id="about-partner-integrations" />
 
@@ -70,7 +70,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の  ⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**Adikteev**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -96,7 +96,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**Adjoe GmbH**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -121,7 +121,7 @@ x-zendesk:
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。
 
-   ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+   <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **＋新規連携**をクリックします。
 3. **パートナー**リストで、**AppLovin**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -154,7 +154,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **＋新規連携**をクリックします。
 3. **パートナー**リストをクリックし、<strong>Google Ads（AdWords）</strong>を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -183,7 +183,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**ironSource**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -203,7 +203,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**Liftoff**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -226,7 +226,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**Meta Ads**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -257,7 +257,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**Mintegral**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -303,7 +303,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**Persona.ly**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -325,7 +325,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**Reddit**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -369,7 +369,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**RevX**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -412,7 +412,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**Snapchat**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -438,7 +438,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**TikTok**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -490,17 +490,17 @@ x-zendesk:
 4. **＋Add key**をクリックします。  
    キーIDとシークレットキーが表示されます。
 5. **キーID**と**シークレットキー**をコピーします。  
-   ![Unity get Key ID & Secret key image.jpg](https://files.readme.io/9c4d1b1e0e476546b8f8be3a7375c610c48db6f94344a3dbe48277a6d115f52e-20344146224401.jpg)
+   <Image align="center" alt="Unity get Key ID & Secret key image.jpg" src="https://files.readme.io/9c4d1b1e0e476546b8f8be3a7375c610c48db6f94344a3dbe48277a6d115f52e-20344146224401.jpg" />
 
 **組織コアIDの**<Anchor target="_blank" href="https://services.docs.unity.com/advertise/v1/index.html#section/General-Information/Resource-IDs-Used-in-the-API-Calls">**取得方法：**</Anchor>
 
 1. Unity Ads画面で、サイドメニューの**Products**をクリックします。
 2. **Grow**をクリックします。  
-   ![Unity Org ID step 1 cropped.jpg](https://files.readme.io/5e8d2f54f5999c58b2e2b3591ae889f5051cae4073aa6c5ef17e16da6a60131f-22859368875153.jpg)
+   <Image align="center" alt="Unity Org ID step 1 cropped.jpg" src="https://files.readme.io/5e8d2f54f5999c58b2e2b3591ae889f5051cae4073aa6c5ef17e16da6a60131f-22859368875153.jpg" />
 3. **Unity Ads User Acquisition**をクリックします。  
-   <Image alt="Unity Org ID step 2 cropped.jpg" src="https://files.readme.io/07a1c8e878a9ed7b6832012b3261866477b825d3b23e4973b8c5dadd675973e2-22859368883473.jpg" width="347px" />
+   <Image align="center" alt="Unity Org ID step 2 cropped.jpg" src="https://files.readme.io/07a1c8e878a9ed7b6832012b3261866477b825d3b23e4973b8c5dadd675973e2-22859368883473.jpg" width="347px" />
 4. **Settings**をクリックします。  
-   ![Get Organization core ID instructions 2 arrows.jpg](https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg)
+   <Image align="center" alt="Get Organization core ID instructions 2 arrows.jpg" src="https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg" />
 5. **組織コアID**をコピーします。
 
 <div id="to-select-a-service-account-organization-role" />
@@ -518,7 +518,7 @@ x-zendesk:
      * Advertise API Admin
      * Advertise API Viewer
      * &lt;0>Advertise API Creative Packs Editor0>  
-       <Image alt="Org roles step 3 without role names.jpg" src="https://files.readme.io/7b46417e6389f7c3675cc6f72b33e9b2833d5c561ef1d79122ed24605533b265-20347535827217.jpg" width="471px" />
+       <Image align="center" alt="Org roles step 3 without role names.jpg" src="https://files.readme.io/7b46417e6389f7c3675cc6f72b33e9b2833d5c561ef1d79122ed24605533b265-20347535827217.jpg" width="471px" />
 5. **保存**をクリックします。
 
 **注意：** これらのロールにアクセスできない場合は、Unityのカスタマーサクセスマネージャーに問い合わせるか、[unityads-support@unity3d.com](mailto:unityads-support@unity3d.com)までメールを送り、必要な権限を申請してください。
@@ -530,7 +530,7 @@ x-zendesk:
 1. **Creative Optimization**ダッシュボードで、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**Unity Ads**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -553,7 +553,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**X Ads**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -579,7 +579,7 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮ アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+新規連携**をクリックします。
 3. **パートナー**リストで、**YouAppi**を選択します。
 4. プロモーション対象のアプリを選択します。
@@ -624,11 +624,11 @@ x-zendesk:
 1. **Creative Optimization**にログインし、以下のいずれかの操作を行います。
    * 既存のパートナー連携設定がない場合は、+ **新規連携を追加**をクリックします。
    * それ以外の場合は、ダッシュボード右上の⋮アイコンをクリックし、**クリエイティブ連携**に移動します。  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. ＋新**規連携**をクリックします。
 3. パートナー連携ウィンドウでパートナーとアプリを選択したら、**詳細設定：代理店**ドロップダウンをクリックし、対象の代理店を選択します。  
 
-   <Image alt="Creative agencies.png" src="https://files.readme.io/74f0dc492bc530278687becdd0061e9c06081653b69ed525f237b97a9568e413-38395601553169.png" width="288px" />
+   <Image align="center" alt="Creative agencies.png" src="https://files.readme.io/74f0dc492bc530278687becdd0061e9c06081653b69ed525f237b97a9568e413-38395601553169.png" width="288px" />
 4. **保存**をクリックします。  
    代理店連携が追加されます。
 
@@ -651,10 +651,10 @@ x-zendesk:
    **<Image alt="From Collaborate click Partner Marketplace.png" src="https://files.readme.io/96485cefae79412a680915810c16b23619f73d9109212bfc45d1c0d42c2e529a-39258887136785.png" width="33.9%" />**
 2. ページ上部の検索バーから関連するパートナー代理店を検索し、パートナーをクリックします。
 
-   <Image alt="Search bar.png" src="https://files.readme.io/f1ff34a547af45eec73e7abd41105bbab9ff12d4a2636ed4b99634985ec58044-39258887138449.png" width="1210px" />
+   <Image align="center" alt="Search bar.png" src="https://files.readme.io/f1ff34a547af45eec73e7abd41105bbab9ff12d4a2636ed4b99634985ec58044-39258887138449.png" width="1210px" />
 3. パートナーページで**権限**タブに移動し、**代理店権限**を有効にします。
 
-   <Image alt="Agency permissions.png" src="https://files.readme.io/b307601f9b41800a146c664bdd9f6d24a5398be9022801505419aebb0741162c-39258856594705.png" width="71.31%" />
+   <Image align="center" alt="Agency permissions.png" src="https://files.readme.io/b307601f9b41800a146c664bdd9f6d24a5398be9022801505419aebb0741162c-39258856594705.png" width="71.31%" />
 4. 続いて、**Creative Optimizationダッシュボードへのアクセス**を有効にします。  
 
    これで、代理店は自身のダッシュボードで、共有されたクリエイティブを閲覧できるようになります。まだAppsFlyer代理店アカウントを設定していない代理店は、<Anchor target="_blank" href="/partners/ja/docs/getting-started-agency-onboarding">こちらで詳細</Anchor>を確認してください。

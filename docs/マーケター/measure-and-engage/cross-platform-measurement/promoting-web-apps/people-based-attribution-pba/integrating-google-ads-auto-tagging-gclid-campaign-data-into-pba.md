@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：** 概要：Google Adsと接続し、GCLIDキャンペーン情報を自動タグ付けすることで、PBAデータを充実させましょう。
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png" />
 
 <div id="integrating-google-ads-campaign-data-in-pba" />
 
@@ -40,7 +40,7 @@ Google Adsアカウント（1つ以上）をブランドバンドルに接続し
 
 **キャンペーン階層が入力されたWebsiteアトリビューションダッシュボード**
 
-![PBAWebSite.png](https://files.readme.io/46004298b827d3f4eaa4adae9fb2a8676867e6b5dde44a7ff087fe1bda07f054-4403138621713.png)
+<Image align="center" alt="PBAWebSite.png" src="https://files.readme.io/46004298b827d3f4eaa4adae9fb2a8676867e6b5dde44a7ff087fe1bda07f054-4403138621713.png" />
 
 キャンペーンと広告階層のデータは、次のようにダッシュボードとローデータで使用できます：
 

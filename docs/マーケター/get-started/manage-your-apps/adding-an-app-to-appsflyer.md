@@ -48,7 +48,7 @@ x-zendesk:
 >
 > オンボーディングページが表示されない場合は、管理画面左メニュー 設定 > **アプリのオンボーディング**からアクセスします。
 
-![オンボーディングページ.png](https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png)
+<Image align="center" alt="オンボーディングページ.png" src="https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png" />
 
 **プラットフォームからアプリ追加ウィザードに入るには：**
 
@@ -56,7 +56,7 @@ x-zendesk:
 * AppsFlyerホームページから、**+アプリを追加**をクリックします。
 * 上部のバーから、アカウントメニュー（メールアドレスドロップダウン）を開き、**アプリオンボーディング** で、**+ 別のアプリのオンボーディング**をクリックします。
 
-<Image alt="アプリを追加 (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
+<Image align="center" alt="アプリを追加 (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
 <div id="adding-an-app" />
 
@@ -394,7 +394,7 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
   * <Anchor target="_blank" href="https://developer.roku.com/developer">Roku Developer Dashboard</Anchor>から、AppsFlyerに追加するチャネル名をクリックしてください。これにより、そのチャネルの Roku Preview & Publish ページが開きます。
   * URLページの末尾の数字はチャネルの
 
-    ![](https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png)
+    <Image align="center" alt="" src="https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png" />
 
 </Accordion>
 
@@ -443,7 +443,7 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 
 例えば、バンドルIDが"G15147002586"の場合、ページのURLは"[https://www.samsung.com/us/appstore/app/G15147002586/](https://www.samsung.com/us/appstore/app/G15147002586/) "になります。開発者URL、バンドルID、およびアプリストアIDは、そのページのメタデータに表示されます。
 
-![](https://files.readme.io/ee4b192abab24e064013a4a034bda38fb3ed49497ae333e327e1b78dd05d5349-33198275491729.png)
+<Image align="center" alt="" src="https://files.readme.io/ee4b192abab24e064013a4a034bda38fb3ed49497ae333e327e1b78dd05d5349-33198275491729.png" />
 
 </Accordion>
 
@@ -472,7 +472,7 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 
 **App ID:** アプリ ID： PlayStationコンセプトID、ゲームまたはその他のコンテンツコンセプトに割り当てられた一意の識別子これは、PSストアのURLに 5〜9桁の数字として表示されます：アプリのアプリストアURLの最後にあります。
 
-![playstation_app_id_url.png](https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png)
+<Image align="center" alt="playstation_app_id_url.png" src="https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png" />
 
 </Accordion>
 
@@ -494,7 +494,7 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 
 **App ID:** Steam アプリID。SteamストアのURLに表示される5〜8桁の数字です。
 
-![steam_store_app_url.png](https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png)
+<Image align="center" alt="steam_store_app_url.png" src="https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png" />
 
 </Accordion>
 
@@ -506,7 +506,7 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 
 **アプリID:** Meta QuestアプリIDは、アプリがダウンロードされるMetaアプリストアURLの末尾に表示されます。`A-Z` `A-Z` の 3 ～ 50 文字が含まれます
 
-<Image alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
+<Image align="center" alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
 
 </Accordion>
 
@@ -530,7 +530,7 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 
 **App ID:** XboxアプリIDは、アプリがダウンロードされるXboxストアURLの末尾に表示されます。12文字と数字のみを含みます (`A-Z` `a-z0-9`)。
 
-![](https://files.readme.io/c33ffcb35d4488b9340cfa8b475097eab7b79bfeaf94e8cf8ce6478dda07d341-33198275505041.png)
+<Image align="center" alt="" src="https://files.readme.io/c33ffcb35d4488b9340cfa8b475097eab7b79bfeaf94e8cf8ce6478dda07d341-33198275505041.png" />
 
 **注:** アプリIDでは大文字小文字の区別があります。
 
@@ -544,7 +544,7 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 
 **App ID:** アプリID： Epic GamesアプリID（アプリのダウンロード元のストアに表示されるもの）`a-z0-9._-` `A-Z` `a-z0-9._-` の 3 ～ 50 文字が含まれます
 
-![](https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png)
+<Image align="center" alt="" src="https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png" />
 
 </Accordion>
 
@@ -562,7 +562,7 @@ app\_idAppsFlyerがプライマリドメインに基づいてウェブアプリ�
 
 ### 追加情報を入力します（Webアプリには該当しません）:
 
-<Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
+<Image align="center" alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
 
 <div id="select-currency" />
 

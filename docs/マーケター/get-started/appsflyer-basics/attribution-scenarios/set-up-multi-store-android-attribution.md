@@ -44,7 +44,7 @@ AppsFlyerはアプリストアに関わらず、アプリを計測します。�
 > * AppsFlyerのAndroid計測では、GAIDと<Anchor target="_blank" href="/marketers/ja/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor>を含む全てのデバイス識別子タイプをサポートしています。
 > * 中国で配信されているアプリについては、<Anchor target="_blank" href="/marketers/ja/docs/measure-attribution-in-the-chinese-domestic-market">中国国内市場での Androidアプリのアトリビューション</Anchor>をご覧ください。
 
-![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
+<Image align="center" alt="DashboardType_us-en-new.jpg" src="https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg" />
 
 <div id="single-dashboard-vs-dashboard-per-store" />
 
@@ -249,7 +249,7 @@ APK／マニフェストで設定されたAndroidパッケージ名とチャネ�
 3. 設定からAndroidの設定を開きます。まだAndroidを設定していない場合は、プラットフォームを追加してください。
 4. アプリ固有のAmazonアプリストアのURLを含む、必要な詳細を追加して下さい。   
 
-   [![outofstore_1.png](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)
+   <Image align="center" alt="outofstore_1.png" src="https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png" />
 
 </Accordion>
 

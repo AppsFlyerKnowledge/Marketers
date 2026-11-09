@@ -26,7 +26,7 @@ x-zendesk:
 
 ## Setting up Appodeal integration
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/appodeal.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/appodeal.png" />
 
 AppsFlyer integration with Appodeal supports click attribution and <Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution#ad-revenue-raw-data">user-level ad revenue attribution.</Anchor>
 

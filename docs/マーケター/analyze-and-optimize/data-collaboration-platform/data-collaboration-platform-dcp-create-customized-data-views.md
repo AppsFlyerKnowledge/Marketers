@@ -61,11 +61,11 @@ x-zendesk:
 
 1. AppsFlyerのサイドメニューから、**コラボレート** > **データクリーンルーム**を選択します。
 
-   <Image alt="「データクリーン」をクリックしてくださいRoom.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="34.74%" />
+   <Image align="center" alt="「データクリーン」をクリックしてくださいRoom.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="34.74%" />
 2. メインから **出典** 上部のタブをキープし、データビューを作成したい特定のソースにカーソルを合わせてクリックします<Image alt="ellipsis.png" src="https://files.readme.io/d3e33f1864edb1d9d2f8e18c9c7887454018a67e9f7fed054e7134231dba60a2-30296671836433.png" width="0.6%" /> (メニューアイコン)列の最後にあります。
 3. セレクト **データビューを作成する**.あなたは **新しいデータビュー** ページ。
 
-   <Image alt="データビューを作成してarrow.png" src="https://files.readme.io/f9fbcacabb560da996e1dc009e6cd2c5b78d3ccd42e89e2a3c37e71882577e18-41945719135889.png" width="1500px" />
+   <Image align="center" alt="データビューを作成してarrow.png" src="https://files.readme.io/f9fbcacabb560da996e1dc009e6cd2c5b78d3ccd42e89e2a3c37e71882577e18-41945719135889.png" width="1500px" />
 4. 次のフィールドを設定してください。
    * データビュー名データビューの名前を入力します。これは、あなたがそれを特定するのに役立つ任意のユニークな名前です。以下の[命名要件とガイドライン](#命名要件とガイドライン)を参照してください。
    * **説明：** 説明文(任意)を入力してください。これは、**ソース**タブのデータビュー名にカーソルを合わせたときにツールチップとして表示されます。主な目的と実行されたデータ操作を強調することをお勧めします。
@@ -132,7 +132,7 @@ x-zendesk:
 
 集計を適用する際には、データを意味のあるカテゴリーにまとめましょう。集計機能を追加すると、グループ別セクションが自動的に開き、データのグループ化方法を決定するフィールドを選択できます。例えば、国別、ユーザーID、製品ラインごとに結果をグループ化して、各グループの合計やカウントを計算できます。
 
-<Image alt="Group by.png" src="https://files.readme.io/40fc355847acf7269c6fcd2b505ed182b407d4c668f717612b53c5fd88506443-41967849623057.png" width="58.2%" />  
+<Image align="center" alt="Group by.png" src="https://files.readme.io/40fc355847acf7269c6fcd2b505ed182b407d4c668f717612b53c5fd88506443-41967849623057.png" width="58.2%" />
 
 **グループ化するフィールドを選択するには:**   
 カチッ **+フィールド** 場を追加するために。  
@@ -244,7 +244,7 @@ x-zendesk:
 
 ページの右側にあるサイドパネルには、元のソースからのデータと、それに基づいて作成されたデータビューの2つのデータセットが表示されます。各セットには、テーブル名と説明、フィールド数、行数が含まれ、5行のデータを含むサンプルテーブルが表示されます。データビューに関数やフィルターが適用されると、サイドパネルはこれらの変更を反映し、データを変更しながら確認でき、元のバージョンと比較できます。
 
-![Data view - side panel.png](https://files.readme.io/c1dae932618bf2ded68a30853474ce9d6107fdb09541a5d12ac3ddcf4def0101-41945719138577.png)
+<Image align="center" alt="Data view - side panel.png" src="https://files.readme.io/c1dae932618bf2ded68a30853474ce9d6107fdb09541a5d12ac3ddcf4def0101-41945719138577.png" />
 
 任意の段階でデータビューを保存できます。保存されると、それは元のデータソースのリストに追加され、[編集、共有、または削除することができます](#データビューの管理)。
 
@@ -372,10 +372,10 @@ x-zendesk:
 1. データコラボレーションプラットフォームでは、 **コラボレーション** タブ>特定のコラボレーションです。
 2. コラボレーションダッシュボードで、右上のアクションメニューをクリックしてください> **関連資料**.
 
-   <Image alt="関連情報源 新しいUI.png" src="https://files.readme.io/3730b39bb5754260b74632591dffe3fcf54e6c73ff114ba0a8853f277e1e709a-43751907286161.png" width="1539px" />
+   <Image align="center" alt="関連情報源 新しいUI.png" src="https://files.readme.io/3730b39bb5754260b74632591dffe3fcf54e6c73ff114ba0a8853f277e1e709a-43751907286161.png" width="1539px" />
 3. ドロップダウンメニューからデータビュー(ソース)を選択して、コラボレーションに関連付けてください。  
 
-   <Image alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="783px" />  
+   <Image align="center" alt="select data view.png" src="https://files.readme.io/f1681e5a4096459cbc570531494a8a7be8e4f835d95e4435217b0e8e15715772-43751923329937.png" width="783px" />
    そしてクリック **セーブ**.
 4. **任意：** データビューソースでカスタムデータ権限を設定します。
 
@@ -383,7 +383,7 @@ x-zendesk:
 
    データソースの隣にある3点メニューからクリック **編集権限**.  
 
-   <Image alt="Edit permissions new.png" src="https://files.readme.io/58c785d7fdda52aa159153676d5875e718ceae2f31f987706b79509eb8251151-43752564819985.png" width="1330px" />
+   <Image align="center" alt="Edit permissions new.png" src="https://files.readme.io/58c785d7fdda52aa159153676d5875e718ceae2f31f987706b79509eb8251151-43752564819985.png" width="1330px" />
 5. 自分の好みに合わせて権限を設定してください (<Anchor target="_blank" href="/marketers/ja/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">許可について学ぶ</Anchor>)、そしてクリック **セーブ**.
 
 <div id="note-4" />

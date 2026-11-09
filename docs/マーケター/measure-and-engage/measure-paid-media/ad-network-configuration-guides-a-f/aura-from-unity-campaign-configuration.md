@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **概要：概要： AppsFlyerアドネットワーク連携済みパートナーであるAura from Unityは、ユーザーが新しいデバイスをセットアップする際に、広告主がユーザーとつながることができるプラットフォームです。**
 
-![aura_logo.png](https://files.readme.io/83bca93f3dfe8f6ce9bd74b9141b8c3b4dc01cfcf8f1904c0f992346beee5014-17313206447889.png)
+<Image align="center" alt="aura_logo.png" src="https://files.readme.io/83bca93f3dfe8f6ce9bd74b9141b8c3b4dc01cfcf8f1904c0f992346beee5014-17313206447889.png" />
 
 <div id="aura-from-unity-integration-in-appsflyer" />
 

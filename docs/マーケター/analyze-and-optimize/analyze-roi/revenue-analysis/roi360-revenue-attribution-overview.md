@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要：** 収益データを使うと、ROIとROASの全体像を正確に把握できます。広告主が収益データを集計・確認するための製品や機能を紹介します。
 
-![roi_revenue.png](https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png)
+<Image align="center" alt="roi_revenue.png" src="https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png" />
 
 <div id="overview" />
 

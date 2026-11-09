@@ -61,7 +61,7 @@ Meta広告とAppsFlyerを連携するには、まず<Anchor target="_blank" href
 2. 対象のアプリをクリックします。
 3. 画面左上のアプリIDをクリックしてコピーします。
 
-   [![](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg" />
 
 AppsFlyerは、アプリIDごとにデータをアトリビューションします。同じFacebookアプリIDを、[AndroidアプリとiOSアプリの両方](https://developers.facebook.com/docs/app-ads/app-setup/)に使用できます。 iOS 14以降では、Meta広告の広告アカウント数は、アプリごとに9アカウントまでに制限されています。
 
@@ -106,7 +106,7 @@ Metaは、2025年6月17日から<strong>Advanced Mobile Measurement（AMM）</st
    **注意：** このパートナーとの連携を継続する間は、トグルをオン（<Anchor target="_blank" href="/marketers/ja/docs/partner-activation-deactivation">有効</Anchor>）のままにしてください。
 5. <strong>［一般設定］</strong>で、以下を行います。
 
-   [![](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
+   <Image align="center" alt="" src="https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png" />
 
    * <strong>［FacebookアプリID］</strong>欄に、[FacebookアプリID](#create-and-retreive-facebook-app-id)を貼り付けます。
    * インストールリファラの[復号キーをMeta広告から取得](/docs/meta-ads-integration-setup#google-play-referrer-apiまたはmetaインストールリファラの暗号化データ)し、貼り付けます。
@@ -120,7 +120,7 @@ Metaは、2025年6月17日から<strong>Advanced Mobile Measurement（AMM）</st
 
 <Accordion title="［任意］推奨設定">
 
-[![](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)
+<Image align="center" alt="" src="https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png" />
 
 * Meta広告のクリックスルールックバック期間に合わせて、7日間に設定します。  
   （[一部のケースではデフォルト値が異なります](https://www.facebook.com/business/help/395050428485124?id=428636648170202)。）
@@ -241,7 +241,7 @@ Google Play Referrer APIとMetaインストールリファラのデータは、�
 
 <Accordion title="コスト、クリック、インプレッション">
 
-[![meta_cost_tab.png](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)
+<Image align="center" alt="meta_cost_tab.png" src="https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png" />
 
 この連携では、キャンペーン、広告セット、広告、地域・国別のコスト、クリック、インプレッションの集計データを取得できます。対応するディメンション、指標、機能の詳細は、<Anchor target="_blank" href="/marketers/ja/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">アドネットワークのコスト連携一覧</Anchor>を参照してください。
 
@@ -281,7 +281,7 @@ Google Play Referrer APIとMetaインストールリファラのデータは、�
 
 <Accordion title="アプリ内イベントのマッピング">
 
-[![meta_iae_postbacks.png](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)
+<Image align="center" alt="meta_iae_postbacks.png" src="https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png" />
 
 **アプリ内イベントをマッピングするには、以下の手順に従ってください。**
 
@@ -326,13 +326,13 @@ AppsFlyerのMeta広告向けリターゲティングアトリビューション�
 3. **リエンゲージメントのクリックスルールックバック期間**を設定します。  
    リエンゲージメントのルックバック期間とは、広告クリックから、リエンゲージメントとして記録するためのアプリ起動までに許容される期間です。  
    ルックバック期間の単位（時間または日）を選択し、スライダーで値を設定します。  
-   [![](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)
+   <Image align="center" alt="" src="https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png" />
 4. <strong>［リエンゲージメントのビュースルーアトリビューション］</strong>を有効にします。
 5. **リエンゲージメントのビュースルールックバック期間**のスライダーを、希望する値に設定します（最大24時間）。これは、広告の表示から、リエンゲージメントとして記録するためのアプリ起動までに許容される期間です。[![](https://files.readme.io/82028408b7475e6ad5bcd35f2d597b7f5344b9eca432157559265cf73bdb952c-30354145625873.png)](https://files.readme.io/82028408b7475e6ad5bcd35f2d597b7f5344b9eca432157559265cf73bdb952c-30354145625873.png)
 6. **リエンゲージメント期間**を設定します。  
    これは、ユーザーのアプリ内イベントが、リターゲティングのメディアソースをプライマリソースとしてアトリビューションされる期間です。  
    日単位（1～90日）、時間単位（最大23時間）、またはライフタイムに設定できます。デフォルトは30日間です。  
-   [![](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)
+   <Image align="center" alt="" src="https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png" />
 
 詳細は、<Anchor target="_blank" href="/marketers/ja/docs/retargeting-attribution-guide">AppsFlyerのリターゲティングアトリビューション</Anchor>を参照してください。
 
@@ -425,7 +425,7 @@ CCPAのプライバシー規制に対応すると、米国カリフォルニア�
 
 <Accordion title="広告収益の記録">
 
-[![](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)
+<Image align="center" alt="" src="https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png" />
 
 Meta Audience Networkで広告マネタイズを行っている場合、Meta広告からの収益をAppsFlyerに記録できます。アプリ内購入の収益データの有無にかかわらず、**ユーザーから得られる収益の全体像**を把握できます。
 
@@ -499,7 +499,7 @@ AppsFlyerでFacebookアプリIDが誤って設定されています。
 
 アトリビューションを行うには、Meta広告でアプリが<strong>［開発中］</strong>ではなく、<strong>［公開］</strong>に設定されている必要があります。
 
-[![](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)
+<Image align="center" alt="" src="https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png" />
 
 </Accordion>
 
@@ -527,11 +527,11 @@ Meta広告のアプリインストールキャンペーンの設定では、ド�
 
 正しい設定：アトリビューションが機能します。
 
-[![](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)
+<Image align="center" alt="" src="https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png" />
 
 誤った設定：アトリビューションが機能しません。
 
-[![](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)
+<Image align="center" alt="" src="https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png" />
 
 </Accordion>
 

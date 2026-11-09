@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerが、独自に設定されたCVをデコードしてイベントに変換します。変換されたイベントは、SKANダッシュボード、ローデータ、パートナーへのポストバックに反映されます。
 
-![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
+<Image align="center" alt="SKAdNetwork_-_Custom__1_.png" src="https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png" />
 
 <div id="decode-skan-conversion-value" />
 
@@ -282,7 +282,7 @@ CSVを保存した後、内容が正しい形式になっていることを確�
 
 図のように、Excelでは通常、数値のセルに3桁ごとの桁区切り記号が入ります。この書式は、アップロード用CSVファイルには適していません。 $記号も削除する必要があります。
 
-![mceclip0.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 Excelでセルの書式を変更すると、修正できます。
 
@@ -293,7 +293,7 @@ Excelでセルの書式を変更すると、修正できます。
    ［セルの書式設定］ウィンドウが開きます。
 3. <strong>［数値］</strong>を選択します。  
 
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 
 1. **［桁区切り（,）を使用する］のチェックを外します。**
 2. ［任意］**小数点以下の桁数**を設定します。デフォルトは2です。指定できる最大値は5です。
@@ -315,14 +315,14 @@ CSVファイルの内容は、テキストエディターで開いて確認し�
 
 **エディターでの表示**
 
-![SKCustomeEditor.png](https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png)
+<Image align="center" alt="SKCustomeEditor.png" src="https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png" />
 
 テキストエディターでCSVファイルを確認します。特に、以下の点に注意してください。
 
 * **空白：** フィールドを区切るカンマの前後に、余分な空白がないことを確認します。 Excelでは、@trimコマンドを使用して空白を削除します。
 * **event\_revenue\_usd：** event\_revenue\_usd列の値に、カンマや$記号が含まれていないことを確認します。  
 
-  ![mceclip1.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+  <Image align="center" alt="mceclip1.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 </Accordion>
 

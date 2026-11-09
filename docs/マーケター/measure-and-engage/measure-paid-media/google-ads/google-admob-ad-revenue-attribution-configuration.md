@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるGoogle AdMobを利用すると、アプリ所有者は、広告収益の計測に使用する広告収益データを取得できます。
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadmob.png?v=1" width="74px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadmob.png?v=1" width="74px" />
 
 AdMobは、集計レベルとインプレッションレベルの<Anchor target="_blank" href="/marketers/ja/docs/roi360-guide-ad-revenue-attribution">広告収益の計測</Anchor>に対応しています。関連記事：<Anchor target="_blank" href="/marketers/ja/docs/integrate-the-roi360-ad-revenue-sdk-api">汎用インプレッションレベル広告収益SDKコネクタの実装ガイド</Anchor>
 

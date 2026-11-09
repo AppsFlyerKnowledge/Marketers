@@ -129,7 +129,7 @@ iOS Universal LinksとAndroid App Linksを使ってアプリを開くテンプ�
 2. 対象のOneLinkテンプレートを選択します。
 3. 三点リーダーメニューから［テンプレートを編集］をクリックします。
 
-   <Image alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
+   <Image align="center" alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
 4. ゴミ箱アイコンをクリックします。
 
 **注意：** 削除したテンプレートをもとに作成された既存のOneLink URLがある場合、<strong>そのリンクはアプリストアへユーザーを誘導する用途でも機能しなくなります。</strong>そのため、テンプレートを削除する前に、そのテンプレートを使用しているOneLink URLが存在しないことを必ず確認してください。また、テンプレートを削除せず、既存テンプレートの設定変更で必要な結果を実現できないか検討することもおすすめします。
@@ -254,7 +254,7 @@ AppsFlyer SDKがまだアプリに組み込まれていなくても、基本的�
 * リンクは削除後2分以内に機能しなくなります。
 * 2025年11月5日以降に管理画面から削除したリンクは、OneLink管理内の**削除済みリンク**一覧から復元できます。
 
-  <Image alt="deleted links.png" src="https://files.readme.io/d5a2cc7047fda06ba8249cc00b2830c309ec6137f10306cdabca61bcfe3d4d15-small-41829768141713.png" width="2768px" />
+  <Image align="center" alt="deleted links.png" src="https://files.readme.io/d5a2cc7047fda06ba8249cc00b2830c309ec6137f10306cdabca61bcfe3d4d15-small-41829768141713.png" width="2768px" />
 * リンクは削除日から90日以内であれば復元できます。削除日から90日を超えたリンクは復元できません。
 
 </Accordion>
@@ -287,7 +287,7 @@ AppsFlyer SDKがまだアプリに組み込まれていなくても、基本的�
 
 フォールバックURLを設定するには、OneLinkテンプレートまたはカスタムリンク設定で、アプリがインストールされていない場合のリンク動作を「別のURLへリダイレクト」に設定します。
 
-![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
+<Image align="center" alt="different_url.png" src="https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png" />
 
 この設定を使用すると、フォールバック先のパラメータとして`af_ios_url`と`af_android_url`が追加されます。iOSユーザーは`af_ios_url`で指定したページへ、Androidユーザーは`af_android_url`で指定したページへリダイレクトされます。
 
@@ -611,11 +611,11 @@ WeChatはAndroid／iOSのディープリンクを上書きし、ユーザーをW
 
 この問題に対応するため、OneLinkはWeChatからのクリックを識別し、オプションボタンをタップして［**ブラウザで開く**］を選択するよう案内する専用ランディングページを表示します。その後、OneLinkテンプレート設定で定義したリダイレクトURLが開きます。
 
-![WeChat_a.jpg](https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg)
+<Image align="center" alt="WeChat_a.jpg" src="https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg" />
 
 ユーザーのWeChat言語設定が中国語の場合、OneLinkはローカライズされたランディングページを表示します。
 
-![WeChat_b.jpg](https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg)
+<Image align="center" alt="WeChat_b.jpg" src="https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg" />
 
 </Accordion>
 

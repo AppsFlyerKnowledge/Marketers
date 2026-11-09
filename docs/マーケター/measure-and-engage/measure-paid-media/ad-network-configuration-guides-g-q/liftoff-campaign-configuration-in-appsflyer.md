@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要：** AppsFlyerの連携済みパートナーであるLiftoffは、ブランドやアプリ開発者にとって最も需要の高いパートナーの1つです。Liftoffでは、クリックベースとビュースルーのモバイルアトリビューションとリターゲティングを提供しており、これらはAppsFlyerで計測可能です。
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/liftoff.png" />
 
 <div id="important" />
 

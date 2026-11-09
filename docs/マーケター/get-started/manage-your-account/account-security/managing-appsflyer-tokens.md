@@ -30,7 +30,7 @@ x-zendesk:
 
 > 🚧 **重要**
 >
-> ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)
+> <Image align="center" alt="AppsFlyerAdmin_us-en.png" src="https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png" />
 >
 > * トークンの確認と管理を行えるのは、管理者のみです。一般のアカウントユーザーは、［トークン］ページにアクセスできません。
 > * トークンはデータへのアクセスを可能にするため、安全に保管してください。公開コードリポジトリにトークンを掲載しないでください。

@@ -41,7 +41,7 @@ Eメールマーケティングは、顧客や潜在顧客と関わるための�
 * ユーザーをアプリにディープリンクさせるのではなく、モバイルウェブサイトに遷移させる。
 * 安全性が低く、ユーザーエクスペリエンスが劣るURIスキームのディープリンクを使用する。
 
-<Image alt="53242 KB.png" src="https://files.readme.io/53db119f60e3fe2dfaf58b8a87e14595eeb9dde375bf87f7617f36a463ee0ced-30227717940753.png" width="688px" />
+<Image align="center" alt="53242 KB.png" src="https://files.readme.io/53db119f60e3fe2dfaf58b8a87e14595eeb9dde375bf87f7617f36a463ee0ced-30227717940753.png" width="688px" />
 
 **ソリューションは何ですか？**
 

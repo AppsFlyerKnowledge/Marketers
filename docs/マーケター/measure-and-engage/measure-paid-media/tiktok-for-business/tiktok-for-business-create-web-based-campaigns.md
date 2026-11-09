@@ -254,7 +254,7 @@ Appsflyerから送信される任意のアプリ内イベントをキャンペ�
 
 <Accordion title="データフロー">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. TikTokの広告URLには`pid=tiktokweb_int`パラメータが含まれた状態です。ユーザーが広告をクリックすると、`ttclid`のパラメータがクリックURLに自動的に追加されます。
 2. ユーザーは、遷移先URL（Smart Scriptを実装したランディングページ）へリダイレクトされます。

@@ -67,7 +67,7 @@ AppsFlyerは、インストールの計測元に加えて、最大3つのアド�
 
 ローデータレポートでは、貢献元のアドネットワークのデータがContributors 1～3の個別フィールドに分かれています。
 
-[![](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)
+<Image align="center" alt="" src="https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png" />
 
 貢献元のアドネットワークごとに、ローデータレポートに以下の情報が含まれます。
 

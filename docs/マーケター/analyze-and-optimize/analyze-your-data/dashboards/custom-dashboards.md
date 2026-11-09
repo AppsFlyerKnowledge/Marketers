@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **概要：** 概要：AppsFlyerでカスタマイズされた管理画面を構築しましょう。独自のカスタマイズレポートに含めるデータを選択し、名前を付け、好きな位置に配置できます。
 
-[![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
+<Image align="center" alt="CustomDashboard_us-en.png" src="https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png" />
 
 <div id="custom-dashboards" />
 
@@ -87,7 +87,7 @@ x-zendesk:
 1. [ウィジェットを追加] をクリックします。
 2. ウィジェット画面が表示されます。   
 
-   [![WidgetConfigure_us-en.png](https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png)](https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png)
+   <Image align="center" alt="WidgetConfigure_us-en.png" src="https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png" />
 3. ウィジェットを設定します。次のウィジェットの設定ガイドをご利用ください。
 4. 必要に応じてウィジェットを追加します。
 
@@ -110,7 +110,7 @@ x-zendesk:
 
 <Accordion title="ウィジェットデータのエクスポート">
 
-![Widget_table.png](https://files.readme.io/b04e80e16d0d34946e6783103fc6fbbdf89b390842db27226b4fdba6c1f7e506-360015717057.png)
+<Image align="center" alt="Widget_table.png" src="https://files.readme.io/b04e80e16d0d34946e6783103fc6fbbdf89b390842db27226b4fdba6c1f7e506-360015717057.png" />
 
 **ウィジェットデータをCSVファイルでダウンロードする方法**：
 

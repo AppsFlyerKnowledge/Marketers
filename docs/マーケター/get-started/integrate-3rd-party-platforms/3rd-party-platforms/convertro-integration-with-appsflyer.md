@@ -74,7 +74,7 @@ Convertroの設定で使用するのは、<strong>［連携］</strong>タブの
 
 ConvertroとAppsFlyerの接続には、固有のページURL、サイトID、クライアント名を使用します。まだ取得していない場合は、連携の設定を進める前にConvertroから取得するか、以下の手順で取得してください。
 
-[![](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)
+<Image align="center" alt="" src="https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png" />
 
 <div id="obtaining-the-client-name-page-url--site-id-from-the-convertro-platform" />
 
@@ -84,15 +84,15 @@ ConvertroとAppsFlyerの接続には、固有のページURL、サイトID、ク
 
 **ページURL：**
 
-[![](https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png)](https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png)
+<Image align="center" alt="" src="https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png" />
 
 **サイトID：**
 
-[![](https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png)](https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png)
+<Image align="center" alt="" src="https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png" />
 
 **クライアント名：**
 
-![](https://files.readme.io/2e5342006bdfff9e3b3c1dffdaed3e9d83ec2fe4c465b7918023a359776cee91-204595606.png)
+<Image align="center" alt="" src="https://files.readme.io/2e5342006bdfff9e3b3c1dffdaed3e9d83ec2fe4c465b7918023a359776cee91-204595606.png" />
 
 <div id="default-postbacks" />
 
@@ -100,7 +100,7 @@ ConvertroとAppsFlyerの接続には、固有のページURL、サイトID、ク
 
 AppsFlyerは、ユーザーのインストール後にConvertroへポストバックを自動送信できます。このセクションで、ポストバックの送信を設定します。
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 アプリをダウンロードしたすべてのユーザーのポストバックをConvertroに送信するには、<strong>［すべてのパートナーまたはオーガニックのイベント］</strong>を選択します。送信しない場合は、<strong>［オフ］</strong>を選択します。
 
@@ -110,7 +110,7 @@ AppsFlyerは、ユーザーのインストール後にConvertroへポストバ�
 
 ### アプリ内イベントの設定
 
-[![](https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png)](https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png)
+<Image align="center" alt="" src="https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png" />
 
 このセクションでは、ポストバックを介してAppsFlyerのイベントをConvertroのイベントに対応付けます。
 

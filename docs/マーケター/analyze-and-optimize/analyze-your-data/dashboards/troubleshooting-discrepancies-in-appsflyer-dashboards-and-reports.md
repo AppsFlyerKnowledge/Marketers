@@ -73,7 +73,7 @@ Advertisers find both types of data useful but for different purposes. For this 
 >
 > **Activity:** Imagine you're watching a passing train. As the train passes, you see only the actions performed by the passengers on the train as they pass by. This is activity data.
 >
-> <Image alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
+> <Image align="center" alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
 >
 > **LTV**: Now imagine, that you board a train as an observer. The train is divided into railroad cars.
 >
@@ -81,7 +81,7 @@ Advertisers find both types of data useful but for different purposes. For this 
 > * During the journey, you're able to observe all the actions performed by the passengers in the car. You observe the actions of these passengers until a passenger deboards the train, this is an uninstall.
 > * You aren't able to view the actions of passengers in other railroad cars because they boarded the train before or after you. This then is LTV.
 >
-> <Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
+> <Image align="center" alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
 
 ### AppsFlyer dashboards and reports—LTV or activity?
 

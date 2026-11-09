@@ -28,7 +28,7 @@ x-zendesk:
 > * 2023年1月30日に、新しい**TikTok for Business — アドバンスSRN**連携（`tiktokglobal_int`）が追加されました。**[レガシー] TikTok for Business**連携 `bytedanceglobal_int`は段階的に廃止され、2024年3月20日に公式に廃止されました。移行はTikTokによって管理され、旧連携を削除できるようになった際に通知されます。**データの損失を防ぐために、移行期間中は両方の連携を有効に保ってください**。詳細は<Anchor target="_blank" href="/marketers/ja/docs/bulletin-tiktok-for-business-advanced-srn">お知らせ</Anchor>をご覧ください。
 > * AppsFlyerは、[アプリ外のキャンペーン](#web-to-app非アプリキャンペーンの計測)のアプリアクティビティの計測をサポートしています。
 
-<Image alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
+<Image align="center" alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
 
 <div id="overview" />
 
@@ -384,7 +384,7 @@ TikTok Ads Managerで次のステップに従うと、TikTok非アプリキャ�
 4. 代理店の**TikTokアカウントID**を入力します。これにより、代理店のトラフィックが識別され、広告主のトラフィックと区別されます。
 5. **連携を保存**をクリックします。
 
-   <Image alt="tiktok.png" src="https://files.readme.io/b13ee9cd005b97c37019154a0caa10e03b846e7405777d9fc0e3db11bfb233b4-33379202036369.png" width="60.92%" />
+   <Image align="center" alt="tiktok.png" src="https://files.readme.io/b13ee9cd005b97c37019154a0caa10e03b846e7405777d9fc0e3db11bfb233b4-33379202036369.png" width="60.92%" />
 
 > ❗️ **要注意**
 >

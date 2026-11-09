@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **概要：** このスクリプトは2020年12月17日をもって非推奨となり、<Anchor target="_blank" href="/marketers/ja/docs/onelink-smart-script-overview">OneLink Smart Script</Anchor>に置き換えられました。このバージョンは引き続き動作しますが、今後の更新や変更は行われません。このスクリプトは、モバイルWebサイトのボタンに設定するURLを生成し、訪問者をアプリのダウンロード先へ誘導します。生成されるURLは、インストールのアトリビューションとディープリンクにも対応しています。
 
-![5648_Sunset_and_deprecation-01.png](https://files.readme.io/f2a154145e26577b698d00c4c3719be3eea7298576e6883bd47e6fb42897c71a-360015062398.png)
+<Image align="center" alt="5648_Sunset_and_deprecation-01.png" src="https://files.readme.io/f2a154145e26577b698d00c4c3719be3eea7298576e6883bd47e6fb42897c71a-360015062398.png" />
 
 **<Anchor target="_blank" href="/marketers/ja/docs/onelink-smart-script-overview">OneLink Smart Scriptへの移行</Anchor>**
 
@@ -709,7 +709,7 @@ function generateUrl(isDebug) {
 
 ## 結果の確認
 
-[![dashboard_landing_page_results.png](https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png)](https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png)
+<Image align="center" alt="dashboard_landing_page_results.png" src="https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png" />
 
 他のメディアソースと同様に、ランディングページの成果は、アプリのダッシュボード、ローデータ、またはAppsFlyer APIで確認できます。
 

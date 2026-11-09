@@ -23,7 +23,7 @@ x-zendesk:
 > **概要：**
 
 
-* ![snapchat-dashboard.png](https://files.readme.io/a0942bd27528d4a837edc6eb5d11338bf0622ddc42e382231a8f210aedad1424-50902448760337.png)
+* <Image align="center" alt="snapchat-dashboard.png" src="https://files.readme.io/a0942bd27528d4a837edc6eb5d11338bf0622ddc42e382231a8f210aedad1424-50902448760337.png" />
 
 1. <span id="setting-up-a-snapchat-marketing-partner"></span>AppsFlyer管理画面 左メニュー **連携** > **連携済みパートナー**へ移動します。
 
@@ -36,7 +36,7 @@ x-zendesk:
 
 このセクションでは、これらのポストバックの**送信を許可するユーザー**を定義してください。
 
-![remerge2.png](https://files.readme.io/4f3f52b3610b3e3bcf0adc6e963f1f2c39cdb0b2de27569c890844aac477b3d0-50902448761873.png)
+<Image align="center" alt="remerge2.png" src="https://files.readme.io/4f3f52b3610b3e3bcf0adc6e963f1f2c39cdb0b2de27569c890844aac477b3d0-50902448761873.png" />
 
 **- このパートナーに紐づけられたイベントのみ**：このパートナーに紐づけられたユーザーのみから発生したイベント  
 「**Events attributed to any partner or organic**」（全ての非オーガニックインストールおよびオーガニックインストールのイベント）は、すべてのユーザーベースをパートナーに送信することができます。

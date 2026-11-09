@@ -27,7 +27,7 @@ x-zendesk:
 
 > **概要：** AppsFlyerのAudiences機能を使用して、オーディエンスセグメントを構築しパートナーネットワークに連携することで、ユーザー獲得とリマーケティングキャンペーンの効率を向上しましょう。
 
-![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
+<Image align="center" alt="Intro_image.png" src="https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png" />
 
 <div id="audiences-basics" />
 
@@ -128,7 +128,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 >
 > この例では、典型的な事例の一つを説明します。まだ購入を一度も実行したことがないアプリのアクティブユーザーに初回購入を促したいとしましょう。「購入の促進」というオーディエンスを選択し、アプリ内購入を意味するイベントを指定することでオーディエンスをカスタマイズします。次に、オーディエンスをパートナーに接続し、購入を促してアプリの購入ページに誘導するプロモーションキャンペーンを実行します。
 >
-> ![Encourage_purchase_image_this_one.jpeg](https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg)
+> <Image align="center" alt="Encourage_purchase_image_this_one.jpeg" src="https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg" />
 
 **推奨オーディエンスを作成する方法：**
 
@@ -199,7 +199,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
     * デバイスIDが2つの異なるCUIDに紐づいている場合、最後に紐づけられたCUIDが使用されます。
     * CUIDを識別子としてオーディエンスを構築する場合、関連するデバイスとの完全な関連付けとデバイス識別子(GAID、IDFAなど)によるエンリッチメントを成功させるために、インストール時に(インストール後のイベントだけでなく) CUIDの関連付けをAppsFlyerが受信する必要があります。<Anchor target="_blank" href="/marketers/ja/docs/customer-user-id-field-cuid#cuidの設定">詳細はこちら</Anchor>
 
-<Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+<Image align="center" alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
 
 <div id="h_01K0PAQ4SFXBK0TZ3MH07PWN4A" />
 
@@ -365,7 +365,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 
 <Accordion title="オーディエンスセグメントのルールセット">
 
-![audience_segmentation_rulesets.jpg](https://support.appsflyer.com/hc/article_attachments/30259018214801)
+<Image align="center" alt="audience_segmentation_rulesets.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018214801" />
 
 * オーディエンスセグメントのルールセットは、正確なフィルタリングを有効にするために1つまたは複数のルールで構成されます。
 * [AND]、[OR]、[除外] のいずれかを使用してルールセットを結合します。
@@ -388,7 +388,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 >
 > 先月アプリをアンインストールしたニューヨークのユーザー
 >
-> ![example_location_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/30258966552209)
+> <Image align="center" alt="example_location_based_rule.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966552209" />
 
 <div id="example-user-attributes-based-rule" />
 
@@ -396,7 +396,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 >
 > 過去7日間に最低1回アプリを起動し、好きな武器 (FavoriteWeapon) が刀 (Sword) であるユーザー。
 >
-> ![example_user_attributes_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/30258966566801)
+> <Image align="center" alt="example_user_attributes_based_rule.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966566801" />
 
 <div id="example-revenue" />
 
@@ -404,7 +404,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 >
 > 過去7日間にアプリをインストールし、$1を課金したユーザー
 >
-> ![example_revenue.jpg](https://support.appsflyer.com/hc/article_attachments/30258966567825)
+> <Image align="center" alt="example_revenue.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966567825" />
 
 <div id="example-owned-media-filter" />
 
@@ -414,7 +414,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 >
 > 過去7日間に少なくとも1回アプリを起動し、インストールが特定のメールキャンペーンと特定の広告セットと広告に紐づくユーザーの例を次に示します。
 >
-> ![Owned_media_example.jpg](https://support.appsflyer.com/hc/article_attachments/30258966580753)
+> <Image align="center" alt="Owned_media_example.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966580753" />
 >
 > オーディエンスは、オウンドメディアまたは有料メディアでパーソナライズされたメッセージでこれらのユーザーをリエンゲージするために、またはキャンペーンの実行時に無関係または不要な広告が表示されないようにするための除外リストとして使用できます。
 
@@ -426,7 +426,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 >
 > 過去2日間に広告をクリックしたがインストールしていない見込みユーザーのオーディエンスを構築しましょう。
 >
-> ![example_remarketing.jpg](https://support.appsflyer.com/hc/article_attachments/30259018231313)
+> <Image align="center" alt="example_remarketing.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018231313" />
 >
 > これらは最近モバイルアプリに興味を持って広告をクリックしたが何かしらの理由でアプリをインストールしなかった、またはアプリをインストールしたが起動しなかったユーザーです。一部のユーザーはインストールさせるためのリマインダー（プッシュ）が必要です。他のユーザーは、最終的にコンバージョンに至るためにはアプリ画面や機能をより詳しく見る必要があるかもしれません。したがって、新規オーディエンスに使用している主な広告デザインがある場合、クリックしたがインストールしなかったオーディエンスには、別のデザインを用意したほうが効果的な場合があります。
 
@@ -497,7 +497,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 6. このパートナーとの共有を許可するユーザー識別子を選択してください。
    * 対応する識別子は、パートナーによって異なります。選択したパートナーがサポートしている識別子のみがリストに表示されます。
    * <Anchor target="_blank" href="/marketers/ja/docs/audiences-user-identifier-policy">アカウントレベルのユーザー識別子ポリシー</Anchor>に準拠した識別子のみがアップロードされます。アカウントポリシーで許可されていない識別子を選択した場合は、注意書きが表示されます。  
-     ![doctored_connection_image.jpg](https://support.appsflyer.com/hc/article_attachments/30258966624017)
+     <Image align="center" alt="doctored_connection_image.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966624017" />
 7. **保存**をクリックします。
 
 </Accordion>
@@ -531,7 +531,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 
 <Accordion title="オーディエンス管理画面">
 
-[![new_dashboard_image_doctored.jpg](https://support.appsflyer.com/hc/article_attachments/30258966628625)](https://support.appsflyer.com/hc/article_attachments/30258966628625)
+<Image align="center" alt="new_dashboard_image_doctored.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966628625" />
 
 | 列 | 説明 |
 | --- | --- |
@@ -577,7 +577,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 
 最初に**キャンペーン指標**が表示される際には、各オーディエンスのキャンペーンデータのサマリーが表示されます。
 
-[<Image alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018286225" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30258966633233)
+[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018286225" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30258966633233)
 
 | Column | 説明 |
 | --- | --- |
@@ -593,7 +593,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 
 詳細表示では、サポートされているパートナーやキャンペーンごとに分けられたデータが表示されます。
 
-[![campaign_metrics_detailed_view.jpg](https://support.appsflyer.com/hc/article_attachments/30259018293649)](https://support.appsflyer.com/hc/article_attachments/30259018290321)
+[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018293649" />](https://support.appsflyer.com/hc/article_attachments/30259018290321)
 
 選択したオーディエンスが複数のアプリをターゲットにしていた場合は、ドロップダウンリスト ![pin_A.png](https://support.appsflyer.com/hc/article_attachments/30259018295697) を使用してアプリ別にデータを絞り込みます。
 

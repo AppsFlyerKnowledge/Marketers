@@ -85,7 +85,7 @@ Meta Web連携で送信できるポストバックは、インストールとア
      **注意：** 右上のドロップダウンで、対象のビジネスが選択されていることを確認してください。
   2. **イベントマネージャ**のサイドメニューで、<strong>［データソース］</strong>を選択します。ピクセルの一覧が表示されます。選択したビジネスのピクセルがない場合は、同じ画面から作成できます。
   3. ピクセル名の下に表示されるピクセルIDをコピーし、AppsFlyerの連携設定の［ピクセルID］欄に貼り付けます。  
-     <Image alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
+     <Image align="center" alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
 * **アクセストークン：** アクセストークンを入力します。取得方法は、[こちらの手順](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)を参照してください。
 * **Meta広告によるユーザーの個人情報の利用を制限（CCPA）：** このトグルをオンにすると、<Anchor target="_blank" href="/marketers/ja/docs/send-opendsr-api-requests">データ保護法</Anchor>への対応が有効になります。  
   **注意：** CCPAのプライバシー規制に対応すると、カリフォルニア州のMeta広告ユーザーから取得するデータが制限されます。
