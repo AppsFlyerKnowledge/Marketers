@@ -34,7 +34,7 @@ Jika Anda belum menambahkan aplikasi ke dashboard, layar pertama yang muncul aka
 
 <Accordion title="1 – Pilih status aplikasi">
 
-![tambahkan aplikasi langkah 1](https://support.appsflyer.com/hc/article_attachments/360016229417/add_app_wizard_step1.png)
+<Image align="center" alt="tambahkan aplikasi langkah 1" src="https://support.appsflyer.com/hc/article_attachments/360016229417/add_app_wizard_step1.png" />
 
 | Status | Di mana menggunakannya |
 | --- | --- |
@@ -46,7 +46,7 @@ Jika Anda belum menambahkan aplikasi ke dashboard, layar pertama yang muncul aka
 
 <Accordion title="2 – Tambahkan informasi store">
 
-![tambahkan aplikasi langkah 2.png](https://support.appsflyer.com/hc/article_attachments/360016229397/add_app_wizard_step2.png)
+<Image align="center" alt="tambahkan aplikasi langkah 2.png" src="https://support.appsflyer.com/hc/article_attachments/360016229397/add_app_wizard_step2.png" />
 
 <table><thead><tr><th>Status aplikasi<br/>(dari langkah 1)</th><th>Store</th><th>Detail</th></tr></thead><tbody><tr><td rowspan="3">Di store</td><td>App Store iOS</td><td> <strong>URL App Store</strong> (disalin dari App Store) <ul><li> <strong>Misalnya:</strong> https://apps.apple.com/us/app/partner-integrations/id1543229303<br/><br/>Aplikasi yang ditambahkan ke App Store sebelum 14 Juni 2019 dapat berisi <em>itunes.apple.com</em> di dalam URL-nya (bukan <em>apps.apple.com</em>).</li></ul></td></tr><tr><td><p>Google play</p></td><td><p><strong>URL Google Play</strong> (disalin dari Google Play)</p><ul><li> <strong>Misalnya:</strong> https://play.google.com/store/apps/details?id=com.appsflyer.adNetworkTest</li></ul></td></tr><tr><td><p>Windows Phone Store</p></td><td><p><strong>URL Windows Phone Store</strong> (disalin dari Windows Phone Store)</p><ul><li> <strong>Misalnya:</strong> https://www.microsoft.com/en-us/p/wordament/9wzdncrfhwfg</li></ul></td></tr><tr><td rowspan="3">Tertunda</td><td><p>App Store iOS</p></td><td><p><strong>Negara</strong>  App Store di mana aplikasi dikirimkan</p><p><strong>App ID (ID Aplikasi)</strong> ditetapkan oleh App Store, tanpa awalan <em>id</em></p><ul><li> <strong>Misalnya:</strong> 1543229303</li></ul></td></tr><tr><td><p>Google play</p></td><td><p><strong>Nama paket Android</strong></p><ul><li> <strong>Misalnya:</strong> com.appsflyer.adNetworkTest</li><li> <strong>Catatan:</strong> Nama paket peka huruf besar-kecil</li></ul></td></tr><tr><td><p>Windows Phone Store</p></td><td><p><strong>App ID (ID Aplikasi)</strong> ditetapkan oleh Windows Phone Store</p><ul><li> <strong>Misalnya:</strong> 9wzdncrfhwfg</li><li> <strong>Catatan:</strong> App ID (ID Aplikasi) peka huruf besar-kecil</li></ul></td></tr><tr><td colspan="2">App store pihak ketiga</td><td><p><strong>Nama paket Android</strong></p><ul><li> <strong>Misalnya:</strong> com.appsflyer.adNetworkTest</li><li> <strong>Catatan:</strong> Nama paket peka huruf besar-kecil</li></ul><p><strong>Nama kanal</strong> (misalnya, Amazon)</p><p><strong>App URL (URL Aplikasi)</strong> (disalin dari app store pihak ketiga)</p></td></tr></tbody></table>
 
@@ -54,7 +54,7 @@ Jika Anda belum menambahkan aplikasi ke dashboard, layar pertama yang muncul aka
 
 <Accordion title="3 – Atur zona waktu dan mata uang">
 
-![tambahkan aplikasi langkah 3](https://support.appsflyer.com/hc/article_attachments/360016229457/add_app_wizard_step3.png)
+<Image align="center" alt="tambahkan aplikasi langkah 3" src="https://support.appsflyer.com/hc/article_attachments/360016229457/add_app_wizard_step3.png" />
 
 **Zona waktu:** Sesuaikan zona waktu yang Anda pilih di sini dengan zona waktu yang Anda tetapkan dengan mitra atribusi lainnya (seperti Facebook dan Google Ads). Ini memastikan kecocokan sempurna antara data yang dilaporkan di dashboard AppsFlyer dan data yang Anda terima dari mitra ini. <Anchor target="_blank" href="/marketers/id/docs/changing-app-time-zone-settings">Pelajari lebih lanjut</Anchor> tentang pengaturan zona waktu aplikasi dan dampaknya.
 

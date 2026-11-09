@@ -56,13 +56,13 @@ templat OneLink:
 1. Di dasbor AppsFlyer, buka **Experiences & deep linking** > **OneLink management** .  
    OneLink adalah fitur tingkat akun, yang memungkinkan Anda membuat templat OneLink dan tautan kustom mereka untuk semua aplikasi Anda.  
 
-   [![](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png)](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png)
+   <Image align="center" alt="" src="https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png" />
 
    **Catatan** : Jika Anda tidak memiliki templat yang dibuat, panduan integrasi akan dibuka. Ikuti petunjuk di wizard dan abaikan prosedur lainnya ini.
 2. Klik ikon menu > **Add OneLink template** .  
     Halaman pengaturan templat OneLink dibuka.  
 
-   [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
+   <Image align="center" alt="OneLink_template_page_en-us.png" src="https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png" />
 3. Di kolom nama templat **OneLink**, masukkan nama.  
 
    <div id="note" />
@@ -126,7 +126,7 @@ Untuk pengalaman pengguna, keamanan, dan jangkauan perangkat terbaik, kami merek
 2. Arahkan kursor ke templat OneLink yang ingin Anda edit, dan  klik ikon **Edit** .
 3. Gulir ke bawan ke **When app is installed** (Saat aplikasi terinstal).
 
-   [![](https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png)](https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0e8e5364f0b184f33d72e33f28df131d5a8bb6c377dc74f0ec190bcc6e63e75-18363965490833.png" />
 4. Ikuti instruksi untuk pengaturan iOS, Android, dan fallback:  
 
    <Tabs>
@@ -142,7 +142,7 @@ Untuk pengalaman pengguna, keamanan, dan jangkauan perangkat terbaik, kami merek
       * Pengembang kembali kepada Anda dengan ID Tim (juga disebut Awalan ID Aplikasi Apple, misalnya, PF23MIWNTW).
       * Jika aplikasi belum dipublikasikan, pengembang juga harus memberi Anda Pengenal Aplikasi (Bundle Identifier) (misalnya, com.myapp.something).
 
-        [![](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)
+        <Image align="center" alt="" src="https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png" />
    2. Di laman templat OneLink, klik **Change to launch the app using Universal Links** (Ubah untuk membuka aplikasi menggunakan Tautan Universal).
    3. Di jendela baru, pilih **Luncurkan aplikasi menggunakan Tautan Universal**.
    4. Di bidang **Team ID**, masukkan ID tim yang disediakan oleh pengembang Anda.
@@ -226,7 +226,7 @@ Untuk pengalaman pengguna, keamanan, dan jangkauan perangkat terbaik, kami merek
 
 <Accordion title="Sesuaikan kode QR">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 Anda dapat menyesuaikan kode QR yang dibuat melalui OneLink dengan:
 

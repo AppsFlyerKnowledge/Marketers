@@ -50,7 +50,7 @@ Pertama, Anda harus berlangganan paket Creative Optimization Premium dan Data Lo
 
 2. Saat mengatyr Data Locker, pilih **Materi Iklan** (di bawah **Pilih laporan**), di halaman konfigurasi Data Locker.
 
-![Data Locker - pilih Creative.jpg](https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg)
+<Image align="center" alt="Data Locker - pilih Creative.jpg" src="https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg" />
 
 </Accordion>
 
@@ -64,11 +64,11 @@ Bagian ini menjelaskan cara mengedit konfigurasi Data Locker yang sudah ada untu
 
 1. Dari **Integrasi** di menu samping utama AppsFlyer, klik **Data Locker**.
 
-<Image alt="dari Integrasi pilih Data Locker.jpg" src="https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg" width="200px" />
+<Image align="center" alt="dari Integrasi pilih Data Locker.jpg" src="https://files.readme.io/797989d738fddcce1de7a45a98e13b898d53817c285c839ff1fbb5a92522ccf0-19284078965009.jpg" width="200px" />
 
 2. Pilih **Materi Iklan** (di bawah **Pilih laporan**) di halaman konfigurasi Data Locker.
 
-![Data Locker - pilih Creative.jpg](https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg)
+<Image align="center" alt="Data Locker - pilih Creative.jpg" src="https://files.readme.io/bd1528ac5419f1bbf033a4a96c028f5a1bf7ff798c452371ac906ea650255d31-19276693230353.jpg" />
 
 </Accordion>
 

@@ -156,7 +156,7 @@ Untuk aplikasi iOS, sakelar <Anchor target="_blank" href="/marketers/id/docs/app
 
 The Trade Desk terhubung dengan AppsFlyer melalui ID jaringan unik. Jika Anda belum memiliki Tracker\_ID dan advertiserid, Anda harus mendapatkannya dari The Trade Desk untuk melanjutkan integrasi.
 
-![TTD_General_Settings_.png](https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png)
+<Image align="center" alt="TTD_General_Settings_.png" src="https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png" />
 
 **Mengaktifkan atribusi Lihat-Tayang**
 
@@ -166,7 +166,7 @@ Nyalakan **Aktifkan atribusi Lihat-Tayang** untuk mengaitkan penginstalan lihat-
 
 #### Postback Default
 
-![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
+<Image align="center" alt="default_postbacks_en-us.png" src="https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png" />
 
 Kirim postback otomatis ke The Trade Desk setelah penginstalan dan interaksi ulang pengguna. Gunakan bagian ini untuk menentukan sumber pengguna yang mengizinkan pengiriman postback ini:
 
@@ -185,7 +185,7 @@ Kirim postback otomatis ke The Trade Desk setelah penginstalan dan interaksi ula
 
 Petakan event AppsFlyer dengan TTD melalui postback. Jika pengiriman postback diaktifkan, ini termasuk in-app event yang ditolak (event yang diblokir oleh Protect360 atau event yang ditemukan tidak sesuai dengan aturan validasi target).
 
-![the_trade_desk_in_app_event_settings_en-us.png](https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png)
+<Image align="center" alt="the_trade_desk_in_app_event_settings_en-us.png" src="https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png" />
 
 **Untuk mengonfigurasi postback in-app event:**
 
@@ -220,7 +220,7 @@ Menambahkan parameter ke tautan atribusi memungkinkan Anda melakukan analisis pe
 
 Pilih parameter mana yang ingin Anda tambahkan ke tautan atribusi.
 
-![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+<Image align="center" alt="ttd_attribution_link_parameters_en-us.png" src="https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png" />
 
 <div id="default-parameters" />
 
@@ -251,7 +251,7 @@ Anda dapat mengukur lalu lintas CTV dengan AppsFlyer dengan menambahkan paramete
 
 #### Atribusi Click-Through
 
-![click-through_attribution_ttd_en-us.png](https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png)
+<Image align="center" alt="click-through_attribution_ttd_en-us.png" src="https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png" />
 
 Gunakan slider untuk mengatur waktu maksimal dari klik hingga penginstalan. Hanya penginstalan (peluncuran pertama) yang terjadi dalam jendela lihat balik yang diatribusikan.
 
@@ -267,7 +267,7 @@ Pelajari selengkapnya tentang <Anchor target="_blank" href="/marketers/id/docs/s
 
 #### Atribusi lihat-tayang
 
-![view-through_attribution_ttd_en-us.png](https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png)
+<Image align="center" alt="view-through_attribution_ttd_en-us.png" src="https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png" />
 
 Gunakan slider untuk mengatur waktu maksimal dari impresi ke penginstalan. Hanya penginstalan (peluncuran pertama) yang terjadi di dalam jendela lookback ini, dilanjutkan dari impresi iklan, yang diatribusikan ke mitra, dengan syarat tidak ada klik iklan relevan lainnya.
 
@@ -303,7 +303,7 @@ Pendapatan iklan tidak tersedia untuk The Trade Desk.
 
 Di tab ini, Anda dapat memilih izin untuk diberikan kepada The Trade Desk, baik bertindak sebagai jaringan iklan, agensi, atau bahkan keduanya. Perhatikan bahwa meskipun atribusi dinonaktifkan untuk The Trade Desk, tab izin dapat aktif dan Anda dapat memberikan kontrol kepada The Trade Desk.
 
-![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
+<Image align="center" alt="" src="https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png" />
 
 Gunakan tombol ini untuk memberikan izin pada jaringan iklan untuk menangani konfigurasinya sendiri bagi aplikasi Anda:
 

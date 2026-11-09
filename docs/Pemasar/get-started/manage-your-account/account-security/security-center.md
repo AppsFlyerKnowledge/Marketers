@@ -57,6 +57,6 @@ x-zendesk:
 1. Dari bilah menu, akses menu pengguna (tarik-turun alamat email).
 2. Pilih **Security center.**
 
-[![](https://files.readme.io/b1d7c183e392307ad01f50585ae78f4432831872f92b90537689b78eed22b9ca-8947160679057.png)](https://files.readme.io/b1d7c183e392307ad01f50585ae78f4432831872f92b90537689b78eed22b9ca-8947160679057.png)
+<Image align="center" alt="" src="https://files.readme.io/b1d7c183e392307ad01f50585ae78f4432831872f92b90537689b78eed22b9ca-8947160679057.png" />
 
 <div data-zendesk-anchors="what-can-i-do-from-the-security-center=apa-yang-dapat-saya-lakukan-dari-pusat-keamanan access-the-security-center=akses-pusat-keamanan" />

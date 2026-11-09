@@ -24,7 +24,7 @@ x-zendesk:
 
 > **Sekilas:** Gunakan dasbor Ikhtisar Optimisasi Materi Iklan untuk menganalisis kinerja materi iklan, sehingga Anda dapat memilih materi iklan yang paling efektif dan memaksimalkan dampak kampanye Anda.
 
-[![Main KB image 2023-11-14_10-07-47.jpg](https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg)](https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg)
+<Image align="center" alt="Main KB image 2023-11-14_10-07-47.jpg" src="https://files.readme.io/50c88549320966815e013332763b27b9812f2da45056b93fefb01f1fa79e3483-20126228557073.jpg" />
 
 <div id="about-the-creative-optimization-overview-dashboard" />
 
@@ -86,7 +86,7 @@ Gunakan tabel untuk menelusuri detailnya. Kelompokkan menurut berbagai dimensi a
 
 Gambar berikut menunjukkan tampilan tabel default, yang menampilkan materi iklan sesuai dengan kriteria pemfilteran yang dipilih. Huruf pada gambar sesuai dengan huruf dan keterangan pada tabel berikut.
 
-[![Table_main_image_doctored_final_copy__download_table_.jpg](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)
+<Image align="center" alt="Table_main_image_doctored_final_copy__download_table_.jpg" src="https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg" />
 
 |  | Item | Deskripsi |
 | --- | --- | --- |
@@ -141,7 +141,7 @@ Sesuaikan tabel dengan mengeklik<Image alt="Creative_table_settings_en_us.png" s
 
 *Perhatikan bahwa metrik akan ditampilkan di baris data individual, yang ditampilkan di bawah baris gabungan di tabel.
 
-[![](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)
+<Image align="center" alt="" src="https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png" />
 
 </Accordion>
 

@@ -44,7 +44,7 @@ The first stage in configuring the AppsFlyer SSO process is done on the JumpClou
    2. **ACS URLs:** Enter the callback URL according to the <Anchor target="_blank" href="/marketers/id/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration">method for authenticating your users</Anchor>.
    3. **Login URL:** Enter the AppsFlyer <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">login URL</Anchor>.  
 
-      <Image alt="jumpcloud_sso_tab2__1_.png" src="https://files.readme.io/3b45c98d191a35644c5479a0237e92908ca6f18416f6df2b6e0c84a30940307b-15934671100561.png" width="477px" />
+      <Image align="center" alt="jumpcloud_sso_tab2__1_.png" src="https://files.readme.io/3b45c98d191a35644c5479a0237e92908ca6f18416f6df2b6e0c84a30940307b-15934671100561.png" width="477px" />
 6. Click **activate**.
 7. A public certificate is created. An indication of it appears on the top right of the page. Click **Download Certificate**. This certificate is needed in <Anchor target="_blank" href="/marketers/id/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">Step 2, on the AppsFlyer platform</Anchor>.
 
@@ -56,7 +56,7 @@ The first stage in configuring the AppsFlyer SSO process is done on the JumpClou
 
 1. Go to <Anchor target="_blank" href="https://console.jumpcloud.com/#/users">Users</Anchor> from the JumpCloud admin menu, and click the + icon.
 2. Select **Manual user entry**.  
-   <Image alt="cloud_jump_manual_user_entry.png" src="https://files.readme.io/d00299979fa5e036c464c8c6d360965d46e42d5042a31366ced7adc84914c0be-14947838808081.png" width="417px" />
+   <Image align="center" alt="cloud_jump_manual_user_entry.png" src="https://files.readme.io/d00299979fa5e036c464c8c6d360965d46e42d5042a31366ced7adc84914c0be-14947838808081.png" width="417px" />
 3. Enter all required fields: **Username**, **Company Email**, and click **save user**.
 4. Set user password settings according to the acceptable method in your company.
 5. To continue adding users, click **Save And Create Another**, then repeat step 3. When done adding all users, click **Save**.

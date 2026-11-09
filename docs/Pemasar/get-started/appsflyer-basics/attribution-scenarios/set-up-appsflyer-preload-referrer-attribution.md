@@ -80,7 +80,7 @@ Pramuat/klik untuk mengunduh data kinerja kampanye keterlibatan tersedia sebagai
 2. Pilih mitra pramuat.
 3. Di tab **Integrasi** , aktifkan **Atribusi pramuat**.  
 
-   [<Image alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />](https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png)
+   <Image align="center" alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />
 4. Setel durasi **Jendela lookback pramuat** . Rentang: 1-180 hari.
 5. [Opsional] Aktifkan **Prioritas atribusi setara pramuat**.  
    Hal ini memberikan klik deterministik prioritas atribusi yang sama seperti atribusi pramuat, artinya jika klik deterministik didaftarkan antara interaksi perujuk pramuat dan penginstalan, klik tersebut mendapat atribusi berdasarkan logika atribusi sentuhan terakhir standar, dan bukan digantikan oleh perujuk pramuat .

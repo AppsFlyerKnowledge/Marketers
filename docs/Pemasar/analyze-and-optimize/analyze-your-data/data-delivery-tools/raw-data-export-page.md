@@ -28,7 +28,7 @@ x-zendesk:
 
 Visual berikut ditampilkan saat pertama kali Anda membuka halaman **Ekspor data lengkap**; halaman **Laporan saya** ditampilkan jika Anda memiliki laporan yang siap untuk diunduh atau diduplikasi.
 
-[![RawDataSplash.png](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)
+<Image align="center" alt="RawDataSplash.png" src="https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png" />
 
 **Laporan saya**
 
@@ -38,7 +38,7 @@ Untuk deskripsi laporan data lengkap, lihat <Anchor target="_blank" href="/marke
 
 Untuk membuat atau mengunduh laporan, lihat bagian prosedur dari artikel ini.
 
-[![MyReportsRawDataExport.png](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)
+<Image align="center" alt="MyReportsRawDataExport.png" src="https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png" />
 
 <div id="raw-data-export-page-features-and-filter-options" />
 

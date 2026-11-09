@@ -25,7 +25,7 @@ x-zendesk:
 
 > **Sekilas:** Optimisasi Materi Iklan memungkinkan Anda untuk mengambil semua data aset materi iklan dari semua kampanye Anda ke dalam satu platform, sehingga Anda dapat menganalisis kinerjanya, menemukan materi iklan mana yang bekerja paling baik, dan membuat keputusan yang lebih baik berdasarkan data.
 
-[![Gambar KB utama 2023-11-14_10-07-47.jpg](https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg)](https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg)
+<Image align="center" alt="Gambar KB utama 2023-11-14_10-07-47.jpg" src="https://files.readme.io/931a64db9b96154f101f6425fad1dfd9559aab2855b6ca6c4b82f250b283e87b-20126060107793.jpg" />
 
 <div id="about-creative-optimization" />
 
@@ -122,7 +122,7 @@ Meta Advantage+ (materi iklan dinamis), dan Kampanye Aplikasi Universal Google (
 > Jadi materi iklan diatribusikan dengan total 50 penginstalan oleh AppsFlyer namun volume penginstalan per aset dipertahankan yang berarti bahwa **aset A** menghasilkan lebih banyak penginstalan dibandingkan **aset B**, dalam contoh kita.
 > Metrik corong bawah, seperti Pendapatan dan ROAS, juga dihitung berdasarkan rasio ini.
 >
-> ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
+> <Image align="center" alt="Creative_data_example_en-us.png" src="https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png" />
 
 </Accordion>
 
@@ -134,7 +134,7 @@ Meta Advantage+ (materi iklan dinamis), dan Kampanye Aplikasi Universal Google (
 
 Bagian ini memberikan ikhtisar komprehensif tentang filter dashboard utama serta berbagai metrik dan dimensi yang tersedia untuk mendapatkan data materi iklan yang Anda cari. 
 
-[![Filter bar and metrics New.jpg](https://files.readme.io/f2fbccaefa76bd5c9543902a2b670ee67c9edd6271fab141083ddd6f331fe138-20126434102801.jpg)](https://files.readme.io/f2fbccaefa76bd5c9543902a2b670ee67c9edd6271fab141083ddd6f331fe138-20126434102801.jpg)
+<Image align="center" alt="Filter bar and metrics New.jpg" src="https://files.readme.io/f2fbccaefa76bd5c9543902a2b670ee67c9edd6271fab141083ddd6f331fe138-20126434102801.jpg" />
 
 <div id="filter-bar" />
 
@@ -142,7 +142,7 @@ Bagian ini memberikan ikhtisar komprehensif tentang filter dashboard utama serta
 
 Langkah pertama dalam menyiapkan dashboard Anda adalah memilih opsi pemfilteran. Semua filter diterapkan ke dashboard Ikhtisar dan Penemuan.
 
-[![filter_bar.jpg](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)
+<Image align="center" alt="filter_bar.jpg" src="https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg" />
 
 Mulailah dengan memilih:
 
@@ -171,7 +171,7 @@ Data materi iklan di dashboard disajikan dalam 3 jenis tampilan terpisah: Terpad
 * **Akuisisi Pengguna** - Hanya menampilkan data materi iklan yang dikaitkan dengan iklan/adset UA.
 * **Penargetan Ulang** - Menampilkan data materi iklan yang terkait dengan penargetan ulang iklan/adset saja. Data biaya juga tersedia di sini.
 
-[![View_types.jpg](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)
+<Image align="center" alt="View_types.jpg" src="https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg" />
 
 </Accordion>
 
@@ -239,7 +239,7 @@ Buat metrik khusus untuk mengukur kinerja materi iklan sesuai keinginan Anda.
 
 1. Klik menu tarik-turun di kanan atas dashboard, lalu pilih **Metrik khusus**
 
-![Custom_metric_select.jpg](https://files.readme.io/99ca0ee30d09e42ef2798188e8d95fc4cf56ee31ad055209efadc47c9df8a859-18564742772625.jpg)
+<Image align="center" alt="Custom_metric_select.jpg" src="https://files.readme.io/99ca0ee30d09e42ef2798188e8d95fc4cf56ee31ad055209efadc47c9df8a859-18564742772625.jpg" />
 
 2. **Isi formulir:**
 
@@ -251,7 +251,7 @@ Buat metrik khusus untuk mengukur kinerja materi iklan sesuai keinginan Anda.
   * Kombinasikan dengan berbagai *Operator, Nomor,* dan/atau *In-app event*
   * In-app event tertentu dipilih dari menu tarik-turun. Untuk setiap in-app event, Anda dapat menambahkan metrik apa pun per event secara terpisah untuk mendapatkan wawasan yang sangat spesifik, misalnya, pendapatan af\_purchase + jumlah af\_login.
 
-<Image alt="Custom_metrics_form.jpg" src="https://files.readme.io/2fdbcd2e8fcc17b6a47fd3ae252d03b1eec5099400ed46855b3b4ae83a4c8e00-18564718424209.jpg" width="625px" />
+<Image align="center" alt="Custom_metrics_form.jpg" src="https://files.readme.io/2fdbcd2e8fcc17b6a47fd3ae252d03b1eec5099400ed46855b3b4ae83a4c8e00-18564718424209.jpg" width="625px" />
 
 3. Klik **Simpan**
 
@@ -268,7 +268,7 @@ Metrik khusus juga dapat dengan mudah diedit atau dihapus.
 
 1. Klik tarik-turun **Edit metrik khusus yang ada** (pada formulir **Metrik khusus** ) dan pilih metrik yang ingin Anda edit.
 
-<Image alt="Edit_cstom_metric_full_window.jpg" src="https://files.readme.io/26a33b98ded52599d420be3860c6129b7c748ef0867bcffc351ad1c526641c97-18564744997905.jpg" width="623px" />
+<Image align="center" alt="Edit_cstom_metric_full_window.jpg" src="https://files.readme.io/26a33b98ded52599d420be3860c6129b7c748ef0867bcffc351ad1c526641c97-18564744997905.jpg" width="623px" />
 
 2. Lakukan perubahan apa pun yang Anda inginkan, lalu klik **Simpan**
 
@@ -276,7 +276,7 @@ Metrik khusus juga dapat dengan mudah diedit atau dihapus.
 
 **Untuk menghapus:** Setelah memilih metrik khusus yang ingin Anda hapus dari tarik-turun, klik ikon hapus.
 
-<Image alt="Delete_custom_metric.jpg" src="https://files.readme.io/185b9c3f071518ff2da549b6c34c4ddfecf12bc442b2f7990eb11f04fae10925-18564742779921.jpg" width="514px" />
+<Image align="center" alt="Delete_custom_metric.jpg" src="https://files.readme.io/185b9c3f071518ff2da549b6c34c4ddfecf12bc442b2f7990eb11f04fae10925-18564742779921.jpg" width="514px" />
 
 </Accordion>
 
@@ -322,7 +322,7 @@ Metrik mitra saat ini tersedia untuk mitra berikut:
 
 Cukup tambahkan integrasi mitra baru, dan metrik untuk mitra yang didukung akan otomatis dimasukkan ke Materi Iklan (Iklan Unity merupakan pengecualian dan memiliki petunjuk khusus). Setelah disiapkan, metrik ini ditandai dengan "Mitra" di samping metrik.
 
-![partner metrics image.jpg](https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg)
+<Image align="center" alt="partner metrics image.jpg" src="https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg" />
 
 **Petunjuk dan pertimbangan khusus:**
 
@@ -368,13 +368,13 @@ Cukup tambahkan integrasi mitra baru, dan metrik untuk mitra yang didukung akan 
 
 1. Dari dashboard Optimisasi Materi Iklan, klik ikon  ⋮  di kanan atas untuk membuka **Integrasi materi iklan**.
 
-![3 dots icon.jpg](https://files.readme.io/ed1f8ac5cee987a10a81b70c97e88a04897a6102c61ee4a0c87fde0a658354e0-18564744949393.jpg)
+<Image align="center" alt="3 dots icon.jpg" src="https://files.readme.io/ed1f8ac5cee987a10a81b70c97e88a04897a6102c61ee4a0c87fde0a658354e0-18564744949393.jpg" />
 
 2. Klik **+ Integrasi baru**.
 
 3. Pilih **Unity Ads** di daftar tarik-turun **Mitra** .
 
-<Image alt="Integrasi baru - Unity Ads.jpg" src="https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg" width="493px" />
+<Image align="center" alt="Integrasi baru - Unity Ads.jpg" src="https://files.readme.io/8a03c4b50287768cd95217af142ec551c8526b2cf5f7f7af06c04704a868093d-18564745005073.jpg" width="493px" />
 
 4. Masukkan **ID Kunci** Unity, **Kunci Rahasia**, dan **ID Inti Organisasi** untuk integrasi (lihat instruksi <Anchor target="_blank" href="/marketers/id/docs/creative-optimization-partner-integrations#unity-ads">integrasi Unity</Anchor> untuk cara mendapatkannya).
 
@@ -390,15 +390,15 @@ b. Klik **Produk** di menu samping.
 
 c. Lalu klik **Kembangkan**.
 
-<Image alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="567px" />
+<Image align="center" alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="567px" />
 
 d. Klik **Akuisisi Pengguna Unity Ads**.
 
-<Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="312px" />
+<Image align="center" alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="312px" />
 
 e. Klik **Manajemen API**.
 
-![Unity-dari API mngmt, dapatkan kunci API w arrow.jpg](https://files.readme.io/c617593d5935fbe8072d9fac0146fb3257c395c8dcf173130b97cc2a4a043285-20348783332881.jpg)
+<Image align="center" alt="Unity-dari API mngmt, dapatkan kunci API w arrow.jpg" src="https://files.readme.io/c617593d5935fbe8072d9fac0146fb3257c395c8dcf173130b97cc2a4a043285-20348783332881.jpg" />
 
 f. Salin kunci API.
 
@@ -408,15 +408,15 @@ f. Salin kunci API.
 
 2. Lalu klik **Kembangkan**.
 
-<Image alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="583px" />
+<Image align="center" alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="583px" />
 
 3. Klik **Akuisisi Pengguna Iklan Unity**.
 
-<Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="336px" />
+<Image align="center" alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="336px" />
 
 4. Klik **Pengaturan**.
 
-![Dapatkan instruksi ID Organisasi 2 arrows.jpg](https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg)
+<Image align="center" alt="Dapatkan instruksi ID Organisasi 2 arrows.jpg" src="https://files.readme.io/7514d25a8c9a7a9f64e7e5b6f9008c649cb949eff7d25c49a1693f806518e07d-20348948474897.jpg" />
 
 5. Salin **ID Organisasi**.
 
@@ -454,7 +454,7 @@ Anda dapat membuat beberapa tampilan, serta mengedit dan menghapusnya juga, meng
 
 Klik ikon di kanan atas dashboard untuk menyalin URL halaman, lalu bagikan.
 
-<Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
+<Image align="center" alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
 
 </Accordion>
 
@@ -490,7 +490,7 @@ Prosedur untuk mengunduh dan mengunggah file CSV dijelaskan di bawah ini:
 
 1. Klik<Image alt="3_dots_icon.png" src="https://files.readme.io/e958f262f824e2d6d259f123f550697f2916628c71cde515697e51af832d2410-18564718539665.png" width="16px" />menu di pojok kanan atas dashboard.  
 
-   ![Main menu highlighted.jpg](https://files.readme.io/9461227252c0e9100b43f2a7fbecbea803effd4f9ab2f5d903810ce682b11240-20126844522641.jpg)
+   <Image align="center" alt="Main menu highlighted.jpg" src="https://files.readme.io/9461227252c0e9100b43f2a7fbecbea803effd4f9ab2f5d903810ce682b11240-20126844522641.jpg" />
 2. Klik **Unduh file tag khusus**.
 3. Pilih materi iklan mana yang ingin Anda sertakan dalam file (semua materi iklan atau hanya materi iklan yang saat ini ditampilkan di dashboard - tidak termasuk materi iklan yang difilter).
 4. Klik **Unduh**.
@@ -515,7 +515,7 @@ Data akan tersedia dalam waktu sekitar 30 menit.
 
 Berikut ini contoh file CSV dimensi khusus (yang Anda unduh dari dashboard). Setiap judul kolom (di baris 1) adalah nama dimensi khusus (misalnya: “Tema” atau “Varian”). Anda dapat menambahkan dimensi tambahan atau mengubah dimensi yang sudah ada. Anda juga dapat menambah atau mengubah tag (misalnya: “3 Gerakan" atau "PaletteGelap").
 
-[![Screen_Shot_2022-08-08_at_16.25.23.png](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)
+<Image align="center" alt="Screen_Shot_2022-08-08_at_16.25.23.png" src="https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png" />
 
 </Accordion>
 
@@ -525,7 +525,7 @@ Berikut ini contoh file CSV dimensi khusus (yang Anda unduh dari dashboard). Set
 
 * Dimensi khusus muncul dengan tag “Khusus” di filter dan tabel.
 
-<Image alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
+<Image align="center" alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
 
 * Anda dapat menambahkan hingga 15 dimensi khusus ke dashboard Optimisasi Materi Iklan.
 * Ukuran file unggahan dibatasi hingga 1 MB.
@@ -558,7 +558,7 @@ Hal ini berguna bagi tim pemasaran dan kreatif yang materi iklannya diberi nama 
 
 Jendela **Kelola tag konvensi nama** muncul.
 
-<Image alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
+<Image align="center" alt="Name convention tags main window.jpg" src="https://files.readme.io/e59721daabccd23ae7735d3e8cca68194983a3c28453daf00bf0ab39ad76fa98-18564727397393.jpg" width="795px" />
 
 2. Di bawah **Buat jenis konvensi nama baru**, masukkan detailnya:
 

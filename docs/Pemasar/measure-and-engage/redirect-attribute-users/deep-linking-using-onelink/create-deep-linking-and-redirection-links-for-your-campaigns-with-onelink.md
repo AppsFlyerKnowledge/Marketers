@@ -256,7 +256,7 @@ Atribusi ditentukan berdasarkan pada pengaturan atribusi Anda.
 2. Di bagian **Laman awal aplikasi Sosial** , klik **Buat laman awal**.  
    Jendela untuk memilih templat laman awal terbuka.  
 
-   [![](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg" />
 3. Untuk memilih templat laman arahan, arahkan kursor ke templat yang dipilih dan klik **Create**.  
 
    **Tips**: Arahkan kursor ke ikon templat 🛈 untuk melihat kasus mana yang harus digunakan. Clustered Poster dan ShowAndTell direkomendasikan untuk Instagram.
@@ -276,11 +276,11 @@ Atribusi ditentukan berdasarkan pada pengaturan atribusi Anda.
 
    4. Jika salah satu gambar atau lebih bukan URL yang tepat, akan muncul kesalahan, dan Anda tidak akan dapat melihat pembuatan.  
 
-      [![](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)
+      <Image align="center" alt="" src="https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png" />
 6. Untuk melihat pembuatan laman awal, klik **Review (Lihat)**.  
    Jika diperlukan perubahan, klik **Back to editor (Kembali ke editor)**.  
 
-   [![](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)
+   <Image align="center" alt="" src="https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png" />
 7. Untuk menyimpan laman arahan, klik **Done (Selesai)**.  
    **Penting**: Materi iklan laman baru/yang diperbarui hanya berlaku setelah membuat/memperbarui tautan kustom.
 8. [Opsional] Untuk mengedit laman awal Anda, klik **Edit social app landing page**.
@@ -578,7 +578,7 @@ Alur solusi DDL berbasis clipboard adalah sebagai berikut:
    * Tautan tersebut berisi parameter `af_cp_lp=true`.
 4. Setelah AppsFlyer mengonfirmasi hal di atas, laman arahan web dimuat, yang berisi ikon aplikasi, gambar, dan CTA untuk mendapatkan aplikasi dari App Store. Pengguna juga melihat pesan yang menjelaskan prosesnya: URL disalin untuk memastikan pengalaman pengguna terbaik yang akan mengarahkan mereka ke halaman tertentu di aplikasi.  
 
-   ![ios_15_ip_masking__1_.png](https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png)
+   <Image align="center" alt="ios_15_ip_masking__1_.png" src="https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png" />
 5. Pengguna mengetuk **Get the app (Dapatkan aplikasi)**.
 6. Pengguna diarahkan ke App Store untuk menginstal aplikasi. Kemudian, pada peluncuran pertama, pengguna diarahkan ke halaman aplikasi tertentu.
 

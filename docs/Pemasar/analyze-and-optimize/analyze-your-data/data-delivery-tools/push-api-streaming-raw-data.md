@@ -29,7 +29,7 @@ x-zendesk:
 
 > **Sekilas:** Streaming event atribusi data lengkap ke titik akhir sisi server Anda.
 
-![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
+<Image align="center" alt="6970_Push_API_image.png" src="https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png" />
 
 ## Push API
 
@@ -96,7 +96,7 @@ Karakteristik pesan:
 
 **Catatan:** Ini tidak berlaku untuk pesan salinan postback, yang datang langsung dari iOS.
 
-![PushAPI-2_en-us.png](https://files.readme.io/7a3ede8da87e48cc640e6e61d8f42011174122140ca63ace37c1d5c25ceadc19-20274836865809.png)
+<Image align="center" alt="PushAPI-2_en-us.png" src="https://files.readme.io/7a3ede8da87e48cc640e6e61d8f42011174122140ca63ace37c1d5c25ceadc19-20274836865809.png" />
 
 </Accordion>
 
@@ -152,7 +152,7 @@ Pastikan server Anda mematuhi persyaratan berikut:
 
 **Titik akhir**
 
-[![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
+<Image align="center" alt="PushAPI_us-en.png" src="https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png" />
 
 <div id="configure-authentication-token" />
 
@@ -192,7 +192,7 @@ Pastikan server Anda mematuhi persyaratan berikut:
    * Bidang-bidang wajib yang selalu dikirim: ID Aplikasi, Nama event, Waktu event, IDFA (iOS) atau ID Iklan (Android)
    * Gunakan kontrol yang dijabarkan pada gambar berikut untuk memilih bidang opsional.
 
-     [![PushAPIFieldSelect1.jpg](https://files.readme.io/316bdfcb4740d870875176e7806f969c89784406c3abc5ca34c9fa0c675a5497-360007416298.jpg)](https://files.readme.io/316bdfcb4740d870875176e7806f969c89784406c3abc5ca34c9fa0c675a5497-360007416298.jpg)
+     <Image align="center" alt="PushAPIFieldSelect1.jpg" src="https://files.readme.io/316bdfcb4740d870875176e7806f969c89784406c3abc5ca34c9fa0c675a5497-360007416298.jpg" />
 
      * Bidang yang paling umum dipilih sebelumnya secara default. Anda dapat membatalkan pilihan ini.
      * Pilih bidang opsional sesuai kebutuhan.
@@ -305,7 +305,7 @@ Anda hanya akan mendapatkan duplikat event jika Anda telah mengaktifkan keduanya
 
 <Accordion title="Pilihan pesan in-app event message dinonaktifkan">
 
-[![InappSelectionDisabled_us-en.png](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)
+<Image align="center" alt="InappSelectionDisabled_us-en.png" src="https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png" />
 
 * Pesan in-app event hanya dapat dipilih setelah salah satu in-app event telah direkam.
 * Gunakan perangkat uji untuk menghasilkan in-app event atau gunakan <Anchor target="_blank" href="/marketers/id/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S API</Anchor> untuk melakukannya secara manual.

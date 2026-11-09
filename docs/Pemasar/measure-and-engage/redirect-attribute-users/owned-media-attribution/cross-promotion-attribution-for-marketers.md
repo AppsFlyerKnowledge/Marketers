@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **At a glance:** Attribute installs from cross-promotion campaigns that promote your apps on other apps you own.
 
-![CrossPromo_userJourney](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
+<Image align="center" alt="CrossPromo_userJourney" src="https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png" />
 
 ## About cross-promotion
 
@@ -34,7 +34,7 @@ Cross-promotion campaigns are one of the best ways to promote your existing apps
 
 The following image shows the promoted app's dashboard with a breakdown of metrics for campaigns running on owned media (**af\_cross\_promotion**) and other media sources. You can see that the number of installs and conversion rate for the cross-promotion campaign are much higher than those for the other media sources.
 
-[![CrossPromo_mediaSource](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+<Image align="center" alt="CrossPromo_mediaSource" src="https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png" />
 
 ### How does cross-promotion work?
 
@@ -100,7 +100,7 @@ Viewing the installs, clicks, impressions, and conversion rate data from several
 >
 > When you check the dashboard you see that the conversion rate for Golfing,18.22%, is much higher than the rate for Bowling, which allows you to determine that there is a greater affinity between Golfing and the promoted app, BIlliards.
 >
-> [![CrossPromo_conversionRate](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)
+> <Image align="center" alt="CrossPromo_conversionRate" src="https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png" />
 >
 > Based on these insights, you could optimize your campaign as follows:
 >
@@ -121,6 +121,6 @@ A <Anchor target="_blank" href="/marketers/id/docs/custom-dashboards">custom das
 >
 > To view metrics for all 3 promoted apps in one place, you create a custom dashboard. In the following image, you can see that Sport Shoes has a 20.23% conversion rate, meaning that Shoes has a much greater affinity with Sport Shoes than with the other 2 apps it is promoting.
 >
-> ![CrossPromo_customWidget](https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png)
+> <Image align="center" alt="CrossPromo_customWidget" src="https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png" />
 
 <div data-zendesk-anchors="about-crosspromotion=about-cross-promotion h_01HE7RXZ2CZCYENE4K40W5YSHF=about-cross-promotion how-does-crosspromotion-work=how-does-cross-promotion-work h_01HE7RXZ2CE5EQV42Y4B9SK4FN=how-does-cross-promotion-work attributing-crosspromotion=attributing-cross-promotion h_01HE7RXZ2CWB2GZ8HV6447RVV1=attributing-cross-promotion setting-up-crosspromotion=setting-up-cross-promotion h_01HE7RXZ2C9JGFYV8K8FECFFJN=setting-up-cross-promotion viewing-crosspromotion-data=viewing-cross-promotion-data h_01HE7RXZ2CE9NWMQ1PT3G98QVN=viewing-cross-promotion-data h_01HE7RXZ2CQG9M35Y2FJNPZWDA=promoted-app-dashboard h_01HE7RXZ2CVQD8H0J6EVRJM5T7=analysis h_01HE7RXZ2CW1P0QNA8FFXP5KBS=example h_01HE7RXZ2C7N3DKNPF898WM4AD=custom-dashboard h_01HE7RXZ2C51KJMP795QYS26YK=example-1" />

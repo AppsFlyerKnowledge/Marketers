@@ -49,7 +49,7 @@ Beberapa hal diperlukan sebelum mengintegrasikan Ekstensi AppsFlyer Adobe SDK.
 
 <Accordion title="Dapatkan kunci pengembang AppsFlyer Anda">
 
-<Image alt="dev_key.png" src="https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png" width="357px" />
+<Image align="center" alt="dev_key.png" src="https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png" width="357px" />
 
 1. Di dashboard aplikasi Anda, klik ***Pengaturan Aplikasi*** di bawah ***Konfigurasi*** di menu sebelah kiri.
 2. Di bawah ***Instalasi SDK***, salin bagian ***Kunci Pengembang (Dev Key)***.
@@ -75,7 +75,7 @@ Ikuti petunjuk di sini untuk mengonfigurasi Adobe Launch.
 
 <Accordion title="1.1 Membuat properti baru di Adobe Launch">
 
-[![](https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png)](https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png)
+<Image align="center" alt="" src="https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png" />
 
 1. Masuk ke Adobe Experience Cloud.
 2. Pilih ***Launch***.
@@ -92,7 +92,7 @@ Ikuti petunjuk di sini untuk mengonfigurasi Adobe Launch.
 
 Instal ekstensi berikut di Adobe Launch:
 
-[![adboe_extensions.png](https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png)](https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png)
+<Image align="center" alt="adboe_extensions.png" src="https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png" />
 
 * Adobe Analytics - menghubungkan data yang dicatat dari SDK ke modul Adobe Analytics.
 * Ekstensi AppsFlyer SDK - mengirimkan data dan event ke Adobe dan AppsFlyer menggunakan Adobe Launch SDK.
@@ -144,7 +144,7 @@ Ikuti petunjuk di bagian ini untuk mengimplementasikan Ekstensi Adobe SDK ke dal
 
 <Accordion title="2.1 Menambahkan SDK ke aplikasi">
 
-[![adobe_sdk.png](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)
+<Image align="center" alt="adobe_sdk.png" src="https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png" />
 
 1. Di dalam properti Adobe Anda, pilih ***Lingkungan (Environments)***.
 2. Pilih lingkungan tempat Anda ingin menerapkan SDK.
@@ -159,7 +159,7 @@ Ikuti petunjuk di bagian ini untuk mengimplementasikan Ekstensi Adobe SDK ke dal
 
 Untuk menyelesaikan implementasi SDK, Anda perlu memublikasikan lingkungan pada library.
 
-[![adobe_publishing.png](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)
+<Image align="center" alt="adobe_publishing.png" src="https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png" />
 
 1. Di dalam properti Adobe Anda, pilih ***Penerbitan (Publishing)***.
 2. Klik ***Tambah Library Baru***.
@@ -208,7 +208,7 @@ Tambahkan Pengarah Instal Android sebagai dependensi. Anda dapat menemukan versi
    ```
 2. Sinkronkan proyek untuk memunculkan dependensi kembali - lihat tangkapan layar berikut:  
 
-    [![android_af_sdk_sync_gradle.png](https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png)](https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png)
+    <Image align="center" alt="android_af_sdk_sync_gradle.png" src="https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png" />
 
 Jika Anda menggunakan ProGuard dan ingin menggunakan pengarah API baru dari Google, tetapkan aturan ProGuard berikut ini: `-dontwarn com.android.installreferrer`
 
@@ -383,7 +383,7 @@ Di AppDelegate.m, terapkan kode berikut:
 
 Data konversi dikirim bersama event ke platform Adobe. Variabel-variabel ini memungkinkan Anda menerapkan logika dan aturan pada dimensi, metrik, atau filter laporan.
 
-![adobe_analytics.png](https://files.readme.io/9c4355286d2e5f2254a8a16a49b1b1305b56628b54e738efcd4fdc90a6de8fab-360006050778.png)
+<Image align="center" alt="adobe_analytics.png" src="https://files.readme.io/9c4355286d2e5f2254a8a16a49b1b1305b56628b54e738efcd4fdc90a6de8fab-360006050778.png" />
 
 1. Masuk ke <Anchor target="_blank" href="https://mobilemarketing.adobe.com">Adobe Mobile Services</Anchor> Anda.
 2. Pilih aplikasi yang relevan dan masuk ke bagian halaman ***Kelola Variabel & Metrik***.

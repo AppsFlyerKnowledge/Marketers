@@ -30,7 +30,7 @@ x-zendesk:
 
 ## Data Locker
 
-![6133DataLockerForAdvertisers.png](https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png)
+<Image align="center" alt="6133DataLockerForAdvertisers.png" src="https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png" />
 
 Di Data Locker, pilih aplikasi, sumber media, event, dan laporan Anda untuk disertakan dalam data yang dikirimkan AppsFlyer ke opsi penyimpanan cloud yang Anda pilih. Kemudian, muat data secara terprogram dari penyimpanan ke dalam sistem Anda.
 
@@ -131,7 +131,7 @@ Data ditulis ke opsi penyimpanan yang Anda pilih. Dalam hal penyimpanan cloud, p
 
 Data di penyimpanan cloud bucket diatur dalam struktur folder hierarki, menurut jenis laporan, tanggal, dan waktu. Gambar berikut berisi contoh struktur ini:
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 Data laporan tertentu ada di dalam folder hour (h) yang terkait dengan laporan tersebut:
 
@@ -391,7 +391,7 @@ Admin dapat mereset kredensial bucket AppsFlyer kapan saja. Perhatikan! Jika And
   2. <Anchor target="_blank" href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html">Segarkan cache kredensial AWS</Anchor>.  
      **Tangkapan layar dari AWS**
 
-     ![mceclip0.png](https://files.readme.io/e6608b196c39cb71e0a02e0eabe95378f24659a1578a16fd381bfd0053ca309e-32966264043537.png)
+     <Image align="center" alt="mceclip0.png" src="https://files.readme.io/e6608b196c39cb71e0a02e0eabe95378f24659a1578a16fd381bfd0053ca309e-32966264043537.png" />
 
 </Accordion>
 
@@ -481,7 +481,7 @@ Sebelum Anda mulai:
 2. Pilih **Bookmark Baru**. Jendela terbuka.
 3. Di bidang pertama (ditandai [1] pada tangkapan layar di bawah) pilih **Amazon S3.**
 
-   [![DataDuckSmall2.png](https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png)](https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png)
+   <Image align="center" alt="DataDuckSmall2.png" src="https://files.readme.io/a2aba523ca9489315260f34c6c42571f67d37f7985d0f18b1eb0ed2a95b4b4ad-32966274482705.png" />
 4. Isi bidang-bidang sebagai berikut:
    * **Nama Panggilan:** Teks bebas
    * **Server:** s3.amazonaws.com
@@ -508,7 +508,7 @@ Sebelum Anda mulai:
 1. Di browser S3, Klik ***Akun*** **Tambahkan**   **Akun Baru** .  
    Jendela Tambah Akun Baru terbuka.
 
-   [![mceclip0.png](https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png)](https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png)
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/f7ea8b02f27a5e7eaf89b578b177a9e1a9f34273eaa41d41652156a6dbb23d5c-32966274485009.png" />
 2. Isi bidang-bidang sebagai berikut:
    * **Nama Akun** : teks bebas.
    * **ID Kunci Akses**: salin Kunci Akses AWS seperti yang muncul di panel kredensial.
@@ -519,7 +519,7 @@ Sebelum Anda mulai:
 4. Klik ***Bucket **>** Tambahkan Eksternal*** **Bucket** .  
    Jendela Tambah Bucket Eksternal terbuka.   
 
-   <Image alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
+   <Image align="center" alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
 5. Masukkan **Nama bucket.** Nama Bucket memiliki format berikut: `{Bucket Name}/{Home Folder}`. Nilai yang diperlukan untuk nama bucket dan folder beranda muncul di jendela kredensial.
 6. Klik **Tambahkan bucket eksternal.**  
    Bucket dibuat dan ditampilkan di panel kiri jendela.   

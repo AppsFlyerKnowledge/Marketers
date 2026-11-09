@@ -25,7 +25,7 @@ x-zendesk:
 >
 > Pada tanggal 30 Januari 2023, integrasi **TikTok untuk Bisnis—SRN Lanjutan** `tiktokglobal_int` yang baru telah ditambahkan, sedangkan integrasi**TikTok untuk Bisnis [Versi Lama]**  `bytedanceglobal_int` secara bertahap dihentikan dan tidak digunakan lagi pada bulan Maret 2024. Transisi ini ditangani oleh TikTok dan mereka akan memberi tahu Anda kapan Anda dapat menghapus integrasi lama. **Untuk menghindari kehilangan data, pastikan kedua integrasi tetap aktif selama fase transisi**. Pelajari lebih lanjut di <Anchor target="_blank" href="/marketers/id/docs/bulletin-tiktok-for-business-advanced-srn">buletin</Anchor>.
 
-<Image alt="TikTok_logo__2_.png" src="https://files.readme.io/3a081755b08fcf19b60ff178506a083449890cb900821f7f1e4b7ef85426dd45-11844735832081.png" width="193px" />
+<Image align="center" alt="TikTok_logo__2_.png" src="https://files.readme.io/3a081755b08fcf19b60ff178506a083449890cb900821f7f1e4b7ef85426dd45-11844735832081.png" width="193px" />
 
 <div id="overview" />
 
@@ -341,7 +341,7 @@ Agensi yang bekerja atas nama pemasang iklan dapat mengaktifkan integrasi TikTok
 4. Masukkan **ID Akun TikTok** agensi Anda. Ini mengidentifikasi lalu lintas agensi dan membedakannya dari lalu lintas pemasang iklan.
 5. Klik **Simpan Integrasi**.  
 
-   <Image alt="tiktok_agency_account_id.png" src="https://support.appsflyer.com/hc/article_attachments/15195630638609" width="442px" />
+   <Image align="center" alt="tiktok_agency_account_id.png" src="https://support.appsflyer.com/hc/article_attachments/15195630638609" width="442px" />
 
 > ❗️ **Peringatan**
 >

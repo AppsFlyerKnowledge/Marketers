@@ -563,7 +563,7 @@ Sertakan informasi berikut dalam permintaan Anda:
 
 Gunakan contoh email ini sebagai referensi:
 
-![account_owner_change_email.png](https://files.readme.io/eb10736386a7a8cfc274979a3aa933e23288c74d1b26c0f06d72005ceebafe06-31780969048081.png)
+<Image align="center" alt="account_owner_change_email.png" src="https://files.readme.io/eb10736386a7a8cfc274979a3aa933e23288c74d1b26c0f06d72005ceebafe06-31780969048081.png" />
 
 <div id="3next-steps" />
 

@@ -59,7 +59,7 @@ Anda dapat menghubungi CSM Anda untuk meningkatkan batas kueri API.  
 1. <Anchor target="_blank" href="/marketers/id/docs/create-a-onelink-template#prosedur">Buat templat OneLink</Anchor>.
 2. Catat ID OneLink.   
 
-   [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg" />
 3. Catat kunci OneLink API. Pengguna admin perlu mengambil kunci API; pengguna akun tidak memiliki akses. 
    * Di dashboard AppsFlyer, buka **Pengalaman & Deep Linking** > **OneLink API** > **Lihat kunci OneLink API**
    * Jika kunci API OneLink tidak ada untuk pengguna admin, itu berarti Anda tidak memiliki paket yang diperlukan, dan Anda perlu menghubungi CSM Anda.

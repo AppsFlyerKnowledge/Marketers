@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Sekilas:** Rencanakan migrasi Anda ke AppsFlyer dari vendor atribusi lain. Pahami cara menghindari tagihan ganda, duplikasi data, dan kehilangan data selama periode migrasi.
 
-![alur migrasi](https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png)
+<Image align="center" alt="alur migrasi" src="https://files.readme.io/31d67493ae3ae6912b4da3163ebb731a8d58494c3007ef1d08cb7332226d9e81-360017326677.png" />
 
 <div id="compare-measurement-between-appsflyer-and-other-mmps" />
 

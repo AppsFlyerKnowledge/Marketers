@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **At a glance:** Google AdMob, an AppsFlyer integrated partner, allows app owners to receive ad revenue data to be used for ad revenue attribution.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadmob.png?v=1" width="74px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadmob.png?v=1" width="74px" />
 
 AdMob provides <Anchor target="_blank" href="/marketers/id/docs/roi360-guide-ad-revenue-attribution">ad revenue attribution</Anchor> at the aggregate and impression levels. See also: <Anchor target="_blank" href="/marketers/id/docs/integrate-the-roi360-ad-revenue-sdk-api">Generic impression-level ad revenue SDK connector integration guide</Anchor>
 

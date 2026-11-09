@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance:** AppsFlyer decodes and transforms the conversion value set by you into events. The events are used to populate the SKAN dashboard, raw data, and postbacks to partners.
 
-![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
+<Image align="center" alt="SKAdNetwork_-_Custom__1_.png" src="https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png" />
 
 ## Decode SKAN conversion value
 
@@ -253,7 +253,7 @@ After saving the CSV file, verify that the content is formatted correctly. **Not
 
 Excel usually formats value cells with a comma to separate the thousands, as shown in the figure. This format is not suitable for upload CSV files. You must also remove the $ symbol.
 
-![mceclip0.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 You can correct this by formatting the cells in Excel.
 
@@ -264,7 +264,7 @@ You can correct this by formatting the cells in Excel.
    The format cells window opens.
 3. Select **Number**.  
 
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 
 1. Clear **Use 1000 separator (,).**
 2. (Optional) Set the number of **Decimal places**. The default is 2. The maximum permitted is 5.
@@ -286,14 +286,14 @@ The following contains a screenshot of the <Anchor target="_blank" href="https:/
 
 **Editor view**
 
-![SKCustomeEditor.png](https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png)
+<Image align="center" alt="SKCustomeEditor.png" src="https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png" />
 
 Using an editor, examine the CSV file. Pay special attention to the following:
 
 * **Blank spaces:** Ensure that there are no leading or trailing blank spaces before or after the commas that separate the fields. In Excel, use the @trim command to remove blank spaces.
 * **event\_revenue\_usd:** Ensure that there is neither a comma nor a $ symbol in the event\_revenue\_usd column.  
 
-  ![mceclip1.png](https://files.readme.io/160d89f313b98a83ad6b214de8fd02a290fb1c26563b6dd3c6f0a8a7a93ef3d1-34255690324881.png)
+  <Image align="center" alt="mceclip1.png" src="https://files.readme.io/160d89f313b98a83ad6b214de8fd02a290fb1c26563b6dd3c6f0a8a7a93ef3d1-34255690324881.png" />
 
 </Accordion>
 

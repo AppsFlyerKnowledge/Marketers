@@ -77,7 +77,7 @@ Saat AAP berlaku untuk data pengguna tertentu, ketersediaan data bergantung pada
 
 Istilah yang didefinisikan digunakan dalam gambar dan bagian berikut untuk mendeskripsikan data yang tersedia bagi pemasang iklan dan mitra.
 
-![Advanced Privacy Framework - Advertisers (4).png](https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png)
+<Image align="center" alt="Advanced Privacy Framework - Advertisers (4).png" src="https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png" />
 
 Privasi Tingkat Lanjut berperilaku berbeda saat ditayangkan di web dan parameter af\_media\_type=web atau af\_media\_type=app harus digunakan. Lihat <Anchor target="_blank" href="/partners/id/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">di sini</Anchor> untuk informasi lebih lanjut.
 
@@ -119,7 +119,7 @@ Media yang dimiliki termasuk kampanye pemasaran digital yang digunakan oleh pema
 
 AAP adalah sakelar tingkat aplikasi yang mengontrol pengaturan Privasi Lanjutan untuk semua mitra aplikasi yang dipilih. Sakelar AAP terletak di halaman **Pengaturan Aplikasi** . Saat sakelar AAP aktif, sakelar **Privasi Lanjutan** untuk semua mitra aplikasi yang dipilih secara otomatis diaktifkan dan tidak dapat dimodifikasi. Saat nonaktif, pemasang iklan dapat membuka setiap integrasi mitra satu per satu dan mengaktifkan **Privasi Lanjutan**.
 
-![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
+<Image align="center" alt="AAPcontrol.png" src="https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png" />
 
 <div id="advanced-aggregated-privacy-implications-for-your-partners" />
 
@@ -155,7 +155,7 @@ AAP adalah sakelar tingkat aplikasi yang mengontrol pengaturan Privasi Lanjutan 
 
 Jika AAP dinonaktifkan, pemasang iklan dapat menyetel setelan Privasi Lanjutan untuk setiap jaringan iklan satu per satu.
 
-![APControl.png](https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png)
+<Image align="center" alt="APControl.png" src="https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png" />
 
 **Untuk menonaktifkan Privasi Lanjutan mitra:**
 
@@ -203,7 +203,7 @@ Dalam kasus jaringan yang dikaitkan, jenis postback yang digunakan untuk berbagi
 
 Berbagai skenario izin pengguna dan jenis postback yang digunakan diilustrasikan dalam gambar berikut.
 
-![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
+<Image align="center" alt="AAP - Attributed ad networks.png" src="https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png" />
 
 Privasi Lanjutan berperilaku berbeda saat disajikan di web dan parameter af\_media\_type=web atau af\_media\_type=app harus digunakan. Lihat <Anchor target="_blank" href="/partners/id/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">di sini</Anchor> untuk informasi lebih lanjut.
 
@@ -213,11 +213,11 @@ Privasi Lanjutan berperilaku berbeda saat disajikan di web dan parameter af\_med
 
 Postback tanpa atribusi dikirim ke jaringan saat opsi pengiriman di tab integrasi mitra terintegrasi diatur ke *semua sumber media, termasuk organik* dan mitra tersebut tidak diatribusikan ke acara seperti yang diilustrasikan dalam gambar berikut.
 
-![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+<Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 Berbagai skenario izin pengguna dan jenis postback yang digunakan diilustrasikan dalam bagan alur berikut.
 
-![AAP - Unattributed ad networks.png](https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png)
+<Image align="center" alt="AAP - Unattributed ad networks.png" src="https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png" />
 
 Privasi Tingkat Lanjut berperilaku berbeda saat disajikan di web dan parameter af\_media\_type=web atau af\_media\_type=app harus digunakan. Lihat <Anchor target="_blank" href="/partners/id/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">di sini</Anchor> untuk informasi lebih lanjut.
 
@@ -238,7 +238,7 @@ Postback yang berisi data atribusi tingkat pengguna termasuk ID pengguna dikirim
 
 Berbagai skenario izin pengguna dan jenis postback yang digunakan diilustrasikan dalam gambar berikut.
 
-![AAP - Analytics partner.png](https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png)
+<Image align="center" alt="AAP - Analytics partner.png" src="https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png" />
 
 Privasi Tingkat Lanjut berperilaku berbeda saat disajikan di web dan parameter af\_media\_type=web atau af\_media\_type=app harus digunakan. Lihat <Anchor target="_blank" href="/partners/id/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">di sini</Anchor> untuk informasi lebih lanjut.
 
@@ -257,7 +257,7 @@ Privasi Tingkat Lanjut berperilaku berbeda saat disajikan di web dan parameter a
 
 **Berikan izin agensi untuk menyetel Privasi Lanjutan**
 
-![agency_advanced_privacy.png](https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png)
+<Image align="center" alt="agency_advanced_privacy.png" src="https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png" />
 
 **Untuk mengizinkan agensi menyetel Privasi Lanjutan**:
 

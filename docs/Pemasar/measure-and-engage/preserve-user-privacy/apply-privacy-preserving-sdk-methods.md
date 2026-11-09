@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **Sekilas:** Batasi atau hentikan berbagi data dengan AppsFlyer untuk mematuhi peraturan privasi seperti GDPR dan CCPA.
 
-![OptInOptOut_us-en.png](https://files.readme.io/bd2cd3e2fa3c443b9cc6a736e3c6b60834f165ad13510b829d40005740615496-360010352638.png)
+<Image align="center" alt="OptInOptOut_us-en.png" src="https://files.readme.io/bd2cd3e2fa3c443b9cc6a736e3c6b60834f165ad13510b829d40005740615496-360010352638.png" />
 
 **Pertanyaan tentang privasi AppsFlyer**: Hubungan privasi antara Anda dan AppsFlyer diatur oleh <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy">Kebijakan Privasi Layanan AppsFlyer</Anchor>. Untuk pertanyaan terkait Kebijakan Privasi Layanan ini atau untuk menghubungi petugas perlindungan data kami, kirim email ke: [privacy@appsflyer.com](mailto:privacy@appsflyer.com). Untuk tujuan Pasal 27 Peraturan Perlindungan Data Umum, perwakilan AppsFlyer di UE adalah AppsFlyer Germany GmbH, Schönhauser Allee 180, 10119 Berlin, Jerman (hubungi [privacy@appsflyer.com](mailto:privacy@appsflyer.com); +49-30-166373500).
 
@@ -124,7 +124,7 @@ Untuk mencegah berbagi data event lewat:
 
 ### Opt-out satu kali
 
-![OpenGDPR-logo-BLK.png](https://files.readme.io/87560c35c45bf34d8eb7ede3e6bbf90fb4391ab41c7f3186e33a93d8f4f68a6e-360002512925.png)
+<Image align="center" alt="OpenGDPR-logo-BLK.png" src="https://files.readme.io/87560c35c45bf34d8eb7ede3e6bbf90fb4391ab41c7f3186e33a93d8f4f68a6e-360002512925.png" />
 
 **Kapan**: Kapan saja (GDPR)
 

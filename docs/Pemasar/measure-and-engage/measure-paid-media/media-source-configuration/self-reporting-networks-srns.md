@@ -100,7 +100,7 @@ Saat aplikasi pertama kali diluncurkan:
 
 <Accordion title="Contoh A: Atribusi terbantu">
 
-![SRN_1.png](https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png)
+<Image align="center" alt="SRN_1.png" src="https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png" />
 
 **Senin:** Jaringan A melaporkan klik pengguna.
 
@@ -118,7 +118,7 @@ AppsFlyer memberikan data bantuan kepada pemasang iklan (interaksi tanpa atribut
 
 <Accordion title="Contoh B: Atribusi klik terakhir">
 
-![SRN_2.png](https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png)
+<Image align="center" alt="SRN_2.png" src="https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png" />
 
 **Jaringan D** (SRN) melaporkan klik beberapa menit sebelum Jaringan C.
 
@@ -273,7 +273,7 @@ Analis data AppsFlyer memeriksa kampanye **akuisisi pengguna** Meta ads selama b
 * Dalam 5% kampanye, setidaknya 40% adalah pengguna aplikasi yang sudah ada.
 * **Kesimpulan: Dalam kampanye akuisisi pengguna SRN, 1 dari 10 pengguna yang ditargetkan sudah menjadi pengguna yang sudah ada.**
 
-[![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+<Image align="center" alt="mistargeted_users.png" src="https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png" />
 
 <div id="are-clicks-and-impressions-from-srns-available-in-raw-data-reports" />
 

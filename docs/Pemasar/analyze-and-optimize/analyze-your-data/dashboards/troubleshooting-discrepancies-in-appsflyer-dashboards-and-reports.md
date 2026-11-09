@@ -84,7 +84,7 @@ Pengiklan, memahami bahwa kedua metode tersebut berguna tetapi untuk tujuan berb
 
 **Kegiatan** : Bayangkan Anda menyaksikan kereta yang lewat. Saat kereta lewat, Anda hanya melihat tindakan yang dilakukan oleh penumpang di kereta saat mereka lewat. Ini adalah data aktivitas.
 
-<Image alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
+<Image align="center" alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
 
 **LTV**: Sekarang bayangkan, bahwa Anda naik kereta sebagai pengamat. Kereta dibagi menjadi gerbong kereta.
 
@@ -92,7 +92,7 @@ Pengiklan, memahami bahwa kedua metode tersebut berguna tetapi untuk tujuan berb
 * Selama perjalanan, Anda dapat mengamati semua tindakan yang dilakukan oleh penumpang di dalam mobil. Anda dapat mengamati tindakan semua penumpang di dalam mobil sampai seorang penumpang menaiki kereta, ini adalah penghapusan instalasi.
 * Anda tidak dapat melihat tindakan penumpang di gerbong kereta api lain karena mereka naik kereta sebelum atau setelah Anda. Maka ini adalah LTV.
 
-<Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
+<Image align="center" alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
 
 ## Dashboard AppsFlyer — LTV atau aktivitas?
 
@@ -106,7 +106,7 @@ Mari kita cari tahu data mana yang merupakan LTV dan mana yang merupakan Aktivit
 * Metrik tersedia: Titik sentuh, instal, tingkat konversi, dan pendapatan LTV
 * Bagan: Gunakan tren akuisisi, instal, pengguna setia seumur hidup, dan pendapatan seumur hidup
 
-[![](https://files.readme.io/5e9d7025c7d8b3ca11270cabd348cba3ffa166df674548803b84efb4b11ab6ab-115014844503.png)](https://files.readme.io/5e9d7025c7d8b3ca11270cabd348cba3ffa166df674548803b84efb4b11ab6ab-115014844503.png)
+<Image align="center" alt="" src="https://files.readme.io/5e9d7025c7d8b3ca11270cabd348cba3ffa166df674548803b84efb4b11ab6ab-115014844503.png" />
 
 Bagian bawah dashboard ikhtisar berisi data acara tambahan, yang juga ada di LTV.
 
@@ -120,7 +120,7 @@ Dalam tabel **Laporan Performa Agregat**, kolom berikut ini adalah semua event y
 * Uninstall (jumlah dan tingkat)
 * Semua kolom in-app event
 
-[![](https://files.readme.io/508f2388e5671fe00181a050a7a7cce1064e3a68470fea1b91b89647c76a9e2d-115014673026.png)](https://files.readme.io/508f2388e5671fe00181a050a7a7cce1064e3a68470fea1b91b89647c76a9e2d-115014673026.png)
+<Image align="center" alt="" src="https://files.readme.io/508f2388e5671fe00181a050a7a7cce1064e3a68470fea1b91b89647c76a9e2d-115014673026.png" />
 
 Widget **Top Event** juga merupakan data LTV.
 
@@ -130,7 +130,7 @@ Widget **Top Event** juga merupakan data LTV.
 
 Semua data di halaman ini, baik yang diakses dari widget **Top Event** atau dari link **Event** di bar sebelah kiri, adalah data event LTV. Untuk penjelasan lebih detail tentang Halaman Event, klik sini.
 
-[![](https://files.readme.io/5d144a104c8bb0bdd287e916534f619fc2f8ad76f895803f61b69dc36a581fd2-115014673046.png)](https://files.readme.io/5d144a104c8bb0bdd287e916534f619fc2f8ad76f895803f61b69dc36a581fd2-115014673046.png)
+<Image align="center" alt="" src="https://files.readme.io/5d144a104c8bb0bdd287e916534f619fc2f8ad76f895803f61b69dc36a581fd2-115014673046.png" />
 
 </Accordion>
 
@@ -144,11 +144,11 @@ Semua data di halaman ini, baik yang diakses dari widget **Top Event** atau dari
 
 Bahkan jika Anda memilih satu hari data retensi, Anda dapat mengambil data sesi beberapa hari atau minggu yang relevan hanya untuk instalasi dari hari itu, yang merupakan KPI yang digunakan untuk kualitas pengguna. LTV klasik. Klik tautan untuk deskripsi Laporan Retensi dan <Anchor target="_blank" href="/marketers/id/docs/cohort-and-retention-dashboard">Laporan Kohort</Anchor> yang lebih rinci.
 
-[![](https://files.readme.io/e72add1e5b77439f0ba744cbf739846e4de8a03f3923dfd9b256c50b526402ae-115014673066.png)](https://files.readme.io/e72add1e5b77439f0ba744cbf739846e4de8a03f3923dfd9b256c50b526402ae-115014673066.png)
+<Image align="center" alt="" src="https://files.readme.io/e72add1e5b77439f0ba744cbf739846e4de8a03f3923dfd9b256c50b526402ae-115014673066.png" />
 
 Laporan Kohort mirip dengan laporan retensi tetapi memiliki lebih dari metrik sesi. Metrik, seperti pendapatan, sesi, dan in-app event semuanya merupakan LTV.
 
-[![CohortForLTV_us-en.jpg](https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg)](https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg)
+<Image align="center" alt="CohortForLTV_us-en.jpg" src="https://files.readme.io/9157fbc3aadbd364b338c50120805283379e50136b8243ddef197a5145152afd-360008407377.jpg" />
 
 </Accordion>
 
@@ -156,7 +156,7 @@ Laporan Kohort mirip dengan laporan retensi tetapi memiliki lebih dari metrik se
 
 Data event di laman <Anchor target="_blank" href="/marketers/id/docs/activity-dashboard">laman Aktivitas</Anchor> didasarkan pada sesi dan pendapatan dan merupakan **basis aktivitas**. Berarti kronologis dan relevan bagi pengguna aplikasi yang aktif selama rentang tanggal yang ditentukan.
 
-[![Activity_us-en.jpg](https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg)](https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg)
+<Image align="center" alt="Activity_us-en.jpg" src="https://files.readme.io/1f569f87331b68b91c0b762304fb108c7a237e73ce05d94ef9418f21449d8601-360008510978.jpg" />
 
 </Accordion>
 
@@ -182,7 +182,7 @@ Laporan In-App Event yang ditolak adalah data **berbasis aktivitas**.
 
 Sehubungan dengan halaman Garis Besar pada dashboard, semua data event pada halaman <Anchor target="_blank" href="/marketers/id/docs/custom-dashboards">Dashboard Kustom</Anchor> adalah data **berbasis LTV**.
 
-[![](https://files.readme.io/c9ee8de9a03e8ed64ec305b6de3ab235f7b1ca6a996478837d4c4d323ed911dc-115014844623.png)](https://files.readme.io/c9ee8de9a03e8ed64ec305b6de3ab235f7b1ca6a996478837d4c4d323ed911dc-115014844623.png)
+<Image align="center" alt="" src="https://files.readme.io/c9ee8de9a03e8ed64ec305b6de3ab235f7b1ca6a996478837d4c4d323ed911dc-115014844623.png" />
 
 </Accordion>
 

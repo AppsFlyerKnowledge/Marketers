@@ -28,7 +28,7 @@ x-zendesk:
 
 > **Sekilas:** Pelajari metode bagi pemasang iklan untuk mengumpulkan dan melihat data biaya pemasaran.
 
-![roi360_image.png](https://files.readme.io/1eaf922de9a1174c1971582dd32f53b995de014c8c2bf288b52a93c83334374e-11245891045777.png)
+<Image align="center" alt="roi360_image.png" src="https://files.readme.io/1eaf922de9a1174c1971582dd32f53b995de014c8c2bf288b52a93c83334374e-11245891045777.png" />
 
 <div id="cost-aggregation" />
 
@@ -122,7 +122,7 @@ Untuk sumber media tertentu, biaya dapat diperoleh melalui lebih dari satu metod
 
 **Prioritas metode agregasi biaya kampanye**
 
-![CostPriority.jpg](https://files.readme.io/052420655410713b39c3869a4670465e88d8f7c15a43afc56f11821940fa7c5e-360014470078.jpg)
+<Image align="center" alt="CostPriority.jpg" src="https://files.readme.io/052420655410713b39c3869a4670465e88d8f7c15a43afc56f11821940fa7c5e-360014470078.jpg" />
 
 * Mekanisme ini berdampak pada laporan data agregat dan dashboard.
 * Data biaya klik yang tersedia dalam laporan data lengkap tidak terdampak oleh mekanisme penentuan prioritas.

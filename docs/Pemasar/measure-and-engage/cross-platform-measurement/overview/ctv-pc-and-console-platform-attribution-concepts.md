@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Sekilas:** Pelajari tentang cara kerja atribusi untuk platform CTV, PC, dan konsol agar AppsFlyer dapat menerima atribusi dan data acara untuk kampanye Anda di perangkat lintas platform ini.
 
-<Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
+<Image align="center" alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
 <div id="tv-screens" />
 
@@ -71,7 +71,7 @@ Tautan atribusi langsung adalah tautan AppsFlyer yang mendukung pengalihan dan a
 
 Tautan atribusi langsung mendukung pemodelan probabilistik dan pencocokan deterministik (ketika ID disediakan dalam tautan) metode atribusi, di mana satu penginstalan oleh satu pengguna dicocokkan dengan klik atau tayangan iklan. Alur atribusi diilustrasikan dalam diagram berikut ini.
 
-![Aliran atribusi CTV - Aliran tautan atribusi langsung.png](https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png)
+<Image align="center" alt="Aliran atribusi CTV - Aliran tautan atribusi langsung.png" src="https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png" />
 
 Karena tautan atribusi langsung ditujukan untuk aplikasi di platform tertentu yang telah ditentukan dan mengarah ke satu tujuan tertentu, tautan ini selalu berisi ID aplikasi dan informasi platform dalam URL.
 
@@ -89,7 +89,7 @@ Tautan OneLink lintas platform mendukung pengalihan dan atribusi ketika platform
 
 Tautan OneLink lintas platform hanya mendukung metode atribusi pemodelan probabilistik (berdasarkan alamat IP). Karena alasan ini, beberapa penginstalan oleh beberapa pengguna dapat dikaitkan dengan kesan yang sama. Alur atribusi diilustrasikan dalam diagram berikut ini.
 
-![Alur atribusi CTV - Alur atribusi tautan Onelink lintas platform (1).png](https://files.readme.io/d1d92c740510435582dbfe6e736493a4e5f132d8987fde4c95593ea5e7de1662-19374961369873.png)
+<Image align="center" alt="Alur atribusi CTV - Alur atribusi tautan Onelink lintas platform (1).png" src="https://files.readme.io/d1d92c740510435582dbfe6e736493a4e5f132d8987fde4c95593ea5e7de1662-19374961369873.png" />
 
 Semua tujuan/platform aplikasi yang memungkinkan dikonfigurasikan dalam templat OneLink. Untuk itu, tautan OneLink lintas platform tidak mengandung ID aplikasi tertentu atau informasi platform tertentu dalam URL. Sebagai gantinya, URL menyertakan ID templat tempat semua tujuan/platform aplikasi yang mungkin dikonfigurasi.
 
@@ -107,7 +107,7 @@ Dengan tautan atribusi langsung dan tautan OneLink lintas platform, penginstalan
 
 Atribusi ke SRN dilakukan melalui pencocokan deterministik. Saat pengiklan mengintegrasikan SRN, atribusi berfungsi seperti yang diilustrasikan dalam diagram berikut ini.
 
-![Aliran atribusi CTV - Aliran atribusi SRN (1).png](https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png)
+<Image align="center" alt="Aliran atribusi CTV - Aliran atribusi SRN (1).png" src="https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png" />
 
 Saat ini, atribusi SRN hanya berfungsi untuk iklan dari platform yang sama ke platform yang sama. Artinya, ketika titik sentuh (klik atau tayangan) terjadi pada platform yang sama dengan penginstalan. Misalnya, jika penginstalan Roku CTV diperiksa dengan Roku Endemic Media (SRN untuk Roku) dan tayangan ditemukan terjadi pada perangkat Roku. Jika tayangan tersebut terjadi pada platform yang berbeda, seperti seluler, maka tidak akan dipertimbangkan untuk atribusi.
 
@@ -128,7 +128,7 @@ Smart Script di halaman arahan lintas platform menggunakan tautan masuk (tautan 
 
 Laman landas mendukung pemodelan probabilistik dan pencocokan deterministik (ketika ID disediakan dalam tautan) metode atribusi. Dengan pemodelan probabilistik, ada kemungkinan bahwa beberapa penginstalan oleh beberapa pengguna dapat dikaitkan dengan kesan yang sama. Alur atribusi diilustrasikan dalam diagram berikut ini.
 
-![Alur atribusi CTV - Alur atribusi halaman arahan.png](https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png)
+<Image align="center" alt="Alur atribusi CTV - Alur atribusi halaman arahan.png" src="https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png" />
 
 Contoh:
 

@@ -96,7 +96,7 @@ Browse partner cards for basic information about each partner:
 * **About** (opens the partner page)
 * **Integrate / Manage integration** (starts setup or opens the integration configuration)
 
-<Image alt="partner card.png" src="https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png" width="1598px" />
+<Image align="center" alt="partner card.png" src="https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png" width="1598px" />
 
 ### Filter the list of partners
 
@@ -114,7 +114,7 @@ Use the filters at the top of the page to find partners relevant to your search.
 
 Use the search bar to find specific partners.
 
-<Image alt="serach for partners.png" src="https://files.readme.io/6590e14e35e75bef7450489ec5ff06d1cabc0671a82043e4fb5fb467c67d2b8a-45767176965393.png" width="876px" />
+<Image align="center" alt="serach for partners.png" src="https://files.readme.io/6590e14e35e75bef7450489ec5ff06d1cabc0671a82043e4fb5fb467c67d2b8a-45767176965393.png" width="876px" />
 
 When using the search bar in the Marketplace tab:
 
@@ -127,7 +127,7 @@ When using the search bar in the Marketplace tab:
 
 You can learn more about each partner and connect with them on their partner page. Click the **About** button on a [partner card](#partner-cards) to open the partner page.
 
-<Image alt="new cropped partner image.png" src="https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png" width="3270px" />
+<Image align="center" alt="new cropped partner image.png" src="https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png" width="3270px" />
 
 ### What you can do from the partner page
 
@@ -196,7 +196,7 @@ Before new ad network integrations can be added to the Marketplace, they undergo
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations**.
 2. From the top-right corner of the Partner Marketplace page, click the letter icon.  
-   <Image alt="invite new partner.png" src="https://files.readme.io/f0208f3f19f7102ba8174eea064f88db1fe14732334fe58ced0b0a373ce3f1c8-45767201404433.png" width="893px" />
+   <Image align="center" alt="invite new partner.png" src="https://files.readme.io/f0208f3f19f7102ba8174eea064f88db1fe14732334fe58ced0b0a373ce3f1c8-45767201404433.png" width="893px" />
 3. Enter the partner's name and relevant email address.
 
 The partner will receive an email with a registration link to start the signup process. Once they submit it, we'll automatically run verification, and you'll both hear back within 48 hours (see [Partner verification](#partner-verification) above).

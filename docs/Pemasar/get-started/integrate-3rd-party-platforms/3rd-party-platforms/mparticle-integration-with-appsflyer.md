@@ -46,17 +46,17 @@ The purpose of this document is to provide you with details of how to activate e
 
 3. Click the AppsFlyer tile to display the integration details which provide information regarding the integration such as Categories, Available Platforms, Minimum mParticle SDK versions (if any), Data Types, User IDs, Device IDs and Available events, User IDs, Device IDs, and Available Configurations.
 
-![AppsFlyer tile in the mParticle Directory](https://files.readme.io/afa886e48f2cddde39007275a72ce03c4a6c4182408bb2ad4c8c183b1591b47d-115015666683.png)
+<Image align="center" alt="AppsFlyer tile in the mParticle Directory" src="https://files.readme.io/afa886e48f2cddde39007275a72ce03c4a6c4182408bb2ad4c8c183b1591b47d-115015666683.png" />
 
 4. Click **Add AppsFlyer to Setup**.
 
 The **Add to Setup** window opens:
 
-![mParticle Add to Setup window](https://files.readme.io/1eccc4ea365d41d4228eb07f4df88641458244b303ac8805932bf42ef4df5a74-115015476946.png)
+<Image align="center" alt="mParticle Add to Setup window" src="https://files.readme.io/1eccc4ea365d41d4228eb07f4df88641458244b303ac8805932bf42ef4df5a74-115015476946.png" />
 
 5. Select the Output Event Integration Type and click **Add to Setup** to open the Event Configuration Setup screen where you can continue the configuration process.
 
-![mParticle Event Configuration Setup screen](https://files.readme.io/9a4720fef99a21a67fd017f4485e73765ebcb7aeb126f5342cc911aff4a345d2-115015476966.png)
+<Image align="center" alt="mParticle Event Configuration Setup screen" src="https://files.readme.io/9a4720fef99a21a67fd017f4485e73765ebcb7aeb126f5342cc911aff4a345d2-115015476966.png" />
 
 6. Enter the AppsFlyer configuration settings and click **Save**:
 
@@ -65,7 +65,7 @@ The **Add to Setup** window opens:
 * Dev Key
 * The configuration you just created is shown under the AppsFlyer Default Group
 
-![AppsFlyer configuration shown under the AppsFlyer Default Group](https://files.readme.io/4d82533f311b93373152f046e92fe46c5e515cb8f5084bb89e81bfcae608172c-115015666803.png)
+<Image align="center" alt="AppsFlyer configuration shown under the AppsFlyer Default Group" src="https://files.readme.io/4d82533f311b93373152f046e92fe46c5e515cb8f5084bb89e81bfcae608172c-115015666803.png" />
 
 The next step is to establish a connection between your input platforms to the AppsFlyer output event configuration.
 
@@ -78,13 +78,13 @@ The next step is to establish a connection between your input platforms to the A
 10. Enter the AppsFlyer Connection settings:  
 Apple App ID (enter the number only and not the ID prefix. For example, if your App ID is **id123456789** enter **123456789**)
 
-![AppsFlyer Connection settings screen](https://files.readme.io/2fb4c7480c5813bf7d893318de5c4a8edfe3649293bf51c8dae422be65db726e-115015477066.png)
+<Image align="center" alt="AppsFlyer Connection settings screen" src="https://files.readme.io/2fb4c7480c5813bf7d893318de5c4a8edfe3649293bf51c8dae422be65db726e-115015477066.png" />
 
 11. Click **Add Connection**.
 
 AppsFlyer is now shown as a Connected Output Further options, such as Custom Mappings, may be available. See <Anchor target="_blank" href="https://docs.mparticle.com/guides/getting-started/connect-an-event-output#outputs">mParticle’s documentation</Anchor> for more.
 
-![AppsFlyer shown as a Connected Output](https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png)
+<Image align="center" alt="AppsFlyer shown as a Connected Output" src="https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png" />
 
 ## Feed integrations
 
@@ -98,8 +98,8 @@ General integration information for AppsFlyer can be found at [https://docs.mpar
 
 3. Click the AppsFlyer tile to display the integration details which provide information regarding the integration.
 
-![AppsFlyer tile in the mParticle Directory](https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png)
-![AppsFlyer integration details in mParticle](https://files.readme.io/afa886e48f2cddde39007275a72ce03c4a6c4182408bb2ad4c8c183b1591b47d-115015666683.png)
+<Image align="center" alt="AppsFlyer tile in the mParticle Directory" src="https://files.readme.io/53ea474eeb94c551677dd7a4ce190d6ed5972d65eafacd773b61d4ebd954fe2c-115015667883.png" />
+<Image align="center" alt="AppsFlyer integration details in mParticle" src="https://files.readme.io/afa886e48f2cddde39007275a72ce03c4a6c4182408bb2ad4c8c183b1591b47d-115015666683.png" />
 
 4. Click **Add AppsFlyer to Setup**.
 
@@ -112,11 +112,11 @@ You are now taken to the Setup screen, where you can continue the configuration 
 * Configuration Name
 * Act as Application
 
-![AppsFlyer feed configuration settings](https://files.readme.io/b27aff8223a98b0bf4bd73b6a7a04dc73bc245fa062ac9dd47ed6f4bbeece3f2-115015668703.png)
+<Image align="center" alt="AppsFlyer feed configuration settings" src="https://files.readme.io/b27aff8223a98b0bf4bd73b6a7a04dc73bc245fa062ac9dd47ed6f4bbeece3f2-115015668703.png" />
 
 7. Complete the setup in the AppsFlyer dashboard using the authentication information provided.
 
-![AppsFlyer dashboard authentication setup](https://files.readme.io/3c751a38c3891f73485375d75eacde3e07f86969a7d44cd33bf29ace6bfa1875-115015478566.png)
+<Image align="center" alt="AppsFlyer dashboard authentication setup" src="https://files.readme.io/3c751a38c3891f73485375d75eacde3e07f86969a7d44cd33bf29ace6bfa1875-115015478566.png" />
 
 ## Deferred deep linking
 

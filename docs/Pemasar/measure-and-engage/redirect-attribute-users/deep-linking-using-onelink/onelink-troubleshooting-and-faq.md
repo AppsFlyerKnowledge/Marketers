@@ -287,7 +287,7 @@ URL fallback mengarahkan pengguna ke halaman web tertentu jika membuka aplikasi 
 
 Untuk menerapkan URL fallback, di templat OneLink atau pengaturan link khusus, atur perilaku tautan saat aplikasi tidak diinstal untuk mengalihkan ke URL lain.
 
-[![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
+<Image align="center" alt="different_url.png" src="https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png" />
 
 Menggunakan pengaturan ini menambah `af_ios_url` dan `af_android_url` sebagai parameter tujuan untuk fallback, yang akan menyebabkan pengguna iOS dialihkan ke halaman yang ditentukan oleh `af_ios_url` dan pengguna Android diarahkan ke halaman yang ditentukan oleh`af_android_url`.
 
@@ -667,11 +667,11 @@ WeChat mengganti tautan langsung Android dan iOS dan mengalihkan pengguna ke hal
 
 Untuk mengatasi ini, OneLink mengenali klik di WeChat dan memuat halaman awal khusus dengan menginstruksikan pengguna untuk mengeklik tombol opsi lalu mengeklik **Buka di Browser**. Ini, pada gilirannya, membuka URL pengalihan yang ditentukan dalam pengaturan templat OneLink.
 
-![WeChat_a.jpg](https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg)
+<Image align="center" alt="WeChat_a.jpg" src="https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg" />
 
 Jika bahasa WeChat pengguna yang didaftarkan adalah bahasa Tionghoa, OneLink akan menghasilkan versi laman awal yang dilokalkan:
 
-![WeChat_b.jpg](https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg)
+<Image align="center" alt="WeChat_b.jpg" src="https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg" />
 
 </Accordion>
 

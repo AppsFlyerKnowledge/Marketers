@@ -75,7 +75,7 @@ AppsFlyer mengirimkan postback default ke Medialyzer setelah penginstalan penggu
 * **Off**: Postback penginstalan tidak dikirim ke Medialyzer.
 * **Semua sumber media, termasuk organik**: Postback penginstalan dikirim untuk event yang diatribusikan ke mitra mana pun dan untuk event organik.
 
-![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+<Image align="center" alt="default_postbacks.png" src="https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png" />
 
 <div id="in-app-event-postbacks" />
 
@@ -83,7 +83,7 @@ AppsFlyer mengirimkan postback default ke Medialyzer setelah penginstalan penggu
 
 Pada bagian ini, Anda dapat memetakan event AppsFlyer Anda dengan mitra Anda melalui postback.
 
-[![app_event_postbacks.JPG](https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png)](https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png)
+<Image align="center" alt="app_event_postbacks.JPG" src="https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png" />
 
 1. Aktifkan **Postback in-app event**.
 2. Klik **Tambahkan event** untuk menambahkan SDK atau event server-to-server ke daftar.

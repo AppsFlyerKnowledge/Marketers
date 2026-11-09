@@ -122,7 +122,7 @@ Untuk memudahkan pemahaman, bidang perjalanan pengguna dibagi menjadi beberapa k
 
 ## Laporan perjalanan pengguna
 
-![Raw_data_-_User_acquisition_.png](https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png)
+<Image align="center" alt="Raw_data_-_User_acquisition_.png" src="https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png" />
 
 <div id="user-journey-basics" />
 
@@ -150,7 +150,7 @@ Laporan perjalanan pengguna berisi data yang dikumpulkan untuk event yang terjad
   * Data penargetan ulang selalu non-organik.
   * Penargetan ulang in-app event ada di UA dan laporan in-app event penargetan ulang. Lihat metodologi atribusi ganda <Anchor target="_blank" href="/marketers/id/docs/resolve-retargeting-double-attribution">penargetan ulang</Anchor>.
 
-    ![Raw_data_-_Retargeting.png](https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png)
+    <Image align="center" alt="Raw_data_-_Retargeting.png" src="https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png" />
 
 Untuk mengikuti perjalanan pengguna, gabungkan laporan yang terkait dengan bagian perjalanan yang Anda minati, misalnya, penginstalan dan in-app event. Setelah melakukannya, urutkan laporan menggunakan ID AppsFlyer, waktu event, dan jenis laporan. Hasilnya adalah event pengguna tertentu dari waktu ke waktu, yang berarti perjalanan pengguna.
 

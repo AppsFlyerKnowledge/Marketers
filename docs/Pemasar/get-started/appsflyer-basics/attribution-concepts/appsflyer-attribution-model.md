@@ -35,7 +35,7 @@ x-zendesk:
 ---
 > **Sekilas:** AppsFlyer menentukan sumber media yang memotivasi pengguna untuk menginstal atau berinteraksi ulang dengan aplikasi dan mengatribusikan tindakan pengguna ke sumber tersebut menggunakan model atribusi AppsFlyer.
 
-[![Mobile_user_journey.png](https://support.appsflyer.com/hc/article_attachments/19544107641105)](https://support.appsflyer.com/hc/article_attachments/19544107641105)
+<Image align="center" alt="Mobile_user_journey.png" src="https://support.appsflyer.com/hc/article_attachments/19544107641105" />
 
 <div id="what-is-attribution" />
 
@@ -81,7 +81,7 @@ AppsFlyer menggunakan sejumlah metode atribusi yang tercantum dalam tabel beriku
 
 Metode atribusi digunakan sesuai dengan prioritas yang ditunjukkan pada grafik. Pada penginstalan baru, jika ada lebih dari satu interaksi yang valid, **AppsFlyer memprioritaskan klik daripada tayangan, dan deterministik daripada metode probabilistik**.
 
-![Attribution method priorities 23.png](https://support.appsflyer.com/hc/article_attachments/19910400460561)
+<Image align="center" alt="Attribution method priorities 23.png" src="https://support.appsflyer.com/hc/article_attachments/19910400460561" />
 
 Temukan penjelasan rinci tentang model atribusi AppsFlyer di bawah ini.
 
@@ -338,7 +338,7 @@ Ketika suatu aplikasi dicadangkan menggunakan iCloud dan kemudian dipulihkan (pa
 
 <Accordion title="Atribusi Retargeting">
 
-![Retargeting_-_Flow__2_.png](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="Retargeting_-_Flow__2_.png" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 Pengguna yang menginstal ulang aplikasi selama <Anchor target="_blank" href="/marketers/id/docs/set-up-re-attribution-window">re-attribution window (jendela atribusi ulang)</Anchor> (90 hari secara default) dianggap sebagai atribusi ulang. Jika penginstalan ini terjadi setelah berinteraksi dengan kampanye penargetan ulang, penginstalan ini dicatat sebagai penargetan ulang penginstalan ulang ATAU atribusi ulang dan dilaporkan dalam <Anchor target="_blank" href="/marketers/id/docs/retargeting-attribution-guide">retargeting (penargetan ulang)</Anchor>.
 

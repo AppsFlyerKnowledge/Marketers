@@ -49,7 +49,7 @@ Attribute website visits and conversions to the search engine or AI answer engin
 2. The web attribution SDK or S2S integration reads the web referrer, the field that shows where the user came from. AppsFlyer attributes the web visit to the matching SEO or AEO media source.
 3. If the user later completes a meaningful action, such as signing up or making a purchase, AppsFlyer attributes the event to that search engine or AI answer engine.
 
-<Image alt="Google Chrome 2026-11-01 19.17.00.png" src="https://files.readme.io/b0303adbc9f9d5baf0be323844859ffd6987257534b6843e10777f290926eef4-52556690362257.png" width="2266px" />
+<Image align="center" alt="Google Chrome 2026-11-01 19.17.00.png" src="https://files.readme.io/b0303adbc9f9d5baf0be323844859ffd6987257534b6843e10777f290926eef4-52556690362257.png" width="2266px" />
 
 Learn more about <Anchor target="_blank" href="/marketers/id/docs/about-traffic-source-resolution#step-2-media-source-resolution">traffic source resolution</Anchor>.
 
@@ -69,7 +69,7 @@ Attribute app installs to the search engine or AI answer engine that sent the us
 3. Smart Script creates an AppsFlyer attribution link. Its media source (`pid`) is based on the web referrer, the page the user came from. For example, a user comes from google.com, and the visit has no paid indicators (`pid`, UTM parameters, `gclid`, `gbraid`, or `wbraid`). Smart Script can then set `pid=google_organic_seo`.
 4. The user installs the app and opens it for the first time. AppsFlyer can attribute the install to that click and credit the search engine or AI answer engine that sent the user to your website.
 
-<Image alt="Google Chrome 2026-11-01 19.18.06.png" src="https://files.readme.io/c6d27c8feafd44ab5addbbffff2d541936237e3fe45b0b44a6432ac57fe1a35c-52556736289425.png" width="2250px" />
+<Image align="center" alt="Google Chrome 2026-11-01 19.18.06.png" src="https://files.readme.io/c6d27c8feafd44ab5addbbffff2d541936237e3fe45b0b44a6432ac57fe1a35c-52556736289425.png" width="2250px" />
 
 Learn more about <Anchor target="_blank" href="/marketers/id/docs/set-up-smart-script-to-convert-web-visitors#seo-referrer-mapping">setting up Smart Script to convert web visitors</Anchor>.
 
@@ -88,7 +88,7 @@ Attribute app opens by users who already have your app installed.
 2. Your website content is mapped to your app, and the user has the app installed. The link opens the app directly at the relevant content.
 3. The app opens through the deep link. The web referrer, the page the user came from, is sent to AppsFlyer. AppsFlyer uses it to attribute the app open to the matching search engine or AI answer engine.
 
-<Image alt="Google Chrome 2026-11-01 19.18.53.png" src="https://files.readme.io/e58e45aa7a0adc6beed42e7687fa9c77346f3cd94f69b293514b15d765dab4c7-52556690362641.png" width="2227px" />
+<Image align="center" alt="Google Chrome 2026-11-01 19.18.53.png" src="https://files.readme.io/e58e45aa7a0adc6beed42e7687fa9c77346f3cd94f69b293514b15d765dab4c7-52556690362641.png" width="2227px" />
 
 Learn more about <Anchor target="_blank" href="/marketers/id/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">setting up organic search (SEO) and organic AI answers (AEO) re-engagement attribution</Anchor>.
 

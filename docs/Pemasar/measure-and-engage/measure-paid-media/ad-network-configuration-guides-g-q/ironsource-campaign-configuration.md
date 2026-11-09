@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Sekilas:** ironSource, mitra terintegrasi AppsFlyer, membangun alat monetisasi, keterlibatan, analitik, dan penemuan untuk pengembang aplikasi, produsen perangkat, operator seluler, dan pemasang iklan. Selain atribusi seluler berbasis klik, ironSource juga menawarkan biaya, pendapatan iklan, penargetan ulang, dan atribusi lihat-tayang, yang dapat Anda rekam dengan AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
  Catatan Sebagai jaringan semua penginstalan, ironSource lebih suka menerima postback untuk semua penginstalan baru aplikasi Anda dari sumber APA PUN, termasuk organik. Untuk melakukannya, pilih Event yang diatribusikan ke mitra mana pun untuk mengirimkan semua postback penginstalan ke ironSource.
 

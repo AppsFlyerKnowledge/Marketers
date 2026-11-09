@@ -37,7 +37,7 @@ Atribusi penargetan ulang terjadi ketika pengguna berinteraksi dengan kampanye p
 * **Interaksi ulang:** Jika aplikasi ada di perangkat, sumber media yang memotivasi pengguna untuk membuka aplikasi dikreditkan dengan interaksi ulang.
 * **Atribusi ulang (alias retargeting reinstall (penginstalan ulang penargetan ulang)**: Jika aplikasi tidak ada di perangkat pengguna (artinya pengguna meng-uninstal aplikasi), maka interaksi dengan kampanye penargetan ulang mendorong pengguna untuk menginstal ulang dan membuka aplikasi. Jika ini terjadi selama <Anchor target="_blank" href="/marketers/id/docs/set-up-re-attribution-window">re-attribution window (jendela atribusi ulang)</Anchor>, sumber media penargetan ulang dikreditkan dengan atribusi ulang.  Bacaan terkait: <Anchor target="_blank" href="/marketers/id/docs/appsflyer-attribution-model#reinstalls">Penginstalan ulang.</Anchor>
 
-![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 Sebelum menjalankan kampanye penargetan ulang, tinjau aturan interaksi dan contoh kasus di bagian berikut, lalu atur penargetan ulang seperti yang dijelaskan di bagian prosedur penargetan ulang. Untuk lebih mudahnya, Anda harus terbiasa dengan <Anchor target="_blank" href="/marketers/id/docs/appsflyer-attribution-model">model atribusi</Anchor> AppsFlyer dan jendela atribusi terkait.
 
@@ -90,7 +90,7 @@ Tabel berikut berisi informasi referensi terkait jendela yang terkait dengan atr
 
 #### **Contoh alur penerapan aturan**
 
-![](https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png)
+<Image align="center" alt="" src="https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png" />
 
 Daftar periksa aturan interaksi ulang untuk atribusi klik-tayang dan lihat-tayang:
 
@@ -139,7 +139,7 @@ Pengaturan berikut diperlukan tergantung pada skenario.
 2. Pilih jaringan iklan.
 3. Hidupkan **Aktifkan** **pengaturan penargetan ulang**. Ini mengubah tautan atribusi ke URL penargetan ulang, dengan menambahkan `is_retargeting=true` ke tautan.   
 
-   [![](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)
+   <Image align="center" alt="" src="https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png" />
 4. Pilih salah satu dari berikut:
    * **Gunakan tautan atribusi standar** untuk tautan platform tunggal (khusus aplikasi).
    * **Gunakan OneLink**.

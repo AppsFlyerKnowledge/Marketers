@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **Sekilas:** Mulai pertengahan September 2023, Snapchat telah menjadi SRN Tingkat Lanjut. Pelajari cara mengatur integrasi antara AppsFlyer dan Snapchat untuk mengaktifkan pengukuran atribusi.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
 <div id="overview" />
 
@@ -87,14 +87,14 @@ Untuk detail lebih lanjut tentang aktivasi mitra klik <Anchor target="_blank" hr
 
 Aktifkan **Aktivasi Mitra**untuk mengizinkan atribusi ke Snapchat.
 
-![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png" />
 
 **ID Aplikasi Snap**
 
 1. Di Manajer Bisnis Snap, buka Apps dan salin ID Aplikasi Snap (baca panduan Snapchat tentang <Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/a/snap-app-id">cara menghasilkan ID Aplikasi Snap</Anchor>).
 2. Salin ID di bidang ID Aplikasi Snap di AppsFlyer.
 
-![snapchat-app-id.png](https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png)
+<Image align="center" alt="snapchat-app-id.png" src="https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png" />
 
 **Jika aplikasi dipromosikan oleh agensi**,
 
@@ -110,7 +110,7 @@ Anda dapat menyesuaikan nilai ini ke 1-23 jam atau 1-30 hari. Kami merekomendas
 
 Detail lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/set-up-lookback-windows">click lookback window di sini</Anchor>.
 
-<Image alt="snap-click-window.png" src="https://files.readme.io/07eb4b7d4a5ec37791cdef31e0fbb77e22f0b65cd189a426bf293d166827b44a-360011563618.png" width="552px" />
+<Image align="center" alt="snap-click-window.png" src="https://files.readme.io/07eb4b7d4a5ec37791cdef31e0fbb77e22f0b65cd189a426bf293d166827b44a-360011563618.png" width="552px" />
 
 #### Lookback Window Atribusi View-Through
 
@@ -120,7 +120,7 @@ Anda dapat mengkustomisasi nilai ini ke 1-23 jam atau 1-7 hari. Kami merekomend
 
 Detail lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/set-up-lookback-windows">atribusi view-through di sini</Anchor>.
 
-<Image alt="snap-viewthrough-window.png" src="https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png" width="663px" />
+<Image align="center" alt="snap-viewthrough-window.png" src="https://files.readme.io/a493869ca1bb6f6b9ff63438e3b5aa4ade45d047e05fe0d8ebdd99c3ef6affcc-360011482617.png" width="663px" />
 
 <div id="note-3" />
 
@@ -139,20 +139,20 @@ Jika Anda adalah agensi, minta pemasang iklan untuk melakukannya untuk Anda dari
 
 Tetapkan durasi **jendela lihat balik click-through Re-engagement (Interaksi Ulang)** (jangka waktu maksimum setelah iklan diklik, di mana pengguna yang ditargetkan ulang dapat diatribusikan ke iklan tersebut). Anda dapat menyetel nilai dalam jam (hingga 23) atau hari (1-30):
 
-<Image alt="snap-reengagement-activate.png" src="https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png" width="642px" />
+<Image align="center" alt="snap-reengagement-activate.png" src="https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png" width="642px" />
 
 #### Jendela lihat balik view-through interaksi ulang
 
 Untuk mulai mengatribusikan tayangan iklan penargetan ulang, aktifkan **Re-engagement view-through attribution (atribusi lihat tayang interaksi ulang)**.  
 Tetapkan durasi Re-engagement view-through lookback window (jendela lookback klik-tayang interaksi ulang) (jangka waktu maksimum setelah iklan diklik, di mana pengguna yang ditargetkan ulang dapat diatribusikan ke iklan tersebut). Anda dapat menyetel nilai dalam jam (hingga 23) atau hari (1-7):
 
-![snap-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
+<Image align="center" alt="snap-reengagement-view-through.png" src="https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png" />
 
 #### Periode Waktu Re-engagement
 
 Tetapkan durasi jendela **Re-engagement window (jendela interaksi ulang)** (periode ketika in-app event pengguna dikaitkan ke sumber media retargeting (penargetan ulang). Anda dapat mengatur nilai dalam hari (1-90), jam (hingga 23), atau bahkan selamanya:
 
-<Image alt="snap-reengagement-window.png" src="https://files.readme.io/99aab0e0e808514d1450fd297a1e7d2217be4e21d8ca85bd5a922e797f39755e-360008512418.png" width="557px" />
+<Image align="center" alt="snap-reengagement-window.png" src="https://files.readme.io/99aab0e0e808514d1450fd297a1e7d2217be4e21d8ca85bd5a922e797f39755e-360008512418.png" width="557px" />
 
 <div id="in-app-event-postbacks" />
 
@@ -160,7 +160,7 @@ Tetapkan durasi jendela **Re-engagement window (jendela interaksi ulang)** (peri
 
 Petakan event AppsFlyer dengan mitra melalui postback. Jika pengiriman postback diaktifkan, ini termasuk in-app event yang ditolak (event yang diblokir oleh Protect360 atau event yang ditemukan tidak sesuai dengan aturan validasi target)
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 **Untuk mengonfigurasi postback in-app event:**
 
@@ -326,7 +326,7 @@ Untuk melakukan deep linking dengan Snapchat:
 1. Buka jenis peluang **Drive traffic to app**.
 2. Tambahkan URI Deeplink:  
      
-    [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+    <Image align="center" alt="" src="https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png" />
 
 <div id="deferred-deep-linking-with-snapchat" />
 

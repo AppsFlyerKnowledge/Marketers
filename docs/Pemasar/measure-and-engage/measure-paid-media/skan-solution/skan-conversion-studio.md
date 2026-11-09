@@ -140,7 +140,7 @@ Jika Anda upgrade ke SKAN 4 dari mode SKAN sebelumnya, pemetaan skema Anda saat 
 
 Untuk mengatur SKAN 4 secara manual, lakukan eksperimen dengan opsi berbeda. Saat Anda membuat perubahan, ringkasan **Kapasitas nilai Konversi** diperbarui. Optimalkan pengaturan Anda untuk mengumpulkan data yang paling berharga bagi Anda tanpa melebihi kapasitas. Lihat [Penghitungan kapasitas nilai Konversi.](/docs/skan-conversion-studio#conversion-value-capacity-formula)
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 Catatan:**Jika Anda upgrade ke SKAN 4 dari mode SKAN sebelumnya, pemetaan skema Anda saat ini dibawa ke pengukuran halus dan AppsFlyer akan memetakan nilai kasar secara otomatis untuk Anda. Jika Anda baru mengenal SKAN&lt; AppsFlyer menyediakan pemetaan default awal.**
 
@@ -186,7 +186,7 @@ Di Kustom, Anda menggunakan komponen pengukuran yang berbeda seperti pendapatan,
 
 Untuk mengatur Kustom, lakukan eksperimen dengan opsi berbeda. Saat Anda membuat perubahan, ringkasan **Kapasitas nilai Konversi** diperbarui. Optimalkan pengaturan Anda untuk mengumpulkan data yang paling berharga bagi Anda tanpa melebihi kapasitas. Lihat [Penghitungan kapasitas nilai Konversi.](/docs/skan-conversion-studio#conversion-value-capacity-formula)
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png) Untuk mengatur nilai konversi secara manual di Studio Konversi menggunakan mode Kustom:**
 
@@ -222,7 +222,7 @@ Menggunakan mode tetap, Anda dapat mengukur nilai pengguna menggunakan salah sat
 
 Saat Anda membuat perubahan terhadap pengaturan mode, **ringkasan Kapasitas nilai konversi** diperbarui. Optimalkan pengaturan Anda untuk menangkap data yang paling bernilai bagi Anda tanpa melebihi kapasitas. Lihat [Penghitungan kapasitas nilai konversi.](/docs/skan-conversion-studio#conversion-value-capacity-formula)
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **Perhatikan!**
 
@@ -553,7 +553,7 @@ Prioritas dijelaskan dengan sangat baik dalam [contoh terperinci](/docs/skan-con
 4. Klik **+ Add measurement**. Pilih **Priority**.   
    Prioritas 1 ditampilkan.  
 
-   [![Priority1.png](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)](https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png)
+   <Image align="center" alt="Priority1.png" src="https://files.readme.io/f0bc64c4fbb95462a17a1e6bb8d250d3396096b743b3d412cd0605d9b0a1079d-4756458366865.png" />
 5. Pilih komponen pengukuran dari:
    * Pendapatan
    * In-app event
@@ -606,7 +606,7 @@ Prioritas dijelaskan dengan sangat baik dalam [contoh terperinci](/docs/skan-con
 * Unduh tabel pemetaan CV sebagai file CSV. Klik **Download mapping file.**
 * Dapatkan pemetaan CV menggunakan <Anchor target="_blank" href="/marketers/id/docs/skan-cv-schema-api-for-advertisers">API skema SKAN CV untuk pengiklan</Anchor>.
 
-![CVmapping.png](https://files.readme.io/97ec2570636897a6274f7750c7f77c92d8457cab51660de496bec6cb7504c4a3-4407788932113.png)
+<Image align="center" alt="CVmapping.png" src="https://files.readme.io/97ec2570636897a6274f7750c7f77c92d8457cab51660de496bec6cb7504c4a3-4407788932113.png" />
 
 <div id="csv-mapping-file-columns" />
 
@@ -1017,7 +1017,7 @@ Untuk menonaktifkan pengukuran SKAdNetwork:
 
 <Accordion title="Laporkan event dengan API server-ke-server">
 
-![SKAdNetwork_-_S2S__2_.png](https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png)
+<Image align="center" alt="SKAdNetwork_-_S2S__2_.png" src="https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png" />
 
 Baik SDK maupun <Anchor target="_blank" href="/marketers/id/docs/server-to-server-events-api-for-mobile-s2s-mobile">server-to-server API (S2S)</Anchor> dapat mengirim in-app event ke server AppsFlyer.
 

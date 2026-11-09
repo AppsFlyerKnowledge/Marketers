@@ -187,7 +187,7 @@ Bidang tanggal dalam file CSV memiliki format yyyy-mm-dd. Saat Anda membuka file
 
 <Accordion title="Protect360—penipuan yang diblokir">
 
-![](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)
+<Image align="center" alt="" src="https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png" />
 
 * Laporan agregat penipuan yang diblokir memberikan rincian event yang diblokir oleh <Anchor target="_blank" href="/marketers/id/docs/protect360-anti-fraud-guide">Protect360</Anchor> .
 * Laporan tersedia via Pull API. Laporan ini tidak tersedia melalui halaman Data Ekspor.

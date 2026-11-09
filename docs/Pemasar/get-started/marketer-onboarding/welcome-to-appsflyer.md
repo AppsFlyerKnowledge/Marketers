@@ -46,7 +46,7 @@ Atribusi aplikasi seluler **menentukan kampanye, mitra, dan channel mana yang me
 
 Saat pengguna Anda pertama kali dibuat, Anda mendapat undangan email untuk mengaktifkan akun Anda. Setelah diaktifkan, Anda dapat masuk dan akun menjadi aktif. Perhatikan bahwatautan aktivasi berlaku selama 48 jam.
 
-<Image alt="login page.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
+<Image align="center" alt="login page.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
 
 Ada beberapa cara untuk masuk ke akun AppsFlyer Anda:
 
@@ -79,7 +79,7 @@ Jika Anda memiliki lebih dari satu akun, saat masuk ke salah satu akun tersebut,
 1. Keluar dari akun Anda saat ini: Dari bilah menu, klik **tarik-turun alamat email** > **Keluar**.
 2. Masuk dan pilih akun lain dari daftar akun terkait Anda.
 
-![multiple accounts.png](https://files.readme.io/017bea85e105d707603468e396d290c09a217c36275244b4b41ea2d5dd601a9e-20347815267601.png)
+<Image align="center" alt="multiple accounts.png" src="https://files.readme.io/017bea85e105d707603468e396d290c09a217c36275244b4b41ea2d5dd601a9e-20347815267601.png" />
 
 <div id="get-started" />
 

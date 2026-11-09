@@ -38,11 +38,11 @@ If your app previously used Apple Server Notifications Version 1, you must switc
 
 1. In **App Store Connect**, in the **App Information** section, scroll to **App Store Server Notifications.**
 
-   <Image alt="image (24).png" src="https://files.readme.io/8e9c92cdf87303b58a6b604640b4f7adb3cf56c03e57df053e9d486b89345547-33812520143505.png" width="2009px" />
+   <Image align="center" alt="image (24).png" src="https://files.readme.io/8e9c92cdf87303b58a6b604640b4f7adb3cf56c03e57df053e9d486b89345547-33812520143505.png" width="2009px" />
 2. For **Production Server URL**, click **Edit**.
 3. Do not change the URL in the **Production Server URL** box.
 
-   <Image alt="image (25).png" src="https://files.readme.io/fc7737793f2e7982e3e92d30dec45d7def98ef8ec6c3186ebbdf32a78f217a3d-33812683240977.png" width="1182px" />
+   <Image align="center" alt="image (25).png" src="https://files.readme.io/fc7737793f2e7982e3e92d30dec45d7def98ef8ec6c3186ebbdf32a78f217a3d-33812683240977.png" width="1182px" />
 4. Under **Notification Version**, select **Version 2 Notifications**.
 5. Click **Save**.
 6. Under the **App Store Server Notifications** section, click **Edit** for the **Sandbox Server URL**.
@@ -69,9 +69,9 @@ The required credentials for the iOS In-App Purchase API integration are:
 
 1. In the App Store Connect, go to **Users and Access** <Image alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" width="486px" />
 2. Go to **Users and Access** > **Integrations**, and from the **Keys** list, select **In-App Purchase**.  
-   <Image alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" width="532px" />
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" width="532px" />
 3. Click + to generate a new In-App Purchase key.  
-   <Image alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" width="384px" />
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" width="384px" />
 4. Enter a name for your API key.
 5. Click **Generate**.
 6. Click **Download In-App Purchase Key** next to the key you just generated to download it. **Note**: You can only download the key once.
@@ -82,7 +82,7 @@ The required credentials for the iOS In-App Purchase API integration are:
 11. In App Store Connect, copy the **Key ID** of the key you just generated and paste it into the AppsFlyer purchases & subscriptions setting for **Key ID**. <Image alt="" src="https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png" width="484px" />
 12. In App Store Connect, copy the **Issuer ID** and paste it into the AppsFlyer purchases & subscriptions setting for **Issuer ID**. **Note**: If the **Issuer ID** is not displayed at the top of the page, create an App Store Connect API key (with any access level). After that, the Issuer ID will appear at the top of the page for the In-App Purchase key. 
 
-    <Image alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" width="474px" />
+    <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" width="474px" />
 13. In the AppsFlyer purchases and subscriptions settings, click **Validate keys** to ensure the keys you entered are correct.
 14. Click **Update keys**. Once the keys are updated, your app will be fully transitioned to Apple’s new iOS validation flow.
 

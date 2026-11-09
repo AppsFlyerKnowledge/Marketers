@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance:** EmailLabs, an email delivery and analytics platform, embeds AppsFlyer OneLink within emails. When email recipients click on the link, they are deep-linked into your app.
 
-![emaillabs-af-logo.png](https://files.readme.io/467ee1fbcea8a36dff40172b1dbc97780a7e6cafd958ecb5b520a612c3308231-49839289267857.png)
+<Image align="center" alt="emaillabs-af-logo.png" src="https://files.readme.io/467ee1fbcea8a36dff40172b1dbc97780a7e6cafd958ecb5b520a612c3308231-49839289267857.png" />
 
 ## Introduction
 
@@ -55,12 +55,12 @@ However, with ESPs that support Universal Links on top of their click recording 
 
 1. Set up your domain according to <Anchor target="_blank" href="https://docs.emaillabs.io/get_started/getting-started/">this article</Anchor>
 2. Set up your click recording domain according to <Anchor target="_blank" href="http://docs.emaillabs.io/user-panel/smtp-applications/whitelabel-2/">this article</Anchor> and the screenshot below.  
-   ![whitelabel-section-2.png](https://files.readme.io/a5b992868a0abd94b2f24097ead760a98e6529e4f83ecfaf713d681800de4631-49839273475217.png)
+   <Image align="center" alt="whitelabel-section-2.png" src="https://files.readme.io/a5b992868a0abd94b2f24097ead760a98e6529e4f83ecfaf713d681800de4631-49839273475217.png" />
 3. Enable link tracking according to <Anchor target="_blank" href="http://docs.emaillabs.io/user-panel/smtp-applications/link-tracking/">this article</Anchor> and the screenshot below.  
-   ![link-tracking-section-3.png](https://files.readme.io/3c1d0f13d3fcc2b49754cf4beb653592b9fffc27ad27775cf56986f78f9ea53b-49839289275153.png)
+   <Image align="center" alt="link-tracking-section-3.png" src="https://files.readme.io/3c1d0f13d3fcc2b49754cf4beb653592b9fffc27ad27775cf56986f78f9ea53b-49839289275153.png" />
 4. Contact EmailLabs support at [bok@emaillabs.pl](mailto:bok@emaillabs.pl) and request to enable SSL.
 5. In EmailLabs, go to **Panel** > **SMTP** **Accounts** > **Settings** > **Deep** **Links**, and check the Activated box. For iOS apps, enter the <Anchor target="_blank" href="https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/AppID.html">Apple Application ID</Anchor> in the respective field.  
-   ![deeplinking-section-5.png](https://files.readme.io/15a5b45a58c1a130de6bfe2c3e9e3b379537b4fc549c1c3fcce41ef54b8653e9-49839289277073.png)
+   <Image align="center" alt="deeplinking-section-5.png" src="https://files.readme.io/15a5b45a58c1a130de6bfe2c3e9e3b379537b4fc549c1c3fcce41ef54b8653e9-49839289277073.png" />
 
 ### Step 2: Configuring your AppsFlyer SDK
 
@@ -71,7 +71,7 @@ However, with ESPs that support Universal Links on top of their click recording 
 After configuring your click recording domain to support Universal Links as described previously, you need to set up your app to deep-link and resolve that Universal Link.
 
 1. Associate the click recording domain in Xcode:  
-   ![configure-xcode-deeplinking-domain.png](https://files.readme.io/923d9bca2fbe448d848b6596c1087bf625ec0a0d5958ff5f28c3fc818275461a-49839289277969.png)
+   <Image align="center" alt="configure-xcode-deeplinking-domain.png" src="https://files.readme.io/923d9bca2fbe448d848b6596c1087bf625ec0a0d5958ff5f28c3fc818275461a-49839289277969.png" />
 2. Provide the click recording domain to the SDK API `setResolveDeepLinkURLs`. This API needs to be called before SDK initialization. For more information please refer to SDK documentation <Anchor target="_blank" href="/marketers/id/docs/sdk-integration-overview">here</Anchor>.  
 
    ```objectivec

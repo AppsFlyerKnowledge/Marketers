@@ -45,7 +45,7 @@ Jika pengguna melakukan registrasi, menyelesaikan tutorial, menambahkan item ke 
 
 In-app event terdiri dari nama event dan dapat menyertakan parameter event. Saat Anda menambahkan parameter event ke in-app event, ini disebut sebagai rich in-app event. Parameter event memberi Anda lebih banyak konteks dan informasi tentang event yang terjadi. Misalnya, meskipun parameter ini membantu mengetahui bahwa pengguna melakukan pemesanan, parameter event dapat memberi Anda detail seperti jenis pembelian, tujuan, dan pendapatan.
 
-![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
+<Image align="center" alt="travel.png" src="https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png" />
 
 <div id="tip" />
 
@@ -109,7 +109,7 @@ Penting untuk memahami cara AppsFlyer menangani pengaturan mata uang dan konvers
 
 AppsFlyer menangani selisih antara mata uang pengaturan aplikasi dan mata uang in-app event menggunakan konversi mata uang.
 
-![revenue_normalization_flow.png](https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png)
+<Image align="center" alt="revenue_normalization_flow.png" src="https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png" />
 
 Diagram di atas menunjukkan proses berikut:
 
@@ -304,7 +304,7 @@ Ingat hal berikut ini saat menentukan nama dan parameter event di aplikasi:
 * Perhatikan bahwa AppsFlyer mengumpulkan alamat IP perangkat selama <Anchor target="_blank" href="https://www.appsflyer.com/services-privacy-policy/#engagementinformation">interaksi</Anchor>. Dalam beberapa yurisdiksi atau skenario penggunaan, alamat IP dapat dianggap sebagai informasi pribadi (PII). Kami menggunakan alamat IP untuk mendapatkan lokasi geografis yang luas (kota, tingkat kecamatan) perangkat tetapi bukan alamat spesifik. Jika perlu, Anda dapat memilih untuk <Anchor target="_blank" href="/marketers/id/docs/apply-ip-masking-to-user-data">menyembunyikan alamat IP</Anchor> agar tidak muncul dalam laporan data lengkap.
 * Event in-app adalah satu-satunya sumber data pendapatan di AppsFlyer. Anda dapat melampirkan nilai pendapatan tertentu untuk setiap event dan melihatnya di dashboard aplikasi. Pelajari lebih lanjut tentang [parameter monetisasi](/docs/in-app-events-overview#revenue-events).
 
-  ![revenue_data.png](https://support.appsflyer.com/hc/article_attachments/360020607037)
+  <Image align="center" alt="revenue_data.png" src="https://support.appsflyer.com/hc/article_attachments/360020607037" />
 
 </Accordion>
 

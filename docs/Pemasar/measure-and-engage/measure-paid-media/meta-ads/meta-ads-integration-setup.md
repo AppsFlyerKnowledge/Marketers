@@ -54,7 +54,7 @@ Untuk mengintegrasikan Meta ads dengan AppsFlyer, pertama, buat <Anchor target="
 1. Pada **Meta ads**, buka <Anchor target="_blank" href="https://developers.facebook.com/apps">Dashboard Aplikasi Anda.</Anchor>
 2. Klik aplikasi yang diperlukan.
 3. Klik ID Aplikasi, yang muncul di kiri atas layar, untuk menyalinnya.  
-   ![meta-ads-for-developters.jpg](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)
+   <Image align="center" alt="meta-ads-for-developters.jpg" src="https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg" />
 
 AppsFlyer mengatribusikan data per ID Aplikasi. ID Aplikasi Facebook yang sama dapat digunakan untuk [aplikasi Android dan iOS Anda](https://developers.facebook.com/docs/app-ads/app-setup/). Perhatikan bahwa untuk iOS 14+, Meta ads membatasi akun iklan hingga sembilan akun per aplikasi.
 
@@ -86,10 +86,10 @@ Untuk mulai mengatribusikan kampanye Meta ads dengan AppsFlyer, ikuti langkah-la
    1. Buka aplikasi Anda di [Meta untuk pengembang](https://developers.facebook.com/apps).
    2. Pilih aplikasi.  
 
-      ![find-fb-app-id.jpg](https://support.appsflyer.com/hc/article_attachments/25899320112017)
+      <Image align="center" alt="find-fb-app-id.jpg" src="https://support.appsflyer.com/hc/article_attachments/25899320112017" />
    3. Untuk menyalin ID aplikasi Anda, klik di bagian atas halaman layar.  
 
-      ![meta-ads-copy-app-id.jpg](https://support.appsflyer.com/hc/article_attachments/25899342893585)
+      <Image align="center" alt="meta-ads-copy-app-id.jpg" src="https://support.appsflyer.com/hc/article_attachments/25899342893585" />
    4. Di AppsFlyer, dari menu samping, pilih **Berkolaborasi** > **Pasar Mitra**
    5. Cari Meta ads dan pilih.
    6. Klik **Atur integrasi**. Anda diarahkan ke halaman pengaturan integrasi.
@@ -97,7 +97,7 @@ Untuk mulai mengatribusikan kampanye Meta ads dengan AppsFlyer, ikuti langkah-la
        **Catatan:** Tombol harus tetap pada (<Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">diaktifkan</Anchor>) selama Anda bekerja dengan mitra<Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">.</Anchor>
    8. Di bawah **Pengaturan Umum**:  
 
-      ![meta_ads_general_settings2.png](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
+      <Image align="center" alt="meta_ads_general_settings2.png" src="https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png" />
 
       * Rekatkan ID aplikasi Anda di **ID Aplikasi Facebook** Bidang
       * Rekatkan pengarah pemasangan [kunci dekripsi dari iklan Meta](#data-terenkripsi-dari-google-play-referrer-api-atau-meta-install-referrer).
@@ -105,7 +105,7 @@ Untuk mulai mengatribusikan kampanye Meta ads dengan AppsFlyer, ikuti langkah-la
    10. Klik **Simpan Integrasi**.
 2. [opsional] **Konfigurasikan pengaturan yang disarankan:**  
 
-   ![meta_ads_install_attribution.png](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)
+   <Image align="center" alt="meta_ads_install_attribution.png" src="https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png" />
 
    * Untuk mencocokkan dengan jendela tampilan balik klik-tayang dari Iklan Meta, atur ke 7 hari.  
       Perhatikan bahwa: (Perhatikan bahwa [ada beberapa kasus tertentu di mana *default*-nya berbeda](https://www.facebook.com/business/help/395050428485124?id=428636648170202)).
@@ -209,7 +209,7 @@ Penargetan yang luas diperlukan untuk menerima data penginstalan *view-through*.
 * Audiens Khusus: Atur sebagai relaks.
 * Untuk "santai", "Penargetan terperinci yang menguntungkan" untuk kampanye iklan harus dipilih:  
 
-  <Image alt="" src="https://support.appsflyer.com/hc/article_attachments/22950622532497" width="569px" />
+  <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/22950622532497" width="569px" />
 
 <div id="encrypted-data-from-google-play-referrer-api-or-meta-install-referrer" />
 
@@ -230,7 +230,7 @@ Perhatikan bahwa jika kode tidak diberikan atau dihapus, ada beberapa kasus di m
 3. Pilih aplikasi yang ingin Anda akses kode dekripsinya.
 4. Arahkan ke **Pengaturan** > **Dasar** di bagian kiri halaman.  
 
-   [![](https://files.readme.io/253be6d4cd2a75cc2c038c5b14ed3df067612c46bea174475adba3d196f25789-30354101891985.png)](https://files.readme.io/253be6d4cd2a75cc2c038c5b14ed3df067612c46bea174475adba3d196f25789-30354101891985.png)
+   <Image align="center" alt="" src="https://files.readme.io/253be6d4cd2a75cc2c038c5b14ed3df067612c46bea174475adba3d196f25789-30354101891985.png" />
 5. Gulir ke bawah ke bagian Android dan Anda akan lihat kunci dekripsi Anda yang berlabel Instal Perujuk kunci dekripsi di bawah bidang Nama Paket. Catatan: Ini adalah bagian yang sama dengan tempat Anda mengonfigurasi nama paket Anda dan Google Play Store.
 
 **Untuk mengatur kode dekripsi di AppsFlyer:**
@@ -247,7 +247,7 @@ Perhatikan bahwa jika kode tidak diberikan atau dihapus, ada beberapa kasus di m
 
 <Accordion title="Biaya, klik, dan tayangan">
 
-[![meta_cost_tab.png](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)  
+<Image align="center" alt="meta_cost_tab.png" src="https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png" />
 
 Integrasi ini menyediakan data agregat mengenai biaya, klik, dan tayangan untuk kampanye dan set iklan Anda, iklan, dan geografis/negara. Lihat <Anchor target="_blank" href="/marketers/id/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabel integrasi biaya jaringan iklan</Anchor> untuk detail lengkap tentang dimensi dan metrik yang didukung, dan fitur.
 
@@ -289,7 +289,7 @@ Pelajari lebih banyak tentang memperkaya data Anda dengan <Anchor target="_blank
 
 <Accordion title="Pemetaan In-App Event">
 
-[![meta_iae_postbacks.png](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)
+<Image align="center" alt="meta_iae_postbacks.png" src="https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png" />
 
 **Untuk memetakan *in-app event*:**
 
@@ -348,16 +348,16 @@ Atribusi penargetan ulang AppsFlyer untuk iklan Meta memungkinkan pengiklan meng
     Jendela peninjauan kembali adalah periode waktu, mulai dari klik iklan, di mana aplikasi harus diluncurkan agar klik menjadi dicatat sebagai keterlibatan kembali.  
     Pilih unit jendela kilas balik (jam atau hari), dan atur slider ke nilai yang diinginkan.  
 
-   ![re-engagement_attribution_toggle.png](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)
+   <Image align="center" alt="re-engagement_attribution_toggle.png" src="https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png" />
 4. Aktifkan **Atribusi *view-through* interaksi ulang**.
 5. Atur ***Slider* *re-engagement view-through lookback window* (jendela lihat balik lihat-tayang interaksi ulang)** ke nilai yang diinginkan (sampai 24 jam). Ini merupakan periode waktu yang dimulai dari tayangan iklan, saat aplikasi harus diluncurkan agar tayangan dapat dicatat sebagai interaksi ulang.
 
-   ![re-engagement_view-through_toggle.png](https://support.appsflyer.com/hc/article_attachments/13880480985489)
+   <Image align="center" alt="re-engagement_view-through_toggle.png" src="https://support.appsflyer.com/hc/article_attachments/13880480985489" />
 6. Atur **Jendela interaksi ulang**.  
     Ini adalah periode ketika peristiwa dalam aplikasi pengguna dikaitkan dengan sumber media penargetan ulang, sebagai sumber utama.  
     Anda dapat mengatur nilai dalam hari (1-90), jam (ke atas) hingga 23), atau bahkan seumur hidup. Nilai *default*-nya adalah 30 hari.  
 
-   ![re-engagement_window.png](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)
+   <Image align="center" alt="re-engagement_window.png" src="https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png" />
 
 Pelajari lebih lanjut tentang SSOT <Anchor target="_blank" href="/marketers/id/docs/retargeting-attribution-guide">Atribusi penargetan ulang AppsFlyer</Anchor>.
 
@@ -393,7 +393,7 @@ Pelajari lebih lanjut tentang SSOT <Anchor target="_blank" href="/marketers/id/d
 
 <Accordion title="Catatan Pendapatan Iklan">
 
-![meta_ads_ad_revenue.png](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)
+<Image align="center" alt="meta_ads_ad_revenue.png" src="https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png" />
 
 Jika aplikasi Anda menggunakan Pendapatan Iklan Meta Audience Network untuk monetisasi iklan, Anda dapat mencatat pendapatan Anda dari iklan Meta di AppsFlyer. Ini, dengan atau tanpa data pendapatan pembelian dalam aplikasi, memberi Anda **gambaran lengkap tentang pendapatan pengguna Anda.**
 
@@ -471,7 +471,7 @@ Catatan - Anda juga dapat menggunakan <Anchor target="_blank" href="https://deve
 
 Aplikasi harus ditentukan di Meta ads sebagai **Langsung (*Live*)** daripada **Dalam pengembangan** agar atribusi berfungsi.
 
-![fb-app-status.png](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)
+<Image align="center" alt="fb-app-status.png" src="https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png" />
 
 </Accordion>
 
@@ -491,11 +491,11 @@ Ketika mengatur kampanye penginstalan aplikasi Meta ads, Anda dapat memilih apli
 
 Pengaturan benar - atribusi berfungsi.
 
-<Image alt="fb-app-install.png" src="https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png" width="496px" />
+<Image align="center" alt="fb-app-install.png" src="https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png" width="496px" />
 
 Pengaturan salah - atribusi gagal.
 
-![fb-app-incorrect_setup.png](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)
+<Image align="center" alt="fb-app-incorrect_setup.png" src="https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png" />
 
 </Accordion>
 

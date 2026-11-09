@@ -64,7 +64,7 @@ Integrasi utama **(Aktifkan mitra)** diaktifkan pada tab integrasi pertama. Jeni
 
 Tingkat aktivitas integrasi mitra didasarkan pada jumlah hari dengan konversi aktif dalam 30 hari terakhir. Setiap integrasi mitra dapat memiliki dua tingkat aktivitas, yang ditunjukkan dengan titik hijau atau oranye di samping logo mitra di Pasar Mitra.
 
-![active-integrations-page-orange2.png](https://support.appsflyer.com/hc/article_attachments/16668556226449)
+<Image align="center" alt="active-integrations-page-orange2.png" src="https://support.appsflyer.com/hc/article_attachments/16668556226449" />
 
 Tabel berikut ini menguraikan kriteria indikasi tingkat aktivitas (hijau atau oranye) antara 30-90 hari, berdasarkan apakah aplikasi tertentu dipilih atau semua aplikasi:
 
@@ -144,7 +144,7 @@ Anda dapat menonaktifkan integrasi mitra aplikasi Anda dengan menonaktifkan sake
 
 Mitra yang pengaturan **Aktifkan mitra** tetap aktif setelah Anda berhenti menjalankan kampanye dengan mereka akan terus menerima kiriman balasan yang berisi data kampanye. Mengingat potensi masalah privasi data, pertimbangkan untuk menonaktifkan integrasi yang tidak digunakan sebagai tindakan pencegahan. Untuk membantu mengidentifikasi integrasi mitra yang tidak digunakan dari 30+ hari terakhir yang masih aktif, dan mengingatkan Anda untuk menonaktifkannya, sebuah pesan peringatan akan muncul di bagian atas halaman Integrasi aktif.
 
-![active-integrations-deactivate-message-mini2.png](https://support.appsflyer.com/hc/article_attachments/16666444578449)
+<Image align="center" alt="active-integrations-deactivate-message-mini2.png" src="https://support.appsflyer.com/hc/article_attachments/16666444578449" />
 
 Pesan tersebut menyertakan tautan ke kotak dialog **Nonaktifkan integrasi yang tidak digunakan** yang menampilkan integrasi dari aplikasi yang saat ini dipilih tanpa konversi terbaru. Dari halaman ini, Anda dapat meninjau integrasi yang tidak aktif dan memilih mana yang akan dinonaktifkan.
 

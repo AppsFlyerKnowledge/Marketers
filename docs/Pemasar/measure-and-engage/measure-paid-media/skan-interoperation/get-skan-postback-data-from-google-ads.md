@@ -75,10 +75,10 @@ Untuk melihat penginstalan SKAN yang diatribusikan ke Google Ads di dashboard SK
 3. Telusuri dan pilih **Google Ads**.
 4. Buka tab **SKAN** .
 
-   <Image alt="mceclip0.png" src="https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png" width="309px" />
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png" width="309px" />
 5. Jika **pesan yang sementara tidak tersedia ditampilkan**, sering kali itu berarti pemblokir iklan aktif. Jika ya, nonaktifkan pemblokir iklan dan muat ulang halaman. Jika tidak demikian, hubungi dukungan AppsFlyer.
 
-   ![mceclip1.png](https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png)
+   <Image align="center" alt="mceclip1.png" src="https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png" />
 6. Klik **login Google Ads**.
    * Anda harus masuk ke Google Ads menggunakan peran pengguna Administrator di akun.
    * Jika akun Google diasosiasikan dengan beberapa aplikasi, masuk sekali, dan semua aplikasi diotorisasi. Dengan kata lain, tidak perlu melakukan otorisasi per aplikasi.
@@ -86,7 +86,7 @@ Untuk melihat penginstalan SKAN yang diatribusikan ke Google Ads di dashboard SK
 7. Ikuti instruksi di antarmuka pengguna.
 8. Dalam beberapa kasus, Anda mungkin diminta untuk memberikan izin kepada AppsFlyer untuk **Mengelola kampanye AdWords Anda.** Jika demikian, Anda harus mengaktifkan izin tersebut. Jangan khawatir, kami tidak akan melakukan perubahan pada pengaturan kampanye Anda.
 
-   [<Image alt="GoogleManageAdWords.png" src="https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png" width="182px" />](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)
+   <Image align="center" alt="GoogleManageAdWords.png" src="https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png" width="182px" />
 9. Verifikasi bahwa status akun, **menunggu sinkronisasi** ditampilkan.  
    Pesan ini tetap ada hingga kami mendapatkan data dari Google Ads (maksimal 24 jam.)
 10. Tunggu hingga setelah pukul 02.00 UTC keesokan harinya, lalu verifikasi bahwa statusnya berubah menjadi **aktif.**  

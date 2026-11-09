@@ -47,7 +47,7 @@ Both advertisers and agencies can enable attribution for Apple Ads.
    4. Click **Save Integration**.
 2. **In your Apple Ads dashboard**: Get the Apple Ads Campaign Group ID parameter related to Bidalgo. Use the screenshot that follows as a guide to locating the ID.
 
-   ![ASACGroupID.png](https://files.readme.io/4c1dd5feabd59b66c1af687b72128e2490d71670a49e106f98e103357a5a5619-21589966333713.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/4c1dd5feabd59b66c1af687b72128e2490d71670a49e106f98e103357a5a5619-21589966333713.png" />
 3. **In AppsFlyer, configure Bidalgo:**
    1. In AppsFlyer, from the side menu, select **Collaboration** > **Active Integrations.**
    2. Search for Bidalgo - Apple Ads Marketing Partner.  

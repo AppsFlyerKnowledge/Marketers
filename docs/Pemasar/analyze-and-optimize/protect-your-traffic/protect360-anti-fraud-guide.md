@@ -31,7 +31,7 @@ x-zendesk:
 
 > **Sekilas:** Penipuan atribusi menguras anggaran pemasaran, mencemari data kinerja pemasaran, dan dapat mengubah keberhasilan kampanye menjadi kegagalan. **Protect360 memberi pemilik aplikasi perlindungan penipuan waktu aktual dan deteksi setelah atribusi.**
 
-![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
+<Image align="center" alt="p360intro2.jpg" src="https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg" />
 
 <div id="protect360-overview" />
 

@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **At a glance:** Learn how to automatically share data from AppsFlyer to Mixpanel, a product analytics platform.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png" />
 
 The integration between AppsFlyer and Mixpanel enables you to import the Acquisition Campaign information from AppsFlyer to Mixpanel.
 
@@ -60,7 +60,7 @@ The Integration tab is divided into different sections as described below.
 
 ### General settings
 
-<Image alt="mixpanel-general-settings.png" src="https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png" width="542px" />
+<Image align="center" alt="mixpanel-general-settings.png" src="https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png" width="542px" />
 
 * **EU Data Residency**: AppsFlyer send data to Mixpanel's US servers as a default. To send data to Mixpanel's EU servers instead, turn this toggle on.  
   **\*token**: Mixpanel connects with AppsFlyer via a unique Token. If you don't already have it, you must obtain it from Mixpanel to continue with the integration.
@@ -70,10 +70,10 @@ The Integration tab is divided into different sections as described below.
   1. Login to your Mixpanel account at: https://mixpanel.com/login/
   2. In **Mixpanel**, go to the **Analysis** dashboard and click the gear icon.
 
-     ![mixpanel-token-1.png](https://files.readme.io/f1fbc76fff621e12a7d91fed5ba49eb20f2b049de65c70b0ab32cadd997287d2-small-360014578477.png)
+     <Image align="center" alt="mixpanel-token-1.png" src="https://files.readme.io/f1fbc76fff621e12a7d91fed5ba49eb20f2b049de65c70b0ab32cadd997287d2-small-360014578477.png" />
   3. Copy your token from the Access Keys section of your project and paste it in the **token** field in AppsFlyer Mixpanel integration tab.
 
-     ![mixpanel-token-2.png](https://files.readme.io/e8e633ec87d963244652a53b9b21c495b0a850e234621a44d93b3034c640bff7-360014578757.png)
+     <Image align="center" alt="mixpanel-token-2.png" src="https://files.readme.io/e8e633ec87d963244652a53b9b21c495b0a850e234621a44d93b3034c640bff7-360014578757.png" />
 * **Send Advertiser ID**:
   * If you are using AppsFlyer customer\_user\_id parameter then it is sent to Mixpanel with every install (Leave **Send Advertiser ID** disabled).
   * If you are not using AppsFlyer customer\_user\_id - enable **Send Advertiser ID.** The device ID is sent to Mixpanel as the customer\_user\_id (unique\_id in Mixpanel).  
@@ -91,11 +91,11 @@ The Integration tab is divided into different sections as described below.
 
 AppsFlyer can send automatic postbacks to Mixpanel following user installs, including installs and re-engagements. Re-engagements occur when a user that already has the app installed, opens the app after a click through a campaign. Learn more about <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#default-postbacks">default postbacks</Anchor>.
 
-[![](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)
+<Image align="center" alt="" src="https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png" />
 
 ### In-app events settings
 
-![mixpanel-in-app-events-settings.png](https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png)
+<Image align="center" alt="mixpanel-in-app-events-settings.png" src="https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png" />
 
 In this section, you map AppsFlyer events with Mixpanel via postbacks.
 
@@ -231,8 +231,8 @@ The following shows an example of the integration steps:
 
 The screenshots below are a Funnel report to see the conversion from install through the value event, broken down by the Media Source. Additionally, the time to convert for each Media Source can be seen.
 
-[![](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)
+<Image align="center" alt="" src="https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png" />
 
-[![](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)
+<Image align="center" alt="" src="https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png" />
 
 <div data-zendesk-anchors="h_01H9FKEWTEN4F8FM5C9A9ES6HN=important h_01H9FKEWTEGMEVH3SK739DD719=setting-up-mixpanel h_01H9FKEWTE90WR75PMNN93JAXE=integration-tab h_01H9FKEWTEMT7VGTTFWFMJHYA8=general-settings h_01H9FKEWTEV3RWKMWZN0EXFFNP=note h_01H9FKEWTER31RXAH216TRXQPM=default-postbacks inapp-events-settings=in-app-events-settings h_01H9FKEWTERRVKPQFF1B8QQERE=in-app-events-settings h_01H9FKEWTEEMMQ0KKRZXRJRE25=note-1 h_01H9FKEWTEEQ0GHF87V20TX9W0=attribution-link-tab h_01H9FKEWTEJ61197SN3R6JXYCP=cost-tab h_01H9FKEWTEA7GN2HHK3QD62A3A=ad-revenue-tab h_01H9FKEWTET4QD1RE0HJZM64D4=permissions-tab h_01H9FKEWTE9DEANTXKPD286GD2=integrating-with-mixpanel-when-using-a-login-mechanism h_01H9FKEWTFZ107Y999WEMB3409=note-2 h_01H9FKEWTF9PFNVHTZGDKBX75Y=viewing-appsflyer-data-in-mixpanel" />

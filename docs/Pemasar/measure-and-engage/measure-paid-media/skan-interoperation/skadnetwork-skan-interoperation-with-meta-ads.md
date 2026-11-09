@@ -92,7 +92,7 @@ This procedure needs to be performed once per app.
 2. Search for and select Meta ads.
 3. Go to the **SKAN** tab.
 
-   ![skan_repprtiing_-_connected_accounts.png](https://files.readme.io/41514c220de398871292c990e448e2bc8ce450a17512649842cdb2bc4fd78846-40032591356817.png)
+   <Image align="center" alt="skan_repprtiing_-_connected_accounts.png" src="https://files.readme.io/41514c220de398871292c990e448e2bc8ce450a17512649842cdb2bc4fd78846-40032591356817.png" />
 4. Click **f login**. The account you use must be an Admin or Advertiser account <Anchor target="_blank" href="https://www.facebook.com/business/help/155909647811305?id=829106167281625">with the following permissions</Anchor>:
    * Ads\_read permission. See [verify that you have ads read permission](/docs/skadnetwork-skan-interoperation-with-meta-ads#verifying-the-ads_read-permission).
    * Access to the advertised app ID in the Meta Business Partner settings.
@@ -112,7 +112,7 @@ For in-app events attribution:
 
 <Accordion title="Share CV schema with Meta ads">
 
-![SKAdNetwork-Facebook-AppsFlyer_integration__5_.png](https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png)
+<Image align="center" alt="SKAdNetwork-Facebook-AppsFlyer_integration__5_.png" src="https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png" />
 
 #### Enabling AppsFlyer SKAN interoperation with Meta ads
 

@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Sekilas:** Dasbor SKAdNetwork (SKAN) menampilkan metrik kampanye yang dilaporkan melalui postback SKAN iOS dan titik data tambahan selama jendela pengukuran pengguna awal. Metrik model yang mempertimbangkan konversi null juga tersedia. Data ditampilkan menggunakan tanggal kedatangan penginstalan atau postback.
 
-![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
+<Image align="center" alt="SKAdHeadling8_us-en.png" src="https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png" />
 
 <div id="dashboard-principles" />
 
@@ -231,7 +231,7 @@ Bagan yang tersedia tergantung pada jenis pengukuran yang dipilih.
 * Pilih metrik dari yang tersedia. [Metrik yang dimodel](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#modeled-metrics-and-null-cv) kan mempertimbangkan tingkat CV nol.
 * Tetapkan grup primer dan sekunder berdasarkan dimensi untuk menelusuri metrik kinerja.
 
-[![SKAdNetwork_Dashboard_AppsFlyer7_us-en.png](https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png)](https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png)
+<Image align="center" alt="SKAdNetwork_Dashboard_AppsFlyer7_us-en.png" src="https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png" />
 
 Tentang tabel metrik:
 

@@ -83,7 +83,7 @@ Metrik sesuai model tersedia berdasarkan nilai konversi:
 
 <Accordion title="LTV Pendapatan">
 
-[![modeled_d7.png](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)
+<Image align="center" alt="modeled_d7.png" src="https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png" />
 
 Pelaporan SKAN sendiri hanya dapat memberikan pendapatan berdasarkan jendela pengukuran SKAN dan konfigurasi CV untuk pendapatan di Studio Konversi. Pemodelan SKAN mampu memodelkan pendapatan hingga 7 hari (168 jam) setelah penginstalan.
 

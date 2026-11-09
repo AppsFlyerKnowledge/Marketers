@@ -27,7 +27,7 @@ x-zendesk:
 
 > **At a glance**: View user acquisition metrics—LTV, activity, Protect360, and retention. Download results to CSV files for ingestion by your BI systems. Pivot supports multiple apps in a single query. Use to generate Master API calls.
 
-![Full_Funnel.gif](https://files.readme.io/4e1a398e3e5496afd5e0001123685a7aa14ccb9b72e9ebd98e9f87cff658d427-115004271966.gif)
+<Image align="center" alt="Full_Funnel.gif" src="https://files.readme.io/4e1a398e3e5496afd5e0001123685a7aa14ccb9b72e9ebd98e9f87cff658d427-115004271966.gif" />
 
 <div id="about-pivot-reports-page" />
 
@@ -154,7 +154,7 @@ Create and modify existing pivots in the user interface. To do so, use the proce
 
 <Accordion title="View a pivot report">
 
-[![](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)
+<Image align="center" alt="" src="https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png" />
 
 **To view a pivot report**:
 

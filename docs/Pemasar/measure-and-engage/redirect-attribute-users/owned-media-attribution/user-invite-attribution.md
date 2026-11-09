@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Sekilas:** Atribusikan dan catat penginstalan baru ketika pengguna lama merujuk orang lain untuk menggunakan aplikasi Anda.
 
-[![Invite_Attribution_new.png](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)
+<Image align="center" alt="Invite_Attribution_new.png" src="https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png" />
 
 <div id="about-user-invite-attribution" />
 

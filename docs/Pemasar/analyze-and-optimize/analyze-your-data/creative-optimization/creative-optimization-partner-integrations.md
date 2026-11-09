@@ -24,7 +24,7 @@ x-zendesk:
 
 > **Sekilas:** Atur integrasi mitra untuk secara otomatis mengimpor semua data materi iklan Anda ke Optimisasi Materi Iklan.
 
-![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
+<Image align="center" alt="Creative integrations New.jpg" src="https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg" />
 
 <div id="about-partner-integrations" />
 
@@ -89,7 +89,7 @@ Bagian ini menjelaskan cara menyiapkan integrasi dengan masing-masing mitra.
    * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
      * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.  
 
-       ![Main menu icon and filter bar New.jpg](https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg)
+       <Image align="center" alt="Main menu icon and filter bar New.jpg" src="https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg" />
 2. Klik **+ Integrasi baru**.
 3. Di daftar **Mitra** , pilih **Adikteev**.
 4. Pilih aplikasi yang Anda promosikan.
@@ -119,7 +119,7 @@ Untuk informasi selengkapnya, lihat <Anchor target="_blank" href="https://drive.
 * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
   * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.
 
-![Main menu icon and filter bar New.jpg](https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg)
+<Image align="center" alt="Main menu icon and filter bar New.jpg" src="https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg" />
 
 2. Klik + **Integrasi baru**.
 
@@ -148,7 +148,7 @@ Anda harus memiliki izin akun iklan untuk aplikasi relevan yang ingin Anda integ
    * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
      * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.
 
-   ![Main menu icon and filter bar New.jpg](https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg)
+   <Image align="center" alt="Main menu icon and filter bar New.jpg" src="https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg" />
 2. Klik + **Integrasi baru**.
 3. Di daftar **Mitra** , pilih **AppLovin**.
 4. Pilih aplikasi yang Anda promosikan.
@@ -178,7 +178,7 @@ Anda harus memiliki izin Admin akun iklan untuk aplikasi relevan yang ingin Anda
    * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
      * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.  
 
-       ![Main menu icon and filter bar New.jpg](https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg)
+       <Image align="center" alt="Main menu icon and filter bar New.jpg" src="https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg" />
 2. Klik + **Integrasi baru**.
 3. Klik daftar **Mitra** dan pilih **Google Ads (AdWords)**.
 4. Pilih aplikasi yang Anda promosikan.
@@ -211,7 +211,7 @@ Anda harus memiliki izin Admin akun iklan untuk aplikasi relevan yang ingin Anda
    * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
      * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.  
 
-       ![Main menu icon and filter bar New.jpg](https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg)
+       <Image align="center" alt="Main menu icon and filter bar New.jpg" src="https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg" />
 2. Klik **+ Integrasi baru**.
 3. Di daftar **Mitra** , pilih **IronSource**.
 4. Pilih aplikasi yang Anda promosikan.
@@ -231,7 +231,7 @@ Anda harus memiliki izin Admin akun iklan untuk aplikasi relevan yang ingin Anda
    * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
      * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.  
 
-       ![Main menu icon and filter bar New.jpg](https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg)
+       <Image align="center" alt="Main menu icon and filter bar New.jpg" src="https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg" />
 2. Klik **+ Integrasi baru**.
 3. Di daftar **Mitra** , pilih **Liftoff**.
 4. Pilih aplikasi yang Anda promosikan.
@@ -256,7 +256,7 @@ Anda harus memiliki izin Admin akun iklan untuk aplikasi relevan yang ingin Anda
    * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
      * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.  
 
-       ![Main menu icon and filter bar New.jpg](https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg)
+       <Image align="center" alt="Main menu icon and filter bar New.jpg" src="https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg" />
 2. Klik **+ Integrasi baru**.
 3. Di daftar **Mitra** , pilih **Meta ads**.
 4. Pilih aplikasi yang Anda promosikan.
@@ -295,7 +295,7 @@ Ini adalah kredensial yang sama yang digunakan untuk mengakses dashboard Moloco 
 * Jika nilai Judul terdiri dari lebih dari satu kata dan menyertakan spasi, harap hapus spasi tersebut saat menyalin nilai ke dalam bidang ID Workplace integrasi materi iklan.
 * Jika masih tidak berhasil, harap coba tulis seluruh nilainya dengan huruf kapital.
 
-<Image alt="Moloco_-_get_Workplace_ID.jpg" src="https://files.readme.io/68d2a630845766c8d25b9728f484844c9655947dd4851b446e50e3fa88a4f9c6-18565387975313.jpg" width="527px" />
+<Image align="center" alt="Moloco_-_get_Workplace_ID.jpg" src="https://files.readme.io/68d2a630845766c8d25b9728f484844c9655947dd4851b446e50e3fa88a4f9c6-18565387975313.jpg" width="527px" />
 
 Pelajari lebih lanjut cara <Anchor target="_blank" href="https://help.moloco.com/hc/id/articles/4421847866775-Navigate-Moloco-Cloud-DSP#1-workplace-menu">menemukan ID Workplace Anda di Moloco</Anchor>.
 
@@ -308,7 +308,7 @@ Pelajari lebih lanjut cara <Anchor target="_blank" href="https://help.moloco.com
    * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
      * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.
 
-       ![3 dots icon.jpg](https://files.readme.io/a093006ea0f3414bc5405c735cc48af0a818094e809f9c2972165f756726907c-18565403016721.jpg)
+       <Image align="center" alt="3 dots icon.jpg" src="https://files.readme.io/a093006ea0f3414bc5405c735cc48af0a818094e809f9c2972165f756726907c-18565403016721.jpg" />
 2. Klik **+ Integrasi baru**.
 3. Di daftar **Mitra** , pilih **Moloco**.
 4. Pilih aplikasi yang Anda promosikan.
@@ -339,7 +339,7 @@ Untuk informasi lebih lanjut, lihat <Anchor target="_blank" href="https://help.r
    * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
      * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.
 
-       ![3 dots icon.jpg](https://files.readme.io/a093006ea0f3414bc5405c735cc48af0a818094e809f9c2972165f756726907c-18565403016721.jpg)
+       <Image align="center" alt="3 dots icon.jpg" src="https://files.readme.io/a093006ea0f3414bc5405c735cc48af0a818094e809f9c2972165f756726907c-18565403016721.jpg" />
 2. Klik **+ Integrasi baru**.
 3. Di daftar **Mitra** , pilih **Remerge**.
 4. Pilih aplikasi yang Anda promosikan.
@@ -363,7 +363,7 @@ Anda harus memiliki izin akun iklan untuk aplikasi relevan yang ingin Anda integ
    * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
      * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.  
 
-       ![Main menu icon and filter bar New.jpg](https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg)
+       <Image align="center" alt="Main menu icon and filter bar New.jpg" src="https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg" />
 2. Klik **+ Integrasi baru**.
 3. Di daftar **Mitra** , pilih **Snapchat**.
 4. Pilih aplikasi yang Anda promosikan.
@@ -391,7 +391,7 @@ Anda harus memiliki izin akun iklan untuk aplikasi relevan yang ingin Anda integ
    * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
      * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.  
 
-       ![Main menu icon and filter bar New.jpg](https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg)
+       <Image align="center" alt="Main menu icon and filter bar New.jpg" src="https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg" />
 2. Klik **+ Integrasi baru**.
 3. Di daftar **Mitra** , pilih **TikTok**.
 4. Pilih aplikasi yang Anda promosikan.
@@ -443,7 +443,7 @@ Ini akan memunculkan ID kunci dan Kunci rahasia.
 
 6. Salin **ID Kunci** dan **Kunci rahasia**.
 
-![Unity mendapatkan ID kunci & Kunci rahasia image.jpg](https://files.readme.io/9c4d1b1e0e476546b8f8be3a7375c610c48db6f94344a3dbe48277a6d115f52e-20344146224401.jpg)
+<Image align="center" alt="Unity mendapatkan ID kunci & Kunci rahasia image.jpg" src="https://files.readme.io/9c4d1b1e0e476546b8f8be3a7375c610c48db6f94344a3dbe48277a6d115f52e-20344146224401.jpg" />
 
 **Untuk mengambil <Anchor target="_blank" href="https://services.docs.unity.com/advertise/v1/index.html#section/General-Information/Resource-IDs-Used-in-the-API-Calls">ID inti organisasi:</Anchor>**
 
@@ -451,15 +451,15 @@ Ini akan memunculkan ID kunci dan Kunci rahasia.
 
 2. Lalu klik **Kembangkan**.
 
-<Image alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="524px" />
+<Image align="center" alt="Unity Org ID step 1.jpg" src="https://files.readme.io/79d445c8588ef6fa7b34ad8983d068b80a7ab733e7dd9906ad079fa647b3e10b-20348482802833.jpg" width="524px" />
 
 3. Klik **Akuisisi Pengguna Unity Ads**.
 
-<Image alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="277px" />
+<Image align="center" alt="Unity Org ID step 2.jpg" src="https://files.readme.io/1e0efbece8777100ac7046f09c52887f52bc5fba2e28c724298340afe78ba8f4-20348466710545.jpg" width="277px" />
 
 4. Klik **Pengaturan**.
 
-![Dapatkan instruksi ID inti Organisasi 2 arrows.jpg](https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg)
+<Image align="center" alt="Dapatkan instruksi ID inti Organisasi 2 arrows.jpg" src="https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg" />
 
 5. Salin **ID inti organisasi**
 
@@ -483,7 +483,7 @@ Ini akan memunculkan ID kunci dan Kunci rahasia.
 * Iklankan Penampil API
 * Iklankan Editor Paket Materi Iklan API
 
-<Image alt="Org roles step 3 without role names.jpg" src="https://files.readme.io/7b46417e6389f7c3675cc6f72b33e9b2833d5c561ef1d79122ed24605533b265-20347535827217.jpg" width="471px" />
+<Image align="center" alt="Org roles step 3 without role names.jpg" src="https://files.readme.io/7b46417e6389f7c3675cc6f72b33e9b2833d5c561ef1d79122ed24605533b265-20347535827217.jpg" width="471px" />
 
 5. Klik **Simpan**.
 
@@ -499,7 +499,7 @@ Ini akan memunculkan ID kunci dan Kunci rahasia.
    * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
      * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.  
 
-       ![Main menu icon and filter bar New.jpg](https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg)
+       <Image align="center" alt="Main menu icon and filter bar New.jpg" src="https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg" />
 2. Klik **+ Integrasi baru**.
 3. Di daftar **Mitra** , pilih **Unity Ads**.
 4. Pilih aplikasi yang Anda promosikan.
@@ -529,7 +529,7 @@ Untuk informasi lebih lanjut, lihat <Anchor target="_blank" href="https://suppor
    * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
    * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.  
 
-     ![Main menu icon and filter bar New.jpg](https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New.jpg" src="https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg" />
 2. Klik **+ Integrasi baru**.
 3. Di daftar **Mitra** , pilih **YouAppi**.
 4. Pilih aplikasi yang Anda promosikan.
@@ -563,13 +563,13 @@ Anda dapat berintegrasi dengan mitra agensi Anda untuk memasukkan data mereka ke
 * * Jika Anda tidak memiliki integrasi mitra mana pun, klik + **Tambahkan integrasi baru**.
   * Jika tidak, klik ikon  ⋮  di kanan atas dashboard untuk membuka **Integrasi materi iklan**.
 
-![Main menu icon and filter bar New.jpg](https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg)
+<Image align="center" alt="Main menu icon and filter bar New.jpg" src="https://files.readme.io/4af510b20e3cc27d1617fae01b06b4cfe35bb63e848abe7a257c6d5372ef2343-20128922257553.jpg" />
 
 2. Klik + I**ntegrasi baru**.
 
 3. Setelah memilih Mitra dan Aplikasi di jendela integrasi mitra, klik sakelar **Agensi** .
 
-![Select_Agengy_with_arrow.jpg](https://support.appsflyer.com/hc/article_attachments/18565355455761)
+<Image align="center" alt="Select_Agengy_with_arrow.jpg" src="https://support.appsflyer.com/hc/article_attachments/18565355455761" />
 
 4. Lalu, pilih agensi tertentu dari menu tarik-turun **Pilih agensi** .
 

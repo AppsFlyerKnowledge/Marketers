@@ -44,7 +44,7 @@ Sebelum pengembang Anda dapat menginstal dan mengintegrasikan SDK, Anda harus me
 1. Di AppsFlyer, buka **Konfigurasi** > **Pengaturan Aplikasi**.
 2. Salin kode pengembang, dan kirimkan ke pengembang seluler Anda.
 
-   [![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
+   <Image align="center" alt="" src="https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png" />
 3. Berikan instruksi kepada pengembang seluler Anda untuk <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-installation">menginstal</Anchor> dan <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/sdk-integration">mengintegrasikan SDK</Anchor>.
 
 <div id="where-to-start-the-sdk" />
@@ -315,7 +315,7 @@ Ketika atribusi terjadi menggunakan IDFA, penting agar IDFA dikirim pada **pelu
 
 `waitForATTUserAuthorization` memungkinkan Anda untuk mengonfigurasi berapa lama SDK harus ditangguhkan dan menunggu status ATT sebelum mengirim data ke server AppsFlyer.
 
-[![](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)
+<Image align="center" alt="" src="https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png" />
 
 Saat pengguna meluncurkan aplikasi, status ATT **notDetermined.** Selama waktu `waitForATTUserAuthorization` , SDK mengantrekan event peluncuran dan in-app event berturut-turut dalam memori, serupa dengan cara [event offline dicatat](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#offline-in-app-events):
 

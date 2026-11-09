@@ -28,7 +28,7 @@ Saat Anda <Anchor target="_blank" href="/marketers/id/docs/adding-an-app-to-apps
 
 Aplikasi yang tertunda di AppsFlyer terlihat sama dengan aplikasi aktif. Aplikasi tersebut memiliki dashboard yang dapat diakses dan semua pengukuran atribusi berfungsi. Satu-satunya perbedaan adalah logo aplikasi yang ditampilkan dengan logo AppsFlyer, bukan logo aplikasi yang sebenarnya.
 
-![Pending_App.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
+<Image align="center" alt="Pending_App.png" src="https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png" />
 
 <div id="whats-happening" />
 
@@ -51,7 +51,7 @@ Agar status aplikasi berubah menjadi aktif, AppsFlyer memeriksa statusnya di tok
 **Untuk memperbarui status aplikasi secara manual:**
 
 1. Di dashboard, klik **My Apps (Aplikasi Saya)** di pojok kanan atas.  
-   ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
+   <Image align="center" alt="app-refersh-status.png" src="https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png" />
 2. Di samping aplikasi yang tertunda, klik  **Refresh Status (Segarkan Status).**  
    Jika status aplikasi tidak berubah, aplikasi tetap ditampilkan sebagai Tertunda. Jika sudah diperbarui, statusnya ditampilkan sebagai Live (Aktif) dan logo diperbarui.
 

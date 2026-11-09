@@ -38,7 +38,7 @@ Mitra, sumber media, dan platform pihak ketiga terintegrasi dengan AppsFlyer by 
 
 Gambar berikut berisi berbagai jenis mitra yang membentuk ekosistem atribusi.
 
-[![Ecosystem.jpg](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)
+<Image align="center" alt="Ecosystem.jpg" src="https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg" />
 
 **Bacaan terkait**: <Anchor target="_blank" href="https://www.appsflyer.com/performance-index/">Indeks Kinerja AppsFlyer</Anchor> memberi peringkat sumber media seluler menurut kategori dan wilayah.
 
@@ -141,7 +141,7 @@ Untuk mengakses pengaturan dan mengonfigurasi kampanye Anda dengan mitra:
 
 Integrasi mitra berbeda dalam persyaratannya dan dapat berisi sebagian dari semua kemungkinan opsi yang dijelaskan di bagian ini. Ada beberapa perbedaan antara pengaturan iOS dan Android.
 
-![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
+<Image align="center" alt="set_up_an_integrated_partner.png" src="https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png" />
 
 Selesaikan bagian sesuai kebutuhan.
 
@@ -415,7 +415,7 @@ Buat dan simpan tautan atribusi untuk penggunaan jaringan iklan klik (non-SRN), 
 
 #### Parameter link atribusi
 
-[![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
+<Image align="center" alt="attribution-link-parameters-en_us.png" src="https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png" />
 
 Menambahkan parameter ke tautan atribusi memungkinkan Anda melakukan analisis penelusuran secara menyeluruh. Parameter yang sudah ditentukan pada tautan atribusi dapat diedit dengan menambahkannya dan nilai barunya di sini. Saat menyimpan tautan atribusi, semua parameter yang dikonfigurasikan di tab ini disimpan.
 
@@ -470,7 +470,7 @@ Pelajari selengkapnya tentang <Anchor target="_blank" href="/marketers/id/docs/s
 
 **Link Atribusi Klik**
 
-[![click-through-attribution-link_en-us.png](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)
+<Image align="center" alt="click-through-attribution-link_en-us.png" src="https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png" />
 
 Ini adalah tautan atribusi yang berisi semua informasi pengaturan yang telah Anda tetapkan. Anda dapat menyimpan tautan untuk referensi di masa mendatang dengan mengeklik **Simpan tautan atribusi** .
 
@@ -495,7 +495,7 @@ Pelajari selengkapnya tentang <Anchor target="_blank" href="/marketers/id/docs/s
 
 **Link Atribusi Impresi**
 
-[![impressions-attribution-link_en-us.png](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)
+<Image align="center" alt="impressions-attribution-link_en-us.png" src="https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png" />
 
 Link atribusi impresi berisi data atribusi yang serupa dengan link klik (selain lookback window yang berbeda). Anda dapat menyimpan tautan untuk referensi di masa mendatang dengan mengeklik **Simpan tautan atribusi** .
 

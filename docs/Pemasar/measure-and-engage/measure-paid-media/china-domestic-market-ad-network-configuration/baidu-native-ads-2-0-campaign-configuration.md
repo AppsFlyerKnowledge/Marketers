@@ -51,17 +51,17 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 Baidu Native Ads 2.0 connects with AppsFlyer via a unique **akey**. If you don't already have the key, you must obtain it from Baidu Native Ads 2.0 to continue with the integration.
 
-<Image alt="mceclip2.png" src="https://files.readme.io/fe8f44ee7d58fda9ee6289872903f96c716ab6d1191dd831745445cbced8b316-50899807435409.png" width="417px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/fe8f44ee7d58fda9ee6289872903f96c716ab6d1191dd831745445cbced8b316-50899807435409.png" width="417px" />
 
 ### Default Postbacks
 
-<Image alt="mceclip2.png" src="https://files.readme.io/da98623fc56a1615c49fe2a955452270dcf01857fab468c82b58d01fab36e36a-50899846623633.png" width="552px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/da98623fc56a1615c49fe2a955452270dcf01857fab468c82b58d01fab36e36a-50899846623633.png" width="552px" />
 
 ### In-app events settings
 
 In this section you can map your AppsFlyer events with Baidu Native Ads 2.0 via postbacks. 
 
-<Image alt="mceclip1.png" src="https://files.readme.io/1d929a3ba75da04165e416843f5037b8e299b12ae190aa9068cc3b317348087c-50899846627601.png" width="598px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/1d929a3ba75da04165e416843f5037b8e299b12ae190aa9068cc3b317348087c-50899846627601.png" width="598px" />
 
 1. Toggle In-App Event Postbacks to ON
 2. Click **Add Event** to add an SDK Event to the list
@@ -100,7 +100,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/54878d2467201f98d9228e3b7f3028ec6d5a054102534443e256bd7c955f8741-50899846628625.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/54878d2467201f98d9228e3b7f3028ec6d5a054102534443e256bd7c955f8741-50899846628625.png" />
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. Learn more about <Anchor target="_blank" href="/marketers/id/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
@@ -112,7 +112,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/id/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png" />
 
 ### Attribution Link
 

@@ -141,7 +141,7 @@ Anda juga dapat mengatur jendela lookback di OneLink.
 
 Di bawah ini adalah grafik yang menunjukkan distribusi peluncuran aplikasi pertama sejak hari interaksi.
 
-[![](https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png)](https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png)
+<Image align="center" alt="" src="https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png" />
 
 Grafik tersebut dapat memberikan gambaran yang lebih baik tentang jumlah pengguna yang menginstal aplikasi sebagai fungsi jendela lookback.
 
@@ -163,7 +163,7 @@ Di bawah ini adalah daftar kemungkinan skenario dan contoh penggunaan jendela lo
 
 Anda mengatur kampanye di Twitter dan mengonfigurasi jendela lookback klik-tayang menjadi 7 hari. Twitter, di sisi lain, memiliki jendela lookback default selama 14 hari.
 
-[![srn-discrepancy-srn-lookback-larger-than-appsflyer.png](https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png)](https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png)
+<Image align="center" alt="srn-discrepancy-srn-lookback-larger-than-appsflyer.png" src="https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png" />
 
 </Accordion>
 
@@ -173,7 +173,7 @@ Anda mengatur kampanye di Twitter dan mengonfigurasi jendela lookback klik-tayan
 
 Anda menetapkan kampanye di Twitter dan mengonfigurasi jendela lookback klik-tayang menjadi 28 hari. Twitter, di sisi lain, memiliki jendela lookback default selama 14 hari.
 
-[![srn-lookback-smaller-than-appsflyer.png](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)
+<Image align="center" alt="srn-lookback-smaller-than-appsflyer.png" src="https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png" />
 
 </Accordion>
 

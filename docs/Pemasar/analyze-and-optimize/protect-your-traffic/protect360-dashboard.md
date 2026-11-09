@@ -29,7 +29,7 @@ x-zendesk:
 
 > **Sekilas**: Dashboard Protect360 memberikan wawasan tentang lalu lintas penipuan dan penginstalan yang diblokir karena penerapan aturan validasi.
 
-[![p360_dashboard_main.png](https://support.appsflyer.com/hc/article_attachments/5218491552273)](https://support.appsflyer.com/hc/article_attachments/5218491552273)
+<Image align="center" alt="p360_dashboard_main.png" src="https://support.appsflyer.com/hc/article_attachments/5218491552273" />
 
 <div id="about-protect360-dashboard" />
 
@@ -56,7 +56,7 @@ Untuk melihat dashboard Protect360, di  AppsFlyer, buka **Dashboard** > **Prote
 
 **Jendela penyaringan dan pengelompokan**
 
-[![p360_filters_2.png](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)](https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png)
+<Image align="center" alt="p360_filters_2.png" src="https://files.readme.io/9fd2afbbfc1bdf671ae0427d75c1020085b36da724e40dcfe57da27943e15b0c-4408431325969.png" />
 
 Tersedia opsi penyaringan dan pengelompokan berikut:
 
@@ -107,7 +107,7 @@ Untuk setiap KPI terdapat nilai persentasenya. Nilai ini menunjukkan bagaimana K
 
 **Estimasi penghematan**
 
-[![](https://support.appsflyer.com/hc/article_attachments/4403139246993)](https://support.appsflyer.com/hc/article_attachments/4403139246993)
+<Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/4403139246993" />
 
 Estimasi metrik penghematan:
 
@@ -119,7 +119,7 @@ Untu detail selengkapnya tentang bagaimana jumlah ini dihitung, baca <Anchor tar
 
 **Atribusi palsu yang teridentifikasi**
 
-[![](https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png)](https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png)
+<Image align="center" alt="" src="https://files.readme.io/262403803bd074e4742f63d7998d4642e3b17781e178ed3bc24b35dd958ca262-4408437121297.png" />
 
 Total metrik penipuan yang teridentifikasi menampilkan jumlah:
 
@@ -128,7 +128,7 @@ Total metrik penipuan yang teridentifikasi menampilkan jumlah:
 
 **In-app event yang diblokir**
 
-[![](https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png)](https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png)
+<Image align="center" alt="" src="https://files.readme.io/ed6692be83cae6a6bee556e5c763d6313c0d32cb577a9587caac41c54b51b378-4403139249809.png" />
 
 Metrik in-app event yang diblokir menampilkan jumlah in-app event yang diblokir oleh AppsFlyer. Event tersebut mungkin telah diblokir karena menjadi bagian dari penginstalan yang diblokir, atau karena ditandai sebagai event pasca-atribusi yang mencurigakan.
 
@@ -201,7 +201,7 @@ Tabel **perincian penipuan yang teridentifikasi** menampilkan data berikut:
 
 Tabel tersebut disajikan dalam format gambaran umum, seperti yang ditunjukkan pada gambar berikut.
 
-[![p360_main_table.png](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)](https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png)
+<Image align="center" alt="p360_main_table.png" src="https://files.readme.io/15885268068f2b57e9b22b7028a824951690e737a47cb154cd38d1ddf79937b8-4408431449745.png" />
 
 Struktur tabel dinamis:
 
@@ -209,7 +209,7 @@ Struktur tabel dinamis:
   Jika Anda melakukan perubahan apa pun pada tabel, pastikan untuk mengklik tombol **Simpan** setelahnya.
 * Adalah per pengguna, sehingga setiap pengguna akun dengan akses ke Protect360 dapat secara pribadi menyesuaikan struktur tabel mereka sendiri. Lihat [opsi tabel lainnya](/docs/protect360-dashboard#opsi-tabel-tambahan) .
 
-[![edit_table.jpg](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)](https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg)
+<Image align="center" alt="edit_table.jpg" src="https://files.readme.io/fcde2bc6970c29902dd7585ee92c2bc38edf1d5c56e65de4e3f10df784108e5c-360011641617.jpg" />
 
 <div id="content-of-the-identified-fraud-breakdown-table" />
 
@@ -309,7 +309,7 @@ Fitur dashboard dijelaskan di bagian selanjutnya.
 
 <Accordion title="In-app event — metrik headline">
 
-[![](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)](https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg)
+<Image align="center" alt="" src="https://files.readme.io/ea33b3ddafc4265eb74b2e1070a77a6afbad429a1aeb20cd1579127f7e8ee605-360012501757.jpg" />
 
 Metrik headline memungkinkan Anda untuk melihat:
 
@@ -360,7 +360,7 @@ Tabel **perincian penipuan in-app event** menampilkan data berikut:
 
 Tabel tersebut disajikan dalam format gambaran umum, seperti yang ditunjukkan pada gambar berikut.
 
-[![IAE_fraud_table.jpg](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)](https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg)
+<Image align="center" alt="IAE_fraud_table.jpg" src="https://files.readme.io/dd57a2508911b3e26268ad8cc4508d5402fa091ac95a77900c7f257486c99aeb-360012839758.jpg" />
 
 Struktur tabel dinamis:
 
@@ -368,7 +368,7 @@ Struktur tabel dinamis:
   Jika Anda melakukan perubahan apa pun pada tabel, pastikan untuk mengklik tombol **Simpan** setelahnya.
 * Adalah per pengguna, sehingga setiap pengguna akun dengan akses ke Protect360 dapat secara pribadi menyesuaikan struktur tabel mereka sendiri. Lihat [opsi tabel lainnya](/docs/protect360-dashboard#installs-table) .
 
-[![iae_table_structure.jpg](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)](https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg)
+<Image align="center" alt="iae_table_structure.jpg" src="https://files.readme.io/5b2933e2b254d8fa268e30a72ae53691da391e365d781d55bcdb6cfeb1f40a6a-360012839778.jpg" />
 
 <div id="content-of-the-in-app-event-fraud-breakdown-table" />
 
@@ -420,17 +420,17 @@ Event yang harus dibayar adalah IAE yang memiliki biaya. Setelah diaktifkan dan 
 
 * Di bagian **Filter menurut** di dashboard Aktivitas in-app, aktifkan event yang harus dibayar.  
 
-  [![](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)](https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg)
+  <Image align="center" alt="" src="https://files.readme.io/8162f6f4f6dcef50fbe0fd998b7a95d20deeb658dd53bafc216b75df050c734c-360012576718.jpg" />
 
 **Untuk mengonfigurasi event yang harus dibayar** :
 
 1. Pada dashboard Aktivitas in-app, klik **Konfigurasi event yang harus dibayar** .  
 
-   [![](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)](https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/00b1f4506f0c7ec8e1e1b90c16cc2232d2862b231b2673d2decc7a90b6c6b6af-360012505217.jpg" />
 
    Tampilan pop-up event berbayar.
 
-   [![](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)](https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/4643b9d0e0042ca5860d21ec3eb3ff7e4178f92f1f4215db56adda10be41c452-360012580938.jpg" />
 2. [Opsional] Jika Anda mengonfigurasi event berbayar baru, klik **Tambah baru** .
 3. Berdasarkan IAE berbayar mana yang ingin Anda tampilkan di dashboard, pilih berikut ini dari menu drop-down:
    * Aplikasi
@@ -455,7 +455,7 @@ Dashboard anomali:
 
 <Accordion title="Tab CTIT">
 
-[![Anomalies_CTIT.png](https://files.readme.io/630ff7b8c065a302f86b0c1f69c0d166d3ff28a2833ebde3e79494ba8b283f08-360011641657.png)](https://files.readme.io/630ff7b8c065a302f86b0c1f69c0d166d3ff28a2833ebde3e79494ba8b283f08-360011641657.png)
+<Image align="center" alt="Anomalies_CTIT.png" src="https://files.readme.io/630ff7b8c065a302f86b0c1f69c0d166d3ff28a2833ebde3e79494ba8b283f08-360011641657.png" />
 
 **Untuk menampilkan tinjauan CTIT** (angka merujuk pada tangkapan layar sebelumnya):
 
@@ -482,7 +482,7 @@ Tabel **CTIT anomalies breakdown** , di bagian bawah halaman, menampilkan semua
 
 <Accordion title="Tab perangkat baru">
 
-[![anomalies_new_devices](https://files.readme.io/5bb108e61e0641cb16ba16720625dfbdf5446f979e6dddc80c9ec179104f5ec7-360011641677.png)](https://files.readme.io/5bb108e61e0641cb16ba16720625dfbdf5446f979e6dddc80c9ec179104f5ec7-360011641677.png)
+<Image align="center" alt="anomalies_new_devices" src="https://files.readme.io/5bb108e61e0641cb16ba16720625dfbdf5446f979e6dddc80c9ec179104f5ec7-360011641677.png" />
 
 Tab **Perangkat baru** memungkinkan Anda mendeteksi sumber media dan ID situs secara visual, yang memiliki <Anchor target="_blank" href="/marketers/id/docs/protect360-anti-fraud-guide#benchmarks-and-tips">rasio tinggi yang mencurigakan dari perangkat baru yang</Anchor> menginstal aplikasi Anda.
 

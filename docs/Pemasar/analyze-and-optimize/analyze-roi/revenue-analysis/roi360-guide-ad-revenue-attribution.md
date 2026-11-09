@@ -29,7 +29,7 @@ x-zendesk:
 
 > **Sekilas:** Atribusikan pendapatan iklan untuk melengkapi tampilan kinerja LTV.
 
-[![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
+<Image align="center" alt="Attributes_ad_revenue.png" src="https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png" />
 
 <div id="ad-revenue-attribution" />
 
@@ -85,7 +85,7 @@ Bagian berikut menjelaskan jenis atribusi pendapatan iklan yang tersedia, serta 
 1. Di AppsFlyer, buka **ROI360** > **Pengaturan Pendapatan** > **Pendapatan iklan**.
 2. Di Integrasi pendapatan iklan, klik **Integrasi pendapatan iklan baru**.
 3. Pilih mitra pendapatan iklan dan klik **Berikutnya**.  
-   ![ad_revenue_ui.png](https://files.readme.io/d91b886ed5b9715a508a481afbb86a7dd8381894322455214674ba68b483e91b-13751596101649.png)
+   <Image align="center" alt="ad_revenue_ui.png" src="https://files.readme.io/d91b886ed5b9715a508a481afbb86a7dd8381894322455214674ba68b483e91b-13751596101649.png" />
 4. Pilih jenis data pendapatan iklan yang ingin Anda terima. **Catatan**: Tidak semua jaringan iklan menyediakan semua opsi yang tercantum di bawah ini.
    * Pendapatan yang diatribusikan. Berarti pendapatan berdasarkan sumber akuisisi pengguna. Laporan pendapatan yang diatribusikan dapat berupa:
      * [Tingkat agregat](/docs/roi360-guide-ad-revenue-attribution#aggregate-granularity-using-app-open-or-inapp-events) melalui S2S API. 
@@ -113,7 +113,7 @@ Bagian berikut menjelaskan jenis atribusi pendapatan iklan yang tersedia, serta 
 
 <Accordion title="Lihat, edit, dan hapus mitra terintegrasi pendapatan iklan">
 
-![delete_edit_adi.png](https://support.appsflyer.com/hc/article_attachments/13751607197713)
+<Image align="center" alt="delete_edit_adi.png" src="https://support.appsflyer.com/hc/article_attachments/13751607197713" />
 
 **Untuk melihat, mengedit, atau menghapus integrasi jaringan pendapatan iklan**:
 
@@ -134,7 +134,7 @@ Duplikasi sebagian dari data pendapatan iklan dapat terjadi jika aplikasi menggu
 1. Di AppsFlyer, buka **ROI360** > **Pengaturan Pendapatan** > **Pendapatan Iklan**.
 2. Di **Pengaturan Umum**, klik **Hapus duplikat pendapatan iklan saat dua mitra mediasi saling melakukan referensi silang**. **Catatan**: Jangan hapus duplikat jika 2 platform mediasi memediasi format iklan yang berbeda. Misalnya, ketika platform 1 menampilkan Spanduk dan Interstisial, dan platform 2 menampilkan iklan AppOpen dan Native.
 
-[![dedup.png](https://support.appsflyer.com/hc/article_attachments/17299804281361)](https://support.appsflyer.com/hc/article_attachments/17299804281361)
+<Image align="center" alt="dedup.png" src="https://support.appsflyer.com/hc/article_attachments/17299804281361" />
 
 </Accordion>
 
@@ -224,7 +224,7 @@ Atribusi pendapatan iklan tersedia sebagai berikut:
 
 #### **Dashboard ikhtisar - laporan kinerja gabungan**
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002239229)](https://support.appsflyer.com/hc/article_attachments/360002239229)
+<Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360002239229" />
 
 Di dashboard Ikhtisar:
 
@@ -307,7 +307,7 @@ Di dashboard Aktivitas:
 
 <Accordion title="Data lengkap pendapatan iklan">
 
-<Image alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
+<Image align="center" alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
 
 Laporan data lengkap pendapatan iklan berisi data yang disediakan oleh jaringan monetisasi yang memiliki integrasi tingkat perangkat atau tingkat impresi dengan AppsFlyer.
 

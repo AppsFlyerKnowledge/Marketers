@@ -25,7 +25,7 @@ x-zendesk:
 
 > **Sekilas:** Gunakan dashboard Creative Optimization Discovery (Penemuan Optimisasi Materi Iklan) untuk menganalisis kinerja materi iklan Anda serta adegan dan elemen yang menjadi dasar pembuatannya, untuk menghasilkan dan memelihara materi iklan unggulan yang berdasarkan data.
 
-[![Main Discovery image New.jpg](https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg)](https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg)
+<Image align="center" alt="Main Discovery image New.jpg" src="https://files.readme.io/c0452668329ff90fe18b060aa25ca3690a9d1542122d4cb741070bfc10087012-20131209778321.jpg" />
 
 <div id="about-the-creative-optimization-discovery-ai-dashboard" />
 
@@ -91,7 +91,7 @@ Kueri Cepat bertindak sebagai filter sekunder, memungkinkan Anda untuk melihat d
 
 Cukup klik kueri spesifik yang Anda inginkan (beberapa kueri dapat dipilih) dan galeri akan difilter menurut pilihan Anda.
 
-![Quick Queries with arrow New.jpg](https://files.readme.io/2fc12427a721eb8e373e10f95f3cfa1251a600ff33e0616d22af92d8f6ca7380-20131437391121.jpg)
+<Image align="center" alt="Quick Queries with arrow New.jpg" src="https://files.readme.io/2fc12427a721eb8e373e10f95f3cfa1251a600ff33e0616d22af92d8f6ca7380-20131437391121.jpg" />
 
 **Beberapa kueri yang tersedia meliputi:**
 
@@ -125,7 +125,7 @@ Anda dapat mengurutkan ubin galeri dari yang tertinggi hingga terendah berdasark
 
 Klik menu tarik-turun **Urutkan berdasarkan** di kanan atas galeri dan pilih dimensi/metrik.
 
-![Sort by.jpg](https://files.readme.io/197b9c059945bf0ea964ece82faf6a72cc8d54d92b6ab4c5d3d30f8a7081d399-18565901526929.jpg)
+<Image align="center" alt="Sort by.jpg" src="https://files.readme.io/197b9c059945bf0ea964ece82faf6a72cc8d54d92b6ab4c5d3d30f8a7081d399-18565901526929.jpg" />
 
 Metrik yang tersedia meliputi:
 
@@ -161,7 +161,7 @@ Jelajahi data kinerja materi iklan dan adegan serta elemen yang membentuk materi
 
 Lihat galeri semua materi iklan Anda, beserta data kinerjanya. Ubin yang ditampilkan didasarkan pada pilihan filter Materi Iklan utama dan dapat diurutkan berdasarkan berbagai metrik. Metrik tertentu seperti Biaya, CTR, dan IPM selalu muncul di ubin.
 
-![New Discovery tile image w asset and find similar.jpg](https://files.readme.io/fe410910f8db80adc9ea351cbf2d6fa895167d591b23489e7c63da9fe89076d1-18565941366545.jpg)
+<Image align="center" alt="New Discovery tile image w asset and find similar.jpg" src="https://files.readme.io/fe410910f8db80adc9ea351cbf2d6fa895167d591b23489e7c63da9fe89076d1-18565941366545.jpg" />
 
 |  | Dimensi/metrik | Deskripsi |
 | --- | --- | --- |
@@ -184,7 +184,7 @@ Lihat galeri semua materi iklan Anda, beserta data kinerjanya. Ubin yang ditampi
 
 Didukung oleh AI, materi iklan video secara otomatis dipecah menjadi beberapa adegan dan ditampilkan bersama dengan data kinerjanya—tanpa proses manual apa pun. Data performa adegan diambil dari materi iklan asalnya. Jika adegan yang sama muncul di lebih dari satu video, datanya merupakan gabungan dari semua materi iklan yang menampilkan adegan tersebut. Data tersedia di dashboard sekitar 24 jam setelah <Anchor target="_blank" href="/marketers/id/docs/creative-optimization-partner-integrations">integrasi mitra</Anchor>. Fitur ini **hanya tersedia pada paket berlangganan Creative Optimization Advanced dan Premium.**
 
-![Scene tile.jpg](https://files.readme.io/840c9ca1266be70d2b3d8714498375c8e4148ade20a36ae525a368834f50da49-18565931828241.jpg)
+<Image align="center" alt="Scene tile.jpg" src="https://files.readme.io/840c9ca1266be70d2b3d8714498375c8e4148ade20a36ae525a368834f50da49-18565931828241.jpg" />
 
 Untuk deskripsi tentang apa yang ditampilkan setiap ubin, lihat [Materi Iklan](/docs/creative-optimization-discovery-ai-dashboard#creatives) di atas.
 
@@ -196,7 +196,7 @@ Untuk deskripsi tentang apa yang ditampilkan setiap ubin, lihat [Materi Iklan](/
 
 Algoritma AI kami yang sepenuhnya otomatis memecah materi iklan video menjadi elemen-elemen penting (komponen visual dasar) yang diidentifikasi dan ditampilkan untuk memungkinkan analisis paling terperinci. Data performa diambil dari materi iklan asalnya. Jika elemen yang sama muncul di lebih dari satu materi iklan, datanya merupakan gabungan dari semua materi iklan tempat elemen tersebut muncul. Data tersedia di dashboard sekitar 24 jam setelah <Anchor target="_blank" href="/marketers/id/docs/creative-optimization-partner-integrations">integrasi mitra</Anchor>. Fitur ini **hanya tersedia pada paket berlangganan Creative Optimization Advanced dan Premium.**
 
-![Element tile.jpg](https://files.readme.io/05abb3b5534dba24aa06bf1131604c52579ed85c528309bcbb9fa74113ddcae2-18565947438353.jpg)
+<Image align="center" alt="Element tile.jpg" src="https://files.readme.io/05abb3b5534dba24aa06bf1131604c52579ed85c528309bcbb9fa74113ddcae2-18565947438353.jpg" />
 
 Untuk deskripsi tentang apa yang ditampilkan setiap ubin, lihat [Materi Iklan](/docs/creative-optimization-discovery-ai-dashboard#creatives) di atas.
 

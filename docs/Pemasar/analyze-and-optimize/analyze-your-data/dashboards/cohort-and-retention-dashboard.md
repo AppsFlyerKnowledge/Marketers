@@ -26,7 +26,7 @@ x-zendesk:
 
 **Pendapatan berdasarkan hari pasca instalasi yang dirinci berdasarkan sumber media**
 
-![Full_cohort2_us-en.png](https://files.readme.io/b60e18dcd68ca4b1831c56b69ad667931ca52610a456f8612f44d4fac51150f6-14583921567377.png)
+<Image align="center" alt="Full_cohort2_us-en.png" src="https://files.readme.io/b60e18dcd68ca4b1831c56b69ad667931ca52610a456f8612f44d4fac51150f6-14583921567377.png" />
 
 <div id="tip" />
 
@@ -46,7 +46,7 @@ Untuk menggunakan Cohort (Kelompok), pilih pengguna dari salah satu aplikasi And
 
 <Accordion title="Prinsip kohort">
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 * **Jenis kohort**
   * **Terpadu**:
@@ -80,7 +80,7 @@ Untuk menggunakan Cohort (Kelompok), pilih pengguna dari salah satu aplikasi And
 
 Dalam contoh ini, data lengkap yang sama digunakan untuk menghasilkan dua jenis tren kohort. Tabel data lengkap berisi event atribusi yang terkait dengan masing-masing pengguna A, B, C, dan D. Pengguna berinteraksi dengan iklan, menginstal aplikasi, dan pasca konversi melakukan satu pembelian atau lebih. Hari kohort 0 adalah hari instalasi.
 
-[![CohortExample_en-us.jpg](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)
+<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg" />
 
 </Accordion>
 
@@ -112,13 +112,13 @@ Dalam contoh ini, data lengkap yang sama digunakan untuk menghasilkan dua jenis 
 
 1. Buka ***Dashboard** >* ***Kohort***.  
    Dashboard kohort dibuka. Perincian dan rentang tanggal konversi ditampilkan.  
-   ![mceclip0__1_.png](https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png)
+   <Image align="center" alt="mceclip0__1_.png" src="https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png" />
 2. Pilih perincian.
 3. Atur periode atribusi (akuisisi pengguna atau interaksi penargetan ulang). Data yang berkaitan dengan tanggal terkini dapat menghasilkan [data parsial](/docs/cohort-and-retention-dashboard#partial-data) yang ditunjukkan oleh tanda hubung dalam grafik dan tabel.
 4. Klik **Edit Cohort**.  
    Periode waktu pengaturan Kohort dibuka.  
 
-   <Image alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
+   <Image align="center" alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
 5. Lakukan hal berikut:
    * **Kohort Jenis:**
      * **Akuisisi User**
@@ -149,7 +149,7 @@ Pengguna dikelompokkan ke dalam kohort berdasarkan **hari**pasca konversi. Hari 
 * Untuk perincian minggu, jumlah maksimal minggu adalah 156
 * Untuk perincian bulan, jumlah maksimum bulan adalah 36
 
-![DaysPost.jpg](https://files.readme.io/dbeb30f800b198ea0ce2c7b69f2d3652f54384630dab9e8e77a7960a3d9471fb-360005455377.jpg)
+<Image align="center" alt="DaysPost.jpg" src="https://files.readme.io/dbeb30f800b198ea0ce2c7b69f2d3652f54384630dab9e8e77a7960a3d9471fb-360005455377.jpg" />
 
 * **Pilih metrik, fungsi, dan per pengguna**:   
    **Catatan!** Tidak semua kombinasi metrik, fungsi, dan per pengguna tersedia.
@@ -177,7 +177,7 @@ Pengguna dikelompokkan ke dalam kohort berdasarkan **hari**pasca konversi. Hari 
 
 Pengguna dikelompokkan ke dalam kelompok menurut **waktu atribusi.**
 
-![KPIdays.jpg](https://files.readme.io/dfac4a4f84aad39d6526cdb416e8a2ec6c9e95dd6a2ca06e3c7fd10d31b76272-360005458837.jpg)
+<Image align="center" alt="KPIdays.jpg" src="https://files.readme.io/dfac4a4f84aad39d6526cdb416e8a2ec6c9e95dd6a2ca06e3c7fd10d31b76272-360005458837.jpg" />
 
 * **Pilih metrik, fungsi, hari KPI, dan per pengguna** :   
    **Catatan!** Tidak semua kombinasi metrik, fungsi, dan per pengguna tersedia.
@@ -301,11 +301,11 @@ Untuk hari tertentu dalam rentang data konversi, jika jumlah hari yang telah ber
 
 **Grafik: Pendapatan kumulatif per pengguna**
 
-[![CohortGraph.png](https://files.readme.io/1142844a9312498e4fc229502cbdf86d46bd61007d62837d38ba1b66fb2e00aa-360003206697.png)](https://files.readme.io/1142844a9312498e4fc229502cbdf86d46bd61007d62837d38ba1b66fb2e00aa-360003206697.png)
+<Image align="center" alt="CohortGraph.png" src="https://files.readme.io/1142844a9312498e4fc229502cbdf86d46bd61007d62837d38ba1b66fb2e00aa-360003206697.png" />
 
 **Tabel: Pendapatan per hari**
 
-[![CohortTable.png](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)](https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png)
+<Image align="center" alt="CohortTable.png" src="https://files.readme.io/9181e589fc99e48e360fe9361b15fd59ec498b9fa99c31b43e6832aac25376da-360003206717.png" />
 
 <div id="in-app-event-conversion" />
 

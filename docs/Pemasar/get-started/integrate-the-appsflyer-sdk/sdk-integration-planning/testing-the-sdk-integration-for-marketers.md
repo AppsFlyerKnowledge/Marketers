@@ -147,7 +147,7 @@ Kami menyarankan Anda memulai dengan menguji penginstalan organik.
 
 Dashboard aplikasi menampilkan penginstalan organik yang baru. Tunggu hingga 30 menit hingga penginstalan muncul.
 
-![Test_SDK_Organic_install](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+<Image align="center" alt="Test_SDK_Organic_install" src="https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png" />
 
 </Accordion>
 
@@ -169,7 +169,7 @@ Gunakan halaman Uji Integrasi SDK untuk menguji penginstalan non-organik, in-app
 1. Di dashboard, pilih aplikasi.
 2. Buka halaman **Uji Integrasi SDK Integrasi.**   
    Halaman pengujian integrasi SDK akan terbuka.   
-   [![](https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png)](https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png)
+   <Image align="center" alt="" src="https://files.readme.io/7b2af46dc66530db91c31466b08121673f067ea9188d5bbf7e5f4a4137cbc6e4-115011326025.png" />
 3. Jalankan pengujian **Penginstalan Non-Organik**.
 4. Pilih perangkat uji yang terdaftar.
 5. Pilih toko tempat menginstal aplikasi:
@@ -185,7 +185,7 @@ Gunakan halaman Uji Integrasi SDK untuk menguji penginstalan non-organik, in-app
 7. Jika Anda memilih **Lainnya**, instal aplikasi dari lingkungan pengembangan Anda.
 8. Tunggu hingga penginstalan non-organik terdaftar di laman **SDK Integration Tests** (Pengujian Integrasi SDK) mengindikasikan bahwa pengujian berhasil. Ini dapat memerlukan waktu hingga 2 menit.
 
-   ![NonOrganic_install](https://files.readme.io/3faf784b3d6014e223fdce7b703c6d328ba09af0ea1dde77a8a1f366529e1e00-4406213597585.png)
+   <Image align="center" alt="NonOrganic_install" src="https://files.readme.io/3faf784b3d6014e223fdce7b703c6d328ba09af0ea1dde77a8a1f366529e1e00-4406213597585.png" />
 
    Jika aplikasi tidak mencatat penginstalan non-organik, kemungkinan alasannya adalah:
    * IDFA tersedia tetapi perangkat uji tidak <Anchor target="_blank" href="/marketers/id/docs/registering-test-devices#mendaftarkan-perangkat-uji-ios">terdaftar dengan pengenal ini di halaman Perangkat uji</Anchor>.
@@ -206,7 +206,7 @@ Untuk kesalahan integrasi, hubungi pengembang Anda.
 3. Luncurkan aplikasi Anda dan mulai hasilkan in-app events.
 4. Anda akan melihat log event ini saat terdaftar secara real time.
 
-   ![Test_SDK_Integration_Inapp_events](https://files.readme.io/c501389bcbffd2859a2cb20e5232d57218fc0b75875f9425934c56bc13c12968-4406219047825.png)
+   <Image align="center" alt="Test_SDK_Integration_Inapp_events" src="https://files.readme.io/c501389bcbffd2859a2cb20e5232d57218fc0b75875f9425934c56bc13c12968-4406219047825.png" />
 
 #### **Langkah 3: Uji deep link (penargetan ulang)**
 
@@ -225,7 +225,7 @@ Untuk kesalahan integrasi, hubungi pengembang Anda.
 4. Klik **Berikutnya**.
 5. Pindai kode QR dengan perangkat uji terdaftar Anda dan ikuti petunjuk di perangkat Anda. Setelah pengujian selesai, Pengujian Deep Linking terdaftar sebagai berhasil.
 
-   ![TestSDK_DeepLinks_en-us.png](https://files.readme.io/40c26ce173d14bd34771164fa32f6f26e8035fc26d4043fb9c78eef52d6451fa-4406221370385.png)
+   <Image align="center" alt="TestSDK_DeepLinks_en-us.png" src="https://files.readme.io/40c26ce173d14bd34771164fa32f6f26e8035fc26d4043fb9c78eef52d6451fa-4406221370385.png" />
 
 </Accordion>
 
@@ -343,7 +343,7 @@ Menguji in-app event memungkinkan Anda untuk memastikan bahwa pendapatan terkait
 
    Anda akan melihat event, pendapatan event (jika pendapatan terkait dengan event tersebut), dan sumber media yang terkait dengan event tersebut. Tunggu hingga 60-70 menit sampai event muncul di dashboard.
 
-   ![Testing_InAppEvents_Attribution](https://support.appsflyer.com/hc/article_attachments/4406219144593)
+   <Image align="center" alt="Testing_InAppEvents_Attribution" src="https://support.appsflyer.com/hc/article_attachments/4406219144593" />
 
 **Tips!** Pertimbangkan untuk mengunduh <Anchor target="_blank" href="/marketers/id/docs/raw-data-reporting-overview">laporan data lengkap in-app event</Anchor> untuk memastikan bahwa event tersebut diatribusikan dengan benar. Pengunduhan laporan ini membutuhkan waktu beberapa menit.
 
@@ -402,7 +402,7 @@ Sebelum menjalankan pengujian penargetan ulang, diperlukan pengaturan berikut:
 
    Di dashboard aplikasi, klik **App Settings (Pengaturan Aplikasi)** dan aktifkan **Enable retargeting attribution (Aktifkan atribusi penargetan ulang)**.
 
-   ![Set_Reattribution_window](https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png)
+   <Image align="center" alt="Set_Reattribution_window" src="https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png" />
 2. Lakukan salah satu dari hal berikut: 
    * Buat tautan atribusi khusus aplikasi. Pastikan untuk menyertakan parameter penargetan ulang `is_retargeting=true`, dan ID iklan. Untuk melihat GAID, IDFA, atau IDFV, ikuti petunjuk <Anchor target="_blank" href="/marketers/id/docs/registering-test-devices">Mendaftarkan perangkat uji</Anchor>.    
      Berikut adalah contoh tautan atribusi yang menyertakan parameter khusus Android sebagai pengenal perangkat (GAID). Untuk informasi selengkapnya tentang menambahkan parameter pengenal perangkat lainnya, seperti IDFA atau IDFV, lihat <Anchor target="_blank" href="/marketers/id/docs/about-link-structure-and-parameters#parameter-spesifik-ios">Struktur tautan atribusi dan parameter</Anchor>.
@@ -412,7 +412,7 @@ Sebelum menjalankan pengujian penargetan ulang, diperlukan pengaturan berikut:
      ```
    * Dapatkan <Anchor target="_blank" href="/marketers/id/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#buat-tautan-onelink">URL panjang tautan khusus</Anchor> dari <Anchor target="_blank" href="/marketers/id/docs/create-a-onelink-template#prosedur">templat OneLink</Anchor>. Pastikan untuk mengaktifkan <Anchor target="_blank" href="/marketers/id/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">Kampanye penargetan ulang</Anchor>. Gambar berikut menunjukkan contoh URL panjang khusus:
 
-     ![Testing_LongLink_en-us.png](https://files.readme.io/19c706b0cc11b83a5cb08d51b3418654c6fa1e597ee7ff9e631db21c33c00b82-31828933632401.png)
+     <Image align="center" alt="Testing_LongLink_en-us.png" src="https://files.readme.io/19c706b0cc11b83a5cb08d51b3418654c6fa1e597ee7ff9e631db21c33c00b82-31828933632401.png" />
 
 Anda sekarang dapat melanjutkan untuk menguji atribusi ulang dan interaksi ulang.
 
@@ -446,7 +446,7 @@ Anda sekarang dapat melanjutkan untuk menguji atribusi ulang dan interaksi ulang
 
    Anda akan melihat penginstalan yang diatribusikan ke sumber media dan kampanye. Tunggu hingga 30 menit hingga penginstalan yang ditargetkan muncul di dasbor.
 
-   [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+   <Image align="center" alt="Testing_SDK_Reattribution" src="https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png" />
 
 <div id="tip-1" />
 
@@ -473,7 +473,7 @@ Anda sekarang dapat melanjutkan untuk menguji atribusi ulang dan interaksi ulang
 * Ikuti [petunjuk](/docs/testing-the-sdk-integration-for-marketers#prerequisites-to-run-retargeting-tests) untuk mengatur pengujian penargetan ulang.
 * Untuk tujuan pengujian, atur waktu minimum antar konversi menjadi **None (Tidak Ada)**. Ini memungkinkan semua konversi interaksi ulang dicatat dan diatribusikan selama pengujian.
 
-  ![Testing_Reattribution_window](https://files.readme.io/ec8c7c923093dbed0e99aa5ef57d0239217ead5a9db41f42fe4af8a70eb04551-4406211661841.png)
+  <Image align="center" alt="Testing_Reattribution_window" src="https://files.readme.io/ec8c7c923093dbed0e99aa5ef57d0239217ead5a9db41f42fe4af8a70eb04551-4406211661841.png" />
 * Pastikan aplikasi sudah di-instal di perangkat pengujian dan telah diluncurkan beberapa kali. Jika Anda baru saja menginstal aplikasi, tunggu beberapa menit.
 
 **Untuk menguji interaksi ulang (deep linking langsung):**
@@ -490,7 +490,7 @@ Pastikan aplikasi Anda dikonfigurasi untuk <Anchor target="_blank" href="/market
 
    Di dasbor, Anda akan melihat interaksi ulang yang diatribusikan ke sumber media dan kampanye. Tunggu hingga 30 menit hingga interaksi ulang muncul.
 
-   [![Testing_SDK_Re-engagement](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)
+   <Image align="center" alt="Testing_SDK_Re-engagement" src="https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png" />
 
 **Tips!** Pertimbangkan untuk mengunduh laporan data lengkap konversi untuk memastikan bahwa interaksi ulang diatribusikan ke sumber media yang tepat. Pengunduhan laporan ini membutuhkan waktu beberapa menit.
 

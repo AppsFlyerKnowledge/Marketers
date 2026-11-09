@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **Sekilas**: Mulai iOS 14.5, Apple mengharuskan Anda untuk menerapkan dan mematuhi persyaratan <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency">Transparansi AppTracking</Anchor> (ATT). ATT berarti bahwa *jika aplikasi Anda mengumpulkan data tentang pengguna akhir dan membagikannya dengan perusahaan lain untuk tujuan pelacakan di seluruh aplikasi dan situs web,* Anda harus menggunakan perintah persetujuan ATT dan mendapatkan persetujuan pengguna di aplikasi penerbit dan pemasang iklan. Jika Anda tidak melacak, tidak perlu menampilkan perintah.
 
-![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
+<Image align="center" alt="iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg" src="https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg" />
 
 <div id="attribution-measurement-in-an-att-environment" />
 
@@ -58,7 +58,7 @@ AppsFlyer memberikan hasil atribusi iOS teragregasi menggunakan postback SKAN da
 
 **Aliran SKAN**
 
-![SKAN_flow_-_Affinity_diagram_2.png](https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png)
+<Image align="center" alt="SKAN_flow_-_Affinity_diagram_2.png" src="https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png" />
 
 1. Pemasang iklan menetapkan pengaturan pengukuran SKAN di AppsFlyer Conversion Studio.
 2. 2. Pengguna membuka aplikasi untuk pertama kalinya.
@@ -204,7 +204,7 @@ Faktor-faktor ini berdampak pada:
 
 Diagram alur berikut menjelaskan hal ini secara lebih rinci.
 
-![SKAN_4_matrix_-_Page_8__1_.png](https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png)
+<Image align="center" alt="SKAN_4_matrix_-_Page_8__1_.png" src="https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png" />
 
 </Accordion>
 

@@ -55,7 +55,7 @@ Jendela lookback klik-tayang default dari Meta ads ditentukan hingga 7 hari. Mes
 
 Untuk membandingkan jendela atribusi klik-tayang dan lihat-tayang pada Meta ads dengan yang ada di AppsFlyer, kunjungi Meta ads. Kami menyarankan untuk mengonfigurasi jendela atribusi di AppsFlyer sesuai nilai Meta ads seperti yang ditunjukkan pada tangkapan layar berikut:
 
-![Facebook_Discrepancies.png](https://files.readme.io/e8caa7986ffa66c5bfdbef7457de5630899043256ca484f0cfdfdda8ac481c7e-4411036047505.png)
+<Image align="center" alt="Facebook_Discrepancies.png" src="https://files.readme.io/e8caa7986ffa66c5bfdbef7457de5630899043256ca484f0cfdfdda8ac481c7e-4411036047505.png" />
 
 <div id="example" />
 

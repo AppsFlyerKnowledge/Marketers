@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **Sekilas:** Kirim event dari server Anda ke AppsFlyer untuk mengukur event seluler yang muncul di luar aplikasi.
 
-[![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
+<Image align="center" alt="S2S_us-en.png" src="https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png" />
 
 <div id="server-to-server-events-api-for-mobile" />
 
@@ -144,7 +144,7 @@ Setelah Anda memetakan ID AppsFlyer dengan CUID, Anda dapat mencocokkan pengguna
 
 <Accordion title="Penyetempel waktu acara S2S">
 
-[![diagram logika stempel waktu](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)
+<Image align="center" alt="diagram logika stempel waktu" src="https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png" />
 
 Saat acara S2S tiba secara massal ke AppsFlyer, event tersebut diberi stempel waktu sesuai dengan nilai properti `eventTime` dan waktu kedatangannya. Properti `eventTime` menunjukkan waktu kejadian dalam aplikasi.
 

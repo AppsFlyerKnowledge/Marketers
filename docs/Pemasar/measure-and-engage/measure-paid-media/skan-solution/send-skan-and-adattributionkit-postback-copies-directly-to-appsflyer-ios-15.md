@@ -60,7 +60,7 @@ Menurut dokumentasi Apple, Anda dapat mengatur satu titik akhir postback SKAN.
 >
 > Apakah pernyataan-pernyataan ini benar atau salah?
 >
-> ![TrueOrFalse.png](https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png)
+> <Image align="center" alt="TrueOrFalse.png" src="https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png" />
 >
 > * Pemasang iklan tidak lagi bergantung pada jaringan iklan untuk mendapatkan postback.
 >   * **False.** Pemasang iklan masih bergantung pada jaringan iklan untuk memecahkan kode bagian data yang signifikan. Misalnya, hanya jaringan iklan yang dapat memetakan ID kampanye SKAN ke nama kampanye.

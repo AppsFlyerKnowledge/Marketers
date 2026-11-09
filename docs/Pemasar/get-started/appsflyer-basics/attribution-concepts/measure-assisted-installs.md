@@ -48,7 +48,7 @@ Data analitik dari penginstalan terbantu tersedia di tingkat sumber media dan ka
 4. Pilih metrik **Penginstalan terbantu** .  
    Bagan penginstalan terbantu ditampilkan. Warna biru menunjukkan penginstalan non-organik dan warna oranye menunjukkan penginstalan terbantu.
 
-   ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
+   <Image align="center" alt="AssitedInstallWidget.png" src="https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png" />
 
 <div id="why-are-assists-important" />
 
@@ -64,7 +64,7 @@ Dalam banyak kasus, calon pengguna menjadi terbiasa dengan aplikasi melalui sumb
 
 AppsFlyer mengatribusikan hingga tiga jaringan yang berkontribusi selain sumber penginstalan yang diatribusikan. Data tentang jaringan yang berkontribusi dan penginstalan terbantu tersedia dalam laporan data lengkap.
 
-[![](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)
+<Image align="center" alt="" src="https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png" />
 
 Untuk masing-masing dari jaringan yang berkontribusi, laporan data lengkap mencakup berikut ini:
 

@@ -56,7 +56,7 @@ Data klik dan impresi dari Google Ads tersedia sejak bulan Agustus 2018, awalnya
 
 Jika Anda tidak melihat konversi first\_open di Google Ads seperti yang ditunjukkan pada tangkapan layar di bawah:
 
-![AW_13.png](https://support.appsflyer.com/hc/article_attachments/4417310093457)  
+<Image align="center" alt="AW_13.png" src="https://support.appsflyer.com/hc/article_attachments/4417310093457" />
 
 artinya Anda perlu mengimpor konversi di Google Ads. Ikuti petunjuk tentang <Anchor target="_blank" href="/marketers/id/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">cara mengimpor konversi</Anchor>.
 
@@ -68,7 +68,7 @@ artinya Anda perlu mengimpor konversi di Google Ads. Ikuti petunjuk tentang <Anc
 
 Apakah Anda melihat layar ini di Google Ads setelah memetakan in-app event pilihan Anda di dasbor AppsFlyer (<Anchor target="_blank" href="/marketers/id/docs/google-ads-adwords-integration-setup-for-advertisers#step-3-map-your-inapp-events-recommended">langkah konfigurasi 3</Anchor>)?
 
-[![adwords missing events 2.png](https://support.appsflyer.com/hc/article_attachments/18726174138001)](https://support.appsflyer.com/hc/article_attachments/18726174138001)  
+<Image align="center" alt="adwords missing events 2.png" src="https://support.appsflyer.com/hc/article_attachments/18726174138001" />
 
 Jika demikian, lakukan salah satu dari yang berikut:
 
@@ -91,7 +91,7 @@ Untuk menonaktifkan sinkronisasi biaya dengan Google:
 1. Buka <Anchor target="_blank" href="https://myaccount.google.com/permissions">izin akun Google</Anchor> Anda.
 2. Klik Hapus di sebelah Biaya Google AppsFlyer.  
 
-   ![remove_appsflyer_cost.png](https://support.appsflyer.com/hc/article_attachments/4417304127249)
+   <Image align="center" alt="remove_appsflyer_cost.png" src="https://support.appsflyer.com/hc/article_attachments/4417304127249" />
 
 </Accordion>
 

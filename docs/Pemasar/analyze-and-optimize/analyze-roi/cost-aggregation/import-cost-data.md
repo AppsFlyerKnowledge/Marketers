@@ -203,7 +203,7 @@ When using Excel or Google Sheets to prepare the CSV file, the date and spend co
 1. Select the cells to be formatted.
 2. Right-click and then select **Format cells**.  
    The format cells window opens.  
-   <Image alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
+   <Image align="center" alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
 3. Select **Custom**.
 4. In the Type field, enter **YYYY-MM-DD**
 5. Click **OK**.  
@@ -213,7 +213,7 @@ When using Excel or Google Sheets to prepare the CSV file, the date and spend co
 
 Excel usually formats value cells with a comma to separate the thousands, as shown in the following image. This format isn't suitable for Cost Import files.
 
-<Image alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
 
 **To format spend cells without a 1000 comma separator**:
 
@@ -221,7 +221,7 @@ Excel usually formats value cells with a comma to separate the thousands, as sho
 2. Right-click and then select **Format cells**.  
    The format cells window opens.
 3. Select **Number**.  
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/d2bfeec87d24739e9d1cea8467d7ce23b56aa9414a96202379f6e774991bf387-360004075458.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/d2bfeec87d24739e9d1cea8467d7ce23b56aa9414a96202379f6e774991bf387-360004075458.png" width="381px" />
 4. Clear **Use 1000 separator (,).**
 5. (Optional) Set the number of **Decimal places**. The default is 2. The maximum permitted is 5.
 6. Click **OK**.  
@@ -245,7 +245,7 @@ Excel usually formats value cells with a comma to separate the thousands, as sho
 
 The following image contains a screenshot of the [sample CSV file](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0oJTWdlNyT1gBHkGaN1QP-tUatugbPBzC2qYVNmjl_T_i3fKo1abYzTp6F7OqGeN_f7bBAJa3hxVz/pub?gid=0&single=true&output=csv) displayed in an editor.
 
-<Image alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
 
 </Accordion>
 

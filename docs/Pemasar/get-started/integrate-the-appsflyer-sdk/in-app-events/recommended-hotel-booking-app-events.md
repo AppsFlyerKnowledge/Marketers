@@ -44,7 +44,7 @@ You can attribute preferences such as hotel score, season, country, and the numb
 >
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/id/docs/in-app-events-overview">In-app events guide</Anchor>.
 
-[![Flowchart_for_recommended_events_hotel_booking_app_user_journey](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
+<Image align="center" alt="Flowchart_for_recommended_events_hotel_booking_app_user_journey" src="https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png" />
 
 ## Recommended structures for predefined events
 

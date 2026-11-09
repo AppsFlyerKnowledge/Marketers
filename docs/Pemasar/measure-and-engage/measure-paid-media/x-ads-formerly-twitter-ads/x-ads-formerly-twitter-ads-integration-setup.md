@@ -45,26 +45,26 @@ x-zendesk:
 2. Saat diminta untuk memilih kampanye **Sederhana (BARU)** atau **Lanjutan** , pilih **Lanjutan**.
 3. Pada **Tujuan kampanye**, pilih **Penginstalan Aplikasi** atau **Interaksi ulang aplikasi**, lalu klik **Berikutnya**.  
 
-   ![twitter-campaign-objective.png](https://files.readme.io/d91bd357dea4878f098086a573191f64c2d1a38af8a6a809c6de7c468e04e043-6148255768337.png)
+   <Image align="center" alt="twitter-campaign-objective.png" src="https://files.readme.io/d91bd357dea4878f098086a573191f64c2d1a38af8a6a809c6de7c468e04e043-6148255768337.png" />
 4. Pilih aplikasi Anda, lalu klik tautan **mitra pengukuran seluler** .
 5. Pada halaman **Pelacakan konversi** , klik **Buka AppsFlyer**.   
 
-   ![twitter-mmp-selection.png](https://files.readme.io/ebe8e97971c01e0d87c694d2ca1fcc996abf608309d96badcbcda2713ab80d3e-6148393350033.png)
+   <Image align="center" alt="twitter-mmp-selection.png" src="https://files.readme.io/ebe8e97971c01e0d87c694d2ca1fcc996abf608309d96badcbcda2713ab80d3e-6148393350033.png" />
 6. Sebuah notifikasi ditampilkan untuk menginformasikan bahwa Anda akan meninggalkan X Ads untuk mengunjungi situs web AppsFlyer. Klik **Buka AppsFlyer** dan masuk ke Dashboard Anda.  
 
-   <Image alt="twitter-go-to-appsflyer.png" src="https://support.appsflyer.com/hc/article_attachments/4411046208401" width="576px" />
+   <Image align="center" alt="twitter-go-to-appsflyer.png" src="https://support.appsflyer.com/hc/article_attachments/4411046208401" width="576px" />
 7. Di AppsFlyer, di bawah **Konfigurasi**, buka **Pasar Mitra**.
 8. Cari **X Ads** dan pilih itu.
 9. Dalam tab **Integrasi** , terima Syarat dan Ketentuan X Ads untuk Pencatatan Konversi Aplikasi Seluler (MACT), lalu klik **Simpan integrasi**.
 10. Nyalakan **Aktifkan mitra**, dan klik **Masuk dengan X Ads**.
 11. Otorisasi AppsFlyer untuk menggunakan akun X Ads Anda dengan mengeklik **Otorisasi aplikasi**.   
 
-    [<Image alt="" src="https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png" width="476px" />](https://support.appsflyer.com/hc/id/article_attachments/4411037924497/Twitter_Ads_6.png)
+    <Image align="center" alt="" src="https://support.appsflyer.com/hc/en-us/article_attachments/4411037924497/Twitter_Ads_6.png" width="476px" />
 12. Nyalakan kembali **Aktifkan Mitra** untuk menampilkan pengaturan tab **Integrasi** dan mengaktifkan atribusi.  
     **Catatan:** Sakelar harus tetap nyala (diaktifkan) selama Anda bekerja dengan mitra. Pelajari lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/partner-activation-deactivation">aktivasi mitra.</Anchor>
 13. Pilih akun X Ads Anda untuk mengaktifkannya, lalu klik **Simpan & Tutup**.  
 
-    ![twitter_account_name.png](https://support.appsflyer.com/hc/article_attachments/4411046818193)
+    <Image align="center" alt="twitter_account_name.png" src="https://support.appsflyer.com/hc/article_attachments/4411046818193" />
 
 </Accordion>
 
@@ -90,7 +90,7 @@ Untuk penjelasan rinci tentang Header halaman konfigurasi mitra, klik <Anchor ta
 
 Pilih akun untuk mengaktifkan atribusi.
 
-![Twitter_msc_new_4.png](https://files.readme.io/c64dd5ddc51f35ce195c689b3d14ec4ed4010133662096926f4e8c45e48d60c4-4411049509137.png)
+<Image align="center" alt="Twitter_msc_new_4.png" src="https://files.readme.io/c64dd5ddc51f35ce195c689b3d14ec4ed4010133662096926f4e8c45e48d60c4-4411049509137.png" />
 
 <div id="click-through-attribution" />
 
@@ -100,7 +100,7 @@ Gunakan slider untuk mengatur **waktu maksimal dari klik hingga penginstalan**. 
 
 Anda dapat menyesuaikan nilai ini ke 1-23 jam atau 1-30 hari. Kami merekomendasikan pengaturan jendela lihat balik klik-tayang menjadi 14 hari, agar selaras dengan X Ads.
 
-![Twitter_msc_new_6.png](https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png)
+<Image align="center" alt="Twitter_msc_new_6.png" src="https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png" />
 
 <div id="reinstall-settings" />
 
@@ -112,7 +112,7 @@ Slider ini memungkinkan Anda untuk mengatur **waktu maksimal mulai dari tayangan
 
 Anda dapat mengkustomisasi nilai ini ke 1-23 jam atau 1-7 hari. Kami merekomendasikan pengaturan Jendela lihat balik lihat-tayang menjadi 1 hari, agar selaras dengan X Ads.
 
-![Twitter_msc_new_7.png](https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png)
+<Image align="center" alt="Twitter_msc_new_7.png" src="https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png" />
 
 <div id="important" />
 
@@ -130,7 +130,7 @@ Aktifkan sakelar **Atribusi interaksi ulang** untuk mulai mengatribusikan intera
 
 Tetapkan durasi **Jendela lihat balik klik-tayang interaksi ulang** (jangka waktu maksimal setelah iklan diklik, yang mana pengguna yang ditargetkan ulang dapat diatribusikan ke iklan tersebut). Anda dapat mengatur nilainya dalam jam (hingga 23) atau hari (1-30).
 
-![twitter-reengagement-activate.png](https://files.readme.io/9272c626eceeb8457584d2f1bd1d2adb16f9022994a2efa22eeaeb5b584e2149-4411049796625.png)
+<Image align="center" alt="twitter-reengagement-activate.png" src="https://files.readme.io/9272c626eceeb8457584d2f1bd1d2adb16f9022994a2efa22eeaeb5b584e2149-4411049796625.png" />
 
 <div id="re-engagement-view-through-lookback-window" />
 
@@ -140,7 +140,7 @@ Untuk mulai mengatribusikan tayangan iklan penargetan ulang, aktifkan **Re-engag
 
 Tetapkan durasi **Re-engagement view-through lookback window (jendela lookback klik-tayang interaksi ulang)** (jangka waktu maksimum setelah iklan diklik, di mana pengguna yang ditargetkan ulang dapat diatribusikan ke iklan tersebut). Anda dapat menyetel nilai dalam jam (hingga 23) atau hari (1-7):
 
-![twitter-reengagement-view-through.png](https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png)
+<Image align="center" alt="twitter-reengagement-view-through.png" src="https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -150,7 +150,7 @@ Tetapkan durasi **Re-engagement view-through lookback window (jendela lookback k
 
 Tetapkan durasi jendela **Re-engagement window (jendela interaksi ulang)** (periode ketika in-app event pengguna dikaitkan ke sumber media retargeting (penargetan ulang). Anda dapat mengatur nilai dalam hari (1-90), jam (hingga 23), atau bahkan selamanya:
 
-![Twitter-reengagement-window.png](https://files.readme.io/de80d79c777fc97caa0a28a342657475f0a05c14e30b1f96d24898a4638e1af8-4411047581201.png)
+<Image align="center" alt="Twitter-reengagement-window.png" src="https://files.readme.io/de80d79c777fc97caa0a28a342657475f0a05c14e30b1f96d24898a4638e1af8-4411047581201.png" />
 
 <div id="in-app-event-postback-settings" />
 
@@ -158,7 +158,7 @@ Tetapkan durasi jendela **Re-engagement window (jendela interaksi ulang)** (peri
 
 Pada bagian ini, Anda dapat memetakan event AppsFlyer Anda dengan mitra Anda melalui postback.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png" />
 
 **Untuk mengonfigurasi postback in-app event:**
 

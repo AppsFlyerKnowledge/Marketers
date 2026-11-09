@@ -409,7 +409,7 @@ Di sisi lain, URL singkat untuk media yang dimiliki, tidak secara langsung beris
 
 Jika Anda menemukan pesan kesalahan berikut di Play Store setelah mengikuti Tautan atribusi:
 
-![TL_error_message.png](https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png)
+<Image align="center" alt="TL_error_message.png" src="https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png" />
 
 Ini karena tautan atribusi menyertakan # karakter. Contoh:
 

@@ -71,7 +71,7 @@ Baca selengkapnya tentang <Anchor target="_blank" href="https://support.google.c
 >
 > User dapat mengonfirmasi bahwa mereka telah login menggunakan akun Google Ads yang tepat dengan cara memeriksa alamat email yang terlihat di pojok kanan atas dashboard Google Ads.
 >
-> ![short.png](https://support.appsflyer.com/hc/article_attachments/4417297915537)
+> <Image align="center" alt="short.png" src="https://support.appsflyer.com/hc/article_attachments/4417297915537" />
 >  Jika akun Google Ads tersebut adalah sub-akun dari akun MCC, maka ID MCC berada di kanan atas,  dan ID sub-akun berada di pojok kiri atas.
 >
 > Jika akun yang digunakan salah, logout dari akun, lalu login kembali menggunakan alamat email untuk akun Google yang berbeda.

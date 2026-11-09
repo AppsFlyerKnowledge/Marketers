@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **At a glance:** Integrate OneLink-based attribution links with Iterable system to <Anchor target="_blank" href="/marketers/id/docs/email-service-provider-esp-integration-guide">deep link from emails</Anchor>. The integration utilizes Iterable’s support for Universal Links on top of branded click recording domains.
 
-![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
+<Image align="center" alt="iterable-af-logo.png" src="https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png" />
 
 ## Introduction
 
@@ -148,7 +148,7 @@ This section discusses how to set up your app to support Universal Links.
 
 1. In Xcode, click on your project.
 2. Click on ***Capabilities***.
-   ![configure-xcode-deeplinking-domain.png](https://files.readme.io/90d0dcc0eba2d7d081ab7d5d4ea697e9257b9107af463fa8c973169f8a2651db-49839256220433.png)
+   <Image align="center" alt="configure-xcode-deeplinking-domain.png" src="https://files.readme.io/90d0dcc0eba2d7d081ab7d5d4ea697e9257b9107af463fa8c973169f8a2651db-49839256220433.png" />
 3. Turn ***Associated Domains*** on.
 4. Click the + sign and add your click domain. For example, applinks:click.example.com.
 

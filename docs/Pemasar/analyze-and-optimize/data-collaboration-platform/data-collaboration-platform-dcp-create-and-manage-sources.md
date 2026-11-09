@@ -90,10 +90,10 @@ Source files stored in Amazon S3 or GCS must meet these file name and format req
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Data Clean Room**.
 
-   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/b65f88e8dd771c33345049ae35a512e75dfd820c40c169a2b536c433df141e8e-43750175599889.png" width="644px" />
+   <Image align="center" alt="Click Data Clean Room.png" src="https://files.readme.io/b65f88e8dd771c33345049ae35a512e75dfd820c40c169a2b536c433df141e8e-43750175599889.png" width="644px" />
 2. Click **+ New source** (on the main page or in the **Sources** tab).
 
-   <Image alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
+   <Image align="center" alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
 3. Proceed with the **New source** walkthrough steps:
 
 </Accordion>
@@ -179,7 +179,7 @@ You can also upload source data using a local file. However, **It’s strongly r
 
 When selecting your source location, click on **Local file system** and **Next**, which adds the option to upload local files from your device.
 
-<Image alt="Select Local file system.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
+<Image align="center" alt="Select Local file system.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
 
 > 📘 **Note**
 >
@@ -196,7 +196,7 @@ When setting up a source in the Data Collaboration Platform (DCP), you must choo
 * **Snapshot** - This method uploads the full dataset each time the source is updated, completely replacing the old dataset each time with the new one. Choose this method only if your file uploads always contain the complete and up-to-date dataset.
 * **Append** - This method uploads only new or changed data, not the full dataset. Old datasets are not removed or updated. It is ideal for recurring uploads like daily or weekly reports. Benefits include smaller uploads (may drive lower cloud storage costs), faster data upload performance, easier record management, and more.
 
-<Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
+<Image align="center" alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
 > 🚧 **Important!**
 >
@@ -279,7 +279,7 @@ source_name1/
 
 Example of how folder structure should look after uploading a complete snapshot of the source files for 2 days (and programmatically creating date/version/data folders and \_SUCCESS files), your bucket/folder structure might look something like this:
 
-[<Image alt="Snapshot example bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
+<Image align="center" alt="Snapshot example bucket.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />
 
 
 #### Append upload requirements
@@ -471,7 +471,7 @@ This option allows you to include a field in the audience that isn't currently p
 1. Click **+ New field**. An empty field is added.
 2. Enter the name of the field and select its type.
 
-<Image alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
+<Image align="center" alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
 
 **Field types include:**
 
@@ -642,11 +642,11 @@ The DCR key folder is generally created manually using the interface of your sel
 
 * Click the 3-dot (actions) menu on the upper right and select **DCR key**.
 
-[<Image alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://files.readme.io/3a15c67e4683e9d6c748cfb3fe7d95be9fa44e47d82a7615abadb90575f1fce1-24740007159825.png)
+<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />
 
 After creating the DCR key folder, your bucket/folder structure would look something like this:
 
-<Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/ba5902f70e75dc6fa1a6970f28397607c42bd433add4be311f4b498a3960ce05-24740007165841.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/ba5902f70e75dc6fa1a6970f28397607c42bd433add4be311f4b498a3960ce05-24740007165841.png" width="308px" />
 
 #### Top-level input folder
 
@@ -659,7 +659,7 @@ The top-level input folder is generally created manually using the interface of 
 
 After creating the top-level input folder, your bucket/folder structure might look something like this:
 
-<Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/2d0fef29b00e9ac8bb9ee5fa281a9a502d0395c72d8879370271e1e4a1af9c95-24740010678801.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/2d0fef29b00e9ac8bb9ee5fa281a9a502d0395c72d8879370271e1e4a1af9c95-24740010678801.png" width="308px" />
 
 #### Second-level folder for each data source
 
@@ -671,7 +671,7 @@ The data source folders are generally created manually using the interface of yo
 
 After creating 2 data source folders, your bucket/folder structure might look something like this:
 
-<Image alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/c9feab81da8507ce96c61bd19b70a53bb6e4914cbab67fbcd0de8b578b04f29a-24740007171473.png" width="307px" />
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/c9feab81da8507ce96c61bd19b70a53bb6e4914cbab67fbcd0de8b578b04f29a-24740007171473.png" width="307px" />
 
 Under each data source folder, [nested subfolders by date and version](#nested-subfolders-for-each-date-and-version) must be created each time the source is updated.
 

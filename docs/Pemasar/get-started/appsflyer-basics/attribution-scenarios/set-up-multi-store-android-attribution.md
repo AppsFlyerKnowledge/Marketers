@@ -44,7 +44,7 @@ AppsFlyer mengatribusikan aplikasi, terlepas dari app store. Artinya Google Play
 > * Atribusi Android AppsFlyer mendukung semua jenis pengidentifikasi perangkat termasuk GAID dan <Anchor target="_blank" href="/marketers/id/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor>
 > * Untuk aplikasi yang dipasarkan di China, lihat <Anchor target="_blank" href="/marketers/id/docs/measure-attribution-in-the-chinese-domestic-market">Mengatribusikan aplikasi Android di pasar domestik China</Anchor>
 
-![dasborType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
+<Image align="center" alt="dasborType_us-en-new.jpg" src="https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg" />
 
 <div id="single-dashboard-vs-dashboard-per-store" />
 
@@ -259,7 +259,7 @@ Persiapkan APK baru untuk toko dengan menggunakan instruksi metode dasbor tungga
 3. Buka pengaturan dan temukan pengaturan Android Anda, atau jika Anda belum mengonfigurasi Android, tambahkan platformnya.
 4. Isi detail yang diperlukan, termasuk URL Amazon app store khusus untuk aplikasi Anda.  
 
-    [![outofstore_1.png](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)
+    <Image align="center" alt="outofstore_1.png" src="https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png" />
 5. Di dasbor AppsFlyer, di bawah Integrasi Aktif, pilih Meta ads, dan masukkan ID Aplikasi Facebook yang sama dengan yang Anda gunakan saat mencatat Iklan Penginstalan Aplikasi Seluler In-Store Meta dengan AppsFlyer.
 
 </Accordion>

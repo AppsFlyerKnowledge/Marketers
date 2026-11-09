@@ -28,7 +28,7 @@ x-zendesk:
 ---
 > **Sekilas:** Tentang pengiriman event yang dilaporkan melalui Firebase SDK ke AppsFlyer menggunakan Google Tag Manager.
 
-<Image alt="gtm.png" src="https://files.readme.io/fbb4e0f83baf6f5f7f8dc83e02986ca011f5cb919b9870768da1606798211dcc-360002517245.png" width="289px" />
+<Image align="center" alt="gtm.png" src="https://files.readme.io/fbb4e0f83baf6f5f7f8dc83e02986ca011f5cb919b9870768da1606798211dcc-360002517245.png" width="289px" />
 
 Integrasi AppsFlyer dengan Google Tag Manager (GTM) dan Firebase memungkinkan pengembang mengirimkan kejadian dalam aplikasi ke Firebase menggunakan Firebase SDK, dan mengirimkan kejadian ke AppsFlyer melalui SDK menggunakan Google Tag Manager. Hal ini menghindari keharusan mengirim acara yang sama dua kali.
 

@@ -51,7 +51,7 @@ In order for the partner to get postbacks, campaign names **must** be prefixed b
 
 **To setup in-app event postbacks**:
 
-[![in-app_event_mapping.png](https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png)](https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png)
+<Image align="center" alt="in-app_event_mapping.png" src="https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png" />
 
 1. Turn on **In-app event postbacks**.
 2. Complete the required parameters according to the <Anchor target="_blank" href="/marketers/id/docs/in-app-event-postback-configuration#metode-pemetaan">mapping method</Anchor>:

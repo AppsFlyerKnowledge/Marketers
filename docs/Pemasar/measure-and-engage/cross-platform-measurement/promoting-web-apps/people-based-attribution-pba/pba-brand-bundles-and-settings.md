@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Sekilas:** Bundel merek menggabungkan atribusi, event, kunjungan, dan pendapatan aplikasi dan situs web terkait merek. Gunakan halaman pengaturan paket merek untuk menandai event konversi, berintegrasi dengan Google Ads, dan banyak lagi.
 
-![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
+<Image align="center" alt="BrandBundles.png" src="https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png" />
 
 <div id="about-brand-bundles" />
 

@@ -64,7 +64,7 @@ The account admin can make time-zone changes.
 
 This Overview dashboard (V1) with time-zone change indicator:
 
-![TimeZoneChange_en-us.jpg](https://files.readme.io/6dbd94a42fa85f3e9a1ec4d739459066a74f3d9cc5a85aca1726d79e375850c6-360006496257.jpg)
+<Image align="center" alt="TimeZoneChange_en-us.jpg" src="https://files.readme.io/6dbd94a42fa85f3e9a1ec4d739459066a74f3d9cc5a85aca1726d79e375850c6-360006496257.jpg" />
 
 After changing the time-zone:
 

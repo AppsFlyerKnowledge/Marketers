@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **Sekilas:** People-Based Attribution/Atribusi Berbasis Orang(PBA) menyediakan tampilan terpadu tentang pengalaman pelanggan di semua channel, platform, dan perangkat.
 
-![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
+<Image align="center" alt="PBANoSilos_us-en.gif" src="https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif" />
 
 <div id="pba-principles" />
 
@@ -51,7 +51,7 @@ x-zendesk:
 
 ### <Anchor target="_blank" href="/marketers/id/docs/pba-website-attribution-dashboard">Atribusi Situs Web</Anchor>
 
-[![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
+<Image align="center" alt="WebsiteAttributionTable_us-en.jpg" src="https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg" />
 
 Analisis sumber lalu lintas web dan kampanye pemasaran yang mendorong kunjungan dan konversi pengguna di situs web Anda. Temukan perbedaan kinerja hingga ke tingkat iklan. Mendukung semua parameter kueri AppsFlyer di tautan tanpa perlu mengarahkan pengguna ke server AppsFlyer.
 
@@ -59,7 +59,7 @@ Analisis sumber lalu lintas web dan kampanye pemasaran yang mendorong kunjungan 
 
 ### <Anchor target="_blank" href="/marketers/id/docs/pba-web-assisted-installs">Penginstalan Berbasis Web</Anchor>
 
-[![AppsFlyer-Web-to-App_us.en.gif](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)
+<Image align="center" alt="AppsFlyer-Web-to-App_us.en.gif" src="https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif" />
 
 Gunakan Penginstalan Berbasis Web untuk mengkaji dampak dan hasil dari upaya pemasaran web Anda untuk mendorong penginstalan aplikasi seluler.
 

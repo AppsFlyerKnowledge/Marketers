@@ -125,7 +125,7 @@ Secara default, Meta ads tidak mengizinkan distribusi data tingkat pengguna. Lih
 Ya. Laporan kinerja memiliki struktur kolom statis dalam kombinasi sumber media apa pun yang dipilih, yang menyajikan informasi hingga ke level kampanye.  
 Namun, jika Anda HANYA mengunduh laporan kinerja untuk Meta ads, AppsFlyer akan menambahkan 4 kolom ke laporan kinerja yang menyajikan informasi hingga ke level iklan tunggal! Kolom yang ditambahkan adalah Nama Adset, ID Adset, Nama Adgroup (yaitu iklan tunggal), dan ID Adgroup.
 
-[![](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)
+<Image align="center" alt="" src="https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png" />
 
 </Accordion>
 
@@ -143,7 +143,7 @@ Untuk detail tentang pengaturan pengaitan dengan mitra pengelolaan kampanye Meta
 
 <Accordion title="Apa yang harus saya lakukan jika menerima peringatan berikut?">
 
-[![](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)
+<Image align="center" alt="" src="https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png" />
 
 * Verifikasi ID Aplikasi Facebook dan periksa apakah Anda memiliki batasan geografis atau usia pada ID Aplikasi Facebook mereka.
 * Jika atribusi sudah berjalan, hal ini mengindikasikan bahwa aplikasi sudah tersedia untuk publik pada Portal Pengembang Meta dan Anda dapat mengabaikan pesan kesalahan ini.
@@ -234,7 +234,7 @@ Jika kampanye Meta ads terlibat dengan beberapa platform (Android, iOS, desktop,
 
 Pemasang iklan menjalankan kampanye menggunakan Meta ads. Di AppsFlyer, pemasang iklan akan melihat hal berikut:
 
-![mceclip2.png](https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png" />
 
 Informasi biaya disediakan oleh Meta ads ke AppsFlyer. Jumlah **penginstalan** dihitung oleh AppsFlyer menggunakan aturan atribusi AppsFlyer. Akibatnya, eCPI yang dihitung oleh Meta ads dan AppsFlyer biasanya berbeda.
 
@@ -362,7 +362,7 @@ Jika Anda ingin beralih ke akun iklan baru tetapi biaya Meta ads Anda sudah dita
 1. Pada Meta ads, buka **Pengaturan** > **Integrasi Bisnis**.
 2. Pada tab **Active**, hapus integrasi AppsFlyer.  
 
-    [![](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)
+    <Image align="center" alt="" src="https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png" />
 3. Buka dashboard AppsFlyer dan hubungkan biaya dengan akun iklan baru.
 
 </Accordion>
@@ -439,7 +439,7 @@ Selain itu, agensi tidak dapat mengubah postback in-app event apa pun yang dikir
 
 Gambar di bawah menunjukkan semua setelan yang perlu dikonfigurasi oleh pemasang iklan agar agensi dapat mengelola kampanye Meta ads-nya:
 
-[![advertiser-vs-agency-facebook-int-new.png](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)
+<Image align="center" alt="advertiser-vs-agency-facebook-int-new.png" src="https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png" />
 
 </Accordion>
 
@@ -499,7 +499,7 @@ Dengan Meta ads, Anda dapat melihat data dipecah tidak hanya menurut kampanye, a
 
 Gunakan data ini untuk membandingkan kualitas pengguna yang Anda dapatkan dari berbagai saluran.
 
-![Facebook_channels.png](https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png)
+<Image align="center" alt="Facebook_channels.png" src="https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png" />
 
 </Accordion>
 

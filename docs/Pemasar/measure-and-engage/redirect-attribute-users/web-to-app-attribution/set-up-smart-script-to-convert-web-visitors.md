@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **At a glance:** Set up OneLink Smart Script to convert and attribute your mobile website visitors, coming from any source, into mobile app users.
 
-![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/4f506532e65c118a76e875b992be59cf8cca925f78e125dbb35b958fc1639d16-42045468431121.png)
+<Image align="center" alt="7901_Smart_Script_flow_1920x1080_2__1_.png" src="https://files.readme.io/4f506532e65c118a76e875b992be59cf8cca925f78e125dbb35b958fc1639d16-42045468431121.png" />
 
 ## Setup
 
@@ -121,7 +121,7 @@ To set up the Smart Script, you can either:
 1. Click the dropdown arrow <Image alt="Down_arrow.jpg" src="https://files.readme.io/a82023665721be681f985548857c4c329f626435780bb1bff7a3821b32b69078-42045468433041.jpg" width="28px" /> next to the Smart Script name.  
    Here you can see all your saved scripts  
 
-   <Image alt="Script_steps.jpg" src="https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg" width="1732px" />
+   <Image align="center" alt="Script_steps.jpg" src="https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg" width="1732px" />
 2. Click on the pen icon next to the script you want to edit
    1. Follow the steps in [How to create a OneLink Smart Script](/docs/set-up-smart-script-to-convert-web-visitors#set-up-onelink-smart-script)
 3. Click on the trash bin icon to delete the Smart Script
@@ -396,7 +396,7 @@ Smart Script displays a QR code on your web page, instead of a button with a lin
 >
 > **Outgoing QR code**:
 >
-> <Image alt="" src="https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png" width="48.07%" />
+> <Image align="center" alt="" src="https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png" width="48.07%" />
 
 </Accordion>
 
@@ -447,7 +447,7 @@ Yes. In your OneLink Smart Script page, click on + **New parameter** to map addi
 
 For example, to add is\_retargeting as a parameter, Custom parameter would be selected in the **mapping for** field, and then our is\_retargeting parameter to the **Outgoing URL parameters** field.
 
-![Smart_Script_Custom.jpg](https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg)
+<Image align="center" alt="Smart_Script_Custom.jpg" src="https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg" />
 
 #### **Adset and other parameters are not showing in the dropdown**
 

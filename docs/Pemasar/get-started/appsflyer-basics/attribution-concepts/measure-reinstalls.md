@@ -98,7 +98,7 @@ Untuk informasi Atribusi Penargetan Ulang lainnya, klik <Anchor target="_blank" 
 
 ### Ringkasan
 
-[![](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg" />
 
 In-app event yang dilakukan oleh pengguna setelah penginstalan ulang, dapat diatributkan secara organik, dikaitkan non-organik, atau organik yang tidak dikaitkan bergantung pada status **atribusi Event Setelah Penginstalan Ulang** (lihat di bawah).
 
@@ -174,7 +174,7 @@ Pengguna menginstal aplikasi (hari ke-0), melakukan pembelian seharga $10, lalu 
 
 Hari berikutnya (hari 1), pengguna menginstal ulang aplikasi dan melakukan pembelian sebesar $5.
 
-![Reinstall_1.jpg](https://files.readme.io/7e8eccb3a6873b42a1d8503c0f027386728adb2eecbe457451d2e37c0a7b6774-10225445609873.jpg)
+<Image align="center" alt="Reinstall_1.jpg" src="https://files.readme.io/7e8eccb3a6873b42a1d8503c0f027386728adb2eecbe457451d2e37c0a7b6774-10225445609873.jpg" />
 
 Karena pengguna sudah melakukan pembelian sebelum menginstal ulang, tidak akan ada jumlah pengguna unik tambahan.
 

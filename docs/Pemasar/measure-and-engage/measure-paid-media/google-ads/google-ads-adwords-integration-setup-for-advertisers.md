@@ -91,7 +91,7 @@ Membuat ID tautan memerlukan **akses administratif Google** pada akun.
 5. Tempel **ID Tautan** yang Anda salin di langkah sebelumnya.
 6. Putuskan untuk mengaktifkan atau tidak <Anchor target="_blank" href="/marketers/id/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**Pengguna non Uni Eropa**</Anchor>.  
 
-   <Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
+   <Image align="center" alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
 7. Mengonfigurasi **Instal atribusi**:
    1. Mengatur **Instal jendela lookback klik-tayang**.  
       Pilih unit jendela lookback (jam atau hari) dan atur slider ke nilai yang diinginkan. Kami merekomendasikan untuk mengatur jendela lookback menjadi 30 hari agar sesuai dengan Google Ads.
@@ -100,7 +100,7 @@ Membuat ID tautan memerlukan **akses administratif Google** pada akun.
    4. Pilih unit jendela lookback (jam atau hari) dan atur slider ke nilai yang diinginkan. Kami merekomendasikan pengaturan jendela lookback lihat-tayang menjadi 1 hari agar sesuai dengan Google Ads.  
       **Catatan:** Google tidak mengirimkan klaim untuk tayangan aplikasi iOS. Tombol atribusi lihat-tayang penginstalan dan slider jendela lookback tidak lagi relevan untuk aplikasi iOS.  
 
-      [![](https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png)](https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png)
+      <Image align="center" alt="" src="https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png" />
 8. Untuk mengaktifkan atribusi penginstalan ulang, aktifkan **Reinstall attribution (Atribusi penginstalan ulang)**.  
    Tidak perlu mengonfigurasi jendela lookback untuk atribusi penginstalan ulang, karena nilainya diambil dari pengaturan atribusi penginstalan.  
 
@@ -119,12 +119,12 @@ Membuat ID tautan memerlukan **akses administratif Google** pada akun.
    5. Mengatur **Jendela lookback lihat-tayang interaksi ulang**, yang merupakan periode waktu, dimulai dari tayangan iklan, saat aplikasi harus dibuka agar tayangan dicatat sebagai interaksi ulang. Pilih lookback window dalam satuan jam atau hari dan atur slider ke nilai yang diinginkan.
    6. Atur **Jendela interaksi ulang**. Ini adalah periode ketika in-app event pengguna diatribusikan ke sumber media yang ditargetkan ulang, melalui klik atau tayangan. Anda dapat mengatur nilai dalam satuan hari (1-90), jam (hingga 23), atau bahkan selamanya. Nilai default-nya adalah 30 hari.  
 
-      [![](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)
+      <Image align="center" alt="" src="https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png" />
 10. Jika Anda memiliki ekstensi aplikasi Google Ads iOS:  
     Untuk mendapatkan atribusi dari tautan iklan, buka halaman tab **<Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#attribution-link-tab">Tautan atribusi</Anchor>** , buat tautan atribusi platform tunggal AppsFlyer, dan masukkan ke dalam ekstensi aplikasi Google Ads.  
     **Catatan:** Pastikan untuk menambahkan nama kampanye statis (wajib).  
 
-    [![](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)
+    <Image align="center" alt="" src="https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png" />
 11. Buka tab **Cost (Biaya)**.
 12. Aktifkan **Dapatkan data biaya, klik, dan tayangan**.
 13. Klik tombol **Hubungkan Google Ads**dan masuk ke akun Google Anda untuk menampilkan semua biaya kampanye Google Ads Anda di AppsFlyer.  <Anchor target="_blank" href="/marketers/id/docs/google-ads-adwords-cost-and-ad-revenue">Detail selengkapnya di sini</Anchor>.
@@ -145,7 +145,7 @@ Membuat ID tautan memerlukan **akses administratif Google** pada akun.
 
 **(Setiap anggota yang diasosiasikan dengan akun AppsFlyer)**
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png" />
 
 1. Buka tab **Integrasi** lalu gulir ke bawah ke bagian **Postback in-app event**.
 

@@ -43,7 +43,7 @@ The tvOS Test App allows you to simulate an attribution link click from within y
 
    The following window displays:
 
-   ![](https://files.readme.io/7ed3c5e8165e6d27c9d87db8b026c0898536b145def6bfedd0dc5f78c7804669-205289963.png)
+   <Image align="center" alt="" src="https://files.readme.io/7ed3c5e8165e6d27c9d87db8b026c0898536b145def6bfedd0dc5f78c7804669-205289963.png" />
 3. <Anchor target="_blank" href="/marketers/id/docs/registering-test-devices">Register</Anchor> your AppleTV device as a test device using the **IDFA** displayed at the bottom of the app screen.
 4. In the Test App, enter your AppID as it appears on your app’s dashboard.
 
@@ -52,9 +52,9 @@ The tvOS Test App allows you to simulate an attribution link click from within y
 
    If everything is valid, the following message is displayed:
 
-   ![](https://files.readme.io/27b8b5acfe9691d3704ae36b04e28ecaa643e1b68eb5e0a6f8be70f657b2c0d3-205275743.png)
+   <Image align="center" alt="" src="https://files.readme.io/27b8b5acfe9691d3704ae36b04e28ecaa643e1b68eb5e0a6f8be70f657b2c0d3-205275743.png" />
 6. **Install** your integrated app on your device.
 
    A non-organic attribution is shown on your dashboard under the **AppsFlyer\_Test** media source if your integration is correct.
 
-   ![](https://files.readme.io/4c6ab66ebd13556bd764d4e93adbb639be208b8955dd1fe1d3dd60ecd5c01a3b-205275823.png)
+   <Image align="center" alt="" src="https://files.readme.io/4c6ab66ebd13556bd764d4e93adbb639be208b8955dd1fe1d3dd60ecd5c01a3b-205275823.png" />

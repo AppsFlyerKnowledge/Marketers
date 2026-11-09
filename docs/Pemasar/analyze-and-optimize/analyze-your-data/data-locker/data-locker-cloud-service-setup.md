@@ -54,7 +54,7 @@ Dalam prosedur ini, gantikan `data-locker-example` menggunakan nama bucket yang 
 1. Masuk ke konsol GCS Anda.
 2. Buka **Penyimpanan** > **Peramban** **penyimpanan**.  
 
-   [![mceclip0.png](https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png)](https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png)
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png" />
 3. Pilih bucket yang sebelumnya Anda buat, misalnya `data-locker-example`.
 4. Buka tab **Permission (Izin)**.
 5. Klik **+Tambah**.  
@@ -67,7 +67,7 @@ Dalam prosedur ini, gantikan `data-locker-example` menggunakan nama bucket yang 
       ```
    2. **Pilih peran**: **Penyimpanan cloud** > **Admin Objek Penyimpanan**.   
 
-      [![mceclip0.png](https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png)](https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png)
+      <Image align="center" alt="mceclip0.png" src="https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png" />
 7. Klik **Simpan**.
 
 </Accordion>
@@ -90,7 +90,7 @@ Data Locker adalah solusi AppsFlyer untuk streaming data ke penyimpanan.
 
 **Antarmuka pengguna dalam konsol AWS**
 
-![MyBucket.jpg](https://files.readme.io/b8a16d185279200026388e146cfb3eb03ae3c7737ac26da3aa0d116a0cf9c078-4403551836305.jpg)
+<Image align="center" alt="MyBucket.jpg" src="https://files.readme.io/b8a16d185279200026388e146cfb3eb03ae3c7737ac26da3aa0d116a0cf9c078-4403551836305.jpg" />
 
 Setelah membuat bucket, beri izin kepada AppsFlyer untuk menggunakan prosedur berikut.
 
@@ -226,7 +226,7 @@ Data Locker adalah solusi AppsFlyer untuk streaming data ke penyimpanan.
 1. Di BigQuery, buat proyek atau gunakan proyek yang sudah ada.
 2. Di proyek, klik **BUAT SET DATA**.
 
-   [![GCSCreateDataSEt_1_.png](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)](https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png)
+   <Image align="center" alt="GCSCreateDataSEt_1_.png" src="https://files.readme.io/702b81dcff4185ce98ad82afd0a9b545f99ef49e3f6292709f3b00330821472c-4405548469521.png" />
 3. Berikan ID yang sesuai untuk set data.
 4. Beri AppsFlyer akses ke set data. <Anchor target="_blank" href="https://cloud.google.com/bigquery/docs/control-access-to-resources-iam#grant_access_to_a_resource">Lihat petunjuk Big Query</Anchor>
    * Untuk **Tambahkan principal**, gunakan pengguna AppsFlyer berikut: [datalocker-bq-admin-prod@datalocker-bq-prod.iam.gserviceaccount.com](mailto:datalocker-bq-admin-prod@datalocker-bq-prod.iam.gserviceaccount.com)
@@ -263,7 +263,7 @@ Selesaikan prosedur berikut untuk menyambungkan Snowflake ke Data Locker.
 2. Di bilah menu, pilih nama Anda.  
    ID akun dan wilayah Anda ditampilkan.  
 
-   [![SnowflakeAccountId.png](https://files.readme.io/146dc699865a8a72780ba409d37ca1206767943e27221bec635b9fb49ffc7223-4412207884433.png)](https://files.readme.io/146dc699865a8a72780ba409d37ca1206767943e27221bec635b9fb49ffc7223-4412207884433.png)
+   <Image align="center" alt="SnowflakeAccountId.png" src="https://files.readme.io/146dc699865a8a72780ba409d37ca1206767943e27221bec635b9fb49ffc7223-4412207884433.png" />
 
 **Untuk menyambungkan Data Locker ke Snowflake**:
 

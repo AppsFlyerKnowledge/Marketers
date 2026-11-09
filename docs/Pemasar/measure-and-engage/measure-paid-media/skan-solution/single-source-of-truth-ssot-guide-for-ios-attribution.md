@@ -43,7 +43,7 @@ Untuk menyertakan tanda SSOT dalam data Anda, Anda harus mengaktifkan SSOT di St
 
 <Accordion title="Aktifkan Single Source of Truth">
 
-![SSOTControl.png](https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png)
+<Image align="center" alt="SSOTControl.png" src="https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png" />
 
 **Untuk mengaktifkan SSOT:**
 
@@ -61,7 +61,7 @@ Lihat <Anchor target="_blank" href="/marketers/id/docs/skan-conversion-studio">S
 
 ## Dasbor Ikhtisar Single Source of Truth
 
-![SSOTisNowOn.png](https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png)
+<Image align="center" alt="SSOTisNowOn.png" src="https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png" />
 
 Tampilan Single Source of Truth yang tersedia melalui dasbor Ikhtisar memberikan gambaran lengkap tentang metrik kinerja non-organik. Dalam tampilan:
 
@@ -82,12 +82,12 @@ Data dalam tampilan SSOT tersedia 3-5 hari setelah Anda mengaktifkan Single Sour
 1. Sebelum Anda mulai, pastikan bahwa di Conversion Studio (Studio Konversi) <Anchor target="_blank" href="/marketers/id/docs/skan-conversion-studio#single-source-of-truth">Single Source of Truth</Anchor> diaktifkan.
 2. Di AppsFlyer, buka **Dashboard** > **Overview.**   
 
-   <Image alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
+   <Image align="center" alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
 3. Klik ▼.
 4. Pilih **Ikhtisar Lite** .  
    Tombol Single Source of Turth ditampilkan.  
 
-   <Image alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
+   <Image align="center" alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
 5. Aktifkan Single Source of Truth.
 6. Terjadi salah satu berikut ini:
    * Metrik dasbor dan tampilan grafik.  
@@ -191,7 +191,7 @@ Atribusi SKAN dan atribusi model AF bekerja secara berbeda dan memiliki sifat da
 
 Skenario atribusi model SKAN-AF yang mungkin diilustrasikan dalam diagram Venn berikut.
 
-![skan_af_model_diagram.png](https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png)
+<Image align="center" alt="skan_af_model_diagram.png" src="https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png" />
 
 Tabel berikut menjelaskan alasan untuk setiap skenario atribusi.
 
@@ -207,7 +207,7 @@ Tabel berikut menjelaskan alasan untuk setiap skenario atribusi.
 
 SSOT bekerja seperti yang dijelaskan dalam visual berikut.
 
-![SingleSourceOfTruth.png](https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png)
+<Image align="center" alt="SingleSourceOfTruth.png" src="https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png" />
 
 **Bagaimana cara kerja mekanisme SSOT?**
 

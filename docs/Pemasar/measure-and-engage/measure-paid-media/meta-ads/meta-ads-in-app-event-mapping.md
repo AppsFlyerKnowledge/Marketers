@@ -45,7 +45,7 @@ Temukan <Anchor target="_blank" href="/marketers/id/docs/in-app-events-event-str
 
 Pelajari lebih lanjut tentang <Anchor target="_blank" href="/marketers/id/docs/meta-ads-integration-setup#inapp-event-mapping">memetakan event di Meta</Anchor>.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 Perhatikan bahwa tidak ada event yang ditentukan sebelumnya untuk mengirimkan uninstall ke Meta ads. Untuk mengirim uninstall, gunakan [event khusus](/docs/meta-ads-in-app-event-mapping#pemetaan-in-app-event-personalisasi).
 
@@ -70,7 +70,7 @@ Nama event dan nilai event (termasuk parameter event) yang dikonfigurasi di SDK 
 
 Perhatikan bahwa Anda dapat <Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">menggunakan event ini untuk mengoptimalkan kampanye Anda</Anchor>.
 
-[![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
+<Image align="center" alt="" src="https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png" />
 
 <div id="important" />
 

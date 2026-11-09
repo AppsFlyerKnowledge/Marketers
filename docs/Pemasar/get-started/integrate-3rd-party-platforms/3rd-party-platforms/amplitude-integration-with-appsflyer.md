@@ -105,13 +105,13 @@ Amplitude terhubung dengan AppsFlyer melalui Kunci API unik. Jika Anda belum mem
 1. Masuk ke akun Amplitude Anda.
 2. Dari kanan atas halaman, klik ikon setelan > **Setelan Organisasi**.  
 
-   <Image alt="Amplitude" src="https://files.readme.io/214df773c045239924b65a4a1e6b0a1957f6b7ea09e225af80d83ffa0a469c26-16258070772625.png" width="240px" />
+   <Image align="center" alt="Amplitude" src="https://files.readme.io/214df773c045239924b65a4a1e6b0a1957f6b7ea09e225af80d83ffa0a469c26-16258070772625.png" width="240px" />
 3. Klik **Proyek** dan pilih proyek untuk mengirim data ke AppsFlyer.   
 
-   ![amplitude](https://files.readme.io/eaf158e4505f47f8da0fdae4f97be773ab32910352b50cab5ca5d4de3e8782ac-16335170399505.png)
+   <Image align="center" alt="amplitude" src="https://files.readme.io/eaf158e4505f47f8da0fdae4f97be773ab32910352b50cab5ca5d4de3e8782ac-16335170399505.png" />
 4. Dari tab **Proyek** , salin kunci API Anda.  
 
-   <Image alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
+   <Image align="center" alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
 5. Lanjutkan untuk mengonfigurasi Amplitude di Dashboard AppsFlyer.
 
 <div id="default-postbacks" />
@@ -186,7 +186,7 @@ Izin tidak tersedia untuk Amplitude.
 
 Data atribusi yang dikirim dari AppsFlyer ke Amplitude ditampilkan di dashboard Anda sebagai peristiwa dan properti yang diawali dengan **[AppsFlyer]**:
 
-![amplitude-properties.png](https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png)
+<Image align="center" alt="amplitude-properties.png" src="https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png" />
 
 > 🚧 **Penting!**
 >

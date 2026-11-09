@@ -215,7 +215,7 @@ Laporan penggunaan menampilkan konversi gabungan yang dikelompokkan menurut tang
 > * Data dalam laporan Penggunaan tetap **tidak transparan** apakah atau tidak **<Anchor target="_blank" href="/partners/id/docs/getting-started-agency-onboarding#transparency">Izinkan transparansi</Anchor>** diaktifkan, artinya menampilkan nama agensi dan bukan sumber media yang diatribusikan
 > * [Contoh laporan penggunaan](https://support.appsflyer.com/hc/id/article_attachments/13944970354833/Sample_Usage_Report.csv)
 
-[![contoh laporan penggunaan](https://files.readme.io/a3c58f1f7f92f5ab883b50b10480e8fe5b0f7702dad59a925e50ccc0ac2bcba7-16148973368081.png)](https://files.readme.io/a3c58f1f7f92f5ab883b50b10480e8fe5b0f7702dad59a925e50ccc0ac2bcba7-16148973368081.png)
+<Image align="center" alt="contoh laporan penggunaan" src="https://files.readme.io/a3c58f1f7f92f5ab883b50b10480e8fe5b0f7702dad59a925e50ccc0ac2bcba7-16148973368081.png" />
 
 | Kolom | Deskripsi |
 | --- | --- |

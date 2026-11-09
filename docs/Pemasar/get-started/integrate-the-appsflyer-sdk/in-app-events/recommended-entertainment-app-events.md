@@ -49,7 +49,7 @@ These events are also relevant for entertainment apps that run on the following 
 >
 > For more information about recording in-app events, see the <Anchor target="_blank" href="/marketers/id/docs/in-app-events-overview">In-app events guide</Anchor>.
 
-[![Flowchart_for_recommended_events entertainment_app_user_journey](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
+<Image align="center" alt="Flowchart_for_recommended_events entertainment_app_user_journey" src="https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png" />
 
 ## Recommended structures for predefined events
 

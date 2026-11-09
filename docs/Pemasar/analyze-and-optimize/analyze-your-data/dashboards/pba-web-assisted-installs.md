@@ -24,7 +24,7 @@ x-zendesk:
 
 **Kasus penggunaan Penginstalan Berbantuan Web**
 
-![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
+<Image align="center" alt="web_to_app_image.png" src="https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png" />
 
 Pelajari lebih lanjut tentang dashboard PBA lainnya:  <Anchor target="_blank" href="/marketers/id/docs/pba-website-attribution-dashboard">Atribusi Situs Web</Anchor> | Jalur Konversi
 
@@ -40,7 +40,7 @@ Penginstalan Berbantuan Web mengukur dampak upaya pemasaran untuk mendorong peng
 
 Metrik headline menampilkan jumlah total penginstalan aplikasi relatif terhadap jumlah penginstalan berbantuan situs web yang dibagi menjadi penginstalan aplikasi organik dan non-organik.
 
-[![WAIHeadline_en-us.png](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)
+<Image align="center" alt="WAIHeadline_en-us.png" src="https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png" />
 
 Pertimbangkan skenario kasus penggunaan dalam tabel berikut, untuk analisis Penginstalan Berbantuan Web.
 
@@ -64,7 +64,7 @@ Pertimbangkan skenario kasus penggunaan dalam tabel berikut, untuk analisis Peng
 
 <Accordion title="Penginstalan dan penginstalan ulang berbantuan situs web">
 
-![30day_us-en.png](https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png)
+<Image align="center" alt="30day_us-en.png" src="https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png" />
 
 Instalasi dianggap telah dipengaruhi oleh situs web jika terjadi dalam 30 hari sejak kunjungan situs web. Instalasi dan instalasi ulang termasuk instalasi penargetan ulang (atribusi ulang) bisa berupa organik atau non-organik.
 

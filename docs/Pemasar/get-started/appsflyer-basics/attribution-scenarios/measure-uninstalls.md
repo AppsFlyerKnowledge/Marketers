@@ -59,7 +59,7 @@ Dengan membandingkan kualitas pengguna yang diperoleh dari berbagai sumber (sumb
 >
 > Sumber media B, di sisi lain, memiliki 5.949 penginstalan dan tingkat uninstall terendah (12%).
 >
-> [![Uninstall rates.png](https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png)](https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png)
+> <Image align="center" alt="Uninstall rates.png" src="https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png" />
 >
 > Berdasarkan wawasan ini, Anda dapat mengalokasikan lebih banyak anggaran ke Sumber media B dan mencoba mendapatkan lebih banyak pengguna yang terlibat.
 
@@ -169,7 +169,7 @@ Pengukuran uninstal Android tersedia dengan mengonfigurasi pengukuran uninstal d
    2. Pilih sebuah proyek.
    3. Buka **Project Overview** > **Project settings**.
 
-      ![UninstallFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
+      <Image align="center" alt="UninstallFirebase.png" src="https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png" />
    4. Salin ID Proyek. Anda akan membutuhkannya di tahap proses selanjutnya.
 2. **Untuk menetapkan fungsi uninstall ke AppsFlyer:**
    1. Buka tab **Service accounts**.
@@ -183,7 +183,7 @@ Pengukuran uninstal Android tersedia dengan mengonfigurasi pengukuran uninstal d
       * Tahap peluncuran fungsi: Pilih **General availability**.
    6. Temukan lalu pilih `cloudmessaging.messages.create`.  
 
-      ![AddPermissions.png](https://files.readme.io/efd461ecb74a61c15232e30a6e10eaaecac18f2e24a28565ba8b208ce0654d1a-5542178507665.png)
+      <Image align="center" alt="AddPermissions.png" src="https://files.readme.io/efd461ecb74a61c15232e30a6e10eaaecac18f2e24a28565ba8b208ce0654d1a-5542178507665.png" />
    7. Klik **Add**.
    8. Klik **Create**.
 3. **Untuk menetapkan fungsi uninstall FCM ke AppsFlyer:**
@@ -214,7 +214,7 @@ Pengukuran uninstall menggunakan Firebase Messaging didukung oleh Android SDK V4
 2. Buka Firebase <Anchor target="_blank" href="https://console.firebase.google.com">Console</Anchor>.
 3. Di halaman Firebase Console, arahkan ke Project Settings (klik pada ikon roda gigi di dekat Project Overview di panel kiri halaman tersebut).
 
-   ![firebase_cloud_messaging_server_key.png](https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png)
+   <Image align="center" alt="firebase_cloud_messaging_server_key.png" src="https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png" />
 4. Di tab Cloud Messaging, Anda melihat dua Kode Server.
 5. Copy **kode server**.
 
@@ -237,7 +237,7 @@ Pengukuran uninstall menggunakan Firebase Messaging didukung oleh Android SDK V4
 2. Jika perlu, aktifkan **Uninstall measurement**.
 3. Pilih **HTTP V1, dan masukkan ID proyek yang Anda siapkan sebelumnya.**
 
-   ![UninstallHTTPV1.png](https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png)
+   <Image align="center" alt="UninstallHTTPV1.png" src="https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png" />
 4. Klik **Uji koneksi**.  
    Berhasil! pesan ditampilkan.
 5. Klik **Save settings**.
@@ -255,7 +255,7 @@ Pengukuran uninstall menggunakan Firebase Messaging didukung oleh Android SDK V4
 3. Gulir ke bawah ke bagian Uninstall.
 4. Aktifkan**Uninstall measurement**.
 
-   ![Uninstall_iOS_p2.png](https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png)
+   <Image align="center" alt="Uninstall_iOS_p2.png" src="https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png" />
 5. Klik ikon unggah, dan pilih file P12.
 6. [Opsional] Jika sertifikat P12 dilindungi kata sandi, masukkan kata sandi.
 7. Klik **Validasi** untuk mengirim sertifikat ke AppsFlyer untuk verifikasi.
@@ -313,7 +313,7 @@ Ingatlah hal-hal berikut saat menguji aplikasi iOS:
 
 ## Memetakan Event Uninstall
 
-![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
+<Image align="center" alt="Uninstall_event_postback.png" src="https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png" />
 
 Untuk berbagi data uninstall dengan jaringan iklan, <Anchor target="_blank" href="/marketers/id/docs/set-up-an-integrated-partner#g">event af\_uninstall</Anchor> harus dipetakan ke mitra. Tidak seperti postback untuk in-app event biasa, event uninstall tidak dikirim secara waktu aktual. Waktu event yang dilaporkan menunjukkan waktu yang ditentukan AppsFlyer saat aplikasi dihapus penginstalannya, dan bukan saat uninstall itu sendiri.
 

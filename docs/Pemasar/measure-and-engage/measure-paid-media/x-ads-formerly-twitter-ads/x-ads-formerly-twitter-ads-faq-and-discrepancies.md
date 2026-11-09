@@ -81,21 +81,21 @@ Misalkan anggota tim Anda adalah Jenny dan nama penggunanya adalah @jenny. Nama 
 1. Jenny login ke <Anchor target="_blank" href="http://ads.twitter.com/">ads.twitter.com</Anchor>
 2. Dia mengklik **Akun** dan kemudian memilih **Edit akses ke akun**  
 
-   ![twitter_assign_account2.PNG](https://support.appsflyer.com/hc/article_attachments/4416810336785)
+   <Image align="center" alt="twitter_assign_account2.PNG" src="https://support.appsflyer.com/hc/article_attachments/4416810336785" />
 3. Jenny kemudian memberikan @nivi akses ke Akun X Ads miliknya sebagai atau Administrator akun  
 
-   [![twitter_edit_access_to_account.png](https://support.appsflyer.com/hc/article_attachments/4416810307601/twitter_edit_access_to_account.png)](https://support.appsflyer.com/hc/article_attachments/360002514658/twitter_edit_access_to_account.png)
+   <Image align="center" alt="twitter_edit_access_to_account.png" src="https://support.appsflyer.com/hc/article_attachments/4416810307601/twitter_edit_access_to_account.png" />
 4. Jenny masuk ke akun AppsFlyer dan masuk ke Integrasi Aktif >> opsi Twitter
 5. Pada tahap ini, dia dapat melihat Akun X Ads miliknya juga terdaftar.
 6. Dia sekarang dapat melihat akun X Ads-nya dan mengonfigurasi integrasi. Admin akun dapat melihat semua akun X Ads yang terhubung.  
 
    Tampilan yang dilihat Jenny:
 
-   ![jennys_ads_account.png](https://support.appsflyer.com/hc/article_attachments/4416824257041)
+   <Image align="center" alt="jennys_ads_account.png" src="https://support.appsflyer.com/hc/article_attachments/4416824257041" />
 
    Tampilan admin akun:
 
-   ![jennys_ads_account__1_.png](https://support.appsflyer.com/hc/article_attachments/4416833416337)
+   <Image align="center" alt="jennys_ads_account__1_.png" src="https://support.appsflyer.com/hc/article_attachments/4416833416337" />
 
 </Accordion>
 
@@ -134,7 +134,7 @@ Jika aplikasi Anda telah berlangganan ke penyedia atribusi lain sebelumnya, yang
 
 Selain itu, kesalahan berikut mungkin juga muncul:  
 
-[![](https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png)](https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png)
+<Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png" />
 
 **Kesalahan: Terjadi kesalahan saat menyimpan konfigurasi Twitter. Beberapa akun gagal diperbarui: XX Beberapa ID penyedia ke (appid, conversionType) sama untuk event appid2872.**
 

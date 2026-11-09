@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Sekilas:** Pengiklan yang menggunakan tautan OneLink dapat memberi merek dengan domain mereka sendiri. Ini meningkatkan kinerja kampanye dan meningkatkan eksposur merek.
 
-![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
+<Image align="center" alt="Branded_1__3_.jpg" src="https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png" />
 
 <div id="branded-domains" />
 
@@ -103,7 +103,7 @@ Menyiapkan Domain Bermerek terdiri dari mengasosiasikan satu set domain lengkap 
 
 **Domain Bermerek yang mengarah ke server AppsFlyer**
 
-![Branded2__3_.jpg](https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png)
+<Image align="center" alt="Branded2__3_.jpg" src="https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png" />
 
 **Sebelum Anda mulai:**
 

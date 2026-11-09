@@ -47,7 +47,7 @@ x-zendesk:
 2. Set the configuration according to the guidelines <Anchor target="_blank" href="/marketers/id/docs/meta-ads-in-app-event-mapping#pemetaan-event-yang-telah-ditentukan-sebelumnya">here</Anchor>.
 3. Click **Save**.
 
-[![meta_campaign_management_partner_settings.png](https://files.readme.io/29453cf562585ab43c45e4869ca2a904b80817a6c1c73bf0d12fbd3e181c1a0a-14238354506769.png)](https://files.readme.io/59c8a4b2e7dfbd13f34efe4f8695a52511a0eb4d2f5cb75db5d9d6d35840cbfb-360002348265.png)
+<Image align="center" alt="meta_campaign_management_partner_settings.png" src="https://files.readme.io/29453cf562585ab43c45e4869ca2a904b80817a6c1c73bf0d12fbd3e181c1a0a-14238354506769.png" />
 
 ## Configuring on Bidalgo
 

@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **Sekilas**: Apple Search Ads (ASA), mitra AppsFlyer SRN, membantu pengguna untuk menemukan aplikasi Anda di App Store menggunakan kata kunci.
 
-<Image alt="apple_search_ads.png" src="https://support.appsflyer.com/hc/article_attachments/17210504660625" width="217px" />
+<Image align="center" alt="apple_search_ads.png" src="https://support.appsflyer.com/hc/article_attachments/17210504660625" width="217px" />
 
 Relevansi aplikasi menentukan apakah iklan Anda ditampilkan sebagai tanggapan atas permintaan pencarian di App Store. Respons pengguna terhadap iklan adalah sinyal relevansi iklan. ASA menggunakan respons pengguna sebagai sinyal dalam memutuskan iklan mana untuk ditampilkan paling sering.
 
@@ -164,7 +164,7 @@ Gunakan daftar periksa berikut untuk memastikan bahwa Anda menyelesaikan semua l
    3. Klik ***Save***.
 2. **Di dashboard Apple Search Ads**: Dapatkan parameter ID Grup Kampanye Apple Search Ads terkait mitra pemasaran. Gunakan tangkapan layar (screenshot) berikut sebagai panduan untuk mendapatkan ID.
 
-   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 3. **Di AppsFlyer, konfigurasikan mitra pemasaran ASA:**
    1. Di AppsFlyer, buka **Konfigurasi** > **Integrasi aktif.**
    2. Cari mitra pemasaran **Apple Search Ads .**  
@@ -221,7 +221,7 @@ Pemasang iklan mengizinkan agensi untuk menjalankan kampanye atas nama mereka me
 
 1. **Di dashboard Apple Search Ads**: Dapatkan ID Grup Kampanye Anda. Gunakan tangkapan layar (screenshot) berikut sebagai panduan untuk mendapatkan ID. Dapatkan digit (hanya angka).
 
-   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 2. Di AppsFlyer, pilih sebuah Aplikasi.
 3. Buka **Konfigurasi** > **Integrasi aktif**.
 4. Pilih **Apple Search Ads (Iklan Penelusuran Apple).**
@@ -309,11 +309,11 @@ Gambar berikut menggambarkan bagaimana perbedaan dapat terjadi dalam kaitannya d
 
 **Penargetan ulang aktif**
 
-[![ASA_R_Enabled.png](https://files.readme.io/ced87f066490d95631f352ef7905c5c812ac7736c9763d08792eedb383afb8c7-360002911777.png)](https://files.readme.io/ced87f066490d95631f352ef7905c5c812ac7736c9763d08792eedb383afb8c7-360002911777.png)
+<Image align="center" alt="ASA_R_Enabled.png" src="https://files.readme.io/ced87f066490d95631f352ef7905c5c812ac7736c9763d08792eedb383afb8c7-360002911777.png" />
 
 **Penargetan ulang dinonaktifkan**
 
-[![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+<Image align="center" alt="ASA_R_Disabled.png" src="https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png" />
 
 <div id="20260901" />
 

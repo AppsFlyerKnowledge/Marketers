@@ -72,13 +72,13 @@ Untuk detail lebih lanjut tentang aktivasi partner, silakan klik <Anchor target
 
 Di bagian atas tab Integrasi, ada catatan yang mengatakan bahwa Unity Ads mengharuskan mengirimkan ID perangkat kepada mereka untuk setiap penginstalan—ini dilakukan secara otomatis, tidak perlu melakukan apa pun di pihak Anda.
 
-[![Unity_msc_new_2.png](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)
+<Image align="center" alt="Unity_msc_new_2.png" src="https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png" />
 
 **ID Game Unity Ads**
 
 Unity Ads memerlukan koneksi dengan AppsFlyer melalui ID game unik. Jika Anda tidak mengetahui milik Anda, Anda dapat memperolehnya langsung dari Unity Ads atau Anda dapat menemukannya setelah mengunggah game, di bawah **Aplikasi** > **Kampanye**, seperti yang ditunjukkan pada tangkapan layar di bawah.
 
-[![](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)
+<Image align="center" alt="" src="https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png" />
 
 Unity Ads Platform memetakan satu aplikasi ke satu ID Game Unity Ads ID, per tingkat akun (pemasang iklan dan agensi akan memiliki ID Game yang berbeda untuk aplikasi yang sama). Beberapa akun di Unity Ads Platform tidak dapat menjalankan aplikasi yang sama dengan ID Game yang berbeda.
 
@@ -86,13 +86,13 @@ Unity Ads Platform memetakan satu aplikasi ke satu ID Game Unity Ads ID, per tin
 
 Aktifkan opsi ini untuk mengaitkan penginstalan view-through dari Unity Ads. Slider lookback view-through tersedia di tab tautan atribusi (dideskripsikan di bawah).
 
-![Unity_ads_msc_new_3.png](https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png)
+<Image align="center" alt="Unity_ads_msc_new_3.png" src="https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png" />
 
 <div id="default-postbacks" />
 
 ### Postback Default
 
-![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
+<Image align="center" alt="Screen_Shot_2022-07-28_at_13.07.25.png" src="https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png" />
 
 Kirim postback otomatis ke Unity Ads setelah penginstalan dan interaksi ulang pengguna. Gunakan bagian ini untuk menentukan sumber pengguna yang mengizinkan pengiriman postback ini:
 
@@ -111,7 +111,7 @@ Kirim postback otomatis ke Unity Ads setelah penginstalan dan interaksi ulang pe
 
 Petakan event AppsFlyer dengan mitra melalui postback. Jika pengiriman postback diaktifkan, ini termasuk in-app event yang ditolak (event yang diblokir oleh Protect360 atau event yang ditemukan tidak sesuai dengan aturan validasi target).
 
-[![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+<Image align="center" alt="" src="https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png" />
 
 <div id="to-configure-in-app-event-postbacks" />
 

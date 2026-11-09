@@ -68,7 +68,7 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 IBM connects with AppsFlyer via a unique Authorization Key. If you don't already have it, you must obtain it from IBM to continue with the integration or follow the steps below.
 
-![IBM_msc_new_2.png](https://files.readme.io/d6dddd7232ba7ecba2ed5bd944f98669902689fc0953afc558fbc6586be8b5cf-360002219269.png)
+<Image align="center" alt="IBM_msc_new_2.png" src="https://files.readme.io/d6dddd7232ba7ecba2ed5bd944f98669902689fc0953afc558fbc6586be8b5cf-360002219269.png" />
 
 ### Obtaining the authorization key
 
@@ -76,33 +76,33 @@ The first step in setting up a generic AppsFlyer event publisher endpoint is to 
 
 To do this, log into your UBX account and navigate to the **Endpoints** tab
 
-![](https://files.readme.io/8c0833f890c5e2ed2df1c0a8904e1764b341a82f3381c0a1a3fb6effe4f76673-205128323.png)
+<Image align="center" alt="" src="https://files.readme.io/8c0833f890c5e2ed2df1c0a8904e1764b341a82f3381c0a1a3fb6effe4f76673-205128323.png" />
 
 Next, click **Register new endpoint**
 
-![](https://files.readme.io/23c8d4a88eda765fce1b42f9eb2e74b1325160e6d0602dc65a8ab05488598b9e-205053206.png)
+<Image align="center" alt="" src="https://files.readme.io/23c8d4a88eda765fce1b42f9eb2e74b1325160e6d0602dc65a8ab05488598b9e-205053206.png" />
 
 Next, select **AppsFlyer** and click **Next**.
 
-![IBM_1.png](https://files.readme.io/f30b7b27d2ffecf3e562cbe651367306a581d1881325dd141c950b39efac016c-115002600286.png)
+<Image align="center" alt="IBM_1.png" src="https://files.readme.io/f30b7b27d2ffecf3e562cbe651367306a581d1881325dd141c950b39efac016c-115002600286.png" />
 
 Click **Next**
 
-![Pasted_image_at_2017_02_23_02_48_PM.png](https://files.readme.io/11a94c4d9f4c9282c230e4cf69f31e0d39f4eb88196313b3cfc103a5bbaba9a4-115002600326.png)
+<Image align="center" alt="Pasted_image_at_2017_02_23_02_48_PM.png" src="https://files.readme.io/11a94c4d9f4c9282c230e4cf69f31e0d39f4eb88196313b3cfc103a5bbaba9a4-115002600326.png" />
 
 Click on the 3 dots on the right side in the newly generated AppsFlyer endpoint and click **endpoint details**.
 
-![IBM_3.png](https://files.readme.io/70edd2e14c6c344188dcc65b65b3a8d92081401dd34909f5a4e0dd6bd137b8df-115002599203.png)
+<Image align="center" alt="IBM_3.png" src="https://files.readme.io/70edd2e14c6c344188dcc65b65b3a8d92081401dd34909f5a4e0dd6bd137b8df-115002599203.png" />
 
 Copy the Authentication key:
 
-![IBM_Endpoint_details.png](https://files.readme.io/3706f4dd665d8d2a26de9013b03c0e6575d051f2fa5500033e172312a63f09ea-115002601006.png)
+<Image align="center" alt="IBM_Endpoint_details.png" src="https://files.readme.io/3706f4dd665d8d2a26de9013b03c0e6575d051f2fa5500033e172312a63f09ea-115002601006.png" />
 
 ### Default postbacks
 
 AppsFlyer can send automatic postbacks to IBM user installs. Use this section to define sending these postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/4177c541ab0fca228cfa24827a7828260566fa4ff9110e65688abd4c1892ccb5-18274502749329.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/4177c541ab0fca228cfa24827a7828260566fa4ff9110e65688abd4c1892ccb5-18274502749329.png" />
 
 Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to IBM or select **Off**.
 
@@ -110,7 +110,7 @@ Click **Save.**
 
 ### In-app event settings
 
-[![](https://files.readme.io/c945ee3c04f49076e54c9966389506aea441406e01daa49d737a86da9f5bd2bc-360002219429.png)](https://files.readme.io/c945ee3c04f49076e54c9966389506aea441406e01daa49d737a86da9f5bd2bc-360002219429.png)
+<Image align="center" alt="" src="https://files.readme.io/c945ee3c04f49076e54c9966389506aea441406e01daa49d737a86da9f5bd2bc-360002219429.png" />
 
 In this section you can map your AppsFlyer events with IBM via postbacks.
 

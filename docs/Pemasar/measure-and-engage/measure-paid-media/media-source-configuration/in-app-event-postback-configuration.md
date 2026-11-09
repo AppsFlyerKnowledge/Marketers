@@ -53,7 +53,7 @@ Periode waktu postback in-app event memungkinkan pemasar yang bekerja dengan jar
 
 Misalnya, jika Anda ditagih untuk event yang terjadi dalam 15 hari sejak penginstalan pengguna, tetapkan periode waktu sebagai berikut:
 
-<Image alt="15-day_in_app_event_postback_setting.png" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
+<Image align="center" alt="15-day_in_app_event_postback_setting.png" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
 
 Postback setelah periode ini tidak dikirim, dan jaringan tidak diberi tahu, tetapi event  tersebut tetap dicatat di AppsFlyer dan diatribusikan ke jaringan.
 
@@ -134,7 +134,7 @@ Setiap mitra memutuskan metode mana yang akan digunakan untuk memetakan in-app e
 > * Nama event peka huruf besar-kecil. Untuk menghindari perbedaan, pastikan Anda menggunakan nama event yang benar untuk semua sumber media dan versi aplikasi.
 > * Saat mengetik nama event, Anda dapat menggunakan spasi bergaris bawah (tanda hubung rendah) sebelum atau sesudah nama event. Pastikan untuk menggunakan spasi bergaris bawah hanya jika nama event yang dikirim dari AppsFlyer memiliki spasi bergaris bawah yang sama persis.
 
-[![enter_event_name.png](https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png)](https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png)
+<Image align="center" alt="enter_event_name.png" src="https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png" />
 
 </Accordion>
 
@@ -145,7 +145,7 @@ Setiap mitra memutuskan metode mana yang akan digunakan untuk memetakan in-app e
 * **Event AppsFlyer**: Dari daftar event aplikasi Anda, pilih event.
 * **dipetakan ke event mitra**: Dari daftar event mitra yang telah ditentukan sebelumnya, pilih event yang sesuai dengan event aplikasi Anda (event AppsFlyer).
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 </Accordion>
 
@@ -175,7 +175,7 @@ Anda dapat memilih event mana yang belum dipetakan untuk dikirim ke mitra:
    * **termasuk**: Pilih [data mana yang akan disertakan](/docs/in-app-event-postback-configuration#data-untuk-disertakan-dalam-postback) dalam postback.
 3. Ulangi prosedur ini untuk lebih banyak event.
 
-![send_postbacks_as_is_en-us.png](https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png)
+<Image align="center" alt="send_postbacks_as_is_en-us.png" src="https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png" />
 
 **Untuk mengirim semua event:**
 
@@ -184,7 +184,7 @@ Anda dapat memilih event mana yang belum dipetakan untuk dikirim ke mitra:
    * **untuk pengguna dari**: Pilih [opsi pengiriman](/docs/in-app-event-postback-configuration#pilihan-untuk-mengirim-postback) untuk semua event.
    * **termasuk**: Pilih [data mana yang akan disertakan](/docs/in-app-event-postback-configuration#data-untuk-disertakan-dalam-postback) untuk semua event di postback.
 
-![send_postbacsk_as_is_no_mapping.png](https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png)
+<Image align="center" alt="send_postbacsk_as_is_no_mapping.png" src="https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png" />
 
 </Accordion>
 
@@ -256,7 +256,7 @@ Filter postback in-app event menggunakan beberapa kondisi yang dapat dipetakan k
 >
 > Pemasar dengan aplikasi game ingin mengoptimalkan kampanye yang dijalankan melalui jaringan iklan, tetapi hanya untuk pengguna yang lulus level 10 atau level 50, atau untuk pengguna yang membelanjakan $3 untuk pembelian aplikasi.
 >
-> [![in_app_event_condition__1_.png](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)
+> <Image align="center" alt="in_app_event_condition__1_.png" src="https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png" />
 >
 > **Beginilah persyaratan untuk event ini ditetapkan:**
 >
@@ -332,7 +332,7 @@ Saat memetakan event, nilai di bidang **untuk pengguna dari** dan **termasuk** 
      * Nilai tanpa pendapatan
      * Nilai dan pendapatan
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png" />
 
 <div id="custom-events" />
 
@@ -349,7 +349,7 @@ Daftar event yang tersedia untuk pemetaan hanya menampilkan event yang telah dil
 1. Ketik nama event.
 2. Klik **Buat kustom**
 
-   [![In-app_event_postbacks_en-us.png](https://files.readme.io/73ad7c6a34a292056ddd750901ce1e0a2975d6ce6f235610f0bee28aecd05d53-7901768117905.png)](https://files.readme.io/73ad7c6a34a292056ddd750901ce1e0a2975d6ce6f235610f0bee28aecd05d53-7901768117905.png)
+   <Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/73ad7c6a34a292056ddd750901ce1e0a2975d6ce6f235610f0bee28aecd05d53-7901768117905.png" />
 3. Petakan event ke pengidentifikasi mitra.
 4. Klik **Simpan Integrasi** untuk memastikan pemetaan direkam.
 
@@ -374,7 +374,7 @@ Pemasar dapat mengizinkan jaringan iklan untuk memetakan event dan menonaktifkan
 1. Di halaman **Integrasi Aktif** , temukan mitra yang ingin Anda beri izin.
 2. Di bawah tab Izin, alihkan tombol **Izinkan untuk mengonfigurasi postback in-app event** ke **ON**.
 
-![adnetwork-permissions-postbacks.png](https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png)
+<Image align="center" alt="adnetwork-permissions-postbacks.png" src="https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png" />
 
 Setelah jaringan iklan menerima izin, mereka dapat memetakan event dengan mengikuti instruksi di [Ketikkan ID Event Ke Bidang Teks](/docs/in-app-event-postback-configuration#metode-pemetaan).
 
@@ -391,7 +391,7 @@ Pemasar dapat mengizinkan agensi untuk mengonfigurasi postback in-app event.
 3. Pilih apakah agensi diizinkan untuk mengirimkan pendapatan event.
 4. Pilih event tertentu yang boleh dibagikan oleh agensi.
 
-![agency-events.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+<Image align="center" alt="agency-events.png" src="https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png" />
 
 <div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
 
