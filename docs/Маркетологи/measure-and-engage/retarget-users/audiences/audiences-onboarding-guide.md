@@ -24,7 +24,7 @@ x-zendesk:
 
 > **Вкратце**: использовать AppsFlyer Audiences для создания и подключения индивидуальных сегментов аудитории к вашим партнерским сетям для наиболее эффективных кампаний по привлечению пользователей и ремаркетингу.
 
-## ![53010_Аудитории.jpg](https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg)
+<Image align="center" alt="53010_Аудитории.jpg" src="https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg" />
 
 <div id="about-audiences" />
 

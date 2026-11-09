@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **Кратко:** Настройте интеграцию с Movable Ink, чтобы создавать уникальные пути пользователя на базе ИИ в ваших маркетинговых кампаниях и контенте в приложении.
 
-## ![53374 изображение базы знаний Movable Ink.png](https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png)
+<Image align="center" alt="53374 изображение базы знаний Movable Ink.png" src="https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png" />
 
 <div id="about-the-integration" />
 

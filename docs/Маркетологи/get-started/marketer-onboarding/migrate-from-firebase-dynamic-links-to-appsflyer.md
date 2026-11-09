@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > Поскольку <Anchor target="_blank" href="https://firebase.google.com/support/dynamic-links-faq">Google объявил</Anchor> о прекращении работы динамических ссылок Firebase, пришло время легко перейти на AppsFlyer.
 
-## ![53375 Firebase migration KB image.png](https://files.readme.io/b5340a5b30c160bca2b420052fd60b23f4bfe0de6d2868f91ad4342bee36c7df-30063560499345.png)
+<Image align="center" alt="53375 Firebase migration KB image.png" src="https://files.readme.io/b5340a5b30c160bca2b420052fd60b23f4bfe0de6d2868f91ad4342bee36c7df-30063560499345.png" />
 
 <div id="about-the-migration" />
 
