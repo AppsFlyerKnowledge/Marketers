@@ -37,7 +37,7 @@ Roku는 커넥티드 TV(CTV)와 모바일 앱 모두에 광고 인벤토리를 �
 
 ### Roku 어트리뷰션 흐름
 
-[<Image align="center" alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />](https://support.appsflyer.com/hc/article_attachments/39554303369489)
+<Image align="center" alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />
 
 <div id="setting-up-roku-ads-integration-for-advertisers" />
 

@@ -589,7 +589,7 @@ x-zendesk:
 
 초기 **캠페인 지표** 뷰는 각 오디언스에 대한 다음과 같은 개요 캠페인 데이터를 표시합니다.
 
-[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018286225" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30258966633233)
+<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018286225" width="433px" />
 
 | 열 | 설명 |
 | --- | --- |
@@ -605,7 +605,7 @@ x-zendesk:
 
 상세 보기에는 지원되는 파트너 및 캠페인별로 분류된 데이터가 표시됩니다.
 
-[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018293649" />](https://support.appsflyer.com/hc/article_attachments/30259018290321)
+<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018293649" />
 
 선택한 오디언스가 하나 이상의 앱을 대상으로 사용된 경우 드롭다운 목록 ![pin_A.png](https://support.appsflyer.com/hc/article_attachments/30259018295697)를 사용하여 앱별로 데이터를 필터링합니다.
 

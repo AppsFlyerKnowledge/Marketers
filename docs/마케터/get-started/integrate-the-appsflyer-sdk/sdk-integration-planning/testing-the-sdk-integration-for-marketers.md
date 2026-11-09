@@ -136,7 +136,7 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
 1. 앱스플라이어의 사이드 메뉴에서 **설정** > **SDK 연동 테스트**를 선택합니다.
 
-   [<Image align="center" alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/29754088076433)
+   <Image align="center" alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />
 2. **리타겟팅**을 클릭합니다.
 
    <Image align="center" alt="" src="https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png" />

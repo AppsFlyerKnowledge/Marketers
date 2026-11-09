@@ -719,7 +719,7 @@ DCR 키 폴더는 일반적으로 선택한 클라우드 서비스의 인터페�
 
 * 오른쪽 상단의 점 3개(작업) 메뉴를 클릭하고 **DCR 키를** 선택하세요.
 
-[<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/50117774720401)
+<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />
 
 DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가져야 합니다.
 

@@ -87,10 +87,10 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 1. 대시보드의 오른쪽 상단에서 **+ 새로 만들기**를 클릭하고 만들고자 하는 위젯 유형을 선택하세요: 표, KPI, 차트, 인앱 이벤트를 나타내는 표, 인앱 이벤트 차트, 이벤트 위젯, 텍스트 또는 사용자 지정 지표  
    **참고:** 앱 내 이벤트 표와 앱 내 이벤트 차트를 통해 주요 이벤트와 [사용자 행동 패턴을 빠르게 파악할 수 있습니다](/docs/my-dashboards#traits-and-limitations).
 
-   [<Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33445444545681)
+   <Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />
 
    * 차트를 선택하여 차트 창이 열리면 꺾은선형, 막대형, 세로 막대형, 도넛형, 누적 영역형, 콤보(꺾은선형과 세로 막대형의 조합) 중에서 원하는 차트 유형을 선택할 수 있습니다.  
-     [<Image align="center" alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/35339681330961)
+     <Image align="center" alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />
    * 텍스트 위젯은 대시보드 섹션의 타이틀을 추가하고 팀원들과 가이드라인, 정보, 인사이트, 목표 또는 사용 지침을 공유할 수 있도록 지원하여 대시보드를 그 자체로 명확한 리포트로 전환해 줍니다.
    * **이벤트 위젯**을 사용하면 이벤트 이름별로 그룹화하여 LTV 및 실제(액티비티) 기간 전반에 걸쳐 출처, 국가, 기타 디멘션별 성과, 매출, 참여도를 나란히 비교할 수 있습니다. 이벤트 위젯을 활용하면 어떤 앱 내 이벤트가 가장 많은 순 사용자와 매출을 견인하는지 확인하고, 미디어 소스별 매출 트렌드를 측정하며, 최대 4단계 그룹화를 통해 이벤트 성과를 세부 분석할 수 있습니다.
 2. [선택 사항] 위젯의 이름을 입력하세요.
@@ -472,7 +472,7 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 3. 고정된 대시보드와 최근에 본 대시보드 목록에 원하는 대시보드 뷰가 없다면, 대시보드 화면 상단의 드롭다운 메뉴에서 원하는 대시보드를 선택하세요.  
    <Image align="center" alt="" src="https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png" />
 4. 앱, 보기 유형, 날짜 범위, 표시 필터를 선택합니다.  
-   [<Image align="center" alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />](https://support.appsflyer.com/hc/article_attachments/33445444551185)
+   <Image align="center" alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />
 
 </Accordion>
 
