@@ -184,7 +184,7 @@ Tipo de tendencia:
 
 En este ejemplo, se utiliza el mismo raw data para generar los dos tipos de tendencias de la cohorte. La tabla de raw data contiene eventos de atribución relacionados con los diferentes usuarios A, B, C y D. Los usuarios se involucran con un anuncio, instalan la aplicación y después de la conversión realizan una o más compras. El día 0 de la cohorte es el día de la instalación.
 
-[<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />](https://support.appsflyer.com/hc/article_attachments/49753028968209)
+<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />
 
 </Accordion>
 

@@ -45,7 +45,7 @@ Puedes encontrar la documentación de Meta <Anchor target="_blank" href="https:/
    <Image align="center" alt="assign-inst-ad-to-fb.png" src="https://files.readme.io/658dc57d0056a2217a9f0f5c785b87e24c297158b75c5815eddb64930d00ea17-11213052873745.png" width="550px" />
 3. Configura los anuncios de Meta en la configuración de Integraciones activas añadiendo el ID de tu aplicación de Facebook.
 4. Si no tienes un ID de aplicación de Facebook, crea uno <Anchor target="_blank" href="https://developers.facebook.com/apps">aquí</Anchor>.  
-   [<Image align="center" alt="facebook_app_id.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />](https://support.appsflyer.com/hc/article_attachments/49754369845265)
+   <Image align="center" alt="facebook_app_id.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />
 
 <div id="instagram-landing-page-for-deep-linking" />
 

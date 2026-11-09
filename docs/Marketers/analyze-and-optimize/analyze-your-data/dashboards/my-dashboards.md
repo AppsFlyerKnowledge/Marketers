@@ -87,10 +87,10 @@ La interfaz de usuario de My Dashboards está diseñada para la construcción de
 1. En la parte superior derecha del dashboard, haz clic en **+ Crear nuevo** y selecciona el tipo de widget que deseas crear: Tabla, KPI, Gráfico, tabla de eventos in-app, gráfico de eventos in-app, o métrica personalizada.  
    **Nota:** Tanto la tabla de eventos in-app como el gráfico de eventos in-app [muestran los principales eventos y el comportamiento del usuario](/docs/my-dashboards#traits-and-limitations).
 
-   [<Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33445444729361)
+   <Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />
 
    * Si eliges Gráfico, cuando se abra el gráfico, también eliges el tipo de gráfico: línea, barra, columna, dona o combinado (una mezcla de línea y columna).  
-     [<Image align="center" alt="heatmap.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/33776589303953)
+     <Image align="center" alt="heatmap.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />
    * El widget de texto es único en el sentido de que te permite agregar títulos para secciones del dashboard, compartir directrices, conocimientos, insights, objetivos o guías de uso con otros miembros del equipo, ayudando a convertir los dashboards en reportes autoexplicativos.
    * Los **widgets de eventos** te permiten agrupar por nombre de evento para comparar acciones, ingresos y engagement entre fuentes, geolocalizaciones y dimensiones adicionales, en paralelo, tanto en los periodos de LTV como en los periodos reales (actividad). Usa los widgets de eventos para ver qué eventos in-app generan más usuarios únicos e ingresos, medir tendencias de ingresos por fuente de medios y profundizar en el rendimiento de los eventos con hasta 4 niveles de agrupación.
 2. [Opcional] Ingresa un nombre para tu widget.
@@ -491,7 +491,7 @@ Esto es lo que debes tener en cuenta al analizar datos web en este dashboard:
 3. Si la vista del dashboard que deseas no está en la lista de dashboards fijados y recientemente vistos, en la parte superior del dashboard que se está mostrando actualmente, selecciona el que deseas ver del menú desplegable.  
    <Image align="center" alt="" src="https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png" />
 4. Selecciona las aplicaciones, el tipo de vista, las fechas de atribución y los filtros de visualización.  
-   [<Image align="center" alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />](https://support.appsflyer.com/hc/article_attachments/33445444737425)
+   <Image align="center" alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />
 
 </Accordion>
 

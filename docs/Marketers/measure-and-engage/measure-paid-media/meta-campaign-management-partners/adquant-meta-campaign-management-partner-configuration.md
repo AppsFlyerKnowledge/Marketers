@@ -56,7 +56,7 @@ Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-
 2. Configura los ajustes según las directrices indicadas <Anchor target="_blank" href="/marketers/es/docs/meta-ads-in-app-event-mapping#asignación-de-eventos-predefinidos">aquí</Anchor>.
 3. Haga clic en **Guardar**.
 
-[<Image align="center" alt="meta_campaign_management_partner_settings.png" src="https://files.readme.io/b1f38694b090db5e48ed27956684faee39004deae8b86aa532a206aacbd21c38-14238400542353.png" />](https://support.appsflyer.com/hc/article_attachments/49754373129361)
+<Image align="center" alt="meta_campaign_management_partner_settings.png" src="https://files.readme.io/b1f38694b090db5e48ed27956684faee39004deae8b86aa532a206aacbd21c38-14238400542353.png" />
 
 <div id="configuring-on-adquant" />
 

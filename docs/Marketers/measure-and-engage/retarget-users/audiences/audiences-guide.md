@@ -589,7 +589,7 @@ La sección **Métricas de campaña** del dashboard de Audiences muestra datos d
 
 La vista de **métricas de campaña** inicial muestra datos de campaña resumidos para cada audiencia:
 
-[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30621031359377)
+<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />
 
 | Columna | Descripción |
 | --- | --- |
@@ -605,7 +605,7 @@ Desde la vista de resumen, haz clic en el icono <Image alt="show_detailed_view_i
 
 La vista detallada muestra los datos desglosados por partners y campañas compatibles:
 
-[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg" />](https://support.appsflyer.com/hc/article_attachments/30621015096593)
+<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg" />
 
 Si la audiencia seleccionada se utilizó para el objetivo de más de una aplicación, utiliza la lista desplegable ![pin_A.png](https://files.readme.io/dcf60cd17a1135e63f6443728c3d713d9cacd6af0e1c010c226d1a092770c40b-46335667636113.png) para filtrar los datos por aplicación.
 

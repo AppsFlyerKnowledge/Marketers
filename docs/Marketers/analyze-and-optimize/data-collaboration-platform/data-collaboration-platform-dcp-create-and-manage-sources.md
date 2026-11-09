@@ -713,7 +713,7 @@ Por lo general, la carpeta de claves DCR se crea manualmente utilizando la inter
 
 * Haz clic en el menú de 3 puntos (acciones) de la parte superior derecha y selecciona **DCR key**.
 
-[<Image align="center" alt="Clave DCR.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/49753181770769)
+<Image align="center" alt="Clave DCR.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />
 
 Después de crear la carpeta de clave DCR, tu estructura de bucket/carpetas se verá así:
 
