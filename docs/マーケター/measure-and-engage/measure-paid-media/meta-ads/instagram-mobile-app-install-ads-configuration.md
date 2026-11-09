@@ -45,7 +45,7 @@ Metaのドキュメントは、<Anchor target="_blank" href="https://developers.
    <Image align="center" alt="assign-inst-ad-to-fb.png" src="https://files.readme.io/658dc57d0056a2217a9f0f5c785b87e24c297158b75c5815eddb64930d00ea17-11213052873745.png" width="550px" />
 3. ［連携済みパートナー］のMeta広告の連携設定で、FacebookアプリIDを追加します。
 4. FacebookアプリIDがない場合は、<Anchor target="_blank" href="https://developers.facebook.com/apps">こちら</Anchor>から作成してください。  
-   [<Image align="center" alt="facebook_app_id.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />](https://support.appsflyer.com/hc/article_attachments/51444627540625)
+   <Image align="center" alt="facebook_app_id.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />
 
 <div id="instagram-landing-page-for-deep-linking" />
 

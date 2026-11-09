@@ -577,7 +577,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 
 最初に**キャンペーン指標**が表示される際には、各オーディエンスのキャンペーンデータのサマリーが表示されます。
 
-[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018286225" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30258966633233)
+<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018286225" width="433px" />
 
 | Column | 説明 |
 | --- | --- |
@@ -593,7 +593,7 @@ AppsFlyerのAudiencesでは、オーディエンスセグメントを簡単に�
 
 詳細表示では、サポートされているパートナーやキャンペーンごとに分けられたデータが表示されます。
 
-[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018293649" />](https://support.appsflyer.com/hc/article_attachments/30259018290321)
+<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018293649" />
 
 選択したオーディエンスが複数のアプリをターゲットにしていた場合は、ドロップダウンリスト ![pin_A.png](https://support.appsflyer.com/hc/article_attachments/30259018295697) を使用してアプリ別にデータを絞り込みます。
 

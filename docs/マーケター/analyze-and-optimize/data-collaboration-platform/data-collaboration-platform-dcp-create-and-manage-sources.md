@@ -715,7 +715,7 @@ DCRキーフォルダは通常、利用するクラウドサービスの管理�
 
 * 画面右上の3点メニュー（アクション）をクリックし、［**DCR key**］を選択します。
 
-[<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/50232078980881)
+<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />
 
 DCRキーフォルダを作成すると、バケット／フォルダ構成は次のようになります。
 

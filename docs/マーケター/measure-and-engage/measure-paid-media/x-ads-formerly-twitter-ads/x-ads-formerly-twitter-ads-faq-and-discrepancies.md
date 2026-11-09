@@ -82,7 +82,7 @@ Say your team member is Jenny and her handle is @jenny. Your handle is @nivi and
    <Image align="center" alt="twitter_assign_account2.PNG" src="https://files.readme.io/cd2aa0b7a700fd0eee8754ac850adb99cc22b1c42d0d94f18d31ca71901ff31f-50903273809937.png" />
 3. Jenny then gives @nivi access to her X Ads Account as or Account administrator  
 
-   [<Image align="center" alt="twitter_edit_access_to_account.png" src="https://files.readme.io/e918cd0a0ad3875c2e34d7cce9d3953b39dc3891c30fe4af98a3b7e25a74783a-51444645965329.png" />](https://support.appsflyer.com/hc/article_attachments/51444669598225)
+   <Image align="center" alt="twitter_edit_access_to_account.png" src="https://files.readme.io/e918cd0a0ad3875c2e34d7cce9d3953b39dc3891c30fe4af98a3b7e25a74783a-51444645965329.png" />
 4. Jenny logs into the AppsFlyer account and goes to Active Integrations >> X Ads option
 5. At this stage, she can see her X Ads Account also listed.
 6. She can now see her X Ads account and configure the integration. The account admin can see all connected X Ads accounts.

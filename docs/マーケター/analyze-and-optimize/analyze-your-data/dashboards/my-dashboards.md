@@ -87,10 +87,10 @@ x-zendesk:
 1. ダッシュボードの右上で、**+ 新規作成**をクリックし、作成したいウィジェットのタイプを選択します：表、KPI、グラフ、アプリ内イベントの表、アプリ内イベントのグラフ、イベントウィジェット、テキスト、カスタム指標から選択できます。  
    **注意：** アプリ内イベントの表とグラフでは、[主要なイベントとユーザー行動をすばやく確認できます](/docs/my-dashboards#traits-and-limitations)。
 
-   [<Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33707595163537)
+   <Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />
 
    * グラフを選択した場合は、グラフが開いた後に種類も選択します。折れ線、横棒、縦棒、ドーナツ、積み上げ面、複合（折れ線と縦棒の組み合わせ）から選択できます。  
-     [<Image align="center" alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/33707580116881)
+     <Image align="center" alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />
    * テキストウィジェットでは、ダッシュボード内の各セクションにタイトルを付けたり、指針、知識、分析から得られた知見、目標、使い方をほかのチームメンバーと共有したりできます。ダッシュボード自体で内容を説明できるレポートを作成するのに役立ちます。
    * **イベントウィジェット**では、イベント名でグループ化し、LTVとActual（Activity）の両方の期間について、流入元、地域、その他のディメンション別にアクション、収益、エンゲージメントを並べて比較できます。イベントウィジェットでは、ユニークユーザー数や収益に最も貢献しているアプリ内イベントの確認、メディアソース別の収益推移の計測、最大4階層のグループ化によるイベント成果の詳細分析ができます。
 2. [オプション] ウィジェットの名前を入力します。
@@ -472,7 +472,7 @@ Webアプリを、クロスプラットフォームアトリビューション�
 3. 表示したいダッシュボードがピン留めされたダッシュボードや最近表示されたダッシュボードのリストにない場合は、現在表示されているダッシュボードの上部で、ドロップダウンから表示したいものを選択します。  
    <Image align="center" alt="" src="https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png" />
 4. アプリ、表示タイプ、計測期間、表示フィルタを選択します。  
-   [<Image align="center" alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />](https://support.appsflyer.com/hc/article_attachments/33707580117265)
+   <Image align="center" alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />
 
 </Accordion>
 
