@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **At a glance:** Convert desktop users to mobile app users using SMS vendors and OneLink.
 
-![text-me-the-app-web-form.png](https://files.readme.io/d28b843ab7528138b4d85b147b8d613efde740d354238227b0f123030fa3a1de-360004940018.png)
+<Image align="center" alt="text-me-the-app-web-form.png" src="https://files.readme.io/d28b843ab7528138b4d85b147b8d613efde740d354238227b0f123030fa3a1de-360004940018.png" />
 
 <div id="introduction" />
 

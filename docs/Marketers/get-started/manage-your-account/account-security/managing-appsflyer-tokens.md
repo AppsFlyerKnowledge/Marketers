@@ -31,7 +31,7 @@ x-zendesk:
 
 > 🚧 **Important!**
 >
-> ![AppsFlyerAdmin_us-en.png](https://files.readme.io/8597603fc60e16b6ee5048c90e6293bf42c4acf8b63d553d6f77c34ab7945d02-32934372878481.png)
+> <Image align="center" alt="AppsFlyerAdmin_us-en.png" src="https://files.readme.io/8597603fc60e16b6ee5048c90e6293bf42c4acf8b63d553d6f77c34ab7945d02-32934372878481.png" />
 >
 > * Only admins can view and manage tokens. Account users have no access to the Tokens page.
 > * Keep your tokens safe, as they enable access to your data. Don't publish tokens in public code repositories.

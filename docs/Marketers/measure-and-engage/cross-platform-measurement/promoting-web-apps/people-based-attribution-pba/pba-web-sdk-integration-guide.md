@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance:** Integrate AppsFlyer into websites using the Web SDK to record and measure visits, events, conversions, and revenue.
 
-![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="web-sdk-user-and-integration-guide" />
 
@@ -264,7 +264,7 @@ Integrate the web SDK using one of the following methods.
 1. <Anchor target="_blank" href="https://developers.google.com/tag-manager/quickstart">Go to Google Tag Manager.</Anchor>
 2. Create a new tag for AppsFlyer web SDK.
 
-   ![Create a new tag for the AppsFlyer Web SDK in Google Tag Manager](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)
+   <Image align="center" alt="Create a new tag for the AppsFlyer Web SDK in Google Tag Manager" src="https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png" />
 3. Select **Custom HTML** tag type.
 4. Give the tag a meaningful name.
 5. Do one of the following:
@@ -279,7 +279,7 @@ Integrate the web SDK using one of the following methods.
    * **To add the trigger to all pages:**
      1. Click **Add Trigger**.
 
-        ![gtm-af-tag-sdk-trigger.png](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)
+        <Image align="center" alt="gtm-af-tag-sdk-trigger.png" src="https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png" />
      2. Select **All Pages**.
      3. Click **Save.**
      4. Enter a tag name and click **Save**.  
@@ -289,7 +289,7 @@ Integrate the web SDK using one of the following methods.
      2. In the GTM main window, select **Triggers.** Click **New**.
      3. Click the pen icon.
      4. Choose the **Page View** trigger type.  
-        ![PBAselectTrigger_us-en.jpg](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)
+        <Image align="center" alt="PBAselectTrigger_us-en.jpg" src="https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg" />
      5. Select **Some Page Views.**
      6. Set the page and trigger conditions as needed.
      7. Click **Save.**
@@ -299,7 +299,7 @@ Integrate the web SDK using one of the following methods.
         3. In the triggering panel, click on the pen.
         4. Select the page view trigger you created earlier.
 
-           ![Select the page view trigger created earlier in Google Tag Manager](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)
+           <Image align="center" alt="Select the page view trigger created earlier in Google Tag Manager" src="https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png" />
         5. Click **Save**.
 
 </Tab>
@@ -315,7 +315,7 @@ Integrate the web SDK using one of the following methods.
 
 <Accordion title="Create a property in Adobe Experience Cloud">
 
-![adobe_create_property.png](https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png)
+<Image align="center" alt="adobe_create_property.png" src="https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png" />
 
 1. Go to **Adobe Experience Cloud** > **Launch**.
 2. Under **Adobe Experience Cloud Launch**, click **Go to Launch**.
@@ -331,7 +331,7 @@ Integrate the web SDK using one of the following methods.
 
 <Accordion title="Add the Web SDK to the Adobe Launch property">
 
-<Image alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
+<Image align="center" alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
 
 1. On the **My web property** page, select the **Rules** tab.
 2. Name the rule. Recommended to use, **Load web SDK**.
@@ -350,7 +350,7 @@ Integrate the web SDK using one of the following methods.
 
 <Accordion title="Add the Adobe Launch tag to the website">
 
-![adobe_tag.png](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)
+<Image align="center" alt="adobe_tag.png" src="https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png" />
 
 1. On the **My web property** page, select the **Environments** tab.
 2. Find the row with the environment you want to publish (development or production).
@@ -367,7 +367,7 @@ Integrate the web SDK using one of the following methods.
 
 <Accordion title="Publish the Adobe Launch environment">
 
-![adobe_publishing_env.png](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)
+<Image align="center" alt="adobe_publishing_env.png" src="https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png" />
 
 1. On the **My web property** page, go to the **Publishing** tab.
 2. Under the **Development** section, click **Add New Library.**
@@ -405,7 +405,7 @@ Once installed verify that the AppsFlyer web SDK is called by the visitor's brow
 1. Go to the website.
 2. Open the browser developer tools.
 
-   ![WebSDK_us-en.jpg](https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg)
+   <Image align="center" alt="WebSDK_us-en.jpg" src="https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg" />
 3. Go to the (A) **Network** tab.
 4. Refresh the page.
 5. Filter by (B) **wa.appsflyer**.
@@ -427,7 +427,7 @@ Once installed verify that the AppsFlyer web SDK is called by the visitor's brow
 
 <Accordion title="Sending events opt-in/opt-out">
 
-![5578-VistiorPrivacyOptIn_us-en.png](https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png)
+<Image align="center" alt="5578-VistiorPrivacyOptIn_us-en.png" src="https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png" />
 
 The Web SDK sends visitor event data to AppsFlyer. You can control, stop, or start event sending as described in this section.
 
@@ -706,7 +706,7 @@ This part is intended for web developers.
 4. Trigger the event.
 5. Filter by message.
 
-   ![pba_af_event.png](https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png)
+   <Image align="center" alt="pba_af_event.png" src="https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png" />
 6. Look for a network request that starts with destination wa.appsflyer.com (see screenshot below).
 7. Ensure that:
    1. The status code is 200.
@@ -841,7 +841,7 @@ The preceding code above shows a basic HTML page. The web page needs to load th
    The preceding code loads GTM which in turn loads the Web SDK. Thereafter Two other actions take place in the script. One is a function that gets a response from the server with user details. The other sets data to local storage. GTM has access to both function and localStorage. You can call the function and access localStorage using GTM.
 2. Add a new tag for attributing subscriptions after the thank you page loads
 
-   ![Add a new tag for attributing subscriptions in Google Tag Manager](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="Add a new tag for attributing subscriptions in Google Tag Manager" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 3. Give the tag a distinct name and select the **Custom HTML** tag type option.
 4. Put the following code in the **Custom HTML**.
 
@@ -850,13 +850,13 @@ The preceding code above shows a basic HTML page. The web page needs to load th
    AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'subscription'}); </script>
    ```
 
-   ![gtm_tag_after_subscribe.png](https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png)
+   <Image align="center" alt="gtm_tag_after_subscribe.png" src="https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png" />
 5. Expand the **Advanced Settings** control, and then the **Tag Sequencing** control below the text area and make sure it is set up to fire the conversion after the tag was executed.
 
-   ![Tag Sequencing settings in Google Tag Manager](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="Tag Sequencing settings in Google Tag Manager" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. To fire the conversion tag set a trigger. In the example, the trigger is fired on loading the Thank you page.
 
-   ![Trigger set to fire on the Thank You page load](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="Trigger set to fire on the Thank You page load" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 **Recording events when users interact with the website**
 
@@ -903,13 +903,13 @@ The preceding code above shows a basic HTML page. The web page needs to load th
    The preceding code loads the Web SDK using GTM The rest is simply HTML that mimics a shopping cart page. Notice the **Checkout** button that has the ID checkout. It is required when setting GTM to handle a click on that button.
 2. In GTM, click on **Variables**, click on **Configure** and check **Click Element** in the list of **Built-In Variables.**  
 
-   ![gtm-create-variable.png](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)
+   <Image align="center" alt="gtm-create-variable.png" src="https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png" />
 3. Create a new variable, give it a meaningful name, and choose the type of **All Elements.**  
 
-   ![gtm-checkout-all-elements.png](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)
+   <Image align="center" alt="gtm-checkout-all-elements.png" src="https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png" />
 4. In the trigger configuration, choose **Some Clicks**, choose **Click Element** that **matches CSS Selector** of #checkout.  
 
-   ![gtm-checkout-click-elememt.png](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)
+   <Image align="center" alt="gtm-checkout-click-elememt.png" src="https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png" />
 5. Create a new tag for the checkout action, choose type Custom HTML, and set the trigger to the checkout trigger.
 
    ```html
@@ -917,7 +917,7 @@ The preceding code above shows a basic HTML page. The web page needs to load th
     AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'}); </script>
    ```
 
-   ![gtm-checkout-tag.png](https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png)
+   <Image align="center" alt="gtm-checkout-tag.png" src="https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png" />
 
 </Tab>
 </Tabs>
@@ -1097,9 +1097,9 @@ The code makes use of the fetch API. It sends the server the email address enter
    The server responds with a unique CUID which is sent using the setCustomerUserId() method.  
    Continue this procedure to create the trigger and tab.
 3. Add a new tag, for attributing subscriptions, after the thank you page loads.
-   ![Add a new tag for attributing subscriptions in Google Tag Manager](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="Add a new tag for attributing subscriptions in Google Tag Manager" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 4. Give the tag a distinct name and select the “Custom HTML” tag type option
-   ![GoogleTag.jpg](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)
+   <Image align="center" alt="GoogleTag.jpg" src="https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg" />
 
    ```html
    <script>
@@ -1114,10 +1114,10 @@ The code makes use of the fetch API. It sends the server the email address enter
    ```
 5. Expand the **Advanced Settings** control and then the **Tag Sequencing** control below the text area and make sure it is set up to fire the conversion after the tag was executed
 
-   ![Tag Sequencing settings in Google Tag Manager](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="Tag Sequencing settings in Google Tag Manager" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. Set a trigger for the conversion tag to indicate when the conversion tag should be fired (in the below example it is fired on “Thank you” page load)
 
-   ![Trigger set to fire on the Thank You page load](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="Trigger set to fire on the Thank You page load" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 </Tab>
 </Tabs>

@@ -23,7 +23,7 @@ x-zendesk:
   section_id: 6551244207121
   url: https://support.appsflyer.com/hc/en-us/articles/360002691537-Flutter-plugin
 ---
-![flutter_icon.png](https://files.readme.io/3d4c1fc64dc794621c37afc677a88175748b8993204dba5693cdcce58559fa4a-360004154837.png)
+<Image align="center" alt="flutter_icon.png" src="https://files.readme.io/3d4c1fc64dc794621c37afc677a88175748b8993204dba5693cdcce58559fa4a-360004154837.png" />
 
 > **At a glance:** Integrate AppsFlyer to apps developed using Flutter to measure installs, in-app events, media sources, and more.
 

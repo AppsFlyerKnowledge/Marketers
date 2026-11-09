@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **At a glance:** Transfer apps between AppsFlyer accounts by following the steps described in this article (for admins of both the sender and receiver accounts).
 
-![App transfer process animation showing the transfer wizard steps](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
+<Image align="center" alt="App transfer process animation showing the transfer wizard steps" src="https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif" />
 
 <div id="app-transfer-between-accounts" />
 
@@ -93,7 +93,7 @@ To request the transfer of one or more apps to another AppsFlyer account, start 
    * You are notified (by popup) if the request requires handling by AppsFlyer.
    * Apps appear on your **My apps** page as pending transfer to `<receiver email>`. At this stage, it is still possible to delete the request.
 
-     ![Sender's My apps page showing an app listed as pending transfer, with a Delete request option](https://files.readme.io/5e4762461afd7953657b91074054bd79a63ad5bf8a06d084ee4c655ac60088aa-360010128998.jpg)
+     <Image align="center" alt="Sender's My apps page showing an app listed as pending transfer, with a Delete request option" src="https://files.readme.io/5e4762461afd7953657b91074054bd79a63ad5bf8a06d084ee4c655ac60088aa-360010128998.jpg" />
 
 </Accordion>
 
@@ -103,7 +103,7 @@ To request the transfer of one or more apps to another AppsFlyer account, start 
 2. You will receive an email notification that the sender has initiated the transfer request.
 3. On the **My apps** page, click **Review request**. A request can include one or more apps.
 
-   ![Receiver's My apps page showing a pending app transfer request with a Review request option](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)
+   <Image align="center" alt="Receiver's My apps page showing a pending app transfer request with a Review request option" src="https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg" />
 4. Review and approve or reject each request.
 5. Read and, if acceptable, sign the terms and conditions.
 6. You and the sender are notified by email that the request has been accepted.

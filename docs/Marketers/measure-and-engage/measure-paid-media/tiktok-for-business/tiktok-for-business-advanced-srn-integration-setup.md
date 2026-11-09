@@ -30,7 +30,7 @@ x-zendesk:
 >
 > AppsFlyer supports measuring app activity for [non-app campaigns](#web-to-app-measure-app-activity-for-non-app-campaigns).
 
-<Image alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
+<Image align="center" alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
 
 <div id="overview" />
 
@@ -388,7 +388,7 @@ The following limitations apply when an agency works with this integration:
 4. Enter your agency **TikTok Account ID**. This identifies agency traffic and distinguishes it from the advertiser's.
 5. Click **Save Integration**.
 
-   <Image alt="tiktok.png" src="https://files.readme.io/b13ee9cd005b97c37019154a0caa10e03b846e7405777d9fc0e3db11bfb233b4-33379202036369.png" width="664px" />
+   <Image align="center" alt="tiktok.png" src="https://files.readme.io/b13ee9cd005b97c37019154a0caa10e03b846e7405777d9fc0e3db11bfb233b4-33379202036369.png" width="664px" />
 
 <div id="important" />
 

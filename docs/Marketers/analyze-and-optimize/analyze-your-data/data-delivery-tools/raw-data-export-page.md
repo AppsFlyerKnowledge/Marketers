@@ -29,7 +29,7 @@ x-zendesk:
 
 The following visual displays the first time you go to the **Raw data export** page; the **My reports** page displays if you have reports ready for download or duplication.
 
-[![RawDataSplash.png](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)
+<Image align="center" alt="RawDataSplash.png" src="https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png" />
 
 **My reports**
 
@@ -39,7 +39,7 @@ For a description of the raw data reports, see <Anchor target="_blank" href="/ma
 
 To generate or download reports, see the procedures section of this article.
 
-[![MyReportsRawDataExport.png](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)
+<Image align="center" alt="MyReportsRawDataExport.png" src="https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png" />
 
 <div id="raw-data-export-page-features-and-filter-options" />
 

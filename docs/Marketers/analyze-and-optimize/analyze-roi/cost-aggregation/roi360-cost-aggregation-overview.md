@@ -143,7 +143,7 @@ The following examples show how the ±10-day window affects where cost appears:
 
 For a given media source, cost can be provided by more than one method. To avoid cost inflation, a campaign cost prioritization mechanism decides which cost data appears in the platform. AppsFlyer gives priority according to the aggregation method. The priority from lowest to highest is: Cost on the attribution link > Cost API > Cost Import.
 
-![Diagram showing the cost prioritization order: Cost on the attribution link, then Cost API, then Cost Import](https://files.readme.io/8dbea1b8561d67f77d27cad85ab109e5203930273f32d2a9b04900b810c46ec2-25433450962577.png)
+<Image align="center" alt="Diagram showing the cost prioritization order: Cost on the attribution link, then Cost API, then Cost Import" src="https://files.readme.io/8dbea1b8561d67f77d27cad85ab109e5203930273f32d2a9b04900b810c46ec2-25433450962577.png" />
 
 The cost prioritization mechanism impacts aggregate data reports and dashboards. It doesn't impact attribution link cost data in raw data reports, as noted above.
 

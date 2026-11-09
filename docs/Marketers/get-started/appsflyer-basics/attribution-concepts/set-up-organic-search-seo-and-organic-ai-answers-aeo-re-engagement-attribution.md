@@ -36,7 +36,7 @@ Having access to this unique data is very useful to SEO (search engine optimizat
 
 ### Flow
 
-![Diagram showing the organic search attribution flow, from a user clicking a search result to the app opening or the user landing on a web page](https://files.readme.io/4b33060cfa30a4e2786c4a3a213ca41223ae276d63c97ab7c2cb5a997a4b010c-16540659217809.png)
+<Image align="center" alt="Diagram showing the organic search attribution flow, from a user clicking a search result to the app opening or the user landing on a web page" src="https://files.readme.io/4b33060cfa30a4e2786c4a3a213ca41223ae276d63c97ab7c2cb5a997a4b010c-16540659217809.png" />
 
 The organic search attribution flow works as follows:
 

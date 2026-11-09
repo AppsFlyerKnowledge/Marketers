@@ -56,7 +56,7 @@ Create source connections to bring first-party data into DCP.
 1. In AppsFlyer, go to **Collaborate** > **Data Clean Room**.
 2. Click **Manage connections** in the top-right corner.
 3. Go to the **Source** tab and click **+ New connection**.  
-   <Image alt="2026-07-27_13-30-46.png" src="https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png" width="529px" />
+   <Image align="center" alt="2026-07-27_13-30-46.png" src="https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png" width="529px" />
 4. Continue with the [Cloud service connections for source data instructions](#cloud-service-connections-for-source-data) below.
 
 You can also create a source connection directly when setting up a source. See <Anchor target="_blank" href="/marketers/docs/data-collaboration-platform-dcp-create-and-manage-sources">Create and manage sources</Anchor> for instructions.
@@ -118,7 +118,7 @@ Cloud storage connections let you automatically export your DCP audiences to you
 1. In AppsFlyer, go to **Collaborate** > **Data Clean Room**.
 2. Click **Manage connections** in the top-right corner.
 3. Go to the **Cloud storage** tab and click **+ New connection**.  
-   <Image alt="2026-07-27_13-30-34.png" src="https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png" width="533px" />
+   <Image align="center" alt="2026-07-27_13-30-34.png" src="https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png" width="533px" />
 4. The **New cloud storage connection** modal opens.
 5. In the **New cloud storage connection** modal, select your cloud provider: **Google Cloud Storage** or **Amazon Simple Storage**.
 6. Enter your bucket name:

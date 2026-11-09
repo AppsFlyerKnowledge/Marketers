@@ -86,7 +86,7 @@ Modeled metrics available based on the conversion value:
 
 <Accordion title="Revenue LTV">
 
-[![modeled_d7.png](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)
+<Image align="center" alt="modeled_d7.png" src="https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png" />
 
 SKAN reporting on its own can only provide revenue based on the SKAN measurement window and CV configuration for revenue in Conversion Studio. SKAN modeling is able to model the revenue up to 30 days post-install.
 

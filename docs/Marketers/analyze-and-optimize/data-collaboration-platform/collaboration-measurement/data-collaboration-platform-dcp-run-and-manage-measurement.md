@@ -114,7 +114,7 @@ After you set up and run your measurement, manage it from the measurement panel 
 
 ### The Collaboration measurement page
 
-[![](https://files.readme.io/f1ff9677dcae50df83fe32a8c54925c52ea91f5a2f7f133bc6bce3041fe0341d-44437720904209.png)](https://files.readme.io/f1ff9677dcae50df83fe32a8c54925c52ea91f5a2f7f133bc6bce3041fe0341d-44437720904209.png)
+<Image align="center" alt="" src="https://files.readme.io/f1ff9677dcae50df83fe32a8c54925c52ea91f5a2f7f133bc6bce3041fe0341d-44437720904209.png" />
 
 <div id="pause-or-restart-live-measurement" />
 

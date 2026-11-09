@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **At a glance:** Learn about how attribution works for CTV, PC, and console platforms to allow AppsFlyer to receive attribution and event data for your campaigns on these cross-platform devices.
 
-<Image alt="Diagram of AppsFlyer's cross-platform attribution solution for CTV, PC, and console" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
+<Image align="center" alt="Diagram of AppsFlyer's cross-platform attribution solution for CTV, PC, and console" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
 <div id="the-appsflyer-cross-platform-solution" />
 
@@ -74,7 +74,7 @@ Direct attribution links are AppsFlyer links that support redirection and attrib
 
  The attribution flow is illustrated in the diagram that follows.
 
-![CTV attribution flow - Direct attribution link flow](https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png)
+<Image align="center" alt="CTV attribution flow - Direct attribution link flow" src="https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png" />
 
 Because direct attribution links point to an app on a specific, predetermined platform and lead to a single destination, they always include the app ID and platform information in the URL.
 
@@ -113,7 +113,7 @@ With direct attribution links and cross-platform OneLink links, AppsFlyer attrib
 
 Attribution to SRNs is via deterministic matching. When an advertiser integrates an SRN, attribution works as illustrated in the diagram that follows.
 
-![CTV attribution flow - SRN attribution flow](https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png)
+<Image align="center" alt="CTV attribution flow - SRN attribution flow" src="https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png" />
 
 Currently, SRN attribution only works for same platform to same platform advertising. Meaning, when the touchpoint (click or impression) occurs on the same platform as the install. For example, if a Roku CTV install is checked with Roku Endemic Media (the SRN for Roku) and an impression is found to have occurred on a Roku device. If the impression happened on a different platform, such as mobile, it is not considered for attribution.
 
@@ -132,7 +132,7 @@ The Smart Script in a cross-platform landing page uses the incoming link (the li
 
 The landing page supports both probabilistic modeling and deterministic matching (when an ID is provided in the link) attribution methods. With probabilistic modeling, it's possible that multiple installs by multiple users can be attributed to the same impression. The attribution flow is illustrated in the diagram that follows.
 
-![CTV attribution flow - Landing page attribution flow](https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png)
+<Image align="center" alt="CTV attribution flow - Landing page attribution flow" src="https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png" />
 
 For example:
 

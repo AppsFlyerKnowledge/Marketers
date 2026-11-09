@@ -138,7 +138,7 @@ You can configure the SDK to instruct AppsFlyer to remove all user-identifying i
 
 The following image shows an example row of raw data after anonymization (deletion and hashing).
 
-![Example row of raw data showing deleted and hashed fields after anonymization](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)
+<Image align="center" alt="Example row of raw data showing deleted and hashed fields after anonymization" src="https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png" />
 
 <div id="impact-on-attribution-2" />
 

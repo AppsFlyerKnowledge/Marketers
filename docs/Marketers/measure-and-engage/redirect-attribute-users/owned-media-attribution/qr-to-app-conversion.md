@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **At a glance:** Convert desktop, TV, CTV, or offline users, into mobile app users by using QR codes generated with OneLink.
 
-![6005_QR_code_4.jpg](https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg)
+<Image align="center" alt="6005_QR_code_4.jpg" src="https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg" />
 
 <div id="converting-mobile-non-mobile-and-offline-traffic-into-mobile-app-users" />
 
@@ -79,7 +79,7 @@ QR codes can be created either:
 
 <Accordion title="Customize QR code">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/b1ad71a95057994fa0e2d4afbc1e75a99c468696ec90be419e38de664df86659-11941291055505.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/b1ad71a95057994fa0e2d4afbc1e75a99c468696ec90be419e38de664df86659-11941291055505.gif" />
 
 You can customize the QR codes generated via OneLink by:
 
@@ -140,7 +140,7 @@ The following are tips to maximize QR-to-app conversions.
   * Consider adding instructions on how to scan the QR code.
 * Already using OneLink? In your *other* custom OneLinks, being used in emails, etc., add an **af\_web\_dp** parameter with the value being the URL to the page containing the QR code. This sends desktop users clicking the link to a webpage instead of the app store.
 
-  [![](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)
+  <Image align="center" alt="" src="https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg" />
 
 </Accordion>
 

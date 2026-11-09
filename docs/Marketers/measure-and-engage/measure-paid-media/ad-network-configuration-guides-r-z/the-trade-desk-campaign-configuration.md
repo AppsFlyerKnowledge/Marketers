@@ -159,7 +159,7 @@ For iOS apps, the <Anchor target="_blank" href="/marketers/docs/apply-aggregated
 
 The Trade Desk connects with AppsFlyer via a unique network ID. If you don't already have the Tracker\_ID and the advertiserid, you must obtain them from The Trade Desk to continue with the integration.
 
-![TTD_General_Settings_.png](https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png)
+<Image align="center" alt="TTD_General_Settings_.png" src="https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png" />
 
 **Enable View-Trough attribution**
 
@@ -169,7 +169,7 @@ Turn on **Enable View-Through attribution** to attribute view-through installs f
 
 #### Default postbacks
 
-![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
+<Image align="center" alt="default_postbacks_en-us.png" src="https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png" />
 
 Send automatic postbacks to The Trade Desk following user installs and re-engagements. Use this section to define the source of the users that allow sending these postbacks:
 
@@ -188,7 +188,7 @@ Send automatic postbacks to The Trade Desk following user installs and re-engage
 
 Map AppsFlyer events with TTD via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant with target validation rules).
 
-![the_trade_desk_in_app_event_settings_en-us.png](https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png)
+<Image align="center" alt="the_trade_desk_in_app_event_settings_en-us.png" src="https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png" />
 
 **To configure in-app event postbacks:**
 
@@ -223,7 +223,7 @@ Adding parameters to the attribution link enables you to perform thorough drill-
 
 Select which parameters you want to add to the attribution link.
 
-![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+<Image align="center" alt="ttd_attribution_link_parameters_en-us.png" src="https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png" />
 
 <div id="default-parameters" />
 
@@ -254,7 +254,7 @@ You can have CTV traffic measured with AppsFlyer by adding the following paramet
 
 #### Click-through attribution
 
-![click-through_attribution_ttd_en-us.png](https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png)
+<Image align="center" alt="click-through_attribution_ttd_en-us.png" src="https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png" />
 
 Use the slider to set the maximum time from click to install. Only installs (first launches) that take place within the lookback window are attributed.
 
@@ -270,7 +270,7 @@ Learn more about the <Anchor target="_blank" href="/marketers/docs/set-up-lookba
 
 #### View-through attribution
 
-![view-through_attribution_ttd_en-us.png](https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png)
+<Image align="center" alt="view-through_attribution_ttd_en-us.png" src="https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png" />
 
 Use the slider to set the maximum time from impression to install. Only installs (first launches) that take place within this lookback window, following an ad impression, are attributed to the partner, providing there was no other relevant ad click.
 
@@ -306,7 +306,7 @@ Ad revenue is not available for The Trade Desk.
 
 In this tab, you can select the permissions to grant The Trade Desk, whether they act as an ad network, agency, or even both. Note that even if attribution is disabled for The Trade Desk, the permissions tab can be active and you can grant control to The Trade Desk.
 
-![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
+<Image align="center" alt="" src="https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png" />
 
 Use these toggles to give the ad network permissions to handle its own configuration for your app:
 

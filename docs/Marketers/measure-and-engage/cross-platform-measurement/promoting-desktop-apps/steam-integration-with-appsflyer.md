@@ -37,12 +37,12 @@ Apps running on Steam can integrate with AppsFlyer via S2S API or SDK to receive
 
 The following is an example flow that highlights the most important steps in a user journey from ad engagement to attribution. It includes the AppsFlyer-recommended cross-platform landing page. **Note**: While we recommend using the cross-platform landing page, you can also use direct attribution links
 
-![Steam_user_journey.jpg](https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg)
+<Image align="center" alt="Steam_user_journey.jpg" src="https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg" />
 
 1. Marketing touchpoint: Customers interact with your brand through online or offline marketing touchpoints. These can include, email and newsletters, social media, mobile web, and more.
 2. Game landing page: A game landing page directs customers to your Steam game page. This step is important for collecting UTM and other URL parameters to attribute customers from the click/install to the original media sources or to your owned media sources.  
    The landing page is also useful because it provides links to the various platforms your game supports. For example, you can have links to your Xbox, Microsoft store, and Steam page on your landing page.  
-   ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
+   <Image align="center" alt="awesome_game.png" src="https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png" />
 3. <span id="marketing-touchpoint"></span>Steam app page: This is your Steam storefront page that hosts your Steam app for customers to download.
 4. Game install: The user installs the game, triggering attribution and the recording of in-app events and sessions.
 

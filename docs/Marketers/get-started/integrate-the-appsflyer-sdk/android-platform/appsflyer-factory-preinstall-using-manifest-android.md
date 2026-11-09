@@ -31,7 +31,7 @@ x-zendesk:
 ---
 > **At a glance:** Attribute app installs to device manufacturers for apps added to devices before leaving the factory. **Note**: See <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#preload-campaigns">all other preload attribution methods</Anchor>.
 
-![pre-install-intro-breakdown.png](https://files.readme.io/f14231089f68ffa90dc90700397463d363c08b8266e0d18677e9ccf3c28b0828-360002653365.png)
+<Image align="center" alt="pre-install-intro-breakdown.png" src="https://files.readme.io/f14231089f68ffa90dc90700397463d363c08b8266e0d18677e9ccf3c28b0828-360002653365.png" />
 
 <div id="introduction" />
 
@@ -427,9 +427,9 @@ This section demonstrates how to test and verify your pre-install configuration.
 
 Build your application in Android Studio and install it on the test device. Once the application launches, open the Logcat in Android studio and filter by "AppsFlyer". You should see the attributed install with all the details. See the screenshots below for illustration:
 
-![pre_install_logcat.png](https://files.readme.io/f02d39fcb7b17654286b1d79670ef80060696e28918425c7893d392e479c5de1-360002653385.png)
+<Image align="center" alt="pre_install_logcat.png" src="https://files.readme.io/f02d39fcb7b17654286b1d79670ef80060696e28918425c7893d392e479c5de1-360002653385.png" />
 
-![pre_install_logcat_2.png](https://files.readme.io/ce57427b0fb286e632d416378bb65f98370122e6d026ecba99e602524b8351d6-360002655609.png)
+<Image align="center" alt="pre_install_logcat_2.png" src="https://files.readme.io/ce57427b0fb286e632d416378bb65f98370122e6d026ecba99e602524b8351d6-360002655609.png" />
 
 </Accordion>
 
@@ -443,13 +443,13 @@ Head over to your AppsFlyer account and open the dashboard for the app that you 
 
 1. In the overview page, filter by media sources and choose the media source:  
 
-   ![choose_media_source.png](https://files.readme.io/6d9ac04a23b97e12c1103e1d8dd7976949485777a89b2545e2704803b486829e-360002655629.png)
+   <Image align="center" alt="choose_media_source.png" src="https://files.readme.io/6d9ac04a23b97e12c1103e1d8dd7976949485777a89b2545e2704803b486829e-360002655629.png" />
 2. In the ***Breakdown By Campaign*** graph, you can see that the install that is attributed to "my media source" comes from a Pre-install campaign:  
 
-    [![](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)](https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png)  
+    <Image align="center" alt="" src="https://files.readme.io/3e60def526507a2429137762c87ee39149c9a37ff463ce6d3945adc1c4d056bc-360002653405.png" />
    You can also verify that the install is attributed correctly by viewing the ***Aggregated Performance Report***. In it, you can see the media source and campaign. See the screenshot below where "My Media Source" is the media source and the campaign is Pre-install:  
 
-    [![](https://files.readme.io/d02e89d215e864ad8e96fff97c9dd279d906486ed2036ed27dc5e229ff8935b3-360002653425.png)](https://files.readme.io/d02e89d215e864ad8e96fff97c9dd279d906486ed2036ed27dc5e229ff8935b3-360002653425.png)
+    <Image align="center" alt="" src="https://files.readme.io/d02e89d215e864ad8e96fff97c9dd279d906486ed2036ed27dc5e229ff8935b3-360002653425.png" />
 3. Repeat the process for all manufacturers or media sources that you collaborate with for pre-install campaigns.
 
 </Accordion>

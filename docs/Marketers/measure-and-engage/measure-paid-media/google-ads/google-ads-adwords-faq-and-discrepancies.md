@@ -43,7 +43,7 @@ Clicks and impressions data from Google Ads was made available during August 201
 
 If you are not seeing first\_open conversions on Google Ads as shown in the screenshot below:
 
-![AW_13.png](https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png)
+<Image align="center" alt="AW_13.png" src="https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png" />
 
 it means that you need to import conversions in Google Ads. Follow the instruction on <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">importing conversions</Anchor>.
 
@@ -133,7 +133,7 @@ To stop cost sync with Google:
 
 1. Go to your <Anchor target="_blank" href="https://myaccount.google.com/permissions">Google account permissions</Anchor>.
 2. Click on Remove next to AppsFlyer Google Cost.  
-   ![remove_appsflyer_cost.png](https://files.readme.io/56840e708c98875c8db176c642dd324150a76aef9697fcc2756f524b2a6c0a16-33743128661137.png)
+   <Image align="center" alt="remove_appsflyer_cost.png" src="https://files.readme.io/56840e708c98875c8db176c642dd324150a76aef9697fcc2756f524b2a6c0a16-33743128661137.png" />
 
 </Accordion>
 

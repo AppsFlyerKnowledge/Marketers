@@ -71,7 +71,7 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 Liquid connects with AppsFlyer via a unique API Token. If you don't already have it, you must obtain it from Liquid to continue with the integration or follow the instructions below.
 
-[![](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)
+<Image align="center" alt="" src="https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png" />
 
 <div id="obtaining-the-api-token" />
 
@@ -89,7 +89,7 @@ You can find the API token by logging in to the Liquid dashboard.
 
 AppsFlyer can send automatic postbacks to Liquid user installs. Use this section to define sending these postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/7a06540c1bbca9fc59e45ffdf47c6b40cb548c371654dff9216a7d1c4f87e4c3-18274574358289.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/7a06540c1bbca9fc59e45ffdf47c6b40cb548c371654dff9216a7d1c4f87e4c3-18274574358289.png" />
 
 Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Liquid or select **Off**.
 

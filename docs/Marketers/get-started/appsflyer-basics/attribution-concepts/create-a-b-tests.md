@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance:** Use AppsFlyer to A/B test media sources, campaigns, creatives, targeting, and ad placement.
 
-![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
+<Image align="center" alt="AB_TESTING.jpg" src="https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg" />
 
 <div id="what-is-ab-testing" />
 
@@ -114,7 +114,7 @@ Below we explain two methods of A/B testing using:
 
 ## A/B testing ad placement on mobile web
 
-![ad_placement.png](https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png)
+<Image align="center" alt="ad_placement.png" src="https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png" />
 
 The location of banners for your apps on mobile websites may significantly impact user conversion rates. In most cases, advertisers use their own mobile websites to convert visitors into mobile users.
 
@@ -162,7 +162,7 @@ Helping advertisers identify the best (and worst) performing media sources for t
 
 > 📄 **Example**
 >
-> [![](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)
+> <Image align="center" alt="" src="https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png" />
 >
 > * 1 and 2 are different ads on the same media source. Compare a single KPI for them, for example, retention day 4 rate, to A/B test creatives, targeting, or ad placement.
 > * 2 and 3 are ads on different media sources. If the creatives and targeting of the ads are identical, comparing a single KPI enables A/B testing the media source.

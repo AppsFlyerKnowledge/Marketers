@@ -25,7 +25,7 @@ x-zendesk:
 
 > **At a glance:** Use the Creative Optimization Overview dashboard to analyze creative performance, so you can choose the most effective creatives and maximize the impact of your campaigns.
 
-[![Main image -Default view.jpg](https://files.readme.io/ae0f7caecf8e232027f14175eac9bc5e1f43250fbd5a438fb62fbdcd3300f484-21367365037073.jpg)](https://files.readme.io/ae0f7caecf8e232027f14175eac9bc5e1f43250fbd5a438fb62fbdcd3300f484-21367365037073.jpg)
+<Image align="center" alt="Main image -Default view.jpg" src="https://files.readme.io/ae0f7caecf8e232027f14175eac9bc5e1f43250fbd5a438fb62fbdcd3300f484-21367365037073.jpg" />
 
 <div id="about-the-creative-optimization-overview-dashboard" />
 
@@ -87,7 +87,7 @@ Use the table to drill down on the details. Group by various dimensions or custo
 
 The following image shows the default table view, which displays creatives according to the selected filtering criteria. The letters in the image correspond to the letters and descriptions in the table that follows.
 
-[![Table_main_image_doctored_final_copy__download_table_.jpg](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)
+<Image align="center" alt="Table_main_image_doctored_final_copy__download_table_.jpg" src="https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg" />
 
 |  | Item | Description |
 | --- | --- | --- |
@@ -146,7 +146,7 @@ Customize the table by clicking the<Image alt="Creative_table_settings_en_us.png
 
 *Note that metrics will show in the individual data rows, which are displayed under the aggregate rows in the table.
 
-[![](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)
+<Image align="center" alt="" src="https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png" />
 
 </Accordion>
 

@@ -30,7 +30,7 @@ x-zendesk:
 
 AppsFlyer integration with Outbrain supports click attribution.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/outbrain.png?v=1)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/outbrain.png?v=1" />
 
 **Prerequisite:** An account with the partner. If you don't have an account, contact the partner to open one before setting up the integration.
 

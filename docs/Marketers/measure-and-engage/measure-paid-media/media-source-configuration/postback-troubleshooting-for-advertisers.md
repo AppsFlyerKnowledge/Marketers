@@ -38,7 +38,7 @@ Various toggles control different parts of the integration. The state of the tog
 
 When the <Anchor target="_blank" href="/marketers/docs/partner-activation-deactivation">**Activate partner**</Anchor> toggle is turned off, conversions aren't attributed and postbacks aren't sent to partners.
 
-![integration_turned_off.png](https://files.readme.io/d43b4f465749e343d9523e90e87e43b77a85cdd920f0c0770a94bcb7a585d920-14979273403793.png)
+<Image align="center" alt="integration_turned_off.png" src="https://files.readme.io/d43b4f465749e343d9523e90e87e43b77a85cdd920f0c0770a94bcb7a585d920-14979273403793.png" />
 
 **To activate the integration:**
 
@@ -66,7 +66,7 @@ The <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configur
 2. Click the Manage integration icon of the partner.
 3. From the **Integration** tab, scroll down to the **In-app events postbacks** toggle and turn it on.
 
-   ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
+   <Image align="center" alt="integration-in_app_event_postbacks_toggle.png" src="https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png" />
 
 </Accordion>
 
@@ -82,7 +82,7 @@ The event could be configured in a way that certain postbacks aren't sent.
 
 Check that the event is included in the list of in-app events that were configured. If it’s not defined, a postback isn't sent.
 
-[![list_of_in_app_events.png](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)
+<Image align="center" alt="list_of_in_app_events.png" src="https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png" />
 
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations** > **Active Integrations.**
 2. Click the Manage integration icon of the partner.
@@ -96,7 +96,7 @@ Check that the event is included in the list of in-app events that were configur
 
 Check that the <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#event-mapping">event mapping</Anchor> is correct. Make sure **AppsFlyer event** (the name of the event as received by AppsFlyer from your mobile app or via S2S) matches the **mapped to partner name** (the exact event name used by the partner).
 
-[![in_app_event_postback_mapping_2.png](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)
+<Image align="center" alt="in_app_event_postback_mapping_2.png" src="https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png" />
 
 </Accordion>
 
@@ -106,7 +106,7 @@ Check that the <Anchor target="_blank" href="/marketers/docs/in-app-event-postba
 
 If a condition is defined for the event, the postback is sent according to the condition. Check if there's a condition that limits postback sending.
 
-[![in_app_event_condition__1_.png](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)
+<Image align="center" alt="in_app_event_condition__1_.png" src="https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png" />
 
 </Accordion>
 
@@ -116,7 +116,7 @@ If a condition is defined for the event, the postback is sent according to the c
 
 Check to see if the in-app event configuration is set to send postbacks to <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#options-for-sending-postbacks">**This partner only** or to **All media sources, including organic**</Anchor>. If it's set to **This partner only**, only the attributed partner gets the postback.
 
-[![in_app_event_sending_options.png](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)
+<Image align="center" alt="in_app_event_sending_options.png" src="https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png" />
 
 </Accordion>
 
@@ -126,7 +126,7 @@ Check to see if the in-app event configuration is set to send postbacks to <Anch
 
 Postbacks are sent according to the <Anchor target="_blank" href="/marketers/docs/in-app-event-postback-configuration#in-app-event-postback-window">postback window</Anchor> setting. Postbacks for events after this period aren't sent to the partner, although the events are still recorded in AppsFlyer.
 
-![in_app_event_postback_window.png](https://files.readme.io/21cae7825d557c1ee89c890ec64c922cb36e31be882850a26bfdc4e5595773f0-14661845664401.png)
+<Image align="center" alt="in_app_event_postback_window.png" src="https://files.readme.io/21cae7825d557c1ee89c890ec64c922cb36e31be882850a26bfdc4e5595773f0-14661845664401.png" />
 
 Note that for <Anchor target="_blank" href="/marketers/docs/self-reporting-networks-srns">SRNs</Anchor>, in-app event postbacks are sent for the duration of the <Anchor target="_blank" href="/marketers/docs/user-level-data-retention#partner-data-retention-periods">partner data retention period</Anchor>.
 
@@ -144,7 +144,7 @@ In the following cases, AppsFlyer doesn't send postbacks due to privacy restrict
 
 For iOS, when <Anchor target="_blank" href="/marketers/docs/apply-aggregated-advanced-privacy-framework#partner-advanced-privacy-switch">Advanced Privacy</Anchor> is turned on but the partner didn't configure Advanced Privacy on their side or they don't support Advanced Privacy, they won't receive <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#types-of-templates-for-sending-postbacks">Advanced Privacy aggregated postbacks</Anchor>.
 
-![partner_not_supporting_ap_postbacks.png](https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png)
+<Image align="center" alt="partner_not_supporting_ap_postbacks.png" src="https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png" />
 
 </Accordion>
 
@@ -181,7 +181,7 @@ In some cases, although AppsFlyer sends postbacks to a partner, they aren't show
 1. In AppsFlyer, from the side menu, select **Reports** > **Raw Data Export.**
 2. View the relevant report under **Postbacks** (Installs, In-app events, Retargeting conversions, In-app events retargeting).
 
-[![postback_reports.JPG](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)
+<Image align="center" alt="postback_reports.JPG" src="https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png" />
 
 </Accordion>
 

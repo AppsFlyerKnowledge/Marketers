@@ -76,7 +76,7 @@ General Settings
 
 **Enable View-Through attribution**
 
-[![](https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png)](https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png)
+<Image align="center" alt="" src="https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png" />
 
 Toggle this to **ON** if you want to attribute view-through installs from ByteDance Ads China. The view-through lookback slider is available on the attribution link tab (described below).
 
@@ -86,7 +86,7 @@ Toggle this to **ON** if you want to attribute view-through installs from ByteDa
 
 AppsFlyer can send automatic postbacks to ByteDance Ads China following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
-![bytedance-default-postbacks.png](https://files.readme.io/5f3cb637fb9ff652533fcfd9c02ea8dc1768e0e1c1686a180ea18c0d2e09309f-50612201121425.png)
+<Image align="center" alt="bytedance-default-postbacks.png" src="https://files.readme.io/5f3cb637fb9ff652533fcfd9c02ea8dc1768e0e1c1686a180ea18c0d2e09309f-50612201121425.png" />
 
 <div id="in-app-events-settings" />
 
@@ -129,19 +129,19 @@ Once you have generated the attribution link, complete the campaign setup proces
 
 Log in to Ocean Engine ([https://ad.oceanengine.com/](https://ad.oceanengine.com/)) > **Library** > **Conversion Tracking**.
 
-![OE_dashboard_1.png](https://files.readme.io/fda140ac7e3023033880b04ed500a675ae78187e4eb694ee200922b729ab119f-50612185108497.png)
+<Image align="center" alt="OE_dashboard_1.png" src="https://files.readme.io/fda140ac7e3023033880b04ed500a675ae78187e4eb694ee200922b729ab119f-50612185108497.png" />
 
 Click on **Tracking application** and create a **New Application Transformation**.
 
-![OE_dashboard_2.png](https://files.readme.io/dbf0c13c23d21d08c195a4ab747e5de0986cb01f5ebde98f6c701ce731480958-50612185109009.png)
+<Image align="center" alt="OE_dashboard_2.png" src="https://files.readme.io/dbf0c13c23d21d08c195a4ab747e5de0986cb01f5ebde98f6c701ce731480958-50612185109009.png" />
 
 Click the **API** method.
 
-![OE_dashboard3.png](https://files.readme.io/70e7f6ca01c532fafb8f2ab7d31d6de51494f11749329c1c1333d1da6f28f284-50612185110417.png)
+<Image align="center" alt="OE_dashboard3.png" src="https://files.readme.io/70e7f6ca01c532fafb8f2ab7d31d6de51494f11749329c1c1333d1da6f28f284-50612185110417.png" />
 
 In the Monitoring link part, enter AppsFlyer click attribution link and/or impression attribution link.
 
-![dashboard4.png](https://files.readme.io/d36ec92a03062fc7ee169bb1ff3863722343577f3ee2b12779065b3e52731348-50612201124369.png)
+<Image align="center" alt="dashboard4.png" src="https://files.readme.io/d36ec92a03062fc7ee169bb1ff3863722343577f3ee2b12779065b3e52731348-50612201124369.png" />
 
 **2. Finish the Attribution Test Following the Instructions on the Website**.
 

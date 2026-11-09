@@ -61,13 +61,13 @@ For more details about partner activation please click <Anchor target="_blank" 
 
 At the top of the Integration tab, there's a note saying that Unity Ads requires sending them the device ID for every install—this is done automatically, no need to do anything on your end.
 
-[![Unity_msc_new_2.png](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)
+<Image align="center" alt="Unity_msc_new_2.png" src="https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png" />
 
 **Unity Ads Game ID**
 
 Unity Ads requires connecting with AppsFlyer via a unique game ID. If you don't know yours, you can obtain it directly from Unity Ads or you can find it, after uploading the game, under **Apps** > **Campaigns**, as shown in the screenshot below.
 
-[![](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)
+<Image align="center" alt="" src="https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png" />
 
 The Unity Ads Platform maps one app to a single Unity Ads Game ID, per account level (advertisers and agencies will have different Game IDs for the same app). Multiple accounts on the Unity Ads Platform can't run the same app with different Game IDs.
 
@@ -75,13 +75,13 @@ The Unity Ads Platform maps one app to a single Unity Ads Game ID, per account l
 
 Turn on this option to attribute view-through installs from Unity Ads. The view-through lookback slider is available on the attribution link tab (described below).
 
-![Unity_ads_msc_new_3.png](https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png)
+<Image align="center" alt="Unity_ads_msc_new_3.png" src="https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png" />
 
 <div id="default-postbacks" />
 
 ### Default postbacks
 
-![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
+<Image align="center" alt="Screen_Shot_2022-07-28_at_13.07.25.png" src="https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png" />
 
 Send automatic postbacks to Unity Ads following user installs. Use this section to define the source of the users that allow sending these postbacks:
 
@@ -100,7 +100,7 @@ Send automatic postbacks to Unity Ads following user installs. Use this section 
 
 Map AppsFlyer events with the partner via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant with target validation rules).
 
-[![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+<Image align="center" alt="" src="https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png" />
 
 <div id="to-configure-in-app-event-postbacks" />
 

@@ -41,7 +41,7 @@ x-zendesk:
 
 进入您想要推广的产品相应页面, 从左边导航栏点击”媒体平台配置”。
 
-![___1.png](https://files.readme.io/424b62c668e7da9d673bdc441abfe654266d118f329a310178d61dfb7ab15b08-360001161517.png)
+<Image align="center" alt="___1.png" src="https://files.readme.io/424b62c668e7da9d673bdc441abfe654266d118f329a310178d61dfb7ab15b08-360001161517.png" />
 
 <div id="2-搜索选择针对百度搜索ocpcbaidusearch_int的归因配置页面" />
 
@@ -49,19 +49,19 @@ x-zendesk:
 
 进入媒体平台配置页面后, 在搜索框输入baidusearch\_int
 
-![___2.png](https://files.readme.io/fca2eea05fe6ace32fe2f6edf8b704d7461e69d2560638b2336422a6a373b5df-360001161537.png)
+<Image align="center" alt="___2.png" src="https://files.readme.io/fca2eea05fe6ace32fe2f6edf8b704d7461e69d2560638b2336422a6a373b5df-360001161537.png" />
 
 <div id="3-打开百度搜索ocpc配置页面-渠道对接模块点击激活按钮归因的应用激活信息会默认发送给媒体" />
 
 ### 3. 打开百度搜索OCPC配置页面, ”渠道对接”模块点击“激活”按钮，归因的应用激活信息会默认发送给媒体。
 
-![mceclip0.png](https://files.readme.io/da69c64626656863dd89ab6a305f13e01c7e7161b98c9f1e97571d347ae2d5f1-360003338578.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/da69c64626656863dd89ab6a305f13e01c7e7161b98c9f1e97571d347ae2d5f1-360003338578.png" />
 
 <div id="4-在归因链接模块取出预配置好的点击归因链接" />
 
 ### 4. 在“归因链接”模块取出预配置好的点击归因链接。
 
-![mceclip1.png](https://files.readme.io/a3b8d791e9547f7fd8e6e16eb0777d17def70e1c4001649718fdebe790edc086-360003248497.png)
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/a3b8d791e9547f7fd8e6e16eb0777d17def70e1c4001649718fdebe790edc086-360003248497.png" />
 
 形如：
 

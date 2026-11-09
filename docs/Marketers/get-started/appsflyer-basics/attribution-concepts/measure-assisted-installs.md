@@ -68,7 +68,7 @@ In aggregate dashboards and raw data reports, the (up to 3) contributor networks
 
 In raw data reports, data on the contributing networks is broken down into separate fields for Contributors 1-3.
 
-[![](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)
+<Image align="center" alt="" src="https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png" />
 
 For each of the contributing networks, the raw data report includes the following:
 

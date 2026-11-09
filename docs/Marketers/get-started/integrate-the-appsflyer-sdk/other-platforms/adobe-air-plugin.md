@@ -79,7 +79,7 @@ If the following was not added automatically, add it to the APP\_NAME-app.xml:
 >
 > As a result, you should see your Manifest like this:
 >
-> [![](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)](https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png)
+> <Image align="center" alt="" src="https://files.readme.io/b50aa4f38d258eb2f6a01017da248fdf8a9fd21c3d83aae8bf4928094b8094b8-360010932998.png" />
 >
 > **Important:** Due to some limitations in the <Anchor target="_blank" href="https://help.adobe.com/en_US/air/build/WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html">ADT</Anchor>, after the APK is built, it is missing some important files.
 >

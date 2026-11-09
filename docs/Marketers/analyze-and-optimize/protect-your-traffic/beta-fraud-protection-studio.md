@@ -64,7 +64,7 @@ FPS has two modes, **implemented** and **tagged**. Advertisers can switch betwee
   * **Blocked** In real-time
   * **Reported** as post-attribution fraud
 
-[<Image alt="Image description" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)   
+<Image align="center" alt="Image description" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />
 **Mechanism with FPS:** Installs are either considered:
 
 * **Valid** attribution
@@ -74,7 +74,7 @@ FPS has two modes, **implemented** and **tagged**. Advertisers can switch betwee
     * **Blocked** In real-time
     * **Reported** as post-attribution fraud
 
-[<Image alt="Image description" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)
+<Image align="center" alt="Image description" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />
 
 <div id="note" />
 
@@ -97,7 +97,7 @@ Tagged detections aren't reflected in fraud reports. Tagged detections are avail
 
 **Protect360 dashboard**:
 
-[<Image alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />](https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png)
+<Image align="center" alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />
 
 * Total tagged count in the upper page components (1)
 * Overtime trend of “Detection Status” (2)
@@ -184,7 +184,7 @@ The detection status allows you to choose the [detection](/docs/beta-fraud-prote
 1. In the Click Flood window, choose the [detection mode](/docs/beta-fraud-protection-studio#fps-modes).
 2. Click the **Save** button at the bottom of the page.
 
-   [<Image alt="Expandable Image" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />](https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png)
+   <Image align="center" alt="Expandable Image" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />
 
 <div id="current-detection-status" />
 
@@ -268,7 +268,7 @@ Future Releases allow you to set the number of days you want future detection pa
 1. In the New Release window, from the dropdown box, select the number of days you want to mark new packages as tagged before they get implemented (default: 14 days, adjustable up to 14 days)
 2. Click the **Save**.
 
-<Image alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
+<Image align="center" alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
 
 <div id="note-2" />
 
@@ -297,7 +297,7 @@ The New Current Release section allows you to see:
 1. Open the **New Release Card** in the FPS tab.
 2. Monitor detection performance using the table, and exportable reports.
 3. When ready, click **Implement Now** to apply the changes.  
-   [![](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)
+   <Image align="center" alt="" src="https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png" />
 
 <div id="note-3" />
 
@@ -413,7 +413,7 @@ The Re-engagement hijacking page is broken into two sections.
     * Rate out of total attributions - the portion of re-engagement attributions out of all app’s attributions
   * Re-engagement detection by media source - The number of re-engagement hijacking detections for the top detected media sources
 
-<Image alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
 
 </Accordion>
 
@@ -455,7 +455,7 @@ This section is further broken up into:
 
 * **In-app based detection by media source** - The number of installs by the top media sources.
 
-<Image alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
 
 </Accordion>
 

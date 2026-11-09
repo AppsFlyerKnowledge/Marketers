@@ -26,7 +26,7 @@ x-zendesk:
 
 > **At a glance:** Use the Creative Optimization Discovery AI dashboard to analyze the performance of your creatives and the scenes and elements they're built from, to produce and maintain data-driven, winning creatives.
 
-[![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
+<Image align="center" alt="Main Discovery image.jpg" src="https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg" />
 
 <div id="about-the-creative-optimization-discovery-ai-dashboard" />
 
@@ -69,7 +69,7 @@ If you haven't configured Creative Optimization yet, you can find instructions o
 6. View the discovery card gallery of all the creatives, elements, scenes, or texts that match your filters and search settings.
    1. [Optional] To change the metrics displayed on the cards, click the **Settings** icon, and select up to 5 metrics to display. [Learn more about discovery card settings](/docs/creative-optimization-discovery-ai-dashboard#discovery-tabs).
    2. Sort the gallery tiles from highest to lowest (or the reverse) by the metrics. Metrics available to sort by are those selected in the discovery card settings.  
-      <Image alt="Sort by new.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
+      <Image align="center" alt="Sort by new.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
 7. Click on a specific card to drill down deeper and get additional performance data and insights.
 
 </Accordion>
@@ -84,7 +84,7 @@ You can customize which metrics you see on the Discovery tiles.
 
 1. Click the<Image alt="Gear icon.jpg" src="https://files.readme.io/b54f4534bc513b597f7cdda1fb4db7dd811d71b1466ddd3b50b9efe751cf68d3-24287873747857.jpg" width="31px" />icon on the upper right (next to **Sort by**).
 2. Select the desired metrics (up to 5) and click **Apply**.  
-   <Image alt="Discovery card settings.jpg" src="https://files.readme.io/7b05960fde8159a6e5a53917e2e972ea059d6a6dc165ee66c7d6d390c4148786-24289299704081.jpg" width="738px" />  
+   <Image align="center" alt="Discovery card settings.jpg" src="https://files.readme.io/7b05960fde8159a6e5a53917e2e972ea059d6a6dc165ee66c7d6d390c4148786-24289299704081.jpg" width="738px" />
    The selected metrics will appear on the tiles.
 
 **Available metrics include:**
@@ -269,7 +269,7 @@ Explore performance data for creatives and the scenes, elements, and texts that 
 
 See a gallery of all your creatives, along with their performance data. The tiles displayed are based on the main Creative filter selections. Additionally, metrics the tiles display and the sorting method used to display tiles can be customized. See settings and sorting.
 
-![creatives.png](https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png)
+<Image align="center" alt="creatives.png" src="https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png" />
 
 |  | Dimension/metric | Description |
 | --- | --- | --- |
@@ -291,7 +291,7 @@ Powered by AI, video creatives are automatically broken down into scenes and dis
 
 **Note**: The tiles displayed are based on the main Creative filter selections. Additionally, metrics the tiles display and the sorting method used to display tiles can be customized. See settings and sorting.
 
-<Image alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
+<Image align="center" alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
 
 |  | Dimension/metric | Description |
 | --- | --- | --- |
@@ -312,7 +312,7 @@ Our fully automated AI algorithms further break down video creatives into signif
 
 **Note**: The tiles displayed are based on the main Creative filter selections. Additionally, metrics the tiles display and the sorting method used to display tiles can be customized. See settings and sorting.
 
-![elements.png](https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png)
+<Image align="center" alt="elements.png" src="https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png" />
 
 |  | Dimension/metric | Description |
 | --- | --- | --- |
@@ -332,7 +332,7 @@ Our fully automated AI algorithms break down video creatives into significant te
 
 **Note**: The tiles displayed are based on the main Creative filter selections. Additionally, metrics the tiles display and the sorting method used to display tiles can be customized. See settings and sorting.
 
-<Image alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
+<Image align="center" alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
 
 |  | Dimension/metric | Description |
 | --- | --- | --- |

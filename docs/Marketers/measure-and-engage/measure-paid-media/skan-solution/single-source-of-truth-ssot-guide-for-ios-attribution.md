@@ -42,7 +42,7 @@ To include the SSOT flag in your data, you must turn on SSOT in the Conversion S
 
 <Accordion title="Turn on Single Source of Truth">
 
-![SSOTControl.png](https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png)
+<Image align="center" alt="SSOTControl.png" src="https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png" />
 
 **To turn on SSOT:**
 
@@ -60,7 +60,7 @@ See <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio">SKAN C
 
 ## Overview dashboard Single Source of Truth view
 
-![SSOTisNowOn.png](https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png)
+<Image align="center" alt="SSOTisNowOn.png" src="https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png" />
 
 The Single Source of Truth view available via the Overview dashboard provides a complete picture of non-organic performance metrics. In the view:
 
@@ -80,11 +80,11 @@ Data in the SSOT view is available 3-5 days after you enable Single Source of Tr
 
 1. Before you begin, verify that in the Conversion Studio <Anchor target="_blank" href="/marketers/docs/skan-conversion-studio#single-source-of-truth">Single Source of Truth</Anchor> is turned on.
 2. In AppsFlyer, go to **Dashboard** > **Overview.**   
-   <Image alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
+   <Image align="center" alt="SelectSavedReport.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
 3. Click ▼.
 4. Select **Lite overview**.  
    The Single Source of Truth switch displays.  
-   <Image alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
+   <Image align="center" alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
 5. Turn on Single Source of Truth.
 6. One of the following occurs:
    * Dashboard metrics and charts display.  
@@ -194,7 +194,7 @@ SKAN attribution and AF modeled attribution work differently and have different 
 
 The possible SKAN-AF model attribution scenarios are illustrated in the following Venn diagram.
 
-![skan_af_model_diagram.png](https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png)
+<Image align="center" alt="skan_af_model_diagram.png" src="https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png" />
 
 The following table describes the reasons for each attribution scenario.
 
@@ -210,7 +210,7 @@ The following table describes the reasons for each attribution scenario.
 
 SSOT works as detailed in the visual that follows.
 
-![SingleSourceOfTruth.png](https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png)
+<Image align="center" alt="SingleSourceOfTruth.png" src="https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png" />
 
 **How does the SSOT mechanism work?**
 

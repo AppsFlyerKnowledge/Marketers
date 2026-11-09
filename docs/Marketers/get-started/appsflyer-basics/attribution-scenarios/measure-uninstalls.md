@@ -69,7 +69,7 @@ By comparing the quality of users acquired from different sources (media sources
 >
 > Media source B, on the other hand, has 5,949 installs and the lowest uninstall rate (12%).
 >
-> ![Uninstall rates.png](https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png)
+> <Image align="center" alt="Uninstall rates.png" src="https://files.readme.io/36fb732bfe3a63729b1aa0913f2fe3f24df6a7c86adde9f5c2b95424d840dec4-33839423253137.png" />
 >
 > Based on these insights, you could reallocate more of your budget to Media source B and try to acquire more engaged users.
 
@@ -181,7 +181,7 @@ Android uninstall measurement is available by configuring uninstall measurement 
    2. Select a project.
    3. Go to **Project Overview** > **Project settings.**
 
-      ![UninstallFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
+      <Image align="center" alt="UninstallFirebase.png" src="https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png" />
    4. Copy the Project ID. You will need it at a later stage in the process.
 2. To enable the FCM API:
    1. Go to the **Cloud Messaging tab**.
@@ -199,7 +199,7 @@ Android uninstall measurement is available by configuring uninstall measurement 
    6. Click **Add permissions.**
    7. In <Image alt="adjusted.png" src="https://files.readme.io/c9fc0c6358ff89e1004ac1ab348a4b286d58c8a5cbe024aeb5c637136f3a67ac-33839382508049.png" width="20px" /> **Filter**, Select the **cloudmessaging.messages.create** permission.
 
-      ![Cloud Messaging permission filter](https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png)
+      <Image align="center" alt="Cloud Messaging permission filter" src="https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png" />
    8. Click **Add** and then click **Create**.
 4. **To assign AppsFlyer the FCM uninstall role:**
    1. In the side menu, select **IAM**.
@@ -237,7 +237,7 @@ Uninstall measurement using Firebase Messaging is supported by Android SDK V4.7.
 2. Open the Firebase <Anchor target="_blank" href="https://console.firebase.google.com">Console</Anchor>.
 3. In the Firebase Console, navigate to the Project Settings (click on the cogwheel next to Project Overview on the left pane of the page).
 
-   ![firebase_cloud_messaging_server_key.png](https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png)
+   <Image align="center" alt="firebase_cloud_messaging_server_key.png" src="https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png" />
 4. In the Cloud Messaging tab, you see two Server Keys.
 5. Copy the **Server Key**.
 
@@ -258,7 +258,7 @@ Uninstall measurement using Firebase Messaging is supported by Android SDK V4.7.
 2. If necessary, turn on **Uninstall measurement**.
 3. Select **HTTP V1, and enter the project ID you prepared earlier.**
 
-   ![UninstallHTTPV1.png](https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png)
+   <Image align="center" alt="UninstallHTTPV1.png" src="https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png" />
 4. Click **Test connection**.  
    The success message displays.
 
@@ -284,7 +284,7 @@ Uninstall measurement using Firebase Messaging is supported by Android SDK V4.7.
 3. Scroll down to the Uninstall section.
 4. Turn on **Uninstall measurement**.
 
-   ![Uninstall_iOS_p2.png](https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png)
+   <Image align="center" alt="Uninstall_iOS_p2.png" src="https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png" />
 5. Click the upload icon, and select the P12 file.
 6. [Optional] If the P12 certificate is password-protected, enter the password.
 7. Click **Validate** to send the certificate to AppsFlyer for verification.
@@ -342,7 +342,7 @@ Keep in mind the following when testing iOS apps:
 
 ## Mapping the uninstall event
 
-![Uninstall_event_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
+<Image align="center" alt="Uninstall_event_postback.png" src="https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png" />
 
 To share uninstall data with an ad network requires mapping the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">af\_uninstall event</Anchor> to a partner. Unlike postbacks for regular in-app events, the uninstall event is not sent in real-time. The event time that is reported represents the time that AppsFlyer determined the app was uninstalled, and not the actual uninstall itself.
 

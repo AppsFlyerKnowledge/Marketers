@@ -85,7 +85,7 @@ Based on the referrer type, AppsFlyer evaluates the session state and decides wh
   * If there's an active session and a non-direct media source is present (UTM, PID, click ID, etc.), record the visit. This revisit may trigger a retargeting conversion (re-engagement), which is used to attribute subsequent events.
   * If there's an active session and no media source information is present, don't record a new visit within that session.
 
-<Image alt="traffic resolution flow" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
+<Image align="center" alt="traffic resolution flow" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
 
 <div id="step-2-media-source-resolution" />
 

@@ -86,16 +86,16 @@ The Live Event Viewer is a testing tool that displays real-time data sent from t
 
 1. In AppsFlyer, from the side menu, select **Settings** > **SDK Integration Tests**.
 
-   [<Image alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />
 2. Click **Live Events.**
 
-   [![](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)
+   <Image align="center" alt="" src="https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png" />
 3. In the **App** list, select the app that you want to test.
 4. In the **Test device** list, select the device you want to use for testing your app. If you don’t have a test device, you can register one by clicking on the **Add a test device** link.
 5. Click **Continue** to begin recording your app events.
 6. Launch the app and interact with it to generate sessions and in-app events.
 
-   [![](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)
+   <Image align="center" alt="" src="https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png" />
 7. Click an event item to view the event details on the right panel.
 8. If you want to stop recording the events click **Stop**. Click **Start** again when you want to continue.
 
@@ -107,10 +107,10 @@ The Live Event Viewer is a testing tool that displays real-time data sent from t
 
 1. In AppsFlyer, from the side menu, select **Settings** > **SDK Integration Tests**.
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. Click **Non-Organic Installs** test.
 
-   [![](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)
+   <Image align="center" alt="" src="https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png" />
 3. In the **App** list, select the app that you want to test.
 4. In the **Test device** list, select the device you want to use for testing your app. If you don’t have a test device, you can register one by clicking on the **Add a test device** link.
 5. If the tested app is installed on your test device remove it.
@@ -140,10 +140,10 @@ For integration errors, contact your developer.
 
 1. In AppsFlyer, from the side menu, select **Settings** > **SDK Integration Tests**.
 
-   [![Keyboard Maestro Engine 2024-10-06 10.00.47.png](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/4a4941c82e49eb4f71f7f391e88d9e771432aee95232d54b0fa77d25eb91f944-31828925857169.png)
+   <Image align="center" alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. Click **Retargeting**.
 
-   [![](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)
+   <Image align="center" alt="" src="https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png" />
 3. In the **App** list, select the app that you want to test.
 4. In the **Test device** list, select the device you want to use for testing your app. If you don’t have a test device, you can register one by clicking on the **Add a test device** link.
 5. Click **Continue** and follow the wizard steps.
@@ -249,7 +249,7 @@ Testing installs allows you to verify that the AppsFlyer SDK is attributing inst
 
    You should see an install that is attributed to the test campaign under the media source called **Test**. Allow up to 30 minutes for the install to appear in the app's dashboard.
 
-   [![Test_Install_Attribution_Link](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)
+   <Image align="center" alt="Test_Install_Attribution_Link" src="https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png" />
 
 <div id="tip" />
 
@@ -323,7 +323,7 @@ Before running retargeting tests, the following setup is required:
 
    In the app's dashboard, click **App Settings** and turn on **Enable retargeting attribution**.
 
-   ![Set_Reattribution_window](https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png)
+   <Image align="center" alt="Set_Reattribution_window" src="https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png" />
 2. Do one of the following:
    * Create an app-specific attribution link. Make sure to include the retargeting parameter, `is_retargeting=true`, and the advertising ID. To view the GAID, IDFA, or IDFV, follow the  <Anchor target="_blank" href="/marketers/docs/registering-test-devices">Registering a test device</Anchor> instructions.    
      The following is an example of an attribution link that includes an Android-specific parameter as the device identifier (GAID). For more information about adding other device identifier parameters, such as IDFA or IDFV, see <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters#ios-specific-parameters">Attribution link structure and parameters</Anchor>.
@@ -365,7 +365,7 @@ You can now proceed to test re-attribution and re-engagement.
 
    You should see the install attributed to the media source and campaign. Allow up to 30 minutes for the retargeted install to appear in the dashboard.
 
-   [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+   <Image align="center" alt="Testing_SDK_Reattribution" src="https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png" />
 
 <div id="tip-1" />
 
@@ -403,7 +403,7 @@ Make sure that your app is configured for <Anchor target="_blank" href="/markete
 
    In the dashboard, you should see a re-engagement attributed to the media source and campaign. Allow up to 30 minutes for the re-engagement to appear.
 
-   [![Testing_SDK_Re-engagement](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)
+   <Image align="center" alt="Testing_SDK_Re-engagement" src="https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png" />
 
 **Tip!** Consider downloading the conversions raw data report to verify that the re-engagement was attributed to the correct media source. This report takes several minutes to download.
 
@@ -427,7 +427,7 @@ We recommend that you start by testing an organic install.
 
 The app's dashboard displays a new organic install. Allow up to 30 minutes for the install to appear.
 
-[![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+<Image align="center" alt="" src="https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png" />
 
 <div id="testing-ctv" />
 

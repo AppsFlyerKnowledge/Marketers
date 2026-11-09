@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **At a glance:** Applovin MAX, an AppsFlyer integrated partner, provides app owners with ad revenue-generating solutions.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/applovinmax.png" width="265px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/applovinmax.png" width="265px" />
 
 <div id="setting-up-applovin-max-integration" />
 

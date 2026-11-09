@@ -132,7 +132,7 @@ Yes.
 2. Select the OneLink template.
 3. Click the 'Edit template' option from the ellipsis menu.
 
-   <Image alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
+   <Image align="center" alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
 4. Click the trash icon.
 
 **Note:** If you have existing OneLink URLs based on the deleted template, **they won’t work even to get users to the app store.** For this reason, it’s particularly important that you don’t delete a template without first making sure that there are no OneLink URLs using it. Alternatively, consider if it's possible to achieve the results you need by changing the existing template's configuration instead of deleting it.
@@ -259,7 +259,7 @@ As of November 2025,
 * The link will stop working within 2 minutes of deletion.
 * Links deleted via the UI after November 5, 2025, can be restored through the **Deleted links** table, accessible in OneLink management.
 
-  <Image alt="deleted links.png" src="https://files.readme.io/d5a2cc7047fda06ba8249cc00b2830c309ec6137f10306cdabca61bcfe3d4d15-small-41829768141713.png" width="2768px" />
+  <Image align="center" alt="deleted links.png" src="https://files.readme.io/d5a2cc7047fda06ba8249cc00b2830c309ec6137f10306cdabca61bcfe3d4d15-small-41829768141713.png" width="2768px" />
 * Links can be restored up to 90 days from the deletion date. If more than 90 days have passed from the link deletion date, the link cannot be restored.
 
 </Accordion>
@@ -292,7 +292,7 @@ Fallback URLs send users to specified web pages if opening the app or deep linki
 
 To implement a fallback URL, in the OneLink template or custom link settings, set the link behavior for when the app isn't installed to redirect to a different URL.
 
-![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
+<Image align="center" alt="different_url.png" src="https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png" />
 
 Using this setting adds `af_ios_url` and `af_android_url` as destination parameters for the fallback, which will cause iOS users to be redirected to the page specified by `af_ios_url` and Android users to be redirected to the page specified by `af_android_url`.
 
@@ -628,11 +628,11 @@ WeChat overrides Android and iOS deep links and redirects users to a web page. F
 
 To overcome this, OneLink recognizes clicks in WeChat and loads a dedicated landing page instructing the user to click the options button and then to click **Open in Browser.** This, in turn, opens the redirect URL defined in the OneLink template setup.
 
-![WeChat_a.jpg](https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg)
+<Image align="center" alt="WeChat_a.jpg" src="https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg" />
 
 If the user’s WeChat language is registered as Chinese, OneLink generates a localized version of the landing page:
 
-![WeChat_b.jpg](https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg)
+<Image align="center" alt="WeChat_b.jpg" src="https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg" />
 
 </Accordion>
 

@@ -134,7 +134,7 @@ AppsFlyer enables advertisers who believe the DMA requirements don't apply to th
 2. Search for the partner and click **Manage integration**.
 3. From the integration setup tab, turn on **Non-EU users**
 
-<Image alt="Non-EU users toggle in the integration setup tab" src="https://files.readme.io/6e86882f209773d7e8ca0ff801c23fd70ab0e3511c69b1a47c0ea48e0dd710db-22361665421713.png" width="595px" />
+<Image align="center" alt="Non-EU users toggle in the integration setup tab" src="https://files.readme.io/6e86882f209773d7e8ca0ff801c23fd70ab0e3511c69b1a47c0ea48e0dd710db-22361665421713.png" width="595px" />
 
 </Accordion>
 

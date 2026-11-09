@@ -55,7 +55,7 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 ### Default Postbacks
 
-<Image alt="mceclip2.png" src="https://files.readme.io/445b39b0d2635e1715f92dc5b55223a67bfe0f46a65276db630fab4f7bbb556a-50900041349777.png" width="601px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/445b39b0d2635e1715f92dc5b55223a67bfe0f46a65276db630fab4f7bbb556a-50900041349777.png" width="601px" />
 
 <div id="in-app-events-settings" />
 
@@ -63,7 +63,7 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 In this section you can map your AppsFlyer events with Qutoutiao Ads via postbacks. 
 
-![mceclip0.png](https://files.readme.io/a4e06079141b7df1495eef96144c72d9cbeef6bc20959bb27dc16535f57ce74a-50900041353233.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/a4e06079141b7df1495eef96144c72d9cbeef6bc20959bb27dc16535f57ce74a-50900041353233.png" />
 
 1. Toggle In-App Event Postbacks to ON
 2. Click **Add Event** to add an SDK Event to the list
@@ -104,7 +104,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/e4ea7011f1349ebe716bebaf441fc363cb9e8c9d8c59b11c7f785bcbe0503e84-50900041358865.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/e4ea7011f1349ebe716bebaf441fc363cb9e8c9d8c59b11c7f785bcbe0503e84-50900041358865.png" />
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
@@ -118,7 +118,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/af41e5f6eeefd2ac94050659c919e86b312e205473a7ca539c8cd6f400930c6e-50900041360145.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/af41e5f6eeefd2ac94050659c919e86b312e205473a7ca539c8cd6f400930c6e-50900041360145.png" />
 
 <div id="click-attribution-link" />
 
@@ -150,7 +150,7 @@ Ad Revenue is not supported in the integration with this partner.
 
 In this tab, you can select the permissions to grant Qutoutiao Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Qutoutiao Ads, the permissions tab is active and you can grant control to Qutoutiao Ads.
 
-![rtb_house-permissions-new.png](https://files.readme.io/5aff8873b61b3685001598c30a1103dbfa5828b42afdcb3a0131d3ee75bf34cb-50900041361937.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/5aff8873b61b3685001598c30a1103dbfa5828b42afdcb3a0131d3ee75bf34cb-50900041361937.png" />
 
 <div id="ad-network-permissions" />
 

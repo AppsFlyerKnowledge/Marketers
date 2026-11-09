@@ -34,7 +34,7 @@ x-zendesk:
 
 In China, about 30% of mobile devices are iOS. In 2016, App Annie reported that China has leaped ahead to become the world’s top revenue generator in the iOS App Store with some $1.7 billion earned.
 
-[![](https://files.readme.io/e4a88adb5bb0e49904d9fed5117a3b45736c572fd3c2fa602aef4f9b1b6d48f8-115015413586.png)](https://files.readme.io/e4a88adb5bb0e49904d9fed5117a3b45736c572fd3c2fa602aef4f9b1b6d48f8-115015413586.png)
+<Image align="center" alt="" src="https://files.readme.io/e4a88adb5bb0e49904d9fed5117a3b45736c572fd3c2fa602aef4f9b1b6d48f8-115015413586.png" />
 
 <div id="ios-app-store-is-still-the-apple-app-store" />
 

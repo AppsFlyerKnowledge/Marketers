@@ -76,7 +76,7 @@ When AAP applies to a given user's data, data availability depends on that user'
 
 The terms defined are used in the figure and sections that follow to describe the data available to advertisers and partners.
 
-![Advanced Privacy Framework - Advertisers (4).png](https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png)
+<Image align="center" alt="Advanced Privacy Framework - Advertisers (4).png" src="https://files.readme.io/0291fe2eea5f6efc41f2338824a0017be3e265f502e0d3999d52ac87b1ee7719-35847850634897.png" />
 
 Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
 
@@ -118,7 +118,7 @@ Owned media includes digital marketing campaigns used by advertisers to reach cu
 
 The AAP is an app-level toggle that controls the Advanced Privacy settings for all partners of the selected app. The AAP toggle is located on the **App Settings** page. When the AAP toggle is on, the **Advanced Privacy** toggles for all partners of the selected app are automatically turned on and can't be modified. When off, advertisers can go to each partner integration individually and turn on **Advanced Privacy**.
 
-![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
+<Image align="center" alt="AAPcontrol.png" src="https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png" />
 
 <div id="aap-enabled" />
 
@@ -151,7 +151,7 @@ The AAP is an app-level toggle that controls the Advanced Privacy settings for a
 
 If AAP is disabled, advertisers can set the Advanced Privacy setting for each ad network individually.
 
-![APControl.png](https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png)
+<Image align="center" alt="APControl.png" src="https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png" />
 
 **To turn off a partner's Advanced Privacy:**
 
@@ -202,7 +202,7 @@ In the case of the attributed network the postback type used to share data depen
 
 The various user consent scenarios and postback types used are illustrated in the figure that follows.
 
-![AAP - Attributed ad networks.png](https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png)
+<Image align="center" alt="AAP - Attributed ad networks.png" src="https://files.readme.io/d776c77115beb4c6b6ada1850077f186aa2feb809a8b69af8cf0ec760cd02b39-35847865314961.png" />
 
 Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
 
@@ -212,11 +212,11 @@ Advanced Privacy behaves differently when served on the web and the af\_media\_t
 
 Unattributed postbacks are sent to a network when the sending option in the integrated partner's integration tab is set to *all media sources, including organic* and that partner is not attributed to the event as illustrated in the figure that follows.
 
-![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+<Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 The various user consent scenarios and postback type used are illustrated in the flowchart that follows.
 
-![AAP - Unattributed ad networks.png](https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png)
+<Image align="center" alt="AAP - Unattributed ad networks.png" src="https://files.readme.io/bb8a5d192e2120f8df90b9be044c0b4abf48c2250f5128fbbce76c60c89718cc-35847850645649.png" />
 
 Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
 
@@ -237,7 +237,7 @@ Postbacks containing user-level attribution data including user identifiers are 
 
 The various user consent scenarios and postback type used are illustrated in the figure that follows.
 
-![AAP - Analytics partner.png](https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png)
+<Image align="center" alt="AAP - Analytics partner.png" src="https://files.readme.io/4bb77720f9e0be093e325f989987f5b5ba2dba5aa26e2f32df5f1bd5b99161eb-35847865320593.png" />
 
 Advanced Privacy behaves differently when served on the web and the af\_media\_type=web or af\_media\_type=app parameter must be used. See <Anchor target="_blank" href="/partners/docs/advanced-privacy-guide-postback-macros-for-ad-networks#web-campaigns">here</Anchor> for more information.
 
@@ -256,7 +256,7 @@ Advanced Privacy behaves differently when served on the web and the af\_media\_t
 
 **Grant an agency permission to set Advanced Privacy**
 
-![agency_advanced_privacy.png](https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png)
+<Image align="center" alt="agency_advanced_privacy.png" src="https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png" />
 
 **To allow an agency to set Advanced Privacy**:
 

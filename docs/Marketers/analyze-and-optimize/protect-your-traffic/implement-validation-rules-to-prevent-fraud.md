@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **At a glance:** Validation rules add a custom layer of protection against incorrectly targeted campaigns and fraud. The rules enable app owners to control which installs and in-app event attributions get blocked, or attributed to the last valid source.
 
-![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
+<Image align="center" alt="5906_animation-750x330__1_.gif" src="https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif" />
 
 <div id="overview" />
 
@@ -111,7 +111,7 @@ Parameters that aren’t relevant to the selected event type, or aren’t includ
 | End-user event | Event name, Event value, Install to event time, Event source, Currency, Revenue |
 | Engagements | Engagement |
 
-![New Validation Rule page.jpg](https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png)
+<Image align="center" alt="New Validation Rule page.jpg" src="https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png" />
 
 The rule builder contains the following sections:
 

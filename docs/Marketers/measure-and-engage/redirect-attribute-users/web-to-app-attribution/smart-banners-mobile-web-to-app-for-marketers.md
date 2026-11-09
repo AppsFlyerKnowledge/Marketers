@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **At a glance:** Convert your website visitors into mobile app users with Smart Banners.
 
-[![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg" />
 
 <div id="note" />
 
@@ -290,7 +290,7 @@ The Targeting & behavior panel shows you the settings you configured for that ba
 
       A window to choose a banner template opens.
 
-      [![](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)
+      <Image align="center" alt="" src="https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png" />
    2. Hover over a **Creative template**, and click **Create** to enter the **Build creative** setup page.
    3. Customize all the elements in the Smart Banner creative. To do so, select elements by name or click on them on the preview image. **Note:** Not all elements are available on every template.
       * Title

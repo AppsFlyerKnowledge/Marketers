@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance:** See app activity, engagement, and in-app metrics during a given period. Current day metrics update in real-time.
 
-![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
+<Image align="center" alt="ActivityDB.png" src="https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png" />
 
 <div id="activity-dashboard" />
 
@@ -68,7 +68,7 @@ The detailed analysis tab is divided into sections: headline metrics, activity t
 
 <Accordion title="High-level tab: previous twelve-months">
 
-![ActivityHiLevel.png](https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png)
+<Image align="center" alt="ActivityHiLevel.png" src="https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png" />
 
 The tab contains a twelve-month historical overview of app activity performance and has the following charts: 
 

@@ -75,7 +75,7 @@ For more details about partner activation, click <Anchor target="_blank" href="/
 
 Convertro connects with AppsFlyer via a unique Page URL, Site ID, and Client Name. If you don't already have them, you must obtain them from Convertro to continue with the integration or follow the instructions below.
 
-[![](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)](https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png)
+<Image align="center" alt="" src="https://files.readme.io/74a1ea32d0667da1a4fe4797cb83f75639111b24c98f72d2caa721e6911e3015-360002220189.png" />
 
 <div id="obtaining-the-client-name-page-url--site-id-from-the-convertro-platform" />
 
@@ -85,15 +85,15 @@ To obtain the Client Name, Page URL, and Site ID, login to the Convertro dashboa
 
 **Page URL:**
 
-[![](https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png)](https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png)
+<Image align="center" alt="" src="https://files.readme.io/f20c2e45146f0874d94dc84c4f61658e15274970f348896a40b2806d3fe540c9-204790263.png" />
 
 **Site ID:**
 
-[![](https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png)](https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png)
+<Image align="center" alt="" src="https://files.readme.io/b60897bea0b640cb393bceecb57c14370b2ba074818160af0a25a53c7a8ce26b-204790283.png" />
 
 **Client Name:**
 
-![](https://files.readme.io/2e5342006bdfff9e3b3c1dffdaed3e9d83ec2fe4c465b7918023a359776cee91-204595606.png)
+<Image align="center" alt="" src="https://files.readme.io/2e5342006bdfff9e3b3c1dffdaed3e9d83ec2fe4c465b7918023a359776cee91-204595606.png" />
 
 <div id="default-postbacks" />
 
@@ -101,7 +101,7 @@ To obtain the Client Name, Page URL, and Site ID, login to the Convertro dashboa
 
 AppsFlyer can send automatic postbacks to Convertro user installs. Use this section to define sending these postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/e0cf7b9ce9a13f572017dfc7bb4581430ddbfdd2e198fe20ef0b953c6c3188a6-18274456382865.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/e0cf7b9ce9a13f572017dfc7bb4581430ddbfdd2e198fe20ef0b953c6c3188a6-18274456382865.png" />
 
 Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Convertro or select **Off**.
 
@@ -111,7 +111,7 @@ Click **Save.**
 
 ### In-app event settings
 
-[![](https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png)](https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png)
+<Image align="center" alt="" src="https://files.readme.io/5c1d6841c7f8397d797964790c1f200d60a6ab81fe67eb2162b2a5e7c73462d3-360002200405.png" />
 
 In this section, you can map your AppsFlyer events with Convertro via postbacks.
 

@@ -167,11 +167,11 @@ Braze connects with AppsFlyer via a unique API Key and REST Endpoint.
 
 1. In your Braze account, under **Technology Partners,** go to **Attribution**.
 2. Select **AppsFlyer**.
-   ![Select AppsFlyer as the technology partner in Braze](https://files.readme.io/db96e8b5e2363f5250c6c1146a1f7a15e1ed6457fe4543dbe649f8818bb5db78-360017328637.png)
+   <Image align="center" alt="Select AppsFlyer as the technology partner in Braze" src="https://files.readme.io/db96e8b5e2363f5250c6c1146a1f7a15e1ed6457fe4543dbe649f8818bb5db78-360017328637.png" />
 3. Under **Data Import for Install Attribution**, click Generate API Key.
 4. Copy the generated API Key and the REST endpoint.
 5. In AppsFlyer, insert the Braze API Key and the REST endpoint.
-   ![Enter the Braze API Key and REST endpoint in AppsFlyer](https://files.readme.io/b13aba84c394c0b4603e0aad2edd723525dadf204250349620b571bc47b0ba9d-360001907229.png)
+   <Image align="center" alt="Enter the Braze API Key and REST endpoint in AppsFlyer" src="https://files.readme.io/b13aba84c394c0b4603e0aad2edd723525dadf204250349620b571bc47b0ba9d-360001907229.png" />
 6. Click **Save and Close**
 
 Once you have saved the configuration, AppsFlyer sends the following data to Braze for every organic and non-organic install:
@@ -188,7 +188,7 @@ Once you have saved the configuration, AppsFlyer sends the following data to Bra
 
 AppsFlyer can send automatic postbacks to Braze user installs. Use this section to define sending these postbacks.
 
-![Default postbacks section](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Default postbacks section" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Select **Events attributed to any partner or organic** to send postbacks to Braze for any user that downloads the app.
 
@@ -232,10 +232,10 @@ Permissions are not available for Braze.
 
 Your user base can be segmented by attribution data in the Braze dashboard using the Install Attribution filters.
 
-![Install Attribution filters in the Braze dashboard](https://files.readme.io/7289491d4d301eb38618298536ac5b895a610024bf162c733409d3f50b10b8f4-360001908045.png)
+<Image align="center" alt="Install Attribution filters in the Braze dashboard" src="https://files.readme.io/7289491d4d301eb38618298536ac5b895a610024bf162c733409d3f50b10b8f4-360001908045.png" />
 
 Additionally, attribution data for a particular user is available on each user’s profile in the Braze dashboard.
 
-![Attribution data on a user profile in Braze](https://files.readme.io/d9ee5206a8bf3c092c5297c361cf38b2c77717fbb9638b282032e4fc4c31091e-360001907289.png)
+<Image align="center" alt="Attribution data on a user profile in Braze" src="https://files.readme.io/d9ee5206a8bf3c092c5297c361cf38b2c77717fbb9638b282032e4fc4c31091e-360001907289.png" />
 
 <div data-zendesk-anchors="h_01H9FK453A9W5DCPR4X8PR06MZ=integration-overview h_01H9FK453AWXF006KEVKD797QF=setting-up-braze h_01H9FK453AVK4YKF41FEP0YRJN=activate-partner h_01H9FK453AG6AXA7J43X6NGZT1=general-settings h_01H9FK453ASAKVHT7GV8BG56YS=default-postbacks h_01H9FK453AQXG7NNT2841686MJ=viewing-user-attribution-data-in-braze" />

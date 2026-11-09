@@ -38,7 +38,7 @@ Retargeting attribution occurs when a user engages with a retargeting campaign b
 * **Re-engagement:** If the app is on the device, the media source motivating the user to open the app is credited with a re-engagement.
 * **Re-attribution (AKA retargeting reinstall)**: If the app is not on the user device (meaning the user uninstalled the app), then engaging with the retargeting campaign causes the user to reinstall and open the app. If this happens during a <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">re-attribution window:</Anchor> the retargeting media source is credited with the re-attribution. Related reading: <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model#reinstalls">Reinstalls.</Anchor>
 
-![](https://files.readme.io/6558ed1ef0596e0cf99deb3c3c5b77eee8506b257ec65d3ad9cc653bc82aa7d9-33563511574673.png)
+<Image align="center" alt="" src="https://files.readme.io/6558ed1ef0596e0cf99deb3c3c5b77eee8506b257ec65d3ad9cc653bc82aa7d9-33563511574673.png" />
 
 Before running retargeting campaigns, review the re-engagement rules and example cases in the sections that follow, then set up retargeting as described in the retargeting procedures section. For ease of understanding, you should be familiar with the AppsFlyer <Anchor target="_blank" href="/marketers/docs/appsflyer-attribution-model">attribution model</Anchor> and the associated attribution windows.
 
@@ -91,7 +91,7 @@ The tables that follow contain reference information related to windows related 
 
 #### **Example flow implementing the rules**
 
-![](https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png)
+<Image align="center" alt="" src="https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png" />
 
 Re-engagement rules checklist for click-through and view-through attribution:
 
@@ -140,7 +140,7 @@ The following settings are required depending on the scenario.
 2. Select the ad network.
 3. Turn on **Enable** **retargeting settings**. This modifies the attribution link to a retargeting URL, by appending `is_retargeting=true` to the link.
 
-   [![](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)](https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png)
+   <Image align="center" alt="" src="https://files.readme.io/68b8939885439a4f0e6d1ec6601552185905d1afc817da9fb88ccfe043a83364-33563511582609.png" />
 4. Select one of the following:
    * **Use a standard attribution link** for single-platform (app-specific) links.
    * **Use OneLink**.

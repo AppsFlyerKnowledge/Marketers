@@ -422,24 +422,24 @@ This secure, automated process takes place directly within the AppsFlyer portal.
 2. Go to the **Payments & invoices** tab.
    1. For recurring payment, click **Update payment method** under the **Payment method** section.  
 
-      <Image alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
+      <Image align="center" alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
    2. For PayNow payments, click **Pay** next to any unpaid invoices under the **Invoices** section.  
 
-      <Image alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
+      <Image align="center" alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
 3. In the pop-up, select **Bank account** -> **Next.**  
 
-   <Image alt="2025-12-08_12-14-41.png" src="https://files.readme.io/f172ab5d59c98146fb9478668b90495401465b50c4d3d9f5f6c922d974a62a1a-41707949014929.png" width="75%" />
+   <Image align="center" alt="2025-12-08_12-14-41.png" src="https://files.readme.io/f172ab5d59c98146fb9478668b90495401465b50c4d3d9f5f6c922d974a62a1a-41707949014929.png" width="75%" />
 4. Fill in your details and select your bank.  
 
-   <Image alt="2025-12-08_12-15-37.png" src="https://files.readme.io/b89b46eaaba05710361f963a27482512eee380b02a9eb01c2e14df050da37129-41707949015825.png" width="50%" />
+   <Image align="center" alt="2025-12-08_12-15-37.png" src="https://files.readme.io/b89b46eaaba05710361f963a27482512eee380b02a9eb01c2e14df050da37129-41707949015825.png" width="50%" />
 5. You will be redirected to your Banking portal to sign in and authorize our ACH provider, Stripe, to provide payment processing services.  
 
-   <Image alt="2025-12-08_12-16-39.png" src="https://files.readme.io/46265f0a8078c5cc588df2310dede2038a5936f41215edf0e36f711465aae497-41707949017233.png" width="50%" />
+   <Image align="center" alt="2025-12-08_12-16-39.png" src="https://files.readme.io/46265f0a8078c5cc588df2310dede2038a5936f41215edf0e36f711465aae497-41707949017233.png" width="50%" />
 6. Choose either:
    1. **Save with Link** - To save your ACH log in to Stripe Link for future use on other sites.
    2. **Not now** - to not save your ACH log in to Stripe Link.  
 
-      <Image alt="2025-12-08_12-17-44.png" src="https://files.readme.io/d89cd1e7c04f2507272f67fef1e71f18d94ee45703d42fbd354c2033fa97b7e2-41707974850193.png" width="50%" />
+      <Image align="center" alt="2025-12-08_12-17-44.png" src="https://files.readme.io/d89cd1e7c04f2507272f67fef1e71f18d94ee45703d42fbd354c2033fa97b7e2-41707974850193.png" width="50%" />
 7. Click **Accept** to update payment details and pay with ACH.
 
 </Accordion>
@@ -454,10 +454,10 @@ This secure, automated process takes place directly within the AppsFlyer portal.
 2. Go to the **Payments & invoices** tab.
    1. For recurring payment, click **Update payment method** under the **Payment method** section.  
 
-      <Image alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
+      <Image align="center" alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
    2. For PayNow payments, click **Pay** next to any unpaid invoices under the **Invoices** section.  
 
-      <Image alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
+      <Image align="center" alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
 3. In the pop-up, select **Credit card** -> **Next.**
 4. Fill in your details and click **Save**.
 

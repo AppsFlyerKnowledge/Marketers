@@ -95,7 +95,7 @@ For more Retargeting Attribution information, click <Anchor target="_blank" href
 
 In-app events performed by a user after a reinstall are either attributed organic, attributed non-organic, or unattributed organic, depending on the **Post Reinstall Events attribution** state (see flow chart below). An example of an in-app event is a user who reinstalls an app and then makes an in-app purchase.
 
-[![](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg" />
 
 <div id="postreinstall-events-attribution-state" />
 
@@ -158,7 +158,7 @@ A user installs the app (day 0), makes a purchase for $10, and then uninstalls t
 
 The next day (day 1), the user reinstalls the app and makes a purchase of $5.
 
-![Reinstall_1.jpg](https://files.readme.io/7e8eccb3a6873b42a1d8503c0f027386728adb2eecbe457451d2e37c0a7b6774-10225445609873.jpg)
+<Image align="center" alt="Reinstall_1.jpg" src="https://files.readme.io/7e8eccb3a6873b42a1d8503c0f027386728adb2eecbe457451d2e37c0a7b6774-10225445609873.jpg" />
 
 Since the user already made a purchase before reinstalling, there will not be an additional unique user count.
 

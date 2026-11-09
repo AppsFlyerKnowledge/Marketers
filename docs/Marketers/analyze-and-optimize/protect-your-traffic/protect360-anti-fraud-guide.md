@@ -32,7 +32,7 @@ x-zendesk:
 
 > **At a glance:** Attribution fraud drains marketing budgets, pollutes marketing performance data, and can turn successful campaigns into losing ones. **Protect360 provides app owners with real-time fraud protection and post-attribution detection.**
 
-![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
+<Image align="center" alt="p360intro2.jpg" src="https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg" />
 
 <div id="protect360-overview" />
 

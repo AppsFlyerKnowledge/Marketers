@@ -38,7 +38,7 @@ Roku is a unique ad network that has ad inventory across both Connected TV (CTV)
 
 ### Roku attribution flow
 
-[<Image alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />](https://files.readme.io/51ab9ce816986134ed118ac7b8dd94336fff53d6a00daf5332eef2934c0048d8-4431541172241.png)
+<Image align="center" alt="54525 inline.jpg" src="https://files.readme.io/5634ed65702e1d4c90250a7f7b4448c225d5f769936b2a120ddbac1a76752c09-39534517801617.jpg" width="895px" />
 
 <div id="setting-up-roku-ads-integration-for-advertisers" />
 

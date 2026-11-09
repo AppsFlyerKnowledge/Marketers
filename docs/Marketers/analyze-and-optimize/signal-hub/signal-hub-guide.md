@@ -131,7 +131,7 @@ Signal Hub provides an enrichment metric to help you understand how much of the 
 
 In the data source shared to the collaboration, the **Identity enrichment** percentage shows how much of the provider's ZIP+4 data was successfully matched to privacy-safe identifiers that can be used for activation.
 
-<Image alt="Identity enrichment.png" src="https://files.readme.io/fce84b456682695e1896a99749d08ba26ff885cf3e3c16ba661b2c93ff7fa8c9-40890476677521.png" width="1090px" />
+<Image align="center" alt="Identity enrichment.png" src="https://files.readme.io/fce84b456682695e1896a99749d08ba26ff885cf3e3c16ba661b2c93ff7fa8c9-40890476677521.png" width="1090px" />
 
 * **Data provider:** The number of ZIP+4 groups shared by the purchase signal provider (e.g., Mastercard).
 * **Identity data:** The number of those ZIP+4 groups that the identity resolution partner successfully matched to hashed identifiers (for example, hashed emails).

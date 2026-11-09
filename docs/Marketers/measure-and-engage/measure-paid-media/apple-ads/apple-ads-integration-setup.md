@@ -31,7 +31,7 @@ x-zendesk:
 ---
 > **At a glance:** Apple Ads, an AppsFlyer Self-Reporting Network (SRN) partner, helps users find your app in the App Store using keywords.
 
-<Image alt="medium_originaljpeg_apple_ads_logo_blk_highres_720 (1) (1).jpg" src="https://files.readme.io/f89d1a5ec1a1de2ec2dfdec7465465fc2be73e0cf41ddd6be8b2e3f62de3c9e8-47598828154001.jpg" width="719px" />
+<Image align="center" alt="medium_originaljpeg_apple_ads_logo_blk_highres_720 (1) (1).jpg" src="https://files.readme.io/f89d1a5ec1a1de2ec2dfdec7465465fc2be73e0cf41ddd6be8b2e3f62de3c9e8-47598828154001.jpg" width="719px" />
 
 App relevance determines if your ad is the one displayed in response to a search query in the App Store. User response to an ad is a signal of ad relevance. Apple Ads uses user responses as a signal to decide which ads to display most often.
 
@@ -154,7 +154,7 @@ Use the checklist below to make sure you complete all steps in the configuration
    3. Click **Save.**
 2. **In your Apple Ads dashboard,** get the Apple Ads Campaign Group ID parameter related to the marketing partner. Use the screenshot that follows as a guide to locating the ID.
 
-   ![ASACGroupID.png](https://files.readme.io/843f5e6b35470cddd6e502d50554b49b258f0d9f7952dced511aea73f471694e-31197514608145.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/843f5e6b35470cddd6e502d50554b49b258f0d9f7952dced511aea73f471694e-31197514608145.png" />
 3. **In AppsFlyer, configure the Apple Ads marketing partner:**
    1. In AppsFlyer, from the side menu, select **Collaboration** > **Active integrations.**
    2. Search for the **Apple Ads** ***marketing partner.***  
@@ -216,7 +216,7 @@ See Apple Ads documentation on <Anchor target="_blank" href="https://searchads.a
 
 1. **In your Apple Ads dashboard,** get your Campaign Group ID. Use the screenshot that follows as a guide to locating the ID. Get only the digits.
 
-   ![ASACGroupID.png](https://files.readme.io/843f5e6b35470cddd6e502d50554b49b258f0d9f7952dced511aea73f471694e-31197514608145.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/843f5e6b35470cddd6e502d50554b49b258f0d9f7952dced511aea73f471694e-31197514608145.png" />
 2. In AppsFlyer, select an App.
 3. From the side menu, select **Collaboration** > **Active integrations**.
 4. Select **Apple Ads.**
@@ -312,11 +312,11 @@ The figures that follow show how discrepancies can occur in relation to retarget
 
 **Retargeting on**
 
- ![ASA R Enabled2.jpg](https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg) 
+ <Image align="center" alt="ASA R Enabled2.jpg" src="https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg" />
 
 **Retargeting off**
 
- ![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png) 
+ <Image align="center" alt="ASA_R_Disabled.png" src="https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png" />
 
 <div id="additional-reasons-for-discrepancies" />
 

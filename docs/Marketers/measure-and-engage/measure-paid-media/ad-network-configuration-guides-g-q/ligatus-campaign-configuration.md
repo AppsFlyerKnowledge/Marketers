@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **At a glance:** Ligatus, an AppsFlyer ad network integrated partner, leads Native Advertising Solutions for Publishers, Advertisers, and Programmatic buyers offering high-quality and high-performance results. In addition to click-based mobile attribution, Ligatus also offers cost, ad revenue, retargeting, and view-through attribution, which you can record with AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ligatus.png" width="209px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ligatus.png" width="209px" />
 
 <div id="setting-up-ligatus" />
 

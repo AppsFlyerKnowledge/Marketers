@@ -62,7 +62,7 @@ This guide regards the hybrid scenario. Learn how to bridge the gap between the 
 >
 > The native code collects the data and uses the AppsFlyer SDK to send the subscription in-app event.
 >
-> [![](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)
+> <Image align="center" alt="" src="https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png" />
 
 <div id="recording-in-app-events-in-hybrid-apps" />
 

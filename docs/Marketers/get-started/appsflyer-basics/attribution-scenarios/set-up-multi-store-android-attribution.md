@@ -45,7 +45,7 @@ AppsFlyer attributes apps, irrespective of the app store. Meaning Google Play st
 > * AppsFlyer Android attribution supports all device identifier types including GAID and <Anchor target="_blank" href="/marketers/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor>
 > * For apps marketed in China, see <Anchor target="_blank" href="/marketers/docs/measure-attribution-in-the-chinese-domestic-market">Attributing Android apps in the Chinese domestic market</Anchor>
 
-![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
+<Image align="center" alt="DashboardType_us-en-new.jpg" src="https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg" />
 
 <div id="single-dashboard-vs-dashboard-per-store" />
 
@@ -254,7 +254,7 @@ Add a dashboard (app) identified by the combination of the Android package name 
 3. Go to settings and find your Android settings, or if you have not already configured Android, add the platform.
 4. Fill out the required details, including the Amazon app store URL specific to your app.  
 
-   [![outofstore_1.png](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)
+   <Image align="center" alt="outofstore_1.png" src="https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png" />
 5. In the AppsFlyer dashboard, under Active Integrations, select Meta ads, and enter the same Facebook App ID you use when recording Meta In-Store Mobile App Install Ads with AppsFlyer.
 
 </Accordion>

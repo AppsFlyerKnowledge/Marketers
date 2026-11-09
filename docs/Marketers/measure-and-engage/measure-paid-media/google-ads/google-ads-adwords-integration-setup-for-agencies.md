@@ -68,31 +68,31 @@ To start agency attribution of Google Ads campaigns with AppsFlyer, follow thes
 
 1. In Google, go to the Google Ads Dashboard, click on the ***Tools*** icon
 
-![Google_Ag_1.png](https://files.readme.io/3a1188bc11e09779076c880c1b4d5e933845ee642393ff1367b2368c1199d8a2-50897694578449.png)
+<Image align="center" alt="Google_Ag_1.png" src="https://files.readme.io/3a1188bc11e09779076c880c1b4d5e933845ee642393ff1367b2368c1199d8a2-50897694578449.png" />
 
 2. Select ***Linked accounts***.
 
-![Google_Ag_2.png](https://files.readme.io/5bf0fb06df3263bc65a4e7e78539c06f2fce552b24b2913c18e155eff56f18ad-50897658813841.png)
+<Image align="center" alt="Google_Ag_2.png" src="https://files.readme.io/5bf0fb06df3263bc65a4e7e78539c06f2fce552b24b2913c18e155eff56f18ad-50897658813841.png" />
 
 3. Under App Analytics Provider, find AppsFlyer. Select Options.
 
 4. Click ***Share with another account***.
 
-![Google_Ag_3.png](https://files.readme.io/0659fc1f193ffc668f18f13641d07e085c94a97fb9e5c6c0f35188e1c18c632b-50897694583441.png)
+<Image align="center" alt="Google_Ag_3.png" src="https://files.readme.io/0659fc1f193ffc668f18f13641d07e085c94a97fb9e5c6c0f35188e1c18c632b-50897694583441.png" />
 
 5. Insert the **Agency’s Google Ads Customer ID**
 
-![Google_Ag_4.png](https://files.readme.io/cce6c7aa387f354c004682c6d46b804897654c99b3346ce6c27a2bcf43259c2e-50897694584849.png)
+<Image align="center" alt="Google_Ag_4.png" src="https://files.readme.io/cce6c7aa387f354c004682c6d46b804897654c99b3346ce6c27a2bcf43259c2e-50897694584849.png" />
 
 6. Click ***Next***. Click ***Send invite.***
 
-![Google_Ag_5.png](https://files.readme.io/d3da1850913f2c2a9b9125460cebd7e61922a177178c48cf23904d5a42445972-50897658822801.png)
+<Image align="center" alt="Google_Ag_5.png" src="https://files.readme.io/d3da1850913f2c2a9b9125460cebd7e61922a177178c48cf23904d5a42445972-50897658822801.png" />
 
 The advertiser can now see that the invitation request has been sent to the Agency. When the Agency accepts the invite, the status changes to Sharing.
 
 For more details on sharing your Google Ads Link ID, click <Anchor target="_blank" href="https://support.google.com/adwords/answer/7365001">here</Anchor>.
 
-![Google_Ag_6.png](https://files.readme.io/b205e5b2771a128846b22d653998da09f8d600b6b60efb6ca1e90042ffba5ee7-50897694593041.png)
+<Image align="center" alt="Google_Ag_6.png" src="https://files.readme.io/b205e5b2771a128846b22d653998da09f8d600b6b60efb6ca1e90042ffba5ee7-50897694593041.png" />
 
 </Accordion>
 
@@ -102,11 +102,11 @@ For more details on sharing your Google Ads Link ID, click <Anchor target="_bla
 
 On the Google Ads Words dashboard, the Agency receives an Invite and must accept the link.
 
-![Google_Ag_7.png](https://files.readme.io/f64942b5f67d9cb3ce692380626d9b87fb43a98ce825544b84e49c36162e349d-50897694593937.png)
+<Image align="center" alt="Google_Ag_7.png" src="https://files.readme.io/f64942b5f67d9cb3ce692380626d9b87fb43a98ce825544b84e49c36162e349d-50897694593937.png" />
 
 The Agency can see the link status is now Active.
 
-![Google_ag_8.png](https://files.readme.io/e44b590d4720accfde2ac95b97b18250ba2aab07f12651749592d4ad5aa8c947-50897658832017.png)
+<Image align="center" alt="Google_ag_8.png" src="https://files.readme.io/e44b590d4720accfde2ac95b97b18250ba2aab07f12651749592d4ad5aa8c947-50897658832017.png" />
 
 </Accordion>
 
@@ -119,27 +119,27 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 1. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations**.
 2. Search for and select **Google Ads**.
 
-   ![gads-search.png](https://files.readme.io/97f9abe0e6bf4e07b81341f1c0a9978f6387747b412c53f7755c53a76ba0eaeb-50897694596881.png)
+   <Image align="center" alt="gads-search.png" src="https://files.readme.io/97f9abe0e6bf4e07b81341f1c0a9978f6387747b412c53f7755c53a76ba0eaeb-50897694596881.png" />
 
    ***Activate partner*** should be ON and the ***Link ID*** set by the advertiser. These settings are grayed out to the agency.
 
-   ![gads_agency-integration-link-id.png](https://files.readme.io/6d59ccad7fb3a4a0269b9e868e30b0b87eb23a83e07e6ef1d2603815352786bf-50897658836625.png)
+   <Image align="center" alt="gads_agency-integration-link-id.png" src="https://files.readme.io/6d59ccad7fb3a4a0269b9e868e30b0b87eb23a83e07e6ef1d2603815352786bf-50897658836625.png" />
 3. The Agency sets its Google Ads Customer ID.
 
    Enter **all** of the Google Ads Customer IDs (**Sub Accounts**) of the Google Ads accounts that the agency is running campaigns for the advertiser's app.
 
    You can find the Google Ads Customer ID by clicking on the arrow in the top left corner and thereby opening the Navigation Panel.
 
-   [![](https://files.readme.io/5cc63138208e0ba55a59b4c2514dff373e45a25f50d92f9e6d8316356d078ed3-50897658839185.png)](https://files.readme.io/5cc63138208e0ba55a59b4c2514dff373e45a25f50d92f9e6d8316356d078ed3-50897658839185.png)
+   <Image align="center" alt="" src="https://files.readme.io/5cc63138208e0ba55a59b4c2514dff373e45a25f50d92f9e6d8316356d078ed3-50897658839185.png" />
 4. To measure running retargeting campaigns on Google Ads, ask the advertiser to activate **Google Ads Retargeting**. Once done, you can configure the **Re-Engagement Window**.
 
-   ![gads-agency-retargeting.png](https://files.readme.io/42008f063585b0a1dff553b8391b9dca48c2a3657786c263459c717cc94b5b19-50897658842385.png)
+   <Image align="center" alt="gads-agency-retargeting.png" src="https://files.readme.io/42008f063585b0a1dff553b8391b9dca48c2a3657786c263459c717cc94b5b19-50897658842385.png" />
 5. We recommend setting the Click-Through Attribution Lookback Window to **30 days**, to match the Google Ads value.
 
-   ![gads-click-through.png](https://files.readme.io/9bf0456ecb003e4b2750e4e5c1455d4418de00b8815ae08e9e580763948e3721-50897694603025.png)
+   <Image align="center" alt="gads-click-through.png" src="https://files.readme.io/9bf0456ecb003e4b2750e4e5c1455d4418de00b8815ae08e9e580763948e3721-50897694603025.png" />
 6. The View-Through recommended is **1 day**, to match the Google Ads value. The scale allows you to customize the number of hours/days after an ad is viewed, during which the impression can be attributed to this partner.
 
-   ![gads-view-through.png](https://files.readme.io/c26b18ff2d51ade48a9e57e0bb5097e4a0671f0ba78583cfeaa17848bebf9a34-50897658845969.png)
+   <Image align="center" alt="gads-view-through.png" src="https://files.readme.io/c26b18ff2d51ade48a9e57e0bb5097e4a0671f0ba78583cfeaa17848bebf9a34-50897658845969.png" />
 7. ***Reinstall attribution***:
    * To enable reinstall attribution, switch it on.
    * No need to enable view-through attribution or configure lookback windows for reinstall attribution, as the values are taken from install attribution settings.
@@ -154,11 +154,11 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 1. Click the **In-App Events** tab.
 
 2. Select to either send In-App Events from Only Google Ads Installs or from All In-App Events to Google Ads.  
-[![](https://files.readme.io/c2d22406f549db47de21beb54b7f9c8f94419702d0f78f46b2dbf0785e2ba94a-50897694609297.png)](https://files.readme.io/c2d22406f549db47de21beb54b7f9c8f94419702d0f78f46b2dbf0785e2ba94a-50897694609297.png)
+<Image align="center" alt="" src="https://files.readme.io/c2d22406f549db47de21beb54b7f9c8f94419702d0f78f46b2dbf0785e2ba94a-50897694609297.png" />
 
 3. Map all In-App Events you want to send to Google Ads, with the pre-defined Google Ads events.
 
-[![](https://files.readme.io/036b4f1cef8fa9b537b3aeaaab3f4072a099f94b3a8bbc539838d7898185a1ad-50897694610065.png)](https://files.readme.io/036b4f1cef8fa9b537b3aeaaab3f4072a099f94b3a8bbc539838d7898185a1ad-50897694610065.png)
+<Image align="center" alt="" src="https://files.readme.io/036b4f1cef8fa9b537b3aeaaab3f4072a099f94b3a8bbc539838d7898185a1ad-50897694610065.png" />
 
 4. Click ***Save***.
 
@@ -192,11 +192,11 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 > For Google Ads to register your new conversions, you must **launch your app and perform your mapped in-app events** at least once. To test iOS apps, you must collect IDFA to see the event. It may take up to 6 hours until the event conversions are added to the queue. Once they are added you can import them, and the new conversions change status from “No recent conversion” to “recording conversion".
 
 1. Return to your Google Ads account (**Overview** page and go to **TOOLS AND SETTINGS** > **Measurement** > **Conversions**.  
-   [![conversions_overview_en-us__1_.png](https://files.readme.io/8e4217e0fc2d9696b9aaee3e247ce38fbd5bafd70f05101b31b4ab8de524b3cb-50897694610833.png)](https://files.readme.io/8e4217e0fc2d9696b9aaee3e247ce38fbd5bafd70f05101b31b4ab8de524b3cb-50897694610833.png)
+   <Image align="center" alt="conversions_overview_en-us__1_.png" src="https://files.readme.io/8e4217e0fc2d9696b9aaee3e247ce38fbd5bafd70f05101b31b4ab8de524b3cb-50897694610833.png" />
 2. Click **+ New conversion action**.   
-   [![New_conversion_action_en-us__2_.png](https://files.readme.io/e4140f9a279c53bed9f0b576cc006bccd30fe737ea791ade47cd4d42c3e2074b-50897694612113.png)](https://files.readme.io/e4140f9a279c53bed9f0b576cc006bccd30fe737ea791ade47cd4d42c3e2074b-50897694612113.png)
+   <Image align="center" alt="New_conversion_action_en-us__2_.png" src="https://files.readme.io/e4140f9a279c53bed9f0b576cc006bccd30fe737ea791ade47cd4d42c3e2074b-50897694612113.png" />
 3. Select **App** from the list of conversion types, then select **Third-party app analytics**, and click **Continue**.  
-   [![select_app_en-us__3_.png](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)](https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png)
+   <Image align="center" alt="select_app_en-us__3_.png" src="https://files.readme.io/60d68af7588d5840bd478f2d6c7513f3a93fd2c409f780e13049cc5e639f2e98-50897658853137.png" />
 4. Check the box next to **first\_open** of all your apps, and for each event you’d like to import.
 
    <div id="note-1" />
@@ -207,11 +207,11 @@ An Agency can set up multiple Google Ads Customer IDs, if required.
 
 
    Click **Import and Continue**, then click **Done**.   
-   [![select_events_to_import_en-us__4_.png](https://files.readme.io/efe5458d26e6085aa0c228b98f63d37ef932e672e83ebc9050437b3b1259eea1-50897658853905.png)](https://files.readme.io/efe5458d26e6085aa0c228b98f63d37ef932e672e83ebc9050437b3b1259eea1-50897658853905.png)
+   <Image align="center" alt="select_events_to_import_en-us__4_.png" src="https://files.readme.io/efe5458d26e6085aa0c228b98f63d37ef932e672e83ebc9050437b3b1259eea1-50897658853905.png" />
 5. You can now see your third-party conversion events on the **Conversions** > **Summary** page. If an event doesn't appear in the list or it has been removed from the Google Ads conversion list, click **View all conversion actions**. The **Status** filter appears.   
-   [![conversions_summary_en-us__5_.png](https://files.readme.io/406121cc793f06d778192f8c8b191d7db0f11f91614cc4cf411a940ea176cd95-50897694614801.png)](https://files.readme.io/406121cc793f06d778192f8c8b191d7db0f11f91614cc4cf411a940ea176cd95-50897694614801.png)
+   <Image align="center" alt="conversions_summary_en-us__5_.png" src="https://files.readme.io/406121cc793f06d778192f8c8b191d7db0f11f91614cc4cf411a940ea176cd95-50897694614801.png" />
 6. Click **Status** and select **All** to see all events, including disabled and removed events.  
-   [![conversion_action_status__6_.png](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)](https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png)
+   <Image align="center" alt="conversion_action_status__6_.png" src="https://files.readme.io/f1294f57798cb4222775678a496be20b57238316b03a11e9a390b5362d1878c8-50897694615313.png" />
 7. Congratulations! You're now measuring Google Ads mobile campaigns with AppsFlyer!
 
 <div id="note-2" />

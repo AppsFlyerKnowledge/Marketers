@@ -26,7 +26,7 @@ x-zendesk:
 
 > **At a glance:** Run an Incrementality experiment to understand the true impact of your remarketing campaigns.
 
-![KB_toggle_final.jpg](https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg)
+<Image align="center" alt="KB_toggle_final.jpg" src="https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg" />
 
 <div id="about-the-experiment" />
 
@@ -99,14 +99,14 @@ After you have defined your objectives, the next step is to configure the audien
 2. In the **Connect** tab for the selected audience:
    * Connect the audience to 1-3 ad network partners.
    * Make sure the toggle that <Anchor target="_blank" href="/marketers/docs/audiences-guide#audience-split-and-control-groups">splits the audience</Anchor> is enabled (it's **automatically enabled for Incrementality subscribers, on audiences created after January 11, 2023**). If not, click the toggle to enable it.  
-     ![Measure_inc_impact_toggle.jpg](https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg)
+     <Image align="center" alt="Measure_inc_impact_toggle.jpg" src="https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg" />
    * The control group is automatically set to 15% (recommended).
    * The rest of the audience is automatically split evenly among your selected ad network partners.
      * The total split percentage must equal 100% (including the control group).
 
 Once you have saved your audience with the split enabled, an Incrementality experiment is automatically launched (Incrementality subscribers only). These experiments can be viewed on the Incrementality dashboard with the prefix "[Auto]" before the title.
 
-![Auto_before_title.jpg](https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg)
+<Image align="center" alt="Auto_before_title.jpg" src="https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg" />
 
 **Important notes:**
 
@@ -119,10 +119,10 @@ Both Meta ads and Google Ads have an optional feature that enables campaigns to 
 
 In Meta ads, the feature is called “Advantage custom audience”. It appears at the adset level and is enabled by default.
 
-<Image alt="image__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />  
+<Image align="center" alt="image__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />
 In Google Ads, it’s called “Audience expansion”.
 
-<Image alt="Google_Ads_Incrementality_limitation_cropped.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
+<Image align="center" alt="Google_Ads_Incrementality_limitation_cropped.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
 
 </Accordion>
 
@@ -151,17 +151,17 @@ A new Incrementality experiment is automatically launched once a new audience is
 
 1. From the **Incrementality dashboard** > the specific experiment > Click **Edit experiment**
 
-<Image alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
+<Image align="center" alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
 
 Or
 
 From **Audiences**, locate the specific audience > click **+ Link campaign** in the Incrementality column.
 
-<Image alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
+<Image align="center" alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
 
 A window displays, enabling you to link campaigns.
 
-<Image alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
+<Image align="center" alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
 
 2. Select the relevant campaign(s) for each ad network.
 
@@ -189,7 +189,7 @@ If you’re an Incrementality subscriber who created your audience after January
   >
   > **Wizard step 2** – **Audience setup**
   >
-  > [<Image alt="" src="https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png" width="603px" />](https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png)
+  > <Image align="center" alt="" src="https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png" width="603px" />
   >
   > In step 2 of the wizard, you are asked to select the **date from which audience members should be included in the experiment.**
   >
@@ -200,7 +200,7 @@ If you’re an Incrementality subscriber who created your audience after January
   >
   > **Wizard step 3 – Set targets**
   >
-  > ![Step_3_Set_targets.jpg](https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg)
+  > <Image align="center" alt="Step_3_Set_targets.jpg" src="https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg" />
   >
   > Here's where to select the target app and KPIs.
   >
@@ -208,7 +208,7 @@ If you’re an Incrementality subscriber who created your audience after January
   >
   > **Wizard step 4** – **Review**
   >
-  > [<Image alt="" src="https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png" width="583px" />](https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png)
+  > <Image align="center" alt="" src="https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png" width="583px" />
   >
   > In step 4 of the wizard, you are asked to set the **experiment period.**
   >

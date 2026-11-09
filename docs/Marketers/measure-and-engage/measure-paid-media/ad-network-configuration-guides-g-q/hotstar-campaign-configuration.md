@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **At a glance:** Hotstar, an AppsFlyer integrated partner, is a major ad-supported streaming service in India.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/hotstar.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hotstar.png" />
 
 <div id="hotstar-integration-in-appsflyer" />
 

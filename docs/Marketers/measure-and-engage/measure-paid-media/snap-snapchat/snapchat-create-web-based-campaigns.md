@@ -167,7 +167,7 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 2. Click **Build a URL parameter** to add the URL parameters to the URL (whether it is a landing page URL or an AF attribution link).
 3. Under **Custom parameters**, click **Add parameter**
 
-   [<Image alt="Screenshot 2025-11-26 at 8.56.29.png" src="https://files.readme.io/cb3ceba75974f7a57d7f26c3587fd0d0c401427d26fcacff40f2514981b9b02f-small-41366139737873.png" width="2810px" />](https://files.readme.io/cb3ceba75974f7a57d7f26c3587fd0d0c401427d26fcacff40f2514981b9b02f-small-41366139737873.png)
+   <Image align="center" alt="Screenshot 2025-11-26 at 8.56.29.png" src="https://files.readme.io/cb3ceba75974f7a57d7f26c3587fd0d0c401427d26fcacff40f2514981b9b02f-small-41366139737873.png" width="2810px" />
 4. Map the AppsFlyer parameters to their Snapchat values.
    * If your destination URL is **a landing page, a OneLink attribution link, or a single platform attribution link**, map the following AF parameters to their Snapchat counterparts:
 
@@ -245,7 +245,7 @@ You can choose any pre-defined INAPP event sent from AppsFlyer as your campaign 
 
 <Accordion title="End-to-end data flow">
 
-[![](https://files.readme.io/215e3d98b36cacd37fd74480cb007ee1d395a4d5d0653318af7d6c71f35d8f31-41364969285521.png)](https://files.readme.io/215e3d98b36cacd37fd74480cb007ee1d395a4d5d0653318af7d6c71f35d8f31-41364969285521.png)
+<Image align="center" alt="" src="https://files.readme.io/215e3d98b36cacd37fd74480cb007ee1d395a4d5d0653318af7d6c71f35d8f31-41364969285521.png" />
 
 1. The Snapchat ad URL includes the `pid=snapweb_int` parameter. When the user clicks on the ad, an `ScCid` parameter is automatically appended to the clicked URL.
 2. The User is redirected to the URL destination - a landing page containing a Smart Script.

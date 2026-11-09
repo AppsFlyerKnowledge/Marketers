@@ -145,7 +145,7 @@ By default, Meta Ads does not allow the distribution of device-level data with u
 Yes. The performance reports have static column structures in any combination of selected media sources, which present information down to the campaign level.  
 However, when you download performance reports ONLY for Meta ads, AppsFlyer adds 4 columns to them, which present information down to the single ad level! The added columns are Adset Name, Adset ID, Adgroup (i.e. single ad) Name and Adgroup ID.
 
-[![](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)
+<Image align="center" alt="" src="https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png" />
 
 </Accordion>
 
@@ -163,7 +163,7 @@ For details about setting up attribution with Meta campaign management partners,
 
 <Accordion title="What should I do when I receive the following warning?">
 
-[![](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)
+<Image align="center" alt="" src="https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png" />
 
 * Verify the Facebook App ID and check if you have any geo or age restrictions on their Facebook App ID.
 * If attribution is already working, this indicates that app is already publicly available in the Meta Developer Portal and you can safely ignore this error message.
@@ -301,7 +301,7 @@ If a Meta ads campaign engages with multiple platforms (Android, iOS, desktop, e
 
 An advertiser runs campaigns using Meta ads. In AppsFlyer the advertiser sees the following:
 
-![mceclip2.png](https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png" />
 
 The cost information is provided by Meta ads to AppsFlyer. The number of **installs** is calculated by AppsFlyer using AppsFlyer attribution rules. As a result, the eCPI calculated by Meta ads and AppsFlyer usually differs.
 
@@ -438,7 +438,7 @@ If you want to switch to a new ad account but your Meta ads cost is already link
 1. On Meta ads, go to **Settings** > **Business Integration**.
 2. On the **Active** tab, remove the AppsFlyer integration.  
 
-   [![](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)
+   <Image align="center" alt="" src="https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png" />
 3. Go to AppsFlyer dashboard and connect the cost with the new ad account.
 
 </Accordion>
@@ -515,7 +515,7 @@ Besides, agencies can't modify any in-app event postbacks sent to Meta ads. The 
 
 The image below shows all settings that need to be configured by the advertiser for the agency to be able to manage its Meta ads campaigns:
 
-[![advertiser-vs-agency-facebook-int-new.png](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)
+<Image align="center" alt="advertiser-vs-agency-facebook-int-new.png" src="https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png" />
 
 </Accordion>
 
@@ -577,7 +577,7 @@ With Meta ads you can see data broken down not only by campaigns, ad sets and ad
 
 Use this data to compare the quality of users that you get from the different channels.
 
-![Facebook_channels.png](https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png)
+<Image align="center" alt="Facebook_channels.png" src="https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png" />
 
 </Accordion>
 

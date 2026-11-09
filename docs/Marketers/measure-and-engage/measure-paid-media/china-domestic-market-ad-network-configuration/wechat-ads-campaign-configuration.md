@@ -51,11 +51,11 @@ On WeChat, do the following:
    Please note that WeChat allows only one conversion target per app.
 3. Enter AppsFlyer’s [click attribution URL](#attribution-link-tab)
 
-![wechat-configuration.png](https://files.readme.io/228ee10ef3dc113ae8af8de0f283b144206db1857f6d1f9169355f294155b8f8-50900431174033.png)
+<Image align="center" alt="wechat-configuration.png" src="https://files.readme.io/228ee10ef3dc113ae8af8de0f283b144206db1857f6d1f9169355f294155b8f8-50900431174033.png" />
 
 Once you have entered this info, confirm it by clicking the highlighted button. In the next step, you receive the *encrypt \_key* and the *sign\_key*:
 
-![wechat-keys.png](https://files.readme.io/cd7a2406ae9981eaabb4089813c9a1b847f0e6f750b9c0c0a0ac5e726dfe44be-50900431177361.png)
+<Image align="center" alt="wechat-keys.png" src="https://files.readme.io/cd7a2406ae9981eaabb4089813c9a1b847f0e6f750b9c0c0a0ac5e726dfe44be-50900431177361.png" />
 
 Copy the keys and use them when you configure the campaign on AppsFlyer.
 
@@ -120,7 +120,7 @@ Wechat connects with AppsFlyer via three unique parameters:
 
 If you don't already have the Sign ID, WeChat App ID and Encrypt Key you must obtain it from WeChat to continue with the integration.
 
-<Image alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
+<Image align="center" alt="wechat-integration-general-settings.png" src="https://files.readme.io/f1e0675a26116b628629b07616a7b9b86e8413ee36d7504f415207cb1590cb82-50900431178001.png" width="390px" />
 
 <div id="default-postbacks" />
 
@@ -128,7 +128,7 @@ If you don't already have the Sign ID, WeChat App ID and Encrypt Key you must ob
 
 AppsFlyer can send automatic postbacks to WeChat following user installs and re-engagements. Use this section to define the **source of the users** that allow sending these postbacks.
 
-![wechat-default-postbacks.png](https://files.readme.io/1a2703b97a71bf82bcc77f5393459bc94b5443b83a4c4965d2624eda0e9f166f-50900402778129.png)
+<Image align="center" alt="wechat-default-postbacks.png" src="https://files.readme.io/1a2703b97a71bf82bcc77f5393459bc94b5443b83a4c4965d2624eda0e9f166f-50900402778129.png" />
 
 Select **Only events** **attributed to this partner** for events coming only from users attributed to Wechat.  
 Select **Events attributed to any partner or organic** to have your entire user base available to be reported to WeChat.
@@ -139,7 +139,7 @@ Select **Events attributed to any partner or organic** to have your entire user 
 
 In this section you can map your AppsFlyer events with WeChat via postbacks.
 
-![wechat_in_app_event_postbacks.png](https://files.readme.io/cd6234df4809b27044e361ad8835d4ae92100c491e0aa7c8f003336cdf2ad49d-50900431180561.png)
+<Image align="center" alt="wechat_in_app_event_postbacks.png" src="https://files.readme.io/cd6234df4809b27044e361ad8835d4ae92100c491e0aa7c8f003336cdf2ad49d-50900431180561.png" />
 
 1. Enter the Encrypt Key again.
 2. Enter the Sign ID
@@ -186,7 +186,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/28112ce5f9706ffc07d69b233f2b6b4756fda36cb4e8438ab6c9cd03e3a39c59-50900431181841.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/28112ce5f9706ffc07d69b233f2b6b4756fda36cb4e8438ab6c9cd03e3a39c59-50900431181841.png" />
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
@@ -200,7 +200,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
-[![](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)](https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png)
+<Image align="center" alt="" src="https://files.readme.io/86114a765dea30da658a676d1a7506c6ba385bdf8ebcf7241a1ce85f8c413077-50900402782737.png" />
 
 <div id="click-attribution-link" />
 

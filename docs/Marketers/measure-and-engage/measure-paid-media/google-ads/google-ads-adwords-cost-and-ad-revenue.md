@@ -97,7 +97,7 @@ Google Ads (AdWords) revenue integration is deprecated as of November 30, 2020. 
 
   Make sure the agency user who logs into the Cost tab has access to the Google ads customer ID set up in the Integration tab.
 
-  <Image alt="" src="https://files.readme.io/2d17b3dad78e02c76253f30db0c15c18eb837b531becabc07ccad274258c2c61-49938966132753.png" width="457px" />
+  <Image align="center" alt="" src="https://files.readme.io/2d17b3dad78e02c76253f30db0c15c18eb837b531becabc07ccad274258c2c61-49938966132753.png" width="457px" />
 * Using spaces or special characters in iOS Search or Android Landing Page campaigns may cause issues with matching cost data to click data and leading to missing cost reporting.
 * When an agency disables a cost integration after cost is already collected, but the advertiser still has an active cost integration, the data is associated with the advertiser only from the day the agency disables the integration.
 

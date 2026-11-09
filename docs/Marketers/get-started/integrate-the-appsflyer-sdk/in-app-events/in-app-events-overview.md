@@ -46,7 +46,7 @@ When users perform registrations, complete tutorials, add items to the shopping 
 
 An in-app event comprises an event name and can include event parameters. When you add event parameters to an in-app event, it is referred to as an in-app event. Event parameters provide you with more context and information about the event. For example, while it helps to know that a user made a booking, event parameters can provide details such as the purchase type, destination, and revenue.
 
-![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
+<Image align="center" alt="travel.png" src="https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png" />
 
 <div id="tip" />
 
@@ -126,7 +126,7 @@ It's important to understand how AppsFlyer handles currency settings and currenc
 
 AppsFlyer handles the difference between app settings currency and in-app events currency using currency conversion.
 
-![revenue_normalization_flow.png](https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png)
+<Image align="center" alt="revenue_normalization_flow.png" src="https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png" />
 
 The diagram above demonstrates the following process:
 

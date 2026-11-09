@@ -65,7 +65,7 @@ The Integration Tab is divided into different sections as described below.
 
 RationalHeads connects with AppsFlyer via a unique Part ID. If you don't already have the Part ID and password, you must obtain it from RationalHeads to continue with the integration.
 
-<Image alt="Rationalheads_msc_new_2.png" src="https://files.readme.io/7e93003c13d4fa1e60bee4120307691b618757a7c55a271561827823005b86c3-360002076529.png" width="317px" />
+<Image align="center" alt="Rationalheads_msc_new_2.png" src="https://files.readme.io/7e93003c13d4fa1e60bee4120307691b618757a7c55a271561827823005b86c3-360002076529.png" width="317px" />
 
 <div id="default-postbacks" />
 

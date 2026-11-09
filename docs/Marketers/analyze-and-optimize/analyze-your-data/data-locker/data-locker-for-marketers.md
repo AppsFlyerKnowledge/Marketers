@@ -33,7 +33,7 @@ x-zendesk:
 
 ## Overview
 
-![6133DataLockerForAdvertisers.png](https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png)
+<Image align="center" alt="6133DataLockerForAdvertisers.png" src="https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png" />
 
 In Data Locker select your apps, media sources, events, and reports to include in the data AppsFlyer delivers to your selected cloud storage options. Then, load data programmatically from the storage into your systems.
 
@@ -293,7 +293,7 @@ To select the fields to include in the report:
 
 1. In the selected report dialog, under the **Fields** tab, hover over any field to view its description.
 
-   [![HQ1_2024-08-26_15.44.23.png](https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png)](https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png)
+   <Image align="center" alt="HQ1_2024-08-26_15.44.23.png" src="https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png" />
 2. Check the fields you want to include in the report, or uncheck the fields you wish to exclude from the report.
 3. Click **Apply** to save your settings.
 
@@ -438,7 +438,7 @@ Data is written to your selected storage option. In the case of cloud storage, t
 
 Data in the cloud bucket storage is organized in a hierarchical folder structure, according to report type, date, and time. The following figure contains an example of this structure:
 
-![DLFolderOVerview.png](https://files.readme.io/23dc197712aaf638706edf8323fdbc539f871ee34095b8f47a5a1824fe23f9f6-32966274471697.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/23dc197712aaf638706edf8323fdbc539f871ee34095b8f47a5a1824fe23f9f6-32966274471697.png" />
 
 Data of a given report is contained in the hour (h) folders associated with that report:
 
@@ -729,7 +729,7 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
 3. Click **Save changes**.
 4. Click **Buckets** > **Add External Bucket**.  
    The Add External Bucket window opens.  
-   <Image alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
+   <Image align="center" alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
 5. Enter the **Bucket name.** The Bucket name has the following format: `{Bucket Name}/{Home Folder}`. The values needed for bucket name and home folder appear in the credentials window.
 6. Click **Add External bucket.** The bucket is created and displays in the left panel of the window.  
    You can now access the Data Locker files.

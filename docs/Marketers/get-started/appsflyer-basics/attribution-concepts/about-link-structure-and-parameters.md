@@ -390,7 +390,7 @@ On the other hand, short URLs for owned media, don't directly contain parameters
 
 If you ever encounter the following error message in the Play Store after following an attribution Link:
 
-![TL_error_message.png](https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png)
+<Image align="center" alt="TL_error_message.png" src="https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png" />
 
 This is because the attribution link includes a # character. For example:
 

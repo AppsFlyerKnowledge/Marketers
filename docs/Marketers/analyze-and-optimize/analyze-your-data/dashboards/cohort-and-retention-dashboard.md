@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **At a glance:** The Cohort and retention dashboard (also referred to as simply "Cohort") groups app users by acquisition date. Perform performance analysis across user life cycles (LTV). Use the dashboard to gain insights as to how campaign differences alter campaign metrics.
 
-[![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
+<Image align="center" alt="cohort main (2).png" src="https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png" />
 
 <div id="cohort-and-retention-dashboard" />
 
@@ -51,7 +51,7 @@ To use Cohort and retention, select users from one or more apps and segment them
 
 1. In AppsFlyer, from the side menu, select **Analyze** > **Cohort & Retention**.  
    The Cohort dashboard opens. The granularity and conversion date range display.  
-   ![mceclip0__1_.png](https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png)
+   <Image align="center" alt="mceclip0__1_.png" src="https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png" />
 2. Select the [cohort period granularity](/docs/cohort-and-retention-dashboard#cohort-periods):
    * Hours
    * Days
@@ -60,7 +60,7 @@ To use Cohort and retention, select users from one or more apps and segment them
 3. Set the attribution period (user acquisition or retargeting engagement). Data relating to the most recent dates can result in [partial data](/docs/cohort-and-retention-dashboard#partial-data) indicated by dashes in charts and tables.
 4. Click **Edit Cohort**.  
    The Cohort setup window opens.  
-   <Image alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
+   <Image align="center" alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
 5. Complete the following:
    * [**Cohort view type**](/docs/cohort-and-retention-dashboard#view-types):
      * **User acquisition.**
@@ -151,7 +151,7 @@ There are 3 cohort view types:
 * **User acquisition:** Performance data from installs (reinstalls excluded unless <Anchor target="_blank" href="/marketers/docs/measure-reinstalls#attributed-to-the-first-install">specially enabled</Anchor>)
 * **Retargeting: P**erformance data from re-attributions or re-engagements
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 </Accordion>
 
@@ -185,7 +185,7 @@ There are 2 cohort trend types:
 
 In this example, the same raw data is used to generate the two cohort trend types. The raw data table contains attribution events related to different users A, B, C, and D. The users engage with an ad, install the app, and post-conversion make one or more purchases. Cohort day 0 is the install day.
 
-[<Image alt="CohortExample_en-us1.png" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)
+<Image align="center" alt="CohortExample_en-us1.png" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />
 
 </Accordion>
 
@@ -295,11 +295,11 @@ Use the partial/complete data control to select the data display mode:
 
 **Chart: Cumulative revenue per user**
 
-[![Screenshot 2023-10-31 at 16.56.31.png](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)
+<Image align="center" alt="Screenshot 2023-10-31 at 16.56.31.png" src="https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png" />
 
 **Table: Revenue per day**
 
-[![cohort use case 2.2.png](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)
+<Image align="center" alt="cohort use case 2.2.png" src="https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png" />
 
 <div id="in-app-event-conversion" />
 
@@ -307,7 +307,7 @@ Use the partial/complete data control to select the data display mode:
 
 An advertiser defines the in-app event af\_purchase. The cohort table displays the percentage of app users in the cohort who made a purchase. We can see on day 10 for instance that 36.27% of the cohort users attributed to the Facebook Ads media source performed a purchase[.](https://files.readme.io/e365c6b930d765d97155b1fd4384a608cb7eb0339b2b61e4598ee2d5d17d3249-32127949502481.png)
 
-[![cohort use case 3.png](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)
+<Image align="center" alt="cohort use case 3.png" src="https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png" />
 
 </Accordion>
 

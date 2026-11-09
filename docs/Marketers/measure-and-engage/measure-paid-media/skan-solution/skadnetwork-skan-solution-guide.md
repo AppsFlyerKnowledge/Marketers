@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **At a glance**: Attributing app installs using SKAN.
 
-![5754](https://files.readme.io/a970d7b0e8da300ded2138f941bf2e891f32d396c8500292534992a4b4449d71-30757780264337.png)
+<Image align="center" alt="5754" src="https://files.readme.io/a970d7b0e8da300ded2138f941bf2e891f32d396c8500292534992a4b4449d71-30757780264337.png" />
 
 <div id="skan" />
 
@@ -90,7 +90,7 @@ The AppsFlyer SKAN solution provides advertisers with:
 
 #### **SKAN attribution flow**
 
-![SKAN_flow_-_Affinity_diagram_2.png](https://files.readme.io/bb24c819cc2187e27ec592000ab892f9a4ba8e2ddd55779dd91d9b6f815d6fb8-30757768511121.png)
+<Image align="center" alt="SKAN_flow_-_Affinity_diagram_2.png" src="https://files.readme.io/bb24c819cc2187e27ec592000ab892f9a4ba8e2ddd55779dd91d9b6f815d6fb8-30757768511121.png" />
 
 1. Advertiser sets SKAN measurement settings in the AppsFlyer Conversion Studio.
 2. The user opens the app for the first time.

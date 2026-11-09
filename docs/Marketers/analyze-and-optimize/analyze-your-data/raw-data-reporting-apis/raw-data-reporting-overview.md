@@ -123,7 +123,7 @@ For ease of understanding, user journey fields are divided into groups based on 
 
 ## User journey reports
 
-![Raw_data_-_User_acquisition_.png](https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png)
+<Image align="center" alt="Raw_data_-_User_acquisition_.png" src="https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png" />
 
 <div id="user-journey-basics" />
 
@@ -151,7 +151,7 @@ User journey reports contain data collected for events occurring during a user's
   * Retargeting data is always non-organic.
   * Retargeting in-app events are in both the UA and retargeting in-app event reports. See <Anchor target="_blank" href="/marketers/docs/resolve-retargeting-double-attribution">retargeting double-attribution</Anchor> methodology.
 
-    ![Raw_data_-_Retargeting.png](https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png)
+    <Image align="center" alt="Raw_data_-_Retargeting.png" src="https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png" />
 
 To follow a user journey, combine the reports that relate to the part of the journey that interests you, for example, installs and in-app events. Having done so, sort the report using AppsFlyer ID, event time, and report type. The result is the events of a given user over time, meaning the user journey.
 

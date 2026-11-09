@@ -52,7 +52,7 @@ The in-app event postback window allows marketers who work with networks on a <A
 
 For example, if you're charged for events happening within 15 days of a user install, set the window as follows:
 
-<Image alt="In-app event postback window set to 15 days" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
+<Image align="center" alt="In-app event postback window set to 15 days" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
 
 Postbacks after this period are not sent, and the network is not notified, but AppsFlyer still records the events and attributes them to the network.
 
@@ -139,7 +139,7 @@ Each partner decides which of the following methods are to be used for mapping t
 > * Event names are case-sensitive. To avoid discrepancies, make sure you use the correct event name for all media sources and app versions.
 > * When typing an event name, you can use underlined spaces (low dashes) before or after the event name. Make sure to use underlined spaces only when the event name being sent from AppsFlyer has the exact same underlined spaces.
 
-![Entering an event ID in the mapped-to-partner-event text field](https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png)
+<Image align="center" alt="Entering an event ID in the mapped-to-partner-event text field" src="https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png" />
 
 </Accordion>
 
@@ -148,7 +148,7 @@ Each partner decides which of the following methods are to be used for mapping t
 * **AppsFlyer event**: From the list of your app events, select an event.
 * **mapped to partner event**: From the list of predefined partner events, select the event that corresponds to your app event (AppsFlyer event).
 
-![Selecting a predefined partner event from the event ID dropdown](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="Selecting a predefined partner event from the event ID dropdown" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 </Accordion>
 
@@ -176,7 +176,7 @@ You can choose which unmapped events to send to the partner:
    * **including**: Select [which data to include](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) in the postback.
 3. Repeat this procedure for more events.
 
-![Manually adding unmapped events with sending and data-inclusion options](https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png)
+<Image align="center" alt="Manually adding unmapped events with sending and data-inclusion options" src="https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png" />
 
 **To send all events:**
 
@@ -185,7 +185,7 @@ You can choose which unmapped events to send to the partner:
    * **for users from**: Select the [sending option](/docs/in-app-event-postback-configuration#options-for-sending-postbacks) for all events.
    * **including**: Select [which data to include](/docs/in-app-event-postback-configuration#data-to-include-in-the-postbacks) for all events in the postback.
 
-![Sending all unmapped events without individual event mapping](https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png)
+<Image align="center" alt="Sending all unmapped events without individual event mapping" src="https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png" />
 
 </Accordion>
 
@@ -278,7 +278,7 @@ Filter in-app event postbacks using multiple conditions that can be mapped to di
 
 A marketer with a gaming app wants to optimize campaigns running through an ad network, but only for users who pass level 10 or level 50, or for users who spend $3 on in-app purchases.
 
-![Example in-app event postback conditions for reaching level 10, level 50, or a $3 purchase](https://files.readme.io/9226101e635b847ca605579aa9d5ae910ccb9869655a622d2db95e50c845e5e1-33379700654737.png)
+<Image align="center" alt="Example in-app event postback conditions for reaching level 10, level 50, or a $3 purchase" src="https://files.readme.io/9226101e635b847ca605579aa9d5ae910ccb9869655a622d2db95e50c845e5e1-33379700654737.png" />
 
 **This is how conditions for this event are set:**
 
@@ -350,7 +350,7 @@ While mapping events, values in the fields **for users from** and **including**Â
      * Values without revenue
      * Values and revenue
 
-![Bulk actions panel for editing the for-users-from and including settings across multiple events](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
+<Image align="center" alt="Bulk actions panel for editing the for-users-from and including settings across multiple events" src="https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png" />
 
 <div id="custom-events" />
 
@@ -392,7 +392,7 @@ Marketers can allow ad networks to map the events on their own. To do so, a mark
 1. On the **Active Integrations** page, find the partner you want to give permission.
 2. Under the Permissions tab switch the **Allow to configure in-app event postbacks** toggle to **ON**.
 
-![Allow to configure in-app event postbacks permission toggle for an ad network](https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png)
+<Image align="center" alt="Allow to configure in-app event postbacks permission toggle for an ad network" src="https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png" />
 
 Once the ad network has received the permissions, it can map the events by following the instructions in the [Type Event ID Into Text Field](#mapping-methods).
 
@@ -415,7 +415,7 @@ Marketers can allow agencies to configure in-app event postbacks.
 3. Select whether the agency is allowed to send event revenues.
 4. Select the specific events the agency is allowed to share.
 
-![Agency event-sharing and revenue permission settings](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+<Image align="center" alt="Agency event-sharing and revenue permission settings" src="https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png" />
 
 <span id="h_01HDP3XHBPA5GZEVERMBN43JH0"></span>**See also**
 

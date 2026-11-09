@@ -38,7 +38,7 @@ Set up the Google Ads integration in AppsFlyer to measure and attribute installs
 
 ## Google Ads attribution flow with advanced data sharing
 
-![Google ads attribution flow.png](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)
+<Image align="center" alt="Google ads attribution flow.png" src="https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png" />
 
 1. AppsFlyer sends install events to Google, as usual. If **Advanced Data Sharing** is ON, installs are sent with or without a device ID. If it's OFF, installs are sent **only when a device ID is present**.
 2. Google attempts to claim the install either via a deterministic claim (ID match, using the device ID if available) or a non-deterministic claim (when device ID is not available), using probabilistic modeling.
@@ -94,7 +94,7 @@ Creating a link ID requires **Google administrative access** to the account. Fol
 5. Paste the **Link ID** you copied in the previous step.
 6. Decide whether or not to turn on <Anchor target="_blank" href="/marketers/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**Non EU users**</Anchor>.
 
-   <Image alt="non eu usrs.png" src="https://files.readme.io/f77a449ffaf508b8fe27b4ead44aa511354572dd4ecf82509a2157ca2f08edfa-30759261958673.png" width="557px" />
+   <Image align="center" alt="non eu usrs.png" src="https://files.readme.io/f77a449ffaf508b8fe27b4ead44aa511354572dd4ecf82509a2157ca2f08edfa-30759261958673.png" width="557px" />
 7. Turn **Advanced data sharing** ON or OFF. When ON Google Ads receives postbacks and events with device-level identifiers for all devices, including devices that have not made their Advertising ID  (IDFA or Google advertising ID)  available.
 
    Furthermore, when **Advanced Data Sharing** is ON, AppsFlyer attributes these events. When OFF, only postbacks and events from devices with an IDFA are sent and attributed.
@@ -106,7 +106,7 @@ Creating a link ID requires **Google administrative access** to the account. Fol
    4. Select the lookback window units (hours or days) and set the slider to the desired value. We recommend setting the view-through lookback window to 1 day to match with Google Ads.  
       **Note:** Google doesn't send claims for iOS app impressions. The install view-through attribution toggle and the lookback window slider are no longer relevant for iOS apps.
 
-      ![](https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png)
+      <Image align="center" alt="" src="https://files.readme.io/a6f05b9f92abf6dfdbaafc248c0381bfe063086daa10727dc088d484c1b38f0b-30759221879825.png" />
 9. The **Reinstall attribution** toggle is turned on by default for new integrations. Reinstall attribution lets you measure users who reinstall your app during their re-attribution window.
 
    No separate lookback window configuration is needed, as reinstall attribution uses the values from your install attribution settings. For more information, see <Anchor target="_blank" href="/marketers/docs/measure-reinstalls">Measure reinstalls</Anchor>.
@@ -126,12 +126,12 @@ Creating a link ID requires **Google administrative access** to the account. Fol
     5. Set the **Re-engagement view-through lookback window**, which is the period of time, starting from an ad impression, during which the app must be launched for the impression to be recorded as a re-engagement. Select a lookback window in hours or days and set the slider to the desired value.
     6. Set the **Re-engagement window**. This is the period when the user's in-app events are attributed to the retargeting media source, following either a click or an impression. You can set the value in days (1-90), hours (up to 23), or even lifetime. The default is 30 days.
 
-       ![](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)
+       <Image align="center" alt="" src="https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png" />
 11. If you have a <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2402582?hl=en">Google Ads iOS app asset</Anchor> (formerly known as app extension):  
     To get attributions from the ad link, go to the <Anchor target="_blank" href="/marketers/docs/set-up-an-integrated-partner#attribution-link-tab">**Attribution link**</Anchor> tab, create an AppsFlyer single-platform attribution link, and insert it into the Google Ads app asset.  
     **Note:** Make sure to add a static campaign name (mandatory).
 
-    ![](https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png)
+    <Image align="center" alt="" src="https://files.readme.io/6b7513829fb3abbaab75942e3612760f39f6ae6502064eac1f31b0783a63e95b-30759221884561.png" />
 12. Go to the **Cost** tab.
 13. Turn on **Get cost, clicks and impressions data**.
 14. Click the **Connect Google Ads** button, and log into your Google account to get all your Google Ads campaign costs on AppsFlyer. <Anchor target="_blank" href="/marketers/docs/google-ads-adwords-cost-and-ad-revenue">More details here</Anchor>.
@@ -186,7 +186,7 @@ Congratulations! You're now measuring Google Ads mobile campaigns with AppsFlyer
 
 **(Any member attached to the AppsFlyer's account)**
 
-![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png" />
 
 1. Go to the **Integration** tab and scroll down to the **In-app event postbacks** section.
 

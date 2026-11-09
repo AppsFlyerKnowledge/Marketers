@@ -63,7 +63,7 @@ Toggle this to ON if you want to attribute view-through installs from vivo Ads. 
 
 ### Default Postbacks
 
-<Image alt="mceclip2.png" src="https://files.readme.io/4d6fca06a4e11a8748064bce6510abe8594ef1fb68d1876ba5cd486073adf469-50900339194129.png" width="456px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/4d6fca06a4e11a8748064bce6510abe8594ef1fb68d1876ba5cd486073adf469-50900339194129.png" width="456px" />
 
 </Accordion>
 
@@ -94,7 +94,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-<Image alt="attribution-link-parameters.png" src="https://files.readme.io/5f158d1a7edc30276168a271a48373b2444af4207865f8dc874e95f1c9772ce4-50900334031889.png" width="479px" />
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/5f158d1a7edc30276168a271a48373b2444af4207865f8dc874e95f1c9772ce4-50900334031889.png" width="479px" />
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
@@ -108,7 +108,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
-![viewthrough_en-us.png](https://files.readme.io/47ff5d900d8edfdc30f2d2c0588f5e06fc3b44e71aeab630d1b5df2ea8c2db47-50900334036625.png)
+<Image align="center" alt="viewthrough_en-us.png" src="https://files.readme.io/47ff5d900d8edfdc30f2d2c0588f5e06fc3b44e71aeab630d1b5df2ea8c2db47-50900334036625.png" />
 
 <div id="attribution-link" />
 
@@ -128,7 +128,7 @@ You can customize this value to 1-23 hours or 1-7 days.
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows">view-through attribution here</Anchor>.
 
-[![](https://files.readme.io/786f2212e98741dfd8965c78897e35042ea016918aaa216ff8f6f99d2a46cf2a-50900339201809.png)](https://files.readme.io/786f2212e98741dfd8965c78897e35042ea016918aaa216ff8f6f99d2a46cf2a-50900339201809.png)
+<Image align="center" alt="" src="https://files.readme.io/786f2212e98741dfd8965c78897e35042ea016918aaa216ff8f6f99d2a46cf2a-50900339201809.png" />
 
 <div id="impressions-attribution-link" />
 

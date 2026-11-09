@@ -36,7 +36,7 @@ x-zendesk:
 ---
 > **At a glance:** AppsFlyer determines the media source motivating a user to install or re-engage with an app and attributes the user action to that source using the AppsFlyer attribution model.
 
-[![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
+<Image align="center" alt="" src="https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png" />
 
 <div id="what-is-attribution" />
 
@@ -80,7 +80,7 @@ AppsFlyer uses a number of attribution methods, listed in the table that follows
 
 Upon a new install, if there is more than one valid engagement, **AppsFlyer prioritizes clicks over impressions, and deterministic over probabilistic methods**. The attribution methods are utilized according to the priorities shown in the chart.
 
-[<Image alt="watefall.png" src="https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png" width="1378px" />](https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png)
+<Image align="center" alt="watefall.png" src="https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png" width="1378px" />
 
 Find below detailed descriptions of AppsFlyer attribution models.
 
@@ -337,7 +337,7 @@ When an application is backed up using iCloud and later restored (on the same de
 
 <Accordion title="Retargeting attribution">
 
-![Retargeting_-_Flow__2_.png](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="Retargeting_-_Flow__2_.png" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 A user who re-installs an app within the <Anchor target="_blank" href="/marketers/docs/set-up-re-attribution-window">re-attribution window</Anchor> (90 days by default) is considered a re-attribution. If this install occurs after engaging with a retargeting campaign, it is recorded as a retargeting reinstall AKA re-attribution and is reported in <Anchor target="_blank" href="/marketers/docs/retargeting-attribution-guide">retargeting</Anchor>.
 

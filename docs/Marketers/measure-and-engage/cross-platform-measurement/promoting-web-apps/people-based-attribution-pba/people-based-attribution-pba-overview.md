@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **At a glance:** People-Based Attribution (PBA) provides a unified view of customer journeys across channels, platforms, and devices.
 
-![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
+<Image align="center" alt="PBANoSilos_us-en.gif" src="https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif" />
 
 <div id="pba-principles" />
 
@@ -51,7 +51,7 @@ x-zendesk:
 
 ### <Anchor target="_blank" href="/marketers/docs/pba-website-attribution-dashboard">Website Attribution</Anchor>
 
-[![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
+<Image align="center" alt="WebsiteAttributionTable_us-en.jpg" src="https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg" />
 
 Analyze web traffic sources and marketing campaigns driving user visits and conversions on your website. Uncover performance differences down to the ad level. Supports all AppsFlyer query params in the link without the need to redirect users to AppsFlyer servers.
 
@@ -59,7 +59,7 @@ Analyze web traffic sources and marketing campaigns driving user visits and conv
 
 ### <Anchor target="_blank" href="/marketers/docs/pba-web-assisted-installs">Web-Assisted Installs</Anchor>
 
-[![AppsFlyer-Web-to-App_us.en.gif](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)
+<Image align="center" alt="AppsFlyer-Web-to-App_us.en.gif" src="https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif" />
 
 Use Web-Assisted Installs to examine the impact and results of your web marketing efforts on driving mobile app installs.
 

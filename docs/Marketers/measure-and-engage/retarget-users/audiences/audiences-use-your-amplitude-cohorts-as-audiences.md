@@ -52,7 +52,7 @@ Set up the Audiences-Amplitude integration from within the Amplitude platform.
 
    **Important!** If there are previously created AppsFlyer data destinations in your Amplitude account, the dialog box will be a scrollable list that shows all the existing destinations. To create a new destination, scroll to the end of this list and click **Add another destination.**
 
-   [![](https://files.readme.io/ba47fc9a411bd55d84ad34ccd5c1d74fecb1648f8f7aed3ae713965bef616ae8-33375708375441.png)](https://files.readme.io/ba47fc9a411bd55d84ad34ccd5c1d74fecb1648f8f7aed3ae713965bef616ae8-33375708375441.png)
+   <Image align="center" alt="" src="https://files.readme.io/ba47fc9a411bd55d84ad34ccd5c1d74fecb1648f8f7aed3ae713965bef616ae8-33375708375441.png" />
 
    
 
@@ -79,7 +79,7 @@ Set up the Audiences-Amplitude integration from within the Amplitude platform.
 
    The **Define Destination and Cadence** dialog box opens.
 
-   [![amplitude_define_destination_and_cadence_dialog.png](https://files.readme.io/e9f726c731e865e6313bf430b1e5506db5a820fc7d3d544747a873cf08139b26-33375708382097.png)](https://files.readme.io/e9f726c731e865e6313bf430b1e5506db5a820fc7d3d544747a873cf08139b26-33375708382097.png)
+   <Image align="center" alt="amplitude_define_destination_and_cadence_dialog.png" src="https://files.readme.io/e9f726c731e865e6313bf430b1e5506db5a820fc7d3d544747a873cf08139b26-33375708382097.png" />
 5. From the **Select an API target to sync to** list, select the name of the relevant AppsFlyer destination.
 6. Choose whether you want to sync this cohort to AppsFlyer one time only or as a scheduled sync. (For scheduled syncs, choose whether to update daily or hourly.)
 7. Click the **Sync** button to start syncing.
@@ -88,6 +88,6 @@ After the first sync is completed successfully, a new audience for this cohort w
 
 By default, the name of the new audience is the name of the synced Amplitude cohort, followed by an alphanumeric identifier. You can edit the audience name from the Audiences dashboard if you wish.
 
-[![amplitude_imported_audience.png](https://files.readme.io/a4f8efc6818d94a68b28ca62ae26215f17bfc7edcfb990855a042a2dee71f8b6-33375708383249.png)](https://files.readme.io/a4f8efc6818d94a68b28ca62ae26215f17bfc7edcfb990855a042a2dee71f8b6-33375708383249.png)
+<Image align="center" alt="amplitude_imported_audience.png" src="https://files.readme.io/a4f8efc6818d94a68b28ca62ae26215f17bfc7edcfb990855a042a2dee71f8b6-33375708383249.png" />
 
 <div data-zendesk-anchors="overview=about-the-amplitude-integration h_01HNZP6HDVC5RBMKTCZY81HG4M=about-the-amplitude-integration h_01HNZP6HDVZH6Q1KGJE7FXSPMT=setting-up-the-integration h_01HNZP6HDVV3GSEPARCY1VABX8=define-appsflyer-data-destinations h_01HNZP6HDV6EFPCM5FE5XBAS78=sync-amplitude-cohorts-to-appsflyer-destinations" />

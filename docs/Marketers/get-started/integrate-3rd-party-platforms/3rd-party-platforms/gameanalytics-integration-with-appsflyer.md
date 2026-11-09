@@ -78,7 +78,7 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 Game Analytics connects with AppsFlyer via a unique Game Key. If you don't already have it, you must obtain it from Game Analytics to continue with the integration.
 
-![Game_Analytics_msc_new_2.png](https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png)
+<Image align="center" alt="Game_Analytics_msc_new_2.png" src="https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png" />
 
 <div id="default-postbacks" />
 
@@ -86,7 +86,7 @@ Game Analytics connects with AppsFlyer via a unique Game Key. If you don't alrea
 
 AppsFlyer can send automatic postbacks to Game Analytics user installs. Use this section to define sending these postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/6dc59212bec2f68ca6b4c26d77324f204c67fedb1329fea8dda41fcefc832a92-18274501554449.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/6dc59212bec2f68ca6b4c26d77324f204c67fedb1329fea8dda41fcefc832a92-18274501554449.png" />
 
 Select **Events attributed to any partner or organic** to send postbacks for any user that downloads the app to Game Analytics or select **Off**.
 
@@ -94,7 +94,7 @@ Select **Events attributed to any partner or organic** to send postbacks for any
 
 ### In-app event settings
 
-[![](https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png)](https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png)
+<Image align="center" alt="" src="https://files.readme.io/64dd102e95aacda70cb8c0cde471c5c31d6b744543089a2d00a1ab1640fbb1c3-360002219789.png" />
 
 In this section you can map your AppsFlyer events with Game Analytics via postbacks.
 

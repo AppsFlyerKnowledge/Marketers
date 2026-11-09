@@ -88,7 +88,7 @@ Start by activating the integration with Google Ads for web campaigns and settin
 
 1. In **First open conversion ID**, enter the ID of the `First open` conversion action you set in Google Ads. To find the ID, go to Google Ads and open the **Details tab** of the **First open** conversion action page. Then, copy the value of the `ctid=*` query parameter from the page URL. For example, if `ctid=123456789`, insert `123456789` to the **First open conversion action ID** box.
 
-   ![](https://files.readme.io/bbd7178f688b1844b925ca6f2ec5768a00b548f3ccba5928966278918966c501-26324098042513.png)
+   <Image align="center" alt="" src="https://files.readme.io/bbd7178f688b1844b925ca6f2ec5768a00b548f3ccba5928966278918966c501-26324098042513.png" />
 
 <div id="tip" />
 
@@ -200,12 +200,12 @@ Google Ads uses the campaign type objective and goals you select here to set the
 1. Log in to Google Ads and create a campaign.
 2. Select the campaign objective.
 
-   ![](https://files.readme.io/90063f7fe5a363ed498271148c4165969cc63c708a73ab25363d2263a79b0828-26324053661201.png)
+   <Image align="center" alt="" src="https://files.readme.io/90063f7fe5a363ed498271148c4165969cc63c708a73ab25363d2263a79b0828-26324053661201.png" />
    * All objectives are applicable, except "App promotion" (which can only be used for mobile app campaigns).
    * We recommend setting the "Sales" campaign objective for optimization based on specific in-app events.
 3. Select the conversion goals.
 
-   ![](https://files.readme.io/5ca0a0425af24d5926dc0a7a3529632e22bd140423e87c026ff1527e7a0341b3-26324096257169.png)
+   <Image align="center" alt="" src="https://files.readme.io/5ca0a0425af24d5926dc0a7a3529632e22bd140423e87c026ff1527e7a0341b3-26324096257169.png" />
    * By default, you see the predefined account-level campaign goals. You can keep those or remove ones that aren't relevant to your campaign.
    * If you don’t see the goal you want Google to optimize for,
 
@@ -213,7 +213,7 @@ Google Ads uses the campaign type objective and goals you select here to set the
    * You can also edit your predefined goals on the Conversions page.
 4. Select the campaign type.
 
-   ![](https://files.readme.io/14daea1c1edf92854e21d0a4c5d34372a4e062d68a4613967bb4f40d0d1e720f-26324053659281.png)
+   <Image align="center" alt="" src="https://files.readme.io/14daea1c1edf92854e21d0a4c5d34372a4e062d68a4613967bb4f40d0d1e720f-26324053659281.png" />
    * All campaign types are applicable, except "Shopping," which requires a product catalog and is limited to verified domains.
 
 </Accordion>
@@ -248,7 +248,7 @@ To create custom Google Ads conversion actions and goals:
 2. Click **Save and continue,** and then **Done** without setting up data sources. Your new conversion action may initially appear as “Inactive”, but it will change to “Active” once actual data is sent.
 3. To map the new Conversion action to the AppsFlyer postback event, retrieve the new conversion action ID. In the conversion goals **Summary page,** click the conversion action you created and copy the value of the `ctid=*` query parameter from the conversion action page URL.
 
-   ![](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)
+   <Image align="center" alt="" src="https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png" />
 4. In AppsFlyer, paste the `ctid` value in the **mapped to partner event** column of the postback event you want Google to optimize for; see: [Set in-app event postbacks](#h_01J1MPPMW34GG0EPDWYXA7383C).
 
 </Accordion>
@@ -268,7 +268,7 @@ Google <Anchor target="_blank" href="https://support.google.com/google-ads/answe
 1. In Google Ads, open the **Campaigns** > **ads** page.
 2. In the ad row, click the edit icon.
 
-   ![](https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png)
+   <Image align="center" alt="" src="https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png" />
 3. In **Final URL,** enter the URL of the web landing page.
 
 <div id="warning-1" />
@@ -309,10 +309,10 @@ Because Google Ads, by default, uses Parallel Tracking, the Tracking Template UR
 
 1. In Google Ads, open the **Campaigns** > **Campaigns** page. In the campaign row, click the settings icon
 
-   ![](https://files.readme.io/ec6503cfb3ff185448f13897240e0eadd7f10fc3678ffa85b4d52d2393b01ca4-26324098054033.png)
+   <Image align="center" alt="" src="https://files.readme.io/ec6503cfb3ff185448f13897240e0eadd7f10fc3678ffa85b4d52d2393b01ca4-26324098054033.png" />
 2. Expand the **Settings** > **Additional Settings** > **Campaign URL options**
 
-   ![](https://files.readme.io/4959b4129749ff282ee3818c3b5724ac2ed3b1d033d06f8557329cafa812720f-26324053658641.png)
+   <Image align="center" alt="" src="https://files.readme.io/4959b4129749ff282ee3818c3b5724ac2ed3b1d033d06f8557329cafa812720f-26324053658641.png" />
 3. In **Tracking template,** use the following (BaseURL + Redirection parameters):
    * **Base URL**: Set the Base URL according to the ad click destination:
      * **Single platform attribution link** if the ad click destination is either Google Play or the App Store (see example below).
@@ -404,7 +404,7 @@ You don't need to populate the Tracking Template URL with an AppsFlyer attributi
 
 The W2A Smart Script use case is comprised of the following phases:
 
-![](https://files.readme.io/719733ce8f5c4f0c5e2bae8a801bd10fed7223e25ddb797f35fa37f98bd978df-26324098052113.png)
+<Image align="center" alt="" src="https://files.readme.io/719733ce8f5c4f0c5e2bae8a801bd10fed7223e25ddb797f35fa37f98bd978df-26324098052113.png" />
 
 1. The user clicks on a Google ad, Google automatically appends to the Final URL the following:
    * a `gclid` parameter for Android devices and for consenting users on iOS devices.

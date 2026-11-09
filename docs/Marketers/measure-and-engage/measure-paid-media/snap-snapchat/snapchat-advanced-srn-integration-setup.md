@@ -28,7 +28,7 @@ x-zendesk:
 ---
 > **At a glance:** Learn how to set up the integration between AppsFlyer and Snapchat to enable attribution measurement. Snapchat is an advanced SRN (Self-Reporting Network).
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
 <div id="overview" />
 
@@ -67,7 +67,7 @@ For more details about partner activation, see <Anchor target="_blank" href="/ma
 
 Enable **Activate Partner** to allow attribution to Snapchat.
 
-![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png" />
 
 <div id="general-settings" />
 
@@ -78,7 +78,7 @@ Enable **Activate Partner** to allow attribution to Snapchat.
 1. In your Snap Business Manager, go to Apps, and copy the Snap App ID (read Snapchat's guide on <Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/a/snap-app-id">how to generate a Snap App ID</Anchor>).
 2. Paste the ID in the Snap App ID field in AppsFlyer.
 
-![snapchat-app-id.png](https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png)
+<Image align="center" alt="snapchat-app-id.png" src="https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png" />
 
 **In case the app is promoted by an agency**:
 
@@ -166,7 +166,7 @@ Set a window timeframe to <Anchor target="_blank" href="/marketers/docs/set-reta
 
 Map AppsFlyer events with the partner via postbacks. If postback sending is enabled, this includes rejected in-app events (events blocked by Protect360 or events found to be non-compliant by target validation rules).
 
-[![mceclip0.png](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png" />
 
 **To configure in-app event postbacks:**
 
@@ -299,7 +299,7 @@ To perform deep linking with Snapchat:
 1. Go to **Drive traffic to app** opportunity type.
 2. Add the Deeplink URI:  
      
-   [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+   <Image align="center" alt="" src="https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png" />
 
 <div id="deferred-deep-linking-with-snapchat" />
 
@@ -333,7 +333,7 @@ Agencies working on behalf of advertisers can turn on the Snapchat integration a
 3. Enter your agency's **Snapchat Account ID**. This identifies agency traffic and distinguishes it from the advertiser's. You can enter up to 50 different Snapchat account IDs. All attribution data coming from the accounts you entered is visible under the agency's dashboard.
 4. Click **Save Integration**.
 
-![snapchat-agency-integration.png](https://files.readme.io/261a0246bb7da0899e653a776eb25e17ce3ae8bff1efef33acac0ef0bf99abcf-21074932431505.png)
+<Image align="center" alt="snapchat-agency-integration.png" src="https://files.readme.io/261a0246bb7da0899e653a776eb25e17ce3ae8bff1efef33acac0ef0bf99abcf-21074932431505.png" />
 
 <div id="important" />
 

@@ -81,7 +81,7 @@ AppsFlyer can send automatic postbacks to WebEngage following user installs and 
 * **Off**: Don't send any install postbacks.
 * **All media sources, including organic**: Send postbacks for events attributed to any partner and for organic events.
 
-![web_mo_engage_default_postbacks_en-us.png](https://files.readme.io/0dc0c658f349712158c417f27ce816b7735b8901454293e996a4bc3ae94a32fe-8094249223953.png)
+<Image align="center" alt="web_mo_engage_default_postbacks_en-us.png" src="https://files.readme.io/0dc0c658f349712158c417f27ce816b7735b8901454293e996a4bc3ae94a32fe-8094249223953.png" />
 
 <div id="note" />
 

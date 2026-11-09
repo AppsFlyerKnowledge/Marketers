@@ -269,7 +269,7 @@ Attribution is determined based on your attribution settings.
 1. In your custom link setup, go to the **Social-to-app** section.
 2. In the **Social app landing page** section, click **Create social app landing page**.  
    A window to choose a landing page template opens.  
-   [![](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg" />
 3. To choose a landing page template, hover over the selected template and click **Create**. **Tip**: Hover over the 🛈 icon of a template to see in which cases it should be used. Clustered Poster and ShowAndTell are recommended for Instagram.
 4. Customize all the elements in the landing page creative. To do so, select elements by name or click on them on the preview image.    
    **Tip**: Save your texts in case you replace the creative template.
@@ -286,10 +286,10 @@ Attribution is determined based on your attribution settings.
 | <ul><li>Flyer</li><li>Poster</li><li>Blurry poster</li><li>Clustered poster</li></ul> | 300 KB | 9:16 (vertical) |
 
    4. If one or more of the images isn't an exact URL, an error will display, and you will not be able to review the creative.  
-      [![](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)
+      <Image align="center" alt="" src="https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png" />
 6. To review the landing page creative, click **Review**.  
    If changes are needed, click **Back to editor**.  
-   [![](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)
+   <Image align="center" alt="" src="https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png" />
 7. To save your landing page, click **Done**.  
    **Important**: New/updated landing page creatives only apply after generating/updating the custom link.
 8. [Optional] To edit your landing page, click **Edit social app landing page**.
@@ -587,7 +587,7 @@ The flow of the clipboard-based DDL solution is as follows:
    * User has Private Relay turned on.
    * Link contains the parameter `af_cp_lp=true`.
 4. Once AppsFlyer confirms the above, the web landing page loads, containing the app icon, image, and a CTA to get the app from the App Store. The user also sees a message that explains the process: that the URL is copied to make sure the best user experience that will send them to the specific page in the app.  
-   ![ios_15_ip_masking__1_.png](https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png)
+   <Image align="center" alt="ios_15_ip_masking__1_.png" src="https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png" />
 5. The user taps **Get the app**.
 6. The user is sent to the App Store to install the app. Then, at first launch, they are sent to the specific app page.
 

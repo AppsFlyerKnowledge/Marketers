@@ -25,7 +25,7 @@ x-zendesk:
 
 > **At a glance:** Set up partner integrations to automatically import all your creative data into Creative Optimization.
 
-![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
+<Image align="center" alt="Creative integrations New.jpg" src="https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg" />
 
 <div id="about-partner-integrations" />
 
@@ -71,7 +71,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Adikteev**.
 4. Select the apps that you are promoting.
@@ -97,7 +97,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Adjoe GmbH**.
 4. Select the apps that you are promoting.
@@ -122,7 +122,7 @@ This section describes how to set up integrations with each partner.
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.
 
-   ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+   <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click + **New integration**.
 3. In the **Partner** list, select **AppLovin**.
 4. Select the apps that you are promoting.
@@ -155,7 +155,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click + **New integration**.
 3. Click the **Partner** list and select **Google Ads (AdWords)**.
 4. Select the apps that you are promoting.
@@ -184,7 +184,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **ironSource**.
 4. Select the apps that you are promoting.
@@ -204,7 +204,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Liftoff**.
 4. Select the apps that you are promoting.
@@ -227,7 +227,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Meta Ads**.
 4. Select the apps that you are promoting.
@@ -258,7 +258,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Mintegral**.
 4. Select the apps that you are promoting.
@@ -304,7 +304,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Persona.ly**.
 4. Select the apps that you are promoting.
@@ -326,7 +326,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Reddit**.
 4. Select the apps that you are promoting.
@@ -370,7 +370,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **RevX**.
 4. Select the apps that you are promoting.
@@ -413,7 +413,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Snapchat**.
 4. Select the apps that you are promoting.
@@ -439,7 +439,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **TikTok**.
 4. Select the apps that you are promoting.
@@ -491,17 +491,17 @@ This section describes how to set up integrations with each partner.
 4. Click **+ Add key**.  
    This brings up the Key ID and Secret key.
 5. Copy the **Key ID** and **Secret key**.  
-   ![Unity get Key ID & Secret key image.jpg](https://files.readme.io/9c4d1b1e0e476546b8f8be3a7375c610c48db6f94344a3dbe48277a6d115f52e-20344146224401.jpg)
+   <Image align="center" alt="Unity get Key ID & Secret key image.jpg" src="https://files.readme.io/9c4d1b1e0e476546b8f8be3a7375c610c48db6f94344a3dbe48277a6d115f52e-20344146224401.jpg" />
 
 **To** **retrieve the** <Anchor target="_blank" href="https://services.docs.unity.com/advertise/v1/index.html#section/General-Information/Resource-IDs-Used-in-the-API-Calls">**Organization core ID:**</Anchor>
 
 1. Within Unity Ads, click **Products** on the side menu.
 2. Cick **Grow**.  
-   ![Unity Org ID step 1 cropped.jpg](https://files.readme.io/5e8d2f54f5999c58b2e2b3591ae889f5051cae4073aa6c5ef17e16da6a60131f-22859368875153.jpg)
+   <Image align="center" alt="Unity Org ID step 1 cropped.jpg" src="https://files.readme.io/5e8d2f54f5999c58b2e2b3591ae889f5051cae4073aa6c5ef17e16da6a60131f-22859368875153.jpg" />
 3. Click **Unity Ads User Acquisition**.  
-   <Image alt="Unity Org ID step 2 cropped.jpg" src="https://files.readme.io/07a1c8e878a9ed7b6832012b3261866477b825d3b23e4973b8c5dadd675973e2-22859368883473.jpg" width="347px" />
+   <Image align="center" alt="Unity Org ID step 2 cropped.jpg" src="https://files.readme.io/07a1c8e878a9ed7b6832012b3261866477b825d3b23e4973b8c5dadd675973e2-22859368883473.jpg" width="347px" />
 4. Click **Settings**.  
-   ![Get Organization core ID instructions 2 arrows.jpg](https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg)
+   <Image align="center" alt="Get Organization core ID instructions 2 arrows.jpg" src="https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg" />
 5. Copy the **Organization core ID**.
 
 <div id="to-select-a-service-account-organization-role" />
@@ -519,7 +519,7 @@ This section describes how to set up integrations with each partner.
      * Advertise API Admin
      * Advertise API Viewer
      * Advertise API Creative Packs Editor  
-       <Image alt="Org roles step 3 without role names.jpg" src="https://files.readme.io/7b46417e6389f7c3675cc6f72b33e9b2833d5c561ef1d79122ed24605533b265-20347535827217.jpg" width="471px" />
+       <Image align="center" alt="Org roles step 3 without role names.jpg" src="https://files.readme.io/7b46417e6389f7c3675cc6f72b33e9b2833d5c561ef1d79122ed24605533b265-20347535827217.jpg" width="471px" />
 5. Click **Save**.
 
 **Note:** If you don't have access to these roles, please contact your Unity customer success manager or email [unityads-support@unity3d.com](mailto:unityads-support@unity3d.com) to request the required permissions.
@@ -531,7 +531,7 @@ This section describes how to set up integrations with each partner.
 1. In the **Creative Optimization** dashboard, do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **Unity Ads**.
 4. Select the apps that you are promoting.
@@ -554,7 +554,7 @@ This section describes how to set up integrations with each partner.
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **X Ads**.
 4. Select the apps that you are promoting.
@@ -580,7 +580,7 @@ YouAppi credentials for integration :
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. Click **+ New integration**.
 3. In the **Partner** list, select **YouAppi**.
 4. Select the apps that you are promoting.
@@ -625,11 +625,11 @@ You can integrate with your agency partners to pull their data into the Creative
 1. Log in to **Creative Optimization** and do one of the following:
    * If you don't have any partner integrations, click + **Add new integration**.
    * Otherwise, click the  ⋮  icon on the upper right of the dashboard to get to **Creative integrations**.  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. Click + N**ew integration**.
 3. After selecting the Partner and Apps in the partner integration window, click the **Advanced settings: Agency** dropdown, and select the relevant agency.  
 
-   <Image alt="Creative agencies.png" src="https://files.readme.io/74f0dc492bc530278687becdd0061e9c06081653b69ed525f237b97a9568e413-38395601553169.png" width="288px" />
+   <Image align="center" alt="Creative agencies.png" src="https://files.readme.io/74f0dc492bc530278687becdd0061e9c06081653b69ed525f237b97a9568e413-38395601553169.png" width="288px" />
 4. Click **Save**.  
    The agency integration is added.
 
@@ -652,10 +652,10 @@ You can grant your agencies access to view their own creative performance data i
    **<Image alt="From Collaborate click Partner Marketplace.png" src="https://files.readme.io/96485cefae79412a680915810c16b23619f73d9109212bfc45d1c0d42c2e529a-39258887136785.png" width="33.9%" />**
 2. Search for the relevant partner agency from the search bar at the top of the page, then click on the partner.
 
-   <Image alt="Search bar.png" src="https://files.readme.io/f1ff34a547af45eec73e7abd41105bbab9ff12d4a2636ed4b99634985ec58044-39258887138449.png" width="1210px" />
+   <Image align="center" alt="Search bar.png" src="https://files.readme.io/f1ff34a547af45eec73e7abd41105bbab9ff12d4a2636ed4b99634985ec58044-39258887138449.png" width="1210px" />
 3. On the partner page, go to the **Permissions** tab and enable **Agency permissions**
 
-   <Image alt="Agency permissions.png" src="https://files.readme.io/b307601f9b41800a146c664bdd9f6d24a5398be9022801505419aebb0741162c-39258856594705.png" width="71.31%" />
+   <Image align="center" alt="Agency permissions.png" src="https://files.readme.io/b307601f9b41800a146c664bdd9f6d24a5398be9022801505419aebb0741162c-39258856594705.png" width="71.31%" />
 4. Then enable **Access Creative Optimization dashboard**   
 
    The agency will now have access to see your shared creatives in their dashboard. For agencies that haven't yet set up an AppsFlyer agency account and would like to, they can learn more <Anchor target="_blank" href="/partners/docs/getting-started-agency-onboarding">here.</Anchor>

@@ -182,7 +182,7 @@ Data is broken up into two KPIs and a graph.
 
 * **Attribution spoofing trend**: Reflection of the advanced security module detection over time. This graph reflects the high-level status of the spoofing detection on the app/s level.
 
-<Image alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
 
 </Accordion>
 
@@ -205,7 +205,7 @@ To access the Advanced Security Module:
 
 #### The Advanced Security Module page
 
-<Image alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
 
 The Advanced Security Module page is broken into three sections.
 

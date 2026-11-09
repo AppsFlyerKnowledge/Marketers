@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **At a glance:** RZR, an AppsFlyer ad network integrated partner, is a well-known mobile DSP. RZR offers both click-based and view-through mobile attribution. In addition, RZR also offers click-based retargeting which you can record with AppsFlyer.
 
-<Image alt="RZR Logo Horizontal gradient black wordmark (3).png" src="https://files.readme.io/b1064bdec0e836399c583c3f55e5e79a81380a9a8d86eeaee19391b6d09f2bbd-small-46161100230545.png" width="58.83%" />
+<Image align="center" alt="RZR Logo Horizontal gradient black wordmark (3).png" src="https://files.readme.io/b1064bdec0e836399c583c3f55e5e79a81380a9a8d86eeaee19391b6d09f2bbd-small-46161100230545.png" width="58.83%" />
 
 <div id="setting-up-rzr" />
 

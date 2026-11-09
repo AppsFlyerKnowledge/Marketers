@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **At a glance:** Measure the impact of marketing efforts to drive effective website traffic. Which media sources, types, and channels are responsible for visits, conversion events and ad-level metrics are available.
 
-[![Website_Attribution.jpg](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)
+<Image align="center" alt="Website_Attribution.jpg" src="https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg" />
 
 <div id="pba-website-attribution" />
 

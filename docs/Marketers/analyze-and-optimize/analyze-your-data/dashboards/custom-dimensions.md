@@ -66,7 +66,7 @@ The custom dimensions you create are at the account level, meaning different app
 
 1. In the Overview dashboard, either:
    * Click the **Menu icon (⋮)** > **Custom dimensions**.  
-     [![](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)
+     <Image align="center" alt="" src="https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png" />
    * In any chart or table, in the **Show to**p or **Group by** dropdown menu, click **+ Create custom dimension**.
 2. If this is your first time creating a custom dimension, click **+ New dimension**.  
    The **Create** tab opens.
@@ -93,7 +93,7 @@ The custom dimensions you create are at the account level, meaning different app
 
 1. In the Overview dashboard, either:
    * Click the **Menu icon** > **Custom dimension**.  
-     [![](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)
+     <Image align="center" alt="" src="https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png" />
    * In any chart or table, in the **Show to**p or **Group by** dropdown menu, click **+ Create custom dimension**.
 2. Click the **Edit** tab.
 3. Select or search for a custom dimension.
@@ -112,7 +112,7 @@ Custom dimensions can be used to group and view data in all widgets in the Overv
 
 1. In the Overview dashboard, go to any chart or dashboard widget.
 2. In the **Show top** or **Group by** dropdown menu, look under Custom dimensions for the custom dimension you want to use.  
-   [![](https://files.readme.io/e34bcb2ca34546347b391f0ad921319f296a21c41c3783e59a7d808b44d0b6a9-17082706166929.png)](https://files.readme.io/e34bcb2ca34546347b391f0ad921319f296a21c41c3783e59a7d808b44d0b6a9-17082706166929.png)
+   <Image align="center" alt="" src="https://files.readme.io/e34bcb2ca34546347b391f0ad921319f296a21c41c3783e59a7d808b44d0b6a9-17082706166929.png" />
 3. The chart or table data is displayed in a grouping using your custom dimension
 
 </Accordion>

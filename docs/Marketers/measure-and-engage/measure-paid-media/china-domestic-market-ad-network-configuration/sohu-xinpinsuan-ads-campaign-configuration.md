@@ -51,7 +51,7 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 ### Default Postbacks
 
-<Image alt="mceclip2.png" src="https://files.readme.io/51e0509638097c38ee2b4569456bf0f6a6ef5b4b78c7342af6dda8ec52b93e21-50900076484881.png" width="520px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/51e0509638097c38ee2b4569456bf0f6a6ef5b4b78c7342af6dda8ec52b93e21-50900076484881.png" width="520px" />
 
 <div id="in-app-events-settings" />
 
@@ -59,7 +59,7 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 In this section, you can map your AppsFlyer events with AD\_NETWORK via postbacks. 
 
-<Image alt="mceclip0.png" src="https://files.readme.io/3896824d9b28b681bfa83e5583da2c6bbde65e87541d019a1035adb413324ee1-50900079929361.png" width="611px" />
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/3896824d9b28b681bfa83e5583da2c6bbde65e87541d019a1035adb413324ee1-50900079929361.png" width="611px" />
 
 1. Toggle In-App Event Postbacks to ON
 2. Click **Add Event** to add an SDK Event to the list
@@ -100,7 +100,7 @@ Adding parameters to the attribution link here enables you to later perform thor
 * **Subscriber Parameters** - use any of the 5 subscriber parameters to insert useful values. Note that these parameters get parsed and appear in the raw data report, which makes them very handy for performing data aggregation or filtering.  
   **Attribution link parameters:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/87adb2e4e490b95e7d700f0fbe6c36c93198d50e890ecfd57aa1d2824f06f18e-50900076492433.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/87adb2e4e490b95e7d700f0fbe6c36c93198d50e890ecfd57aa1d2824f06f18e-50900076492433.png" />
 
 Add any other parameter to the attribution link simply by typing it in a new parameter box. For more information about <Anchor target="_blank" href="/marketers/docs/about-link-structure-and-parameters">**AppsFlyer's Attribution Link Structure and Parameters**</Anchor>.
 
@@ -114,7 +114,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/docs/set-up-lookback-windows#lookback-windows">click lookback window here</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/03bef09accd5b7bd820ec585dcf06d4d8cb7b0bf8117ae02fa4975321ad61945-50900079931921.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/03bef09accd5b7bd820ec585dcf06d4d8cb7b0bf8117ae02fa4975321ad61945-50900079931921.png" />
 
 <div id="click-attribution-link" />
 
@@ -146,7 +146,7 @@ Ad Revenue is not supported in the integration with this partner.
 
 In this tab, you can select the permissions to grant Sohu XinPinSuan Ads, whether the partner acts as an ad network, agency or even both. Note that even if attribution is disabled for Sohu XinPinSuan Ads, the permissions tab is active and you can grant control to Sohu XinPinSuan Ads.
 
-![rtb_house-permissions-new.png](https://files.readme.io/ef5e9011ccdd3843ae7863153cfbcdb16584b02a3808a1cbc511a7b82a949410-50900076496017.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/ef5e9011ccdd3843ae7863153cfbcdb16584b02a3808a1cbc511a7b82a949410-50900076496017.png" />
 
 <div id="ad-network-permissions" />
 

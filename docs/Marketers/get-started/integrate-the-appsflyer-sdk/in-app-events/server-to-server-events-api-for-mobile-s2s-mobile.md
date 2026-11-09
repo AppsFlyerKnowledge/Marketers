@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **At a glance:** Send events from your servers to AppsFlyer to measure mobile events that occur outside the app.
 
-![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
+<Image align="center" alt="S2S_us-en.png" src="https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png" />
 
 <div id="server-to-server-events-api-for-mobile" />
 
@@ -137,7 +137,7 @@ Once you map AppsFlyer ID with your CUID, you can match the user to events perfo
 
 <Accordion title="Time stamping S2S events">
 
-![time stamping logic diagram](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)
+<Image align="center" alt="time stamping logic diagram" src="https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png" />
 
 When S2S events arrive in bulk to AppsFlyer, they are timestamped according to their `eventTime` property values and arrival time. The `eventTime` property denotes the in-app event occurrence time.
 

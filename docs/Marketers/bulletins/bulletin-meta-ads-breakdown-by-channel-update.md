@@ -35,12 +35,12 @@ To check whether Impression Device is already enabled for an ad account:
 
 1. Go to <Anchor target="_blank" href="https://adsmanager.facebook.com/">Ads Manager</Anchor> and select **Settings**.
 
-[![Ads Manager toolbar showing the Settings button](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)
+<Image align="center" alt="Ads Manager toolbar showing the Settings button" src="https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png" />
 
 2. In the Create view panel, select **Delivery**.
 3. Under Delivery, find **Additional Breakdowns**.
 4. Under Additional Breakdowns, check whether the plus symbol next to **Impression Device** (`impression_device`) is already selected. If it is, the opt-in is active for this account.
 
-[![Additional Breakdowns panel in Ads Manager with plus icons for Time of Day, Impression Device, and Frequency Value](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)
+<Image align="center" alt="Additional Breakdowns panel in Ads Manager with plus icons for Time of Day, Impression Device, and Frequency Value" src="https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png" />
 
 <div data-zendesk-anchors="h_01KZ63J08GPADE2AH0KV9NNESC=check-impression-device-in-ads-manager" />

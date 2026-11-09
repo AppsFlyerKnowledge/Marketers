@@ -70,7 +70,7 @@ According to Apple's documentation, you can set a single SKAN postback endpoint.
 >
 > Are these statements true or false?
 >
-> ![TrueOrFalse.png](https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png)
+> <Image align="center" alt="TrueOrFalse.png" src="https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png" />
 >
 > * Advertisers no longer depend on ad networks to get postbacks.
 >   * **False.** The advertiser still depends on the ad network to decode significant pieces of data. For example, only the ad network can map the SKAN campaign ID to the campaign name.

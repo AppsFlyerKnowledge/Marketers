@@ -123,7 +123,7 @@ If your app was subscribed to another attribution provider in the past, which wa
 
 Alternatively, the following error may also appear:  
 
-[![](https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png)](https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png)
+<Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360001502209/X%20Ads_error_2.png" />
 
 **Error: Error has occurred while saving X Ads configuration. Some accounts failed to update: XX Multiple provider ids to same (appid, conversionType) for event appid2872.**
 

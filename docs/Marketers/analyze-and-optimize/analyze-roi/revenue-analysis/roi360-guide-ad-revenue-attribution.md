@@ -30,7 +30,7 @@ x-zendesk:
 
 > **At a glance:** Attribute ad revenue to complete the LTV (lifetime value) performance view.
 
-![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
+<Image align="center" alt="Attributes_ad_revenue.png" src="https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png" />
 
 <div id="ad-revenue-attribution" />
 
@@ -81,7 +81,7 @@ The following sections describe the available types of ad revenue attribution, a
 2. In Ad revenue integration, click **New ad revenue integration**.
 3. Select an ad revenue partner and click **Next**.
 
-   ![ad revenue 3.6(2).png](https://files.readme.io/8ccba7d0909c15e92507bc55c7bf2bf003e1a9431fb6bd1d32a0f41959f7a904-47792643579153.png)
+   <Image align="center" alt="ad revenue 3.6(2).png" src="https://files.readme.io/8ccba7d0909c15e92507bc55c7bf2bf003e1a9431fb6bd1d32a0f41959f7a904-47792643579153.png" />
 
    <div id="note" />
 
@@ -117,7 +117,7 @@ The following sections describe the available types of ad revenue attribution, a
 
 <Accordion title="View, edit, and delete ad revenue integrated partners">
 
-![delete_edit_adi.png](https://files.readme.io/2d2153ec3248061dab4072e1d981e237f553e32824a68e392ae239778b307610-47792653636113.png)
+<Image align="center" alt="delete_edit_adi.png" src="https://files.readme.io/2d2153ec3248061dab4072e1d981e237f553e32824a68e392ae239778b307610-47792653636113.png" />
 
 **To view, edit, or delete ad revenue network integrations**:
 
@@ -150,7 +150,7 @@ When an app uses two <Anchor target="_blank" href="/marketers/docs/appsflyer-kno
      > These don't contain duplicated data in the first place, so there's nothing to deduplicate.
 
 
-![dedup.png](https://files.readme.io/a739bc7e3557913bf6a67afa74a71dd72673d5b4e4d6bbe1d3ef872e46609422-47792653637265.png)
+<Image align="center" alt="dedup.png" src="https://files.readme.io/a739bc7e3557913bf6a67afa74a71dd72673d5b4e4d6bbe1d3ef872e46609422-47792653637265.png" />
 
 </Accordion>
 
@@ -242,7 +242,7 @@ Ad revenue attribution is available as follows:
 
 #### **Overview dashboard - aggregated performance report**
 
-![](https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png)
+<Image align="center" alt="" src="https://files.readme.io/f3ea2c79ed42c59d26f6f82d7f68e20b319a005e6a3131239b99f13db59b3cff-47792643589393.png" />
 
 In the Overview dashboard:
 
@@ -252,7 +252,7 @@ In the Overview dashboard:
 
 **Events dashboard**
 
-![](https://files.readme.io/c7c8fddb68f705a7be694afdde6faf387cf34b79abfbc68c39e53823549a385d-47792643591057.png)
+<Image align="center" alt="" src="https://files.readme.io/c7c8fddb68f705a7be694afdde6faf387cf34b79abfbc68c39e53823549a385d-47792643591057.png" />
 
 In the Activity dashboard:
 
@@ -313,7 +313,7 @@ In this case, the cohort consists of users who installed the app between 2017-12
 
 <Accordion title="Ad revenue raw data">
 
-<Image alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
+<Image align="center" alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
 
 Ad revenue raw data reports contain data from monetization networks with device-level or impression-level integration with AppsFlyer.
 

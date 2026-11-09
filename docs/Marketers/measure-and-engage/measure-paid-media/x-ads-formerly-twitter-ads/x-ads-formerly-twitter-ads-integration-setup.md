@@ -46,7 +46,7 @@ X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support
    * IP address
    * User Agent
 
-   [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
+   <Image align="center" alt="_- visual selection.png" src="https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png" />
 
 <div id="connecting-your-x-ads-account-to-appsflyer" />
 
@@ -63,11 +63,11 @@ X Ads is an Advanced Self-Reporting Network (SRN), enabling AppsFlyer to support
 2. When prompted to select either a **Simple (NEW)** or **Advanced** campaign, select **Advanced**.
 3. Under **Campaign objective**, select **App Installs** or **App re-engagements**, then click **Next**.
 
-   ![X-Ads-campaign-objective.png](https://files.readme.io/d91bd357dea4878f098086a573191f64c2d1a38af8a6a809c6de7c468e04e043-6148255768337.png)
+   <Image align="center" alt="X-Ads-campaign-objective.png" src="https://files.readme.io/d91bd357dea4878f098086a573191f64c2d1a38af8a6a809c6de7c468e04e043-6148255768337.png" />
 4. Choose your app, then click the **mobile measurement partner** link.
 5. On the **Conversion tracking** page, click **Go to AppsFlyer**.
 
-   ![X-Ads-mmp-selection.png](https://files.readme.io/ebe8e97971c01e0d87c694d2ca1fcc996abf608309d96badcbcda2713ab80d3e-6148393350033.png)
+   <Image align="center" alt="X-Ads-mmp-selection.png" src="https://files.readme.io/ebe8e97971c01e0d87c694d2ca1fcc996abf608309d96badcbcda2713ab80d3e-6148393350033.png" />
 6. A notification displays informing you that you're about to leave X Ads to go to the AppsFlyer website. Click **Go to AppsFlyer** and log in to your Dashboard.
 7. In AppsFlyer, from the side menu, select **Collaborate** > **Partner Integrations > Marketplace** tab.
 8. Search for **X Ads** and select it.
@@ -96,7 +96,7 @@ The **Integration Tab** is divided into different sections, as described below. 
 
 Select the accounts to enable attribution.
 
-![X-Ads_msc_new_4.png](https://files.readme.io/c64dd5ddc51f35ce195c689b3d14ec4ed4010133662096926f4e8c45e48d60c4-4411049509137.png)
+<Image align="center" alt="X-Ads_msc_new_4.png" src="https://files.readme.io/c64dd5ddc51f35ce195c689b3d14ec4ed4010133662096926f4e8c45e48d60c4-4411049509137.png" />
 
 **Note:** You can connect up to 200 ad accounts in AppsFlyer. To avoid reaching this limit and ensure continued attribution for all active accounts, we recommend removing any ad accounts that are no longer in use.
 
@@ -125,7 +125,7 @@ Use the slider to set the **maximum time from click to install**. Only installs 
 
 You can customize this value to 1-23 hours or 1-30 days. We recommend setting the click-through lookback window to 14 days, to align with X Ads.
 
-![X-Ads_msc_new_6.png](https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png)
+<Image align="center" alt="X-Ads_msc_new_6.png" src="https://files.readme.io/39c3e080cf2fff3b7d9b3e2cf694fc439cd447a263b113ecfc6730a38f653283-4411047369361.png" />
 
 <div id="view-through-attribution-lookback-window" />
 
@@ -135,7 +135,7 @@ This slider allows you to set the **maximum time from impression to the install*
 
 You can customize this value to 1-23 hours or 1-7 days. We recommend setting the View-through lookback window to 1 day, to align with X Ads.
 
-![X-Ads_msc_new_7.png](https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png)
+<Image align="center" alt="X-Ads_msc_new_7.png" src="https://files.readme.io/4f64c994b0cffec692ab99345e539caa4ef07b8f4a439851f18af3aada6ab473-4411049638033.png" />
 
 <div id="reinstall-settings" />
 
@@ -167,7 +167,7 @@ Turn on the **Re-engagement attribution** toggle to start attributing re-engagem
 
 Set the duration of the **Re-engagement click-through lookback window** (the maximum period of time after an ad is clicked, within which a retargeted user can be attributed to the ad). You can set the value in hours (up to 23) or days (1-30).
 
-![X-Ads-reengagement-activate.png](https://files.readme.io/9272c626eceeb8457584d2f1bd1d2adb16f9022994a2efa22eeaeb5b584e2149-4411049796625.png)
+<Image align="center" alt="X-Ads-reengagement-activate.png" src="https://files.readme.io/9272c626eceeb8457584d2f1bd1d2adb16f9022994a2efa22eeaeb5b584e2149-4411049796625.png" />
 
 <div id="re-engagement-view-through-lookback-window" />
 
@@ -177,7 +177,7 @@ To start attributing impressions of retargeting ads, activate **Re-engagement vi
 
 Then, set the duration of the **Re-engagement view-through lookback window** (the maximum period of time after an ad is viewed, within which a retargeted user can be attributed to the ad). You can set the value in hours (up to 23) or days (1-7):
 
-![X-Ads-reengagement-view-through.png](https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png)
+<Image align="center" alt="X-Ads-reengagement-view-through.png" src="https://files.readme.io/6d4b80bbe1b953e5df5a6420d71ead781342c616e864e4d1b4d71c68fa9d17fa-4411038679569.png" />
 
 <div id="re-engagement-window" />
 
@@ -185,7 +185,7 @@ Then, set the duration of the **Re-engagement view-through lookback window** (th
 
 Set the duration of the **Re-engagement window** (the period when the user's in-app events are attributed to the retargeting media source). You can set the value in days (1-90), hours (up to 23), or even lifetime:
 
-<Image alt="X-Ads-reengagement-window.png" src="https://files.readme.io/de80d79c777fc97caa0a28a342657475f0a05c14e30b1f96d24898a4638e1af8-4411047581201.png" width="628px" />
+<Image align="center" alt="X-Ads-reengagement-window.png" src="https://files.readme.io/de80d79c777fc97caa0a28a342657475f0a05c14e30b1f96d24898a4638e1af8-4411047581201.png" width="628px" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -199,7 +199,7 @@ Set an inactivity window period to prevent recording retargeting conversions for
 
 In this section, you can map your AppsFlyer events with your partners via postbacks.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)](https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/b215324955412d3a6fc0f719ad54560c25b537a4d1b87475d23c91fbf4262632-7900234463121.png" />
 
 **To configure in-app event postbacks:**
 

@@ -103,7 +103,7 @@ When an app is first launched:
 
 <Accordion title="Example A: Assisted attribution">
 
-![SRN_1.png](https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png)
+<Image align="center" alt="SRN_1.png" src="https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png" />
 
 **Monday:** Network A reports a user click.
 
@@ -121,7 +121,7 @@ AppsFlyer gives advertisers assist data (unattributed engagements that occur bef
 
 <Accordion title="Example B: Last click attribution">
 
-![SRN_2.png](https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png)
+<Image align="center" alt="SRN_2.png" src="https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png" />
 
 **Network D** (SRN) reports a click a few minutes before Network C.
 
@@ -273,7 +273,7 @@ AppsFlyer data analysts checked Meta ads **user acquisition** campaigns during a
 * In 5% of campaigns, at least 40% were existing app users.
 * **Conclusion: In SRN user-acquisition campaigns, 1 in 10 targeted users is already an existing user.**
 
-[![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+<Image align="center" alt="mistargeted_users.png" src="https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png" />
 
 <div id="solving-the-mistargeting-problem" />
 

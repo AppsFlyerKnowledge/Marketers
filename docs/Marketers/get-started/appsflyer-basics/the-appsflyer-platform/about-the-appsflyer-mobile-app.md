@@ -38,7 +38,7 @@ x-zendesk:
 
 To log in to the app enter your credentials or sign in with Google.
 
-[![](https://files.readme.io/29379324fa222c862930e05d8c6c052814a8fba0502b88e015be1b583400c11e-115010069186.png)](https://files.readme.io/29379324fa222c862930e05d8c6c052814a8fba0502b88e015be1b583400c11e-115010069186.png)
+<Image align="center" alt="" src="https://files.readme.io/29379324fa222c862930e05d8c6c052814a8fba0502b88e015be1b583400c11e-115010069186.png" />
 
 <div id="my-apps" />
 
@@ -48,7 +48,7 @@ After login, the My Apps screen is displayed.
 
 This screen lists all the applications in your account. You can easily filter out apps from different platforms (iOS, Android, Windows) and even filter out pending apps.
 
-[![](https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png)](https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png)
+<Image align="center" alt="" src="https://files.readme.io/b9c350f9392a54e0ebab1b352bb26845060212a0e8cd44eb94991213b55a2da8-115010069206.png" />
 
 <div id="app-overview-ltv" />
 
@@ -75,7 +75,7 @@ Clicking left or right on the date range moves the changes the dates by the time
 
 Tap outside the bar to reset your selection.
 
-[![](https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png)](https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png)
+<Image align="center" alt="" src="https://files.readme.io/1404277d41236fb95b9232186bac0951b567288a0d39e339e7a37f63127c5e8d-115010069226.png" />
 
 <div id="filters" />
 
@@ -85,7 +85,7 @@ The filter button in the top right corner of the screen allows you to change and
 
 The filters' menu allows you to filter by Media Source and Geo. In addition, you can change the grouping of your data based on Media Source, Geo, and Organic/Non-Organic. Finally, for even more control, you can choose to filter out organic installs or view a grouping of all other data points not included in the top 5 filters you have selected.
 
-[![](https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png)](https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png)
+<Image align="center" alt="" src="https://files.readme.io/10dd545e7eca12e1b5a592cddfb403a20c6d3dc49b3ebb50cf0aaf2ae97c1996-115010200463.png" />
 
 <div id="date-selector" />
 
@@ -93,7 +93,7 @@ The filters' menu allows you to filter by Media Source and Geo. In addition, you
 
 Tapping on the date range opens the date selector view. The date selector view allows you to easily switch between quick selection dates or select custom date ranges (select your required date range on the calendar).
 
-[![](https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png)](https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png)
+<Image align="center" alt="" src="https://files.readme.io/60df4e7d345c63e59c6734351438a67862cb01ed9dad7feb30c01d97a53d55fe-115010200483.png" />
 
 <div id="account-overview" />
 
@@ -103,7 +103,7 @@ From the top-left Menu select **Account Overview**. This provides an aggregated 
 
 Tapping an app name from the list enables you to drill down into the App Overview for that app while maintaining the currently configured dates and filter selection.
 
-![Account_Overview.png](https://files.readme.io/2d425fcb0f53c794a8eeaddd1aebfa8172e51d634d5f90bed74016663adef664-115010568289.png)
+<Image align="center" alt="Account_Overview.png" src="https://files.readme.io/2d425fcb0f53c794a8eeaddd1aebfa8172e51d634d5f90bed74016663adef664-115010568289.png" />
 
 <div id="known-limitations" />
 
@@ -113,6 +113,6 @@ Tapping an app name from the list enables you to drill down into the App Overvie
 * The app currently doesn't support 2FA (two-factor authentication). If your account has 2FA enabled, you cannot sign in using the app.
 * The AppsFlyer App only allows you to view app data if you are the owner of the app. Otherwise, you are presented with the following:  
     
-  [<Image alt="" src="https://files.readme.io/ead6e6d3ff75fa9e9f1ee7d7880de5edbccd81f664d1a76d97eb5a55cd3900c2-115016922303.png" width="337px" />](https://files.readme.io/ead6e6d3ff75fa9e9f1ee7d7880de5edbccd81f664d1a76d97eb5a55cd3900c2-115016922303.png)
+  <Image align="center" alt="" src="https://files.readme.io/ead6e6d3ff75fa9e9f1ee7d7880de5edbccd81f664d1a76d97eb5a55cd3900c2-115016922303.png" width="337px" />
 
 <div data-zendesk-anchors="h_01HX9M4JG2VQVV5RC6X7FGNWWE=the-appsflyer-mobile-app h_01HX9M4JG21CWAKPQTXQXR3K9X=log-in h_01HX9M4JG245C02PATKGQCBH9F=my-apps h_01HX9M4JG2ZJBG3NZVMFCP8C17=app-overview-ltv h_01HX9M4JG2Z6T6RCG20YXQSPM7=filters h_01HX9M4JG21MQ8EEM3N0B0ASM9=date-selector h_01HX9M4JG2CK8KRCBMMJG15J52=account-overview h_01HX9M4JG2K1J2D1YYQC55Z8MA=known-limitations" />

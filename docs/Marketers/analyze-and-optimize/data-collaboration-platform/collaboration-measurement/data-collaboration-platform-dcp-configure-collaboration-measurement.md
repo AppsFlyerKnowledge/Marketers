@@ -45,7 +45,7 @@ To start the measurement setup, follow these steps:
    * If this is the first measurement set up in your collaboration, click **Set up measurement.** The **Create measurement** page is displayed.
    * If you already have a measurement set in your collaboration, click the plus sign in the measurement selection panel. The **Create measurement** page is displayed.
 
-[![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
+<Image align="center" alt="start-measurement.png" src="https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png" />
 
 <div id="select-campaign-type-on-site-off-site-or-both" />
 

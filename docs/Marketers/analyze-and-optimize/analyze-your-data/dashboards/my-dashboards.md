@@ -65,14 +65,14 @@ The My Dashboards user interface is designed for interactive dashboard building.
 
 1. In AppsFlyer, from the side menu, go to **My Dashboards** and click + (Create new dashboard).
    * Alternatively, in the top-right of the dashboard, click **New** > **+ Create new**.  
-     [<Image alt="" src="https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png" width="222px" />](https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png)
+     <Image align="center" alt="" src="https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png" width="222px" />
 2. Enter a name for your dashboard, select the apps you want included, and click **Save**.
 3. Click **+ New widget** and select the type of widget you want to add (table, KPI, line, bar, column, or donut).
 4. Configure the widget by adding the metric(s) and group by dimension(s) you want and click **Apply**.
 5. In the top-right of the dashboard, click **Save**.  
-   [<Image alt="" src="https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png" width="354px" />](https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png)
+   <Image align="center" alt="" src="https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png" width="354px" />
 6. In the top-right of the dashboard, click the **Share** button, select whether to keep your dashboard private or share it with other team members, and click **Done**.  
-   [<Image alt="" src="https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png" width="354px" />](https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png)
+   <Image align="center" alt="" src="https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png" width="354px" />
 
 </Accordion>
 
@@ -87,10 +87,10 @@ The My Dashboards user interface is designed for interactive dashboard building.
 1. In the top-right of the dashboard, click **+ Create new** and select the type of widget you want to create: Table, KPI, Chart, in-app events table, in-app events chart, Event widgets, text, or Custom metric.  
    **Note:** Both the In-app events table and the in-app events chart quickly [show the top events and user behaviour](/docs/my-dashboards#traits-and-limitations).
 
-   [<Image alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://files.readme.io/9a1555adb0185d6c653db9a09c596c66c227b880a7ec94d788d4586bfae8fe78-31801845447697.png)
+   <Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />
 
    * If you choose Chart, when the chart opens, you also choose the kind of chart: line, Bar, Column, Donut, stacked area, or Combo (a mix of line and column).  
-     [<Image alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://files.readme.io/c93e3c892ad262522b79680fdf388a11528b3c48b7395c51cadfc07280bb7720-31801801161233.png)
+     <Image align="center" alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />
    * The Text widget is unique in that it allows you to add titles for dashboard sections, share guidelines, knowledge, insights, goals, or usage guidance with other team members, helping turn dashboards into self-explanatory reports.
    * **Event widgets** let you group by event name to compare actions, revenue, and engagement across sources, geos, and additional dimensions, side by side, across both LTV and Actual (Activity) periods. Use Event widgets to see which in-app events drive the most unique users and revenue, measure revenue trends by media source, and drill down into event performance with up to 4 levels of grouping.
 2. [Optional] Enter a name for your widget.
@@ -199,7 +199,7 @@ To create a custom dimension:
 1. In AppsFlyer, go to **My Dashboards**.
 2. Open the custom dimensions entry point:
    * From the dashboard menu, click the **Menu** icon > **Custom dimensions**.  
-     <Image alt="" src="https://files.readme.io/9dc64c842f35fb65978f6687fbd9f6a9ea03c7f1b689eb35b3eecfbf696ff3b0-47097227614481.png" width="25%" />
+     <Image align="center" alt="" src="https://files.readme.io/9dc64c842f35fb65978f6687fbd9f6a9ea03c7f1b689eb35b3eecfbf696ff3b0-47097227614481.png" width="25%" />
    * Or, in widget settings, in the **Group by** or **Filters** field, click **Create custom dimension**.
 3. Click **New dimension**.
 4. Select the base dimension:
@@ -226,7 +226,7 @@ To edit or delete a custom dimension from the custom dimensions area:
 
 1. In AppsFlyer, go to **My Dashboards**.
 2. Click the **Menu** icon > **Custom dimensions**.  
-   <Image alt="" src="https://files.readme.io/6368f5ba2dcd0d9db622a5502f6f1ba120c506725f82fb522947fdf9652218b8-47097241547793.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/6368f5ba2dcd0d9db622a5502f6f1ba120c506725f82fb522947fdf9652218b8-47097241547793.png" width="25%" />
 3. Select the custom dimension.
 4. Do one of the following:
    * To edit the custom dimension, update the settings and click **Save**.
@@ -240,7 +240,7 @@ To edit a custom dimension from widget settings:
 4. In **Group by**, open the dimension selector.
 5. Hover over the custom dimension.
 6. Click the **Edit** icon.  
-   <Image alt="" src="https://files.readme.io/89f253d8545855cf12411f66ee81c8abe51d49c65823bcb1b7de52bcee74af75-47097241548433.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/89f253d8545855cf12411f66ee81c8abe51d49c65823bcb1b7de52bcee74af75-47097241548433.png" width="25%" />
 7. Update the custom dimension.
 8. Click **Save**.
 
@@ -259,7 +259,7 @@ To use a custom dimension in a widget:
 3. Open the widget settings.
 4. To group data by a custom dimension, select the custom dimension in **Group by**.
 5. To filter data by a custom dimension, select the custom dimension in **Filters**.  
-   <Image alt="" src="https://files.readme.io/1bcd074f316d91eb956e689e45d1199978a9dee57d266019dfb5bb5bfb02a578-47097241548945.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/1bcd074f316d91eb956e689e45d1199978a9dee57d266019dfb5bb5bfb02a578-47097241548945.png" width="25%" />
 6. Click **Apply**.
 
 Click **Save**.
@@ -415,7 +415,7 @@ From the top menu bar, you can select the Product line, View type, Date range, a
 
 The current view types are **Unified** and **User Acquisition**.
 
-<Image alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
 
 <div id="widgets" />
 
@@ -491,9 +491,9 @@ Here's what to keep in mind when analyzing web data in this dashboard:
 1. In AppsFlyer, from the side menu, go to **My Dashboards**.
 2. Select a dashboard to view from the list of pinned and recently viewed dashboards.
 3. If the dashboard view you want isn't in the list of pinned and recently viewed dashboards, at the top of the dashboard that's currently showing, select the one you want to view from the dropdown.  
-   [![](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)
+   <Image align="center" alt="" src="https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png" />
 4. Select the apps, view type, date range, and display filters.  
-   [<Image alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />](https://files.readme.io/f7489ebcb3f87b8871fb08cac878ddc0a9b01440d67c6b6862e9157c8e7fbe3a-23901452545681.png)
+   <Image align="center" alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />
 
 </Accordion>
 
@@ -509,7 +509,7 @@ To set My Dashboards preferences:
 2. Click the three dots <Image alt="" src="https://files.readme.io/2e083cda3a0ec69461d3cc520e2d7b7c4189561af5585e15d7f6f9bd06f18f2a-46312758928785.png" width="3.57%" /> next to **Create new**.
 3. Select **Preferences**.
 
-   <Image alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
+   <Image align="center" alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
 
 <div id="theme" />
 
@@ -827,7 +827,7 @@ Users can configure the date range at both the dashboard level and widget level.
 
 #### Dashboard level
 
-<Image alt="image (4).png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
+<Image align="center" alt="image (4).png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
 
 * By default, the dashboard follows the **Per widget** date range. In this mode, each widget displays data according to its individual settings.
 * The selected time range for each widget is always displayed as a secondary title.
@@ -837,7 +837,7 @@ Users can configure the date range at both the dashboard level and widget level.
 
 #### Widget level
 
-<Image alt="image (5).png" src="https://files.readme.io/88853ed907a3a36854a3dc888acedb4063b036da6b026b4f6eccd69de26824c0-small-33835112650769.png" width="6016px" />
+<Image align="center" alt="image (5).png" src="https://files.readme.io/88853ed907a3a36854a3dc888acedb4063b036da6b026b4f6eccd69de26824c0-small-33835112650769.png" width="6016px" />
 
 * Each widget has an independent date picker, allowing users to define **custom** time ranges for specific visualizations.
 * Each widget has an independent view type selector, allowing users to define a custom view type for specific visualizations.
@@ -878,7 +878,7 @@ To use a stacked area chart:
 
 <Embed title="My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/QN34vDC8gtY?si=0IWgOX2oZ0Gmphid" providerUrl="https://www.youtube.com" />
 
-[<Image alt="" src="https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png" width="1083px" />](https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png)
+<Image align="center" alt="" src="https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png" width="1083px" />
 
 For bar, column, line, and combo charts, you can add multiple metrics.
 
@@ -904,7 +904,7 @@ You can also manually assign each metric to either the left or right Y axis. For
 
 <Accordion title="Compare to">
 
-![Compare-Animated Image (Large) (1).gif](https://files.readme.io/456530b09e6914ea4eb90658aee27408fad5bc3a208f9a4a68a99fbf0f823f13-29064704463761.gif)
+<Image align="center" alt="Compare-Animated Image (Large) (1).gif" src="https://files.readme.io/456530b09e6914ea4eb90658aee27408fad5bc3a208f9a4a68a99fbf0f823f13-29064704463761.gif" />
 
 The "Compare to" feature is available in line charts. It allows you visualize and identify trends, changes, patterns, or anomalies by displaying the selected data and its historical counterpart side by side for easy comparison.
 
@@ -974,11 +974,11 @@ You can apply one of the following formatting options to your table cells:
 
 * **Heatmap:** Colors each cell on a **2-color gradient** (for example, white to blue) based on its value relative to other cells in the same column. This makes it easy to quickly identify high and low values.
 
-<Image alt="image (20).png" src="https://files.readme.io/09792e4d15d82b59b75edd50638c2f389bec1f8ff96c882bc556655e16a5d4f1-small-42862956716689.png" width="3652px" />
+<Image align="center" alt="image (20).png" src="https://files.readme.io/09792e4d15d82b59b75edd50638c2f389bec1f8ff96c882bc556655e16a5d4f1-small-42862956716689.png" width="3652px" />
 
 * **Traffic light:** Uses a **3-color gradient** (for example, red, yellow, green) to indicate performance status across metrics, making it easy to identify areas that meet, approach, or fall below defined goals.
 
-<Image alt="image (21).png" src="https://files.readme.io/c8907965a966d47bdfb0ffd0718ed8868ad8adddace60141d74e80bfe2da2926-small-42862956722577.png" width="3658px" />
+<Image align="center" alt="image (21).png" src="https://files.readme.io/c8907965a966d47bdfb0ffd0718ed8868ad8adddace60141d74e80bfe2da2926-small-42862956722577.png" width="3658px" />
 
 * **Rule-based coloring l**ets you define your own conditions using operators such as "**between**," "**greater than or equal to"**, or "**less than**." Set the numeric values for each rule and assign specific colors to visualize your business logic.
 
@@ -990,7 +990,7 @@ You can apply one of the following formatting options to your table cells:
 
   This approach highlights which activities deliver strong results, allowing faster, data-driven decisions on campaign optimization and budget allocation.
 
-  <Image alt="image (22).png" src="https://files.readme.io/bd7babc39324482966d3aa51707a267f37d9df0285e8ee08b43a77805a3cc4f3-42862956725265.png" width="922px" />
+  <Image align="center" alt="image (22).png" src="https://files.readme.io/bd7babc39324482966d3aa51707a267f37d9df0285e8ee08b43a77805a3cc4f3-42862956725265.png" width="922px" />
 
 <div id="how-to-apply-conditional-formatting" />
 
@@ -1000,7 +1000,7 @@ You can apply one of the following formatting options to your table cells:
 2. Hover over the **metric column** that you want to apply coloring to.
 3. Click the **three dots** menu and select **Conditional formatting**.
 4. Choose your preferred **formatting type** (Heatmap, Traffic light, or Rule-based) and edit the conditions if needed.  
-   <Image alt="image (23).png" src="https://files.readme.io/eaa4cec02322cef1af40ed8b82691b76c6b33395be9cd0a707c38ccff6043b91-42862956727569.png" width="75%" />
+   <Image align="center" alt="image (23).png" src="https://files.readme.io/eaa4cec02322cef1af40ed8b82691b76c6b33395be9cd0a707c38ccff6043b91-42862956727569.png" width="75%" />
 
 </Accordion>
 
@@ -1012,7 +1012,7 @@ You can apply one of the following formatting options to your table cells:
 
 Data in the dashboard is presented via view types Unified, User acquisition, and Retargeting as described in the figure that follows.
 
-[![OV.png](https://files.readme.io/a7bbba0d1075c3fdec0c3a341b747c1821859baacc98aec3186f4ce1baac8bac-44116920835857.png)](https://files.readme.io/a7bbba0d1075c3fdec0c3a341b747c1821859baacc98aec3186f4ce1baac8bac-44116920835857.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/a7bbba0d1075c3fdec0c3a341b747c1821859baacc98aec3186f4ce1baac8bac-44116920835857.png" />
 
 These view types contain LTV data as follows:
 

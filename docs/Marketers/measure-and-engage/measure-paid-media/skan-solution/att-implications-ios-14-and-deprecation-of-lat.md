@@ -74,6 +74,6 @@ x-zendesk:
 
 **How LAT translates to ATT in iOS 14**
 
-[<Image alt="LATtoiOS14.5.png" src="https://files.readme.io/872b3acdcd975337ff4de791a9fc98cd45eb50a487e80b3dfad6a1c7d9495739-360017977837.png" width="522px" />](https://files.readme.io/872b3acdcd975337ff4de791a9fc98cd45eb50a487e80b3dfad6a1c7d9495739-360017977837.png)
+<Image align="center" alt="LATtoiOS14.5.png" src="https://files.readme.io/872b3acdcd975337ff4de791a9fc98cd45eb50a487e80b3dfad6a1c7d9495739-360017977837.png" width="522px" />
 
 <div data-zendesk-anchors="h_01HGX9468F5YF0KSHB3S49CW2Y=att-values h_01HGX9468F0TFTMKP1W2J6GEBV=att-values-defined-by-apple h_01HGX96RG9NX9QM2WTX8789DDR=additional-att-values-defined-by-appsflyer is-lat-in-ios%E2%80%94considerations-and-how-lat-translates-to-att-in-ios-14=is-lat-in-iosconsiderations-and-how-lat-translates-to-att-in-ios-14 h_01HGX9468F0VTYNXBJRSTNBCMB=is-lat-in-iosconsiderations-and-how-lat-translates-to-att-in-ios-14" />

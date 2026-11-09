@@ -180,7 +180,7 @@ To get retargeting reports via Pull API, append the *&reattr=true* parameter to 
 
 <Accordion title="Protect360—blocked fraud">
 
-![Protect360 blocked fraud report example](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)
+<Image align="center" alt="Protect360 blocked fraud report example" src="https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png" />
 
 Blocked fraud aggregate reports provide details of events blocked by <Anchor target="_blank" href="/marketers/docs/protect360-anti-fraud-guide">Protect360</Anchor>.
 
