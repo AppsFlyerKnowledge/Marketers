@@ -582,7 +582,7 @@ La section **Métriques de campagne** du tableau de bord des Audiences regroupe 
 
 L’aperçu des **Métriques de campagne** offre un résumé des données de la campagne pour chaque audience :
 
-[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/8863145932177" width="433px" />](https://support.appsflyer.com/hc/article_attachments/4406917112593)
+<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/8863145932177" width="433px" />
 
 | Colonne | Description |
 | --- | --- |
@@ -598,7 +598,7 @@ Dans l’aperçu, cliquez sur l’icône <Image alt="show_detailed_view_icon.png
 
 La vue détaillée affiche les données regroupées par partenaire pris en charge et par campagne.
 
-[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/8863148809105" />](https://support.appsflyer.com/hc/article_attachments/4406917161233)
+<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/8863148809105" />
 
 Si l'audience sélectionnée a été utilisée pour cibler plusieurs applications, utilisez le menu déroulant ![](https://support.appsflyer.com/hc/article_attachments/4406924702353) pour filtrer les données par application.
 
