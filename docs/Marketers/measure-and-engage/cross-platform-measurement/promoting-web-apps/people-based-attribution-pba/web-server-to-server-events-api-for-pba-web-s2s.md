@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **De un vistazo:** Utilice la API web de servidor a servidor (Web-S2S) para reportar eventos y conversiones a PBA que no son notificados por el SDK Web.
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="web-server-to-server-events-api-for-pba" />
 
@@ -259,7 +259,7 @@ A modo de prueba, envía varios eventos como se indica a continuación:
 1. En AppsFlyer, ve a la sección ***Mis aplicaciones***.
 2. Haz clic en Ver paquetes de marca.
 
-   [![GetWebDevKeyPba_us-en.pn](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)
+   <Image align="center" alt="GetWebDevKeyPba_us-en.pn" src="https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png" />
 3. Copia la ***clave de desarrollador web*** requerida.
 
 </Accordion>
@@ -293,7 +293,7 @@ A modo de prueba, envía varios eventos como se indica a continuación:
 2. Haz clic con el botón derecho del ratón y selecciona ***Inspeccionar***  
    Se abre la ventana de inspección de elementos del navegador.
 
-   [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
+   <Image align="center" alt="S2S_inspect.jpg" src="https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg" />
 3. Ve a la pestaña (A) ***Aplicación***.
 4. En el menú lateral, (B) expande Cookies.
 5. Selecciona tu sitio web. Si no aparece, actualiza el navegador.

@@ -30,7 +30,7 @@ x-zendesk:
 
 ## Descripción general
 
-![6133DataLockerForAdvertisers.png](https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png)
+<Image align="center" alt="6133DataLockerForAdvertisers.png" src="https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png" />
 
 En Data Locker, selecciona tus aplicaciones, fuentes de medios, eventos y reportes para incluirlos en los datos que AppsFlyer entrega a tus opciones de almacenamiento en la nube seleccionadas. Luego, carga los datos programáticamente desde el almacenamiento a tus sistemas.
 
@@ -290,7 +290,7 @@ Selecciona los campos que deseas incluir en el reporte:
 
 1. En el cuadro de diálogo del reporte seleccionado, en la pestaña **Campos**, pasa el cursor sobre cualquier campo para ver su descripción.
 
-   [![HQ1_2024-08-26_15.44.23.png](https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png)](https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png)
+   <Image align="center" alt="HQ1_2024-08-26_15.44.23.png" src="https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png" />
 2. Marca los campos que deseas incluir en el reporte, o desmarca los campos que deseas excluir del reporte.
 3. Haz clic en **Aplicar** para guardar tu configuración.
 
@@ -437,7 +437,7 @@ Los datos se escriben en la opción de almacenamiento seleccionada. En el caso d
 
 Los datos del almacenamiento en el bucket en la nube están organizados en una estructura jerárquica de carpetas, según el tipo de reporte, la fecha y la hora. La siguiente figura contiene un ejemplo de esta estructura:
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 Los datos de un reporte determinado están incluidos en las carpetas de horas (h) asociadas con ese reporte:
 
@@ -728,7 +728,7 @@ Antes de comenzar:
 3. Haz clic en **Guardar cambios**.
 4. Haz clic en **Buckets** > **Agregar bucket externo**.  
    Se abre la ventana Agregar bucket externo.  
-   <Image alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
+   <Image align="center" alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
 5. Ingresa el **Nombre del bucket.** El nombre del bucket tiene el siguiente formato: `{Nombre del Bucket}/{Carpeta de Inicio}`. Los valores necesarios para el nombre del bucket y la carpeta de inicio aparecen en la ventana de credenciales.
 6. Haz clic en **Añadir bucket externo.** El bucket se crea y se muestra en el panel izquierdo de la ventana.  
    Ahora puedes acceder a los archivos de Data Locker.

@@ -50,7 +50,7 @@ Busca al partner y selecciónalo.
 
 6. Desde tu cuenta de **Google Ads**, copia el ID de cliente (sin guiones) de la esquina superior izquierda y pégalo en el parámetro **ID de cliente de AppsFlyer Ads**, como se muestra en las siguientes capturas de pantalla.
 
-[![](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)
+<Image align="center" alt="" src="https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png" />
 
 7. Introduce el número en el campo **ID de cliente de Google Ads**.
 

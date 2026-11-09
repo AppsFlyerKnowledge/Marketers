@@ -61,7 +61,7 @@ En este paso, defines lo que deseas que Predictive Audiences prediga seleccionan
 2. En **Audiences**, haz clic en **Nueva audiencia predictiva**.
 3. Ingresa un nombre para la audiencia.
 
-   [<Image alt="Define goal (values entered).png" src="https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png" width="1666px" />](https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png)
+   <Image align="center" alt="Define goal (values entered).png" src="https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png" width="1666px" />
 4. Selecciona una app.
 5. Selecciona un evento objetivo.
 6. Selecciona un objetivo de predicción (**Probabilidad de compra**).
@@ -85,7 +85,7 @@ Puedes seleccionar una configuración predefinida sugerida o arrastrar los marca
 
 2. Para personalizar el rango, arrastra los marcadores mínimo y máximo en el gráfico.
 
-   <Image alt="Set probability range Correct version.png" src="https://files.readme.io/8dd9b6368d86e5641e99e7fe66e137b1137adf8fdf7760d597826f7c2d5be745-45796825322385.png" width="1898px" />
+   <Image align="center" alt="Set probability range Correct version.png" src="https://files.readme.io/8dd9b6368d86e5641e99e7fe66e137b1137adf8fdf7760d597826f7c2d5be745-45796825322385.png" width="1898px" />
 
    El **Tamaño estimado de la audiencia** se actualiza en tiempo real según tus selecciones.
 
@@ -107,7 +107,7 @@ En este paso, conectas la audiencia predictiva con tus partners para que pueda a
 
 1. Selecciona conexiones de partners existentes o agrega una nueva conexión.
 
-   [<Image alt="Connect to partners.png" src="https://files.readme.io/3fd67bfe6d3fd760ad1569c8e0b360432f7874d152804cbef9a4925189837e0c-45796884976401.png" width="1633px" />](https://files.readme.io/3fd67bfe6d3fd760ad1569c8e0b360432f7874d152804cbef9a4925189837e0c-45796884976401.png)
+   <Image align="center" alt="Connect to partners.png" src="https://files.readme.io/3fd67bfe6d3fd760ad1569c8e0b360432f7874d152804cbef9a4925189837e0c-45796884976401.png" width="1633px" />
 2. Revisa tus selecciones en el **Resumen** del lado derecho.
 3. Haz clic en **Conectar y finalizar**.
 

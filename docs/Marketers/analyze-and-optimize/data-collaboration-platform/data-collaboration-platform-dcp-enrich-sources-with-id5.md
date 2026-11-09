@@ -73,7 +73,7 @@ Para usar el enriquecimiento de ID5, primero crea una conexión de **Data & Iden
 
 1. Accede a la plataforma Data Collaboration Platform haciendo clic en **Collaborate** > **Data Clean Room** en el menú lateral de AppsFlyer.
 
-   <Image alt="Haz clic en Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="33.49%" />
+   <Image align="center" alt="Haz clic en Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="33.49%" />
 2. Ve a **Gestionar conexiones** (arriba a la derecha).
 3. En la pestaña **Data & Identity**, selecciona **+ New connection**.
 
@@ -100,7 +100,7 @@ Puedes enriquecer tus fuentes mediante el flujo S2S.
 2. Ve a la pestaña **Sources** y pasa el cursor sobre la fuente correspondiente.
 3. En el menú de acciones, selecciona **Enrich**.
 
-   <Image alt="Enrich.png" src="https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png" width="245px" />
+   <Image align="center" alt="Enrich.png" src="https://files.readme.io/51c3f33da62d84ec9214e178e3bbaef15d6a03a32827ad393166db0dcd9a70fd-42729376739473.png" width="245px" />
 4. Haz clic en **Start enrichment**.
 5. Cuando termine el flujo de enriquecimiento, tendrás una nueva fuente conectada a la fuente original con la incorporación de ID de ID5.  
    **Nota:** Si alguna vez se elimina la fuente original, la nueva fuente también se eliminará.
@@ -122,13 +122,13 @@ Los propietarios de la colaboración pueden permitir que los colaboradores usen 
    **<Image alt="Actualizar política de colaboración.png" src="https://files.readme.io/25d707c47bed9f5f60cd1ba521c4b48f41afbb0e36949f0ffa35cecf9a932ddc-42838633495313.png" width="58.95%" />**
 4. Haz clic en **Editar la política de colaboración**.
 
-   <Image alt="Haz clic en Editar la política de colaboración.png" src="https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png" width="80.3%" />
+   <Image align="center" alt="Haz clic en Editar la política de colaboración.png" src="https://files.readme.io/07aab2a3165d26779e94f62eb8487893bc725dfa3ad4c406de576480e2ed6c13-42838633497489.png" width="80.3%" />
 5. Haz clic en **Permisos de acceso**.
 
    **<Image alt="Haz clic en Permisos de acceso.png" src="https://files.readme.io/b239775d71e1fa1dcc23537e73e35b80bff0184c9ee2aa213f644d90251284f3-42838633499281.png" width="78.62%" />**
 6. Activa la **conexión de ID5**.
 
-   <Image alt="Permisos de ID5.png" src="https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png" width="79.6%" />
+   <Image align="center" alt="Permisos de ID5.png" src="https://files.readme.io/f2831ec4f775b51ef419da33444198de6aabfde3b27d83cc9af623eaed4a865c-42789059643793.png" width="79.6%" />
 7. Haga clic en **Guardar**.
 
 Luego, los colaboradores pueden asociar sus propias fuentes a la colaboración y enriquecerlas usando la conexión de ID5 del partner.

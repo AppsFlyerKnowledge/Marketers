@@ -84,7 +84,7 @@ Según el tipo de referrer, AppsFlyer evalúa el estado de la sesión y decide s
   * Si hay una sesión activa y existe una fuente de medios no directa (UTM, PID, click ID, etc.), registra la visita. Esta revisita puede activar una conversión de retargeting (re-engagement), que se utiliza para atribuir los eventos posteriores.
   * Si hay una sesión activa y no hay información de la fuente de medios, no registres una visita nueva dentro de esa sesión.
 
-<Image alt="flujo de resolución del tráfico" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
+<Image align="center" alt="flujo de resolución del tráfico" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
 
 <div id="step-2-media-source-resolution" />
 

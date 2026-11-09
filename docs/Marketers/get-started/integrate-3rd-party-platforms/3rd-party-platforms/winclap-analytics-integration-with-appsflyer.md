@@ -70,7 +70,7 @@ Para obtener más detalles sobre la activación de partners, haz clic <Anchor ta
 
 AppsFlyer puede enviar postbacks automáticos a Winclap Analytics tras las instalaciones de usuarios y los re-engagements. Utiliza esta sección para definir la **fuente de los usuarios** que permite enviar estos postbacks.
 
-![integración de Winclap Analytics: postbacks predeterminados](https://files.readme.io/a45d8d7ab4687876d8dea4b026580d80f4b34c151b00c3c47a701771d16582aa-50896714399761.png)
+<Image align="center" alt="integración de Winclap Analytics: postbacks predeterminados" src="https://files.readme.io/a45d8d7ab4687876d8dea4b026580d80f4b34c151b00c3c47a701771d16582aa-50896714399761.png" />
 
 Para las **instalaciones**, selecciona:
 
@@ -103,7 +103,7 @@ Una vez guardada esta configuración, AppsFlyer envía los siguientes datos a Wi
 
 En esta sección, puedes asignar qué eventos in-app enviar a Winclap Analytics mediante postbacks:
 
-[![winclap analytics - configuración del postback de eventos in-app](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)](https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png)
+<Image align="center" alt="winclap analytics - configuración del postback de eventos in-app" src="https://files.readme.io/f14f801a50b3c699f71141a387a9d75586bae7b91aad88f29f97778408ee12fb-50896714404369.png" />
 
 1. Cambia el interruptor ***Postbacks de eventos in-app*** a ON.
 2. Establece la ***ventana de postback de eventos in-app***, si es necesario (Leer más sobre <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">la configuración de la ventana de postback de eventos in-app</Anchor>).

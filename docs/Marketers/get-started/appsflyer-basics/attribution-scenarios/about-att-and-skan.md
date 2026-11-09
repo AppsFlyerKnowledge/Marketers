@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **En resumen**: A partir de iOS 14.5, Apple requiere que implementes y cumplas con los términos de <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency">AppTrackingTransparency</Anchor> (ATT). La ATT significa que *si tu aplicación recopila datos sobre los usuarios finales y los comparte con otras empresas con el fin de realizar un seguimiento a través de aplicaciones y sitios web,* debes usar el aviso de consentimiento de la ATT y obtener el consentimiento del usuario tanto en la aplicación del editor como en la del anunciante. Si no realizas un seguimiento, no es necesario mostrar el aviso.
 
-![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
+<Image align="center" alt="iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg" src="https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg" />
 
 <div id="attribution-measurement-in-an-att-environment" />
 
@@ -58,7 +58,7 @@ La <Anchor target="_blank" href="/marketers/es/docs/skadnetwork-skan-solution-gu
 
 **Flujo de SKAN**
 
-![SKAN_flow_-_Diagrama_de_afinidad_2.png](https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png)
+<Image align="center" alt="SKAN_flow_-_Diagrama_de_afinidad_2.png" src="https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png" />
 
 1. El anunciante establece los ajustes de medición de SKAN en AppsFlyer Conversion Studio.
 2. El usuario abre la aplicación por primera vez.
@@ -204,7 +204,7 @@ Estos factores afectan a lo siguiente:
 
 El siguiente diagrama de flujo explica esto con mayor detalle.
 
-![SKAN_4_matrix_-_Page_8__1_.png](https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png)
+<Image align="center" alt="SKAN_4_matrix_-_Page_8__1_.png" src="https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png" />
 
 </Accordion>
 

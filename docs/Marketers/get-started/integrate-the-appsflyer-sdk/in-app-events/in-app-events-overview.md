@@ -45,7 +45,7 @@ Cuando los usuarios se registran, completan tutoriales, añaden artículos al ca
 
 Un evento in-app comprende un nombre de evento y puede incluir parámetros de evento. Cuando se agregan parámetros a un evento in-app, se le denomina evento in-app. Los parámetros de evento te proporcionan más contexto e información sobre el evento en cuestión. Por ejemplo, saber que un usuario ha hecho una reserva es útil, pero los parámetros del evento pueden ofrecerte detalles como el tipo de compra, el destino y los ingresos.
 
-![viaje.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
+<Image align="center" alt="viaje.png" src="https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png" />
 
 <div id="tip" />
 
@@ -125,7 +125,7 @@ Es importante entender cómo AppsFlyer maneja la configuración de moneda y la c
 
 AppsFlyer gestiona la diferencia entre la moneda configurada en la aplicación y la moneda de los eventos in-app utilizando la conversión de moneda.
 
-![flujo_de_normalización_de_ingresos.png](https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png)
+<Image align="center" alt="flujo_de_normalización_de_ingresos.png" src="https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png" />
 
 El diagrama anterior explica el siguiente proceso:
 

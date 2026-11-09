@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **En resumen:** Consulta la actividad de la aplicación, el engagement y las métricas internas durante un periodo específico. Las métricas del día actual se actualizan en tiempo real.
 
-![ActividadDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
+<Image align="center" alt="ActividadDB.png" src="https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png" />
 
 <div id="activity-dashboard" />
 
@@ -194,7 +194,7 @@ La pestaña de análisis detallado se divide en secciones: métricas principales
 
 <Accordion title="Pestaña de alto nivel: últimos doce meses">
 
-![ActivityHiLevel.png](https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png)
+<Image align="center" alt="ActivityHiLevel.png" src="https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png" />
 
 La pestaña ofrece una visión general del rendimiento de la actividad de la aplicación a lo largo de doce meses y cuenta con los siguientes gráficos: 
 

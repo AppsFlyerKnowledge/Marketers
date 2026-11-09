@@ -67,7 +67,7 @@ Después de que Tapcart haya integrado el SDK de AppsFlyer en tu aplicación, lo
    1. En AppsFlyer, ve a **Experiencias y Deep Linking** > **Enlaces personalizados de OneLink**.
    2. En el menú de **plantilla de OneLink**, selecciona la plantilla requerida.
    3. Copia el ID que se muestra en el lado derecho.  
-       [![OneLink-template-id.png](https://files.readme.io/bb9524b5aecacba00c7f4801f7c854567119c032fa99a6d39122079e3f7956d1-small-4631542470673.png)](https://files.readme.io/bb9524b5aecacba00c7f4801f7c854567119c032fa99a6d39122079e3f7956d1-small-4631542470673.png)
+       <Image align="center" alt="OneLink-template-id.png" src="https://files.readme.io/bb9524b5aecacba00c7f4801f7c854567119c032fa99a6d39122079e3f7956d1-small-4631542470673.png" />
 3. **URL de OneLink:** una URL de OneLink específica generada en AppsFlyer para una campaña específica. Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">cómo generar tu OneLink</Anchor>.
 
 <div data-zendesk-anchors="introduction=introducci%C3%B3n h_01JQ6D9NCM8K3E6GS12V2CR1CH=introducci%C3%B3n integrating-tapcart-with-appsflyer=integrando-tapcart-con-appsflyer h_01JQ6D9NCM95VJB19G2F7SDRG1=integrando-tapcart-con-appsflyer default-inapp-events-configured-in-the-appsflyer-sdk=eventos-predeterminados-en-la-aplicaci%C3%B3n-configurados-en-el-sdk-de-appsflyer h_01JQ6D9NCMYBNJ6WJ09R1EHXH4=eventos-predeterminados-en-la-aplicaci%C3%B3n-configurados-en-el-sdk-de-appsflyer enable-deep-linking-with-appsflyer=habilitar-deep-linking-con-appsflyer h_01JQ6D9NCMC97JQ759B44M9TDJ=habilitar-deep-linking-con-appsflyer" />

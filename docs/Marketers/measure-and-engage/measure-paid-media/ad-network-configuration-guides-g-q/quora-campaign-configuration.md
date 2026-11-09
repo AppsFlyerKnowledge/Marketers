@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **De un vistazo:** Quora, uno de los Partners integrados de AppsFlyer, es una de las comunidades de preguntas & respuestas en línea más populares. Más de 300 millones de visitantes únicos acuden a Quora cada mes para hacer preguntas y leer respuestas reveladoras. La amplia y comprometida audiencia de Quora es una de las principales razones por las que los profesionales del marketing han tenido éxito al anunciarse en Quora.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/quora.png?v=1" width="83px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/quora.png?v=1" width="83px" />
 
 <div id="setting-up-quora" />
 

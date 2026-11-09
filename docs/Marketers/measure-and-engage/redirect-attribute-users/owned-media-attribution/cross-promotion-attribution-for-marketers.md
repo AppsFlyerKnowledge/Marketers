@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **En resumen:** Atribuye las instalaciones de campañas de promoción cruzada que promocionan tus aplicaciones en otras aplicaciones de tu propiedad.
 
-![CrossPromo_recorridoDelUsuario](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
+<Image align="center" alt="CrossPromo_recorridoDelUsuario" src="https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png" />
 
 <div id="about-cross-promotion" />
 
@@ -35,7 +35,7 @@ Son una de las mejores maneras de promocionar tus aplicaciones existentes o de g
 
 La siguiente imagen muestra el dashboard de la aplicación promocionada con un desglose de las métricas de las campañas que se publican en medios propios (**af\_cross\_promotion**) y otras fuentes de medios. Puedes ver que el número de descargas y la tasa de conversión de la campaña de promoción cruzada son mucho más altos que los de otras fuentes de medios.
 
-[![CrossPromo_origenDeMedios](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+<Image align="center" alt="CrossPromo_origenDeMedios" src="https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png" />
 
 <div id="how-does-cross-promotion-work" />
 
@@ -115,7 +115,7 @@ Al ver los datos sobre las instalaciones, los clics, las impresiones y la tasa d
 >
 > Cuando consultas el dashboard, ves que la tasa de conversión para Golfing, 18,22%, es mucho más alta que la tasa de Bowling, lo que te permite determinar que existe una mayor afinidad entre Golfing y la aplicación promocionada, Billiards.
 >
-> [![CrossPromo_tasaDeConversión](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)
+> <Image align="center" alt="CrossPromo_tasaDeConversión" src="https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png" />
 >
 > En función de estos insights, puedes optimizar tu campaña de la siguiente manera:
 >
@@ -140,6 +140,6 @@ Un <Anchor target="_blank" href="/marketers/es/docs/custom-dashboards">dashboard
 >
 > Para ver las métricas de las tres aplicaciones promocionadas en un solo lugar, debes crear un dashboard personalizado. En la siguiente imagen, puedes ver que Sport Shoes tiene una tasa de conversión del 20,23%, lo que significa que Shoes tiene una afinidad mucho mayor con Sport Shoes que con las otras 2 aplicaciones que promociona.
 >
-> ![CrossPromo_customWidget](https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png)
+> <Image align="center" alt="CrossPromo_customWidget" src="https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png" />
 
 <div data-zendesk-anchors="about-crosspromotion=sobre-la-promoci%C3%B3n-cruzada h_01HE7RXZ2CZCYENE4K40W5YSHF=sobre-la-promoci%C3%B3n-cruzada how-does-crosspromotion-work=c%C3%B3mo-funciona-la-promoci%C3%B3n-cruzada h_01HE7RXZ2CE5EQV42Y4B9SK4FN=c%C3%B3mo-funciona-la-promoci%C3%B3n-cruzada attributing-crosspromotion=atribuci%C3%B3n-de-promociones-cruzadas h_01HE7RXZ2CWB2GZ8HV6447RVV1=atribuci%C3%B3n-de-promociones-cruzadas setting-up-crosspromotion=configuraci%C3%B3n-de-la-promoci%C3%B3n-cruzada h_01HE7RXZ2C9JGFYV8K8FECFFJN=configuraci%C3%B3n-de-la-promoci%C3%B3n-cruzada viewing-crosspromotion-data=visualizaci%C3%B3n-de-datos-de-promociones-cruzadas h_01HE7RXZ2CE9NWMQ1PT3G98QVN=visualizaci%C3%B3n-de-datos-de-promociones-cruzadas promoted-app-dashboard=dashboard-de-aplicaciones-promocionadas h_01HE7RXZ2CQG9M35Y2FJNPZWDA=dashboard-de-aplicaciones-promocionadas analysis=an%C3%A1lisis h_01HE7RXZ2CVQD8H0J6EVRJM5T7=an%C3%A1lisis h_01HE7RXZ2CW1P0QNA8FFXP5KBS=ejemplo custom-dashboard=dashboard-personalizado h_01HE7RXZ2C7N3DKNPF898WM4AD=dashboard-personalizado h_01HE7RXZ2C51KJMP795QYS26YK=ejemplo-1" />

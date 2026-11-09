@@ -287,19 +287,19 @@ appsFlyerSdk.setAdditionalData(data);
 1. En AppsFlyer, ve a **Collaborate** > **Partner Integrations > Marketplace** tab.
 2. Para configurar la integración de Amplitude V1, selecciona **Amplitude V1** (Tech partner).
 
-   <Image alt="Select Amplitude V1 doctored.png" src="https://files.readme.io/71721bb1a48dda061ce2a099522edf9baed39ef2d67edad8ac14277b42cd2d70-36713632837777.png" width="511px" />
+   <Image align="center" alt="Select Amplitude V1 doctored.png" src="https://files.readme.io/71721bb1a48dda061ce2a099522edf9baed39ef2d67edad8ac14277b42cd2d70-36713632837777.png" width="511px" />
 
    Para configurar la integración de Amplitude V2, selecciona **Amplitude V2** (Tech partner).
 
-   <Image alt="Select Amplitude V2.png" src="https://files.readme.io/4bbf57727a2b6e16e5205505b459a78f8642f02d1bb1c4e8f72e26b3bd9e1bd3-36713631187857.png" width="503px" />
+   <Image align="center" alt="Select Amplitude V2.png" src="https://files.readme.io/4bbf57727a2b6e16e5205505b459a78f8642f02d1bb1c4e8f72e26b3bd9e1bd3-36713631187857.png" width="503px" />
 3. Una vez que hayas seleccionado tu versión de Amplitude, haz clic en **Configurar integración**.
 
-   ![Click set up integration.png](https://files.readme.io/c13fef10fb4cf0ea12f44d56f8c3b64936376ce181a1d12c9f096ad6103c29a6-36713632857617.png)
+   <Image align="center" alt="Click set up integration.png" src="https://files.readme.io/c13fef10fb4cf0ea12f44d56f8c3b64936376ce181a1d12c9f096ad6103c29a6-36713632857617.png" />
 4. En la pestaña de **Integración**:
    * Selecciona tu aplicación.
    * Activa el interruptor **Activar partner**.
 
-     <Image alt="Activate partner blurred.png" src="https://files.readme.io/5e0e7ae537cd89b2c561c8561de9ebc160f6d6eb0fedc5c7ba0c761ddb73632a-36713631194641.png" width="521px" />
+     <Image align="center" alt="Activate partner blurred.png" src="https://files.readme.io/5e0e7ae537cd89b2c561c8561de9ebc160f6d6eb0fedc5c7ba0c761ddb73632a-36713631194641.png" width="521px" />
 5. Completa la configuración en las pestañas restantes:
 
 <Accordion title="Pestaña de Integración">
@@ -360,13 +360,13 @@ Amplitude se conecta con AppsFlyer a través de una clave de API única. Si aún
 1. Accede a tu cuenta de Amplitude.
 2. Desde la parte superior derecha de la página, haz clic en el icono de configuración > **Configuración de la organización**.
 
-   <Image alt="Amplitude" src="https://files.readme.io/214df773c045239924b65a4a1e6b0a1957f6b7ea09e225af80d83ffa0a469c26-16258070772625.png" width="240px" />
+   <Image align="center" alt="Amplitude" src="https://files.readme.io/214df773c045239924b65a4a1e6b0a1957f6b7ea09e225af80d83ffa0a469c26-16258070772625.png" width="240px" />
 3. Haz clic en **Proyectos** y selecciona el proyecto desde el que enviarás datos a AppsFlyer.
 
-   ![Amplitude](https://files.readme.io/eaf158e4505f47f8da0fdae4f97be773ab32910352b50cab5ca5d4de3e8782ac-16335170399505.png)
+   <Image align="center" alt="Amplitude" src="https://files.readme.io/eaf158e4505f47f8da0fdae4f97be773ab32910352b50cab5ca5d4de3e8782ac-16335170399505.png" />
 4. Desde la pestaña **Proyecto**, copia tu clave API.
 
-   <Image alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
+   <Image align="center" alt="Amplitude" src="https://files.readme.io/cf65648a9a8c122febe2b36fd4bd0b9f7f436cac49cfeec7f41870f614a16c6c-16258070773649.png" width="648px" />
 5. Continúa para configurar Amplitude en el dashboard de AppsFlyer.
 
 <div id="default-postbacks" />
@@ -375,7 +375,7 @@ Amplitude se conecta con AppsFlyer a través de una clave de API única. Si aún
 
 AppsFlyer puede enviar postbacks automáticos a Amplitude después de las instalaciones de usuarios, incluidas tanto las instalaciones como los re-engagements (incluidas las reatribuciones). Los re-engagements se producen cuando un usuario que ya tiene la app instalada la abre después de hacer clic en una campaña. Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">postbacks predeterminados</Anchor>.
 
-<Image alt="Screenshot 2025-12-03 at 1.57.03 PM.png" src="https://files.readme.io/3454ca573ee63ea076251459a9c619a747fc5640862e83582b2d10a985c2489a-41748033847953.png" width="703px" />
+<Image align="center" alt="Screenshot 2025-12-03 at 1.57.03 PM.png" src="https://files.readme.io/3454ca573ee63ea076251459a9c619a747fc5640862e83582b2d10a985c2489a-41748033847953.png" width="703px" />
 
 <div id="in-app-event-settings" />
 
@@ -431,7 +431,7 @@ Los permisos no están disponibles para Amplitude.
 
 Los datos de atribución enviados desde AppsFlyer a Amplitude se muestran en tus dashboards como eventos y propiedades prefijados con **[AppsFlyer]**:
 
-![amplitude-properties.png](https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png)
+<Image align="center" alt="amplitude-properties.png" src="https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png" />
 
 > 🚧 **Important**
 >

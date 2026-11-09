@@ -41,17 +41,17 @@ Puedes configurar tu lista de permitidos manualmente o mediante un archivo CSV. 
 
 1. Desde la barra superior, abre el menú de la cuenta (menú desplegable del correo electrónico) > **Centro de seguridad**
 
-![desde la cuenta, haz clic en el centro de seguridad Cropped.jpg](https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg)
+<Image align="center" alt="desde la cuenta, haz clic en el centro de seguridad Cropped.jpg" src="https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg" />
 
 2. En la sección **Lista de redirecciones permitidas**, haz clic en **Administrar la lista de redirecciones permitidas**.
 
-<Image alt="Gestiona la lista de redireccionamientos permitidos con arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="549px" />  
+<Image align="center" alt="Gestiona la lista de redireccionamientos permitidos con arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="549px" />
 
 Se abre la página de la **lista de redireccionamiento permitidos**.
 
 3. En la pestaña **Manual**, introduce un dominio o subdominio raíz en el campo **Nombre de dominio** y, a continuación, haz clic en **Agregar dominio a la lista**.
 
-<Image alt="Agregar dominios manualmente.jpg" src="https://files.readme.io/95b37db2064ddba8c787d2dd5ac5ab2aa7698605f5c6eb3b4a59dd6324dee355-25103405228689.jpg" width="403px" />
+<Image align="center" alt="Agregar dominios manualmente.jpg" src="https://files.readme.io/95b37db2064ddba8c787d2dd5ac5ab2aa7698605f5c6eb3b4a59dd6324dee355-25103405228689.jpg" width="403px" />
 
 * Utiliza únicamente letras, números, guiones y puntos.
 * El dominio debe empezar y terminar con una letra o un número y puede tener hasta 253 caracteres.
@@ -75,15 +75,15 @@ La lista de permitidos se aplicará a los clics en aproximadamente una hora.
 
 1. Desde la barra superior, abre el menú de la cuenta (menú desplegable del correo electrónico) > **Centro de seguridad**  
 
-![desde la cuenta, haz clic en el centro de seguridad Cropped.jpg](https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg)
+<Image align="center" alt="desde la cuenta, haz clic en el centro de seguridad Cropped.jpg" src="https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg" />
 
 2. En la sección **Lista de redirecciones permitidas**, haz clic en **Administrar la lista de redirecciones permitidas**.  
-<Image alt="Gestiona la lista de redireccionamientos permitidos con arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="530px" />  
+<Image align="center" alt="Gestiona la lista de redireccionamientos permitidos con arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="530px" />
 
 Se abre la página de la **lista de redireccionamiento permitidos**.
 
 3. Haz clic en la pestaña **Archivo CSV** y, luego, sigue las **instrucciones del archivo CSV** para crear un archivo que contenga tu lista de dominios.  
-![CSV file upload.jpg](https://files.readme.io/2be73080048545f79e102e6f48df0db956e6739f156153c172c4fef5a2ea339f-25381979219345.jpg)
+<Image align="center" alt="CSV file upload.jpg" src="https://files.readme.io/2be73080048545f79e102e6f48df0db956e6739f156153c172c4fef5a2ea339f-25381979219345.jpg" />
 
 4. Sube el archivo CSV al campo de carga.
 

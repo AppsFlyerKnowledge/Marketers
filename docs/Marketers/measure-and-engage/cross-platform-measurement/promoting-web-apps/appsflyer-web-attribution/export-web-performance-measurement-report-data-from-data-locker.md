@@ -88,7 +88,7 @@ Usa estos detalles para entender cuándo se añaden datos nuevos y cuándo los e
 * Los 30 minutos restantes se usan **únicamente para enriquecer** los eventos atribuidos con IDs de usuario de cliente (CUIDs).
 * Los 30 minutos más recientes de eventos **todavía no se atribuyen**; se incluirán en el siguiente lote.
 
-[![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
+<Image align="center" alt="" src="https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png" />
 
 <div id="when-will-these-events-appear-in-the-report" />
 

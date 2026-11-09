@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **En resumen:** Aprende el concepto de la integración de tu cuenta de X Ads con AppsFlyer.
 
-<Image alt="Logotipo_X_Ads.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
+<Image align="center" alt="Logotipo_X_Ads.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
 
 <div id="mobile-app-promotion-on-x-ads" />
 

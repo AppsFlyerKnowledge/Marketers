@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **En resumen:** Convierte a los visitantes de tu sitio web en usuarios de la aplicación móvil con smart banners.
 
-[![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg" />
 
 <div id="note" />
 
@@ -288,7 +288,7 @@ El panel Targeting y comportamiento te muestra la configuración que establecist
 
       Se abre una ventana para elegir una plantilla de banner.
 
-      [![](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)
+      <Image align="center" alt="" src="https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png" />
    2. Pasa el cursor por encima de una **plantilla creativa** y haz clic en **Crear** para acceder a la página de configuración de **Crear creatividad**.
    3. Personaliza todos los elementos en la creatividad del Smart Banner. Para hacerlo, selecciona los elementos por nombre o haz clic en ellos en la imagen de vista previa. **Nota:** No todos los elementos están disponibles en todas las plantillas.
       * Título

@@ -109,7 +109,7 @@ Explora las tarjetas de partner para obtener información básica sobre cada par
 * **Acerca de** (abre la página del partner)
 * **Integrar / Gestionar integración** (inicia la configuración o abre la configuración de integración)
 
-<Image alt="partner card.png" src="https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png" width="1598px" />
+<Image align="center" alt="partner card.png" src="https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png" width="1598px" />
 
 <div id="filter-the-list-of-partners" />
 
@@ -131,7 +131,7 @@ Utiliza los filtros de la parte superior de la página para encontrar partners r
 
 Utiliza la barra de búsqueda para encontrar partners específicos.
 
-<Image alt="serach for partners.png" src="https://files.readme.io/6590e14e35e75bef7450489ec5ff06d1cabc0671a82043e4fb5fb467c67d2b8a-45767176965393.png" width="876px" />
+<Image align="center" alt="serach for partners.png" src="https://files.readme.io/6590e14e35e75bef7450489ec5ff06d1cabc0671a82043e4fb5fb467c67d2b8a-45767176965393.png" width="876px" />
 
 Al utilizar la barra de búsqueda en la pestaña Marketplace:
 
@@ -146,7 +146,7 @@ Al utilizar la barra de búsqueda en la pestaña Marketplace:
 
 Puedes obtener más información sobre cada partner y conectarte con ellos desde su página de partner. Haz clic en el botón **Acerca de** de una [tarjeta de partner](#tarjetas-de-partner) para abrir la página del partner.
 
-<Image alt="new cropped partner image.png" src="https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png" width="3270px" />
+<Image align="center" alt="new cropped partner image.png" src="https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png" width="3270px" />
 
 <div id="what-you-can-do-from-the-partner-page" />
 
@@ -235,7 +235,7 @@ Antes de que nuevas integraciones de ad networks puedan añadirse al Marketplace
 
 1. En AppsFlyer, desde el menú lateral, selecciona **Colaboración** > **Partner Integrations**.
 2. En la esquina superior derecha de la página de Partner Marketplace, haz clic en el ícono de carta.  
-   <Image alt="invite new partner.png" src="https://files.readme.io/f0208f3f19f7102ba8174eea064f88db1fe14732334fe58ced0b0a373ce3f1c8-45767201404433.png" width="893px" />
+   <Image align="center" alt="invite new partner.png" src="https://files.readme.io/f0208f3f19f7102ba8174eea064f88db1fe14732334fe58ced0b0a373ce3f1c8-45767201404433.png" width="893px" />
 3. Introduce el nombre del partner y la dirección de correo electrónico correspondiente.
 
 El partner recibirá un correo electrónico con un enlace de registro para iniciar el proceso de alta. Una vez que lo envíen, ejecutaremos automáticamente la verificación, y ambos recibirán una respuesta en un plazo de 48 horas (consulta [Verificación de Partners](#verificación-de-partners) arriba).

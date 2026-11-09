@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **De un vistazo:** Tealium, una plataforma de datos del cliente (CDP), conecta los datos del cliente a través de Internet, móvil, IoT y fuera de línea. Aprende cómo compartir automáticamente los datos de conversión con Tealium.
 
-<Image alt="Tealium_icon.png" src="https://files.readme.io/e3cc1f95e8ce2de6fa83df63ff78dd4f4f76aebe1acb8e9378aa5b6aa4134364-10820461521681.png" width="276px" />
+<Image align="center" alt="Tealium_icon.png" src="https://files.readme.io/e3cc1f95e8ce2de6fa83df63ff78dd4f4f76aebe1acb8e9378aa5b6aa4134364-10820461521681.png" width="276px" />
 
 <div id="overview" />
 

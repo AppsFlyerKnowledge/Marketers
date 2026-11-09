@@ -44,7 +44,7 @@ Esta integración te permite conceder a AppTweak permiso para acceder a tus repo
    * Reportes analíticos agregados
    * Reportes de SKAN (para aplicaciones iOS)
 
-     <Image alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
+     <Image align="center" alt="apptweak2.jpg" src="https://files.readme.io/1668b89127eeb302e15aaeb3409657b65130d8871ea92e20f1bcfa585d0239f9-23661914740369.jpg" width="387px" />
 6. Haz clic en **Save API access**.
 7. Notifica a AppTweak que has habilitado su acceso.
 

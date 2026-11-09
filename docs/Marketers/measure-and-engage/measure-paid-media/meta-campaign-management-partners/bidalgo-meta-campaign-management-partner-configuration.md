@@ -51,7 +51,7 @@ x-zendesk:
 2. Configura esta opción según las directrices disponibles <Anchor target="_blank" href="/marketers/es/docs/meta-ads-in-app-event-mapping#asignación-de-eventos-predefinidos">aquí</Anchor>.
 3. Haga clic en **Guardar**.
 
-[![meta_campaign_management_partner_settings.png](https://files.readme.io/29453cf562585ab43c45e4869ca2a904b80817a6c1c73bf0d12fbd3e181c1a0a-14238354506769.png)](https://support.appsflyer.com/hc/article_attachments/49754389613329)
+[<Image align="center" alt="meta_campaign_management_partner_settings.png" src="https://files.readme.io/29453cf562585ab43c45e4869ca2a904b80817a6c1c73bf0d12fbd3e181c1a0a-14238354506769.png" />](https://support.appsflyer.com/hc/article_attachments/49754389613329)
 
 <div id="configuring-on-bidalgo" />
 

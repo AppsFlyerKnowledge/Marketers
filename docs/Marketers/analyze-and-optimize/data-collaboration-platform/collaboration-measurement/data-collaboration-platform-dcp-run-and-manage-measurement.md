@@ -113,7 +113,7 @@ Después de configurar y ejecutar la medición, administrala desde el panel de m
 
 ### La página de medición de la colaboración
 
-[![](https://files.readme.io/f1ff9677dcae50df83fe32a8c54925c52ea91f5a2f7f133bc6bce3041fe0341d-44437720904209.png)](https://files.readme.io/f1ff9677dcae50df83fe32a8c54925c52ea91f5a2f7f133bc6bce3041fe0341d-44437720904209.png)
+<Image align="center" alt="" src="https://files.readme.io/f1ff9677dcae50df83fe32a8c54925c52ea91f5a2f7f133bc6bce3041fe0341d-44437720904209.png" />
 
 <div id="pause-or-restart-live-measurement" />
 

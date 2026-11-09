@@ -24,7 +24,7 @@ x-zendesk:
 
 > **En resumen:** Utiliza el dashboard general de Optimización Creativa para analizar el rendimiento creativo, de modo que puedas elegir las creatividades más efectivas y maximizar el impacto de tus campañas.
 
-[![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
+<Image align="center" alt="Main image -Default view.jpg" src="https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg" />
 
 <div id="about-the-creative-optimization-overview-dashboard" />
 
@@ -86,7 +86,7 @@ Utiliza la tabla para profundizar en los detalles. Agrupa por varias dimensiones
 
 La siguiente imagen muestra la vista de tabla predeterminada, que muestra las creatividades según los criterios de filtrado seleccionados. Las letras de la imagen corresponden a las letras y descripciones de la tabla que sigue.
 
-[![Table_main_image_doctored_final_copy__download_table_.jpg](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)
+<Image align="center" alt="Table_main_image_doctored_final_copy__download_table_.jpg" src="https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg" />
 
 |  | Elemento | Descripción |
 | --- | --- | --- |
@@ -145,7 +145,7 @@ Personaliza la tabla haciendo clic en el icono <Image alt="Creative_table_settin
 
 *Ten en cuenta que las métricas se mostrarán en las filas de datos individuales, que se muestran debajo de las filas agregadas en la tabla.
 
-[![](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)
+<Image align="center" alt="" src="https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png" />
 
 </Accordion>
 

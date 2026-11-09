@@ -24,7 +24,7 @@ x-zendesk:
 
 > **En resumen:** La plataforma de colaboración de datos de AppsFlyer ofrece una solución fluida y centrada en la privacidad para que las redes de commerce media y las marcas colaboradoras aprovechen los datos combinados, logren los máximos resultados de campaña y creen nuevas y potentes fuentes de ingresos publicitarios.
 
-<Image alt="53877 Se necesita una imagen de KB para una nueva KB de DCP (1) - Blurred.png" src="https://files.readme.io/09539acd55618af4f99fb3a1118c7ba7ed9273ecabf7d80b007f95ca236d82b9-38491408127633.png" width="798px" />
+<Image align="center" alt="53877 Se necesita una imagen de KB para una nueva KB de DCP (1) - Blurred.png" src="https://files.readme.io/09539acd55618af4f99fb3a1118c7ba7ed9273ecabf7d80b007f95ca236d82b9-38491408127633.png" width="798px" />
 
 <div id="about-the-data-collaboration-platform-dcp" />
 

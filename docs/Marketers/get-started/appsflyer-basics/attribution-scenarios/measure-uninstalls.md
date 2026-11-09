@@ -174,7 +174,7 @@ La medición de desinstalación en Android está disponible al configurar la med
    2. Selecciona un proyecto.
    3. [altalt](https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png)
 
-       ![DesinstalarFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
+       <Image align="center" alt="DesinstalarFirebase.png" src="https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png" />
    4. Copia el ID del proyecto. Lo necesitarás más adelante en el proceso.
 2. Para habilitar la API de FCM:
    1. Ve a la pestaña **Mensajería en la nube**.
@@ -192,7 +192,7 @@ La medición de desinstalación en Android está disponible al configurar la med
    6. Haz clic en **Añadir permisos.**
    7. **Filtro**, selecciona el permiso **cloudmessaging.messages.create**.
 
-       ![Filtro de permisos de mensajes en la nube](https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png)
+       <Image align="center" alt="Filtro de permisos de mensajes en la nube" src="https://files.readme.io/255f5cf42ba1b07cae905ec0acbe6459303c3bd5b03f2d36e1ac3f9606fbb229-33839382512145.png" />
    8. Haz clic en **Añadir** y luego en **Crear**.
 4. **Para asignar a AppsFlyer el rol de desinstalación de FCM:**
    1. En el menú lateral, selecciona **IAM**.
@@ -230,7 +230,7 @@ La medición de desinstalación con Firebase Messaging es compatible con Android
 2. Abre la <Anchor target="_blank" href="https://console.firebase.google.com">Consola</Anchor> de Firebase.
 3. En la consola de Firebase, ve a Configuración del proyecto (haz clic en el engranaje junto a Descripción general del proyecto en el panel izquierdo de la página).
 
-    ![firebase_cloud_messaging_server_key.png](https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png)
+    <Image align="center" alt="firebase_cloud_messaging_server_key.png" src="https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png" />
 4. En la pestaña de Mensajería en la nube, verás dos claves de servidor.
 5. Copia la **clave del servidor**.
 
@@ -251,7 +251,7 @@ Para configurar la medición de desinstalación en AppsFlyer:
 2. Si es necesario, activa **Medición de desinstalación**.
 3. Selecciona **HTTP V1 e introduce el ID del proyecto que preparaste anteriormente.**
 
-    ![DesinstalarHTTPV1.png](https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png)
+    <Image align="center" alt="DesinstalarHTTPV1.png" src="https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png" />
 4. Haz clic en **Probar conexión**.  
    Se muestra el mensaje de éxito.
 
@@ -277,7 +277,7 @@ Para configurar la medición de desinstalación en AppsFlyer:
 3. Desplázate hacia abajo hasta la sección Desinstalar.
 4. Activa **Medición de desinstalación**.
 
-    ![Desinstalar_iOS_p2.png](https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png)
+    <Image align="center" alt="Desinstalar_iOS_p2.png" src="https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png" />
 5. Haz clic en el icono de carga y selecciona el archivo P12.
 6. [Opcional] Si el certificado P12 está protegido con contraseña, introduce la contraseña.
 7. Haz clic en **Validar** para enviar el certificado a AppsFlyer para su verificación.
@@ -333,7 +333,7 @@ Tenga presente lo siguiente al probar aplicaciones iOS:
 
 ## Mapeo del evento de desinstalación
 
- ![Desinstalación_evento_postback.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png) 
+ <Image align="center" alt="Desinstalación_evento_postback.png" src="https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png" />
 
 Para compartir datos de desinstalación con una ad network, debes mapear el <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">evento af\_uninstall</Anchor> a un partner. A diferencia de los postbacks para eventos normales dentro de la aplicación, el evento de desinstalación no se envía en tiempo real. El tiempo del evento que se informa representa el momento en que AppsFlyer determinó que la aplicación fue desinstalada, y no el momento real de la desinstalación.
 

@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **De un vistazo:** El panel de control de SKAdNetwork (SKAN) muestra las métricas de campaña reportadas a través de postbacks SKAN de iOS y puntos de datos adicionales durante las ventanas iniciales de medición del usuario. También hay disponibles métricas modeladas que tienen en cuenta las conversiones nulas. Los datos se muestran utilizando la fecha de instalación o de la llegada del postback.
 
-![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
+<Image align="center" alt="SKAdHeadling8_us-en.png" src="https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png" />
 
 <div id="dashboard-principles" />
 
@@ -229,7 +229,7 @@ Los gráficos disponibles dependen del tipo de medición seleccionado.
 * Selecciona las métricas entre las disponibles. Las [métricas modeladas](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#modeled-metrics-and-null-cv) tienen en cuenta la tasa de CV nulos.
 * Establece los grupos primarios y secundarios por dimensiones para profundizar en las métricas de rendimiento.
 
-[![SKAdNetwork_Dashboard_AppsFlyer7_us-en.png](https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png)](https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png)
+<Image align="center" alt="SKAdNetwork_Dashboard_AppsFlyer7_us-en.png" src="https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png" />
 
 Sobre la tabla de métricas:
 

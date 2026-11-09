@@ -250,7 +250,7 @@ Puedes elegir cualquier evento INAPP predefinido enviado desde AppsFlyer como ob
 
 <Accordion title="Flujo de datos end-to-end">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. La URL del anuncio de TikTok incluye el  `pid=tiktokweb_int` parámetro. Cuando el usuario hace clic en el anuncio, se añade automáticamente un `ttclid` parámetro a la URL en la que hizo clic.
 2. El usuario es redirigido a la URL de destino: una landing page que contiene un Smart Script.

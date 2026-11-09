@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **De un vistazo:** Aprende a compartir automáticamente datos de AppsFlyer con Rockerbox, una plataforma de marketing y análisis para aplicaciones móviles y web.
 
-![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png)
+<Image align="center" alt="rockerbox-logo_en-us.png" src="https://cdn.appsflyer.com/marketplace/static/logo/rockerbox.png" />
 
 <div id="important" />
 
@@ -79,7 +79,7 @@ Para enviar postbacks de cualquier usuario que descargue la aplicación a Rocker
 
 ### Configuración de eventos in-app
 
-![rockerbox-in-app-events_en-us.png](https://files.readme.io/3fc74bb16d6a1222d1d244bbb1083ff247e3315d0fc7060e0ec3e8ad30a07233-360013891517.png)
+<Image align="center" alt="rockerbox-in-app-events_en-us.png" src="https://files.readme.io/3fc74bb16d6a1222d1d244bbb1083ff247e3315d0fc7060e0ec3e8ad30a07233-360013891517.png" />
 
 En esta sección, asignas los eventos de AppsFlyer al partner mediante postbacks. Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">postbacks de eventos in-app.</Anchor>
 

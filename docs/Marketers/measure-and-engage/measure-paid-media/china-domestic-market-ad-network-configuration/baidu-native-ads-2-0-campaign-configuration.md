@@ -56,13 +56,13 @@ Para obtener más detalles sobre la activación de partners, haz clic <Anchor ta
 
 Baidu Native Ads 2.0 se conecta con AppsFlyer a través de una **akey** única. Si aún no tienes la clave, debes obtenerla de Baidu Native Ads 2.0 para continuar con la integración.
 
-<Image alt="mceclip2.png" src="https://files.readme.io/fe8f44ee7d58fda9ee6289872903f96c716ab6d1191dd831745445cbced8b316-50899807435409.png" width="417px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/fe8f44ee7d58fda9ee6289872903f96c716ab6d1191dd831745445cbced8b316-50899807435409.png" width="417px" />
 
 <div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
-<Image alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="552px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="552px" />
 
 <div id="in-app-events-settings" />
 
@@ -70,7 +70,7 @@ Baidu Native Ads 2.0 se conecta con AppsFlyer a través de una **akey** única. 
 
 En esta sección, puedes asignar tus eventos de AppsFlyer con Baidu Native Ads 2.0 a través de postbacks. 
 
-<Image alt="mceclip1.png" src="https://files.readme.io/1d929a3ba75da04165e416843f5037b8e299b12ae190aa9068cc3b317348087c-50899846627601.png" width="598px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/1d929a3ba75da04165e416843f5037b8e299b12ae190aa9068cc3b317348087c-50899846627601.png" width="598px" />
 
 1. Activa los postbacks de eventos in-app.
 2. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
@@ -111,7 +111,7 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 * **Parámetros de suscriptor** - usa cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
   **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![parametros-del-enlace-de-atribucion.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="parametros-del-enlace-de-atribucion.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros del enlace de atribución de AppsFlyer**</Anchor>.
 
@@ -125,7 +125,7 @@ Este control deslizante te permite establecer el **tiempo máximo entre el clic 
 
 Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic aquí</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png" />
 
 <div id="attribution-link" />
 

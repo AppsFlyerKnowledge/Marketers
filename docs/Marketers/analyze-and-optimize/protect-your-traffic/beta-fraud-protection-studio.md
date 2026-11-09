@@ -63,7 +63,7 @@ FPS tiene dos modos, **implemented** y **tagged**. Los anunciantes pueden cambia
   * **Bloqueadas** en tiempo real
   * **Reportadas** como fraude después de la atribución
 
-[<Image alt="Descripción de la imagen" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)   
+<Image align="center" alt="Descripción de la imagen" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />
 **Mecanismo con FPS:** Las instalaciones se consideran:
 
 * Atribuciones **válidas**
@@ -73,7 +73,7 @@ FPS tiene dos modos, **implemented** y **tagged**. Los anunciantes pueden cambia
     * **Bloqueadas** en tiempo real
     * **Reportadas** como fraude después de la atribución
 
-[<Image alt="Descripción de la imagen" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)
+<Image align="center" alt="Descripción de la imagen" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />
 
 <div id="note" />
 
@@ -96,7 +96,7 @@ Las detecciones tagged no se reflejan en los reportes de fraude. Las detecciones
 
 Dashboard de Protect360
 
-[<Image alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />](https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png)
+<Image align="center" alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />
 
 * Recuento total de tagged en los componentes superiores de la página (1)
 * Tendencia a lo largo del tiempo del "Estado de detección" (2)
@@ -185,7 +185,7 @@ El estado de detección te permite elegir el modo de [detección](/docs/beta-fra
 1. En la ventana Inundación de Clics, selecciona el [modo de detección](/docs/beta-fraud-protection-studio#modos-de-fps).
 2. Haz clic en el botón **Guardar** en la parte inferior de la página.
 
-   [<Image alt="Imagen ampliable" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />](https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png)
+   <Image align="center" alt="Imagen ampliable" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />
 
 <div id="current-detection-status" />
 
@@ -269,7 +269,7 @@ Las versiones futuras te permiten establecer el número de días que deseas que 
 1. En la ventana Nuevo lanzamiento, en el cuadro desplegable, selecciona el número de días que quieres marcar los paquetes nuevos como tagged antes de que se implementen (predeterminado: 14 días, ajustable hasta 14 días)
 2. Haz clic en **Guardar**.
 
-<Image alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
+<Image align="center" alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
 
 <div id="note-2" />
 
@@ -298,7 +298,7 @@ La sección Nuevo lanzamiento actual te permite ver:
 1. Abre la sección **nuevo lanzamiento** en la pestaña FPS.
 2. Supervisa el rendimiento de la detección mediante la tabla y los reportes exportables.
 3. Cuando esté listo, haz clic en **Implementar ahora** para aplicar los cambios.  
-   [![](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)
+   <Image align="center" alt="" src="https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png" />
 
 <div id="note-3" />
 
@@ -412,7 +412,7 @@ La página sobre el secuestro de re-engagement se divide en dos secciones.
     * Calificación del total de atribuciones: la parte de las atribuciones de re-engagement de todas las atribuciones de la aplicación
   * Detección de re-engagement por fuente de medios: número de detecciones de secuestro de re-engagement para las principales fuentes de medios detectadas.
 
-<Image alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
 
 </Accordion>
 
@@ -454,7 +454,7 @@ Esta sección se divide a su vez en:
 
 * **Detección basada en eventos in-app por fuente de medios**: número de instalaciones de las principales fuentes de medios.
 
-<Image alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
 
 </Accordion>
 

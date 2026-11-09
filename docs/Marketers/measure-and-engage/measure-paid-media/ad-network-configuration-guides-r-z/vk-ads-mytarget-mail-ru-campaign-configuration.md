@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **Información general:** VK Ads es una plataforma de publicidad móvil orientada a conectar a los anunciantes con usuarios móviles rusohablantes. Con VK Ads, los anunciantes pueden colocar publicidad segmentada en redes sociales (Vkontakte, Odnoklassniki, Moi Mir) y en Mail.Ru Group. Además de la atribución móvil basada en clics, VK Ads también ofrece atribución de retargeting.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/mail.ru.png?v=1)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mail.ru.png?v=1" />
 
 <div id="setting-up-vk-ads" />
 

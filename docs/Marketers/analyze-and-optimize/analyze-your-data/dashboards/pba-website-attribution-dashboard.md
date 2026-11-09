@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **De un vistazo:** Mide el impacto de los esfuerzos de marketing para impulsar el tráfico efectivo del sitio web. Qué fuentes de medios, tipos y canales son responsables de las visitas, eventos de conversión y métricas de nivel de anuncio disponibles.
 
-[![Website_Atribución.jpg](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)
+<Image align="center" alt="Website_Atribución.jpg" src="https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg" />
 
 <div id="pba-website-attribution" />
 

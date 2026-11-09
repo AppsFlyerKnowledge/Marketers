@@ -81,16 +81,16 @@ Live Event Viewer es una herramienta de prueba que muestra datos en tiempo real 
 
 1. En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **Pruebas de integración de SDK**.
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. Haz clic en **Eventos en vivo.**
 
-   [![](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)
+   <Image align="center" alt="" src="https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png" />
 3. En la lista de la **aplicación**, selecciona la aplicación que deseas probar.
 4. En la lista de **dispositivos de prueba,** selecciona el dispositivo que deseas utilizar para probar tu aplicación. Si no tiene un dispositivo de prueba, puedes registrar uno haciendo clic en el enlace **Agregar un dispositivo de prueba**.
 5. Haz clic en **Continuar** para comenzar a grabar los eventos de tu aplicación.
 6. Abre la aplicación e interactúa con ella para generar sesiones y eventos in-app.
 
-   [![](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)
+   <Image align="center" alt="" src="https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png" />
 7. Haz clic en un elemento de evento para ver los detalles del evento en el panel derecho.
 8. Si deseas detener la grabación de los eventos haz clic en **Detener**. Haz clic en **Iniciar** nuevamente cuando desees continuar.
 
@@ -102,10 +102,10 @@ Live Event Viewer es una herramienta de prueba que muestra datos en tiempo real 
 
 1. En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **Pruebas de integración de SDK**.
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. Haz clic en la prueba de**Instalaciones no orgánicas**.
 
-   [![](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)
+   <Image align="center" alt="" src="https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png" />
 3. En la lista de la **aplicación**, selecciona la aplicación que deseas probar.
 4. En la lista de **dispositivos de prueba,** selecciona el dispositivo que deseas utilizar para probar tu aplicación. Si no tiene un dispositivo de prueba, puedes registrar uno haciendo clic en el enlace **Agregar un dispositivo de prueba**.
 5. Si la aplicación probada está instalada en tu dispositivo de prueba, debes eliminarla.
@@ -135,10 +135,10 @@ Para errores de integración, comunícate con tu desarrollador.
 
 1. En AppsFlyer, desde el menú lateral, selecciona **Configuración** > **Pruebas de integración de SDK**.
 
-   [<Image alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/34207249444753)
+   [<Image align="center" alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/34207249444753)
 2. Haz clic en **Retargeting**.
 
-   [![](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)
+   <Image align="center" alt="" src="https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png" />
 3. En la lista de la **aplicación**, selecciona la aplicación que deseas probar.
 4. En la lista de **dispositivos de prueba,** selecciona el dispositivo que deseas utilizar para probar tu aplicación. Si no tiene un dispositivo de prueba, puedes registrar uno haciendo clic en el enlace **Agregar un dispositivo de prueba**.
 5. Haz clic en **Continuar** y sigue los pasos del asistente.
@@ -240,7 +240,7 @@ Probar las instalaciones te permite verificar que el SDK de AppsFlyer atribuya l
 
    Deberías ver una instalación atribuida a la campaña de prueba bajo la fuente de medios llamada **Prueba**. Espere hasta 30 minutos para que la instalación aparezca en el dashboard de la aplicación.
 
-   [![Test_Install_Attribution_Link](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)
+   <Image align="center" alt="Test_Install_Attribution_Link" src="https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png" />
 
 > 👍 **Tip**
 >
@@ -312,7 +312,7 @@ Antes de ejecutar las pruebas de retargeting, se requiere la siguiente configura
 
    En el dashboard de la aplicación, haz clic en **Configuración de la app** y activa **Habilitar atribución de retargeting**.
 
-   ![Set_Reattribution_window](https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png)
+   <Image align="center" alt="Set_Reattribution_window" src="https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png" />
 2. Realiza una de las siguientes acciones:
    * Crea un enlace de atribución específico para la aplicación. Asegúrate de incluir el parámetro de retargeting, `is_retargeting=true`y el ID de publicidad. Para ver el GAID, IDFA o IDFV, sigue las instrucciones de <Anchor target="_blank" href="/marketers/es/docs/registering-test-devices">Registro de un dispositivo de prueba</Anchor>.   
      El siguiente es un ejemplo de un enlace de atribución que incluye un parámetro específico de Android como el identificador del dispositivo (GAID). Para obtener más información sobre cómo agregar otros parámetros de identificador de dispositivo, como el IDFA o IDFV, consulta <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#parámetros-específicos-de-ios">Estructura y parámetros de enlaces de atribución</Anchor>.
@@ -352,7 +352,7 @@ Ahora puedes seguir probando la reatribución y el reengagement.
 
    Deberías ver la instalación atribuida a la fuente de medios y la campaña. Es posible que debas esperar hasta 30 minutos para que la instalación con retargeting aparezca en el dashboard.
 
-   [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+   <Image align="center" alt="Testing_SDK_Reattribution" src="https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png" />
 
 > 👍 **Tip**
 >
@@ -388,7 +388,7 @@ Asegúrate de que tu aplicación esté configurada para <Anchor target="_blank" 
 
    En el dashboard, deberías ver un re-engagement atribuido a la fuente de medios y la campaña. Espera hasta 30 minutos para que aparezca el re-engagement.
 
-   [![Testing_SDK_Re-engagement](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)
+   <Image align="center" alt="Testing_SDK_Re-engagement" src="https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png" />
 
 **¡Consejo!** Considera descargar el reporte de raw data de conversiones para verificar que la reactivación se haya atribuido a la fuente de medios correcta. Este reporte tarda varios minutos en descargarse.
 
@@ -412,7 +412,7 @@ Te recomendamos que comiences probando una instalación orgánica.
 
 El dashboard de la aplicación muestra una instalación orgánica nueva. Espera hasta 30 minutos para que aparezca la instalación.
 
-[![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+<Image align="center" alt="" src="https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png" />
 
 <div id="testing-ctv" />
 

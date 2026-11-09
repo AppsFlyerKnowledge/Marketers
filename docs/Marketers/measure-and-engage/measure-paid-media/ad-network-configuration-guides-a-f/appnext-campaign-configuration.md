@@ -60,7 +60,7 @@ La pestaña Integración está dividida en distintas secciones, tal como se desc
 
 Activa esto si quieres atribuir las instalaciones view-through de Appnext. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
-![appnext_msc_new_2.png](https://files.readme.io/f974ed2ccc5550cebb87e5070d177fb88efb0c82fe15cbc300979d54b1297a6a-50705658863249.png)
+<Image align="center" alt="appnext_msc_new_2.png" src="https://files.readme.io/f974ed2ccc5550cebb87e5070d177fb88efb0c82fe15cbc300979d54b1297a6a-50705658863249.png" />
 
 <div id="default-postbacks" />
 

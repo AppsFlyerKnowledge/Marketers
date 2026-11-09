@@ -46,7 +46,7 @@ La integración de la API de PlayStation admite:
 
 El siguiente es un flujo de ejemplo que destaca los pasos más importantes del viaje de un usuario, desde la interacción con el anuncio hasta la atribución. Incluye la página de inicio multiplataforma recomendada por AppsFlyer. **Nota**: Si bien recomendamos usar la landing page multiplataforma, también puedes usar enlaces de atribución directa.
 
-<Image alt="Diagrama del flujo de atribución desde un punto de contacto de marketing, a través de una landing page multiplataforma, hasta la instalación de una aplicación de PlayStation" src="https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg" width="3938px" />
+<Image align="center" alt="Diagrama del flujo de atribución desde un punto de contacto de marketing, a través de una landing page multiplataforma, hasta la instalación de una aplicación de PlayStation" src="https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg" width="3938px" />
 
 1. <span id="marketing-touchpoint"></span>Puntos de contacto de marketing: Los clientes interactúan con tu marca a través de canales online u offline. Estos pueden incluir el correo electrónico y los boletines informativos, las redes sociales, la web móvil y más.
 2. Página de inicio del juego: La página de inicio del juego dirige a los clientes a la página de descarga de su aplicación. Este paso es importante para recopilar UTM (Urchin Tracking Module) y otros parámetros de URL a fin de atribuir a los clientes desde el clic o la instalación hasta las fuentes de medios originales o tus medios propios.  

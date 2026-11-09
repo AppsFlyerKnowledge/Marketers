@@ -46,7 +46,7 @@ La atribución de eventos puede ayudarte a:
 >
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Diagrama de flujo para eventos recomendados recorrido del usuario de la app de reserva de vuelos](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)](https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png)
+<Image align="center" alt="Diagrama de flujo para eventos recomendados recorrido del usuario de la app de reserva de vuelos" src="https://files.readme.io/435378707a7299a8c98bc7490f0f1554b5f6c332a35c1546ce34feb1b6b86394-360020171258.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

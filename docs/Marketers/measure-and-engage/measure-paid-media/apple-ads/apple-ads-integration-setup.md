@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **At a glance:** Apple Ads, un partner de red de autorreporte (SRN) de AppsFlyer, ayuda a los usuarios a encontrar tu aplicación en la tienda de aplicaciones mediante palabras clave.
 
-<Image alt="medium_originaljpeg_apple_ads_logo_blk_highres_720 (1) (1).jpg" src="https://files.readme.io/f89d1a5ec1a1de2ec2dfdec7465465fc2be73e0cf41ddd6be8b2e3f62de3c9e8-47598828154001.jpg" width="719px" />
+<Image align="center" alt="medium_originaljpeg_apple_ads_logo_blk_highres_720 (1) (1).jpg" src="https://files.readme.io/f89d1a5ec1a1de2ec2dfdec7465465fc2be73e0cf41ddd6be8b2e3f62de3c9e8-47598828154001.jpg" width="719px" />
 
 La relevancia de la aplicación determina si tu anuncio es el que se muestra en respuesta a una query de búsqueda en la App Store. La respuesta del usuario a un anuncio es una señal de la relevancia del mismo. Apple Ads utiliza las respuestas de los usuarios como una señal para decidir qué anuncios mostrar con más frecuencia.
 
@@ -147,7 +147,7 @@ Usa la siguiente lista de verificación para asegurarte de completar todos los p
    3. Haz clic en **Guardar**.
 2. **En tu dashboard de Apple Ads,** obtén el parámetro ID del grupo de campaña de Apple Ads relacionado con el partner de marketing. Utiliza la captura de pantalla a seguie como guía para localizar el ID.
 
-   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 3. **En AppsFlyer, configura el partner de marketing de Apple Ads:**
    1. En **AppsFlyer**, desde el menú lateral, selecciona **Colaboración** > **Integraciones activas.**
    2. Busca el ***partner de marketing de*** **Apple Search Ads**.  
@@ -210,7 +210,7 @@ Consulta la documentación de Apple Ads sobre <Anchor target="_blank" href="http
 
 1. **En tu dashboard de Apple Ads,** obtén tu ID de grupo de campaña. Utiliza la captura de pantalla a seguie como guía para localizar el ID. Obtén solo los dígitos.
 
-   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 2. En AppsFlyer, selecciona una aplicación.
 3. Desde el menú lateral, selecciona **Colaboración** > **Integraciones activas**.
 4. Selecciona **Apple Search Ads.**
@@ -302,11 +302,11 @@ Las cifras que aparecen a continuación muestran cómo pueden producirse discrep
 
 **Retargeting activado**
 
- ![ASA R Enabled2.jpg](https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg) 
+ <Image align="center" alt="ASA R Enabled2.jpg" src="https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg" />
 
 **Retargeting desactivado**
 
- ![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png) 
+ <Image align="center" alt="ASA_R_Disabled.png" src="https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png" />
 
 <div id="additional-reasons-for-discrepancies" />
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **De un vistazo:** Ibotta, un partner de ad network integrado con AppsFlyer, facilita a los consumidores obtener cashback en sus compras diarias a través de una única app para smartphone.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ibotta.png?v=1" width="119px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ibotta.png?v=1" width="119px" />
 
 <div id="setting-up-ibotta" />
 

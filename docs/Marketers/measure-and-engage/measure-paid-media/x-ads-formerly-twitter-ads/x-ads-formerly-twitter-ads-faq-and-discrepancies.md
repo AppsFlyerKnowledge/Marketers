@@ -122,7 +122,7 @@ Si tu aplicación estuvo suscrita a otro proveedor de atribución anteriormente,
 
 También puede aparecer el siguiente error:  
 
-[![](https://files.readme.io/cdad9e9adb2eb7408af3a4ba53ff0dfdf2bbb666f460741996a9d1cda79e399d-21402353721361.png)](https://files.readme.io/cdad9e9adb2eb7408af3a4ba53ff0dfdf2bbb666f460741996a9d1cda79e399d-21402353721361.png)
+<Image align="center" alt="" src="https://files.readme.io/cdad9e9adb2eb7408af3a4ba53ff0dfdf2bbb666f460741996a9d1cda79e399d-21402353721361.png" />
 
 **Error:  Ocurrió un error al guardar la configuración de Twitter. No fue posible actualizar algunas cuentas:  XX Varios ID de proveedores para el mismo (appid, conversionType) del evento appid2872.**
 

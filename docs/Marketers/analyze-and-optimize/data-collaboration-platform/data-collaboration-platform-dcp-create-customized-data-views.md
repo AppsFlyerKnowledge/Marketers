@@ -61,11 +61,11 @@ Una <Anchor target="_blank" href="https://www.appsflyer.com/sign-up/">cuenta</An
 
 1. En AppsFlyer, desde el menú lateral, ve a **Colaborar** > **Data Clean Room**.
 
-   <Image alt="Haz clic en Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="34.74%" />
+   <Image align="center" alt="Haz clic en Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="34.74%" />
 2. Desde la pestaña **Fuentes**, mantén el puntero sobre la fuente para crear la vista de datos y haz clic en <Image alt="ellipsis.png" src="https://files.readme.io/d3e33f1864edb1d9d2f8e18c9c7887454018a67e9f7fed054e7134231dba60a2-30296671836433.png" width="0.6%" /> (icono Menú) al final de la fila.
 3. Selecciona **Crear vista de datos**. Se te dirigirá a la página de **Vista de nuevos datos**.
 
-   <Image alt="Crear una vista de datos w arrow.png" src="https://files.readme.io/f9fbcacabb560da996e1dc009e6cd2c5b78d3ccd42e89e2a3c37e71882577e18-41945719135889.png" width="1500px" />
+   <Image align="center" alt="Crear una vista de datos w arrow.png" src="https://files.readme.io/f9fbcacabb560da996e1dc009e6cd2c5b78d3ccd42e89e2a3c37e71882577e18-41945719135889.png" width="1500px" />
 4. Configura los siguientes campos:
    * **Nombre de la vista de datos:** Ingresa un nombre para la vista de datos. Este puede ser cualquier nombre único que te ayude a identificarlo. Consulta los [requisitos y pautas de nomenclatura](#requisitos-y-directrices-sobre-nomenclatura) a continuación.
    * **Descripción:** Proporciona una descripción. Esto aparece como un consejo al pasar el cursor sobre el nombre de la vista de datos en la pestaña **Fuentes**. Se recomienda destacar los objetivos principales y las manipulaciones de datos realizadas.
@@ -130,7 +130,7 @@ Los campos calculados te permiten usar funciones para añadir campos nuevos, cam
 
 Agrupa tus datos en categorías significativas al aplicar una agregación. Cuando añades una función de agregación, la sección Agrupar por se abre automáticamente y te permite seleccionar el campo(s) que determinan cómo se agrupan los datos. Por ejemplo, puedes agrupar los resultados por país, ID de usuario o línea de producto para calcular totales o recuentos de cada grupo.
 
-<Image alt="Agrupar por.png" src="https://files.readme.io/40fc355847acf7269c6fcd2b505ed182b407d4c668f717612b53c5fd88506443-41967849623057.png" width="58.2%" />  
+<Image align="center" alt="Agrupar por.png" src="https://files.readme.io/40fc355847acf7269c6fcd2b505ed182b407d4c668f717612b53c5fd88506443-41967849623057.png" width="58.2%" />
 
 **Para seleccionar los campos por los que agrupar:**   
 Haz clic  **+Field** para añadir campos.  
@@ -240,7 +240,7 @@ Cuando se elimina un campo de la lista, se coloca en la sección **Eliminado**. 
 
 El panel lateral del lado derecho de la página presenta dos conjuntos de datos, uno de la fuente original y otro de la vista de datos creada a partir de ella. Cada conjunto incluye el nombre y la descripción de la tabla, la cantidad de campos y la cantidad de filas, junto con una tabla de muestra que contiene cinco filas de datos. Cuando se aplican funciones y filtros a la vista de datos, el panel lateral refleja estos cambios, lo que te permite verificar los datos mientras los modificas y compararlos con la versión original.
 
-![Vista de datos - panel lateral.png](https://files.readme.io/c1dae932618bf2ded68a30853474ce9d6107fdb09541a5d12ac3ddcf4def0101-41945719138577.png)
+<Image align="center" alt="Vista de datos - panel lateral.png" src="https://files.readme.io/c1dae932618bf2ded68a30853474ce9d6107fdb09541a5d12ac3ddcf4def0101-41945719138577.png" />
 
 Puedes guardar la vista de datos en cualquier etapa. Una vez guardado, se agrega bajo la fuente de datos original en la lista de fuentes y puedes [editarlo, compartirlo o eliminarlo](#guardar-vista-de-datos).
 
@@ -363,7 +363,7 @@ Comparte tu vista de datos con el colaborador y dale permisos.
 1. En la plataforma Data Collaboration Platform, ve a la pestaña **Collaborations** > colaboración específica.
 2. En el dashboard de la colaboración, haz clic en el menú de acciones en la parte superior derecha > **Fuentes asociadas**.
 
-   <Image alt="Associate source new UI.png" src="https://files.readme.io/3730b39bb5754260b74632591dffe3fcf54e6c73ff114ba0a8853f277e1e709a-43751907286161.png" width="1539px" />
+   <Image align="center" alt="Associate source new UI.png" src="https://files.readme.io/3730b39bb5754260b74632591dffe3fcf54e6c73ff114ba0a8853f277e1e709a-43751907286161.png" width="1539px" />
 3. Selecciona tu vista de datos (fuente) en el menú desplegable para asociarla a la colaboración.  
    Haz clic en **Guardar**.
 4. **Opcional:** Configura permisos de datos personalizados en la fuente de la vista de datos.
@@ -372,7 +372,7 @@ Comparte tu vista de datos con el colaborador y dale permisos.
 
    En el menú de 3 puntos situado junto a la fuente de la vista de datos, haz clic en **Editar permisos**.  
 
-   <Image alt="Editar permisos new.png" src="https://files.readme.io/58c785d7fdda52aa159153676d5875e718ceae2f31f987706b79509eb8251151-43752564819985.png" width="1330px" />
+   <Image align="center" alt="Editar permisos new.png" src="https://files.readme.io/58c785d7fdda52aa159153676d5875e718ceae2f31f987706b79509eb8251151-43752564819985.png" width="1330px" />
 5. Selecciona los <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources#permisos-de-uso-compartido">permisos de uso</Anchor> compartido pertinentes.
 
 > 📘 **Note**

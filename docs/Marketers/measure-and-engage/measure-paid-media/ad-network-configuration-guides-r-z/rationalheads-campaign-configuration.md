@@ -64,7 +64,7 @@ La pestaña Integración está dividida en distintas secciones, tal como se desc
 
 RationalHeads se conecta con AppsFlyer a través de un ID de parte único. Si aún no tienes el ID de parte y la contraseña, debes obtenerlos de RationalHeads para continuar con la integración.
 
-<Image alt="Rationalheads_msc_new_2.png" src="https://files.readme.io/7e93003c13d4fa1e60bee4120307691b618757a7c55a271561827823005b86c3-360002076529.png" width="317px" />
+<Image align="center" alt="Rationalheads_msc_new_2.png" src="https://files.readme.io/7e93003c13d4fa1e60bee4120307691b618757a7c55a271561827823005b86c3-360002076529.png" width="317px" />
 
 <div id="default-postbacks" />
 

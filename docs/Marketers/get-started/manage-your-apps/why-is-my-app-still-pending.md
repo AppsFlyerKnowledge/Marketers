@@ -28,7 +28,7 @@ Cuando <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsfly
 
 Las aplicaciones pendientes en AppsFlyer tienen el mismo aspecto que las aplicaciones activas. Tienen paneles de control accesibles y todas las mediciones de atribución funcionan para ellas. La única diferencia es el logotipo de la aplicación, que se muestra con el logotipo de AppsFlyer en lugar del logotipo de la aplicación real.
 
-![App_pendiente.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
+<Image align="center" alt="App_pendiente.png" src="https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png" />
 
 <div id="whats-happening" />
 
@@ -54,7 +54,7 @@ Para que el estado de la aplicación cambie a "activo", AppsFlyer verifica su es
 2. Junto a la aplicación pendiente, haz clic en **Actualizar estado.**  
    Si el estado de la aplicación no se ha modificado, esta seguirá apareciendo como pendiente. Si se ha actualizado, el estado se muestra como activa y el logotipo se actualiza.  
 
-   ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
+   <Image align="center" alt="app-refersh-status.png" src="https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png" />
 
 <div id="store-country" />
 

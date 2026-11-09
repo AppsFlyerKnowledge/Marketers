@@ -57,7 +57,7 @@ Tanto los anunciantes como las agencias pueden habilitar la atribución para App
    4. Haz clic en **Guardar integración**.
 2. **En tu dashboard de Apple Ads**: obtén el parámetro Apple Ads Campaign Group ID relacionado con Adquant. Utiliza la captura de pantalla a seguie como guía para localizar el ID.
 
-   ![ASACGroupID.png](https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png)
+   <Image align="center" alt="ASACGroupID.png" src="https://files.readme.io/722ab215c9a096628b42caefc6838dfe790d726524839c588d9e01c061620711-21589950935057.png" />
 3. **En AppsFlyer, configura Adquant:**
    1. En AppsFlyer, desde el menú lateral, selecciona **Collaborate** > **Partner Integrations.**
    2. Busca el partner de marketing de Apple Ads Adquant by Kenshoo Apple Ads marketing partner.  

@@ -32,7 +32,7 @@ x-zendesk:
 ---
 > **En resumen:** Utiliza OneLink Smart Script para convertir y atribuir a los visitantes de tu sitio web móvil, procedentes de cualquier fuente, en usuarios de la aplicación móvil.
 
-![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
+<Image align="center" alt="7901_Smart_Script_flow_1920x1080_2__1_.png" src="https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png" />
 
 <div id="about-onelink-smart-script" />
 

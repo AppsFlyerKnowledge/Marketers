@@ -43,7 +43,7 @@ La primera fase de la configuración del proceso de SSO de AppsFlyer se realiza 
    2. **ACS URLs:** introduce la URL de devolución de llamada según el <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#single-signon-url-configuration">método para autenticar a tus usuarios</Anchor>.
    3. **Login URL:** introduce la <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">URL de login</Anchor> de AppsFlyer.  
 
-      <Image alt="jumpcloud_sso_tab2__1_.png" src="https://files.readme.io/3b45c98d191a35644c5479a0237e92908ca6f18416f6df2b6e0c84a30940307b-15934671100561.png" width="477px" />
+      <Image align="center" alt="jumpcloud_sso_tab2__1_.png" src="https://files.readme.io/3b45c98d191a35644c5479a0237e92908ca6f18416f6df2b6e0c84a30940307b-15934671100561.png" width="477px" />
 6. Haz clic en **activate**.
 7. Se crea un certificado público. Aparece una indicación en la parte superior derecha de la página. Haz clic en **Download Certificate**. Este certificado es necesario en el <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp#step-2-complete-the-configuration-at-appsflyer">paso 2, en la plataforma de AppsFlyer</Anchor>.
 
@@ -55,7 +55,7 @@ La primera fase de la configuración del proceso de SSO de AppsFlyer se realiza 
 
 1. Ve a <Anchor target="_blank" href="https://console.jumpcloud.com/#/users">Users</Anchor> desde el menú de administración de JumpCloud y haz clic en el icono +.
 2. Selecciona **Manual user entry**.  
-   <Image alt="cloud_jump_manual_user_entry.png" src="https://files.readme.io/d00299979fa5e036c464c8c6d360965d46e42d5042a31366ced7adc84914c0be-14947838808081.png" width="417px" />
+   <Image align="center" alt="cloud_jump_manual_user_entry.png" src="https://files.readme.io/d00299979fa5e036c464c8c6d360965d46e42d5042a31366ced7adc84914c0be-14947838808081.png" width="417px" />
 3. Introduce todos los campos obligatorios: **Username**, **Company Email**, y haz clic en **save user**.
 4. Configura las opciones de contraseña del usuario según el método aceptado en tu empresa.
 5. Para seguir añadiendo usuarios, haz clic en **Guardar y crear otro** y, a continuación, repite el paso 3. Cuando termines de añadir todos los usuarios, haz clic en **Guardar**.

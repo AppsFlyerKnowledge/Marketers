@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **De un vistazo:** NativeX, partner integrado de AppsFlyer, es una red de publicidad móvil especializada en formatos de anuncios nativos que se integran de forma fluida en el juego o la aplicación del usuario, lo que aporta mayores ingresos a los desarrolladores. Además de la atribución móvil basada en clics, NativeX también ofrece atribución de costo y view-through, que puedes registrar con AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobvista.png?v=1" width="150px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobvista.png?v=1" width="150px" />
 
 <div id="setting-up-nativex" />
 

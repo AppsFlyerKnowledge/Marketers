@@ -48,7 +48,7 @@ Puedes acceder al asistente para añadir aplicaciones desde la plataforma o medi
 >
 > Si la página de incorporación no está abierta, desde la barra de menú superior > menú desplegable con la dirección de correo electrónico, haz clic en **Incorporación de aplicaciones**.
 
-![página de incorporación.png](https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png)
+<Image align="center" alt="página de incorporación.png" src="https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png" />
 
 **Para acceder al asistente Añadir una aplicación desde la plataforma:**
 
@@ -56,7 +56,7 @@ Puedes acceder al asistente para añadir aplicaciones desde la plataforma o medi
 * Desde la página de inicio de AppsFlyer, haz clic en **+ Añadir aplicación**
 * Desde la barra superior, abre el menú de cuenta (desplegable de dirección de correo electrónico) > **Incorporación de aplicaciones**, haz clic en **+ Incorporar otra aplicación**
 
-<Image alt="agregar una aplicación (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
+<Image align="center" alt="agregar una aplicación (1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
 <div id="adding-an-app" />
 
@@ -245,7 +245,7 @@ Utiliza esta opción para las siguientes plataformas:
 
 **URL completa:** La URL completa del sitio web para el cuál quieres medir el tráfico. Este es el sitio web en el que has implementado (o implementarás) el <Anchor target="_blank" href="/marketers/es/docs/onboarding-guide-to-people-based-attribution#2">SDK Web de PBA</Anchor>.
 
-[<Image alt="Diagrama_URL" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />](https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png)
+<Image align="center" alt="Diagrama_URL" src="https://files.readme.io/45c6e433af693fd8c293380192a8e60f26c82588195bab61bafbc9839baf5c7b-33198323426961.png" width="377px" />
 
 Incluir –
 
@@ -399,7 +399,7 @@ Cada **Web Dev Key heredada solo se puede reutilizar para una** nueva aplicació
   * Desde el <Anchor target="_blank" href="https://developer.roku.com/developer">panel de desarrollador de Roku</Anchor>, haz clic en el nombre del canal que estás agregando a AppsFlyer. Esto abrirá la página de Vista Previa y Publicación de Roku para el canal.
   * El número al final de la URL de la página es el ID del canal: ID del canal:
 
-    ![](https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png)
+    <Image align="center" alt="" src="https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png" />
 
 </Accordion>
 
@@ -444,7 +444,7 @@ Nota: Para acceder a tu página web única de la tienda de aplicaciones, añade 
 
 Por ejemplo, si tu bundle ID es "G15147002586", la URL de tu página será "[https://www.samsung.com/us/appstore/app/G15147002586/](https://www.samsung.com/us/appstore/app/G15147002586/) ". La URL del desarrollador, el bundle ID y el ID de la tienda de aplicaciones se muestran entonces en los metadatos de esa página.
 
-![](https://files.readme.io/ee4b192abab24e064013a4a034bda38fb3ed49497ae333e327e1b78dd05d5349-33198275491729.png)
+<Image align="center" alt="" src="https://files.readme.io/ee4b192abab24e064013a4a034bda38fb3ed49497ae333e327e1b78dd05d5349-33198275491729.png" />
 
 </Accordion>
 
@@ -473,7 +473,7 @@ Si necesitas confirmar el ID de la aplicación, consulta con tu representante de
 
 **ID de la aplicación:** El ID de concepto de PlayStation, un identificador único asignado a un juego u otros conceptos de contenido. Aparece como un número de 5 a 9 dígitos en la URL de la tienda PlayStation. Puedes encontrarlo al final de la URL de la tienda de aplicaciones de tu aplicación:
 
-![playstation_app_id_url.png](https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png)
+<Image align="center" alt="playstation_app_id_url.png" src="https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png" />
 
 </Accordion>
 
@@ -495,7 +495,7 @@ Si necesitas confirmar el ID de la aplicación, consulta con tu representante de
 
 **ID de la aplicación:** El ID de la aplicación Steam. Este es el número de 5 a 8 dígitos que aparece en la URL de la tienda Steam:
 
-![steam_store_app_url.png](https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png)
+<Image align="center" alt="steam_store_app_url.png" src="https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png" />
 
 </Accordion>
 
@@ -507,7 +507,7 @@ Si necesitas confirmar el ID de la aplicación, consulta con tu representante de
 
 **ID de la aplicación:** El ID de la aplicación de Xbox, tal como aparece en la URL de la tienda de Xbox desde donde se descarga la aplicación. Incluye solo 12 letras y dígitos (`0-9` `0-9` `0-9`).
 
-<Image alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
+<Image align="center" alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
 
 </Accordion>
 
@@ -531,7 +531,7 @@ Si necesitas confirmar el ID de la aplicación, consulta con tu representante de
 
 **ID de la aplicación:** El ID de la aplicación Meta Quest, tal como aparece al final de la URL de la tienda de Meta desde donde se descarga la aplicación. Incluye solo 12 letras y dígitos (`A-Z` `a-z0-9`).
 
-![](https://files.readme.io/c33ffcb35d4488b9340cfa8b475097eab7b79bfeaf94e8cf8ce6478dda07d341-33198275505041.png)
+<Image align="center" alt="" src="https://files.readme.io/c33ffcb35d4488b9340cfa8b475097eab7b79bfeaf94e8cf8ce6478dda07d341-33198275505041.png" />
 
 **Nota:** El ID de la aplicación distingue entre mayúsculas y minúsculas.
 
@@ -545,7 +545,7 @@ Si necesitas confirmar el ID de la aplicación, consulta con tu representante de
 
 **ID de la aplicación:** El ID de la aplicación de Epic Games, tal como aparece en la tienda desde la que se descarga la aplicación. Incluye entre 3 y 50 caracteres de: `A-Z` `a-z` `0-9` `.`
 
-![](https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png)
+<Image align="center" alt="" src="https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png" />
 
 </Accordion>
 
@@ -563,7 +563,7 @@ Si necesitas confirmar el ID de la aplicación, consulta con tu representante de
 
 ### Introduzca información adicional (no aplicable a aplicaciones web):
 
-<Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
+<Image align="center" alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
 
 <div id="select-currency" />
 

@@ -48,7 +48,7 @@ En ambos casos, el proceso es el mismo y puedes usar las conexiones creadas exac
 
 1. En la parte superior de la página principal de DCR en AppsFlyer, haz clic en el botón **Gestionar conexiones**:
 
-   [![dcr_manage_connections_button.png](https://files.readme.io/773e9568a1e9e642f127806fa3b80932699e0db6cc6a124d5a09898577ade645-13909932760593.png)](https://files.readme.io/773e9568a1e9e642f127806fa3b80932699e0db6cc6a124d5a09898577ade645-13909932760593.png)
+   <Image align="center" alt="dcr_manage_connections_button.png" src="https://files.readme.io/773e9568a1e9e642f127806fa3b80932699e0db6cc6a124d5a09898577ade645-13909932760593.png" />
 
    * Si ya tienes conexiones entrantes en tu cuenta, verás el cuadro de diálogo **Gestionar conexiones**. Desde allí, haz clic en el botón ![dcr_new_connection_button.png](https://files.readme.io/ea74c7dd6653a544216addddc5fda2a15126a6a26ba2e3ea0a954c58f4fe479e-13916096900753.png) para abrir el cuadro de diálogo **Nueva conexión**.
    * Si estás creando la primera conexión entrante de tu cuenta, el cuadro de diálogo **Nueva conexión** se abrirá automáticamente.
@@ -67,7 +67,7 @@ En ambos casos, el proceso es el mismo y puedes usar las conexiones creadas exac
 
 En el cuadro de diálogo **Nueva conexión**, selecciona el servicio en la nube que vas a conectar al DCR y, a continuación, sigue las instrucciones de la pestaña correspondiente más abajo.
 
-<Image alt="dcr_create_inbound_connection.png" src="https://files.readme.io/b30606026761528f4a0d3efcc1a3207e8b9c99ca8202f76b2d698a86efaa21ee-13913809617297.png" width="457px" />
+<Image align="center" alt="dcr_create_inbound_connection.png" src="https://files.readme.io/b30606026761528f4a0d3efcc1a3207e8b9c99ca8202f76b2d698a86efaa21ee-13913809617297.png" width="457px" />
 
 <div id="bigquery-inbound" />
 
@@ -77,7 +77,7 @@ En el cuadro de diálogo **Nueva conexión**, introduce el **ID del proyecto** d
 
 * Puedes obtener esta información en la página de Big Query de tu consola de Google Cloud.
 
-  <Image alt="BQ_project_ID.png" src="https://files.readme.io/de295dfc0224ff90f041b1aeaf2996828ec1920a715ba668b46a2f50489fd15b-13910856739857.png" width="457px" />
+  <Image align="center" alt="BQ_project_ID.png" src="https://files.readme.io/de295dfc0224ff90f041b1aeaf2996828ec1920a715ba668b46a2f50489fd15b-13910856739857.png" width="457px" />
 
 </Accordion>
 
@@ -89,7 +89,7 @@ En el cuadro de diálogo **Nueva conexión**, introduce el **ID de la cuenta de 
 
 * **ADMINISTRADOR DE CUENTA** > **Cuenta** > pasa el cursor sobre la cuenta relevante > **Copiar identificador de cuenta**. <Anchor target="_blank" href="https://docs.snowflake.com/en/user-guide/admin-account-identifier#finding-the-organization-and-account-name-for-an-account">Consulta aquí la documentación de Snowflake</Anchor>.
 
-![ui-snowsight-account-identifier.png](https://files.readme.io/9995c3fd523548de93bafc7c575203e7d38be3b6be2a5e876d7a0a8495ca04c9-24698313004433.png)
+<Image align="center" alt="ui-snowsight-account-identifier.png" src="https://files.readme.io/9995c3fd523548de93bafc7c575203e7d38be3b6be2a5e876d7a0a8495ca04c9-24698313004433.png" />
 
 </Accordion>
 
@@ -149,7 +149,7 @@ En cualquier caso, el proceso es prácticamente el mismo y puedes utilizar las c
 
 En el cuadro de diálogo **Nueva conexión**, selecciona el servicio en la nube al que te vas a conectar y, a continuación, sigue las instrucciones de la pestaña correspondiente que aparece más abajo.
 
-[![dcr_dl_new_connection_dialog.png](https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png)](https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png)
+<Image align="center" alt="dcr_dl_new_connection_dialog.png" src="https://files.readme.io/fe77a008f036e15f6e192a7a2dc660efd54c92fb3bcceb0be9625420f66893e3-13928181611025.png" />
 
 <div id="bigquery-outbound" />
 
@@ -159,7 +159,7 @@ En el cuadro de diálogo **Nueva conexión**, selecciona el servicio en la nube
 2. Introduce el **ID del proyecto** y el **nombre del conjunto de datos** del proyecto de BigQuery que contiene el <Anchor target="_blank" href="/marketers/es/docs/data-clean-room-setting-up-cloud-services#bigquery-outbound">conjunto de datos que has creado</Anchor> para Data Locker.  
    * Puedes obtener esta información en la página de Big Query de tu consola de Google Cloud.
 
-     <Image alt="BQ_project_ID_dataset_name.png" src="https://files.readme.io/c784b0369c51a6e123279fdc5b2fa1fba255ae371d436e9247cb5e4685387983-13928683779089.png" width="457px" />
+     <Image align="center" alt="BQ_project_ID_dataset_name.png" src="https://files.readme.io/c784b0369c51a6e123279fdc5b2fa1fba255ae371d436e9247cb5e4685387983-13928683779089.png" width="457px" />
 3. Haz clic en el botón ![dcr_dl_test_connection_button.png](https://files.readme.io/8c789303491a4524515216aca06dc4b3435b5b0baa3aaa8726ff73cce968c5bc-13928683412241.png) para asegurarte de que Data Locker esté conectado al conjunto de datos.
 4. Haz clic en **Guardar** para crear la conexión.
 
@@ -184,7 +184,7 @@ El procedimiento para conectar Snowflake a Data Locker es un proceso de 2 pasos:
 2. Ingresa la región de tu cuenta de Snowflake y el ID de cuenta.
    * Puedes obtener esta información haciendo clic en el nombre de la cuenta en la esquina inferior izquierda de tu consola de Snowflake y, a continuación, pasando el cursor sobre el nombre de la cuenta en la ventana emergente. **Nota:** Busca el ID con la etiqueta **Locator.** Este **NO** es el mismo ID que el que se usa para crear conexiones entrantes de Snowflake.  
 
-     <Image alt="snowflake_account_locator.png" src="https://files.readme.io/23495b3209129f48ed1ca3442a1e96fac791d46df6f87050ac036893a050e427-13930022354961.png" width="536px" />
+     <Image align="center" alt="snowflake_account_locator.png" src="https://files.readme.io/23495b3209129f48ed1ca3442a1e96fac791d46df6f87050ac036893a050e427-13930022354961.png" width="536px" />
 3. Haz clic en el botón ![dcr_dl_test_connection_button.png](https://files.readme.io/8c789303491a4524515216aca06dc4b3435b5b0baa3aaa8726ff73cce968c5bc-13928683412241.png) para asegurarte de que Data Locker esté conectado a tu cuenta de Snowflake.
 4. Haz clic en **Guardar** para crear la conexión.
 

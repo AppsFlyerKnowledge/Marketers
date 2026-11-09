@@ -156,7 +156,7 @@ Para configurar las notificaciones de Slack, primero debes conectar Slack:
 3. Revisa y aprueba la solicitud de permisos.
    1. **Si eres el administrador de Slack**.
       1. En Slack, haz clic en el workspace de Slack.  
-         <Image alt="" src="https://a.slack-edge.com/8e8e4/helpcenter/img/workspace-picker@2x.jpg" width="263px" />  
+         <Image align="center" alt="" src="https://a.slack-edge.com/8e8e4/helpcenter/img/workspace-picker@2x.jpg" width="263px" />
          Nota: Asegúrate de que el workspace de Slack que se muestra sea el correcto al que deseas conectarte.
       2. Ve a **Herramientas y configuraciones** -> **Administrar aplicaciones**
       3. En el **Panel de administración**, selecciona **Solicitudes**.

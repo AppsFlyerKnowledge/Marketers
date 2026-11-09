@@ -46,7 +46,7 @@ La atribución de aplicaciones móviles **determina qué campañas, partners y c
 
 Cuando se crea tu usuario por primera vez, recibes una invitación por correo electrónico para activar tu cuenta. Una vez activada la cuenta, puedes iniciar sesión y pasa a estar activa. Nota: el enlace de activación es válido durante 48 horas.
 
-<Image alt="login page.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
+<Image align="center" alt="login page.png" src="https://files.readme.io/a55e3d6281c58eea9075a7f8a2b5eb558679d620fc2e66637d7c046afeeaad5a-51073385138705.png" width="322px" />
 
 Hay varias formas de iniciar sesión en tu cuenta de AppsFlyer:
 
@@ -79,7 +79,7 @@ Los usuarios pueden existir en varias cuentas con diferentes roles y permisos. P
 
 La cuenta principal es la cuenta inicial que se creó y actúa como cuenta de inicio de sesión predeterminada. Puedes establecer cualquier otra cuenta como principal.
 
-<Image alt="primary-account1.jpg" src="https://files.readme.io/8f1d88543b4797b584fa781bf2dd2563ed91f6eaff45393b186d8da98ccc0c33-51073397865233.jpg" width="672px" />
+<Image align="center" alt="primary-account1.jpg" src="https://files.readme.io/8f1d88543b4797b584fa781bf2dd2563ed91f6eaff45393b186d8da98ccc0c33-51073397865233.jpg" width="672px" />
 
 **Para cambiar de una cuenta a otra:**
 
@@ -92,13 +92,13 @@ La cuenta principal es la cuenta inicial que se creó y actúa como cuenta de in
 ### Cambiar entre tus cuentas
 
 1. Cerrar sesión en tu cuenta actual: En la barra de menú, haz clic en el **menú desplegable de direcciones de correo electrónico** > **Cerrar sesión**.  
-   <Image alt="image (73).png" src="https://files.readme.io/b9aaf81a586da0240bb3813a0ad416ac1cf5badc0f976ddc0156e1bd798036df-51074002494481.png" width="313px" />
+   <Image align="center" alt="image (73).png" src="https://files.readme.io/b9aaf81a586da0240bb3813a0ad416ac1cf5badc0f976ddc0156e1bd798036df-51074002494481.png" width="313px" />
 2. Inicia sesión y selecciona una cuenta diferente de tu lista de cuentas asociadas.  
-   <Image alt="image (74).png" src="https://files.readme.io/7ff19bd9db1b1f72e06b594ce536200cd6139a1882e56e72877200542944d6f8-51074002495505.png" width="75%" />
+   <Image align="center" alt="image (74).png" src="https://files.readme.io/7ff19bd9db1b1f72e06b594ce536200cd6139a1882e56e72877200542944d6f8-51074002495505.png" width="75%" />
 3. Introduce el código de verificación de 6 dígitos que se ha enviado a tu dirección de correo electrónico.  
-   <Image alt="image (769).png" src="https://files.readme.io/ccb2c3e8f8724f95e6ec265697b3851efeaf33ff6aabde4599e3d17c57949a44-51074002496017.png" width="75%" />
+   <Image align="center" alt="image (769).png" src="https://files.readme.io/ccb2c3e8f8724f95e6ec265697b3851efeaf33ff6aabde4599e3d17c57949a44-51074002496017.png" width="75%" />
 4. Haz clic en Cambiar de cuenta.  
-   <Image alt="image (75).png" src="https://files.readme.io/81e6f17ed80eddcc1d3e55ca9336ed62b82fd1c6694a30a347ba24ae8bed57e4-51074025826705.png" width="75%" />
+   <Image align="center" alt="image (75).png" src="https://files.readme.io/81e6f17ed80eddcc1d3e55ca9336ed62b82fd1c6694a30a347ba24ae8bed57e4-51074025826705.png" width="75%" />
 
 <div id="note-2" />
 

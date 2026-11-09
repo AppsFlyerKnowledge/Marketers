@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **De un vistazo:** Configura una integración con Bloomreach para habilitar Deep Linking sin interrupciones desde campañas de correo electrónico, medir el tráfico tanto en Bloomreach como en AppsFlyer y crear experiencias de usuario que impulsen la conversión.
 
-<Image alt="Bloomreach + AppsFlyer.png" src="https://files.readme.io/842523ac61d5f702a451b361d435e794f8dedad0f54eecffdf27f596c2cab262-45298084947473.png" width="645px" />
+<Image align="center" alt="Bloomreach + AppsFlyer.png" src="https://files.readme.io/842523ac61d5f702a451b361d435e794f8dedad0f54eecffdf27f596c2cab262-45298084947473.png" width="645px" />
 
 <div id="about-the-integration" />
 
@@ -89,7 +89,7 @@ Se añade automáticamente un parámetro adicional al Universal Link original pa
 
 Consulta <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/universal-link">información adicional e instrucciones.</Anchor>
 
-<Image alt="2026-03-31_09-28-18.png" src="https://files.readme.io/4058ab59e2622f26327d9a4a62fa8afdc5965210acba9d9c5bb7a62d53a05503-45298084948753.png" width="73.36%" />
+<Image align="center" alt="2026-03-31_09-28-18.png" src="https://files.readme.io/4058ab59e2622f26327d9a4a62fa8afdc5965210acba9d9c5bb7a62d53a05503-45298084948753.png" width="73.36%" />
 
 <div id="example" />
 

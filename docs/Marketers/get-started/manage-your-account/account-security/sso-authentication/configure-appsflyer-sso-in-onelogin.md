@@ -38,7 +38,7 @@ La primera fase de la configuración del proceso de SSO de AppsFlyer se realiza 
 2. En la parte superior derecha, haz clic en **Add App**.
 3. Busca y selecciona **SAML Custom Connector (Advanced)**.  
 
-   <Image alt="onelogin_saml_app.png" src="https://files.readme.io/c1e5ec122e21f05e860486ad280ba9e692b3d05b05105d9c1ca700b8921ee6ab-15045173609745.png" width="601px" />
+   <Image align="center" alt="onelogin_saml_app.png" src="https://files.readme.io/c1e5ec122e21f05e860486ad280ba9e692b3d05b05105d9c1ca700b8921ee6ab-15045173609745.png" width="601px" />
 4. En el campo **Display Name**, introduce el nombre que se mostrará en la lista de aplicaciones del plugin de OneLogin.
 5. [Opcional] **App logo**: añade un logotipo para que aparezca junto al nombre de la aplicación.
 6. [Opcional] Añade una descripción.
@@ -95,7 +95,7 @@ La primera fase de la configuración del proceso de SSO de AppsFlyer se realiza 
 2. Haz clic en el signo + junto a **Applications**.
 3. Selecciona la aplicación de AppsFlyer que has creado y haz clic en **Continue**.  
 
-   <Image alt="onelogin_assign_app.png" src="https://files.readme.io/a1769673f3f167f728a00fb1cccb951bd246798fd7327c51b021f73987bc8fb2-15552909316241.png" width="326px" />
+   <Image align="center" alt="onelogin_assign_app.png" src="https://files.readme.io/a1769673f3f167f728a00fb1cccb951bd246798fd7327c51b021f73987bc8fb2-15552909316241.png" width="326px" />
 4. En el menú superior, ve a **Applications** > **<Anchor target="_blank" href="https://appsflyer-dev.onelogin.com/admin2/apps">Applications</Anchor>**.
 5. Selecciona la aplicación que acabas de crear.
 6. Haga clic en **Guardar**.

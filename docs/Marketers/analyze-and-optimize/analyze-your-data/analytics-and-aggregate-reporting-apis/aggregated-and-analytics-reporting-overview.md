@@ -179,7 +179,7 @@ Para obtener reportes de retargeting a través de Pull API, añade el parámetro
 
 <Accordion title="Protect360: fraude bloqueado">
 
-![Ejemplo de reporte de fraude bloqueado por Protect360](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)
+<Image align="center" alt="Ejemplo de reporte de fraude bloqueado por Protect360" src="https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png" />
 
 Los reportes agregados de fraude bloqueado proporcionan detalles de los eventos que <Anchor target="_blank" href="/marketers/es/docs/protect360-anti-fraud-guide">Protect360</Anchor> bloquea.
 

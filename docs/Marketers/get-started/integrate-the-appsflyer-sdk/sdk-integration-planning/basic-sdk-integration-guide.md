@@ -44,7 +44,7 @@ Antes de que tu desarrollador pueda instalar e integrar el SDK, debes recuperar 
 1. En AppsFlyer, desde el menú lateral, elige **Configuración** > **Configuración de la aplicación**.
 2. Copia tu clave de desarrollo y envíala a tu desarrollador móvil.
 
-   ![](https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png)
+   <Image align="center" alt="" src="https://files.readme.io/5078fdabbcce4d3977f3d32351b61bacbc8af406a68911f2c6b4cdca458712a5-30603573703057.png" />
 
 <div id="provide-the-dev-key-to-your-developer" />
 
@@ -309,7 +309,7 @@ Cuando la atribución se realiza utilizando IDFA, es crucial que el IDFA se env�
 
 `waitForATTUserAuthorization` te permite configurar el tiempo que el SDK debe posponer y esperar el estado de la ATT antes de enviar datos a los servidores de AppsFlyer.
 
-![](https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png)
+<Image align="center" alt="" src="https://files.readme.io/a41e66c5aa23d2c673aba5b06589dcc24d34175e90900a8232343272ecca427c-30603573710993.png" />
 
 Cuando un usuario abre la aplicación, el estado de la ATT es **notDetermined.** Durante el período de espera `waitForATTUserAuthorization`, el SDK almacena en memoria el evento de inicio y los eventos consecutivos in-app, de manera similar a como se registran los [eventos offline](https://dev.appsflyer.com/hc/docs/in-app-events-sdk#offline-in-app-events):
 

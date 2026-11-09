@@ -45,7 +45,7 @@ X Ads es una Red Avanzada de Autorreporte (SRN), que permite a AppsFlyer atribui
    * Dirección IP
    * Agente de usuario
 
-   [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
+   <Image align="center" alt="_- visual selection.png" src="https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png" />
 
 <div id="connecting-your-x-ads-account-to-appsflyer" />
 
@@ -62,11 +62,11 @@ X Ads es una Red Avanzada de Autorreporte (SRN), que permite a AppsFlyer atribui
 2. Cuando se te pida que selecciones una campaña **Simple (NUEVA)** o **Avanzada**, selecciona **Avanzada**.
 3. En **Objetivo de la campaña**, selecciona **Instalaciones de la app** o **Re-engagements de la app** y, a continuación, haz clic en **Siguiente**.
 
-   ![X-Ads-campaign-objective.png](https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png)
+   <Image align="center" alt="X-Ads-campaign-objective.png" src="https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png" />
 4. Elige tu aplicación y, a continuación, haz clic en el enlace del **partner de medición móvil**.
 5. En la página **Seguimiento de conversiones**, haz clic en **Ir a AppsFlyer**.
 
-   ![X-Ads-mmp-selection.png](https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png)
+   <Image align="center" alt="X-Ads-mmp-selection.png" src="https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png" />
 6. Aparece una notificación que te informa de que estás a punto de salir de X Ads para ir al sitio web de AppsFlyer. Haz clic en **Ir a AppsFlyer** e inicia sesión en tu dashboard.
 7. En AppsFlyer, en el menú lateral, selecciona **Collaborate** > **Partner Integrations > Marketplace** tab.
 8. Busca **X Ads** y selecciónalo.
@@ -95,7 +95,7 @@ La pestaña **Integración** está dividida en diferentes secciones, tal como se
 
 Selecciona las cuentas para habilitar la atribución.
 
-![X-Ads_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
+<Image align="center" alt="X-Ads_msc_new_4.png" src="https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png" />
 
 **Nota:** Puedes conectar hasta 200 cuentas de anuncios en AppsFlyer. Para evitar alcanzar este límite y asegurar la atribución continua para todas las cuentas activas, recomendamos eliminar cualquier cuenta de anuncios que ya no esté en uso.
 
@@ -124,7 +124,7 @@ Utiliza el control deslizante para establecer el **tiempo máximo desde el clic 
 
 Puedes personalizar este valor para que sea de 1-23 horas o de 1-30 días. Te recomendamos configurar la ventana de lookback por clics en 14 días para que coincida con X Ads.
 
-![X-Ads_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
+<Image align="center" alt="X-Ads_msc_new_6.png" src="https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png" />
 
 <div id="view-through-attribution-lookback-window" />
 
@@ -134,7 +134,7 @@ Este control deslizante te permite establecer el **tiempo máximo de la impresi�
 
 Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días. Te recomendamos configurar la ventana de lookback por impresiones en 1 día para que coincida con X Ads.
 
-![X-Ads_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
+<Image align="center" alt="X-Ads_msc_new_7.png" src="https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png" />
 
 <div id="reinstall-settings" />
 
@@ -166,7 +166,7 @@ Activa el selector **Atribución de re-engagement** para comenzar a atribuir los
 
 Define la duración de la **ventana de lookback por click-through de re-engagement** (el período de tiempo máximo después de hacer clic en un anuncio, dentro del cual un usuario reorientado puede atribuirse al anuncio). Puedes definir el valor en horas (hasta 23) o en días (1-30).
 
-![X-Ads-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+<Image align="center" alt="X-Ads-reengagement-activate.png" src="https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png" />
 
 <div id="re-engagement-view-through-lookback-window" />
 
@@ -176,7 +176,7 @@ Para comenzar a atribuir impresiones de anuncios de retargeting, activa la **Atr
 
 Luego, define la duración de la **ventana de lookback por view-through de re-engagement** (el período de tiempo máximo después de que se visualiza un anuncio, dentro del cual un usuario reorientado puede atribuirse al anuncio). Puedes definir el valor en horas (hasta 23) o en días (1-7):
 
-![X-Ads-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
+<Image align="center" alt="X-Ads-reengagement-view-through.png" src="https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png" />
 
 <div id="re-engagement-window" />
 
@@ -184,7 +184,7 @@ Luego, define la duración de la **ventana de lookback por view-through de re-en
 
 Define la duración de la **Ventana de re-engagement** (el período dentro del cual los eventos in-app del usuario se atribuyen a la fuente de medios de retargeting). Puede configurar el valor en días (1-90), horas (hasta 23) o incluso de por vida:
 
-<Image alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
+<Image align="center" alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -198,7 +198,7 @@ Configura un periodo de inactividad para evitar registrar conversiones de retarg
 
 En esta sección, puedes asignar tus eventos de AppsFlyer con tus partners a través de postbacks.
 
-[![In-app_event_postbacks_es-us.png](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)
+<Image align="center" alt="In-app_event_postbacks_es-us.png" src="https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png" />
 
 **Para configurar postbacks de eventos in-app:**
 

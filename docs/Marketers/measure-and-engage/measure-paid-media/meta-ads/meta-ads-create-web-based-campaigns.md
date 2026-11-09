@@ -177,7 +177,7 @@ Realiza los siguientes pasos en el administrador de anuncios de Meta.
 
 1. Debajo de **Destino,** en el campo **URL del sitio web,** introduce la URL que sirve como destino de tu anuncio. La URL debe ser para uno de los siguientes:
 
-   [![](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)
+   <Image align="center" alt="" src="https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png" />
 
    * **Landing page web** Se recomienda utilizar una landing page cuando:
 
@@ -197,7 +197,7 @@ Realiza los siguientes pasos en el administrador de anuncios de Meta.
 2. haz clic en **Crear un parámetro de URL** para agregar los parámetros de URL a la URL (ya sea una URL de landing page o un enlace de atribución de AF).
 3. Debajo de **Parámetros personalizados**haz clic **Agregar parámetro**
 
-   [![4.png](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)
+   <Image align="center" alt="4.png" src="https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png" />
 4. Asigna los parámetros de AppsFlyer a tus valores de Meta.
 
    * Si la URL de destino es una **landing page, un enlace de atribución de OneLink o un enlace de atribución de una sola plataforma**, asigna los siguientes parámetros de AF a sus homólogos de Meta: 
@@ -271,7 +271,7 @@ Realiza los siguientes pasos en el administrador de anuncios de Meta.
 
 Utiliza la sección de seguimiento para seleccionar los eventos de conversión promocionados por tu anuncio (la configuración de los eventos se realiza a través del [Administrador de eventos](https://www.facebook.com/business/help/898185560232180?id=1205376682832142)).
 
-[![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)
+<Image align="center" alt="" src="https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png" />
 
 <div id="important-1" />
 
@@ -291,7 +291,7 @@ Utiliza la sección de seguimiento para seleccionar los eventos de conversión p
 
 <Accordion title="Flujo de datos end-to-end">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. La URL del anuncio de Meta incluye el parámetro `pid=metaweb_int`. La URL del anuncio de Meta incluye el atributo parámetro `pid=metaweb_int` Cuando el usuario hace clic en el anuncio, un parámetro `fbclid` se anexa automáticamente a la URL en la que se ha hecho clic.
 2. El usuario es redirigido a la URL de destino: una landing page que contiene un script inteligente.

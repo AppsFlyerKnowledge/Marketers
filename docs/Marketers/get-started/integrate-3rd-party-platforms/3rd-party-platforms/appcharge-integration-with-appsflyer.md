@@ -84,7 +84,7 @@ AppsFlyer envía postbacks predeterminados a Appcharge después de las instalaci
    **Nota:** La integración de Appcharge con AppsFlyer no requiere el envío de postbacks de instalación. Por lo tanto, se recomienda configurarlo como Desactivado.
 * **Todas las fuentes de medios, incluidas las orgánicas:** Los postbacks de instalación se envían para los eventos atribuidos a cualquier partner y para eventos orgánicos.
 
-![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+<Image align="center" alt="default_postbacks.png" src="https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png" />
 
 <div id="in-app-event-postbacks" />
 
@@ -92,7 +92,7 @@ AppsFlyer envía postbacks predeterminados a Appcharge después de las instalaci
 
 En esta sección, puedes asignar tus eventos de AppsFlyer a tus partners mediante postbacks.
 
-![xsolla-af-login-3.jpg](https://files.readme.io/6b694389980e67023a506e0fc8c302f0512d12681e44d3d3a414c511d6dd83e4-26908967996177.jpg)
+<Image align="center" alt="xsolla-af-login-3.jpg" src="https://files.readme.io/6b694389980e67023a506e0fc8c302f0512d12681e44d3d3a414c511d6dd83e4-26908967996177.jpg" />
 
 1. Activa los **postbacks de eventos in-app**.
 2. Haz clic en **Agregar evento** para añadir un evento de SDK o un evento de servidor a servidor a la lista.

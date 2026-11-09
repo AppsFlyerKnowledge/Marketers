@@ -59,7 +59,7 @@ Otros GAPP integrados con AppsFlyer: Blackbox, Appreciate, Marin Software, Miram
 
 4. En tu cuenta de **Google Ads**, copia el ID de cliente (sin guiones):
 
-![](https://files.readme.io/7afd536d06b1aca68744a83925ecac86fcef4cc47225826af20120f128da004f-21414601345681.png)
+<Image align="center" alt="" src="https://files.readme.io/7afd536d06b1aca68744a83925ecac86fcef4cc47225826af20120f128da004f-21414601345681.png" />
 
 5. Pega el número en el campo **ID de cliente de Google Ads**.
 

@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **At a glance:** OneSignal es el proveedor líder del mercado de notificaciones push y mensajes in-app, y presta soporte a más de 1 millón de desarrolladores y profesionales del marketing con una plataforma de engagement de primer nivel.
 
-![onesignal-logo-stack__3_.png](https://files.readme.io/49c50c481c00391f25cf8cc7eb2c35cc166f6a88a10db9120769a7d11affa26a-13013733757841.png)
+<Image align="center" alt="onesignal-logo-stack__3_.png" src="https://files.readme.io/49c50c481c00391f25cf8cc7eb2c35cc166f6a88a10db9120769a7d11affa26a-13013733757841.png" />
 
 OneSignal envía 8 billion mensajes cada día en todo el mundo. Impulsado por una arquitectura superior y una plataforma fácil de usar, OneSignal envía mensajes más rápido, de forma más eficiente y a mayor escala que cualquier otra solución del mundo. Más información en [onesignal.com](https://onesignal.com/?utm_medium=partner&utm_source=appsflyer)
 
@@ -145,7 +145,7 @@ Al usar Android, la integración con OneSignal requiere que el OneSignal Player 
 
 <Accordion title="Pestaña de Integración">
 
-![onesignal-integration-tab.png](https://files.readme.io/95ec88041360d492367ed383aa3242bebe1cd5c5abcff8fba64e7888f0a9c052-360017329277.png)
+<Image align="center" alt="onesignal-integration-tab.png" src="https://files.readme.io/95ec88041360d492367ed383aa3242bebe1cd5c5abcff8fba64e7888f0a9c052-360017329277.png" />
 
 La pestaña Integración está dividida en distintas secciones, tal como se describe a continuación.
 
@@ -165,13 +165,13 @@ Obtén más información sobre la <Anchor target="_blank" href="/marketers/es/do
 Para conectar tu cuenta de OneSignal con AppsFlyer, introduce el ID de tu app en el campo **OneSignal AppID**.  
 El ID de la aplicación de OneSignal está disponible en la plataforma de OneSignal, en **Settings** > **Keys & IDs**.
 
-![onesignal-app-id-es_es.png](https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png)
+<Image align="center" alt="onesignal-app-id-es_es.png" src="https://files.readme.io/2801bce8ea7ef4be731d8429bd0408f432d4b5600fbd359e989b0013da56b93e-360015238678.png" />
 
 <div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
-![onesignal-default-postbacks_es-es.png](https://files.readme.io/07e40365685543a318be8a16c9ea83638634d4a60333338eca0f76d140f84bef-360014377697.png)
+<Image align="center" alt="onesignal-default-postbacks_es-es.png" src="https://files.readme.io/07e40365685543a318be8a16c9ea83638634d4a60333338eca0f76d140f84bef-360014377697.png" />
 
 AppsFlyer puede enviar postbacks automáticos a OneSignal tras las instalaciones de los usuarios. Utiliza esta sección para definir la fuente de los usuarios a los cuales se envían los postbacks de cada evento.  
 Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">postbacks por defecto</Anchor>.
@@ -229,6 +229,6 @@ Los permisos no están disponibles para este partner.
 
 Puedes ver la atribución en el Editor de segmentos, en las etiquetas de OneSignal, ya sea a nivel de dispositivo individual o al crear un segmento para usarlo en una campaña.
 
-![onesignal-view-attribution_es-es.png](https://files.readme.io/ac23c9310cad560f692598127f3e9efb7c2b905efb6fd5de21efabe90bf58eea-360014377737.png)
+<Image align="center" alt="onesignal-view-attribution_es-es.png" src="https://files.readme.io/ac23c9310cad560f692598127f3e9efb7c2b905efb6fd5de21efabe90bf58eea-360014377737.png" />
 
 <div data-zendesk-anchors="setting-up-onesignal=configuraci%C3%B3n-de-onesignal h_01H9HWJTEYDEZ8AGVQBHZZTP7K=configuraci%C3%B3n-de-onesignal set-up-the-appsflyer-sdk=configurar-el-sdk-de-appsflyer h_01H9HWJTEY71PTXR1YSAK709QT=configurar-el-sdk-de-appsflyer h_01H9HWJTEZC62F9JW1KD4Y1CYS=integration-tab activate-partner=activar-socio h_01H9HWJTEZH60AEPE7AB43X4YG=activar-socio general-settings=configuraci%C3%B3n-general h_01H9HWJTEZJAK2PTF4HQP3DQ1X=configuraci%C3%B3n-general h_01H9HWJTEZCNZX17K86H9KCRFN=onesignal-appid default-postbacks=postbacks-predeterminados h_01H9HWJTEZ91KR3ZA8NX5BVZCF=postbacks-predeterminados h_01H9HWJTEZZYRBS6PPRBBQAXZ5=attribution-link-tab h_01H9HWJTEZNT0EHJ7G4SFRD8K5=cost-tab h_01H9HWJTEZS7TN4FCAN40QB1NT=ad-revenue-tab h_01H9HWJTEZEY5VKCKDZ1Q7APRG=permissions-tab view-user-attribution-data-in-onesignal=ver-datos-de-atribuci%C3%B3n-de-usuarios-en-onesignal h_01H9HWJTEZZTJFTZC1Z2A6F5QM=ver-datos-de-atribuci%C3%B3n-de-usuarios-en-onesignal" />

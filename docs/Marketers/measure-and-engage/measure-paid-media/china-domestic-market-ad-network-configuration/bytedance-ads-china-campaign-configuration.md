@@ -73,7 +73,7 @@ Configuración general
 
 **Habilitar la atribución por impresiones**
 
-[![](https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png)](https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png)
+<Image align="center" alt="" src="https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png" />
 
 **Activa** este selector si deseas atribuir las instalaciones por impresiones desde ByteDance Ads China. El control deslizante de la ventana retrospectiva por impresiones está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
@@ -83,7 +83,7 @@ Configuración general
 
 AppsFlyer puede enviar postbacks automáticos a ByteDance Ads China luego de las instalaciones y reengagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-![bytedance-default-postbacks.png](https://files.readme.io/5f3cb637fb9ff652533fcfd9c02ea8dc1768e0e1c1686a180ea18c0d2e09309f-50612201121425.png)
+<Image align="center" alt="bytedance-default-postbacks.png" src="https://files.readme.io/5f3cb637fb9ff652533fcfd9c02ea8dc1768e0e1c1686a180ea18c0d2e09309f-50612201121425.png" />
 
 <div id="in-app-events-settings" />
 
@@ -126,19 +126,19 @@ Una vez que haya generado el enlace de atribución, completa el proceso de confi
 
 Inicia sesión en Ocean Engine ([https://ad.oceanengine.com/](https://ad.oceanengine.com/)) > **Library (Biblioteca)** > **Conversion Tracking (Seguimiento de conversiones)**.
 
-![OE_dashboard_1.png](https://files.readme.io/fda140ac7e3023033880b04ed500a675ae78187e4eb694ee200922b729ab119f-50612185108497.png)
+<Image align="center" alt="OE_dashboard_1.png" src="https://files.readme.io/fda140ac7e3023033880b04ed500a675ae78187e4eb694ee200922b729ab119f-50612185108497.png" />
 
 Haz clic en **Tracking application (Aplicación de seguimiento)** y crea una **New Application Transformation (Nueva transformación de aplicación)**.
 
-![OE_dashboard_2.png](https://files.readme.io/dbf0c13c23d21d08c195a4ab747e5de0986cb01f5ebde98f6c701ce731480958-50612185109009.png)
+<Image align="center" alt="OE_dashboard_2.png" src="https://files.readme.io/dbf0c13c23d21d08c195a4ab747e5de0986cb01f5ebde98f6c701ce731480958-50612185109009.png" />
 
 Haz clic en el método **API**.
 
-![OE_dashboard3.png](https://files.readme.io/70e7f6ca01c532fafb8f2ab7d31d6de51494f11749329c1c1333d1da6f28f284-50612185110417.png)
+<Image align="center" alt="OE_dashboard3.png" src="https://files.readme.io/70e7f6ca01c532fafb8f2ab7d31d6de51494f11749329c1c1333d1da6f28f284-50612185110417.png" />
 
 En la parte del enlace de monitoreo, introduce el enlace de atribución de clics de AppsFlyer y/o el enlace de atribución de impresiones.
 
-![dashboard4.png](https://files.readme.io/d36ec92a03062fc7ee169bb1ff3863722343577f3ee2b12779065b3e52731348-50612201124369.png)
+<Image align="center" alt="dashboard4.png" src="https://files.readme.io/d36ec92a03062fc7ee169bb1ff3863722343577f3ee2b12779065b3e52731348-50612201124369.png" />
 
 2. Finaliza la prueba de atribución siguiendo las instrucciones del sitio web.
 

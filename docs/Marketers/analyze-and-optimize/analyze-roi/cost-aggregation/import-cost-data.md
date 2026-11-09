@@ -216,7 +216,7 @@ Al utilizar Excel/Google Sheets para crear un archivo CSV, las columnas de fecha
 1. Selecciona las celdas que se van a formatear.
 2. Haz clic derecho y luego selecciona **Formato de celdas**.  
    Se abre la ventana de formato de celda.  
-   <Image alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
+   <Image align="center" alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
 3. Selecciona **Personalizado**.
 4. En el campo Tipo, ingresa **AAAA-MM-DD**
 5. Haz clic en **OK**.  
@@ -228,7 +228,7 @@ Al utilizar Excel/Google Sheets para crear un archivo CSV, las columnas de fecha
 
 Excel suele dar formato a las celdas de valor con una coma para separar los miles, como se muestra en la figura. Este formato no es adecuado para archivos de Cost Import.
 
-<Image alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
 
 Para formatear celdas de gasto sin un separador de coma de 1000:
 
@@ -236,7 +236,7 @@ Para formatear celdas de gasto sin un separador de coma de 1000:
 2. Haz clic derecho y luego selecciona **Formato de celdas**.  
    Se abre la ventana de formato de celda.
 3. Selecciona **Número**.  
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 4. Borrar **Usa el separador de miles (,).**
 5. (Opcional) Establece el número de **decimales**. El valor predeterminado es 2. El máximo permitido es 5.
 6. Haz clic en **OK**.  
@@ -262,7 +262,7 @@ Para formatear celdas de gasto sin un separador de coma de 1000:
 
 A continuación se incluye una captura de pantalla del [archivo CSV de ejemplo](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0oJTWdlNyT1gBHkGaN1QP-tUatugbPBzC2qYVNmjl_T_i3fKo1abYzTp6F7OqGeN_f7bBAJa3hxVz/pub?gid=0&single=true&output=csv) mostrado en un editor.
 
-<Image alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
 
 </Accordion>
 

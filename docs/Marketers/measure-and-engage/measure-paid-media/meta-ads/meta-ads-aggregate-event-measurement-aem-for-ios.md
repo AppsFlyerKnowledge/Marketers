@@ -112,7 +112,7 @@ Los datos provenientes de atribuciones de enlaces profundos no están sujetos a 
 
 Cuando una aplicación es apta para AEM en Meta Ads, **Aggregated Event Measurement** se selecciona de forma predeterminada durante la creación del conjunto de anuncios. Esto significa que tanto AEM como SKAdNetwork (SKAN) se pueden usar simultáneamente para la campaña. Si en su lugar se selecciona **Apple SKAdNetwork**, solo SKAN se aplicará a la campaña. Esto significa que AppsFlyer tiene una capacidad limitada para medir la actividad de la aplicación en Meta Ads.
 
-<Image alt="aem_meta_ads_platform.png" src="https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png" width="563px" />
+<Image align="center" alt="aem_meta_ads_platform.png" src="https://files.readme.io/9ce9735024294967545fee9e9fc44cc49834ffcb5b3496febd50f8466c1bd397-46192072798737.png" width="563px" />
 
 <div id="note-1" />
 
@@ -129,7 +129,7 @@ Cuando una aplicación es apta para AEM en Meta Ads, **Aggregated Event Measurem
 * Cuando está desactivada, la compartición avanzada de datos se limita a los eventos de conversión de usuarios con un ID del anunciante disponible. Los eventos de usuarios sin un ID de anunciante no se comparten ni se atribuyen.
 * Cuando está habilitada, la compartición avanzada de datos pone los eventos de conversión a disposición de Meta Ads para todos los usuarios, incluidos los que no tienen un ID del anunciante. AppsFlyer atribuye estos eventos. Los datos puestos a disposición podrían incluir información adicional relacionada con el dispositivo que no implique el ID del dispositivo. Para más información, consulta <Anchor target="_blank" href="/marketers/es/docs/meta-ads-integration-setup#advanced_data_sharing">Compartición de datos avanzada</Anchor>.
 
-![aem](https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png)
+<Image align="center" alt="aem" src="https://files.readme.io/77e44d893994581dbe1a058fb5bebbf9b5e8bf167abe6e9d35ea8aa809ceca4b-46192056604305.png" />
 
 <div id="note-2" />
 

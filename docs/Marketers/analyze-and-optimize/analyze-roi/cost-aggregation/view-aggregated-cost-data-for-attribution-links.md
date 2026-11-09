@@ -48,7 +48,7 @@ Los datos de costo por clic se agregan y están disponibles para su visualizaci�
 
 En el ***dashboard general,** el reporte de rendimiento agregado* contiene datos de costos, clics, impresiones, ROI y eCPI medio.
 
-[![CostReporting.jpg](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)
+<Image align="center" alt="CostReporting.jpg" src="https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg" />
 
 Los reportes de rendimiento y raw data también están disponibles para <Anchor target="_blank" href="/marketers/es/docs/raw-data-reporting-overview">descargar</Anchor>.
 

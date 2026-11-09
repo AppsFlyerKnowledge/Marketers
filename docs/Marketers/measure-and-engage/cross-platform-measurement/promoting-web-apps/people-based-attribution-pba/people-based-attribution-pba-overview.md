@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **De un vistazo:** La atribución basada en las personas (PBA) proporciona una visión unificada de las trayectorias de los clientes a través de canales, plataformas y dispositivos.
 
-![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
+<Image align="center" alt="PBANoSilos_us-en.gif" src="https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif" />
 
 <div id="pba-principles" />
 
@@ -50,7 +50,7 @@ x-zendesk:
 
 ### <Anchor target="_blank" href="/marketers/es/docs/pba-website-attribution-dashboard">Atribución del sitio web</Anchor>
 
-[![WebsiteAttributionTable](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)](https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg)
+<Image align="center" alt="WebsiteAttributionTable" src="https://files.readme.io/327a4830ca20ba9067bb9f7a5e5264908fd918ada9462261befcef2f48fd0fd0-360013135398.jpg" />
 
 Analiza las fuentes de tráfico web y las campañas de marketing que impulsan las visitas de los usuarios y las conversiones en tu sitio web. Descubre las diferencias de rendimiento hasta el nivel de anuncio. Admite todos los parámetros de consulta de AppsFlyer en el enlace sin necesidad de redirigir a los usuarios a los servidores de AppsFlyer.
 
@@ -58,7 +58,7 @@ Analiza las fuentes de tráfico web y las campañas de marketing que impulsan la
 
 ### <Anchor target="_blank" href="/marketers/es/docs/pba-web-assisted-installs">Instalaciones asistidas por web</Anchor>
 
-[![AppsFlyer-Web-to-App_us.en.gif](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)
+<Image align="center" alt="AppsFlyer-Web-to-App_us.en.gif" src="https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif" />
 
 Usa las instalaciones asistidas por web para examinar el impacto y los resultados de tus esfuerzos de marketing web para impulsar las instalaciones de aplicaciones móviles.
 

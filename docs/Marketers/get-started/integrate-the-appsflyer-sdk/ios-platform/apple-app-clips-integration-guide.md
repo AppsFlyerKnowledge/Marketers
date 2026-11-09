@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **En resumen:** Los App Clips permiten a los usuarios con iOS 14 o posterior acceder y experimentar rápidamente tu aplicación. AppsFlyer permite la atribución de App Clips y redirige a los usuarios que no pueden usarlos (por ejemplo, los usuarios de Android) según sea necesario.
 
-![app_clip_flow_3.png](https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png)
+<Image align="center" alt="app_clip_flow_3.png" src="https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png" />
 
 <div id="app-clip-integration" />
 

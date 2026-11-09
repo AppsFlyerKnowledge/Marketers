@@ -25,7 +25,7 @@ x-zendesk:
 
 > **Resumen general:** Mejora tu capacidad para segmentar a los usuarios en grupos relevantes añadiendo tus datos sobre sus características en Audiencias.
 
-[![UserAttributionNavigationXL3_us-en.png](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)](https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png)
+<Image align="center" alt="UserAttributionNavigationXL3_us-en.png" src="https://files.readme.io/d308c590f656a155845af5c181322a3876d2e4dd7df458f4899861954dbd4de7-33375683032465.png" />
 
 <div id="about-user-attributes" />
 
@@ -58,7 +58,7 @@ Tú, como marketer de aplicaciones, estás ocupado con lo siguiente:
   * Puntuación actual del juego: 15 o más en uno de los juegos actuales
 
 La tabla contiene datos de atributos de usuario de tu CRM. Los conjuntos de reglas de audiencia necesitan acceso a estos datos.   
-![UserAttributuesExample_us-en.png](https://files.readme.io/6f86d8659ef089ac82bb8401b4af650fbc590d2293ac93de30e6f9b4fc2ceb86-33375683035281.png)
+<Image align="center" alt="UserAttributuesExample_us-en.png" src="https://files.readme.io/6f86d8659ef089ac82bb8401b4af650fbc590d2293ac93de30e6f9b4fc2ceb86-33375683035281.png" />
 
 **Usa datos de CRM en conjuntos de reglas**
 
@@ -77,7 +77,7 @@ En Audiencias, crea atributos de usuario (deporte favorito y puntuación del jue
 
 Los atributos de usuario funcionan como filtros en los conjuntos de reglas de Audiencias. Este ejemplo utiliza criterios (deporte favorito y puntuación en el juego) que establece el comercializador.
 
-[<Image alt="Ejemplo de atributo de usuario.jpg" src="https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg" width="276px" />](https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg)
+<Image align="center" alt="Ejemplo de atributo de usuario.jpg" src="https://files.readme.io/296ab5e13abedd5f11c7d445ec9bf4a9b62295c18ad783228d6ccb9b631be74f-33375704836625.jpg" width="276px" />
 
 </Accordion>
 
@@ -115,7 +115,7 @@ Para gestionar atributos a nivel de aplicación, el usuario de la cuenta debe te
 2. Haga clic en la pestaña Atributos de usuario.
 3. Haga clic en **Agregar atributo de usuario**.
 
-   ![Agregar atributo de usuario.png](https://files.readme.io/6c7f25bb23d47e67aaef34264029daa9ab058f08e218a441ab9dde8240b0b384-33375683046033.png)
+   <Image align="center" alt="Agregar atributo de usuario.png" src="https://files.readme.io/6c7f25bb23d47e67aaef34264029daa9ab058f08e218a441ab9dde8240b0b384-33375683046033.png" />
 4. Rellene los campos. Las características de los campos se enumeran en la tabla que sigue.
    * **Nombre del atributo**
    * **Formato**
@@ -138,7 +138,7 @@ Para gestionar atributos a nivel de aplicación, el usuario de la cuenta debe te
 
 Para gestionar los atributos de usuario, ve a la pestaña **audiencias** > **Atributos de usuario**.
 
-[![AudienciasUserAttributes_us-en.png](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)](https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png)
+<Image align="center" alt="AudienciasUserAttributes_us-en.png" src="https://files.readme.io/6baee58e9cd9b2b39bc8facf0af72abe71a4bd1cd2f844f49467fbaeb7252cd7-33375704844049.png" />
 
 | Función | Descripción |
 | --- | --- |
@@ -190,7 +190,7 @@ Los datos de atributos de usuario se agregan o eliminan mediante un archivo CSV.
 
 <Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/360012423857">Ejemplo de atributo de usuario.csv</Anchor>
 
-![ArchivoParaAtributos.png](https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png)
+<Image align="center" alt="ArchivoParaAtributos.png" src="https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png" />
 
 **Requisitos del archivo CSV**
 

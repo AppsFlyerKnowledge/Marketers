@@ -81,7 +81,7 @@ La precarga/clic para descargar los datos de rendimiento de la campaña de engag
 1. En AppsFlyer, desde el menú lateral, selecciona **Colaborar** > **Integraciones de partners** > **Integraciones activas**.
 2. Selecciona el partner de precarga.
 3. En la pestaña **Integración**, activa **Atribución de precarga**.  
-   [<Image alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />](https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png)
+   <Image align="center" alt="" src="https://files.readme.io/d2c08125ca318b4bde60b51668692f21b88e292ca1b3f4fef54b77df779815cb-15585078780433.png" width="538px" />
 4. **Establece la duración de la ventana de lookback de precarga**. Intervalo: 1-180 días
 5. [Opcional] Activa **Igual prioridad de atribución de precarga.**.  
     Esto le da a los clics deterministas la misma prioridad de atribución que a la atribución de precarga, lo que significa que si se registra un clic determinista entre el engagement de la referencia de precarga y la instalación, el clic obtiene la atribución bajo la lógica de atribución estándar de último toque, en lugar de ser reemplazado por la referencia de precarga.

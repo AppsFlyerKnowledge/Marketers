@@ -83,7 +83,7 @@ Los anunciantes consideran que ambos tipos de datos son útiles, pero para difer
 >
 > **Actividad**: Imagina que ves que pasa un tren. Cuando el tren pasa, solo puedes ver las acciones que realizan los pasajeros en el tren cuando pasan. Estos son los datos de actividad.
 >
-> <Image alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
+> <Image align="center" alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
 >
 > **LTV**: Ahora, imagina que subes a un tren como observador. El tren está dividido en vagones.
 >
@@ -91,7 +91,7 @@ Los anunciantes consideran que ambos tipos de datos son útiles, pero para difer
 > * Durante el viaje, puedes observar todas las acciones que realizan los pasajeros en el vagón. Observas las acciones de estos pasajeros hasta que un pasajero se baja del tren, esto es una desinstalación.
 > * No puedes ver las acciones de los pasajeros en otros vagones del ferrocarril porque se subieron al tren antes o después de ti. Esto es el LTV.
 >
-> <Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
+> <Image align="center" alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
 
 <div id="appsflyer-dashboards-and-reportsltv-or-activity" />
 

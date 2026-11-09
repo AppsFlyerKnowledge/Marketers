@@ -139,7 +139,7 @@ Ve a tu IdP e implemente el nuevo certificado de AppsFlyer.
 
 Los usuarios también pueden ingresar a AppsFlyer a través de la <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">página de inicio de sesión de SSO de AppsFlyer</Anchor> haciendo clic en **Iniciar sesión con SSO** e ingresando su dirección de correo electrónico. Serán dirigidos al IdP para su autenticación y luego redirigidos a la página de inicio de AppsFlyer.
 
-[<Image alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)
+<Image align="center" alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />
 
 <div id="note-4" />
 
@@ -331,7 +331,7 @@ Si has configurado la autenticación para iniciar sesión a través de tu IdP, v
 
 Si has configurado el flujo de autenticación para iniciar sesión a través de tu proveedor de servicios (AppsFlyer), verifica que los usuarios puedan ingresar a AppsFlyer usando su correo electrónico:
 
-<Image alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
+<Image align="center" alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
 
 1. Si has iniciado sesión en AppsFlyer y en el IdP, cierra sesión en ambos.
 2. Abra una página web en modo incógnito.

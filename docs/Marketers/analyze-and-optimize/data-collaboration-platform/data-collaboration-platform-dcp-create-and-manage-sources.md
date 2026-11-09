@@ -95,10 +95,10 @@ Los archivos de fuentes almacenados en Amazon S3 o GCS deben cumplir los siguien
 
 1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Data Clean Room**.
 
-   <Image alt="Haz clic en Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="644px" />
+   <Image align="center" alt="Haz clic en Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="644px" />
 2. Haz clic en **+ Nueva fuente** (en la página principal o en la pestaña **Fuentes**).
 
-   <Image alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
+   <Image align="center" alt="sources empty state cropped.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="482px" />
 3. Procede con los pasos guiados de **Nueva fuente** :
 
 </Accordion>
@@ -196,7 +196,7 @@ También puedes subir datos de la fuente mediante un archivo local. Sin embargo,
 
 Al seleccionar la ubicación de la fuente, haz clic en **Sistema de archivos local** y en **Siguiente**; así se añade la opción de subir archivos locales desde tu dispositivo.
 
-<Image alt="Selecciona Sistema de archivos local.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
+<Image align="center" alt="Selecciona Sistema de archivos local.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
 
 <div id="note" />
 
@@ -215,7 +215,7 @@ Al configurar una fuente en la Plataforma de colaboración de datos (DCP), debes
 * **Snapshot** - Este método sube el conjunto de datos completo cada vez que se actualiza la fuente y sustituye por completo el conjunto de datos anterior por el nuevo. Elige este método solo si tus cargas de archivos siempre contienen el conjunto de datos completo y actualizado.
 * **Anexar** - Este método sube solo datos nuevos o modificados, no el conjunto de datos completo. Los conjuntos de datos antiguos no se eliminan ni se actualizan. Es ideal para cargas recurrentes, como reportes diarios o semanales. Entre las ventajas se incluyen cargas más pequeñas (lo que puede impulsar menores costos de almacenamiento en la nube), un mejor rendimiento de carga de datos, una gestión de registros más sencilla y más.
 
-<Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
+<Image align="center" alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
 <div id="important-1" />
 
@@ -303,7 +303,7 @@ source_name1/
 
 Este es un ejemplo de cómo debería verse la estructura de carpetas después de subir una instantánea completa de los archivos fuente durante 2 días (y de crear programáticamente las carpetas de fecha/versión/datos y los archivos \_SUCCESS); la estructura de tu bucket/carpetas podría verse así:
 
-[<Image alt="Ejemplo de bucket de instantánea.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
+<Image align="center" alt="Ejemplo de bucket de instantánea.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />
 
 
 <div id="append-upload-requirements" />
@@ -510,7 +510,7 @@ Esta opción te permite incluir en la audiencia un campo que actualmente no est�
 1. Haz clic en **+ New field**. Se añade un campo vacío.
 2. Introduce el nombre del campo y selecciona su tipo.
 
-<Image alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
+<Image align="center" alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
 
 **Los tipos de campo incluyen:**
 
@@ -713,11 +713,11 @@ Por lo general, la carpeta de claves DCR se crea manualmente utilizando la inter
 
 * Haz clic en el menú de 3 puntos (acciones) de la parte superior derecha y selecciona **DCR key**.
 
-[<Image alt="Clave DCR.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/49753181770769)
+[<Image align="center" alt="Clave DCR.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/49753181770769)
 
 Después de crear la carpeta de clave DCR, tu estructura de bucket/carpetas se verá así:
 
-<Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
 <div id="top-level-input-folder" />
 
@@ -732,7 +732,7 @@ Por lo general, la carpeta de entrada de nivel superior se crea manualmente util
 
 Después de crear la carpeta de entrada de nivel superior, tu estructura de bucket/carpetas se verá así:
 
-<Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
 
 <div id="second-level-folder-for-each-data-source" />
 
@@ -746,7 +746,7 @@ Por lo general, las carpetas de origen de datos se crean manualmente utilizando 
 
 Después de crear 2 carpetas de origen de datos, tu estructura de bucket/carpetas se verá así:
 
-<Image alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
 
 Debajo de cada carpeta de fuente de datos, se deben crear [subcarpetas anidadas por fecha y versión](#nested-subfolders-for-each-date-and-version) cada vez que se actualice la fuente.
 

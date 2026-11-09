@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **En resumen:** Integra AppsFlyer en juegos desarrollados con Unreal Engine para medir instalaciones de la app, eventos in-app, fuentes de medios y mucho más.
 
-![256px-Unreal_Engine_4_logo_and_wordmark.svg.png](https://files.readme.io/8ea048105520f976b4e3080f5c8ec44a4d955977a7731fe16114225bd34e9e5e-360002792757.png)
+<Image align="center" alt="256px-Unreal_Engine_4_logo_and_wordmark.svg.png" src="https://files.readme.io/8ea048105520f976b4e3080f5c8ec44a4d955977a7731fe16114225bd34e9e5e-360002792757.png" />
 
 Unreal Engine te permite desarrollar juegos para móviles de última generación que tus usuarios no olvidarán y a los que seguirán volviendo.
 

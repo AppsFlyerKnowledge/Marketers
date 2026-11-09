@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **De un vistazo:** Glispa, un partner de ad network integrado con AppsFlyer, crea soluciones que facilitan que las agencias y las marcas conecten con audiencias objetivo y que los publishers moneticen sus apps. Además de la atribución móvil basada en clics, Glispa también ofrece atribución por costo y view-through, que puedes registrar con AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/glispacpa.png?v=1" width="168px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/glispacpa.png?v=1" width="168px" />
 
 <div id="setting-up-glispa" />
 
@@ -60,7 +60,7 @@ Para obtener más detalles sobre la activación de partners, haz clic <Anchor ta
 
 **Habilitar la atribución por impresiones**
 
-[![appl013.png](https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png)](https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png)
+<Image align="center" alt="appl013.png" src="https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png" />
 
 Activa esta opción si quieres atribuir instalaciones view-through de Glispa. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
@@ -132,7 +132,7 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic</Anchor>.
 
-[![](https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png)](https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png)
+<Image align="center" alt="" src="https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png" />
 
 <div id="click-attribution-link" />
 

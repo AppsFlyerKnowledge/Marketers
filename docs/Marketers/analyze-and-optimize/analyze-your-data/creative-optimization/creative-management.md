@@ -76,7 +76,7 @@ Actualmente, la gestión de creatividades es compatible con Google Drive y Dropb
 
 2. Haz clic en **Conexiones de creatividades**.
 
-<Image alt="clic Creative connection.png" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
+<Image align="center" alt="clic Creative connection.png" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
 
 3. Haz clic en **Agregar conexión**.
 4. Selecciona **Google Drive**.
@@ -87,7 +87,7 @@ Actualmente, la gestión de creatividades es compatible con Google Drive y Dropb
 8. Haz clic en **Añadir URL**.
 9. Repite los dos pasos anteriores para conectar varias carpetas a la vez.
 
-<Image alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
+<Image align="center" alt="image (49).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
 
 10. Haz clic en **Conectar**.
 
@@ -107,7 +107,7 @@ Antes de conectar Dropbox, asegúrate de haber iniciado sesión en Dropbox con l
 6. En el modal de conexión, haz clic en **Elegir carpetas** y, a continuación, selecciona las carpetas que deseas conectar.
    * La gestión de creatividades sincroniza las creatividades de las carpetas seleccionadas y sus subcarpetas.
 
-<Image alt="clic Choose folders.png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
+<Image align="center" alt="clic Choose folders.png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
 
 7. Selecciona la aplicación correspondiente para cada carpeta. Este paso es opcional, pero lo recomendamos porque ayuda a organizar y combinar las creatividades correctamente.
 8. Haz clic en **Conectar**.
@@ -124,7 +124,7 @@ La galería de gestión creativa es el lugar donde se revisan, buscan, filtran y
 
 Cada tarjeta creativa representa una creatividad. Una creatividad puede incluir varias versiones, como diferentes resoluciones o formatos. Desde la tarjeta, puedes comprender rápidamente si la creatividad es nueva, está activa o inactiva en todas las fuentes de medios y ver metadatos de alto nivel, como cuándo se lanzó por primera vez y cuándo se sincronizó con la gestión de creatividades. Cada creatividad nueva se analiza y califica automáticamente para ayudarte a elegir las mejores antes de su lanzamiento. Las puntuaciones van de C (menos probable que tenga éxito) a A (listo para escalar), ayudándote a priorizar creativos de alto rendimiento con confianza.
 
-<Image alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
+<Image align="center" alt="image (52).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
 
 <div id="filter-creatives" />
 
@@ -183,7 +183,7 @@ En el caso de Google Ads, puedes subir creatividades a los grupos de anuncios de
 8. Revisa la configuración y los mensajes de validación.
 9. Haz clic en **Subir a Google Ads**.
 
-<Image alt="clic Upload to Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
+<Image align="center" alt="clic Upload to Google Ads.png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
 
 <div id="note" />
 
@@ -207,7 +207,7 @@ En el caso de Meta, puedes crear anuncios dentro de los conjuntos de anuncios ex
 6. Selecciona las creatividades en la sección **Todas las creatividades** y asígnalas a los anuncios.
 7. Si una creatividad tiene varias versiones, selecciona las correspondientes que quieras subir.
 
-<Image alt="Anuncios de Meta.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
+<Image align="center" alt="Anuncios de Meta.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
 
 8. Revisa la configuración y los mensajes de validación.
 9. Haz clic en **Siguiente**.
@@ -215,7 +215,7 @@ En el caso de Meta, puedes crear anuncios dentro de los conjuntos de anuncios ex
     * De forma predeterminada, esta configuración se aplica a todos los anuncios nuevos que se creen. Puedes editar anuncios específicos seleccionándolos en el menú desplegable **Personalizar un anuncio específico**.
 11. Haz clic en **Crear anuncios en Meta**.
 
-<Image alt="image (55).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
+<Image align="center" alt="image (55).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
 
 <div id="tiktok-ads" />
 

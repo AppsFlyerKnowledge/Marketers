@@ -59,7 +59,7 @@ La API de OneLink es una función premium que te permite convertir cualquier can
 1. Copia el <Anchor target="_blank" href="/marketers/es/docs/managing-appsflyer-tokens#tipos-de-token">token de la API de OneLink</Anchor>.
 2. <Anchor target="_blank" href="/marketers/es/docs/create-a-onelink-template#crear-una-plantilla-de-onelink">Crea una plantilla de OneLink</Anchor>.
 3. Copia el ID de la plantilla de OneLink.   
-   [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg" />
 4. Comparte el ID de la plantilla y el token de API con el desarrollador y pídele que siga estas <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelinkapi_v2_overview">instrucciones</Anchor>.
 
 <div id="dashboard" />

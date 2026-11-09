@@ -53,7 +53,7 @@ Busca al partner y selecciónalo.
 
 6. Desde tu cuenta de **Google Ads**, copia el ID de cliente (sin guiones) de la esquina superior izquierda y pégalo en el parámetro **Ads Customer ID** de AppsFlyer, como se muestra en las capturas de pantalla a continuación.
 
-[![](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)](https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png)
+<Image align="center" alt="" src="https://files.readme.io/0987564b63f58e4091126c0131f93ae38a20bb9998894cadb53965fe7b72e9f4-21414640108689.png" />
 
 7. Introduce el **Action Identifier**, **Disable\_Country\_Sending** (proporcionado por Adquant) y el número de **Google Ads Customer ID** en los campos correspondientes.
 

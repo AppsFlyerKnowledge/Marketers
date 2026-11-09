@@ -90,7 +90,7 @@ Prepara tus servicios en la nube seleccionados para su uso con conexiones entran
    1. En el panel **izquierdo**, haz clic en el botón **View actions (Ver acciones)** <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> a la derecha del ID del proyecto.
    2. Selecciona **Create dataset (Crear conjunto de datos).**
 
-      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
+      <Image align="center" alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. En el panel que se abre en el **lado derecho**, introduce el nombre del conjunto de datos y selecciona otras opciones según tus necesidades.
       * Puedes usar el nombre que más te convenga, usando solo letras, números y guiones bajos (\_).
         * **Recomendado:** Utiliza un nombre que indique que el conjunto de datos se está utilizando para una conexión entrante.
@@ -104,7 +104,7 @@ Prepara tus servicios en la nube seleccionados para su uso con conexiones entran
       `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
    5. En la sección **Assign roles (Asignar roles)**, selecciona **BigQuery > BigQuery Data Viewer (Visualizador de datos de BigQuery).**
 
-      <Image alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
+      <Image align="center" alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
    6. Haz clic en **Guardar**.
    7. Haz clic en **CLOSE (CERRAR)** para cerrar el panel del lado derecho.
 
@@ -123,10 +123,10 @@ Prepara tus servicios en la nube seleccionados para su uso con conexiones entran
 3. En el panel izquierdo, selecciona **Private Sharing (Compartir en privado).**
 4. En la página que se abre, selecciona la pestaña **Shared By Your Account (Compartido por tu cuenta)**.
 
-   <Image alt="snowflake_private_sharing.png" src="https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png" width="609px" />
+   <Image align="center" alt="snowflake_private_sharing.png" src="https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png" width="609px" />
 5. Haz clic en el botón **Share (Compartir)**. En la lista que se abre, selecciona **Create a Direct Share (Crear una compartición directa).**
 
-   <Image alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
+   <Image align="center" alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
 6. Selecciona las tablas y/o vistas que desees compartir con DCR y, a continuación, haz clic en **Done (Listo).**
 7. Según tus necesidades, cambia el **Secure Share Identifier (Identificador de compartición segura)** y agrega una descripción opcional.
 8. En el campo **Add accounts in your region by name (Agrega cuentas en tu región por nombre)**, introduce una de las siguientes cuentas de Snowflake de AppsFlyer, según la región de tu cuenta de Snowflake:
@@ -244,7 +244,7 @@ Puedes utilizar uno o más buckets para cargar datos en DCR (en Amazon S3, GCS o
       `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
    5. En la lista **Role** (Rol), selecciona **Cloud Storage** (Almacenamiento en la nube) > **Storage Admin** (Administrador de almacenamiento).  
 
-      ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
+      <Image align="center" alt="dcr_gcs_permissions.png" src="https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png" />
    6. Haz clic en **Guardar**.
 
 </Accordion>
@@ -277,7 +277,7 @@ Tus reportes de DCR se pueden entregar a una o más ubicaciones de tus servicios
    1. En el panel **izquierdo**, haz clic en el botón **View actions (Ver acciones)** <Image alt="BQ_view_actions_button.png" src="https://files.readme.io/c6cab0ddae51b561bf3bac606eccb99e0bdafe25b9a4bee957d6ec09ee48a973-13879852813073.png" width="22px" /> a la derecha del ID del proyecto.
    2. Selecciona **Create dataset (Crear conjunto de datos).**
 
-      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
+      <Image align="center" alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. En el panel que se abre en el **lado derecho**, introduce el nombre del conjunto de datos y selecciona otras opciones según tus necesidades.
       * Puedes usar el nombre que más te convenga, usando solo letras, números y guiones bajos (\_).
         * **Recomendado:** Utiliza un nombre que indique que el conjunto de datos se está utilizando para una conexión saliente.
@@ -291,7 +291,7 @@ Tus reportes de DCR se pueden entregar a una o más ubicaciones de tus servicios
       `datalocker-bq-admin-prod@datalocker-bq-prod.iam.gserviceaccount.com`
    5. En la sección **Assign roles (Asignar roles)**, selecciona **BigQuery > BigQuery Data Editor (Editor de datos de BigQuery).**
 
-      <Image alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
+      <Image align="center" alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
    6. Haz clic en **Guardar**.
    7. Haz clic en **CLOSE (CERRAR)** para cerrar el panel del lado derecho.
 
@@ -433,7 +433,7 @@ Modificar un bucket existente que anteriormente usaste solo para Data Locker req
    `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
 7. En la lista **Role** (Rol), selecciona **Cloud Storage** (Almacenamiento en la nube) > **Storage Admin** (Administrador de almacenamiento).  
 
-   ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
+   <Image align="center" alt="dcr_gcs_permissions.png" src="https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png" />
 8. Haz clic en **Guardar**.
 
 </Accordion>

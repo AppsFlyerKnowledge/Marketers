@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **At a glance:** Enriquece los datos de PBA con información de campañas de gclid del etiquetado automático al conectarte a Google Ads.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/googleadwords.png" />
 
 <div id="integrating-google-ads-campaign-data-in-pba" />
 
@@ -42,7 +42,7 @@ Conecta tu cuenta de Google Ads (1 o más) a tu paquete de marca. Los datos de 
 
 **Dashboard de atribución del sitio web con la jerarquía de campaña completada**
 
-![PBAWebSite.png](https://files.readme.io/46004298b827d3f4eaa4adae9fb2a8676867e6b5dde44a7ff087fe1bda07f054-4403138621713.png)
+<Image align="center" alt="PBAWebSite.png" src="https://files.readme.io/46004298b827d3f4eaa4adae9fb2a8676867e6b5dde44a7ff087fe1bda07f054-4403138621713.png" />
 
 Los datos de la jerarquía de campañas y anuncios están disponibles en los Dashboard y en raw data de la siguiente manera:
 

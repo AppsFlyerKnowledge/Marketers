@@ -45,7 +45,7 @@ Usa la atribución de búsqueda orgánica para atribuir a estos usuarios existen
 
 #### FLUJO
 
-![Organic_SEO_attribution_flow.png](https://files.readme.io/1772808df9d9e521204153d9f0689b3f9f156dd8c0ab8555673b1d321f28aece-15320495862545.png)
+<Image align="center" alt="Organic_SEO_attribution_flow.png" src="https://files.readme.io/1772808df9d9e521204153d9f0689b3f9f156dd8c0ab8555673b1d321f28aece-15320495862545.png" />
 
 1. Un usuario busca un término (por ejemplo, «zapatos de hombre») en el motor de búsqueda de su navegador móvil (Google, Bing, etc.). El motor de búsqueda muestra varios resultados en los que se puede hacer clic.
 2. Tu desarrollador web asigna algunos de estos resultados de búsqueda para que abran tu aplicación móvil mediante Android App Links y iOS Universal Links. Si un usuario tiene la aplicación instalada, cuando hace clic en el resultado de la búsqueda, la aplicación se abre (sin redireccionar primero a una tienda de aplicaciones).

@@ -84,7 +84,7 @@ AppsFlyer envía postbacks predeterminados a Xsolla después de las instalacione
   **Nota:** La integración de Xsolla con AppsFlyer no requiere el envío de postbacks de instalación. Por lo tanto, se recomienda configurarlo en Desactivado.
 * **Todas las fuentes de medios, incluidas las orgánicas:** Los postbacks de instalaciones se envían para los eventos atribuidos a cualquier partner y para los eventos orgánicos.
 
-![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+<Image align="center" alt="default_postbacks.png" src="https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png" />
 
 <div id="in-app-event-postbacks" />
 
@@ -92,7 +92,7 @@ AppsFlyer envía postbacks predeterminados a Xsolla después de las instalacione
 
 En esta sección, puedes asignar tus eventos de AppsFlyer con tus partners a través de postbacks.
 
-![xsolla-af-login-3.jpg](https://files.readme.io/6b694389980e67023a506e0fc8c302f0512d12681e44d3d3a414c511d6dd83e4-26908967996177.jpg)
+<Image align="center" alt="xsolla-af-login-3.jpg" src="https://files.readme.io/6b694389980e67023a506e0fc8c302f0512d12681e44d3d3a414c511d6dd83e4-26908967996177.jpg" />
 
 1. Activa **postbacks de eventos in-app**.
 2. Haz clic en **Agregar evento** para añadir un SDK o un evento de servidor a servidor a la lista.
@@ -160,7 +160,7 @@ Esta integración permite disponer de datos e insights actuales sobre el LTV par
    2. Selecciona tu sitio y haz clic en **Configurar**.
    3. En la pestaña **Configuración del sitio**, ve a la sección **Aplicaciones**.
    4. En el bloque **AppsFlyer**, haz clic en **Conectar**.  
-      [![xsolla-connect.jpg](https://files.readme.io/e29b2444769092cc6ea8e6b0fe0cf7753b65c6d5eef5770b920d5604f922d6c0-28569784464913.jpg)](https://files.readme.io/e29b2444769092cc6ea8e6b0fe0cf7753b65c6d5eef5770b920d5604f922d6c0-28569784464913.jpg)
+      <Image align="center" alt="xsolla-connect.jpg" src="https://files.readme.io/e29b2444769092cc6ea8e6b0fe0cf7753b65c6d5eef5770b920d5604f922d6c0-28569784464913.jpg" />
    5. En el campo **Clave de desarrollador** de AppsFlyer, ingresa la clave del desarrollador web de AppsFlyer. Mira a continuación cómo [encontrar esta clave en AppsFlyer](/docs/xsolla-integration-with-appsflyer#cómo-encontrar-la-clave-del-desarrollador-web-en-appsflyer).
    6. Haz clic en **Conectar**.
 
@@ -171,7 +171,7 @@ Esta integración permite disponer de datos e insights actuales sobre el LTV par
 1. Desde la página **Mis aplicaciones**, haz clic en **Ver paquetes de marca**.
 2. Haz clic en el icono Copiar en la fila del paquete Xsolla.
 
-![xsolla-brand-bundle2.jpg](https://files.readme.io/9cb6a9e872e482f7e426aea7e615afb1f91017c569e7cd67286cdb946d9d2445-26923253273361.jpg)
+<Image align="center" alt="xsolla-brand-bundle2.jpg" src="https://files.readme.io/9cb6a9e872e482f7e426aea7e615afb1f91017c569e7cd67286cdb946d9d2445-26923253273361.jpg" />
 
 <div id="identifying-xsollas-events-in-appsflyer" />
 

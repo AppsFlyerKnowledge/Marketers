@@ -65,12 +65,12 @@ Google Analytics tiene una herramienta potente para crear segmentación a nivel 
 2. Selecciona ***Admin*** en la barra superior del dashboard de GA
 3. En la columna ***PROPERTY***, selecciona ***Custom Definition***
 4. Selecciona ***Dimensiones personalizadas***  
-   ![Opción de dimensiones personalizadas en el panel de administración de Google Analytics](https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png)
+   <Image align="center" alt="Opción de dimensiones personalizadas en el panel de administración de Google Analytics" src="https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png" />
 5. Crea una nueva dimensión. Llámala **AppsFlyer Media Source** y asegúrate de seleccionar el alcance ***Usuario***. Esto garantiza que los datos se guarden durante varias sesiones. ![ga2.png](https://files.readme.io/b2d85fd068e5523265a2b49b4218234fc77d5896ad41801cbe0e017752763cf2-4413121449873.png)
 
    Cada dimensión se crea con un índice que debes recordar para poder usarlo más adelante en la API de GA desde tu aplicación. En este ejemplo, el índice de la nueva dimensión es 10.
 
-   ![ga3](https://files.readme.io/6efc2249ede92291a2aadd16eccbc5b38b580723c6277e3746bdd467de29764a-11179413394193.png)
+   <Image align="center" alt="ga3" src="https://files.readme.io/6efc2249ede92291a2aadd16eccbc5b38b580723c6277e3746bdd467de29764a-11179413394193.png" />
 
    Repite este paso y crea otra dimensión y llámala **Campaña de AppsFlyer**
 
@@ -142,6 +142,6 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 
 La mayoría de los reportes de GA tienen una opción para profundizar llamada ***Dimensiones personalizadas***. Puedes seleccionar las dimensiones ***Fuente de medios de AppsFlyer*** o ***Campaña de AppsFlyer*** ([configuradas en el paso 1](/docs/google-analytics-integration-custom-dimensions#paso-1-defínelo-en-google-analytics)) para ver qué fuentes de medios y campañas atraen a los usuarios que instalan tu app.
 
-![G_analytics1.png](https://files.readme.io/dde9219a7a8eec5c861b5031ad741ff7377d85ba9c3693bcbc455fd735f8af2d-4413121449617.png)
+<Image align="center" alt="G_analytics1.png" src="https://files.readme.io/dde9219a7a8eec5c861b5031ad741ff7377d85ba9c3693bcbc455fd735f8af2d-4413121449617.png" />
 
 <div data-zendesk-anchors="custom-dimensions-on-google-analytics=dimensiones-personalizadas-en-google-analytics h_01HDP3FHGNR06EV1KS8F1PFQ09=dimensiones-personalizadas-en-google-analytics setting-media-source-as-a-custom-dimension-on-google-analytics=configurar-la-fuente-de-medios-como-una-dimensi%C3%B3n-personalizada-en-google-analytics h_01HDP3FHGP9H18VJKNSR27HXEZ=configurar-la-fuente-de-medios-como-una-dimensi%C3%B3n-personalizada-en-google-analytics step-1-define-it-on-google-analytics=paso-1-def%C3%ADnelo-en-google-analytics h_01HDP3FHGPTJ4EVYPDA7RWPJF9=paso-1-def%C3%ADnelo-en-google-analytics step-2-setting-and-sending-the-data-from-the-app=paso-2-configurar-y-enviar-los-datos-desde-la-aplicaci%C3%B3n h_01HDP3FHGPF3BJZSG6G0QP5T1R=paso-2-configurar-y-enviar-los-datos-desde-la-aplicaci%C3%B3n step-3-see-the-results-in-google-analytics=paso-3-ver-los-resultados-en-google-analytics h_01HDP3FHGP9G9BP956KM4ACDRC=paso-3-ver-los-resultados-en-google-analytics" />

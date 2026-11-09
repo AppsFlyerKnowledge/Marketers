@@ -257,7 +257,7 @@ La atribución se determina en función de tus ajustes de atribución.
 1. En la configuración de enlaces personalizados, ve a la sección **social-to-app**.
 2. En la sección **Landing page de la aplicación de red social**, haz clic en **Crear landing page**.  
    Se abre una ventana para elegir una plantilla de landing page.  
-   [![](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg" />
 3. Para elegir una plantilla, desplaza el cursor sobre la plantilla seleccionada y haz clic en **Crear**. **Consejo**: Coloca el cursor sobre el icono 🛈 de una plantilla para ver en qué casos se debe usar. Para Instagram, se recomiendan Clustered Poster y ShowAndTell.
 4. Personaliza todos los elementos en la creatividad de la landing page. Para hacerlo, selecciona los elementos por nombre o haz clic en ellos en la imagen de vista previa.    
    **Consejo**: Guarda tus textos en caso de que reemplaces la plantilla creativa.
@@ -275,11 +275,11 @@ La atribución se determina en función de tus ajustes de atribución.
 
    4. Si una o más imágenes no son una URL exacta, se mostrará un error y no podrás revisar la creatividad.  
 
-      [![](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)
+      <Image align="center" alt="" src="https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png" />
 6. Para revisar la creatividad de la landing page, haz clic en **Revisar**.  
    Si es necesario realizar cambios, haz clic en**Volver al editor**.  
 
-   [![](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)
+   <Image align="center" alt="" src="https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png" />
 7. Para guardar tu landing page, haz clic en **Listo**.  
    **Importante**: Las creatividades de landing pages nuevas/actualizadas solo se aplican después de generar/actualizar el enlace personalizado.
 8. [Opcional] Para editar tu landing page, haz clic en **Editar landing page de la aplicación de redes sociales**.
@@ -577,7 +577,7 @@ El flujo de la solución DDL basada en clipboard es el siguiente:
    * El usuario tiene activado Private Relay.
    * El enlace contiene el parámetro. `af_cp_lp=true`.
 4. Una vez que AppsFlyer confirma lo anterior, se carga la landing page web, que contiene el ícono de la aplicación, la imagen y un CTA para obtener la aplicación de la App Store. El usuario también ve un mensaje que explica el proceso: que la URL se copia para garantizar la mejor experiencia de usuario y que se le enviará a la página específica en la aplicación.  
-   ![ios_15_ip_masking__1_.png](https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png)
+   <Image align="center" alt="ios_15_ip_masking__1_.png" src="https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png" />
 5. El usuario hace clic en **Obtener la aplicación**.
 6. Se envía al usuario a la App Store para instalar la aplicación. Luego, en la primera apertura, se envía a la página de la aplicación específica.
 

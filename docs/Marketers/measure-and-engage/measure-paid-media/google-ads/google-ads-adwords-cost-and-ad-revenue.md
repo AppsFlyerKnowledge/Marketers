@@ -92,7 +92,7 @@ La integración de ingresos de Google Ads (AdWords) está en desuso desde el 30 
 
   Asegúrate de que el usuario de la agencia que inicia sesión en la pestaña Costo tenga acceso al ID de cliente de Google Ads configurado en la pestaña Integración.
 
-  <Image alt="" src="https://files.readme.io/2d17b3dad78e02c76253f30db0c15c18eb837b531becabc07ccad274258c2c61-49938966132753.png" width="457px" />
+  <Image align="center" alt="" src="https://files.readme.io/2d17b3dad78e02c76253f30db0c15c18eb837b531becabc07ccad274258c2c61-49938966132753.png" width="457px" />
 * El uso de espacios o caracteres especiales en campañas de búsqueda de iOS o páginas de aterrizaje de Android puede ocasionar problemas a la hora de hacer coincidir los datos de costos con los datos de clics, lo que deriva en la imposibilidad de reportar los costos.
 * Cuando una agencia desactiva una integración de costos después de que se haya cobrado el costo, pero el anunciante sigue teniendo una integración de costos activa, los datos se asocian al anunciante solo a partir del día en que la agencia desactiva la integración.
 

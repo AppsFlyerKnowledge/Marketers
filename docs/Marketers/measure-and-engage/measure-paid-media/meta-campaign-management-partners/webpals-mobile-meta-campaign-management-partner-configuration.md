@@ -53,7 +53,7 @@ x-zendesk:
 3. Configura la integración según las directrices <Anchor target="_blank" href="/marketers/es/docs/meta-ads-in-app-event-mapping#asignación-de-eventos-predefinidos">aquí</Anchor>.
 4. Haz clic en **Guardar**.
 
-![meta_campaign_management_partner_settings_2.png](https://files.readme.io/fdf34ada3d2b6dc645b07d0c1064020011c83baa863191299448e514dfe88e0a-14238447553297.png)
+<Image align="center" alt="meta_campaign_management_partner_settings_2.png" src="https://files.readme.io/fdf34ada3d2b6dc645b07d0c1064020011c83baa863191299448e514dfe88e0a-14238447553297.png" />
 
 <div id="configuring-on-webpals-mobile" />
 

@@ -62,7 +62,7 @@ Activa esta opción si quieres atribuir las instalaciones view-through de Zhihu 
 
 ### Postbacks predeterminados
 
-![mceclip2.png](https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" />
 
 <div id="in-app-events-settings" />
 
@@ -70,7 +70,7 @@ Activa esta opción si quieres atribuir las instalaciones view-through de Zhihu 
 
 En esta sección puedes asignar tus eventos de AppsFlyer a Zhihu Ads mediante postbacks.
 
-![mceclip2.png](https://files.readme.io/39f3b95126da7107b2972b5811d0367d51191eed76cc6ddbef52ffb3a0c1e137-50900503184017.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/39f3b95126da7107b2972b5811d0367d51191eed76cc6ddbef52ffb3a0c1e137-50900503184017.png" />
 
 1. Activa los postbacks de eventos in-app.
 2. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
@@ -90,7 +90,7 @@ En esta sección puedes asignar tus eventos de AppsFlyer a Zhihu Ads mediante po
 
 En esta pestaña, puedes crear los enlaces de atribución que quieres enviar a Zhihu Ads para atribuir las campañas, los conjuntos de anuncios o incluso los anuncios individuales de Zhihu Ads. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
-![mceclip1.png](https://files.readme.io/3f946bccf687826dd2e9ebc318e2510ee5bef5641e9cbfaa1f4b231089ebfee5-50900523405713.png)
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/3f946bccf687826dd2e9ebc318e2510ee5bef5641e9cbfaa1f4b231089ebfee5-50900523405713.png" />
 
 Esta pestaña se divide en distintas secciones:
 
@@ -113,7 +113,7 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 * **Parámetros de suscriptor** - utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el Reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
   **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![parámetros-del-enlace-de-atribución.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="parámetros-del-enlace-de-atribución.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
@@ -127,7 +127,7 @@ Este control deslizante te permite establecer el **tiempo máximo del clic a la 
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png" />
 
 <div id="click-attribution-link" />
 
@@ -147,7 +147,7 @@ Puedes personalizar este valor para que sea de 1-23 horas o de 1-7 días.
 
 Aquí encontrarás más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">atribución view-through</Anchor>.
 
-[![](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)](https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png)
+<Image align="center" alt="" src="https://files.readme.io/2567e7dca91c14a345616e1eb7cb0de8d1a5de7d2f9e90174ffc648fd04510c8-360002234185.png" />
 
 <div id="impressions-attribution-link" />
 
@@ -180,7 +180,7 @@ Los ingresos por publicidad no se admiten en la integración con este partner.
 
 En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Zhihu Ads, tanto si el partner actúa como ad network, agencia o ambas. Ten en cuenta que, incluso si la atribución está deshabilitada para Zhihu Ads, la pestaña de permisos está activa y puedes otorgarle el control a Zhihu Ads.
 
-![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png" />
 
 <div id="ad-network-permissions" />
 

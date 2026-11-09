@@ -388,7 +388,7 @@ Para archivos GZIP de varias partes:
 
 Después de cargar los archivos fuente en 2 días (y de crear programáticamente carpetas de fecha/versión/datos y archivos `_SUCCESS`), tu estructura de bucket/carpetas podría tener este aspecto:
 
-![dcr_file_structure_after_uploads.png](https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png)
+<Image align="center" alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" />
 
 </Accordion>
 
@@ -481,11 +481,11 @@ Por lo general, la carpeta de claves DCR se crea manualmente utilizando la inter
 
 **Para obtener la clave de DCR de tu cuenta, haz clic en el botón de clave de DCR en la parte superior de la página principal de DCR.**
 
-![dcr_key_button.png](https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png)
+<Image align="center" alt="dcr_key_button.png" src="https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png" />
 
 Después de crear la carpeta de clave DCR, tu estructura de bucket/carpetas se verá así:
 
-![dcr_file_structure_dcr_key_folder.png](https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png)
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" />
 
 <div id="top-level-input-folder" />
 
@@ -500,7 +500,7 @@ Por lo general, la carpeta de entrada de nivel superior se crea manualmente util
 
 Después de crear la carpeta de entrada de nivel superior, tu estructura de bucket/carpetas se verá así:
 
-![dcr_file_structure_input_folder.png](https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png)
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" />
 
 <div id="second-level-folder-for-each-data-source" />
 
@@ -514,7 +514,7 @@ Por lo general, las carpetas de origen de datos se crean manualmente utilizando 
 
 Después de crear 2 carpetas de origen de datos, tu estructura de bucket/carpetas se verá así:
 
-![dcr_file_structure_source_folders.png](https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png)
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" />
 
 Debajo de cada carpeta de fuente de datos, se deben crear [subcarpetas anidadas por fecha y versión](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version) cada vez que se actualice la fuente.
 

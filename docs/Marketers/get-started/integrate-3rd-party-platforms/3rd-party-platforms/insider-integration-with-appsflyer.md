@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **En resumen:** Insider, un partner integrado de AppsFlyer, es una plataforma de marketing y análisis para apps móviles y web. Insider ofrece segmentación predictiva en tiempo real y personalización en canales web, web móvil, aplicación móvil y anuncios.
 
-![rockerbox-logo_en-us.png](https://cdn.appsflyer.com/marketplace/static/logo/useinsider.png?v=1)
+<Image align="center" alt="rockerbox-logo_en-us.png" src="https://cdn.appsflyer.com/marketplace/static/logo/useinsider.png?v=1" />
 
 <div id="important" />
 
@@ -66,7 +66,7 @@ Insider se conecta con AppsFlyer a través de un identificador de partner único
 
 **Para obtener tu identificador,** inicia sesión en la plataforma de **Insider** y copia tu identificador en la esquina superior derecha del Dashboard.
 
-![insider-partner-ID_en-us.png](https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png)
+<Image align="center" alt="insider-partner-ID_en-us.png" src="https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png" />
 
 <div id="default-postbacks" />
 
@@ -80,7 +80,7 @@ AppsFlyer puede enviar postbacks automáticos a Insider tras las instalaciones d
 
 ### Configuración de eventos in-app
 
-![insider-partner-field.png](https://files.readme.io/ad4b4a5e9d688be93b20ccf645c779c361390cc95e2a2acbab7299408b7478bf-4403354160785.png)
+<Image align="center" alt="insider-partner-field.png" src="https://files.readme.io/ad4b4a5e9d688be93b20ccf645c779c361390cc95e2a2acbab7299408b7478bf-4403354160785.png" />
 
 En esta sección, asignas los eventos de AppsFlyer al partner mediante postbacks. Saber más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">postbacks de eventos in-app</Anchor>
 
@@ -88,7 +88,7 @@ En esta sección, asignas los eventos de AppsFlyer al partner mediante postbacks
 
 1. Introduce el **partner de Insider**, que encontrarás en la esquina superior derecha del Dashboard de **Insider**.
 
-   ![insider-partner-ID_en-us.png](https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png)
+   <Image align="center" alt="insider-partner-ID_en-us.png" src="https://files.readme.io/5755dcc63db5714eb651c74b89e24bee769f792190d9aad0bfc0a742d321eb47-360015601658.png" />
 2. En AppsFlyer, habilita **postback de evento in-app.**
 3. Haz clic en **Add Event** para añadir un evento de SDK a la lista.
 4. Selecciona el **nombre del evento de SDK** en el menú desplegable.

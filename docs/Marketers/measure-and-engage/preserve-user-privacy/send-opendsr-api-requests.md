@@ -572,7 +572,7 @@ Para acceder al panel de control de registros:
 1. En la barra superior, abre el menú de la cuenta (menú desplegable de la dirección de correo electrónico) > **E-GDPR log**.
 2. Se abrirá la siguiente ventana:
 
-![GDPR_Table.png](https://files.readme.io/5c2b2695b5c273e16a0396f0df2d227a0a0f61af6ad0626c0a911b77edc6a0d2-13949567038481.png)
+<Image align="center" alt="GDPR_Table.png" src="https://files.readme.io/5c2b2695b5c273e16a0396f0df2d227a0a0f61af6ad0626c0a911b77edc6a0d2-13949567038481.png" />
 
 </Accordion>
 

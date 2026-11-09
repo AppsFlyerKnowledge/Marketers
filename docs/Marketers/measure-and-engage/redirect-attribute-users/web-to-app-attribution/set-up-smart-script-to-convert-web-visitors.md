@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **A simple vista:** **De un vistazo:** Configura el Smart Script de OneLink para convertir y atribuir a los visitantes de tu sitio web móvil, provenientes de cualquier fuente, en usuarios de la aplicación móvil.
 
-![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
+<Image align="center" alt="7901_Smart_Script_flow_1920x1080_2__1_.png" src="https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png" />
 
 <div id="setup" />
 
@@ -128,7 +128,7 @@ Para configurar Smart Script, puedes:
 1. Haga clic en la flecha desplegable <Image alt="Flecha_abajo.jpg" src="https://files.readme.io/a82023665721be681f985548857c4c329f626435780bb1bff7a3821b32b69078-42045468433041.jpg" width="28px" /> junto al nombre del Smart Script.  
    Aquí puedes ver todos tus scripts guardados.  
 
-   <Image alt="Script_steps.jpg" src="https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg" width="1732px" />
+   <Image align="center" alt="Script_steps.jpg" src="https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg" width="1732px" />
 2. Haz clic en el icono del lápiz junto al script que quieres editar.
    1. Sigue los pasos de [Cómo crear un Smart Script de OneLink](/docs/set-up-smart-script-to-convert-web-visitors#configuración-de-smart-script-de-onelink).
 3. Haz clic en el icono de la papelera para eliminar el Smart Script.
@@ -420,7 +420,7 @@ El Smart Script muestra un código QR en tu página web, en lugar de un botón c
 >
 > **Código QR saliente**:
 >
-> <Image alt="" src="https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png" width="48.07%" />
+> <Image align="center" alt="" src="https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png" width="48.07%" />
 
 </Accordion>
 
@@ -481,7 +481,7 @@ Sí. En tu página OneLink Smart Script, haz clic en + **Nuevo parámetro** para
 
 Por ejemplo, para agregar is\_retargeting como parámetro, se seleccionaría el parámetro Personalizado en el campo **asignar para** , y luego nuestro parámetro is\_retargeting en el campo **Parámetros de URL saliente**.
 
-![Smart_Script_Custom.jpg](https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg)
+<Image align="center" alt="Smart_Script_Custom.jpg" src="https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg" />
 
 <div id="adset-and-other-parameters-are-not-showing-in-the-dropdown" />
 

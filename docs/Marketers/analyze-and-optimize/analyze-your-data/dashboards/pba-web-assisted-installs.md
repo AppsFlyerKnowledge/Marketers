@@ -24,7 +24,7 @@ x-zendesk:
 
 **Caso de uso de instalaciones asistidas por web**
 
-![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
+<Image align="center" alt="web_to_app_image.png" src="https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png" />
 
 <div id="web-assisted-installs-analysis" />
 
@@ -38,7 +38,7 @@ Las instalaciones asistidas por web miden el impacto de los esfuerzos de marketi
 
 Las métricas principales muestran la cantidad total de instalaciones de la aplicación en relación con la cantidad de instalaciones asistidas por el sitio web divididas en instalaciones orgánicas y no orgánicas de la aplicación.
 
-[![WAIHeadline_en-us.png](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)
+<Image align="center" alt="WAIHeadline_en-us.png" src="https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png" />
 
 Considera los escenarios de casos de uso en la tabla a continuación para el análisis de instalaciones asistidas por web.
 
@@ -62,7 +62,7 @@ Considera los escenarios de casos de uso en la tabla a continuación para el an�
 
 <Accordion title="Instalaciones y reinstalaciones asistidas por el sitio web">
 
-![30day_us-en.png](https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png)
+<Image align="center" alt="30day_us-en.png" src="https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png" />
 
 Se considera que las instalaciones han sido influenciadas por un sitio web si se producen dentro de los 30 días siguientes a la visita de un sitio web. Las instalaciones y reinstalaciones, incluidas las instalaciones de retargeting (reatribuciones), pueden ser orgánicas o no orgánicas.
 

@@ -33,7 +33,7 @@ x-zendesk:
 
 En China, alrededor del 30% de los dispositivos móviles son iOS. En 2016, App Annie informó de que China dio un gran salto hasta convertirse en el principal generador de ingresos del mundo en la App Store de iOS, con unos $1.7 billion obtenidos.
 
-[![](https://files.readme.io/e4a88adb5bb0e49904d9fed5117a3b45736c572fd3c2fa602aef4f9b1b6d48f8-115015413586.png)](https://files.readme.io/e4a88adb5bb0e49904d9fed5117a3b45736c572fd3c2fa602aef4f9b1b6d48f8-115015413586.png)
+<Image align="center" alt="" src="https://files.readme.io/e4a88adb5bb0e49904d9fed5117a3b45736c572fd3c2fa602aef4f9b1b6d48f8-115015413586.png" />
 
 <div id="ios-app-store-is-still-the-apple-app-store" />
 

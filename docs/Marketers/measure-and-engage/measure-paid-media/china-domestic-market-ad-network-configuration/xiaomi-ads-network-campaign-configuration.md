@@ -58,7 +58,7 @@ Configuración general
 
 Activa esta opción si quieres atribuir instalaciones view-through de Xiaomi. El control deslizante de la ventana de lookback view-through está disponible en la pestaña del enlace de atribución (se describe a continuación).
 
-![](https://files.readme.io/c01732abe8d1bb3c68acdf84bab50cc46d4f4923b7220e3ca51c399074113c1e-50899866307217.png)
+<Image align="center" alt="" src="https://files.readme.io/c01732abe8d1bb3c68acdf84bab50cc46d4f4923b7220e3ca51c399074113c1e-50899866307217.png" />
 
 <div id="default-postbacks" />
 
@@ -66,7 +66,7 @@ Activa esta opción si quieres atribuir instalaciones view-through de Xiaomi. El
 
 AppsFlyer puede enviar postbacks automáticos a Xiaomi después de las instalaciones y re-engagements de los usuarios. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-![xiaomi-default-postbacks.png](https://files.readme.io/ae215140550604649e4345729a7106fa08c15713e003cec534199e3889122b5e-50899866309265.png)
+<Image align="center" alt="xiaomi-default-postbacks.png" src="https://files.readme.io/ae215140550604649e4345729a7106fa08c15713e003cec534199e3889122b5e-50899866309265.png" />
 
 </Accordion>
 
@@ -103,7 +103,7 @@ La integración de ingresos publicitarios no es compatible actualmente con Xiaom
 
 En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Xiaomi, tanto si el partner actúa como ad network, agencia o incluso ambos. Ten en cuenta que, incluso si la atribución estuviera deshabilitada para Xiaomi, la pestaña de permisos se encontraría activa y podrías otorgarle el control a Xiaomi.
 
-![ad_network_permissions.png](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
+<Image align="center" alt="ad_network_permissions.png" src="https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png" />
 
 Utiliza estos selectores para otorgarle permisos a la red de publicidad para que gestione su propia configuración para tu aplicación:
 

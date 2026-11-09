@@ -44,7 +44,7 @@ Para iniciar la configuración de la medición, sigue estos pasos:
    * Si esta es la primera medición que configuras en tu colaboración, haz clic en **Configurar medición.** Se muestra la página **Crear medición**.
    * Si ya tienes una medición configurada en tu colaboración, haz clic en el signo más del panel de selección de mediciones. Se muestra la página **Crear medición**.
 
-[![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
+<Image align="center" alt="start-measurement.png" src="https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png" />
 
 <div id="select-campaign-type-on-site-off-site-or-both" />
 

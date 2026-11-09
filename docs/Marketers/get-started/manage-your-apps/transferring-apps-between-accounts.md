@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **At a glance:** Transfiere aplicaciones entre cuentas de AppsFlyer siguiendo los pasos descritos en este artículo (para administradores de las cuentas del remitente y del receptor).
 
-![Animación del proceso de transferencia de apps que muestra los pasos del asistente de transferencia](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
+<Image align="center" alt="Animación del proceso de transferencia de apps que muestra los pasos del asistente de transferencia" src="https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif" />
 
 <div id="app-transfer-between-accounts" />
 
@@ -92,7 +92,7 @@ Para solicitar la transferencia de una o más aplicaciones a otra cuenta de Apps
    * Se te notificará (mediante un pop-up) si la solicitud requiere ser manejada por AppsFlyer.
    * Las apps aparecen en tu página **Mis aplicaciones** como pendientes de transferencia a `<receiver email>`. En esta etapa, todavía es posible eliminar la solicitud.
 
-     ![Página Mis aplicaciones del remitente que muestra una aplicación incluida como transferencia pendiente, con una opción para eliminar la solicitud](https://files.readme.io/5e4762461afd7953657b91074054bd79a63ad5bf8a06d084ee4c655ac60088aa-360010128998.jpg)
+     <Image align="center" alt="Página Mis aplicaciones del remitente que muestra una aplicación incluida como transferencia pendiente, con una opción para eliminar la solicitud" src="https://files.readme.io/5e4762461afd7953657b91074054bd79a63ad5bf8a06d084ee4c655ac60088aa-360010128998.jpg" />
 
 </Accordion>
 
@@ -102,7 +102,7 @@ Para solicitar la transferencia de una o más aplicaciones a otra cuenta de Apps
 2. Recibirás una notificación por correo electrónico de que el remitente ha iniciado la solicitud de transferencia.
 3. En la página **Mis aplicaciones**, haz clic en **Revisar solicitud**. Una solicitud puede incluir una o varias aplicaciones.
 
-   ![Página Mis aplicaciones del destinatario que muestra una solicitud de transferencia de aplicación pendiente con una opción para revisar la solicitud](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)
+   <Image align="center" alt="Página Mis aplicaciones del destinatario que muestra una solicitud de transferencia de aplicación pendiente con una opción para revisar la solicitud" src="https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg" />
 4. Revisa y aprueba o rechaza cada solicitud.
 5. Lee y, si son aceptables, firma los términos y condiciones.
 6. Tú y el remitente reciben una notificación por correo electrónico de que se ha aceptado la solicitud.

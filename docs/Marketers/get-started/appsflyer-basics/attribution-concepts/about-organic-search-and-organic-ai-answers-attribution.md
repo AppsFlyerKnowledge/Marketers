@@ -56,7 +56,7 @@ Atribuye las visitas al sitio web y las conversiones al motor de búsqueda o mot
 2. El SDK de atribución web o la integración S2S leen el referente web, el campo que muestra de dónde proviene la persona usuaria. AppsFlyer atribuye la visita web a la fuente de medios de SEO o AEO correspondiente.
 3. Si más tarde la persona usuaria completa una acción relevante, como registrarse o hacer una compra, AppsFlyer atribuye el evento a ese motor de búsqueda o motor de respuestas con IA.
 
-<Image alt="Google Chrome 2026-11-01 19.17.00.png" src="https://files.readme.io/aa441d266e07d4ad69277455e6f36b19b5127f1748cd94bb4b35bca6a912555b-52588329956753.png" width="2266px" />
+<Image align="center" alt="Google Chrome 2026-11-01 19.17.00.png" src="https://files.readme.io/aa441d266e07d4ad69277455e6f36b19b5127f1748cd94bb4b35bca6a912555b-52588329956753.png" width="2266px" />
 
 Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/about-traffic-source-resolution#paso-2-resolución-de-la-fuente-de-medios">resolución de la fuente de tráfico</Anchor>.
 
@@ -78,7 +78,7 @@ Atribuye las instalaciones de la app al motor de búsqueda o motor de respuestas
 3. Smart Script crea un enlace de atribución de AppsFlyer. Su fuente de medios (`pid`) se basa en el referente web, es decir, la página de la que procede la persona usuaria. Por ejemplo, una persona usuaria llega desde google.com y la visita no tiene indicadores de pago (`pid`, parámetros UTM, `gclid`, `gbraid` o `wbraid`). Smart Script puede definir entonces `pid=google_organic_seo`.
 4. El usuario instala la aplicación y la abre por primera vez. AppsFlyer puede atribuir la instalación a ese clic y asignar el mérito al motor de búsqueda o motor de respuestas de IA que envió al usuario a tu sitio web.
 
-<Image alt="Google Chrome 2026-11-01 19.18.06.png" src="https://files.readme.io/5032ea848a80a61233e20a1ff710f148e42f478dc9ecfaf2be45b9b5d990ea31-52588329958673.png" width="2250px" />
+<Image align="center" alt="Google Chrome 2026-11-01 19.18.06.png" src="https://files.readme.io/5032ea848a80a61233e20a1ff710f148e42f478dc9ecfaf2be45b9b5d990ea31-52588329958673.png" width="2250px" />
 
 Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-smart-script-to-convert-web-visitors#seo-referrer-mapping">configurar Smart Script para convertir a los visitantes web</Anchor>.
 
@@ -99,7 +99,7 @@ Atribuye aperturas de la aplicación de usuarios que ya tienen tu aplicación in
 2. El contenido de tu sitio web está asignado a tu app y el usuario tiene la app instalada. El enlace abre la app directamente en el contenido correspondiente.
 3. La aplicación se abre mediante el enlace profundo. El referente web, la página de la que procede el usuario, se envía a AppsFlyer. AppsFlyer lo usa para atribuir la apertura de la aplicación al motor de búsqueda o motor de respuestas de IA correspondiente.
 
-<Image alt="Google Chrome 2026-11-01 19.18.53.png" src="https://files.readme.io/2e78034afb5f276391e6ca9971bc8cf018c234b22c928a19b595cdc69beb0d5d-52588346452753.png" width="2227px" />
+<Image align="center" alt="Google Chrome 2026-11-01 19.18.53.png" src="https://files.readme.io/2e78034afb5f276391e6ca9971bc8cf018c234b22c928a19b595cdc69beb0d5d-52588346452753.png" width="2227px" />
 
 Saber más sobre <Anchor target="_blank" href="/marketers/es/docs/set-up-organic-search-seo-and-organic-ai-answers-aeo-re-engagement-attribution">cómo configurar la atribución de re-engagement de la búsqueda orgánica (SEO) y de las respuestas orgánicas de IA (AEO)</Anchor>.
 

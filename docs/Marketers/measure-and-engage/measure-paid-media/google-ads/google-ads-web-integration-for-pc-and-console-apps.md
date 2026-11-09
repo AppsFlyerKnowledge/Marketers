@@ -198,16 +198,16 @@ Las instrucciones para configurar campañas para redireccionar a los usuarios a 
 1. Configura una landing page multiplataforma como se describe en la [sección de enlaces de atribución](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab).
 2. Inicia sesión en Google Ads y crea una nueva campaña.
 3. Selecciona un objetivo de campaña.  
-   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png" />
    * Todos los objetivos son aplicables, excepto "Promoción de aplicaciones" (que solo se puede utilizar para campañas de aplicaciones móviles).
    * Recomendamos establecer el objetivo de la campaña "Ventas" para la optimización en función de eventos in-app específicos.
 4. Selecciona los objetivos de conversión.  
-   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)
+   <Image align="center" alt="" src="https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png" />
    * De forma predeterminada, verás los objetivos de campaña predefinidos a nivel de cuenta. Puedes conservarlos o eliminar los que no sean relevantes para tu campaña.
    * Si no ves el objetivo que deseas,[agrega la acción de conversión y el objetivo de conversión](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals).
    * También puedes editar tus objetivos predefinidos en la página de conversiones.
 5. Selecciona el tipo de campaña.  
-   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)
+   <Image align="center" alt="" src="https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png" />
    * Todos los tipos de campaña son aplicables, excepto "Compras", que requiere un catálogo de productos y está limitada a dominios verificados.
 6. Ingresa la URL de la landing page multiplataforma como URL final de Google.
 
@@ -222,16 +222,16 @@ Las instrucciones para configurar campañas para redireccionar a los usuarios a 
 1. Configura un enlace de atribución directa como se describe en la sección [Enlace de atribución](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab).
 2. Inicia sesión en Google Ads y crea una nueva campaña.
 3. Selecciona un objetivo de campaña.  
-   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png" />
    * Todos los objetivos son aplicables, excepto "Promoción de aplicaciones" (que solo se puede utilizar para campañas de aplicaciones móviles).
    * Recomendamos establecer el objetivo de la campaña "Ventas" para la optimización en función de eventos in-app específicos.
 4. Selecciona los objetivos de conversión.  
-   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)
+   <Image align="center" alt="" src="https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png" />
    * De forma predeterminada, verás los objetivos de campaña predefinidos a nivel de cuenta. Puedes conservarlos o eliminar los que no sean relevantes para tu campaña.
    * Si no ves el objetivo que deseas,[agrega la acción de conversión y el objetivo de conversión](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals).
    * También puedes editar tus objetivos predefinidos en la página de conversiones.
 5. Selecciona el tipo de campaña.  
-   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)
+   <Image align="center" alt="" src="https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png" />
    * Todos los tipos de campaña son aplicables, excepto "Compras", que requiere un catálogo de productos y está limitada a dominios verificados.
 6. Ingresa el enlace que se utilizará como URL final de Google.
    * Esta debe ser la ubicación web final a la que deseas redireccionar a tus usuarios. Puede ser cualquier URL web, incluyendo una landing page web o una URL de tienda. Por ejemplo: `https://store.steampowered.com/app/{appid}/{myapp}/`.

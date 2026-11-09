@@ -154,7 +154,7 @@ Antes de configurar la integración con Batch, asegúrate de obtener tu **Batch 
 
 Una vez que obtengas las dos claves, introduce cada una en el campo correspondiente. En **General Settings**, introduce tu **Batch Rest API Key** en el campo **BATCH\_REST\_API\_KEY** y tu **Batch API Key** en el campo **BATCH\_API\_KEY**.
 
-![batch-general-settings-keys.png](https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png)
+<Image align="center" alt="batch-general-settings-keys.png" src="https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png" />
 
 <div id="default-postbacks" />
 
@@ -162,7 +162,7 @@ Una vez que obtengas las dos claves, introduce cada una en el campo correspondie
 
 En **Default Postbacks**, en la lista desplegable **Sending Option**, selecciona **Events attributed to any partner or organic**.
 
-![batch-default-postbacks.png](https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png)
+<Image align="center" alt="batch-default-postbacks.png" src="https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png" />
 
 Haz clic en **Guardar** en la esquina inferior derecha de la pantalla.
 
@@ -208,6 +208,6 @@ Una vez que AppsFlyer empiece a enviar postbacks de instalación a Batch, podrá
 
 Puedes ver los datos en la pestaña **Userbase** de tu dashboard de Batch.
 
-![Userbase.png](https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png)
+<Image align="center" alt="Userbase.png" src="https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png" />
 
 <div data-zendesk-anchors="integrating-batch-and-appsflyer=integraci%C3%B3n-de-batch-con-appsflyer h_01H9FK389GXG3CDFPNM5ASKJ3N=integraci%C3%B3n-de-batch-con-appsflyer setting-customer-user-id=configuraci%C3%B3n-del-id-de-usuario-de-cliente h_01H9FK389MPKFN8J74BX1E3MGG=configuraci%C3%B3n-del-id-de-usuario-de-cliente h_01H9FK389MK1HM1460VAT6X82Y=batch h_01H9FK389MPGNEX8B3923KYDB3=appsflyer batch::28a946d0=batch h_01H9FK389MC4K8PNVPAGC00TBW=batch appsflyer::3f0aa95b=appsflyer h_01H9FK389M7V83A66M6T9EV8QT=appsflyer batch::24c5c955=batch h_01H9FK389MRV4ARHMHXPAXVXQ9=batch appsflyer::deb78dd1=appsflyer h_01H9FK389MT6PD8FW21SYHBPCV=appsflyer setting-up-batch-in-appsflyer-dashboard=configuraci%C3%B3n-de-batch h_01H9FK389MCSR5YDSF4RKFDSDZ=configuraci%C3%B3n-de-batch h_01H9FK389MG9459909JZBDN77E=integration-tab activate-partner=activaci%C3%B3n-de-socios h_01H9FK389M19AVM63DEX5JTTQK=activaci%C3%B3n-de-socios general-settings=configuraci%C3%B3n-general h_01H9FK389MN82EKHVGMM9Z6H58=configuraci%C3%B3n-general default-postbacks=postbacks-predeterminados h_01H9FK389MXA3DS403VXRRK5NX=postbacks-predeterminados h_01H9FK389MERP4XBF19T28E6DN=attribution-link-tab h_01H9FK389M3E05PVMNA83TBFJZ=cost-tab h_01H9FK389M06FEQ4RZJ04HTH33=ad-revenue-tab h_01H9FK389MB31S8BR8WX178GHX=permissions-tab viewing-appsflyer-data-in-the-batch-dashboard=ver-los-datos-de-appsflyer-en-el-dashboard-de-batch h_01H9FK389M8BNRFECN0WG23BCD=ver-los-datos-de-appsflyer-en-el-dashboard-de-batch" />

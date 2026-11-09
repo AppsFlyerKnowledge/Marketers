@@ -141,7 +141,7 @@ Por defecto, Meta Ads no permite la distribución de datos a nivel de usuario. S
 Sí. Los reportes de rendimiento tienen estructuras de columnas estáticas en cualquier combinación de fuentes de medios seleccionadas, que presentan información detallada a nivel de campaña.  
 No obstante, cuando descargas reportes de rendimiento SOLO para Meta Ads, AppsFlyer les agrega cuatro columnas que presentan información detallada a nivel de anuncio individual. Las columnas agregadas son Nombre del adset, ID del adset, Nombre de grupo de anuncios (anuncio único) e ID de grupo de anuncios.
 
-[![](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)
+<Image align="center" alt="" src="https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png" />
 
 </Accordion>
 
@@ -159,7 +159,7 @@ Para conocer más detalles sobre cómo configurar la atribución con los partner
 
 <Accordion title="¿Qué debo hacer cuando recibo la siguiente advertencia?">
 
-[![](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)
+<Image align="center" alt="" src="https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png" />
 
 * Verifica el ID de aplicación de Facebook y verifica si tienes alguna restricción de geolocalización o edad en tu ID de aplicación de Facebook.
 * Si la atribución ya está funcionando, esto quiere decir que la aplicación ya está disponible públicamente en el portal para desarrolladores de Meta y que puedes ignorar este mensaje de error con tranquilidad.
@@ -297,7 +297,7 @@ Si una campaña de Meta Ads se involucra con múltiples plataformas (Android, iO
 
 Un anunciante ejecuta campañas con Meta Ads. En AppsFlyer, el anunciante ve lo siguiente:
 
-![mceclip2.png](https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png" />
 
 Meta Ads proporciona a AppsFlyer la información de costos. AppsFlyer calcula la cantidad de **instalaciones** mediante las reglas de atribución de AppsFlyer. Como resultado, el eCPI que calcula Meta Ads y el que calcula AppsFlyer generalmente difieren.
 
@@ -434,7 +434,7 @@ Si deseas cambiar a una nueva cuenta de anuncios, pero tu costo de Meta Ads ya e
 1. En Meta Ads, ve a **Configuración** > **Integración empresarial**.
 2. En la pestaña **Activar**, elimina la integración con AppsFlyer.  
 
-   [![](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)
+   <Image align="center" alt="" src="https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png" />
 3. Ve al dashboard de AppsFlyer y conecta el costo con la nueva cuenta de anuncios.
 
 </Accordion>
@@ -511,7 +511,7 @@ Además, las agencias no pueden modificar los postbacks de eventos in-app enviad
 
 La siguiente imagen muestra todos los parámetros que deberá configurar el anunciante para que la agencia pueda administrar sus campañas de Meta Ads:
 
-[![advertiser-vs-agency-facebook-int-new.png](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)
+<Image align="center" alt="advertiser-vs-agency-facebook-int-new.png" src="https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png" />
 
 </Accordion>
 
@@ -573,7 +573,7 @@ Con Meta Ads se pueden ver datos desglosados no solo por campañas, conjuntos de
 
 Utiliza estos datos para comparar la calidad de los usuarios que obtienes de los diferentes canales.
 
-![Facebook_channels.png](https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png)
+<Image align="center" alt="Facebook_channels.png" src="https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png" />
 
 </Accordion>
 

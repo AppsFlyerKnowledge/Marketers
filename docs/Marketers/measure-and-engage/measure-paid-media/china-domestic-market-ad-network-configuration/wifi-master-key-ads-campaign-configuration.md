@@ -58,13 +58,13 @@ Para obtener más detalles sobre la activación de partners, haz clic <Anchor ta
 
 WiFi Master Key Ads se conecta con AppsFlyer mediante un clientid y un secretkey únicos. Si aún no tienes el clientid y el secretkey, debes obtenerlos de WiFi Master Key Ads para continuar con la integración.
 
-<Image alt="mceclip2.png" src="https://files.readme.io/8b486a98e25837a0d64e0a27e9b3aa7b66b426e8bad3fbae07b7436b91351db5-50900288875153.png" width="406px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/8b486a98e25837a0d64e0a27e9b3aa7b66b426e8bad3fbae07b7436b91351db5-50900288875153.png" width="406px" />
 
 <div id="default-postbacks" />
 
 ### Postbacks predeterminados
 
-<Image alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="509px" />
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" width="509px" />
 
 <div id="in-app-events-settings" />
 
@@ -76,7 +76,7 @@ En esta sección, puedes asignar tus eventos de AppsFlyer con WiFi Master Key Ad
 
 WiFi Master Key Ads se conecta con AppsFlyer mediante un clientid y un secretkey únicos. Si aún no tienes el clientid y el secretkey, debes obtenerlos de WiFi Master Key Ads para continuar con la integración.
 
-![mceclip3.png](https://files.readme.io/035ce248d6876cf31870abc49e949fc887f6bef08efd6e132e43b8c74e3aaf45-50900269524881.png)
+<Image align="center" alt="mceclip3.png" src="https://files.readme.io/035ce248d6876cf31870abc49e949fc887f6bef08efd6e132e43b8c74e3aaf45-50900269524881.png" />
 
 1. Configura aquí el clientid y el secretkey de WiFi Master Key Ads
 2. Activa los postbacks de eventos in-app.
@@ -118,7 +118,7 @@ Agregar parámetros al enlace de atribución en esta sección te permite realiza
 * **Parámetros de suscriptor**: utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el Reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
   **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
-![attribution-link-parameters.png](https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png)
+<Image align="center" alt="attribution-link-parameters.png" src="https://files.readme.io/9cc0845f4492c981fd1db843cb82caf48aecc446fac7800829ee43f858f67e64-360002880417.png" />
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
 
@@ -132,7 +132,7 @@ Este control deslizante te permite establecer el **tiempo máximo desde el clic 
 
 Más detalles sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lookback-windows">ventana de lookback de clic aquí</Anchor>.
 
-![netease-click-through.png](https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png)
+<Image align="center" alt="netease-click-through.png" src="https://files.readme.io/338f41569cafb8ebaf45075bf97711af4eb2fb15d25efd036d9873544729380d-50899846629521.png" />
 
 <div id="click-attribution-link" />
 
@@ -164,7 +164,7 @@ Los ingresos por publicidad no se admiten en la integración con este partner.
 
 En esta pestaña, puedes seleccionar los permisos que quieres otorgar a WiFi Master Key Ads, tanto si el partner actúa como ad network, agencia o incluso ambos. Ten en cuenta que, aunque la atribución esté deshabilitada para WiFi Master Key Ads, la pestaña de permisos está activa y puedes conceder el control a WiFi Master Key Ads.
 
-![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png" />
 
 <div id="ad-network-permissions" />
 

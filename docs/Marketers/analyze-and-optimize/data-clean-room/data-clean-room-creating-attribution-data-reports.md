@@ -116,7 +116,7 @@ Si el reporte usa más de una fuente personalizada, solo es necesario asignar un
 
 > 📄 **Ejemplo**
 >
-> ![dcr_mapping_identifiers_attribution_data.png](https://files.readme.io/18d1ddd8305f790dc621f871695b8cfb30f5e5a5d758c219e76ec7822ec18f2f-9969690360849.png)
+> <Image align="center" alt="dcr_mapping_identifiers_attribution_data.png" src="https://files.readme.io/18d1ddd8305f790dc621f871695b8cfb30f5e5a5d758c219e76ec7822ec18f2f-9969690360849.png" />
 >
 > En el escenario que se muestra arriba:
 >

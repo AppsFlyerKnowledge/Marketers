@@ -69,7 +69,7 @@ Para obtener más detalles sobre la activación de partners, haz clic <Anchor ta
 
 Liquid se conecta con AppsFlyer a través de un token API único. Si aún no lo tienes, debes obtenerlo de Liquid para continuar con la integración o seguir las instrucciones que se indican a continuación.
 
-[![](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)](https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png)
+<Image align="center" alt="" src="https://files.readme.io/1479b1569af7d8fb95c9efd7beddf169369d92790721ad9f15f3fd1615973e0d-360002201405.png" />
 
 <div id="obtaining-the-api-token" />
 
@@ -87,7 +87,7 @@ Puedes encontrar el token API iniciando sesión en el dashboard de Liquid.
 
 AppsFlyer puede enviar postbacks automáticos a las instalaciones de usuarios de Liquid. Usa esta sección para definir el envío de estos postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Selecciona **Events attributed to any partner or organic** para enviar postbacks a Liquid de cualquier usuario que descargue la app, o selecciona **Off**.
 

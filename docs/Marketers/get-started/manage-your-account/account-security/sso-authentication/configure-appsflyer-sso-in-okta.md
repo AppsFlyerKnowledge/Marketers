@@ -35,11 +35,11 @@ El primer paso para configurar el proceso de SSO de AppsFlyer se realiza en la p
 **Requisito previo:** Una cuenta de Okta con privilegios de administrador.
 
 1. En la consola de administración, ve a **Applications** > **Applications**.  
-   <Image alt="Okta_side_menu___applications.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="241px" />
+   <Image align="center" alt="Okta_side_menu___applications.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="241px" />
 2. Haz clic en **Create App Integration**.
 3. En el cuadro de diálogo **Create a new app integration**, selecciona **SAML 2.0** y haz clic en **Next**.
 4. En **(1) General Settings**, en el campo **App name**, introduce el nombre que quieres que se muestre en la lista de apps del complemento de Okta.  
-   <Image alt="Okta_app_name_and_icon__1_.png" src="https://files.readme.io/6998e7737b0aa5c4d70ad97ab41e17e471ddaf060e78c44fa2de41be1df17574-13572380565521.png" width="639px" />
+   <Image align="center" alt="Okta_app_name_and_icon__1_.png" src="https://files.readme.io/6998e7737b0aa5c4d70ad97ab41e17e471ddaf060e78c44fa2de41be1df17574-13572380565521.png" width="639px" />
 5. [Opcional] **App logo**: añade un logotipo para que aparezca junto al nombre de la aplicación.
 6. Después de la implementación, regresa al **Inicio de sesión único (SSO)** , haz clic en **Confirmar implementación del certificado**y confirma que ha actualizado el último certificado de AppsFlyer.
 7. En **(2) Configure SAML Integration**, define la integración según los siguientes campos: ![okta-create-saml-integration.png](https://files.readme.io/6c276dd54afd30e828b989fc6796de5eca46282ade015e7a34e0bd1cc95d7fb8-16870970396177.png)
@@ -50,7 +50,7 @@ El primer paso para configurar el proceso de SSO de AppsFlyer se realiza en la p
      **Nota:** El correo electrónico del usuario de Okta debe ser el mismo que el correo electrónico de la cuenta de AppsFlyer del usuario
 8. Haz clic en **Show Advanced Settings** y define la integración según cada uno de los campos que se muestran en la imagen siguiente:
 
-   <Image alt="Okta_advanecd_settings__1_.png" src="https://files.readme.io/9a3461f700cc50a54237578a304206ed7693e30cdd516398089954321cd44af4-13572576788241.png" width="640px" />
+   <Image align="center" alt="Okta_advanecd_settings__1_.png" src="https://files.readme.io/9a3461f700cc50a54237578a304206ed7693e30cdd516398089954321cd44af4-13572576788241.png" width="640px" />
 
    * **Assertion Encryption:** Selecciona **Encrypted** o **Unencrypted**.   
      **Nota:** Como las aserciones las controla tu IdP, se recomienda seleccionar **Encrypted**.
@@ -69,13 +69,13 @@ Ahora que se ha creado la aplicación SAML de Okta, vamos a añadir usuarios.
 
 1. En la consola de administración, selecciona **Directory** > **People**.
 
-   <Image alt="Okta___directory___people.png" src="https://files.readme.io/d9c5da8787fdb81bf97bc0753b2f7794cdc59060e5026348428545064d138d18-13572579297169.png" width="226px" />
+   <Image align="center" alt="Okta___directory___people.png" src="https://files.readme.io/d9c5da8787fdb81bf97bc0753b2f7794cdc59060e5026348428545064d138d18-13572579297169.png" width="226px" />
 2. Haz clic en **Agregar persona**.
 
-   <Image alt="Okta___People___Add_person.png" src="https://files.readme.io/6bb8b854cf000259970d63b9eacb28bf6d4079d648939814aaa0e456a96c9bbe-13572600647697.png" width="524px" />
+   <Image align="center" alt="Okta___People___Add_person.png" src="https://files.readme.io/6bb8b854cf000259970d63b9eacb28bf6d4079d648939814aaa0e456a96c9bbe-13572600647697.png" width="524px" />
 3. En el cuadro de diálogo **Agregar persona**:
 
-   <Image alt="Okta_Add_person__1_.png" src="https://files.readme.io/d6d7e198fab965872b5a01302a00bdbd0bfb5d561af372fc4390c9882a22a42c-13572617052689.png" width="620px" />
+   <Image align="center" alt="Okta_Add_person__1_.png" src="https://files.readme.io/d6d7e198fab965872b5a01302a00bdbd0bfb5d561af372fc4390c9882a22a42c-13572617052689.png" width="620px" />
 
    * En **Tipo de usuario**, selecciona **Usuario**.
    * Introduce todos los campos obligatorios: **Nombre**, **Apellidos**, **Nombre de usuario** (debe ser un correo electrónico) y **Correo electrónico principal**.
@@ -90,9 +90,9 @@ Ahora que se ha creado la aplicación SAML de Okta, vamos a añadir usuarios.
 
 1. En la consola de administración, vuelve a **Applications** > **Applications**.
 2. En **Browse App Catalog**, selecciona la aplicación que acabas de crear.  
-   <Image alt="Okta_side_menu___applications.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="233px" />
+   <Image align="center" alt="Okta_side_menu___applications.png" src="https://files.readme.io/c218e729a7c00158e3804e7c7d884ec5b098e56628037ced54ad3c311470e038-13572360791825.png" width="233px" />
 3. En la aplicación que has seleccionado, en la pestaña **Assignments**, haz clic en **Assign** > **Assign to People**.  
-   ![Okta_sso_assign_to_people.png](https://files.readme.io/50930693a4a58ad8162b2ac81e476081c9b0288da4dab5b92bb41fece4aff586-14942267242769.png)
+   <Image align="center" alt="Okta_sso_assign_to_people.png" src="https://files.readme.io/50930693a4a58ad8162b2ac81e476081c9b0288da4dab5b92bb41fece4aff586-14942267242769.png" />
 4. Busca el usuario que quieras asignar a tu aplicación y haz clic en **Assign**.
 5. Repite este paso con todos los usuarios.
 6. Haz clic en **Done** cuando termines de añadir todos los usuarios. Los nuevos usuarios ahora aparecen en **People**.

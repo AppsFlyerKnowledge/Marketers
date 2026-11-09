@@ -29,7 +29,7 @@ x-zendesk:
 
 La integración de AppsFlyer con Outbrain admite la atribución por clic.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/outbrain.png?v=1)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/outbrain.png?v=1" />
 
 **Requisito previo:** Antes de configurar la integración, asegúrate de [ponerte en contacto con el partner](#) y abrir una cuenta con ellos. Antes de configurar una integración, asegúrate de <Anchor target="_blank" href="/marketers/es/docs/partner-integrations#contact-details">contactar al partner</Anchor> y abrir una cuenta con este.
 

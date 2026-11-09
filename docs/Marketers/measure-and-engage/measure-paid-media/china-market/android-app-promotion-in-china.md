@@ -54,7 +54,7 @@ Los usuarios de dispositivos Android en China descargan aplicaciones desde disti
 
 Por ejemplo, si quieres promocionar tu aplicación Android a través de Tencent Social Ads, Tencent Tui Ads y Wechat Ads, sube la aplicación Android a MyApp (la tienda de aplicaciones Android de Tencent), que al mismo tiempo te aporta instalaciones orgánicas. Las redes publicitarias de la serie de Baidu, 360 Ads, Xiaomi Ads y OPPO Ads funcionan de forma similar.
 
-[![](https://files.readme.io/46e1ad701d488a9c279afedca31ad42522056a328557365f06d7e29eefe60ae2-115015245283.png)](https://files.readme.io/46e1ad701d488a9c279afedca31ad42522056a328557365f06d7e29eefe60ae2-115015245283.png)
+<Image align="center" alt="" src="https://files.readme.io/46e1ad701d488a9c279afedca31ad42522056a328557365f06d7e29eefe60ae2-115015245283.png" />
 
 Mientras tanto, muchas instalaciones de Android se generan a partir de enlaces de descarga de APK en páginas web móviles o en espacios publicitarios in-app.
 

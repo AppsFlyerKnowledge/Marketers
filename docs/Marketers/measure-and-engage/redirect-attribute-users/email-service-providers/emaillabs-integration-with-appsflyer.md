@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **At a glance:** EmailLabs, una plataforma de entrega y análisis de correo electrónico, integra AppsFlyer OneLink dentro de los correos electrónicos. Cuando los destinatarios de correo electrónico hacen clic en el enlace, se les dirige a tu aplicación mediante deep linking.
 
-![emaillabs-af-logo.png](https://files.readme.io/467ee1fbcea8a36dff40172b1dbc97780a7e6cafd958ecb5b520a612c3308231-49839289267857.png)
+<Image align="center" alt="emaillabs-af-logo.png" src="https://files.readme.io/467ee1fbcea8a36dff40172b1dbc97780a7e6cafd958ecb5b520a612c3308231-49839289267857.png" />
 
 <div id="introduction" />
 
@@ -60,12 +60,12 @@ Sin embargo, con los ESP que admiten enlaces universales además de su dominio d
 
 1. Configura tu dominio según <Anchor target="_blank" href="https://docs.emaillabs.io/get_started/getting-started/">este artículo</Anchor>
 2. Configura tu dominio de registro de clics según <Anchor target="_blank" href="http://docs.emaillabs.io/user-panel/smtp-applications/whitelabel-2/">este artículo</Anchor> y la captura de pantalla que aparece a continuación.  
-   ![whitelabel-section-2.png](https://files.readme.io/a5b992868a0abd94b2f24097ead760a98e6529e4f83ecfaf713d681800de4631-49839273475217.png)
+   <Image align="center" alt="whitelabel-section-2.png" src="https://files.readme.io/a5b992868a0abd94b2f24097ead760a98e6529e4f83ecfaf713d681800de4631-49839273475217.png" />
 3. Activa el tracking de enlaces según <Anchor target="_blank" href="http://docs.emaillabs.io/user-panel/smtp-applications/link-tracking/">este artículo</Anchor> y la captura de pantalla que aparece a continuación.  
-   ![link-tracking-section-3.png](https://files.readme.io/3c1d0f13d3fcc2b49754cf4beb653592b9fffc27ad27775cf56986f78f9ea53b-49839289275153.png)
+   <Image align="center" alt="link-tracking-section-3.png" src="https://files.readme.io/3c1d0f13d3fcc2b49754cf4beb653592b9fffc27ad27775cf56986f78f9ea53b-49839289275153.png" />
 4. Ponte en contacto con el soporte de EmailLabs en [bok@emaillabs.pl](mailto:bok@emaillabs.pl) y solicita que habiliten SSL.
 5. En EmailLabs, ve a **Panel** > **SMTP** **Accounts** > **Settings** > **Deep** **Links**, y marca la casilla Activated. Para las aplicaciones de iOS, introduce el <Anchor target="_blank" href="https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/AppID.html">ID de aplicación de Apple</Anchor> en el campo correspondiente.  
-   ![deeplinking-section-5.png](https://files.readme.io/15a5b45a58c1a130de6bfe2c3e9e3b379537b4fc549c1c3fcce41ef54b8653e9-49839289277073.png)
+   <Image align="center" alt="deeplinking-section-5.png" src="https://files.readme.io/15a5b45a58c1a130de6bfe2c3e9e3b379537b4fc549c1c3fcce41ef54b8653e9-49839289277073.png" />
 
 <div id="step-2-configuring-your-appsflyer-sdk" />
 
@@ -80,7 +80,7 @@ Sin embargo, con los ESP que admiten enlaces universales además de su dominio d
 Después de configurar tu dominio de registro de clics para que admita enlaces universales, como se ha descrito anteriormente, debes configurar tu aplicación para hacer deep linking y resolver ese enlace universal.
 
 1. Asocia el dominio de registro de clics en Xcode:  
-   ![configure-xcode-deeplinking-domain.png](https://files.readme.io/90d0dcc0eba2d7d081ab7d5d4ea697e9257b9107af463fa8c973169f8a2651db-49839256220433.png)
+   <Image align="center" alt="configure-xcode-deeplinking-domain.png" src="https://files.readme.io/90d0dcc0eba2d7d081ab7d5d4ea697e9257b9107af463fa8c973169f8a2651db-49839256220433.png" />
 2. Proporciona el dominio de registro de clics a la API del SDK `setResolveDeepLinkURLs`. Esta API debe llamarse antes de la inicialización del SDK. Para obtener más información, consulta la documentación del SDK <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">aquí</Anchor>.  
 
    ```objectivec

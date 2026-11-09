@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **En resumen:** Recupera las aplicaciones activas y pendientes asociadas a tu cuenta de AppsFlyer.
 
-![mceclip0.png](https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/34b4b3d56ca5d7419830ba26701483f64ebb0a908e1e8e7ed65779bb89a14c67-24507752775313.png" />
 
 Si eres una ad network, usa la API de <Anchor target="_blank" href="/partners/es/docs/app-list-api-for-ad-networks">lista de apps para ad networks</Anchor>.
 

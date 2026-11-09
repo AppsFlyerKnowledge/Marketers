@@ -74,7 +74,7 @@ Comprender estas diferencias y las opciones disponibles es clave para tomar deci
 >
 > Puedes cambiar (<Anchor target="_blank" href="/marketers/es/docs/user-management">solo administrador</Anchor>) entre los modos **Implemented** y **Tagged** en cualquier momento para que coincidan con los objetivos empresariales en evolución. <Anchor target="_blank" href="/marketers/es/docs/beta-fraud-protection-studio#key-concepts">Saber más aquí.</Anchor>
 
-<Image alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
 
 Consejo: En esta etapa, cuando tu equipo se familiarice con Protect360, te recomendamos encarecidamente que visites la tarjeta de <Anchor target="_blank" href="/marketers/es/docs/beta-fraud-protection-studio#app-detection-evaluation">**evaluación de detección de aplicaciones**</Anchor> en Fraud Protection Studio para probar y comprender esta configuración a nivel de aplicación.
 
@@ -84,7 +84,7 @@ Consejo: En esta etapa, cuando tu equipo se familiarice con Protect360, te recom
 
 Puedes exportar los datos de Protect360 de tres maneras: <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports#sobre-los-informes-de-datos-sin-procesar-de-protect360">Reporte de raw data</Anchor>, <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports#pull-api">Pull API</Anchor> o <Anchor target="_blank" href="/marketers/es/docs/protect360-raw-data-reports#data-locker">Data Locker</Anchor>. Sea cual sea la forma que elijas, es importante configurar tus conexiones de datos correctamente para garantizar la exactitud de los reportes de datos sobre fraude y un análisis eficaz.
 
-<Image alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
 
 <div id="important" />
 
@@ -124,7 +124,7 @@ Para mostrar las instalaciones secuestradas correctamente en tu BI:
 > * Eventos in-app Tagged
 > * Eventos in-app posteriores a la atribución
 
-![](https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png)
+<Image align="center" alt="" src="https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png" />
 
 <div id="pull-api" />
 
@@ -176,7 +176,7 @@ Contacta con tu Customer Success Manager o Account Manager para obtener más inf
 
 El <Anchor target="_blank" href="/marketers/es/docs/protect360-dashboard">dashboard</Anchor> de Protect360 proporciona una descripción general visual de tus datos de fraude, lo que te permite investigar más a fondo y comprender mejor la detección del fraude y su impacto en tus actividades.
 
-<Image alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
 
 </Accordion>
 

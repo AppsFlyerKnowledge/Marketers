@@ -431,14 +431,14 @@ Asegúrate de que los eventos en los postbacks que envías a GA4 estén registra
   Por ejemplo, los reportes de eventos se pueden encontrar en las colecciones [Ciclo de vida](https://support.google.com/analytics/answer/12924233?hl=en) o [Reportes de juegos](https://support.google.com/analytics/answer/12925133?hl=en&sjid=5454549956257318969-NC), en **engagement** > **Eventos**.   
   Para más información sobre el reporte de eventos, consulta [la documentación de Google](https://support.google.com/analytics/answer/12926615?sjid=5454549956257318969-NC).
 
-  ![Reporte de eventos de GA4](https://files.readme.io/01625878b13a46b8a87c34bf465c0ef6494a0f528960d62ce5535b69b29e7d0a-25707728713745.png)
+  <Image align="center" alt="Reporte de eventos de GA4" src="https://files.readme.io/01625878b13a46b8a87c34bf465c0ef6494a0f528960d62ce5535b69b29e7d0a-25707728713745.png" />
 * **El reporte de adquisición de tráfico** te ayuda a entender de dónde provienen los visitantes de tu sitio web y aplicación.
 
   En la [colección Ciclo de vida](https://support.google.com/analytics/answer/12924233?hl=en), ve a **Adquisición** > **Adquisición de tráfico**).
 
   Para más información sobre el reporte de adquisición de tráfico, consulta [la documentación de Google](https://support.google.com/analytics/answer/12923437?hl=en&sjid=5454549956257318969-NC#zippy=%2Chow-do-i-filter-out-traffic-sources-from-the-report).
 
-  ![Reporte de adquisición de tráfico de GA4](https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png)
+  <Image align="center" alt="Reporte de adquisición de tráfico de GA4" src="https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png" />
 
 </Accordion>
 

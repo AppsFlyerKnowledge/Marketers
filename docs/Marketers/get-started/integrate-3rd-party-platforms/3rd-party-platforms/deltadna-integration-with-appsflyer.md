@@ -76,11 +76,11 @@ Sigue las instrucciones a continuación para configurar la integración con delt
 
 1. Crea un evento AppsFlyerAttribution en deltaDNA con la herramienta Event Management
 
-![Delta DNA 1](https://files.readme.io/e5224bbaa730d997699e1a930425946f69a2b86ef94e241b4ba6fdb9ad978c66-206781083.png)
+<Image align="center" alt="Delta DNA 1" src="https://files.readme.io/e5224bbaa730d997699e1a930425946f69a2b86ef94e241b4ba6fdb9ad978c66-206781083.png" />
 
 2. Obtén la clave del entorno Live en la página Game Details del Dashboard de deltaDNA:
 
-![Delta DNA 2](https://files.readme.io/6b28184264dfd695000e8bfae9538862a3e17ea6f9d355af0996ccf107b4e6c2-206768886.png)
+<Image align="center" alt="Delta DNA 2" src="https://files.readme.io/6b28184264dfd695000e8bfae9538862a3e17ea6f9d355af0996ccf107b4e6c2-206768886.png" />
 
 **En AppsFlyer, activa o edita la integración:**
 
@@ -121,17 +121,17 @@ Los datos de atribución recibidos de AppsFlyer se pueden usar para:
 
 El filtro Canal de adquisición, situado en la parte superior de todos los gráficos de Measure, las matrices de retención y los predictores de LTV y retención, usa la Fuente de medios de AppsFlyer y se basa en ella.
 
-![Delta DNA 3](https://files.readme.io/21cf4f1c8641351a1ecc200d8b95d7558b92f4daf38f49975601d996a0fcfb86-206781123.png)
+<Image align="center" alt="Delta DNA 3" src="https://files.readme.io/21cf4f1c8641351a1ecc200d8b95d7558b92f4daf38f49975601d996a0fcfb86-206781123.png" />
 
 Hay 8 parámetros de atribución que AppsFlyer puede enviar a deltaDNA para que los uses en tus análisis, reportes y consultas. Todos llevan el prefijo **afAttr.**   
 *Por ejemplo. afAttrCampaign, afAttrAgency, afAttrMediaSource para la campaña, la agencia y la fuente de medios, respectivamente.*
 
 Todos los parámetros de atribución se enumeran en **appsFlyerAttribution**, que se añade a tu pantalla de gestión de eventos.
 
-![Delta DNA 4](https://files.readme.io/e0af8513fdda3268ab799a6ef08396c03970bd0850bde851f07649e459a8b20e-206781143.png)
+<Image align="center" alt="Delta DNA 4" src="https://files.readme.io/e0af8513fdda3268ab799a6ef08396c03970bd0850bde851f07649e459a8b20e-206781143.png" />
 
 Úsalos para crear consultas de análisis y reportes personalizados en cualquiera de las herramientas Analyze de deltaDNA.
 
-![Delta DNA 5](https://files.readme.io/f4b9d0320feb3990182a0c9a835a18565ba959fabf7269c45a4651506666f941-206768946.png)
+<Image align="center" alt="Delta DNA 5" src="https://files.readme.io/f4b9d0320feb3990182a0c9a835a18565ba959fabf7269c45a4651506666f941-206768946.png" />
 
 <div data-zendesk-anchors="integrating-with-deltadna=integraci%C3%B3n-con-deltadna h_01H9FK6N8V597T8AY0RF0H6CZW=integraci%C3%B3n-con-deltadna viewing-the-attribution-data-in-the-deltadna-console=ver-los-datos-de-atribuci%C3%B3n-en-la-consola-de-deltadna h_01H9FK6N8W8011X3JVG2EZ66H4=ver-los-datos-de-atribuci%C3%B3n-en-la-consola-de-deltadna" />

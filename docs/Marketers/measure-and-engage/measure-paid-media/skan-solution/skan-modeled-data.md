@@ -85,7 +85,7 @@ Métricas modeladas disponibles en función del valor de conversión:
 
 <Accordion title="LTV de ingresos">
 
-[![modeled_d7.png](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)
+<Image align="center" alt="modeled_d7.png" src="https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png" />
 
 Los reportes de SKAN por sí solos solo pueden proporcionar ingresos basados en la ventana de medición de SKAN y la configuración de CV para los ingresos en Conversion Studio. El modelado SKAN es capaz de modelar los ingresos hasta 7 días (168 horas) post-instalación.
 

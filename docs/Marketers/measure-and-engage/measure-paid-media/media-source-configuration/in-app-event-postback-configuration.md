@@ -51,7 +51,7 @@ La ventana de postback de eventos in-app permite a los marketers que trabajan co
 
 Por ejemplo, si los eventos dentro de 15 días de una instalación implican un costo, configura la ventana de esta manera:
 
-<Image alt="Ventana de postback de eventos in-app configurada en 15 días" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
+<Image align="center" alt="Ventana de postback de eventos in-app configurada en 15 días" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
 
 Los postbacks posteriores a este período no se envían y no se notifica a la red, pero AppsFlyer sigue registrando los eventos y atribuyéndolos a la red.
 
@@ -138,7 +138,7 @@ Cada postback decide cuál de los siguientes métodos se usará para mapear sus 
 > * Los nombres de los eventos distinguen entre mayúsculas y minúsculas. Para evitar discrepancias, asegúrate de utilizar el nombre de evento correcto para todas las fuentes de medios y versiones de la aplicación.
 > * Al escribir el nombre de un evento, puedes emplear guiones bajos antes o después del nombre del evento. Asegúrate de usar guiones bajos solo cuando el nombre del evento enviado desde AppsFlyer tenga exactamente los mismos guiones.
 
-![Introducir un ID de evento en el campo de texto asignado al evento del partner](https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png)
+<Image align="center" alt="Introducir un ID de evento en el campo de texto asignado al evento del partner" src="https://files.readme.io/b9d65d3a6b4c1ab4d3f7e83cc2226af5c5a83e1e83cfbfa3df36d295ae568a45-33379700646545.png" />
 
 </Accordion>
 
@@ -147,7 +147,7 @@ Cada postback decide cuál de los siguientes métodos se usará para mapear sus 
 * **Evento de AppsFlyer**: En la lista de eventos de tu aplicación, selecciona un evento.
 * **Asignado al evento del partner**: En la lista de eventos predefinidos del partner, selecciona el evento que corresponde al evento de tu aplicación (evento de AppsFlyer).
 
-![Selección de un evento predefinido del partner en la lista desplegable de ID del evento](https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png)
+<Image align="center" alt="Selección de un evento predefinido del partner en la lista desplegable de ID del evento" src="https://files.readme.io/71455978bc7511c2d98f7a396fd7c86e646ec358eb6e362f13ee418c7fdcd1da-33379700647825.png" />
 
 </Accordion>
 
@@ -175,7 +175,7 @@ Puedes elegir qué eventos no mapeados enviar al partner:
    * **incluyendo**: Selecciona [qué datos incluir](/docs/in-app-event-postback-configuration#datos-a-incluir-en-los-postbacks) en el postback.
 3. Repite este procedimiento para más eventos.
 
-![Adición manual de eventos sin mapear con opciones de envío y de inclusión de datos](https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png)
+<Image align="center" alt="Adición manual de eventos sin mapear con opciones de envío y de inclusión de datos" src="https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png" />
 
 **Para enviar todos los eventos:**
 
@@ -184,7 +184,7 @@ Puedes elegir qué eventos no mapeados enviar al partner:
    * **para usuarios de**: Selecciona la [opción de envío](/docs/in-app-event-postback-configuration#opciones-para-enviar-postbacks) para todos los eventos.
    * **incluyendo**: Selecciona [qué datos incluir](/docs/in-app-event-postback-configuration#datos-a-incluir-en-los-postbacks) para todos los eventos en el postback.
 
-![Envío de todos los eventos sin mapear sin asignación individual de eventos](https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png)
+<Image align="center" alt="Envío de todos los eventos sin mapear sin asignación individual de eventos" src="https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png" />
 
 </Accordion>
 
@@ -278,7 +278,7 @@ Filtra los postbacks de eventos in-app utilizando múltiples condiciones que pue
 
 Un marketer con una aplicación de juegos quiere optimizar campañas que se ejecutan a través de una ad network, pero solo para los usuarios que superen el nivel 10 o el nivel 50, o para los usuarios que gasten $3 en compras in-app.
 
-![Ejemplo de condiciones de postback de eventos in-app para alcanzar el nivel 10, el nivel 50 o una compra de $3](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)
+<Image align="center" alt="Ejemplo de condiciones de postback de eventos in-app para alcanzar el nivel 10, el nivel 50 o una compra de $3" src="https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png" />
 
 **Así se establecen las condiciones para este evento:**
 
@@ -348,7 +348,7 @@ Durante la asignación de eventos, los valores de los campos **para usuarios de*
      * Valores sin ingresos
      * Valores e ingresos
 
-![Panel de acciones masivas para editar la configuración de "para usuarios desde" e "incluyendo" en varios eventos](https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png)
+<Image align="center" alt="Panel de acciones masivas para editar la configuración de 'para usuarios desde' e 'incluyendo' en varios eventos" src="https://files.readme.io/559265d0e12e9e2ef62e0a19c5833465ee758821654877cffa4e75f6ff3f99b9-33379700657169.png" />
 
 <div id="custom-events" />
 
@@ -390,7 +390,7 @@ Los marketers pueden permitir que las ad networks mapeen los eventos y deshabili
 1. En la página **Integraciones activas**, busca el partner al que quieras dar permiso.
 2. En la pestaña de Permisos, cambia el interruptor **Permitir configurar postbacks de eventos in-app** a **ACTIVADO**.
 
-![Permitir configurar el interruptor de permisos de postbacks de eventos in-app para una ad network](https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png)
+<Image align="center" alt="Permitir configurar el interruptor de permisos de postbacks de eventos in-app para una ad network" src="https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png" />
 
 Una vez que la ad network haya recibido los permisos, podrá mapear los eventos siguiendo las instrucciones de la [Introducir el ID del evento en el campo de texto](#métodos-de-mapeo).
 
@@ -413,7 +413,7 @@ Los marketers pueden permitir que las agencias configuren postbacks de eventos i
 3. Selecciona si la agencia puede enviar ingresos por eventos.
 4. Selecciona los eventos específicos que la agencia puede compartir.
 
-![Configuración de permisos para compartir eventos e ingresos de la agencia](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+<Image align="center" alt="Configuración de permisos para compartir eventos e ingresos de la agencia" src="https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png" />
 
 <span id="h_01HDP3XHBPA5GZEVERMBN43JH0"></span>**Consulta también**
 

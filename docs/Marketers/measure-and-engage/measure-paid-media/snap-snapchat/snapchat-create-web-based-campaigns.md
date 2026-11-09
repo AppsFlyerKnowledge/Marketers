@@ -166,7 +166,7 @@ Puedes elegir cualquier evento INAPP predefinido enviado desde AppsFlyer como ob
 2. Haz clic en **Crear un parámetro URL** para agregar parámetros a la URL (ya sea una URL de landing page o un enlace de atribución de AF).
 3. En **Parámetros personalizados**, haz clic en **Agregar parámetro**
 
-   [<Image alt="Screenshot 2025-11-26 at 8.56.29.png" src="https://files.readme.io/cb3ceba75974f7a57d7f26c3587fd0d0c401427d26fcacff40f2514981b9b02f-small-41366139737873.png" width="2810px" />](https://files.readme.io/cb3ceba75974f7a57d7f26c3587fd0d0c401427d26fcacff40f2514981b9b02f-small-41366139737873.png)
+   <Image align="center" alt="Screenshot 2025-11-26 at 8.56.29.png" src="https://files.readme.io/cb3ceba75974f7a57d7f26c3587fd0d0c401427d26fcacff40f2514981b9b02f-small-41366139737873.png" width="2810px" />
 4. Mapea los parámetros de AppsFlyer con sus valores correspondientes de Snapchat.
    * Si tu URL de destino es **una landing page, un enlace de atribución de OneLink o un link de atribución single platform**, mapea los siguientes parámetros AF con sus equivalentes en Snapchat:
 
@@ -244,7 +244,7 @@ Puedes elegir cualquier evento INAPP predefinido enviado desde AppsFlyer como ob
 
 <Accordion title="Flujo de datos end-to-end">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. La URL del anuncio de Snapchat incluye el parámetro `pid=snapweb_int`. Cuando el usuario hace clic en el anuncio, se agrega automáticamente un parámetro `ScCid` a la URL que se hizo clic.
 2. El usuario es redirigido a la URL de destino: una landing page que contiene un Smart Script.

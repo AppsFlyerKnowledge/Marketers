@@ -34,12 +34,12 @@ Para comprobar si Impression Device ya está habilitado para una cuenta publicit
 
 1. Ve a <Anchor target="_blank" href="https://adsmanager.facebook.com/">Ads Manager</Anchor> y selecciona **Configuración**.
 
-[![Barra de herramientas de Ads Manager con el botón Configuración](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)](https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png)
+<Image align="center" alt="Barra de herramientas de Ads Manager con el botón Configuración" src="https://files.readme.io/64c9ac8d571e88bfd098b542456886cc64d6320bf3856721335a077c4f19e5b5-49469436208529.png" />
 
 2. En el panel de la vista Crear, selecciona **Entrega**.
 3. En Entrega, busca **Desgloses adicionales**.
 4. En Desgloses adicionales, comprueba si el símbolo más situado junto a **Impression Device** (`impression_device`) ya está seleccionado. Si es así, la activación está activa en esta cuenta.
 
-[![Panel de desgloses adicionales en Ads Manager con iconos de suma para Hora del día, Impression Device y Valor de frecuencia](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)](https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png)
+<Image align="center" alt="Panel de desgloses adicionales en Ads Manager con iconos de suma para Hora del día, Impression Device y Valor de frecuencia" src="https://files.readme.io/71eb7c75a3f49a82e98522fcf418acbc6ef378eeda5f093535a168aa8505ade1-49469462456081.png" />
 
 <div data-zendesk-anchors="check-impression-device-in-ads-manager=comprobar-impression-device-en-ads-manager h_01KZ63J08GPADE2AH0KV9NNESC=comprobar-impression-device-en-ads-manager" />

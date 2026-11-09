@@ -50,23 +50,23 @@ Para acceder a Configuración de la aplicación, en el menú lateral, selecciona
 
 1. Abre la configuración de la aplicación de la aplicación cuyo ajuste quieres cambiar y cambia un ajuste (un interruptor, un menú desplegable o un control deslizante).
 
-   <Image alt="Screenshot 2026-09-16 at 14.31.44.png" src="https://files.readme.io/8a1abce58e1e8da4af5899e2e03a2a7fe9e6e9b8e9a04c240585bfd3e7934126-50944987863825.png" width="2557px" />
+   <Image align="center" alt="Screenshot 2026-09-16 at 14.31.44.png" src="https://files.readme.io/8a1abce58e1e8da4af5899e2e03a2a7fe9e6e9b8e9a04c240585bfd3e7934126-50944987863825.png" width="2557px" />
 2. Junto al campo modificado, haz clic en **Aplicar a aplicaciones adicionales**.
 
-   <Image alt="aap.png" src="https://files.readme.io/0f2144ca43c6db7ffe9967df5c2b2f2fe3e8cffdbefa77167ed9262a61511774-50945027652113.png" width="612px" />
+   <Image align="center" alt="aap.png" src="https://files.readme.io/0f2144ca43c6db7ffe9967df5c2b2f2fe3e8cffdbefa77167ed9262a61511774-50945027652113.png" width="612px" />
 3. Busca por nombre de la aplicación o ID de la aplicación y selecciona las aplicaciones a las que quieras aplicar el mismo cambio. Las aplicaciones que no cumplan los requisitos para este cambio seguirán visibles, pero aparecerán atenuadas. Pasa el cursor por encima de una para ver el motivo.
 
-   <Image alt="Screenshot 2026-09-16 at 14.32.32.png" src="https://files.readme.io/95c79ce8c176e4a0836661a119ca12b1268b8874181d4fd78c96113e5339d6c9-50945018039953.png" width="1304px" />
+   <Image align="center" alt="Screenshot 2026-09-16 at 14.32.32.png" src="https://files.readme.io/95c79ce8c176e4a0836661a119ca12b1268b8874181d4fd78c96113e5339d6c9-50945018039953.png" width="1304px" />
 4. Haz clic fuera de la lista para cerrarla y confirmar tu selección. El botón **Aplicar a aplicaciones adicionales** se sustituye por una insignia que muestra el número de aplicaciones seleccionadas; haz clic en ella cuando quieras para cambiar tu selección.
 
-   <Image alt="ssa.png" src="https://files.readme.io/b93174999053cdbbf5591eb215e6cd10becbd2d1bcb699ff286a8b1523f8a8f0-50944987865361.png" width="1238px" />
+   <Image align="center" alt="ssa.png" src="https://files.readme.io/b93174999053cdbbf5591eb215e6cd10becbd2d1bcb699ff286a8b1523f8a8f0-50944987865361.png" width="1238px" />
 5. Repite estos pasos para tantas configuraciones como sea necesario.
 6. Al final de la página, haz clic en **Guardar cambios** (si no has seleccionado ninguna aplicación adicional) o en **Revisar & Guardar** (una vez que hayas incluido aplicaciones en un cambio masivo). Ambos botones muestran el número total de cambios entre paréntesis.
 
-   <Image alt="Screenshot 2026-09-16 at 14.33.32.png" src="https://files.readme.io/6dfb050b984932023455af9022364b37534af276d7bb117ddb05ad0fc25d936c-50945018041489.png" width="2269px" />
+   <Image align="center" alt="Screenshot 2026-09-16 at 14.33.32.png" src="https://files.readme.io/6dfb050b984932023455af9022364b37534af276d7bb117ddb05ad0fc25d936c-50945018041489.png" width="2269px" />
 7. Si has incluido aplicaciones adicionales, revisa los valores anteriores y posteriores de cada aplicación en la pantalla **Revisar antes de guardar**. El valor actual de cada aplicación se usa como valor de referencia. Puedes quitar cualquier cambio del lote antes de confirmar.
 
-   <Image alt="Screenshot 2026-09-16 at 14.33.38.png" src="https://files.readme.io/c22f67575fc8ac9cbd868c923b5addfe8c70529ee1183fa7231f080d1b54d18c-50945018042385.png" width="1286px" />
+   <Image align="center" alt="Screenshot 2026-09-16 at 14.33.38.png" src="https://files.readme.io/c22f67575fc8ac9cbd868c923b5addfe8c70529ee1183fa7231f080d1b54d18c-50945018042385.png" width="1286px" />
 8. Haz clic en **Confirmar & Guardar**. Esto guarda la aplicación desde la que empezaste junto con todas las aplicaciones adicionales del lote, en una sola operación.
 
 <div id="note-1" />

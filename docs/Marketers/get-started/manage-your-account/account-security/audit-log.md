@@ -43,7 +43,7 @@ El **registro de auditoría** proporciona una ubicación central para revisar di
 
 En la siguiente tabla se proporciona una descripción de los datos proporcionados por el registro de auditoría y un resumen de sus capacidades.
 
-[![audit_log.png](https://files.readme.io/4101dfb4dc84e4e916d165a22387bd6a84fa7889bc4e82e636c980fde1cac248-6867050961809.png)](https://files.readme.io/4101dfb4dc84e4e916d165a22387bd6a84fa7889bc4e82e636c980fde1cac248-6867050961809.png)
+<Image align="center" alt="audit_log.png" src="https://files.readme.io/4101dfb4dc84e4e916d165a22387bd6a84fa7889bc4e82e636c980fde1cac248-6867050961809.png" />
 
 |  | Elemento | Descripción |
 | --- | --- | --- |

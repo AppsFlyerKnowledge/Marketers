@@ -35,7 +35,7 @@ Tener acceso a estos datos únicos es muy útil para los equipos de SEO (optimiz
 
 ### Flujo
 
-![Diagrama que muestra el flujo de atribución de búsqueda orgánica, desde que un usuario hace clic en un resultado de búsqueda hasta que se abre la aplicación o el usuario llega a una página web](https://files.readme.io/4b33060cfa30a4e2786c4a3a213ca41223ae276d63c97ab7c2cb5a997a4b010c-16540659217809.png)
+<Image align="center" alt="Diagrama que muestra el flujo de atribución de búsqueda orgánica, desde que un usuario hace clic en un resultado de búsqueda hasta que se abre la aplicación o el usuario llega a una página web" src="https://files.readme.io/4b33060cfa30a4e2786c4a3a213ca41223ae276d63c97ab7c2cb5a997a4b010c-16540659217809.png" />
 
 El flujo de atribución de búsqueda orgánica funciona de la siguiente manera:
 

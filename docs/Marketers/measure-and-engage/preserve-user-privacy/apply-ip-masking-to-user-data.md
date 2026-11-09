@@ -94,6 +94,6 @@ Cuando el enmascaramiento de IP está activado:
 
 **Ejemplo de reporte de raw data**
 
-![ip_masking.png](https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png)
+<Image align="center" alt="ip_masking.png" src="https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png" />
 
 <div data-zendesk-anchors="ip-masking=enmascaramiento-de-ip h_01HA91HHADCTT7QS2K79TJEY2C=enmascaramiento-de-ip h_01HA92HF3ZYR2NBTXQ1S2AHCAA=nota h_01HA91HHAD7BCXRZW6AD9NRDBN=ejemplo enabling-ip-masking=activar-el-enmascaramiento-de-ip h_01HA91HHAEM220CE8805GFQYKR=activar-el-enmascaramiento-de-ip ip-masking-in-raw-data-reports=enmascaramiento-de-ip-en-reportes-de-raw-data h_01HA91HHAE14D6ES1ERNK93VY9=enmascaramiento-de-ip-en-reportes-de-raw-data" />

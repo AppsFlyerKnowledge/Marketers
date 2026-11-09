@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **At a glance:** Oracle Responsys, una plataforma de entrega y análisis de correo electrónico, integra AppsFlyer OneLink dentro de los correos electrónicos. Los destinatarios de correo electrónico que hacen clic en el enlace deben tener enlaces profundos a tu aplicación.
 
-![oracle-responsys-af-logo.png](https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png)
+<Image align="center" alt="oracle-responsys-af-logo.png" src="https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png" />
 
 Los ESP (proveedores de servicios de correo electrónico) pueden ser excelentes fuentes para el tráfico segmentado de usuarios.
 
@@ -67,7 +67,7 @@ Para configurar un dominio de clic, sigue la guía oficial de Oracle Responsys s
 
 **Ten en cuenta** que, en las tablas de enlaces, puedes definir la **URL de enlace IOS** para que sea la misma que la URL de enlace:
 
-![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
+<Image align="center" alt="Oracle-responsys-link-tracking-table.png" src="https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png" />
 
 Una vez que configures los dominios de clic en las tablas de enlaces, Responsys utiliza estos dominios para encapsular los OneLink que incluyas en campañas de correo electrónico. De esta manera, Responsys puede registrar clics en su sistema mientras conserva los OneLinks y la funcionalidad de enlaces profundos.
 

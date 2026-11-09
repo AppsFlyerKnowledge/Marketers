@@ -65,7 +65,7 @@ Los siguientes ejemplos muestran el mismo viaje de usuario dos veces: primero si
 
 Considera un viaje de usuario en tres plataformas. Un anuncio de Google impulsa a un usuario a instalar una app móvil, donde se registra utilizando un Customer User ID. Más adelante, un anuncio de Meta impulsa al mismo usuario a visitar la plataforma web, donde inicia sesión con el mismo Customer User ID. Después de iniciar sesión, el usuario realiza dos compras en móvil: $100 y $50.
 
-[![](https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png)](https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png)
+<Image align="center" alt="" src="https://files.readme.io/0cd29d386c9b8b83811aa048174ba38b25a551e060c64409b27b1735bb4051eb-45444733164945.png" />
 
 Como el re-engagement no está habilitado en este escenario, toda la actividad se atribuye a Google Ads, la fuente de adquisición original. Las compras de $100 y $50, así como ambas activaciones de plataforma (móvil y web), se atribuyen a Google. Meta no recibe crédito dentro de la atribución multiplataforma, aunque su anuncio impulsó la instalación web.
 
@@ -82,7 +82,7 @@ Como el re-engagement no está habilitado en este escenario, toda la actividad s
 
 El viaje de usuario es idéntico al anterior. La diferencia es que la línea de producto tiene habilitado el re-engagement.
 
-[![](https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png)](https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png)
+<Image align="center" alt="" src="https://files.readme.io/9981d9d9ffc20841778f390941f7759d9ff0c3e630e14e4578dc001c9d692cbf-45444733163409.png" />
 
 En este caso, la ventana de inactividad de retargeting determina si el inicio de sesión en web impulsado por Meta califica como un evento de re-engagement. La ventana comienza a contar desde la última vez que se vio el Customer User ID, que fue durante el registro en móvil. Si transcurre suficiente tiempo antes del inicio de sesión en web, es decir, si ocurre fuera de la ventana de inactividad para re-engagement, Meta recibe crédito por el re-engagement.
 

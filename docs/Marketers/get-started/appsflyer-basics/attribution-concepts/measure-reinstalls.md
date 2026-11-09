@@ -94,7 +94,7 @@ Para obtener más información sobre la atribución de retargeting, haz clic <An
 
 Los eventos in-app realizados por un usuario después de una reinstalación se atribuyen como orgánicos, no orgánicos o no atribuidos, según el estado de **atribución de los eventos posteriores a la reinstalación** (consulta a continuación). Un ejemplo de un evento in-app es un usuario que reinstala una aplicación y luego realiza una compra in-app.
 
-[![](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg" />
 
 <div id="postreinstall-events-attribution-state" />
 
@@ -157,7 +157,7 @@ Un usuario instala la aplicación (día 0), realiza una compra por 10 USD y lue
 
 Al día siguiente (día 1), el usuario reinstala la aplicación y realiza una compra de 5 USD.
 
-![Reinstall_1.jpg](https://files.readme.io/7e8eccb3a6873b42a1d8503c0f027386728adb2eecbe457451d2e37c0a7b6774-10225445609873.jpg)
+<Image align="center" alt="Reinstall_1.jpg" src="https://files.readme.io/7e8eccb3a6873b42a1d8503c0f027386728adb2eecbe457451d2e37c0a7b6774-10225445609873.jpg" />
 
 Dado que el usuario ya realizó una compra antes de reinstalar, no habrá un recuento adicional de usuarios únicos.
 

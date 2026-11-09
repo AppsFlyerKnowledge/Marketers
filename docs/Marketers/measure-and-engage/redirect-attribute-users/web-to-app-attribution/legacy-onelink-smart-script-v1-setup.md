@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **A simple vista:** **De un vistazo:** Configura el Smart Script de OneLink para convertir y atribuir a los visitantes de tu sitio web móvil, provenientes de cualquier fuente, en usuarios de la aplicación móvil. **Nota**: Aunque no es obligatorio, considera la posibilidad de migrar a <Anchor target="_blank" href="/marketers/es/docs/set-up-smart-script-to-convert-web-visitors">OneLink Smart Script V2</Anchor>.
 
-![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/89302407b5a7fb98299ce5255393651cc147ed963b0b17a6f74effbc0f7e16e0-4723094404753.png)
+<Image align="center" alt="7901_Smart_Script_flow_1920x1080_2__1_.png" src="https://files.readme.io/89302407b5a7fb98299ce5255393651cc147ed963b0b17a6f74effbc0f7e16e0-4723094404753.png" />
 
 <div id="setup" />
 

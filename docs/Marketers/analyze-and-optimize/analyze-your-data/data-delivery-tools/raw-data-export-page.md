@@ -28,7 +28,7 @@ x-zendesk:
 
 La imagen siguiente se muestra la primera vez que accedes a la página **Exportación de datos en bruto**; la página **Mis informes** se muestra si tienes informes listos para descargar o duplicar.
 
-[![RawDataSplash.png](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)](https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png)
+<Image align="center" alt="RawDataSplash.png" src="https://files.readme.io/febb6a32a3a7b86c5b396cd77ff9e7968057f57ed20fd991d6dbb4899d5eaf07-41225791757969.png" />
 
 **Mis informes**
 
@@ -38,7 +38,7 @@ Para una descripción de los informes de datos crudos, consulte <Anchor target="
 
 Para generar o descargar informes, consulta la sección de procedimientos de este artículo.
 
-[![MisInformesExportaciónDatosEnBruto.png](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)](https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png)
+<Image align="center" alt="MisInformesExportaciónDatosEnBruto.png" src="https://files.readme.io/1f82e365a7e6cd802ee899666b800be357ea5e99aa6909e75b1fa39a2e4a164e-41225791760145.png" />
 
 <div id="raw-data-export-page-features-and-filter-options" />
 

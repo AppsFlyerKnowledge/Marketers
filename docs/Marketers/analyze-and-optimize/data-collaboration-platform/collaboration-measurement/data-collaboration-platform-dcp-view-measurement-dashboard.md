@@ -27,7 +27,7 @@ Utiliza el dashboard de medición para ver y analizar el rendimiento de la campa
 
 ## Dashboard de medición
 
-[![](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)](https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png)
+<Image align="center" alt="" src="https://files.readme.io/a69a72f87bbe6290548e52dea810d774ad09618ec1540bfb00db42e62d52f382-44443401136017.png" />
 
 El dashboard incluye los siguientes componentes:
 
@@ -82,7 +82,7 @@ Filtros predeterminados disponibles:
 
 ### **Gráficos de comparación de rendimiento**
 
-[![](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)](https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png)
+<Image align="center" alt="" src="https://files.readme.io/85949b56375db9d94ff749159f25d75cb01deee1c2499cbdc497cdfd42a24976-34052274670097.png" />
 
 **Configuración de visualización**
 
@@ -92,7 +92,7 @@ Filtros predeterminados disponibles:
 
 ### **Comparación de tendencias en el tiempo**
 
-[![](https://files.readme.io/703f0a9ce0a54399a5d36f29119ab99b5f6b2d975781fb9ec4fbb9558af8d761-34052246603665.png)](https://files.readme.io/703f0a9ce0a54399a5d36f29119ab99b5f6b2d975781fb9ec4fbb9558af8d761-34052246603665.png)
+<Image align="center" alt="" src="https://files.readme.io/703f0a9ce0a54399a5d36f29119ab99b5f6b2d975781fb9ec4fbb9558af8d761-34052246603665.png" />
 
 **Configuración de visualización**:
 

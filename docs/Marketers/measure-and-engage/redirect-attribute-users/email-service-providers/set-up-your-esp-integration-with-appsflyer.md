@@ -97,15 +97,15 @@ Ahora es el momento de configurar tu integración ESP en AppsFlyer. Ten en cuent
 
 1. En **AppsFlyer**, desde el menú lateral, selecciona **Engage** > **integración ESP**.
 
-<Image alt="From Engage click ESP integration.png" src="https://files.readme.io/7b731446ce6158d5033020b63be5f386105e7899a8c1b291aa3cb13662a59ee5-27063684942481.png" width="196px" />
+<Image align="center" alt="From Engage click ESP integration.png" src="https://files.readme.io/7b731446ce6158d5033020b63be5f386105e7899a8c1b291aa3cb13662a59ee5-27063684942481.png" width="196px" />
 
 2. Selecciona tu ESP.
 
-<Image alt="select ESP.png" src="https://files.readme.io/526fed3aaf1e6fdbf2404243619159984e298752fdf5913fd3a65cc5a2ed9e1d-27086632495761.png" width="482px" />
+<Image align="center" alt="select ESP.png" src="https://files.readme.io/526fed3aaf1e6fdbf2404243619159984e298752fdf5913fd3a65cc5a2ed9e1d-27086632495761.png" width="482px" />
 
 3. Selecciona la plantilla OneLink que deseas usar para campañas de correo electrónico, luego haz clic en **Siguiente**.
 
-![select OneLink template.png](https://files.readme.io/4f96b999740be8596a424ce9108a8f702bda2a7ed025ec1869c553393432d87d-27086632499729.png)
+<Image align="center" alt="select OneLink template.png" src="https://files.readme.io/4f96b999740be8596a424ce9108a8f702bda2a7ed025ec1869c553393432d87d-27086632499729.png" />
 
 4. Asegúrate de tener una cuenta activa con el ESP seleccionado.
 
@@ -118,7 +118,7 @@ Haz clic en **Siguiente**.
 
 5. Ingresa tu dominio de seguimiento de clics y el endpoint de ESP, luego haz clic en **Validar conexión**. Esto valida que el dominio de seguimiento de clics apunte al endpoint que has registrado.
 
-![enter your ctd and esp endpoint.png](https://files.readme.io/d068b7de020bed7ba979b25e0fe866c40a118b00bbfde06a36a4c097485ac885-27086632503441.png)
+<Image align="center" alt="enter your ctd and esp endpoint.png" src="https://files.readme.io/d068b7de020bed7ba979b25e0fe866c40a118b00bbfde06a36a4c097485ac885-27086632503441.png" />
 
 Cuando hayas terminado, haz clic en **Siguiente**.
 
@@ -128,7 +128,7 @@ a. **Copia y envía las instrucciones pre-fabricadas personalizadas en AppsFlyer
 
 Como resultado, cada vez que se haga clic en un enlace, el clic será redireccionado a AppsFlyer, que a su vez lo redireccionará al endpoint de ESP.
 
-<Image alt="click to Af to ESP image.png" src="https://files.readme.io/8a53fa7e8e2574246ea6b1344cfec0ac2d8f319bb181f6956ecb6db5b05cd0c5-26982377140369.png" width="374px" />
+<Image align="center" alt="click to Af to ESP image.png" src="https://files.readme.io/8a53fa7e8e2574246ea6b1344cfec0ac2d8f319bb181f6956ecb6db5b05cd0c5-26982377140369.png" width="374px" />
 
 d. Después de copiar y enviar las instrucciones, haz clic en **Listo**.
 
@@ -223,7 +223,7 @@ Agradecemos su asistencia con esta actualización.
 
 1. En AppsFlyer, crea un enlace de OneLink "Email-to-app" en la página de gestión de OneLink (o manualmente) dentro de la plantilla de OneLink que has creado anteriormente. Este es el enlace que utilizarás en tu campaña de correo electrónico que atribuirá y redireccionará a los usuarios según tus especificaciones. Aprende a crear un <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#crear-un-enlace-de-onelink">enlace de OneLink</Anchor>.
 
-<Image alt="email-to-app.png" src="https://files.readme.io/4e30986e039ed4cc13b9963ef3d1bb7b933061176bed812dced45a7240023d54-27082280943761.png" width="652px" />
+<Image align="center" alt="email-to-app.png" src="https://files.readme.io/4e30986e039ed4cc13b9963ef3d1bb7b933061176bed812dced45a7240023d54-27082280943761.png" width="652px" />
 
 **Mejores prácticas:** Utiliza el mismo nombre de campaña tanto en la campaña de correo electrónico de ESP como en los enlaces de OneLink de AppsFlyer utilizados en esa campaña.
 

@@ -39,11 +39,11 @@ Si tu aplicación ya utilizaba la versión 1 de Apple Server Notifications, debe
 
 1. En **App Store Connect**, en la **Información de la aplicación** sección, desplázate hasta **App Store Server Notifications.**
 
-   <Image alt="image (24).png" src="https://files.readme.io/8e9c92cdf87303b58a6b604640b4f7adb3cf56c03e57df053e9d486b89345547-33812520143505.png" width="2009px" />
+   <Image align="center" alt="image (24).png" src="https://files.readme.io/8e9c92cdf87303b58a6b604640b4f7adb3cf56c03e57df053e9d486b89345547-33812520143505.png" width="2009px" />
 2. Para la **URL del servidor de producción**, haz clic en **Editar**.
 3. No cambies la URL en la casilla **URL del servidor de producción** .
 
-   <Image alt="image (25).png" src="https://files.readme.io/fc7737793f2e7982e3e92d30dec45d7def98ef8ec6c3186ebbdf32a78f217a3d-33812683240977.png" width="1182px" />
+   <Image align="center" alt="image (25).png" src="https://files.readme.io/fc7737793f2e7982e3e92d30dec45d7def98ef8ec6c3186ebbdf32a78f217a3d-33812683240977.png" width="1182px" />
 4. En **Versión de notificaciones**, selecciona **Notificaciones de la versión 2**.
 5. Haz clic en **Guardar**.
 6. En la sección **App Store Server Notifications**, haz clic en **Editar** para la **URL del servidor Sandbox**.
@@ -70,9 +70,9 @@ Las credenciales necesarias para la integración de la API de compras in-app de 
 
 1. En App Store Connect, ve a **Usuarios y acceso** <Image alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" width="486px" />
 2. Ve a **Users and Access** > **Integrations** y, en la lista de **Keys**, selecciona **In-App Purchase**.  
-   <Image alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" width="532px" />
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" width="532px" />
 3. Haz clic en + para generar una nueva clave de In-App Purchase.  
-   <Image alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" width="384px" />
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" width="384px" />
 4. Ingresa un nombre para tu clave de API.
 5. Haz clic en **Generar**.
 6. Haz clic en **Download In-App Purchase Key** junto a la clave que acabas de generar para descargarla. **Nota**: Solo puedes descargar la clave una vez.
@@ -83,7 +83,7 @@ Las credenciales necesarias para la integración de la API de compras in-app de 
 11. En App Store Connect, copia el **Key ID** de la clave que acabas de generar y pégalo en la configuración de compras & suscripciones de AppsFlyer para **Key ID**. <Image alt="" src="https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png" width="484px" />
 12. En App Store Connect, copia el **Issuer ID** y pégalo en la configuración de compras & suscripciones de AppsFlyer para **Issuer ID**. **Nota**: Si el **ID del emisor** no se muestra en la parte superior de la página, crea una clave de API de App Store Connect (con cualquier nivel de acceso). Después de eso, el ID del emisor aparecerá en la parte superior de la página para la clave de compra in-app. 
 
-    <Image alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" width="474px" />
+    <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" width="474px" />
 13. En la configuración de compras y suscripciones de AppsFlyer, haz clic en **Validar claves** para asegurarte de que las claves que has introducido sean correctas.
 14. Haz clic en **Actualizar claves**. Una vez actualizadas las claves, tu aplicación pasará completamente al nuevo flujo de validación de iOS de Apple.
 

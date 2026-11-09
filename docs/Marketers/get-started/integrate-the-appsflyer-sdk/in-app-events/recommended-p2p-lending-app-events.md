@@ -42,7 +42,7 @@ Los datos que recopilas del registro de eventos permiten destacar los prestatari
 >
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Diagrama de flujo del recorrido del usuario de la app de préstamos P2P para eventos recomendados](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)](https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png)
+<Image align="center" alt="Diagrama de flujo del recorrido del usuario de la app de préstamos P2P para eventos recomendados" src="https://files.readme.io/597a98cf1df450e9e14eb32d8bdc14df647551ca91a2baca78895ca740eb805c-360020063617.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

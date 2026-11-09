@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **En resumen:** LINE Ads Platform, un partner integrado de AppsFlyer, combina un sistema de ofertas y orientación personalizado. Además de la atribución móvil basada en clics, LINE Ads Platform también ofrece atribución de retargeting, que puedes registrar con AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
 
 <div id="setting-up-line-ads-platform" />
 

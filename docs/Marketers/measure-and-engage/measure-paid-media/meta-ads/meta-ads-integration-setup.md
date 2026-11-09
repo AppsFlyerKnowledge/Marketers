@@ -61,7 +61,7 @@ Para integrar los anuncios de Meta con AppsFlyer, primero crea un <Anchor target
 2. Haz clic en la aplicación requerida.
 3. Haz clic en el ID de la aplicación, ubicado en la parte superior izquierda de la pantalla, para copiarlo.
 
-   [![](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg" />
 
 AppsFlyer atribuye los datos por ID de aplicación. El mismo ID de aplicación de Facebook se puede usar para [tus aplicaciones de Android e iOS](https://developers.facebook.com/docs/app-ads/app-setup/). Ten en cuenta que para iOS 14+, Meta Ads limita las cuentas de anuncios a nueve cuentas por aplicación.
 
@@ -106,7 +106,7 @@ A partir del 17 de junio de 2025, Meta ha reactivado el reporte de **Medición M
    **Nota: <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">El conmutador debe permanecer encendido (</Anchor><Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">activado</Anchor>) mientras trabajes con el partner.**
 5. En **Configuración general**:
 
-   [![](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
+   <Image align="center" alt="" src="https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png" />
 
    * Pega tu [ID de aplicación de Facebook](#create-and-retreive-facebook-app-id) en el campo **ID de aplicación de Facebook**.
    * Pega la clave de descifrado del referente de instalación de [Meta Ads](/docs/meta-ads-integration-setup#datos-cifrados-de-la-api-de-referencia-de-google-play-o-el-referente-de-instalación-de-meta).
@@ -120,7 +120,7 @@ A partir del 17 de junio de 2025, Meta ha reactivado el reporte de **Medición M
 
 <Accordion title="[Opcional] Configura los ajustes recomendados:">
 
-[![](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)
+<Image align="center" alt="" src="https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png" />
 
 * Para que coincida con la ventana de lookback por click-through de Meta Ads, configúrala en 7 días.  
   (Ten en cuenta que [hay algunos casos específicos en los que el valor predeterminado es diferente](https://www.facebook.com/business/help/395050428485124?id=428636648170202)).
@@ -239,7 +239,7 @@ Ten en cuenta que si la clave no se proporciona o se eliminó, hay algunos casos
 
 <Accordion title="Costos, clics e impresiones">
 
-[![meta_cost_tab.png](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)
+<Image align="center" alt="meta_cost_tab.png" src="https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png" />
 
 Esta integración proporciona datos agregados sobre costos, clics e impresiones de tus campañas, anuncios y geolocalizaciones/países. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costos de ad networks</Anchor> para obtener más información sobre las dimensiones, métricas y funciones admitidas.
 
@@ -279,7 +279,7 @@ Aprende más sobre cómo enriquecer tus datos con datos de <Anchor target="_blan
 
 <Accordion title="Mapeo de eventos in-app">
 
-[![meta_iae_postbacks.png](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)
+<Image align="center" alt="meta_iae_postbacks.png" src="https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png" />
 
 **Para mapear eventos in-app:**
 
@@ -324,13 +324,13 @@ La atribución de retargeting de AppsFlyer para Meta Ads permite a los anunciant
 3. Configura la **ventana de lookback de re-engagement por click-through**.  
    La ventana de lookback de re-engagement es el período de tiempo, a partir del clic en el anuncio, durante el cual debe iniciarse la aplicación para que el clic se registre como un re-engagement.  
    Selecciona una ventana de lookback (en horas o días) y configura el control deslizante en el valor deseado.  
-   [![](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)
+   <Image align="center" alt="" src="https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png" />
 4. Habilita **la atribución de re-engagement view-through**.
 5. Establece el **control deslizante de la ventana de lookback de re-engagement por view-through** al valor deseado (hasta 24 horas). Este es el período de tiempo a partir de una impresión de un anuncio, durante el cual se debe iniciar la aplicación para que la impresión se registre como un re-engagement.[![](https://files.readme.io/82028408b7475e6ad5bcd35f2d597b7f5344b9eca432157559265cf73bdb952c-30354145625873.png)](https://files.readme.io/82028408b7475e6ad5bcd35f2d597b7f5344b9eca432157559265cf73bdb952c-30354145625873.png)
 6. Configura la **Ventana de re-engagement**.  
    Ese es el período en el que los eventos in-app del usuario se atribuyen a la fuente de medios de retargeting como fuente principal.  
    Puedes configurar el valor en días (1-90), horas (hasta 23) o incluso de por vida. El valor predeterminado es de 30 días.  
-   [![](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)
+   <Image align="center" alt="" src="https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png" />
 
 Saber más sobre la <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">atribución de retargeting de AppsFlyer</Anchor>.
 
@@ -423,7 +423,7 @@ Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/send-opend
 
 <Accordion title="Registro de ingresos por publicidad">
 
-[![](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)
+<Image align="center" alt="" src="https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png" />
 
 Si tu aplicación utiliza la función de Ingresos por publicidad de Meta Audience Network para la monetización de anuncios, puedes registrar tus ingresos derivados de Meta Ads en AppsFlyer. Esto, con o sin datos de ingresos por compras in-app, te proporciona un **panorama general de los ingresos por usuario**.
 
@@ -497,7 +497,7 @@ Nota: también puedes usar la <Anchor target="_blank" href="https://developers.f
 
 La aplicación debe definirse en Meta Ads como **Live** en lugar de **In development** para que la atribución funcione.
 
-[![](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)
+<Image align="center" alt="" src="https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png" />
 
 </Accordion>
 
@@ -525,11 +525,11 @@ Al configurar la campaña de instalación de aplicaciones en Meta Ads, puedes se
 
 Configuración correcta: la atribución se realiza correctamente.
 
-[![](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)
+<Image align="center" alt="" src="https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png" />
 
 Configuración incorrecta: no se logra la atribución.
 
-[![](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)
+<Image align="center" alt="" src="https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png" />
 
 </Accordion>
 

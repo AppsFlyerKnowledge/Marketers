@@ -56,7 +56,7 @@ Plantilla de OneLink:
    [![](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png)](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png) **Nota**: Si no has creado ninguna plantilla, se abre un asistente de onboarding. Sigue las instrucciones del asistente e ignora el resto de este procedimiento.
 2. Haz clic en el icono del menú > **Agregar plantilla de OneLink**.  
    Se abre la página de configuración de la plantilla de OneLink.  
-   [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
+   <Image align="center" alt="OneLink_template_page_en-us.png" src="https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png" />
 3. En el campo **Nombre de la plantilla de OneLink**, introduce un nombre.
 
    <div id="note" />
@@ -151,7 +151,7 @@ Para obtener la mejor experiencia de usuario, seguridad y cobertura de dispositi
       * Dile que siga <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links">estas instrucciones</Anchor>.
       * El desarrollador te dará el ID de equipo (también denominado prefijo de ID de aplicación de Apple, por ejemplo, PF23MIWNTW).
       * Si la aplicación aún no se publicó, el desarrollador también debe brindarte el identificador de paquete (por ejemplo, com.myapp.something).  
-        [![](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)
+        <Image align="center" alt="" src="https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png" />
    2. En la página de la plantilla de OneLink, haz clic en **Cambiar para iniciar la app con Universal Links**.
    3. En la ventana nueva, selecciona **Iniciar la aplicación con Universal Links**.
    4. En el campo **ID de equipo**, ingresa el ID de equipo que te proporcionó el desarrollador.
@@ -232,7 +232,7 @@ Para obtener la mejor experiencia de usuario, seguridad y cobertura de dispositi
 
 <Accordion title="Personalizar QR code">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 Puedes personalizar los QR codes generados a través de OneLink de la siguiente manera:
 

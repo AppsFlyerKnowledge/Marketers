@@ -75,7 +75,7 @@ Para obtener más detalles sobre la activación de partners, haz clic <Anchor ta
 
 Adform se conecta con AppsFlyer a través de un ID de tracking del cliente único. Si aún no lo tienes, debes obtenerlo de Adform para continuar con la integración.
 
-![adform_msc_new_2.png](https://files.readme.io/d3d72b295a6d3bdc7f097128a6399bd4cd60309118750b4e2217a2b01ca5362a-360002140925.png)
+<Image align="center" alt="adform_msc_new_2.png" src="https://files.readme.io/d3d72b295a6d3bdc7f097128a6399bd4cd60309118750b4e2217a2b01ca5362a-360002140925.png" />
 
 **Habilitar la atribución por impresiones**
 

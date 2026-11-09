@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **At a glance:** Los anunciantes que utilicen enlaces OneLink pueden marcarlos con su propio dominio. Esto mejora el rendimiento de la campaña y aumenta la exposición de la marca.
 
-![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
+<Image align="center" alt="Branded_1__3_.jpg" src="https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png" />
 
 <div id="branded-domains" />
 
@@ -76,7 +76,7 @@ Configurar un Dominio de Marca consiste en asociar un dominio completo en su DNS
 
 **Dominio de marca que apunta a los servidores de AppsFlyer**
 
-![Diagrama de dominio de marca que apunta a los servidores de AppsFlyer](https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png)
+<Image align="center" alt="Diagrama de dominio de marca que apunta a los servidores de AppsFlyer" src="https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png" />
 
 **Antes de empezar:**
 
@@ -154,15 +154,15 @@ El SSL gestionado por AppsFlyer es la opción predeterminada y recomendada para 
 1. [Crea el dominio de marca](/docs/brand-onelink-with-your-domain#configuración-de-dominios-de-marca).
 2. En AppsFlyer, ve a **Engage** > **Branded domains**, pasa el cursor por encima del dominio correspondiente y selecciona el icono "Custom SSL certificate".
 
-   <Image alt="Icono de certificado SSL Newest minimal.png" src="https://files.readme.io/8b22a41fd755a3f36e8eaf4a869b107661894d81504bbfb44e1fc728b9b06751-45231876708497.png" width="1044px" />
+   <Image align="center" alt="Icono de certificado SSL Newest minimal.png" src="https://files.readme.io/8b22a41fd755a3f36e8eaf4a869b107661894d81504bbfb44e1fc728b9b06751-45231876708497.png" width="1044px" />
 3. Rellena el formulario con los datos del certificado.
 
-   <Image alt="rellenar el formulario para generar el archivo CSR file.png" src="https://files.readme.io/4327a4da0cbcc6243c9bbdbec21fe4f91d7fe701ccbffca99e629a5eadd248e8-45231876709649.png" width="722px" />
+   <Image align="center" alt="rellenar el formulario para generar el archivo CSR file.png" src="https://files.readme.io/4327a4da0cbcc6243c9bbdbec21fe4f91d7fe701ccbffca99e629a5eadd248e8-45231876709649.png" width="722px" />
 4. Haz clic en **Download CSR** para descargar una copia del formulario que acabas de rellenar. <Image alt="Descargar archivo CSR.png" src="https://files.readme.io/9a560d19e38593fbc379efc6bdb1e636e1fa34f894dca4b46a23be30019127dd-45231892701585.png" width="254px" />
 5. Proporciona el archivo CSR que acabas de descargar a la autoridad de certificación SSL que elijas.
 6. Cuando recibas tu nuevo certificado SSL, vuelve a subirlo a AppsFlyer.
 
-<Image alt="Subir nuevo certificado SSL a AppsFlyer.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
+<Image align="center" alt="Subir nuevo certificado SSL a AppsFlyer.png" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
 
 > 📘 **Note**
 >

@@ -322,7 +322,7 @@ Este flujo describe cómo la Data Collaboration Platform (DCP) de AppsFlyer proc
 
 El flujo de atribución off-site y on-site de DCP deduplica, atribuye, enriquece y combina todos los datos de conversión para generar un único conjunto de datos de rendimiento unificado.
 
-[<Image alt="Notion 2025-08-25 16.10.35.png" src="https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png" width="1622px" />](https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png)
+<Image align="center" alt="Notion 2025-08-25 16.10.35.png" src="https://files.readme.io/1552e0c84bf4ca98ef0fd9f96096f68bbf1a1f846f3fcc995e1aa0afe065a651-38422017654929.png" width="1622px" />
 
 <div id="1-on-site-and-off-site-record-processing-is-performed" />
 

@@ -68,7 +68,7 @@ Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/partner-a
 
 Airship se conecta con AppsFlyer mediante una App Key y un token únicos. Si aún no los tienes, puedes obtenerlos en Airship para continuar con la integración o consultar las instrucciones que aparecen más abajo para saber cómo obtenerlos.
 
-![airship-integration-tab.png](https://files.readme.io/dc33feec09fe551700586b9778a037fa0f5d610224944aea5a0fe56a6d288043-360017400878.png)
+<Image align="center" alt="airship-integration-tab.png" src="https://files.readme.io/dc33feec09fe551700586b9778a037fa0f5d610224944aea5a0fe56a6d288043-360017400878.png" />
 
 **Para configurar la integración con Airship:**
 
@@ -123,17 +123,17 @@ Requisitos mínimos: SDK de Airship, versión 13.1.0 y superior.
    1. Accede a tu cuenta de Airship en: [go.airship.com](http://go.urbanairship.com/)
    2. En el menú de la izquierda, ve a **Settings >** **APIs &** **Integrations** y haz clic en **Airship API**.
 
-      ![airship-appkey-en_us.png](https://files.readme.io/c33611035d8dcadb73e41a3787690726608bddde55edbc38f34990c03948985d-360017666917.png)
+      <Image align="center" alt="airship-appkey-en_us.png" src="https://files.readme.io/c33611035d8dcadb73e41a3787690726608bddde55edbc38f34990c03948985d-360017666917.png" />
    3. Copia la App Key.
    4. En AppsFlyer, pega la App Key en el campo App Key.
 3. Obtén el token de Airship:
    1. Accede a tu cuenta de Airship en: [go.airship.com](http://go.urbanairship.com/)
    2. En el menú de la izquierda, ve a **Settings >** **APIs &** **Integrations** y haz clic en **Tokens**.
 
-      ![airship-token-creation-1.png](https://files.readme.io/b0c22d9844dbc93f7dd158a75916eca98404474a65be0c1528f83e6e4ac7b210-360017480697.png)
+      <Image align="center" alt="airship-token-creation-1.png" src="https://files.readme.io/b0c22d9844dbc93f7dd158a75916eca98404474a65be0c1528f83e6e4ac7b210-360017480697.png" />
    3. Haz clic en **Create Token**.
 
-      ![airship-token-creation-2.png](https://files.readme.io/656f6f5a6eebe3ccd1a786f6abec62739633e4150722fec41bc1fbdea78f8275-360017549138.png)
+      <Image align="center" alt="airship-token-creation-2.png" src="https://files.readme.io/656f6f5a6eebe3ccd1a786f6abec62739633e4150722fec41bc1fbdea78f8275-360017549138.png" />
    4. Introduce el nombre del token y selecciona el rol.
    5. Haz clic en **Crear token**.
    6. En AppsFlyer, pega el Token en el campo **Token Authentication**.
@@ -144,7 +144,7 @@ Requisitos mínimos: SDK de Airship, versión 13.1.0 y superior.
 
 AppsFlyer puede enviar postbacks automáticos a Airship tras las instalaciones de usuarios y los re-engagements. Utiliza esta sección para definir el **origen de los usuarios** que permiten enviar estos postbacks.
 
-![urban_airship_msc_new_3.png](https://files.readme.io/394dd47ff26742092f3012e333f137d706f41bc85cd6875013d792ce7f36b01d-360001900305.png)
+<Image align="center" alt="urban_airship_msc_new_3.png" src="https://files.readme.io/394dd47ff26742092f3012e333f137d706f41bc85cd6875013d792ce7f36b01d-360001900305.png" />
 
 Selecciona **Events attributed to any partner or organic** para enviar postbacks a Airship para cualquier usuario que descargue la app.
 

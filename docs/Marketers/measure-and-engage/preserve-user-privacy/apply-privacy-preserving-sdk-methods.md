@@ -137,7 +137,7 @@ Puedes configurar el SDK para indicar a AppsFlyer que elimine toda la informaci�
 
 La siguiente imagen muestra una fila de ejemplo de raw data después de la anonimización (eliminación y hash).
 
-![Ejemplo de fila de raw data que muestra campos eliminados y con Hashing tras la anonimización](https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png)
+<Image align="center" alt="Ejemplo de fila de raw data que muestra campos eliminados y con Hashing tras la anonimización" src="https://files.readme.io/5cae15ee0e38c84b2f9876d0dca2145543e83e624933ca138017da5206e7a834-35847868223633.png" />
 
 <div id="impact-on-attribution-2" />
 

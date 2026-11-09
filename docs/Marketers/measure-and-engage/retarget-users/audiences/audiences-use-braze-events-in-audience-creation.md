@@ -164,7 +164,7 @@ En este caso, simplemente puedes seleccionar la **opción CUID** como parámetro
 
 Una vez que se configure la conexión entrante de Braze, los eventos de engagement que hayas definido aparecerán como opciones en los <Anchor target="_blank" href="/marketers/es/docs/audiences-guide#ruleset-filters">filtros del conjunto de reglas</Anchor> para definir audiencias.
 
-![audiences_braze_ruleset.png](https://files.readme.io/766a5ec25de3cf82c1411ce25864a5c8ce6c77ac338c20699e61be1c45ae3d98-33375723752337.png)
+<Image align="center" alt="audiences_braze_ruleset.png" src="https://files.readme.io/766a5ec25de3cf82c1411ce25864a5c8ce6c77ac338c20699e61be1c45ae3d98-33375723752337.png" />
 
 **Nota:** Los eventos de engagement de mensajes de Braze tardan aproximadamente 24 horas en estar disponibles en AppsFlyer después de lanzar el current en Braze.
 

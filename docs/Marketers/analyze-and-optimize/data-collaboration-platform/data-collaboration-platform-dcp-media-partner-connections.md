@@ -465,7 +465,7 @@ Sigue las instrucciones detalladas <Anchor target="_blank" href="/marketers/es/d
 3. Haz clic en **Nueva conexión**. Si ya tienes conexiones en la nube en tu cuenta, las verás todas en **Partner**.
 4. En **Nueva conexión con un partner de medios**, selecciona el partner de medios correspondiente.
 
-   <Image alt="Nueva conexión de partners de medios.png" src="https://files.readme.io/1c50a570d4eb495c3d77ee8e572b14a577e39adad65e41fe20eb3b014cce8989-46196842129425.png" width="91.09%" />
+   <Image align="center" alt="Nueva conexión de partners de medios.png" src="https://files.readme.io/1c50a570d4eb495c3d77ee8e572b14a577e39adad65e41fe20eb3b014cce8989-46196842129425.png" width="91.09%" />
 5. Ingresa un nombre de conexión.
 6. Inicia sesión en la cuenta del partner de medios con tus credenciales y sigue sus instrucciones para habilitar el acceso a AppsFlyer.
 7. Haz clic en **Seleccionar ID de cuenta** y selecciona la cuenta relevante para esta conexión.

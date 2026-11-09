@@ -84,7 +84,7 @@ Los identificadores de dispositivos incluyen lo siguiente:
 
    <Accordion title="Android">
 
-   [<Image alt="kb_qr_code.png" src="https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png" width="50%" />](https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png)
+   <Image align="center" alt="kb_qr_code.png" src="https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png" width="50%" />
 
    **Enlaces:** [Google Play](https://play.google.com/store/apps/details?id=com.appsflyer.android.deviceid&hl=en) y [Tienda out-of-market](https://apkpure.com/my-device-id-by-appsflyer/com.appsflyer.android.deviceid)
 
@@ -94,7 +94,7 @@ Los identificadores de dispositivos incluyen lo siguiente:
 
    <Accordion title="iOS">
 
-   [<Image alt="kb_qr_code.png" src="https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png" width="50%" />](https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png)
+   <Image align="center" alt="kb_qr_code.png" src="https://files.readme.io/e9b6e2c498b76b5d673d750b4721b2b428603d9e8fdc941ebb6e106274b93bba-49173115688593.png" width="50%" />
 
    </Accordion>
 
@@ -102,7 +102,7 @@ Los identificadores de dispositivos incluyen lo siguiente:
 
    <Accordion title="Windows">
 
-   [<Image alt="" src="https://files.readme.io/6e60bf0e69c0055c5946d111a0a5a2a04dddb268ba777b52097ab0650327d280-31773660950673.png" width="50.91%" />](https://files.readme.io/6e60bf0e69c0055c5946d111a0a5a2a04dddb268ba777b52097ab0650327d280-31773660950673.png)
+   <Image align="center" alt="" src="https://files.readme.io/6e60bf0e69c0055c5946d111a0a5a2a04dddb268ba777b52097ab0650327d280-31773660950673.png" width="50.91%" />
 
    </Accordion>
 
@@ -113,7 +113,7 @@ Los identificadores de dispositivos incluyen lo siguiente:
 
    <Accordion title="Android">
 
-   [<Image alt="" src="https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png" width="50%" />](https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png)
+   <Image align="center" alt="" src="https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png" width="50%" />
 
    </Accordion>
 
@@ -121,7 +121,7 @@ Los identificadores de dispositivos incluyen lo siguiente:
 
    <Accordion title="iOS">
 
-   [<Image alt="" src="https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png" width="50%" />](https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png)
+   <Image align="center" alt="" src="https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png" width="50%" />
 
    </Accordion>
 
@@ -129,7 +129,7 @@ Los identificadores de dispositivos incluyen lo siguiente:
 
    <Accordion title="Windows">
 
-   [<Image alt="" src="https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg" width="50%" />](https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg" width="50%" />
 
    </Accordion>
 
@@ -146,7 +146,7 @@ Los usuarios de la cuenta pueden registrar un dispositivo manualmente:
 2. Selecciona **Dispositivos de prueba**.
 3. Haz clic en **+ Agregar dispositivo**.
 
-   [<Image alt="" src="https://files.readme.io/e28ef06002e423d4cf7863d4c7fd2b269a0ede5c4b996a50cee25ffbedfcd9d1-31773630618769.png" width="50%" />](https://files.readme.io/e28ef06002e423d4cf7863d4c7fd2b269a0ede5c4b996a50cee25ffbedfcd9d1-31773630618769.png)
+   <Image align="center" alt="" src="https://files.readme.io/e28ef06002e423d4cf7863d4c7fd2b269a0ede5c4b996a50cee25ffbedfcd9d1-31773630618769.png" width="50%" />
 4. Completa lo siguiente:
    * **Nombre (solo utiliza letras en inglés):** Introduce un nombre de identificación único para el dispositivo.
    * **Sistema operativo:** Selecciona un sistema operativo.
@@ -214,7 +214,7 @@ Se pueden registrar hasta un máximo de 200 dispositivos por cuenta.
 
 El diagrama de flujo a continuación ilustra los posibles cursos de acción al registrar tus dispositivos de prueba iOS.
 
-[![](https://files.readme.io/214818cd73ebc8cd5d3479d27e3074fec55ec7f9e3d4702b17f3c8811270f54e-31773630621585.png)](https://files.readme.io/214818cd73ebc8cd5d3479d27e3074fec55ec7f9e3d4702b17f3c8811270f54e-31773630621585.png)
+<Image align="center" alt="" src="https://files.readme.io/214818cd73ebc8cd5d3479d27e3074fec55ec7f9e3d4702b17f3c8811270f54e-31773630621585.png" />
 
 Selecciona entre las siguientes opciones al registrar tu dispositivo de prueba iOS:
 

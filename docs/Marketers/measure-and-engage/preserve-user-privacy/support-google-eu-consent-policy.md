@@ -133,7 +133,7 @@ AppsFlyer permite a los anunciantes que creen que los requisitos de la DMA no se
 2. Busca al partner y haz clic en **Gestionar integración**.
 3. Desde la pestaña de configuración de integración, activa **Usuarios no pertenecientes a la UE**
 
-<Image alt="Alternador de usuarios no pertenecientes a la UE en la pestaña de configuración de integración" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="595px" />
+<Image align="center" alt="Alternador de usuarios no pertenecientes a la UE en la pestaña de configuración de integración" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="595px" />
 
 </Accordion>
 

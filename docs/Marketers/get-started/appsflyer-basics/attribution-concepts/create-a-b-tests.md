@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **En resumen:** Utiliza AppsFlyer para realizar pruebas A/B de fuentes de medios, campañas, creatividades, targeting y ubicación de anuncios.
 
-![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
+<Image align="center" alt="AB_TESTING.jpg" src="https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg" />
 
 <div id="what-is-ab-testing" />
 
@@ -113,7 +113,7 @@ A continuación explicamos dos métodos de pruebas A/B utilizando:
 
 ## Pruebas A/B de la ubicación de anuncios en la web móvil
 
-![ad_placement.png](https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png)
+<Image align="center" alt="ad_placement.png" src="https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png" />
 
 La ubicación de los banners de tus aplicaciones en sitios web móviles puede afectar significativamente las tasas de conversión de usuarios. En la mayoría de los casos, los anunciantes utilizan sus propios sitios web móviles para convertir a los visitantes en usuarios móviles.
 
@@ -161,7 +161,7 @@ Ayudar a los anunciantes a identificar las fuentes de medios con mejor (y peor) 
 
 > 📄 **Ejemplo**
 >
-> [![](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)
+> <Image align="center" alt="" src="https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png" />
 >
 > * 1 y 2 son anuncios diferentes en la misma fuente de medios. Compara un único KPI para ellos, por ejemplo, la tasa de retención del día 4, con las creatividades de prueba A/B, el targeting o la ubicación de los anuncios.
 > * 2 y 3 son anuncios en diferentes fuentes de medios. Si las creatividades y el targeting de los anuncios son idénticos, comparar un único KPI permite realizar pruebas A/B de la fuente de medios.

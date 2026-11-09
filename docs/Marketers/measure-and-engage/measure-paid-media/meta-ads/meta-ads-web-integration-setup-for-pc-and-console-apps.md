@@ -85,7 +85,7 @@ Para configurar la integración, primero debes activar el interruptor **Activar 
      **Nota:** Asegúrate de tener la empresa correcta seleccionada en el menú desplegable en la parte superior derecha.
   2. En el menú lateral del **Administrador de eventos** selecciona **Fuentes de datos**. Verás una lista de tus píxeles. Si no tienes un píxel para el negocio seleccionado, puedes crear uno a través de la misma vista.
   3. Copia el ID de píxel que se muestra debajo del nombre del píxel y pégalo en el campo ID de píxel de la integración de AppsFlyer.  
-     <Image alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
+     <Image align="center" alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
 * **Token de acceso:** Ingresa el token de acceso. Para recuperarlo, sigue [estas instrucciones](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token).
 * **Limitar el uso de la información personal de los usuarios en Meta Ads (CCPA):** Activa esta opción para habilitar el cumplimiento de las <Anchor target="_blank" href="/marketers/es/docs/send-opendsr-api-requests">leyes de protección de datos</Anchor>.  
   **Nota:** Cumplir con las regulaciones de privacidad de la CCPA limita los datos provenientes de los usuarios de Meta Ads que residen en California, EE.UU.

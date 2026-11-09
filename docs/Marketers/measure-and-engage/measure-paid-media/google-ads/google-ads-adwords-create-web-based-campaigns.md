@@ -83,7 +83,7 @@ Empieza por activar la integración con Google Ads para campañas web y configur
 
 1. En **ID de conversión de primera apertura**, introduce el ID de la acción de conversión `First open` que configuraste en Google Ads. Para encontrar el ID, ve a Google Ads y abre la **pestaña Details** de la página de la acción de conversión **First open**. A continuación, copia el valor del parámetro de consulta `ctid=*` de la URL de la página. Por ejemplo, si `ctid=123456789`, inserta `123456789` en el campo **ID de la acción de conversión de primera apertura**.
 
-   ![](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)
+   <Image align="center" alt="" src="https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png" />
 
 > 👍 **Tip**
 >
@@ -191,12 +191,12 @@ Google Ads utiliza el tipo de campaña, el objetivo y las metas que selecciones 
 1. Inicia sesión en Google Ads y crea una campaña.
 2. Selecciona un objetivo de campaña.
 
-   ![](https://files.readme.io/90063f7fe5a363ed498271148c4165969cc63c708a73ab25363d2263a79b0828-26324053661201.png)
+   <Image align="center" alt="" src="https://files.readme.io/90063f7fe5a363ed498271148c4165969cc63c708a73ab25363d2263a79b0828-26324053661201.png" />
    * Todos los objetivos son aplicables, excepto "Promoción de aplicaciones" (que solo se puede utilizar para campañas de aplicaciones móviles).
    * Recomendamos establecer el objetivo de la campaña "Ventas" para la optimización en función de eventos in-app específicos.
 3. Selecciona los objetivos de conversión.
 
-   ![](https://files.readme.io/5ca0a0425af24d5926dc0a7a3529632e22bd140423e87c026ff1527e7a0341b3-26324096257169.png)
+   <Image align="center" alt="" src="https://files.readme.io/5ca0a0425af24d5926dc0a7a3529632e22bd140423e87c026ff1527e7a0341b3-26324096257169.png" />
    * De forma predeterminada, verás los objetivos de campaña predefinidos a nivel de cuenta. Puedes conservarlas o eliminar las que no sean relevantes para tu campaña.
    * Si no ves el objetivo que deseas que Google optimice,
 
@@ -204,7 +204,7 @@ Google Ads utiliza el tipo de campaña, el objetivo y las metas que selecciones 
    * También puedes editar tus metas predefinidas en la página Conversiones.
 4. Selecciona el tipo de campaña.
 
-   ![](https://files.readme.io/14daea1c1edf92854e21d0a4c5d34372a4e062d68a4613967bb4f40d0d1e720f-26324053659281.png)
+   <Image align="center" alt="" src="https://files.readme.io/14daea1c1edf92854e21d0a4c5d34372a4e062d68a4613967bb4f40d0d1e720f-26324053659281.png" />
    * Todos los tipos de campaña son aplicables, excepto "Compras", que requiere un catálogo de productos y está limitada a dominios verificados.
 
 </Accordion>
@@ -237,7 +237,7 @@ Para crear acciones y metas de conversión personalizadas de Google Ads, sigue e
 2. Haz clic en **Guardar y continuar,** y luego en **Listo** sin configurar fuentes de datos. Tu nueva acción de conversión puede aparecer inicialmente como "Inactiva", pero cambiará a "Activa" una vez que se envíen datos reales.
 3. Para asignar la nueva acción de conversión al evento de postback de AppsFlyer, recupera el ID de la nueva acción de conversión. En la página **Resumen,** de objetivos de conversión, haz clic en la acción de conversión que has creado y copia el valor del parámetro de consulta `ctid=*` de la URL de la página de la acción de conversión.
 
-   ![](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)
+   <Image align="center" alt="" src="https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png" />
 4. En AppsFlyer, pega el valor `ctid` en la **columna Asignado al evento de partner** del evento de postback para el que quieres que Google optimice; consulta: [Configurar postbacks de eventos in-app](#h_01J1MPPMW34GG0EPDWYXA7383C).
 
 </Accordion>
@@ -257,7 +257,7 @@ Google <Anchor target="_blank" href="https://support.google.com/google-ads/answe
 1. En Google Ads, abre la página **Campañas** > **Anuncios**.
 2. En la fila del anuncio, haz clic en el icono de edición.
 
-   ![](https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png)
+   <Image align="center" alt="" src="https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png" />
 3. En **URL final,** introduce la URL de la página web de destino.
 
 > ❗️ **Warning**
@@ -294,10 +294,10 @@ Dado que Google Ads, de forma predeterminada, utiliza el seguimiento en paralelo
 
 1. En Google Ads, abre la página **Campañas** > **Campañas**. En la fila de la campaña, haz clic en el icono de configuración
 
-   ![](https://files.readme.io/ec6503cfb3ff185448f13897240e0eadd7f10fc3678ffa85b4d52d2393b01ca4-26324098054033.png)
+   <Image align="center" alt="" src="https://files.readme.io/ec6503cfb3ff185448f13897240e0eadd7f10fc3678ffa85b4d52d2393b01ca4-26324098054033.png" />
 2. Despliega **Configuración** > **Ajustes adicionales** > **Opciones de URL de campaña**
 
-   ![](https://files.readme.io/4959b4129749ff282ee3818c3b5724ac2ed3b1d033d06f8557329cafa812720f-26324053658641.png)
+   <Image align="center" alt="" src="https://files.readme.io/4959b4129749ff282ee3818c3b5724ac2ed3b1d033d06f8557329cafa812720f-26324053658641.png" />
 3. En **Plantilla de seguimiento,** usa lo siguiente (BaseURL + parámetros de redirección):
    * **URL base**: establece la URL base según el destino del clic en el anuncio:
      * **Enlace de atribución de plataforma única** si el destino del clic en el anuncio es Google Play o la tienda de aplicaciones (consulta el ejemplo a continuación).
@@ -381,7 +381,7 @@ No es necesario que rellenes la URL de la plantilla de seguimiento con un enlace
 
 El caso de uso de Smart Script W2A se compone de las siguientes fases:
 
-![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. El usuario hace clic en un anuncio de Google, Google automáticamente agrega a la URL final lo siguiente:
    * un `gclid` parámetro para dispositivos Android y para usuarios que den su consentimiento en dispositivos iOS.

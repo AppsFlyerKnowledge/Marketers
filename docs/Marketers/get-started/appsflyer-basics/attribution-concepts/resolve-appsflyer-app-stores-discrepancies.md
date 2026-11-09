@@ -40,7 +40,7 @@ Existen diferencias inherentes en los modelos de atribución utilizados por todo
 
 Debido a las diferencias en los modelos de atribución, en algunos casos, la tienda de aplicaciones registra más instalaciones que AppsFlyer. En otros casos, AppsFlyer registra más instalaciones que la tienda de aplicaciones.
 
-<Image alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
+<Image align="center" alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
 
 <div id="note" />
 

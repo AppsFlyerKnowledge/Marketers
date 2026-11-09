@@ -47,7 +47,7 @@ Aunque el cálculo de usuarios únicos suele ser sencillo, a veces surgen pregun
 
 <Accordion title="Instalación y reinstalación">
 
-![](https://files.readme.io/8b9f3c442f98c056069b4449c7e5115cbea828a64ace3a98e0090fb0d8d1d8d6-27455116159889.png)
+<Image align="center" alt="" src="https://files.readme.io/8b9f3c442f98c056069b4449c7e5115cbea828a64ace3a98e0090fb0d8d1d8d6-27455116159889.png" />
 
 La instalación y la reinstalación tienen el mismo ID de dispositivo/ID de AppsFlyer. Por lo tanto, solo se contabiliza 1 usuario único. Ambos eventos in-app se atribuyen al mismo usuario único que la primera instalación.
 
@@ -62,7 +62,7 @@ La instalación y la reinstalación tienen el mismo ID de dispositivo/ID de Apps
 
 <Accordion title="Instalación y reatribución:">
 
-![](https://files.readme.io/40420c5ea201ba7cf13d03e5968d20c2fffaa31b74c47ae36cd917cccbaae353-27453973190289.png)
+<Image align="center" alt="" src="https://files.readme.io/40420c5ea201ba7cf13d03e5968d20c2fffaa31b74c47ae36cd917cccbaae353-27453973190289.png" />
 
 La instalación y la reatribución tienen el mismo ID de dispositivo/ID de AppsFlyer. Sin embargo, en este caso, AppsFlyer también tiene en cuenta el parámetro `is_retargeting=true`, por lo que el evento posterior a la reatribución se cuenta como un usuario único adicional. Por lo tanto, se contabilizan 2 usuarios únicos.
 
@@ -76,7 +76,7 @@ La instalación y la reatribución tienen el mismo ID de dispositivo/ID de AppsF
 
 <Accordion title="Instalación y reengagement">
 
-![](https://files.readme.io/bd4ee5eb9eacc561ac43c4b93d3fab30ddba6824a22e0433e12684fb6b3cf09b-49753330239121.png)
+<Image align="center" alt="" src="https://files.readme.io/bd4ee5eb9eacc561ac43c4b93d3fab30ddba6824a22e0433e12684fb6b3cf09b-49753330239121.png" />
 
 La instalación y el reengagement tienen el mismo ID de dispositivo/ID de AppsFlyer. Sin embargo, en este caso (al igual que para las reatribuciones), AppsFlyer también tiene en cuenta el parámetro `is_retargeting=true`, por lo que el evento posterior al reengagement se cuenta como un usuario único adicional. Por lo tanto, se contabilizan 2 usuarios únicos.
 
@@ -90,7 +90,7 @@ La instalación y el reengagement tienen el mismo ID de dispositivo/ID de AppsFl
 
 <Accordion title="Eventos in-app no atribuidos">
 
-![](https://files.readme.io/94bf078bcf4ba26a1dc4ca323a1b4a7543cfb4e3fc8b780d0d29713c4266aa95-27455116170001.png)
+<Image align="center" alt="" src="https://files.readme.io/94bf078bcf4ba26a1dc4ca323a1b4a7543cfb4e3fc8b780d0d29713c4266aa95-27455116170001.png" />
 
 Cuando un evento in-app no está atribuido, es decir que ocurre después de una reinstalación pero por alguna razón no está vinculado a la primera instalación, no se incluye en absoluto en el recuento de usuarios únicos. Esto puede ocurrir cuando no hay un ID de dispositivo disponible para la reinstalación, pero también podría haber otras razones. <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#unattributed-organic-inapps">Saber más</Anchor>
 

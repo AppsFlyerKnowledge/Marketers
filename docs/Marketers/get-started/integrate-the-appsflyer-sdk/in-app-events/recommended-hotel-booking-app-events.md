@@ -47,7 +47,7 @@ Podrás atribuir preferencias como la puntuación del hotel, la temporada, el pa
 >
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Diagrama de flujo del recorrido del usuario en la aplicación de reservas de hoteles para eventos recomendados](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)](https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png)
+<Image align="center" alt="Diagrama de flujo del recorrido del usuario en la aplicación de reservas de hoteles para eventos recomendados" src="https://files.readme.io/f425bc8865d731eb4934b6f32123156c7016ea1f75472e8878e76636aa593073-4402679204241.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

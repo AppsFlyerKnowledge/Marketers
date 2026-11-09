@@ -93,7 +93,7 @@ Requisitos previos:
 
 1. En tu enlace personalizado de OneLink, ve a la sección **Enlaces profundos y redireccionamientos.**
 2. Desplázate hacia abajo hasta la configuración de **Cuando la aplicación no está instalada**.  
-   ![android_cpp.png](https://files.readme.io/d354feb4d47171b14f0612011b7a52b579bd9062a87544095df226ba58c57ec6-11591784334865.png)
+   <Image align="center" alt="android_cpp.png" src="https://files.readme.io/d354feb4d47171b14f0612011b7a52b579bd9062a87544095df226ba58c57ec6-11591784334865.png" />
 3. Para Android, asegúrate de que **Redirigir a** esté configurado en Google Play.
 4. En el cuadro de texto **Lista personalizada de la tienda**, introduce el valor que definiste para el parámetro de URL única de la lista en Google Console. Por ejemplo: abc123
 5. Haz clic en **Actualizar enlace**.
@@ -124,7 +124,7 @@ Requisitos previos:
 
 1. En tu enlace personalizado de OneLink, ve a la sección **Enlaces profundos y redireccionamientos.**
 2. Desplázate hacia abajo hasta la configuración de **Cuando la aplicación no está instalada**.  
-   ![ios_cpp.png](https://files.readme.io/76f6b46644efc478dc27cb373b3de4a4a80600936db5d7e6725fdb4b9182f6bb-11591824202641.png)
+   <Image align="center" alt="ios_cpp.png" src="https://files.readme.io/76f6b46644efc478dc27cb373b3de4a4a80600936db5d7e6725fdb4b9182f6bb-11591824202641.png" />
 3. Para iOS, asegúrate de que **Redirigir a** esté configurado en App Store.
 4. En el cuadro de texto **Página de producto personalizada**, introduce el ID de la página de producto personalizada (ppid), tal como se define en App Store Connect. Por ejemplo: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx.
 5. Haz clic en **Actualizar enlace**.

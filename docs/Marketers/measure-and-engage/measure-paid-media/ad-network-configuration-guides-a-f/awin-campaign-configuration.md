@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **En resumen:** Awin (affiliatewindow\_int) es un partner integrado que permite a los anunciantes ejecutar campañas de UA y retargeting. La plataforma de marketing de Awin ayuda a conectar comerciantes (anunciantes) con afiliados (publishers).
 
-![awin icon.png](https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png)
+<Image align="center" alt="awin icon.png" src="https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png" />
 
 <div id="activate-partner" />
 

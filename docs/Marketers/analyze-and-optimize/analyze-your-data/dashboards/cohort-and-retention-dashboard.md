@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **De un vistazo**: El panel de control de la cohorte agrupa a los usuarios de la aplicación por fecha de adquisición. Permite realizar un análisis de rendimiento a través de los ciclos de vida de los usuarios. Usa el panel de control para obtener insights sobre cómo las diferencias en las campañas alteran las métricas de la campaña.
 
-[![cohort main (2).png](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)](https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png)
+<Image align="center" alt="cohort main (2).png" src="https://files.readme.io/5a9307f4220a5bc41b5cebefe345a9b93165ac3874dd4faaed184d0309e92615-small-32127933337873.png" />
 
 <div id="cohort-and-retention-dashboard" />
 
@@ -50,7 +50,7 @@ Para utilizar la cohorte, selecciona usuarios de una o más aplicaciones y segm�
 
 1. Ve a **Panel de control**> **Cohorte**.  
    Se abre el panel de control de la cohorte. Se muestra el intervalo de fechas de granularidad y conversión.  
-   ![mceclip0__1_.png](https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png)
+   <Image align="center" alt="mceclip0__1_.png" src="https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png" />
 2. Selecciona la [granularidad del período de cohorte](/docs/cohort-and-retention-dashboard#cohort-periods):
    * Horas
    * Días
@@ -59,7 +59,7 @@ Para utilizar la cohorte, selecciona usuarios de una o más aplicaciones y segm�
 3. Establece el período de atribución (adquisición de usuarios o engagement de retargeting). Los datos relativos a las fechas más recientes pueden dar lugar a [datos parciales](/docs/cohort-and-retention-dashboard#partial-data) indicados con guiones en los gráficos y las tablas.
 4. Haz clic en **Editar la Cohorte**.  
    Se abre la ventana de configuración de la Cohorte.  
-   <Image alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
+   <Image align="center" alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
 5. Completa lo siguiente:
    * [**Tipo de vista de cohorte**](/docs/cohort-and-retention-dashboard#view-types):
      * **Adquisición de usuarios.**
@@ -150,7 +150,7 @@ Depende del tipo de la cohorte:
 * **Adquisición de usuarios:** datos de rendimiento de las instalaciones (reinstalaciones excluidas a menos que estén <Anchor target="_blank" href="/marketers/es/docs/measure-reinstalls#attributed-to-the-first-install">especialmente habilitadas</Anchor>)
 * **Retargeting:** datos de rendimiento de las reatribuciones o re-engagements
 
-[![beta_feature.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="beta_feature.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 </Accordion>
 
@@ -184,7 +184,7 @@ Tipo de tendencia:
 
 En este ejemplo, se utiliza el mismo raw data para generar los dos tipos de tendencias de la cohorte. La tabla de raw data contiene eventos de atribución relacionados con los diferentes usuarios A, B, C y D. Los usuarios se involucran con un anuncio, instalan la aplicación y después de la conversión realizan una o más compras. El día 0 de la cohorte es el día de la instalación.
 
-[<Image alt="CohortExample_en-us.jpg" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />](https://support.appsflyer.com/hc/article_attachments/49753028968209)
+[<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/013f6ebe78e8a94e7dcc36e62f73ad151ecd9a88c5b32e5e41ffa52f1567f744-38187655867025.png" width="2284px" />](https://support.appsflyer.com/hc/article_attachments/49753028968209)
 
 </Accordion>
 
@@ -294,11 +294,11 @@ Utiliza el control de datos parciales/completos para seleccionar el modo de visu
 
 **Gráfico: ingresos acumulados por usuario**
 
-[![Captura de pantalla 2023-10-31 a 16.56.31.png](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)](https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png)
+<Image align="center" alt="Captura de pantalla 2023-10-31 a 16.56.31.png" src="https://files.readme.io/cde4e25a051e159cd4e1a1f192eda79df1d3df6f5891fcda2c24a01e0baa462b-small-32127949501201.png" />
 
 **Tabla: ingresos por día**
 
-[![Full_cohort2_us-en.png](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)](https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png)
+<Image align="center" alt="Full_cohort2_us-en.png" src="https://files.readme.io/be3949a33cdf489eb7735acbf06c7abbecfd46f84a20d463e50ddfe815cc3368-small-32127949501969.png" />
 
 <div id="in-app-event-conversion" />
 
@@ -306,7 +306,7 @@ Utiliza el control de datos parciales/completos para seleccionar el modo de visu
 
 Un anunciante define af\_purchase de un evento in-app. El gráfico de cohortes muestra el porcentaje de usuarios de la aplicación en la cohorte que realizó una compra desde un entorno móvil. Podemos ver en el día 10, por ejemplo, que cerca del 30% (11,11%+9.71%+7,47%) de los usuarios de la cohorte realizó una compra desde un entorno móvil.
 
-[![CohortTable.png](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)](https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png)
+<Image align="center" alt="CohortTable.png" src="https://files.readme.io/d2709ec30a9f6cc3fe55503af557153b6a2677948d0ca0b9a477af9e47746c33-small-32127933347089.png" />
 
 </Accordion>
 

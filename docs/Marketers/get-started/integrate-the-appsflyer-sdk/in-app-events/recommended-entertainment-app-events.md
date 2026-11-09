@@ -52,7 +52,7 @@ Estos eventos también son relevantes para las aplicaciones de entretenimiento q
 >
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Diagrama_de_flujo_para_eventos_recomendados entertainment_app_user_journey](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)](https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png)
+<Image align="center" alt="Diagrama_de_flujo_para_eventos_recomendados entertainment_app_user_journey" src="https://files.readme.io/4cce1846cd799226493b914bc36d0944192a3c6e5290ac461b22ed712265f59f-360020063177.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

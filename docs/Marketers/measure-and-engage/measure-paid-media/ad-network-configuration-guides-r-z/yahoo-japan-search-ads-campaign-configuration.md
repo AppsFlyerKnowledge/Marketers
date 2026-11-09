@@ -24,7 +24,7 @@ x-zendesk:
 >
 > * El 15 de diciembre de 2021, la integración heredada con Yahoo Japan Search Ads, *yahoojapansearch\_int,* se reemplazó por una nueva integración, *yjsearch\_int*. Descubre cómo [empezar a trabajar con la nueva API](/docs/yahoo-japan-search-ads-campaign-configuration#integrating-with-the-new-api).
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yjsearch.png" width="121px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/yjsearch.png" width="121px" />
 
 <div id="yahoo-japan-search-ads-integration-principles" />
 

@@ -25,7 +25,7 @@ x-zendesk:
 
 > **En resumen:** Utiliza el dashboard Discovery AI de la Optimización Creativa para analizar el rendimiento de tus creatividades y las escenas y elementos a partir de los que se construyen, para producir y mantener creatividades ganadoras basadas en datos.
 
-[![Main Discovery image.jpg](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)](https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg)
+<Image align="center" alt="Main Discovery image.jpg" src="https://files.readme.io/523f3a7bc5f0461e6c260deeae1f0055fcf9e77a60c56705ff2e661d3441d2fa-21378527705489.jpg" />
 
 <div id="about-the-creative-optimization-discovery-ai-dashboard" />
 
@@ -68,7 +68,7 @@ Si aún no has configurado la Optimización Creativa, puedes encontrar instrucci
 6. Consulta la galería de tarjetas de descubrimiento de todas las creatividades, elementos, escenas o textos que coincidan con tus filtros y configuración de búsqueda.
    1. [Opcional] Para cambiar las métricas que se muestran en las tarjetas, haz clic en el icono de **Configuración** y selecciona hasta 5 métricas para mostrar. [Saber más sobre la configuración de las tarjetas de descubrimiento](/docs/creative-optimization-discovery-ai-dashboard#discovery-tabs).
    2. Ordena los mosaicos de la galería de mayor a menor (o al revés) por las métricas. Las métricas disponibles para ordenar son las seleccionadas en la configuración de la tarjeta de descubrimiento.  
-      <Image alt="Sort by new.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
+      <Image align="center" alt="Sort by new.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
 7. Haz clic en una tarjeta específica para profundizar y obtener datos e insights de rendimiento adicionales.
 
 </Accordion>
@@ -83,7 +83,7 @@ Puedes personalizar qué métricas ves en los mosaicos de Discovery.
 
 1. Haz clic en el icono <Image alt="Gear icon.jpg" src="https://files.readme.io/b54f4534bc513b597f7cdda1fb4db7dd811d71b1466ddd3b50b9efe751cf68d3-24287873747857.jpg" width="31px" /> en la esquina superior derecha (junto a **Ordenar por**).
 2. Selecciona las métricas deseadas (hasta 5) y haz clic en **Aplicar**.  
-   <Image alt="Discovery card settings.jpg" src="https://files.readme.io/7b05960fde8159a6e5a53917e2e972ea059d6a6dc165ee66c7d6d390c4148786-24289299704081.jpg" width="738px" />  
+   <Image align="center" alt="Discovery card settings.jpg" src="https://files.readme.io/7b05960fde8159a6e5a53917e2e972ea059d6a6dc165ee66c7d6d390c4148786-24289299704081.jpg" width="738px" />
    Las métricas seleccionadas aparecerán en los mosaicos.
 
 **Las métricas disponibles incluyen:**
@@ -267,7 +267,7 @@ Explora los datos de rendimiento de las creatividades y las escenas y elementos 
 
 Visualiza una galería con todas tus creatividades, junto con tus datos de rendimiento. Los mosaicos mostrados se basan en las selecciones principales del filtro de creatividad. Además, se pueden personalizar las métricas que muestran los mosaicos y el método de clasificación utilizado para mostrarlos. Consulta configuración y ordenación.
 
-![creatives.png](https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png)
+<Image align="center" alt="creatives.png" src="https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png" />
 
 |  | Dimensión/métrica | Descripción |
 | --- | --- | --- |
@@ -289,7 +289,7 @@ Con tecnología de IA, las creatividades de video se dividen automáticamente en
 
 **Nota**: Los mosaicos mostrados se basan en las selecciones principales del filtro de creatividad. Además, se pueden personalizar las métricas que muestran los mosaicos y el método de clasificación utilizado para mostrarlos. Consulta configuración y ordenación.
 
-<Image alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
+<Image align="center" alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
 
 |  | Dimensión/métrica | Descripción |
 | --- | --- | --- |
@@ -310,7 +310,7 @@ Nuestros algoritmos de IA totalmente automatizados desglosan aún más las creat
 
 **Nota**: Los mosaicos mostrados se basan en las selecciones principales del filtro de creatividad. Además, se pueden personalizar las métricas que muestran los mosaicos y el método de clasificación utilizado para mostrarlos. Consulta configuración y ordenación.
 
-![elements.png](https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png)
+<Image align="center" alt="elements.png" src="https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png" />
 
 |  | Dimensión/métrica | Descripción |
 | --- | --- | --- |
@@ -330,7 +330,7 @@ Nuestros algoritmos de IA totalmente automatizados dividen las creatividades de 
 
 **Nota**: Los mosaicos mostrados se basan en las selecciones principales del filtro de creatividad. Además, se pueden personalizar las métricas que muestran los mosaicos y el método de clasificación utilizado para mostrarlos. Consulta configuración y ordenación.
 
-<Image alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
+<Image align="center" alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
 
 |  | Dimensión/métrica | Descripción |
 | --- | --- | --- |

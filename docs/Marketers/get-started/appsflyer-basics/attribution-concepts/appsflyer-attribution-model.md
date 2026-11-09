@@ -35,7 +35,7 @@ x-zendesk:
 ---
 > **En resumen:** AppsFlyer identifica la fuente de medios que lleva a un usuario a instalar o volver a involucrarse con una aplicación y atribuye la acción del usuario a esa fuente utilizando su modelo de atribución.
 
-[![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
+<Image align="center" alt="" src="https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png" />
 
 <div id="what-is-attribution" />
 
@@ -79,7 +79,7 @@ AppsFlyer utiliza varios métodos de atribución, enumerados en la tabla a segui
 
 En una nueva instalación, si hay más de un engagement válido, **AppsFlyer prioriza los clics sobre las impresiones y los métodos deterministas sobre los probabilísticos**. Los métodos de atribución se utilizan de acuerdo con las prioridades mostradas en el gráfico.
 
-[<Image alt="af_ip" src="https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png" width="1378px" />](https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png)
+<Image align="center" alt="af_ip" src="https://files.readme.io/8110571047a972a247d21d5b34d64c3afd010fd733f625ca1321cff93061e374-37555863998865.png" width="1378px" />
 
 Encuentra a continuación descripciones detalladas de los modelos de atribución de AppsFlyer.
 
@@ -336,7 +336,7 @@ Cuando una aplicación se respalda utilizando iCloud y luego se restaura (en el 
 
 <Accordion title="Atribución de retargeting">
 
-![Retargeting_-_Flujo__2_.png](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="Retargeting_-_Flujo__2_.png" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 Un usuario que reinstala una aplicación dentro de la <Anchor target="_blank" href="/marketers/es/docs/set-up-re-attribution-window">ventana de reatribución</Anchor> (por defecto, 90 días) se considera una reatribución. Si esta instalación ocurre tras interactuar con una campaña de retargeting, se registra como una reinstalación de retargeting, también conocida como reatribución, y se reporta en <Anchor target="_blank" href="/marketers/es/docs/retargeting-attribution-guide">retargeting</Anchor>.
 

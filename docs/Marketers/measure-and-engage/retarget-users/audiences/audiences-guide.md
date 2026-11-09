@@ -27,7 +27,7 @@ x-zendesk:
 
 > **En resumen:** Aumenta la eficacia de tus campañas de adquisición de usuarios y de remarketing utilizando Audiences de AppsFlyer para crear y conectar segmentos de audiencia con tus redes de partners.
 
-![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
+<Image align="center" alt="Intro_image.png" src="https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png" />
 
 <div id="audiences-basics" />
 
@@ -126,7 +126,7 @@ Elige entre más de 30 audiencias dentro de las **categorías de Adquirir, Activ
 >
 > Este ejemplo ilustra un caso de uso típico. Supongamos que quieres instar a los usuarios activos de tu aplicación, que aún no han comprado, a realizar su primera compra. Puedes seleccionar a la audiencia "Fomentar la compra" y personalizarla para especificar qué evento define una compra in-app. A continuación, puedes conectar a la audiencia con tus partners y realizar una campaña promocional que les incite a realizar una compra y les lleve a la página de compra de la aplicación.
 >
-> ![Encourage_purchase_image_this_one.jpeg](https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg)
+> <Image align="center" alt="Encourage_purchase_image_this_one.jpeg" src="https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg" />
 
 **Para crear una audiencia sugerida:**
 
@@ -202,7 +202,7 @@ La evaluación de reglas de audiencia se realiza utilizando un identificador de 
     * Si un ID de dispositivo está asociado a dos CUIDs diferentes, se utiliza el CUID asociado más recientemente.
     * Al construir una audiencia con CUID como identificador, la asociación CUID debe haber sido recibida por AppsFlyer en la instalación (no solo en eventos posteriores a la instalación) para una asociación completa con los dispositivos relevantes y un enriquecimiento exitoso con identificadores de dispositivos (es decir, GAID, IDFA). <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid#configuración-del-cuid">Saber más</Anchor>
 
-<Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+<Image align="center" alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
 
 <div id="example-device-id-vs-cuid" />
 
@@ -374,7 +374,7 @@ Aprende a utilizar los conjuntos de reglas para definir tus audiencias.
 
 <Accordion title="Conjuntos de reglas de segmentación de audiencia">
 
-![audience_segmentation_rulesets.jpg](https://files.readme.io/4407da232d372a98afcd30df3a832f6ef38bb55a6b02640587f44c7501b014f2-46335625066897.jpg)
+<Image align="center" alt="audience_segmentation_rulesets.jpg" src="https://files.readme.io/4407da232d372a98afcd30df3a832f6ef38bb55a6b02640587f44c7501b014f2-46335625066897.jpg" />
 
 * Un conjunto de reglas de segmentos de audiencia consiste en una o varias reglas que permiten un filtrado preciso.
 * Combina conjuntos de reglas utilizando los operadores y, o, excluir.
@@ -397,7 +397,7 @@ Los ejemplos que siguen ilustran la implementación del conjunto de reglas en va
 >
 > Usuarios de Nueva York que desinstalaron la aplicación en el último mes
 >
-> ![example_location_based_rule.jpg](https://files.readme.io/7ee7e2b9e8f06dc47c93148767fd67d87855a05cd09ba06f2dd2c0ea9dc29607-46335625068817.jpg)
+> <Image align="center" alt="example_location_based_rule.jpg" src="https://files.readme.io/7ee7e2b9e8f06dc47c93148767fd67d87855a05cd09ba06f2dd2c0ea9dc29607-46335625068817.jpg" />
 
 <div id="example-user-attributes-based-rule" />
 
@@ -405,7 +405,7 @@ Los ejemplos que siguen ilustran la implementación del conjunto de reglas en va
 >
 > Usuarios que iniciaron la aplicación en los últimos 7 días al menos una vez y cuya arma favorita es una espada.
 >
-> ![example_user_attributes_based_rule.jpg](https://files.readme.io/8ab97cdccd2a1b33b671b1f686ca642306197ccf5151ca2ba9836db8ca496d03-46335625073809.jpg)
+> <Image align="center" alt="example_user_attributes_based_rule.jpg" src="https://files.readme.io/8ab97cdccd2a1b33b671b1f686ca642306197ccf5151ca2ba9836db8ca496d03-46335625073809.jpg" />
 
 <div id="example-revenue" />
 
@@ -413,7 +413,7 @@ Los ejemplos que siguen ilustran la implementación del conjunto de reglas en va
 >
 > Usuarios que instalaron la aplicación durante los últimos siete días y gastaron 1 $
 >
-> ![example_revenue.jpg](https://files.readme.io/d7768bec78ff5981639da4e1c8e1a3121961464c0a5932bf8f542f27979358a8-46335625074833.jpg)
+> <Image align="center" alt="example_revenue.jpg" src="https://files.readme.io/d7768bec78ff5981639da4e1c8e1a3121961464c0a5932bf8f542f27979358a8-46335625074833.jpg" />
 
 <div id="example-owned-media-filter" />
 
@@ -423,7 +423,7 @@ Los ejemplos que siguen ilustran la implementación del conjunto de reglas en va
 >
 > Aquí tienes un ejemplo con los usuarios que abrieron la aplicación al menos una vez en los últimos 7 días y cuya instalación se atribuyó a una campaña de correo electrónico específica, así como a conjuntos de anuncios y anuncios específicos.
 >
-> ![Owned_media_example.jpg](https://files.readme.io/4b9c076f5299f4f59524a7f816964f4db2c8edd73690aa899e34fcac0d145628-46335667611409.jpg)
+> <Image align="center" alt="Owned_media_example.jpg" src="https://files.readme.io/4b9c076f5299f4f59524a7f816964f4db2c8edd73690aa899e34fcac0d145628-46335667611409.jpg" />
 >
 > La audiencia se puede utilizar para volver a captar a estos usuarios con mensajes personalizados en medios propios o de pago, o como una lista de exclusión para evitar que vean anuncios irrelevantes o innecesarios al ejecutar campañas.
 
@@ -435,7 +435,7 @@ Los ejemplos que siguen ilustran la implementación del conjunto de reglas en va
 >
 > Crea una audiencia de usuarios potenciales que hicieron clic en un anuncio, pero que no instalaron en los últimos dos días.
 >
-> ![example_remarketing.jpg](https://files.readme.io/715c42d56c0deffdb4d28acd213f4a5da62de75bbcd6834a927b9226d2fea43e-46335667613329.jpg)
+> <Image align="center" alt="example_remarketing.jpg" src="https://files.readme.io/715c42d56c0deffdb4d28acd213f4a5da62de75bbcd6834a927b9226d2fea43e-46335667613329.jpg" />
 >
 > Estos son usuarios que, en el pasado reciente, estaban lo suficientemente interesados en tu aplicación móvil como para hacer clic en tu anuncio, pero por algún motivo no instalaron la aplicación o la instalaron, pero no la iniciaron. Algunos usuarios solo necesitan un recordatorio (push) para instalarla. Es posible que otras personas necesiten ver más pantallas o funciones en tu aplicación para finalmente convertirse. Por lo tanto, si tienes una creatividad principal que usas en audiencias nuevas, podría ser mejor usar una creatividad diferente para las audiencias que hicieron clic, pero no instalaron.
 
@@ -506,7 +506,7 @@ La pestaña **Conexiones** muestra todas las conexiones de tus partners y el est
 6. Selecciona los identificadores de usuarios que autorizas para compartir con este partner.
    * Los identificadores compatibles varían según el partner. Solo aparecerán en la lista los identificadores compatibles con el partner seleccionado.
    * Solo se cargarán los identificadores que cumplan con tu <Anchor target="_blank" href="/marketers/es/docs/audiences-user-identifier-policy">política de identificadores de usuario a nivel cuenta.</Anchor> Verás un mensaje de advertencia si seleccionas un identificador que no está permitido por la política de tu cuenta.  
-     ![doctored_connection_image.jpg](https://files.readme.io/5de138c4a2c2a3f26bebc6bd14d9703408a986dc4f8c53235d4be337784603af-46335625091345.jpg)
+     <Image align="center" alt="doctored_connection_image.jpg" src="https://files.readme.io/5de138c4a2c2a3f26bebc6bd14d9703408a986dc4f8c53235d4be337784603af-46335625091345.jpg" />
 7. Haz clic en **Guardar**. Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
 
 </Accordion>
@@ -540,7 +540,7 @@ Esta sección describe las características y las métricas de la campaña que a
 
 <Accordion title="Dashboard de Audiences">
 
-[![new_dashboard_image_doctored.jpg](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)](https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg)
+<Image align="center" alt="new_dashboard_image_doctored.jpg" src="https://files.readme.io/98da5fffae48c7fafd48d45444085fb9bce804e2f03690994a23699604e0367e-46335625092369.jpg" />
 
 | Columna | Descripción |
 | --- | --- |
@@ -589,7 +589,7 @@ La sección **Métricas de campaña** del dashboard de Audiences muestra datos d
 
 La vista de **métricas de campaña** inicial muestra datos de campaña resumidos para cada audiencia:
 
-[<Image alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30621031359377)
+[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://files.readme.io/a7fb8a1909ca9536914822008dc140cb66270d3ff9ceec8d09647a9f81b463ae-46335625093649.jpg" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30621031359377)
 
 | Columna | Descripción |
 | --- | --- |
@@ -605,7 +605,7 @@ Desde la vista de resumen, haz clic en el icono <Image alt="show_detailed_view_i
 
 La vista detallada muestra los datos desglosados por partners y campañas compatibles:
 
-[![campaign_metrics_detailed_view.jpg](https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg)](https://support.appsflyer.com/hc/article_attachments/30621015096593)
+[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://files.readme.io/cee8910e07bdf6707feeda39dd5e480b19b27fad801dd99d501c2c1ceb4bb49d-46335667634193.jpg" />](https://support.appsflyer.com/hc/article_attachments/30621015096593)
 
 Si la audiencia seleccionada se utilizó para el objetivo de más de una aplicación, utiliza la lista desplegable ![pin_A.png](https://files.readme.io/dcf60cd17a1135e63f6443728c3d713d9cacd6af0e1c010c226d1a092770c40b-46335667636113.png) para filtrar los datos por aplicación.
 

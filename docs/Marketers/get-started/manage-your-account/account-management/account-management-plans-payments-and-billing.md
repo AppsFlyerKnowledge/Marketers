@@ -419,24 +419,24 @@ Este proceso seguro y automatizado se realiza directamente en el portal de AppsF
 2. Existe un problema abierto de facturación
    1. Haga clic en **Actualizar pago**.  
 
-      <Image alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
+      <Image align="center" alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
    2. En el cuadro de diálogo de detalles de pago que se abre:  
 
-      <Image alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
+      <Image align="center" alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
 3. En la ventana emergente, selecciona **Bank account** -> **Next.**  
 
-   <Image alt="2025-12-08_12-14-41.png" src="https://files.readme.io/f172ab5d59c98146fb9478668b90495401465b50c4d3d9f5f6c922d974a62a1a-41707949014929.png" width="75%" />
+   <Image align="center" alt="2025-12-08_12-14-41.png" src="https://files.readme.io/f172ab5d59c98146fb9478668b90495401465b50c4d3d9f5f6c922d974a62a1a-41707949014929.png" width="75%" />
 4. Introduce tus datos y selecciona tu banco.  
 
-   <Image alt="2025-12-08_12-15-37.png" src="https://files.readme.io/b89b46eaaba05710361f963a27482512eee380b02a9eb01c2e14df050da37129-41707949015825.png" width="50%" />
+   <Image align="center" alt="2025-12-08_12-15-37.png" src="https://files.readme.io/b89b46eaaba05710361f963a27482512eee380b02a9eb01c2e14df050da37129-41707949015825.png" width="50%" />
 5. Se te redirigirá al portal de tu banco para iniciar sesión y autorizar a Stripe, nuestro proveedor de ACH, a prestar servicios de procesamiento de pagos.  
 
-   <Image alt="2025-12-08_12-16-39.png" src="https://files.readme.io/46265f0a8078c5cc588df2310dede2038a5936f41215edf0e36f711465aae497-41707949017233.png" width="50%" />
+   <Image align="center" alt="2025-12-08_12-16-39.png" src="https://files.readme.io/46265f0a8078c5cc588df2310dede2038a5936f41215edf0e36f711465aae497-41707949017233.png" width="50%" />
 6. Elige una de estas opciones:
    1. **Save with Link** - Para guardar tu inicio de sesión de ACH en Stripe Link para usarlo en el futuro en otros sitios.
    2. **Not now** - para no guardar tu inicio de sesión de ACH en Stripe Link.  
 
-      <Image alt="2025-12-08_12-17-44.png" src="https://files.readme.io/d89cd1e7c04f2507272f67fef1e71f18d94ee45703d42fbd354c2033fa97b7e2-41707974850193.png" width="50%" />
+      <Image align="center" alt="2025-12-08_12-17-44.png" src="https://files.readme.io/d89cd1e7c04f2507272f67fef1e71f18d94ee45703d42fbd354c2033fa97b7e2-41707974850193.png" width="50%" />
 7. Introduzca los detalles de la tarjeta y haga clic en **Enviar pago**.
 
 </Accordion>
@@ -451,10 +451,10 @@ Este proceso seguro y automatizado se lleva a cabo directamente en el portal de 
 2. Consulte su confirmación de pago.
    1. Para actualizar su método de pago:  
 
-      <Image alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
+      <Image align="center" alt="2025-12-04_10-47-01.png" src="https://files.readme.io/92d203282afe48ae6123bd130f154d11f5a28140200a23d1f84bbc451356f1ca-41707949007505.png" width="75%" />
    2. De la lista de facturas en la sección No pagadas, seleccione una o más facturas no pagadas.  
 
-      <Image alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
+      <Image align="center" alt="2025-12-04_10-49-59.png" src="https://files.readme.io/9b08bc4578e17258cf548234d5ff1c26f66f965a2ed8660147228fd4504e0140-41707974841361.png" width="75%" />
 3. Haga clic en **Pagar con tarjeta de crédito**.
 4. **Para pago con tarjeta de crédito:** Introduzca los detalles necesarios y haga clic en **Registrar tarjeta de crédito**.
 

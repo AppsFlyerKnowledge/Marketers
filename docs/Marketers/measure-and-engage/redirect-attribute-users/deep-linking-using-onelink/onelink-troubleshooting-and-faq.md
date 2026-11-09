@@ -129,7 +129,7 @@ Sí.
 2. Selecciona la plantilla OneLink.
 3. Haz clic en la opción 'Editar plantilla' del menú de tres puntos.
 
-   <Image alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
+   <Image align="center" alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
 4. Haz clic en el icono de la papelera.
 
 **Nota:** Si tienes URLs de OneLink existentes basadas en la plantilla eliminada, **no funcionarán ni siquiera para llevar a los usuarios a la tienda de aplicaciones.** Por este motivo, es particularmente importante que no elimines una plantilla sin asegurarte primero de que no haya ninguna URL de OneLink que la utilice. Alternativamente, considera si es posible lograr los resultados que necesitas cambiando la configuración de la plantilla actual en lugar de eliminarla.
@@ -254,7 +254,7 @@ A partir de noviembre de 2025,
 * El enlace dejará de funcionar en un plazo de 2 minutos tras su eliminación.
 * Los enlaces eliminados a través de la interfaz de usuario después del 5 de noviembre de 2025 se pueden restaurar desde la tabla **Enlaces eliminados**, accesible en la gestión de OneLink.
 
-  <Image alt="deleted links.png" src="https://files.readme.io/d5a2cc7047fda06ba8249cc00b2830c309ec6137f10306cdabca61bcfe3d4d15-small-41829768141713.png" width="2768px" />
+  <Image align="center" alt="deleted links.png" src="https://files.readme.io/d5a2cc7047fda06ba8249cc00b2830c309ec6137f10306cdabca61bcfe3d4d15-small-41829768141713.png" width="2768px" />
 * Los enlaces se pueden restaurar hasta 90 días después de la fecha de eliminación. Si han pasado más de 90 días desde la fecha de eliminación del enlace, el enlace no se puede restaurar.
 
 </Accordion>
@@ -287,7 +287,7 @@ Las URLs Fullback envían a los usuarios a páginas web específicas si se abre 
 
 Para implementar una URL Fallback, en la plantilla OneLink o en la configuracíon del enlace personalizado, define el comportamiento del enlace para que, cuando la app no esté instalada, redireccione a una URL diferente.
 
-![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
+<Image align="center" alt="different_url.png" src="https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png" />
 
 Usar esta configuración añade `af_ios_url` y `af_android_url` como parámetros de destino para la recuperación, lo que hará que los usuarios de iOS sean enviados a la página especificada por `af_ios_url` y los usuarios de Android para ser redireccionados a la página especificada por `af_android_url`.
 
@@ -610,11 +610,11 @@ WeChat anula los deep links de Android e iOS y envía a los usuarios a una pági
 
 Para solucionar esto, OneLink puede reconocer clics en WeChat y cargar una landing page exclusiva que le indica al usuario que haga clic en el botón de opciones y luego en la opción **Abrir en el navegador**. Esto, a su vez, abre la URL de redireccionamiento definida en la configuración de plantilla de OneLink.
 
-![WeChat_a.jpg](https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg)
+<Image align="center" alt="WeChat_a.jpg" src="https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg" />
 
 Si el idioma registrado del usuario de WeChat es el chino, OneLink genera una versión localizada de la landing page:
 
-![WeChat_b.jpg](https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg)
+<Image align="center" alt="WeChat_b.jpg" src="https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg" />
 
 </Accordion>
 

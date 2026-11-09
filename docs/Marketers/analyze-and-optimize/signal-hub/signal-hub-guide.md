@@ -130,7 +130,7 @@ Signal Hub proporciona una métrica de enriquecimiento para ayudarte a entender 
 
 En la fuente de datos compartida para la colaboración, el porcentaje de **enriquecimiento de identidad** muestra qué parte de los datos ZIP+4 del proveedor se emparejó correctamente con identificadores seguros para la privacidad que se pueden usar para la activación.
 
-<Image alt="Identity enrichment.png" src="https://files.readme.io/fce84b456682695e1896a99749d08ba26ff885cf3e3c16ba661b2c93ff7fa8c9-40890476677521.png" width="1090px" />
+<Image align="center" alt="Identity enrichment.png" src="https://files.readme.io/fce84b456682695e1896a99749d08ba26ff885cf3e3c16ba661b2c93ff7fa8c9-40890476677521.png" width="1090px" />
 
 * **Proveedor de datos:** El número de grupos ZIP+4 compartidos por el proveedor de señales de compra (por ejemplo, Mastercard).
 * **Datos de identidad:** El número de esos grupos ZIP+4 que el partner de resolución de identidad emparejó con éxito a identificadores hash (por ejemplo, correos electrónicos hash).

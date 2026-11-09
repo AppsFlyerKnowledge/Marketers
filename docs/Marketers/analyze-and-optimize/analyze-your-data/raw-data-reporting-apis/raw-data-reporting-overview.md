@@ -122,7 +122,7 @@ Para facilitar la comprensión, los campos del viaje del usuario se agrupan seg�
 
 ## Reportes del viaje del usuario
 
-![Raw_data_-_User_acquisition_.png](https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png)
+<Image align="center" alt="Raw_data_-_User_acquisition_.png" src="https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png" />
 
 <div id="user-journey-basics" />
 
@@ -150,7 +150,7 @@ Los reportes del viaje del usuario contienen datos recopilados sobre eventos que
   * Los datos de retargeting siempre son no orgánicos.
   * Los eventos de retargeting in-app se incluyen tanto en los reportes de UA como en los de retargeting de eventos in-app. Consulta la metodología de <Anchor target="_blank" href="/marketers/es/docs/resolve-retargeting-double-attribution">doble atribución de retargeting</Anchor>.
 
-    ![Raw_data_-_Retargeting.png](https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png)
+    <Image align="center" alt="Raw_data_-_Retargeting.png" src="https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png" />
 
 Para seguir el viaje de un usuario, combina los reportes relacionados con la parte que te interesa, por ejemplo, instalaciones y eventos en la app. Luego, ordena el reporte usando el ID de AppsFlyer, la hora del evento y el tipo de reporte. El resultado es el conjunto de eventos de un usuario a lo largo del tiempo, es decir, su recorrido.
 

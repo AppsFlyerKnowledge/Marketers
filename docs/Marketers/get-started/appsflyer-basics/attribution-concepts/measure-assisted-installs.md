@@ -67,7 +67,7 @@ En los dashboards agregados y reportes, las (hasta 3) redes de colaboradores se 
 
 En los reporte de raw data, los datos de las redes contribuyentes se desglosan en campos separados para los Colaboradores 1-3.
 
-[![](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)](https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png)
+<Image align="center" alt="" src="https://files.readme.io/ee3558f74cedbec698c5e466a9697cad7a5b1910c45cd0851cfaf741959deba1-33302646505617.png" />
 
 Para cada una de las redes contribuyentes, el reporte de raw data incluye lo siguiente:
 

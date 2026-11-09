@@ -202,7 +202,7 @@ Utiliza este procedimiento para:
 1. Abre Cyberduck.  
     Aparecerá la lista de tipos de datos disponibles.
 
-   ![Duck_us-en.jpg](https://files.readme.io/b8e93ad9423605b3247531d276b9c2d45abd4ea044dde29ee177f4d71b738e9d-360008254377.jpg)
+   <Image align="center" alt="Duck_us-en.jpg" src="https://files.readme.io/b8e93ad9423605b3247531d276b9c2d45abd4ea044dde29ee177f4d71b738e9d-360008254377.jpg" />
 2. **Haz doble clic** en un tipo de reporte de PBA y elige entre web\_events, web\_to\_app o web\_touch\_points.  
    Aparecerá la lista de fechas de reportes disponibles.
 3. **Haz clic con el botón derecho** en una fecha determinada.

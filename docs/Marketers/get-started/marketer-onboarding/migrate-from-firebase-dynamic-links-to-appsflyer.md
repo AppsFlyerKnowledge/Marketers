@@ -62,7 +62,7 @@ Antes de empezar, necesitarás lo siguiente:
 * <Anchor target="_blank" href="/marketers/es/docs/adding-an-app-to-appsflyer">Agrega la aplicación</Anchor> en AppsFlyer.
 * [Opcional] Cambia la <Anchor target="_blank" href="/marketers/es/docs/set-up-re-attribution-window">ventana de reatribución</Anchor> predeterminada de 90 días para alinearla con tu definición de usuarios activos.
 
-![agregar](https://files.readme.io/7f7bab2277d0f45434618d28714c727ccbb9e414192b765dd22551bcbd5b0a37-16950840602769.png)
+<Image align="center" alt="agregar" src="https://files.readme.io/7f7bab2277d0f45434618d28714c727ccbb9e414192b765dd22551bcbd5b0a37-16950840602769.png" />
 
 </Accordion>
 

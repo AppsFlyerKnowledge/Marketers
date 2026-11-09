@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **Resumen**: Sigue las instrucciones de esta guía para activar ROI360 para el manejo de datos de costos e ingresos.
 
-![](https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png)
+<Image align="center" alt="" src="https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png" />
 
 <div id="about-roi360" />
 
@@ -40,7 +40,7 @@ Sigue las instrucciones a continuación para activar las herramientas de ROI360 
 
 <Accordion title="Onboarding de costos">
 
-![](https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png)
+<Image align="center" alt="" src="https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png" />
 
 Con la solución de costos de ROI360, obtendrás datos detallados sobre costos y ROI, actualizados varias veces al día. Esto te permitirá gestionar eficazmente los costos de campaña y examinar las asignaciones de presupuesto en distintas fuentes de medios, ya sean ad networks, medios propios o agencias.
 
@@ -64,7 +64,7 @@ Después de finalizar el onboarding de costos, podrás:
 
 <Accordion title="Onbaording de ingresos publicitarios">
 
-![](https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png)
+<Image align="center" alt="" src="https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png" />
 
 La solución de ingresos publicitarios de ROI360 te proporcionará datos detallados sobre ingresos publicitarios, actualizados varias veces al día.
 
@@ -88,7 +88,7 @@ Una vez completado el onboarding de ingresos publicitarios, incluyendo la conexi
 
 <Accordion title="Introducción a ingresos por compras y suscripciones in-app.">
 
-![](https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png)
+<Image align="center" alt="" src="https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png" />
 
 Con la solución de ingresos de ROI360, obtienes un control proactivo sobre tus flujos de ingresos.
 

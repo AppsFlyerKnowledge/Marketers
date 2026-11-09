@@ -41,7 +41,7 @@ Para incluir la bandera SSOT en tus datos, debes activar SSOT en Conversion Stud
 
 <Accordion title="Activa la Fuente Única de Verdad">
 
-![SSOTControl.png](https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png)
+<Image align="center" alt="SSOTControl.png" src="https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png" />
 
 **Para activar SSOT:**
 
@@ -59,7 +59,7 @@ Consulta <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio
 
 ## Panel de vista general para la Fuente Única de Verdad
 
-![SSOTisNowOn.png](https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png)
+<Image align="center" alt="SSOTisNowOn.png" src="https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png" />
 
 La vista Fuente Única de Verdad disponible a través del panel de vista general proporciona un panorama completo de las métricas de rendimiento no orgánicas. En la vista:
 
@@ -79,11 +79,11 @@ Los datos en la vista SSOT están disponibles entre 3 y 5 días después de habi
 
 1. Antes de empezar, verifica que en Conversion Studio esté activada la opción <Anchor target="_blank" href="/marketers/es/docs/skan-conversion-studio#single-source-of-truth">Fuente Única de Verdad</Anchor>.
 2. En AppsFlyer, ve a **Panel de control** > **Vista general.**   
-   <Image alt="SeleccionarInformeGuardado.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
+   <Image align="center" alt="SeleccionarInformeGuardado.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
 3. Haz clic en ▼.
 4. Selecciona Vista general Lite.  
    Se muestra el interruptor de Fuente Única de Verdad.  
-   <Image alt="VistaSSOTon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
+   <Image align="center" alt="VistaSSOTon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
 5. Activa la Fuente Única de Verdad.
 6. Ocurrirá una de las siguientes situaciones:
    * Se muestran las métricas y gráficos del panel.  
@@ -193,7 +193,7 @@ La atribución de SKAN y la modelada por AF operan diferente, con característic
 
 Los posibles escenarios de atribución del modelo SKAN-AF se ilustran en el siguiente diagrama de Venn.
 
-![altskan_af_model_diagram.pngalt](https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png)
+<Image align="center" alt="altskan_af_model_diagram.pngalt" src="https://files.readme.io/1b305d053044f79d12b9190d0b6c24dcc7e0bd17e17ef29029ad0b1c3c7d84c0-31247514684689.png" />
 
 La tabla siguiente describe las razones para cada escenario de atribución.
 
@@ -209,7 +209,7 @@ La tabla siguiente describe las razones para cada escenario de atribución.
 
 SSOT funciona como se detalla en el gráfico a continuación.
 
-![SingleSourceOfTruth.png](https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png)
+<Image align="center" alt="SingleSourceOfTruth.png" src="https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png" />
 
 **¿Cómo funciona el mecanismo SSOT?**
 

@@ -30,7 +30,7 @@ x-zendesk:
 
 El Asistente de IA es tu herramienta de analítica y orientación de autoservicio, creada para ayudarte a descubrir insights y tomar decisiones más inteligentes con AppsFlyer. Úsalo junto con los datos de tu Dashboard para explorar y entender rápidamente el rendimiento de tu marketing.
 
-<Image alt="Demo animada de la ventana de chat del Asistente de IA en AppsFlyer" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
+<Image align="center" alt="Demo animada de la ventana de chat del Asistente de IA en AppsFlyer" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
 
 <div id="what-you-can-do" />
 

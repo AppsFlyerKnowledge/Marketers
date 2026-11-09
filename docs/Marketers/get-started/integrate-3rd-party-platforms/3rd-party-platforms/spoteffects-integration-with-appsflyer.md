@@ -69,7 +69,7 @@ Para obtener más detalles sobre la activación de partners, haz clic <Anchor ta
 
 AppsFlyer puede enviar postbacks automáticos a las instalaciones de usuarios de Spoteffects. Usa esta sección para definir el envío de estos postbacks.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 Selecciona **Eventos atribuidos a cualquier partner u orgánico** para enviar postbacks a Spoteffects para cualquier usuario que descargue la app, o selecciona **Off**.
 
@@ -79,7 +79,7 @@ Haga clic en **Guardar**.
 
 ### Configuración de eventos in-app
 
-[![](https://files.readme.io/97da1d47ab9bfa3855d18dcd60f3a263b8a631c477b354dc32486170b7708e96-360002201165.png)](https://files.readme.io/97da1d47ab9bfa3855d18dcd60f3a263b8a631c477b354dc32486170b7708e96-360002201165.png)
+<Image align="center" alt="" src="https://files.readme.io/97da1d47ab9bfa3855d18dcd60f3a263b8a631c477b354dc32486170b7708e96-360002201165.png" />
 
 En esta sección, puedes asignar tus eventos de AppsFlyer con Spoteffects mediante postbacks.
 

@@ -65,14 +65,14 @@ La interfaz de usuario de My Dashboards está diseñada para la construcción de
 
 1. En AppsFlyer, desde el menú lateral, ve a **My Dashboards** y haz clic en + (Crear nuevo dashboard).
    * Alternativamente, en la parte superior derecha del dashboard, haz clic en **Nuevo** > **+ Crear nuevo**.  
-     [<Image alt="" src="https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png" width="222px" />](https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png)
+     <Image align="center" alt="" src="https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png" width="222px" />
 2. Ingresa un nombre para tu dashboard, selecciona las aplicaciones que deseas incluir y haz clic en **Guardar**.
 3. Haz clic en **+ Nuevo widget** y selecciona el tipo de widget que deseas agregar (tabla, KPI, línea, barra, columna o dona).
 4. Configura el widget agregando la(s) métrica(s) y la(s) dimensión(es) por las que deseas agrupar y haz clic en **Aplicar**.
 5. En la parte superior derecha del dashboard, haz clic en **Guardar**.  
-   [<Image alt="" src="https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png" width="354px" />](https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png)
+   <Image align="center" alt="" src="https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png" width="354px" />
 6. En la parte superior derecha del dashboard, haz clic en el **Compartir**, selecciona si deseas mantener tu dashboard privado o compartirlo con otros miembros del equipo y haz clic en **Listo**.  
-   [<Image alt="" src="https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png" width="354px" />](https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png)
+   <Image align="center" alt="" src="https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png" width="354px" />
 
 </Accordion>
 
@@ -87,10 +87,10 @@ La interfaz de usuario de My Dashboards está diseñada para la construcción de
 1. En la parte superior derecha del dashboard, haz clic en **+ Crear nuevo** y selecciona el tipo de widget que deseas crear: Tabla, KPI, Gráfico, tabla de eventos in-app, gráfico de eventos in-app, o métrica personalizada.  
    **Nota:** Tanto la tabla de eventos in-app como el gráfico de eventos in-app [muestran los principales eventos y el comportamiento del usuario](/docs/my-dashboards#traits-and-limitations).
 
-   [<Image alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33445444729361)
+   [<Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33445444729361)
 
    * Si eliges Gráfico, cuando se abra el gráfico, también eliges el tipo de gráfico: línea, barra, columna, dona o combinado (una mezcla de línea y columna).  
-     [<Image alt="heatmap.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/33776589303953)
+     [<Image align="center" alt="heatmap.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/33776589303953)
    * El widget de texto es único en el sentido de que te permite agregar títulos para secciones del dashboard, compartir directrices, conocimientos, insights, objetivos o guías de uso con otros miembros del equipo, ayudando a convertir los dashboards en reportes autoexplicativos.
    * Los **widgets de eventos** te permiten agrupar por nombre de evento para comparar acciones, ingresos y engagement entre fuentes, geolocalizaciones y dimensiones adicionales, en paralelo, tanto en los periodos de LTV como en los periodos reales (actividad). Usa los widgets de eventos para ver qué eventos in-app generan más usuarios únicos e ingresos, medir tendencias de ingresos por fuente de medios y profundizar en el rendimiento de los eventos con hasta 4 niveles de agrupación.
 2. [Opcional] Ingresa un nombre para tu widget.
@@ -199,7 +199,7 @@ Para crear una dimensión personalizada:
 1. En AppsFlyer, ve a **My Dashboards**.
 2. Abre el punto de entrada de dimensiones personalizadas:
    * Desde el menú del dashboard, haz clic en el icono **Menú** > **Dimensiones personalizadas**.  
-     <Image alt="" src="https://files.readme.io/9dc64c842f35fb65978f6687fbd9f6a9ea03c7f1b689eb35b3eecfbf696ff3b0-47097227614481.png" width="25%" />
+     <Image align="center" alt="" src="https://files.readme.io/9dc64c842f35fb65978f6687fbd9f6a9ea03c7f1b689eb35b3eecfbf696ff3b0-47097227614481.png" width="25%" />
    * O bien, en la configuración del widget, en el campo **Agrupar por** o **Filtros**, haz clic en **Crear dimensión personalizada**.
 3. Haz clic en **Nueva dimensión**.
 4. Selecciona la dimensión base:
@@ -226,7 +226,7 @@ Para editar o eliminar una dimensión personalizada desde el área de dimensione
 
 1. En AppsFlyer, ve a **My Dashboards**.
 2. Haz clic en el icono **Menú** > **Dimensiones personalizadas**.  
-   <Image alt="" src="https://files.readme.io/6368f5ba2dcd0d9db622a5502f6f1ba120c506725f82fb522947fdf9652218b8-47097241547793.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/6368f5ba2dcd0d9db622a5502f6f1ba120c506725f82fb522947fdf9652218b8-47097241547793.png" width="25%" />
 3. Selecciona la dimensión personalizada.
 4. Realice una de las siguientes acciones:
    * Para editar la dimensión personalizada, actualiza la configuración y haz clic en **Guardar**.
@@ -240,7 +240,7 @@ Para editar una dimensión personalizada desde la configuración del widget:
 4. En **Agrupar por**, abre el selector de dimensiones.
 5. Pasa el cursor sobre la dimensión personalizada.
 6. Haz clic en el icono **Editar**.  
-   <Image alt="" src="https://files.readme.io/89f253d8545855cf12411f66ee81c8abe51d49c65823bcb1b7de52bcee74af75-47097241548433.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/89f253d8545855cf12411f66ee81c8abe51d49c65823bcb1b7de52bcee74af75-47097241548433.png" width="25%" />
 7. Actualiza la dimensión personalizada.
 8. Haz clic en **Guardar**.
 
@@ -259,7 +259,7 @@ Para usar una dimensión personalizada en un widget:
 3. Abre la configuración del widget.
 4. Para agrupar los datos por una dimensión personalizada, selecciona la dimensión personalizada en **Agrupar por**.
 5. Para filtrar los datos por una dimensión personalizada, selecciona la dimensión personalizada en **Filtros**.  
-   <Image alt="" src="https://files.readme.io/1bcd074f316d91eb956e689e45d1199978a9dee57d266019dfb5bb5bfb02a578-47097241548945.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/1bcd074f316d91eb956e689e45d1199978a9dee57d266019dfb5bb5bfb02a578-47097241548945.png" width="25%" />
 6. Haz clic en **Aplicar**.
 
 Haz clic en **Guardar**.
@@ -415,7 +415,7 @@ En la barra del menú superior, puedes seleccionar la línea de producto, el tip
 
 Los tipos de vista actuales son **Unified** y **Adquisición de usuarios**.
 
-<Image alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
 
 #### Widgets
 
@@ -489,9 +489,9 @@ Esto es lo que debes tener en cuenta al analizar datos web en este dashboard:
 1. En AppsFlyer, desde el menú lateral, ve a **My Dashboards**.
 2. Selecciona un dashboard para ver de la lista de dashboards fijados y recientemente vistos.
 3. Si la vista del dashboard que deseas no está en la lista de dashboards fijados y recientemente vistos, en la parte superior del dashboard que se está mostrando actualmente, selecciona el que deseas ver del menú desplegable.  
-   [![](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)
+   <Image align="center" alt="" src="https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png" />
 4. Selecciona las aplicaciones, el tipo de vista, las fechas de atribución y los filtros de visualización.  
-   [<Image alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />](https://support.appsflyer.com/hc/article_attachments/33445444737425)
+   [<Image align="center" alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />](https://support.appsflyer.com/hc/article_attachments/33445444737425)
 
 </Accordion>
 
@@ -507,7 +507,7 @@ Para configurar las preferencias de My Dashboards:
 2. Haz clic en los tres puntos <Image alt="" src="https://files.readme.io/2e083cda3a0ec69461d3cc520e2d7b7c4189561af5585e15d7f6f9bd06f18f2a-46312758928785.png" width="3.57%" /> junto a **Create new**.
 3. Selecciona **Preferences**.
 
-   <Image alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
+   <Image align="center" alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
 
 <div id="theme" />
 
@@ -821,7 +821,7 @@ Los usuarios pueden configurar el rango de fechas tanto a nivel de dashboard com
 
 #### Nivel de dashboard
 
-<Image alt="image (4).png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
+<Image align="center" alt="image (4).png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
 
 * Por defecto, el dashboard sigue el rango de fechas **Por widget**. En este modo, cada widget muestra datos de acuerdo con sus configuraciones individuales.
 * El rango de tiempo seleccionado para cada widget se muestra siempre como un título secundario.
@@ -831,7 +831,7 @@ Los usuarios pueden configurar el rango de fechas tanto a nivel de dashboard com
 
 #### Nivel de widget
 
-<Image alt="image (5).png" src="https://files.readme.io/88853ed907a3a36854a3dc888acedb4063b036da6b026b4f6eccd69de26824c0-small-33835112650769.png" width="6016px" />
+<Image align="center" alt="image (5).png" src="https://files.readme.io/88853ed907a3a36854a3dc888acedb4063b036da6b026b4f6eccd69de26824c0-small-33835112650769.png" width="6016px" />
 
 * Cada widget tiene un selector de fecha independiente, lo que permite a los usuarios definir rangos de tiempo **personalizado** para visualizaciones específicas.
 * Cada widget tiene un selector de tipo de vista independiente, lo que permite a los usuarios definir un tipo de vista personalizado para visualizaciones específicas.
@@ -872,7 +872,7 @@ Para usar un gráfico de áreas apiladas:
 
 <Embed title="[Beta] My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/QN34vDC8gtY?si=0IWgOX2oZ0Gmphid" providerUrl="https://www.youtube.com" />
 
-[<Image alt="" src="https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png" width="1083px" />](https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png)
+<Image align="center" alt="" src="https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png" width="1083px" />
 
 Para gráficos de barras, columnas, líneas y combinados, puedes agregar múltiples métricas.
 
@@ -898,7 +898,7 @@ También puedes asignar manualmente cada métrica al eje Y izquierdo o derecho. 
 
 <Accordion title="Comparar con">
 
-![Compare-Animated Image (Large) (1).gif](https://files.readme.io/456530b09e6914ea4eb90658aee27408fad5bc3a208f9a4a68a99fbf0f823f13-29064704463761.gif)
+<Image align="center" alt="Compare-Animated Image (Large) (1).gif" src="https://files.readme.io/456530b09e6914ea4eb90658aee27408fad5bc3a208f9a4a68a99fbf0f823f13-29064704463761.gif" />
 
 La función "Comparar con" está disponible en gráficos de líneas. Te permite visualizar e identificar tendencias, cambios, patrones o anomalías mostrando los datos seleccionados y su contraparte histórica uno al lado del otro para una fácil comparación.
 
@@ -968,11 +968,11 @@ Puedes aplicar una de las siguientes opciones de formato a las celdas de tu tabl
 
 * **Mapa de calor:** Colorea cada celda con un **degradado de 2 colores** (por ejemplo, de blanco a azul) según su valor en relación con otras celdas de la misma columna. Esto facilita identificar rápidamente los valores altos y bajos.
 
-<Image alt="image (20).png" src="https://files.readme.io/09792e4d15d82b59b75edd50638c2f389bec1f8ff96c882bc556655e16a5d4f1-small-42862956716689.png" width="3652px" />
+<Image align="center" alt="image (20).png" src="https://files.readme.io/09792e4d15d82b59b75edd50638c2f389bec1f8ff96c882bc556655e16a5d4f1-small-42862956716689.png" width="3652px" />
 
 * **Semáforo:** Usa un **degradado de 3 colores** (por ejemplo, rojo, amarillo y verde) para indicar el estado del rendimiento en todas las métricas, lo que facilita identificar las áreas que cumplen, se acercan o quedan por debajo de los objetivos definidos.
 
-<Image alt="image (21).png" src="https://files.readme.io/c8907965a966d47bdfb0ffd0718ed8868ad8adddace60141d74e80bfe2da2926-small-42862956722577.png" width="3658px" />
+<Image align="center" alt="image (21).png" src="https://files.readme.io/c8907965a966d47bdfb0ffd0718ed8868ad8adddace60141d74e80bfe2da2926-small-42862956722577.png" width="3658px" />
 
 * **El color basado en reglas** te permite definir tus propias condiciones mediante operadores como «**entre**», «**mayor o igual que**» o «**menor que**». Define los valores numéricos para cada regla y asigna colores específicos para visualizar tu lógica de negocio.
 
@@ -984,7 +984,7 @@ Puedes aplicar una de las siguientes opciones de formato a las celdas de tu tabl
 
   Este enfoque destaca qué actividades ofrecen resultados sólidos, lo que te permite tomar decisiones más rápidas y basadas en datos sobre la optimización de campañas y la asignación de presupuesto.
 
-  <Image alt="image (22).png" src="https://files.readme.io/bd7babc39324482966d3aa51707a267f37d9df0285e8ee08b43a77805a3cc4f3-42862956725265.png" width="922px" />
+  <Image align="center" alt="image (22).png" src="https://files.readme.io/bd7babc39324482966d3aa51707a267f37d9df0285e8ee08b43a77805a3cc4f3-42862956725265.png" width="922px" />
 
 <div id="how-to-apply-conditional-formatting" />
 
@@ -994,7 +994,7 @@ Puedes aplicar una de las siguientes opciones de formato a las celdas de tu tabl
 2. Pasa el cursor sobre la **columna de métricas** a la que quieras aplicar color.
 3. Haz clic en el menú de **tres puntos** y selecciona **Formato condicional**.
 4. Elige el **tipo de formato** que prefieras (Mapa de calor, Semáforo o Basado en reglas) y edita las condiciones si es necesario.  
-   <Image alt="image (23).png" src="https://files.readme.io/eaa4cec02322cef1af40ed8b82691b76c6b33395be9cd0a707c38ccff6043b91-42862956727569.png" width="75%" />
+   <Image align="center" alt="image (23).png" src="https://files.readme.io/eaa4cec02322cef1af40ed8b82691b76c6b33395be9cd0a707c38ccff6043b91-42862956727569.png" width="75%" />
 
 </Accordion>
 
@@ -1006,7 +1006,7 @@ Puedes aplicar una de las siguientes opciones de formato a las celdas de tu tabl
 
 Los datos del dashboard se presentan mediante los tipos de vista Unificada, Adquisición de Usuarios y Retargeting, tal como se describe en la siguiente figura.
 
-[![beta_feature.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="beta_feature.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 Estos tipos de vista contienen datos de LTV de la siguiente manera:
 

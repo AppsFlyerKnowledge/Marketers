@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **En resumen:** AppsFlyer decodifica y transforma el valor de conversión establecido por ti en eventos. Los eventos se utilizan para rellenar el panel de SKAN, los raw data y los postbacks a los partners.
 
-![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
+<Image align="center" alt="SKAdNetwork_-_Custom__1_.png" src="https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png" />
 
 <div id="decode-skan-conversion-value" />
 
@@ -282,7 +282,7 @@ Después de guardar el archivo CSV, comprueba que el contenido tenga el formato 
 
 Excel suele dar formato a las celdas de valor con una coma para separar los miles, como se muestra en la figura. Este formato no es adecuado para cargar archivos CSV. También debes eliminar el símbolo $.
 
-![mceclip0.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 Puedes corregir esto formateando las celdas en Excel.
 
@@ -293,7 +293,7 @@ Puedes corregir esto formateando las celdas en Excel.
    Se abre la ventana de formato de celda.
 3. Selecciona **Número**.  
 
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 
 1. Borra **Usar separador de 1000 (,).** Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
 2. (Opcional) Establece el número de **decimales**. El valor predeterminado es 2. El máximo permitido es 5.
@@ -315,14 +315,14 @@ A continuación se incluye una captura de pantalla del <Anchor target="_blank" h
 
 **Vista del editor**
 
-![SKCustomeEditor.png](https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png)
+<Image align="center" alt="SKCustomeEditor.png" src="https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png" />
 
 Usando un editor, examina el archivo CSV. Presta especial atención a lo siguiente:
 
 * **Espacios en blanco:** Asegúrate de que no haya espacios en blanco al principio o al final antes o después de las comas que separan los campos. En Excel, usa el comando @trim para eliminar los espacios en blanco.
 * **event\_revenue\_usd:** Asegúrate de que no haya ni una coma ni un símbolo $ en la columna event\_revenue\_usd.  
 
-  ![mceclip1.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+  <Image align="center" alt="mceclip1.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 </Accordion>
 

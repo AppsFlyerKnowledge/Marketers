@@ -264,7 +264,7 @@ AppsFlyer crea y sincroniza **Traits** con tu **fuente de datos** seleccionada e
 2. Ve a **Gestionar datos** > **Fuentes de datos**.
 3. En la página **Fuentes de datos**, crea una nueva **Fuente de datos**.
 
-   [![](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg" />
 4. Llena el formulario del siguiente modo:
    * Establece ID Type to **Device Advertising ID**.
    * En la configuración de la fuente de datos de entrada, habilita **Customer ID**.
@@ -274,13 +274,13 @@ AppsFlyer crea y sincroniza **Traits** con tu **fuente de datos** seleccionada e
 7. En el menú de la izquierda, ve a **Administración** > **Grupos**.
 8. Ve a la pestaña **Permissions** (Permisos).
 
-   [![](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)
+   <Image align="center" alt="" src="https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png" />
 9. Crea un nuevo grupo.
 10. Selecciona la fuente de fatos que has creado.
 11. Haz clic en **Guardar objeto**.
 12. Ve a **Admin** > **Usuarios**.
 
-    [![](https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png)](https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png)
+    <Image align="center" alt="" src="https://files.readme.io/9167247d30e2aee69c891969e7aa56bbe2095cc8a7dd4bf3896cd563a00cac71-31237648134801.png" />
 13. Crea un nuevo usuario para ser utilizado por AppsFlyer Audiences y completa los campos obligatorios según sea necesario.
 14. En **Grupos asignados**, selecciona el grupo que has creado anteriormente.
 15. Anota el **correo electrónico** y la **contraseña** del usuario creado.
@@ -317,7 +317,7 @@ Crear una integración S3 permite a AppsFlyer enviar las ID de dispositivo de la
 5. Selecciona **Amazon S3**.  
    Se abre la ventana **Añadir conexión**.
 
-   ![image__9_.png](https://files.readme.io/790f8a50bf14fbb4065d9dcee05e31fa866bc73f236f439ec73f2bc833b31be6-31237653533201.png)
+   <Image align="center" alt="image__9_.png" src="https://files.readme.io/790f8a50bf14fbb4065d9dcee05e31fa866bc73f236f439ec73f2bc833b31be6-31237653533201.png" />
 6. Introduce el **ARN del rol entre cuentas**, el **nombre del bucket** y el **nombre de la región**.  
    **Nota:** Se recomienda introducir siempre el nombre de la región. Si el nombre de la región no está habilitado automáticamente por defecto en AWS, debe ingresarse aquí o la conexión no se podrá crear. Para encontrar la región en la página de inicio de la consola de AWS, haz clic en el menú desplegable del país en la esquina superior derecha de la página y se mostrarán las regiones. <Image alt="region_name.jpg" src="https://files.readme.io/a3b65660a638674cbbe0da2802b4f926929d167d0b528c25c12ded6a90b0e981-31237648137489.jpg" width="355px" />
 7. Registra el **ID de cuenta** y el **ID externo** para su uso posterior.
@@ -353,17 +353,17 @@ Crear una integración S3 permite a AppsFlyer enviar las ID de dispositivo de la
 15. Haz clic en **Crear política**.
 16. En tu consola de AWS, ve a **Administración de acceso** > **Roles**.
 
-    [![](https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png)](https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png)
+    <Image align="center" alt="" src="https://files.readme.io/85a4a81b5ebd131b6b3a20ca6ee136a0d10556363cff2deab96397ec889db141-31237648138513.png" />
 17. Haz clic en **Crear rol.**
 18. Selecciona **Otra cuenta de AWS** para proporcionar acceso entre cuentas entre tu cuenta de AWS y la cuenta de AWS de AppsFlyer.
 
-    [![](https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png)](https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png)
+    <Image align="center" alt="" src="https://files.readme.io/1f8db2c84d1cbde4a88fd6d7dace3eb5cb65f8fc9608b0ec568921a2b7c85759-31237653535761.png" />
 19. Introduce **ID de cuenta.** Este es el ID de cuenta que ya copiaste del Dashboard de AppsFlyer.
 20. Selecciona **Requerir ID externo**. Este es el ID externo que has copiado del dashboard de AppsFlyer.
 21. Cuando se te pida seleccionar una política de las políticas existentes en tu cuenta de AWS, elige la política creada anteriormente.
 22. Haz clic en el nombre del rol recién creado para abrir su ventana
 
-    [![](https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png)](https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png)
+    <Image align="center" alt="" src="https://files.readme.io/9b61cf2c8ec3efd9f6548e1ee6b6ca945dd1160901516f93cd16ac3544d3aade-31237648139793.png" />
 23. Registra el **ARN del rol**.
 24. En la ventana de integración de AppsFlyer S3, ingresa el ARN y el nombre del bucket en los campos apropiados.
 
@@ -436,17 +436,17 @@ No es necesario configurar un parámetro dedicado para el ID Externo de Braze si
    * **Nota:** Si aquí ya aparece una clave, no es necesario generar una nueva.
    * **Nota:** Asegúrate de que trabajas en la sección **Importación de datos mediante importación de cohortes** de la página (no en la sección de atribución de instalación).
 
-     ![data_import_key.png](https://files.readme.io/4d288e6696da600d0e402b86a0986b3951f2cd35efd12084aa8feaeeb526fddf-31237653537681.png)
+     <Image align="center" alt="data_import_key.png" src="https://files.readme.io/4d288e6696da600d0e402b86a0986b3951f2cd35efd12084aa8feaeeb526fddf-31237653537681.png" />
 3. Copia la **clave de importación de datos** y el **punto final REST** para usarlos al configurar la conexión en el Dashboard de AppsFlyer.
 4. En AppsFlyer Audiences, ve a la pestaña **Connections** y haz clic en **+ New connction.**
 5. Selecciona Braze como partner y dale un nombre a la conexión.
 6. Introduce la clave de importación de datos y el punto final REST que copiaste de tu cuenta de Braze en el paso 3.
 
-   ![braze_connection.png](https://files.readme.io/200d1a1bef906ea50e40b3d8113bb9fd72068b6fda25a2f70b95b4510bd992de-31237653538449.png)
+   <Image align="center" alt="braze_connection.png" src="https://files.readme.io/200d1a1bef906ea50e40b3d8113bb9fd72068b6fda25a2f70b95b4510bd992de-31237653538449.png" />
 7. Guarda la conexión y estará disponible para vincularla a cualquier audiencia nueva o existente.
 8. Una vez se carga una audiencia de AppsFlyer en Braze, puedes utilizarla como filtro al definir segmentos en Braze.
 
-   ![cohorts_as_filter.png](https://files.readme.io/eec9e014afcb488bb7ebe31167cd5871c38207c8f4542e20ea313b7019e8b43a-31237653538961.png)
+   <Image align="center" alt="cohorts_as_filter.png" src="https://files.readme.io/eec9e014afcb488bb7ebe31167cd5871c38207c8f4542e20ea313b7019e8b43a-31237653538961.png" />
 
 </Accordion>
 
@@ -545,7 +545,7 @@ Para habilitar a AppsFlyer para enviar audiencias a Google Ads, deben completars
    Se muestra la lista de Partners de audiencias.
 3. En la sección Google Ads, selecciona un nombre de conexión.
 
-   [![AcceptTermsAudiences_us-en.png](https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png)](https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png)
+   <Image align="center" alt="AcceptTermsAudiences_us-en.png" src="https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png" />
 4. Haz clic en **Condiciones del servicio.**
 5. Revisa las condiciones y, si estás de acuerdo con ellas, haz clic en **Acepto.**
 6. Desde la barra superior, abre el menú de cuenta (menú desplegable de dirección de correo electrónico) > **Centro de seguridad.** Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
@@ -603,7 +603,7 @@ Para habilitar a AppsFlyer para enviar audiencias a Google Ads, deben completars
 
 1. En tu cuenta de Leanplum, navega a **Integraciones de Partners > AppsFlyer.** En **Audiences,** genera un nuevo **Secret.**
 
-   [![audiences_leanplum_integration.png](https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png)](https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png)
+   <Image align="center" alt="audiences_leanplum_integration.png" src="https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png" />
 2. Elige si se deben crear perfiles en Leanplum para **Usuarios no existentes.**
    * Usuario no existente = un usuario cuyo ID de usuario enviado por AppsFlyer Audiences no existe en Leanplum
 3. Copia el **ID de la aplicación** y el **Secret** recién generado para usarlos al configurar la conexión en el dashboard de AppsFlyer.
@@ -611,7 +611,7 @@ Para habilitar a AppsFlyer para enviar audiencias a Google Ads, deben completars
 5. Selecciona **Leanplum** como Partners y asigna un nombre a la conexión.
 6. Introduce el **ID de la aplicación** y el **Secreto** que copiaste de tu cuenta de Leanplum en el paso 3.
 
-   [![leanplum_integration_af_dashboard.png](https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png)](https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png)
+   <Image align="center" alt="leanplum_integration_af_dashboard.png" src="https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png" />
 7. Guarda la conexión y estará disponible para vincularla a cualquier audiencia nueva o existente.
 
 En un plazo de hasta 30 minutos, la audiencia y los usuarios en ella se poblarán en tu dashboard de Audiences en Leanplum.
@@ -641,7 +641,7 @@ En un plazo de hasta 30 minutos, la audiencia y los usuarios en ella se poblará
    * **ID de la API de datos** (<Image alt="A.png" src="https://files.readme.io/66b5bb0c4ea35f232f65dbc8dcbdfd6a91c12cf94915b19d33dae44834127058-31237653543313.png" width="16px" /> en la imagen de abajo)
    * **Clave de API de datos** (<Image alt="B.png" src="https://files.readme.io/f63914d3fefb55b627559c6e4c7d7cdef89239c0376a14c25c713a0a76dbad1b-31237653544337.png" width="16px" /> en la imagen de abajo)
 
-   [![moengage_dashboard.png](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)
+   <Image align="center" alt="moengage_dashboard.png" src="https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png" />
 3. En la barra de direcciones de tu navegador web, verifica la URL de tu dashboard de MoEngage para obtener el número de tu **Centro de datos de MoEngage:**
    * Si la URL de tu dashboard de MoEngage es https://dashboard-01.moengage.com, tu cuenta está asignada al centro de datos 1.
    * Si la URL es https://dashboard-02.moengage.com, tu cuenta está asignada al Centro de Datos 2.
@@ -649,7 +649,7 @@ En un plazo de hasta 30 minutos, la audiencia y los usuarios en ella se poblará
 4. En Audiences de AppsFlyer, ve a la pestaña **Conexiones** y haz clic en **+ Nueva conexión.**
 5. Selecciona **MoEngage** como partner y asigna un nombre a la conexión.
 
-   [![moengage_outgoing_connection.png](https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png)](https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png)
+   <Image align="center" alt="moengage_outgoing_connection.png" src="https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png" />
 6. Introduce el **ID de API de datos** y la **clave de API de datos** que copiaste de tu cuenta de MoEngage en el paso 2.
 7. Selecciona tu **Centro de Datos** de MoEngage según lo determinado en el paso 3.
 8. Guarda la conexión y estará disponible para vincularla a cualquier audiencia nueva o existente.
@@ -710,7 +710,7 @@ AppsFlyer carga un archivo CSV de ID de dispositivos en tu Slack.
 1. Obtén el **ID de partner** de tu Tapjoy Account Manager.
 2. Obtén tu **clave de API de reportes de publisher** en la página **Configuración de la App** de Tapjoy.
 
-   [![](https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png)](https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png)
+   <Image align="center" alt="" src="https://files.readme.io/4aee504ce72061784c47b5bb84ac7e2bf73bf7c7dcb5b78ef83fb11e807a366a-31237653547665.png" />
 3. En AppsFlyer, ve a **Audiences**. Selecciona una audiencia y ve a la pestaña **Conectar** .
 4. Haz clic en **+ Conexión de partners**.
 5. Introduce un nombre de **conexión**.

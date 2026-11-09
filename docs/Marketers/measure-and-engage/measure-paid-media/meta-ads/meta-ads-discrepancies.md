@@ -55,7 +55,7 @@ La ventana retrospectiva por clics predeterminada de Anuncios de Meta está conf
 
 Recomendamos configurar las ventanas de atribución en AppsFlyer según valores de Anuncios de Meta como se muestra en la siguiente pantalla: <Anchor target="_blank" href="https://www.facebook.com/business/help/654970342692714">Consulta la documentación de Meta for Developers sobre cómo comparar la configuración de atribución.</Anchor>
 
-![image (13).png](https://files.readme.io/215d2234aae1ec6b4e1c6ac922915851bf8ab02574a874119d286fa49c64f9ba-25899749062033.png)
+<Image align="center" alt="image (13).png" src="https://files.readme.io/215d2234aae1ec6b4e1c6ac922915851bf8ab02574a874119d286fa49c64f9ba-25899749062033.png" />
 
 <div id="example" />
 

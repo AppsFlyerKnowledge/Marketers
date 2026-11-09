@@ -37,7 +37,7 @@ Las aplicaciones que se ejecutan en PC pueden integrarse con AppsFlyer a través
 
 El siguiente es un flujo de ejemplo que destaca los pasos más importantes en el recorrido del usuario desde el engagement de publicidad hasta la atribución. Incluye la página de inicio multiplataforma recomendada por AppsFlyer. **Nota**: Aunque recomendamos usar la landing page multiplataforma, también puedes usar enlaces de atribución directa
 
-![Usuario_windows.jpg](https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg)
+<Image align="center" alt="Usuario_windows.jpg" src="https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg" />
 
 1. <span id="marketing-touchpoint"></span>Punto de contacto de marketing: Los clientes interactúan con tu marca a través de puntos de contacto de marketing online u offline. Estos pueden incluir correo electrónico y boletines informativos, redes sociales, web móvil y más.
 2. Landing page del juego: Una landing page del juego dirige a los clientes a la página de descarga de tu aplicación. Este paso es importante para recopilar los parámetros UTM y otros parámetros de URL a fin de atribuir a los clientes que han hecho clic o han hecho la instalación a las fuentes multimedia originales o a las fuentes multimedia de tu propiedad.  

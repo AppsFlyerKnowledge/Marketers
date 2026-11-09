@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **En resumen:** Para evaluar el rendimiento durante la ventana de re-engagement de la campaña de retargeting, los eventos y sesiones en la aplicación se atribuyen dos veces a las fuentes de medios de adquisición de usuarios (UA) y retargeting.
 
-![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
+<Image align="center" alt="" src="https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png" />
 
 <div id="overview" />
 
@@ -64,7 +64,7 @@ Para explicarlo mejor, la tabla a seguir contiene un escenario de cómo se atrib
 
 Algunos dashboards y reportes de cohortes contienen múltiples opciones de vista unificadas, adquisición de usuarios y retargeting. Estos tipos de vista emplean una lógica similar a la empleada en los raw data.
 
-![](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 <div id="data-filtering-by-view-type-using-the-conversion_type-field" />
 

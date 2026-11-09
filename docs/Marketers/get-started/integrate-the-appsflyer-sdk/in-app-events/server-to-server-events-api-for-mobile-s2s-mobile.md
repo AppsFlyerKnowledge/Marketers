@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **At a glance:** Envía eventos desde tus servidores a AppsFlyer para medir los eventos móviles que ocurren fuera de la aplicación.
 
-![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
+<Image align="center" alt="S2S_us-en.png" src="https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png" />
 
 <div id="server-to-server-events-api-for-mobile" />
 
@@ -134,7 +134,7 @@ Una vez que asignes el ID de AppsFlyer a tu CUID, podrás relacionar al usuario 
 
 <Accordion title="Marca de tiempo de eventos S2S">
 
-![Diagrama lógico de marca de tiempo](https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png)
+<Image align="center" alt="Diagrama lógico de marca de tiempo" src="https://files.readme.io/2d9138cc505b0ab1bb106c00fb2d71bd1d070ee236d7f928c8b8b85afe14af59-35863166628497.png" />
 
 Cuando los eventos S2S llegan en gran cantidad a AppsFlyer, se les asigna una marca de tiempo según los valores de su propiedad `eventTime` y la hora de llegada. La propiedad `eventTime` indica el momento en el que ocurre el evento in-app.
 

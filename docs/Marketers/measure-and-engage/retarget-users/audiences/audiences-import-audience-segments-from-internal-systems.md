@@ -109,7 +109,7 @@ Prepara un archivo CSV con las siguientes especificaciones:
 * Número máximo de filas: 1 millones
 * Si preparas el archivo con Excel, guárdalo como un archivo **CSV (delimitado por comas) (\*.csv)**, como se muestra en la siguiente imagen:
 
-<Image alt="CSV.jpg" src="https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg" width="339px" />
+<Image align="center" alt="CSV.jpg" src="https://files.readme.io/863505596fd525ff0750f05db70413e9aaee51beb208bd0fbc8ab718ad4e4576-32897281151633.jpg" width="339px" />
 
 <div id="identifier-hash" />
 

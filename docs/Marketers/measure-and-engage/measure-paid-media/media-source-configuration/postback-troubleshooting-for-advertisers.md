@@ -37,7 +37,7 @@ Varios selectores controlan diferentes partes de la integración. El estado del 
 
 Cuando el selector <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">**Activar partner**</Anchor> está desactivado, las conversiones no se atribuyen y los postbacks no se envían a los partners.
 
-![integration_turned_off.png](https://files.readme.io/d43b4f465749e343d9523e90e87e43b77a85cdd920f0c0770a94bcb7a585d920-14979273403793.png)
+<Image align="center" alt="integration_turned_off.png" src="https://files.readme.io/d43b4f465749e343d9523e90e87e43b77a85cdd920f0c0770a94bcb7a585d920-14979273403793.png" />
 
 **Para activar la integración:**
 
@@ -65,7 +65,7 @@ El selector de **<Anchor target="_blank" href="/marketers/es/docs/in-app-event-p
 2. Haz clic en el icono Gestionar la integración del partner.
 3. Desde la pestaña **Integración**, desplázate hacia abajo hasta el selector de **postbacks de eventos in-app** y actívalo.
 
-   ![integration-in_app_event_postbacks_toggle.png](https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png)
+   <Image align="center" alt="integration-in_app_event_postbacks_toggle.png" src="https://files.readme.io/20dadaa71b8b54c4512e74a925e66cec9da5e8138bb28a545c5452eef2d38304-14627453566737.png" />
 
 </Accordion>
 
@@ -81,7 +81,7 @@ El evento podría estar configurado de manera que no se envíen ciertos postback
 
 Verifica que el evento esté incluido en la lista de eventos in-app que se configuraron. Si no está definido, no se envía un postback.
 
-[![list_of_in_app_events.png](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)](https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png)
+<Image align="center" alt="list_of_in_app_events.png" src="https://files.readme.io/c2b3a3a87c4a1f39a3fa3acc28c736fd69d8d6d21d4b9ed5d3c84e8df0d3bf39-14979245450641.png" />
 
 1. En AppsFlyer, en el menú lateral, selecciona **Colaborar** > **Integraciones de partners** > **Integraciones activas.**
 2. Haz clic en el icono Gestionar la integración del partner.
@@ -95,7 +95,7 @@ Verifica que el evento esté incluido en la lista de eventos in-app que se confi
 
 Los postbacks se envían de acuerdo con la configuración de la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#ventana-de-postback-de-eventos-in-app">ventana de postback</Anchor>. Los postbacks para eventos posteriores a este período no se envían al partner, aunque los eventos aún se registran en AppsFlyer.
 
-[![in_app_event_postback_mapping_2.png](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)](https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png)
+<Image align="center" alt="in_app_event_postback_mapping_2.png" src="https://files.readme.io/b0b4935f2b40e1c81961fbbecd159ca054816be2c58248624eed177ec17f9c20-14979366291857.png" />
 
 </Accordion>
 
@@ -105,7 +105,7 @@ Los postbacks se envían de acuerdo con la configuración de la <Anchor target="
 
 Si se define una condición para el evento, el postback se envía de acuerdo con la condición. Comprueba si hay alguna condición que limite el envío de postbacks.
 
-[![in_app_event_condition__1_.png](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)](https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png)
+<Image align="center" alt="in_app_event_condition__1_.png" src="https://files.readme.io/0f179d79fdb544f209f901370f7c0103e0fc5dbeda2554268b2a06a272a6b8b9-14979535388433.png" />
 
 </Accordion>
 
@@ -115,7 +115,7 @@ Si se define una condición para el evento, el postback se envía de acuerdo con
 
 Verifica si la configuración del evento in-app está establecida para enviar postbacks a <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#opciones-para-enviar-postbacks">**Solo este partner** o a **Todas las fuentes de medios, incluidas las orgánicas**</Anchor>. Si está establecido en **Solo este partner**, solo el partner atribuido recibe el postback.
 
-[![in_app_event_sending_options.png](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)](https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png)
+<Image align="center" alt="in_app_event_sending_options.png" src="https://files.readme.io/3fd96860a0a8842dd183a29e9f9dd947b5c9082e2069c0aa74bd8eb781302908-14979359951761.png" />
 
 </Accordion>
 
@@ -125,7 +125,7 @@ Verifica si la configuración del evento in-app está establecida para enviar po
 
 Verifica que la <Anchor target="_blank" href="/marketers/es/docs/in-app-event-postback-configuration#mapeo-de-eventos">asignación del evento</Anchor> sea correcta. Los postbacks para eventos posteriores a este período no se envían al partner, aunque los eventos aún se registran en AppsFlyer.
 
-![in_app_event_postback_window.png](https://files.readme.io/21cae7825d557c1ee89c890ec64c922cb36e31be882850a26bfdc4e5595773f0-14661845664401.png)
+<Image align="center" alt="in_app_event_postback_window.png" src="https://files.readme.io/21cae7825d557c1ee89c890ec64c922cb36e31be882850a26bfdc4e5595773f0-14661845664401.png" />
 
 Ten en cuenta que, para las <Anchor target="_blank" href="/marketers/es/docs/self-reporting-networks-srns">SRN,</Anchor> los postbacks de eventos in-app se envían durante el <Anchor target="_blank" href="/marketers/es/docs/user-level-data-retention#periodos-de-conservación-de-los-datos-de-partners">período de retención de datos del partner</Anchor>.
 
@@ -143,7 +143,7 @@ En los siguientes casos, AppsFlyer no envía postbacks debido a las restriccione
 
 Si la <Anchor target="_blank" href="/marketers/es/docs/apply-aggregated-advanced-privacy-framework#partner-advanced-privacy-switch">Privacidad avanzada</Anchor> está activada, pero el partner no configuró la Privacidad avanzada para sí mismo o no la admite, no recibirá los <Anchor target="_blank" href="/partners/es/docs/advanced-privacy-guide-postback-macros-for-ad-networks#tipos-de-plantillas-para-enviar-postbacks">postbacks agregados de Privacidad avanzada</Anchor>.
 
-![partner_not_supporting_ap_postbacks.png](https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png)
+<Image align="center" alt="partner_not_supporting_ap_postbacks.png" src="https://files.readme.io/1d8784e8994eba5c403ac706673490b91b7b34ed4d5dbea8c3fe58f227d382c5-15140294126353.png" />
 
 </Accordion>
 
@@ -180,7 +180,7 @@ En algunos casos, aunque AppsFlyer envía los postbacks a un partner, estos no s
 1. En AppsFlyer, en **Reportes** ve a **Exportación de raw data**.
 2. Consulta el reporte relevante en **Postbacks** (Instalaciones, Eventos in-app, Conversiones de retargeting, Retargeting de eventos in-app).
 
-[![postback_reports.JPG](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)](https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png)
+<Image align="center" alt="postback_reports.JPG" src="https://files.readme.io/21f7ead0f04cf8b67735476348245c5849b638701946236cf649adfa69699df6-14981466637457.png" />
 
 </Accordion>
 

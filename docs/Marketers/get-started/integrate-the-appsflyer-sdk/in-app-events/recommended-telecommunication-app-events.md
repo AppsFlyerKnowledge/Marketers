@@ -46,7 +46,7 @@ Registrar estos eventos puede ayudarte a determinar:
 >
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Diagrama de flujo del recorrido del usuario de la app de telecomunicaciones para eventos recomendados](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)](https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png)
+<Image align="center" alt="Diagrama de flujo del recorrido del usuario de la app de telecomunicaciones para eventos recomendados" src="https://files.readme.io/ae4c696208b49aa546ffc0a15f76b148b35af43984a76e699d1df7c54507352c-4404604045457.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

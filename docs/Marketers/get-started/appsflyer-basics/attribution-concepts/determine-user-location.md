@@ -32,7 +32,7 @@ x-zendesk:
 ---
 > **En resumen:** La ubicación del usuario se determina mediante la dirección IP del dispositivo, que se asigna a la ubicación general del usuario (ciudad, estado, país, etc.). La ubicación del usuario influye en la selección de creatividades, el costo de la campaña, la interacción y la calidad del usuario.
 
-![5888ResolveIpAddress_us-en.png](https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png)
+<Image align="center" alt="5888ResolveIpAddress_us-en.png" src="https://files.readme.io/166e48fb0bb90b627bc51e29b53a556b71939749ab3e5eadff7d6edf0f0dfd25-360011758517.png" />
 
 <div id="determining-user-location" />
 
@@ -59,7 +59,7 @@ AppsFlyer convierte la dirección IP en información de geolocalización utiliza
 
 > 📘 **Nota sobre el Reino Unido (UK)**
 >
-> <Image alt="blobid0.png" src="https://files.readme.io/33ed45ea49e3308e17a237400ea6c6e9d33c495a9c83197041fdae282f9c65a4-360006637538.png" width="62px" />
+> <Image align="center" alt="blobid0.png" src="https://files.readme.io/33ed45ea49e3308e17a237400ea6c6e9d33c495a9c83197041fdae282f9c65a4-360006637538.png" width="62px" />
 >
 > * En la plataforma, el Reino Unido se denota con el código UK.
 > * El código ISO 3166 para el Reino Unido es GB. El Reino Unido está reservado, pero no asignado, por ISO para el Reino Unido.

@@ -40,7 +40,7 @@ Los partners, fuentes de medios y plataformas de terceros se integran con AppsFl
 
 La imagen a continuación muestra los diferentes tipos de partners que componen el ecosistema de atribución.
 
-[![Ecosystem.jpg](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)
+<Image align="center" alt="Ecosystem.jpg" src="https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg" />
 
 **Lectura relacionada**: El <Anchor target="_blank" href="https://www.appsflyer.com/performance-index/">Performance Index de AppsFlyer</Anchor> clasifica las fuentes de medios móviles por categoría y región.
 
@@ -143,7 +143,7 @@ Busca y selecciona a tu partner en [Integraciones con partners.](/docs/set-up-an
 
 Las integraciones de partners varían en sus requisitos y pueden contener un subconjunto de todas las opciones posibles descritas en esta sección. Hay ciertas diferencias entre las configuraciones de iOS y Android.
 
-![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
+<Image align="center" alt="set_up_an_integrated_partner.png" src="https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png" />
 
 Completa las secciones requeridas.
 
@@ -437,7 +437,7 @@ Para generar un enlace de atribución:
 
 #### Parámetros del enlace de atribución
 
-[![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
+<Image align="center" alt="attribution-link-parameters-en_us.png" src="https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png" />
 
 Agregar parámetros al enlace de atribución te permitirá realizar análisis detallados. Puedes editar los parámetros ya definidos en el enlace de atribución, agregándolos junto con sus nuevos valores aquí. Al guardar el enlace de atribución, se guardan todos los parámetros configurados en esta pestaña.
 
@@ -492,7 +492,7 @@ Obtenga más información sobre la <Anchor target="_blank" href="/marketers/es/d
 
 **Haz clic en el enlace de atribución**
 
-[![click-through-attribution-link_en-us.png](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)
+<Image align="center" alt="click-through-attribution-link_en-us.png" src="https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png" />
 
 Este es el enlace de atribución que contiene toda la información de configuración que has establecido. Puedes guardar el enlace para futuras referencias haciendo clic en **Guardar enlace de atribución**.
 
@@ -517,7 +517,7 @@ Aprende más sobre la <Anchor target="_blank" href="/marketers/es/docs/set-up-lo
 
 **Enlace de atribución de impresiones**
 
-[![impressions-attribution-link_en-us.png](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)
+<Image align="center" alt="impressions-attribution-link_en-us.png" src="https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png" />
 
 El enlace de atribución de impresiones contiene datos similares a los del enlace de registro de clics, además de una ventana de lookback diferente. Puedes guardar el enlace para futuras referencias haciendo clic en **Guardar enlace de atribución**.
 

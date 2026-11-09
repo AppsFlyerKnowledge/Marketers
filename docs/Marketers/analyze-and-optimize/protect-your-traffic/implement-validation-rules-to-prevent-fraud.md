@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance:** Las reglas de validación añaden una capa personalizada de protección contra campañas mal segmentadas y el fraude. Las reglas permiten a los propietarios de apps controlar qué atribuciones de instalaciones y eventos in-app se bloquean o se atribuyen a la última fuente válida.
 
-![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
+<Image align="center" alt="5906_animation-750x330__1_.gif" src="https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif" />
 
 <div id="overview" />
 
@@ -110,7 +110,7 @@ Los parámetros que no son relevantes para el tipo de evento seleccionado o que 
 | Evento de usuario final | Nombre del evento, valor del evento, tiempo entre la instalación y el evento, fuente del evento, moneda, ingresos |
 | Engagements | Participación |
 
-![New Validation Rule page.jpg](https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png)
+<Image align="center" alt="New Validation Rule page.jpg" src="https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png" />
 
 El generador de reglas contiene las siguientes secciones:
 

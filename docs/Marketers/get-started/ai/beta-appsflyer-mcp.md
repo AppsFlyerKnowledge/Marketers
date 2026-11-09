@@ -130,7 +130,7 @@ Usa Claude Chat y Claude Cowork con login de OAuth basado en el navegador. Estas
 #### Probar la conexión de Claude
 
 1. En cualquier ventana de chat, haz clic en el botón de configuración.  
-   <Image alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
 2. Si la integración de AppsFlyer se configuró correctamente, verás una lista de herramientas en el menú.
 
 <div id="note-5" />

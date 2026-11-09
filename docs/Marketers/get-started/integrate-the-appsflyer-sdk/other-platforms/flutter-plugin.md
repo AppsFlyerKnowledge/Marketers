@@ -23,7 +23,7 @@ x-zendesk:
   section_id: 6551244207121
   url: https://support.appsflyer.com/hc/es/articles/360002691537
 ---
-![flutter_icon.png](https://files.readme.io/3d4c1fc64dc794621c37afc677a88175748b8993204dba5693cdcce58559fa4a-360004154837.png)
+<Image align="center" alt="flutter_icon.png" src="https://files.readme.io/3d4c1fc64dc794621c37afc677a88175748b8993204dba5693cdcce58559fa4a-360004154837.png" />
 
 > **En resumen:** Integra AppsFlyer a las aplicaciones desarrolladas con Flutter para medir las instalaciones, los eventos in-app, las fuentes de medios y mucho más.
 

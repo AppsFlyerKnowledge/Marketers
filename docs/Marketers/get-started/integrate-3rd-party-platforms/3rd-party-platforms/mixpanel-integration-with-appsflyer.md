@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **De un vistazo:** Aprende a compartir automáticamente datos de AppsFlyer con Mixpanel, una plataforma de análisis de productos.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png" />
 
 La integración entre AppsFlyer y Mixpanel te permite importar la información de la campaña de adquisición de AppsFlyer a Mixpanel.
 
@@ -65,7 +65,7 @@ La pestaña Integración está dividida en distintas secciones, tal como se desc
 
 ### Configuración general
 
-<Image alt="mixpanel-general-settings.png" src="https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png" width="542px" />
+<Image align="center" alt="mixpanel-general-settings.png" src="https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png" width="542px" />
 
 * **Residencia de datos en la UE**: AppsFlyer envía datos a los servidores estadounidenses de Mixpanel por defecto. Para enviar los datos a los servidores de Mixpanel en la UE, activa este selector.  
   **\*token**: Mixpanel se conecta con AppsFlyer a través de un Token único. Si aún no lo tienes, debes obtenerlo de Mixpanel para continuar con la integración.
@@ -75,10 +75,10 @@ La pestaña Integración está dividida en distintas secciones, tal como se desc
   1. Accede a tu cuenta de Mixpanel en: https://mixpanel.com/login/
   2. En **Mixpanel**, ve al panel **Analysis** y haz clic en el icono de engranaje.
 
-     ![mixpanel-token-1.png](https://files.readme.io/f1fbc76fff621e12a7d91fed5ba49eb20f2b049de65c70b0ab32cadd997287d2-small-360014578477.png)
+     <Image align="center" alt="mixpanel-token-1.png" src="https://files.readme.io/f1fbc76fff621e12a7d91fed5ba49eb20f2b049de65c70b0ab32cadd997287d2-small-360014578477.png" />
   3. Copia tu token de la sección Access Keys de tu proyecto y pégalo en el campo **token** de la pestaña de integración de Mixpanel de AppsFlyer.
 
-     ![mixpanel-token-2.png](https://files.readme.io/e8e633ec87d963244652a53b9b21c495b0a850e234621a44d93b3034c640bff7-360014578757.png)
+     <Image align="center" alt="mixpanel-token-2.png" src="https://files.readme.io/e8e633ec87d963244652a53b9b21c495b0a850e234621a44d93b3034c640bff7-360014578757.png" />
 * **Enviar ID de anunciante**:
   * Si utilizas el parámetro customer\_user\_id de AppsFlyer, se enviará a Mixpanel con cada instalación (deja desactivado **Enviar ID de anunciante**).
   * Si no estás utilizando customer\_user\_id de AppsFlyer: activa **Enviar ID de anunciante.** El ID del dispositivo se envía a Mixpanel como customer\_user\_id (unique\_id en Mixpanel).  
@@ -100,13 +100,13 @@ La pestaña Integración está dividida en distintas secciones, tal como se desc
 
 AppsFlyer puede enviar postbacks automáticos a Mixpanel tras las instalaciones de los usuarios. Utiliza esta sección para definir la fuente de los usuarios a los cuales se envían los postbacks de cada evento. Aprender más sobre los <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#default-postbacks">postbacks por defecto</Anchor>.
 
-[![](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)
+<Image align="center" alt="" src="https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png" />
 
 <div id="in-app-events-settings" />
 
 ### Configuración de eventos in-app
 
-![mixpanel-in-app-events-settings.png](https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png)
+<Image align="center" alt="mixpanel-in-app-events-settings.png" src="https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png" />
 
 En esta sección, debes asignar los eventos de AppsFlyer a Mixpanel mediante postbacks.
 
@@ -250,8 +250,8 @@ A continuación se muestra un ejemplo de los pasos de integración:
 
 Las siguientes capturas de pantalla son un reporte de embudo para ver la conversión desde la instalación hasta el evento de valor, desglosado por la fuente de medios. Además, se puede ver el tiempo de conversión de cada fuente de medios.
 
-[![](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)
+<Image align="center" alt="" src="https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png" />
 
-[![](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)
+<Image align="center" alt="" src="https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png" />
 
 <div data-zendesk-anchors="h_01H9FKEWTEN4F8FM5C9A9ES6HN=importante setting-up-mixpanel=configuraci%C3%B3n-de-mixpanel h_01H9FKEWTEGMEVH3SK739DD719=configuraci%C3%B3n-de-mixpanel h_01H9FKEWTE90WR75PMNN93JAXE=integration-tab general-settings=configuraci%C3%B3n-general h_01H9FKEWTEMT7VGTTFWFMJHYA8=configuraci%C3%B3n-general h_01H9FKEWTEV3RWKMWZN0EXFFNP=nota default-postbacks=postbacks-predeterminados h_01H9FKEWTER31RXAH216TRXQPM=postbacks-predeterminados inapp-events-settings=configuraci%C3%B3n-de-eventos-in-app h_01H9FKEWTERRVKPQFF1B8QQERE=configuraci%C3%B3n-de-eventos-in-app h_01H9FKEWTEEMMQ0KKRZXRJRE25=nota-1 h_01H9FKEWTEEQ0GHF87V20TX9W0=attribution-link-tab h_01H9FKEWTEJ61197SN3R6JXYCP=cost-tab h_01H9FKEWTEA7GN2HHK3QD62A3A=ad-revenue-tab h_01H9FKEWTET4QD1RE0HJZM64D4=permissions-tab integrating-with-mixpanel-when-using-a-login-mechanism=integraci%C3%B3n-con-mixpanel-al-utilizar-un-mecanismo-de-inicio-de-sesi%C3%B3n h_01H9FKEWTE9DEANTXKPD286GD2=integraci%C3%B3n-con-mixpanel-al-utilizar-un-mecanismo-de-inicio-de-sesi%C3%B3n h_01H9FKEWTFZ107Y999WEMB3409=nota-2 viewing-appsflyer-data-in-mixpanel=visualizaci%C3%B3n-de-los-datos-de-appsflyer-en-mixpanel h_01H9FKEWTF9PFNVHTZGDKBX75Y=visualizaci%C3%B3n-de-los-datos-de-appsflyer-en-mixpanel" />

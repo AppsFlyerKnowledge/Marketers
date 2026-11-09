@@ -65,7 +65,7 @@ Las dimensiones personalizadas que creas están a nivel de cuenta, lo que signif
 
 1. En el panel de control de Resumen general:
    * Haz clic en el **icono Menú (⋮)** > **Dimensiones personalizadas**.  
-     [![](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)
+     <Image align="center" alt="" src="https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png" />
    * O bien, en cualquier gráfico o tabla, en el menú desplegable **Mostrar principales** o **Agrupar por**, haz clic en **+ Crear dimensión personalizada**.
 2. Si es la primera vez que creas una dimensión personalizada, haz clic en **+ Nueva dimensión**.  
    Se abre la pestaña **Crear**.
@@ -92,7 +92,7 @@ Las dimensiones personalizadas que creas están a nivel de cuenta, lo que signif
 
 1. En el panel de control de Resumen general:
    * Haz clic en el **icono Menú** > **Dimensión personalizada**.  
-     [![](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)](https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png)
+     <Image align="center" alt="" src="https://files.readme.io/9c7a9e390b27972356f715a1379594fd4e6445274e478a6e469369d6c9fd2123-17109190496017.png" />
    * O bien, en cualquier gráfico o tabla, en el menú desplegable **Mostrar principales** o **Agrupar por**, haz clic en **+ Crear dimensión personalizada**.
 2. Haz clic en la pestaña **Editar**.
 3. Selecciona o busca una dimensión personalizada.
@@ -111,7 +111,7 @@ Las dimensiones personalizadas se pueden usar para agrupar y ver datos en todos 
 
 1. En el panel de control de Resumen general, ve a cualquier widget de gráfico o panel de control.
 2. En el menú desplegable **Mostrar principales** o **Agrupar por**, busca en Dimensiones personalizadas la dimensión personalizada que deseas usar.  
-   [![](https://files.readme.io/e34bcb2ca34546347b391f0ad921319f296a21c41c3783e59a7d808b44d0b6a9-17082706166929.png)](https://files.readme.io/e34bcb2ca34546347b391f0ad921319f296a21c41c3783e59a7d808b44d0b6a9-17082706166929.png)
+   <Image align="center" alt="" src="https://files.readme.io/e34bcb2ca34546347b391f0ad921319f296a21c41c3783e59a7d808b44d0b6a9-17082706166929.png" />
 3. Los datos del gráfico o tabla se muestran en una agrupación utilizando tu dimensión personalizada
 
 </Accordion>

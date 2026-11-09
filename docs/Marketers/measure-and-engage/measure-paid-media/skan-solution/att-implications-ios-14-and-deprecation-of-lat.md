@@ -73,6 +73,6 @@ x-zendesk:
 
 **Cómo se traduce LAT a ATT en iOS 14**
 
-[<Image alt="LATtoiOS14.5.png" src="https://files.readme.io/872b3acdcd975337ff4de791a9fc98cd45eb50a487e80b3dfad6a1c7d9495739-360017977837.png" width="522px" />](https://files.readme.io/872b3acdcd975337ff4de791a9fc98cd45eb50a487e80b3dfad6a1c7d9495739-360017977837.png)
+<Image align="center" alt="LATtoiOS14.5.png" src="https://files.readme.io/872b3acdcd975337ff4de791a9fc98cd45eb50a487e80b3dfad6a1c7d9495739-360017977837.png" width="522px" />
 
 <div data-zendesk-anchors="att-values=valor-att h_01HGX9468F5YF0KSHB3S49CW2Y=valor-att att-values-defined-by-apple=valores-att-definidos-por-apple h_01HGX9468F0TFTMKP1W2J6GEBV=valores-att-definidos-por-apple additional-att-values-defined-by-appsflyer=valores-att-adicionales-definidos-por-appsflyer h_01HGX96RG9NX9QM2WTX8789DDR=valores-att-adicionales-definidos-por-appsflyer is-lat-in-ios%E2%80%94considerations-and-how-lat-translates-to-att-in-ios-14=lat-est%C3%A1-en-ios-consideraciones-y-c%C3%B3mo-se-traduce-lat-a-att-en-ios-14 h_01HGX9468F0VTYNXBJRSTNBCMB=lat-est%C3%A1-en-ios-consideraciones-y-c%C3%B3mo-se-traduce-lat-a-att-en-ios-14" />

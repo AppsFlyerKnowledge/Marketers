@@ -54,7 +54,7 @@ Para obtener más detalles sobre la activación de partners, haz clic <Anchor ta
 
 ### Postbacks predeterminados
 
-![mceclip2.png](https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/dbb58af826e66fda7a501fdb23bf5f0ded2415e295969472e04c958d3190310e-50899821656721.png" />
 
 <div id="in-app-events-settings" />
 
@@ -62,7 +62,7 @@ Para obtener más detalles sobre la activación de partners, haz clic <Anchor ta
 
 En esta sección puedes asignar tus eventos de AppsFlyer a Kuaishou vía postbacks.
 
-![mceclip0.png](https://files.readme.io/74a4c9e81ac69f65079f5e214de90dc8725f8aedaf59c7ee4d9a3d947a853a0b-50899821661713.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/74a4c9e81ac69f65079f5e214de90dc8725f8aedaf59c7ee4d9a3d947a853a0b-50899821661713.png" />
 
 1. Activa los postbacks de eventos in-app.
 2. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
@@ -109,7 +109,7 @@ Los ingresos por publicidad no se admiten en la integración con este partner.
 
 En esta pestaña, puedes seleccionar los permisos que quieres otorgarle a Kuaishou, tanto si el partner actúa como ad network, como agencia o incluso ambas cosas. Ten en cuenta que, incluso si la atribución estuviera deshabilitada para Kuaishou, la pestaña Permisos se encontraría activa y podrías otorgarle el control a Kuaishou.
 
-![rtb_house-permissions-new.png](https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png)
+<Image align="center" alt="rtb_house-permissions-new.png" src="https://files.readme.io/645bdfcbb23d0ee5121a6261d5b17ca11a86209bcad2cfd9354e57c8ae281e83-50899852754449.png" />
 
 <div id="ad-network-permissions" />
 

@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **En resumen:** Convierte usuarios de desktop, TV, CTV u offline, en usuarios de aplicaciones móviles mediante el uso de códigos QR generados con OneLink.
 
-![6005_QR_code_4.jpg](https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg)
+<Image align="center" alt="6005_QR_code_4.jpg" src="https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg" />
 
 <div id="converting-mobile-non-mobile-and-offline-traffic-into-mobile-app-users" />
 
@@ -79,7 +79,7 @@ Los códigos QR se pueden crear de una de las siguientes opciones:
 
 <Accordion title="Personalizar código QR">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 Puedes personalizar los códigos QR generados a través de OneLink de la siguiente manera:
 
@@ -140,7 +140,7 @@ Los siguientes son consejos para maximizar las conversiones de QR a la aplicaci�
   * Considera agregar instrucciones sobre cómo escanear el código QR.
 * ¿Ya usas OneLink? En tus *otros* OneLinks personalizados siendo utilizado en correos electrónicos, etc., agrega un parámetro **af\_web\_dp** con el valor siendo la URL a la página que contiene el código QR. Esto envía a los usuarios de desktop a hacer clic en el enlace a una página web en lugar de a la tienda de aplicaciones.
 
-  [![](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)
+  <Image align="center" alt="" src="https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg" />
 
 </Accordion>
 

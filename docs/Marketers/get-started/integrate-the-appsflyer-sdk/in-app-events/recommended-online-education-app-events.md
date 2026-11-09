@@ -46,7 +46,7 @@ Registrar estos eventos puede ayudarte a determinar:
 >
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Diagrama de flujo del recorrido del usuario de la aplicación de educación en línea para los eventos recomendados](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)](https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png)
+<Image align="center" alt="Diagrama de flujo del recorrido del usuario de la aplicación de educación en línea para los eventos recomendados" src="https://files.readme.io/a913f14a20a52d7d70a96be7601fd264650f790337ceb83b9c53fd0006afc8e1-360020170478.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

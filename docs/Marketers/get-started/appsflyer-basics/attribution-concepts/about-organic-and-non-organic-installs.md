@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **De un vistazo:** Comprende la diferencia entre instalaciones orgánicas y no orgánicas.
 
-![6453OrganicvsNon-organic.jpg](https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg)
+<Image align="center" alt="6453OrganicvsNon-organic.jpg" src="https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg" />
 
 Los usuarios no orgánicos se atribuyen a la fuente de medios que motiva la instalación o el engagement. En el caso de los usuarios orgánicos, no existe ninguna fuente de medios identificada con la instalación o el engagement.
 

@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **At a glance:** Obtén más información sobre cómo funciona la atribución para CTV, PC y consola para permitir que AppsFlyer reciba datos de atribución y eventos para tus campañas en estos dispositivos multiplataforma.
 
-<Image alt="Diagrama de la solución de atribución multiplataforma de AppsFlyer para CTV, PC y consola" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
+<Image align="center" alt="Diagrama de la solución de atribución multiplataforma de AppsFlyer para CTV, PC y consola" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
 <div id="the-appsflyer-cross-platform-solution" />
 
@@ -73,7 +73,7 @@ Los enlaces de atribución directa son enlaces de AppsFlyer que admiten la redir
 
  El flujo de atribución se ilustra en el siguiente diagrama.
 
-![Flujo de atribución de CTV - Flujo de enlace de atribución directa](https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png)
+<Image align="center" alt="Flujo de atribución de CTV - Flujo de enlace de atribución directa" src="https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png" />
 
 Como los enlaces de atribución directa apuntan a una app en una plataforma específica y predeterminada y llevan a un único destino, siempre incluyen el App ID y la información de la plataforma en la URL.
 
@@ -112,7 +112,7 @@ Con enlaces de atribución directa y enlaces OneLink multiplataforma, el atribut
 
 La atribución a las SRNs se realiza a través de la coincidencia determinista. Cuando un anunciante integra un SRN, la atribución funciona como en el diagrama a seguir.
 
-![Flujo de atribución de CTV - Flujo de atribución de SRN](https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png)
+<Image align="center" alt="Flujo de atribución de CTV - Flujo de atribución de SRN" src="https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png" />
 
 Actualmente, la atribución de SRN solo funciona para la publicidad de una plataforma a la misma plataforma. Es decir, cuando el punto de contacto (clic o impresión) se produce en la misma plataforma que la instalación. Por ejemplo, si se verifica la instalación CTV de Roku con Roku Endemic Media (el SRN de Roku) y se encuentra que se ha producido una impresión en un dispositivo Roku. Si la impresión se produjo en una plataforma diferente, como un móvil, no se tiene en cuenta para la atribución.
 
@@ -131,7 +131,7 @@ El Smart Script de una landing page multiplataforma utiliza el enlace entrante (
 
 La landing page admite métodos de atribución de modelos probabilísticos y de coincidencia determinista (cuando se proporciona un ID en el enlace). Con el modelado probabilístico, es posible que varias instalaciones de varios usuarios se puedan atribuir a la misma impresión. El flujo de atribución se ilustra en el siguiente diagrama.
 
-![Flujo de atribución de CTV - Flujo de atribución de la landing page](https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png)
+<Image align="center" alt="Flujo de atribución de CTV - Flujo de atribución de la landing page" src="https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png" />
 
 Por ejemplo,
 

@@ -36,12 +36,12 @@ Las aplicaciones que se ejecutan en Steam pueden integrarse con AppsFlyer a trav
 
 El siguiente es un flujo de ejemplo que destaca los pasos más importantes del viaje de un usuario, desde la interacción con el anuncio hasta la atribución. Incluye la landing page multiplataforma recomendada por AppsFlyer. **Nota**: Si bien recomendamos usar la landing page multiplataforma, también puedes usar enlaces de atribución directa
 
-![Steam_user_journey.jpg](https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg)
+<Image align="center" alt="Steam_user_journey.jpg" src="https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg" />
 
 1. Punto de contacto de marketing: Los clientes interactúan con tu marca a través de puntos de contacto de marketing online u offline. Estos pueden incluir el correo electrónico y los boletines informativos, las redes sociales, la web móvil y más.
 2. Landing page del juego: La landing page de un juego dirige a los clientes a tu página de juego de Steam. Este paso es importante para recopilar los parámetros UTM y otros parámetros de URL a fin de atribuir a los clientes que han hecho clic o han hecho la instalación a las fuentes multimedia originales o a las fuentes multimedia de tu propiedad.  
    La landing page también es útil porque proporciona enlaces a las distintas plataformas compatibles con el juego. Por ejemplo, puedes incluir enlaces de Xbox, Microsoft Store y Steam.  
-   ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
+   <Image align="center" alt="awesome_game.png" src="https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png" />
 3. <span id="marketing-touchpoint"></span>Página de la aplicación Steam: Esta es la página principal de tu tienda de Steam que aloja tu aplicación Steam para que los clientes la descarguen.
 4. Instalación del juego: el usuario instala el juego, lo que activa la atribución y el registro de eventos in-app y sesiones.
 

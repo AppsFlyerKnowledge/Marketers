@@ -102,7 +102,7 @@ Cuando se lanza una aplicación por primera vez:
 
 <Accordion title="Ejemplo A: Atribución asistida">
 
-![SRN_1.png](https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png)
+<Image align="center" alt="SRN_1.png" src="https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png" />
 
 **Lunes:** La red A informa un clic de usuario.
 
@@ -120,7 +120,7 @@ AppsFlyer proporciona a los anunciantes datos de asistencia (interacciones sin a
 
 <Accordion title="Ejemplo B: Atribución del último clic">
 
-![SRN_2.png](https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png)
+<Image align="center" alt="SRN_2.png" src="https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png" />
 
 **La red D** (SRN) informa un clic unos minutos antes de la red C.
 
@@ -273,7 +273,7 @@ Analistas de AppsFlyer revisaron campañas de **adquisición de usuarios** de Me
 * En un 5% de las campañas, al menos un 40% ya eran usuarios de la aplicación.
 * **Conclusión: En campañas de adquisición de usuarios SRN, 1 de cada 10 usuarios dirigidos ya es un usuario existente.**
 
-[![mistargeted_users.png](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)](https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png)
+<Image align="center" alt="mistargeted_users.png" src="https://files.readme.io/e135e9fc9ccda47a5d06c9595f171a60f9892f4c63212b4e459eeec897b16a3b-32259428927505.png" />
 
 <div id="solving-the-mistargeting-problem" />
 

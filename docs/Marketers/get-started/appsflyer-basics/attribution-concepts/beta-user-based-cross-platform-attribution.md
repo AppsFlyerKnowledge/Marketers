@@ -47,7 +47,7 @@ Este modelo aborda una limitación clave de la **atribución basada en dispositi
 
 El siguiente ejemplo de viaje del usuario ilustra la diferencia entre la atribución centrada en el dispositivo y la centrada en el usuario:
 
-[<Image alt="user-journey.png" src="https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png" width="2048px" />](https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png)
+<Image align="center" alt="user-journey.png" src="https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png" width="2048px" />
 
 Un usuario hace clic en un anuncio de Meta en la web, es redirigido al sitio web del anunciante, se registra y crea una cuenta. Más tarde, el mismo usuario instala la aplicación de iOS del anunciante, inicia sesión y realiza una compra de $50. Unos días después, el usuario ve un anuncio de YouTube, instala la aplicación de PC del anunciante, inicia sesión de nuevo y realiza una compra de $100.
 

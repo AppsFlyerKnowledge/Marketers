@@ -44,7 +44,7 @@ AppsFlyer atribuye las aplicaciones independientemente de la tienda de aplicacio
 > * La atribución de Android de AppsFlyer es compatible con todos los tipos de identificadores de dispositivos, incluidos el ID de publicidad de Google (GAID) y el <Anchor target="_blank" href="/marketers/es/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor>.
 > * Para las aplicaciones comercializadas en China, consulta <Anchor target="_blank" href="/marketers/es/docs/measure-attribution-in-the-chinese-domestic-market">Atribución de aplicaciones Android en el mercado nacional chino</Anchor>.
 
-![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
+<Image align="center" alt="DashboardType_us-en-new.jpg" src="https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg" />
 
 <div id="single-dashboard-vs-dashboard-per-store" />
 
@@ -252,7 +252,7 @@ Agrega un panel de control (aplicación) identificado por la combinación del no
 3. Ve a la sección de configuración y busca las opciones de Android o, si aún no has configurado Android, agrega la plataforma.
 4. Completa los detalles requeridos, incluida la URL de la tienda de aplicaciones de Amazon específica para tu aplicación.  
 
-   [![outofstore_1.png](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)
+   <Image align="center" alt="outofstore_1.png" src="https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png" />
 5. En el panel de control de AppsFlyer, en Integraciones activas, selecciona Anuncios de Meta e introduce el mismo ID de aplicación de Facebook que usas al registrar anuncios de instalación de aplicaciones móviles de Meta en la tienda con AppsFlyer.
 
 </Accordion>

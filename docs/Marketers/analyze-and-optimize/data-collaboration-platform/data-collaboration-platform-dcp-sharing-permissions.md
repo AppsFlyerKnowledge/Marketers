@@ -32,7 +32,7 @@ Este artículo describe los permisos disponibles al compartir datos en una colab
 
 Los permisos de datos que selecciones definen cómo tu colaborador puede usar tus datos asociados y se aplican a todas las fuentes que asocies con la colaboración. Los permisos también se pueden modificar individualmente por fuente.
 
-<Image alt="Permisos de datos Dic 2025.png" src="https://files.readme.io/1e33caebbe4a8ff14fe84be6ba7f50b82a5fe7c268ba186db0250c7084718d54-42009477892241.png" width="704px" />
+<Image align="center" alt="Permisos de datos Dic 2025.png" src="https://files.readme.io/1e33caebbe4a8ff14fe84be6ba7f50b82a5fe7c268ba186db0250c7084718d54-42009477892241.png" width="704px" />
 
 <div id="data-permissions-include" />
 

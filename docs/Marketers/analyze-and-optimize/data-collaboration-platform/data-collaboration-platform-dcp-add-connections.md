@@ -55,7 +55,7 @@ Crea conexiones de fuentes para incorporar tus datos propios a DCP.
 1. En AppsFlyer, ve a **Colaborar** > **Data Clean Room**.
 2. Haz clic en **Gestionar conexiones**, en la esquina superior derecha.
 3. Ve a la pestaña **Fuente** y haz clic en **+ Nueva conexión**.  
-   <Image alt="2026-07-27_13-30-46.png" src="https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png" width="529px" />
+   <Image align="center" alt="2026-07-27_13-30-46.png" src="https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png" width="529px" />
 4. Continúa con las [instrucciones para las conexiones de servicios en la nube para datos de la fuente](#conexiones-de-servicios-en-la-nube-para-datos-de-la-fuente) que aparecen a continuación.
 
 También puedes crear una conexión de la fuente directamente al configurar una fuente. Consulta <Anchor target="_blank" href="/marketers/es/docs/data-collaboration-platform-dcp-create-and-manage-sources">Crear y gestionar orígenes</Anchor> para obtener instrucciones.
@@ -117,7 +117,7 @@ Las conexiones de almacenamiento en la nube te permiten exportar automáticament
 1. En AppsFlyer, ve a **Colaborar** > **Data Clean Room**.
 2. Haz clic en **Gestionar conexiones**, en la esquina superior derecha.
 3. Ve a la pestaña **Almacenamiento en la nube** y haz clic en **+ Nueva conexión**.  
-   <Image alt="2026-07-27_13-30-34.png" src="https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png" width="533px" />
+   <Image align="center" alt="2026-07-27_13-30-34.png" src="https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png" width="533px" />
 4. Se abre la ventana **Nueva conexión de almacenamiento en la nube**.
 5. En la ventana **Nueva conexión de almacenamiento en la nube**, selecciona tu proveedor de servicios en la nube: **Google Cloud Storage** o **Amazon Simple Storage**.
 6. Introduce el nombre de tu bucket:

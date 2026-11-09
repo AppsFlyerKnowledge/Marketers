@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **En resumen:** Los datos de ingresos ayudan a obtener una imagen clara y completa del ROI y el ROAS. Conoce los distintos productos y funciones disponibles para que los anunciantes agreguen y visualicen los datos de ingresos.
 
-![roi_revenue.png](https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png)
+<Image align="center" alt="roi_revenue.png" src="https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png" />
 
 <div id="overview" />
 

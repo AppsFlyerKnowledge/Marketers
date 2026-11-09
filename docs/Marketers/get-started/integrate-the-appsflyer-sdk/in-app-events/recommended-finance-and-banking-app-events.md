@@ -47,7 +47,7 @@ Registrar estos eventos puede ayudarte a determinar:
 >
 > Para más información sobre cómo registrar eventos in-app, consulta la <Anchor target="_blank" href="/marketers/es/docs/in-app-events-overview">guía Eventos in-app enriquecidos</Anchor>.
 
-[![Diagrama_de_flujo_para_eventos_recomendados recorrido_del_usuario_de_la_aplicación_de_finanzas_y_banca](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)](https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png)
+<Image align="center" alt="Diagrama_de_flujo_para_eventos_recomendados recorrido_del_usuario_de_la_aplicación_de_finanzas_y_banca" src="https://files.readme.io/722d2a3df606df1c61f86c7e8e1524566de8fbfd0ceb48e4cd5913a0b3ac9283-360020063337.png" />
 
 <div id="recommended-structures-for-predefined-events" />
 

@@ -69,7 +69,7 @@ Según la documentación de Apple, puedes establecer un único punto final de po
 >
 > ¿Estas afirmaciones son verdaderas o falsas?
 >
-> ![VerdaderoOFalso.png](https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png)
+> <Image align="center" alt="VerdaderoOFalso.png" src="https://files.readme.io/77212d5a12ce2af35b0a4c87ca9e58213b4f9fd88c775007793e7abb5aaa3f04-35682597298577.png" />
 >
 > * Los anunciantes todavía dependen de las redes publicitarias para obtener postbacks.
 >   * Falso. El anunciante sigue dependiendo de la red publicitaria para interpretar información importante. Por ejemplo, solo la red publicitaria puede relacionar el ID de campaña SKAN con el nombre de la campaña.

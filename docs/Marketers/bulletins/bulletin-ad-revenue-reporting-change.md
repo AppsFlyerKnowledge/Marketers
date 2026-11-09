@@ -71,6 +71,6 @@ Mira el ejemplo que sigue.
 > * Los datos de ingresos por publicidad se reportan con el Día 0.
 >   * En el Dashboard de actividad, Data Locker (carpeta h=23) y los reportes de raw data, también está disponible la hora de visualización del anuncio.
 >
-> [![](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)](https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg)
+> <Image align="center" alt="" src="https://files.readme.io/b22207f1e7009f3f8f1172fbb8bf9147c1251e7d1f51864b777cbf4eab4b84e4-360010993537.jpg" />
 
 <div data-zendesk-anchors="ad-revenue-reporting-change=cambio-en-el-reporte-de-ingresos-publicitarios before-the-change=antes-del-cambio after-the-change=despu%C3%A9s-del-cambio" />

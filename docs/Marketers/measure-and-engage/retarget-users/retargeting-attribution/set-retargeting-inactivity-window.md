@@ -64,7 +64,7 @@ El escenario del usuario se muestra en la figura siguiente. El usuario:
 * participa en una campaña de retargeting dirigida por una fuente de medios
 * reinstala la aplicación
 
-[![re-attribution_1_en-us.png](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)
+<Image align="center" alt="re-attribution_1_en-us.png" src="https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png" />
 
 | Situación | Umbral de inactividad | Periodo de inactividad del usuario | Resultado |
 | --- | --- | --- | --- |
@@ -83,7 +83,7 @@ El escenario del usuario se muestra en la figura siguiente. El usuario:
 * está inactivo durante varios días
 * posteriormente, participa en una campaña de retargeting, dirigida por una fuente de medios, e inicia la aplicación gestionada por una fuente de medios, e inicia la app
 
-[![Re-engagement_scenarios_en-us.png](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)
+<Image align="center" alt="Re-engagement_scenarios_en-us.png" src="https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png" />
 
 | Situación | Fuente multimedia Un umbral de inactividad | Periodo de inactividad del usuario | Resultado |
 | --- | --- | --- | --- |
@@ -112,7 +112,7 @@ Los SRN que admiten períodos de inactividad tienen esta función configurada en
 4. Establece **la ventana de inactividad** (de 1 a 30 días). (de 1 a 30 días).
 5. Haz clic en **Guardar integración**.
 
-[![Inactivity_window_SRN.png](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)](https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png)
+<Image align="center" alt="Inactivity_window_SRN.png" src="https://files.readme.io/a3a6dfb2270790a28b71581264c924ba1e4146d4975f64d3cee43a9e0ff3f172-36539146170897.png" />
 
 </Accordion>
 
@@ -128,7 +128,7 @@ Los SRN que admiten períodos de inactividad tienen esta función configurada en
 4. Establece **la ventana de inactividad** (de 1 a 30 días).  
     El parámetro **Periodo de inactividad** `af_inactivity_window` se añade al enlace de atribución, por ejemplo, «&af\_inactivity\_window=7d». Si la función está deshabilitada, no aparece en el enlace de atribución.
 
-[![](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)](https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png)
+<Image align="center" alt="" src="https://files.readme.io/cec66a07874832ecd93d26a7275b81cd4cae2842b34d04c93427bb6344edd651-36538331525521.png" />
 
 </Accordion>
 

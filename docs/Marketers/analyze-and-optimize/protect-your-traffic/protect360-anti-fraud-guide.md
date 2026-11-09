@@ -31,7 +31,7 @@ x-zendesk:
 
 > **En resumen:** El fraude de atribución agota los presupuestos de marketing, contamina los datos de rendimiento de marketing y puede convertir campañas exitosas en fracasos. **Protect360 ofrece, a los propietarios de las aplicaciones, protección en tiempo real y detección del fraude posterior a la atribución.** Sin embargo, asegúrate de crear plantillas separadas con el subdominio; no agregues manualmente el subdominio al ID de plantilla.
 
-![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
+<Image align="center" alt="p360intro2.jpg" src="https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg" />
 
 <div id="protect360-overview" />
 
