@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **De un vistazo**: Utiliza OneLink para redirección personalizada y efectiva de usuarios, enlaces profundos y atribución desde tus campañas, sin importar el dispositivo, sistema operativo, canal o plataforma del usuario, para maximizar la conversión y los ingresos.
 
-## ![53010_Onelink.jpg](https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg)
+<Image align="center" alt="53010_Onelink.jpg" src="https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg" />
 
 <div id="about-onelink" />
 

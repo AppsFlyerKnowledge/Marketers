@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **De un vistazo:** Realiza la transición de Firebase Dynamic Links a AppsFlyer fácilmente con nuestra guía de migración paso a paso.
 
-## ![53375 imagen de la migración de Firebase KB.png](https://files.readme.io/b5340a5b30c160bca2b420052fd60b23f4bfe0de6d2868f91ad4342bee36c7df-30063560499345.png)
+<Image align="center" alt="53375 imagen de la migración de Firebase KB.png" src="https://files.readme.io/b5340a5b30c160bca2b420052fd60b23f4bfe0de6d2868f91ad4342bee36c7df-30063560499345.png" />
 
 <div id="about-the-migration" />
 

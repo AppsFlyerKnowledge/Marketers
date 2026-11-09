@@ -24,7 +24,7 @@ x-zendesk:
 
 > **En resumen:** Configura una integración de ESP con AppsFlyer para habilitar deep linking seguros y sin problemas en tus campañas de correo electrónico para un mejor engagement de usuarios y tasas de conversión.
 
-## <Image alt="ESP final main KB image.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
+<Image align="center" alt="ESP final main KB image.png" src="https://files.readme.io/f14a193bb8d303adb93c01b33dcafba9053359fd92a187378cd324544a94dc88-27434531852049.png" width="613px" />
 
 <div id="about-the-appsflyer-esp-integration" />
 
