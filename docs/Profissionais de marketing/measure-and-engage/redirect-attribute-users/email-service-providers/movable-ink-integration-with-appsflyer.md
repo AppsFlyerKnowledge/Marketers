@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **Em resumo:** configure uma integração com o Movable Ink para criar jornadas exclusivas de usuários com tecnologia de IA em suas campanhas de marketing e no conteúdo in-app.
 
-## ![53374 imagem da KB do Movable Ink.png](https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png)
+<Image align="center" alt="53374 imagem da KB do Movable Ink.png" src="https://files.readme.io/0f1a5d3d6b60cccdb8be113c9fd4f3603c7c3ed0ad8573a153709391d29b2c3b-28624891792401.png" />
 
 <div id="about-the-integration" />
 

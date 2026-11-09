@@ -24,7 +24,7 @@ x-zendesk:
 
 > **Visão geral**: Utilize o AppsFlyer Audiences para criar e conectar segmentos de audiência personalizados às suas redes de parceiros para campanhas de aquisição de utilizadores e remarketing mais eficazes.
 
-## ![53010_Audiences.jpg](https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg)
+<Image align="center" alt="53010_Audiences.jpg" src="https://files.readme.io/37aa78c4e885438f7912110a424a9ddbb9ddb7842fcb7239c7e2bc893eb36a50-30778512024081.jpg" />
 
 <div id="about-audiences" />
 

@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **Visão geral**: Use o OneLink para redirecionar usuários, ativar o deep linking e fazer a atribuição das suas campanhas, independentemente do dispositivo do usuário, sistema operacional, canal ou plataforma, garantindo o máximo de conversão e receita para o seu negócio.
 
-## ![53010_Onelink.jpg](https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg)
+<Image align="center" alt="53010_Onelink.jpg" src="https://files.readme.io/c0d24ab87126bf765a89a25077b07d8678159cdb6f1b68eddc14a4cd2759b12a-30192941047185.jpg" />
 
 <div id="about-onelink" />
 
