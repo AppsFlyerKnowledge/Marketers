@@ -25,7 +25,7 @@ x-zendesk:
 
 > **한눈에 보기:** 귀사의 리마케팅 캠페인의 실제 영향을 파악하기 위해 성과 증분 측정 솔루션 시험을 실행해 보세요.
 
-![KB_토글_최종.jpg](https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg)
+<Image align="center" alt="KB_토글_최종.jpg" src="https://files.readme.io/4de8c3ff1edaaae77fc0571de6125b25c884bcc4e4ac67471fc90610298866e1-30780522054801.jpg" />
 
 <div id="about-the-experiment" />
 
@@ -98,14 +98,14 @@ x-zendesk:
 2. 선택한 오디언스의 **연결** 탭에서:
    * 오디언스를 1&#126;3개의 애드 네트워크 파트너와 연결하세요.
    * <Anchor target="_blank" href="/marketers/ko/docs/audiences-guide#audience-split-and-control-groups">잠재 고객을 분할하는</Anchor> 토글이 활성화되었는지 확인합니다(**2023년 1월 11일 이후에 생성된 잠재 고객에서 성과 증분 측정 가입자에 대해 자동으로 활성화됨**). 그렇지 않은 경우, 토글을 클릭해서 활성화하세요.  
-     ![측정_영향_토글.jpg](https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg)
+     <Image align="center" alt="측정_영향_토글.jpg" src="https://files.readme.io/a04b3be68fcc00d62e6a92391fbbea685ca2bfcbf83bd5678660c6a1b8c58fc2-30780493858065.jpg" />
    * 통제군은 자동으로 15%로 설정됩니다(권장).
    * 나머지 오디언스는 선택한 애드 네트워크 파트너 사이에 자동으로 균등하게 나뉩니다.
      * 전체 분할 비율은 통제군을 포함하여 100%가 되어야 합니다.
 
 분할이 활성화된 상태로 귀사의 오디언스를 저장하면 성과 증분 측정 솔루션이 자동으로 시작됩니다(성과 증분 측정 솔루션 구독자에게만 해당). 이러한 실험은 제목 앞에 접두사 "[자동]"을 붙여 성과 증분 측정 대시보드에서 볼 수 있습니다.
 
-![자동_제목_앞으로_.jpg](https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg)
+<Image align="center" alt="자동_제목_앞으로_.jpg" src="https://files.readme.io/fdab39eee29240ae0d9b907f7c6504a9e08e470454d5f8e43933512c65db15d4-30780522066833.jpg" />
 
 **중요 참고사항:**
 
@@ -118,10 +118,10 @@ Meta Ads와 Google Ads에는 캠페인이 설정된 오디언스 목록 외부�
 
 Meta Ads에서는 이 기능을 "Advantage 커스텀 오디언스"라고 합니다. 이 기능은 광고 세트 수준에서 나타나며 기본적으로 활성화되어 있습니다.
 
-<Image alt="이미지__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />  
+<Image align="center" alt="이미지__4_.png" src="https://files.readme.io/a0bee1bbb2c6521007146a5ac70de52ce821f459fd2aece127a97a2e0b75c93d-30780493862033.png" width="458px" />
 Google Ads에서는 이를 "잠재고객 확장"이라고 합니다.
 
-<Image alt="Google_광고_증가_제한_잘림.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
+<Image align="center" alt="Google_광고_증가_제한_잘림.jpg" src="https://files.readme.io/042aac534d0a527753b643bb63a52f59889219ebda922cc04f8a61c5984afb80-30780493867409.jpg" width="436px" />
 
 </Accordion>
 
@@ -150,17 +150,17 @@ Google Ads에서는 이를 "잠재고객 확장"이라고 합니다.
 
 1. **성과 증분 측정 솔루션 대시보드** > 특정 실험 > **실험 편집**을 클릭합니다.
 
-<Image alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
+<Image align="center" alt="Edit_experiment.jpg" src="https://files.readme.io/f478737e2a8db560a5ea33b287fe8f41587ec1f743c1bc01ba15ab6ce72478e9-30780493873425.jpg" width="642px" />
 
 또는
 
 **오디언스**에서 특정 오디언스를 찾아 성과 증분 측정 열에서 **+ 캠페인 연결**을 클릭합니다.
 
-<Image alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
+<Image align="center" alt="Link_campaign__audiences_status_.jpg" src="https://files.readme.io/5da762448fb731843fef0aec66ae826ed6922a5dd213a78ccd93f544b21fcfdc-small-30780522084625.jpg" width="768px" />
 
 캠페인을 연결할 수 있는 기간이 표시됩니다.
 
-<Image alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
+<Image align="center" alt="Link_campaign_to_experiment_window.jpg" src="https://files.readme.io/9492444847bfc6a26778624d72d5b468acc62b705530db66d0bd0fdff89f5e89-30780493883409.jpg" width="506px" />
 
 2. 각 애드 네트워크에 맞는 캠페인을 선택하세요.
 
@@ -186,7 +186,7 @@ Google Ads에서는 이를 "잠재고객 확장"이라고 합니다.
 
   > 📘 **참고**
   >
-  > [<Image alt="" src="https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png" width="603px" />](https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png)
+  > <Image align="center" alt="" src="https://files.readme.io/e956b50df1931b190206f42b48a8f2f061937fe1f25c96801a416d287d7eb3f5-30780493888273.png" width="603px" />
   >
   > 마법사의 2단계에서는 실험에 포함할 오디언스의 **시작 날짜**를 선택하라는 안내가 나옵니다.
   >
@@ -197,7 +197,7 @@ Google Ads에서는 이를 "잠재고객 확장"이라고 합니다.
   >
   > **마법사 단계 3 - 목표 설정**
   >
-  > ![3단계_설정_목표.jpg](https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg)
+  > <Image align="center" alt="3단계_설정_목표.jpg" src="https://files.readme.io/9c58ad61463b1751f5ad8b2c5235d6d61b13baa156db56d5edeb156debbcfeaa-30780522104081.jpg" />
   >
   > 여기에서 타겟 앱과 KPI를 선택하세요.
   >
@@ -205,7 +205,7 @@ Google Ads에서는 이를 "잠재고객 확장"이라고 합니다.
   >
   > **마법사 단계 4 – 검토**
   >
-  > [<Image alt="" src="https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png" width="583px" />](https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png)
+  > <Image align="center" alt="" src="https://files.readme.io/75c90dc66cff6abc772a352d81b6b57498e5915da66efaa83a754d9a5a08be70-30780522113681.png" width="583px" />
   >
   > 마법사의 4단계에서는 **실험 기간**을 설정하라는 안내가 나옵니다.
   >

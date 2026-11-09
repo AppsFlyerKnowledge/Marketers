@@ -45,14 +45,14 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
 
 1. 데이터 협업 플랫폼에 액세스하려면 클릭하십시오. **협업** > **데이터 클린룸**, AppsFlyer 사이드 메뉴에서. 
 
-   <Image alt="from Collaborate.png" src="https://support.appsflyer.com/hc/article_attachments/32328511584529" width="37.55%" />
+   <Image align="center" alt="from Collaborate.png" src="https://support.appsflyer.com/hc/article_attachments/32328511584529" width="37.55%" />
 2. 로 이동하십시오. **협업** 탭 > **+ 새로운 협업**.
 
-   <Image alt="협업 탭에서 새 협업 클릭 w 화살표.png" src="https://support.appsflyer.com/hc/article_attachments/32348047403665" width="1240px" />
+   <Image align="center" alt="협업 탭에서 새 협업 클릭 w 화살표.png" src="https://support.appsflyer.com/hc/article_attachments/32348047403665" width="1240px" />
 
    새로운 협업 화면이 나타납니다.
 
-   [![새로운 협업 - 빈 상태.png](https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png)](https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png)
+   <Image align="center" alt="새로운 협업 - 빈 상태.png" src="https://files.readme.io/8f209f87aaf32315fed0fae46bd55e7bb101084ae6983b08e1566c64a89f0a8e-32192739280273.png" />
 
 </Accordion>
 
@@ -64,7 +64,7 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
 
 1. 클릭 **세트** (아래) **협업 세부 정보 설정**).
 
-   <Image alt="Set .png" src="https://files.readme.io/e47781f360714e539ed54c6a8bfaa32b282f4609dc2c91d77021034f46dfb23a-32348709077393.png" width="951px" />
+   <Image align="center" alt="Set .png" src="https://files.readme.io/e47781f360714e539ed54c6a8bfaa32b282f4609dc2c91d77021034f46dfb23a-32348709077393.png" width="951px" />
 2. 협업 이름을 입력합니다. 이것은 협업 파트너가 처음 보게 될 이름이기도 합니다(나중에 언제든지 변경할 수 있습니다). 그런 다음 **저장**을 클릭합니다.
 
 협업 세부정보 설정
@@ -81,10 +81,10 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
 
 1. 클릭 **추가하기** (아래) **공동 작업자 추가**).   
 
-   <Image alt="공동 작업자 추가를 클릭합니다. Add.png" src="https://files.readme.io/958f88782e8cd36bbfa1962b51de72824200952be183a968d311fa6ef164553e-34014450760465.png" width="2088px" />
+   <Image align="center" alt="공동 작업자 추가를 클릭합니다. Add.png" src="https://files.readme.io/958f88782e8cd36bbfa1962b51de72824200952be183a968d311fa6ef164553e-34014450760465.png" width="2088px" />
 2. 공동 작업자의 이메일을 입력합니다.
 
-   <Image alt="add a collaborator.png" src="https://support.appsflyer.com/hc/article_attachments/32324746219537" width="83.55%" />
+   <Image align="center" alt="add a collaborator.png" src="https://support.appsflyer.com/hc/article_attachments/32324746219537" width="83.55%" />
 3. 고객님의 환경 설정을 선택하십시오. **데이터 권한 정책**. <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-and-manage-sources#공유-권한">더 알아보기</Anchor>  
    개별 소스별로 수정되지 않는 한, 이 정책은 협업과 관련된 모든 소스에 적용됩니다. 권한에는 다음이 포함됩니다.
    * **협업자에게 표시** - 협업자에게 협업과 관련된 소스를 볼 수 있도록 허용합니다. 비활성화되면, 소스는 귀하에게만 표시됩니다.
@@ -93,7 +93,7 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
    * **파트너 연결** - 협업자에게 청중을 보낼 수 있는 권한 부여 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-add-connections">파트너 대상지</Anchor>.
    * **파일 내보내기** - 공동 작업자가 청중 파일을 클라우드 버킷으로 내보낼 수 있도록 허용합니다.
 
-     <Image alt="데이터 권한.png" src="https://support.appsflyer.com/hc/article_attachments/34012032112913" width="93.74%" />
+     <Image align="center" alt="데이터 권한.png" src="https://support.appsflyer.com/hc/article_attachments/34012032112913" width="93.74%" />
 
      권한을 설정한 후 **저장**을 클릭합니다.
 4. 을 클릭합니다. **저장** 다시. 협업이 생성되면 협업자는 받은 편지함에 협업 초대를 받게 됩니다. 이메일에서 AppsFlyer에 로그인하면 고객님과 협업을 시작할 수 있습니다.
@@ -111,7 +111,7 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
 1. In the **데이터 협업 플랫폼** > **협업** 탭 > 관련 협업을 클릭하여 액세스합니다.
 2. 클릭 **어소시에이트** 아래에 **소스 연결**.  
 
-   <Image alt="소스 연결 associate.png 클릭합니다." src="https://files.readme.io/ed192e758d04c3f48dd70877f90c39428f72460247d4a5940c1217393ae5f686-34014749769617.png" width="2080px" />
+   <Image align="center" alt="소스 연결 associate.png 클릭합니다." src="https://files.readme.io/ed192e758d04c3f48dd70877f90c39428f72460247d4a5940c1217393ae5f686-34014749769617.png" width="2080px" />
 3. 연결할 소스를 선택합니다(또는 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-and-manage-sources">새 소스를 만듭니다</Anchor>).  
 
    연관 소스  
@@ -122,11 +122,11 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
 
    소스 옆에 있는 **권한 편집** 을 클릭합니다.  
 
-   <Image alt="edit permissions.png" src="https://support.appsflyer.com/hc/article_attachments/33579354753425" width="81.53%" />
+   <Image align="center" alt="edit permissions.png" src="https://support.appsflyer.com/hc/article_attachments/33579354753425" width="81.53%" />
 
    원하는 대로 권한을 설정한 다음(<Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-and-manage-sources#grant-permissions-for-your-source">권한에 대해 알아보기</Anchor>) **저장**을 클릭합니다.  
 
-   <Image alt="source1.png에 대한 권한" src="https://files.readme.io/e4b025bf9cd944024e578ac4bcfd60c46d847b3e403b1da737e3451eb708e5a9-34019077412369.png" width="90.08%" />
+   <Image align="center" alt="source1.png에 대한 권한" src="https://files.readme.io/e4b025bf9cd944024e578ac4bcfd60c46d847b3e403b1da737e3451eb708e5a9-34019077412369.png" width="90.08%" />
 
    **참고:** 또한 다음으로 이동하여 기존 협업의 원본 권한을 사용자 지정할 수 있습니다. **관련 소스**, 협업 내에서 소스 오른쪽의 작업(3점) 메뉴를 클릭합니다. > **편집 권한 편집**.
 
@@ -150,10 +150,10 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
 
 1. 데이터 협업 플랫폼(데이터 클린 룸)에서 다음으로 이동하십시오. **협업** tab > 특정 협업.   
 
-   <Image alt="협업에서 특정 협업으로 이동합니다.png" src="https://support.appsflyer.com/hc/article_attachments/34019991093649" width="82.25%" />
+   <Image align="center" alt="협업에서 특정 협업으로 이동합니다.png" src="https://support.appsflyer.com/hc/article_attachments/34019991093649" width="82.25%" />
 2. 협업 대시보드에서 다음 중 하나를 클릭하십시오. **관련 소스** 오른쪽 상단의 섹션 또는 작업 메뉴 > **관련 소스**.  
 
-   <Image alt="액션 메뉴 열기.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+   <Image align="center" alt="액션 메뉴 열기.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
 
 
 <div id="associate-new-sources" />
@@ -162,7 +162,7 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
 
 **새 소스를 연결하려면:** 클릭 **+ 소스 연결** > 드롭다운 메뉴에서 소스를 선택합니다 > 클릭합니다 **저장**.  
 
-<Image alt="기존 협업에 소스 연결.png" src="https://files.readme.io/4ecd2b8d33195d79c93848b8b1385f504b2c8ee78f509b99d7e4f3b1910bf81e-34127880603921.png" width="574px" />
+<Image align="center" alt="기존 협업에 소스 연결.png" src="https://files.readme.io/4ecd2b8d33195d79c93848b8b1385f504b2c8ee78f509b99d7e4f3b1910bf81e-34127880603921.png" width="574px" />
 
 <div id="manage-sources" />
 
@@ -185,10 +185,10 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
 
 1. 데이터 협업 플랫폼(데이터 클린 룸)에서 다음으로 이동하십시오. **협업** tab > 특정 협업.  
 
-   <Image alt="협업에서 특정 협업으로 이동합니다.png" src="https://support.appsflyer.com/hc/article_attachments/34019991093649" width="82.25%" />
+   <Image align="center" alt="협업에서 특정 협업으로 이동합니다.png" src="https://support.appsflyer.com/hc/article_attachments/34019991093649" width="82.25%" />
 2. 협업 대시보드에서 오른쪽 상단의 작업(3개의 점) 메뉴를 클릭하고 특정 작업을 선택합니다.   
 
-   <Image alt="액션 메뉴 열기.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
+   <Image align="center" alt="액션 메뉴 열기.png" src="https://files.readme.io/6f77b81a05cdb6ac3f3084d0521ba084b8dae57f9ae7b8cdc823ef1cfa138636-34019992385553.png" width="1377px" />
 
 <div id="terms-and-conditions" />
 
@@ -220,15 +220,15 @@ AppsFlyer <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-pl
 
 1. 데이터 협업 플랫폼(데이터 클린 룸)에서 다음으로 이동하십시오. **협업** tab > 특정 협업.  
 
-   <Image alt="협업에서 특정 협업으로 이동합니다.png" src="https://support.appsflyer.com/hc/article_attachments/34019991093649" width="574px" />
+   <Image align="center" alt="협업에서 특정 협업으로 이동합니다.png" src="https://support.appsflyer.com/hc/article_attachments/34019991093649" width="574px" />
 2. 클릭합니다. **액세스 관리** (오른쪽 상단에)   
 
-   <Image alt="접근 관리.png" src="https://files.readme.io/e9cfaf5da2b147f68255d6d442078a3770db4c9873109d1188b9a2b5c0f4e65f-36132545995281.png" width="475px" />
+   <Image align="center" alt="접근 관리.png" src="https://files.readme.io/e9cfaf5da2b147f68255d6d442078a3770db4c9873109d1188b9a2b5c0f4e65f-36132545995281.png" width="475px" />
 3. **회사의 누구나(DCP 권한이 있는 경우) 협업에 액세스할 수 있도록 하려면:**   
 
    설정하십시오. **일반 접근 권한** 설정으로 **"귀사"의 누구든지**  
 
-   <Image alt="협업은 초안입니다 - 액세스 드롭다운 관리 화살표.png" src="https://files.readme.io/6358d272f675d9f6f7ad4b07637db7361d772d34738bbd54488212c9870598b4-36132546008209.png" width="623px" />
+   <Image align="center" alt="협업은 초안입니다 - 액세스 드롭다운 관리 화살표.png" src="https://files.readme.io/6358d272f675d9f6f7ad4b07637db7361d772d34738bbd54488212c9870598b4-36132546008209.png" width="623px" />
 
    **특정 사용자를 초대하려면:**   
 

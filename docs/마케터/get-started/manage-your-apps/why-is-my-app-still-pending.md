@@ -28,7 +28,7 @@ x-zendesk:
 
 앱스플라이어에서 등록대기 중인 앱은 라이브 앱과 똑같이 보입니다. 등록대기 중인 앱들도 대시보드에 접근이 가능하며, 모든 어트리뷰션 측정 또한 가능합니다. 유일한 차이점은 앱의 로고가 실제 앱 로고가 아닌 앱스플라이어 로고로 표시되는 것입니다.
 
-![Pending_App.png](https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png)
+<Image align="center" alt="Pending_App.png" src="https://files.readme.io/fd280ea8dbcd280aae0a1328d1523f52c51d2f30dc163e7a62deb424ae5bc8ed-360001789338.png" />
 
 <div id="whats-happening" />
 
@@ -53,7 +53,7 @@ x-zendesk:
 2. 등록대기 중인 앱의 옆에서 **상태 새로 고침(Refresh Status)** 을 클릭하십시오.  
    만약 앱의 상태가 변경되지 않았다면, 앱은 여전히 등록대기 중으로 보이게 됩니다. 만약 상태가 변경되었다면, 상태가 라이브로 바뀌고 로고가 업데이트 될 것입니다.  
 
-   ![app-refersh-status.png](https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png)
+   <Image align="center" alt="app-refersh-status.png" src="https://files.readme.io/d995ea3ee3523a8f0d4854f9ec116efc33c892694d56334c483b7d9fa6da8d64-360001704577.png" />
 
 <div id="store-country" />
 

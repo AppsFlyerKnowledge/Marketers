@@ -75,10 +75,10 @@ Google Ads와의 상호 운용성을 설정하려면 다음 탭의 단계를 완
 3. **Google Ads**를 검색하여 선택합니다.
 4. **SKAN** 탭으로 이동합니다.
 
-   <Image alt="mceclip0.png" src="https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png" width="309px" />
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/ba8d881ca8430bfdcf67a37e862ad3e31a9af522f2f877d3fba30bc2e13006a6-4404428381457.png" width="309px" />
 5. **일시적으로 사용할 수 없다는 메시지가 표시**되면 대부분 광고 차단기가 활성 상태임을 의미합니다. 그렇다면 광고 차단기를 비활성화하고 페이지를 새로 고치십시오. 그렇게 할 수 없는 경우 앱스플라이어 지원팀에 문의하십시오.
 
-   ![mceclip1.png](https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png)
+   <Image align="center" alt="mceclip1.png" src="https://files.readme.io/e86b868f71e11ad347ff7557a793090d9d6adb8fe4df4f9010c8d770b373ac6a-4404428420497.png" />
 6. **Google Ads 로그인**을 클릭합니다.
    * 계정에 대한 어드민 사용자 역할을 사용하여 Google Ads에 로그인해야 합니다.
    * Google 계정이 여러 앱과 연결되어 있는 경우 한 번 로그인하면 모든 앱에 로그인한 것으로 간주됩니다. 다시 말하면, 앱별로 권한을 부여할 필요가 없습니다.
@@ -86,7 +86,7 @@ Google Ads와의 상호 운용성을 설정하려면 다음 탭의 단계를 완
 7. 사용자 인터페이스에서 지시를 따르세요.
 8. 경우에 따라 앱스플라이어에 **AdWords 캠페인 관리 권한을 부여하라는 메시지가 표시될 수 있습니다.**  그렇다면 권한을 활성화해야 합니다. 걱정하지 마십시오. 캠페인 설정은 변경되지 않습니다.
 
-   [<Image alt="GoogleManageAdWords.png" src="https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png" width="182px" />](https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png)
+   <Image align="center" alt="GoogleManageAdWords.png" src="https://files.readme.io/bf327f152f937cdbea0b71cca72cc989aa83de6cef83677fca1f687b71aa8606-4405185007121.png" width="182px" />
 9. 계정 상태가 **동기화 대기 중**으로 표시되는지 확인합니다.  
    이 메시지는 Google Ads에서 데이터를 가져올 때까지 그대로 표시됩니다(최대 24시간).
 10. 다음 날 02:00 UTC 이후까지 기다린 다음 상태가 활성으로 변경되는지 확인합니다 .  

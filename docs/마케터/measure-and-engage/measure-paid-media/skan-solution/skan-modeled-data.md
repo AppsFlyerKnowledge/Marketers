@@ -84,7 +84,7 @@ Apple이 사용자 개인 정보를 보호하기 위해 실제 CV를 보류하�
 
 <Accordion title="수익 LTV">
 
-[![modeled_d7.png](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)](https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png)
+<Image align="center" alt="modeled_d7.png" src="https://files.readme.io/ec175800b52164844c56743a33fe412eef02c3b76975ca572819535bb5e5eff9-12183780248081.png" />
 
 SKAN 리포팅 자체는 Conversion Studio의 수익에 대한 SKAN 측정 기간과 CV 구성을 기반으로 한 수익만 제공할 수 있습니다. SKAN 모델링은 인스톨 후 최대 7일(168시간)까지 수익을 모델링할 수 있습니다.
 

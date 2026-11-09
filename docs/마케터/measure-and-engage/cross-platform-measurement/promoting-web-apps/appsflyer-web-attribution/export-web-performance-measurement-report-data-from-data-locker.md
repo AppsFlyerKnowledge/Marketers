@@ -75,7 +75,7 @@ x-zendesk:
 * 나머지 30분은 고객 사용자 ID (CUID) 로 어트리뷰션 이벤트를 **강화하는 데만** 사용됩니다.
 * 가장 최근 30분 동안 발생한 이벤트는 **아직 어트리뷰션되지 않으며**, 다음 배치에 포함될 예정입니다.
 
-[![](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)](https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png)
+<Image align="center" alt="" src="https://files.readme.io/1957b8b0c6b29fb44934ef7d10fd04278d541a4f2c12bb90e49fc8cb61ec7db5-44460048223761.png" />
 
 <div id="when-will-these-events-appear-in-the-report" />
 

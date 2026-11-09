@@ -53,7 +53,7 @@ x-zendesk:
 
 Meta 광고의 기본 클릭연결 전환 확인 기간은 7일로 정의됩니다. [기본값이 다른 경우도](https://www.facebook.com/business/help/395050428485124?id=428636648170202)있지만, 앱스플라이어의 클릭연결 전환 확인 기간을 7일로 설정하여 모든 메타 광고의 기본 옵션을 포함하는 것이 좋습니다.
 
-![image (13).png](https://files.readme.io/215d2234aae1ec6b4e1c6ac922915851bf8ab02574a874119d286fa49c64f9ba-25899749062033.png)
+<Image align="center" alt="image (13).png" src="https://files.readme.io/215d2234aae1ec6b4e1c6ac922915851bf8ab02574a874119d286fa49c64f9ba-25899749062033.png" />
 
 <div id="example" />
 

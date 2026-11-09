@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **요약:** 이 스크립트는 2020년 12월 17일부터 더 이상 사용되지 않으며 <Anchor target="_blank" href="/marketers/ko/docs/onelink-smart-script-overview">원링크 스마트 스크립트</Anchor>로 바뀌었습니다. 이 버전은 계속 작동하지만 업데이트되거나 변경되지는 않습니다. 이 스크립트는 모바일 웹사이트의 버튼 뒤에 포함된 URL을 생성하고 방문자가 앱을 다운로드하도록 리디렉션합니다. URL은 설치 어트리뷰션과 딥링킹도 지원합니다.
 
-![5648_Sunset_and_deprecation-01.png](https://files.readme.io/f2a154145e26577b698d00c4c3719be3eea7298576e6883bd47e6fb42897c71a-360015062398.png)
+<Image align="center" alt="5648_Sunset_and_deprecation-01.png" src="https://files.readme.io/f2a154145e26577b698d00c4c3719be3eea7298576e6883bd47e6fb42897c71a-360015062398.png" />
 
 **<Anchor target="_blank" href="/marketers/ko/docs/onelink-smart-script-overview">원링크 스마트 스크립트로 마이그레이션</Anchor>**
 
@@ -709,7 +709,7 @@ function generateUrl(isDebug) {
 
 ## 어트리뷰션 결과 조회하기
 
-[![dashboard_landing_page_results.png](https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png)](https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png)
+<Image align="center" alt="dashboard_landing_page_results.png" src="https://files.readme.io/29d7b6b096687a1f106efa4dcfc65ab1f550976516c87c3ffafde29f852855bb-360001342158.png" />
 
 미디어소스에 따른 랜딩 페이지 어트리뷰션 결과를 앱 대시보드, 로데이터, 혹은 앱스플라이어 API로 확인하실 수 있습니다.
 

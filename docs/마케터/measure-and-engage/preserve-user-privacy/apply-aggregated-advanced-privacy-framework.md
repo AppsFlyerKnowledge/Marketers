@@ -117,7 +117,7 @@ Apple의 AppTrackingTransparency 프레임워크는 다른 회사에서 수집�
 
 AAP는 선택한 앱의 모든 파트너에 대한 프라이버시 강화 프레임워크 설정을 제어하는 앱 수준 전환입니다. AAP 전환은 **앱 설정** 페이지에 있습니다. AAP 전환이 켜져 있으면 선택한 앱의 모든 파트너에 대한 **프라이버시 강화 프레임워크** 전환이 자동으로 켜지며 수정할 수 없습니다. 이를 해제하면 광고주가 각 파트너 연동으로 개별적으로 이동하여 **프라이버시 강화 프레임워크**를 설정할 수 있습니다.
 
-![AAPcontrol.png](https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png)
+<Image align="center" alt="AAPcontrol.png" src="https://files.readme.io/ddc8140ada9278eab447ecdfa4d88c56e07a0ed54b10b71de1cc2352f9590d40-35847850639121.png" />
 
 <div id="aap-enabled" />
 
@@ -150,7 +150,7 @@ AAP를 끄기 전에 사용자 수준의 어트리뷰션 데이터를 제3자에
 
 AAP가 비활성화된 경우 광고주는 각 광고 네트워크에 대해 프라이버시 강화 설정을 개별적으로 설정할 수 있습니다.
 
-![APControl.png](https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png)
+<Image align="center" alt="APControl.png" src="https://files.readme.io/8e5a005cbadb5665cf255d39d6fa425298510f719b166c2013a2dfe57d4e982b-35847865312657.png" />
 
 **파트너의 프라이버시 강화를 끄려면:**
 
@@ -211,7 +211,7 @@ AAP - Attributed ad networks.png
 
 연동 파트너의 연동 탭에서 전송 옵션이 *오가닉을 포함한 모든 미디어 소스* 로 설정되고 해당 파트너가 다음 그림과 같이 이벤트에 기여하지 않은 경우 어트리뷰트되지 않은 포스트백이 네트워크로 전송됩니다.
 
-![InAppEventAll.png](https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png)
+<Image align="center" alt="InAppEventAll.png" src="https://files.readme.io/e24037f75b2b82797031eb13d5e063b8c2006812491e69674ff066ac830919f7-35847850644881.png" />
 
 사용된 다양한 사용자 동의 시나리오 및 포스트백 유형은 다음 흐름도에 나와 있습니다.
 
@@ -255,7 +255,7 @@ AAP - Analytics partner.png
 
 **에이전시에 프라이버시 강화를 설정할 수 있는 권한 부여**
 
-![agency_advanced_privacy.png](https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png)
+<Image align="center" alt="agency_advanced_privacy.png" src="https://files.readme.io/ac4a1aae41e9e39b9759006db84ea14df7495d0a14c02df7dbfb8dd93a2d2c23-35847865322129.png" />
 
 **에이전시가 프라이버시 강화를 설정하도록 허용하려면**:
 

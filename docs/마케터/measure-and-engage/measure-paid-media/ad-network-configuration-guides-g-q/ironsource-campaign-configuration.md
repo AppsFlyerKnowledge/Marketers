@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **요약:** 앱스플라이어 연동 파트너인 아이언소스는 앱 개발자, 기기 제조업체, 이동통신사 및 광고주를 위한 수익화, 인게이지먼트, 분석 및 검색 도구를 구축합니다. 아이언소스는 클릭 기반 모바일 어트리뷰션 외에도 비용, 광고 수익, 리타게팅 및 뷰-쓰루 어트리뷰션을 제공하며, 앱스플라이어로 기록할 수 있습니다.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/ironsource.png?v=1" width="213px" />
 
 > 📘 **참고사항**
 >

@@ -198,16 +198,16 @@ Google Ads Web으로 전송된 인앱이벤트 포스트백의 매핑을 구성�
 1. [어트리뷰션 링크 섹션](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab)에 설명된 대로 크로스 플랫폼 랜딩 페이지를 설정합니다.
 2. Google Ads에 로그인하고 새 캠페인을 만듭니다.
 3. 캠페인 목표를 선택합니다.  
-   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png" />
    * “앱 프로모션"(모바일 앱 캠페인에만 사용 가능)을 제외한 모든 목표가 적용됩니다.
    * 특정 인앱 이벤트를 기반으로 최적화하려면 “판매” 캠페인 목표를 설정하는 것이 좋습니다.
 4. 전환 이벤트를 선택합니다.  
-   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)
+   <Image align="center" alt="" src="https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png" />
    * 기본적으로, 사전 정의된 계정 수준의 캠페인 목표가 표시됩니다. 이들 목표를 보관하거나 캠페인과 관련 없는 목표는 삭제할 수 있습니다.
    * 원하는 목표가 보이지 않으면 [전환 작업과 전환 목표를 추가하세요](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals).
    * 전환 페이지에서 사전 정의된 목표를 편집할 수도 있습니다.
 5. 캠페인 유형을 선택합니다.  
-   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)
+   <Image align="center" alt="" src="https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png" />
    * 제품 카탈로그가 필요하고 인증된 도메인으로 제한되는 “쇼핑”을 제외한 모든 캠페인 유형이 적용됩니다.
 6. 크로스 플랫폼 랜딩 페이지 URL을 구글의 최종 URL로 입력합니다.
 
@@ -222,16 +222,16 @@ Google Ads Web으로 전송된 인앱이벤트 포스트백의 매핑을 구성�
 1. [어트리뷰션 링크 섹션](/docs/google-ads-web-integration-for-pc-and-console-apps#attribution-link-tab)에 설명된 대로 다이렉트 어트리뷰션 링크를 설정합니다.
 2. Google Ads에 로그인하고 새 캠페인을 만듭니다.
 3. 캠페인 목표를 선택합니다.  
-   [![](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)](https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png)
+   <Image align="center" alt="" src="https://files.readme.io/c0d45f4b5ac9221b0d97ba8c8aa4eabbddccf11b9cf959ab0d9776e8766d0414-21939144104337.png" />
    * “앱 프로모션"(모바일 앱 캠페인에만 사용 가능)을 제외한 모든 목표가 적용됩니다.
    * 특정 인앱 이벤트를 기반으로 최적화하려면 “판매” 캠페인 목표를 설정하는 것이 좋습니다.
 4. 전환 이벤트를 선택합니다.  
-   [![](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)](https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png)
+   <Image align="center" alt="" src="https://files.readme.io/e63ad3f0db65f9a3b562e7c5aea2d7bad481af73cfaebdfb1f9f4d3d5f0365d1-21939173772177.png" />
    * 기본적으로, 사전 정의된 계정 수준의 캠페인 목표가 표시됩니다. 이들 목표를 보관하거나 캠페인과 관련 없는 목표는 삭제할 수 있습니다.
    * 원하는 목표가 보이지 않으면 [전환 작업과 전환 목표를 추가하세요](/docs/google-ads-web-integration-for-pc-and-console-apps#creating-conversion-actions-and-goals).
    * 전환 페이지에서 사전 정의된 목표를 편집할 수도 있습니다.
 5. 캠페인 유형을 선택합니다.  
-   [![](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)](https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png)
+   <Image align="center" alt="" src="https://files.readme.io/c320f649f253532425be3c760009e652a8f626a4c10ed2527308df9a7030bb5b-21939144113937.png" />
    * 제품 카탈로그가 필요하고 인증된 도메인으로 제한되는 “쇼핑”을 제외한 모든 캠페인 유형이 적용됩니다.
 6. 구글의 최종 URL로 사용할 링크를 입력합니다.
    * 이는 유저를 리디렉션하려는 최종 웹 위치여야 합니다. 웹 랜딩 페이지 또는 스토어 URL을 포함한 어떤 웹 URL이든 될 수 있습니다. 예: `https://store.steampowered.com/app/{appid}/{myapp}/`.

@@ -143,7 +143,7 @@ SKAN 4에서는 수익, 인앱 이벤트, 우선순위, Single Source of Truth�
 
 SKAN 4를 수동으로 설정하려면 다양한 옵션을 실험해 보세요. 변경 사항을 적용할 때 **전환 값 용량** 요약이 업데이트됩니다. 용량을 초과하지 않도록 하면서 가장 가치 있는 데이터를 캡처하도록 설정을 최적화하세요. [전환 값 용량 계산](/docs/skan-conversion-studio#conversion-value-capacity-formula)을 참조하세요.
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **참고 사항: 이전 SKAN 모드에서 SKAN 4로 업그레이드하는 경우, 현재의 스키마 매핑은 세부 측정을 위해 이어지고, 앱스플라이어가 자동으로 대략적인 값을 매핑해 줍니다. SKAN 사용이 처음이라면 앱스플라이어가 초기 기본 매핑을 제공합니다.**
 
@@ -186,7 +186,7 @@ altAppsFlyerAdmin\_us-en.pngaltSKAN 4 모드를 사용하여 컨버전 스튜디
 
 커스텀 모드를 설정하려면 다양한 옵션을 시도해 보세요. 변경 사항을 적용하면 **전환 값 용량** 요약이 업데이트됩니다. 용량을 초과하지 않도록 하면서 가장 가치 있는 데이터를 캡처하도록 설정을 최적화하세요. [전환 값 용량 계산](/docs/skan-conversion-studio#conversion-value-capacity-formula)을 참조하세요.
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 참고:
 
@@ -229,7 +229,7 @@ altAppsFlyerAdmin\_us-en.pngalt커스텀 모드를 사용하여 컨버전 스튜
 
 모드 설정을 변경하면 **전환 값 용량** 요약이 업데이트됩니다. 용량을 초과하지 않도록 하면서 가장 가치 있는 데이터를 캡처하도록 설정을 최적화하세요. [전환 값 용량 계산](/docs/skan-conversion-studio#conversion-value-capacity-formula)을 참조하세요.
 
-![CapacitCounter.png](https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png)
+<Image align="center" alt="CapacitCounter.png" src="https://files.readme.io/c976bbf52b8348ffa8de092f5f75eb66b137cc9fa63bc34d0b84e50fc7d112f7-4405725161233.png" />
 
 **참고!**
 
@@ -646,7 +646,7 @@ altAppsFlyerAdmin\_us-en.pngalt고정 모드를 사용하여 컨버전 스튜디
 * CV 매핑 표를 CSV 파일로 다운로드하세요. **매핑 파일 다운로드**를 클릭하세요.
 * <Anchor target="_blank" href="/marketers/ko/docs/skan-cv-schema-api-for-advertisers">광고주를 위한 SKAN CV 스키마 API</Anchor>를 사용하여 CV 매핑을 가져옵니다.
 
-![CVmapping.png](https://files.readme.io/a4f11a200c33df0e6116388ba228af7b6140110af6683dc0a2e8bf04e56df67d-51912585911953.png)
+<Image align="center" alt="CVmapping.png" src="https://files.readme.io/a4f11a200c33df0e6116388ba228af7b6140110af6683dc0a2e8bf04e56df67d-51912585911953.png" />
 
 #### CSV 매핑 파일의 열
 
@@ -1013,7 +1013,7 @@ SKAdNetwork 측정을 끄려면:
 
 <Accordion title="서버-투-서버 API로 이벤트 보고">
 
-![SKAd네트워크_-_S2S__2_.png](https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png)
+<Image align="center" alt="SKAd네트워크_-_S2S__2_.png" src="https://files.readme.io/ed55e5c10184afcc27ce7e414a3213f69d2c20bd70d38f78be338f1b17254ee2-16281446657937.png" />
 
 SDK와 <Anchor target="_blank" href="/marketers/ko/docs/server-to-server-events-api-for-mobile-s2s-mobile">서버-투-서버 API (S2S)</Anchor> 모두 인앱 이벤트를 앱스플라이어 서버로 발송할 수 있습니다.
 

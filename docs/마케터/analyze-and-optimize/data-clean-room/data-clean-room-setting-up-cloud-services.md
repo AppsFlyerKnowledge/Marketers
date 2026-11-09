@@ -86,7 +86,7 @@ DCR에 대한 인바운드 및 아웃바운드 연결에 두 가지 유형의 �
 
    2. **데이터 세트 만들기**를 선택합니다.
 
-      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
+      <Image align="center" alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. * 문자, 숫자 및 밑줄(\_)만으로 자신에게 맞는 이름을 사용할 수 있습니다.
         * **권장 사항:** 권장사항: 데이터 세트가 인바운드 연결에 사용되고 있음을 알 수 있는 이름을 사용하십시오.
       * 테이블이 만료된 후 DCR이 소스를 읽을 수 없으므로 **테이블 만료 활성화** 옵션을 사용하지 **않는** 것이 좋습니다.
@@ -97,7 +97,7 @@ DCR에 대한 인바운드 및 아웃바운드 연결에 두 가지 유형의 �
       `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
    5. **역할 할당** 섹션에서 **BigQuery > BigQuery 메타데이터 뷰어**를 선택합니다.
 
-      <Image alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
+      <Image align="center" alt="BQ_data_viewer.png" src="https://files.readme.io/beec60ee830957ff265f8046875d1b8fa006a2c0cb60427ac969d7d45efa8b5b-14964740088721.png" width="311px" />
    6. **저장**을 클릭하세요.
    7. **닫기**를 클릭하여 오른쪽 패널을 닫습니다.
 
@@ -116,8 +116,8 @@ DCR에 대한 인바운드 및 아웃바운드 연결에 두 가지 유형의 �
 3. 왼쪽 패널에서 비공개 공유를 선택합니다.
 4. 페이지가 열리면 계정에서 공유탭을 선택합니다.
 
-   <Image alt="snowflake_private_sharing.png" src="https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png" width="609px" />
-5. <Image alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
+   <Image align="center" alt="snowflake_private_sharing.png" src="https://files.readme.io/e99ddd6acf3a3714ea1818fc1d28489b0ea458abac3519d6e4fe67ab643de5bb-13879858362257.png" width="609px" />
+5. <Image align="center" alt="snowflake_create_direct_share.png" src="https://files.readme.io/0a33cddd326d03a13da19a1e1b4d75a7f6a9c5479dad2fdcad52f111bc5b4e14-13879858320913.png" width="219px" />
 6. DCR과 공유하려는 테이블 및/또는 뷰를 선택한 다음 완료를 클릭합니다.
 7. 필요에 따라 보안 공유 식별자를 변경하고 선택사항으로 설명을 추가합니다.
 8. 이름으로 사용자 영역의 계정 추가필드에 Snowflake 계정 지역에 따라 다음 앱스플라이어 Snowflake 계정 중 하나를 입력합니다. 
@@ -239,7 +239,7 @@ DCR에 대한 인바운드 및 아웃바운드 연결에 두 가지 유형의 �
    4. `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
    5. **역할** 목록에서 **클라우드 스토리지** > **스토리지 관리자**를 선택하십시오.  
 
-      ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
+      <Image align="center" alt="dcr_gcs_permissions.png" src="https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png" />
    6. **저장**을 클릭하세요.
 
 </Accordion>
@@ -272,7 +272,7 @@ DCR 리포트는 클라우드 서비스의 하나 이상의 위치로 전달될 
 
    2. **데이터 세트 만들기**를 선택합니다.
 
-      <Image alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
+      <Image align="center" alt="BQ_create_dataset.png" src="https://files.readme.io/4f6b9e613b3fd83e0b461fdfae5d986f6eac003be5c3dfae78c42eae7b2c92bb-13879858009105.png" width="457px" />
    3. * 문자, 숫자 및 밑줄(\_)만으로 자신에게 맞는 이름을 사용할 수 있습니다.
         * **권장 사항:** 권장사항: 데이터 세트가 아웃바운드 연결에 사용되고 있음을 알 수 있는 이름을 사용하십시오.
       * 테이블이 만료된 후 데이터 락커는 데이터 세트에 대한 리포트를 쓸 수 없으므로 **테이블 만료 활성화** 옵션을 사용하지 **않는** 것이 좋습니다.
@@ -283,7 +283,7 @@ DCR 리포트는 클라우드 서비스의 하나 이상의 위치로 전달될 
       `datalocker-bq-admin-prod@datalocker-bq-prod.iam.gserviceaccount.com`
    5. **역할 할당** 섹션에서 **BigQuery > BigQuery 데이터 편집기**를 선택합니다.
 
-      <Image alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
+      <Image align="center" alt="BQ_data_editor.png" src="https://files.readme.io/cc26288d02f10805c971167d42d77efc9c7702f7fe231724b66eddd9b1b0e252-13879852726929.png" width="323px" />
    6. **저장**을 클릭하세요.
    7. **닫기**를 클릭하여 오른쪽 패널을 닫습니다.
 
@@ -424,7 +424,7 @@ DCR 리포트는 클라우드 서비스의 하나 이상의 위치로 전달될 
 6. `appsflyer-dcr@dcr-report.iam.gserviceaccount.com`
 7. **역할** 목록에서 **클라우드 스토리지** > **스토리지 관리자**를 선택하십시오.  
 
-   ![dcr_gcs_permissions.png](https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png)
+   <Image align="center" alt="dcr_gcs_permissions.png" src="https://files.readme.io/18c05537d96220c6a5b17f3f8344a5774193da68a30195bf3f4c1f660749f9b2-4726630155153.png" />
 8. **저장**을 클릭하세요.
 
 </Accordion>

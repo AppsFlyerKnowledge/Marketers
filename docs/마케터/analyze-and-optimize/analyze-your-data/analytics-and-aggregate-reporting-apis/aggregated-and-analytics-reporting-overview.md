@@ -175,7 +175,7 @@ Pull API를 통해 리포트를 리타게팅하려면 성과 리포트 URI에 *&
 
 <Accordion title="프로텍트360— 프로드 차단">
 
-![](https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png)
+<Image align="center" alt="" src="https://theme.zdassets.com/theme_assets/245528/ffbbc473bb0e74b9fb636ed735f69e9af6a25a18.png" />
 
 차단된 집약형 사기 리포트는 <Anchor target="_blank" href="/marketers/ko/docs/protect360-anti-fraud-guide">Protect360</Anchor>에 의해 차단된 이벤트의 상세 내역을 제공합니다.
 

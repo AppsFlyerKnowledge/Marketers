@@ -22,7 +22,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
 
-<Image alt="beta_feature.png" src="https://files.readme.io/d57432ddeb4d168760f9acd97f4287473658a8528edc1114ecee8ee2f8e9c9b2-16484830033425.png" width="805px" />
+<Image align="center" alt="beta_feature.png" src="https://files.readme.io/d57432ddeb4d168760f9acd97f4287473658a8528edc1114ecee8ee2f8e9c9b2-16484830033425.png" width="805px" />
 
 > **한눈에 보기:** 프로드 방지 스튜디오(FPS)는 일반적인 방법보다 프로드 탐지 방법을 더 세밀하게 조정할 수 있습니다. 사용자가 프로드 감지 데이터를 차단하고 프로드로 보고할지, 또는 태그만 지정할지를 선택할 수 있어 맞춤형 프로드 관리가 가능합니다.
 
@@ -65,7 +65,7 @@ FPS에는 **구현됨** 및 **태그됨**이라는 두 가지 모드가 있습�
   * 실시간으로 **차단됨**
   * 포스트 어트리뷰션 프로드로 **리포트됨**
 
-[<Image alt="Image description" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />](https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png)   
+<Image align="center" alt="Image description" src="https://files.readme.io/86996ca9cf4fb83b5cfa24473a302d4e978732495348e3e7432ca2117d1f03c9-30885578633745.png" width="75%" />
 **FPS 메커니즘:** 설치는 다음 중 하나로 간주됩니다.
 
 * **유효한** 어트리뷰션
@@ -75,7 +75,7 @@ FPS에는 **구현됨** 및 **태그됨**이라는 두 가지 모드가 있습�
     * 실시간으로 **차단됨**
     * 포스트 어트리뷰션 프로드로 **리포트됨**
 
-[<Image alt="Image description" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />](https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png)
+<Image align="center" alt="Image description" src="https://files.readme.io/465289666e54257f02cfe0a3b34a765e7109426c1f6438f455613cc53351e4f4-31990048826513.png" width="75%" />
 
 <div id="note" />
 
@@ -98,7 +98,7 @@ FPS에는 **구현됨** 및 **태그됨**이라는 두 가지 모드가 있습�
 
 **Protect360 대시보드**:
 
-[<Image alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />](https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png)
+<Image align="center" alt="example10.png" src="https://files.readme.io/cf4c836ee78519bd0723bcc1fafb202110fa014be1582853646261d89eb37104-48783289649937.png" width="50%" />
 
 * 상단 페이지 구성 요소의 총 태그 수 (1)
 * “감지 상태”의 시간 경과에 따른 추세 (2)
@@ -187,7 +187,7 @@ FPS에는 **구현됨** 및 **태그됨**이라는 두 가지 모드가 있습�
 1. 클릭 플러드 창에서 [탐지 모드](/docs/beta-fraud-protection-studio#fps-모드)를 선택합니다.
 2. 페이지 하단의 **저장** 버튼을 클릭합니다.
 
-   [<Image alt="Expandable Image" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />](https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png)
+   <Image align="center" alt="Expandable Image" src="https://files.readme.io/c472a15b2775d97c097196d2ce97d59f997219beb44c662a7c7a0e1c17682fb6-31776609579025.png" width="1906px" />
 
 <div id="current-detection-status" />
 
@@ -271,7 +271,7 @@ FPS에는 **구현됨** 및 **태그됨**이라는 두 가지 모드가 있습�
 1. 드롭다운 박스의 신규 릴리스(New Release) 창에서 새 패키지가 시스템에 적용되기 전에 태그된 상태로 유지할 기간(일 수)을 선택합니다.(기본값 14일, 최대 14일까지 조정 가능)
 2. **저장**을 클릭합니다.
 
-<Image alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
+<Image align="center" alt="futrele.png" src="https://files.readme.io/eb832fdacd720f273a5ac26bc8e08fe1d215a99e477ff3bcfe3b91d46c41234a-31500353666321.png" width="2142px" />
 
 <div id="note-2" />
 
@@ -300,7 +300,7 @@ FPS에는 **구현됨** 및 **태그됨**이라는 두 가지 모드가 있습�
 1. FPS 탭에서 **신규 릴리스 카드**를 엽니다.
 2. 테이블과 내보내기 가능한 리포트를 통해 감지 성능을 모니터링할 수 있습니다.
 3. 준비가 되면 **지금 구현하기**를 클릭하여 변경 사항을 적용하십시오.  
-   [![](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)](https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png)
+   <Image align="center" alt="" src="https://files.readme.io/4c11614b4f74ffa435e75cb7e79ef4f61ac750f5bc49331387b45a0ceb83e0da-31776606696081.png" />
 
 <div id="note-3" />
 
@@ -414,7 +414,7 @@ Protect360의 리인게이지먼트 하이재킹 탐지 기능은 특히 리인�
     * 전체 어트리뷰션 대비 비율 - 전체 앱 어트리뷰션 중 리인게이지먼트 어트리뷰션이 차지하는 비중
   * 미디어 소스별 리인게이지먼트 탐지 - 탐지 건수가 가장 높은 주요 미디어 소스의 리인게이지먼트 하이재킹 탐지 수
 
-<Image alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/bab73f39f3792401dd8795a78c64d88c26d075cdb7d693a5871bba668495f8d1-35682380370321.png" width="624px" />
 
 </Accordion>
 
@@ -454,7 +454,7 @@ Protect360의 리인게이지먼트 하이재킹 탐지 기능은 특히 리인�
 
 * **미디어 소스별 앱 내 기반 탐지** - 주요 미디어 소스별 설치 수
 
-<Image alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/63eedf0c4aa28471d4044a8896e349612fb9d8e9f06aed6b1efbaa825330d150-36947287654033.png" width="624px" />
 
 </Accordion>
 

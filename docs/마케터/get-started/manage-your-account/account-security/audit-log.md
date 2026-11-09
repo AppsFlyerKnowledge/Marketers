@@ -43,7 +43,7 @@ x-zendesk:
 
 감사 로그에서 제공하는 데이터에 대한 설명과 해당 기능에 대한 요약이 아래 표에 제공됩니다.
 
-[![audit_log.png](https://files.readme.io/4101dfb4dc84e4e916d165a22387bd6a84fa7889bc4e82e636c980fde1cac248-6867050961809.png)](https://files.readme.io/4101dfb4dc84e4e916d165a22387bd6a84fa7889bc4e82e636c980fde1cac248-6867050961809.png)
+<Image align="center" alt="audit_log.png" src="https://files.readme.io/4101dfb4dc84e4e916d165a22387bd6a84fa7889bc4e82e636c980fde1cac248-6867050961809.png" />
 
 |  | 항목 | 설명 |
 | --- | --- | --- |

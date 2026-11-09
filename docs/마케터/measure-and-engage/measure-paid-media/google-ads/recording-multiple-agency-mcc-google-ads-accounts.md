@@ -98,11 +98,11 @@ x-zendesk:
 
 MCC를 설정하는 중에, MCC 또는 하위 계정이 전환을 관리하는지를 설정할 수 있습니다.
 
-[![MCC_1_new.png](https://files.readme.io/8c51c51d1808271a73f93f7a4002332447ef61d91fed2480045c81cc5773fc8b-51858059773073.png)](https://files.readme.io/8c51c51d1808271a73f93f7a4002332447ef61d91fed2480045c81cc5773fc8b-51858059773073.png)
+<Image align="center" alt="MCC_1_new.png" src="https://files.readme.io/8c51c51d1808271a73f93f7a4002332447ef61d91fed2480045c81cc5773fc8b-51858059773073.png" />
 
 필요한 경우, 나중에 이 설정을 수정할 수 있습니다.
 
-![mmc-googleads-settings.png](https://files.readme.io/077df22cde5479a95c19faa7e37c946088bb95794cb64a9f053f31066875d751-51858050900625.png)
+<Image align="center" alt="mmc-googleads-settings.png" src="https://files.readme.io/077df22cde5479a95c19faa7e37c946088bb95794cb64a9f053f31066875d751-51858050900625.png" />
 
 <div id="mcc-of-mccs" />
 

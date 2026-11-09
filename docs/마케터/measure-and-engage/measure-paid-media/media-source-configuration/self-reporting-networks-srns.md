@@ -102,7 +102,7 @@ SRN은 새로운 인스톨 및 인앱 이벤트와 같은 이벤트를 다음과
 
 <Accordion title="예시 A: 인스톨 어시스트 어트리뷰션">
 
-![SRN_1.png](https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png)
+<Image align="center" alt="SRN_1.png" src="https://files.readme.io/8e244c99f54b36a4e88b03bf05bb7ca0da2db5c7c601882ea9f68c191c38981b-32259428920337.png" />
 
 **월요일:** 네트워크 A에서 유저의 클릭이 보고됩니다.
 
@@ -120,7 +120,7 @@ SRN은 새로운 인스톨 및 인앱 이벤트와 같은 이벤트를 다음과
 
 <Accordion title="예시 B: 마지막 클릭 어트리뷰션">
 
-![SRN_2.png](https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png)
+<Image align="center" alt="SRN_2.png" src="https://files.readme.io/6817d8235acfdbbb5324d07ea8a31ace21cf2306e8e099129d9802e3e0d58b0c-32259457863825.png" />
 
 **네트워크 D**(SRN)가 네트워크 C보다 몇 분 먼저 클릭을 보고합니다.
 

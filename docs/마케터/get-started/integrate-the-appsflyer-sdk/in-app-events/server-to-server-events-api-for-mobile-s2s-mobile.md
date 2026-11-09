@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱 외부에서 발생하는 모바일 이벤트를 측정하기 위해 귀사의 서버에서 앱스플라이어로 이벤트를 발송합니다.
 
-[![S2S_us-en.png](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)](https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png)
+<Image align="center" alt="S2S_us-en.png" src="https://files.readme.io/2f228a03ca00df529e42bd033825a0dca595e99a537cadcfd5419754a29b5490-35863179575441.png" />
 
 <div id="server-to-server-events-api-for-mobile" />
 

@@ -40,7 +40,7 @@ x-zendesk:
 
 아래 이미지는 어트리뷰션 생태계를 구성하는 다양한 파트너 유형을 보여줍니다.
 
-[![Ecosystem.jpg](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)](https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg)
+<Image align="center" alt="Ecosystem.jpg" src="https://files.readme.io/9377db3a6a6effd7ff8139994e2e8ed8dea04331588b5df2a31f1acd643afd9f-4411031173265.jpg" />
 
 **관련 자료**: <Anchor target="_blank" href="https://www.appsflyer.com/performance-index/">앱스플라이어 퍼포먼스 인덱스</Anchor>는 모바일 매체 소스를 카테고리와 지역별로 순위 매깁니다.
 
@@ -143,7 +143,7 @@ x-zendesk:
 
 파트너 연동은 요구 사항에 따라 다르며, 이 섹션에서 설명된 모든 가능한 옵션의 하위 집합을 포함할 수 있습니다. iOS와 안드로이드 설정에는 몇 가지 차이가 있습니다.
 
-![set_up_an_integrated_partner.png](https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png)
+<Image align="center" alt="set_up_an_integrated_partner.png" src="https://files.readme.io/441ddfcd784a000099ae75acdb234d32bfe75ab598a34a88c7f9ed651fe8f7ec-15520850610449.png" />
 
 요구 사항에 따라 섹션을 작성하세요.
 
@@ -437,7 +437,7 @@ x-zendesk:
 
 #### 어트리뷰션 링크 파라미터
 
-[![attribution-link-parameters-en_us.png](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)](https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png)
+<Image align="center" alt="attribution-link-parameters-en_us.png" src="https://files.readme.io/5f010d760295d53b8ff1891b58aaa57ac8171af7d08d7bc0df07b0998f81f666-4414306787601.png" />
 
 어트리뷰션 링크에 파라미터를 추가하면 철저한 드릴다운 분석이 가능합니다. 이미 정의된 어트리뷰션 링크 파라미터를 여기에서 새 값을 추가하여 편집할 수 있습니다. 어트리뷰션 링크를 저장할 때 이 탭에서 구성된 모든 파라미터가 저장됩니다.
 
@@ -492,7 +492,7 @@ x-zendesk:
 
 **클릭 어트리뷰션 링크**
 
-[![click-through-attribution-link_en-us.png](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)](https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png)
+<Image align="center" alt="click-through-attribution-link_en-us.png" src="https://files.readme.io/aba15af3164c4f233625cd56f90aa4d1a18b834cfb151c4e7042fa099c8f9125-4411038599953.png" />
 
 이 링크는 설정한 모든 구성 정보를 포함하는 어트리뷰션 링크입니다. 나중에 참조할 수 있도록 **어트리뷰션 링크 저장**을 클릭하십시오.
 
@@ -517,7 +517,7 @@ x-zendesk:
 
 **노출수 어트리뷰션 링크**
 
-[![impressions-attribution-link_en-us.png](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)](https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png)
+<Image align="center" alt="impressions-attribution-link_en-us.png" src="https://files.readme.io/76a2d084f66f3a279b281f60a465af5098e05de8de128cfd6f04a97fe52c4dc6-4411047429265.png" />
 
 노출 어트리뷰션 링크는 다른 룩백 윈도우를 제외하고 클릭 기록 링크와 유사한 어트리뷰션 데이터를 포함합니다. 나중에 참조할 수 있도록 **어트리뷰션 링크 저장**을 클릭하십시오.
 

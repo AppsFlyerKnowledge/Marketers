@@ -35,7 +35,7 @@ x-zendesk:
 ---
 > **요약:** 앱스플라이어는 사용자가 앱을 인스톨하거나 다시 참여하도록 동기를 부여한 미디어 소스를 파악하고, 앱스플라이어 어트리뷰션 모델을 사용해 해당 소스에 사용자의 행동을 어트리뷰트합니다.
 
- [![](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)](https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png)
+ <Image align="center" alt="" src="https://files.readme.io/20b5c0674ce4b20df7c82398d7a769274dd8467d129adbaad0d40e4f37d39091-31937603228177.png" />
 
 <div id="what-is-attribution" />
 
@@ -83,7 +83,7 @@ x-zendesk:
 
 새로운 인스톨 시, 유효한 인게이지먼트가 둘 이상 있는 경우, **앱스플라이어는 노출보다 클릭을, 확률적 방법보다 결정론적 방법을 우선시합니다**. 어트리뷰션 방법은 차트에 표시된 우선순위에 따라 활용됩니다.
 
-![어트리뷰션 메서드 우선순위 23.png](https://files.readme.io/127da735ccb28c14eb7779f6c03f75be343d8543404da47bed41e5f07b158830-51912651128849.png)
+<Image align="center" alt="어트리뷰션 메서드 우선순위 23.png" src="https://files.readme.io/127da735ccb28c14eb7779f6c03f75be343d8543404da47bed41e5f07b158830-51912651128849.png" />
 
 아래에서 앱스플라이어 어트리뷰션 모델에 대한 자세한 설명을 확인하세요.
 
@@ -339,7 +339,7 @@ iCloud를 통해 애플리케이션을 백업하고 나중에 복원하는 경�
 
 <Accordion title="리타겟팅 어트리뷰션">
 
-![리타겟팅_-_흐름__2_.png](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="리타겟팅_-_흐름__2_.png" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 <Anchor target="_blank" href="/marketers/ko/docs/set-up-re-attribution-window">리어트리뷰션 윈도우</Anchor> (기본적으로 90일) 내에 앱을 재설치한 유저는 리어트리뷰션으로 간주됩니다. 이 인스톨이 리타겟팅 캠페인에 참여한 이후 발생한 경우, 리타겟팅 재설치(즉, 리어트리뷰션)로 기록되며 <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide">리타겟팅</Anchor>으로 보고됩니다.
 

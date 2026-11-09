@@ -41,7 +41,7 @@ Data View Builder 도구에는 다음 기능이 있습니다.
 
 ## 데이터 뷰 빌더
 
-[![](https://files.readme.io/33957c796bf0e45fa01a7c079ef0a9ae4ad988d153b38a2ef7e94a12beabd53b-51912738864145.png)](https://files.readme.io/33957c796bf0e45fa01a7c079ef0a9ae4ad988d153b38a2ef7e94a12beabd53b-51912738864145.png)
+<Image align="center" alt="" src="https://files.readme.io/33957c796bf0e45fa01a7c079ef0a9ae4ad988d153b38a2ef7e94a12beabd53b-51912738864145.png" />
 
 Data View Builder 페이지는 두 가지 섹션이 있습니다.
 
@@ -191,7 +191,7 @@ Data View Builder 페이지는 두 가지 섹션이 있습니다.
 
 협업하는 다른 브랜드의 제품을 가리키면서 공동 작업자로부터 구매한 제품을 표시하고 싶습니다.
 
-[![](https://files.readme.io/f27f134083694e7453df113960a240b5dfa92c921b0288995bbd432a0c08c01c-51912738865041.png)](https://files.readme.io/f27f134083694e7453df113960a240b5dfa92c921b0288995bbd432a0c08c01c-51912738865041.png)
+<Image align="center" alt="" src="https://files.readme.io/f27f134083694e7453df113960a240b5dfa92c921b0288995bbd432a0c08c01c-51912738865041.png" />
 
 <div id="aggregate-functions" />
 
@@ -209,7 +209,7 @@ Data View Builder 페이지는 두 가지 섹션이 있습니다.
 
 사용자당 총 구매 횟수를 계산하고 총 구매 가격을 합산할 수 있습니다.
 
-[![](https://files.readme.io/ed5c27acd42890958753ed77080f95be39a32c3d4560154804831fc7d809d6d1-51912723197713.png)](https://files.readme.io/ed5c27acd42890958753ed77080f95be39a32c3d4560154804831fc7d809d6d1-51912723197713.png)
+<Image align="center" alt="" src="https://files.readme.io/ed5c27acd42890958753ed77080f95be39a32c3d4560154804831fc7d809d6d1-51912723197713.png" />
 
 <div id="example-aggregation-with-a-condition" />
 
@@ -217,7 +217,7 @@ Data View Builder 페이지는 두 가지 섹션이 있습니다.
 
 독일에 거주하고 P&G 제품을 구매한 유저의 최근 구매에 대한 데이터를 원합니다.
 
-[![](https://files.readme.io/e88bda9e19c4dbfa3bd479c2bf622c11c5d0259bfdff454a1ac49ff891b58a17-51912738874001.png)](https://files.readme.io/e88bda9e19c4dbfa3bd479c2bf622c11c5d0259bfdff454a1ac49ff891b58a17-51912738874001.png)
+<Image align="center" alt="" src="https://files.readme.io/e88bda9e19c4dbfa3bd479c2bf622c11c5d0259bfdff454a1ac49ff891b58a17-51912738874001.png" />
 
 </Accordion>
 

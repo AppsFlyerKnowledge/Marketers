@@ -119,7 +119,7 @@ Google은 <Anchor target="_blank" href="https://commission.europa.eu/strategy-an
 
 1. 앱스플라이어의 사이드 메뉴에서 **협업** > **활성화된 연동**을 선택합니다.
 
-<Image alt="비 EU 사용자.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="595px" />
+<Image align="center" alt="비 EU 사용자.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="595px" />
 
 </Accordion>
 

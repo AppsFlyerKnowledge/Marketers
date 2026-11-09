@@ -131,7 +131,7 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 
 ### 일반 설정
 
-![batch-general-settings-keys.png](https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png)
+<Image align="center" alt="batch-general-settings-keys.png" src="https://files.readme.io/fb165253ec81c0ad4ee9569ef928dc63fb476efe6da8fc7c9120d6619b3124c1-360001692717.png" />
 
 <div id="viewing-appsflyer-data-in-the-batch-dashboard" />
 
@@ -139,7 +139,7 @@ AppsFlyerLib.getInstance().setCustomerUserId("user@example.com");
 
 ### 기본 포스트백
 
-![batch-default-postbacks.png](https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png)
+<Image align="center" alt="batch-default-postbacks.png" src="https://files.readme.io/e3e84f990d7f05c94fb69195a7e57caeffcd1ca35a5fb0148fc6a81ab9816673-360001778958.png" />
 
 </Accordion>
 
@@ -176,6 +176,6 @@ Braze에서는 권한 설정을 사용할 수 없습니다.
 </Accordion>
 
 
-[![Userbase.png](https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png)](https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png)
+<Image align="center" alt="Userbase.png" src="https://files.readme.io/b0277dc43b81630d5b260273b208a5ab9b62e13c7caca08e8b631d73c8de3b2a-small-360001694717.png" />
 
 <div data-zendesk-anchors="h_01H9FK389FZGSK6XPYE73MYEDH=%EC%A4%91%EC%9A%94 integrating-batch-and-appsflyer=%EA%B3%A0%EA%B0%9D-%EC%82%AC%EC%9A%A9%EC%9E%90-id-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0 setting-customer-user-id=%EA%B3%A0%EA%B0%9D-%EC%82%AC%EC%9A%A9%EC%9E%90-id-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0 h_01H9FK389GXG3CDFPNM5ASKJ3N=%EA%B3%A0%EA%B0%9D-%EC%82%AC%EC%9A%A9%EC%9E%90-id-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0 h_01H9FK389MPKFN8J74BX1E3MGG=%EA%B3%A0%EA%B0%9D-%EC%82%AC%EC%9A%A9%EC%9E%90-id-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0 h_01H9FK389MK1HM1460VAT6X82Y=batch appsflyer=%EC%95%B1%EC%8A%A4%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%96%B4 h_01H9FK389MPGNEX8B3923KYDB3=%EC%95%B1%EC%8A%A4%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%96%B4 batch::28a946d0=batch h_01H9FK389MC4K8PNVPAGC00TBW=batch appsflyer::3f0aa95b=%EC%95%B1%EC%8A%A4%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%96%B4 h_01H9FK389M7V83A66M6T9EV8QT=%EC%95%B1%EC%8A%A4%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%96%B4 batch::24c5c955=batch h_01H9FK389MRV4ARHMHXPAXVXQ9=batch appsflyer::deb78dd1=%EC%95%B1%EC%8A%A4%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%96%B4 h_01H9FK389MT6PD8FW21SYHBPCV=%EC%95%B1%EC%8A%A4%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%96%B4 h_01H9FK389MCSR5YDSF4RKFDSDZ=setting-up-batch-in-appsflyer-dashboard h_01H9FK389MG9459909JZBDN77E=integration-tab activate-partner=%ED%8C%8C%ED%8A%B8%EB%84%88-%ED%99%9C%EC%84%B1%ED%99%94 h_01H9FK389M19AVM63DEX5JTTQK=%ED%8C%8C%ED%8A%B8%EB%84%88-%ED%99%9C%EC%84%B1%ED%99%94 general-settings=%EC%9D%BC%EB%B0%98-%EC%84%A4%EC%A0%95 h_01H9FK389MN82EKHVGMM9Z6H58=%EC%9D%BC%EB%B0%98-%EC%84%A4%EC%A0%95 default-postbacks=%EA%B8%B0%EB%B3%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B0%B1 h_01H9FK389MXA3DS403VXRRK5NX=%EA%B8%B0%EB%B3%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B0%B1 h_01H9FK389MERP4XBF19T28E6DN=attribution-link-tab h_01H9FK389M3E05PVMNA83TBFJZ=cost-tab h_01H9FK389M06FEQ4RZJ04HTH33=ad-revenue-tab h_01H9FK389MB31S8BR8WX178GHX=permissions-tab viewing-appsflyer-data-in-the-batch-dashboard=%EA%B8%B0%EB%B3%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B0%B1 h_01H9FK389M8BNRFECN0WG23BCD=%EA%B8%B0%EB%B3%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B0%B1" />

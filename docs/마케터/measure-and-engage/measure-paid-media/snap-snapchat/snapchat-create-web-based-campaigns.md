@@ -243,7 +243,7 @@ AppsFlyer에서 보낸 사전 정의된 INAPP 이벤트 중 캠페인 목표로 
 
 <Accordion title="엔드투엔드 데이터 흐름">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. Snapchat 광고 URL은 다음을 포함합니다: `pid=snapweb_int` 매개 변수. 사용자가 광고를 클릭하면 매개변수는 클릭한 URL에 자동으로 추가됩니다.
 2. 사용자는 스마트 스크립트가 포함된 랜딩 페이지인 URL 대상으로 리디렉션됩니다.

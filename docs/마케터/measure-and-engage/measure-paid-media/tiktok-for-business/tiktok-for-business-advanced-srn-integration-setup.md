@@ -28,7 +28,7 @@ x-zendesk:
 > * 2023년 1월 30일에 새 **TikTok for Business—Advanced SRN** 연동 `tiktokglobal_int`이 추가되었습니다. **[기존] TikTok for Business** 연동 `bytedanceglobal_int`는 점차적으로 중단되었으며, 2024년 3월 20일에 공식적으로 중단되었습니다. 전환은 TikTok에서 처리하며, 이전 연동 삭제가 가능할 때 알려드릴 것입니다. **데이터 손실을 방지하려면 전환 단계 동안 두 연동을 모두 활성 상태로 유지하세요**. <Anchor target="_blank" href="/marketers/ko/docs/bulletin-tiktok-for-business-advanced-srn">공지사항</Anchor>에서 자세히 알아보세요.
 > * 앱스플라이어는 [비앱 캠페인](#웹-투-앱-비앱-캠페인의-앱-액티비티-측정)에 대한 앱 활동 측정을 지원합니다.
 
-<Image alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
+<Image align="center" alt="TTFB_logo__4C_stacked_black_1.png" src="https://files.readme.io/f876dca1810a33266ad93de7822354d3a9aeb41a1e064a1f85f7120f713e699d-23689976309905.png" width="218px" />
 
 <div id="overview" />
 
@@ -384,7 +384,7 @@ TikTok Ads Manager에서 아래 단계를 진행하면, TikTok 논앱 캠페인�
 4. 에이전시 **TikTok 계정 ID**를 입력합니다. 이를 통해 대행사 트래픽을 식별하고 광고주 트래픽과 구별할 수 있습니다.
 5. **연동 저장**을 클릭합니다.
 
-   <Image alt="tiktok.png" src="https://files.readme.io/b13ee9cd005b97c37019154a0caa10e03b846e7405777d9fc0e3db11bfb233b4-33379202036369.png" width="60.92%" />
+   <Image align="center" alt="tiktok.png" src="https://files.readme.io/b13ee9cd005b97c37019154a0caa10e03b846e7405777d9fc0e3db11bfb233b4-33379202036369.png" width="60.92%" />
 
 > ❗️ **경고**
 >

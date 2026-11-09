@@ -66,7 +66,7 @@ login page.png
 
 
 
-<Image alt="primary-account1.jpg" src="https://files.readme.io/8f1d88543b4797b584fa781bf2dd2563ed91f6eaff45393b186d8da98ccc0c33-51073397865233.jpg" width="672px" />
+<Image align="center" alt="primary-account1.jpg" src="https://files.readme.io/8f1d88543b4797b584fa781bf2dd2563ed91f6eaff45393b186d8da98ccc0c33-51073397865233.jpg" width="672px" />
 
 <div id="note-2" />
 

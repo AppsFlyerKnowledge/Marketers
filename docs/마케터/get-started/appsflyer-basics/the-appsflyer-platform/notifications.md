@@ -155,7 +155,7 @@ x-zendesk:
 3. 권한 요청을 검토하고 승인하십시오.
    1. **Slack 관리자일 경우:**
       1. 슬랙에서 Slack Workspace를 클릭하세요.  
-         <Image alt="" src="https://a.slack-edge.com/8e8e4/helpcenter/img/workspace-picker@2x.jpg" width="263px" />  
+         <Image align="center" alt="" src="https://a.slack-edge.com/8e8e4/helpcenter/img/workspace-picker@2x.jpg" width="263px" />
          참고: 연결하려는 Slack Workspace가 올바른지 확인하세요.
       2. **Tools & settings** -> **Manage apps**로 이동하세요.
       3. **Admin panel**에서 **Requests**를 선택하세요,

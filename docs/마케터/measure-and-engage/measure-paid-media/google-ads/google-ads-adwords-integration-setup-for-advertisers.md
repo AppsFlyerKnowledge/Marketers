@@ -37,7 +37,7 @@ Google Ads 캠페인을 통해 발생하는 설치와 인앱 이벤트를 측정
 
 ## 고급 데이터 공유를 활용한 Google Ads 어트리뷰션 흐름
 
-[![Google ads attribution flow.png](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)](https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png)
+<Image align="center" alt="Google ads attribution flow.png" src="https://files.readme.io/1c49e06e48658a8cb60ae6a9e9a83c0fad751766f3d4ce9c6afdd041fb5e8579-small-38644882427537.png" />
 
 1. 앱스플라이어는 평소와 같이 설치 이벤트를 Google로 전송합니다. **고급 데이터 공유** 기능이 켜져 있으면, 디바이스 ID 포함 여부와 관계없이 설치 데이터가 전송됩니다. 해당 기능이 꺼져 있으면, **디바이스 ID가 있는 경우에만** 설치 데이터가 전송됩니다.
 2. Google은 디바이스 ID가 있는 경우 이를 매칭하는 확정적 방식이나, 디바이스 ID가 없는 경우 확률론적 모델링을 활용한 비확정적 방식으로 설치 기여를 확인합니다.
@@ -98,7 +98,7 @@ iOS 기기에서 앱스플라이어를 통한 Google PMOD 설치 클레임 지�
    **참고:** 파트너와 작업하는 동안에는 토글이 켜져 있어야(<Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">활성화됨</Anchor>) 합니다<Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">.</Anchor>
 5. 이전 단계에서 복사한 **링크 ID**를 붙여넣습니다.
 6. <Anchor target="_blank" href="/marketers/ko/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**비 EU 사용자**</Anchor>를 켤지 여부를 결정합니다.  
-   <Image alt="비 EU 사용자.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
+   <Image align="center" alt="비 EU 사용자.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="557px" />
 7. **고급 데이터 공유를** **활성화(On)** 하거나 **비활성화(Off)** **하세요.** 해당 설정을 활성화하면, 광고 식별값 활용 동의 여부와 관계없이 모든 기기의 디바이스 레벨 데이터가 포스트백 및 이벤트 형태로 Google Ads에 전달됩니다.
 
    또한, **고급 데이터 공유**가 활성화되면 앱스플라이어는 해당 이벤트들에 대해 어트리뷰션을 수행합니다. 해당 설정을 비활성화할 경우, IDFA 식별이 가능한 기기의 데이터만 전송되고 성과로 인정됩니다.
@@ -137,7 +137,7 @@ iOS 기기에서 앱스플라이어를 통한 Google PMOD 설치 클레임 지�
        **참고:** Google은 iOS 앱 노출에 대한 클레임을 발송하지 않습니다. 설치 뷰-쓰루 어트리뷰션 토글 및 룩백 윈도우 슬라이더는 이제 iOS 앱과 관련이 없습니다.
     5. **리인게이지먼트 뷰-쓰루 룩백 윈도우**를 설정합니다. 이는 광고 노출 이후 앱이 실행되어야 리인게이지먼트로 기록되는 기간입니다. 시간 또는 일 단위로 룩백 윈도우를 선택하고 슬라이더를 원하는 값으로 설정하세요.
     6. **리인게이지먼트 기간**을 설정합니다. 이는 사용자의 인앱 이벤트가 클릭 또는 노출 후에 리타겟팅 미디어 소스에 어트리뷰션되는 기간입니다. 값은 일(1&#126;90), 시간(최대 23시간) 또는 평생 단위로 설정할 수 있습니다. 기본값은 30일입니다.  
-       [![](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)](https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png)
+       <Image align="center" alt="" src="https://files.readme.io/221a5489e91a15f1d9e4db9ab8f7cbff9e47dc1b50b0f7b43323096b26008870-30759261966225.png" />
 11. <Anchor target="_blank" href="https://support.google.com/google-ads/answer/2402582?hl=en">Google Ads iOS 앱 애셋</Anchor> (이전 명칭: 앱 확장자)이 있는 경우:  
     광고 링크에서 어트리뷰션을 받으려면 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#attribution-link-tab">**어트리뷰션 링크**</Anchor> 탭으로 이동해 앱스플라이어 단일 플랫폼 어트리뷰션 링크를 생성하고 이를 Google Ads 앱 확장 프로그램에 삽입하세요.  
     **참고:** 정적 캠페인 이름(필수)을 반드시 추가하세요.
@@ -196,7 +196,7 @@ iOS 기기에서 앱스플라이어를 통한 Google PMOD 설치 클레임 지�
 
 **(앱스플라이어 계정에 연결된 모든 구성원)**
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)](https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/fbeef1b9d6f4462750d849878045d31b4a6614a9f36d20cd9c6f69d91a34f65a-30759221886609.png" />
 
 1. **연동** 탭으로 이동하여 **인앱 이벤트 포스트백** 섹션까지 아래로 스크롤합니다.
 

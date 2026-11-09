@@ -108,7 +108,7 @@ CSV 파일을 업로드하거나 오디언스 가져오기 API를 사용하여 �
 * 최대 행 수: 1,000만
 * Excel을 사용하여 파일을 준비할 경우, 다음 이미지와 같이 **CSV (쉼표로 구분) (\*.csv)** 파일로 저장합니다.
 
-  <Image alt="CSV.jpg" src="https://support.appsflyer.com/hc/article_attachments/18502652300561" width="339px" />
+  <Image align="center" alt="CSV.jpg" src="https://support.appsflyer.com/hc/article_attachments/18502652300561" width="339px" />
 
 <div id="note" />
 

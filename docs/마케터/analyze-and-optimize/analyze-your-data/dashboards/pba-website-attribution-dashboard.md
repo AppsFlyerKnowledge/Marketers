@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 한눈에 보기: 효과적인 웹사이트 트래픽을 유도하기 위한 마케팅 활동의 영향을 측정합니다. 방문, 전환 이벤트 및 광고 수준 지표를 담당하는 미디어소스, 유형 및 채널을 사용할 수 있습니다.
 
-[![Website_Attribution.jpg](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)](https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg)
+<Image align="center" alt="Website_Attribution.jpg" src="https://files.readme.io/59cda285cb1f2b88c6992f3d303ee87e33176f82f0cf7afedb4711ee363e3a73-360015253418.jpg" />
 
 <div id="pba-website-attribution" />
 

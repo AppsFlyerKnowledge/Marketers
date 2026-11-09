@@ -167,7 +167,7 @@ x-zendesk:
 >
 > **결과**
 >
-> ![mceclip0.png](https://files.readme.io/c284e5133e4e811b9416c850e399ddefb3c5bfcfcf879f469556b7a6bc0062c6-32131110607249.png)
+> <Image align="center" alt="mceclip0.png" src="https://files.readme.io/c284e5133e4e811b9416c850e399ddefb3c5bfcfcf879f469556b7a6bc0062c6-32131110607249.png" />
 
 </Accordion>
 

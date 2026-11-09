@@ -29,7 +29,7 @@ x-zendesk:
 
 > **한눈에 보기:** 요약: 광고 수익을 어트리뷰트하여 LTV 성과 뷰를 완성합니다.
 
-[![Attributes_ad_revenue.png](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)](https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png)
+<Image align="center" alt="Attributes_ad_revenue.png" src="https://files.readme.io/e512531f0363fcda600fbad8ca8e5081d882b5721fb35fc9c449f8774859a5da-small-15734558614033.png" />
 
 <div id="ad-revenue-attribution" />
 
@@ -114,7 +114,7 @@ x-zendesk:
 
 <Accordion title="광고 수익 연동 파트너 보기, 편집 및 삭제">
 
-![delete_edit_adi.png](https://support.appsflyer.com/hc/article_attachments/13751607197713)
+<Image align="center" alt="delete_edit_adi.png" src="https://support.appsflyer.com/hc/article_attachments/13751607197713" />
 
 **광고 매출 네트워크 연동을 보거나, 편집하거나, 삭제하려면**:
 
@@ -136,7 +136,7 @@ x-zendesk:
    2. **일반 설정에서** **두 중재 파트너가 서로 상호 참조할 때 광고 수익 중복 제거**를 클릭합니다. **참고**:
       * 예를 들어 플랫폼 1에 배너 및 전면 광고가 표시되고 플랫폼 2에 AppOpen 및 네이티브 광고가 표시되는 경우입니다.
 
-[![dedup.png](https://support.appsflyer.com/hc/article_attachments/17299804281361)](https://support.appsflyer.com/hc/article_attachments/17299804281361)
+<Image align="center" alt="dedup.png" src="https://support.appsflyer.com/hc/article_attachments/17299804281361" />
 
 </Accordion>
 
@@ -225,7 +225,7 @@ x-zendesk:
 
 #### **개요 대시보드 - 종합 성과 리포트**
 
-[![](https://support.appsflyer.com/hc/article_attachments/360002239229)](https://support.appsflyer.com/hc/article_attachments/360002239229)
+<Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360002239229" />
 
 개요 대시보드에서:
 
@@ -308,7 +308,7 @@ x-zendesk:
 
 <Accordion title="광고 수익 로데이터">
 
-<Image alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
+<Image align="center" alt="PremiumFeature.jpg" src="https://files.readme.io/674e5d0c9efde9d12008bd705b3ba95f04e133fec3f39d4278612675123d4de4-360007173877.jpg" width="78px" />
 
 광고 수익 로데이터 리포트는 앱스플라이어와 디바이스 수준 또는 노출 수준 연동을 보유한 광고 수익화 네트워크에서 제공한 데이터를 포함하고 있습니다.
 

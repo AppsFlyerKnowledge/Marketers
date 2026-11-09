@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** Meta 광고 계정에 Instagram 모바일 앱 설치를 추가하세요.
 
-<Image alt="instagram_logo.jpg" src="https://files.readme.io/55ab80e2b1ba9d164d978116f3aaaacb9fe7e4571f71e0130a40e1ded16679db-360000492725.jpg" width="101px" />
+<Image align="center" alt="instagram_logo.jpg" src="https://files.readme.io/55ab80e2b1ba9d164d978116f3aaaacb9fe7e4571f71e0130a40e1ded16679db-360000492725.jpg" width="101px" />
 
 <div id="setting-up-instagram" />
 
@@ -39,13 +39,13 @@ Meta 문서는 <Anchor target="_blank" href="https://developers.facebook.com/doc
 
 1. Instagram 계정을 Meta Business Manager에 연결하세요.  
 
-   ![link-inst-with_fb-account.png](https://files.readme.io/c6c7fe17274f0b9af008c4452b4b7ea2233cc5bca8773307fef6afaeb7d06015-11212956311441.png)
+   <Image align="center" alt="link-inst-with_fb-account.png" src="https://files.readme.io/c6c7fe17274f0b9af008c4452b4b7ea2233cc5bca8773307fef6afaeb7d06015-11212956311441.png" />
 2. Business Manager에 추가한 후, Instagram 계정에 광고 계정을 할당하세요.  
 
-   <Image alt="assign-inst-ad-to-fb.png" src="https://files.readme.io/658dc57d0056a2217a9f0f5c785b87e24c297158b75c5815eddb64930d00ea17-11213052873745.png" width="550px" />
+   <Image align="center" alt="assign-inst-ad-to-fb.png" src="https://files.readme.io/658dc57d0056a2217a9f0f5c785b87e24c297158b75c5815eddb64930d00ea17-11213052873745.png" width="550px" />
 3. Facebook 앱 ID를 추가하여 활성 연동 구성에서 Meta 광고를 설정하세요.
 4. Facebook 앱 ID가 없는 경우 <Anchor target="_blank" href="https://developers.facebook.com/apps">여기</Anchor>에서 만드세요.  
-   [![facebook_app_id.png](https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png)](https://files.readme.io/4141ee358e80c69521e134fb686e7d0b872c1f4def1033db511d5a9e206dab61-360002280605.png)
+   <Image align="center" alt="facebook_app_id.png" src="https://files.readme.io/2e497e1e00c22d0006aebd540b24c47ba4f2907ee9de061dc04ab50bbbe2cc67-14069602144273.png" />
 
 <div id="instagram-landing-page-for-deep-linking" />
 

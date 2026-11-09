@@ -24,7 +24,7 @@ x-zendesk:
 
 > **한눈에 보기:** 크리에이티브 최적화 개요 대시보드를 활용해 크리에이티브 성과를 분석함으로써, 가장 효과적인 크리에이티브를 선택하고 캠페인의 임팩트를 극대화할 수 있습니다.
 
-[![Main image -Default view.jpg](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)](https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg)
+<Image align="center" alt="Main image -Default view.jpg" src="https://files.readme.io/9ef8901b620d54cad031ec142f5dd408406e0a470bae8a0719826777561cd1d1-21362497825169.jpg" />
 
 <div id="about-the-creative-optimization-overview-dashboard" />
 
@@ -86,7 +86,7 @@ x-zendesk:
 
 다음 이미지는 선택한 필터링 기준에 따라 크리에이티브를 보여주는 기본 테이블 뷰입니다. 이미지에 표시된 알파벳 기호는 이어지는 표의 각 항목 및 상세 설명과 일치합니다.
 
-[![Table_main_image_doctored_final_copy__download_table_.jpg](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)](https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg)
+<Image align="center" alt="Table_main_image_doctored_final_copy__download_table_.jpg" src="https://files.readme.io/00471a19cf1bdb3440f6f3481978944cb806feb2c0ce151153d668e2fd7d8124-18565649462801.jpg" />
 
 |  | 항목 | 설명 |
 | --- | --- | --- |
@@ -145,7 +145,7 @@ x-zendesk:
 
 *지표는 요약/집계 로우 내부에 속해 있는 개별 데이터 행을 열었을 때 상세 수치로 확인할 수 있습니다.
 
-[![](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)](https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png)
+<Image align="center" alt="" src="https://files.readme.io/ca734dede55894fc1906c19f6b700047a75454dcf5161187366a8b24db7432d2-18565649475217.png" />
 
 </Accordion>
 

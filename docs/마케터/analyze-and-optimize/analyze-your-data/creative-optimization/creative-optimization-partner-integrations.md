@@ -24,7 +24,7 @@ x-zendesk:
 
 > **한눈에 보기:** 파트너 연동을 설정하여 모든 광고 크리에이티브 데이터를 광고 크리에이티브 최적화로 자동으로 가져옵니다.
 
-![Creative integrations New.jpg](https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg)
+<Image align="center" alt="Creative integrations New.jpg" src="https://files.readme.io/2bfead93dbaac902956ea4379e3f360120d59e7454be354c567b2f182382ab2d-20130430776337.jpg" />
 
 <div id="about-partner-integrations" />
 
@@ -70,7 +70,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있는 경우, 대시보드의 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **Adikteev**를 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -96,7 +96,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **Adjoe GmbH**를 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -121,7 +121,7 @@ x-zendesk:
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.
 
-   ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+   <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. + **새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **AppLovin**을 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -154,7 +154,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. + **새 연동**을 클릭합니다.
 3. **파트너** 목록을 클릭하고 **Google Ads(AdWords)** 를 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -183,7 +183,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **ironSource**를 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -203,7 +203,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **Liftoff**를 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -226,7 +226,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 리스트에서 **Meta ads**를 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -257,7 +257,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **Mintegral**을 선택하세요.
 4. 홍보 중인 앱을 선택합니다.
@@ -303,7 +303,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **Persona.ly를** 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -325,7 +325,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **Reddit**을 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -369,7 +369,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **Reddit**을 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -412,7 +412,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **Snapchat**을 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -438,7 +438,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **TikTok**을 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -490,17 +490,17 @@ x-zendesk:
 4. **+ Add key**를 클릭합니다.  
    클릭 후, Key ID와 Secret key가 표시됩니다.
 5. **Key ID**와 **Secret key**를 복사합니다.  
-   ![Unity get Key ID & Secret key image.jpg](https://files.readme.io/9c4d1b1e0e476546b8f8be3a7375c610c48db6f94344a3dbe48277a6d115f52e-20344146224401.jpg)
+   <Image align="center" alt="Unity get Key ID & Secret key image.jpg" src="https://files.readme.io/9c4d1b1e0e476546b8f8be3a7375c610c48db6f94344a3dbe48277a6d115f52e-20344146224401.jpg" />
 
 <Anchor target="_blank" href="https://services.docs.unity.com/advertise/v1/index.html#section/General-Information/Resource-IDs-Used-in-the-API-Calls">**Organization core ID**</Anchor>**를** **받으려면:**
 
 1. Unity Ads의 사이드 메뉴에서 **Products**를 클릭합니다.
 2. **Grow**를 클릭하세요.  
-   ![Unity Org ID step 1 cropped.jpg](https://files.readme.io/5e8d2f54f5999c58b2e2b3591ae889f5051cae4073aa6c5ef17e16da6a60131f-22859368875153.jpg)
+   <Image align="center" alt="Unity Org ID step 1 cropped.jpg" src="https://files.readme.io/5e8d2f54f5999c58b2e2b3591ae889f5051cae4073aa6c5ef17e16da6a60131f-22859368875153.jpg" />
 3. **Unity Ads User Acquisition**을 클릭합니다.  
-   <Image alt="Unity Org ID step 2 cropped.jpg" src="https://files.readme.io/07a1c8e878a9ed7b6832012b3261866477b825d3b23e4973b8c5dadd675973e2-22859368883473.jpg" width="347px" />
+   <Image align="center" alt="Unity Org ID step 2 cropped.jpg" src="https://files.readme.io/07a1c8e878a9ed7b6832012b3261866477b825d3b23e4973b8c5dadd675973e2-22859368883473.jpg" width="347px" />
 4. **Settings**을 클릭하세요.  
-   ![Get Organization core ID instructions 2 arrows.jpg](https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg)
+   <Image align="center" alt="Get Organization core ID instructions 2 arrows.jpg" src="https://files.readme.io/aff97bcb1c255771fc46483d8d94a2f13c7ef26c45a7fc884b1c03c83da91ae5-20344868139153.jpg" />
 5. **Organization core ID**를 복사합니다.
 
 <div id="to-select-a-service-account-organization-role" />
@@ -518,7 +518,7 @@ x-zendesk:
      * 광고 API 관리자
      * 광고 API 뷰어
      * 광고 API 광고 크리에이티브 팩 에디터  
-       <Image alt="Org roles step 3 without role names.jpg" src="https://files.readme.io/7b46417e6389f7c3675cc6f72b33e9b2833d5c561ef1d79122ed24605533b265-20347535827217.jpg" width="471px" />
+       <Image align="center" alt="Org roles step 3 without role names.jpg" src="https://files.readme.io/7b46417e6389f7c3675cc6f72b33e9b2833d5c561ef1d79122ed24605533b265-20347535827217.jpg" width="471px" />
 5. **저장**을 클릭합니다.
 
 **참고:** 해당 역할에 액세스할 수 없는 경우, Unity 고객 성공 관리자에게 문의하거나 [unityads-support@unity3d.com](mailto:unityads-support@unity3d.com)로 이메일을 보내 필요한 권한을 요청하세요.
@@ -530,7 +530,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화** 대시보드에서 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **Unity Ads**를 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -553,7 +553,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **X Ads**를 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -579,7 +579,7 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 파트너 연동이 있으면, 오른쪽 상단에 있는  ⋮  아이콘을 클릭하여 **광고 크리에이티브 연동**으로 이동합니다.  
-     ![Main menu icon and filter bar New Default view.jpg](https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg)
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" />
 2. **+ 새 연동**을 클릭합니다.
 3. **파트너** 목록에서 **YouAppi**를 선택합니다.
 4. 홍보 중인 앱을 선택합니다.
@@ -624,11 +624,11 @@ x-zendesk:
 1. **광고 크리에이티브 최적화**에 로그인하고 다음 중 하나를 수행합니다.
    * 파트너 연동이 없는 경우 + **새 연동 추가**를 클릭합니다.
    * 그렇지 않으면 대시보드의 오른쪽 상단에 있는  ⋮ 아이콘을 클릭하여 광고 소재 연동으로 이동합니다.  
-     <Image alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
+     <Image align="center" alt="Main menu icon and filter bar New Default view.jpg" src="https://files.readme.io/b70e69e0624f5592d3bbfc0b4be148d7ba6bc06ce496529ff1708e9dbc489915-21381993469969.jpg" width="927px" />
 2. **+ 새 연동**을 클릭합니다.
 3. 파트너 연동 창에서 파트너 및 앱을 선택한 후 **에이전시** 토글을 클릭합니다. 에이전시 드롭다운에서 관련 에이전시를 선택하세요.  
 
-   <Image alt="크리에이티브 에이전시.png" src="https://files.readme.io/74f0dc492bc530278687becdd0061e9c06081653b69ed525f237b97a9568e413-38395601553169.png" width="288px" />
+   <Image align="center" alt="크리에이티브 에이전시.png" src="https://files.readme.io/74f0dc492bc530278687becdd0061e9c06081653b69ed525f237b97a9568e413-38395601553169.png" width="288px" />
 4. **저장**을 클릭하세요.  
    이제 에이전시 연동이 추가되었습니다.
 
@@ -651,7 +651,7 @@ x-zendesk:
    **<Image alt="콜라보레이트에서 파트너 Marketplace.png 를 클릭합니다." src="https://files.readme.io/96485cefae79412a680915810c16b23619f73d9109212bfc45d1c0d42c2e529a-39258887136785.png" width="33.9%" />**
 2. 페이지 상단의 검색창에서 관련 파트너 에이전시를 검색한 후, 파트너를 클릭하세요.
 
-   <Image alt="검색창.png" src="https://files.readme.io/f1ff34a547af45eec73e7abd41105bbab9ff12d4a2636ed4b99634985ec58044-39258887138449.png" width="1210px" />
+   <Image align="center" alt="검색창.png" src="https://files.readme.io/f1ff34a547af45eec73e7abd41105bbab9ff12d4a2636ed4b99634985ec58044-39258887138449.png" width="1210px" />
 3. 파트너 페이지에서 <strong>권한 탭으로 이동하여</strong> 에이전시 권한을 활성화합니다.
 
    에이전시 권한

@@ -29,7 +29,7 @@ x-zendesk:
 
 > **한눈에 보기:** 요약: 로데이터 어트리뷰션 이벤트를 서버 측 엔드포인트로 스트리밍합니다.
 
-![6970_Push_API_image.png](https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png)
+<Image align="center" alt="6970_Push_API_image.png" src="https://files.readme.io/0bb5747a65a6ca6ed8f55f72f189b92e780649d55b766c5d295f5602745f04f5-4405028260241.png" />
 
 ## Push API
 
@@ -148,7 +148,7 @@ Push API를 설정하려면 다음 작업 목록을 완료하십시오.
 
 **엔드포인트**
 
-[![PushAPI_us-en.png](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)](https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png)
+<Image align="center" alt="PushAPI_us-en.png" src="https://files.readme.io/38b22e23c087e97c5424b649552823635310402a5c7be742bf6fc4e16d86cc42-360007246758.png" />
 
 <div id="endpoint-planning-table" />
 
@@ -297,7 +297,7 @@ API에 접근할 수 있는 권한이 있는 모든 팀원은 Push API 설정을
 
 <Accordion title="인앱 이벤트 메시지 선택란이 비활성화 상태입니다.">
 
-[![InappSelectionDisabled_us-en.png](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)](https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png)
+<Image align="center" alt="InappSelectionDisabled_us-en.png" src="https://files.readme.io/3fd283063aeaa9a6183a980689d7c77fc00b9d7023006a367b0d4f026928d128-360007246818.png" />
 
 * 인앱 이벤트 메시지는 최소 하나의 인앱 이벤트가 기록된 후에만 선택할 수 있습니다.
 * 테스트 기기를 사용하여 인앱 이벤트를 생성하거나, <Anchor target="_blank" href="/marketers/ko/docs/server-to-server-events-api-for-mobile-s2s-mobile">S2S API</Anchor> 를 사용하여 수동으로 이벤트를 생성하십시오.

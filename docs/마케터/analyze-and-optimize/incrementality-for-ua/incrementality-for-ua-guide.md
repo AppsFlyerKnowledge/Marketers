@@ -225,13 +225,13 @@ UA를 위한 Incrementality를 시작하려면 아래 단계를 따라 하세요
 
 1. 앱스플라이어 사이드 메뉴에서 **최적화** > UA **증분성을 클릭하여 UA에 대한 인크리멘탈리티에** 액세스할 수 있습니다.
 
-   <Image alt="UA new.png은 Inc를 클릭하세요" src="https://files.readme.io/4170287cc98e038272fd91ee36cbf775a33b8a418920c7fabe54e32cff5789cd-41021731857041.png" width="254px" />
+   <Image align="center" alt="UA new.png은 Inc를 클릭하세요" src="https://files.readme.io/4170287cc98e038272fd91ee36cbf775a33b8a418920c7fabe54e32cff5789cd-41021731857041.png" width="254px" />
 2. **+ 새 실험을** 클릭합니다.
 3. **실험 양식을 작성하세요:**
    1. **실험 이름 입력** - 실험의 설명 이름을 만들고, 클릭 **다음**.
    2. **지역 설계 정의** — 측정하려는 앱, 국가 및 주요 지표를 선택합니다. 앱스플라이어는 이 값을 사용하여 실험에 사용할 노출 영역과 홀드아웃 영역의 최적 할당을 계산합니다.
 
-      <Image alt="2단계 지오 design.png" src="https://files.readme.io/3a901bd4dcccb788b1d0cc8f118cbdb0c682b570b470d13deba4f6ce0f852c3b-41021758781713.png" width="335px" />
+      <Image align="center" alt="2단계 지오 design.png" src="https://files.readme.io/3a901bd4dcccb788b1d0cc8f118cbdb0c682b570b470d13deba4f6ce0f852c3b-41021758781713.png" width="335px" />
 
       제출하면 앱스플라이어가 지역 디자인을 검토합니다. 보통 몇 분 정도 걸립니다. 지역 설계는 바로 사용할 수 있거나 사용할 수 없게 됩니다.
 
@@ -272,7 +272,7 @@ UA를 위한 Incrementality를 시작하려면 아래 단계를 따라 하세요
   * 선택한 모든 캠페인은 동일한 홀드아웃 지역을 공유합니다.
   * 증분 인사이트는 개별 캠페인 수준이 아닌 셀 수준에서 제공됩니다.
 
-    <Image alt="UA용 Inc - 캠페인 세부 정보 설정.png" src="https://files.readme.io/c92c2b785ea80d2c89fd06033b008a3618e04d88a3cc286e923acf88b5924261-45947468030097.png" width="64.57%" />
+    <Image align="center" alt="UA용 Inc - 캠페인 세부 정보 설정.png" src="https://files.readme.io/c92c2b785ea80d2c89fd06033b008a3618e04d88a3cc286e923acf88b5924261-45947468030097.png" width="64.57%" />
 * 지역 설계가 승인되면 실험 내역을 볼 수 있습니다.
   * **홀드아웃 지역** - 실험 중 캠페인 노출이 중단된 지역
   * **노출 지역** - 캠페인에 노출된 지역 (측정 기준으로 사용)
@@ -309,10 +309,10 @@ UA를 위한 Incrementality를 시작하려면 아래 단계를 따라 하세요
 
 1. 앱스플라이어 사이드 메뉴에서 **최적화** > UA **증분성을 클릭하여 UA 증분성** 실험으로 이동하십시오. 
 
-   <Image alt="Oprimize에서 Incrementality UA.png" src="https://files.readme.io/922e084c955b3220a5bc3ac82079515f2c07bc4bc1bc3861343132452cc4fc08-41021731858321.png" width="210px" />
+   <Image align="center" alt="Oprimize에서 Incrementality UA.png" src="https://files.readme.io/922e084c955b3220a5bc3ac82079515f2c07bc4bc1bc3861343132452cc4fc08-41021731858321.png" width="210px" />
 2. 실험 대시보드에 접근하려면 특정 실험을 클릭하세요.
 
-   ![실험 표 (1).png](https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png)
+   <Image align="center" alt="실험 표 (1).png" src="https://files.readme.io/ffc37ed1e7381c73883933cb0de7a84495dd737e050849760e427e36d2b9918d-41021758785041.png" />
 
 <div id="a-tour-of-the-dashboard" />
 
@@ -344,7 +344,7 @@ UA를 위한 Incrementality를 시작하려면 아래 단계를 따라 하세요
 * 선택한 모든 캠페인은 동일한 홀드아웃 지역을 공유합니다.
 * 증분 인사이트는 개별 캠페인 수준이 아닌 셀 수준에서 제공됩니다.
 
-[<Image alt="채널 수준 실험 대시보드가 잘렸습니다. narrower.png" src="https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png" width="2862px" />](https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png)
+<Image align="center" alt="채널 수준 실험 대시보드가 잘렸습니다. narrower.png" src="https://files.readme.io/4bcf80c6427e58d13b7ab0380033cb7e34852bd402150b2c05c075e5db3604a3-small-46014061198353.png" width="2862px" />
 
 </Accordion>
 
@@ -365,10 +365,10 @@ UA를 위한 Incrementality를 시작하려면 아래 단계를 따라 하세요
 1. UA의 증분 기능을 클릭하면 접근할 수 있습니다**최적화**> **UA의 점진성**, AppsFlyer 사이드 메뉴에 있습니다.
 2. 를 클릭하세요 **연결** 탭, 그럼 **+ 새로운 연결**.
 
-   <Image alt="연결 탭에서 +새 연결 arrow.png" src="https://files.readme.io/e9df79d34ec3d94e89f51f42b132f8ba475225b46246d044d2a720991b0900e0-41021731865745.png" width="465px" />
+   <Image align="center" alt="연결 탭에서 +새 연결 arrow.png" src="https://files.readme.io/e9df79d34ec3d94e89f51f42b132f8ba475225b46246d044d2a720991b0900e0-41021731865745.png" width="465px" />
 3. 연결할 미디어소스를 선택합니다.
 
-   <Image alt="추가connection.png" src="https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png" width="409px" />
+   <Image align="center" alt="추가connection.png" src="https://files.readme.io/c9eab02131220cd28683a717745bff852da28847a4164fa27b5be4780cd98018-41021731866897.png" width="409px" />
 4. 로그인하려면 로그인 자격 증명을 입력하고 연결을 생성하세요.
 
 </Accordion>
@@ -464,7 +464,7 @@ UA를 위한 Incrementality를 시작하려면 아래 단계를 따라 하세요
 
 안으로 **UA의 점진성**, 클릭 **실험**탭.
 
-[![실험 table.png](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)](https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png)
+<Image align="center" alt="실험 table.png" src="https://files.readme.io/61958568e19f243855237465d132935a339ab18f24b5a8c8318d411239b7fd8b-41021758787089.png" />
 
 각 실험에 대해 다음과 같은 것을 볼 수 있습니다:
 
@@ -489,7 +489,7 @@ UA를 위한 Incrementality를 시작하려면 아래 단계를 따라 하세요
 
 실험 위에 마우스를 올리면<Image alt="액션 menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" />행동 아이콘.
 
-<Image alt="실험 menu.png" src="https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png" width="254px" />
+<Image align="center" alt="실험 menu.png" src="https://files.readme.io/5e25e2b4b7f9651ad6a510916b9ee2b2a45d4064a0801a24baa6e3d62bde81a0-41021731868049.png" width="254px" />
 
 이를 통해 다음을 수행할 수 있습니다.
 
@@ -507,7 +507,7 @@ UA를 위한 Incrementality를 시작하려면 아래 단계를 따라 하세요
 
 실험에서 다음을 클릭하세요<Image alt="액션 menu.png" src="https://files.readme.io/0f35ebb6f4527107c1512ef20416108861326423951532c85fb00c7807023eba-41021731867793.png" width="16px" />액션 아이콘(오른쪽 상단)과 셀렉트 **실험 시간 연장**.
 
-<Image alt="experiment.png 확장하세요" src="https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png" width="336px" />
+<Image align="center" alt="experiment.png 확장하세요" src="https://files.readme.io/191463618d7bcdba2210e71bf38719c8d5af9951a5282a98cc1e3bc87a7e853b-41021731869329.png" width="336px" />
 
 이로 인해 실험 기간이 14일 더 연장됩니다.
 
@@ -521,7 +521,7 @@ UA를 위한 Incrementality를 시작하려면 아래 단계를 따라 하세요
 
 실험에서 다음을 클릭하세요 ⠇액션 아이콘(오른쪽 상단)과 셀렉트 **실험 중지**.
 
-<Image alt="그만experiment.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
+<Image align="center" alt="그만experiment.png" src="https://files.readme.io/2622bca9bafa7894d4ca967f13d6626eb3cd53554720d134d8092ebb0d561740-41021731870609.png" width="331px" />
 
 </Accordion>
 

@@ -389,7 +389,7 @@ https://app.appsflyer.com/com.greatapp?pid=networkx_int&c=winter&af_adset=coats&
 
 어트리뷰션 링크를 따라간 후 Play 스토어에서 다음과 같은 오류 메시지가 나타나는 경우:
 
-![TL_error_message.png](https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png)
+<Image align="center" alt="TL_error_message.png" src="https://files.readme.io/03e509d3cbe68aa0621bb0f43ab113c25a8427e70826c5af5258f1fc9e3f3d36-360000002485.png" />
 
 이는 어트리뷰션 링크에 # 문자가 포함되어 있기 때문입니다. 예를 들어:
 

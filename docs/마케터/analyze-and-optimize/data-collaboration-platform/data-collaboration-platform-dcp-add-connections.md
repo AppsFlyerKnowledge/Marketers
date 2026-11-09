@@ -55,7 +55,7 @@ DCP로 자사 데이터를 가져오기 위한 소스 연결을 생성합니다.
 1. 앱스플라이어에서 **협업** > **데이터 클린룸**으로 이동하세요.
 2. 오른쪽 상단 모서리에 있는 **연결 관리**를 클릭하세요.
 3. **소스** 탭으로 이동하여 **+ 새 연결**을 클릭합니다.  
-   <Image alt="2026-07-27_13-30-46.png" src="https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png" width="529px" />
+   <Image align="center" alt="2026-07-27_13-30-46.png" src="https://files.readme.io/dec879432c0b9d6ba4eeec2c175dfce145c99652ccabb02d37f3434627f9310f-49189748198289.png" width="529px" />
 4. 아래의 [소스 데이터용 클라우드 서비스 연결 지침](#소스-데이터에-대한-클라우드-서비스-연결)에 따라 계속 진행하세요.
 
 소스를 설정할 때 소스 연결을 직접 생성할 수도 있습니다. 자세한 지침은 <Anchor target="_blank" href="/marketers/ko/docs/data-collaboration-platform-dcp-create-and-manage-sources">소스 생성 및 관리</Anchor>를 참고하세요.
@@ -117,7 +117,7 @@ DCP로 자사 데이터를 가져오기 위한 소스 연결을 생성합니다.
 1. 앱스플라이어에서 **협업** > **데이터 클린룸**으로 이동하세요.
 2. 오른쪽 상단 모서리에 있는 **연결 관리**를 클릭하세요.
 3. **클라우드 저장소** 탭으로 이동하여 **+ 새 연결**을 클릭하세요.  
-   <Image alt="2026-07-27_13-30-34.png" src="https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png" width="533px" />
+   <Image align="center" alt="2026-07-27_13-30-34.png" src="https://files.readme.io/1da10127617317d0ff466433c89712d78c104b6a943b4b669e1d7180d22df958-49189843742609.png" width="533px" />
 4. **새 클라우드 스토리지 연결** 모달 창이 열립니다.
 5. **새 클라우드 스토리지 연결** 모달에서 클라우드 제공업체 선택하세요. **Google Cloud Storage** 또는 **Amazon Simple Storage** .
 6. 버킷 이름 입력:

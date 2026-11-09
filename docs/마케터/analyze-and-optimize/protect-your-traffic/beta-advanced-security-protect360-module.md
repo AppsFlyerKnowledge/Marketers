@@ -173,7 +173,7 @@ Advanced Security Module 탐지 내역은 **어트리뷰션 스푸핑** 섹션�
 
 * **어트리뷰션 스푸핑 추세**: 시간 경과에 따른 Advanced Security Module 탐지 현황 반영입니다. 이 그래프는 앱 수준에서의 스푸핑 탐지에 대한 전반적인 상태를 반영합니다.
 
-<Image alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/2f9e63d283850d3b1150dfcefff3c3cd47383cb58c4194dbbec3296da807fcb9-39145854862353.png" width="624px" />
 
 </Accordion>
 
@@ -198,7 +198,7 @@ Advanced Security Module은 Fraud Protection Studio 페이지에서 확인하실
 
 #### 고급 보안 모듈 페이지
 
-<Image alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/a94b0c810f719846ae2882cac2ff1dbe4e32f815ee4e023e65e563199f4e3345-39145848945681.png" width="624px" />
 
 Advanced Security Module 페이지는 세 가지 섹션으로 분할됩니다.
 

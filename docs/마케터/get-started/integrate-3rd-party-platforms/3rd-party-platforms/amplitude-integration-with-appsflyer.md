@@ -295,12 +295,12 @@ appsFlyerSdk.setAdditionalData(data);
    <Image alt="Amplitude V2.png" src="https://files.readme.io/4bbf57727a2b6e16e5205505b459a78f8642f02d1bb1c4e8f72e26b3bd9e1bd3-36713631187857.png" width="503px" /> 선택
 3. Amplitude 버전을 선택한 후 **연동 설정**을 클릭합니다.  
      
-   ![Click set up integration.png](https://files.readme.io/c13fef10fb4cf0ea12f44d56f8c3b64936376ce181a1d12c9f096ad6103c29a6-36713632857617.png)
+   <Image align="center" alt="Click set up integration.png" src="https://files.readme.io/c13fef10fb4cf0ea12f44d56f8c3b64936376ce181a1d12c9f096ad6103c29a6-36713632857617.png" />
 4. 연동 탭에서
    * 앱을 선택합니다.
    * **파트너 활성화** 토글을 켭니다.  
        
-     <Image alt="파트너 활성화 blurred.png" src="https://files.readme.io/5e0e7ae537cd89b2c561c8561de9ebc160f6d6eb0fedc5c7ba0c761ddb73632a-36713631194641.png" width="521px" />
+     <Image align="center" alt="파트너 활성화 blurred.png" src="https://files.readme.io/5e0e7ae537cd89b2c561c8561de9ebc160f6d6eb0fedc5c7ba0c761ddb73632a-36713631194641.png" width="521px" />
 5. 나머지 탭에서 구성을 완료하십시오:
 
 <div id="integration-tab" />
@@ -435,7 +435,7 @@ Amplitude에 대한 권한이 제공되지 않습니다.
 
 앱스플라이어에서 Amplitude로 전송된 어트리뷰션 데이터는 대시보드에 **[앱스플라이어]** 접두사가 붙어 이벤트와 속성으로 표시됩니다.
 
-![amplitude-properties.png](https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png)
+<Image align="center" alt="amplitude-properties.png" src="https://files.readme.io/bf52831ea6060172ce251136f47962ffb7f1ec9ffce13b9e35c614c4178e77f1-360009623597.png" />
 
 <div id="important-1" />
 

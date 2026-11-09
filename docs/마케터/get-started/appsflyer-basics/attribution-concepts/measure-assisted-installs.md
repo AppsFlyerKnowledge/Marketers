@@ -51,7 +51,7 @@ x-zendesk:
 5. **어시스트 인스톨** 지표를 선택합니다.  
    어시스트 인스톨 차트가 표시됩니다. 파란색은 논오가닉 인스톨을 나타내고 주황색은 어시스트 인스톨을 나타냅니다.
 
-   ![AssitedInstallWidget.png](https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png)
+   <Image align="center" alt="AssitedInstallWidget.png" src="https://files.readme.io/a2fb5fb1f7414ede9a96858e325688d0c60b2ff910e24bc86e5597160c7548ca-33302646504977.png" />
 
 <div id="why-are-assists-important" />
 

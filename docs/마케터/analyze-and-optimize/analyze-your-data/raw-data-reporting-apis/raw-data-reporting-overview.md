@@ -122,7 +122,7 @@ x-zendesk:
 
 ## 유저 여정 리포트
 
-![로데이터_-_유저_획득_.png](https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png)
+<Image align="center" alt="로데이터_-_유저_획득_.png" src="https://files.readme.io/319da2a6a5567d6cfe4a74337279e67e0bdcdb063e62ecacde5eb4293a98a1a2-36317497158033.png" />
 
 <div id="user-journey-basics" />
 
@@ -150,7 +150,7 @@ x-zendesk:
   * 리타겟팅 데이터는 항상 논오가닉입니다.
   * 리타겟팅 인앱 이벤트는 UA 및 리타겟팅 인앱 이벤트 리포트에 포함됩니다. <Anchor target="_blank" href="/marketers/ko/docs/resolve-retargeting-double-attribution">리타겟팅 이중 어트리뷰션</Anchor> 방법론을 확인하세요.
 
-    ![로데이터_-_리타겟팅.png](https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png)
+    <Image align="center" alt="로데이터_-_리타겟팅.png" src="https://files.readme.io/717f6e43ca3b224ead9e3e1c5f9b277d2f21dbc1fe3b4c217ebf4bdbc539bab7-36317470735249.png" />
 
 유저 여정을 따르려면 관심 있는 여정 부분과 관련된 리포트를 결합하세요. 예를 들어, 인스톨과 인앱 이벤트. 이후, 앱스플라이어 ID, 이벤트 시간, 리포트 유형으로 정렬합니다. 결과는 특정 유저의 시간에 따른 이벤트, 즉 유저 여정입니다.
 

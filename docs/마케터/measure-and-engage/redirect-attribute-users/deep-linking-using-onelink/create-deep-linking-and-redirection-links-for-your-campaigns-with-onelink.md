@@ -253,7 +253,7 @@ x-zendesk:
 1. 커스텀 링크 설정에서 **소셜-투-앱** 섹션으로 이동합니다.
 2. **소셜 앱 랜딩 페이지** 섹션에서 **소셜 앱 랜딩 페이지 생성**을 클릭합니다.  
    랜딩 페이지 템플릿을 선택할 수 있는 창이 열립니다.  
-   [![](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)](https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/82a65bf446c4e6ae8803eaf048cc95ebe9c312f574fb8eda2764c123f0a50ee6-30151216576657.jpg" />
 3. 랜딩 페이지 템플릿을 선택하려면, 선택한 템플릿 위로 마우스를 가져간 다음 **만들기**를 클릭합니다. **팁**: 템플릿의 🛈 아이콘 위로 마우스를 가져가면, 어떤 경우에 템플릿을 사용해야 하는지 확인할 수 있습니다. 인스타그램용 템플릿은 Clustered Poster와 ShowAndTell을 추천합니다.
 4. 랜딩 페이지 크리에이티브의 모든 요소를 맞춤화할 수 있습니다. 맞춤화를 위해 크리에이티브 요소 이름을 선택하거나 미리보기 이미지에서 해당 요소를 클릭합니다.    
    **팁**: 크리에이티브 템플릿을 교체할 경우를 대비하여 텍스트를 저장합니다.
@@ -270,10 +270,10 @@ x-zendesk:
 | <ul><li>Flyer</li><li>Poster</li><li>Blurry poster</li><li>Clustered poster</li></ul> | 300 KB | 9:16 (세로) |
 
    4. 이미지 중 하나 이상이 정확한 URL이 아닌 경우 오류가 표시되며 크리에이티브를 검토할 수 없습니다.  
-      [![](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)](https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png)
+      <Image align="center" alt="" src="https://files.readme.io/63223efc74994143111d5a5ef6b2d5fa7b84ac4f1033f8713d96cc293ba47588-30151216583697.png" />
 6. 랜딩 페이지 크리에이티브를 검토하려면 **검토**를 클릭합니다.  
    변경이 필요한 경우 **편집기로 돌아가기**를 클릭합니다.  
-   [![](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)](https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png)
+   <Image align="center" alt="" src="https://files.readme.io/90b52321a6f7061a77624ec4486d6e2628c38c49ea0de734cf1c1fd0bc888cee-30151216593169.png" />
 7. 랜딩 페이지를 저장하려면 **완료**를 클릭합니다.  
    **중요**: 신규/업데이트된 랜딩 페이지 크리에이티브는 커스텀 링크를 생성/업데이트한 후에만 적용됩니다.
 8. [선택 사항] 랜딩 페이지를 편집하려면 **소셜 앱 랜딩 페이지 편집**을 클릭합니다.
@@ -566,7 +566,7 @@ iOS 15 출시와 함께 Apple은 iCloud+ 사용자에게 <Anchor target="_blank"
    * 사용자가 비공개 릴레이 기능 설정
    * 링크에 파라미터 `af_cp_lp=true` 포함
 4. 앱스플라이어가 상기 사항을 확인하면, 앱 아이콘, 이미지 및 CTA를 포함하는 웹 랜딩 페이지가 App Store에서 애플리케이션을 가져오기 위해 로드됩니다. 또한 사용자에게 앱의 특정 페이지로 이동하는 최상의 사용자 경험을 보장하기 위해 URL이 복사된다는 프로세스를 설명하는 메시지가 표시됩니다.  
-   ![ios_15_ip_masking__1_.png](https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png)
+   <Image align="center" alt="ios_15_ip_masking__1_.png" src="https://files.readme.io/c130314c98ebd42f50feaafd752c0cea954f42c5bfd99a6dbd94daf9e48c2ff4-30151216595345.png" />
 5. 사용자가 **앱 가져오기**를 누릅니다.
 6. 사용자가 앱 스토어로 가서 앱을 설치합니다. 그런 다음, 앱 첫 실행 시 특정 앱 페이지로 이동합니다.
 

@@ -347,7 +347,7 @@ SDK가 페이지 로드 당 한 번 로드되었는지 확인하고 GTM 우선 �
 
 설치 후, 브라우저의 개발자 도구에서 네트워크 요청을 확인하여 SDK가 요청을 전송하는지 확인합니다.
 
-[<Image alt="DevTools 스크린샷" src="https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png" width="1015px" />](https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png)
+<Image align="center" alt="DevTools 스크린샷" src="https://files.readme.io/a1bb1f22e9d30059830239e7a4d13d7cde106a3363502cb9e8a054d6e8d65dff-43492318562833.png" width="1015px" />
 
 **SDK가 작동하는지 확인하려면 다음 단계를 수행하십시오.**
 
@@ -767,10 +767,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 3. 감사 페이지가 로드된 후 구독을 어트리뷰트하기 위한 새 태그 추가
 
-   [![](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 4. 태그에 고유한 이름을 지정하고 '커스텀 HTML' 태그 유형 옵션을 선택합니다.
 
-   [![](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)](https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/beab3305bc50c44c291997fa9b77bf4df7dd5dd9207a1bf766c2e1702e314d2c-360016246418.jpg" />
 
    ```html
    <script>
@@ -785,10 +785,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 5. **고급 설정**을 확장한 다음 텍스트 영역 아래의 **태그 시퀀싱 컨트롤**을 확장하고 태그가 실행된 후 변환을 실행하도록 설정되어 있는지 확인합니다.
 
-   [![](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. 전환 태그가 실행되어야 하는 시점을 나타내도록 전환 태그에 대한 트리거를 설정합니다(아래 예에서는 '감사' 페이지 로드 시 실행됨).
 
-   [![](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 </Accordion>
 

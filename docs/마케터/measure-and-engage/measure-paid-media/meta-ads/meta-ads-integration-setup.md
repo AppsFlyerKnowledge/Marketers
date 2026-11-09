@@ -61,7 +61,7 @@ Meta Ads를 앱스플라이어와 연동하려면 먼저 <Anchor target="_blank"
 2. 필요한 앱을 클릭하세요.
 3. 화면 왼쪽 상단에 나오는 앱 ID를 클릭하여 복사하세요.
 
-   [![](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)](https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/86ef4cdfbb965a362c77527a532af2bb7e7eb2b39b477e4a93a2d2f22e19f377-30354101851793.jpg" />
 
 앱스플라이어는 앱 ID 당 데이터를 어트리뷰션합니다. 동일한 Facebok 앱 ID를 [안드로이드와 iOS 앱 모두에](https://developers.facebook.com/docs/app-ads/app-setup/) 사용할 수 있습니다. iOS 14 이상의 경우 Meta Ads는 계정을 앱 당 9개로 제한합니다.
 
@@ -106,7 +106,7 @@ Meta Ads를 앱스플라이어와 연동하려면 먼저 <Anchor target="_blank"
    **참고:** 파트너와 작업하는 동안에는 토글이 켜져 있어야 합니다(<Anchor target="_blank" href="/marketers/ko/docs/partner-activation-deactivation">활성화됨</Anchor>).
 5. **일반 설정**에서:
 
-   [![](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)](https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png)
+   <Image align="center" alt="" src="https://files.readme.io/f03cc930c7242970294546ffbddb9c648d6eaeecc23b93aa1fadc945a6d777f8-30354101883281.png" />
 
    * [Facebook 앱 ID](#create-and-retreive-facebook-app-id) 필드에 [Facebook 앱 ID](#create-and-retreive-facebook-app-id)를 붙여넣으세요.
    * Meta Ads의 설치 리퍼러 [디크립션(decryption) 키](/docs/meta-ads-integration-setup#google-play-리퍼러-api-또는-meta-설치-리퍼러에서-불러오는-암호화된-데이터)를 붙여넣습니다.
@@ -119,7 +119,7 @@ Meta Ads를 앱스플라이어와 연동하려면 먼저 <Anchor target="_blank"
 
 <Accordion title="[선택사항] 권장 설정 구성 방법:">
 
-[![](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)](https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png)
+<Image align="center" alt="" src="https://files.readme.io/82b59d3460ea0487de932b7e49be7de10a8f4eaca151afaca281724f85d0c325-30354145601681.png" />
 
 * Meta Ads의 클릭-쓰루 룩백 윈도우와 일치시키려면 7일로 설정하세요.  
   ([기본값이 다른 몇 가지 특수한 사례](https://www.facebook.com/business/help/395050428485124?id=428636648170202)가 있음)
@@ -243,7 +243,7 @@ Google Play 리퍼러 API 또는 Meta 설치 리퍼러에서 얻은 데이터는
 
 <Accordion title="비용, 클릭 수, 노출 수">
 
-[![meta_cost_tab.png](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)](https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png)
+<Image align="center" alt="meta_cost_tab.png" src="https://files.readme.io/5c840dbce9c019a8655e8b7b54b8d8e29f3128a8e7115065d0f4083b703b80c0-30354101895185.png" />
 
 이 연동을 통해 캠페인, 애드 세트, 광고, 지역/국가에 대한 비용, 클릭 및 노출 수에 대한 집약형 데이터를 제공합니다. 지원되는 디멘션, 메트릭 및 기능에 대한 자세한 내용은 <Anchor target="_blank" href="/marketers/ko/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">애드 네트워크 비용 연동 표</Anchor>를 참조하세요.
 
@@ -283,7 +283,7 @@ Google Play 리퍼러 API 또는 Meta 설치 리퍼러에서 얻은 데이터는
 
 <Accordion title="인앱 이벤트 매핑">
 
-[![meta_iae_postbacks.png](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)](https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png)
+<Image align="center" alt="meta_iae_postbacks.png" src="https://files.readme.io/8f2fd671a067684738964d245a9e80873bbb28f33a55c61ee0cb00a32ac9815e-30354145614865.png" />
 
 **인앱 이벤트를 매핑하려면:**
 
@@ -328,13 +328,13 @@ Google Play 리퍼러 API 또는 Meta 설치 리퍼러에서 얻은 데이터는
 3. **리인게이지먼트 클릭-쓰루 룩백 윈도우**를 설정합니다.  
    리인게이지먼트 룩백 윈도우는 광고 클릭 후 앱이 실행되어 리인게이지먼트로 기록되는 기간입니다.   
    룩백 윈도우 단위(시간 혹은 날일)를 선택하고 슬라이더를 원하는 값으로 설정합니다.  
-   [![](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)](https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png)
+   <Image align="center" alt="" src="https://files.readme.io/86e0bb7d4dfa8e55720ed67d1ff8ea34f0e71df9df12382996bb7ea8817da4ba-30354101904785.png" />
 4. **리인게이지먼트 뷰-쓰루 어트리뷰션**을 활성화합니다.
 5. **리인게이지먼트 뷰-쓰루 룩백 윈도우** 슬라이더를 원하는 값(최대 24시간)으로 설정합니다. 해당 윈도우는 광고 노출 시점부터 시작되며, 이 기간 내에 앱을 실행해야 노출이 리인게이지먼트로 기록됩니다.
 6. **리인게이지먼트 윈도우**를 설정합니다.  
    해당 윈도우는 사용자의 인앱 이벤트가 리타겟팅 미디어 소스를 주요 출처로 하여 어트리뷰션되는 기간을 뜻합니다.  
    값을 일 단위(1&#126;90일), 시간 단위(최대 23시간) 또는 평생으로 설정할 수 있습니다. 기본 설정은 30일입니다.  
-   [![](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)](https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png)
+   <Image align="center" alt="" src="https://files.readme.io/6f589562cd6248697ffa8d5ebb4a72e2fdad118df6abf517e43b4fa23c3332ec-30354101914385.png" />
 
 <Anchor target="_blank" href="/marketers/ko/docs/retargeting-attribution-guide">앱스플라이어 리타겟팅 어트리뷰션</Anchor>에 대해 더 알아보세요.
 
@@ -392,7 +392,7 @@ CCPA 개인 정보 보호 규정으로 인해 미국 캘리포니아에 거주�
 
 <Accordion title="광고 수익 기록">
 
-[![](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)](https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png)
+<Image align="center" alt="" src="https://files.readme.io/5c27f2adf0e4515a7ad0efac4776eb296874273e2af71e14c9be8bd65a983757-30354101917201.png" />
 
 앱에서 광고 수익화를 위해 Meta Audience Network Ad Revenue(Meta 잠재고객 네트워크 광고 수익)를 사용하고 있다면, 앱스플라이어의 Meta 광고 수익을 기록할 수 있습니다. 이에 따라 인앱 구매 수익 데이터 유무와 관계없이 **사용자 수익의 종합적인 현황을** 파악할 수 있습니다.
 
@@ -466,7 +466,7 @@ Facebook 앱 ID가 앱스플라이어에서 잘못 구성되었습니다.
 
 어트리뷰션이 동작하기 위해서는 앱이 Meta Ads에서 **개발 중(In development)** 이 아닌 **라이브(Live)** 로 정의되어 있어야 합니다.
 
-[![](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)](https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png)
+<Image align="center" alt="" src="https://files.readme.io/b982355eb0d3d858988866673d3f9ee4f081c43042221d11ebfb93afe05c36a4-30354101922577.png" />
 
 </Accordion>
 
@@ -494,11 +494,11 @@ Meta 앱 설치 캠페인을 설정할 때는 드롭다운 목록에서 앱을 �
 
 올바른 설정 - 어트리뷰션 성공
 
-[![](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)](https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png)
+<Image align="center" alt="" src="https://files.readme.io/5cb735144128035d752281f7d94e2015478c62049a2e96fc5a42400513f7fad3-30354101926033.png" />
 
 잘못된 설정 - 어트리뷰션 실패
 
-[![](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)](https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png)
+<Image align="center" alt="" src="https://files.readme.io/77d508b62d5445cac071262cb35e4a89a6dfa5be439325254c0b8f6c5f51606c-30354145644561.png" />
 
 </Accordion>
 

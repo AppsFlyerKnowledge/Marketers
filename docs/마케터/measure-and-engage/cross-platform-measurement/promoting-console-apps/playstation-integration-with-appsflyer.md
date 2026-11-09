@@ -42,7 +42,7 @@ The PlayStation API integration supports:
 
 The following is an example flow that highlights the most important steps in a user journey from ad engagement to attribution. It includes the AppsFlyer-recommended cross-platform landing page. **Note**: While we recommend using the cross-platform landing page, you can also use direct attribution links.
 
-<Image alt="Diagram of the attribution flow from a marketing touchpoint through a cross-platform landing page to installing a PlayStation app" src="https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg" width="3938px" />
+<Image align="center" alt="Diagram of the attribution flow from a marketing touchpoint through a cross-platform landing page to installing a PlayStation app" src="https://files.readme.io/33c9138ef2064832a0bd5d08d52c84bea3e70efb674af362a8ef0d3e5d505db1-small-16332549715217.jpg" width="3938px" />
 
 1. <span id="marketing-touchpoint"></span>Marketing touchpoints: Customers interact with your brand through online or offline channels. These can include email and newsletters, social media, mobile web, and more.
 2. Game landing page: A game landing page directs customers to your download app page. This step is important for collecting UTM (Urchin Tracking Module) and other URL parameters to attribute customers from the click/install to the original media sources or to your owned media sources.  

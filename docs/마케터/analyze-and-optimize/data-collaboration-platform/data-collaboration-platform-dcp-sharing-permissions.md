@@ -30,7 +30,7 @@ This article describes the permissions available when sharing data in a Data Col
 
 The data permissions you select define how your collaborator can use your associated data and apply to all sources you associate with the collaboration. Permissions can also be modified individually per source.
 
-<Image alt="Data permissions Dec 2025.png" src="https://files.readme.io/1e33caebbe4a8ff14fe84be6ba7f50b82a5fe7c268ba186db0250c7084718d54-42009477892241.png" width="704px" />
+<Image align="center" alt="Data permissions Dec 2025.png" src="https://files.readme.io/1e33caebbe4a8ff14fe84be6ba7f50b82a5fe7c268ba186db0250c7084718d54-42009477892241.png" width="704px" />
 
 ### Data permissions include:
 

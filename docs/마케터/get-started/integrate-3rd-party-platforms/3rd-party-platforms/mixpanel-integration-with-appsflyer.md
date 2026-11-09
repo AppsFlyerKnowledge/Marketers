@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어에서 제품 애널리틱스 플랫폼인 믹스패널로 데이터를 자동으로 공유하는 방법을 알아보세요.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mixpanel.png" />
 
 앱스플라이어와 믹스패널의 연동을 통해 앱스플라이어에서 믹스패널로 유입 캠페인 정보를 가져올 수 있습니다.
 
@@ -67,7 +67,7 @@ x-zendesk:
 
 ### 일반 설정
 
-<Image alt="mixpanel-general-settings.png" src="https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png" width="542px" />
+<Image align="center" alt="mixpanel-general-settings.png" src="https://files.readme.io/df1b95eb3926aa7e10db338f156a87b88aabda6b97a4d28db2953e9e48a114e6-360017400598.png" width="542px" />
 
 * * * **EU 데이터 레지던시**: 앱스플라이어는 기본적으로 데이터를 믹스패널의 미국 서버로 전송합니다. 대신 믹스패널의 EU 서버로 데이터를 보내려면 이 토글을 켜세요.  
       **\*토큰**: 믹스패널은 고유 토큰을 통해 앱스플라이어와 연결합니다. 아직 확인하지 않은 경우, 믹스패널에서 가져와서 연동을 계속해야 합니다.
@@ -77,10 +77,10 @@ x-zendesk:
       1. [https://mixpanel.com/login/](https://mixpanel.com/login/)에서 믹스패널 계정에 로그인합니다.
       2. **믹스패널**에서 **분석** 대시보드로 이동하여 톱니바퀴 아이콘을 클릭합니다.
 
-         ![mixpanel-token-1.png](https://files.readme.io/f1fbc76fff621e12a7d91fed5ba49eb20f2b049de65c70b0ab32cadd997287d2-small-360014578477.png)
+         <Image align="center" alt="mixpanel-token-1.png" src="https://files.readme.io/f1fbc76fff621e12a7d91fed5ba49eb20f2b049de65c70b0ab32cadd997287d2-small-360014578477.png" />
       3. 프로젝트의 액세스 키 섹션에서 토큰을 복사하여 앱스플라이어 믹스패널 연동 탭의 **토큰** 필드에 붙여넣습니다.
 
-         ![mixpanel-token-2.png](https://files.readme.io/e8e633ec87d963244652a53b9b21c495b0a850e234621a44d93b3034c640bff7-360014578757.png)
+         <Image align="center" alt="mixpanel-token-2.png" src="https://files.readme.io/e8e633ec87d963244652a53b9b21c495b0a850e234621a44d93b3034c640bff7-360014578757.png" />
     * **광고주 ID 보내기**:
       * 앱스플라이어 customer\_user\_id 파라미터를 사용하는 경우, 인스톨 시마다 이 파라미터가 믹스패널로 전송됩니다(**광고주 ID 보내기**는 비활성화 상태로 둠).
       * 앱스플라이어 customer\_user\_id를 사용하지 않는 경우 **광고주 ID 보내기**를 활성화합니다. 디바이스 ID는 믹스패널에 customer\_user\_id(믹스패널의 unique\_id)로 전송됩니다.  
@@ -102,13 +102,13 @@ x-zendesk:
 
 앱스플라이어는 사용자 설치 및 리인게이지먼트 후 믹스패널에 자동 포스트백을 보낼 수 있습니다. 리인게이지먼트는 이미 앱을 설치한 사용자가 캠페인을 통해 클릭한 후 앱을 열었을 때 발생합니다. <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#default-postbacks">기본 포스트백</Anchor>에 대해 자세히 알아보세요.
 
-[![](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)](https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png)
+<Image align="center" alt="" src="https://files.readme.io/6cf4f0e1b73c634c5fbe8f79e654ff3a3cd318bdca51d5e6b17933c307eb769d-36693858465809.png" />
 
 <div id="in-app-events-settings" />
 
 ### 인앱 이벤트 설정
 
-![mixpanel-in-app-events-settings.png](https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png)
+<Image align="center" alt="mixpanel-in-app-events-settings.png" src="https://files.readme.io/db5e4e6d5bbe084a94b90425d49345511c214ddc39380a2b8419659ad752cdb2-360014576637.png" />
 
 이 섹션에서는 포스트백을 통해 앱스플라이어 이벤트를 믹스패널과 매핑합니다.
 
@@ -252,8 +252,8 @@ x-zendesk:
 
 아래 스크린샷은 인스톨부터 가치 이벤트까지의 전환을 미디어소스별로 세분화한 퍼널 리포트입니다. 또한 각 미디어소스에 대해 전환에 걸리는 시간도 확인할 수 있습니다.
 
-[![](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)](https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png)
+<Image align="center" alt="" src="https://files.readme.io/fdffbe0a2f29c8a8b02b600966583cdeb4917bb48f0502e9b00ef39daa2fa835-9646475113361.png" />
 
-[![](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)](https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png)
+<Image align="center" alt="" src="https://files.readme.io/043a96a00e46a3daaef2b9fa4d58d252391ca2bb14307437f28c447d96ae97d6-9646475229841.png" />
 
 <div data-zendesk-anchors="h_01H9FKEWTEN4F8FM5C9A9ES6HN=%EC%A4%91%EC%9A%94 setting-up-mixpanel=%EB%AF%B9%EC%8A%A4%ED%8C%A8%EB%84%90-%EC%84%A4%EC%A0%95 h_01H9FKEWTEGMEVH3SK739DD719=%EB%AF%B9%EC%8A%A4%ED%8C%A8%EB%84%90-%EC%84%A4%EC%A0%95 h_01H9FKEWTE90WR75PMNN93JAXE=integration-tab general-settings=%EC%9D%BC%EB%B0%98-%EC%84%A4%EC%A0%95 h_01H9FKEWTEMT7VGTTFWFMJHYA8=%EC%9D%BC%EB%B0%98-%EC%84%A4%EC%A0%95 h_01H9FKEWTEV3RWKMWZN0EXFFNP=%EC%B0%B8%EA%B3%A0 default-postbacks=%EA%B8%B0%EB%B3%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B0%B1 h_01H9FKEWTER31RXAH216TRXQPM=%EA%B8%B0%EB%B3%B8-%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%B0%B1 inapp-events-settings=%EC%9D%B8%EC%95%B1-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%84%A4%EC%A0%95 h_01H9FKEWTERRVKPQFF1B8QQERE=%EC%9D%B8%EC%95%B1-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%84%A4%EC%A0%95 h_01H9FKEWTEEMMQ0KKRZXRJRE25=%EC%B0%B8%EA%B3%A0-1 h_01H9FKEWTEEQ0GHF87V20TX9W0=attribution-link-tab h_01H9FKEWTEJ61197SN3R6JXYCP=cost-tab h_01H9FKEWTEA7GN2HHK3QD62A3A=ad-revenue-tab h_01H9FKEWTET4QD1RE0HJZM64D4=permissions-tab integrating-with-mixpanel-when-using-a-login-mechanism=%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EB%A9%94%EC%BB%A4%EB%8B%88%EC%A6%98%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C-%EB%AF%B9%EC%8A%A4%ED%8C%A8%EB%84%90%EA%B3%BC-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0 h_01H9FKEWTE9DEANTXKPD286GD2=%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EB%A9%94%EC%BB%A4%EB%8B%88%EC%A6%98%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%A0-%EB%95%8C-%EB%AF%B9%EC%8A%A4%ED%8C%A8%EB%84%90%EA%B3%BC-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0 h_01H9FKEWTFZ107Y999WEMB3409=%EC%B0%B8%EA%B3%A0-2 viewing-appsflyer-data-in-mixpanel=%EB%AF%B9%EC%8A%A4%ED%8C%A8%EB%84%90%EC%97%90%EC%84%9C-%EC%95%B1%EC%8A%A4%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%96%B4-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EA%B8%B0 h_01H9FKEWTF9PFNVHTZGDKBX75Y=%EB%AF%B9%EC%8A%A4%ED%8C%A8%EB%84%90%EC%97%90%EC%84%9C-%EC%95%B1%EC%8A%A4%ED%94%8C%EB%9D%BC%EC%9D%B4%EC%96%B4-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EA%B8%B0" />

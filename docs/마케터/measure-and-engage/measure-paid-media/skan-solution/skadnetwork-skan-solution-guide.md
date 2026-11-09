@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **요약**: SKAN을 사용하여 앱 인스톨을 어트리뷰션합니다.
 
-![5754](https://files.readme.io/a970d7b0e8da300ded2138f941bf2e891f32d396c8500292534992a4b4449d71-30757780264337.png)
+<Image align="center" alt="5754" src="https://files.readme.io/a970d7b0e8da300ded2138f941bf2e891f32d396c8500292534992a4b4449d71-30757780264337.png" />
 
 ## SKAN
 
@@ -87,7 +87,7 @@ Apple iOS의 일부인 SKAdNetwork(SKAN)는 사용자의 개인 정보를 보호
 
 #### **SKAN 어트리뷰션 흐름**
 
-![SKAN_흐름_-_친화도_도표_2.png](https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png)
+<Image align="center" alt="SKAN_흐름_-_친화도_도표_2.png" src="https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png" />
 
 1. 광고주는 앱스플라이어 컨버전 스튜디오에서 SKAN 측정 설정을 지정합니다.
 2. 유저가 처음으로 앱을 엽니다.

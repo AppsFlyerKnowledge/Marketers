@@ -78,7 +78,7 @@ api\_token
 
 앱스플라이어는 Braze 사용자 인스톨에 자동 포스트백을 발송할 수 있습니다. 이 섹션을 사용하여 이러한 포스트백 전송을 정의합니다.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 **저장**을 클릭하세요.
 

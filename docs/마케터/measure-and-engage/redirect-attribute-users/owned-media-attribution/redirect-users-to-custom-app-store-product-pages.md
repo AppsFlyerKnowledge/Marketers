@@ -85,7 +85,7 @@ Prerequisites:
 
 1. In your OneLink custom link, go to the **Deep linking & redirections** section.
 2. Scroll down to the **When app isn’t installed** settings.  
-   ![android_cpp.png](https://files.readme.io/d354feb4d47171b14f0612011b7a52b579bd9062a87544095df226ba58c57ec6-11591784334865.png)
+   <Image align="center" alt="android_cpp.png" src="https://files.readme.io/d354feb4d47171b14f0612011b7a52b579bd9062a87544095df226ba58c57ec6-11591784334865.png" />
 3. For Android, make sure **Redirect to** is set to Google Play.
 4. In the **Custom store listing** textbox, enter the value you defined for the listing's unique URL parameter in Google Console. For example: abc123
 5. Click **Update link**.
@@ -115,7 +115,7 @@ Prerequisites:
 
 1. In your OneLink custom link, go to the **Deep linking & redirections** section.
 2. Scroll down to the **When app isn’t installed** settings.  
-   ![ios_cpp.png](https://files.readme.io/76f6b46644efc478dc27cb373b3de4a4a80600936db5d7e6725fdb4b9182f6bb-11591824202641.png)
+   <Image align="center" alt="ios_cpp.png" src="https://files.readme.io/76f6b46644efc478dc27cb373b3de4a4a80600936db5d7e6725fdb4b9182f6bb-11591824202641.png" />
 3. For iOS, make sure **Redirect to** is set to App Store.
 4. In the **Custom product page** textbox, enter the ID of your custom product page (ppid), as defined in App Store Connect. For example: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 5. Click **Update link**.

@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **간단히 보기**: 요약: iOS 14.5부터 Apple은 <Anchor target="_blank" href="https://developer.apple.com/documentation/apptrackingtransparency">AppTrackingTransparency</Anchor> (ATT) 약관을 구현하고 준수할 것을 요구합니다. ATT는 귀하의 앱이 최종 사용자에 대한 데이터를 수집하고 앱과 웹사이트 전반에서 추적할 목적으로 이를 다른 회사와 공유하는 경우 ATT 동의 프롬프트를 사용하고 게시자와 광고주 앱 모두에서 사용자 동의를 받아야 함을 의미합니다. 추적하지 않으면 프롬프트를 표시할 필요가 없습니다.
 
-![iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg](https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg)
+<Image align="center" alt="iOS14-consent-pre-ATT-enforcement-6522_Cover-image_917x480.jpg" src="https://files.readme.io/622b57cf6b6b7ad9472b3d072f44d9b451e82fec6b0c918427e39e9e6700602e-360019478118.jpg" />
 
 <div id="attribution-measurement-in-an-att-environment" />
 
@@ -55,7 +55,7 @@ x-zendesk:
 
 **SKAN 플로우**
 
-![SKAN_흐름_-_친화도_도표_2.png](https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png)
+<Image align="center" alt="SKAN_흐름_-_친화도_도표_2.png" src="https://files.readme.io/2e29f01cf9cf3689777bbd42044e42c0b9f1d4fb719ed75413d29dd84489686d-13112278947601.png" />
 
 1. 광고주는 앱스플라이어 컨버전 스튜디오에서 SKAN 측정 설정을 지정합니다.
 2. 사용자가 처음으로 앱을 실행합니다.
@@ -197,7 +197,7 @@ V6.0 이전 SDK 버전을 사용하는 앱의 경우:
 
 다음 순서도에서 이에 대해 자세히 설명합니다.
 
-![SKAN_4_matrix_-_Page_8__1_.png](https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png)
+<Image align="center" alt="SKAN_4_matrix_-_Page_8__1_.png" src="https://files.readme.io/0dbd4cae34d9f9fed80dbe835485789dab75d46dbb38de055f454d01efb97350-13756140934545.png" />
 
 </Accordion>
 

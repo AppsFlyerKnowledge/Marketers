@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 아이언소스는 클릭 기반 모바일 어트리뷰션 외에도 비용, 광고 수익, 리타게팅 및 뷰-쓰루 어트리뷰션을 제공하며, 앱스플라이어로 기록할 수 있습니다.
 
-![](https://cdn.appsflyer.com/marketplace/static/logo/mobio.png?v=1)
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/mobio.png?v=1" />
 
 
 **<span id="setting-up-mobio"></span>전제 조건:** **연동 설정 전에 반드시  <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락하여</Anchor> 계정을 개설하세요.**

@@ -75,11 +75,11 @@ Slack으로 결과물을 전송하는 에이전트의 경우, 에이전트 설�
 1. 알림을 수신하려는 Slack 채널로 이동하여 다음과 같이 입력하세요: **/invite**
 2. **이 채널에 앱 추가** 선택.
 
-<Image alt="Slack 채널 세부 정보 메뉴의 ‘이 채널에 앱 추가’ 옵션" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
+<Image align="center" alt="Slack 채널 세부 정보 메뉴의 ‘이 채널에 앱 추가’ 옵션" src="https://files.readme.io/6f4f06ff2a6871c38ab74347b05356b5482a859b3f40b02f01273abd3a10ee84-40967906089745.png" width="624px" />
 
 **앱스플라이어 에이전트 허브** > **추가** 선택.
 
-<Image alt="추가 버튼이 있는 Slack 앱 디렉터리에서 앱스플라이어 에이전트 허브 앱 선택됨" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
+<Image align="center" alt="추가 버튼이 있는 Slack 앱 디렉터리에서 앱스플라이어 에이전트 허브 앱 선택됨" src="https://files.readme.io/6290174c2950340f7766abb94f0080dbbcbd954cc44896a0f0ec1155fdd00524-40967906092049.png" width="624px" />
 
 * 다음 역할에는 자동 전체 액세스 권한이 부여됩니다.
   * 관리자

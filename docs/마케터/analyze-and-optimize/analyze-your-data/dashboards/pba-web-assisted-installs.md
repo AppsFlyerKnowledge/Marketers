@@ -24,7 +24,7 @@ x-zendesk:
 
 **웹 지원 설치 사용 사례**
 
-![web_to_app_image.png](https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png)
+<Image align="center" alt="web_to_app_image.png" src="https://files.readme.io/9977aee19e1284e156252cf622fc3770bc730b91e5788c86f4c2977cb101ae36-360009607477.png" />
 
 <div id="web-assisted-installs-analysis" />
 
@@ -36,7 +36,7 @@ x-zendesk:
 
 헤드라인 지표는 웹사이트 지원 설치 수를 기준으로 총 앱 설치 수를 오가닉 앱 설치와 논오가닉 앱 설치로 나눈 값을 표시합니다.
 
-[![WAIHeadline_en-us.png](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)](https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png)
+<Image align="center" alt="WAIHeadline_en-us.png" src="https://files.readme.io/65310759fd91879aee94495a6ee4736e0e50afa81cfb1935d0f8c2eea6a1d79b-4408021659665.png" />
 
 다음 표에서 웹 기여 인스톨 분석에 대한 사용 사례 시나리오를 고려하십시오.
 
@@ -60,7 +60,7 @@ x-zendesk:
 
 <Accordion title="웹사이트 지원 설치 및 재설치">
 
-![30day_us-en.png](https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png)
+<Image align="center" alt="30day_us-en.png" src="https://files.readme.io/8ed154e962fb82a6381de81b19e7e4da1b258962427ec48a9e2b86ee576958eb-360009706598.png" />
 
 인스톨은 웹사이트 방문 후 30일 이내에 발생하는 경우 웹사이트의 영향을 받은 것으로 간주됩니다.  리타게팅 설치(리어트리뷰션)를 포함한 설치 및 재설치는 오가닉 또는 논오가닉일 수 있습니다.
 

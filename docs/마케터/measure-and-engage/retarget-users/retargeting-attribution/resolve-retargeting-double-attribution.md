@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 한눈에 보기: 리타게팅 캠페인의 리인게이지먼트 기간 동안의 성과를 평가하기 위해 인앱이벤트와 세션은 사용자 확보(UA) 및 리타게팅 미디어소스에 이중으로 어트리뷰트됩니다.
 
-![](https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png)
+<Image align="center" alt="" src="https://files.readme.io/fce514999471aa7bfced06fa0e1c7d6fa7363a8d30119bd20d0b5d7e56eb1f7d-9479192551825.png" />
 
 <div id="overview" />
 
@@ -60,7 +60,7 @@ x-zendesk:
 
 일부 대시보드 및 동질 집단 보고서에는 통합되는 여러 보기 옵션, 사용자 확보 및 리타게팅이 포함되어 있습니다. 이러한 뷰 유형은 원시 데이터에 사용되는 것과 유사한 논리를 사용합니다.
 
-![](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 
 <table><thead><tr><th><span id="data-filtering-by-view-type-using-the-conversion_type-field"></span>보기 유형</th><th>conversion_type</th><th>1차 어트리뷰션</th><th>어트리뷰션</th></tr></thead><tbody><tr><td rowspan="2">유저 유입</td><td>인스톨</td><td>True 또는 False</td><td>UA 미디어소스에 어트리뷰트되는 UA 이벤트</td></tr><tr><td>리인게이지먼트</td><td>거짓됨</td><td>UA 미디어소스에 어트리뷰션된 리타게팅 이벤트입니다.</td></tr><tr><td>리타겟팅</td><td>리인게이지먼트 또는 리어트리뷰션</td><td>True</td><td>리타게팅 미디어소스에 어트리뷰트된 리타게팅 이벤트</td></tr><tr><td>통합</td><td>인스톨 또는 리인게이지먼트</td><td>True</td><td>마지막 터치 미디어소스에 어트리뷰트되는 모든 이벤트</td></tr></tbody></table>

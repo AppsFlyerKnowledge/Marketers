@@ -109,7 +109,7 @@ Marketplace 탭에는 선택한 앱과 통합할 수 있는 파트너와 통합 
 * **About** (파트너 페이지 열기)
 * **통합/관리** (설정 시작 또는 통합 구성 열기)
 
-<Image alt="partner card.png" src="https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png" width="1598px" />
+<Image align="center" alt="partner card.png" src="https://files.readme.io/5e26c6bb7ac760b1c8996d43d2451ae61324c71da5d7522372e1255ee7e55ad6-45767176962577.png" width="1598px" />
 
 <div id="filter-the-list-of-partners" />
 
@@ -131,7 +131,7 @@ Marketplace 탭에는 선택한 앱과 통합할 수 있는 파트너와 통합 
 
 검색 창을 사용하여 특정 파트너를 찾습니다.
 
-<Image alt="serach for partners.png" src="https://files.readme.io/6590e14e35e75bef7450489ec5ff06d1cabc0671a82043e4fb5fb467c67d2b8a-45767176965393.png" width="876px" />
+<Image align="center" alt="serach for partners.png" src="https://files.readme.io/6590e14e35e75bef7450489ec5ff06d1cabc0671a82043e4fb5fb467c67d2b8a-45767176965393.png" width="876px" />
 
 마켓플레이스 탭에서 검색 창을 사용할 때:
 
@@ -146,7 +146,7 @@ Marketplace 탭에는 선택한 앱과 통합할 수 있는 파트너와 통합 
 
 각 파트너에 대해 자세히 알아보고 파트너 페이지에서 그들과 연결할 수 있습니다. 클릭하십시오. **About** 버튼을 클릭하십시오. [파트너 카드](#파트너-카드) 파트너 페이지를 열려면.
 
-<Image alt="새로운 잘린 파트너 이미지.png" src="https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png" width="3270px" />
+<Image align="center" alt="새로운 잘린 파트너 이미지.png" src="https://files.readme.io/1a648003c740f1783e53b6b91e5f78501af0a5e05c17f6963a161bd31d0b2c3d-small-45767176966033.png" width="3270px" />
 
 <div id="what-you-can-do-from-the-partner-page" />
 

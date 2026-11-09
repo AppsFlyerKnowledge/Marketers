@@ -78,16 +78,16 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
 1. 앱스플라이어의 사이드 메뉴에서 **설정** > **SDK 연동 테스트**를 선택합니다.
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. **라이브 이벤트** 클릭
 
-   [![](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)](https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png)
+   <Image align="center" alt="" src="https://files.readme.io/6ec1edba14e51bb27babf80d2d6f4873dbaa5113752217b4fb13399f7a1c61f1-31828925849489.png" />
 3. **앱** 목록에서 테스트할 앱을 선택합니다.
 4. **테스트 기기** 목록에서, 앱 테스트에 사용할 디바이스를 선택합니다. 테스트 장치가 없는 경우, **테스트 장치 추가** 링크를 클릭하여 등록할 수 있습니다.
 5. **계속하기**를 클릭하여 앱 이벤트 기록을 시작합니다.
 6. 앱을 실행하고 상호 작용하여 세션 및 인앱 이벤트를 생성합니다.
 
-   [![](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)](https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png)
+   <Image align="center" alt="" src="https://files.readme.io/72b8822197dc626c1b28a9f8d43bb3c1a91f99e600ae0d8d1f74829bc62dcce6-31828933607313.png" />
 7. 이벤트 항목을 클릭하면 오른쪽 패널에서 이벤트 세부 정보를 볼 수 있습니다.
 8. 이벤트 기록을 중지하려면 **중지**를 클릭하세요. 다시 계속하려면 **시작**을 클릭하세요.
 
@@ -101,10 +101,10 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
 1. 앱스플라이어의 사이드 메뉴에서 **설정** > **SDK 연동 테스트**를 선택합니다.
 
-   [![](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)](https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png)
+   <Image align="center" alt="" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" />
 2. **논오가닉 인스톨** 테스트를 클릭합니다.
 
-   [![](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)](https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png)
+   <Image align="center" alt="" src="https://files.readme.io/34440ab6d328e2d519f759f3c2a1b17dbcbee55af32b47bdbd52bb9f537c6735-31828933612177.png" />
 3. **앱** 목록에서 테스트할 앱을 선택합니다.
 4. **테스트 기기** 목록에서, 앱 테스트에 사용할 디바이스를 선택합니다. 테스트 장치가 없는 경우, **테스트 장치 추가** 링크를 클릭하여 등록할 수 있습니다.
 5. 테스트된 앱이 테스트 장치에 설치되어 있으면 제거합니다.
@@ -136,10 +136,10 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
 1. 앱스플라이어의 사이드 메뉴에서 **설정** > **SDK 연동 테스트**를 선택합니다.
 
-   [<Image alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/29754088076433)
+   [<Image align="center" alt="Keyboard Maestro Engine 2024-10-06 10.00.47.png" src="https://files.readme.io/c4f39fb2ddf1de510d9a03e292b05fab444600a8584c0a23e7b3e613c7077799-31828925846033.png" width="2895px" />](https://support.appsflyer.com/hc/article_attachments/29754088076433)
 2. **리타겟팅**을 클릭합니다.
 
-   [![](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)](https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png)
+   <Image align="center" alt="" src="https://files.readme.io/7c5eb6870e8d4c25a817f6c2895163b699e0a4972a6cc675b94396c386288d72-31828925858961.png" />
 3. **앱** 목록에서 테스트할 앱을 선택합니다.
 4. **테스트 기기** 목록에서, 앱 테스트에 사용할 디바이스를 선택합니다. 테스트 장치가 없는 경우, **테스트 장치 추가** 링크를 클릭하여 등록할 수 있습니다.
 5. **계속**을 클릭하고 각 마법사 단계를 따릅니다.
@@ -247,7 +247,7 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
    **테스트**라고 불리는 미디어 소스 아래에 테스트 캠페인에 어트리뷰트된 인스톨이 표시됩니다. 해당 인스톨이 앱의 대시보드에 표시될 때까지 30여 분 정도 시간이 소요됩니다.
 
-   [![Test_Install_Attribution_Link](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)](https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png)
+   <Image align="center" alt="Test_Install_Attribution_Link" src="https://files.readme.io/1771da27f7b8c5334d68c3d7c8361e91e0e35a3a08abf60e3d711f83de9ad22d-31828925861265.png" />
 
 <div id="tip" />
 
@@ -331,7 +331,7 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
    앱 대시보드에서 **앱 설정**을 클릭하고 **리타겟팅 어트리뷰션 활성화**를 켭니다.
 
-   ![Set_Reattribution_window](https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png)
+   <Image align="center" alt="Set_Reattribution_window" src="https://files.readme.io/1fe0c8c4add90c75237b0c5c97b6ff26d8f08ff95bd952912ef746fdec2e9f3d-31828933628561.png" />
 2. 다음 중 하나를 수행합니다.
    * 앱 전용 어트리뷰션 링크를 생성합니다. 해당 링크에는 리타겟팅 파라미터와 `is_retargeting=true`, 광고 ID가 반드시 포함되어야 합니다. GAID, IDFA 또는 IDFV를 보려면, <Anchor target="_blank" href="/marketers/ko/docs/registering-test-devices">테스트 장치 등록하기</Anchor> 지침을 따르세요.    
      다음은 어트리뷰션 분석 링크에 안드로이드 전용 파라미터가 디바이스 식별자(GAID)로 포함되어 있는 예입니다. IDFA 또는 IDFV와 같은 다른 디바이스 식별자 파라미터를 추가하는 방법에 대해서는 <Anchor target="_blank" href="/marketers/ko/docs/about-link-structure-and-parameters#ios-전용-파라미터">어트리뷰션 링크 구조 및 파라미터</Anchor>를 참조하십시오.
@@ -377,7 +377,7 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
    미디어소스 및 캠페인에 기여된 인스톨을 확인할 수 있습니다. 리타겟팅된 인스톨이 대시보드에 표시될 때까지 30여 분 정도 시간이 소요될 수 있습니다.
 
-   [![Testing_SDK_Reattribution](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)](https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png)
+   <Image align="center" alt="Testing_SDK_Reattribution" src="https://files.readme.io/c5c59709b199262cbefd5cd70ee9fe0db2c788612a8ae6b598c7b2188b696345-small-31828925870609.png" />
 
 <div id="tip-1" />
 
@@ -417,7 +417,7 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
    대시보드에서 미디어소스 및 캠페인에 어트리뷰트된 리인게이지먼트가 표시됩니다. 리인게이지먼트가 나타날 때까지 최대 30분 정도 기다리십시오.
 
-   [![Testing_SDK_Re-engagement](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)](https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png)
+   <Image align="center" alt="Testing_SDK_Re-engagement" src="https://files.readme.io/5b64b671c8071f871d9835e8df4d89c18d06c85fe996f7227b6ddf429552fccd-small-31828933643153.png" />
 
 **팁!** 리인게이지먼트가 올바른 미디어 소스에 어트리뷰트되는지 확인하려면 전환 로데이터 리포트를 다운로드하는 방법도 있습니다. 리포트를 다운로드하는 데 몇 분 소요될 수 있습니다.
 
@@ -441,7 +441,7 @@ CTV 앱도 테스트 가능합니다. 자세한 내용은 [CTV 테스트](#ctv-�
 
 앱의 대시보드에 신규 오가닉 인스톨이 표시됩니다. 인스톨이 표시될 때까지 최대 30분 정도 기다리십시오.
 
-[![](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)](https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png)
+<Image align="center" alt="" src="https://files.readme.io/49c242957324516ba93d6c5ebfa338ec19b05820bcf619d8c39d6f7e4ada9bae-31828925882001.png" />
 
 <div id="traits-and-limitations" />
 

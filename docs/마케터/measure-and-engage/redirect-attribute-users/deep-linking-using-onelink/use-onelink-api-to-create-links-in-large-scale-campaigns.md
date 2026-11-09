@@ -72,7 +72,7 @@ OneLink API는 프리미엄 기능으로 다음이 가능합니다:
 
 1. <Anchor target="_blank" href="/marketers/ko/docs/create-a-onelink-template#원링크-템플릿-만들기">원링크 템플릿을 생성하세요</Anchor>.
 2. 원링크 템플릿 ID(Template ID)를 복사합니다.  
-   [![](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)](https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/b25f9c4dfe6f4a5a39e9b0a4d1b82d68330f8c0853248284564ac46c72d4d423-360019487418.jpg" />
 3. <Anchor target="_blank" href="/marketers/ko/docs/managing-appsflyer-tokens#토큰-유형">원링크 API 토큰</Anchor>을 복사합니다. 보안을 위해 “관리자” 사용자가 토큰을 가져와야 하며 계정 사용자는 접근 권한이 없습니다.
 4. 개발자에게 원링크 ID와 원링크 API 토큰을 제공합니다.
 5. 개발자에게 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/reference/onelink_rest_api">개발 허브 지침을 따르도록 안내</Anchor>하세요.

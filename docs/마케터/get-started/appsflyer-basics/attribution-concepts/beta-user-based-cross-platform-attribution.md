@@ -45,7 +45,7 @@ CUID가 플랫폼 전반에 걸쳐 사용자를 일관되게 식별하며, 해�
 
 다음은 기기 중심 어트리뷰션과 유저 중심 어트리뷰션의 차이점을 보여주는 사용자 여정 예시입니다.
 
-[<Image alt="user-journey.png" src="https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png" width="2048px" />](https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png)
+<Image align="center" alt="user-journey.png" src="https://files.readme.io/892efd3cdcaa15848baefdd50e65dcdc9448d423e4b6787c067dcbdd5c801dd0-39104359761169.png" width="2048px" />
 
 유저가 웹에서 메타 광고를 클릭하고 광고주의 웹사이트로 리디렉션되어 가입하고 계정을 만듭니다. 나중에 같은 사용자가 광고주의 iOS 앱을 설치하고 로그인하여 $50 구매를 합니다. 며칠 후, 유저는 유튜브 광고를 보고, 광고주의 PC 앱을 설치하고, 다시 로그인하여 $100 구매를 합니다.
 

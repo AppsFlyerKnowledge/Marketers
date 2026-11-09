@@ -56,7 +56,7 @@ x-zendesk:
    [![](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png)](https://files.readme.io/c5aacf61d1d1dc75ac7f0b9b6f681bb00e6521f6436fad3d2f073a42d4b0153f-4406696125713.png) **참고**: 생성된 템플릿이 없는 경우, 온보딩 마법사가 열립니다. 마법사의 지침을 따르고 나머지 절차는 무시하십시오.
 2. 메뉴 아이콘 > **원링크 템플릿 추가**를 클릭합니다.  
    원링크 템플릿 설정 페이지가 열립니다.  
-   [![OneLink_template_page_en-us.png](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)](https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png)
+   <Image align="center" alt="OneLink_template_page_en-us.png" src="https://files.readme.io/d773d60cd2febcf6a8389e9586e8ca23a1515fc853e4d42d0db98661cacb387a-360009665478.png" />
 3. **원링크 템플릿 이름** 입력란에 이름을 입력합니다.
 
    <div id="note" />
@@ -153,7 +153,7 @@ x-zendesk:
       * iOS 개발자에게 <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_init_setup#procedures-for-ios-universal-links">이 가이드</Anchor>에 따라 작업할 것을 요청합니다.
       * 개발자는 팀 ID(Apple 앱 ID 접두사(예: PF23MIWNTW)라고도 함)를 제공합니다.
       * 앱이 아직 게시되지 않은 경우 개발자는 번들 식별자(예: com.myapp.something)도 제공해야 합니다.  
-        [![](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)](https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png)
+        <Image align="center" alt="" src="https://files.readme.io/c469a6c99515b0d76d075b0036ea118af16cd11b2ef134a63499acf0467895a0-18363965493521.png" />
    2. 원링크 템플릿 페이지에서 **Change to launch the app using Universal Links(유니버설 링크를 이용한 앱 오픈으로 변경)** 를 클릭하세요.
    3. 새 창에서 **Launch the app using Universal Links(유니버설 링크를 사용하여 앱 실행)** 을 선택합니다.
    4. **팀 ID(Team ID)** 입력란에 개발자가 제공한 팀 ID를 입력합니다.
@@ -238,7 +238,7 @@ x-zendesk:
 
 <Accordion title="QR 코드 사용자 지정">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 원링크를 통해 생성된 QR 코드는 다음과 같이 사용자 지정할 수 있습니다.
 

@@ -32,7 +32,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 이 Pull API를 사용하여 CSV 파일에서 앱스플라이어 집약형 리포트를 가져옵니다.
 
-[![PullAPIAverage_us-en.png](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)](https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png)
+<Image align="center" alt="PullAPIAverage_us-en.png" src="https://files.readme.io/fb9be34d49394086b37e71d2553d6f926829928a3e1f6cd2ec3e95943ecaa503-360008811078.png" />
 
 <div id="looking-for-pull-api-raw-data" />
 

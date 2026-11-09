@@ -44,7 +44,7 @@ iOS 6.0 이상에서 사파리로 앱 배너를 구현하여 앱스토어에서 
 
 **iOS 사파리 스마트 앱 배너 예시**
 
-<Image alt="AppleBanner_en-us.jpg" src="https://files.readme.io/6c65f5424eb1019726726927e1f908ccc9903a2a4bbec1de5a5bb680d7a991aa-51858172981393.jpg" width="278px" />
+<Image align="center" alt="AppleBanner_en-us.jpg" src="https://files.readme.io/6c65f5424eb1019726726927e1f908ccc9903a2a4bbec1de5a5bb680d7a991aa-51858172981393.jpg" width="278px" />
 
 iOS 앱 배너를 구현하기 전에 다음을 고려하십시오.
 

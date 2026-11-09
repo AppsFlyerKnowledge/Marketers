@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** Adjust에서 앱스플라이어로의 마이그레이션을 계획하세요. 마이그레이션 기간 동안 이중 청구, 데이터 중복 및 데이터 유실을 방지하는 방법을 알아봅니다.
 
-<Image alt="" src="https://files.readme.io/cc012894dd05255c0b7fa448b1c95d925d556ddb43dc461086bb71e9279da90d-30633481029137.png" width="1765px" />
+<Image align="center" alt="" src="https://files.readme.io/cc012894dd05255c0b7fa448b1c95d925d556ddb43dc461086bb71e9279da90d-30633481029137.png" width="1765px" />
 
 <div id="about-migrating-to-appsflyer" />
 

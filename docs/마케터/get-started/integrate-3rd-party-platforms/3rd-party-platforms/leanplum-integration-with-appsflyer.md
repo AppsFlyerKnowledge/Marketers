@@ -65,12 +65,12 @@ x-zendesk:
 
 ### 일반 설정
 
-![Leanplum_msc_new_3.png](https://files.readme.io/0ef9adb16568192e922b33688a0525a3e61bc0f18dfc63e3717390adc34a66c4-360001904209.png)
+<Image align="center" alt="Leanplum_msc_new_3.png" src="https://files.readme.io/0ef9adb16568192e922b33688a0525a3e61bc0f18dfc63e3717390adc34a66c4-360001904209.png" />
 
 
-![](https://files.readme.io/fcb9bb4fab1eec1db130904c2c4856529f58582bd8c9c04f08200ed82c0fcb80-206117303.png)
+<Image align="center" alt="" src="https://files.readme.io/fcb9bb4fab1eec1db130904c2c4856529f58582bd8c9c04f08200ed82c0fcb80-206117303.png" />
 
-![](https://files.readme.io/cd638732b197f03c6194b8bae7b8f726a6e4c16661702fdad48054a35ce333e5-206117343.png)
+<Image align="center" alt="" src="https://files.readme.io/cd638732b197f03c6194b8bae7b8f726a6e4c16661702fdad48054a35ce333e5-206117343.png" />
 
 <div id="default-postbacks" />
 
@@ -80,7 +80,7 @@ x-zendesk:
 
 이 섹션을 사용하여 이러한 포스트백 전송을 정의합니다.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 앱을 다운로드한 모든 사용자에 대해 Braze로 포스트백을 발송하려면 **모든 파트너 또는 오가닉에 어트리뷰션된 이벤트**를 선택하십시오.
 

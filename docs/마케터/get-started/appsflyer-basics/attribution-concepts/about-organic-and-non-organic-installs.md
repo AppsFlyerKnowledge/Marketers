@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 오가닉 설치와 논오가닉 설치의 차이점을 이해하세요.
 
-![6453OrganicvsNon-organic.jpg](https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg)
+<Image align="center" alt="6453OrganicvsNon-organic.jpg" src="https://files.readme.io/b456433d858a146187429d0a40c200327af685490ea003cd5130f40ad798c7a4-360018880878.jpg" />
 
 논오가닉 사용자는 인스톨이나 인게이지먼트를 유도한 미디어 소스가 기여한 성과(어트리뷰션)로 기록됩니다. 오가닉 사용자의 경우 인스톨이나 인게이지먼트와 관련된 미디어 소스가 없습니다.
 

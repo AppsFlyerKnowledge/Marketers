@@ -31,10 +31,10 @@ x-zendesk:
 
 1. 앱스플라이어의 상단 메뉴 바에서 도움말(Help) > 팀에 문의(Contact our team)를 선택하면, 고객 지원 챗봇이 열립니다.
 
-   <Image alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
+   <Image align="center" alt="contact-your-team2.jpg" src="https://files.readme.io/3efd3a509befa24c89182f382187025693b02cdd81709e112bc6cd296f90e0dc-26191280580625.jpg" width="257px" />
 2. 필요한 내용에 따라 메뉴 항목 번호를 선택한 후, **확인**을 클릭하세요.  
 
-   ![](https://files.readme.io/f5040006fceb32fee83c83cf9712773f47f1b1fc414cdbf871929d7b3a5be61f-51912673603089.png)
+   <Image align="center" alt="" src="https://files.readme.io/f5040006fceb32fee83c83cf9712773f47f1b1fc414cdbf871929d7b3a5be61f-51912673603089.png" />
 
 ## 메뉴 항목
 

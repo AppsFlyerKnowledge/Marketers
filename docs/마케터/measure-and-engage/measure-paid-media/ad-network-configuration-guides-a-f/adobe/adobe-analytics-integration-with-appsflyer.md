@@ -161,7 +161,7 @@ let customerUserID = AppsFlyerLib.shared().customerUserIDp
    **참고:** 적용 시 슬라이더가 켜져 있어야 합니다(활성화)&lt;6> 파트너와 협업하는 동안.
 5. **Adobe Analytics SDK**에서, **ADBMobileConfig.XML** 파일의 일부인 **Report\_Suite\_ID**(파랗게 강조)와 **Adobe\_Analytic\_server\_URL**(녹색으로 강조)를 복사하여 앱스플라이어에서 Adobe Analytics 연동 페이지의 해당 필드에 붙여넣으세요.  
 
-   ![](https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png)
+   <Image align="center" alt="" src="https://files.readme.io/fb46a40178b88dc8f8fb0f9bcce5aa289fc27c2dbf52d1e67783c7b764729f0f-360001063605.png" />
 6. 저장하기 **연동 설정**.
 
 저장 후, 앱스플라이어는 오가닉 및 논오가닉 인스톨 모두에 대해 Adobe Analytics로 다음과 같은 데이터를 전송합니다.

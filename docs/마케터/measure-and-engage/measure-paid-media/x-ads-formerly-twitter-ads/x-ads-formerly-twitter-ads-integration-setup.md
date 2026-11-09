@@ -45,7 +45,7 @@ X Ads는 고급 SRN(Self-Reporting Network)으로, 앱스플라이어가 광고 
    * IP 주소
    * 사용자 에이전트
 
-   [![_- visual selection.png](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)](https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png)
+   <Image align="center" alt="_- visual selection.png" src="https://files.readme.io/8c17755d275e732f88cf93e8e7e33df891911dd640d2dbfc2637313a9d59d43e-small-36433399199249.png" />
 
 <div id="connecting-your-x-ads-account-to-appsflyer" />
 
@@ -62,11 +62,11 @@ X Ads는 고급 SRN(Self-Reporting Network)으로, 앱스플라이어가 광고 
 2. **심플(신규)** 또는**어드밴스드** 캠페인 중 하나를 선택하라는 안내가 나오면 **어드밴스드**를 선택하세요.
 3. **캠페인 목표** 아래에서 **앱 설치** 또는 **앱 리엔게이지먼트**를 선택한 후 **다음**을 클릭하세요.
 
-   ![X-Ads-campaign-objective.png](https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png)
+   <Image align="center" alt="X-Ads-campaign-objective.png" src="https://files.readme.io/44e5aca3895fc5aefa22f91542b9c23f9798b246ac8086e97a3994244fc2c5a8-36433415100561.png" />
 4. 앱을 선택한 후 **모바일 측정 파트너** 링크를 클릭하세요.
 5. **전환 추적** 페이지에서 **앱스플라이어로로 이동**을 눌러주시기 바랍니다.
 
-   ![X-Ads-mmp-selection.png](https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png)
+   <Image align="center" alt="X-Ads-mmp-selection.png" src="https://files.readme.io/718bc93d2fcf606a8c165aed70364659ba23b74891b22775c5522ee9e4c7901a-36433422307345.png" />
 6. X Ads를 떠나 앱스플라이어 웹사이트로 이동한다는 안내 알림이 표시됩니다. **앱스플라이어로 이동**을 클릭하고 대시보드에 로그인합니다.
 7. 앱스플라이어의 사이드 메뉴에서 **협업** > **활성화된 연동**을 선택합니다.
 8. **X Ads**를 검색하여 선택합니다.
@@ -95,7 +95,7 @@ X Ads는 고급 SRN(Self-Reporting Network)으로, 앱스플라이어가 광고 
 
 어트리뷰션을 활성화할 계정을 선택합니다.
 
-![X-Ads_msc_new_4.png](https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png)
+<Image align="center" alt="X-Ads_msc_new_4.png" src="https://files.readme.io/8b8ecdfd79bc87d4a65766ce67e48a06524d825e04d5e642eb5e9741069a2f6c-36433422308241.png" />
 
 **참고:** 앱스플라이어에서 최대 200개의 광고 계정을 연결할 수 있습니다. 이 한도에 도달하는 것을 방지하고 모든 활성 계정에 대해 연속적인 어트리뷰션을 보장하려면, 더 이상 사용하지 않는 광고 계정을 삭제하는 것을 권장합니다.
 
@@ -124,7 +124,7 @@ AP 토글이 켜져 있을 때:
 
 이 값을 1&#126;23시간 또는 1&#126;30일로 맞춤 설정할 수 있습니다. X Ads와 일치하도록, 클릭-쓰루 기여 기간을 14일로 설정하는 것을 추천합니다.
 
-![X-Ads_msc_new_6.png](https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png)
+<Image align="center" alt="X-Ads_msc_new_6.png" src="https://files.readme.io/359f6145751f45d38c151572f1ba0c525d232d16ffaee6b68453da0bc1826a69-36433422308369.png" />
 
 <div id="view-through-attribution-lookback-window" />
 
@@ -134,7 +134,7 @@ AP 토글이 켜져 있을 때:
 
 이 값을 1-23시간 또는 1-7일로 사용자 정의할 수 있습니다. X Ads와 일치하도록, 인스톨 노출 룩백 윈도우를 1일로 설정하는 것을 추천합니다.
 
-![X-Ads_msc_new_7.png](https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png)
+<Image align="center" alt="X-Ads_msc_new_7.png" src="https://files.readme.io/15c9d815b05c03dfdf8578ed5af297c411991ab74accc5539fc1dbca178c3336-36433422308497.png" />
 
 <div id="reinstall-settings" />
 
@@ -166,7 +166,7 @@ X Ads 리타겟팅 어트리뷰션은 리인게이지먼트 전환만 포함합�
 
 **리인게이지먼트 클릭-쓰루 룩백 윈도우**를 설정합니다. (광고가 클릭된 후, 리타게팅된 사용자가 해당 광고에 어트리뷰션될 수 있는 최대 기간) 그 값은 시간(최대 23시간) 또는 일(1&#126;30일)로 설정할 수 있습니다.
 
-![X-Ads-reengagement-activate.png](https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png)
+<Image align="center" alt="X-Ads-reengagement-activate.png" src="https://files.readme.io/318deeab0432870035a163a7b8a5b8c03be7d683bfc369104c8577674fde0036-36433422309905.png" />
 
 <div id="re-engagement-view-through-lookback-window" />
 
@@ -176,7 +176,7 @@ X Ads 리타겟팅 어트리뷰션은 리인게이지먼트 전환만 포함합�
 
 그리고, **리인게이지먼트 뷰-쓰루 룩백 윈도우**를 설정합니다. (광고가 노출된 후, 리타게팅된 사용자가 해당 광고에 어트리뷰션될 수 있는 최대 기간) 그 값은 시간(최대 23시간) 또는 일(1&#126;7일)로 설정할 수 있습니다.
 
-![X-Ads-reengagement-view-through.png](https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png)
+<Image align="center" alt="X-Ads-reengagement-view-through.png" src="https://files.readme.io/4faf93b6d8a8e45043eb9440d8f56a70eba2da51f3a572ea6cd698e072f033c6-36433415112849.png" />
 
 <div id="re-engagement-window" />
 
@@ -184,7 +184,7 @@ X Ads 리타겟팅 어트리뷰션은 리인게이지먼트 전환만 포함합�
 
 **리인게이지먼트 윈도우**(사용자의 인앱 이벤트가 리타겟팅 미디어 소스로 어트리뷰션되는 기간)를 설정합니다. 값은 '일(1-90)', '시간(최대 23)', 또는 '라이프타임'으로 설정할 수 있습니다.
 
-<Image alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
+<Image align="center" alt="X-Ads-reengagement-window.png" src="https://files.readme.io/5bc42bd967929a88fd38f8bdd9cc36046a6f0381d1883ab1f26f5c680185a74c-36433415113105.png" width="628px" />
 
 <div id="ignore-active-users-for-retargeting" />
 
@@ -198,7 +198,7 @@ X Ads 리타겟팅 어트리뷰션은 리인게이지먼트 전환만 포함합�
 
 이 섹션에서는 포스트백을 통해 앱스플라이어 이벤트를 파트너와 매핑할 수 있습니다.
 
-[![In-app_event_postbacks_en-us.png](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)](https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png)
+<Image align="center" alt="In-app_event_postbacks_en-us.png" src="https://files.readme.io/d89725172c53c309b5b58227ce53812e12f9cd4ee7611a6c375970b395122b15-36433415113361.png" />
 
 **인앱 이벤트 포스트백 설정 방법:**
 

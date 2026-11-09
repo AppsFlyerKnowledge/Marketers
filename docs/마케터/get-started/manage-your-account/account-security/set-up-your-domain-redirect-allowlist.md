@@ -41,17 +41,17 @@ x-zendesk:
 
 1. 상단 메뉴에서 계정 메뉴(이메일 주소 드롭다운) > **보안 센터(Security Center)** 를 엽니다.
 
-![from account click security center Cropped.jpg](https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg)
+<Image align="center" alt="from account click security center Cropped.jpg" src="https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg" />
 
 2. **리디렉션 허용 목록(Redirect Allowlist)** 섹션에서 **리디렉션 허용 목록 관리**를 클릭합니다.
 
-<Image alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="549px" />  
+<Image align="center" alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="549px" />
 
 **리디렉션 허용 목록(Redirect Allowlist)** 페이지가 열립니다.
 
 3. **수동** 탭 아래 **도메인 이름** 필드에 루트 도메인이나 서브 도메인을 입력한 다음, **목록에 도메인 추가**를 클릭합니다.
 
-<Image alt="Manually add domains.jpg" src="https://files.readme.io/95b37db2064ddba8c787d2dd5ac5ab2aa7698605f5c6eb3b4a59dd6324dee355-25103405228689.jpg" width="403px" />
+<Image align="center" alt="Manually add domains.jpg" src="https://files.readme.io/95b37db2064ddba8c787d2dd5ac5ab2aa7698605f5c6eb3b4a59dd6324dee355-25103405228689.jpg" width="403px" />
 
 * 문자, 숫자, 하이픈 및 마침표만 사용합니다.
 * 도메인은 문자 또는 숫자로 시작하고 끝나야 하며, 최대 253자까지 입력할 수 있습니다.
@@ -75,15 +75,15 @@ x-zendesk:
 
 1. 상단 메뉴에서 계정 메뉴(이메일 주소 드롭다운) > **보안 센터(Security Center)** 를 엽니다.  
 
-![from account click security center Cropped.jpg](https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg)
+<Image align="center" alt="from account click security center Cropped.jpg" src="https://files.readme.io/4ee3279e382e97817a6b977f50bff7054868f03c22186ed2bd79d712e2316ad4-25381243839377.jpg" />
 
 2. **리디렉션 허용 목록(Redirect Allowlist)** 섹션에서 **리디렉션 허용 목록 관리**를 클릭합니다.  
-<Image alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="530px" />  
+<Image align="center" alt="Manage redirect allowlist with arrow.jpg" src="https://files.readme.io/e9cd8c263eb618b86d3c10b1d9fc367390dfd1f9b6cc12afd7ac5f37411ba25c-25644439175313.jpg" width="530px" />
 
 **리디렉션 허용 목록(Redirect Allowlist)** 페이지가 열립니다.
 
 3. **CSV 파일** 탭을 클릭한 다음, **CSV 파일 지침**을 클릭하여 도메인 목록이 포함된 파일을 만듭니다.  
-![CSV file upload.jpg](https://files.readme.io/2be73080048545f79e102e6f48df0db956e6739f156153c172c4fef5a2ea339f-25381979219345.jpg)
+<Image align="center" alt="CSV file upload.jpg" src="https://files.readme.io/2be73080048545f79e102e6f48df0db956e6739f156153c172c4fef5a2ea339f-25381979219345.jpg" />
 
 4. CSV 파일을 업로드 필드에 업로드합니다.
 

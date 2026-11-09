@@ -145,7 +145,7 @@ iOS 유니버설 링크 및 안드로이드 앱 링크를 사용하여 앱을 �
 2. 원링크 템플릿을 선택합니다.
 3. ellipsis 메뉴에서 '템플릿 편집' 옵션을 클릭합니다.  
 
-   <Image alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
+   <Image align="center" alt="delete template.png" src="https://files.readme.io/72b68cb979e2360f4e3065f99fbb547a91713a40dcc9adee59028ed2945f794a-31094482204945.png" width="1204px" />
 4. "휴지통" 아이콘을 클릭합니다.
 
 **참고:** 삭제된 템플릿에 기반한 기존 원링크 URL이 있는 경우 **사용자는 앱 스토어에도 들어갈 수 없습니다.** 이런 이유로, 템플릿을 사용하는 원링크 URL이 없는지 먼저 확인한 다음 템플릿을 삭제하는 것이 특히 중요합니다. 또는 기존 템플릿의 설정을 삭제하는 대신 변경하여 필요한 결과를 얻을 수 있는지 고려하십시오.
@@ -299,7 +299,7 @@ Chromebook의 경우, 앱을 다른 웹 URL에 인스톨하지 않고 새 사용
 
 폴백 URL을 구현하려면 원링크 템플릿 또는 사용자정의 링크 설정에서 앱이 설치되지 않은 경우의 링크 동작을 설정하여 다른 URL로 리디렉션하십시오.
 
-[![different_url.png](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)](https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png)
+<Image align="center" alt="different_url.png" src="https://files.readme.io/6e15b343cb778a0ab4e76c1be4a6bf3cd21ad675f9a64c521a61a4756a580a01-30192900484625.png" />
 
 이 설정을 사용하면 `af_ios_url` 및 `af_android_url`이 폴백의 대상 파라미터로 추가되므로 iOS 사용자는 `af_ios_url`에서 지정한 페이지로, 안드로이드 사용자는 `af_android_url`에서 지정한 페이지로 리디렉션됩니다.
 
@@ -687,11 +687,11 @@ WeChat은 안드로이드 및 iOS 딥링크를 재정의하여 사용자를 웹�
 
 이것을 극복하기 위해 원링크는 WeChat에서의 클릭을 인식하면, 사용자가 옵션 버튼을 클릭하고 **브라우저로 열기**를 클릭하도록 지시하는 전용 랜딩 페이지를 로딩합니다. 그러면 원링크 템플릿 설정에 정의된 리디렉션 URL이 열립니다.
 
-![WeChat_a.jpg](https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg)
+<Image align="center" alt="WeChat_a.jpg" src="https://files.readme.io/49c03a10d458f6ce71fd6448e922294682ac9239775534c6264c29151ec1ea6d-30192900489105.jpg" />
 
 만약 사용자의 위챗 언어가 중국어로 설정되었다면, 원링크는 현지화된 버전의 랜딩 페이지를 생성합니다.
 
-![WeChat_b.jpg](https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg)
+<Image align="center" alt="WeChat_b.jpg" src="https://files.readme.io/502ef821a122459ab991f2a507c720f25fcac7129eb647a01290e8cabfa7a34e-30192887085841.jpg" />
 
 </Accordion>
 

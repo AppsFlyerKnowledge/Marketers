@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 수익 데이터는 ROI와 ROAS를 명확하고 완벽하게 파악하는 데 도움이 됩니다. 광고주가 수익 데이터를 집계하고 확인할 수 있도록 지원하는 다양한 제품과 기능에 대해 알아보세요.
 
-![roi_revenue.png](https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png)
+<Image align="center" alt="roi_revenue.png" src="https://files.readme.io/4b1013d51c3ff2c80b15ec598f7bbe02dadc0e556f5533b9a49ea320fa85be6d-33438500789905.png" />
 
 <div id="overview" />
 

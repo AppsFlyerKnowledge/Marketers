@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어는 사용자가 설정한 전환 값을 디코딩하여 이벤트로 변환합니다. 이벤트는 SKAN 대시보드, 로데이터, 파트너에 대한 포스트백을 채우는 데 사용됩니다.
 
-![SKAdNetwork_-_Custom__1_.png](https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png)
+<Image align="center" alt="SKAdNetwork_-_Custom__1_.png" src="https://files.readme.io/74f0d3836ee6a73f6746afa2d6d6a468c09cba696561c5a2075149ca360b78bf-34255690318097.png" />
 
 <div id="decode-skan-conversion-value" />
 
@@ -241,7 +241,7 @@ CSV 파일을 저장한 후 콘텐츠의 형식이 올바른지 확인합니다.
 
 그림에 표시된 대로 Excel은 일반적으로 값 셀을 쉼표로 형식화하여 수천 개로 구분합니다. 이 형식은 CSV 파일을 업로드하는 데 적합하지 않습니다. $ 기호도 제거해야 합니다.
 
-![mceclip0.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 Excel에서 셀 서식을 지정하여 이 문제를 해결할 수 있습니다.
 
@@ -272,14 +272,14 @@ CSV 파일의 내용을 검사하려면 편집기를 사용하여 파일을 봅�
 
 **편집기 보기**
 
-![SKCustomeEditor.png](https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png)
+<Image align="center" alt="SKCustomeEditor.png" src="https://files.readme.io/d8677e9967a70db32e8d04c4ee835bd477b18c1cb464a9cd0e593f72ce3f3c15-34255690323217.png" />
 
 편집기를 사용하여 CSV 파일을 검사합니다. 다음 사항에 특히 주의하십시오.
 
 * **공백:** 필드를 구분하는 쉼표의 앞뒤에 공백이 없는지 확인합니다. Excel에서 @trim 명령을 사용하여 공백을 제거합니다.
 * **event\_revenue\_usd:** event\_revenue\_usd 열에 쉼표나 $ 기호가 없는지 확인합니다.  
 
-  ![mceclip1.png](https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png)
+  <Image align="center" alt="mceclip1.png" src="https://files.readme.io/3b2aface429f87eb651e6d678760ee3a4b85234a11b0ae2da771d7af7279c1e7-34255643021073.png" />
 
 </Accordion>
 

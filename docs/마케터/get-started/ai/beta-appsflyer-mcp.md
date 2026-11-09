@@ -133,7 +133,7 @@ Authorization: Bearer <YOUR_MCP_TOKEN>
 #### Claude 연결 테스트
 
 1. 채팅 창에서 설정 버튼을 클릭합니다.   
-   <Image alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/5f27783a0743f9005c5df4f580455777aa3ef612feb220d1058664ee63431cf3-46334217789073.png" width="25%" />
 2. AppsFlyer MCP가 올바르게 설정되었다면 AppsFlyer 도구가 메뉴에 나타납니다.
 
 </Accordion>

@@ -44,7 +44,7 @@ x-zendesk:
 > * 앱스플라이어 안드로이드 어트리뷰션은 GAID 및 <Anchor target="_blank" href="/marketers/ko/docs/android-oaid-implementation-in-the-sdk">OAID</Anchor>를 포함한 모든 디바이스 식별자 유형을 지원합니다.
 > * 중국에서 판매되는 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/measure-attribution-in-the-chinese-domestic-market">중국 국내 시장에서 안드로이드 앱 어트리뷰트</Anchor>를 참조하십시오.
 
-![DashboardType_us-en-new.jpg](https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg)
+<Image align="center" alt="DashboardType_us-en-new.jpg" src="https://files.readme.io/10fdd08c4e57f799756f46922b5f8dc45c67f7550f9105e65076652f459c98f7-9545756936593.jpg" />
 
 <div id="single-dashboard-vs-dashboard-per-store" />
 
@@ -248,7 +248,7 @@ APK/매니페스트에 설정된 안드로이드 패키지 이름과 채널의 �
 3. 설정으로 이동하여 안드로이드 설정을 찾거나, 아직 안드로이드를 구성하지 않았으면 플랫폼을 추가합니다.
 4. 앱 특정의 Amazon 앱 스토어 URL과 같은 필수 세부 항목을 입력합니다.  
 
-   [![outofstore_1.png](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)](https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png)
+   <Image align="center" alt="outofstore_1.png" src="https://files.readme.io/1e8c365176ac9e0e55360a8a5db1dd549518e477f3fba43206491bcf9a3023da-115010742229.png" />
 5. 앱스플라이어 대시보드의 활성 연동 아래에서 메타 광고를 선택하고 앱스플라이어로 메타 스토어 내 모바일 앱 인스톨 광고를 기록할 때 사용한 것과 동일한 페이스북 앱 ID를 입력합니다.
 
 </Accordion>

@@ -40,7 +40,7 @@ x-zendesk:
 
 어트리뷰션 모델 차이로 인해, 어떤 경우에는 앱스토어가 앱스플라이어보다 더 많은 인스톨을 기록하기도 합니다. 다른 경우에는, 앱스플라이어가 앱스토어보다 더 많은 인스톨을 기록하기도 합니다.
 
-<Image alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
+<Image align="center" alt="AF_vs_app_stores.png" src="https://files.readme.io/6f81aac30cdf1ab2331cd08e7a221c154e1f7104c15d47c47690baabaace856a-34114275895825.png" width="605px" />
 
 <div id="note" />
 

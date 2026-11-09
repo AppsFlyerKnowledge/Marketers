@@ -91,7 +91,7 @@ x-zendesk:
 
    <Accordion title="안드로이드">
 
-   [<Image alt="" src="https://files.readme.io/b794c8176cd4884bd1b66372353770485403ca841787e1c0fa3e2759f9c945a0-51912959808273.png" width="233px" />](https://files.readme.io/b794c8176cd4884bd1b66372353770485403ca841787e1c0fa3e2759f9c945a0-51912959808273.png)
+   <Image align="center" alt="" src="https://files.readme.io/b794c8176cd4884bd1b66372353770485403ca841787e1c0fa3e2759f9c945a0-51912959808273.png" width="233px" />
 
    **링크:** [Google Play](https://play.google.com/store/apps/details?id=com.appsflyer.android.deviceid&hl=en) 및 [비공식 스토어](https://apkpure.com/my-device-id-by-appsflyer/com.appsflyer.android.deviceid)
 
@@ -101,7 +101,7 @@ x-zendesk:
 
    <Accordion title="iOS">
 
-   [<Image alt="" src="https://files.readme.io/ad4981f255d185e8fea7be468e66e49c6180d27efe3e24bad7d7c7caf1a0c34f-51912933340561.png" width="233px" />](https://files.readme.io/ad4981f255d185e8fea7be468e66e49c6180d27efe3e24bad7d7c7caf1a0c34f-51912933340561.png)
+   <Image align="center" alt="" src="https://files.readme.io/ad4981f255d185e8fea7be468e66e49c6180d27efe3e24bad7d7c7caf1a0c34f-51912933340561.png" width="233px" />
 
    </Accordion>
 
@@ -120,7 +120,7 @@ x-zendesk:
 
    <Accordion title="안드로이드">
 
-   [![](https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png)](https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png)
+   <Image align="center" alt="" src="https://files.readme.io/b6deed582cc87925576b893fb8f021e4aa254c15a99ec532fd456e146769a125-31773630607889.png" />
 
    </Accordion>
 
@@ -128,7 +128,7 @@ x-zendesk:
 
    <Accordion title="iOS">
 
-   [![](https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png)](https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png)
+   <Image align="center" alt="" src="https://files.readme.io/f06f609433b8ce483e5281cc2a0d062ab71a150318d7892879f3defb706f5429-31773660968081.png" />
 
    </Accordion>
 
@@ -136,7 +136,7 @@ x-zendesk:
 
    <Accordion title="윈도우">
 
-   [![](https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg)](https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/6bbfb8680a3f6ea507a7d011d3140fbcc11173f4ef091f7c5f7c3cc863598ab8-31773660972817.jpg" />
 
    </Accordion>
 

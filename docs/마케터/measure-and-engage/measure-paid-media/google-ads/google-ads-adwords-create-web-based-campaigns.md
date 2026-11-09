@@ -87,7 +87,7 @@ Google Ads와 앱스플라이어 연동을 통해 1단계에서 어트리뷰션 
 
 6. **첫 번째 열린 전환 ID**에 Google Ads에서 설정한 `First open` 전환 동작의 ID를 입력합니다. ID를 찾으려면 Google Ads로 이동하여 **처음 열린** 전환 동작 페이지의 **세부 정보 탭**을 엽니다. 그런 다음 페이지 URL에서 `ctid=*` 쿼리 매개변수의 값을 복사합니다. 예를 들어, `ctid=123456789`인 경우 `123456789`을 **첫 번째 오픈 전환 작업 ID** 상자에 삽입하세요.
 
-   [![](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)
+   <Image align="center" alt="" src="https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png" />
 
    <div id="note-2" />
 
@@ -193,13 +193,13 @@ Google Ads에서는 여기에서 선택한 캠페인 유형의 목적과 목표�
 1. Google Ads에 로그인하여 캠페인을 만듭니다.
 2. 캠페인 목표를 선택합니다.
 
-   [![](https://files.readme.io/90063f7fe5a363ed498271148c4165969cc63c708a73ab25363d2263a79b0828-26324053661201.png)](https://files.readme.io/90063f7fe5a363ed498271148c4165969cc63c708a73ab25363d2263a79b0828-26324053661201.png)
+   <Image align="center" alt="" src="https://files.readme.io/90063f7fe5a363ed498271148c4165969cc63c708a73ab25363d2263a79b0828-26324053661201.png" />
 
    * “앱 프로모션"(모바일 앱 캠페인에만 사용 가능)을 제외한 모든 목표가 적용됩니다.
    * 특정 인앱 이벤트를 기반으로 최적화하려면 “판매” 캠페인 목표를 설정하는 것이 좋습니다.
 3. 전환 이벤트를 선택합니다.
 
-   [![](https://files.readme.io/5ca0a0425af24d5926dc0a7a3529632e22bd140423e87c026ff1527e7a0341b3-26324096257169.png)](https://files.readme.io/5ca0a0425af24d5926dc0a7a3529632e22bd140423e87c026ff1527e7a0341b3-26324096257169.png)
+   <Image align="center" alt="" src="https://files.readme.io/5ca0a0425af24d5926dc0a7a3529632e22bd140423e87c026ff1527e7a0341b3-26324096257169.png" />
 
    * 기본적으로, 사전 정의된 계정 수준의 캠페인 목표가 표시됩니다. 이들 목표를 보관하거나 캠페인과 관련 없는 목표는 삭제할 수 있습니다.
    * Google이 최적화하기를 원하는 목표가 보이지 않으면
@@ -208,7 +208,7 @@ Google Ads에서는 여기에서 선택한 캠페인 유형의 목적과 목표�
    * 전환 페이지에서 사전 정의된 목표를 편집할 수도 있습니다.
 4. 캠페인 유형을 선택합니다.
 
-   [![](https://files.readme.io/14daea1c1edf92854e21d0a4c5d34372a4e062d68a4613967bb4f40d0d1e720f-26324053659281.png)](https://files.readme.io/14daea1c1edf92854e21d0a4c5d34372a4e062d68a4613967bb4f40d0d1e720f-26324053659281.png)
+   <Image align="center" alt="" src="https://files.readme.io/14daea1c1edf92854e21d0a4c5d34372a4e062d68a4613967bb4f40d0d1e720f-26324053659281.png" />
 
    * 제품 카탈로그가 필요하고 인증된 도메인으로 제한되는 ‘쇼핑’을 제외한 모든 캠페인 유형을 적용할 수 있습니다.
 
@@ -245,7 +245,7 @@ Google Ads에서는 여기에서 선택한 캠페인 유형의 목적과 목표�
 8. **저장 후 계속**을 클릭한 다음 데이터 소스를 설정하지 않고 **완료**를 클릭합니다. 새로운 전환 작업은 처음에 "비활성"으로 표시될 수 있지만, 실제 데이터가 전송되면 "활성"으로 변경됩니다.
 9. 새 전환 동작을 앱스플라이어 포스트백 이벤트에 매핑하려면 새 전환 동작 ID를 검색하세요. 전환 목표 **요약 페이지**에서 생성한 전환 동작을 클릭하고 전환 동작 페이지 URL에서 `ctid=*` 쿼리 파라미터의 값을 복사합니다.
 
-   [![](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)](https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png)
+   <Image align="center" alt="" src="https://files.readme.io/0bbe655051204d8902b82f2f8d8b12f183ef40f9e84c542972db767707d75a9d-26324053660177.png" />
 10. 앱스플라이어에서 구글에서 최적화하도록 하려는 포스트백 이벤트의 **파트너에 매핑됨 이벤트** 열에 `ctid` 값을 붙여넣습니다. [인앱 이벤트 포스트백을 설정합니다](#b-set-inapp-event-postbacks).
 
 </Accordion>
@@ -271,7 +271,7 @@ Google Web Ads 캠페인은 각 인게이지먼트에 대해 최종 URL과 추�
 1. Google Ads에서 **캠페인** > **광고** 페이지를 엽니다.
 2. 광고 행에서 수정 아이콘을 클릭합니다.
 
-   [![](https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png)](https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png)
+   <Image align="center" alt="" src="https://files.readme.io/e6b834a0e105324c5b9e4105a5ce7e1f47fa7c00fcf2aee29b6b0e96763150f1-26324098055057.png" />
 3. **최종 URL**에 웹 랜딩 페이지의 URL을 입력합니다.
 
    > 🚧 **중요!**
@@ -314,10 +314,10 @@ Google Ads는 기본적으로 병렬 추적을 사용하므로 추적 템플릿 
 
 1. Google Ads에서 **캠페인** > **캠페인** 페이지를 엽니다. 캠페인 행에서 설정 아이콘을 클릭합니다.
 
-   [![](https://files.readme.io/ec6503cfb3ff185448f13897240e0eadd7f10fc3678ffa85b4d52d2393b01ca4-26324098054033.png)](https://files.readme.io/ec6503cfb3ff185448f13897240e0eadd7f10fc3678ffa85b4d52d2393b01ca4-26324098054033.png)
+   <Image align="center" alt="" src="https://files.readme.io/ec6503cfb3ff185448f13897240e0eadd7f10fc3678ffa85b4d52d2393b01ca4-26324098054033.png" />
 2. **설정** > **추가 설정** > **캠페인 URL 옵션**을 선택합니다.
 
-   [![](https://files.readme.io/4959b4129749ff282ee3818c3b5724ac2ed3b1d033d06f8557329cafa812720f-26324053658641.png)](https://files.readme.io/4959b4129749ff282ee3818c3b5724ac2ed3b1d033d06f8557329cafa812720f-26324053658641.png)
+   <Image align="center" alt="" src="https://files.readme.io/4959b4129749ff282ee3818c3b5724ac2ed3b1d033d06f8557329cafa812720f-26324053658641.png" />
 3. **추적 템플릿**에서 다음(BaseURL + 리디렉션 파라미터)을 사용합니다.
 
    * **기본 URL**: 광고 클릭 대상에 따라 기본 URL을 설정합니다.
@@ -395,7 +395,7 @@ https://app.appsflyer.com/id1510557250?pid=googleads_int&af_force_transparent=tr
 
 W2A 스마트 스크립트 사용 사례는 다음 단계로 구성됩니다.
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. 사용자가 Google 광고를 클릭하면 Google은 최종 URL에 다음을 자동으로 추가합니다:
    * Android 기기용 및 iOS 기기에서 동의한 사용자를 위한 `gclid` 매개변수.

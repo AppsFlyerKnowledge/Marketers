@@ -172,7 +172,7 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
 
 1. **목적지 아래의 웹사이트 URL필드에서, 광고의 목적지 역할을 하는 URL을 입력하세요. URL은 다음 중 하나여야 합니다.**
 
-   [![](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)](https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png)
+   <Image align="center" alt="" src="https://files.readme.io/aec9109f2f3000f669799093460e70198de1934e483314b6cd7f95d8209f361d-25646834955537.png" />
 
    * **웹 랜딩 페이지:** 다음과 같은 경우 랜딩 페이지를 사용하는 것이 좋습니다.
 
@@ -192,7 +192,7 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
 2. **URL 매개변수 만들기**를 클릭하여 URL(랜딩 페이지 URL 또는 AF 어트리뷰션 링크)에 URL 매개변수를 추가합니다.
 3. 아래의 **사용자 지정 매개 변수**에서 **매개 변수 추가**를 클릭합니다.
 
-   [![4.png](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)](https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png)
+   <Image align="center" alt="4.png" src="https://files.readme.io/bbce415e16d3442f8959bf7a0c23825035d7d4740d5bf3570306c3684c8764d4-25722672143633.png" />
 4. 앱스플라이어 매개변수를 Meta 값에 매핑합니다.
 
    * 도착 URL이 **랜딩 페이지, OneLink 어트리뷰션 링크 또는 단일 플랫폼 어트리뷰션 링크**인 경우, 다음 AF 매개변수를 Meta 매개변수에 매핑합니다.  
@@ -266,7 +266,7 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
 
 추적 섹션을 사용하여 광고가 유도하는 전환 이벤트를 선택합니다(이벤트 설정은 [이벤트 관리자](https://www.facebook.com/business/help/898185560232180?id=1205376682832142)를 통해 수행됩니다)
 
-[![](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)](https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png)
+<Image align="center" alt="" src="https://files.readme.io/75b6136fdf3fd9790e39aeec735ccd2e1ff0b8a5f302c85f0ed3b05926fcc435-25646834958481.png" />
 
 <div id="important-1" />
 
@@ -288,7 +288,7 @@ Meta 광고 관리자에서 다음 단계를 수행합니다.
 
 <Accordion title="엔드투엔드 데이터 흐름">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. Meta 광고 URL에는 `pid=metaweb_int` 매개 변수가 포함됩니다. 사용자가 광고를 클릭하면 `fbclid` 매개변수는 클릭한 URL에 자동으로 추가됩니다.
 2. 사용자는 스마트 스크립트가 포함된 랜딩 페이지인 URL 대상으로 리디렉션됩니다.

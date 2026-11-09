@@ -63,6 +63,6 @@ x-zendesk:
 1. **<span id="turn-on-ip-masking"></span><span id="enabling-ip-masking"></span>앱스플라이어의 사이드 메뉴에서**  설정 > 앱 설정을 선택합니다.
 
 
-![ip_masking.png](https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png)
+<Image align="center" alt="ip_masking.png" src="https://files.readme.io/e52f8bd698191f0b1ac08e595e539f15bda59567ed51ddda32a0d80db3bdf23c-360001962938.png" />
 
 <div data-zendesk-anchors="ip-masking=ip-%EC%B0%A8%EB%8B%A8 h_01HA91HHADCTT7QS2K79TJEY2C=ip-%EC%B0%A8%EB%8B%A8 h_01HA92HF3ZYR2NBTXQ1S2AHCAA=%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD h_01HA91HHAD7BCXRZW6AD9NRDBN=%EC%98%88%EC%8B%9C h_01HA91HHAEM220CE8805GFQYKR=enabling-ip-masking ip-masking-in-raw-data-reports=%EC%98%88%EC%8B%9C h_01HA91HHAE14D6ES1ERNK93VY9=%EC%98%88%EC%8B%9C" />

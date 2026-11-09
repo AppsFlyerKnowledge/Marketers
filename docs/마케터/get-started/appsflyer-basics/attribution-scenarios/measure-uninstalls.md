@@ -176,7 +176,7 @@ x-zendesk:
    2. 프로젝트를 선택하세요.
    3. **프로젝트 개요** > **프로젝트 설정으로 이동합니다.**  
 
-      ![UninstallFirebase.png](https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png)
+      <Image align="center" alt="UninstallFirebase.png" src="https://files.readme.io/15e74e10daa2f1f1d872f0c8fea274c9819c52c4655baa903728257dd6337e80-33839423254289.png" />
    4. 프로젝트 ID를 복사하세요. 이는 나중에 필요합니다.
 2. FCM API를 활성화하려면:
    1. **클라우드 메시징 탭**으로 이동합니다.
@@ -230,7 +230,7 @@ Firebase 메시징을 사용한 앱 삭제 측정은 안드로이드 SDK V4.7.0 
 2. Firebase <Anchor target="_blank" href="https://console.firebase.google.com">콘솔</Anchor>을 엽니다.
 3. Firebase 콘솔에서 프로젝트 설정으로 이동합니다 (페이지 왼쪽 창의 프로젝트 개요 옆에 있는 톱니바퀴 아이콘을 클릭하세요).  
 
-   ![firebase_cloud_messaging_server_key.png](https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png)
+   <Image align="center" alt="firebase_cloud_messaging_server_key.png" src="https://files.readme.io/4e31c02a1bea013c823b0148ba1704d4492f66d04e23f0e13e00a9c0c22d286c-33839382513041.png" />
 4. 클라우드 메시징 탭에서 두 개의 서버 키를 볼 수 있습니다.
 5. **서버 키**를 복사하세요.
 
@@ -253,7 +253,7 @@ Firebase 메시징을 사용한 앱 삭제 측정은 안드로이드 SDK V4.7.0 
 2. 필요한 경우 **앱 삭제 측정**을 켜세요.
 3. Select **HTTP V1을 선택하고 준비한 프로젝트 ID를 입력하세요.**
 
-   ![UninstallHTTPV1.png](https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png)
+   <Image align="center" alt="UninstallHTTPV1.png" src="https://files.readme.io/80d13e47ea7ae1585d2ecc0e2f7210572e47dba936557c8e96314e49b0d738d8-33839423258641.png" />
 4. **연결 테스트**를 클릭하세요.  
    성공 메시지가 표시됩니다.
 5. **설정 저장**을 클릭합니다.
@@ -271,7 +271,7 @@ Firebase 메시징을 사용한 앱 삭제 측정은 안드로이드 SDK V4.7.0 
 3. 아래로 스크롤하여 앱 삭제 섹션을 찾으세요.
 4. 앱 삭제 측정`<g1>`}을 켭니다.
 
-   ![Uninstall_iOS_p2.png](https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png)
+   <Image align="center" alt="Uninstall_iOS_p2.png" src="https://files.readme.io/3f9de3ebe6099886fa9bc210bd6e491ba91e8ff2c890c980f66c4d48398a597c-33839423260561.png" />
 5. 업로드 아이콘을 클릭하고 P12 파일을 선택하세요.
 6. [선택 사항] P12 인증서가 비밀번호로 보호된 경우 비밀번호를 입력하세요.
 7. **검증을 클릭하여 인증서를 앱스플라이어로 발송하고 검증을 받으세요.**
@@ -329,7 +329,7 @@ iOS 앱을 시험할 때 다음 사항을 유의하세요.
 
 ## 앱 삭제 이벤트 매핑
 
-![앱삭제_이벤트_포스트백.png](https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png)
+<Image align="center" alt="앱삭제_이벤트_포스트백.png" src="https://files.readme.io/9c3c7f3fd330720d4f6f41fdf509c5af00d042291c1350ab83a1951464ac8e8f-33839423261713.png" />
 
 애드 네트워크와 앱 삭제 데이터를 공유하려면 <Anchor target="_blank" href="/marketers/ko/docs/set-up-an-integrated-partner#g-in-app-event-postback-configuration">af\_uninstall 이벤트</Anchor>를 파트너와 매핑해야 합니다. 일반 인앱 이벤트에 대한 포스트백과 달리, 앱 삭제 이벤트는 실시간으로 전송되지 않습니다. 보고된 이벤트 시간은 앱스플라이어가 앱이 삭제되었다고 판단한 시간을 나타내며, 실제 앱 삭제 시간을 나타내지 않습니다.
 

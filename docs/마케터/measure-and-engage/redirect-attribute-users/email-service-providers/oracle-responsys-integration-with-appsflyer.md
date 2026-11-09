@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 이메일 전송 및 분석 플랫폼인 Oracle Responsys는 이메일에 앱스플라이어 원링크를 내장하고 있습니다. 링크를 클릭하는 이메일 수신자는 앱에 딥 링크됩니다.
 
-![oracle-responsys-af-logo.png](https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png)
+<Image align="center" alt="oracle-responsys-af-logo.png" src="https://files.readme.io/f28d0aac1797ee18fdc6083d9ea6d5d2f87d37a894a6c27ab0ea9b6ca51c53a1-49839256665233.png" />
 
 ESP(이메일 서비스 제공업체)는 세분화된 사용자 트래픽을 위한 훌륭한 소스가 될 수 있습니다.
 
@@ -67,7 +67,7 @@ ESP의 과제 중 하나는 올바른 어트리뷰션과 딥링킹을 수행하�
 
 **링크** 테이블에서 IOS 링크 URL을 **링크 URL** 과 동일하게 정의할 수 있습니다.
 
-![Oracle-responsys-link-tracking-table.png](https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png)
+<Image align="center" alt="Oracle-responsys-link-tracking-table.png" src="https://files.readme.io/c151c58af73cf460ba4275a9159e45c15807f311fa8d8b4b1531b0cdf7e3bc4e-49839256667665.png" />
 
 링크 테이블에서 클릭 도메인을 설정하면 Responsys는 이러한 도메인을 사용하여 이메일 캠페인에 포함된 OneLink를 래핑합니다. 이러한 방식으로 Responsys는 원링크 및 딥링킹 기능을 유지하면서 시스템에서 클릭을 기록할 수 있습니다.
 

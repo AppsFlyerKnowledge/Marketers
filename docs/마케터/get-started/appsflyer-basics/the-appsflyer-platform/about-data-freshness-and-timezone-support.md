@@ -34,7 +34,7 @@ x-zendesk:
 
 **시간대**
 
-[![TimeZoneMap.jpg](https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg)](https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg)
+<Image align="center" alt="TimeZoneMap.jpg" src="https://files.readme.io/eddfa3df4d43fed82ba5e867eb1278466d1ba51f9fbc2970f62fa61c6659d340-360005463738.jpg" />
 
 ## 데이터 최신성 및 앱 시간대 지원
 
@@ -92,7 +92,7 @@ UTC 시간은 일정하며 여름/겨울 시간이 따로 없습니다.
 
 **동반구 및 UTC 시간대**:
 
-![mceclip9b.png](https://files.readme.io/cbea9d910695b39f59b342da6f56fa51df76afc910c4eea60f6dd49fbee2a0d6-8272818122769.png)
+<Image align="center" alt="mceclip9b.png" src="https://files.readme.io/cbea9d910695b39f59b342da6f56fa51df76afc910c4eea60f6dd49fbee2a0d6-8272818122769.png" />
 
 * 하루가 끝나는 시간(현지 시간)부터 처리가 시작될 때까지 최대 11시간이 걸릴 수 있습니다. 예를 들어:
 
@@ -101,7 +101,7 @@ UTC 시간은 일정하며 여름/겨울 시간이 따로 없습니다.
 
 **서반구:**
 
-![mceclip7a.png](https://files.readme.io/ac5e3046b3f55916bb73732801c7e0bdef714cc45b89b6c4d70bbc2009cd64c8-8272698121489.png)
+<Image align="center" alt="mceclip7a.png" src="https://files.readme.io/ac5e3046b3f55916bb73732801c7e0bdef714cc45b89b6c4d70bbc2009cd64c8-8272698121489.png" />
 
 * 하루가 끝나는 시간부터 처리가 시작될 때까지 최대 23시간이 걸릴 수 있습니다. 예를 들어:
 * 리포트 유형에 따라 처리된 데이터는 처리 시작 후 8-20시간 후에 사용할 수 있습니다. 예를 들어 로스앤젤레스 데이터는 이벤트 발행 이틀 후 현지 시간으로 00:01부터 사용할 수 있습니다. 뉴욕 데이터는 이벤트 발생 이틀 후 현지 시간으로 03:01부터 사용할 수 있습니다.

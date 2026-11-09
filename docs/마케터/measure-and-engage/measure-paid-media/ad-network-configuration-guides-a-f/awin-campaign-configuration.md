@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** Awin (affiliatewindow\_int)는 광고주가 UA 및 리타겟팅 캠페인을 실행할 수 있도록 하는 통합 파트너입니다. Awin의 마케팅 플랫폼은 상인(광고주)과 제휴사(퍼블리셔)를 연결하는 데 도움을 줍니다.
 
-![awin icon.png](https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png)
+<Image align="center" alt="awin icon.png" src="https://files.readme.io/2a7f22084586fec820c0bfab7f3a256259c43d37f14d6fed8e8db3d2e9905947-18533392495377.png" />
 
 <div id="activate-partner" />
 

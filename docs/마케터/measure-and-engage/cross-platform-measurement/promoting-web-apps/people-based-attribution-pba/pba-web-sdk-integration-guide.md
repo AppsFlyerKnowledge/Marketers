@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 웹 SDK를 사용하여 앱스플라이어를 웹사이트에 연동하여 방문, 이벤트, 전환 및 수익을 기록하고 측정합니다.
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="web-sdk-user-and-integration-guide" />
 
@@ -263,7 +263,7 @@ x-zendesk:
 1. <Anchor target="_blank" href="https://developers.google.com/tag-manager/quickstart">Google Tag Manager로 이동하십시오.</Anchor>
 2. 앱스플라이어 웹 SDK에 대한 새 태그를 생성합니다.
 
-   [![](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)](https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png)
+   <Image align="center" alt="" src="https://files.readme.io/bd695bcbaf3983aac809cb7e1d63af0b89a08cea1751bbd8c2fc39863182fe7a-360002745245.png" />
 3. **커스텀 HTML** 태그 유형을 선택합니다.
 4. 태그에 의미 있는 이름을 지정하십시오.
 5. 다음 중 하나를 선택하세요.
@@ -278,7 +278,7 @@ x-zendesk:
    * **트리거를 모든 페이지에 추가하는 방법:**
      1. **Add Trigger(트리거 추가)** 를 클릭합니다.
 
-        [![gtm-af-tag-sdk-trigger.png](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)](https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png)
+        <Image align="center" alt="gtm-af-tag-sdk-trigger.png" src="https://files.readme.io/9cae70cdc376e57d3458fab80f8b9e57aa6981a3f3029c17d32e96b5f569fc28-360007722757.png" />
      2. **모든 페이지(All Pages)** 를 선택합니다.
      3. **저장**을 클릭하세요.
      4. 태그 이름을 입력하고 **저장**을 클릭하십시오.  
@@ -288,7 +288,7 @@ x-zendesk:
      2. GTM 기본 창에서 **Triggers(트리거)** 를 선택합니다. New(신규)를 클릭합니다.
      3. 펜 아이콘을 클릭합니다.
      4. **Page View(페이지 보기)** 트리거 유형을 선택합니다.   
-        [![PBAselectTrigger_us-en.jpg](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)](https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg)
+        <Image align="center" alt="PBAselectTrigger_us-en.jpg" src="https://files.readme.io/e62926fed956da9f3fcbf04f818858c69f07cbac892fafd839451c73d72a6741-360007811677.jpg" />
      5. **Some Page View(일부 페이지 보기)** 를 선택합니다.
      6. 필요에 따라 페이지 및 트리거 조건을 설정하십시오.
      7. **저장**을 클릭하세요.
@@ -298,7 +298,7 @@ x-zendesk:
         3. 트리거 패널에서 펜을 클릭하십시오.
         4. 이전에 생성한 페이지 뷰 트리거를 선택하십시오.
 
-           [![](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)](https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png)
+           <Image align="center" alt="" src="https://files.readme.io/c4e9b2e4b4d3ce6b7377d419070be650e758eddcdf5603fa5f3c65560402f1d7-360002745305.png" />
         5. **저장**을 클릭하세요.
 
 </Tab>
@@ -314,7 +314,7 @@ x-zendesk:
 
 <Accordion title="Adobe Experience Cloud에 속성 생성">
 
-![adobe_create_property.png](https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png)
+<Image align="center" alt="adobe_create_property.png" src="https://files.readme.io/1f97d619d5fdfe47b1dd1a2e17c0169e939c32bcda62580ba259d6e86f61d6c2-20260884824209.png" />
 
 1. **Adobe Experience Cloud** > Launch로 가십시오.
 2. **Adobe Experience Cloud Launch** 아래 **Go to Launch**를 클릭합니다.
@@ -330,7 +330,7 @@ x-zendesk:
 
 <Accordion title="Adobe Launch 속성에 웹 SDK 추가">
 
-<Image alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
+<Image align="center" alt="web_property_rules.png" src="https://files.readme.io/5f592f3ce1f5b319c8f6f96a6235618d884a4faccb1387b1f22c1fd2ce662d15-360006168098.png" width="491px" />
 
 1. **My web property(나의 웹 속성)** 페이지에서 **Rules(규칙)** 탭을 선택합니다.
 2. 규칙의 이름을 지정한다. **Load web SDK** 사용을 권장합니다.
@@ -349,7 +349,7 @@ x-zendesk:
 
 <Accordion title="Adobe Launch 태그를 웹사이트에 추가">
 
-[![adobe_tag.png](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)](https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png)
+<Image align="center" alt="adobe_tag.png" src="https://files.readme.io/4da5418fc3f2591d15fe68ea1d0451f2b393cb177ae4309d5d431259e2d4003f-small-20260884828049.png" />
 
 1. **My web property** 페이지에서 **환경** 탭을 선택합니다.
 2. 퍼블리시할 환경(개발 환경 혹은 실 운영 환경)이 있는 행을 찾으십시오.
@@ -366,7 +366,7 @@ x-zendesk:
 
 <Accordion title="Adobe Launch 환경 게시">
 
-[![adobe_publishing_env.png](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)](https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png)
+<Image align="center" alt="adobe_publishing_env.png" src="https://files.readme.io/863b7c81a9f90d774f7f4388a22db3420dca5c5db632efc6c0dc40783702f418-small-20260884829329.png" />
 
 1. **My web property** 페이지에서 **퍼블리싱** 탭을 선택합니다.
 2. **Development** 섹션에서 **새 라이브러리 추가**를 클릭합니다.
@@ -404,7 +404,7 @@ x-zendesk:
 1. 웹사이트로 이동하십시오.
 2. 브라우저 개발 도구를 여십시오.
 
-   ![WebSDK_us-en.jpg](https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg)
+   <Image align="center" alt="WebSDK_us-en.jpg" src="https://files.readme.io/5550f0ee8c1a5852a983e6482cb0489696b669ffe5fade49d2308ee32f57201b-360009548497.jpg" />
 3. (A) **네트워크** 탭으로 이동합니다.
 4. 페이지를 새로 고치십시오.
 5. (B) **wa.** appsflyer로 필터링합니다.
@@ -426,7 +426,7 @@ x-zendesk:
 
 <Accordion title="이벤트 옵트인/옵트아웃 전송하기">
 
-![5578-VistiorPrivacyOptIn_us-en.png](https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png)
+<Image align="center" alt="5578-VistiorPrivacyOptIn_us-en.png" src="https://files.readme.io/cd6cbcaeb7f831f4efe74a9a6c6b20d5095602e7edf4dd38becd90864e73c2fb-360010263157.png" />
 
 웹 SDK는 방문자 이벤트 데이터를 앱스플라이어로 전송합니다. 이 섹션에 설명된 대로 이벤트 전송을 제어, 중지 또는 시작할 수 있습니다.
 
@@ -705,7 +705,7 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
 4. 이벤트를 트리거합니다.
 5. 메시지로 필터링합니다.
 
-   ![pba_af_event.png](https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png)
+   <Image align="center" alt="pba_af_event.png" src="https://files.readme.io/394f43890d1aaf09114054a3bca1a003178526e768a5da0b554dbc8d63ef1eb4-360003502238.png" />
 6. 대상 wa.appsflyer.com으로 시작하는 네트워크 요청을 찾습니다. (아래 스크린샷 참조).
 7. 다음을 확인하십시오.
    1. 상태 코드가 200이다.
@@ -840,7 +840,7 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
    선행 코드는 GTM을 로드하며 차례로 웹 SDK를 로드합니다. 그 후 스크립트에서 두 가지 다른 조치가 발생합니다. 하나는 사용자 세부 정보가 포함된 서버로부터 응답을 받는 기능입니다. 다른 하나는 데이터를 로컬 스토리지로 설정합니다. GTM은 기능과 localStorage에 모두 액세스할 수 있습니다. GTM을 사용하여 함수를 호출하고 localStorage에 액세스할 수 있습니다.
 2. 감사 페이지가 로드된 후 구독을 어트리뷰트하기 위한 새 태그가 추가됩니다.
 
-   [![](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)](https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png)
+   <Image align="center" alt="" src="https://files.readme.io/c85a3cbc6c9675e4bfa762ff0a9930d58b1e02b13f147342a11b433e1d211b11-360002750309.png" />
 3. 태그에 고유한 이름을 지정하고 **커스텀 HTML** 태그 유형 옵션을 선택합니다.
 4. **커스텀 HTML**에 다음 코드를 넣습니다.
 
@@ -849,13 +849,13 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
    AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'subscription'}); </script>
    ```
 
-   ![gtm_tag_after_subscribe.png](https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png)
+   <Image align="center" alt="gtm_tag_after_subscribe.png" src="https://files.readme.io/6cf080f94a97a7f38c50899a93d154320995e91f60963c075a5dd03b3a080408-360003515298.png" />
 5. **고급 설정** 컨트롤을 확장한 다음 텍스트 영역 아래의 **태그 시퀀싱** 컨트롤을 확장하고 태그가 실행된 후 변환을 실행하도록 설정되어 있는지 확인합니다.
 
-   [![](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. 전환 태그를 실행하려면 트리거를 설정하십시오. 이 예에서는 감사 페이지를 로드할 때 트리거가 시작됩니다.
 
-   [![](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 **사용자가 웹사이트와 상호 작용할 때 이벤트 기록하기**
 
@@ -902,13 +902,13 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
    선행 코드는 GTM을 사용하여 웹 SDK를 로드합니다. 나머지는 장바구니 페이지를 모방한 HTML입니다. ID 체크아웃이 있는 **체크아웃** 버튼을 확인하십시오. 이것은 해당 버튼의 클릭을 처리하도록 GTM을 설정할 때 필요합니다.
 2. GTM에서 **변수**를 클릭하고 **설정**을 클릭하고 내장 변수 목록에서 **요소를 클릭합니다.**   
 
-   [![gtm-create-variable.png](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)](https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png)
+   <Image align="center" alt="gtm-create-variable.png" src="https://files.readme.io/2f38308b4e4b9f279420f0219b220f2796d337a39a79241861c3d31bdb442b24-360002899569.png" />
 3. 새 변수를 만들고 의미 있는 이름을 지정한 다음 **모든 요소** 유형을 선택합니다.   
 
-   [![gtm-checkout-all-elements.png](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)](https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png)
+   <Image align="center" alt="gtm-checkout-all-elements.png" src="https://files.readme.io/1c370646a4c21dc0fcb8351c756a9fdc81a1a8039d0557b716bc8a4ae51a3fad-360002899589.png" />
 4. 트리거 설정에서 **Some Clicks** 를 선택하고 #checkout의 **CSS Selector와 일치**하는 **클릭 요소**를 선택합니다.  
 
-   [![gtm-checkout-click-elememt.png](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)](https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png)
+   <Image align="center" alt="gtm-checkout-click-elememt.png" src="https://files.readme.io/a101d6c27438d3e05eed9db7ea58b57df8bba9a92d4f9e30caee005366dbcf8c-360002903565.png" />
 5. 체크아웃 조치에 대한 새 태그를 만들고 커스텀 HTML 유형을 선택한 다음 트리거를 체크아웃 트리거로 설정합니다.
 
    ```html
@@ -916,7 +916,7 @@ AF('pba', 'event', {eventType: 'EVENT', eventName: 'purchase', eventRevenue: 12,
     AF('pba', 'event', {eventType: 'EVENT', eventValue: {'category' : 'holiday_promotion'}, eventName: 'checkout'}); </script>
    ```
 
-   ![gtm-checkout-tag.png](https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png)
+   <Image align="center" alt="gtm-checkout-tag.png" src="https://files.readme.io/8d3f99dcd3c3ff8df9e6fc13076b798237b86f8cbc5bbd26f349fa9948edb0d6-360003431857.png" />
 
 </Tab>
 </Tabs>
@@ -1111,10 +1111,10 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba",{pba: {web
    ```
 5. **고급 설정** 컨트롤을 확장한 다음 텍스트 영역 아래의 **태그 시퀀싱** 컨트롤을 확장하고 태그가 실행된 후 변환을 실행하도록 설정되어 있는지 확인합니다.
 
-   [![](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)](https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png)
+   <Image align="center" alt="" src="https://files.readme.io/67ab225ab5ddfe97da782fe6a0d659b609d930d3cd5e2b4478a19c250968f676-360002902065.png" />
 6. 전환 태그가 실행되어야 하는 시점을 나타내도록 전환 태그에 대한 트리거를 설정합니다(아래 예에서는 '감사' 페이지 로드 시 실행됨).
 
-   [![](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)](https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png)
+   <Image align="center" alt="" src="https://files.readme.io/25fd3944971abc811cbe6192cec8c73bb31b3b3c3715a1b8918a71d7f8bf72b1-360002902185.png" />
 
 </Tab>
 </Tabs>

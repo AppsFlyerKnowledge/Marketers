@@ -216,7 +216,7 @@ Excel/Google 시트를 사용하여 CSV 파일을 만드는 경우 파일을 CSV
 1. 서식을 지정할 셀을 선택합니다.
 2. 마우스 오른쪽 버튼을 클릭한 다음 **셀 서식**을 선택합니다.  
    셀 형식 창이 열립니다.  
-   <Image alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
+   <Image align="center" alt="Formatdate..png" src="https://files.readme.io/43d0f370f299d73b8ce93fec1c912cb7525d0071db779a64a58f5917df2a5531-360004042458.png" width="379px" />
 3. **사용자 지정**을 선택합니다.
 4. 유형 필드에 **YYYY-MM-DD**를 입력합니다
 5. **확인**을 클릭하세요.  
@@ -228,7 +228,7 @@ Excel/Google 시트를 사용하여 CSV 파일을 만드는 경우 파일을 CSV
 
 그림에 표시된 대로 Excel은 일반적으로 값 셀을 쉼표로 형식화하여 수천 개로 구분합니다. 이 형식은 비용 가져오기 파일에 적합하지 않습니다.
 
-<Image alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/d54e21ddd937dfe25a33bb96193761a5a724c22a35a55bb7d71eb03a6433d7ed-360003949177.png" width="291px" />
 
 **지출 셀에 1000 단위 구분 기호 없이 서식 지정하기** :
 
@@ -236,7 +236,7 @@ Excel/Google 시트를 사용하여 CSV 파일을 만드는 경우 파일을 CSV
 2. 마우스 오른쪽 버튼을 클릭한 다음 **셀 서식**을 선택합니다.  
    셀 형식 창이 열립니다.
 3. **숫자**를 선택합니다.  
-   <Image alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
+   <Image align="center" alt="Formatnumbers.png" src="https://files.readme.io/4c1b61d1eae9149e818d4cc9793128fbdaafed5daed9acf6cbc503571475cc0e-34255643022481.png" width="381px" />
 4. **1000 단위 구분 기호(,) 사용**을 지웁니다.
 5. (선택 사항) **소수점 이하 자릿수**를 설정합니다. 기본값은 2입니다. 허용되는 최대 개수는 5개입니다.
 6. **확인**을 클릭하십시오.  
@@ -262,7 +262,7 @@ Excel/Google 시트를 사용하여 CSV 파일을 만드는 경우 파일을 CSV
 
 다음은 편집기에 표시되는 [예제 CSV 파일](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0oJTWdlNyT1gBHkGaN1QP-tUatugbPBzC2qYVNmjl_T_i3fKo1abYzTp6F7OqGeN_f7bBAJa3hxVz/pub?gid=0&single=true&output=csv)의 스크린샷입니다.
 
-<Image alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
+<Image align="center" alt="mceclip1.png" src="https://files.readme.io/1398c5e9bad7a46b697e3b21030e64d656162e33a4a63f39475c64993bbe7a72-360003996197.png" width="672px" />
 
 </Accordion>
 

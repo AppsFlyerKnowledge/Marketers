@@ -97,15 +97,15 @@ AppsFlyer와의 ESP 통합을 설정하기 전에 지원되는 ESP*에 계정이
 
 1. **AppsFlyer**의 사이드 메뉴에서 **Engage** > **ESP 통합**을 선택합니다.
 
-<Image alt="Engage 클릭 ESP 통합.png" src="https://files.readme.io/7b731446ce6158d5033020b63be5f386105e7899a8c1b291aa3cb13662a59ee5-27063684942481.png" width="196px" />
+<Image align="center" alt="Engage 클릭 ESP 통합.png" src="https://files.readme.io/7b731446ce6158d5033020b63be5f386105e7899a8c1b291aa3cb13662a59ee5-27063684942481.png" width="196px" />
 
 2. 당신의 ESP를 선택하세요.
 
-<Image alt="select ESP.png" src="https://files.readme.io/526fed3aaf1e6fdbf2404243619159984e298752fdf5913fd3a65cc5a2ed9e1d-27086632495761.png" width="482px" />
+<Image align="center" alt="select ESP.png" src="https://files.readme.io/526fed3aaf1e6fdbf2404243619159984e298752fdf5913fd3a65cc5a2ed9e1d-27086632495761.png" width="482px" />
 
 3. 이메일 캠페인에 사용할 OneLink 템플릿을 선택한 후 **다음**을 클릭하세요.
 
-![select OneLink template.png](https://files.readme.io/4f96b999740be8596a424ce9108a8f702bda2a7ed025ec1869c553393432d87d-27086632499729.png)
+<Image align="center" alt="select OneLink template.png" src="https://files.readme.io/4f96b999740be8596a424ce9108a8f702bda2a7ed025ec1869c553393432d87d-27086632499729.png" />
 
 4. 선택한 ESP에 활성 계정이 있는지 확인하세요.
 
@@ -118,7 +118,7 @@ ESP에서 다음을 준비해야 합니다:
 
 5. 클릭 추적 도메인과 ESP 엔드포인트를 입력한 후 **연결 확인**을 클릭하세요. 이것은 클릭 추적 도메인이 입력한 엔드포인트를 가리키는지 확인합니다.
 
-![ctd 및 esp 엔드포인트 입력.png](https://files.readme.io/d068b7de020bed7ba979b25e0fe866c40a118b00bbfde06a36a4c097485ac885-27086632503441.png)
+<Image align="center" alt="ctd 및 esp 엔드포인트 입력.png" src="https://files.readme.io/d068b7de020bed7ba979b25e0fe866c40a118b00bbfde06a36a4c097485ac885-27086632503441.png" />
 
 완료되면 **다음**을 클릭합니다.
 
@@ -128,7 +128,7 @@ a. **AppsFlyer에서 사용자 정의된 미리 작성된 지침을 복사하여
 
 결과적으로, 링크가 클릭될 때마다 클릭은 AppsFlyer로 리디렉션되고, 다시 ESP 엔드포인트로 리디렉션됩니다.
 
-<Image alt="Af에서 ESP로 클릭 이미지.png" src="https://files.readme.io/8a53fa7e8e2574246ea6b1344cfec0ac2d8f319bb181f6956ecb6db5b05cd0c5-26982377140369.png" width="374px" />
+<Image align="center" alt="Af에서 ESP로 클릭 이미지.png" src="https://files.readme.io/8a53fa7e8e2574246ea6b1344cfec0ac2d8f319bb181f6956ecb6db5b05cd0c5-26982377140369.png" width="374px" />
 
 b. 지침을 복사하고 보낸 후 **완료**를 클릭하세요.
 
@@ -229,7 +229,7 @@ CTD XXX에 대해 SSL 클릭 추적을 활성화해 주실 수 있나요? 현재
 
 1. AppsFlyer에서 이전에 생성한 OneLink 템플릿 내에서 OneLink 관리 페이지(또는 수동으로)에서 "이메일-앱" OneLink 링크를 생성하세요. 이 링크는 귀하의 사양에 따라 사용자를 귀하의 이메일 캠페인에서 귀하의 사양에 따라 귀속시키고 리디렉션하는 데 사용됩니다. <Anchor target="_blank" href="/marketers/ko/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#캠페인을-위한-원링크-링크-생성하기">OneLink 링크</Anchor>를 생성하는 방법을 알아보세요.
 
-<Image alt="email-to-app.png" src="https://files.readme.io/4e30986e039ed4cc13b9963ef3d1bb7b933061176bed812dced45a7240023d54-27082280943761.png" width="652px" />
+<Image align="center" alt="email-to-app.png" src="https://files.readme.io/4e30986e039ed4cc13b9963ef3d1bb7b933061176bed812dced45a7240023d54-27082280943761.png" width="652px" />
 
 **모범 사례:** ESP 이메일 캠페인과 해당 캠페인에서 사용되는 AppsFlyer OneLink 링크 모두에서 동일한 캠페인 이름을 사용하세요.
 

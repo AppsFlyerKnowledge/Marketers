@@ -29,7 +29,7 @@ x-zendesk:
 
 ## 앱스플라이어 대시보드
 
-![OverviewBasic.png](https://files.readme.io/ff5e0fc20694b5f0233af9ea347fc11ae9587b29c542cda8dc2ed8daf334834a-11178012063377.png)
+<Image align="center" alt="OverviewBasic.png" src="https://files.readme.io/ff5e0fc20694b5f0233af9ea347fc11ae9587b29c542cda8dc2ed8daf334834a-11178012063377.png" />
 
 기본 대시보드는 개요 대시보드입니다. 여기에는 유저 인입(UA) 및 리타게팅 캠페인의 LTV(유저생애가치) 성과가 포함됩니다.
 

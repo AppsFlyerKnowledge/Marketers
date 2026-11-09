@@ -28,7 +28,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어 광고 수익 SDK API는 광고 네트워크와 협력하여 노출 수준의 세부적인 광고 수익을 보고합니다.
 
-![mceclip1__1_.png](https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png)
+<Image align="center" alt="mceclip1__1_.png" src="https://files.readme.io/202ded6950dfbf370bb48738876224936d28ecfae0c0aba09d1c49892b774cb5-31202279100177.png" />
 
 <div id="impression-level-ad-revenue-reporting-by-sdk-api" />
 

@@ -62,7 +62,7 @@ x-zendesk:
 
 파트너 연동의 액티비티 수준은 지난 30일 동안 활성 전환이 있었던 일수를 기준으로 합니다. 각 파트너 연동은 두 가지 수준의 액티비티를 가질 수 있으며, 이는 파트너 마켓플레이스 내 파트너 로고 옆에 있는 녹색 또는 주황색 점으로 표시됩니다.
 
-![활성-통합-페이지-오렌지2.png](https://files.readme.io/a347f652b2829372ad1e0fefdf4c7158afa735deca6d32b557f6617a47472e27-51912587900305.png)
+<Image align="center" alt="활성-통합-페이지-오렌지2.png" src="https://files.readme.io/a347f652b2829372ad1e0fefdf4c7158afa735deca6d32b557f6617a47472e27-51912587900305.png" />
 
 다음 표는 특정 앱이 선택되었는지 또는 모든 앱이 선택되었는지에 따라 30&#126;90일 사이의 액티비티 수준 표시(녹색 또는 주황색)에 대한 기준을 설명합니다.
 
@@ -142,7 +142,7 @@ x-zendesk:
 
 캠페인을 중단한 후에도 **파트너 활성화** 설정이 계속 켜져 있는 파트너는 캠페인 데이터를 포함하는 포스트백을 계속 받습니다. 정보 보호 문제의 가능성을 고려하여 사용하지 않는 연동을 비활성화하는 것을 권장합니다. 지난 30일 이상 활성화되어 있으나 사용되지 않은 파트너 연동을 식별하고 비활성화하도록 상기시키기 위해 활성화된 연동 페이지 상단에 경고 메시지가 표시됩니다.
 
-![active-integrations-deactivate-message-mini2.png](https://files.readme.io/46aaa3d5f76eef73f4f09caec1d7ec47bbfb0f0f42597c508972c0e3c80f7362-51912587906577.png)
+<Image align="center" alt="active-integrations-deactivate-message-mini2.png" src="https://files.readme.io/46aaa3d5f76eef73f4f09caec1d7ec47bbfb0f0f42597c508972c0e3c80f7362-51912587906577.png" />
 
 메시지에는 최근 전환이 없는 현재 선택한 앱의 연동을 보여주는 **사용하지 않는 연동 비활성화** 대화 상자의 링크가 포함되어 있습니다. 이 페이지에서 비활성 연동을 검토하고 비활성화할 항목을 선택할 수 있습니다.
 

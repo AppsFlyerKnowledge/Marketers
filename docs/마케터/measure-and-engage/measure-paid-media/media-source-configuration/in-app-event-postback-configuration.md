@@ -51,7 +51,7 @@ x-zendesk:
 
 예를 들어, 사용자가 인스톨 후 15일 이내에 발생하는 이벤트에 대한 요금이 청구되는 경우, 다음과 같이 기간을 설정하세요.
 
-<Image alt="15일_인앱_이벤트_포스트백_설정.png" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
+<Image align="center" alt="15일_인앱_이벤트_포스트백_설정.png" src="https://files.readme.io/6ffcd335b85334015f518895b317d3a5e273f4e00c31e3694c0f95a22ba6d4fb-33379700644497.png" width="529px" />
 
 이 기간 이후에 포스트백은 전송되지 않고, 네트워크에 알림이 전달되지 않지만, 이벤트는 여전히 앱스플라이어에 기록되고 네트워크에 기인한 것으로 간주됩니다.
 
@@ -179,7 +179,7 @@ x-zendesk:
    * **포함하여**: 포스트백에 포함할 [데이터를 선택하세요](/docs/in-app-event-postback-configuration#포스트백에-포함할-데이터).
 3. 더 많은 이벤트에 대해서 이 과정을 반복하세요.
 
-![포스트백을_그대로_보내세요_en-us.png](https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png)
+<Image align="center" alt="포스트백을_그대로_보내세요_en-us.png" src="https://files.readme.io/cc6b2bb1a381d88add035b9f369b0ba68dee8744aa3c2ee2f8f6f054b365a0dd-33379684962705.png" />
 
 **모든 이벤트 발송을 위해:**
 
@@ -188,7 +188,7 @@ x-zendesk:
    * **사용자에게서**: 모든 이벤트에 대해 [발송 옵션](/docs/in-app-event-postback-configuration#포스트백-발송-옵션)을 선택하세요.
    * **포함하여**: 포스트백에서 모든 이벤트에 대해 [포함할 데이터를 선택합니다.](/docs/in-app-event-postback-configuration#포스트백에-포함할-데이터)
 
-![포스트백_맵핑_없음.png](https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png)
+<Image align="center" alt="포스트백_맵핑_없음.png" src="https://files.readme.io/458ca832d4176ccd306236cf10f211499e841dc9f550558987dff3ee683bd2d1-33379700651665.png" />
 
 </Accordion>
 
@@ -405,7 +405,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 1. **활성화된 연동** 페이지에서 권한 부여 대상 파트너를 찾으세요.
 2. 권한 탭에서 **인앱 이벤트 포스트백 구성 허용** 토글을 **켜기**로 전환하세요.
 
-![adnetwork-permissions-postbacks.png](https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png)
+<Image align="center" alt="adnetwork-permissions-postbacks.png" src="https://files.readme.io/f8369f6a0a60d3c48ef66b51f61b3c81f00f6c88511f5f69b2c927788a64f018-33379700661265.png" />
 
 애드 네트워크가 권한을 받으면 [텍스트 필드에 이벤트 ID 입력](/docs/in-app-event-postback-configuration#매핑-방법)의 지침에 따라 이벤트를 매핑할 수 있습니다.
 
@@ -428,7 +428,7 @@ https://appsflyer.com/push?event_value=(event-value)&monetary=(monetary)&net-mon
 3. 대행사가 이벤트 수익을 발송할 수 있는지 여부를 선택하세요.
 4. 대행사가 공유할 수 있는 특정 이벤트를 선택하세요.
 
-![대행사-이벤트.png](https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png)
+<Image align="center" alt="대행사-이벤트.png" src="https://files.readme.io/194b9a18f7721d4cc159f6385140cbb989108b70110e2e0d0f29f90d6115b10a-33379684973969.png" />
 
 <div id="h_01HDP3XHBPA5GZEVERMBN43JH0" />
 

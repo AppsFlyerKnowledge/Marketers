@@ -48,7 +48,7 @@ x-zendesk:
 >
 > 온보딩 페이지가 아직 열려 있지 않다면, 상단 메뉴 표시줄에서 이메일 주소 드롭다운으로 **앱 온보딩**을 클릭합니다.
 
-![온보딩 페이지.png](https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png)
+<Image align="center" alt="온보딩 페이지.png" src="https://files.readme.io/8903839c25f12df28e1c4b488699670e2dadca83af9ddfebfc0cf4eacd2ce744-33198275479953.png" />
 
 **플랫폼에서 앱 추가 마법사를 시작하려면:**
 
@@ -56,7 +56,7 @@ x-zendesk:
 * 앱스플라이어 홈페이지에서 **+ 앱 추가**를 클릭하세요.
 * 상단 바에서 계정 메뉴(이메일 주소 드롭다운) >**앱 온보딩**을 열고 **+ 다른 앱 온보딩**을 클릭합니다.
 
-<Image alt="앱 추가(1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
+<Image align="center" alt="앱 추가(1).png" src="https://files.readme.io/894b7b76c1da76e2308b110266cbffeb579c551033ce302ade182c1d63fd9384-33198275483793.png" width="593px" />
 
 <div id="adding-an-app" />
 
@@ -394,7 +394,7 @@ x-zendesk:
   * <Anchor target="_blank" href="https://developer.roku.com/developer">Roku 개발자 대시보드</Anchor>에서 앱스플라이어에 추가하는 채널의 이름을 클릭합니다. 채널에 대한 Roku 미리보기 및 게시 페이지가 열립니다.
   * URL 페이지 끝에 있는 숫자가 채널
 
-    ![](https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png)
+    <Image align="center" alt="" src="https://files.readme.io/89f6513eee03558a9dc8e465fe67953780074477fc0fe20675b721d8116671af-33198275490577.png" />
 
 </Accordion>
 
@@ -443,7 +443,7 @@ x-zendesk:
 
 예를 들어, 귀하의 번들 ID가 "G15147002586"인 경우, 귀하의 페이지 URL은 "[https://www.samsung.com/us/appstore/app/G15147002586/](https://www.samsung.com/us/appstore/app/G15147002586/) "입니다. 개발자 URL, 번들 ID 및 앱 스토어 ID는 해당 페이지의 메타데이터에 표시됩니다.
 
-![](https://files.readme.io/ee4b192abab24e064013a4a034bda38fb3ed49497ae333e327e1b78dd05d5349-33198275491729.png)
+<Image align="center" alt="" src="https://files.readme.io/ee4b192abab24e064013a4a034bda38fb3ed49497ae333e327e1b78dd05d5349-33198275491729.png" />
 
 </Accordion>
 
@@ -472,7 +472,7 @@ x-zendesk:
 
 **앱 ID:** 앱 ID: 게임 또는 기타 콘텐츠 개념에 할당된 고유 식별자인 PlayStation 개념 ID, PlayStation 스토어 URL에 5&#126;9자리 숫자로 표시됩니다. 앱의 앱 스토어 URL 끝에서 찾을 수 있습니다.
 
-![playstation_app_id_url.png](https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png)
+<Image align="center" alt="playstation_app_id_url.png" src="https://files.readme.io/df92705244e55e7adc44a88076556609983ec3dff89c03df77e19f0f1a061bbb-33198323434513.png" />
 
 </Accordion>
 
@@ -494,7 +494,7 @@ x-zendesk:
 
 **앱 ID:** Steam 앱 ID. 이것은 Steam 스토어 URL에 표시되는 5&#126;8자리 숫자입니다.
 
-![steam_store_app_url.png](https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png)
+<Image align="center" alt="steam_store_app_url.png" src="https://files.readme.io/4976c0323eab0c08b61d4a1a7a75ebf7ea9fcd819176ff574421f0de4d8c614c-33198275497617.png" />
 
 </Accordion>
 
@@ -506,7 +506,7 @@ x-zendesk:
 
 **앱 ID:** 메타 퀘스트 앱 ID는 앱이 다운로드된 메타 앱 스토어 URL의 끝에 나타나는 것입니다. `A-Z` `A-Z`에서 3-50자의 문자를 포함합니다.
 
-<Image alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
+<Image align="center" alt="" src="https://files.readme.io/1938b3f89b866ebdd3452367d7410c423ce57372544a801ca3d1b409f3bff541-33198323442449.png" width="397px" />
 
 </Accordion>
 
@@ -530,7 +530,7 @@ x-zendesk:
 
 **앱 ID:** 엑스박스 앱 ID는 앱이 다운로드된 엑스박스 스토어 URL의 끝에 나타나는 것입니다. 12자의 문자와 숫자만 포함됩니다 (`A-Z` `a-z0-9`).
 
-![](https://files.readme.io/c33ffcb35d4488b9340cfa8b475097eab7b79bfeaf94e8cf8ce6478dda07d341-33198275505041.png)
+<Image align="center" alt="" src="https://files.readme.io/c33ffcb35d4488b9340cfa8b475097eab7b79bfeaf94e8cf8ce6478dda07d341-33198275505041.png" />
 
 **참고:** 앱 ID는 대소문자를 구분합니다.
 
@@ -544,7 +544,7 @@ x-zendesk:
 
 **앱 ID:** 앱 ID: Epic Games 앱 ID(앱이 다운로드된 스토어에 표시됨) `a-z0-9._-` `A-Z` `a-z0-9._-`에서 3-50자의 문자를 포함합니다.
 
-![](https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png)
+<Image align="center" alt="" src="https://files.readme.io/81d1f043c8a7ef5e367a62d564f8c6241c6057445363b21286e3f72ad4210cf6-33198275508497.png" />
 
 </Accordion>
 
@@ -562,7 +562,7 @@ x-zendesk:
 
 ### 추가 정보를 입력하세요(웹 앱에는 해당되지 않음):
 
-<Image alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
+<Image align="center" alt="" src="https://files.readme.io/561aea51bbfaa733721040706cac2b9520e35cfe71027fa34d08ed7890baf00c-33198323448081.png" width="559px" />
 
 <div id="select-currency" />
 

@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 원링크 링크를 사용하는 광고주는 자체 도메인으로 링크를 브랜딩할 수 있어, 브랜드 원링크로 캠페인 성과를 높이고 브랜드 정체성을 강화할 수 있습니다.
 
-![Branded_1__3_.jpg](https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png)
+<Image align="center" alt="Branded_1__3_.jpg" src="https://files.readme.io/20d0a59aa3e896960c9a0faaacad51a58e314073368452e07a7507e0770ca817-30192959736465.png" />
 
 <div id="branded-domains" />
 
@@ -76,7 +76,7 @@ x-zendesk:
 
 **앱스플라이어 서버로 연결된 브랜드 도메인**
 
-[![](https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png)](https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png)
+<Image align="center" alt="" src="https://files.readme.io/43bcdbe50ec58af434f404f0216f90ad345b7b1e034cb7d7c80e3c3c4307c1d2-30192946333713.png" />
 
 **시작하기 전에**
 
@@ -153,15 +153,15 @@ AppsFlyer에서 관리하는 SSL은 대부분의 고객에게 권장되는 기�
 
 1. [브랜드 도메인을 생성합니다](/docs/brand-onelink-with-your-domain#브랜드-도메인-설정).
 2. 앱스플라이어의 참여 **> 브랜드** **도메인에서** 관련 도메인에 마우스를 올리고 “사용자 지정 SSL 인증서” 아이콘을 선택합니다.   
-   <Image alt="SSL certificate icon Newest minimal.png" src="https://files.readme.io/8b22a41fd755a3f36e8eaf4a869b107661894d81504bbfb44e1fc728b9b06751-45231876708497.png" width="1044px" />
+   <Image align="center" alt="SSL certificate icon Newest minimal.png" src="https://files.readme.io/8b22a41fd755a3f36e8eaf4a869b107661894d81504bbfb44e1fc728b9b06751-45231876708497.png" width="1044px" />
 3. 인증서 세부 정보 양식을 작성합니다.   
-   <Image alt="CSR을 생성하기 위한 양식 작성 file.png" src="https://files.readme.io/4327a4da0cbcc6243c9bbdbec21fe4f91d7fe701ccbffca99e629a5eadd248e8-45231876709649.png" width="66.18%" />
+   <Image align="center" alt="CSR을 생성하기 위한 양식 작성 file.png" src="https://files.readme.io/4327a4da0cbcc6243c9bbdbec21fe4f91d7fe701ccbffca99e629a5eadd248e8-45231876709649.png" width="66.18%" />
 4. **CSR 다운로드를** 클릭하여 방금 작성한 양식의 사본을 다운로드합니다.  
    CSR 파일 다운로드
 5. 방금 다운로드한 CSR 파일을 선택한 SSL 인증 기관에 제공합니다.
 6. 새 SSL 인증서를 받으면 앱스플라이어에 다시 업로드하세요.
 
-<Image alt="새 SSL 인증서를 AF.png 에 업로드" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
+<Image align="center" alt="새 SSL 인증서를 AF.png 에 업로드" src="https://files.readme.io/b22525d9f653c3897f39f02a7beded3ad5c42d74a5487458f2ed720a20351e03-45231892701969.png" width="811px" />
 
 <div id="note-4" />
 

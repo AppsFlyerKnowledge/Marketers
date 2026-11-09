@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 웹 서버 대 서버(Web-S2S) 이벤트 API를 이용하여 웹 SDK로 리포트되지 않는 이벤트와 전환을 PBA에 리포트하세요.
 
-[![5107_Infographic_Web_S2S_759x270_option1.jpg](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)](https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg)
+<Image align="center" alt="5107_Infographic_Web_S2S_759x270_option1.jpg" src="https://files.readme.io/11ea958806271989fc6d01a1588762c0ae7313636968d5b878131a4b07d8eaf5-360007722397.jpg" />
 
 <div id="web-server-to-server-events-api-for-pba" />
 
@@ -259,7 +259,7 @@ print(response.text.encode('utf8'))
 1. AppsFlyer에서***내 앱***탭으로 이동하세요.
 2. '브랜드 번들 보기'를 클릭하세요.
 
-   [![GetWebDevKeyPba_us-en.pn](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)](https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png)
+   <Image align="center" alt="GetWebDevKeyPba_us-en.pn" src="https://files.readme.io/e6fdec52461790183f1b12f540db51235a0bb01d3489084ed78a40e96e207495-360007733958.png" />
 3. 필요한 **웹 개발 키를 복사하세요.**
 
 </Accordion>
@@ -293,7 +293,7 @@ print(response.text.encode('utf8'))
 2. '검사'를 선택하기 위해 마우스 오른쪽 버튼을 클릭하세요  
    브라우저의 요소 검사 창이 나타납니다.
 
-   [![S2S_inspect.jpg](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)](https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg)
+   <Image align="center" alt="S2S_inspect.jpg" src="https://files.readme.io/d1608d0085cb5333ad9631acdfb5306398f0388f42b5b3a333493daad8923385-360008059697.jpg" />
 3. '애플리케이션(Application)' 탭으로 이동하세요.
 4. 측면 메뉴에서 '쿠키(Cookies)'를 확장하세요.
 5. 귀하의 웹사이트를 선택하세요. 보이지 않는다면 브라우저를 새로고침하세요.

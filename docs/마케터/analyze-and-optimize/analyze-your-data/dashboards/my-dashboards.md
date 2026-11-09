@@ -65,14 +65,14 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 
 1. 앱스플라이어에서 사이드 메뉴로 이동하여 **My Dashboards**로 가서 + (새 대시보드 만들기)를 클릭하세요.
    * 또는 대시보드의 오른쪽 상단에서 **New(신규)** > **+ Create new(새로 만들기)** 를 클릭하세요.  
-     [<Image alt="" src="https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png" width="222px" />](https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png)
+     <Image align="center" alt="" src="https://files.readme.io/045bb46fe62da1c47656563eb038be1ec82fffddf30ad26bfb3e2514ad422401-31801845437073.png" width="222px" />
 2. 대시보드의 이름을 입력하고 포함할 앱을 선택한 후 **저장**을 클릭하세요.
 3. **+ 새 위젯**을 클릭하고 추가할 위젯 유형(표, KPI, 선, 막대, 열 또는 도넛)을 선택하세요.
 4. 원하는 지표와 그룹화할 디멘션을 추가하여 위젯을 구성하고 **Apply(적용)** 을 클릭하세요.
 5. 대시보드의 오른쪽 상단에서 **저장**을 클릭하세요.  
-   [<Image alt="" src="https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png" width="354px" />](https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png)
+   <Image align="center" alt="" src="https://files.readme.io/2eda73013ce2f0956af0fc54cf06b75656939219b01c1a906c4aa18a37efabab-31801845441937.png" width="354px" />
 6. 대시보드의 오른쪽 상단에서 **Share(공유)** 버튼을 클릭하고 대시보드를 비공개로 유지할지 다른 팀원과 공유할지 선택한 후 **Done(완료)** 를 클릭하세요.  
-   [<Image alt="" src="https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png" width="354px" />](https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png)
+   <Image align="center" alt="" src="https://files.readme.io/7c7f2f90b38402beafdb7acdc0abb92707b43e9fa565f0eba3e236fc20d667db-31801801156241.png" width="354px" />
 
 </Accordion>
 
@@ -87,10 +87,10 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 1. 대시보드의 오른쪽 상단에서 **+ 새로 만들기**를 클릭하고 만들고자 하는 위젯 유형을 선택하세요: 표, KPI, 차트, 인앱 이벤트를 나타내는 표, 인앱 이벤트 차트, 이벤트 위젯, 텍스트 또는 사용자 지정 지표  
    **참고:** 앱 내 이벤트 표와 앱 내 이벤트 차트를 통해 주요 이벤트와 [사용자 행동 패턴을 빠르게 파악할 수 있습니다](/docs/my-dashboards#traits-and-limitations).
 
-   [<Image alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33445444545681)
+   [<Image align="center" alt="image (9).png" src="https://files.readme.io/2fded65acb30ea67d698d098868f2a0d16c53ed26b31ed5b667aee0f34c271a9-36358090992529.png" width="206px" />](https://support.appsflyer.com/hc/article_attachments/33445444545681)
 
    * 차트를 선택하여 차트 창이 열리면 꺾은선형, 막대형, 세로 막대형, 도넛형, 누적 영역형, 콤보(꺾은선형과 세로 막대형의 조합) 중에서 원하는 차트 유형을 선택할 수 있습니다.  
-     [<Image alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/35339681330961)
+     [<Image align="center" alt="charts.png" src="https://files.readme.io/d0e8d409c9d340539e92e79dbbb236a2a00b915d12ceda40af6018776997b54a-41213679546897.png" width="22.87%" />](https://support.appsflyer.com/hc/article_attachments/35339681330961)
    * 텍스트 위젯은 대시보드 섹션의 타이틀을 추가하고 팀원들과 가이드라인, 정보, 인사이트, 목표 또는 사용 지침을 공유할 수 있도록 지원하여 대시보드를 그 자체로 명확한 리포트로 전환해 줍니다.
    * **이벤트 위젯**을 사용하면 이벤트 이름별로 그룹화하여 LTV 및 실제(액티비티) 기간 전반에 걸쳐 출처, 국가, 기타 디멘션별 성과, 매출, 참여도를 나란히 비교할 수 있습니다. 이벤트 위젯을 활용하면 어떤 앱 내 이벤트가 가장 많은 순 사용자와 매출을 견인하는지 확인하고, 미디어 소스별 매출 트렌드를 측정하며, 최대 4단계 그룹화를 통해 이벤트 성과를 세부 분석할 수 있습니다.
 2. [선택 사항] 위젯의 이름을 입력하세요.
@@ -178,7 +178,7 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 1. 앱스플라이어에서 **My Dashboards**로 이동하세요.
 2. 사용자 지정 디멘션 메뉴로 이동합니다.
    * 대시보드 메뉴에서 **메뉴** 아이콘 > **사용자 지정 디멘션**을 클릭하세요.  
-     <Image alt="" src="https://files.readme.io/9dc64c842f35fb65978f6687fbd9f6a9ea03c7f1b689eb35b3eecfbf696ff3b0-47097227614481.png" width="25%" />
+     <Image align="center" alt="" src="https://files.readme.io/9dc64c842f35fb65978f6687fbd9f6a9ea03c7f1b689eb35b3eecfbf696ff3b0-47097227614481.png" width="25%" />
    * 또는 위젯 설정의 **그룹별** 또는 **필터** 필드에서 **사용자 지정 디멘션 생성**을 클릭합니다.
 3. **새 디멘션**을 클릭하세요.
 4. 기본 디멘션을 선택하세요:
@@ -205,7 +205,7 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 
 1. 앱스플라이어에서 **My Dashboards**로 이동하세요.
 2. **메뉴** 아이콘 > **사용자 지정 디멘션**을 클릭하세요.  
-   <Image alt="" src="https://files.readme.io/6368f5ba2dcd0d9db622a5502f6f1ba120c506725f82fb522947fdf9652218b8-47097241547793.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/6368f5ba2dcd0d9db622a5502f6f1ba120c506725f82fb522947fdf9652218b8-47097241547793.png" width="25%" />
 3. 사용자 지정 디멘션을 선택하십시오.
 4. 다음 중 하나를 수행하세요.
    * 사용자 지정 디멘션을 편집하려면 설정을 업데이트하고 **저장**을 클릭하세요.
@@ -219,7 +219,7 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 4. **그룹별**에서 디멘션 선택기를 여세요.
 5. 사용자 지정 디멘션 위로 마우스를 가져가세요.
 6. **편집** 아이콘을 클릭하세요.  
-   <Image alt="" src="https://files.readme.io/89f253d8545855cf12411f66ee81c8abe51d49c65823bcb1b7de52bcee74af75-47097241548433.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/89f253d8545855cf12411f66ee81c8abe51d49c65823bcb1b7de52bcee74af75-47097241548433.png" width="25%" />
 7. 사용자 지정 디멘션 정의
 8. **저장**을 클릭하세요.
 
@@ -238,7 +238,7 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 3. 위젯 설정을 여세요
 4. 데이터를 사용자 지정 디멘션으로 그룹화하려면 **그룹별**에서 해당 사용자 지정 디멘션을 선택하세요.
 5. 데이터를 사용자 지정 디멘션으로 필터링하려면 **필터**에서 해당 사용자 지정 디멘션을 선택하세요.  
-   <Image alt="" src="https://files.readme.io/1bcd074f316d91eb956e689e45d1199978a9dee57d266019dfb5bb5bfb02a578-47097241548945.png" width="25%" />
+   <Image align="center" alt="" src="https://files.readme.io/1bcd074f316d91eb956e689e45d1199978a9dee57d266019dfb5bb5bfb02a578-47097241548945.png" width="25%" />
 6. **적용**을 클릭하세요.
 
 **저장**을 클릭하세요.
@@ -394,7 +394,7 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 
 현재 보기 유형은 **통합** 및 **사용자 획득**입니다.
 
-<Image alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/84478f6f3b8a92436a4297bcd71effb890a1c1fb4c38a1b79c8845d7e91c17b2-42050399326737.png" width="624px" />
 
 <div id="widgets" />
 
@@ -470,9 +470,9 @@ My Dashboards 사용자 인터페이스는 대화형 대시보드 구축을 위�
 1. 앱스플라이어 플랫폼에서 사이드 메뉴의 **My Dashboards**로 이동합니다.
 2. 고정되었거나 최근에 열어본 목록에서 조회할 대시보드를 선택하세요.
 3. 고정된 대시보드와 최근에 본 대시보드 목록에 원하는 대시보드 뷰가 없다면, 대시보드 화면 상단의 드롭다운 메뉴에서 원하는 대시보드를 선택하세요.  
-   [![](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)](https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png)
+   <Image align="center" alt="" src="https://files.readme.io/61ed0305275c4285dddb7f3c08cd9bc615a4cbefe5b797f52f729fbf63b63894-25379509854737.png" />
 4. 앱, 보기 유형, 날짜 범위, 표시 필터를 선택합니다.  
-   [<Image alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />](https://support.appsflyer.com/hc/article_attachments/33445444551185)
+   [<Image align="center" alt="image (3).png" src="https://files.readme.io/e5f199337ac15b974236a03d689d3bfe1d297c0f93847469712aac607943b22d-33835119730961.png" width="787px" />](https://support.appsflyer.com/hc/article_attachments/33445444551185)
 
 </Accordion>
 
@@ -488,7 +488,7 @@ My Dashboards 기본 설정을 지정하려면:
 2. **새로 만들기** 옆에 있는 점 3개 <Image alt="" src="https://files.readme.io/2e083cda3a0ec69461d3cc520e2d7b7c4189561af5585e15d7f6f9bd06f18f2a-46312758928785.png" width="3.57%" />를 클릭하세요.
 3. **기본 설정**을 선택하세요.
 
-   <Image alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
+   <Image align="center" alt="" src="https://files.readme.io/3424f7a57774d9d7425335ba85c725eb30373c883dfcb6abe873938f83e3694e-46312758929297.png" width="420px" />
 
 <div id="theme" />
 
@@ -804,7 +804,7 @@ My Dashboards 기본 설정을 지정하려면:
 
 #### 대시보드 수준
 
-<Image alt="image (4).png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
+<Image align="center" alt="image (4).png" src="https://files.readme.io/969e398ec1bb08a7668e971dcecce8bedf2172619b590825e9ad075a3d00b884-small-33835119733905.png" width="7680px" />
 
 * 기본적으로 대시보드는 **위젯별** 날짜 범위를 따릅니다. 이 모드에서는 각 위젯이 개별 설정에 따라 데이터를 표시합니다.
 * 각 위젯에 선택된 시간 범위는 항상 보조 제목으로 표시됩니다.
@@ -814,7 +814,7 @@ My Dashboards 기본 설정을 지정하려면:
 
 #### 위젯 수준
 
-<Image alt="image (5).png" src="https://files.readme.io/88853ed907a3a36854a3dc888acedb4063b036da6b026b4f6eccd69de26824c0-small-33835112650769.png" width="6016px" />
+<Image align="center" alt="image (5).png" src="https://files.readme.io/88853ed907a3a36854a3dc888acedb4063b036da6b026b4f6eccd69de26824c0-small-33835112650769.png" width="6016px" />
 
 * 각 위젯에는 개별 날짜 선택기가 있어 사용자가 특정 시각화를 위해 원하는 시간 범위를 **맞춤 설정**할 수 있습니다.
 * 각 위젯에는 독립적인 보기 유형 선택기가 있어, 사용자가 특정 시각화에 맞는 맞춤형 보기 유형을 지정할 수 있습니다.
@@ -855,7 +855,7 @@ My Dashboards 기본 설정을 지정하려면:
 
 <Embed title="My Dashboards" typeOfEmbed="youtube" url="https://www.youtube.com/embed/QN34vDC8gtY?si=0IWgOX2oZ0Gmphid" providerUrl="https://www.youtube.com" />
 
-[<Image alt="" src="https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png" width="1083px" />](https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png)
+<Image align="center" alt="" src="https://files.readme.io/e60e61bbfc129eef411b7c76951129e07b601244860d67864694996e19f0e33f-31830577334417.png" width="1083px" />
 
 막대, 열, 선 및 콤보 차트의 경우 여러 지표를 추가할 수 있습니다.
 
@@ -881,7 +881,7 @@ My Dashboards 기본 설정을 지정하려면:
 
 <Accordion title="비교하기(Compare to)">
 
-![Compare-Animated Image (Large) (1).gif](https://files.readme.io/456530b09e6914ea4eb90658aee27408fad5bc3a208f9a4a68a99fbf0f823f13-29064704463761.gif)
+<Image align="center" alt="Compare-Animated Image (Large) (1).gif" src="https://files.readme.io/456530b09e6914ea4eb90658aee27408fad5bc3a208f9a4a68a99fbf0f823f13-29064704463761.gif" />
 
 "비교하기(Compare to)" 기능은 선형 차트에서 사용할 수 있습니다. 선택한 데이터와 과거 데이터를 나란히 표시하여, 트렌드, 변화, 패턴 또는 이상 징후를 쉽게 비교하고 파악할 수 있도록 도와줍니다.
 
@@ -951,11 +951,11 @@ My Dashboards 기본 설정을 지정하려면:
 
 * **히트맵:** 동일한 열의 다른 셀과 비교한 상대적 값에 따라 **2가지 색상 그라데이션**(예: 흰색에서 파란색)으로 각 셀의 색상을 지정합니다. 이를 통해 높은 값과 낮은 값을 빠르게 식별할 수 있습니다.
 
-<Image alt="image (20).png" src="https://files.readme.io/09792e4d15d82b59b75edd50638c2f389bec1f8ff96c882bc556655e16a5d4f1-small-42862956716689.png" width="3652px" />
+<Image align="center" alt="image (20).png" src="https://files.readme.io/09792e4d15d82b59b75edd50638c2f389bec1f8ff96c882bc556655e16a5d4f1-small-42862956716689.png" width="3652px" />
 
 * **신호등:** **3가지 색상 그라데이션**(예: 빨간색, 노란색, 초록색)을 사용하여 여러 지표의 성과 상태를 표시하므로, 설정한 목표에 도달했거나 미달 혹은 근접한 영역을 손쉽게 식별할 수 있습니다.
 
-<Image alt="image (21).png" src="https://files.readme.io/c8907965a966d47bdfb0ffd0718ed8868ad8adddace60141d74e80bfe2da2926-small-42862956722577.png" width="3658px" />
+<Image align="center" alt="image (21).png" src="https://files.readme.io/c8907965a966d47bdfb0ffd0718ed8868ad8adddace60141d74e80bfe2da2926-small-42862956722577.png" width="3658px" />
 
 * **규칙 기반 색상 지정**을 사용하면 "**다음 값 사이에 있음**", "**크거나 같음**", "**작음**"과 같은 연산자를 사용하여 자체 조건을 정의할 수 있습니다. 각 규칙의 수치를 설정하고 특정 색상을 지정하여 비즈니스 로직을 시각화합니다.
 
@@ -967,7 +967,7 @@ My Dashboards 기본 설정을 지정하려면:
 
   이 방식은 어떤 작업이 우수한 성과를 내는지 강조하여 캠페인 최적화 및 예산 배분에 대한 신속한 데이터 기반 의사결정을 지원합니다.
 
-  <Image alt="image (22).png" src="https://files.readme.io/bd7babc39324482966d3aa51707a267f37d9df0285e8ee08b43a77805a3cc4f3-42862956725265.png" width="922px" />
+  <Image align="center" alt="image (22).png" src="https://files.readme.io/bd7babc39324482966d3aa51707a267f37d9df0285e8ee08b43a77805a3cc4f3-42862956725265.png" width="922px" />
 
 <div id="how-to-apply-conditional-formatting" />
 
@@ -977,7 +977,7 @@ My Dashboards 기본 설정을 지정하려면:
 2. 색상을 적용하려는 **지표 열** 위로 마우스를 가져갑니다.
 3. **점 3개** 메뉴를 클릭하고 **조건부 서식**을 선택합니다.
 4. 원하는 **서식 유형**(히트맵, 신호등 또는 규칙 기반)을 선택하고 필요한 경우 조건을 수정합니다.  
-   <Image alt="image (23).png" src="https://files.readme.io/eaa4cec02322cef1af40ed8b82691b76c6b33395be9cd0a707c38ccff6043b91-42862956727569.png" width="75%" />
+   <Image align="center" alt="image (23).png" src="https://files.readme.io/eaa4cec02322cef1af40ed8b82691b76c6b33395be9cd0a707c38ccff6043b91-42862956727569.png" width="75%" />
 
 </Accordion>
 
@@ -989,7 +989,7 @@ My Dashboards 기본 설정을 지정하려면:
 
 대시보드의 데이터는 다음 그림에서 설명되어 있는 통합, 유저 인입(UA), 리타게팅 보기 유형을 통해서 표시됩니다.
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 이러한 보기 유형에는 다음과 같은 LTV 데이터가 포함됩니다.
 

@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** OneLink Smart Script를 설정하여 모든 소스에서 온 모바일 웹 사이트 방문자를 모바일 앱 사용자로 전환하고 어트리뷰트합니다.
 
-![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
+<Image align="center" alt="7901_Smart_Script_flow_1920x1080_2__1_.png" src="https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png" />
 
 <div id="setup" />
 
@@ -128,7 +128,7 @@ Smart Script를 설정하려면 다음 중 하나를 수행하세요.
 1. <Image alt="Down_arrow.jpg" src="https://files.readme.io/a82023665721be681f985548857c4c329f626435780bb1bff7a3821b32b69078-42045468433041.jpg" width="28px" />Smart Script 이름 옆에 있는  
     드롭다운 화살표를 클릭합니다.여기에서 저장된 모든 스크립트를 볼 수 있습니다.  
 
-   <Image alt="Script_steps.jpg" src="https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg" width="1732px" />
+   <Image align="center" alt="Script_steps.jpg" src="https://files.readme.io/824c042dc23acaa14b360ce8cd792cfc2e85ee3c9c95e3fa694f96badfeb1fc2-42045468432657.jpg" width="1732px" />
 2. 편집하려는 스크립트 옆에 있는 펜 아이콘을 클릭합니다.
    1. [OneLink Smart Script를 만드는 방법](/docs/set-up-smart-script-to-convert-web-visitors#onelink-smart-script-설정)을 따르세요.
 3. 휴지통 아이콘을 클릭하여 Smart Script를 삭제합니다.
@@ -418,7 +418,7 @@ Smart Script는 링크가 있는 버튼 대신 웹 페이지에 QR 코드를 표
 >
 > **발신 QR 코드**:
 >
-> <Image alt="" src="https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png" width="48.07%" />
+> <Image align="center" alt="" src="https://files.readme.io/2f06149c901d8a97c2a544b8196e9afecbe3b3748ed8419a39c2dc5e3afa61ba-42045454923153.png" width="48.07%" />
 
 </Accordion>
 
@@ -479,7 +479,7 @@ OneLink Smart Script를 사용하여 웹사이트의 노출수를 계산할 수 
 
 예를 들어 is\_retargeting을 파라미터로 추가하려면 **매핑 대상** 필드에서 사용자 지정 파라미터를 선택한 다음 **발신 URL 파라미터** 필드에 is\_retargeting 파라미터를 선택합니다.
 
-![Smart_Script_Custom.jpg](https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg)
+<Image align="center" alt="Smart_Script_Custom.jpg" src="https://files.readme.io/5a09d18b01ece93bbb47667b676039c98742ebc3b88c5235ad92c7e44d5316b9-small-42045454926609.jpg" />
 
 <div id="adset-and-other-parameters-are-not-showing-in-the-dropdown" />
 

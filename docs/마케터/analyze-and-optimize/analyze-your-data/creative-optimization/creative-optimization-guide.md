@@ -114,7 +114,7 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
 > 따라서 광고 크리에이티브는 앱스플라이어에 의해 총 50개의 인스톨로 어트리뷰션되지만, 애셋당 인스톨 수는 유지되며, 이는 이 예시에서 애셋 **A가 애셋** **B**보다 더 많은 인스톨을 생성했음을 의미합니다.
 > 수익 및 ROAS와 같은 하위 퍼널 지표도 이 비율을 기반으로 계산됩니다.
 >
-> ![Creative_data_example_en-us.png](https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png)
+> <Image align="center" alt="Creative_data_example_en-us.png" src="https://files.readme.io/ca556904829b809238b8b994fd6d762d6cb58ae993c41dd19a7de978f774e8b9-small-18564727253649.png" />
 
 </Accordion>
 
@@ -132,7 +132,7 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
 
 대시보드 설정의 첫 번째 단계는 필터링 옵션을 선택하는 것입니다. 모든 필터는 크리에이티브 최적화 개요(Creative Optimization Overview)와 디스커버리(Discovery) 대시보드에 모두 적용됩니다.
 
-[![filter_bar.jpg](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)](https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg)
+<Image align="center" alt="filter_bar.jpg" src="https://files.readme.io/99da48c37938e573af66cf1f46ce3273c3ca010e68070cb59b5e12cbad1981e3-18564730224913.jpg" />
 
 **대시보드 필터를 선택하려면**:
 
@@ -160,7 +160,7 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
 * **유저 인입**- UA 광고/광고 세트와 관련된 광고소재 데이터만 표시합니다.
 * **리타게팅** - 리타게팅 광고/광고 세트와 관련된 광고소재 데이터만 표시합니다. 비용 데이터도 여기에서 확인할 수 있습니다.
 
-[![View_types.jpg](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)](https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg)
+<Image align="center" alt="View_types.jpg" src="https://files.readme.io/e73cc643581e94d6fbc6455e16615eb2e1d8b387cda626d39b17bbe714122611-18564727261585.jpg" />
 
 </Accordion>
 
@@ -247,7 +247,7 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
      * *지표*에는 노출수, 클릭수, 설치수, CTR, CVR, CPM, IPM, 비용, eCPI, 리어트리뷰션, 리인게이지먼트, 수익, ROAS, 유지, 순 사용자, 광고 수, 파트너 측정항목이 포함됩니다
      * 다양한 *연산자, 숫자* 및/또는 *인앱 벤트* 와 결합
      * 특정 인앱이벤트는 드롭다운 메뉴에서 선택합니다. 각 인앱이벤트에 대해 이벤트당 지표를 별도로 추가하여 매우 구체적인 인사이트(예: af\_purchase 수익 + af\_login 수)를 얻을 수 있습니다.  
-       <Image alt="" src="https://files.readme.io/2b8bdaa8c1fb47c7e78b59e7e24f37aa3248800c7a3ed5cc821c2e11622a93fe-30129836915729.png" width="892px" />
+       <Image align="center" alt="" src="https://files.readme.io/2b8bdaa8c1fb47c7e78b59e7e24f37aa3248800c7a3ed5cc821c2e11622a93fe-30129836915729.png" width="892px" />
 3. **저장**을 클릭하세요.  
    새 사용자 지정 지표가 만들어지고 필터 표시줄 및 테이블 설정에 옆에 "사용자 지정"이 표시됩니다.
 
@@ -261,14 +261,14 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
 **편집하려면:**
 
 1. 1. **기존 사용자 지정 지표 편집 드롭다운**(**사용자 지정 지표**)을 클릭하고 편집할 항목을 선택합니다.  
-   <Image alt="" src="https://files.readme.io/b792e08152482bed11ea8ce5ea5795c3df961c257d07397b5b4d787f40a8ea2e-30129836916369.png" width="892px" />
+   <Image align="center" alt="" src="https://files.readme.io/b792e08152482bed11ea8ce5ea5795c3df961c257d07397b5b4d787f40a8ea2e-30129836916369.png" width="892px" />
 2. 2. 원하는 대로 변경한 다음 **저장**을 클릭합니다.  
    **참고: 참고:** 다른 이름으로 저장 /strong>을 클릭하여 새 사용자 지정 지표로 저장할 수도 있습니다.
 
 **삭제하기:**
 
 * 삭제 방법:드롭다운에서 삭제할 사용자 지정 지표를 선택한 후 삭제 아이콘을 클릭합니다.  
-  <Image alt="" src="https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png" width="546px" />
+  <Image align="center" alt="" src="https://files.readme.io/8370c5bfec23ef2ac15e266e98be357e496aef51fa14ca5b4c853b0b38910a10-30129810517393.png" width="546px" />
 
 </Accordion>
 
@@ -292,7 +292,7 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
 
 새로운 파트너 <Anchor target="_blank" href="/marketers/ko/docs/creative-optimization-partner-integrations">연동</Anchor>을 추가하기만 하면 지원되는 파트너에 대한 지표가 자동으로 크리에이티브 최적화로 가져옵니다(Unity 애즈는 예외이며 **특별 지침**이 있음). 설정되면 이러한 지표는 지표와 함께 "파트너"로 표시됩니다.
 
-![partner metrics image.jpg](https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg)
+<Image align="center" alt="partner metrics image.jpg" src="https://files.readme.io/074948fd8e4707c1353b6f8ce387e76e04801eeef397e94a604619bc8a0ad420-18564730240145.jpg" />
 
 **특별 지침 및 고려 사항:**
 
@@ -386,7 +386,7 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
 **비공개 대시보드 보기를 저장하려면(사용자에게만 표시됨):**
 
 1. 현재 표시되는 대시보드 상단에서 드롭다운 아이콘을 클릭하고 메뉴에 개인 아이콘이 선택되어 있는지 확인한 다음 **+ 새 개인 대시보드로 저장을 클릭합니다.**  
-   ![](https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png)
+   <Image align="center" alt="" src="https://files.readme.io/c1ed2ac6917fa105641f054623ad87a562f4b80042379301c8736bffaa57a22e-25381406386065.png" />
 2. 대시보드 이름을 입력하고 **저장**을 클릭합니다.
 3. 메뉴 아이콘을 사용하여 대시보드 보기를 편집 및 삭제하거나 공유에서 공유로 공유 설정을 변경하거나 보기를 별표로 표시하여 로그인 시 표시되는 기본 보기로 표시합니다.
 
@@ -409,7 +409,7 @@ Meta 어드밴티지+(동적 광고소재) 및 Google 유니버설 앱 캠페인
 **보기 URL을 다른 계정 사용자와 공유하려면:**
 
 * 대시보드 오른쪽 위에 있는 아이콘을 클릭하여 페이지 URL을 복사한 다음 공유합니다.  
-  <Image alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />  
+  <Image align="center" alt="Copy_page_URL_with_cursor.jpg" src="https://files.readme.io/2d1cc2f9585850c1d9c723f959be96e953fe6cc90b6b2a31ac8c16bf4e7b4b8f-18564702245777.jpg" width="121px" />
   **참고**: 비공개 대시보드에서도 URL 보기를 공유할 수 있습니다. 비공개 대시보드 URL이 열리면 표시되는 리포트 이름은 "저장되지 않은 리포트"입니다.
 
 </Accordion>
@@ -466,7 +466,7 @@ CSV 파일을 다운로드하고 업로드하는 절차는 다음과 같습니�
 
 다음은 대시보드에서 다운로드하는 맞춤 측정기준 CSV 파일의 예입니다. 각 열 머리글(1행)은 맞춤 측정기준의 이름입니다(예: '테마' 또는 '변형'). “테마” 또는 “변수”). 차원을 추가하거나 기존 차원을 변경할 수 있습니다. 태그를 추가하거나 변경할 수도 있습니다(예: “3 Moves” 또는 “DarkPalette”).
 
-[![Screen_Shot_2022-08-08_at_16.25.23.png](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)](https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png)
+<Image align="center" alt="Screen_Shot_2022-08-08_at_16.25.23.png" src="https://files.readme.io/33137d3c8eab51069a3863a2af193d2192cd28546442abcaf8b74073e737c63e-18564702296977.png" />
 
 </Accordion>
 
@@ -476,7 +476,7 @@ CSV 파일을 다운로드하고 업로드하는 절차는 다음과 같습니�
 
 * 맞춤 측정기준은 필터와 표에 '맞춤설정' 태그와 함께 표시됩니다.
 
-<Image alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
+<Image align="center" alt="Custom_tag.png" src="https://files.readme.io/f8003396943a406dec2b825f4a4725aeb2f0ea3b23f3c67643cc0c096321b401-18564730363025.png" width="477px" />
 
 * 광고소재 최적화 대시보드에 최대 15개의 사용자 지정 차원을 추가할 수 있습니다.
 * 업로드 파일 크기는 1MB로 제한됩니다.

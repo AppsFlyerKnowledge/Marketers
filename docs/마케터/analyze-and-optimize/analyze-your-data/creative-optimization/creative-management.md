@@ -76,7 +76,7 @@ x-zendesk:
 
 2. **크리에이티브 연결을** 클릭하세요.
 
-<Image alt="크리에이티브 커넥션.png를 클릭" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
+<Image align="center" alt="크리에이티브 커넥션.png를 클릭" src="https://files.readme.io/a1ba600e90389351dc119bb00a358d14909eb92a3fc0b8391e3efa7650992ae2-small-48939135740689.png" width="150%" />
 
 3. **Add Connection (연결 추가)** 를 클릭합니다.
 4. **구글 Drive를** 선택하세요.
@@ -87,7 +87,7 @@ x-zendesk:
 8. **URL 추가를** 클릭하세요.
 9. 여러 폴더를 한 번에 연결하려면 앞의 두 단계를 반복하세요.
 
-<Image alt="image (16).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
+<Image align="center" alt="image (16).png" src="https://files.readme.io/c29dab5dc76470b5e99e8efd8accaec7bfd1c6878f3bcfe8d58d7b650063065b-48939152741393.png" width="92.07%" />
 
 10. **Connect**를 클릭하세요.
 
@@ -107,7 +107,7 @@ Dropbox를 연결하기 전에 관련 창작 폴더에 액세스 있는 계정�
 6. 연결 모달에서 **'폴더 선택'을** 클릭 다음 연결할 폴더를 선택합니다.
    * 크리에이티브 관리 기능은 선택한 폴더와 하위 폴더의 크리에이티브를 동기화합니다.
 
-<Image alt="폴더 선택을 클릭 .png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
+<Image align="center" alt="폴더 선택을 클릭 .png" src="https://files.readme.io/13d62001deedecfb95a202aa54d36a1d7948d36aa76ac2a93b056be54d2ffe01-48939135745937.png" width="84.64%" />
 
 7. 각 폴더에 맞는 앱을 선택하세요. 이 단계는 선택 사항이지만, 크리에이티브를 올바르게 정리하고 매칭하는 데 도움이 되므로 권장합니다.
 8. **Connect**를 클릭하세요.
@@ -124,7 +124,7 @@ Dropbox를 연결하기 전에 관련 창작 폴더에 액세스 있는 계정�
 
 각 크리에이티브 카드는 하나의 창작물을 나타냅니다. 하나의 크리에이티브에는 해상도나 형식 등 여러 버전이 포함될 수 있습니다. 이 카드를 통해 미디어 소스 전반에 걸쳐 크리에이티브가 새로운지, 활성 상태인지, 비활성 상태인지 빠르게 파악할 수 있으며, 최초 출시 시점 및 크리에이티브 관리 시스템과의 동기화 시점과 같은 주요 메타데이터를 확인할 수 있습니다. 각 크리에이티브는 자동으로 분석 및 점수화되어 출시 전에 최적의 크리에이티브를 선택할 수 있도록 지원합니다. 점수는 C(성공 가능성이 낮음)부터 A(확장 준비 완료)까지 범위로, 최상위 성과를 내는 크리에이티브를 자신 있게 우선순위화하는 데 도움이 됩니다.
 
-<Image alt="image (16).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
+<Image align="center" alt="image (16).png" src="https://files.readme.io/a295ed00e01564b04bd32a7ce515cf41012a62324a8fcd350d1b4b9113e0cacb-small-48939135746577.png" width="150%" />
 
 <div id="filter-creatives" />
 
@@ -180,7 +180,7 @@ Dropbox를 연결하기 전에 관련 창작 폴더에 액세스 있는 계정�
 8. 설정 내용과 유효성 검사 메시지를 검토하십시오.
 9. **구글 Ads에 업로드하기를** 클릭하세요.
 
-<Image alt="구글 Ads에 업로드를 클릭 .png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
+<Image align="center" alt="구글 Ads에 업로드를 클릭 .png" src="https://files.readme.io/5280a1a396584e6874d8a2c24882fb9be4b25747d322fab607944da57a8fcdc9-48939152742545.png" width="100%" />
 
 <div id="note" />
 
@@ -202,7 +202,7 @@ Meta 의 경우 기존 광고 세트 내에 광고를 만들 수 있습니다.
 6. **'모든 크리에이티브** ' 섹션에서 크리에이티브를 선택하고 광고에 할당하세요.
 7. 콘텐츠에 여러 버전이 있는 경우 업로드할 관련 버전을 선택하세요.
 
-<Image alt="Meta Ads.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
+<Image align="center" alt="Meta Ads.png" src="https://files.readme.io/56c387af74f4904921770abdee23e0d27a92e8f26c40d2d4fa46a4c42a4e2bb0-48939152743441.png" width="1838px" />
 
 8. 설정 내용과 유효성 검사 메시지를 검토하십시오.
 9. **다음**을 클릭합니다.
@@ -210,7 +210,7 @@ Meta 의 경우 기존 광고 세트 내에 광고를 만들 수 있습니다.
     * 기본적으로 이 설정은 새로 생성되는 모든 광고에 적용됩니다. '특정 **광고 맞춤 설정'** 드롭다운 메뉴에서 특정 광고를 선택하여 수정할 수 있습니다.
 11. **Meta 에서 광고 만들기를** 클릭하세요.
 
-<Image alt="image (16).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
+<Image align="center" alt="image (16).png" src="https://files.readme.io/95125f551e731428a8d18a7ba1162246a867cdff4e0d34aee3950e08446c5eeb-48939152744209.png" width="1840px" />
 
 #### TikTok Ads
 

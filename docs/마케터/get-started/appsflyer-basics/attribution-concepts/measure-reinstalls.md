@@ -96,7 +96,7 @@ x-zendesk:
 
 ### 개요
 
-[![](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)](https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2376efb764026f9cb3c585e8145ae6cf361c3e887c8478ec82709caea63feb1a-10485524792337.jpg" />
 
 재설치 후 유저가 수행한 인앱이벤트는 재설치 후 이벤트 어트리뷰션 상태에 따라 어트리뷰트된 오가닉, 어트리뷰트된 않은 논오가닉 또는 어트리뷰트되지 않은 오가닉입니다(아래 참조).
 
@@ -172,7 +172,7 @@ x-zendesk:
 
 다음 날(1일 차), 유저가 앱을 재설치하고 $5를 구매합니다.
 
-![Reinstall_1.jpg](https://files.readme.io/7e8eccb3a6873b42a1d8503c0f027386728adb2eecbe457451d2e37c0a7b6774-10225445609873.jpg)
+<Image align="center" alt="Reinstall_1.jpg" src="https://files.readme.io/7e8eccb3a6873b42a1d8503c0f027386728adb2eecbe457451d2e37c0a7b6774-10225445609873.jpg" />
 
 유저가 재설치하기 전에 이미 구매했으므로 고유 유저 수가 추가되지는 않습니다.
 

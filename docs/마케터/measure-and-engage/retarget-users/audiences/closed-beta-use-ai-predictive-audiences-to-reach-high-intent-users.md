@@ -59,7 +59,7 @@ x-zendesk:
 2. **오디언스**에서 **새 예측 오디언스**를 클릭하세요.
 3. Audience Name 을 입력합니다.
 
-   [<Image alt="목표 정의하기 (입력된 값).png" src="https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png" width="1666px" />](https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png)
+   <Image align="center" alt="목표 정의하기 (입력된 값).png" src="https://files.readme.io/9dd260c4552be231e2f313db451d92501b6090664e6f7010c660357f9af71efb-45796747476497.png" width="1666px" />
 4. 앱 선택
 5. 목표 이벤트를 선택하세요.
 6. 예측 목표를 선택하세요 (**구매할 가능성이 높음**).
@@ -83,7 +83,7 @@ x-zendesk:
 
 2. 범위를 사용자 정의하려면 그래프에서 최소 및 최대 마커를 드래그하세요.
 
-   <Image alt="확률 범위 설정 올바른 버전.png" src="https://files.readme.io/8dd9b6368d86e5641e99e7fe66e137b1137adf8fdf7760d597826f7c2d5be745-45796825322385.png" width="1898px" />
+   <Image align="center" alt="확률 범위 설정 올바른 버전.png" src="https://files.readme.io/8dd9b6368d86e5641e99e7fe66e137b1137adf8fdf7760d597826f7c2d5be745-45796825322385.png" width="1898px" />
 
    **예상 청중 규모** 는 선택에 따라 실시간으로 업데이트됩니다.
 

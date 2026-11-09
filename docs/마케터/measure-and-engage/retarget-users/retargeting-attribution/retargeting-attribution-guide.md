@@ -37,7 +37,7 @@ x-zendesk:
 * **리인게이지먼트:** 디바이스에 앱이 있는 경우, 유저가 앱을 열도록 동기를 부여한 미디어 소스가 리인게이지먼트로 인정받습니다.
 * **리어트리뷰션(일명 리타겟팅 재설치)**: 앱이 유저 디바이스에 없는 경우(즉, 유저가 앱을 삭제한 경우), 리타겟팅 캠페인에 참여하면 유저가 앱을 다시 설치하고 열게 됩니다. <Anchor target="_blank" href="/marketers/ko/docs/set-up-re-attribution-window">리어트리뷰션 윈도우 동안 이 경우가 발생하면:</Anchor> 리타겟팅 미디어 소스에 리어트리뷰션이 적용됩니다. 관련 자료: <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model#reinstalls">재설치.</Anchor>
 
-![](https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png)
+<Image align="center" alt="" src="https://files.readme.io/64b8d9f5040daa281ae13f0855749ab4a88a2e7e8616d6ada37975899db92c80-31937591646097.png" />
 
 리타겟팅 캠페인을 운영하기 전에, 다음 섹션에서 리인게이지먼트 규칙과 사례를 확인한 후, 리타겟팅 절차 섹션에 설명된 대로 리타겟팅을 설정하세요. 이해를 돕기 위해, 앱스플라이어 <Anchor target="_blank" href="/marketers/ko/docs/appsflyer-attribution-model">어트리뷰션 모델</Anchor>과 관련된 어트리뷰션 기간에 대한 이해가 필요합니다.
 
@@ -90,7 +90,7 @@ x-zendesk:
 
 #### **규칙 구현 예시 흐름**
 
-![](https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png)
+<Image align="center" alt="" src="https://files.readme.io/f4b53c27319370434863c156bf29051db9c2c12fda2128d0faf0f8a6ca6b7002-33563511579537.png" />
 
 클릭-쓰루 및 뷰-쓰루 어트리뷰션을 위한 리인게이지먼트 규칙 체크리스트:
 

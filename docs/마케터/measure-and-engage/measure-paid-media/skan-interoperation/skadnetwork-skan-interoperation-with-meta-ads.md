@@ -101,7 +101,7 @@ Meta Ads가 앱스플라이어와 SKAN 데이터를 공유하도록 허용합니
 2. Meta Ads를 검색하여 선택합니다.
 3. **SKAN** 탭으로 이동합니다.
 
-   ![skan_repprtiing_-_connected_accounts.png](https://files.readme.io/41514c220de398871292c990e448e2bc8ce450a17512649842cdb2bc4fd78846-40032591356817.png)
+   <Image align="center" alt="skan_repprtiing_-_connected_accounts.png" src="https://files.readme.io/41514c220de398871292c990e448e2bc8ce450a17512649842cdb2bc4fd78846-40032591356817.png" />
 4. **f 로그인**을 클릭하세요. 계정은 <Anchor target="_blank" href="https://www.facebook.com/business/help/155909647811305?id=829106167281625">다음 권한이 있는</Anchor> 관리자 또는 광고주 계정이어야 합니다.
    * Ads\_read 권한. [광고 읽기 권한이 있는지 확인](/docs/skadnetwork-skan-interoperation-with-meta-ads#verifying-the-ads_read-permission) 하세요.
    * Meta Business Partner 설정에서 광고된 앱 ID에 액세스합니다.
@@ -121,7 +121,7 @@ Meta Ads가 앱스플라이어와 SKAN 데이터를 공유하도록 허용합니
 
 <Accordion title="CV 스키마를 Meta Ads와 공유">
 
-![SKAdNetwork-Facebook-AppsFlyer_integration__5_.png](https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png)
+<Image align="center" alt="SKAdNetwork-Facebook-AppsFlyer_integration__5_.png" src="https://files.readme.io/f5965dc535a47b3d665a3cf1ae1df564a176ff9be76d5fb4a9f01d80b0e58994-40032652599953.png" />
 
 <div id="enabling-appsflyer-skan-interoperation-with-meta-ads" />
 

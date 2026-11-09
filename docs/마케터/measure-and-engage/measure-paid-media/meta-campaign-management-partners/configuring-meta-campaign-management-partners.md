@@ -54,7 +54,7 @@ x-zendesk:
 
 **인앱 이벤트 포스트백 설정 방법**:
 
-[![in-app_event_mapping.png](https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png)](https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png)
+<Image align="center" alt="in-app_event_mapping.png" src="https://files.readme.io/ced254c1aa0ad454c1876cfc0bc85de20d275824efb34c9665ca144dabffaa2a-14050539243793.png" />
 
 1. **인앱 이벤트 포스트백**을 켭니다.
 2. <Anchor target="_blank" href="/marketers/ko/docs/in-app-event-postback-configuration#매핑-방법">매핑 방법</Anchor>에 따라 필수 파라미터를 작성합니다.  

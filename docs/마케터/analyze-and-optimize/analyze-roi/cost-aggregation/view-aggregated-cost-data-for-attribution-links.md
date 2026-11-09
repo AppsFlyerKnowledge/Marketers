@@ -46,7 +46,7 @@ Cost data reported on attribution links is aggregated and available for viewing 
 
 In the ***Overview dashboard,** Aggregated Performance Report* contains cost, clicks, impressions, ROI, and average eCPI data.
 
-[![CostReporting.jpg](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)](https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg)
+<Image align="center" alt="CostReporting.jpg" src="https://files.readme.io/5d4dbe5dc74fd0915924518f76c63e379f0b072b5d5dbb7a7f92455b83e33a12-17313191631633.jpg" />
 
 The performance and raw data reports are also available for <Anchor target="_blank" href="/marketers/ko/docs/raw-data-reporting-overview">download</Anchor>.
 

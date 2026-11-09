@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 정확한 실험 결과를 위해 알림을 이해하고 해결하세요.
 
-![경험치_경고_조작됨.jpg](https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg)
+<Image align="center" alt="경험치_경고_조작됨.jpg" src="https://files.readme.io/3981e4a4bd66206d9b5986cc1b573f67e1ab836042a1f73518f48a1ea17b6568-35266706078481.jpg" />
 
 <div id="about-experiment-alerts" />
 

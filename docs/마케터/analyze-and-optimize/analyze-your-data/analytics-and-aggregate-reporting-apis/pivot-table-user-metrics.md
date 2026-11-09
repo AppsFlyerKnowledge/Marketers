@@ -27,7 +27,7 @@ x-zendesk:
 
 > **간단히 보기**: 다양한 사용자 메트릭 보기—LTV, 활동, Protect360 및 유지율. BI 시스템에서 사용할 수 있도록 결과를 CSV 파일로 다운로드합니다. 피봇은 단일 쿼리로 다중 앱을 지원합니다. 마스터 API 호출을 생성하는 데 사용합니다.
 
-![Full_Funnel.gif](https://files.readme.io/f74b45f8fcaa29cc0941a90d6cca5ef7fb87a8034edb36697d8d595a6be7b3a5-51912582394385.gif)
+<Image align="center" alt="Full_Funnel.gif" src="https://files.readme.io/f74b45f8fcaa29cc0941a90d6cca5ef7fb87a8034edb36697d8d595a6be7b3a5-51912582394385.gif" />
 
 <div id="about-pivot-reports-page" />
 
@@ -158,7 +158,7 @@ x-zendesk:
 
 <Accordion title="피봇 리포트 보기">
 
-[![](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)](https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png)
+<Image align="center" alt="" src="https://files.readme.io/cb549ba9b17e75f05d723cdb56335232dd40c419ebfe7ecad08b80a71be46296-360002246865.png" />
 
 **피봇 리트를 보는 방법**:
 

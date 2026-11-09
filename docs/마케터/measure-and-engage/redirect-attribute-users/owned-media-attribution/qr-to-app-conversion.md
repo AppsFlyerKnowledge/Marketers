@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 한눈에 보기: OneLink로 생성된 QR 코드를 사용하여 데스크톱, TV, CTV 또는 오프라인 유저를 모바일 앱 유저로 전환하십시오.
 
-![6005_QR_code_4.jpg](https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg)
+<Image align="center" alt="6005_QR_code_4.jpg" src="https://files.readme.io/6db45d7e82bc33ba8af8c6e7d096011d71b06766da9df348dccfa1b3e4aa380d-12368835107601.jpg" />
 
 <div id="converting-mobile-non-mobile-and-offline-traffic-into-mobile-app-users" />
 
@@ -78,7 +78,7 @@ QR 코드는 다음 중 하나로 생성할 수 있습니다.
 
 <Accordion title="QR 코드 사용자 지정">
 
-![OnelinkQRFinal__1_.gif](https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif)
+<Image align="center" alt="OnelinkQRFinal__1_.gif" src="https://files.readme.io/6eb996db8c8bcdb8ac46380151fc54c8ef5b686999aaaef3d1a951d627eadc70-11902870808081.gif" />
 
 원링크를 통해 생성된 QR 코드는 다음과 같이 사용자 지정할 수 있습니다.
 
@@ -138,7 +138,7 @@ QR 코드는 다음 중 하나로 생성할 수 있습니다.
   * QR 코드를 스캔하는 방법에 대한 지침을 추가하는 것이 좋습니다.
 * 이미 원링크를 사용하고 계신가요? 이메일 등에 사용되는 *다른* 사용자 지정 원링크에서 QR 코드가 포함된 페이지의 URL인 값을 사용하여 **af\_web\_dp** 매개변수를 추가합니다. 이렇게 하면 데스크톱 유저가 앱 스토어 대신 웹 페이지로 연결되는 링크를 클릭하게 됩니다.  
 
-  [![](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)](https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg)
+  <Image align="center" alt="" src="https://files.readme.io/1b92d842ac77121e9a5d0e8e2a03fd07fb3e1f05ad231b3954ff0925f8d4b56f-360012661797.jpg" />
 
 </Accordion>
 

@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 한눈에 보기: AVOW GmbH(avow1\_int)는 광고 네트워크 및 에이전시 계정을 모두 갖춘 통합 파트너로, 광고주가 모바일 기기에서 유저 인입 캠페인을 실행할 수 있도록 합니다. 클릭 기반 모바일 어트리뷰션 외에도 Avow GmbH는 광고주가 앱스플라이어로 기록할 수 있는 뷰-쓰루 어트리뷰션도 제공합니다.
 
-![avow_icon.png](https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png)
+<Image align="center" alt="avow_icon.png" src="https://files.readme.io/f6dc549357d6c7a6ddaec67752570484289529f85defaf0316ccd925868deab7-18523559800465.png" />
 
 <div id="activate-partner" />
 

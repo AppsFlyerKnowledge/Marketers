@@ -31,7 +31,7 @@ x-zendesk:
 
 > **한눈에 보기:** **요약:** 어트리뷰션 프로드는 마케팅 예산을 소모하고 마케팅 성과 데이터를 왜곡시키며 캠페인 손실로 이어질 수 있습니다. **Protect360은 앱 소유자에게 실시간 사기 방지 및 포스트 어트리뷰션 감지 기능을 제공합니다.**
 
-![p360intro2.jpg](https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg)
+<Image align="center" alt="p360intro2.jpg" src="https://files.readme.io/c8476382eeff62164ca93b9bf2f3c4cdbe0609d4160047eac36a44d5f333ffdb-360014803578.jpg" />
 
 <div id="protect360-overview" />
 

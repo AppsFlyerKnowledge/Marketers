@@ -177,7 +177,7 @@ x-zendesk:
 
 대시보드 상에서 인게이지먼트 유형 별로 데이터를 분리해 볼 수 있도록 데이터 기준을 추가할 수 있습니다.
 
-[![eet-dashboard.png](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)](https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png)
+<Image align="center" alt="eet-dashboard.png" src="https://files.readme.io/d32fd98394a8025fb438259f5f058daed0daf297301b0cf4fbfbade0ece5d76f-27059768599569.png" />
 
 <div id="note-3" />
 

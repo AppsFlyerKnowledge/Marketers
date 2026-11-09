@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 본 문서에서 설명한 단계에 따라 앱스플라이어 계정 간에 앱을 이전합니다(발신자 및 수신자 계정의 관리자용).
 
-![5638-Transfering-an-app-NEW1.gif](https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif)
+<Image align="center" alt="5638-Transfering-an-app-NEW1.gif" src="https://files.readme.io/f4288a79bbd96e8cf828cf0ca9ae9ef994400f702cd66108d2861e3a405c4d79-360010967257.gif" />
 
 <div id="app-transfer-between-accounts" />
 
@@ -104,7 +104,7 @@ x-zendesk:
 1. [앱 이전 범위](/docs/transferring-apps-between-accounts#app-transfer-scope)를 검토하고 동의하려면 발신자 관리자에게 문의하십시오. 양쪽 모두 이전되는 항목과 이전되지 않는 항목을 이해하고 적절히 준비했는지 확인하세요.
 2. 발신자가 전송 요청을 시작했음을 알리는 이메일 알림을 받게 됩니다.
 3. **나의 앱** 페이지에서 **요청 검토**를 클릭합니다. 요청에는 하나 이상의 앱이 포함될 수 있습니다.  
-   [![App_transfer_receiver_side.JPG](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)](https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg)
+   <Image align="center" alt="App_transfer_receiver_side.JPG" src="https://files.readme.io/696264fdbc5d2a05c314deabc3ce6410fc211c421b96b7518e4a8c4958b30553-360010129018.jpg" />
 4. 각 요청을 검토하고 승인하거나 거부합니다.
 5. 읽어보고 허용되는 경우 사용 약관에 서명하십시오.
 6. 사용자 및 발신자는 요청이 승인되었음을 이메일로 받게 됩니다.

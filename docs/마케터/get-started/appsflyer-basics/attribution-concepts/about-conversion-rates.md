@@ -32,7 +32,7 @@ x-zendesk:
 
 신규 사용자는 첫 번째 광고 조회부터 수익이 발생할 때까지 마케팅 퍼널을 거칩니다. 각 퍼널 단계에는 고유한 성공 수준이 있습니다. 사용자가 더 많이 진행할수록 모바일 광고주에게 더 나은 결과를 가져다 줄 수 있습니다. 다음 이미지는 마케팅 퍼널 단계를 보여줍니다.
 
-![ua_funnel_2_en-us.png](https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png)
+<Image align="center" alt="ua_funnel_2_en-us.png" src="https://files.readme.io/3275b1abdc29dc2fccb32024b9243f11c71c947bb591f57356598e63d6a7b32e-360008715658.png" />
 
 <div id="marketing-funnel-stages-and-conversion-rates" />
 

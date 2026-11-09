@@ -442,7 +442,7 @@ GA4에 전송하는 포스트백의 이벤트가 Google Analytics에 등록되�
 
   트래픽 획득 보고서에 대한 자세한 내용은 [Google 문서](https://support.google.com/analytics/answer/12923437?hl=en&sjid=5454549956257318969-NC#zippy=%2Chow-do-i-filter-out-traffic-sources-from-the-report)을 참조하십시오.
 
-  [![](https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png)](https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png)
+  <Image align="center" alt="" src="https://files.readme.io/fa51e22d1a7941666224eb668efcbfc5a3bb8cce42cf373a82f3b1e096d2a9db-25707770926353.png" />
 
 </Accordion>
 

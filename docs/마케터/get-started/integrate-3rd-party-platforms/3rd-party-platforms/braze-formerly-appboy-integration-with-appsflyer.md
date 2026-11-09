@@ -164,12 +164,12 @@ Braze는 고유한 API 키와 REST 엔드포인트를 통해 앱스플라이어�
 1. 귀사의 Braze 계정에서 **기술** **파트너** 메뉴의 **어트리뷰션**으로 이동합니다.
 2. **앱스플라이어**를 선택합니다.  
 
-   ![braze-af-API-key.png](https://files.readme.io/db96e8b5e2363f5250c6c1146a1f7a15e1ed6457fe4543dbe649f8818bb5db78-360017328637.png)
+   <Image align="center" alt="braze-af-API-key.png" src="https://files.readme.io/db96e8b5e2363f5250c6c1146a1f7a15e1ed6457fe4543dbe649f8818bb5db78-360017328637.png" />
 3. **인스톨 어트리뷰션용 데이터 가져오기**에서 'APIKey 생성'을 클릭합니다.
 4. 발생된 API 키와 REST 엔드포인트를 복사합니다.
 5. 앱스플라이어에서 Braze API 키와 REST 엔드포인트를 입력합니다.  
 
-   ![Braze_msc_new_2.png](https://files.readme.io/b13aba84c394c0b4603e0aad2edd723525dadf204250349620b571bc47b0ba9d-360001907229.png)
+   <Image align="center" alt="Braze_msc_new_2.png" src="https://files.readme.io/b13aba84c394c0b4603e0aad2edd723525dadf204250349620b571bc47b0ba9d-360001907229.png" />
 6. **저장하고 닫기**를 클릭합니다.
 
 설정을 저장하면, 앱스플라이어는 모든 오가닉 및 논오가닉 인스톨에 대해 다음 데이터를 Braze로 보냅니다:
@@ -188,7 +188,7 @@ Braze는 고유한 API 키와 REST 엔드포인트를 통해 앱스플라이어�
 
 앱스플라이어는 Braze 사용자 인스톨에 자동 포스트백을 발송할 수 있습니다. 이 섹션을 사용하여 이러한 포스트백 전송을 정의합니다.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 앱을 다운로드한 모든 사용자에 대해 Braze로 포스트백을 발송하려면 **모든 파트너 또는 오가닉에 어트리뷰션된 이벤트**를 선택하십시오.
 

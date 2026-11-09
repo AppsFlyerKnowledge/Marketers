@@ -54,7 +54,7 @@ Data Locker는 스토리지로 데이터를 스트리밍하기 위한 앱스플�
 1. GCS 콘솔에 로그인합니다.
 2. **스토리지** > **스토리지 브라우저**로 이동합니다.
 
-   [![mceclip0.png](https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png)](https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png)
+   <Image align="center" alt="mceclip0.png" src="https://files.readme.io/933df60c2073a7eba97429f3cf95967ae04513a50a14e8c22ec9ee0a94f480d7-360016875898.png" />
 3. 예를 들어 `data-locker-example`와(과) 같이 이전에 생성한 버킷을 선택하세요.
 4. **권한** 탭으로 이동합니다.
 5. **+추가**를 클릭합니다.  
@@ -67,7 +67,7 @@ Data Locker는 스토리지로 데이터를 스트리밍하기 위한 앱스플�
       ```
    2. **역할 선택** **클라우드 스토리지** > **스토리지 객체 관리** .
 
-      [![mceclip0.png](https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png)](https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png)
+      <Image align="center" alt="mceclip0.png" src="https://files.readme.io/925501e1f16f4276d4a7aa0be8a78c94057fbdf07d48929e55bafe489f01cd42-360017059798.png" />
 7. **저장**을 클릭하세요.
 
 </Accordion>
@@ -92,7 +92,7 @@ Data Locker는 스토리지로 데이터를 스트리밍하기 위한 앱스플�
 
 **AWS 콘솔의 사용자 인터페이스**
 
-![MyBucket.jpg](https://files.readme.io/b8a16d185279200026388e146cfb3eb03ae3c7737ac26da3aa0d116a0cf9c078-4403551836305.jpg)
+<Image align="center" alt="MyBucket.jpg" src="https://files.readme.io/b8a16d185279200026388e146cfb3eb03ae3c7737ac26da3aa0d116a0cf9c078-4403551836305.jpg" />
 
 버킷을 생성한 후 다음 절차에 따라 앱스플라이어 권한을 부여하세요.
 
@@ -311,7 +311,7 @@ Data Locker를 Snowflake 계정에 연결합니다. 그러면 데이터가 Snowf
 2. 메뉴 바에서 이름을 선택합니다.  
    계정 ID와 지역이 표시됩니다.
 
-   [<Image alt="Snowflake 계정 세부 정보" src="https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png" width="875px" />](https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png)
+   <Image align="center" alt="Snowflake 계정 세부 정보" src="https://files.readme.io/6f508a5c2c6cd5dd84dd2639c73e62ff819e0a06ea3323d7a999a6b4fc717009-40394499797393.png" width="875px" />
 
 **Data Locker를 Snowflake에 연결하는 방법**:
 

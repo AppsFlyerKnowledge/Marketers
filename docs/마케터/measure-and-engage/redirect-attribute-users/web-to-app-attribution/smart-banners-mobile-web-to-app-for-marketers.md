@@ -29,7 +29,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 스마트 배너를 통해 웹 사이트 방문객을 모바일 앱 유저로 전환하세요.
 
-[![](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)](https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2e76dd3d337d7cb8e34af01b34f3a466fa724566058d260f56796bf6eae4b3ff-34734678772881.jpg" />
 
 <div id="note" />
 
@@ -286,7 +286,7 @@ x-zendesk:
 
       배너 템플릿을 선택할 수 있는 창이 열립니다.
 
-      [![](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)](https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png)
+      <Image align="center" alt="" src="https://files.readme.io/72baea2c6323742beb17761fdf8dc69048ada303db89855db8a60644ead3ad7f-34734678773649.png" />
    2. **크리에이티브 템플릿** 위로 마우스를 가져간 다음, **만들기를** 클릭하여 **크리에이티브** 설정 페이지로 들어갑니다.
    3. 스마트 배너 광고 소재의 모든 요소를 사용자 지정하는데, 이름으로 요소를 선택하거나 미리보기 이미지에서 클릭하면 됩니다. **참고:** 모든 템플릿에서 모든 요소를 사용할 수 있는 것은 아닙니다.
       * 제목

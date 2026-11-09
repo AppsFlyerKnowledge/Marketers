@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 앱스플라이어 연동 파트너인 아마존 DSP(amazondsp\_int)는 앱 소유자에게 TV, 태블릿 및 모바일 디바이스용 앱스플라이어를 사용하여 클릭 및 보기 기반 어트리뷰션을 측정할 수 있는 기능을 제공합니다.
 
-![mceclip0.png](https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/0a4c9078bd683c51bad40408c894f6e2b7314d7c369bd46ac90c3e622f62f0a7-11927906589329.png" />
 
 <div id="activate-partner" />
 

@@ -44,7 +44,7 @@ x-zendesk:
    * 이 협업에서 첫 번째 측정을 설정하는 경우, **측정 설정.** 을 클릭하십시오. **측정 생성** 페이지가 표시됩니다.
    * 이미 협업에 측정 세트가 있는 경우, 측정 선택 패널에서 더하기 기호를 클릭하십시오. **측정 생성** 페이지가 표시됩니다.
 
-[![start-measurement.png](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)](https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png)
+<Image align="center" alt="start-measurement.png" src="https://files.readme.io/c87bae214a48e807c085d192fd1b2132559a23a0954ea4fedae57b8d18372cae-44433074460305.png" />
 
 <div id="select-campaign-type-on-site-off-site-or-both" />
 

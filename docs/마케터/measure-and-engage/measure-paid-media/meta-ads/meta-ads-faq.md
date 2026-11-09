@@ -141,7 +141,7 @@ Meta Install Referrer는 디바이스 내부에 로컬로 저장된 추가 캠�
 네. 성과 리포트는 선택한 미디어 소스의 어떠한 조합에서도 캠페인 레벨까지의 정보를 제공하는 고정된 컬럼 구조를 갖습니다.  
 그러나 Meta Ads에 대해서만 성과 보고서를 다운로드하면 앱스플라이어가 4개의 열을 추가하여 단일 광고 수준까지 정보를 제공합니다! 추가된 열은 광고 세트 이름, 광고 세트 ID, 광고 그룹(즉, 단일 광고) 이름 및 광고 그룹 ID입니다.
 
-[![](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)](https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png)
+<Image align="center" alt="" src="https://files.readme.io/fe0c08fc17a6060bfdfa0e9c8b21eee755a7a868ee1b4b60a16808e126281dc4-4411036714001.png" />
 
 </Accordion>
 
@@ -159,7 +159,7 @@ Meta 캠페인 관리 파트너와의 어트리뷰션 설정에 대한 자세한
 
 <Accordion title="다음과 같은 경고를 받았을 때 무엇을 해야하나요?">
 
-[![](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)](https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png)
+<Image align="center" alt="" src="https://files.readme.io/ad1d07250ae23a0f4d5e145b615ac09a81990e6d46b50a2795c26b4e2be21297-4411045335185.png" />
 
 * Facebook App ID를 확인하고 해당 Facebook App ID에 국가나 연령 제한이 설정되어 있는지 검토하세요.
 * 어트리뷰션이 이미 동작하고 있으면, 앱이 Meta 개발자 포털에서 공개적으로 사용할 수 있는 상태라는 것이고, 이 오류 메시지를 무시해도 됩니다.
@@ -297,7 +297,7 @@ Meta Ads 캠페인이 여러 플랫폼 (Android, iOS, 데스크톱 등)에서 �
 
 광고주가 Meta Ads를 사용하여 캠페인을 실행합니다. 앱스플라이어에서 광고주는 다음을 보게 됩니다.
 
-![mceclip2.png](https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png)
+<Image align="center" alt="mceclip2.png" src="https://files.readme.io/a1aa5847db5c0b873b34b1d4de43ade7d4109608371e05a84342122e56d0ce08-4411031032081.png" />
 
 Meta Ads에서 비용 정보를 앱스플라이어에 제공합니다. **설치** 수는 앱스플라이어에서 앱스플라이어 어트리뷰션 규칙을 통해 계산합니다. 결과적으로, Meta Ads와 앱스플라이어에서 계산한 eCPI는 일반적으로 차이 나게 됩니다.
 
@@ -434,7 +434,7 @@ Meta Ads 로그인(위에서 설명함)을 수행하는 사용자가 실행 중�
 1. Meta Ads에서 **설정** > **비즈니스 연동**으로 이동합니다.
 2. **활성** 탭에서 앱스플라이어 연동을 제거합니다.  
 
-   [![](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)](https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png)
+   <Image align="center" alt="" src="https://files.readme.io/8dc7c577d4497aac2206dc46db683c2de9a48f4b23674f81560b04b82a3cf44f-4411031030033.png" />
 3. 앱스플라이어 대시보드로 이동하여 새로운 광고 계정과 비용을 연결합니다.
 
 </Accordion>
@@ -509,7 +509,7 @@ iOS 14 사용자의 경우 **하나의** 에이전시만 특정 광고 계정에
 
 아래 이미지는 에이전시가 Meta Ads 캠페인을 관리할 수 있도록 광고주가 설정해야 하는 모든 설정값을 보여줍니다.
 
-[![advertiser-vs-agency-facebook-int-new.png](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)](https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png)
+<Image align="center" alt="advertiser-vs-agency-facebook-int-new.png" src="https://files.readme.io/c07ed13221c23223f99442a52a643004447361f1a7b48c2a2735507039ef350c-14238179231377.png" />
 
 </Accordion>
 
@@ -571,7 +571,7 @@ Meta Ads는 캠페인, 광고 세트 및 광고 뿐만 아니라 Meta Ads 채널
 
 이 데이터를 사용하여 서로 다른 채널에서 얻게 되는 사용자 퀄리티를 비교할 수 있습니다.
 
-![Facebook_channels.png](https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png)
+<Image align="center" alt="Facebook_channels.png" src="https://files.readme.io/f6b51baf3056f42ee32ac9709b1e4b3661580ce6148acfa36fc2bad102e7bfd8-4411036713745.png" />
 
 </Accordion>
 

@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어를 사용하여 미디어소스, 캠페인, 크리에이티브, 타겟팅, 광고 배치에 대한 A/B 테스트를 수행할 수 있습니다.
 
-![AB_TESTING.jpg](https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg)
+<Image align="center" alt="AB_TESTING.jpg" src="https://files.readme.io/259277a96d044e85cbac39de0f636bad531706e53e2ad5a21475277ea9dbd3a6-360002822018.jpg" />
 
 <div id="what-is-ab-testing" />
 
@@ -113,7 +113,7 @@ A/B 테스트는 마케터가 광고 및 캠페인의 다양한 요소를 테스
 
 ## 모바일 웹에서 광고 배치 A/B 테스트
 
-![ad_placement.png](https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png)
+<Image align="center" alt="ad_placement.png" src="https://files.readme.io/6d64eed1a7a16c6daae9c93429d5bd46625dc4de12728e42b49a91ae69765f24-360002747977.png" />
 
 모바일 웹사이트에서 앱 배너의 위치는 사용자 전환율에 상당한 영향을 미칠 수 있습니다. 대부분의 경우 광고주는 방문자를 모바일 사용자로 전환하기 위해 자체 모바일 웹사이트를 사용합니다.
 
@@ -161,7 +161,7 @@ A/B 테스트는 마케터가 광고 및 캠페인의 다양한 요소를 테스
 
 > 📄 **예시**
 >
-> [![](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)](https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png)
+> <Image align="center" alt="" src="https://files.readme.io/bf907e0e67d24764a68579ba6fc42d0d49befbc7ffc7645b91ae1aa8f8b97c12-360002829938.png" />
 >
 > * 1과 2는 동일한 미디어소스에 있는 서로 다른 광고입니다. 예를 들어 리텐션 4일 차 비율과 같은 단일 KPI를 A/B 테스트 크리에이티브, 타겟팅 또는 광고 배치와 비교합니다.
 > * 2와 3은 서로 다른 미디어소스의 광고입니다. 광고의 크리에이티브와 타겟팅이 동일한 경우 단일 KPI를 비교하면 미디어소스에 대한 A/B 테스트를 수행할 수 있습니다.

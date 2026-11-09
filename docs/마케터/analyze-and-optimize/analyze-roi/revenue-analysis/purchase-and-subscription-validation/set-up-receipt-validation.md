@@ -64,22 +64,22 @@ iOS 자격 증명을 설정하려면 다음 단계를 따르십시오.
 
 1. App Store Connect에서 **사용자 및 액세스**로 이동합니다.
 
-   [![](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)
+   <Image align="center" alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" />
 2. **사용자 및 액세스** >> **통합**으로 이동하고 **키** 목록에서 **앱 내 구매**을 선택합니다.
 
-   [![](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" />
 3. **+ 를** 클릭하여 새로운 앱 내 구매 키를 생성합니다.
 
-   [![](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" />
 4. API 키의 이름을 입력합니다.
 5. **생성**을 클릭합니다.
 6. 방금 생성한 키 옆에 있는 **Download In-App Purchase Key** 를 클릭하여 다운로드합니다. **참고**: 키를 한 번만 다운로드할 수 있습니다.
 7. 방금 생성한 키의 **키 ID**를 복사하고 **키 ID**의 AppsFlyer 구매 및 구독 설정에 붙여넣습니다.
 
-   [![](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)
+   <Image align="center" alt="" src="https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png" />
 8. **발행자 ID** 복사 **참고**: 페이지 상단에 **출판자 ID**가 표시되지 않으면 App Store Connect API 키를 생성합니다(어떤 액세스 레벨이든). 그런 후, 앱 내 구매 키의 발행자 ID가 페이지 상단에 나타납니다.
 
-   [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
+   <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" />
 
 </Accordion>
 
@@ -121,7 +121,7 @@ iOS 자격 증명을 설정하려면 다음 단계를 따르십시오.
 2. 계정을 Google Cloud 프로젝트에 연결합니다. 이에 대한 시침은 이 <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">Google 도움말 항목</Anchor>을 참조하십시오.
 3. Google Play Developer API를 활성화합니다. 이에 대한 시침은 이 <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">Google 도움말 항목</Anchor>을 참조하십시오.
 
-   [![](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)
+   <Image align="center" alt="" src="https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png" />
 
 </Accordion>
 
@@ -142,18 +142,18 @@ iOS 자격 증명을 설정하려면 다음 단계를 따르십시오.
    5. **이 서비스 계정에 프로젝트에 대한 액세스 권한 부여** 단계에서  **Pub/Sub 구독자** 역할을 선택합니다.
    6. **계속하기** > **완료**를 클릭합니다.
 
-      [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
+      <Image align="center" alt="" src="https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png" />
 2. 서비스 계정 개인 키 다운로드:
 
    1. <span class="af-ol-a"></span>Google 클라우드 플랫폼에서 **서비스 계정** 섹션으로 이동하여 원하는 계정(지금 만든 계정)을 목록에서 찾고 **다른 작업** 아이콘을 클릭합니다.
    2. **키 관리**를 클릭합니다.[![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)
    3. **키 추가** > **새 키 만들기**를 클릭합니다.
 
-      [![](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)
+      <Image align="center" alt="" src="https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png" />
    4. **Create private key** 팝업에서 **Key type** 아래에서 **JSON**을 선택하고 **Create를** 클릭합니다.[![](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)
    5. **생성**을 클릭합니다. 개인 키 JSON 파일이 다운로드됩니다.
 
-      [![](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)
+      <Image align="center" alt="" src="https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png" />
    6. JSON 키 파일을 저장하고 나중에 AppsFlyer에 업로드하십시오. **참고**! 당신은 열쇠를 저장해야합니다. 그것은 나중에 검색 할 수 없습니다. 그것을 저장하지 않으면 완전히 새로운 키를 생성해야 합니다.
 
 </Accordion>
@@ -170,23 +170,23 @@ iOS 자격 증명을 설정하려면 다음 단계를 따르십시오.
 
 1. Google Play 콘솔에서 **사용자 및 권한**으로 이동하고, 만든 서비스 계정을 찾고 **새 사용자 초대**를 클릭합니다.
 
-   [![](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)
+   <Image align="center" alt="" src="https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png" />
 2. 1.2.1.3 단계에서 서비스 계정을 구성할 때 복사한 **메일 주소**를 입력합니다.
 
-   [![](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)
+   <Image align="center" alt="" src="https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png" />
 3. **권한** 섹션에서 **계정 권한** 탭으로 이동하여 다음 두 가지를 모두 선택합니다.
 
    * 재무 데이터, 주문 및 취소 설문조사 응답을 확인합니다.
    * [주문 및 구독 관리](https://support.appsflyer.com/hc/article_attachments/51857152739985).
 4. **App 권한** 탭에서 **App 추가**를 클릭한 다음 앱을 선택합니다. 필요한 경우 여러 앱을 추가합니다.
 
-   [![](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)
+   <Image align="center" alt="" src="https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png" />
 5. **Invite user** 를 클릭합니다.
 
-   [![](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)
+   <Image align="center" alt="" src="https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png" />
 6. 확인 팝업에서 **시청 보내기**를 클릭합니다.
 
-   [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
+   <Image align="center" alt="" src="https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png" />
 
 </Accordion>
 
@@ -264,7 +264,7 @@ AppsFlyer가 지난 7일 동안 앱에서 유효한 `validateAndLog` 페이로�
 
 <Accordion title="인앱 구매 및 구독 수익 측정">
 
-[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 인앱 구매 및 구독 수익 측정
 
@@ -311,7 +311,7 @@ AppsFlyer가 지난 7일 동안 앱에서 유효한 `validateAndLog` 페이로�
 * IAP 또는 구독으로 캡처하려는 인앱이벤트는 앱스플라이어에서 구성한 유효성 검사 규칙 중 하나에 의해 차단되지 않습니다.
 * 개발자는 모든 샌드박스 플래그를 `false`로 설정했습니다.
 
-[<Image alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" width="512px" />
 
 validateAndLog SDK API가 포함된 앱이 출시되면 모든 AppsFlyer 대시보드 및 집계 및 원자 데이터 보고서에서 <Anchor target="_blank" href="/marketers/ko/docs/about-receipt-validation#영수증-검증을-위한-인앱-구매-이벤트-및-매개변수">APP 내 구매 및 구독 이벤트</Anchor> 가 생성되고 사용할 수 있습니다.
 

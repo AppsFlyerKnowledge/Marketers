@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 비활성 사용자를 대상으로 한 리타겟팅을 통해 성과 증가분을 높일 수 있습니다. 미디어 소스별 비활성 기간 설정하기.
 >
-> ![](https://files.readme.io/d18c3ba0a4693866646e3dec57ea2c56ac4df1468bf92f5b38f0a864e3ead50c-51912966877329.png)
+> <Image align="center" alt="" src="https://files.readme.io/d18c3ba0a4693866646e3dec57ea2c56ac4df1468bf92f5b38f0a864e3ead50c-51912966877329.png" />
 
 <div id="inactivity-period" />
 
@@ -66,7 +66,7 @@ x-zendesk:
 * 미디어 소스가 진행하는 리타겟팅 캠페인에 참여함
 * 앱을 다시 설치함
 
-[![re-attribution_1_en-us.png](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)](https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png)
+<Image align="center" alt="re-attribution_1_en-us.png" src="https://files.readme.io/7d9fa957758b19a7bd61a9f92428118009f0380d703e1641a15f0e531ce08a8a-10298371408017.png" />
 
 | 시나리오 | 비활성 기간 임계값 | 사용자 비활성 기간 | 완료 후 |
 | --- | --- | --- | --- |
@@ -85,7 +85,7 @@ x-zendesk:
 * 여러 날 동안 활동 없음
 * 그 후 미디어 소스가 주관하는 리타겟팅 캠페인에 참여해 앱을 실행함
 
-[![Re-engagement_scenarios_en-us.png](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)](https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png)
+<Image align="center" alt="Re-engagement_scenarios_en-us.png" src="https://files.readme.io/dd527f12caa8b197fe0d1145ff0175a92d48ab4e7e4851e15f56faa617fe9e2e-10124778806929.png" />
 
 | 시나리오 | 미디어 소스 A의 비활성 기간 임계값 | 사용자 비활성 기간 | 완료 후 |
 | --- | --- | --- | --- |
@@ -112,7 +112,7 @@ x-zendesk:
 4. **비활성 윈도우 설정.** (1-30일 사이.)
 5. **연동 저장**을 클릭하세요.
 
-[![Inactivity_window_SRN.png](https://files.readme.io/a25c3ef3bf92179354072914552f234426981ac47e06a11b02a267593c1da4c8-51912966881937.png)](https://files.readme.io/a25c3ef3bf92179354072914552f234426981ac47e06a11b02a267593c1da4c8-51912966881937.png)
+<Image align="center" alt="Inactivity_window_SRN.png" src="https://files.readme.io/a25c3ef3bf92179354072914552f234426981ac47e06a11b02a267593c1da4c8-51912966881937.png" />
 
 </Accordion>
 
@@ -128,7 +128,7 @@ x-zendesk:
 4. **비활성 윈도우 설정.** (1-30일 사이.)  
    **비활성 기간** 파라미터를 어트리뷰션 링크에 추가합니다. 예: "&af\_inactivity\_window=7d". 기능이 비활성화되어 있다면, 어트리뷰션 링크에 포함되지 않습니다.
 
-[![Inactivity_window_non-SRN.png](https://files.readme.io/d57b6537f1d9953a5a89e95deef1083a3b9c3e4fcc92f91a161770fdbcd233ae-51912966884881.png)](https://files.readme.io/d57b6537f1d9953a5a89e95deef1083a3b9c3e4fcc92f91a161770fdbcd233ae-51912966884881.png)
+<Image align="center" alt="Inactivity_window_non-SRN.png" src="https://files.readme.io/d57b6537f1d9953a5a89e95deef1083a3b9c3e4fcc92f91a161770fdbcd233ae-51912966884881.png" />
 
 </Accordion>
 

@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: SKAN(SKAdNetwork) 대시보드는 초기 사용자 측정 기간 동안 iOS SKAN 포스트백 및 추가 데이터 포인트를 통해 리포트된 캠페인 지표를 표시합니다. null 전환을 고려하는 모델링된 지표도 사용할 수 있습니다. 데이터는 인스톨 또는 포스트백 도착 시간을 사용하여 표시됩니다.
 
-![SKAdHeadling8_us-en.png](https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png)
+<Image align="center" alt="SKAdHeadling8_us-en.png" src="https://files.readme.io/72c2eb452741cbd77c5828197f827f238c71c5097b8703528fa180dcafe2364c-360011831017.png" />
 
 <div id="dashboard-principles" />
 
@@ -227,7 +227,7 @@ x-zendesk:
 * 사용 가능한 지표 선택. [모델링된 지표](/docs/skadnetwork-skan-overview-dashboard-by-appsflyer#modeled-metrics-and-null-cv)는 null CV 속도를 고려합니다.
 * 기준별 1차 및 2차 그룹을 설정하여 성과 지표를 분석합니다.
 
-[![SKAdNetwork_Dashboard_AppsFlyer7_us-en.png](https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png)](https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png)
+<Image align="center" alt="SKAdNetwork_Dashboard_AppsFlyer7_us-en.png" src="https://files.readme.io/434a848c7a33c052c80101788b066f4bdb90ef36423ea140f85c1cc59ace2ebf-360010368617.png" />
 
 측정 지표 테이블 사용법
 

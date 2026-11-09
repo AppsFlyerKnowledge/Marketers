@@ -55,7 +55,7 @@ x-zendesk:
 >
 > 네이티브 코드는 데이터를 수집하고 앱스플라이어 SDK를 이용하여 해당 구독 이벤트를 전송합니다.
 >
-> [![](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)](https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png)
+> <Image align="center" alt="" src="https://files.readme.io/b7162e6a421e2981490f5a5519e20879cfa9abf2d0eb84c5d59bd1a4e7aa8e22-360002884745.png" />
 
 <div id="recording-in-app-events-in-hybrid-apps" />
 

@@ -28,7 +28,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: Firebase SDK를 통해 리포트된 이벤트를 Google 태그 관리자를 사용하여 앱스플라이어로 전송하는 방법.
 
-<Image alt="gtm.png" src="https://files.readme.io/fbb4e0f83baf6f5f7f8dc83e02986ca011f5cb919b9870768da1606798211dcc-360002517245.png" width="289px" />
+<Image align="center" alt="gtm.png" src="https://files.readme.io/fbb4e0f83baf6f5f7f8dc83e02986ca011f5cb919b9870768da1606798211dcc-360002517245.png" width="289px" />
 
 Google 태그 관리자(GTM) 및 Firebase와의 앱스플라이어 연동을 통해 개발자는 Firebase SDK를 사용하여 Firebase에 인앱이벤트를 보내고 Google 태그 관리자를 사용하여 SDK를 통해 이벤트를 앱스플라이어에 보낼 수 있습니다. 이렇게 하면 동일한 이벤트를 두 번 보내지 않게 됩니다.
 

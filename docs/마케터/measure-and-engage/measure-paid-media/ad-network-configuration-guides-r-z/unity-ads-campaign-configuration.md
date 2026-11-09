@@ -69,13 +69,13 @@ Unity Ads로 캠페인을 구성하려면 다음 단계를 따르십시오.
 
 연동 탭의 상단에 Unity Ads는 설치할 때마다 장치 ID를 보내야 한다는 메모가 있는데, 이는 자동으로 수행되므로 사용자가 직접 수행할 필요가 없습니다.
 
-[![Unity_msc_new_2.png](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)](https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png)
+<Image align="center" alt="Unity_msc_new_2.png" src="https://files.readme.io/4291f0b69f8231f6644872f2dfaec84e7c93047e81f653e76ff7266387fa10a9-360002583918.png" />
 
 **Unity Ads 게임 ID**
 
 Unity Ads를 사용하려면 고유 게임 ID를 통해 앱스플라이어와 연결해야 합니다. 자신의 ID를 모르는 경우 Unity Ads에서 직접 다운로드하거나 아래 스크린샷과 같이 게임을 업로드한 후 **앱** > **캠페인**에서 찾을 수 있습니다.
 
-[![](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)](https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png)
+<Image align="center" alt="" src="https://files.readme.io/c3315765f33e957b82c39b638bb8113e207bfe80f242bf2e6dde3dce30287a6f-8109147574673.png" />
 
 Unity Ads 플랫폼은 계정 레벨당 하나의 앱을 하나의 Unity Ads 게임 ID에 매핑합니다(광고주와 에이전시는 동일한 앱에 대해 서로 다른 게임 ID를 갖게 됩니다). Unity Ads 플랫폼의 서로 다른 계정은 서로 다른 게임 ID로 동일한 앱을 실행할 수 없습니다.
 
@@ -83,13 +83,13 @@ Unity Ads 플랫폼은 계정 레벨당 하나의 앱을 하나의 Unity Ads 게
 
 이 옵션을 켜면 Unity Ads에서 뷰-쓰루 설치를 어트리뷰션할 수 있습니다. 뷰-쓰루 룩백 슬라이더는 어트리뷰션 링크 탭에 있습니다(아래 설명 참조).
 
-![Unity_ads_msc_new_3.png](https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png)
+<Image align="center" alt="Unity_ads_msc_new_3.png" src="https://files.readme.io/fab459ace7e8f1354d3bbfbca8ddefcd11376b7426a8e361abfab1b42b623880-360001875405.png" />
 
 <div id="default-postbacks" />
 
 ### 기본 포스트백
 
-![Screen_Shot_2022-07-28_at_13.07.25.png](https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png)
+<Image align="center" alt="Screen_Shot_2022-07-28_at_13.07.25.png" src="https://files.readme.io/a571ddc49e490373b34144e34626a18c6c18908cec3345cd7ac70c49aa855c05-7975491293329.png" />
 
 이 섹션을 사용하여 상기 포스트백을 보낼 수 있는 사용자의 출처를 정의할 수 있습니다.
 
@@ -108,7 +108,7 @@ Unity Ads 플랫폼은 계정 레벨당 하나의 앱을 하나의 Unity Ads 게
 
 포스트백을 통해 앱스플라이어 이벤트를 파트너와 매핑할 수 있습니다. 포스트백 발송이 활성화된 경우, 이는 거부된 인앱 이벤트(Protect360에 의해 차단된 이벤트나 유효성 검증 규칙을 준수하지 않는 것으로 판단된 이벤트)를 포함합니다.
 
-[![](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)](https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png)
+<Image align="center" alt="" src="https://files.readme.io/e0d0af3c57c8452b646dfede7b4899215825ef8455d4e41293088f98ecc026eb-7975565240337.png" />
 
 <div id="important" />
 

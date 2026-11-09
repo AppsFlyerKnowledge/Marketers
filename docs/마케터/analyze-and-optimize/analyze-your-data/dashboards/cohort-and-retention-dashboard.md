@@ -50,7 +50,7 @@ cohort main (2).png
 
 1. 앱스플라이어의 사이드 메뉴에서 > **리텐션** **분석을** 선택합니다.   
    코호트 대시보드가 열립니다. 세분성 및 전환 날짜 기간이 표시됩니다.  
-   ![mceclip0__1_.png](https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png)
+   <Image align="center" alt="mceclip0__1_.png" src="https://files.readme.io/4113fd619422979d6a26004a55c009ebc48eef59d10ddc7c3e5becd2a758e6d4-32127949494417.png" />
 2. [코호트 분석 기간 세분성](/docs/cohort-and-retention-dashboard#cohort-periods)을 선택합니다.
    * Hours
    * 시간(일)
@@ -59,7 +59,7 @@ cohort main (2).png
 3. 어트리뷰션 기간(유저 인입 또는 리타게팅 인게이지먼트)을 선택합니다. 최신 일자와 관련된 데이터는 차트와 테이블에서 대시(-)로 표시되는 [부분 데이터](/docs/cohort-and-retention-dashboard#partial-data)로 나타날 수 있습니다.
 4. **Edit Cohort**(코호트 편집)을 클릭합니다.  
    코호트 설정창이 열립니다.  
-   <Image alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
+   <Image align="center" alt="CohortSetup.jpg" src="https://files.readme.io/f09cc190770d16a2ddf60e1f210f458114ac43d4c19fc5507fb50b0d1d2f5c77-32127949495825.jpg" width="365px" />
 5. 다음을 완료하세요.
    * * **User acquisition**
      * **리타겟팅**
@@ -148,7 +148,7 @@ cohort main (2).png
 * **유저 유입:** 사용자 획득: 설치의 성능 데이터(<Anchor target="_blank" href="/marketers/ko/docs/measure-reinstalls#attributed-to-the-first-install">특별하게 활성화되지 않은 경우</Anchor> 재설치 제외)
 * **리타게팅** 리타게팅:  리어트리뷰션이나 리인게이지먼트의 성과 데이터
 
-[![OV.png](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)](https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png)
+<Image align="center" alt="OV.png" src="https://files.readme.io/738bf91c1a12671b32b088993c43d4103498907a8bbe15821ddc53a0b071b876-32127949500305.png" />
 
 </Accordion>
 
@@ -181,7 +181,7 @@ cohort main (2).png
 
 이 예시에서는, 동일한 로데이터를 사용하여 두가지 코호트 트렌드 유형을 만들었습니다. 로데이터 표는 서로 다른 사용자 A, B, C, D와 관련된 어트리뷰션 이벤트를 표시합니다. 이 사용자들은 광고에 참여하고 앱을 설치했으며, 후속 전환으로 하나 이상의 구매를 했습니다. 코호트 day 0은 인스톨 날짜입니다.
 
-[![CohortExample_en-us.jpg](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)](https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg)
+<Image align="center" alt="CohortExample_en-us.jpg" src="https://files.readme.io/7542605e2bb3972dc90fb12c9d6a328ff52ec65f0694a79752380d548e72e286-32127949500817.jpg" />
 
 </Accordion>
 

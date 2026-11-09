@@ -34,7 +34,7 @@ x-zendesk:
 >
 > <Anchor target="_blank" href="/marketers/ko/docs/bulletin-supporting-the-new-google-eu-consent-policy">새로운 Google EU 동의 정책 지원</Anchor>에 대한 공지를 확인하세요.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/doubleclick.png" width="121px" />
 
 <div id="overview" />
 
@@ -131,7 +131,7 @@ GMP-DV360 연동은 전환 측정을 위해 링크 ID를 활용합니다. 다음
 
 **EU 외 사용자:** <Anchor target="_blank" href="/marketers/ko/docs/support-google-eu-consent-policy#do-i-have-control-over-consent-data-for-nonue-users">**EU 외 사용자**</Anchor>를 활성화할지 결정해주세요.
 
-<Image alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="536px" />
+<Image align="center" alt="non eu usrs.png" src="https://files.readme.io/fb141c0bd8885facd6574f3e73c5ec8ae8beb596de7fdf3dd8aed9d4e82686dd-22352319155985.png" width="536px" />
 
 <div id="install-attribution" />
 

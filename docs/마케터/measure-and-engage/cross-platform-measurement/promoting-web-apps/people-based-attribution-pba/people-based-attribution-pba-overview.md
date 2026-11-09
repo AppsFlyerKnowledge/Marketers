@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **요약: 요약: 유저 중심 어트리뷰션(PBA, People-Based Attribution)은 여러 채널과 플랫폼, 기기를 거치는 고객 여정에 대한 통합적인 시야를 제공합니다.**
 
-![PBANoSilos_us-en.gif](https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif)
+<Image align="center" alt="PBANoSilos_us-en.gif" src="https://files.readme.io/1ac3614eb1b9d4c01bffbe904f1a060d1facd681ff32c274b12f0a15612a2e4a-360009359798.gif" />
 
 <div id="pba-principles" />
 
@@ -49,7 +49,7 @@ x-zendesk:
 
 ### <Anchor target="_blank" href="/marketers/ko/docs/pba-website-attribution-dashboard">웹사이트 어트리뷰션</Anchor>
 
-[![WebsiteAttributionTable_us-en.jpg](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)](https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg)
+<Image align="center" alt="WebsiteAttributionTable_us-en.jpg" src="https://files.readme.io/46f03ee216dc23f3f184663aeef7d6b64ae6fb9a64e7a161ff0482e4d2eab204-360013057757.jpg" />
 
 웹 사이트에 대한 사용자 방문 및 전환을 추동하는 웹 트래픽 소스 및 마케팅 캠페인을 분석합니다. 광고 수준까지 성과 차이를 파악합니다. 사용자를 앱스플라이어 서버로 리디렉션할 필요 없이 링크의 모든 앱스플라이어 쿼리 매개 변수를 지원합니다.
 
@@ -57,7 +57,7 @@ x-zendesk:
 
 ### <Anchor target="_blank" href="/marketers/ko/docs/pba-web-assisted-installs">웹 인스톨 어시스트</Anchor>
 
-[![AppsFlyer-Web-to-App_us.en.gif](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)](https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif)
+<Image align="center" alt="AppsFlyer-Web-to-App_us.en.gif" src="https://files.readme.io/4a278b57379c999d80fd7f1dfea750049f56c03ed32051f9af92577b2a51742a-360009705058.gif" />
 
 웹 기여 인스톨을 사용하여 모바일 앱 인스톨을 추동하는 데 대한 웹 마케팅 노력의 영향과 결과를 검토합니다.
 

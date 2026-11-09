@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 기존 사용자가 다른 사용자에게 앱을 사용하도록 초대할 때 새 인스톨을 어트리뷰트하고 기록합니다.
 
-[![Invite_Attribution_new.png](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)](https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png)
+<Image align="center" alt="Invite_Attribution_new.png" src="https://files.readme.io/ee6793f57e16e7b051d1651108d7408482dff15501d9d786b5ca250e71d54ed4-360002880777.png" />
 
 <div id="about-user-invite-attribution" />
 

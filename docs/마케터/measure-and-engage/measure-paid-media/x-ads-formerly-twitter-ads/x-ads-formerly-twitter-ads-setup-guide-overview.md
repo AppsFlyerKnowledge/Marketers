@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** **요약:** X Ads 계정을 앱스플라이어와 연동하는 방법을 알아봅니다.
 
-<Image alt="X Ads logo.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
+<Image align="center" alt="X Ads logo.png" src="https://files.readme.io/cecae90650321943ad1cb6d22b7f27d3d28b0484f1706cb1be1a19099dfbb20d-20375448207377.png" width="167px" />
 
 <div id="mobile-app-promotion-on-x-ads" />
 

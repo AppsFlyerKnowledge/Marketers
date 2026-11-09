@@ -22,7 +22,7 @@ x-zendesk:
 ---
 <span class="af-tag af-tag--beta-feature">Beta feature</span>
 
-<Image alt="beta_feature.png" src="https://files.readme.io/d57432ddeb4d168760f9acd97f4287473658a8528edc1114ecee8ee2f8e9c9b2-16484830033425.png" width="805px" />
+<Image align="center" alt="beta_feature.png" src="https://files.readme.io/d57432ddeb4d168760f9acd97f4287473658a8528edc1114ecee8ee2f8e9c9b2-16484830033425.png" width="805px" />
 
 > **한눈에 보기:** 자체 지표를 정의하고 이를 사용하여 내 대시보드에서 데이터를 볼 수 있습니다.
 

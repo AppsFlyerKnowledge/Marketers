@@ -101,7 +101,7 @@ x-zendesk:
    1. 앱스플라이어에서 상단 메뉴를 선택하고 **내 앱** > **브랜드** **번들 보기**를 선택합니다.
    2. 필요한 **웹 SDK 연동 테스트를 선택하세요.** 연동 페이지가 열립니다. 웹 개발자 키(dev key)가 표시됩니다.  
 
-      [![pba_web_sdk_integration_test_web_dev_key_en-us.png](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)](https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png)
+      <Image align="center" alt="pba_web_sdk_integration_test_web_dev_key_en-us.png" src="https://files.readme.io/48c37f28d833c0b864fee0a3f417bbd946a385f329ed0e906e20596aeef79b71-360011130257.png" />
    3. 새 브라우저 탭에서 웹 SDK가 설치된 귀사의 웹사이트로 이동하세요.
    4. 마우스 오른쪽 버튼을 클릭하여 '검사'를 선택하고 브라우저 개발자 도구를 열어주세요.
    5. **Console** 탭으로 가세요.
@@ -113,7 +113,7 @@ x-zendesk:
 
       webAppID가 나타납니다.
 
-      [![testing_pba_integration_webappid_check_en-us.png](https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png)](https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png)
+      <Image align="center" alt="testing_pba_integration_webappid_check_en-us.png" src="https://files.readme.io/030f867d82d122f2f493d20f65793ded7739ebb32d92ee15e0668aceded02a58-360011059197.png" />
    7. **웹 SDK 연동 테스트** 페이지에서 보여지는 웹 개발자 키와 웹앱ID가 일치하는지 확인해 주세요.
 2. **테스트 모드 활성화**:
    1. 웹사이트 브라우저 탭에서 **Console** 탭으로 이동하세요.
@@ -125,7 +125,7 @@ x-zendesk:
 
       이 함수는 `undefined`을 반환합니다.
 
-      [![testing_pba_integration_turnondevmode.png](https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png)](https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png)
+      <Image align="center" alt="testing_pba_integration_turnondevmode.png" src="https://files.readme.io/b26f180876556e90bce8512f310ca3acff97b7ca040b0dcf98362d9076c81e5b-360011059137.png" />
 3. **테스트 모드 활성화 여부 확인:**
    * **Console** 탭에서 다음 명령어를 입력하세요:  
 
@@ -134,7 +134,7 @@ x-zendesk:
      ```
 
      반환값은 `true`입니다. 이는 테스트 모드가 활성화되었음을 의미합니다.   
-     [![PBATestingWebSDKIntegrationIsDevModeOn_en-us.png](https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png)](https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png)
+     <Image align="center" alt="PBATestingWebSDKIntegrationIsDevModeOn_en-us.png" src="https://files.readme.io/4b5d8f3c3ef31148c9f3cd4021d83404810382fd654defa86d733c0377ffd968-360011482797.png" />
 
 </Accordion>
 

@@ -152,7 +152,7 @@ x-zendesk:
 
 아래는 인게이지먼트 일로부터 최초 앱 실행 시점의 분포를 보여주는 그래프입니다.
 
-[![](https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png)](https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png)
+<Image align="center" alt="" src="https://files.readme.io/8fdc8b23ba9a1b78bdea7bacad99d6ed5e59d57de32f395cb2fd9e5451483962-360001666918.png" />
 
 이 그래프를 통해 룩백 윈도우의 기능과 더불어 앱 설치 사용자 수를 더 잘 이해할 수 있습니다.
 
@@ -172,7 +172,7 @@ x-zendesk:
 
 X Ads에서 캠페인을 설정하고 클릭쓰루 룩백 기간을 7일로 설정합니다. 반면 X Ads의 기본 룩백 기간은 14일입니다.
 
-[![srn-discrepancy-srn-lookback-larger-than-appsflyer.png](https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png)](https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png)
+<Image align="center" alt="srn-discrepancy-srn-lookback-larger-than-appsflyer.png" src="https://files.readme.io/a0a60df2c1b142c9b2871c2083168ef5d88922001f1e5ab6a95c7ffbdcc178a5-360001586637.png" />
 
 </Accordion>
 
@@ -182,7 +182,7 @@ X Ads에서 캠페인을 설정하고 클릭쓰루 룩백 기간을 7일로 설�
 
 X Ads에서 캠페인을 설정하고 클릭쓰루 룩백 기간을 28일로 설정합니다. 반면 X Ads의 기본 룩백 기간은 14일입니다.
 
-[![srn-lookback-smaller-than-appsflyer.png](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)](https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png)
+<Image align="center" alt="srn-lookback-smaller-than-appsflyer.png" src="https://files.readme.io/9111035d903bfb35be2ab4bff27c16e527b401b12225b71316a7e36ed68ffb0c-360001586697.png" />
 
 </Accordion>
 

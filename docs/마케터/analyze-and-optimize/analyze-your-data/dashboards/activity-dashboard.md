@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 특정 기간 동안의 앱 활동, 참여도 및 인앱 지표를 확인하세요. 현재 날짜 지표가 실시간으로 업데이트됩니다.
 
-![ActivityDB.png](https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png)
+<Image align="center" alt="ActivityDB.png" src="https://files.readme.io/8150eafc018c83ae2b1030702129bda12419dfac60eb8664187c2acd66136df3-4420170646289.png" />
 
 <div id="activity-dashboard" />
 
@@ -194,7 +194,7 @@ x-zendesk:
 
 <Accordion title="상위 수준 탭: 지난 12개월">
 
-![ActivityHiLevel.png](https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png)
+<Image align="center" alt="ActivityHiLevel.png" src="https://files.readme.io/42636f5b13dca3a2209ea295c02e784175dfc92a2523c861220b87baed859541-4420194466065.png" />
 
 이 탭에는 앱 활동 실적에 대한 12개월간의 기록 개요가 포함되어 있으며, 다음과 같은 차트가 제공됩니다. 
 

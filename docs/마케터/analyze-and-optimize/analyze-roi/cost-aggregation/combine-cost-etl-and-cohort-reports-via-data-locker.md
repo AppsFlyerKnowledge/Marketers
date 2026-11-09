@@ -21,7 +21,7 @@ x-zendesk:
 ---
 > **요약:** 데이터 락커(정기 및 고급 집계)를 통해 Cost ETL 리포트와 코호트 리포트를 결합하여 최고의 최신성, 정확성, 세분화로 마케팅 캠페인의 전체 상황을 파악할 수 있습니다.
 
-![](https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png)
+<Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" />
 
 <div id="about-combining-cost-etl-and-cohort-reports" />
 

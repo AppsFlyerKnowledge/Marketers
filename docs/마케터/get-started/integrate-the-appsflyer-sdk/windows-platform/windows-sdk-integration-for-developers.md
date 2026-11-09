@@ -33,7 +33,7 @@ x-zendesk:
 
 앱스플라이어 SDK는 앱 설치와 인앱 이벤트 측정 기능을 제공합니다.
 
-![SDK_Integration.jpg](https://files.readme.io/11ef01abe55ae3d53d1a3756ffd24bf3262002c3970005cd70047c9d0665b5d1-360001586617.jpg)
+<Image align="center" alt="SDK_Integration.jpg" src="https://files.readme.io/11ef01abe55ae3d53d1a3756ffd24bf3262002c3970005cd70047c9d0665b5d1-360001586617.jpg" />
 
 앱스플라이어 SDK를 통해 설치, 업데이트, 세션을 기록할 수 있고, 또한 앱 설치 이 외에도 인앱 구매나 게임 레벨 달성과 같은 인앱 이벤트를 추가로 기록하여 ROI 및 사용자 인게이지먼트 수준을 파악할 수 있습니다.
 
@@ -43,7 +43,7 @@ x-zendesk:
 
 ## 1. 통합 단계
 
-[![](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)](https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png)
+<Image align="center" alt="" src="https://files.readme.io/dcce7e82d681f6b0dfa5c6da26d183f331212dde51148d027d4dc75cb57d104a-21241904425489.png" />
 
 [altalt](https://support.appsflyer.com/hc/article_attachments/51857613739153)
 

@@ -106,7 +106,7 @@ Meta Ads에서 제공하는 다음 어트리뷰션 데이터 파라미터가 보
 
 앱이 Meta Ads에서 AEM을 사용할 수 있는 경우, 광고 세트 생성 프로세스 중 기본적으로 **집약된 이벤트 측정**이 선택됩니다. 즉, AEM과 SKAN을 모두 캠페인에서 동시에 사용할 수 있습니다. 대신 **Apple의 SKAdNetwork**를 선택하면 SKAN만 캠페인에 적용됩니다. 이는 앱스플라이어가 Meta Ads에서 앱 액티비티를 측정할 수 있는 능력이 제한적이라는 것을 의미합니다.
 
-<Image alt="aem_meta_ads_platform.png" src="https://support.appsflyer.com/hc/article_attachments/19228698538769" width="563px" />
+<Image align="center" alt="aem_meta_ads_platform.png" src="https://support.appsflyer.com/hc/article_attachments/19228698538769" width="563px" />
 
 <div id="note-1" />
 
@@ -123,7 +123,7 @@ Meta Ads에서 제공하는 다음 어트리뷰션 데이터 파라미터가 보
 * 기능을 비활성화할 경우, ATT 프롬프트에 동의한 유저의 전환 이벤트만 공유됩니다. 즉, 미동의 유저의 이벤트는 Meta Ads로 공유되지 않으며 어트리뷰션 데이터에서도 제외됩니다.
 * 기능을 활성화하면, ATT 동의 상태와 관계없이 모든 유저의 전환 이벤트를 전송할 수 있습니다. 앱스플라이어는 이러한 이벤트에 대한 어트리뷰션을 수행합니다. 공유되는 데이터에는 디바이스 ID를 포함하지 않는 추가적인 기기 관련 정보가 포함될 수 있습니다. 자세한 내용을 보려면 <Anchor target="_blank" href="/marketers/ko/docs/meta-ads-integration-setup#advanced_data_sharing">고급 데이터 공유</Anchor>를 참조하세요.
 
-![aem](https://support.appsflyer.com/hc/article_attachments/19228710265361)
+<Image align="center" alt="aem" src="https://support.appsflyer.com/hc/article_attachments/19228710265361" />
 
 <div id="note-2" />
 

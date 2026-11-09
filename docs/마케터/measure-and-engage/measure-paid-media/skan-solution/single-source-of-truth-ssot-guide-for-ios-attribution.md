@@ -41,7 +41,7 @@ SSOT 메커니즘은 중복된 인스톨 데이터를 제거하고 잘못 어트
 
 <Accordion title="Single Source of Truth 활성화">
 
-![SSOT컨트롤.png](https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png)
+<Image align="center" alt="SSOT컨트롤.png" src="https://files.readme.io/fd99117e9278ebda3b1f0cc137afb266643e5e45325345ec51aeb58c16d4f13c-31247514683153.png" />
 
 **SSOT를 활성화하려면:**
 
@@ -59,7 +59,7 @@ SSOT 메커니즘은 중복된 인스톨 데이터를 제거하고 잘못 어트
 
 ## 개요 대시보드의 Single Source of Truth 보기
 
-![SSOTisNowOn.png](https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png)
+<Image align="center" alt="SSOTisNowOn.png" src="https://files.readme.io/8e21fd0c64bb85fb94af752eb037472726d68cd55bf028dc5306b0acb398d199-31247490958225.png" />
 
 개요 대시보드를 통해 제공되는 SSOT 보기는 논오가닉 성과 지표의 전체적인 모습을 제공합니다. 보기에서:
 
@@ -79,11 +79,11 @@ SSOT 보기의 데이터는 컨버전 스튜디오에서 Single Source of Truth�
 
 1. 시작 전, 컨버전 스튜디오에서 <Anchor target="_blank" href="/marketers/ko/docs/skan-conversion-studio#single-source-of-truth">Single Source of Truth</Anchor>가 켜져 있는지 확인하세요.
 2. 앱스플라이어에서 **대시보드** > **개요**로 이동합니다.   
-   <Image alt="저장된 보고서 선택.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
+   <Image align="center" alt="저장된 보고서 선택.png" src="https://files.readme.io/863a9c66c37e031a1f1b2a7fb3e0c68eb9c29405283214e68a432357c35524dd-31247514684177.png" width="243px" />
 3. ▼를 클릭하세요.
 4. Lite 개요를 선택하세요.  
    Single Source of Truth 스위치가 표시됩니다.  
-   <Image alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
+   <Image align="center" alt="SSOTviewon.png" src="https://files.readme.io/7b0a664f0882dad46e7239b5363592717358a79d920377dde13aa9c5dfbe84c3-31247514684433.png" width="246px" />
 5. Single Source of Truth를 켜세요.
 6. 다음 중 하나가 나타납니다.
    * 대시보드 지표와 차트가 표시됩니다.  
@@ -209,7 +209,7 @@ altskan\_af\_model\_diagram.pngalt
 
 SSOT는 다음의 시각 자료에 해당하는 방식으로 작동합니다.
 
-![SingleSourceOfTruth.png](https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png)
+<Image align="center" alt="SingleSourceOfTruth.png" src="https://files.readme.io/882527d4828cf3c7156caf183652368de33463a440715c69f7ec39bfd0f655fa-31247514685329.png" />
 
 **SSOT 메커니즘은 어떻게 작동하나요?**
 

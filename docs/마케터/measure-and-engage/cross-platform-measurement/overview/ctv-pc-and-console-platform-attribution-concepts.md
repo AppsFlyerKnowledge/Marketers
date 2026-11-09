@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어가 크로스 플랫폼 기기에서 캠페인에 대한 어트리뷰션 및 이벤트 데이터를 수신할 수 있도록 CTV, PC 및 콘솔 플랫폼에서 어트리뷰션이 어떻게 작동하는지 알아보세요.
 
-<Image alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
+<Image align="center" alt="7435_CTV_image.png" src="https://files.readme.io/7fc57fd80ad86bb173bcf81581b9fe8b4625ed2a044d302a6d72194560019e81-4410336840977.png" width="471px" />
 
 <div id="tv-screens" />
 
@@ -79,7 +79,7 @@ CTV, PC, 콘솔 플랫폼에서 앱을 마케팅할 때, 광고 디스플레이(
 
 직접 어트리뷰션 링크는 확률적 모델링과 결정적 매칭(링크에 ID가 제공된 경우) 어트리뷰션 방식을 모두 지원하며, 한 유저의 인스톨이 광고 클릭 또는 노출과 매칭됩니다. 어트리뷰션 흐름은 다음 다이어그램에 설명되어 있습니다.
 
-![CTV attribution flow - Direct attribution link flow.png](https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png)
+<Image align="center" alt="CTV attribution flow - Direct attribution link flow.png" src="https://files.readme.io/2af32b096faa381843040314c9c183056256d03a7e2e6095e72a59bb7211727f-19374976446225.png" />
 
 직접 어트리뷰션 링크는 미리 정해진 특정 플랫폼의 앱에 대한 것이며 하나의 특정 대상으로 연결되므로, 항상 URL에 앱 ID와 플랫폼 정보가 포함됩니다.
 
@@ -97,7 +97,7 @@ CTV, PC, 콘솔 플랫폼에서 앱을 마케팅할 때, 광고 디스플레이(
 
 크로스 플랫폼 원링크 링크는 확률적 모델링 어트리뷰션 방식(IP 주소 기반)만 지원합니다. 따라서 여러 유저가 여러 번 설치하면 동일한 노출로 어트리뷰션될 수 있습니다. 어트리뷰션 흐름은 다음 다이어그램에 설명되어 있습니다.
 
-![CTV attribution flow - Cross-platform Onelink link attribution flow (1).png](https://files.readme.io/15c73c4667e0bd40f4f826f40a5b048bc2148f6833c8d070c00fe435951e9244-51912608491665.png)
+<Image align="center" alt="CTV attribution flow - Cross-platform Onelink link attribution flow (1).png" src="https://files.readme.io/15c73c4667e0bd40f4f826f40a5b048bc2148f6833c8d070c00fe435951e9244-51912608491665.png" />
 
 가능한 모든 앱 대상/플랫폼은 원링크 템플릿에 구성됩니다. 이를 위해 크로스 플랫폼 원링크 링크에는 URL에 특정 앱 ID나 특정 플랫폼 정보가 포함되지 않습니다. 대신 URL에는 가능한 모든 앱 대상/플랫폼이 구성된 템플릿 ID가 포함됩니다.
 
@@ -115,7 +115,7 @@ CTV, PC, 콘솔 플랫폼에서 앱을 마케팅할 때, 광고 디스플레이(
 
 SRN에 대한 어트리뷰션은 결정론적 매칭을 통해 이루어집니다. 광고주가 SRN을 연동하면 다음 다이어그램과 같이 어트리뷰션이 작동합니다.
 
-![CTV attribution flow - SRN attribution flow (1).png](https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png)
+<Image align="center" alt="CTV attribution flow - SRN attribution flow (1).png" src="https://files.readme.io/ba0d84643aefd6a20e95c8aca9424affea8169c95ccc428ddf3d35bb8787a67c-19374961372945.png" />
 
 현재 SRN 어트리뷰션은 동일 플랫폼 간 광고에 대해서만 작동합니다. 즉, 인스톨과 동일한 플랫폼에서 터치포인트(클릭 또는 노출)가 발생한 경우를 의미합니다. 예를 들어, Roku Endemic Media(Roku의 SRN)로 Roku CTV 인스톨을 확인하고 Roku 기기에서 노출이 발생한 것으로 확인된 경우입니다. 모바일 등의 다른 플랫폼에서 노출이 발생한 경우 어트리뷰션에 고려되지 않습니다.
 
@@ -136,7 +136,7 @@ SRN에 대한 어트리뷰션은 결정론적 매칭을 통해 이루어집니�
 
 랜딩 페이지는 확률적 모델링과 결정적 매칭(링크에 ID가 제공된 경우) 어트리뷰션 방법을 모두 지원합니다. 확률적 모델링을 사용하면 여러 유저가 여러 번 설치한 것이 동일한 노출로 어트리뷰션될 수 있습니다. 어트리뷰션 흐름은 다음 다이어그램에 설명되어 있습니다.
 
-![CTV attribution flow - Landing page attribution flow.png](https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png)
+<Image align="center" alt="CTV attribution flow - Landing page attribution flow.png" src="https://files.readme.io/28e4d14d14532332027e5d429ac3f95c8d4d451d94125e399cfb9ad04727b278-19374961376529.png" />
 
 예시:
 

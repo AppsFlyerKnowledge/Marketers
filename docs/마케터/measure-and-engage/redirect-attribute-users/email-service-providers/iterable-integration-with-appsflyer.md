@@ -26,7 +26,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 원링크 기반 어트리뷰션 링크를 Iterable 시스템과 연동하여 <Anchor target="_blank" href="/marketers/ko/docs/email-service-provider-esp-integration-guide">이메일에서 딥링크를</Anchor> 생성해 보세요. 이 연동에서는 브랜드 클릭 기록 도메인 위에 유니버설 링크에 대한 Iterable의 지원을 활용합니다.
 
-![iterable-af-logo.png](https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png)
+<Image align="center" alt="iterable-af-logo.png" src="https://files.readme.io/e339ea75a54e53711f3c577c7f82339151af13e6c086cc1435cbb57cf1fae3f0-49839295443089.png" />
 
 <div id="introduction" />
 

@@ -30,7 +30,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어 SRN 파트너인 Apple Search Ads(ASA)는 사용자가 키워드를 통해 Apple의 앱 스토어에서 앱을 찾을 수 있도록 도와주는 광고 플랫폼입니다.
 
-<Image alt="apple_search_ads.png" src="https://files.readme.io/cd589369bcfe75bc327d21b3a593a71d5b5b902e8b9cbc879bbebd30f28d4f79-51912992764049.png" width="217px" />
+<Image align="center" alt="apple_search_ads.png" src="https://files.readme.io/cd589369bcfe75bc327d21b3a593a71d5b5b902e8b9cbc879bbebd30f28d4f79-51912992764049.png" width="217px" />
 
 검색어에 대한 반응으로 어떤 광고가 노출될지는 앱의 연관성에 따라 결정되며, 사용자가 광고에 반응하는 정도는 광고의 연관성 신호로 간주됩니다. ASA는 이러한 사용자 반응을 기반으로 어떤 광고를 더 자주 노출할지 결정합니다.
 
@@ -290,11 +290,11 @@ ASA 어트리뷰션은 IDFA에 의존하지 않으며, 디바이스에서 전달
 
 **리타겟팅 설정**
 
-[![ASA R Enabled2.jpg](https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg)](https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg)
+<Image align="center" alt="ASA R Enabled2.jpg" src="https://files.readme.io/0d26cc4844aa97adb793a266cb2a51961a1345e71a24eec305fcc16539d86027-31197524086801.jpg" />
 
 **리타겟팅 해제**
 
-[![ASA_R_Disabled.png](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)](https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png)
+<Image align="center" alt="ASA_R_Disabled.png" src="https://files.readme.io/425a0e1e802482a00230d7ceaebdcaa7f74523fb6feb75d60168f94b56886201-31197514618001.png" />
 
 <div id="20210215" />
 

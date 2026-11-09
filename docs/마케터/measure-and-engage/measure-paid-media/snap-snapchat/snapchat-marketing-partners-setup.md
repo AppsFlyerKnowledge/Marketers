@@ -23,7 +23,7 @@ x-zendesk:
 > **한눈에 보기:**
 
 
-* ![snapchat-dashboard.png](https://files.readme.io/a0942bd27528d4a837edc6eb5d11338bf0622ddc42e382231a8f210aedad1424-50902448760337.png)
+* <Image align="center" alt="snapchat-dashboard.png" src="https://files.readme.io/a0942bd27528d4a837edc6eb5d11338bf0622ddc42e382231a8f210aedad1424-50902448760337.png" />
 
 1. <span id="setting-up-a-snapchat-marketing-partner"></span>앱스플라이어의 사이드 메뉴에서 **협업** > **활성화된 연동**을 선택합니다.
 
@@ -35,7 +35,7 @@ x-zendesk:
 
 이 섹션을 사용하여 상기 포스트백을 보낼 수 있는 **유저 소스**를 정의할 수 있습니다.
 
-![remerge2.png](https://files.readme.io/4f3f52b3610b3e3bcf0adc6e963f1f2c39cdb0b2de27569c890844aac477b3d0-50902448761873.png)
+<Image align="center" alt="remerge2.png" src="https://files.readme.io/4f3f52b3610b3e3bcf0adc6e963f1f2c39cdb0b2de27569c890844aac477b3d0-50902448761873.png" />
 
 - 이 파트너에 어트리뷰션된 유저에게서만 발생하는 이벤트에 대해 **이 파트너에 어트리뷰션된 이벤트만**  
 전체 사용자 베이스가 해당 파트너에게 보고되도록 하려면 "**Events attributed to any partner or organic**"을 선택합니다.

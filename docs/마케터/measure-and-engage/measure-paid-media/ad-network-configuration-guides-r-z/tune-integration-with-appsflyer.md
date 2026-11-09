@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **한눈에 보기:**
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hasoffers.png" width="79px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/hasoffers.png" width="79px" />
 
 
 **<span id="setting-up-tune-integration"></span>전제 조건:** **연동 설정 전에 반드시  <Anchor target="_blank" href="/marketers/ko/docs/partner-integrations#contact-details">파트너에게 연락하여</Anchor> 계정을 개설하세요.**
@@ -64,11 +64,11 @@ x-zendesk:
 
   * **CNAME:** `example.appsflyer.com`
 
-    ![branded-link-esp-new-en_us.png](https://files.readme.io/a7433ac0e3b343195bac9b4be49d22c18534ec1c145189198c5ec467fea510bb-21323417936145.png)
+    <Image align="center" alt="branded-link-esp-new-en_us.png" src="https://files.readme.io/a7433ac0e3b343195bac9b4be49d22c18534ec1c145189198c5ec467fea510bb-21323417936145.png" />
 
       
 
-    ![branded-link-esp-cname-fail-message.png](https://files.readme.io/94f159a089152437111fc6e4308464bc48512ee18f5e249460006bfda05252c2-21323447961105.png)
+    <Image align="center" alt="branded-link-esp-cname-fail-message.png" src="https://files.readme.io/94f159a089152437111fc6e4308464bc48512ee18f5e249460006bfda05252c2-21323447961105.png" />
 
 <div id="example" />
 
@@ -78,6 +78,6 @@ x-zendesk:
 
 2. <br /><br />**예시**<br />
 
-   ![TUNE-link-example2-en_us.png](https://files.readme.io/58f38eb0bb724b66d0c958454651e0950a54f6fd990220f2ac24f93ca89ba344-small-4410086650769.png)
+   <Image align="center" alt="TUNE-link-example2-en_us.png" src="https://files.readme.io/58f38eb0bb724b66d0c958454651e0950a54f6fd990220f2ac24f93ca89ba344-small-4410086650769.png" />
 
 <div data-zendesk-anchors="h_01HJZRGVZ1VQF4N93THDRT5YCJ=setting-up-tune-integration enabling-deep-linking-into-your-app=%EC%A0%84%EC%A0%9C-%EC%A1%B0%EA%B1%B4 prerequisite=%EC%A0%84%EC%A0%9C-%EC%A1%B0%EA%B1%B4 h_01HJZRGVZ1KJ80ZA1THKFZ535P=%EC%A0%84%EC%A0%9C-%EC%A1%B0%EA%B1%B4 h_01HJZRGVZ1ZC9G7M72V2HW4XDS=%EC%A0%84%EC%A0%9C-%EC%A1%B0%EA%B1%B4 step-1-configure-links-for-your-campaigns=1%EB%8B%A8%EA%B3%84 h_01HJZRGVZ1GPR3NQQAXRBXV09Z=1%EB%8B%A8%EA%B3%84 step-2-set-up-the-attribution-link=2%EB%8B%A8%EA%B3%84-%EC%96%B4%ED%8A%B8%EB%A6%AC%EB%B7%B0%EC%85%98-%EB%A7%81%ED%81%AC%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95 h_01HJZRGVZ2F83PHABEWJXMMJ22=2%EB%8B%A8%EA%B3%84-%EC%96%B4%ED%8A%B8%EB%A6%AC%EB%B7%B0%EC%85%98-%EB%A7%81%ED%81%AC%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95 h_01HJZRGVZ2435CGWY4FZ5FKKHV=2%EB%8B%A8%EA%B3%84-%EC%96%B4%ED%8A%B8%EB%A6%AC%EB%B7%B0%EC%85%98-%EB%A7%81%ED%81%AC%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95" />

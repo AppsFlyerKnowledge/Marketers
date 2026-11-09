@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 브랜드 번들은 브랜드 관련 앱 및 웹 사이트의 어트리뷰션, 이벤트, 방문 및 수익을 통합합니다. 브랜드 번들 설정 페이지를 사용하여 전환 이벤트를 표시하고 Google 광고 등과 통합할 수 있습니다.
 
-![BrandBundles.png](https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png)
+<Image align="center" alt="BrandBundles.png" src="https://files.readme.io/eab9447f0bdd225ab7915724f996555057fa7f2840ec6e69a89465a90af6181e-360017356617.png" />
 
 <div id="about-brand-bundles" />
 

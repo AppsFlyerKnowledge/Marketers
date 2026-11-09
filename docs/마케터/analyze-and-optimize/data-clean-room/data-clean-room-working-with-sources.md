@@ -357,7 +357,7 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
 
 2일 동안 소스 파일을 업로드하고 (프로그래밍 방식으로 날짜/버전/데이터 폴더 및 `_SUCCESS`\_SUCCESS\_SUCCESS 파일을 생성한 후) 버킷/폴더는 다음과 같은 구조를 가질 수 있습니다.
 
-<Image alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_after_uploads.png" src="https://files.readme.io/f6e753cdf8389c0b99cad9cbf1a06261473ef87ce6f840a21ab8d9ccea20aed4-11420299723665.png" width="308px" />
 
 </Accordion>
 
@@ -447,11 +447,11 @@ DCR 키 폴더는 일반적으로 선택한 클라우드 서비스의 인터페�
 
 **계정의 DCR 키를 얻으려면 기본 DCR 페이지 상단에 있는 DCR 키 버튼을 클릭하십시오.**
 
-[![dcr_key_button.png](https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png)](https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png)
+<Image align="center" alt="dcr_key_button.png" src="https://files.readme.io/8d02c129ce45b19b28523419e43ec8227a9179e3bafb2b84c0a523b247061c19-16571022734353.png" />
 
 DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가져야 합니다.
 
-<Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
 <div id="top-level-input-folder" />
 
@@ -466,7 +466,7 @@ DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가�
 
 최상위 입력 폴더를 만든 후 버킷/폴더는 다음과 같은 구조를 가질 수 있습니다.
 
-<Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
 
 <div id="second-level-folder-for-each-data-source" />
 
@@ -478,7 +478,7 @@ DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가�
 
 2개의 데이터 소스 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가질 수 있습니다.
 
-<Image alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
 
 각 데이터 소스 폴더에서 소스가 업데이트될 때마다 [날짜 및 버전별로 중첩된 하위 폴더](/docs/data-clean-room-working-with-sources#nested-subfolders-for-each-date-and-version)를 만들어야 합니다.
 

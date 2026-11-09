@@ -83,7 +83,7 @@ x-zendesk:
 >
 > **액티비티:** 지나가는 기차를 보고 있다고 상상해 보십시오. 기차가 지나가는 동안, 우리는 차 안의 승객들이 그 순간에 취하는 행동만 볼 수 있습니다. 이를 액티비티 데이터라고 합니다.
 >
-> <Image alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
+> <Image align="center" alt="activity_data.jpg" src="https://files.readme.io/70a37d5dc16f0817d137f9011be9af5360bd7c4d2469a8abf9430fe69b2671c3-360002436957.jpg" width="400px" />
 >
 > **LTV**: 이제 귀하가 관찰자로서 기차를 탄다고 상상해 보십시오. 그 기차는 여러 차량 칸으로 나뉘어져 있습니다.
 >
@@ -91,7 +91,7 @@ x-zendesk:
 > * 귀하는 주행 중에 차 안의 승객이 수행하는 모든 행동을 관찰할 수 있습니다. 승객들이 기차에서 내릴 때까지 승객들의 행동을 관찰하는 상황은 앱 삭제에 비유할 수 있습니다.
 > * 다른 열차칸에 탑승한 승객의 행동은 그들이 귀하보다 이전 또는 이후에 탑승한 승객이기 때문에 볼 수 없습니다. 이는 LTV에 해당합니다.
 >
-> <Image alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
+> <Image align="center" alt="ltv_data.jpg" src="https://files.readme.io/78925644f263b6d5ea5630a09e0b2155d153ce2c4b3060be5c8d7cb9ba0ce4e6-360002436977.jpg" width="400px" />
 
 <div id="appsflyer-dashboards-and-reportsltv-or-activity" />
 

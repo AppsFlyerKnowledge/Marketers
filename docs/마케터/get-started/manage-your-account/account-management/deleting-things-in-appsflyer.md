@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **한눈에 보기** 광고주가 앱을 삭제하여 어트리뷰션을 중지하거나, 미디어소스를 삭제하거나, 사용자 관련 데이터를 삭제하는 방법을 알아보세요.
 
-<Image alt="shutterstock_699498934.jpg" src="https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg" width="363px" />
+<Image align="center" alt="shutterstock_699498934.jpg" src="https://files.readme.io/db2cd79f6da6de42042707fb2c8bbfe450a6cdc17a93f7a9dc9ea27d04716ef3-34228068995857.jpg" width="363px" />
 
 <div id="delete-user-history" />
 

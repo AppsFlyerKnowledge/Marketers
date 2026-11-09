@@ -74,7 +74,7 @@ Protect360은 광고 사기를 탐지, 방지 및 대응하기 위해 설계된 
 >
 > 진화하는 비즈니스 목표에 따라서 **구현됨** 모드와 **태그 됨** 모드 간 언제든 전환 (<Anchor target="_blank" href="/marketers/ko/docs/user-management">관리자 권한</Anchor>) 이 가능합니다. 여기서 더 자세히 알아보세요!
 
-<Image alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/70bf87550e949fed4898270f731424e948a24f7cf2cff39e81ba44473af94189-35506628777105.png" width="624px" />
 
 팁: 이 단계에서 팀이 Protect360에 익숙해질 때, 프로드 방지 스튜디오 내의 <Anchor target="_blank" href="/marketers/ko/docs/beta-fraud-protection-studio#app-detection-evaluation">**앱 탐지 평가**</Anchor> 카드를 방문하여 주어진 설정을 앱 레벨에서 테스트하고 파악하는 것을 권장합니다.
 
@@ -84,7 +84,7 @@ Protect360은 광고 사기를 탐지, 방지 및 대응하기 위해 설계된 
 
 Protect360 데이터를 세 가지 방법으로 내보낼 수 있습니다: <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data-reports#protect360-로데이터-리포트에-대하여">로데이터 보고서</Anchor>, <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data-reports#pull-api">Pull API</Anchor>, 또는 <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data-reports#data-locker">데이터 락커</Anchor>. 어떤 방법을 선택하든, 정확한 프로드 데이터 리포팅 및 효과적 분석을 위해서는 데이터 연결을 올바르게 구성하는 것이 중요합니다.
 
-<Image alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/d6a96db3fd8ffd3ed6f3f8abb680b4f3778a457142166d69e1ade7fe3263709e-35506660373393.png" width="624px" />
 
 <div id="important" />
 
@@ -124,7 +124,7 @@ BI에서 하이재킹된 설치를 올바르게 표시하려면:
 > * 태그된 인앱 이벤트
 > * 태그된 포스트 어트리뷰션 인앱 이벤트
 
-<Image alt="" src="https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/70d33b5c4359f839da8d46c4b07baf277148fc4d5c6ebc7a3e8b2d600bd7c5fc-35506628785169.png" width="624px" />
 
 #### **Pull API**
 
@@ -174,7 +174,7 @@ BI에서 하이재킹된 설치를 올바르게 표시하려면:
 
 <Anchor target="_blank" href="/marketers/ko/docs/protect360-dashboard">Protect360 대시보드</Anchor>는 귀하의 프로드 데이터의 시각적 개요를 재공하여 더 깊게 조사할 수 있도록 하고 프로드 탐지 및 귀하의 활동에 미치는 영향을 더 잘 이해할 수 있도록 합니다.
 
-<Image alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
+<Image align="center" alt="" src="https://files.readme.io/4717e1f00d832a9808ac6469d89bf3a87f6701afb24a47f3b4393e4e393111ee-35506628785809.png" width="624px" />
 
 </Accordion>
 

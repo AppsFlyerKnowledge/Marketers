@@ -84,7 +84,7 @@ x-zendesk:
   * 활성 세션이 존재하고 비직접 미디어 소스(UTM, PID, 클릭 ID 등)가 포함되어 있는 경우, 방문을 기록합니다. 이 재방문은 리타겟팅 전환(재참여)을 유발할 수 있으며, 이는 이후 이벤트의 어트리뷰션에 활용됩니다.
   * 활성 세션이 존재하고 미디어 소스 정보가 없는 경우, 해당 세션 내에서 새로운 방문을 기록하지 않습니다.
 
-<Image alt="트래픽 흐름 해결" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
+<Image align="center" alt="트래픽 흐름 해결" src="https://files.readme.io/d5f807d5ced5ed9a90a41cda0f38fe7ffef0b81c321bae90ad410076b484c810-47195479783953.png" width="1494px" />
 
 <div id="step-2-media-source-resolution" />
 

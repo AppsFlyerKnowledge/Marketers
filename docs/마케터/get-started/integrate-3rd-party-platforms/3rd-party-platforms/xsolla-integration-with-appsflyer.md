@@ -85,7 +85,7 @@ iOS 앱의 경우, <Anchor target="_blank" href="/marketers/ko/docs/apply-aggreg
   **참고:** 엑솔라의 앱스플라이어와의 연동은 설치 포스트백을 전송할 필요가 없습니다. 따라서, 해당 포스트백을 꺼두는 것을 권장드립니다.
 * **오가닉을 포함한 모든 미디어 소스:** 인스톨 포스트백은 파트너에 어트리뷰트된 이벤트와 오가닉 이벤트 모두에 대해 전송됩니다.
 
-![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+<Image align="center" alt="default_postbacks.png" src="https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png" />
 
 <div id="in-app-event-postbacks" />
 
@@ -93,7 +93,7 @@ iOS 앱의 경우, <Anchor target="_blank" href="/marketers/ko/docs/apply-aggreg
 
 이 섹션에서는 포스트백을 통해 앱스플라이어 이벤트를 파트너와 매핑할 수 있습니다.
 
-![xsolla-af-login-3.jpg](https://files.readme.io/6b694389980e67023a506e0fc8c302f0512d12681e44d3d3a414c511d6dd83e4-26908967996177.jpg)
+<Image align="center" alt="xsolla-af-login-3.jpg" src="https://files.readme.io/6b694389980e67023a506e0fc8c302f0512d12681e44d3d3a414c511d6dd83e4-26908967996177.jpg" />
 
 1. **인앱 이벤트 포스트백**을 활성화하세요.
 2. **이벤트 추가**를 클릭하여 목록에 SDK 또는 서버-투-서버 이벤트를 추가합니다.
@@ -161,7 +161,7 @@ Xsolla에 대한 권한이 없습니다.
    2. 귀하의 사이트를 선택하고 **Configure를 클릭하세요.**
    3. **Site settings** 탭에서 **Apps** 섹션으로 이동하세요.
    4. **AppsFlyer** 블록에서, **Connect**를 클릭하세요.  
-      [![xsolla-connect.jpg](https://files.readme.io/e29b2444769092cc6ea8e6b0fe0cf7753b65c6d5eef5770b920d5604f922d6c0-28569784464913.jpg)](https://files.readme.io/e29b2444769092cc6ea8e6b0fe0cf7753b65c6d5eef5770b920d5604f922d6c0-28569784464913.jpg)
+      <Image align="center" alt="xsolla-connect.jpg" src="https://files.readme.io/e29b2444769092cc6ea8e6b0fe0cf7753b65c6d5eef5770b920d5604f922d6c0-28569784464913.jpg" />
    5. **AppsFlyer Dev Key** 필드에 앱스플라이어 웹 개발 키를 입력하세요. [앱스플라이어에서 웹 개발 키를 찾는 방법](/docs/xsolla-integration-with-appsflyer#앱스플라이어에서-웹-개발-키-찾기)은 아래에서 확인하세요.
    6. **Connect**를 클릭하세요.
 
@@ -172,7 +172,7 @@ Xsolla에 대한 권한이 없습니다.
 1. **나의 앱** 페이지에서, **View brand bundles**를 클릭합니다.
 2. 엑소랄 번들 행에서 복사 아이콘을 클릭합니다.
 
-![xsolla-brand-bundle2.jpg](https://files.readme.io/9cb6a9e872e482f7e426aea7e615afb1f91017c569e7cd67286cdb946d9d2445-26923253273361.jpg)
+<Image align="center" alt="xsolla-brand-bundle2.jpg" src="https://files.readme.io/9cb6a9e872e482f7e426aea7e615afb1f91017c569e7cd67286cdb946d9d2445-26923253273361.jpg" />
 
 <div id="identifying-xsollas-events-in-appsflyer" />
 

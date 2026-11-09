@@ -521,7 +521,7 @@ https://hq1.appsflyer.com/api/gdpr/v1/stub/download/:requestId
 1. 화면 상단 표시줄에서 계정(이메일 주소) 아래 드롭다운 메뉴를 펼치고 로그아웃을 클릭합니다.
 2. 다음 창이 열립니다:
 
-![GDPR_Table.png](https://files.readme.io/5c2b2695b5c273e16a0396f0df2d227a0a0f61af6ad0626c0a911b77edc6a0d2-13949567038481.png)
+<Image align="center" alt="GDPR_Table.png" src="https://files.readme.io/5c2b2695b5c273e16a0396f0df2d227a0a0f61af6ad0626c0a911b77edc6a0d2-13949567038481.png" />
 
 </Accordion>
 

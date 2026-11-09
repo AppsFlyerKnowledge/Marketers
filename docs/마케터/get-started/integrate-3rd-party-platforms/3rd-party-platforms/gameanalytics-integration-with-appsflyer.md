@@ -70,7 +70,7 @@ Google Analytics 설정 윈도우는 *연동* 탭만 사용합니다.
 
 아직 계정 ID가 없다면, 연동을 계속하려면 Google Analytics에서 가져와야 합니다.
 
-![Game_Analytics_msc_new_2.png](https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png)
+<Image align="center" alt="Game_Analytics_msc_new_2.png" src="https://files.readme.io/0c629a74c16d6d8a861ee3ec344de68516a6224e9d6f5afb4b7d89fe78baa49f-360002199865.png" />
 
 <div id="default-postbacks" />
 
@@ -78,7 +78,7 @@ Google Analytics 설정 윈도우는 *연동* 탭만 사용합니다.
 
 이 섹션을 사용하여 이러한 포스트백 전송을 정의합니다.
 
-![Swrve_msc_new_4.png](https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png)
+<Image align="center" alt="Swrve_msc_new_4.png" src="https://files.readme.io/0144ced7a8f0e6eec2a4847971c1d058efde9bdb0efbef961c6451a4c7e81ccf-18274450980753.png" />
 
 <div id="in-app-event-settings" />
 

@@ -30,7 +30,7 @@ x-zendesk:
 
 AI 어시스턴트는 사용자가 인사이트를 발굴하고 앱스플라이어를 통해 더 현명한 의사결정을 내릴 수 있도록 돕는 셀프 서비스 분석 및 가이드 동반자입니다. 대시보드 데이터와 함께 활용하여 마케팅 성과를 빠르게 탐색하고 이해해 보세요.
 
-<Image alt="Ai assistent new6.gif" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
+<Image align="center" alt="Ai assistent new6.gif" src="https://files.readme.io/faf2113de852c5c8d3f66a41c1267a2c69b8704e05280ed4683374a569b0ba74-38726194531729.gif" width="645px" />
 
 <div id="what-you-can-do" />
 

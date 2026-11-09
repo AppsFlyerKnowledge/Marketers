@@ -36,12 +36,12 @@ Steam에서 실행되는 앱은 S2S API 또는 SDK를 통해 앱스플라이어�
 
 다음 어트리뷰션 흐름을 보면, 광고 인게이지먼트에서 어트리뷰션에 이르기까지 유저 여정에서 가장 중요한 단계가 표시돼 있습니다. 여기에는 앱스플라이어가 권장하는 크로스 플랫폼 랜딩 페이지가 포함됩니다. **참고**: 크로스 플랫폼 랜딩 페이지 사용이 권장되지만 다이렉트 어트리뷰션 링크를 사용할 수도 있습니다
 
-![Steam_user_journey.jpg](https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg)
+<Image align="center" alt="Steam_user_journey.jpg" src="https://files.readme.io/4979821043af1ed3e662b55c84df10a17a863e79084d050c478fa31767ed8eaa-51473918246929.jpg" />
 
 1. 마케팅 터치포인트: 고객은 온라인 또는 오프라인 마케팅 터치포인트를 통해 브랜드와 상호 작용합니다. 이러한 상호작용에는 이메일 및 뉴스레터, 소셜 미디어, 모바일 웹 등이 포함될 수 있습니다.
 2. 게임 랜딩 페이지: 게임 랜딩 페이지는 고객을 Steam 게임 페이지로 안내합니다. 이 단계에서 UTM 및 기타 URL 파라미터를 수집하는 데 중요한 역할을 하며, 고객의 클릭/설치를 오리지널 미디어 소스 또는 온드 미디어 소스로 어트리뷰트합니다.   
    또한, 랜딩 페이지가 유용한 이유는 게임이 지원하는 다양한 플랫폼에 대한 링크를 제공하기 때문입니다. 예를 들어 랜딩 페이지에 Xbox, Microsoft Store 및 Steam 페이지로 안내하는 링크를 포함시킬 수 있습니다.  
-   ![awesome_game.png](https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png)
+   <Image align="center" alt="awesome_game.png" src="https://files.readme.io/37cabff10a2e0a721b4d2901e7df47f53a7dedff25bdac80b97003b60eaef430-51473918248465.png" />
 3. <span id="marketing-touchpoint"></span>Steam 앱 페이지: 고객이 다운로드할 수 있는 Steam 앱을 호스팅하는 Steam 스토어 페이지입니다.
 4. 게임 설치: 유저가 게임을 설치하면 어트리뷰션이 트리거되고 인앱 이벤트 및 세션이 기록됩니다.
 

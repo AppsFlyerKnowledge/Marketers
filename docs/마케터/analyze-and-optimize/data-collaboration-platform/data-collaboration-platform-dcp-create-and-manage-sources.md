@@ -107,10 +107,10 @@ DCP에서 소스 생성하려면 아래 단계를 따르세요.
 
 1. 앱스플라이어 에서 측면 메뉴의 **공동 작업** > **데이터 \_x0008\_클린룸** 선택합니다.
 
-   <Image alt="Click Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="34.12%" />
+   <Image align="center" alt="Click Data Clean Room.png" src="https://files.readme.io/2dc54e035b17aafa17b7eb4c526643284aa7979919f8caa0add13b7e6ae19e0c-41945704690065.png" width="34.12%" />
 2. 메인 페이지 또는 **소스** 탭에서 **+ 새 소스** 클릭하세요.
 
-   <Image alt="소스 빈 상태 잘린.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="43.08%" />
+   <Image align="center" alt="소스 빈 상태 잘린.png" src="https://files.readme.io/629d8c7c68bfbce7c2307306128b0d0cc430886dc2a58200cb635bc0044d2bd7-33193030142609.png" width="43.08%" />
 3. **새 소스** 설치 절차를 진행하세요.
 
 </Accordion>
@@ -212,7 +212,7 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
 
 소스 위치를 선택할 때 **'로컬 파일 시스템'을** 클릭 하고 **'다음'을** 클릭하면 기기에서 로컬 파일을 업로드하는 옵션이 추가됩니다.
 
-<Image alt="로컬 파일 시스템을 선택하세요.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
+<Image align="center" alt="로컬 파일 시스템을 선택하세요.png" src="https://files.readme.io/08f4797196c915b73a543c7152b5090913287c61b12fefe893d3893ca76fc4d5-33193021989393.png" width="731px" />
 
 <div id="note" />
 
@@ -233,7 +233,7 @@ Amazon S3 또는 GCS의 소스 위치는 연결에서 지정한 클라우드 스
 * **스냅샷** - 이 방법은 소스 업데이트될 때마다 전체 데이터 세트를 업로드하여 이전 데이터 세트를 새 데이터 세트로 완전히 대체합니다. 파일 업로드가 항상 전체 최신 데이터 세트를 포함하는 경우에만 선택하십시오.
 * **추가** - 이 방법은 전체 데이터 세트가 아닌 새롭거나 변경된 데이터만 업로드합니다. 오래된 데이터 세트는 삭제되거나 업데이트되지 않습니다. 일일 또는 주간 보고서와 같은 반복 업로드에 이상적입니다. 이점으로는 업로드 용량 감소(클라우드 스토리지 비용 유도하다 가능성 있음), 데이터 업로드 성과 향상, 간편한 기록 관리 등이 있습니다.
 
-<Image alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
+<Image align="center" alt="Delta Generate folders.png" src="https://files.readme.io/105f55ff555565e97b82ecf86d58cfd2cf2a0340f83d6261fd3bd1c084b13889-38096875288977.png" width="637px" />
 
 <div id="important-1" />
 
@@ -322,7 +322,7 @@ source_name1/
 
 소스 파일의 전체 스냅샷을 2일 동안 업로드한 후(프로그램적으로 날짜/버전/데이터 폴더와 \_SUCCESS 파일을 생성한 후) 폴더 구조가 어떻게 보이는지 예시를 보여드리겠습니다. 버킷/폴더 구조는 다음과 같을 수 있습니다.
 
-[<Image alt="스냅샷 예시 버킷.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />](https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png)
+<Image align="center" alt="스냅샷 예시 버킷.png" src="https://files.readme.io/a96762b43bbcae3d1265aa407e725ba885e27c3a83433d017aa30d7afaf31e37-38096860329233.png" width="219px" />
 
 
 <div id="h_01K2A7MAWTV3FY1GZSXQFNX4JS" />
@@ -510,7 +510,7 @@ source_name/
 1. **+ 새 필드를** 클릭하세요. 빈 필드가 추가되었습니다.
 2. 필드 이름을 입력하고 유형을 선택하세요.
 
-<Image alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
+<Image align="center" alt="NewField.png" src="https://files.readme.io/8dfb70dcac2cc9a2257c6e092bc2185de74a3804bd608878eaaadf09cd903331-43749881081745.png" width="760px" />
 
 **필드 유형은 다음과 같습니다.**
 
@@ -719,11 +719,11 @@ DCR 키 폴더는 일반적으로 선택한 클라우드 서비스의 인터페�
 
 * 오른쪽 상단의 점 3개(작업) 메뉴를 클릭하고 **DCR 키를** 선택하세요.
 
-[<Image alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/50117774720401)
+[<Image align="center" alt="DCR key.png" src="https://files.readme.io/b892831ad68cffb5b8084949d759f402780536c7176aa27733c867aff6560684-43750165616657.png" width="1141px" />](https://support.appsflyer.com/hc/article_attachments/50117774720401)
 
 DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가져야 합니다.
 
-<Image alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_dcr_key_folder.png" src="https://files.readme.io/a57ba8076a2af5ef1f5a8339ac6b24e1ab6f8ff60956013a0a6547320a13072f-16571304308497.png" width="308px" />
 
 <div id="top-level-input-folder" />
 
@@ -738,7 +738,7 @@ DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가�
 
 최상위 입력 폴더를 만든 후 버킷/폴더는 다음과 같은 구조를 가질 수 있습니다.
 
-<Image alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
+<Image align="center" alt="dcr_file_structure_input_folder.png" src="https://files.readme.io/cb7249ee0cbc0b4721c701f7d735c73eb7acc0a2a9e73de102b5a5ec9a6a79fd-16571312292753.png" width="308px" />
 
 <div id="second-level-folder-for-each-data-source" />
 
@@ -752,7 +752,7 @@ DCR 키 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가�
 
 2개의 데이터 소스 폴더를 생성한 후 버킷/폴더는 다음과 같은 구조를 가질 수 있습니다.
 
-<Image alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
+<Image align="center" alt="dcr_file_structure_source_folders.png" src="https://files.readme.io/f4624a213b79978d8ec080551649fae72d04d2f58a78344fc9df74a859881549-16571312297361.png" width="307px" />
 
 각 데이터 소스 폴더에서 소스가 업데이트될 때마다 [날짜 및 버전별로 중첩된 하위 폴더](#nested-subfolders-for-each-date-and-version)를 만들어야 합니다.
 

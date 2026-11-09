@@ -49,7 +49,7 @@ Adobe Launch SDK는 Adobe Experience Platform의 필수적인 부분입니다. A
 
 <Accordion title="3.1 앱스플라이어 dev key 가져오기">
 
-<Image alt="dev_key.png" src="https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png" width="357px" />
+<Image align="center" alt="dev_key.png" src="https://files.readme.io/bf25b5d583f3eaab57c230b68764f08c49806a50401955a511993d8a847e7d42-360006050318.png" width="357px" />
 
 1. 앱 대시보드에서 왼쪽 메뉴의 ***구성***에서 ***앱 설정***을 클릭합니다.
 2. ***SDK 설치*** 아래에서 ***개발자 키***를 복사합니다.
@@ -75,7 +75,7 @@ Adobe Launch SDK는 Adobe Experience Platform의 필수적인 부분입니다. A
 
 <Accordion title="1.1 Adobe Launch에서 새 속성 만들기">
 
-[![](https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png)](https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png)
+<Image align="center" alt="" src="https://files.readme.io/d03e61047c536785e7601d4f0efbd9b6488bd41c92efdd6e0d1021b42a5bec3a-small-360005983477.png" />
 
 1. Adobe Experience Cloud에 로그인합니다.
 2. ***Launch***를 선택합니다.
@@ -92,7 +92,7 @@ Adobe Launch SDK는 Adobe Experience Platform의 필수적인 부분입니다. A
 
 Adobe Launch에서 다음 확장 프로그램을 설치합니다.
 
-[![adboe_extensions.png](https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png)](https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png)
+<Image align="center" alt="adboe_extensions.png" src="https://files.readme.io/bf0c0652c3807d4da0819a62b600ac875af1f8764387a36cc3f256a58e1ea852-360005983597.png" />
 
 * Adobe Analytics - SDK에서 기록된 데이터를 Adobe Analytics 모듈에 연결합니다.
 * 앱스플라이어 SDK 확장 프로그램 - Adobe Launch SDK를 사용하여 데이터와 이벤트를 어도비와 앱스플라이어로 모두 전송합니다.
@@ -144,7 +144,7 @@ Adobe Launch에서 다음 확장 프로그램을 설치합니다.
 
 <Accordion title="2.1 앱에 SDK 추가하기">
 
-[![adobe_sdk.png](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)](https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png)
+<Image align="center" alt="adobe_sdk.png" src="https://files.readme.io/076e6cc5911a0a515e5510a8da233bcefcb4144c92cf49190416b593fcdecc8f-small-360006050518.png" />
 
 1. Adobe 자산 내에서 ***환경***을 선택합니다.
 2. SDK를 배포할 환경을 선택합니다.
@@ -159,7 +159,7 @@ Adobe Launch에서 다음 확장 프로그램을 설치합니다.
 
 SDK 구현을 완료하려면 환경을 라이브러리에 게시해야 합니다.
 
-[![adobe_publishing.png](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)](https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png)
+<Image align="center" alt="adobe_publishing.png" src="https://files.readme.io/4e9ad08fce291ef59e7a3567726c678754ae3a3c96de75f4ae27cd80a84945d1-small-360006050558.png" />
 
 1. Adobe 속성에서 ***게시***를 선택합니다.
 2. ***새 라이브러리 추가***를 클릭합니다.
@@ -208,7 +208,7 @@ SDK 구현을 완료하려면 환경을 라이브러리에 게시해야 합니�
    ```
 2. 프로젝트를 동기화하여 종속성을 검색하려면 다음 스크린샷을 참조하세요.  
 
-   [![android_af_sdk_sync_gradle.png](https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png)](https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png)
+   <Image align="center" alt="android_af_sdk_sync_gradle.png" src="https://files.readme.io/f8835cf76d51d7ddeb51206707d95b7214e398c5960299893118ad57ccffe890-22939234622609.png" />
 
 ProGuard를 사용 중인데 구글의 새로운 리퍼러 API를 사용하려면 다음의 ProGuard 규칙을 설정하세요. `-dontwarn com.android.installreferrer`
 
@@ -381,7 +381,7 @@ AppDelegate.m에서 다음 코드를 구현합니다.
 
 전환 데이터는 이벤트와 함께 Adobe 플랫폼으로 전송됩니다. 이러한 변수를 사용하면 리포팅 차원, 메트릭 또는 필터에 로직과 규칙을 적용할 수 있습니다.
 
-1. [![](https://files.readme.io/d56f170695893dbbde00c50c838ce8a5c2cfe418a17692f372e208d458ed2d6c-31205379096465.png)](https://files.readme.io/d56f170695893dbbde00c50c838ce8a5c2cfe418a17692f372e208d458ed2d6c-31205379096465.png)
+1. <Image align="center" alt="" src="https://files.readme.io/d56f170695893dbbde00c50c838ce8a5c2cfe418a17692f372e208d458ed2d6c-31205379096465.png" />
 
 앱스플라이어 컨텍스트 변수를 매핑하는 방법은 다음 표를 참조하세요.
 

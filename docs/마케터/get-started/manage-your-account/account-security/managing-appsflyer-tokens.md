@@ -30,7 +30,7 @@ x-zendesk:
 
 > 🚧 **중요!**
 >
-> ![AppsFlyerAdmin_us-en.png](https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png)
+> <Image align="center" alt="AppsFlyerAdmin_us-en.png" src="https://files.readme.io/d67fdedd94c56e8da776e590b12883503f47d36f0d58b996c4c64cc5d0e9c675-16281491712785.png" />
 >
 > * 관리자만이 토큰을 보고 관리할 수 있습니다. 계정 사용자는 토큰 페이지에 접근할 수 없습니다.
 > * 토큰이 귀하의 데이터에 액세스할 수 있도록 안전하게 보관합니다. 공개 코드 리포지토리에 토큰을 게시하지 마십시오.

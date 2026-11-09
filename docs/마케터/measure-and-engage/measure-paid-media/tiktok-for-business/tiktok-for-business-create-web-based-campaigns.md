@@ -226,7 +226,7 @@ You can choose any pre-defined INAPP event sent from Appsflyer as your campaign 
 
 <Accordion title="End-to-end data flow">
 
-[![](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)](https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png)
+<Image align="center" alt="" src="https://files.readme.io/95b5a593eba3bc0bafb629bb8a27d83c077d5815a79897c004f8f085fa8e953b-25646834953105.png" />
 
 1. The TikTok ad URL includes the  `pid=tiktokweb_int` parameter. When the user clicks on the ad, an `ttclid` parameter is automatically appended to the clicked URL.
 2. The User is redirected to the URL destination - a landing page containing a Smart Script.

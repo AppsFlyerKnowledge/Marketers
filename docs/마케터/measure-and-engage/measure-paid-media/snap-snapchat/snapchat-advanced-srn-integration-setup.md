@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 2023년 9월 중순부터 스냅챗은 고급 SRN이 되었습니다. 앱스플라이어와 스냅챗 간 연동을 설정하여 어트리뷰션 측정을 활성화하는 방법을 알아보세요.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/snapchat.png?v=1" width="52px" />
 
 <div id="overview" />
 
@@ -75,7 +75,7 @@ x-zendesk:
 
 **파트너 활성화**를 활성화하여 스냅챗에 대한 어트리뷰션을 허용합니다.
 
-![mceclip0.png](https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/cf4e73fec951e4e9d2c1919ca20adff88fc0d49d7fea9b033ab9c39194ce2702-360003259638.png" />
 
 <div id="advanced-matching-data-sharing" />
 
@@ -92,7 +92,7 @@ x-zendesk:
 1. Snap 비즈니스 관리자에서 앱으로 이동하여 Snap 앱 ID를 복사합니다( <Anchor target="_blank" href="https://businesshelp.snapchat.com/en-US/a/snap-app-id">Snap 앱 ID를 생성하는 방법</Anchor>에 대한 스냅챗 가이드 참조).
 2. 앱스플라이어의 Snap 앱 ID 필드에 ID를 붙여넣습니다.
 
-![snapchat-app-id.png](https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png)
+<Image align="center" alt="snapchat-app-id.png" src="https://files.readme.io/2e5f53240893e2a80ba36065f67f4504f69e1167d96ef35bd7a4ab874d5a7bb9-360008280878.png" />
 
 **에이전시에서 앱을 홍보하는 경우**,
 
@@ -158,7 +158,7 @@ x-zendesk:
 
 포스트백을 통해 앱스플라이어 이벤트를 파트너와 매핑할 수 있습니다. 포스트백 전송이 사용 가능한 경우, 거부된 인앱 이벤트(Protect360에 의해 차단된 이벤트 또는 타겟 유효성 검증 규칙을 비준수하는 것으로 발견된 이벤트)를 포함합니다.
 
-[![mceclip0.png](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)](https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png)
+<Image align="center" alt="mceclip0.png" src="https://files.readme.io/9df3455b102ff280e8b0fae4bfc006fa87f8830d74064eb955fc829d06708165-23458868914577.png" />
 
 **인앱 이벤트 포스트백 설정 방법:**
 
@@ -292,7 +292,7 @@ x-zendesk:
 1. **앱 기회 유형으로 트래픽 유도**로 이동합니다.
 2. 딥링크 URI를 추가합니다.  
      
-   [![](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)](https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png)
+   <Image align="center" alt="" src="https://files.readme.io/428258bbc5eb2fc7332ea07356e098eb66ac2cfdd0955117a14666eb76a20f79-360001717778.png" />
 
 <div id="deferred-deep-linking-with-snapchat" />
 
@@ -330,7 +330,7 @@ x-zendesk:
 3. 대행사의 **Snapchat 계정 ID**를 입력합니다. 이를 통해 대행사 트래픽을 식별하고 광고주 트래픽과 구별할 수 있습니다. 최대 50개의 서로 다른 스냅챗 계정 ID를 입력할 수 있습니다. 입력한 계정에서 생성된 모든 어트리뷰션 데이터는 대행사의 대시보드에서 확인할 수 있습니다.
 4. **연동 저장**을 클릭합니다.
 
-![snapchat-agency-integration.png](https://files.readme.io/261a0246bb7da0899e653a776eb25e17ce3ae8bff1efef33acac0ef0bf99abcf-21074932431505.png)
+<Image align="center" alt="snapchat-agency-integration.png" src="https://files.readme.io/261a0246bb7da0899e653a776eb25e17ce3ae8bff1efef33acac0ef0bf99abcf-21074932431505.png" />
 
 > ❗️ **경고**
 >

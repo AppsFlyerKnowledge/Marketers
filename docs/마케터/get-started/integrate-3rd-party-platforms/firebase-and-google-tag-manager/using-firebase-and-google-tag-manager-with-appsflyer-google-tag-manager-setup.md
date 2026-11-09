@@ -66,7 +66,7 @@ Google 태그 관리자가 앱스플라이어에 이벤트를 전송할 때는 �
 >
 > 아래는 GTM 사용자 인터페이스의 스크린샷입니다. 이벤트 파라미터의 최종 설정을 보여줍니다:
 >
-> ![event_parameter_variable_dev_key.png](https://files.readme.io/f5030ce110ec4459f673a4088c2c09a4e3f90a35976f4fbfccb8750cb112e69e-49839295695889.png)
+> <Image align="center" alt="event_parameter_variable_dev_key.png" src="https://files.readme.io/f5030ce110ec4459f673a4088c2c09a4e3f90a35976f4fbfccb8750cb112e69e-49839295695889.png" />
 
 <div id="important" />
 
@@ -92,7 +92,7 @@ Google 태그 관리자가 앱스플라이어에 이벤트를 전송할 때는 �
 >
 > 아래는 GTM 사용자 인터페이스의 스크린샷입니다. 이벤트 파라미터의 최종 설정을 보여줍니다:
 >
-> ![event_parameter_variable_revenue.png](https://files.readme.io/40e6ccd8d2df9370210847d6ff54a5a44c04f295dac9ece18dac715e5fc335a1-49839295696657.png)
+> <Image align="center" alt="event_parameter_variable_revenue.png" src="https://files.readme.io/40e6ccd8d2df9370210847d6ff54a5a44c04f295dac9ece18dac715e5fc335a1-49839295696657.png" />
 
 <div id="note-3" />
 
@@ -124,7 +124,7 @@ Google 태그 관리자가 이벤트를 앱스플라이어로 전송할지 여�
 >
 > 아래는 GTM 사용자 인터페이스의 스크린샷입니다. 트리거의 최종 설정 상태를 확인할 수 있습니다:
 >
-> ![trigger_purchase_event.png](https://files.readme.io/ef2e70fb2aa0b25f1243d6fa565e3cdb1df407fd2d4b3105dee412ccad7f2704-49839256428689.png)
+> <Image align="center" alt="trigger_purchase_event.png" src="https://files.readme.io/ef2e70fb2aa0b25f1243d6fa565e3cdb1df407fd2d4b3105dee412ccad7f2704-49839256428689.png" />
 
 </Accordion>
 
@@ -162,7 +162,7 @@ Google 태그 관리자가 이벤트를 앱스플라이어로 전송할지 여�
 >
 > 아래는 GTM 사용자 인터페이스의 스크린샷입니다. 태그의 최종 설정 상태를 확인할 수 있습니다:
 >
-> ![purchase_tag.png](https://files.readme.io/893bdf6ce65bf6bd0435f4e7c02ff044b35e5e14ebea131f547040f763d7512d-49839295697169.png)
+> <Image align="center" alt="purchase_tag.png" src="https://files.readme.io/893bdf6ce65bf6bd0435f4e7c02ff044b35e5e14ebea131f547040f763d7512d-49839295697169.png" />
 
 </Accordion>
 

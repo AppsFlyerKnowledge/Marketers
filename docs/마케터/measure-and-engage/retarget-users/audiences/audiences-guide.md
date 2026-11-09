@@ -27,7 +27,7 @@ x-zendesk:
 
 > **한눈에 보기:** 앱스플라이어 오디언스를 사용하여 오디언스가 세그먼트를 구축하고 파트너 네트워크에 연결함으로써 사용자 인입 및 리마케팅 캠페인의 효율성을 높입니다.
 
-![Intro_image.png](https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png)
+<Image align="center" alt="Intro_image.png" src="https://files.readme.io/645503f41e6a76c854c62236fc279be591849879790d02001eafc75f0d1a974a-30258966500753.png" />
 
 <div id="audiences-basics" />
 
@@ -126,7 +126,7 @@ x-zendesk:
 >
 > 이 예에서는 하나의 일반적인 사용 사례를 보여줍니다. 아직 구매하지 않은 활성 앱 사용자의 첫 구매를 유도하고 싶다고 가정해 보겠습니다. "구매 유도" 오디언스를 선택하고 인앱 구매를 정의하는 이벤트를 지정하도록 사용자 지정할 수 있습니다. 그런 다음 오디언스를 파트너와 연결하고 구매를 유도하고 앱의 구매 페이지로 안내하는 프로모션 캠페인을 실행할 수 있습니다.
 >
-> ![Encourage_purchase_image_this_one.jpeg](https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg)
+> <Image align="center" alt="Encourage_purchase_image_this_one.jpeg" src="https://files.readme.io/8b49590a0c97707bd4a0b151d30cc48183e15ffb13d2d4e9ee25d522de71846c-30259018203153.jpg" />
 
 **추천 오디언스 생성 방법:**
 
@@ -202,7 +202,7 @@ x-zendesk:
     * 디바이스 ID가 두 개의 서로 다른 CUID와 연결된 경우 가장 최근에 연결된 CUID가 사용됩니다.
     * CUID를 식별자로 사용하여 오디언스를 구축할 때, 관련 디바이스와의 완전한 연결과 디바이스 식별자(즉 GAID, IDFA)를 통한 성공적인 보강을 위해 앱스플라이어가 설치 시(설치 후 이벤트 발생 시가 아니라) CUID 연결을 수신했음에 틀림없습니다. <Anchor target="_blank" href="/marketers/ko/docs/customer-user-id-field-cuid#cuid-설정방법">더 알아보기</Anchor>
 
-<Image alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
+<Image align="center" alt="CuidExaplainded_us-en.jpg" src="https://files.readme.io/d40309ab2fd34a4862b9c089ac2fade2f5642973fc4d4977da66f1ee6bf1e390-30258966523921.jpg" width="387px" />
 
 <div id="example-device-id-vs-cuid" />
 
@@ -374,7 +374,7 @@ x-zendesk:
 
 <Accordion title="오디언스 세그멘테이션 규칙 집합">
 
-![audience_segmentation_rulesets.jpg](https://support.appsflyer.com/hc/article_attachments/30259018214801)
+<Image align="center" alt="audience_segmentation_rulesets.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018214801" />
 
 * 오디언스 세그먼트 규칙 세트는 정밀 필터링을 활성화하는 하나 이상의 규칙으로 구성됩니다.
 * 연산자(and, or, exclude)를 사용하여 룰 세트를 결합합니다.
@@ -397,7 +397,7 @@ x-zendesk:
 >
 > 지난 달에 앱을 삭제한 뉴욕 사용자.
 >
-> ![example_location_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/30258966552209)
+> <Image align="center" alt="example_location_based_rule.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966552209" />
 
 <div id="example-user-attributes-based-rule" />
 
@@ -405,7 +405,7 @@ x-zendesk:
 >
 > 최근 7일 동안 1회 이상 앱을 실행하고 가장 좋아하는 무기가 검인 사용자입니다.
 >
-> ![example_user_attributes_based_rule.jpg](https://support.appsflyer.com/hc/article_attachments/30258966566801)
+> <Image align="center" alt="example_user_attributes_based_rule.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966566801" />
 
 <div id="example-revenue" />
 
@@ -413,7 +413,7 @@ x-zendesk:
 >
 > 지난 7일 동안 앱을 설치하고 $1 을 지출한 사용자.
 >
-> ![example_revenue.jpg](https://support.appsflyer.com/hc/article_attachments/30258966567825)
+> <Image align="center" alt="example_revenue.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966567825" />
 
 <div id="example-owned-media-filter" />
 
@@ -423,7 +423,7 @@ x-zendesk:
 >
 > 다음은 지난 7일 동안 한 번 이상 앱을 실행하고 특정 이메일 캠페인과 특정 광고 세트 및 광고로 인해 인스톨을 진행한 사용자의 예입니다.
 >
-> ![Owned_media_example.jpg](https://support.appsflyer.com/hc/article_attachments/30258966580753)
+> <Image align="center" alt="Owned_media_example.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966580753" />
 >
 > 오디언스는 온드 미디어 또는 유료 미디어에서 개인화된 메시지로 이러한 사용자를 리인게이지하는 데 사용하거나 캠페인을 실행할 때 관련성이 없거나 불필요한 광고가 표시되지 않도록 제외 목록으로 사용할 수 있습니다.
 
@@ -435,7 +435,7 @@ x-zendesk:
 >
 > 지난 2 일 동안, 광고를 클릭했지만 인스톨은 하지 않은 잠재 사용자에 대한 오디언스를 작성합니다.
 >
-> ![example_remarketing.jpg](https://support.appsflyer.com/hc/article_attachments/30259018231313)
+> <Image align="center" alt="example_remarketing.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018231313" />
 >
 > 이들은 최근에는 광고를 클릭할 만큼 해당 모바일 앱에 관심이 있었지만, 어떤 이유로 앱을 설치하지 않았습니다. 또는 앱을 설치했으나 아직 실행하지 않았습니다. 일부 유저는 이 앱을 인스톨 하라는 리마인더(푸시)만 단지 필요할 뿐입니다. 다른 유저는 최종적으로 전환시키려는 앱에 대한 추가 화면이나 기능 설명이 필요할 수도 있습니다. 그러므로, 신규 오디언스에 대한 주요 광고 소재가 있다면, 광고를 클릭했으나 설치 하지 않은 오디언스에게는 다른 광고 소재를 사용하는 것이 좋을 수 있습니다.
 
@@ -506,7 +506,7 @@ x-zendesk:
 6. 이 파트너와 공유할 수 있는 권한을 부여한 사용자 식별자를 선택하십시오.
    * 지원되는 식별자는 파트너에 따라 다릅니다. 선택한 파트너가 지원하는 해당 식별자만 목록에 표시됩니다.
    * <Anchor target="_blank" href="/marketers/ko/docs/audiences-user-identifier-policy">계정 수준 사용자 식별자 정책</Anchor>을 준수하는 식별자만 업로드됩니다. 계정 정책에서 허용되지 않는 식별자를 선택하면 주의 메시지가 표시됩니다.  
-     ![doctored_connection_image.jpg](https://support.appsflyer.com/hc/article_attachments/30258966624017)
+     <Image align="center" alt="doctored_connection_image.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966624017" />
 7. **저장**을 클릭합니다.
 
 </Accordion>
@@ -540,7 +540,7 @@ x-zendesk:
 
 <Accordion title="오디언스 대시보드">
 
-[![new_dashboard_image_doctored.jpg](https://support.appsflyer.com/hc/article_attachments/30258966628625)](https://support.appsflyer.com/hc/article_attachments/30258966628625)
+<Image align="center" alt="new_dashboard_image_doctored.jpg" src="https://support.appsflyer.com/hc/article_attachments/30258966628625" />
 
 | 열 | 설명 |
 | --- | --- |
@@ -589,7 +589,7 @@ x-zendesk:
 
 초기 **캠페인 지표** 뷰는 각 오디언스에 대한 다음과 같은 개요 캠페인 데이터를 표시합니다.
 
-[<Image alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018286225" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30258966633233)
+[<Image align="center" alt="campaign_metrics_summary_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018286225" width="433px" />](https://support.appsflyer.com/hc/article_attachments/30258966633233)
 
 | 열 | 설명 |
 | --- | --- |
@@ -605,7 +605,7 @@ x-zendesk:
 
 상세 보기에는 지원되는 파트너 및 캠페인별로 분류된 데이터가 표시됩니다.
 
-[![campaign_metrics_detailed_view.jpg](https://support.appsflyer.com/hc/article_attachments/30259018293649)](https://support.appsflyer.com/hc/article_attachments/30259018290321)
+[<Image align="center" alt="campaign_metrics_detailed_view.jpg" src="https://support.appsflyer.com/hc/article_attachments/30259018293649" />](https://support.appsflyer.com/hc/article_attachments/30259018290321)
 
 선택한 오디언스가 하나 이상의 앱을 대상으로 사용된 경우 드롭다운 목록 ![pin_A.png](https://support.appsflyer.com/hc/article_attachments/30259018295697)를 사용하여 앱별로 데이터를 필터링합니다.
 

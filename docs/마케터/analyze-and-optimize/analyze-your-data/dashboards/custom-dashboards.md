@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 앱스플라이어 내부에 자체 커스텀 대시보드를 만듭니다. 커스텀 리포트에서 데이터를 쉽게 선택, 이름 지정 및 배치할 수 있습니다.
 
-[![CustomDashboard_us-en.png](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)](https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png)
+<Image align="center" alt="CustomDashboard_us-en.png" src="https://files.readme.io/6bf2765054a7e7f1e344d15d2ac0c56dbdbd4fe5d0ff285f95bb03066396be0d-360015793598.png" />
 
 <div id="custom-dashboards" />
 
@@ -87,7 +87,7 @@ x-zendesk:
 1. 위젯 추가를 클릭합니다.
 2. 위젯 창이 표시됩니다.    
 
-   [![WidgetConfigure_us-en.png](https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png)](https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png)
+   <Image align="center" alt="WidgetConfigure_us-en.png" src="https://files.readme.io/f04544d8cb8b1d946526c4546565fffb405e5113e09dac65e5a28e218a1170a7-360015793618.png" />
 3. 위젯을 설정합니다. 다음의 위젯 설정 안내서를 사용합니다.
 4. 필요에 따라 위젯을 더 추가합니다.
 
@@ -110,7 +110,7 @@ x-zendesk:
 
 <Accordion title="위젯 데이터 내보내기">
 
-![Widget_table.png](https://files.readme.io/b04e80e16d0d34946e6783103fc6fbbdf89b390842db27226b4fdba6c1f7e506-360015717057.png)
+<Image align="center" alt="Widget_table.png" src="https://files.readme.io/b04e80e16d0d34946e6783103fc6fbbdf89b390842db27226b4fdba6c1f7e506-360015717057.png" />
 
 **위젯 데이터를 CSV 파일로 다운로드하는 방법**:
 

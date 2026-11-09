@@ -151,7 +151,7 @@ iOS 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggrega
 
 트레이드 데스크는 고유한 네트워크 ID를 통해 앱스플라이어와 연결됩니다. Tracker\_ID와 광고주가 아직 없는 경우 연동을 계속하려면 트레이드 데스크에서 가져와야 합니다.
 
-![TTD_General_Settings_.png](https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png)
+<Image align="center" alt="TTD_General_Settings_.png" src="https://files.readme.io/f7f2b66556f2713ff56a3bd2fcfe6fe8fe8d346a9b322904f93670ee55cf94c3-50612291000849.png" />
 
 **뷰-쓰루 어트리뷰션 활성화**
 
@@ -161,7 +161,7 @@ iOS 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggrega
 
 #### 기본 포스트백
 
-![default_postbacks_en-us.png](https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png)
+<Image align="center" alt="default_postbacks_en-us.png" src="https://files.readme.io/b291c9fd4ac858723f3071bf271a041403639d49bfb1984030fc7c7306c40c16-50612291002385.png" />
 
 사용자 설치 및 리인게이지먼트 이후 트레이드 데스크에 자동 포스트백을 보냅니다. 이 섹션을 사용하여 상기 포스트백을 보낼 수 있는 사용자의 출처를 정의할 수 있습니다.
 
@@ -180,7 +180,7 @@ iOS 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggrega
 
 포스트백을 통해 앱스플라이어 이벤트를 TTD로 매핑합니다. 포스트백 발송이 활성화된 경우, 이는 거부된 인앱 이벤트(Protect360에 의해 차단된 이벤트나 유효성 검증 규칙을 준수하지 않는 것으로 판단된 이벤트)를 포함합니다.
 
-![the_trade_desk_in_app_event_settings_en-us.png](https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png)
+<Image align="center" alt="the_trade_desk_in_app_event_settings_en-us.png" src="https://files.readme.io/a72231e1f7d21eeb6ffd0b8e0ce056872ec7ef4670470a86e93eb7094ff9cea8-50612307447185.png" />
 
 **인앱 이벤트 포스트백을 구성하려면:**
 
@@ -215,7 +215,7 @@ UA 및 리타게팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 
 어트리뷰션 링크에 추가할 파라미터를 선택하세요.
 
-![ttd_attribution_link_parameters_en-us.png](https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png)
+<Image align="center" alt="ttd_attribution_link_parameters_en-us.png" src="https://files.readme.io/2658797286fd7d922c68a9c2f1705166672066d4179d72cf4fe0039ac3ede212-50612291012625.png" />
 
 <div id="default-parameters" />
 
@@ -246,7 +246,7 @@ UA 및 리타게팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 
 #### 클릭-쓰루 어트리뷰션
 
-![click-through_attribution_ttd_en-us.png](https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png)
+<Image align="center" alt="click-through_attribution_ttd_en-us.png" src="https://files.readme.io/9d8c4aed6aa5d8b3cba5b4e32a5245f4bd8b6d9cf50e8cc800dce66842487355-50612291014673.png" />
 
 슬라이더를 사용하여 클릭에서 인스톨까지 최대 시간을 설정하십시오. 룩백 윈도우 내에 발생한 인스톨(첫 실행)만 어트리뷰션 됩니다.
 
@@ -262,7 +262,7 @@ UA 및 리타게팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 
 #### 뷰-쓰루 어트리뷰션
 
-![view-through_attribution_ttd_en-us.png](https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png)
+<Image align="center" alt="view-through_attribution_ttd_en-us.png" src="https://files.readme.io/7435384719e46f0534149ef41612db6ee54c930bab8e8eadc1fd86ae84d5d777-50612307451921.png" />
 
 슬라이더를 사용하여 노출에서 설치까지의 최대 시간을 설정합니다. 광고 노출 후 다른 관련 광고 클릭이 없는 경우에 한해 이 룩백 윈도우 내에 발생하는 인스톨(첫 실행)만 파트너에게 어트리뷰션됩니다.
 
@@ -298,7 +298,7 @@ UA 및 리타게팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 
 이 탭에서 애드 네트워크, 에이전시 또는 둘 다의 역할을 하는 트레이드 데스크에 부여할 권한을 선택할 수 있습니다. 트레이드 데스크에 대한 저작자 표시가 비활성화된 경우에도 권한 탭이 활성화될 수 있으며 트레이드 데스크에 제어 권한을 부여할 수 있습니다.
 
-![](https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png)
+<Image align="center" alt="" src="https://files.readme.io/8d8c3d5eb38384d92e52afdc01b0631d8fe5c9590dd618386cbf6ce90fc978f3-50612307452817.png" />
 
 이 토글을 사용하여, 앱에 대한 자체 설정 권한을 애드 네트워크에 부여할 수 있습니다.
 

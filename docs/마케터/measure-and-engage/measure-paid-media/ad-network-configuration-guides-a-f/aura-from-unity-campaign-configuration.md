@@ -27,7 +27,7 @@ x-zendesk:
 ---
 > **At a glance:** Aura from Unity, an AppsFlyer ad network integrated partner, is a platform that allows advertisers to connect with users when they set up a new device.
 
-![aura_logo.png](https://files.readme.io/83bca93f3dfe8f6ce9bd74b9141b8c3b4dc01cfcf8f1904c0f992346beee5014-17313206447889.png)
+<Image align="center" alt="aura_logo.png" src="https://files.readme.io/83bca93f3dfe8f6ce9bd74b9141b8c3b4dc01cfcf8f1904c0f992346beee5014-17313206447889.png" />
 
 ## Aura from Unity integration in AppsFlyer
 

@@ -24,7 +24,7 @@ x-zendesk:
 
 > **한눈에 보기:** AppsFlyer 데이터 협업 플랫폼은 상거래 미디어 네트워크와 협력 브랜드가 결합된 데이터를 활용하여 최대의 캠페인 결과를 달성하고 강력한 새로운 광고 수익 흐름을 창출할 수 있는 원활하고 프라이버시 중심적인 솔루션을 제공합니다.
 
-<Image alt="53877 새로운 DCP KB(1)에 필요한 KB 이미지.png" src="https://files.readme.io/0010744cc2b51ccecdc15af211604edba408d18ff39e9d616fb9e6cf335e7d4c-51912489261201.png" width="798px" />
+<Image align="center" alt="53877 새로운 DCP KB(1)에 필요한 KB 이미지.png" src="https://files.readme.io/0010744cc2b51ccecdc15af211604edba408d18ff39e9d616fb9e6cf335e7d4c-51912489261201.png" width="798px" />
 
 <div id="about-the-data-collaboration-platform-dcp" />
 

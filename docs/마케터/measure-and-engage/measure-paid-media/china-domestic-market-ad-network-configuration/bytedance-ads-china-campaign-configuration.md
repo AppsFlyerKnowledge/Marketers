@@ -73,7 +73,7 @@ ByteDance Ads China로 캠페인을 구성하려면 아래 단계를 따르세�
 
 **뷰-쓰루 어트리뷰션 활성화**
 
-[![](https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png)](https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png)
+<Image align="center" alt="" src="https://files.readme.io/3340b894428079e37c238cd78883669abd53cd6895165c5f9b5ea90d27d570c9-50612201111697.png" />
 
 ByteDance Ads China로 뷰-쓰루 인스톨을 어트리뷰션하려면 이 옵션을 **설정하세요**. 뷰-쓰루 룩백 슬라이더는 어트리뷰션 링크 탭에 있습니다(아래 설명 참조).
 
@@ -83,7 +83,7 @@ ByteDance Ads China로 뷰-쓰루 인스톨을 어트리뷰션하려면 이 옵�
 
 앱스플라이어는 사용자 설치 및 리인게이지먼트 후 ByteDance Ads China에 자동 포스트백을 보낼 수 있습니다. 이 섹션을 사용하여 상기 포스트백을 보낼 수 있는 **유저 소스**를 정의할 수 있습니다.
 
-![bytedance-default-postbacks.png](https://files.readme.io/5f3cb637fb9ff652533fcfd9c02ea8dc1768e0e1c1686a180ea18c0d2e09309f-50612201121425.png)
+<Image align="center" alt="bytedance-default-postbacks.png" src="https://files.readme.io/5f3cb637fb9ff652533fcfd9c02ea8dc1768e0e1c1686a180ea18c0d2e09309f-50612201121425.png" />
 
 <div id="in-app-events-settings" />
 
@@ -126,19 +126,19 @@ UA 및 리타겟팅 캠페인 모두에 대한 특정 캠페인, 광고 세트 �
 
 Ocean Engine에 로그인([https://ad.oceanengine.com/](https://ad.oceanengine.com/)) > **라이브러리** > **전환 추적**.
 
-![OE_dashboard_1.png](https://files.readme.io/fda140ac7e3023033880b04ed500a675ae78187e4eb694ee200922b729ab119f-50612185108497.png)
+<Image align="center" alt="OE_dashboard_1.png" src="https://files.readme.io/fda140ac7e3023033880b04ed500a675ae78187e4eb694ee200922b729ab119f-50612185108497.png" />
 
 **추적 애플리케이션**을 클릭하고 **새 애플리케이션 변환**을 만듭니다.
 
-![OE_dashboard_2.png](https://files.readme.io/dbf0c13c23d21d08c195a4ab747e5de0986cb01f5ebde98f6c701ce731480958-50612185109009.png)
+<Image align="center" alt="OE_dashboard_2.png" src="https://files.readme.io/dbf0c13c23d21d08c195a4ab747e5de0986cb01f5ebde98f6c701ce731480958-50612185109009.png" />
 
 **API** 메서드를 클릭합니다.
 
-![OE_dashboard3.png](https://files.readme.io/70e7f6ca01c532fafb8f2ab7d31d6de51494f11749329c1c1333d1da6f28f284-50612185110417.png)
+<Image align="center" alt="OE_dashboard3.png" src="https://files.readme.io/70e7f6ca01c532fafb8f2ab7d31d6de51494f11749329c1c1333d1da6f28f284-50612185110417.png" />
 
 모니터링 링크 부분에 앱스플라이어 클릭 어트리뷰션 링크 및/또는 노출 수 어트리뷰션 링크를 입력합니다.
 
-![dashboard4.png](https://files.readme.io/d36ec92a03062fc7ee169bb1ff3863722343577f3ee2b12779065b3e52731348-50612201124369.png)
+<Image align="center" alt="dashboard4.png" src="https://files.readme.io/d36ec92a03062fc7ee169bb1ff3863722343577f3ee2b12779065b3e52731348-50612201124369.png" />
 
 **2. 웹사이트의 지침에 따라 어트리뷰션 테스트를 완료합니다**.
 

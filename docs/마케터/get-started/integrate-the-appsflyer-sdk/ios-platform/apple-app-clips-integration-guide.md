@@ -22,7 +22,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** App Clip을 사용하면 iOS 14 이상 버전을 사용하는 유저가 귀하의 앱에 빠르고 손쉽게 접근하고 경험할 수 있습니다. 앱스플라이어는 App Clip 어트리뷰션을 활성화하고 App Clip을 사용할 수 없는 유저(예: Android 유저)를 필요에 따라 리디렉션합니다.
 
-![app_clip_flow_3.png](https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png)
+<Image align="center" alt="app_clip_flow_3.png" src="https://files.readme.io/1a5ec7a6b8a061955742d8e79ba78fa0262c0609e1e801decc92300d6c24a774-360012832058.png" />
 
 <div id="app-clip-integration" />
 

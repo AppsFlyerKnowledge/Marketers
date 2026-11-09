@@ -27,7 +27,7 @@ x-zendesk:
 
 > **한눈에 보기**: 비용 및 수익 데이터를 가져와 총 ROI와 ROAS를 파악할 수 있습니다.
 
-![M_emptyState.png](https://files.readme.io/5eec5be77bf0b72afdd95b1957642cc67ba509000bc756ac68d87da5e96ed08e-11832563913489.png)
+<Image align="center" alt="M_emptyState.png" src="https://files.readme.io/5eec5be77bf0b72afdd95b1957642cc67ba509000bc756ac68d87da5e96ed08e-11832563913489.png" />
 
 <div id="overview" />
 

@@ -210,7 +210,7 @@ x-zendesk:
 2. Manage Data > Data Sources 로 갑니다.
 3. Data Sources 페이지에서, 새로운 Data Source 를 생성합니다.
 
-   [![](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)](https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg)
+   <Image align="center" alt="" src="https://files.readme.io/4f9e3f508fb70287ba2c605ef9f8099f7151e7530ac3312e752b26130751e428-31237653528593.jpg" />
 4. 다음과 같이 형식을 완성합니다.
 
    * ID Type 을 **Device Advertising ID**로 설정합니다.
@@ -221,7 +221,7 @@ x-zendesk:
 7. 좌측 메뉴에서, Administration > Groups 로 이동합니다.
 8. **권한** 탭으로 이동합니다.
 
-   [![](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)](https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png)
+   <Image align="center" alt="" src="https://files.readme.io/b565e39220e13f58ee603ab2874bd4743b30f98f8395d1ad6b79f556b8fe3cd0-31237648132753.png" />
 9. 새 그룹을 만듭니다.
 10. 생성한 Data Source를 선택합니다.
 11. **Save Object**를 클릭합니다.
@@ -262,7 +262,7 @@ S3 연동을 생성하면, 앱스플라이어는 오디언스 디바이스 ID를
 5. **Amazon S3**을 선택합니다.  
    **연결 추가** 창이 열립니다.
 
-   ![image__9_.png](https://files.readme.io/790f8a50bf14fbb4065d9dcee05e31fa866bc73f236f439ec73f2bc833b31be6-31237653533201.png)
+   <Image align="center" alt="image__9_.png" src="https://files.readme.io/790f8a50bf14fbb4065d9dcee05e31fa866bc73f236f439ec73f2bc833b31be6-31237653533201.png" />
 6. C **로스 계정 역할 ARN**, **버킷 이름** 및 **지역 이름**을 입력합니다.  
    **참고:** 항상 리전 이름을 입력하는 것이 좋습니다. AWS에서 지역 이름이 기본적으로 자동으로 활성화되지 않으면 여기에 입력해야 하거나 연결을 만들 수 없습니다. AWS 콘솔 홈 페이지에서 지역을 찾으려면 페이지 우측 상단의 국가를 클릭하면 지역이 표시됩니다. <Image alt="region_name.jpg" src="https://files.readme.io/a3b65660a638674cbbe0da2802b4f926929d167d0b528c25c12ded6a90b0e981-31237648137489.jpg" width="355px" />
 7. 나중에 사용할 수 있도록 Account ID 와 External ID 를 기록합니다.
@@ -375,17 +375,17 @@ S3 연동을 생성하면, 앱스플라이어는 오디언스 디바이스 ID를
    * **참고:** 여기에 이미 키가 나타나면 새 키를 생성할 필요가 없습니다.
    * **중요!** 페이지의 (설치 어트리뷰션 섹션이 아니라) **코호트 가져오기를 사용한 데이터 가져오기** 섹션에서 작업 중인지 확인하세요.
 
-     ![data_import_key.png](https://files.readme.io/4d288e6696da600d0e402b86a0986b3951f2cd35efd12084aa8feaeeb526fddf-31237653537681.png)
+     <Image align="center" alt="data_import_key.png" src="https://files.readme.io/4d288e6696da600d0e402b86a0986b3951f2cd35efd12084aa8feaeeb526fddf-31237653537681.png" />
 3. 앱스플라이어 대시보드에서 연결을 구성할 때 사용할 **데이터 가져오기 키**와 **REST 엔드포인트**를 복사합니다.
 4. 앱스플라이어 오디언스에서 **연결** 탭으로 이동하여 **+ 새 연결**을 클릭합니다.
 5. Braze를 파트너로 선택하고 연결의 이름을 지정합니다.
 6. 3단계에서 Braze 계정에서 복사한 데이터 가져오기 키와 REST 엔드포인트를 입력합니다.
 
-   ![braze_connection.png](https://files.readme.io/200d1a1bef906ea50e40b3d8113bb9fd72068b6fda25a2f70b95b4510bd992de-31237653538449.png)
+   <Image align="center" alt="braze_connection.png" src="https://files.readme.io/200d1a1bef906ea50e40b3d8113bb9fd72068b6fda25a2f70b95b4510bd992de-31237653538449.png" />
 7. 연결을 저장하면 새 오디언스 또는 기존 오디언스에 연결할 수 있습니다.
 8. 앱스플라이어 오디언스가 Braze에 업로드되면 Braze에서 세그먼트를 정의할 때 필터로 사용할 수 있습니다.
 
-   ![cohorts_as_filter.png](https://files.readme.io/eec9e014afcb488bb7ebe31167cd5871c38207c8f4542e20ea313b7019e8b43a-31237653538961.png)
+   <Image align="center" alt="cohorts_as_filter.png" src="https://files.readme.io/eec9e014afcb488bb7ebe31167cd5871c38207c8f4542e20ea313b7019e8b43a-31237653538961.png" />
 
 </Accordion>
 
@@ -483,7 +483,7 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
    오디언스 파트너 목록이 나타납니다.
 3. Google Ads 섹션에서 연결 이름을 선택합니다.
 
-   [![AcceptTermsAudiences_us-en.png](https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png)](https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png)
+   <Image align="center" alt="AcceptTermsAudiences_us-en.png" src="https://files.readme.io/511284f2e78963fe872af931c43f91a58295c67446e2cd35b7f148f6c9edbe90-31237648142993.png" />
 4. **서비스 약관**을 클릭합니다.
 5. 약관을 검토하고 약관에 동의하면 **동의합니다.** 를 클릭합니다.
 6. **변경 사항 저장**을 클릭합니다.
@@ -541,7 +541,7 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
 
 1. Leanplum 계정에서 **파트너 연동 > 앱스플라이어로 이동합니다.** **오디언스**에서 새 **시크릿**을 생성합니다.
 
-   [![audiences_leanplum_integration.png](https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png)](https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png)
+   <Image align="center" alt="audiences_leanplum_integration.png" src="https://files.readme.io/fb712c7cecacf6d80bf643f955ecc13d6c878a4db8b6fa5627f814ec659e6615-31237648144145.png" />
 2. Leanplum에서 **기존 사용자가 아닌 경우 프로필을 생성할지 여부를 선택합니다.**
    * 존재하지 않는 사용자 (Non-Existent User) = 앱스플라이어 오디언스에서 전송한 사용자 ID가 Leanplum에 존재하지 않는 경우
 3. 앱스플라이어 대시보드에서 연결을 구성할 때 사용할 **앱 ID**와 새로 생성된 **시크릿을** 복사합니다.
@@ -549,7 +549,7 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
 5. 파트너로 **Leanplum을** 선택하고 연결의 이름을 지정합니다.
 6. 스텝 3에서 Leanplum 계정에서 복사한 **앱 ID**와 **시크릿을** 입력합니다.
 
-   [![leanplum_integration_af_dashboard.png](https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png)](https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png)
+   <Image align="center" alt="leanplum_integration_af_dashboard.png" src="https://files.readme.io/def2f96ddade1e3dfb04cae1a379c66aa3501414cfd42d459b2adc53542fcfaa-31237653542673.png" />
 7. 연결을 저장하면 새 오디언스 또는 기존 오디언스에 연결할 수 있습니다.
 
 최대 30분 내에, 해당 오디언스와 내부 사용자들이 Leanplum의 오디언스 대시보드에 표시됩니다.
@@ -578,7 +578,7 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
    * **데이터 API ID** (아래 이미지에서 <Image alt="A.png" src="https://files.readme.io/66b5bb0c4ea35f232f65dbc8dcbdfd6a91c12cf94915b19d33dae44834127058-31237653543313.png" width="16px" />)
    * **데이터 API 키** (<Image alt="B.png)" src="https://files.readme.io/f63914d3fefb55b627559c6e4c7d7cdef89239c0376a14c25c713a0a76dbad1b-31237653544337.png" width="16px" />아래 이미지에서
 
-   [![moengage_dashboard.png](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)](https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png)
+   <Image align="center" alt="moengage_dashboard.png" src="https://files.readme.io/4c5acb849df14a4021c799d4bdb5ae49475446133068dd4fa6c7b00bef9b361b-31237653545617.png" />
 3. 웹 브라우저의 주소 표시줄에서 MoEngage 대시보드의 URL을 확인하여 **MoEngage 데이터 센터 번호를 확인하십시오.**
    * MoEngage 대시보드의 URL이 [https://dashboard-01.moengage.com](https://dashboard-01.moengage.com)이면 당신의 계정은 데이터 센터 1에 보관됩니다.
    * URL이 [https://dashboard-02.moengage.com](https://dashboard-02.moengage.com)이면 당신의 계정은 데이터 센터 2에 보관됩니다.
@@ -586,7 +586,7 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
 4. **앱스플라이어 오디언스에서** 연결 **탭으로 이동하여 + 새 연결을 클릭합니다.**
 5. **Braze를 파트너로 선택하고 연결의 이름을 지정합니다.**
 
-   [![moengage_outgoing_connection.png](https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png)](https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png)
+   <Image align="center" alt="moengage_outgoing_connection.png" src="https://files.readme.io/fbeac3be05fd3a7f64db3992981e086de86954392f33a8331f09b320ce073718-31237648147089.png" />
 6. 스텝 2에서 복사한 **Data API Key와** **Data API ID**를 입력하세요.
 7. 스텝 3에서 획득한 정보를 토대로 MoEngage **데이터 센터**를 선택하세요.
 8. 연결을 저장하면 새 오디언스 또는 기존 오디언스에 연결할 수 있습니다.
@@ -617,7 +617,7 @@ Facebook Business Manager의 역할은 캠페인 관리자 역할을 포함하�
 
 1. 아래 스크린샷과 같이, 새로운 오라클 데이터 클라우드 연결을 생성합니다.
 
-   [![](https://files.readme.io/69d5178b2f366283b00ec160462433dea83fbf497c583649f755d94939a02820-51912835495953.png)](https://files.readme.io/69d5178b2f366283b00ec160462433dea83fbf497c583649f755d94939a02820-51912835495953.png)
+   <Image align="center" alt="" src="https://files.readme.io/69d5178b2f366283b00ec160462433dea83fbf497c583649f755d94939a02820-51912835495953.png" />
 2. 앱스플라이어의 **Seat ID**를 복사하고, Oracle Data Cloud 계정 담당자에게 이를 허용 목록에 추가해 달라고 요청합니다. 이를 통해 앱스플라이어는 사용자 대신 카테고리를 생성할 수 있습니다.
 3. **Seat ID**와 **Site ID**를 삽입합니다 (Oracle Data Cloud 계정 담당자로부터 받을 수 있습니다).
 4. 사용자의 **Seat ID**를 확인하고 나면, 드롭다운 목록에 사용자의 모든 **Parent Categories**가 표시됩니다:

@@ -30,7 +30,7 @@ x-zendesk:
 
 ## 개요
 
-![6133DataLockerForAdvertisers.png](https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png)
+<Image align="center" alt="6133DataLockerForAdvertisers.png" src="https://files.readme.io/820fee89515ccdcdfac2043bcb9fde722ddc8ec852a140ec250378c581d9c375-32966274469649.png" />
 
 데이터 락커에서 앱스플라이어가 선택한 클라우드 스토리지 옵션으로 전송할 데이터에 포함할 앱, 미디어 소스, 이벤트 및 리포트를 선택하세요. 스토리지에서 BI 시스템으로 프로그래밍 방식으로 데이터를 로드합니다.
 
@@ -290,7 +290,7 @@ x-zendesk:
 
 1. 선택한 리포트 대화 상자에서 **필드** 탭 아래의 필드 위에 마우스를 올려 설명을 확인합니다.
 
-   [![HQ1_2024-08-26_15.44.23.png](https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png)](https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png)
+   <Image align="center" alt="HQ1_2024-08-26_15.44.23.png" src="https://files.readme.io/293d227464e3907982e0c82187915ee1b16386a4111e83ebd8db065ade64a48b-34623601367697.png" />
 2. 리포트에 포함할 필드를 선택하거나 제외할 필드의 선택을 해제합니다.
 3. 설정을 저장하려면 **Apply(적용)** 을 클릭하세요.
 
@@ -437,7 +437,7 @@ x-zendesk:
 
 클라우드 버킷 스토리지의 데이터는 리포트 유형, 날짜 및 시간에 따라 계층적 폴더 구조로 구성됩니다. 다음 그림은 이 구조의 예시를 나타냅니다.
 
-![DLFolderOVerview.png](https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png)
+<Image align="center" alt="DLFolderOVerview.png" src="https://files.readme.io/78f360ec1df72253e5b2cd725f3eecf4e17548a7f06b544a94a75a2c319d77a0-18107910420369.png" />
 
 지정된 리포트의 데이터는 해당 리포트와 연결된 시간(h) 폴더에 포함됩니다.
 
@@ -728,7 +728,7 @@ aws s3 cp s3://af-ext-reports/<home-folder>/data-locker-hourly/t=installs/dt=202
 3. **변경 사항 저장(Save changes)** 을 클릭합니다.
 4. **버킷** > **외부 버킷** 추가를 클릭합니다.  
    외부 버킷 추가 창이 열립니다.  
-   <Image alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
+   <Image align="center" alt="mceclip2.png" src="https://files.readme.io/88dd43f62dbd68d0295b52a7f7b9b09449bd915e6a6d52703c24a50583e05a6e-32966264054929.png" width="433px" />
 5. 버킷 이름/strong> 을 입력합니다. 버킷 이름은 다음 형식을 가집니다: `{버킷 이름}/{홈 폴더}`. 버킷 이름과 홈 폴더에 필요한 값은 자격 증명 창에 표시됩니다.
 6. 클릭 **외부 버킷 추가.** 버킷이 생성되고 창의 왼쪽 패널에 표시됩니다.  
    이제 데이터 락커 파일에 액세스할 수 있습니다.

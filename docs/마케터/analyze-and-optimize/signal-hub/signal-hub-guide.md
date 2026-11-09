@@ -148,7 +148,7 @@ AppsFlyer 클린룸 인프라와 ID 해결 제공업체와의 통합을 사용�
 
 공동 작업에 공유된 데이터 소스에서 **Identity Enrichment** 백분율은 제공업체의 ZIP+4 데이터 중 얼마나 많은 것이 활성화에 사용할 수 있는 개인 정보 보호 안전 식별자와 성공적으로 매칭되었는지 표시합니다.
 
-<Image alt="Identity enrichment.png" src="https://files.readme.io/fce84b456682695e1896a99749d08ba26ff885cf3e3c16ba661b2c93ff7fa8c9-40890476677521.png" width="1090px" />
+<Image align="center" alt="Identity enrichment.png" src="https://files.readme.io/fce84b456682695e1896a99749d08ba26ff885cf3e3c16ba661b2c93ff7fa8c9-40890476677521.png" width="1090px" />
 
 * **데이터 제공업체:** ZIP+4 그룹을 구매 신호 제공업체(예: Mastercard)가 공유합니다.
 * **ID 데이터:** ID 확인 파트너가 해시된 식별자(예: 해시된 이메일)와 성공적으로 매칭한 ZIP+4 그룹 수입니다.

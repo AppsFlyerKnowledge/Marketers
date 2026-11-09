@@ -70,11 +70,11 @@ Follow the instructions below to configure the integration with deltaDNA
 
 1. Create an AppsFlyerAttribution event in deltaDNA with the Event Management tool
 
-![Delta DNA 1](https://files.readme.io/e5224bbaa730d997699e1a930425946f69a2b86ef94e241b4ba6fdb9ad978c66-206781083.png)
+<Image align="center" alt="Delta DNA 1" src="https://files.readme.io/e5224bbaa730d997699e1a930425946f69a2b86ef94e241b4ba6fdb9ad978c66-206781083.png" />
 
 2. Get the Live environment key on the Game Details page in deltaDNA dashboard:
 
-![Delta DNA 2](https://files.readme.io/6b28184264dfd695000e8bfae9538862a3e17ea6f9d355af0996ccf107b4e6c2-206768886.png)
+<Image align="center" alt="Delta DNA 2" src="https://files.readme.io/6b28184264dfd695000e8bfae9538862a3e17ea6f9d355af0996ccf107b4e6c2-206768886.png" />
 
 **In AppsFlyer, activate or edit the integration:**
 
@@ -111,17 +111,17 @@ Attribution data received from AppsFlyer can be used to:
 
 The Acquisition Channel filter at the top of all the Measure charts, the retention Matrices, LTV and Retention Predictors uses and is based on the AppsFlyer Media Source.
 
-![Delta DNA 3](https://files.readme.io/21cf4f1c8641351a1ecc200d8b95d7558b92f4daf38f49975601d996a0fcfb86-206781123.png)
+<Image align="center" alt="Delta DNA 3" src="https://files.readme.io/21cf4f1c8641351a1ecc200d8b95d7558b92f4daf38f49975601d996a0fcfb86-206781123.png" />
 
 There are 8 attribution parameters that AppsFlyer can send to deltaDNA for use in your analysis, reports and queries. They are all prefixed with the letters **afAttr.**   
 *E.g. afAttrCampaign, afAttrAgency, afAttrMediaSource for the campaign, agency, and media source respectively.*
 
 All attribution parameters are listed within the **appsFlyerAttribution** added to your Event Management screen.
 
-![Delta DNA 4](https://files.readme.io/e0af8513fdda3268ab799a6ef08396c03970bd0850bde851f07649e459a8b20e-206781143.png)
+<Image align="center" alt="Delta DNA 4" src="https://files.readme.io/e0af8513fdda3268ab799a6ef08396c03970bd0850bde851f07649e459a8b20e-206781143.png" />
 
 Use them to build custom analysis queries and reports in any of the deltaDNA Analyze tools.
 
-![Delta DNA 5](https://files.readme.io/f4b9d0320feb3990182a0c9a835a18565ba959fabf7269c45a4651506666f941-206768946.png)
+<Image align="center" alt="Delta DNA 5" src="https://files.readme.io/f4b9d0320feb3990182a0c9a835a18565ba959fabf7269c45a4651506666f941-206768946.png" />
 
 <div data-zendesk-anchors="h_01H9FK6N8V597T8AY0RF0H6CZW=integrating-with-deltadna h_01H9FK6N8W8011X3JVG2EZ66H4=viewing-the-attribution-data-in-the-deltadna-console" />

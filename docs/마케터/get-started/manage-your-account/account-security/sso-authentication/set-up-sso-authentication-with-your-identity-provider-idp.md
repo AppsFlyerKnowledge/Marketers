@@ -131,7 +131,7 @@ IdP 인증 플러그인 또는 웹페이지를 통해 로그인하는 사용자�
 
 유저는 <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/sso-callback">앱스플라이어 SSO 로그인 페이지</Anchor>에서 **SSO로 로그인**을 클릭하고 이메일 주소를 입력하여 앱스플라이어에 들어갈 수도 있습니다. 그들은 인증을 위해 IdP로 안내되고 앱스플라이어 홈페이지로 리디렉션됩니다.
 
-[<Image alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />](https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png)
+<Image align="center" alt="AppsFlyer_login_page.png" src="https://files.readme.io/fb80e44cf0cad29349ec85f75f65de73041b1787b278ae9d96449783580faeaa-17233244722577.png" width="257px" />
 
 <div id="note-4" />
 
@@ -238,7 +238,7 @@ IdP를 통해 로그인하도록 인증을 구성한 경우, 유저가 IdP 플�
 
 서비스 제공업체(앱스플라이어)를 통해 로그인하도록 인증 흐름을 구성한 경우, 유저가 이메일을 사용하여 앱스플라이어에 들어갈 수 있는지 확인하세요.
 
-<Image alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
+<Image align="center" alt="log_in_to_af_by_email2.png" src="https://files.readme.io/ae22ff9ba0216f54bee4cea82ed7d35cea656a68e30c0a0e4f549b1855ec7cfd-17233244746257.png" width="245px" />
 
 1. 앱스플라이어와 IdP에 로그인되어 있는 경우 둘 모두에서 로그아웃합니다.
 2. 시크릿 모드로 웹페이지를 엽니다.

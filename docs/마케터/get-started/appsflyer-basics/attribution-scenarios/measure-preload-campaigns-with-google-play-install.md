@@ -47,7 +47,7 @@ Google Play 자동 설치(PAI) (3가지 프리로드 어트리뷰션 방법 중 
 3. 앱스플라이어 SDK는 Google Play 리퍼러 API를 쿼리합니다.
 4. 앱스플라이어는 검색된 데이터를 기반으로 속성을 지정합니다.
 
-![PAI-attribution-flow_en-us.png](https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png)
+<Image align="center" alt="PAI-attribution-flow_en-us.png" src="https://files.readme.io/c7f02a0a6637e9c73e9a39f97e71d5d37d8d2712b458735cd87b4b245ad0fccb-small-4404791877649.png" />
 
 <div id="data-availability" />
 

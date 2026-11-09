@@ -85,7 +85,7 @@ Meta 웹 연동을 활성화하기 전에 [Meta Business Manager에 비즈니�
      **참고:** 오른쪽 상단의 드롭다운에서 올바른 비즈니스를 선택했는지 확인합니다.
   2. **이벤트 관리자** 사이드 메뉴에서 **데이터 소스**를 선택하면, 픽셀 목록이 표시됩니다. 선택한 비즈니스에 대한 픽셀이 없는 경우 동일한 화면에서 픽셀을 생성할 수 있습니다.
   3. 픽셀 이름 아래에 표시된 픽셀 ID를 복사하여 앱스플라이어 연동의 픽셀 ID 필드에 붙여넣습니다.  
-     <Image alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
+     <Image align="center" alt="pixel id3.png" src="https://files.readme.io/77969160b04357d056f2eee435a61314b95225f43e03cb31dd21a80dceef0dae-20748699506193.png" width="283px" />
 * **액세스 토큰:** 액세스 토큰을 입력합니다. 관련 검색은 다음 [지침](https://developers.facebook.com/docs/marketing-api/conversions-api/get-started#access-token)을 따르세요.
 * **메타 광고의 사용자 개인정보 사용 제한(CCPA):** <Anchor target="_blank" href="/marketers/ko/docs/send-opendsr-api-requests">데이터 보호법</Anchor> 준수를 활성화하려면 이 토글을 켭니다.  
   **참고:** CCPA 개인정보 보호 규정을 준수하면 캘리포니아에 거주하는 메타 광고 사용자의 데이터가 제한됩니다.

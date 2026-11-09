@@ -77,7 +77,7 @@ SDK에 설정된 이벤트 이름 및 이벤트 값(이벤트 파라미터 포�
 
 <Anchor target="_blank" href="https://www.facebook.com/business/help/2308889442692949?id=1716638325041491">이러한 이벤트를 사용하여 캠페인을 최적화</Anchor>할 수 있다는 것을 알아두십시오.
 
-[![](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)](https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png)
+<Image align="center" alt="" src="https://files.readme.io/b41d1fa6c42284db9992260e58083bc2ef46ee3e98dbe4e063cdb28883553471-37750368969233.png" />
 
 <div id="automatic-parameter-mapping-with-the-custom-event" />
 

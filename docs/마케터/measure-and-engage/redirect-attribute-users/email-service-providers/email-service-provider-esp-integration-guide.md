@@ -41,7 +41,7 @@ x-zendesk:
 * 유저가 앱으로 딥링킹되지 않고 모바일 웹사이트로 라우팅 됨
 * URI 스킴 딥링킹 사용으로 보안성과 유저 경험 질 저하
 
-<Image alt="53242 KB.png" src="https://files.readme.io/53db119f60e3fe2dfaf58b8a87e14595eeb9dde375bf87f7617f36a463ee0ced-30227717940753.png" width="688px" />
+<Image align="center" alt="53242 KB.png" src="https://files.readme.io/53db119f60e3fe2dfaf58b8a87e14595eeb9dde375bf87f7617f36a463ee0ced-30227717940753.png" width="688px" />
 
 **해결책은 무엇일까요?**
 

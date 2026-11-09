@@ -73,13 +73,13 @@ AppsFlyer sends default postbacks to Appcharge following user installs. Use this
    **Note:** Appcharge's integration with AppsFlyer doesn't require sending install postbacks. Therefore, it's recommended to set it to Off.
 * **All media sources, including organic:** Install postbacks are sent for events attributed to any partner and for organic events.
 
-![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+<Image align="center" alt="default_postbacks.png" src="https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png" />
 
 #### In-app event postbacks
 
 In this section, you can map your AppsFlyer events with your partners via postbacks.
 
-![xsolla-af-login-3.jpg](https://files.readme.io/6b694389980e67023a506e0fc8c302f0512d12681e44d3d3a414c511d6dd83e4-26908967996177.jpg)
+<Image align="center" alt="xsolla-af-login-3.jpg" src="https://files.readme.io/6b694389980e67023a506e0fc8c302f0512d12681e44d3d3a414c511d6dd83e4-26908967996177.jpg" />
 
 1. Turn on **In-app event postbacks**.
 2. Click **Add event** to add an SDK or server-to-server event to the list.

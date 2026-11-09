@@ -32,7 +32,7 @@ x-zendesk:
 
 ### 뷰쓰루 어트리뷰션 흐름
 
-![Retargeting_-_View-through__1_.png](https://files.readme.io/86d32778a8a0966499a0c5c91c1b2d8aed6d5bb24214b1a32fd484779c105a98-4412917609489.png)
+<Image align="center" alt="Retargeting_-_View-through__1_.png" src="https://files.readme.io/86d32778a8a0966499a0c5c91c1b2d8aed6d5bb24214b1a32fd484779c105a98-4412917609489.png" />
 
 <div id="terminology" />
 

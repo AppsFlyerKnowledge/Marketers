@@ -24,7 +24,7 @@ x-zendesk:
 ---
 > **한눈에 보기**: 이 글의 온보딩 지침에 따라 ROI360의 비용 및 수익 데이터를 설정하여 운영하세요.
 
-![](https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png)
+<Image align="center" alt="" src="https://files.readme.io/fa3644980702d735f81d7243f91cb0f0d454bd971e83685ab9759ff7bd925e93-26137252926097.png" />
 
 <div id="about-roi360" />
 
@@ -40,7 +40,7 @@ ROI360은 가장 정확한 최신 데이터를 제공하는 고유한 비용 및
 
 <Accordion title="비용 온보딩">
 
-![](https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png)
+<Image align="center" alt="" src="https://files.readme.io/0e7102766b3b7cdba3f301ca89c51edf8e4bd2ec88e09bc912ce3c1436c43fcb-26137252929681.png" />
 
 ROI360 비용 솔루션으로 매일 여러 번 업데이트되는 상세한 비용 및 ROI 인사이트를 얻을 수 있습니다. 이를 통해 애드 네트워크, 온드 미디어, 에이전시 등 무엇을 사용하든 다양한 미디어소스(애드 네트워크), 캠페인, 지역에 걸쳐 캠페인 비용을 효과적으로 관리하고 예산 할당을 확인할 수 있습니다.
 
@@ -64,7 +64,7 @@ ROI360 비용 솔루션으로 매일 여러 번 업데이트되는 상세한 비
 
 <Accordion title="광고 수익 온보딩">
 
-![](https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png)
+<Image align="center" alt="" src="https://files.readme.io/877e4abddd466bbe7dfa31f7fffb2f17fe3e6419f3bf6345e9d619253126b0e6-26137252932369.png" />
 
 ROI360 광고 수익 솔루션으로 매일 여러 번 업데이트되는 귀중하고 세밀한 광고 수익 데이터를 받아볼 수 있습니다.
 
@@ -88,7 +88,7 @@ ROI360 광고 수익 솔루션으로 매일 여러 번 업데이트되는 귀중
 
 <Accordion title="인앱 구매 및 구독 수익 온보딩">
 
-![](https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png)
+<Image align="center" alt="" src="https://files.readme.io/811c90ec42465994455fe42be8400b4ebb94ab6d1a5703bc9a77251aba95ed3b-26137252934545.png" />
 
 ROI360 수익 솔루션을 사용하면 수익원을 선제적으로 제어할 수 있습니다.
 

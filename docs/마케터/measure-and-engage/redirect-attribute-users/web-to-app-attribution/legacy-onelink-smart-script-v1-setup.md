@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 원링크 스마트 스크립트를 설정하여 모든 소스에서 온 모바일 웹 사이트 방문자를 모바일 앱 사용자로 전환하고 어트리뷰트합니다. **참고**: 일러두기: 필수 사항은 아니지만 OneLink Smart Script V2로 마이그레이션하는 것을 고려해 보십시오.
 
-![7901_Smart_Script_flow_1920x1080_2__1_.png](https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png)
+<Image align="center" alt="7901_Smart_Script_flow_1920x1080_2__1_.png" src="https://files.readme.io/5181971c27e89974a86afeb83f48eb5c127b64765334bc3b5644ed47adb974e8-30193884510225.png" />
 
 <div id="setup" />
 

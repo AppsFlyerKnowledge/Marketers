@@ -82,11 +82,11 @@ SDK는 Google Play 링크의 일부인 경우 referrer의 &utm\_term 매개변�
    이 예제는 "오늘 밤 호텔"을 사용합니다.  
      
 
-   [<Image alt="organic_keywords_search.jpg" src="https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg" width="426px" />](https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg)
+   <Image align="center" alt="organic_keywords_search.jpg" src="https://files.readme.io/b06db96b53df1502939b86cefd7217991d842f1c7e736cab6ba2c6e0de691400-32966747169425.jpg" width="426px" />
 4. 설치를 클릭하면 Google Play 스토어로 리디렉션됩니다.
 5. 앱을 설치하고 실행하세요.  
 
-   [<Image alt="Hotels_Tonight_3.png" src="https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png" width="373px" />](https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png)
+   <Image align="center" alt="Hotels_Tonight_3.png" src="https://files.readme.io/c455f8229ba7879157eec6782d0eb2d94a91e1080a3c081f5452cc7e92608047-205710046.png" width="373px" />
 6. 위에 설명된 AppsFlyer 소스에서 키워드를 검색하세요.
 
 <div data-zendesk-anchors="keyword-data=%ED%82%A4%EC%9B%8C%EB%93%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0 h_01HKA1D1TW1R20X6K05Q9GX904=%ED%82%A4%EC%9B%8C%EB%93%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0 ios-keywords=ios-%ED%82%A4%EC%9B%8C%EB%93%9C h_01HKA1D1TW9YXBMGERHW4EHZZN=ios-%ED%82%A4%EC%9B%8C%EB%93%9C android-keywords=%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%82%A4%EC%9B%8C%EB%93%9C h_01HKA1D1TWT1VQ6NZ789BTCZJX=%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%ED%82%A4%EC%9B%8C%EB%93%9C h_01HKA1D1TW7E2RM7SXC9R5SA99=%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD using-the%C2%A0keyword%C2%A0data=%ED%82%A4%EC%9B%8C%EB%93%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC h_01HKA1D1TWRPGTNGJKF7T1R71B=%ED%82%A4%EC%9B%8C%EB%93%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC testing-organic%C2%A0keyword%C2%A0data=%EC%9C%A0%EA%B8%B0%EC%A0%81-%ED%82%A4%EC%9B%8C%EB%93%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%85%8C%EC%8A%A4%ED%8A%B8 h_01HKA1D1TW5W9A72V2NMPX932H=%EC%9C%A0%EA%B8%B0%EC%A0%81-%ED%82%A4%EC%9B%8C%EB%93%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%85%8C%EC%8A%A4%ED%8A%B8" />

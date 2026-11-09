@@ -71,14 +71,14 @@ x-zendesk:
 
 1. 앱스플라이어의 사이드 메뉴에서 **협업** > **데이터 클린룸**을 선택합니다.
 
-   <Image alt="from Collaborate.png" src="https://support.appsflyer.com/hc/article_attachments/32455804422545" width="266px" />
+   <Image align="center" alt="from Collaborate.png" src="https://support.appsflyer.com/hc/article_attachments/32455804422545" width="266px" />
 2. **협업** 탭에서 해당 협업을 클릭합니다.
 
-   <Image alt="연관된 collaboration.png 을 클릭합니다." src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
+   <Image align="center" alt="연관된 collaboration.png 을 클릭합니다." src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
 3. 공동 작업에서 **새로운 오디언스** > **시각적 오디언스 작성기**를 클릭합니다.  
    **참고: 오디언스를 작성하기 전에** 하나 이상의 소스가 연결되어 있어야 합니다.
 
-   <Image alt="새로운 Aud 비주얼 오디언스 builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
+   <Image align="center" alt="새로운 Aud 비주얼 오디언스 builder.png" src="https://files.readme.io/31458edec870140b9c4eb0805aef0175ca5f3c698b6faa380f979398046eb58b-32455804445201.png" width="355px" />
 4. 아래의 **잠재 고객 작성기** 과정을 진행하십시오.
 
 <div id="note-1" />
@@ -138,7 +138,7 @@ x-zendesk:
 4. **다음**을 클릭합니다.
 5. 다음 단계에서 계속하세요. 오디언스를 활성화하기 위해 [오디언스를 보내기](#오디언스-활성화를-위해-보내기) 합니다.
 
-<Image alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
+<Image align="center" alt="Definetheaudience.png" src="https://files.readme.io/70c93dbb737563f7b62e8a8ba111e7d5e7e1a0fa2697a2be69d5caa579bbf3dc-34588602544017.png" width="75.57%" />
 
 </Accordion>
 
@@ -156,13 +156,13 @@ x-zendesk:
 
 1. 앱스플라이어의 사이드 메뉴에서 **협업** > **데이터 클린룸**을 선택합니다.
 
-   <Image alt="from Collaborate.png" src="https://support.appsflyer.com/hc/article_attachments/32455804422545" width="266px" />
+   <Image align="center" alt="from Collaborate.png" src="https://support.appsflyer.com/hc/article_attachments/32455804422545" width="266px" />
 2. **협업** 탭에서 해당 협업을 클릭합니다.
 
-   <Image alt="연관된 collaboration.png 을 클릭합니다." src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
+   <Image align="center" alt="연관된 collaboration.png 을 클릭합니다." src="https://files.readme.io/6a23e891cad8929b084759a83773943905fda8d6d0ef262ac6d8f0c3475eb062-32455804434449.png" width="947px" />
 3. 공동 작업에서 **잠재 고객 새로 만들기** > **SQL 잠재 고객 작성기** 를 클릭합니다.
 
-   <Image alt="새로운 Aud SQL 오디언스 builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
+   <Image align="center" alt="새로운 Aud SQL 오디언스 builder.png" src="https://files.readme.io/e955bdd8a90a92dff5bb695cd64621860e79413f42ac8a8efaefc3cb80d061a5-32455799682193.png" width="355px" />
 4. 다음과 같은 **오디언스 작성기** 과정을 진행하십시오.
 
 <div id="set-details" />
@@ -246,7 +246,7 @@ Meta ads 및 <Anchor target="_blank" href="https://support.google.com/google-ads
 
 1. 오디언스 생성기에서 **오디언스와 미디어 파트너 연결**을 설정합니다.  
      
-   ![잠재고객을 미디어 파트너에 연결](https://files.readme.io/d1e6558183eed8f239f1d61efd81cd71db7a2c7f6acfdef7e1c029dea51af172-37184169230097.png)
+   <Image align="center" alt="잠재고객을 미디어 파트너에 연결" src="https://files.readme.io/d1e6558183eed8f239f1d61efd81cd71db7a2c7f6acfdef7e1c029dea51af172-37184169230097.png" />
 2. **+ 파트너 연결**을 클릭하십시오.
 3. 파트너 연결이 설정되지 않은 경우 새 파트너 연결을 생성합니다.
    1. **Add Connection (연결 추가)** 를 클릭합니다.
@@ -257,7 +257,7 @@ Meta ads 및 <Anchor target="_blank" href="https://support.google.com/google-ads
    6. **저장**을 클릭하세요.
 4. **저장 및 전송** 을 클릭합니다.
 
-<Image alt="미디어 파트너 connection.png 을 선택합니다." src="https://support.appsflyer.com/hc/article_attachments/35682279443857" width="610px" />
+<Image align="center" alt="미디어 파트너 connection.png 을 선택합니다." src="https://support.appsflyer.com/hc/article_attachments/35682279443857" width="610px" />
 
 #### 오디언스를 클라우드 서비스로 내보내기
 
@@ -283,7 +283,7 @@ Meta ads 및 <Anchor target="_blank" href="https://support.google.com/google-ads
 
 관련 공동 작업 대시보드의 **오디언스** 섹션에서 연관된 오디언스를 보고 관리할 수 있습니다.
 
-<Image alt="Audiences section.png" src="https://support.appsflyer.com/hc/article_attachments/32456187667345" width="2836px" />
+<Image align="center" alt="Audiences section.png" src="https://support.appsflyer.com/hc/article_attachments/32456187667345" width="2836px" />
 
 **이 페이지에서 할 수 있는 작업:**
 
@@ -329,7 +329,7 @@ Meta ads 및 <Anchor target="_blank" href="https://support.google.com/google-ads
 
 공동 작업과 연결된 오디언스의 상태를 볼 수 있습니다.
 
-![잠재 고객 상태 - doctored with arrow.png](https://support.appsflyer.com/hc/article_attachments/36573611849361)
+<Image align="center" alt="잠재 고객 상태 - doctored with arrow.png" src="https://support.appsflyer.com/hc/article_attachments/36573611849361" />
 
 오디언스는 다양한 상태를 가질 수 있습니다.
 
@@ -347,7 +347,7 @@ Meta ads 및 <Anchor target="_blank" href="https://support.google.com/google-ads
 
 특정 오디언스 옆의 드롭다운을 클릭하고 **히스토리 보기**를 선택합니다.
 
-![History view doctored .png](https://files.readme.io/7840f05fd8f6a98445c29e5a59813776378d842dd54fab4e3f66111c34dd89dd-36573637043089.png)
+<Image align="center" alt="History view doctored .png" src="https://files.readme.io/7840f05fd8f6a98445c29e5a59813776378d842dd54fab4e3f66111c34dd89dd-36573637043089.png" />
 
 **업로드 기록 상태에는 다음이 포함됩니다.**
 

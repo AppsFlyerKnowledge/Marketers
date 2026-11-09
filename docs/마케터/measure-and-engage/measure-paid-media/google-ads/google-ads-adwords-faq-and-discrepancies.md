@@ -40,7 +40,7 @@ x-zendesk:
 
 만약 아래 스크린샷처럼 구글 애즈에서 first\_open 전환을 볼 수 없다면:
 
-![AW_13.png](https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png)
+<Image align="center" alt="AW_13.png" src="https://files.readme.io/082f79266fced9fc012cdb373321a836129205992adbe29f7509321516e8f5ab-33743114088849.png" />
 
 구글 애즈로 전환을 가져와야 합니다. <Anchor target="_blank" href="/marketers/ko/docs/google-ads-adwords-integration-setup-for-advertisers#step-4-measure-your-app-conversions-mandatory">전환 가져오기</Anchor>에 대한 안내를 참고하십시오.
 
@@ -130,7 +130,7 @@ Google Ads에서 파트너 이벤트 식별자를 수정한 경우(예: `CUSTOM`
 
 1. <Anchor target="_blank" href="https://myaccount.google.com/permissions">구글 계정 액세스 권한</Anchor> 페이지로 이동합니다.
 2. AppsFlyer Google Cost 옆의 제거 버튼을 클릭합니다.   
-   ![remove_appsflyer_cost.png](https://files.readme.io/56840e708c98875c8db176c642dd324150a76aef9697fcc2756f524b2a6c0a16-33743128661137.png)
+   <Image align="center" alt="remove_appsflyer_cost.png" src="https://files.readme.io/56840e708c98875c8db176c642dd324150a76aef9697fcc2756f524b2a6c0a16-33743128661137.png" />
 
 </Accordion>
 

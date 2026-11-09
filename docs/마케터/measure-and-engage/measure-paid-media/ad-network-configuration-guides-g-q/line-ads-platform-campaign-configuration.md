@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 앱스플라이어의 연동 파트너인 LINE 광고 플랫폼은 입찰과 맞춤형 타겟팅 시스템을 결합한 플랫폼입니다. LINE 광고 플랫폼은 클릭 기반 모바일 어트리뷰션 외에도 리타겟팅 어트리뷰션을 제공하며, 이는 앱스플라이어로 기록할 수 있습니다.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/lap.png" width="71px" />
 
 <div id="setting-up-line-ads-platform" />
 

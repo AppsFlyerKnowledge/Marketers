@@ -68,7 +68,7 @@ AI 기반 크리에이티브 최적화 **디스커버리 대시보드** 는 크�
 6. 필터 및 검색 설정에 맞는 모든 크리에이티브, 요소, 장면 또는 텍스트의 발견 카드 갤러리를 봅니다.
    1. [선택 사항] 카드에 표시되는 메트릭을 변경하려면 **설정** 아이콘을 클릭하고 표시할 최대 5개의 메트릭을 선택합니다. [발견 카드 설정에 대해 더 알아보기](/docs/creative-optimization-discovery-ai-dashboard#discovery-tabs).
    2. 메트릭에 따라 갤러리 타일을 높은 순서에서 낮은 순서로(또는 그 반대로) 정렬합니다. 정렬할 수 있는 메트릭은 발견 카드 설정에서 선택한 것입니다.  
-      <Image alt="새로 정렬.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
+      <Image align="center" alt="새로 정렬.jpg" src="https://files.readme.io/8a8d5a0f13226bc854ae54f389f7a1e5a838f0bcf8b9af758a6a7e9efceb502e-24289989225105.jpg" width="301px" />
 7. 특정 카드를 클릭하여 더 깊이 파고들고 추가 성능 데이터와 통찰력을 얻으세요.
 
 </Accordion>
@@ -268,7 +268,7 @@ AI 기반 검색창을 사용하면 특정 창의 요소가 성과에 미치는 
 
 모든 광고 소재의 갤러리를 실적 데이터와 함께 볼 수 있습니다. 표시되는 타일은 기본 광고 소재 필터 선택을 기반으로 합니다. 또한 타일이 표시하는 메트릭과 타일을 표시하는 데 사용되는 정렬 방법을 사용자 정의할 수 있습니다. 설정 및 정렬를 참조하십시오.
 
-![creatives.png](https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png)
+<Image align="center" alt="creatives.png" src="https://files.readme.io/7775033e2f4aecec125779c4ec430280746bb369f01470ffe2a0cb2b017af6c2-28667948956817.png" />
 
 |  | 기준/지표 | 설명 |
 | --- | --- | --- |
@@ -290,7 +290,7 @@ AI로 구동되는 동영상 광고 소재는 수동 프로세스 없이 자동�
 
 **참고**: 표시되는 타일은 기본 광고 소재 필터 선택을 기반으로 합니다. 또한 타일이 표시하는 메트릭과 타일을 표시하는 데 사용되는 정렬 방법을 사용자 정의할 수 있습니다. 설정 및 정렬를 참조하십시오.
 
-<Image alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
+<Image align="center" alt="" src="https://files.readme.io/edb5818baa14df7b8260d75c0e60ee1d1bc2cfe2d6564511dd58a423eb7d9d08-31976798170641.png" width="50%" />
 
 |  | 기준/지표 | 설명 |
 | --- | --- | --- |
@@ -311,7 +311,7 @@ AI로 구동되는 동영상 광고 소재는 수동 프로세스 없이 자동�
 
 **참고**: 표시되는 타일은 기본 광고 소재 필터 선택을 기반으로 합니다. 또한 타일이 표시하는 메트릭과 타일을 표시하는 데 사용되는 정렬 방법을 사용자 정의할 수 있습니다. 설정 및 정렬를 참조하십시오.
 
-![elements.png](https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png)
+<Image align="center" alt="elements.png" src="https://files.readme.io/2aeef499e182ad517438fe48ec887f83aa0fec3dc68f1f899e7b75cbd41eac0c-28667955914001.png" />
 
 |  | 기준/지표 | 설명 |
 | --- | --- | --- |
@@ -331,7 +331,7 @@ AI로 구동되는 동영상 광고 소재는 수동 프로세스 없이 자동�
 
 **참고**: 표시되는 타일은 기본 광고 소재 필터 선택을 기반으로 합니다. 또한 타일이 표시하는 메트릭과 타일을 표시하는 데 사용되는 정렬 방법을 사용자 정의할 수 있습니다. 설정 및 정렬를 참조하십시오.
 
-<Image alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
+<Image align="center" alt="creative text card.png" src="https://files.readme.io/e23edaf46914252401c4254ef50b77f223b0dd633578ad1b99aac6e9a13b5e75-29068468758289.png" width="50%" />
 
 |  | 기준/지표 | 설명 |
 | --- | --- | --- |

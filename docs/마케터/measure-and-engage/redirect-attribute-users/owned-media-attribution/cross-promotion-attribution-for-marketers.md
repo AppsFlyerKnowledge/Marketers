@@ -25,7 +25,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 요약: 소유한 다른 앱에서 앱을 프로모션하는 크로스 프로모션 캠페인의 인스톨 성과를 측정합니다.
 
-![CrossPromo_userJourney](https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png)
+<Image align="center" alt="CrossPromo_userJourney" src="https://files.readme.io/4ecc5b536021355247c51f1a19b23d71623da9f9578387622d6c6f0a57d4801b-4404615401489.png" />
 
 <div id="about-cross-promotion" />
 
@@ -35,7 +35,7 @@ x-zendesk:
 
 다음 이미지는 온드 미디어(**af\_cross\_promotion**) 및 기타 미디어소스에서 실행되는 캠페인에 대한 지표 분석이 포함된 프로모션한 앱의 대시보드를 보여 줍니다. 크로스 프로모션 캠페인의 인스톨 수와 전환율이 다른 미디어소스에 비해 훨씬 높은 것을 알 수 있습니다.
 
-[![CrossPromo_mediaSource](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)](https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png)
+<Image align="center" alt="CrossPromo_mediaSource" src="https://files.readme.io/e9a085a0fb987a559c4d35db956d3258c5ee783807eb5e2a222716f0259c1c16-4404613090321.png" />
 
 <div id="how-does-cross-promotion-work" />
 
@@ -112,7 +112,7 @@ x-zendesk:
 >
 > 대시보드를 보면 골프 전환율이 18.22%로 볼링 전환율보다 훨씬 높은 것을 알 수 있어 이를 통해 Golfing과 홍보 앱인 BIlliards 사이의 선호도가 더 높다는 것을 확인할 수 있습니다.
 >
-> [![CrossPromo_conversionRate](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)](https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png)
+> <Image align="center" alt="CrossPromo_conversionRate" src="https://files.readme.io/347e3abacdff19a3c61b0a5712d3c656d33ddbf14988414ae2e13fc9c22f09b0-4404615475857.png" />
 >
 > 이러한 통찰력을 바탕으로 캠페인을 다음과 같이 최적화할 수 있습니다.
 >
@@ -137,6 +137,6 @@ x-zendesk:
 >
 > 3개의 프로모션된 앱 모두에 대한 지표를 한 곳에서 보기 위해 사용자정의 대시보드를 만듭니다. 아래 이미지에서 Sport Shoes는 20.23%의 전환율을 보이고 있는데, 이는 Sport Shoes가 현재 홍보하고 있는 다른 2개 앱에 비해 선호도가 훨씬 높다는 것을 의미합니다.
 >
-> ![CrossPromo_customWidget](https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png)
+> <Image align="center" alt="CrossPromo_customWidget" src="https://files.readme.io/9363a68994956bc19115f6f9babb9acb0c7d4fe75478683b2a45720987486956-4404613319953.png" />
 
 <div data-zendesk-anchors="about-crosspromotion=%ED%81%AC%EB%A1%9C%EC%8A%A4-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98-%EC%86%8C%EA%B0%9C h_01HE7RXZ2CZCYENE4K40W5YSHF=%ED%81%AC%EB%A1%9C%EC%8A%A4-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98-%EC%86%8C%EA%B0%9C how-does-crosspromotion-work=%ED%81%AC%EB%A1%9C%EC%8A%A4-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A9%EB%8B%88%EA%B9%8C h_01HE7RXZ2CE5EQV42Y4B9SK4FN=%ED%81%AC%EB%A1%9C%EC%8A%A4-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%91%EB%8F%99%ED%95%A9%EB%8B%88%EA%B9%8C attributing-crosspromotion=%ED%81%AC%EB%A1%9C%EC%8A%A4-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98-%EC%96%B4%ED%8A%B8%EB%A6%AC%EB%B7%B0%EC%85%98%ED%95%98%EA%B8%B0 h_01HE7RXZ2CWB2GZ8HV6447RVV1=%ED%81%AC%EB%A1%9C%EC%8A%A4-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98-%EC%96%B4%ED%8A%B8%EB%A6%AC%EB%B7%B0%EC%85%98%ED%95%98%EA%B8%B0 setting-up-crosspromotion=%ED%81%AC%EB%A1%9C%EC%8A%A4-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98-%EC%84%A4%EC%A0%95 h_01HE7RXZ2C9JGFYV8K8FECFFJN=%ED%81%AC%EB%A1%9C%EC%8A%A4-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98-%EC%84%A4%EC%A0%95 viewing-crosspromotion-data=%ED%81%AC%EB%A1%9C%EC%8A%A4-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EA%B8%B0 h_01HE7RXZ2CE9NWMQ1PT3G98QVN=%ED%81%AC%EB%A1%9C%EC%8A%A4-%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B3%B4%EA%B8%B0 promoted-app-dashboard=%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98%ED%95%9C-%EC%95%B1-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C h_01HE7RXZ2CQG9M35Y2FJNPZWDA=%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98%ED%95%9C-%EC%95%B1-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C analysis=%EB%B6%84%EC%84%9D h_01HE7RXZ2CVQD8H0J6EVRJM5T7=%EB%B6%84%EC%84%9D h_01HE7RXZ2CW1P0QNA8FFXP5KBS=%EC%98%88%EC%8B%9C custom-dashboard=%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C h_01HE7RXZ2C7N3DKNPF898WM4AD=%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C h_01HE7RXZ2C51KJMP795QYS26YK=%EC%98%88%EC%8B%9C-1" />

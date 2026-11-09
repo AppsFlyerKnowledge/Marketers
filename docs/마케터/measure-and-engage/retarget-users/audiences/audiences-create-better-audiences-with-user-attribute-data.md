@@ -58,7 +58,7 @@ x-zendesk:
   * 현재 게임 점수: 현재 게임 중 하나에서 15점 이상
 
 이 표는 귀사의 CRM에서 가져온 사용자 속성 데이터를 포함하고 있습니다. 오디언스 규칙 세트는 이 데이터에 액세스해야 합니다.   
-![UserAttributuesExample_us-en.png](https://files.readme.io/6f86d8659ef089ac82bb8401b4af650fbc590d2293ac93de30e6f9b4fc2ceb86-33375683035281.png)
+<Image align="center" alt="UserAttributuesExample_us-en.png" src="https://files.readme.io/6f86d8659ef089ac82bb8401b4af650fbc590d2293ac93de30e6f9b4fc2ceb86-33375683035281.png" />
 
 **규칙 세트에서 CRM 데이터 사용**
 
@@ -116,7 +116,7 @@ x-zendesk:
 2. 유저 속성 탭을 클릭합니다.
 3. 클릭 **사용자 속성 추가**.  
 
-   ![유저속성추가.png](https://files.readme.io/6c7f25bb23d47e67aaef34264029daa9ab058f08e218a441ab9dde8240b0b384-33375683046033.png)
+   <Image align="center" alt="유저속성추가.png" src="https://files.readme.io/6c7f25bb23d47e67aaef34264029daa9ab058f08e218a441ab9dde8240b0b384-33375683046033.png" />
 4. 필드를 채우세요. 현재 특성은 다음 표에서 확인할 수 있습니다.   
    * **속성 이름**
    * **형식**
@@ -185,7 +185,7 @@ x-zendesk:
 
 <Anchor target="_blank" href="https://support.appsflyer.com/hc/article_attachments/360012423857">유저 속성 예제.csv</Anchor>
 
-![속성파일.png](https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png)
+<Image align="center" alt="속성파일.png" src="https://files.readme.io/2a9075ab7f900648aeebe3b5fca807c6b931ba5295f35708ee6c48d345f681b9-33375704847633.png" />
 
 **CSV 파일 요구 사항**
 

@@ -51,7 +51,7 @@ x-zendesk:
 1. 다음 <Anchor target="_blank" href="/marketers/ko/docs/data-locker-for-marketers#set-up-data-locker">지침</Anchor>을 따릅니다.
 2. 2. 데이터 락커를 설정할 때 데이터 락커 구성 페이지에서 **광고 소재** ( 보고서 선택 아래)를 선택합니다.
 
-![데이터 락커 - 크리에이티브 최적화(Creative Optimization).jpg 선택](https://files.readme.io/dd4e3a4cc90565c0c3834728a257d64a41438b8e53bb653c7e6cd5e392a8a5ff-51912733317905.jpg)
+<Image align="center" alt="데이터 락커 - 크리에이티브 최적화(Creative Optimization).jpg 선택" src="https://files.readme.io/dd4e3a4cc90565c0c3834728a257d64a41438b8e53bb653c7e6cd5e392a8a5ff-51912733317905.jpg" />
 
 </Accordion>
 
@@ -66,7 +66,7 @@ x-zendesk:
 1. 앱스플라이어의 사이드 메뉴에서 **내보내기 > 데이터 락커**를 선택합니다.
 2. 데이터 락커 구성 페이지에서 **보고서 선택** 아래에서 **크리에이티브 최적화**를 선택합니다.
 
-![데이터 락커 - 크리에이티브 최적화(Creative Optimization).jpg 선택](https://files.readme.io/dd4e3a4cc90565c0c3834728a257d64a41438b8e53bb653c7e6cd5e392a8a5ff-51912733317905.jpg)
+<Image align="center" alt="데이터 락커 - 크리에이티브 최적화(Creative Optimization).jpg 선택" src="https://files.readme.io/dd4e3a4cc90565c0c3834728a257d64a41438b8e53bb653c7e6cd5e392a8a5ff-51912733317905.jpg" />
 
 </Accordion>
 

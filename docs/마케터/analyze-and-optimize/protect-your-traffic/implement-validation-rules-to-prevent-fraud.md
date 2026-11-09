@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **한눈에 보기:** 검증 규칙은 잘못된 타겟 캠페인과 사기에 대한 맞춤형 보호 계층을 추가합니다. 이 규칙은 앱 소유자가 어떤 설치 및 인앱 이벤트 귀속이 차단되거나 마지막 유효 소스에 귀속되는지를 제어할 수 있게 합니다.
 
-![5906_animation-750x330__1_.gif](https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif)
+<Image align="center" alt="5906_animation-750x330__1_.gif" src="https://files.readme.io/2a5fbee83bdbc342c744f8079b743f06cb3205697bd9caa183593c411ae03d08-360014483338.gif" />
 
 <div id="overview" />
 
@@ -97,7 +97,7 @@ x-zendesk:
 
 규칙 빌더 UI는 대화식으로 규칙을 작성하도록 고안되었습니다. **팁!** 팁! 이 항목을 자세히 살펴보기 전에, 규칙 빌더를 잘 알고 실험해보십시오.
 
-![새 검증 규칙 페이지.jpg](https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png)
+<Image align="center" alt="새 검증 규칙 페이지.jpg" src="https://files.readme.io/23875c647c24226c09f5aa2f4dbb85264f95b09e867a053ee55bc2d3ebbc9895-21855980276753.png" />
 
 규칙 빌더는 다음 섹션을 포함합니다.
 
@@ -314,7 +314,7 @@ Protect360 조건은 다음 표에 요약된 조건, 연산자 및 값에 따라
 
 유효성 검증 규칙이 트래픽에 미치는 예상 영향, 예를 들어 차단된 인스톨 및 차단된 어트리뷰션 수를 참조하십시오. 
 
-![vr_estimate.png](https://support.appsflyer.com/hc/article_attachments/360019928077)
+<Image align="center" alt="vr_estimate.png" src="https://support.appsflyer.com/hc/article_attachments/360019928077" />
 
 > 📘 **참고**
 >
@@ -331,7 +331,7 @@ Protect360 조건은 다음 표에 요약된 조건, 연산자 및 값에 따라
 4. 마지막 날짜의 데이터에 대한 예상 영향을 기준으로 할지 아니면 지난 7일의 데이터를 기준으로 할지 선택합니다.
    * 예상된 새 차단과 유효성 검증 규칙으로 인해 새로 차단된 트래픽 비율이 표시됩니다.
    * 규칙이 비유기적 소스에만 정의된 경우, 추정치는 규칙의 영향이 모든 트래픽에 대해 표시됩니다. 특정 미디어 소스나 캠페인과 같은 소스에 대한 영향을 보려면, 차트 범례에서 **기타 소스**의 선택을 해제하세요.  
-     [![](https://support.appsflyer.com/hc/article_attachments/360020016218)](https://support.appsflyer.com/hc/article_attachments/360020016218)
+     <Image align="center" alt="" src="https://support.appsflyer.com/hc/article_attachments/360020016218" />
 
 </Accordion>
 

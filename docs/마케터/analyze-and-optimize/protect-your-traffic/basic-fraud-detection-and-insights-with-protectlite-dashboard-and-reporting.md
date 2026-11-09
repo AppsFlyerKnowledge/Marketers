@@ -93,7 +93,7 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data
 
 #### 예상 절약액 (Estimated Savings)
 
-[![](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)](https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg)
+<Image align="center" alt="" src="https://files.readme.io/f53d6245eb8bb81fb652a05869fe71102ed50ab304d2fc8faf1cc17198794470-360019038197.jpg" />
 
 예상 절약 지표:
 
@@ -107,7 +107,7 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data
 
 #### 식별된 인스톨
 
-[![](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)](https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg)
+<Image align="center" alt="" src="https://files.readme.io/2bc38a1ee19b4a13c18ed7571d97efd0f855d27142e8a6cd9a761cac276d3bd0-360019090998.jpg" />
 
 식별된 인스톨 지표는 ProtectLITE 및 유효성 검증 규칙에 의해 실시간으로 식별 및 차단된 인스톨 수를 표시합니다.
 
@@ -115,7 +115,7 @@ ProtectLITE <Anchor target="_blank" href="/marketers/ko/docs/protect360-raw-data
 
 #### 의심스러운 전체 Fraud 위협
 
-[![](https://files.readme.io/bb6a33cfea1dbff695d46a4b2f6547b756740cf35b750db25097d7ec772cc3d8-360019091058.jpg)](https://files.readme.io/bb6a33cfea1dbff695d46a4b2f6547b756740cf35b750db25097d7ec772cc3d8-360019091058.jpg)
+<Image align="center" alt="" src="https://files.readme.io/bb6a33cfea1dbff695d46a4b2f6547b756740cf35b750db25097d7ec772cc3d8-360019091058.jpg" />
 
 의심되는 전체 위협 수준:
 
@@ -150,7 +150,7 @@ CSV 형식으로 테이블을 데스크톱에 다운로드하려면 **CSV 내보
 
 표는 다음 이미지에 보여지듯이 일반 개요 형식으로 표시됩니다.
 
-[![plite_fraud_table.jpg](https://files.readme.io/81246675ce8f0e1243e0c0d64e1cf347246bb403894718ad9e23c56fc594eb84-360019038257.jpg)](https://files.readme.io/81246675ce8f0e1243e0c0d64e1cf347246bb403894718ad9e23c56fc594eb84-360019038257.jpg)
+<Image align="center" alt="plite_fraud_table.jpg" src="https://files.readme.io/81246675ce8f0e1243e0c0d64e1cf347246bb403894718ad9e23c56fc594eb84-360019038257.jpg" />
 
 동적 표 구조를 사용하면 다음을 수행할 수 있습니다.
 
@@ -158,7 +158,7 @@ CSV 형식으로 테이블을 데스크톱에 다운로드하려면 **CSV 내보
   변경 사항이 있는 경우 나중에 저장 버튼을 클릭하여 나중에 방문할 때를 위해 사용자 지정 내용이 저장되도록 하십시오.
 * 열 설정에서 열 섹션을 끌어 열 순서를 변경합니다.
 
-[![plite_edit_columns.jpg](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)](https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg)
+<Image align="center" alt="plite_edit_columns.jpg" src="https://files.readme.io/52fc1378d4c758d80ed2a89b24f5b7fa949c9ccccae7ff5edf4af307538e805a-360019038297.jpg" />
 
 <div id="content-of-the-identified-fraud-breakdown-table" />
 

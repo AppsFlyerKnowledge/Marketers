@@ -72,7 +72,7 @@ iOS 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggrega
 * **끄기**: 끄기: 인스톨 포스트백이 Medialyzer로 전송되지 않습니다.
 * **오가닉을 포함한 모든 매체 소스**:
 
-![default_postbacks.png](https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png)
+<Image align="center" alt="default_postbacks.png" src="https://files.readme.io/d78c2e8335e80c3a1b18b57ba3b2974ffd5622a3728c85b6ecd89569b48e905b-14963640623505.png" />
 
 <div id="in-app-event-postbacks" />
 
@@ -80,7 +80,7 @@ iOS 앱의 경우 <Anchor target="_blank" href="/marketers/ko/docs/apply-aggrega
 
 이 섹션에서는 포스트백을 통해 앱스플라이어 이벤트를 파트너와 매핑할 수 있습니다.
 
-[![app_event_postbacks.JPG](https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png)](https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png)
+<Image align="center" alt="app_event_postbacks.JPG" src="https://files.readme.io/a6a4aaa89c3eb5ba759a32312663b4c9855738eaea56366070ca9a8da3840a69-14963640866833.png" />
 
 1. **인앱 이벤트 포스트백**을 활성화하세요.
 2. **이벤트 추가**를 클릭하여 목록에 SDK 또는 서버-투-서버 이벤트를 추가합니다.

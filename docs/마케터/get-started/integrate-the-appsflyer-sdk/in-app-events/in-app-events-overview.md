@@ -45,7 +45,7 @@ x-zendesk:
 
 인앱 이벤트는 이벤트 이름을 포함하며 필요시 이벤트 파라미터를 포함할 수 있습니다. 인앱 이벤트에 이벤트 파라미터를 추가하면, 그것은 인앱 이벤트라고 불립니다. 이벤트 파라미터는 이벤트 발생에 대한 자세한 컨텍스트와 정보를 제공합니다. 예를 들어, 사용자가 예약을 했다는 정보를 아는 것도 유용하지만, 이벤트 파라미터를 통해 구매 유형, 목적지 및 수익 등의 세부 사항을 알 수 있습니다.
 
-![travel.png](https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png)
+<Image align="center" alt="travel.png" src="https://files.readme.io/0ebe64e7aa3ccc40ef014c55ee3a91edf678e21b2d00a7f8be1298d6b494e925-30858351609617.png" />
 
 <div id="tip" />
 
@@ -133,7 +133,7 @@ x-zendesk:
 
 앱스플라이어는 통화 변환을 사용하여 앱 설정 통화와 인앱이벤트 통화 간의 차액을 처리합니다.
 
-![revenue_normalization_flow.png](https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png)
+<Image align="center" alt="revenue_normalization_flow.png" src="https://files.readme.io/f890d34168f92202c94da4bfa548bd0f471c98dec9c8d4282b2549f5878e9321-46334674326033.png" />
 
 위의 다이어그램은 다음의 과정을 보여줍니다:
 

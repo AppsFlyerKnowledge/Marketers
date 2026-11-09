@@ -70,22 +70,22 @@ iOS 자격 증명을 설정하려면, 다음 단계를 따르십시오:
 
 1. App Store Connect에서 **사용자 및 접근 권한**으로 이동하십시오.
 
-   [![](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)](https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png)
+   <Image align="center" alt="" src="https://files.readme.io/34b3e97bf4401aa8896662a3a949b393bc7786b60762567cb6949ec615eddfde-33405937624849.png" />
 2. **사용자 및 접근 권한**으로 가서 **통합**을 선택한 후, **키** 목록에서 **인앱 구매**를 선택하십시오.
 
-   [![](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)](https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png)
+   <Image align="center" alt="" src="https://files.readme.io/8ca4e57e716ea28e4f72074bd5b927b3f1b99aadfbdf791565b31604644f3ed2-33372428310929.png" />
 3. 새 인앱 구매 키를 생성하려면 +을 클릭하십시오.
 
-   [![](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)](https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png)
+   <Image align="center" alt="" src="https://files.readme.io/b9d59f9c1cdd2c232b8f21bff95b800c107e700095622b8fdd9d4e1fcd1f798f-33405937633297.png" />
 4. API 키의 이름을 입력하십시오.
 5. **생성**을 클릭합니다.
 6. 방금 생성한 키 옆에 있는 **인앱 구매 키 다운로드**을 클릭하여 다운로드하십시오. **참고**: 키는 한 번만 다운로드할 수 있습니다.
 7. 방금 생성한 키의 **키 ID**를 복사하여 AppsFlyer의 구매 및 구독 설정의 **키 ID**에 붙여넣으십시오.
 
-   [![](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)](https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png)
+   <Image align="center" alt="" src="https://files.readme.io/681a546b5eaf3dd8304d82f01316281aed269982860528244b1954499f04b290-33405907545361.png" />
 8. **발급자 ID**를 복사하십시오. **참고**: 페이지 상단에 **발급자 ID**가 표시되지 않으면, App Store Connect API 키를 생성하십시오(접근 수준은 상관없습니다). 그 후, 인앱 구매 키의 페이지 상단에 발급자 ID가 나타납니다.
 
-   [![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw)
+   <Image align="center" alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdmSumtIHlYN5qrkRKGp-CLtjQG42__uc9a8YOseildcyEryXdC6msP3rShuUN7ezOk7qMT0wgJ-xP1Z-qT31kufDyidX_l-FYbx4kSJblM1kl5On2aDXzR4xSOSydyIM8Mm5khQQ?key=2hTJo3FPQZul9a_zeStquw" />
 
 </Accordion>
 
@@ -128,7 +128,7 @@ iOS 자격 증명을 설정하려면, 다음 단계를 따르십시오:
 2. 계정을 Google Cloud 프로젝트에 연결합니다. 이에 대한 시침은 이 <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#linking">Google 도움말 항목</Anchor>을 참조하십시오.
 3. Google Play Developer API를 활성화합니다. 이에 대한 시침은 이 <Anchor target="_blank" href="https://developers.google.com/android-publisher/getting_started#enable">Google 도움말 항목</Anchor>을 참조하십시오.
 
-   [![](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)](https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png)
+   <Image align="center" alt="" src="https://files.readme.io/67852d990ca3ff9e48708fb74ec59c84009b33699e3094688d113f138cc4c847-42144934507665.png" />
 
 </Accordion>
 
@@ -143,36 +143,36 @@ iOS 자격 증명을 설정하려면, 다음 단계를 따르십시오:
 1. **서비스 계정**을 생성하거나 찾으세요:
    1. <span class="af-ol-a"></span>구글 클라우드 플랫폼의 **서비스 계정** 섹션으로 가서 **서비스 계정 만들기**를 클릭하세요.
 
-      [![](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)](https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png)
+      <Image align="center" alt="" src="https://files.readme.io/044db0b4d6fb556ab70d1f5a31b2e63ef45443e21d5f22c026460adbdfc8b238-42144939169937.png" />
    2. 서비스 계정 세부 정보를 입력하세요.
 
-      [![](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)](https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png)
+      <Image align="center" alt="" src="https://files.readme.io/a78faa6f79b79a3a8238963ce2139fd262bc4467730fbb4fa6188f9356eac13c-42144934512785.png" />
    3. 이메일 주소를 복사하세요.
 
-      [![](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)](https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png)
+      <Image align="center" alt="" src="https://files.readme.io/f4da7e559e22e85446c6e0bb582cdfbd1b85f47702fcf0b3e82397d8cee93e87-42144934515473.png" />
    4. **생성 및 계속하기**를 클릭합니다.
 
-      [![](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)](https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png)
+      <Image align="center" alt="" src="https://files.readme.io/56e4d0973444fddb36cfb69960de46b626ad158c92d196ed40eacac2dac0a505-42144939175313.png" />
    5. **이 서비스 계정에 프로젝트에 대한 액세스 권한 부여** 단계에서  **Pub/Sub 구독자** 역할을 선택합니다.
 
-      [![](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)](https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png)
+      <Image align="center" alt="" src="https://files.readme.io/70b71a09fd401220bb1f507ac8580fc6e446d8922fd8faab00e37a1ce7e265d0-42144934522769.png" />
    6. **계속하기** > **완료**를 클릭합니다.
 
-      [![](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)](https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png)
+      <Image align="center" alt="" src="https://files.readme.io/27406f405e31a7ad613b49c92c304e39366b0aee313f6b9eb8c109c5bf5f4a33-42144934524049.png" />
 2. **서비스 계정 개인 키**를 다운로드하세요:
    1. <span class="af-ol-a"></span>구글 클라우드 플랫폼에서 **서비스 계정** 섹션으로 가서 목록에서 원하는 계정(방금 생성한 계정)을 찾아 **추가 작업** 아이콘을 클릭하세요.
    2. **키 관리**를 클릭하세요.
 
-      [![](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)](https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png)
+      <Image align="center" alt="" src="https://files.readme.io/4b35fffa35f6b84112b4e6bdcb7656f3ddc1d72599140195f5a21158111f371f-42144934526353.png" />
    3. **키 추가** > **새 키 만들기**를 클릭하세요.
 
-      [![](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)](https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png)
+      <Image align="center" alt="" src="https://files.readme.io/01b244c8fb818b9b479e154876de2a3a5ff258b2d7e83a91a2ea804791cd3e26-42144939182097.png" />
    4. **개인 키 만들기** 팝업에서 **키 유형** 아래에 **JSON**을 선택하고 **만들기**를 클릭하세요.
 
-      [![](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)](https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png)
+      <Image align="center" alt="" src="https://files.readme.io/713f0a2c0c2aca1bab8b965291d8e9839b1e183dac63e66721064be67b879c5f-42144939185297.png" />
    5. **생성**을 클릭합니다. 개인 키 JSON 파일이 다운로드됩니다.
 
-      [![](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)](https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png)
+      <Image align="center" alt="" src="https://files.readme.io/ab22f49448fa2b2a392fc4a1e27e9570fcdecaa9aa9ae8f0f7056dedf70ef9ac-42144934528529.png" />
    6. JSON 키 파일을 저장하세요. 이 파일은 나중에 AppsFlyer에 업로드됩니다. **참고**! 키를 저장해야 합니다. 나중에 복구할 수 없습니다. 저장하지 않으면 완전히 새로운 키를 만들어야 합니다.
 
 </Accordion>
@@ -189,23 +189,23 @@ iOS 자격 증명을 설정하려면, 다음 단계를 따르십시오:
 
 1. Google Play Console에서 **사용자 및 권한**으로 이동하여 생성한 서비스 계정을 찾고 **새 사용자 초대**를 클릭하십시오.
 
-   [![](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)](https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png)
+   <Image align="center" alt="" src="https://files.readme.io/cd78d8eb4daf7d81dbe429c75b5e433f0244e3f1a9373bd49392fe0a48e7fa74-42144939189265.png" />
 2. 1.2.1.3단계에서 서비스 계정을 구성할 때 복사한 **이메일 주소**을 입력하십시오.
 
-   [![](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)](https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png)
+   <Image align="center" alt="" src="https://files.readme.io/93cf0394b19d75901fbc70eab570a4d34aec23b0d43ce85e5e18f1c2cf219407-42144934531217.png" />
 3. **권한** 섹션에서 **계정 권한** 탭으로 이동하여 다음 두 가지를 모두 선택합니다.
 
    * 재무 데이터, 주문 및 취소 설문 응답을 확인하십시오.
    * 주문 및 구독 관리.[![](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)](https://files.readme.io/90e9603142babec1a86e3788db4b71f6efbd3bb6e3969c9e29153e3fa4b9597d-42144939195409.png)
 4. **앱 권한** 탭에서 **앱 추가**를 클릭한 다음 귀하의 앱을 선택하십시오. 필요한 경우 여러 앱을 추가하십시오.
 
-   [![](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)](https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png)
+   <Image align="center" alt="" src="https://files.readme.io/ad6e0b452d94a6bc7747f2b6386dd0fd52ed9ce654870ff26e866b9f7eb670e6-42144934538641.png" />
 5. **사용자 초대**를 클릭하십시오.
 
-   [![](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)](https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png)
+   <Image align="center" alt="" src="https://files.readme.io/207e877e404195eb6420a91aab5106843596d23bb4b59abbc825ac664cbeadea-42144934539537.png" />
 6. 확인 팝업에서 **초대 전송**을 클릭하십시오.
 
-   [![](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)](https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png)
+   <Image align="center" alt="" src="https://files.readme.io/ca5010e1312cb7cb99bef435f139ea9c44ecaccf491e0b6d2720119e39175bc6-42144934540433.png" />
 
 </Accordion>
 
@@ -282,16 +282,16 @@ AppsFlyer 서버 알림 엔드포인트를 복사하려면 다음 단계를 따�
 
 1. **App Store Connect**의 **앱 정보** 섹션에서 **App Store 서버 알림**으로 스크롤하고, **생산 서버 URL** 옆에 있는 **편집**을 클릭하십시오.
 
-   [![](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)
+   <Image align="center" alt="" src="https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png" />
 2. [AppsFlyer에서 복사한 AppsFlyer 서버 알림 엔드포인트](#21-copy-the-appsflyer-server-notifications-endpoint)를 붙여넣고, **버전 2 알림**을 선택한 후 **저장**을 클릭하십시오. **참고:** 버전 1 알림은 더 이상 지원되지 않습니다. 알림 버전 선택기가 Apple Store Connect에 나타나지 않으면 이미 버전 2를 사용하고 있다는 의미입니다.
 
-   [![](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)
+   <Image align="center" alt="" src="https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png" />
 3. **앱 정보** 섹션에서 **App Store 서버 알림**으로 스크롤하고, **샌드박스 서버 URL** 옆에 있는 **편집**을 클릭하십시오.
 
-   [![](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)
+   <Image align="center" alt="" src="https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png" />
 4. [AppsFlyer에서 복사한 AppsFlyer 서버 알림 엔드포인트](#21-copy-the-appsflyer-server-notifications-endpoint)를 붙여넣고, **버전 2 알림**을 선택한 후 **저장**을 클릭하십시오. **참고:** 버전 1 알림은 더 이상 지원되지 않습니다. 알림 버전 선택기가 Apple Store Connect에 나타나지 않으면 이미 버전 2를 사용하고 있다는 의미입니다.
 
-   [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
+   <Image align="center" alt="" src="https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png" />
 
 </Accordion>
 
@@ -307,18 +307,18 @@ AppsFlyer 서버 알림 엔드포인트를 복사하려면 다음 단계를 따�
 
 1. **App Store Connect**의 **앱 정보** 섹션에서 **App Store 서버 알림**으로 스크롤하고, **생산 서버 URL** 옆에 있는 **편집**을 클릭하십시오.
 
-   [![](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)](https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png)
+   <Image align="center" alt="" src="https://files.readme.io/3c22959c2d38f25cf0d339bf88381281f13ea924e6db35e6d824837fc4e9483f-42158637544081.png" />
 2. **귀하의 서버 엔드포인트 URL**을 붙여넣으십시오.
 
-   [![](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)](https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png)
+   <Image align="center" alt="" src="https://files.readme.io/506430461b1890bf1e2c0ed785618a606d7c4bd848a47003e3504f2b8c427695-42158608092561.png" />
 3. **버전 2 알림을 선택하십시오. 참고:** 버전 1 알림은 더 이상 지원되지 않습니다. 알림 버전 선택기가 Apple Store Connect에 나타나지 않으면 이미 버전 2를 사용하고 있다는 의미입니다.
 4. **저장**을 클릭하세요.
 5. **앱 스토어 연결**의 **앱 정보** 섹션에서 **앱 스토어 서버 알림**으로 스크롤한 다음, **샌드박스 서버 URL** 옆에 있는 **편집**을 클릭하십시오.
 
-   [![](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)](https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png)
+   <Image align="center" alt="" src="https://files.readme.io/196fbb6bd2569e19566a75557c16b4853539d8eb491a3b9430d0139801e6b31c-33376298958481.png" />
 6. **귀하의 서버 엔드포인트 URL**을 붙여넣으십시오.
 
-   [![](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)](https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png)
+   <Image align="center" alt="" src="https://files.readme.io/8e267eb88e90ea23fa2594660cec6726e26ca89ba906ade8392f5f7a61c034cf-42158637553297.png" />
 7. **버전 2 알림을 선택하십시오. 참고:** 버전 1 알림은 더 이상 지원되지 않습니다.
 8. **저장**을 클릭하세요.
 9. 백엔드를 구성하여 Apple 서버 알림을 AppsFlyer 알림 엔드포인트 URL로 전달하십시오. 요청은 Apple로부터 수신한 앱 스토어 페이로드와 정확히 일치해야 하며, <Anchor target="_blank" href="https://developer.apple.com/documentation/appstoreserverapi/signedpayload#discussion">Apple 형식 요구 사항</Anchor>을 참조하십시오.
@@ -368,16 +368,16 @@ Google Play에서 인앱 구매 및 구독 수익 데이터를 수신하려면 �
 2. 앱스플라이어 주제를 클립보드에 복사합니다.
 3. **Google Play Console** > **홈**에서 귀하의 앱을 보려면 선택하십시오. 대시보드가 열립니다.
 
-   [![](https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png)](https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png)
+   <Image align="center" alt="" src="https://files.readme.io/1fdd2632aaf3a412987aa5dae5ad5a7350836f1ad4cd2f1c228b4cc96acdb9ff-42158608097297.png" />
 4. **Play로 수익화** > **수익화 설정**으로 이동하고, **Google Play 청구** 섹션에서 **실시간 알림 활성화**가 체크되어 있는지 확인하십시오.
 
-   [![](https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png)](https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png)
+   <Image align="center" alt="" src="https://files.readme.io/f133ffefac1ec4b4eb9225c498f475163a69d1fd1f61b3d1c7cee7a71c42fea4-42158637562769.png" />
 5. **주제 이름** 필드에 복사한 AppsFlyer 주제 주소를 붙여넣습니다.
 
-   [![](https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png)](https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png)
+   <Image align="center" alt="" src="https://files.readme.io/b6ac3a569210b026096b5592a575500b1bdb03376ec0641f4ceeaf9402ea4549-42158608104081.png" />
 6. **알림 내용**에 대해 **구독, 무효화된 구매 및 모든 일회성 제품**을 선택합니다.
 
-   [![](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)](https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png)
+   <Image align="center" alt="" src="https://files.readme.io/8aa48cebc2f0712204d5d5c2e45727879814aaae2d03732228e0f8e607fccdc9-42158608105233.png" />
 7. **변경 사항 저장**을 클릭합니다. 이 효과가 나타나기까지 시간이 걸릴 수 있습니다(때로는 24시간까지도). 따라서 테스트하기 전에 기다리십시오.
 
 </Accordion>
@@ -400,43 +400,43 @@ Google Play에서 인앱 구매 및 구독 수익 데이터를 수신하려면 �
 4. 엔드포인트 URL을 클립보드에 복사합니다.
 5. Google Cloud 플랫폼에 있는 사용자 프로젝트에서 **Pub/Sub**를 검색합니다.
 
-   [![](https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png)](https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png)
+   <Image align="center" alt="" src="https://files.readme.io/fc99b942cec1dc7c1442b6d85142be12011a0b91ab40110e6d454b8b12faa5cb-42158637570705.png" />
 6. **Pub/Sub** 에서 **주제** 섹션으로 이동하여 구독하려는 Pub/Sub 주제가 있는지 확인합니다.
 
-   [![](https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png)](https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png)
+   <Image align="center" alt="" src="https://files.readme.io/6ae2654906ba62cac901b0d8a0b54d86ea92690e947621a578b93fc7225f550e-42158608108689.png" />
 7. **구독** 섹션으로 이동하여 **구독 생성**을 클릭합니다.
 
-   [![](https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png)](https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png)
+   <Image align="center" alt="" src="https://files.readme.io/d89659f6789cc4fd3c1888742583dc6e0aa2c8ad15229d11a8618251152864f4-42158637572369.png" />
 8. 구독 ID를 입력합니다.
 
-   [![](https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png)](https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png)
+   <Image align="center" alt="" src="https://files.readme.io/1d4e42829a45c30253f68a164780185eb1b5723605870b7cc14450c80689f7bc-42158637574673.png" />
 9. 드롭다운에서 관련 구독 pub/sub 주제를 선택합니다.
 
-   [![](https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png)](https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png)
+   <Image align="center" alt="" src="https://files.readme.io/b2a3f816734039821830cd6f2bf8047cb1927a27e232f1caf5757310815ee0b3-42158637581329.png" />
 10. **전달 유형**에서 **푸시**를 선택합니다.
 
-    [![](https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png)](https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png)
+    <Image align="center" alt="" src="https://files.readme.io/cb716ee0392cf71b20e3aac9af4c050e9495a0e5c384594eb1af3d3fb5da454c-42158637584657.png" />
 11. AppsFlyer에서 복사한 **엔드포인트 URL**을 붙여넣습니다.
 
-    [![](https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png)](https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png)
+    <Image align="center" alt="" src="https://files.readme.io/11610d67b24ea1b5afb6560c30352ec3e0bbfc5b8ebb2bf27545d838f7c999aa-42158637585681.png" />
 12. **만료 기간** 아래에서 **절대 만료되지 않음**을 선택합니다.
 
-    [![](https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png)](https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png)
+    <Image align="center" alt="" src="https://files.readme.io/ab7d994b97137d39f77ffb11d772b37dc9033550bdb7ba95d3c9c2ff748cb54a-42158608120209.png" />
 13. **생성**을 클릭합니다.
 
-    [![](https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png)](https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png)
+    <Image align="center" alt="" src="https://files.readme.io/bf8aed929c5f35847dda934677fc333ef111dc1f1281494582f1da4b776499c8-42158637592721.png" />
 14. **구독** 섹션으로 이동하여 원하는 주제 이름을 클릭합니다.
 
-    [![](https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png)](https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png)
+    <Image align="center" alt="" src="https://files.readme.io/4b5f7b0c369fc4abddfbec35887a62221a55d838672872091b634343691dd9b8-42158608126993.png" />
 15. 주제 이름을 클립보드에 복사합니다.
 
-    [![](https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png)](https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png)
+    <Image align="center" alt="" src="https://files.readme.io/3ec5abc49588477d0567a26a3f6734f5e9c0ab0f677cfee0cf4d413aab0fcc5d-42158608127505.png" />
 16. **Google Play 콘솔**에서 **수익화 설정**으로 이동하여 **Google Play 청구 섹선**의 **주제** 이름 필드에 이전 단계에서 복사한 주제 이름을 붙여 넣습니다.
 
-    [![](https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png)](https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png)
+    <Image align="center" alt="" src="https://files.readme.io/d5368f4c9326e5c0a9d0f75167bd12ee1ddb58381379ceefedeaae3917806163-42158608128785.png" />
 17. **알림 내용**에 대해 **구독, 무효화된 구매 및 모든 일회성 제품**을 선택합니다.
 
-    [![](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)](https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png)
+    <Image align="center" alt="" src="https://files.readme.io/6c1b473ee54c1db69e7359d99a86efee359113ed76d52d2cd2dfe05557f7ee91-42158637598737.png" />
 18. **변경 사항 저장(Save changes)** 을 클릭합니다. 이 효과가 나타나기까지 시간이 걸릴 수 있습니다(때로는 24시간까지도). 따라서 테스트하기 전에 기다리십시오.
 
 </Accordion>
@@ -449,7 +449,7 @@ Google Play 실시간 개발자 알림(RTDN)이 AppsFlyer에 올바르게 수신
 
 1. **테스트 알림 보내기**를 클릭하십시오. 이것은 AppsFlyer에 구성된 Pub/Sub 주제로 테스트 RTDN 메시지를 전송합니다.
 
-   <Image alt="image (16).png" src="https://files.readme.io/4d7aa79eb963373223cfde1d32db16b739119a86d8d4f0cf6ce026d42a709bf3-42170040528657.png" width="1444px" />
+   <Image align="center" alt="image (16).png" src="https://files.readme.io/4d7aa79eb963373223cfde1d32db16b739119a86d8d4f0cf6ce026d42a709bf3-42170040528657.png" width="1444px" />
 2. **Google Play 결제** 아래에서 주제 이름 섹션을 찾으십시오.
 3. 왼쪽 메뉴에서 **Play로 수익 창출** → **수익 창출 설정**로 이동하십시오.
 4. Google Play Console로 이동하십시오.
@@ -557,7 +557,7 @@ SDK 커넥터를 구현하려면 다음 단계를 따르십시오:
 
 * **iOS의 경우, App Store Connect의 앱 스토어 서버 알림에서 앱스플라이어 엔드포인트가** 샌드박스 서버 URL로 구성되어 있는지 확인합니다.
 
-  [![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+  <Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 인앱 구매 및 구독 수익 측정
 
@@ -604,7 +604,7 @@ SDK 커넥터를 구현하려면 다음 단계를 따르십시오:
 * IAP 또는 구독으로 캡처하려는 인앱이벤트는 앱스플라이어에서 구성한 유효성 검사 규칙 중 하나에 의해 차단되지 않습니다.
 * 개발자는 거짓으로 표시된 샌드박스 플래그를 가지고 있어야 합니다.
 
-[![](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)](https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png)
+<Image align="center" alt="" src="https://files.readme.io/eda1b7d22391e763dc6e6e4bf7e0046f39bb6ebff815b93721601a96fc3d7e42-42138012409105.png" />
 
 SDK 커넥터가 포함된 앱이 출시되면, <Anchor target="_blank" href="/marketers/ko/docs/about-roi360-store-revenue#iaprelated-events-and-parameters">앱 내 구매</Anchor> 및 <Anchor target="_blank" href="/marketers/ko/docs/about-roi360-store-revenue#subscriptionrelated-events-and-parameters">구독 이벤트</Anchor>가 생성되어 모든 AppsFlyer 대시보드에서 사용할 수 있으며, <Anchor target="_blank" href="/marketers/ko/docs/revenue-etl-reports">수익 ETL</Anchor>을 포함한 집계 및 원시 데이터 보고서에서도 제공됩니다.
 

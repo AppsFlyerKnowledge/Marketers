@@ -48,7 +48,7 @@ The integration involves creating a Salesforce Data Cloud connection and then cr
 2. From the top-right of the page, click **Manage connections** > **+ New connection**.
 3. In the **New connection** dialog, select **Data providers** > **Salesforce Data Cloud**.  
 
-   <Image alt="salesforce-data-cloud-new-connection.jpg" src="https://files.readme.io/6b240e0cff3f0bc9e6b7f6eaf45520a78252e1619769a696855e8d68d322ce60-23301617982353.jpg" width="517px" />
+   <Image align="center" alt="salesforce-data-cloud-new-connection.jpg" src="https://files.readme.io/6b240e0cff3f0bc9e6b7f6eaf45520a78252e1619769a696855e8d68d322ce60-23301617982353.jpg" width="517px" />
 4. Click **Log in to Salesforce**.
 5. Proceed with the authentication process and allow Salesforce access to AppsFlyer.   
    **Note:** If the authentication is unsuccessful, you're returned to the **New connection** dialog to try again.
@@ -75,7 +75,7 @@ Access the **Sources** tab using the following methods:
    * **Select connection:** Salesforce Data Cloud is auto-populated after adding the connection. If not, choose it from the connection list.
    * **Table or View:** After the Salesforce Data Cloud connection is selected, table names and views from your Salesforce account are auto-populated. Select the table or view, and click **Next**.  
 
-     ![create-source-sf-3-steps.jpg](https://files.readme.io/44549ef1cd59b99610944c604c1cdfd4d598352cd106877fab3a301ce14650f8-23306070497169.jpg)
+     <Image align="center" alt="create-source-sf-3-steps.jpg" src="https://files.readme.io/44549ef1cd59b99610944c604c1cdfd4d598352cd106877fab3a301ce14650f8-23306070497169.jpg" />
 3. **Configure source schema:** After a table or view is selected, the field names and types are auto-populated. You can edit the field types or remove unwanted fields by selecting the bin icon at the end of the field row.  
    **Note:** Make sure at least one field type serves as an identifier. For example, CUID, Platform ID, AppsFlyer ID, and SHA256 hashed ID.
 4. Click **Save**. The new source is displayed in the list of all existing sources.

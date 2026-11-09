@@ -23,7 +23,7 @@ x-zendesk:
 ---
 > **At a glance:** Glispa, an AppsFlyer integrated ad network partner, creates solutions that make it simple for agencies and brands to connect with target audiences and for publishers to monetize their apps. In addition to click-based mobile attribution, Glispa offers cost and view-through attribution, which you can record with AppsFlyer.
 
-<Image alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/glispacpa.png?v=1" width="168px" />
+<Image align="center" alt="" src="https://cdn.appsflyer.com/marketplace/static/logo/glispacpa.png?v=1" width="168px" />
 
 ## Setting up Glispa
 
@@ -54,7 +54,7 @@ For more details about partner activation please click <Anchor target="_blank" h
 
 **Enable View-Through attribution**
 
-[![appl013.png](https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png)](https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png)
+<Image align="center" alt="appl013.png" src="https://files.readme.io/513c24cf8bcf72d8efc3324411a1bea1fd45e8c7cb721c7f1144463fa030492c-50706625495953.png" />
 
 Toggle this to ON if you want to attribute view-through installs from Glispa. The view-through lookback slider is available on the attribution link tab (described below).
 
@@ -118,7 +118,7 @@ This slider allows you to set the **maximum time from click to install**. Only i
 
 More details about the <Anchor target="_blank" href="/marketers/ko/docs/set-up-lookback-windows">click lookback window here</Anchor>.
 
-[![](https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png)](https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png)
+<Image align="center" alt="" src="https://files.readme.io/72e192640be302ffede694bc264f1ce5746022242bfa441b29f835605a07004d-50706581523217.png" />
 
 ### Click attribution link
 
