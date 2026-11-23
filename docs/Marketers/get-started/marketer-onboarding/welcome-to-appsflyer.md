@@ -22,7 +22,8 @@ x-zendesk:
   locale: es
   section: Marketer onboarding
   section_id: 6550866490129
-  url: https://support.appsflyer.com/hc/es/articles/212017846
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/212017846
 ---
 > **De un vistazo:** Descubre qué es la atribución de publicidad móvil y cómo AppsFlyer ayuda a los marketers a precisar su targeting, optimizar su gasto en anuncios y aumentar el ROI.
 
@@ -50,9 +51,9 @@ Cuando se crea tu usuario por primera vez, recibes una invitación por correo el
 
 Hay varias formas de iniciar sesión en tu cuenta de AppsFlyer:
 
-* Con las credenciales: correo electrónico y contraseña
-* Iniciar sesión con Google: inicie sesión con tu cuenta de Google
-* <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp">Iniciar sesión usando SSO</Anchor>
+- Con las credenciales: correo electrónico y contraseña
+- Iniciar sesión con Google: inicie sesión con tu cuenta de Google
+- <Anchor target="_blank" href="/marketers/es/docs/set-up-sso-authentication-with-your-identity-provider-idp">Iniciar sesión usando SSO</Anchor>
 
 <div id="note" />
 
@@ -70,8 +71,8 @@ Los usuarios pueden existir en varias cuentas con diferentes roles y permisos. P
 
 > 📘 **Nota:**
 >
-> * Cambiar entre cuentas y cambiar la cuenta principal es compatible con todos los métodos de login: nombre de usuario y contraseña, 2FA e inicio de sesión único (SSO). Para cambiar de cuenta también se necesita un código de verificación de 6 dígitos enviado al correo electrónico del usuario, independientemente del método de login utilizado.
-> * En esta etapa, el cambio entre cuentas está restringido únicamente a las cuentas de anunciante.
+> - Cambiar entre cuentas y cambiar la cuenta principal es compatible con todos los métodos de login: nombre de usuario y contraseña, 2FA e inicio de sesión único (SSO). Para cambiar de cuenta también se necesita un código de verificación de 6 dígitos enviado al correo electrónico del usuario, independientemente del método de login utilizado.
+> - En esta etapa, el cambio entre cuentas está restringido únicamente a las cuentas de anunciante.
 
 <div id="primary-account" />
 
@@ -91,14 +92,10 @@ La cuenta principal es la cuenta inicial que se creó y actúa como cuenta de in
 
 ### Cambiar entre tus cuentas
 
-1. Cerrar sesión en tu cuenta actual: En la barra de menú, haz clic en el **menú desplegable de direcciones de correo electrónico** > **Cerrar sesión**.  
-   <Image align="center" alt="image (73).png" src="https://files.readme.io/b9aaf81a586da0240bb3813a0ad416ac1cf5badc0f976ddc0156e1bd798036df-51074002494481.png" width="313px" />
-2. Inicia sesión y selecciona una cuenta diferente de tu lista de cuentas asociadas.  
-   <Image align="center" alt="image (74).png" src="https://files.readme.io/7ff19bd9db1b1f72e06b594ce536200cd6139a1882e56e72877200542944d6f8-51074002495505.png" width="75%" />
-3. Introduce el código de verificación de 6 dígitos que se ha enviado a tu dirección de correo electrónico.  
-   <Image align="center" alt="image (769).png" src="https://files.readme.io/ccb2c3e8f8724f95e6ec265697b3851efeaf33ff6aabde4599e3d17c57949a44-51074002496017.png" width="75%" />
-4. Haz clic en Cambiar de cuenta.  
-   <Image align="center" alt="image (75).png" src="https://files.readme.io/81e6f17ed80eddcc1d3e55ca9336ed62b82fd1c6694a30a347ba24ae8bed57e4-51074025826705.png" width="75%" />
+1. Cerrar sesión en tu cuenta actual: En la barra de menú, haz clic en el **menú desplegable de direcciones de correo electrónico** > **Cerrar sesión**.   <Image align="center" alt="image (73).png" src="https://files.readme.io/b9aaf81a586da0240bb3813a0ad416ac1cf5badc0f976ddc0156e1bd798036df-51074002494481.png" width="313px" />
+2. Inicia sesión y selecciona una cuenta diferente de tu lista de cuentas asociadas.   <Image align="center" alt="image (74).png" src="https://files.readme.io/7ff19bd9db1b1f72e06b594ce536200cd6139a1882e56e72877200542944d6f8-51074002495505.png" width="75%" />
+3. Introduce el código de verificación de 6 dígitos que se ha enviado a tu dirección de correo electrónico.   <Image align="center" alt="image (769).png" src="https://files.readme.io/ccb2c3e8f8724f95e6ec265697b3851efeaf33ff6aabde4599e3d17c57949a44-51074002496017.png" width="75%" />
+4. Haz clic en Cambiar de cuenta.   <Image align="center" alt="image (75).png" src="https://files.readme.io/81e6f17ed80eddcc1d3e55ca9336ed62b82fd1c6694a30a347ba24ae8bed57e4-51074025826705.png" width="75%" />
 
 <div id="note-2" />
 
@@ -124,9 +121,9 @@ Lectura relacionada: <Anchor target="_blank" href="/marketers/es/docs/convert-y
 
 > 📄 **Consulta también**
 >
-> * <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">Modelo de atribución de AppsFlyer</Anchor>
-> * <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">Descripción general de la integración del SDK</Anchor>
-> * <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">Atribución de CTV, PC y consolas</Anchor>
-> * <Anchor target="_blank" href="/marketers/es/docs/convert-your-mobile-web-visitors-to-app-users">Atribución de web a aplicación móvil</Anchor>
+> - <Anchor target="_blank" href="/marketers/es/docs/appsflyer-attribution-model">Modelo de atribución de AppsFlyer</Anchor>
+> - <Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">Descripción general de la integración del SDK</Anchor>
+> - <Anchor target="_blank" href="/marketers/es/docs/ctv-pc-and-console-platform-attribution-concepts">Atribución de CTV, PC y consolas</Anchor>
+> - <Anchor target="_blank" href="/marketers/es/docs/convert-your-mobile-web-visitors-to-app-users">Atribución de web a aplicación móvil</Anchor>
 
 <div data-zendesk-anchors="what-is-app-attribution=qu%C3%A9-es-la-atribuci%C3%B3n-de-aplicaciones h_01HE7TBV2N5YT6N7QGAPFVJZ47=qu%C3%A9-es-la-atribuci%C3%B3n-de-aplicaciones what-can-you-do-with-appsflyer=qu%C3%A9-puedes-hacer-con-appsflyer h_01HE7TBV2N3WK44CMMD7NEMG6C=qu%C3%A9-puedes-hacer-con-appsflyer first-login=primer-inicio-de-sesi%C3%B3n h_01HBX4Q7CZQWJ89Q94DVC9BWKQ=primer-inicio-de-sesi%C3%B3n h_01HC7PNKHT08BPQ2Z4T5CSSF9R=nota using-multiple-accounts=multiple-accountspng h_01HSBF86NAKJR2EHHJKK87EXD5=multiple-accountspng h_01M2ZBFZ1Y1NXQDNG66Y5T24AE=nota-1 primary-account=cuenta-principal h_01HSBH0KSV5ASCP17H0BWK5NNT=cuenta-principal switching-between-your-accounts=cambiar-entre-tus-cuentas h_01H9G1MP3ZYYQCCE6J8Q8GCAWG=cambiar-entre-tus-cuentas h_01M2YVVWHB1TVPWHFSGDA8K3RR=nota-2 get-started=comienza h_01HE7TBV2N3AG1EPTYX0HSTH1T=comienza h_01HE7TBV2NAXNHJ6461BNCN78A=consejo h_01HE7TQV7VDSEX3E7RTKAHBMNN=consulta-tambi%C3%A9n" />

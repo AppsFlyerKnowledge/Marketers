@@ -22,7 +22,8 @@ x-zendesk:
   locale: es
   section: Email service providers
   section_id: 6551247620881
-  url: https://support.appsflyer.com/hc/es/articles/360002522337
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/360002522337
 ---
 > **At a glance:** Integra los enlaces de atribución basados en OneLink con el sistema Iterable para <Anchor target="_blank" href="/marketers/es/docs/email-service-provider-esp-integration-guide">Deep Linking desde correos electrónicos</Anchor>. La integración utiliza la compatibilidad de Iterable con enlaces universales, además de los dominios de registro de clics de marca.
 
@@ -43,15 +44,15 @@ Con Iterable, que admite enlaces universales además de su dominio de registro d
 ## Requisitos previos
 
 <Tabs>
-<Tab title="apps de iOS,">
+<Tab title="iOS">
 
-* SDK de AppsFlyer para iOS, versión 4.9.0
+- SDK de AppsFlyer para iOS, versión 4.9.0
 
 </Tab>
 
 <Tab title="Android">
 
-* SDK de AppsFlyer para Android, versión 4.9.0
+- SDK de AppsFlyer para Android, versión 4.9.0
 
 Iterable no es compatible con los enlaces de aplicaciones de Android. Sin embargo, <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#social-app-landing-page">admite los enlaces profundos de esquema URI</Anchor>. No se requieren acciones especiales en el lado de Iterable para admitir enlaces profundos en Android.
 
@@ -82,13 +83,13 @@ Tu dominio de registro de clics debe incluir el certificado SSL de tu dominio. E
 
 <div id="aasa-for-ios" />
 
-<Accordion title="AASA para iOS">
+<Accordion title="AASA for iOS">
 
 Para que Iterable admita los enlaces universales de iOS, necesita un archivo AASA. Consulta las siguientes instrucciones.
 
 Cuando configuras OneLink con enlaces universales, ya tienes un AASA asociado con OneLink. Para obtener el AASA:
 
-1. Ve a ***Plantillas de OneLink*** y busca un OneLink que esté configurado con enlaces universales.
+1. Ve a _**Plantillas de OneLink**_ y busca un OneLink que esté configurado con enlaces universales.
 2. Agrega **/.well-known/apple-app-site-association** al final de la URL de OneLink.
 3. Pega el OneLink en la barra de direcciones del navegador y presiona Enter. Por ejemplo: **`<OneLinkSubdomain>`.onelink.me/.well-known/apple-app-site-association**. Cuando lo hagas, el archivo AASA se descargará en tu computadora. Puedes abrirlo usando cualquier editor de texto simple.
 4. Define las reglas de reescritura de los enlaces. Para más información, consulta <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/360035496511">aquí</Anchor>.
@@ -98,11 +99,11 @@ Cuando configuras OneLink con enlaces universales, ya tienes un AASA asociado co
 
 <div id="asset-links-for-android" />
 
-<Accordion title="Enlaces de recursos para Android">
+<Accordion title="Asset Links for Android">
 
 Cuando configuras OneLink con enlaces de aplicaciones, ya tienes un archivo de enlaces de recursos asociado con OneLink. Para obtener el archivo de enlaces de recursos:
 
-1. Ve a ***Plantillas de OneLink*** y busca un OneLink que esté configurado con enlaces de aplicaciones.
+1. Ve a _**Plantillas de OneLink**_ y busca un OneLink que esté configurado con enlaces de aplicaciones.
 2. Agrega **/.well-known/assetlinks.json** al final de la URL de OneLink.
 3. Pega el OneLink en la barra de direcciones del navegador y presiona Enter. Por ejemplo:**`<OneLinkSubdomain>`.onelink.me/.well-known/assetlinks.json**. Cuando lo hagas, el archivo de enlaces de recursos se descargará en tu computadora. Puedes abrirlo usando cualquier editor de texto simple.
 4. Envía este archivo de enlaces de recursos a Iterable. Para obtener más información y saber más sobre el contenido de este archivo, consulta la <Anchor target="_blank" href="https://support.iterable.com/hc/en-us/articles/360035127392">guía de Iterable</Anchor>.
@@ -117,7 +118,7 @@ Consulta lo siguiente para configurar tus aplicaciones para que admitan enlaces 
 
 <div id="step-1-for-android-setting-up-your-app-to-support-app-links" />
 
-<Accordion title="Paso 1 para Android: Configurar la aplicación para que admita enlaces de aplicaciones">
+<Accordion title="Step 1 for Android: Setting up your app to support App Links">
 
 <div id="step-1-adding-the-click-domain-to-the-activity-in-the-android-manifest" />
 
@@ -147,7 +148,7 @@ El SDK necesita resolver el OneLink detrás del dominio de clic para obtener los
 Para resolver dominios de clic:
 
 1. Asegúrate de que la versión de tu SDK sea al menos 4.9.0.
-2. Enumera los dominios de clic en la API del SDK `setResolveDeepLinkURLs`. Esta API debe llamarse antes de la inicialización del SDK. Para obtener más información, consulta la documentación del SDK <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">aquí</Anchor>.  
+2. Enumera los dominios de clic en la API del SDK `setResolveDeepLinkURLs`. Esta API debe llamarse antes de la inicialización del SDK. Para obtener más información, consulta la documentación del SDK <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">aquí</Anchor>.
 
    ```java
    AppsFlyerLib.getInstance().setResolveDeepLinkURLs("click.example.com");
@@ -157,7 +158,7 @@ Para resolver dominios de clic:
 
 <div id="step-1-for-ios-setting-up-your-app-to-support-universal-links" />
 
-<Accordion title="Paso 1 para iOS: Configurar la aplicación para que admita enlaces universales">
+<Accordion title="Step 1 for iOS: Setting up your app to support Universal Links">
 
 En esta sección se explica cómo configurar tu aplicación para que admita enlaces universales.
 
@@ -166,8 +167,9 @@ En esta sección se explica cómo configurar tu aplicación para que admita enla
 #### Paso 1: Asociar dominios de clic en Xcode
 
 1. En Xcode, haz clic en tu proyecto.
-2. Haz clic en ***Capabilities***. ![configure-xcode-deeplinking-domain.png](https://files.readme.io/90d0dcc0eba2d7d081ab7d5d4ea697e9257b9107af463fa8c973169f8a2651db-49839256220433.png)
-3. Activa ***Associated Domains***.
+2. Haz clic en _**Capabilities**_.
+   ![configure-xcode-deeplinking-domain.png](https://files.readme.io/90d0dcc0eba2d7d081ab7d5d4ea697e9257b9107af463fa8c973169f8a2651db-49839256220433.png)
+3. Activa _**Associated Domains**_.
 4. Haz clic en el signo + y agrega tu dominio de clic. Por ejemplo, applinks:click.example.com.
 
 </Accordion>
@@ -176,14 +178,14 @@ Consulta lo siguiente para configurar el SDK para resolver enlaces profundos.
 
 <div id="step-2-for-android-resolve-deep-links" />
 
-<Accordion title="Paso 2 para Android: resolver enlaces profundos">
+<Accordion title="Step 2 for Android: resolve deep links">
 
 El SDK necesita resolver el OneLink detrás del dominio de clic para obtener los detalles de la campaña. Los detalles se devuelven en el método `onAppOpenAttribution`.
 
 Para resolver dominios de clic:
 
 1. Asegúrate de que la versión de tu SDK sea al menos 4.9.0.
-2. Enumera los dominios de clic en la propiedad del SDK `resolveDeepLinkURLs`. Esta propiedad debe configurarse antes de la inicialización del SDK. Para obtener más información, consulta la documentación del SDK <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">aquí</Anchor>.  
+2. Enumera los dominios de clic en la propiedad del SDK `resolveDeepLinkURLs`. Esta propiedad debe configurarse antes de la inicialización del SDK. Para obtener más información, consulta la documentación del SDK <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">aquí</Anchor>.
 
    ```java
    AppsFlyerLib.getInstance().setResolveDeepLinkURLs("clickdomain.com", "myclickdomain.com", "anotherclickdomain.com");
@@ -193,14 +195,14 @@ Para resolver dominios de clic:
 
 <div id="step-2-for-ios-resolve-deep-links" />
 
-<Accordion title="Paso 2 para iOS: resolver enlaces profundos">
+<Accordion title="Step 2 for iOS: resolve deep links">
 
 El SDK necesita resolver el OneLink detrás del dominio de clic para obtener los detalles de la campaña. Los detalles se devuelven en el método `onAppOpenAttribution`.
 
 Para resolver dominios de clic:
 
 1. Asegúrate de que la versión de tu SDK sea al menos 4.9.0.
-2. Enumera los dominios de clic en la propiedad del SDK `resolveDeepLinkURLs`. Esta propiedad debe configurarse antes de la inicialización del SDK. Para obtener más información, consulta la documentación del SDK <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">aquí</Anchor>.  
+2. Enumera los dominios de clic en la propiedad del SDK `resolveDeepLinkURLs`. Esta propiedad debe configurarse antes de la inicialización del SDK. Para obtener más información, consulta la documentación del SDK <Anchor target="_blank" href="/marketers/es/docs/additional-sdk-integration-guide#resolve-wrapped-deep-link-urls">aquí</Anchor>.
 
    <Tabs>
    <Tab title="Objective-C">
@@ -220,7 +222,7 @@ Para resolver dominios de clic:
    </Tab>
    </Tabs>
 
-3. Agrega el siguiente código para que el SDK pueda resolver el dominio de registro de clics:  
+3. Agrega el siguiente código para que el SDK pueda resolver el dominio de registro de clics:
 
    <Tabs>
    <Tab title="Objective-C">
@@ -267,12 +269,12 @@ Para resolver dominios de clic:
 1. Crea una URL de OneLink en la página Administración de enlaces (o manualmente).
 2. Al crear la URL de OneLink, asegúrate de codificar en la URL todos los valores de los parámetros.
 3. Los siguientes parámetros son muy recomendables para usar:
-   * pid (fuente de medios): utiliza una fuente de medios que signifique este uso, por ejemplo, correo electrónico.
-   * c (campaña): el nombre de la campaña que se quiere medir.
-   * af\_dp: el esquema de URI de enlace profundo al que deseas enlazar profundamente a tus usuarios.
-   * af\_web\_dp: dónde redirigir a los usuarios haciendo clic en el enlace en el escritorio.
-   * af\_ios\_url: dónde redirigir a los usuarios que no tienen la aplicación haciendo clic en el enlace en un dispositivo iOS.
-   * af\_android\_url: dónde redirigir a los usuarios que no tienen la aplicación haciendo clic en el enlace en un dispositivo Android.
+   - pid (fuente de medios): utiliza una fuente de medios que signifique este uso, por ejemplo, correo electrónico.
+   - c (campaña): el nombre de la campaña que se quiere medir.
+   - af\_dp: el esquema de URI de enlace profundo al que deseas enlazar profundamente a tus usuarios.
+   - af\_web\_dp: dónde redirigir a los usuarios haciendo clic en el enlace en el escritorio.
+   - af\_ios\_url: dónde redirigir a los usuarios que no tienen la aplicación haciendo clic en el enlace en un dispositivo iOS.
+   - af\_android\_url: dónde redirigir a los usuarios que no tienen la aplicación haciendo clic en el enlace en un dispositivo Android.
 4. Coloca la URL de OneLink en el correo electrónico que crees en Iterable. Ejemplo:
 
    ```http
@@ -280,6 +282,8 @@ Para resolver dominios de clic:
    ```
 
    En este punto, Iterable envuelve el enlace anterior con el dominio de clic que configuraste en los pasos anteriores. Cualquier clic en el dominio de clic redirige al enlace de atribución de OneLink. Si la aplicación está instalada en el dispositivo del usuario, el dominio de clic se enlaza profundamente a la aplicación.
+
+<div id="note" />
 
 > 📘 **Note**
 >

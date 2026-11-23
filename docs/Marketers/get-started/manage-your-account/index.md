@@ -1,6 +1,7 @@
 ---
 title: Gestiona tu cuenta
-excerpt: Gestiona la seguridad de cuenta, usuarios, permisos, facturas, soporte, etc.
+excerpt: >-
+  Gestiona la seguridad de cuenta, usuarios, permisos, facturas, soporte, etc.
 table_of_contents: false
 x-zendesk:
   category: Marketers

@@ -1,8 +1,6 @@
 ---
 title: Plataforma Android
-excerpt: >-
-  Notas de la versión del SDK de Android y otros temas relacionados con la
-  plataforma de Android
+excerpt: Notas de la versión del SDK de Android y otros temas relacionados con la plataforma de Android
 table_of_contents: false
 x-zendesk:
   category: Marketers

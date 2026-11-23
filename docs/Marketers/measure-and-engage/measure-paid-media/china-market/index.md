@@ -1,8 +1,6 @@
 ---
 title: Mercado de China
-excerpt: >-
-  Promociona aplicaciones para Android y iOS en China desde cualquier lugar del
-  mundo
+excerpt: Promociona aplicaciones para Android y iOS en China desde cualquier lugar del mundo
 table_of_contents: false
 x-zendesk:
   category: Marketers

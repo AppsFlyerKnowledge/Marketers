@@ -1,8 +1,6 @@
 ---
 title: Configuración de la red de publicidad del mercado interno de China
-excerpt: >-
-  Configura redes de publicidad nacionales en China para la atribución de
-  AppsFlyer
+excerpt: Configura redes de publicidad nacionales en China para la atribución de AppsFlyer
 table_of_contents: false
 x-zendesk:
   category: Marketers

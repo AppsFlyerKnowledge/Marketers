@@ -21,7 +21,8 @@ x-zendesk:
   locale: es
   section: Other platforms
   section_id: 6551244207121
-  url: https://support.appsflyer.com/hc/es/articles/217183026
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/217183026
 ---
 > **En resumen:** Integra AppsFlyer en aplicaciones desarrolladas con NativeScript para medir la instalación de la app, los eventos in-app, las fuentes de medios y mucho más.
 

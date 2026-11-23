@@ -19,7 +19,8 @@ x-zendesk:
   locale: es
   section: Google Analytics
   section_id: 6551226043793
-  url: https://support.appsflyer.com/hc/es/articles/4413033740817
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/4413033740817
 ---
 > **At a glance:** Configura la integración con Google Analytics mediante dimensiones personalizadas.
 
@@ -29,27 +30,27 @@ x-zendesk:
 
 Hay otro método para enviar los datos de atribución de AppsFlyer a Google Analytics, que se configura en GA y no en el dashboard de AppsFlyer.
 
+<div id="important" />
+
 > 🚧 **Important**
->
-> **Importante:**
 >
 > El método de dimensiones personalizadas **NO SE RECOMIENDA** por lo siguiente:
 >
-> * Integrar Google Analytics a través del Dashboard de AppsFlyer es simple, rápido y fácil
-> * Integrar Google Analytics mediante dimensiones personalizadas es complicado y propenso a errores
-> * Usar dimensiones personalizadas requiere que uses tanto el SDK de AppsFlyer como el SDK de Google Analytics
-> * Usar dimensiones personalizadas tiene más posibilidades de causar discrepancias
+> - Integrar Google Analytics a través del Dashboard de AppsFlyer es simple, rápido y fácil
+> - Integrar Google Analytics mediante dimensiones personalizadas es complicado y propenso a errores
+> - Usar dimensiones personalizadas requiere que uses tanto el SDK de AppsFlyer como el SDK de Google Analytics
+> - Usar dimensiones personalizadas tiene más posibilidades de causar discrepancias
 
 Los anunciantes que usan la nueva <Anchor target="_blank" href="/marketers/es/docs/google-analytics-ga4-integration">integración con Google Analytics</Anchor> no necesitan usar el método de dimensiones personalizadas.
 
+<div id="note" />
+
 > 📘 **Note**
->
-> **Nota:**
 >
 > Este método requiere que integres el SDK de GA en tu App.
 >
-> * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/android/v4/">SDK de GA para Android</Anchor>
-> * <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/ios/v3/">SDK de GA para iOS</Anchor>
+> - <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/android/v4/">SDK de GA para Android</Anchor>
+> - <Anchor target="_blank" href="https://developers.google.com/analytics/devguides/collection/ios/v3/">SDK de GA para iOS</Anchor>
 
 <div id="setting-media-source-as-a-custom-dimension-on-google-analytics" />
 
@@ -62,11 +63,11 @@ Google Analytics tiene una herramienta potente para crear segmentación a nivel 
 ### Paso 1: Defínelo en Google Analytics
 
 1. Selecciona tu aplicación en el menú de GA
-2. Selecciona ***Admin*** en la barra superior del dashboard de GA
-3. En la columna ***PROPERTY***, selecciona ***Custom Definition***
-4. Selecciona ***Dimensiones personalizadas***  
-   <Image align="center" alt="Opción de dimensiones personalizadas en el panel de administración de Google Analytics" src="https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png" />
-5. Crea una nueva dimensión. Llámala **AppsFlyer Media Source** y asegúrate de seleccionar el alcance ***Usuario***. Esto garantiza que los datos se guarden durante varias sesiones. ![ga2.png](https://files.readme.io/b2d85fd068e5523265a2b49b4218234fc77d5896ad41801cbe0e017752763cf2-4413121449873.png)
+2. Selecciona _**Admin**_ en la barra superior del dashboard de GA
+3. En la columna _**PROPERTY**_, selecciona _**Custom Definition**_
+4. Selecciona _**Dimensiones personalizadas**_   <Image align="center" alt="Opción de dimensiones personalizadas en el panel de administración de Google Analytics" src="https://files.readme.io/e475ad1eda5b6338825b712e6c8254f245d5339f50ae40e723f465207e124262-4413121542033.png" />
+5. Crea una nueva dimensión. Llámala **AppsFlyer Media Source** y asegúrate de seleccionar el alcance _**Usuario**_. Esto garantiza que los datos se guarden durante varias sesiones.
+   ![ga2.png](https://files.readme.io/b2d85fd068e5523265a2b49b4218234fc77d5896ad41801cbe0e017752763cf2-4413121449873.png)
 
    Cada dimensión se crea con un índice que debes recordar para poder usarlo más adelante en la API de GA desde tu aplicación. En este ejemplo, el índice de la nueva dimensión es 10.
 
@@ -108,7 +109,7 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 
 </Tab>
 
-<Tab title="apps de iOS,">
+<Tab title="iOS">
 
 ```objectivec
 -(void)onConversionDataSuccess:(NSDictionary*) installData {
@@ -140,7 +141,7 @@ public void onConversionDataSuccess(Map<String, String> conversionData)
 
 ### Paso 3: Ver los resultados en Google Analytics
 
-La mayoría de los reportes de GA tienen una opción para profundizar llamada ***Dimensiones personalizadas***. Puedes seleccionar las dimensiones ***Fuente de medios de AppsFlyer*** o ***Campaña de AppsFlyer*** ([configuradas en el paso 1](/docs/google-analytics-integration-custom-dimensions#paso-1-defínelo-en-google-analytics)) para ver qué fuentes de medios y campañas atraen a los usuarios que instalan tu app.
+La mayoría de los reportes de GA tienen una opción para profundizar llamada _**Dimensiones personalizadas**_. Puedes seleccionar las dimensiones _**Fuente de medios de AppsFlyer**_ o _**Campaña de AppsFlyer**_ ([configuradas en el paso 1](/docs/google-analytics-integration-custom-dimensions#paso-1-defínelo-en-google-analytics)) para ver qué fuentes de medios y campañas atraen a los usuarios que instalan tu app.
 
 <Image align="center" alt="G_analytics1.png" src="https://files.readme.io/dde9219a7a8eec5c861b5031ad741ff7377d85ba9c3693bcbc455fd735f8af2d-4413121449617.png" />
 

@@ -17,7 +17,8 @@ x-zendesk:
   locale: es
   section: Purchase and subscription validation
   section_id: 42227328788241
-  url: https://support.appsflyer.com/hc/es/articles/42120228484241
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/42120228484241
 ---
 > **At a glance:** Entiende cómo AppsFlyer valida compras y suscripciones, y compara las dos soluciones disponibles: Validación de recibos e ingresos de la tienda ROI360.
 
@@ -47,8 +48,8 @@ Utiliza la validación de recibos para tomar decisiones informadas y optimizar c
 
 Para más información, consulta:
 
-* <Anchor target="_blank" href="/marketers/es/docs/about-receipt-validation">Sobre la validación de recibos</Anchor>
-* <Anchor target="_blank" href="/marketers/es/docs/set-up-receipt-validation">Configurar la validación de recibos</Anchor>
+- <Anchor target="_blank" href="/marketers/es/docs/about-receipt-validation">Sobre la validación de recibos</Anchor>
+- <Anchor target="_blank" href="/marketers/es/docs/set-up-receipt-validation">Configurar la validación de recibos</Anchor>
 
 <div id="roi360-store-revenuepremium" />
 
@@ -68,8 +69,8 @@ Utiliza esta solución si necesitas una precisión total de ingresos, insights s
 
 Para más información, consulta:
 
-* <Anchor target="_blank" href="/marketers/es/docs/about-roi360-store-revenue">Sobre Store Revenue de ROI360</Anchor>
-* <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-store-revenue">Configuración de Store Revenue de ROI360</Anchor>
+- <Anchor target="_blank" href="/marketers/es/docs/about-roi360-store-revenue">Sobre Store Revenue de ROI360</Anchor>
+- <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-store-revenue">Configuración de Store Revenue de ROI360</Anchor>
 
 <div id="compare-receipt-validation-and-roi360-store-revenue" />
 
@@ -77,57 +78,57 @@ Para más información, consulta:
 
 Utiliza las tablas a continuación para determinar qué solución se adapta mejor a tus necesidades.
 
-<Accordion title="Comparar características">
+<Accordion title="Compare features">
 
-| **Función** | **Validación de recibos** | **Ingresos de la tienda ROI360** Premium |
-| --- | --- | --- |
-| **Validación de recibos**  <br />Verifica las compras in-app para filtrar las transacciones fraudulentas. | ✔ | ✔ |
-| **Detección automatizada de compras & deduplicación**  <br />Detecta automáticamente las compras in-app (IAP) y las suscripciones, incluidas las transacciones de suscriptores existentes, y elimina los duplicados para generar reportes más limpios. | ✖ | ✔ |
-| **Gestión de reembolsos**  <br />Detecta los reembolsos y los atribuye a la compra original para reflejar los ingresos reales. | ✖ | ✔<sup>*</sup> |
-| **Medición completa de IAP**  <br />Gestiona el uso compartido en familia y reporta el resultado final de las compras pendientes mediante la confirmación de App Store. | ✖ | ✔ |
-| **Cobertura completa del funnel de suscripción**  <br />Mide renovaciones, mejoras y conversiones para reflejar el valor total de tu base de suscriptores. | ✖ | ✔ |
-| **Cálculo de ingresos netos**  <br />Calcula tanto los ingresos brutos como los netos deduciendo automáticamente las comisiones de la tienda y los impuestos. | ✖ | ✔ |
+| **Función**                                                                                                                                                                                                                                            | **Validación de recibos** | **Ingresos de la tienda ROI360** Premium |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- | ---------------------------------------- |
+| **Validación de recibos**  <br />Verifica las compras in-app para filtrar las transacciones fraudulentas.                                                                                                                                              | ✔                         | ✔                                        |
+| **Detección automatizada de compras & deduplicación**  <br />Detecta automáticamente las compras in-app (IAP) y las suscripciones, incluidas las transacciones de suscriptores existentes, y elimina los duplicados para generar reportes más limpios. | ✖                         | ✔                                        |
+| **Gestión de reembolsos**  <br />Detecta los reembolsos y los atribuye a la compra original para reflejar los ingresos reales.                                                                                                                         | ✖                         | ✔<sup>\*</sup>                           |
+| **Medición completa de IAP**  <br />Gestiona el uso compartido en familia y reporta el resultado final de las compras pendientes mediante la confirmación de App Store.                                                                                | ✖                         | ✔                                        |
+| **Cobertura completa del funnel de suscripción**  <br />Mide renovaciones, mejoras y conversiones para reflejar el valor total de tu base de suscriptores.                                                                                             | ✖                         | ✔                                        |
+| **Cálculo de ingresos netos**  <br />Calcula tanto los ingresos brutos como los netos deduciendo automáticamente las comisiones de la tienda y los impuestos.                                                                                          | ✖                         | ✔                                        |
 
-<sup>*</sup> La gestión de reembolsos **para compras in-app** solo está disponible en el plan ROI360 Advanced.
-
-</Accordion>
-
-<Accordion title="Compara el soporte de eventos de compra in-app">
-
-| **Event name** | **Validación de recibos** | **Ingresos de la tienda ROI360** |
-| --- | --- | --- |
-| af\_compra | ✔ | ✔ |
-| af\_purchase\_refund<sup>*</sup> | ✖ | ✔ |
-| af\_purchase\_pending | ✖ | ✔ |
-| af\_purchase\_canceled<sup>*</sup> | ✖ | ✔ |
-| af\_purchase\_free | ✖ | ✔ |
-| af\_purchase\_sandbox\_sdk | ✔ | ✔ |
-| af\_purchase\_sandbox\_s2s<sup>*</sup> | ✖ | ✔ |
-
-<sup>*</sup> Disponible solo en el plan ROI360 Advanced.
+<sup>\*</sup> La gestión de reembolsos **para compras in-app** solo está disponible en el plan ROI360 Advanced.
 
 </Accordion>
 
-<Accordion title="Compara el soporte de eventos relacionados con suscripciones">
+<Accordion title="Compare in-app purchase event support">
 
-| **Event name** | **Validación de recibos** | **Ingresos de la tienda ROI360** |
-| --- | --- | --- |
-| af\_ars\_trial\_started | ✔ | ✔ |
-| af\_ars\_trial\_canceled | ✖ | ✔ |
-| af\_ars\_trial\_churned | ✖ | ✔ |
-| af\_ars\_trial\_converted | ✖ | ✔ |
-| af\_ars\_subscription\_started | ✔ | ✔ |
-| af\_ars\_subscription\_canceled | ✖ | ✔ |
-| af\_ars\_subscription\_paused | ✖ | ✔ |
-| af\_ars\_subscription\_resumed | ✖ | ✔ |
-| af\_ars\_subscription\_churned | ✖ | ✔ |
-| af\_ars\_subscription\_refunded | ✖ | ✔ |
-| af\_ars\_subscription\_billing\_grace | ✖ | ✔ |
-| af\_ars\_subscription\_renewed | ✖ | ✔ |
-| af\_ars\_subscription\_xgraded | ✖ | ✔ |
-| af\_ars\_existing\_subscriber | ✖ | ✔ |
-| af\_ars\_sandbox\_sdk | ✔ | ✔ |
-| af\_ars\_sandbox\_s2s | ✖ | ✔ |
+| **Event name**                          | **Validación de recibos** | **Ingresos de la tienda ROI360** |
+| --------------------------------------- | ------------------------- | -------------------------------- |
+| af\_compra                              | ✔                         | ✔                                |
+| af\_purchase\_refund<sup>\*</sup>       | ✖                         | ✔                                |
+| af\_purchase\_pending                   | ✖                         | ✔                                |
+| af\_purchase\_canceled<sup>\*</sup>     | ✖                         | ✔                                |
+| af\_purchase\_free                      | ✖                         | ✔                                |
+| af\_purchase\_sandbox\_sdk              | ✔                         | ✔                                |
+| af\_purchase\_sandbox\_s2s<sup>\*</sup> | ✖                         | ✔                                |
+
+<sup>\*</sup> Disponible solo en el plan ROI360 Advanced.
+
+</Accordion>
+
+<Accordion title="Compare subscription-related event support">
+
+| **Event name**                        | **Validación de recibos** | **Ingresos de la tienda ROI360** |
+| ------------------------------------- | ------------------------- | -------------------------------- |
+| af\_ars\_trial\_started               | ✔                         | ✔                                |
+| af\_ars\_trial\_canceled              | ✖                         | ✔                                |
+| af\_ars\_trial\_churned               | ✖                         | ✔                                |
+| af\_ars\_trial\_converted             | ✖                         | ✔                                |
+| af\_ars\_subscription\_started        | ✔                         | ✔                                |
+| af\_ars\_subscription\_canceled       | ✖                         | ✔                                |
+| af\_ars\_subscription\_paused         | ✖                         | ✔                                |
+| af\_ars\_subscription\_resumed        | ✖                         | ✔                                |
+| af\_ars\_subscription\_churned        | ✖                         | ✔                                |
+| af\_ars\_subscription\_refunded       | ✖                         | ✔                                |
+| af\_ars\_subscription\_billing\_grace | ✖                         | ✔                                |
+| af\_ars\_subscription\_renewed        | ✖                         | ✔                                |
+| af\_ars\_subscription\_xgraded        | ✖                         | ✔                                |
+| af\_ars\_existing\_subscriber         | ✖                         | ✔                                |
+| af\_ars\_sandbox\_sdk                 | ✔                         | ✔                                |
+| af\_ars\_sandbox\_s2s                 | ✖                         | ✔                                |
 
 </Accordion>
 

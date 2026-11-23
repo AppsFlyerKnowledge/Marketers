@@ -1,8 +1,7 @@
 ---
 title: Optimización creativa
 excerpt: >-
-  Analiza tu rendimiento creativo para obtener insights críticos antes de
-  planificar, seleccionar o producir tu próximo lote de creatividades
+  Analiza tu rendimiento creativo para obtener insights críticos antes de planificar, seleccionar o producir tu próximo lote de creatividades
 table_of_contents: false
 x-zendesk:
   category: Marketers

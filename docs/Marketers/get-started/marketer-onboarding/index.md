@@ -1,6 +1,7 @@
 ---
 title: Onboarding de marketers
-excerpt: Descubre las ventajas de AppsFlyer con un breve video y una guía paso a paso
+excerpt: >-
+  Descubre las ventajas de AppsFlyer con un breve video y una guía paso a paso
 table_of_contents: false
 x-zendesk:
   category: Marketers

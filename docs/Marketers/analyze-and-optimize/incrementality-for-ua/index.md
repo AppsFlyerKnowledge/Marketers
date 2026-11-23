@@ -1,8 +1,7 @@
 ---
 title: Incrementalidad para UA
 excerpt: >-
-  Ejecuta experimentos para comprender el impacto real de tus campañas de
-  adquisición de usuarios (UA)
+  Ejecuta experimentos para comprender el impacto real de tus campañas de adquisición de usuarios (UA)
 table_of_contents: false
 x-zendesk:
   category: Marketers

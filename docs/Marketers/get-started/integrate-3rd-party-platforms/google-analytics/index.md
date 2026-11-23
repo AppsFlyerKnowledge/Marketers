@@ -10,7 +10,8 @@ x-zendesk:
   locale: es
   parent_section_id: 6551084534545
   type: section
-  url: https://support.appsflyer.com/hc/es/sections/6551226043793-Google-Analytics
+  url: >-
+    https://support.appsflyer.com/hc/es/sections/6551226043793-Google-Analytics
 ---
 - [Integración con Google Analytics (GA4)](/docs/google-analytics-ga4-integration)
 - [Integración de Google Analytics—dimensiones personalizadas](/docs/google-analytics-integration-custom-dimensions)

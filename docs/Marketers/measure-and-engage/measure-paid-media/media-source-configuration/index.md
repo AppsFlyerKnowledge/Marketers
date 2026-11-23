@@ -1,8 +1,7 @@
 ---
 title: Configuraciones de fuente de medios
 excerpt: >-
-  Estructura de enlaces de atribución y guías de configuración para trabajar con
-  partners integrados
+  Estructura de enlaces de atribución y guías de configuración para trabajar con partners integrados
 table_of_contents: false
 x-zendesk:
   category: Marketers
