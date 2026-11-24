@@ -1,8 +1,6 @@
 ---
 title: Mide los medios pagados
-excerpt: >-
-  Configura fuentes de medios pagadas y SKAdNetwork para la medición de
-  atribución
+excerpt: Configura fuentes de medios pagadas y SKAdNetwork para la medición de atribución
 table_of_contents: false
 x-zendesk:
   category: Marketers

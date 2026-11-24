@@ -1,8 +1,6 @@
 ---
 title: Solución SKAN
-excerpt: >-
-  Todo sobre la atribución en iOS: nuestra solución SKAN, Conversion Studio, ATT
-  y LAT
+excerpt: 'Todo sobre la atribución en iOS: nuestra solución SKAN, Conversion Studio, ATT y LAT'
 table_of_contents: false
 x-zendesk:
   category: Marketers
@@ -12,8 +10,7 @@ x-zendesk:
   locale: es
   parent_section_id: 6550990672401
   type: section
-  url: >-
-    https://support.appsflyer.com/hc/es/sections/6552135379985-Soluci%C3%B3n-SKAN
+  url: https://support.appsflyer.com/hc/es/sections/6552135379985-Soluci%C3%B3n-SKAN
 ---
 - [Plantillas de esquemas de conversión de SKAN](/docs/skan-conversion-schema-templates)
 - [Guía de la solución SKAdNetwork (SKAN)](/docs/skadnetwork-skan-solution-guide)

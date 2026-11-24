@@ -1,8 +1,6 @@
 ---
 title: Aspectos básicos de AppsFlyer
-excerpt: >-
-  Revisa conceptos de atribución, de la plataforma AppsFlyer, trabaja con
-  agencias
+excerpt: Revisa conceptos de atribución, de la plataforma AppsFlyer, trabaja con agencias
 table_of_contents: false
 x-zendesk:
   category: Marketers

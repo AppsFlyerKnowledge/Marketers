@@ -1,8 +1,6 @@
 ---
 title: Analíticas de ingresos
-excerpt: >-
-  Mide los ingresos generados por compras in-app, visualizaciones de anuncios y
-  suscripciones
+excerpt: Mide los ingresos generados por compras in-app, visualizaciones de anuncios y suscripciones
 table_of_contents: false
 x-zendesk:
   category: Marketers

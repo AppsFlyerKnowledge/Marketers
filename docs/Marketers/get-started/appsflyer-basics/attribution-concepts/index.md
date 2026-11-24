@@ -1,8 +1,6 @@
 ---
 title: Conceptos de atribución
-excerpt: >-
-  Comprende el modelo de atribución de AppsFlyer, términos, paneles de control y
-  pruebas A/B
+excerpt: Comprende el modelo de atribución de AppsFlyer, términos, paneles de control y pruebas A/B
 table_of_contents: false
 x-zendesk:
   category: Marketers

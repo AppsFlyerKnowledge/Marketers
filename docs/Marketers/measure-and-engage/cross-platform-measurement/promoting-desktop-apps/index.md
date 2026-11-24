@@ -1,8 +1,6 @@
 ---
 title: Promoción de aplicaciones de escritorio
-excerpt: >-
-  Cómo promover y medir la atribución de tus aplicaciones de escritorio desde
-  cualquier lugar
+excerpt: Cómo promover y medir la atribución de tus aplicaciones de escritorio desde cualquier lugar
 table_of_contents: false
 x-zendesk:
   category: Marketers

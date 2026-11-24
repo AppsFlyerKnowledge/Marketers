@@ -17,7 +17,8 @@ x-zendesk:
   locale: es
   section: Email service providers
   section_id: 6551247620881
-  url: https://support.appsflyer.com/hc/es/articles/45235709425553
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/45235709425553
 ---
 > **De un vistazo:** Configura una integración con Bloomreach para habilitar Deep Linking sin interrupciones desde campañas de correo electrónico, medir el tráfico tanto en Bloomreach como en AppsFlyer y crear experiencias de usuario que impulsen la conversión.
 
@@ -39,7 +40,7 @@ Configurar la integración requiere acciones tanto en AppsFlyer como en Bloomrea
 
 <div id="step-1-in-appsflyer-create-and-configure-onelink" />
 
-<Accordion title="Paso 1: En AppsFlyer, crea y configura OneLink">
+<Accordion title="Step 1: In AppsFlyer, create and configure OneLink">
 
 Primero, configura OneLink en AppsFlyer y confirma que la configuración necesaria de alojamiento y dominio esté implementada.
 
@@ -58,8 +59,8 @@ Define el comportamiento de redirección para los usuarios que ya tienen tu app 
 
 #### Hosting y SSL
 
-* Los enlaces de OneLink están protegidos con SSL y alojados por AppsFlyer.
-* El archivo AASA y los archivos de App Link también están alojados por AppsFlyer.
+- Los enlaces de OneLink están protegidos con SSL y alojados por AppsFlyer.
+- El archivo AASA y los archivos de App Link también están alojados por AppsFlyer.
 
 Consulta <Anchor target="_blank" href="/marketers/es/docs/set-up-your-esp-integration-with-appsflyer#configura-tu-aplicación-para-soportar-deep-linking">información e instrucciones adicionales.</Anchor>
 
@@ -79,7 +80,7 @@ Consulta <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/dl_ios_
 
 <div id="step-2-in-bloomreach-define-a-universal-link-domain" />
 
-<Accordion title="Paso 2: En Bloomreach, define un dominio de Universal Link">
+<Accordion title="Step 2: In Bloomreach, define a Universal Link domain">
 
 A continuación, define un dominio de Universal Link en Bloomreach para que los enlaces puedan dar soporte a Deep Linking sin dejar de medirse.
 
@@ -105,7 +106,7 @@ Consulta <Anchor target="_blank" href="https://documentation.bloomreach.com/enga
 
 <div id="step-3-in-bloomreach-implement-mobile-and-web-sdks" />
 
-<Accordion title="Paso 3: Implementa los SDK móviles y web de Bloomreach">
+<Accordion title="Step 3: In Bloomreach, implement mobile and web SDKs">
 
 Por último, implementa los SDK de Bloomreach correspondientes para garantizar que la medición de clics funcione correctamente en las aplicaciones móviles y en la web.
 
@@ -117,11 +118,15 @@ Implementa el <Anchor target="_blank" href="https://documentation.bloomreach.com
 
 Consulta información adicional e instrucciones sobre <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/ios-sdk-universal-links#track-universal-links">los enlaces Universal</Anchor> y los <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">SDK móviles.</Anchor>
 
+<div id="android" />
+
 #### Android
+
+Consulta información adicional e instrucciones sobre <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/android-sdk-app-links#track-android-app-links">Android App Links</Anchor> y los <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">SDK móviles.</Anchor>
 
 Implementa el <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">SDK móvil</Anchor> de Bloomreach para Android y configura los App Links de forma similar a los enlaces Universal de iOS para garantizar la atribución de clics y la coherencia de la medición.
 
-Consulta información adicional e instrucciones sobre <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/android-sdk-app-links#track-android-app-links">Android App Links</Anchor> y los <Anchor target="_blank" href="https://documentation.bloomreach.com/engagement/docs/mobile-sdks">SDK móviles.</Anchor>
+<div id="web" />
 
 #### Web
 
@@ -133,7 +138,7 @@ Consulta <Anchor target="_blank" href="https://documentation.bloomreach.com/enga
 
 <div id="step-4-test-the-integration-by-sending-a-test-email" />
 
-<Accordion title="Paso 4: Prueba la integración">
+<Accordion title="Step 4: Test the integration">
 
 Cuando completes la configuración, envía un correo electrónico de prueba para validar la integración y confirmar que el Deep Linking y la medición de clics funcionan como se espera.
 
@@ -147,8 +152,8 @@ Cuando completes la configuración, envía un correo electrónico de prueba para
 
    Desde tu dispositivo móvil, abre el correo electrónico y haz clic en el enlace. Confirma que:
 
-   * Si la aplicación está instalada, se abre y hace Deep Linking al contenido esperado dentro de la aplicación.
-   * El clic aparece en el panel de analíticas de Bloomreach.
+   - Si la aplicación está instalada, se abre y hace Deep Linking al contenido esperado dentro de la aplicación.
+   - El clic aparece en el panel de analíticas de Bloomreach.
 
 Cuando se completen todas las validaciones, la configuración de la integración estará completa.
 
@@ -164,9 +169,9 @@ Cuando se completen todas las validaciones, la configuración de la integración
 
 > 📘 **Notas importantes**
 >
-> * AppsFlyer aloja y protege todos los archivos de asociación y OneLink pertinentes, incluidos los archivos AASA y App Link.
-> * Los SDK de Bloomreach para iOS, Android y JavaScript deben implementarse correctamente para que funcione la medición de enlaces.
-> * Universal Links y App Links deben permanecer sin encapsular, con los parámetros de Bloomreach añadidos automáticamente.
-> * Esta integración permite una atribución precisa de los clics de correo electrónico a app y de correo electrónico a web, así como la medición del engagement entre canales.
+> - AppsFlyer aloja y protege todos los archivos de asociación y OneLink pertinentes, incluidos los archivos AASA y App Link.
+> - Los SDK de Bloomreach para iOS, Android y JavaScript deben implementarse correctamente para que funcione la medición de enlaces.
+> - Universal Links y App Links deben permanecer sin encapsular, con los parámetros de Bloomreach añadidos automáticamente.
+> - Esta integración permite una atribución precisa de los clics de correo electrónico a app y de correo electrónico a web, así como la medición del engagement entre canales.
 
 <div data-zendesk-anchors="about-the-integration=sobre-la-integraci%C3%B3n h_01KMWVJR5AQRY8YRAD6ZV6H1VV=sobre-la-integraci%C3%B3n set-up-the-integration=configura-la-integraci%C3%B3n h_01KMWVJR5ACS7Q1GKP1GGGBRYK=configura-la-integraci%C3%B3n h_01KMWVJR5ABTK766X4G0B9J92E=step-1-in-appsflyer-create-and-configure-onelink when-your-app-is-installed=cuando-la-aplicaci%C3%B3n-est%C3%A1-instalada h_01KMWVJR5AY8WRV4Y6GTWHDE5D=cuando-la-aplicaci%C3%B3n-est%C3%A1-instalada hosting-and-ssl=hosting-y-ssl h_01KMWVJR5A40099PC91YW2QR1D=hosting-y-ssl app-domain-definition=definici%C3%B3n-del-dominio-de-la-aplicaci%C3%B3n h_01KMWVJR5A7JV0FHC5W1EP9502=definici%C3%B3n-del-dominio-de-la-aplicaci%C3%B3n h_01KMWVJR5A57Y1ZPAYBC5321DX=step-2-in-bloomreach-define-a-universal-link-domain h_01KMWVJR5BER86B8YV3H60PGF6=ejemplo h_01KMWVJR5B6K6EG49VJM7JSEK2=step-3-in-bloomreach-implement-mobile-and-web-sdks ios=apps-de-ios h_01KMWVJR5B3505FSJSXRC9NQ4A=apps-de-ios h_01KMWVJR5BE703X877C40DZ5MX=android h_01KMWVJR5BVTXS8W2WGTYEGP0D=web h_01KMWVJR5BPA0N2YTK2983DHMT=step-4-test-the-integration-by-sending-a-test-email h_01KMWVJR5B6PHSEK7NA5W8ZGNF=advertencia h_01KN1TCDE27DNPJJ8HRHZ4FPA0=notas-importantes" />

@@ -20,9 +20,10 @@ x-zendesk:
   locale: es
   section: Bulletins
   section_id: 6551161473041
-  url: https://support.appsflyer.com/hc/es/articles/360003090618
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/360003090618
 ---
 > **Resumen:** Notas de la versión de los SDK de iOS y Android.
 
-* <Anchor target="_blank" href="/marketers/es/docs/appsflyer-ios-sdk-release-notes">apps de iOS,</Anchor>
-* <Anchor target="_blank" href="/marketers/es/docs/appsflyer-android-sdk-release-notes">Android</Anchor>
+- <Anchor target="_blank" href="/marketers/es/docs/appsflyer-ios-sdk-release-notes">apps de iOS,</Anchor>
+- <Anchor target="_blank" href="/marketers/es/docs/appsflyer-android-sdk-release-notes">Android</Anchor>

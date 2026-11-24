@@ -1,8 +1,6 @@
 ---
 title: Eventos in-app
-excerpt: >-
-  Campos de eventos in-app, ID de usuario de cliente y eventos in-app para cada
-  vertical
+excerpt: Campos de eventos in-app, ID de usuario de cliente y eventos in-app para cada vertical
 table_of_contents: false
 x-zendesk:
   category: Marketers

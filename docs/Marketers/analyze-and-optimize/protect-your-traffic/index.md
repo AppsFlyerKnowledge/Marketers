@@ -1,6 +1,7 @@
 ---
 title: Protege tu tráfico
-excerpt: Configura reglas de validación y alertas de Protect360 y protégete del fraude
+excerpt: >-
+  Configura reglas de validación y alertas de Protect360 y protégete del fraude
 table_of_contents: false
 x-zendesk:
   category: Marketers

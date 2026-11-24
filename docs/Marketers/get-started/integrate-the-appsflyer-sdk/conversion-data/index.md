@@ -1,8 +1,6 @@
 ---
 title: Datos de conversión
-excerpt: >-
-  Cargas útiles de datos de conversión y escenarios de adquisición de usuarios y
-  retargeting
+excerpt: Cargas útiles de datos de conversión y escenarios de adquisición de usuarios y retargeting
 table_of_contents: false
 x-zendesk:
   category: Marketers

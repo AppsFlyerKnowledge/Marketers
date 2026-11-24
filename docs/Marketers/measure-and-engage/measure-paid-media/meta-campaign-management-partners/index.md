@@ -1,8 +1,7 @@
 ---
 title: Partners de gestión de campañas de Meta
 excerpt: >-
-  Envía postbacks a los partners de gestión de campañas de Meta para optimizar
-  tus campañas de Anuncios de Meta
+  Envía postbacks a los partners de gestión de campañas de Meta para optimizar tus campañas de Anuncios de Meta
 table_of_contents: false
 x-zendesk:
   category: Marketers

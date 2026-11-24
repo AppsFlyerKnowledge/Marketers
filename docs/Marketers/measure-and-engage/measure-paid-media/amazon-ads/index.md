@@ -10,8 +10,7 @@ x-zendesk:
   locale: es
   parent_section_id: 6550990672401
   type: section
-  url: >-
-    https://support.appsflyer.com/hc/es/sections/28703975923729-Anuncios-de-Amazon
+  url: https://support.appsflyer.com/hc/es/sections/28703975923729-Anuncios-de-Amazon
 ---
 - [\[Beta cerrada\] Configuración de campañas de Amazon Ads](/docs/amazon-ads-campaign-configuration)
 - [Discrepancias de atribución entre Amazon Ads y AppsFlyer](/docs/attribution-discrepancies-between-amazon-ads-and-appsflyer)

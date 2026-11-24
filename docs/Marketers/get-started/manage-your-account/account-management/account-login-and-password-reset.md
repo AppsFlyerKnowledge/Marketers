@@ -17,7 +17,8 @@ x-zendesk:
   locale: es
   section: Account management
   section_id: 6551191075473
-  url: https://support.appsflyer.com/hc/es/articles/33114514624273
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/33114514624273
 ---
 > **Resumen:** Inicia sesión en AppsFlyer, añade varias cuentas y restablece las contraseñas de los usuarios.
 
@@ -29,10 +30,9 @@ Instrucciones de inicio de sesión para usuarios nuevos y existentes. Esto inclu
 
 **Nota**: Para ver instrucciones sobre cómo crear un usuario, consulta <Anchor target="_blank" href="/marketers/es/docs/user-management#creating-users">aquí</Anchor>.
 
-
 <div id="logging-in-for-the-first-time" />
 
-<Accordion title="Iniciar sesión por primera vez">
+<Accordion title="Logging in for the first time">
 
 Tanto si acabas de registrarte como si te acaban de invitar a AppsFlyer, recibirás un correo electrónico con un enlace de activación.
 
@@ -53,15 +53,15 @@ Para iniciar sesión en AppsFlyer:
 
 <div id="existing-users" />
 
-<Accordion title="Usuarios existentes">
+<Accordion title="Existing users">
 
 Los usuarios existentes pueden iniciar sesión en AppsFlyer desde la <Anchor target="_blank" href="https://hq1.appsflyer.com/auth/login">página principal de login</Anchor>.
 
 Puedes iniciar sesión en AppsFlyer con lo siguiente:
 
-* Credenciales (nombre de usuario y contraseña)
-* Login de Google
-* <Anchor target="_blank" href="/marketers/es/docs/sso-authentication">Inicio de sesión único</Anchor>
+- Credenciales (nombre de usuario y contraseña)
+- Login de Google
+- <Anchor target="_blank" href="/marketers/es/docs/sso-authentication">Inicio de sesión único</Anchor>
 
 **Nota**: Si tu administrador configuró una <Anchor target="_blank" href="/marketers/es/docs/implementing-and-using-2fa-login">autenticación de dos factores (2FA)</Anchor> para tu cuenta, se te pedirá que verifiques el login mediante otro método de autenticación.
 
@@ -69,7 +69,7 @@ Puedes iniciar sesión en AppsFlyer con lo siguiente:
 
 <div id="twofactor-authentication-2fa" />
 
-<Accordion title="Autenticación de dos factores (2FA)">
+<Accordion title="Two-factor authentication (2FA)">
 
 Si la 2FA está habilitada en la configuración de gestión de seguridad, se activará después de tu login inicial.
 
@@ -85,7 +85,7 @@ Restablecimiento de contraseña para usuarios existentes y usuarios que no compl
 
 <div id="existing-users-and-invited-users-who-have-not-activated-yet" />
 
-<Accordion title="Usuarios existentes y usuarios invitados que todavía no se han activado">
+<Accordion title="Existing users and invited users who have not activated yet">
 
 Para restablecer tu contraseña:
 
@@ -102,7 +102,7 @@ Para restablecer tu contraseña:
 
 <div id="users-who-have-not-completed-the-initial-registration" />
 
-<Accordion title="Usuarios que no han completado el registro inicial">
+<Accordion title="Users who have not completed the initial registration">
 
 Al registrarte en AppsFlyer, se te envió una invitación por correo electrónico. El enlace de activación del correo electrónico es válido durante 7 días. Para completar el registro, haz lo siguiente:
 
@@ -116,7 +116,7 @@ Al registrarte en AppsFlyer, se te envió una invitación por correo electrónic
 
 <div id="resetting-twofactor-authentication-2fa" />
 
-<Accordion title="Restablecer la autenticación de dos factores (2FA) de un usuario">
+<Accordion title="Reset a user's two-factor authentication (2FA)">
 
 Si tu cuenta usa 2FA, puede haber ocasiones en las que necesites restablecer la configuración 2FA de un usuario. Hazlo de la siguiente manera:
 

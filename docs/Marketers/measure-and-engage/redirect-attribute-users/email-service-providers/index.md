@@ -1,8 +1,6 @@
 ---
 title: Proveedores de servicios de correo electrónico
-excerpt: >-
-  Integra AppsFlyer con los principales proveedores de servicios de correo
-  electrónico (ESP)
+excerpt: Integra AppsFlyer con los principales proveedores de servicios de correo electrónico (ESP)
 table_of_contents: false
 x-zendesk:
   category: Marketers

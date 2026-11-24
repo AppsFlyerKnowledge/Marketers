@@ -21,7 +21,8 @@ x-zendesk:
   locale: es
   section: Owned media attribution
   section_id: 6551214397585
-  url: https://support.appsflyer.com/hc/es/articles/4410480466065
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/4410480466065
 ---
 > **At a glance:** Implementa código adicional en el SDK de AppsFlyer para habilitar la atribución de promoción cruzada.
 
@@ -29,11 +30,11 @@ x-zendesk:
 
 ## Implementar la atribución de promoción cruzada en el SDK
 
+<div id="note" />
+
 > 📘 **Note**
 >
-> **Nota:**
->
-> Los anuncios móviles normales activan una URL cuando se hace clic en ellos. Los anuncios móviles de promoción cruzada no tienen un enlace; en su lugar, activan el método ***logAndOpenStore*** del SDK de AppsFlyer.
+> Los anuncios móviles normales activan una URL cuando se hace clic en ellos. Los anuncios móviles de promoción cruzada no tienen un enlace; en su lugar, activan el método _**logAndOpenStore**_ del SDK de AppsFlyer.
 
 La atribución de clics e impresiones de promoción cruzada se realiza mediante dos llamadas independientes a la API, como se describe a continuación. En cada llamada a la API también puedes pasar un mapa de valores de clave que puede contener cualquier dato que se ajuste a tu caso de uso de promoción cruzada.
 
@@ -62,7 +63,7 @@ CrossPromotionHelper.logAndOpenStore(this, "com.mygosoftware.android.loginbox", 
 
 </Tab>
 
-<Tab title="apps de iOS,">
+<Tab title="iOS">
 
 iOS te permite utilizar el componente StoreKit para abrir la App Store sin salir del contexto de tu aplicación. El siguiente fragmento de código muestra cómo abrir la clase StoreKit y comprobar que se ha inicializado correctamente. Puedes leer más sobre la documentación de StoreKit <Anchor target="_blank" href="https://developer.apple.com/reference/storekit/skstoreproductviewcontroller">aquí</Anchor>.
 
@@ -146,9 +147,9 @@ En iOS, se genera un enlace de atribución y se devuelve al método `onOpenStore
 </Tab>
 </Tabs>
 
+<div id="note-1" />
+
 > 📘 **Note**
->
-> **Nota**
 >
 > Puedes añadir cualquiera de estos <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters#parámetros-del-enlace-de-atribución">parámetros de enlace de atribución</Anchor> al enlace generado.
 
@@ -235,16 +236,16 @@ AppsFlyer.recordCrossPromoteImpression(string promotedAppID, string campaign);
 
 Actualmente, las API de atribución de promoción cruzada solo están disponibles para los SDK nativos de Android e iOS y para Unity. Sin embargo, **las plataformas no nativas pueden realizar la atribución de promoción cruzada con la misma eficacia.** Entre ellas se incluyen plataformas como Adobe air, Cordova, Xamarin, React native, Marmalade, etc.
 
-**Para ello, debes crear un enlace de atribución, que se activa cuando el usuario hace clic en el anuncio de promoción cruzada**. El enlace DEBE contener el nombre de la fuente de medios ***af\_cross\_promotion*** y el ID del sitio de la aplicación de origen.
+**Para ello, debes crear un enlace de atribución, que se activa cuando el usuario hace clic en el anuncio de promoción cruzada**. El enlace DEBE contener el nombre de la fuente de medios _**af\_cross\_promotion**_ y el ID del sitio de la aplicación de origen.
 
-Formato de URL de clics de promoción cruzada:
+Formato de URL de impresiones de promoción cruzada:
 
 ```http
 https://{PREFIX}.app.appsflyersdk.com/{PROMOTED APP ID}?pid=af_cross_promotion&
 af_siteid={SOURCE APP NAME}
 ```
 
-Formato de URL de impresiones de promoción cruzada:
+Formato de URL de clics de promoción cruzada:
 
 ```http
 https://impression.appsflyer.com/{PROMOTED APP ID}?pid=af_cross_promotion&

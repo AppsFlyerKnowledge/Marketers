@@ -1,5 +1,5 @@
 ---
-title: 'Audiencias: usa eventos de Braze en la creación de audiencias'
+title: "Audiencias: usa eventos de Braze en la creación de audiencias"
 metadata:
   keywords:
     - Advertisers
@@ -19,18 +19,21 @@ x-zendesk:
   locale: es
   section: Audiences
   section_id: 6551336428945
-  url: https://support.appsflyer.com/hc/es/articles/4411130243217
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/4411130243217
 ---
 > **At a glance:** Envía eventos de interacción de mensajes de Braze a AppsFlyer Audiences y utilízalos para definir con más precisión tus audiencias.
 
 Al establecer una conexión entrante entre tu cuenta de Braze y AppsFlyer Audiences, traspasas los datos de eventos de participación de mensajes de Braze a Audiences. Luego puedes utilizar estos datos en <Anchor target="_blank" href="/marketers/es/docs/audiences-guide#todo-sobre-los-conjuntos-de-reglas">conjuntos de reglas</Anchor> al definir audiencias.
 
+<div id="important" />
+
 > 🚧 **Important**
 >
 > **Prerrequisitos**
 >
-> * Es necesario que los SDK de Braze y AppsFlyer estén integrados en tu aplicación.
-> * Debes registrarte en la función **Currents** en Braze.
+> - Es necesario que los SDK de Braze y AppsFlyer estén integrados en tu aplicación.
+> - Debes registrarte en la función **Currents** en Braze.
 
 <div id="set-up-the-braze-incoming-connection" />
 
@@ -42,12 +45,12 @@ Hay 3 pasos principales para configurar la conexión entrante de Braze:
 2. [Crear una conexión entrante en AppsFlyer](/docs/audiences-use-braze-events-in-audience-creation#create-an-incoming-braze-connection-in-appsflyer)
 3. [Crear una Current en Braze](/docs/audiences-use-braze-events-in-audience-creation#create-a-current-in-braze)
 
-<Accordion title="Configurar el SDK de AppsFlyer">
+<Accordion title="Set up the AppsFlyer SDK">
 
 Para crear una conexión entrante desde Braze, el SDK de AppsFlyer en tus aplicaciones debe estar configurado para pasar el **ID Externo de Braze** de cada usuario a AppsFlyer. Puedes hacerlo utilizando cualquiera de las dos opciones siguientes:
 
-* Parámetro ID externo de Braze
-* Campo CUID
+- Parámetro ID externo de Braze
+- Campo CUID
 
 <div id="using-a-braze-external-id-parameter" />
 
@@ -66,7 +69,7 @@ AppsFlyerLib.getInstance().setPartnerData("braze_int", brazeData);
 
 </Tab>
 
-<Tab title="apps de iOS,">
+<Tab title="iOS">
 
 ```objectivec
 NSDictionary *brazeInfo = @{
@@ -85,14 +88,14 @@ partnerInfo:brazeInfo];
 
 No es necesario configurar un parámetro dedicado para el ID Externo de Braze si:
 
-* Has configurado el SDK para enviar a AppsFlyer un <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">CUID</Anchor> para cada usuario
-* El CUID tiene el mismo valor que el ID externo de Braze External.
+- Has configurado el SDK para enviar a AppsFlyer un <Anchor target="_blank" href="/marketers/es/docs/customer-user-id-field-cuid">CUID</Anchor> para cada usuario
+- El CUID tiene el mismo valor que el ID externo de Braze External.
 
 En este caso, simplemente puedes seleccionar la **opción CUID** como parámetro del SDK al [crear tu conexión entrante de Braze](/docs/audiences-use-braze-events-in-audience-creation#create-an-incoming-braze-connection-in-appsflyer).
 
 </Accordion>
 
-<Accordion title="Crear una conexión entrante de Braze en AppsFlyer">
+<Accordion title="Create an incoming Braze connection in AppsFlyer">
 
 **Sigue estos pasos para crear una conexión entrante en AppsFlyer:**
 
@@ -103,17 +106,17 @@ En este caso, simplemente puedes seleccionar la **opción CUID** como parámetro
 5. Haz clic en el botón **Guardar** para crear la conexión.  
    Se abre el cuadro de diálogo **Credenciales de conexión**.
 6. Copia las credenciales de conexión para usarlas al configurar la conexión a AppsFlyer Audiences en la plataforma de Braze:
-   * ID de clave de acceso
-   * Clave de acceso secreta
-   * Nombre del bucket
-   * Ruta de la carpeta
+   - ID de clave de acceso
+   - Clave de acceso secreta
+   - Nombre del bucket
+   - Ruta de la carpeta
 7. Selecciona el parámetro SDK que usas para enviar el ID externo de Braze:
-   * ID externo de Braze
-   * CUID
+   - ID externo de Braze
+   - CUID
 
 </Accordion>
 
-<Accordion title="Crear una Current en Braze">
+<Accordion title="Create a Current in Braze">
 
 **Sigue estos pasos para crear un Current en Braze:**
 
@@ -137,24 +140,26 @@ En este caso, simplemente puedes seleccionar la **opción CUID** como parámetro
 
 #### eventos admitidos
 
+<div id="note" />
+
 > 📘 **Note**
 >
 > **Eventos de Braze compatibles**
 >
-> * Cambio de Estado del Grupo de Suscripción
-> * Clic en Email
-> * Apertura de Email
-> * Envío de Email
-> * Entrega de Email
-> * Marcar Email como Spam
-> * Cancelar Suscripción de Email
-> * Rebote de Email
-> * Rebote Suave de Email
-> * Apertura de Push
-> * Envío de Push
-> * Rebote de Push
-> * Push en Primer Plano de iOS
-> * Envío de SMS/MMS
+> - Cambio de Estado del Grupo de Suscripción
+> - Clic en Email
+> - Apertura de Email
+> - Envío de Email
+> - Entrega de Email
+> - Marcar Email como Spam
+> - Cancelar Suscripción de Email
+> - Rebote de Email
+> - Rebote Suave de Email
+> - Apertura de Push
+> - Envío de Push
+> - Rebote de Push
+> - Push en Primer Plano de iOS
+> - Envío de SMS/MMS
 
 </Accordion>
 

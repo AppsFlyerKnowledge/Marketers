@@ -1,8 +1,7 @@
 ---
 title: Plataformas
 excerpt: >-
-  Descubre cómo promocionar y medir la atribución de tus aplicaciones según las
-  plataformas a las que pertenecen
+  Descubre cómo promocionar y medir la atribución de tus aplicaciones según las plataformas a las que pertenecen
 table_of_contents: false
 x-zendesk:
   category: Marketers

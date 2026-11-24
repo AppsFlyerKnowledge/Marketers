@@ -1,8 +1,7 @@
 ---
 title: Paneles de control
 excerpt: >-
-  Configura tus paneles de control de AppsFlyer para aprovechar al máximo tus
-  datos (incluida PBA)
+  Configura tus paneles de control de AppsFlyer para aprovechar al máximo tus datos (incluida PBA)
 table_of_contents: false
 x-zendesk:
   category: Marketers
@@ -12,8 +11,7 @@ x-zendesk:
   locale: es
   parent_section_id: 6550901627921
   type: section
-  url: >-
-    https://support.appsflyer.com/hc/es/sections/6550925337873-Paneles-de-control
+  url: https://support.appsflyer.com/hc/es/sections/6550925337873-Paneles-de-control
 ---
 - [Cómo empezar a usar los paneles de control de AppsFlyer <span class="af-star">★</span>](/docs/getting-started-with-appsflyer-dashboards)
 - [\[Beta\] My Dashboards](/docs/my-dashboards)

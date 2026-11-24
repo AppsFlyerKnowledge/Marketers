@@ -26,9 +26,15 @@ x-zendesk:
 ---
 > 【概要】：本文讲解了如何针对美图启用AppsFlyer的归因与衡量功能，以便您在AppsFlyer面板上查看美图广告的归因数据。
 
+<div id="请注意-完成美图广告平台的正常归因请务必保证应用收集idfaoaid了解更多信息请查看安卓ios对应的sdk整合指南" />
+
 ### 请注意: 完成美图广告平台的正常归因，请务必保证应用收集IDFA／OAID，了解更多信息，请查看<Anchor target="_blank" href="/marketers/es/docs/sdk-integration-overview">安卓</Anchor>/<Anchor target="_blank" href="/marketers/es/docs/basic-sdk-integration-guide">iOS</Anchor>对应的SDK整合指南。
 
+<div id="步骤" />
+
 ### 步骤：
+
+<div id="1-在appsflyer后台取得归因链接" />
 
 #### 1. 在AppsFlyer后台取得归因链接
 
@@ -46,7 +52,9 @@ x-zendesk:
 
 <Image align="center" alt="mceclip1.png" src="https://files.readme.io/c6d051fadb62598f191ce5d9b52a5535f2b0b69b03e56f03b9b746fdba34ad79-360003338638.png" />
 
-#### 2. 登录美图广告平台账户进行应用广告归因配置
+<div id="2登录美图广告平台账户进行应用广告归因配置" />
+
+#### 2.登录美图广告平台账户进行应用广告归因配置
 
     a.设置广告组，选择推广目标为“APP下载(iOS/Android)”，
 
@@ -54,15 +62,17 @@ x-zendesk:
 
 <Image align="center" alt="meitu_1.png" src="https://files.readme.io/d4ab96ac25c682f27d2c52315e815499e0dcf495573b2c15bebbf355b3f35e13-360005581238.png" />
 
-  b. 在新建广告中进行设置，完成投放目标，投放时段，地域，年龄，性别等定向设定。
+b.在新建广告中进行设置，完成投放目标，投放时段，地域，年龄，性别等定向设定。
 
 <Image align="center" alt="meitu_2.png" src="https://files.readme.io/644e5359f5ce3ade166b02b923c141f33807865a84f63b344459e09ad8f4f876-360005581258.png" />
 
-c. 在APP（iOS/Android）下载地址中，将appsflyer监测链接放在“点击监测”中。
+c.在APP（iOS/Android）下载地址中，将appsflyer监测链接放在“点击监测”中。
 
 <Image align="center" alt="meitu_3.png" src="https://files.readme.io/e8fb740a74fc46fb5a0f72fa87843d1401dab40cfa1254842d3995d9271f275d-360005581278.png" />
 
-d. 上传素材，通过审核后进行投放。
+d.上传素材，通过审核后进行投放。
+
+<div id="3-如何向美图平台回传应用内事件" />
 
 #### 3. 如何向美图平台回传应用内事件
 
@@ -71,19 +81,19 @@ d. 上传素材，通过审核后进行投放。
 美图平台接收应用内事件的标志：
 
 | 事件类型 | 美图事件标志 |
-| --- | --- |
-| 注册 | 1 |
-| 付费 | 2 |
-| 关键事件 | 3 |
+| ---- | ------ |
+| 注册   | 1      |
+| 付费   | 2      |
+| 关键事件 | 3      |
 
 <Image align="center" alt="meitu_4.png" src="https://files.readme.io/73ae920889ed8f725ed1491b724c681caec82d7faf558130cc6283571042609c-360005496957.png" />
 
 4. 如何通过美图后台查看转化数据
 
-   a. 在广告界面，选择“自定义表头”，勾选“激活数”。
+a. 在广告界面，选择“自定义表头”，勾选“激活数”。
 
    ![meitu_5.png](https://files.readme.io/dd728b4b06c2892d4488a88b96b6f32283910ca51f06d75cb5985b9d5f899cee-360005581318.png)
 
-   b. 可查询各个广告计划对应的投放金额，激活数等信息。
+b.可查询各个广告计划对应的投放金额，激活数等信息。
 
   ![meitu_6.png](https://files.readme.io/8f09134d12e0e3b404b1cd7b87c3febadf3cf998bae9fa1a29564ad64cb00444-360005496977.png)
