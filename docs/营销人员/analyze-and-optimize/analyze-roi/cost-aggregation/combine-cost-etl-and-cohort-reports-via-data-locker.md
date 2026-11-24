@@ -1,25 +1,26 @@
 ---
-title: 合并Cost ETL和群组报告
+title: 通过Data Locker合并Cost ETL和群组报告
 metadata:
   keywords:
-    - Marketers
-    - Marketing Analytics
+    - 营销人员
+    - 市场分析
 x-zendesk:
-  category: Marketers
+  category: 营销人员
   category_id: 6550444307985
   content_tags:
     - pm-nohar-avigal
-    - Marketers
-    - Marketing Analytics
+    - 营销人员
+    - 市场分析
   created_at: '2024-08-13T11:05:26Z'
-  edited_at: '2026-10-14T09:59:16Z'
+  edited_at: '2026-08-13T16:01:09Z'
   id: 27494360719505
   locale: zh-cn
-  section: Cost aggregation
+  section: 成本数据汇总
   section_id: 6551029483281
-  url: https://support.appsflyer.com/hc/zh-cn/articles/27494360719505
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27494360719505-Combine-Cost-ETL-and-cohort-reports-via-Data-Locker
 ---
-> **概要：** 您可以合并Cost ETL和Data Locker中的群组报告（常规及高级汇总均适用），获得时效性最强、准确性最高、颗粒度最细的数据，全面掌握投放情况。
+> \*\*概览：\*\*您可以通过 Data Locker 合并 Cost ETL 和群组报告（常规及高级汇总），以最佳可用的时效性、准确性和颗粒度，全面了解您的营销广告活动。
 
 <Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" />
 
@@ -27,15 +28,15 @@ x-zendesk:
 
 ## Cost ETL与群组报告的合并方式简介
 
-Cost ETL报告以及Data Locker中的群组报告（常规及高级汇总均适用）分别具有其各自专属的特点。比如Cost ETL报告中包含展示、点击和成本数据，而群组报告则提供详细的归因、应用内事件和收入数据。
+Cost ETL报告以及Data Locker中的群组报告（常规及高级汇总均适用）分别具有其各自专属的特点。 Cost ETL reports and cohort reports via Data Locker (regular and advanced aggregated) each have their own unique qualities. For example, Cost ETL reports include impression, click, and cost data, while cohort reports include detailed attribution, in-app event, and revenue data.
 
 为了充分利用这两种报告，建议您在内部BI系统接收到Cost ETL和汇总群组报告并完成入库后合并这两个报告。
 
 合并后的报告具有以下优势：
 
-* 可提供时效性最强、准确性最高、颗粒度最细的数据，帮助您全面了解营销效果。
-* 将贵司的内部BI与AppsFlyer面板数据对齐。
-* 有助于重要指标的计算，如广告支出回报率（ROAS）以及平均用户行为成本（CPA）。
+- 可提供时效性最强、准确性最高、颗粒度最细的数据，帮助您全面了解营销效果。
+- 将贵司的内部BI与AppsFlyer面板数据对齐。
+- 有助于重要指标的计算，如广告支出回报率（ROAS）以及平均用户行为成本（CPA）。
 
 <div id="queries-to-combine-reports" />
 
@@ -43,28 +44,28 @@ Cost ETL报告以及Data Locker中的群组报告（常规及高级汇总均适�
 
 将Cost ETL报告与下列报告合并时，需要考量特定的查询语句和注意事项，详见以下各章节说明。
 
-* [高级汇总群组报告](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
-* [Data Locker中的群组报告](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-cohort-report)
+- [高级汇总群组报告](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
+- [通过Data Locker获取的群组报告](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-cohort-report)
 
 <div id="query-to-combine-cost-etl-and-advanced-aggregated-cohort-report" />
 
-<Accordion title="用于合并Cost ETL与高级汇总群组报告的查询语句">
+<Accordion title="Query to combine Cost ETL and Advanced aggregated cohort report">
 
 **合并Cost ETL与群组报告时，您的BI开发人员需要完成以下操作**：
 
-* 您可以参考以下查询语句，并根据您内部BI的实际情况做相应的调整。
-* **重要事项**：
-  * 调整查询语句：
-    * 调整报告的起始日期和截止日期。
-    * 调整您的报告名称。
-    * 从特定的Cost ETL数据结构中选择所需的维度和指标。
-  * 不同报告的时效性有所差异。比如Cost ETL每天最多更新四次，而高级汇总群组报告的更新更为频繁。
-  * 高级汇总群组报告覆盖最近1095天内转化的用户，更早之前转化的用户会被忽略。
-  * Cost ETL报告中，数据的时区与AppsFlyer中储存的数据一致。高级汇总群组报告则包含UTC时区的数据版本和本地时区的数据版本。**推荐设置**：与Cost ETL报告合并时，建议使用按本地时区分版本的报告。
+- 您可以参考以下查询语句，并根据您内部BI的实际情况做相应的调整。
+- **重要事项**：
+  - 调整查询语句：
+    - 调整报告的起始日期和截止日期。
+    - 调整您的报告名称。
+    - 从特定的Cost ETL数据结构中选择所需的维度和指标。
+  - 不同报告的时效性有所差异。 There are differences in the reports' freshness. For example, Cost ETL updates up to four times a day and Advanced aggregated cohort reports update multiple times a day.
+  - Advanced aggregated cohort reports include users converted in the past 1,095 days. If they converted before that, they aren't taken into account. 更早之前转化的用户会被忽略。
+  - Cost ETL reports use the timezone of the data as it's stored by AppsFlyer. Cohort reports via Data Locker use UTC. 高级汇总群组报告则包含UTC时区的数据版本和本地时区的数据版本。**最佳实践**：合并 Cost ETL 和群组时区版本化报告。
 
 <div id="query" />
 
-#### 查询语句
+#### 查询
 
 ```sql
 select ag.app_id,
@@ -154,22 +155,22 @@ GROUP BY ALL;
 
 <div id="query-to-combine-cost-etl-and-cohort-report" />
 
-<Accordion title="用于合并Cost ETL和群组报告的查询语句">
+<Accordion title="Query to combine Cost ETL and cohort report">
 
 **合并Cost ETL与群组报告时，您的BI开发人员需要完成以下操作**：
 
-* 您可以参考以下查询语句，并根据您内部BI的实际情况做相应的调整。
-* **重要事项**：
-  * 调整查询语句：
-    * 调整报告的起始日期和截止日期。
-    * 调整您的报告名称。
-    * 从特定的Cost ETL数据结构中选择所需的维度和指标。
-  * 不同报告的时效性有所差异。比如Cost ETL每天最多更新四次，而Data Locker中的群组报告一天更新一次。
-  * Cost ETL报告中，数据的时区与AppsFlyer中储存的数据一致，而Data Locker中的群组报告则按UTC时间呈现。
+- 您可以参考以下查询语句，并根据您内部BI的实际情况做相应的调整。
+- **重要事项**：
+  - 调整查询语句：
+    - 调整报告的起始日期和截止日期。
+    - 调整您的报告名称。
+    - 从特定的Cost ETL数据结构中选择所需的维度和指标。
+  - 不同报告的时效性有所差异。 There are differences in the reports' freshness. For example, Cost ETL updates up to four times a day and cohort reports via Data Locker update once per day.
+  - Cost ETL reports use the timezone of the data as it's stored by AppsFlyer. Cohort reports via Data Locker use UTC. 而Data Locker中的群组报告则按UTC时间呈现。
 
 <div id="query-1" />
 
-#### 查询语句
+#### 查询
 
 ```sql
 select dl.app_id,
@@ -257,10 +258,10 @@ GROUP BY ALL;
 
 <div id="see-also" />
 
-> 📄 **相关文档**
+> 📄 **另请参阅**
 >
-> * <Anchor target="_blank" href="/marketers/zh/docs/set-up-and-use-roi360-cost-etl-reports">Cost ETL</Anchor>
-> * <Anchor target="_blank" href="/marketers/zh/docs/advanced-aggregated-reports-in-data-locker">Data Locker中的高级汇总报告</Anchor>
-> * <Anchor target="_blank" href="/marketers/zh/docs/cohort-analytics-via-data-locker">Data Locker中的群组报告</Anchor>
+> - <Anchor target="_blank" href="/marketers/zh/docs/set-up-and-use-roi360-cost-etl-reports">Cost ETL</Anchor>
+> - <Anchor target="_blank" href="/marketers/zh/docs/advanced-aggregated-reports-in-data-locker">Data Locker中的高级汇总报告</Anchor>
+> - <Anchor target="_blank" href="/marketers/zh/docs/cohort-analytics-via-data-locker">Data Locker中的群组报告</Anchor>
 
-<div data-zendesk-anchors="about-combining-cost-etl-and-cohort-reports=cost-etl%E4%B8%8E%E7%BE%A4%E7%BB%84%E6%8A%A5%E5%91%8A%E7%9A%84%E5%90%88%E5%B9%B6%E6%96%B9%E5%BC%8F%E7%AE%80%E4%BB%8B h_01J55PCC5MJ3MJBESDVEFHT796=cost-etl%E4%B8%8E%E7%BE%A4%E7%BB%84%E6%8A%A5%E5%91%8A%E7%9A%84%E5%90%88%E5%B9%B6%E6%96%B9%E5%BC%8F%E7%AE%80%E4%BB%8B queries-to-combine-reports=%E7%94%A8%E4%BA%8E%E5%90%88%E5%B9%B6%E6%8A%A5%E5%91%8A%E7%9A%84%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5 h_01J55TR3SRXQPRBYRX6G3EJ7D9=%E7%94%A8%E4%BA%8E%E5%90%88%E5%B9%B6%E6%8A%A5%E5%91%8A%E7%9A%84%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5 h_01J55VAQ804JWE6WT552GY98JF=query-to-combine-cost-etl-and-advanced-aggregated-cohort-report query=%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5 h_01J55W908AAPQ6YRT4P1R4CA58=%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5 h_01J55VAQ80PQX00GA9D516ST2Z=query-to-combine-cost-etl-and-cohort-report query::84619524=%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5-1 h_01J55WCKZFA2JWV0MP72WVK7Y2=%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5-1 h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=%E7%9B%B8%E5%85%B3%E6%96%87%E6%A1%A3" />
+<div data-zendesk-anchors="h_01J55PCC5MJ3MJBESDVEFHT796=about-combining-cost-etl-and-cohort-reports h_01J55TR3SRXQPRBYRX6G3EJ7D9=queries-to-combine-reports h_01J55VAQ804JWE6WT552GY98JF=query-to-combine-cost-etl-and-advanced-aggregated-cohort-report h_01J55W908AAPQ6YRT4P1R4CA58=query h_01J55VAQ80PQX00GA9D516ST2Z=query-to-combine-cost-etl-and-cohort-report query::84619524=query-1 h_01J55WCKZFA2JWV0MP72WVK7Y2=query-1 h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=see-also" />
