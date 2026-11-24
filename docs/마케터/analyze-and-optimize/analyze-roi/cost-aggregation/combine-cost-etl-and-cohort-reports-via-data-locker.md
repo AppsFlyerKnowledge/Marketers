@@ -2,28 +2,29 @@
 title: Cost ETL 리포트와 코호트 리포트 결합
 metadata:
   keywords:
-    - Marketers
-    - Marketing Analytics
+    - 마케터
+    - 마케팅 캠페인 분석
 x-zendesk:
-  category: Marketers
+  category: 마케터
   category_id: 6550444307985
   content_tags:
     - pm-nohar-avigal
-    - Marketers
-    - Marketing Analytics
+    - 마케터
+    - 마케팅 캠페인 분석
   created_at: '2024-08-13T11:05:26Z'
-  edited_at: '2026-10-14T10:39:23Z'
+  edited_at: '2026-08-13T16:01:09Z'
   id: 27494360719505
   locale: ko
-  section: Cost aggregation
+  section: 비용 집약
   section_id: 6551029483281
-  url: https://support.appsflyer.com/hc/ko/articles/27494360719505
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27494360719505-Combine-Cost-ETL-and-cohort-reports-via-Data-Locker-What-is-AppsFlyer-s-Attribution-Model-
 ---
-> **요약:** 데이터 락커(정기 및 고급 집계)를 통해 Cost ETL 리포트와 코호트 리포트를 결합하여 최고의 최신성, 정확성, 세분화로 마케팅 캠페인의 전체 상황을 파악할 수 있습니다.
+> **한눈에 보기:** 데이터 락커(일반 및 고급 집계)를 통해 비용 ETL과 코호트 리포트를 결합하면, 최신성·정확성·세분화 수준을 최대한 확보하여 마케팅 캠페인의 전체 현황을 파악할 수 있습니다.
 
-<Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" />
+<Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" /></strong>
 
-<div id="about-combining-cost-etl-and-cohort-reports" />
+<div id="about-combining-cost-etl-and-cohort-reports" /></strong>
 
 ## Cost ETL 리포트와 코호트 리포트의 결합 정보
 
@@ -31,38 +32,38 @@ x-zendesk:
 
 가장 좋은 방법은 Cost ETL 리프트와 집계된 코호트 리포트가 수신되어 BI 시스템에 로드되면 내부 BI에 결합하도록 하는 것입니다.
 
-두 리포트를 결합하면 다음과 같은 이점이 있습니다.
+두 리포트를 결합하면 다음과 같은 이점이 있습니다:
 
-* 최고의 최신성, 정확성, 세분화와 함께, 마케팅 성과를 전체적으로 보여줍니다.
-* 내부 BI를 앱스플라이어 대시보드에 표시되는 데이터와 일치시킵니다.
-* 광고 지출 대비 수익률(ROAS) 및 전환당 비용(CPA)과 같은 중요한 지표를 계산할 수 있습니다.
+- 최고의 최신성, 정확성, 세분화와 함께, 마케팅 성과를 전체적으로 보여줍니다.
+- 내부 BI를 앱스플라이어 대시보드에 표시되는 데이터와 일치시킵니다.
+- 광고 지출 대비 수익률(ROAS) 및 전환당 비용(CPA)과 같은 중요한 지표를 계산할 수 있습니다.
 
-<div id="queries-to-combine-reports" />
+<div id="queries-to-combine-reports" /></strong>
 
 ## 리포트를 결합하는 쿼리
 
 이후에 이어지는 섹션에서는 Cost ETL 리포트를 다음과 결합할 때의 쿼리와 고려 사항을 제시합니다.
 
-* [고급 집계 코호트 리포트](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
-* [데이터 락커를 통한 코호트 리포트](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-cohort-report)
+- [고급 집계 코호트 리포트](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
+- [데이터 락커를 통한 코호트 리포트](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-cohort-report)
 
-<div id="query-to-combine-cost-etl-and-advanced-aggregated-cohort-report" />
+<div id="query-to-combine-cost-etl-and-advanced-aggregated-cohort-report" /></strong>
 
-<Accordion title="Cost ETL 리포트와 고급 집계 코호트 리포트를 결합하는 쿼리">
+<Accordion title="Query to combine Cost ETL and Advanced aggregated cohort report">
 
-**Cost ETL 리포트와 코호트 리포트를 결합하려면 BI 개발자는 다음을 수행해야 합니다.**
+**비용 ETL과 코호트 리포트를 결합하려면 BI 개발자는 다음을 수행해야 합니다:**:
 
-* 다음 쿼리를 가이드로 삼아 내부 BI에 맞게 사용자 지정합니다.
-* **중요 고려 사항**:
-  * 쿼리 조정:
-    * 시작 날짜와 종료 날짜를 사용자 지정합니다.
-    * 리포트 이름을 사용자 지정합니다.
-    * 특정 Cost ETL 스키마에서 측정항목과 지표를 선택합니다.
-  * 리포트의 최신성에 차이가 있습니다. 예를 들어, Cost ETL은 하루에 최대 4회 업데이트되고 고급 집계 코호트 리포트는 하루에 여러 번 업데이트됩니다.
-  * 고급 집계 코호트 리포트에는 지난 1,095일 동안 전환된 사용자가 포함됩니다. 그 이전에 전환한 경우는 고려 대상이 아닙니다.
-  * Cost ETL 리포트에서는 앱스플라이어에 저장된 데이터의 시간대를 사용합니다. 고급 집계 코호트 리포트에는 버전이 지정된 (UTC) 리포트와 버전이 지정된 시간대 리포트가 포함됩니다. **모범 사례**: Cost ETL 리포트와 코호트 시간대 버전 지정 리포트를 결합합니다.
+- 다음 쿼리를 가이드로 삼아 내부 BI에 맞게 사용자 지정합니다.
+- **중요 고려 사항**:
+  - 쿼리 조정:
+    - 시작 날짜와 종료 날짜를 사용자 지정합니다.
+    - 리포트 이름을 사용자 지정합니다.
+    - 특정 Cost ETL 스키마에서 측정항목과 지표를 선택합니다.
+  - 리포트의 최신성에 차이가 있습니다. 예를 들어, Cost ETL은 하루에 최대 4회 업데이트되고 고급 집계 코호트 리포트는 하루에 여러 번 업데이트됩니다.
+  - 고급 집계 코호트 리포트에는 지난 1,095일 동안 전환된 사용자가 포함됩니다. 그 이전에 전환한 경우는 고려 대상이 아닙니다.
+  - Cost ETL 리포트에서는 앱스플라이어에 저장된 데이터의 시간대를 사용합니다. 고급 집계 코호트 리포트에는 버전이 지정된 (UTC) 리포트와 버전이 지정된 시간대 리포트가 포함됩니다. **모범 사례**: 비용 ETL 리포트와 코호트 시간대 버전 지정 리포트를 결합합니다.
 
-<div id="query" />
+<div id="query" /></strong>
 
 #### 쿼리
 
@@ -152,22 +153,22 @@ GROUP BY ALL;
 
 </Accordion>
 
-<div id="query-to-combine-cost-etl-and-cohort-report" />
+<div id="query-to-combine-cost-etl-and-cohort-report" /></strong>
 
-<Accordion title="Cost ETL 리포트와 코호트 리포트를 결합하는 쿼리">
+<Accordion title="Query to combine Cost ETL and cohort report">
 
-**Cost ETL 리포트와 코호트 리포트를 결합하려면 BI 개발자는 다음을 수행해야 합니다.**
+**비용 ETL과 코호트 리포트를 결합하려면 BI 개발자는 다음을 수행해야 합니다:**:
 
-* 다음 쿼리를 가이드로 삼아 내부 BI에 맞게 사용자 지정합니다.
-* **중요 고려 사항**:
-  * 쿼리 조정:
-    * 시작 날짜와 종료 날짜를 사용자 지정합니다.
-    * 리포트 이름을 사용자 지정합니다.
-    * 특정 Cost ETL 스키마에서 측정항목과 지표를 선택합니다.
-  * 리포트의 최신성에 차이가 있습니다. 예를 들어, Cost ETL은 하루에 최대 4번 업데이트되고 데이터 락커를 통한 코호트 리포트는 하루에 한 번 업데이트됩니다.
-  * Cost ETL 리포트에서는 앱스플라이어에 저장된 데이터의 시간대를 사용합니다. 데이터 락커를 통한 코호트 리포트는 UTC를 사용합니다.
+- 다음 쿼리를 가이드로 삼아 내부 BI에 맞게 사용자 지정합니다.
+- **중요 고려 사항**:
+  - 쿼리 조정:
+    - 시작 날짜와 종료 날짜를 사용자 지정합니다.
+    - 리포트 이름을 사용자 지정합니다.
+    - 특정 Cost ETL 스키마에서 측정항목과 지표를 선택합니다.
+  - 리포트의 최신성에 차이가 있습니다. 예를 들어, Cost ETL은 하루에 최대 4번 업데이트되고 데이터 락커를 통한 코호트 리포트는 하루에 한 번 업데이트됩니다.
+  - Cost ETL 리포트에서는 앱스플라이어에 저장된 데이터의 시간대를 사용합니다. 데이터 락커를 통한 코호트 리포트는 UTC를 사용합니다.
 
-<div id="query-1" />
+<div id="query-1" /></strong>
 
 #### 쿼리
 
@@ -255,12 +256,12 @@ GROUP BY ALL;
 
 </Accordion>
 
-<div id="see-also" />
+<div id="see-also" /></strong>
 
-> 📄 **참고 항목**
+> 📄 **참고 문서**
 >
-> * <Anchor target="_blank" href="/marketers/ko/docs/set-up-and-use-roi360-cost-etl-reports">Cost ETL</Anchor>
-> * <Anchor target="_blank" href="/marketers/ko/docs/advanced-aggregated-reports-in-data-locker">데이터 락커의 고급 집계 리포트</Anchor>
-> * <Anchor target="_blank" href="/marketers/ko/docs/cohort-analytics-via-data-locker">데이터 락커를 통한 코호트 리포트</Anchor>
+> - <Anchor target="_blank" href="/marketers/ko/docs/set-up-and-use-roi360-cost-etl-reports">비용 ETL</Anchor>
+> - <Anchor target="_blank" href="/marketers/ko/docs/advanced-aggregated-reports-in-data-locker">[클로즈 베타] 데이터 락커의 고급 집계 보고서</Anchor>
+> - <Anchor target="_blank" href="/marketers/ko/docs/cohort-analytics-via-data-locker">데이터 락커를 통한 코호트 리포트</Anchor>
 
-<div data-zendesk-anchors="about-combining-cost-etl-and-cohort-reports=cost-etl-%EB%A6%AC%ED%8F%AC%ED%8A%B8%EC%99%80-%EC%BD%94%ED%98%B8%ED%8A%B8-%EB%A6%AC%ED%8F%AC%ED%8A%B8%EC%9D%98-%EA%B2%B0%ED%95%A9-%EC%A0%95%EB%B3%B4 h_01J55PCC5MJ3MJBESDVEFHT796=cost-etl-%EB%A6%AC%ED%8F%AC%ED%8A%B8%EC%99%80-%EC%BD%94%ED%98%B8%ED%8A%B8-%EB%A6%AC%ED%8F%AC%ED%8A%B8%EC%9D%98-%EA%B2%B0%ED%95%A9-%EC%A0%95%EB%B3%B4 queries-to-combine-reports=%EB%A6%AC%ED%8F%AC%ED%8A%B8%EB%A5%BC-%EA%B2%B0%ED%95%A9%ED%95%98%EB%8A%94-%EC%BF%BC%EB%A6%AC h_01J55TR3SRXQPRBYRX6G3EJ7D9=%EB%A6%AC%ED%8F%AC%ED%8A%B8%EB%A5%BC-%EA%B2%B0%ED%95%A9%ED%95%98%EB%8A%94-%EC%BF%BC%EB%A6%AC h_01J55VAQ804JWE6WT552GY98JF=query-to-combine-cost-etl-and-advanced-aggregated-cohort-report query=%EC%BF%BC%EB%A6%AC h_01J55W908AAPQ6YRT4P1R4CA58=%EC%BF%BC%EB%A6%AC h_01J55VAQ80PQX00GA9D516ST2Z=query-to-combine-cost-etl-and-cohort-report query::84619524=%EC%BF%BC%EB%A6%AC-1 h_01J55WCKZFA2JWV0MP72WVK7Y2=%EC%BF%BC%EB%A6%AC-1 h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=%EC%B0%B8%EA%B3%A0-%ED%95%AD%EB%AA%A9" />
+<div data-zendesk-anchors="h_01J55PCC5MJ3MJBESDVEFHT796=about-combining-cost-etl-and-cohort-reports h_01J55TR3SRXQPRBYRX6G3EJ7D9=queries-to-combine-reports h_01J55VAQ804JWE6WT552GY98JF=query-to-combine-cost-etl-and-advanced-aggregated-cohort-report h_01J55W908AAPQ6YRT4P1R4CA58=query h_01J55VAQ80PQX00GA9D516ST2Z=query-to-combine-cost-etl-and-cohort-report query::84619524=query-1 h_01J55WCKZFA2JWV0MP72WVK7Y2=query-1 h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=see-also" /></strong>
