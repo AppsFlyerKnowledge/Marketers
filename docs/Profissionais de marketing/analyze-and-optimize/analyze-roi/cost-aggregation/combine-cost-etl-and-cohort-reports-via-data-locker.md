@@ -1,68 +1,69 @@
 ---
-title: Combinar ETL de custos e relatórios de coortes
+title: Combine os relatórios de Cost ETL e de cohort via Data Locker
 metadata:
   keywords:
-    - Marketers
-    - Marketing Analytics
+    - Profissionais de marketing
+    - Análise de marketing
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
   content_tags:
     - pm-nohar-avigal
     - Marketers
-    - Marketing Analytics
+    - Análise de marketing
   created_at: '2024-08-13T11:05:26Z'
   edited_at: '2026-08-19T00:00:58Z'
   id: 27494360719505
-  locale: pt
+  locale: "\n        int\n      "
   section: Cost aggregation
   section_id: 6551029483281
-  url: https://support.appsflyer.com/hc/pt/articles/27494360719505
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27494360719505-Combine-Cost-ETL-and-cohort-reports-via-Data-Locker
 ---
 > **Visão geral:** Combine o Cost ETL e os relatórios de coorte através do Data Locker (agregados regulares e avançados) para obter a imagem completa das suas campanhas de marketing com a melhor atualidade, precisão e granularidade disponíveis.
 
-<Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" />
+<span style="font-weight: 400;"><Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" /></span>
 
-<div id="about-combining-cost-etl-and-cohort-reports" />
+<span style="font-weight: 400;"><div id="about-combining-cost-etl-and-cohort-reports" /></span>
 
-## Sobre a combinação de ETL de custos e relatórios de coortes
+## Sobre a combinação de relatórios de Cost ETL e de cohort
 
-Os relatórios ETL de custos e os relatórios de coortes através do Data Locker (agregados regulares e avançados) têm cada um as suas qualidades únicas. Por exemplo, os relatórios ETL de custo incluem dados de impressão, clique e custo, enquanto os relatórios de coorte incluem atribuição detalhada, evento in-app e dados de receita.
+Os relatórios de Cost ETL e de cohort através do Data Locker (agregados avançados e regulares) possuem qualidades distintas. Por exemplo, os relatórios de Cost ETL incluem dados de impressão, clique e custo, enquanto os relatórios de cohort incluem dados detalhados de atribuição, eventos in-app e receitas.
 
-A melhor prática é que, assim que o ETL de custos e os relatórios de coortes agregados forem recebidos e carregados no seu sistema de BI, devem ser combinados no seu BI interno.
+A prática recomendada é que, após receber e carregar os relatórios de Cost ETL e os relatórios agregados de cohort em seu sistema de BI, eles sejam combinados na sua própria ferramenta de BI.
 
-Combinados, eles:
+Quando combinados, eles:
 
-* Fornecer a imagem completa do seu desempenho de marketing, com a melhor atualidade, precisão e granularidade disponíveis.
-* Combine seu BI interno com os dados que você vê nos dashboards da AppsFlyer.
-* Permitem-lhe calcular métricas importantes, como o retorno do investimento em publicidade (ROAS) e o custo por ação (CPA).
+- Oferecem uma visão completa da performance das suas campanhas de marketing, com dados sempre atualizados, precisos e detalhados.
+- Associam sua própria ferramenta de BI aos dados que você vê nos dashboards da AppsFlyer.
+- Permitem que você calcule métricas importantes, como o ROAS e o CPA.
 
-<div id="queries-to-combine-reports" />
+<span style="font-weight: 400;"><div id="queries-to-combine-reports" /></span>
 
 ## Consultas para combinar relatórios
 
-As seções que se seguem fornecem as consultas e considerações a ter em conta quando se combinam relatórios Cost ETL com:
+As seções a seguir apresentam as consultas e os aspectos que você deve considerar ao combinar os relatórios de Cost ETL com:
 
-* [Relatórios avançados agregados de coortes](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
-* [Relatórios de coortes via Data Locker](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-cohort-report)
+- [Relatórios avançados agregados de coortes](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
+- [Relatórios de coortes via Data Locker](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-cohort-report)
 
-<div id="query-to-combine-cost-etl-and-advanced-aggregated-cohort-report" />
+<span style="font-weight: 400;"><div id="query-to-combine-cost-etl-and-advanced-aggregated-cohort-report" /></span>
 
-<Accordion title="Consulta para combinar ETL de custos e relatório de coortes agregado avançado">
+<Accordion title="Query to combine Cost ETL and Advanced aggregated cohort report">
 
 **Para combinar o ETL de custos e os relatórios de coorte, o programador de BI deve**:
 
-* Use a seguinte consulta como um guia, personalizando-a para se adequar ao seu BI interno.
-* **Considerações importantes**:
-  * Ajustar a consulta:
-    * Personalize as datas de início e de fim.
-    * Personalize os nomes dos seus relatórios.
-    * Selecione as dimensões e métricas no seu esquema ETL de custos específico.
-  * Há diferenças na atualidade dos relatórios. Por exemplo, o ETL de custos é atualizado até quatro vezes por dia e os relatórios de coortes agregados avançados são atualizados várias vezes por dia.
-  * Os relatórios de coorte agregados avançados incluem usuários convertidos nos últimos 1095 dias. Se eles se converteram antes disso, não são considerados.
-  * Os relatórios ETL de custo usam o fuso horário dos dados conforme eles são armazenados pela AppsFlyer. Os relatórios avançados de coorte agregadas incluem relatórios com versão (UTC) e com versão de fuso horário. **Prática recomendada**: Combinar ETL de custos e relatórios com versões de fuso horário de coorte.
+- Usar a consulta abaixo como um guia, personalizando-a para se adequar à sua própria ferramenta de BI.
+- **Considerações importantes**:
+  - Ajustando a consulta:
+    - Personalize as datas de início e fim.
+    - Personalize os nomes dos seus relatórios.
+    - Selecione as dimensões e métricas no seu esquema específico de Cost ETL.
+  - Existem diferenças na atualização dos relatórios. Por exemplo, o Cost ETL é atualizado até quatro vezes por dia e os relatórios agregados avançados de cohort são atualizados várias vezes ao dia.
+  - Os relatórios agregados avançados de cohort incluem usuários convertidos nos últimos 1095 dias. Se eles se converteram antes disso, não são considerados.
+  - Os relatórios de Cost ETL usam o fuso horário dos dados conforme eles são armazenados pela AppsFlyer. Os relatórios avançados agregados de cohort incluem relatórios versionados em UTC e relatórios versionados por fuso horário. **Prática recomendada**: Combinar ETL de custos e relatórios com versões de fuso horário de coorte.
 
-<div id="query" />
+<span style="font-weight: 400;"><div id="query" /></span>
 
 #### Consulta
 
@@ -148,22 +149,22 @@ select ag.app_id,
 
 </Accordion>
 
-<div id="query-to-combine-cost-etl-and-cohort-report" />
+<span style="font-weight: 400;"><div id="query-to-combine-cost-etl-and-cohort-report" /></span>
 
-<Accordion title="Consulta para combinar ETL de custos e relatório de coorte">
+<Accordion title="Query to combine Cost ETL and cohort report">
 
 **Para combinar o ETL de custos e os relatórios de coorte, o programador de BI deve**:
 
-* Use a seguinte consulta como um guia, personalizando-a para se adequar ao seu BI interno.
-* **Considerações importantes**:
-  * Ajustar a consulta:
-    * Personalize as datas de início e de fim.
-    * Personalize os nomes dos seus relatórios.
-    * Selecione as dimensões e métricas no seu esquema ETL de custos específico.
-  * Há diferenças na atualidade dos relatórios. Por exemplo, o Cost ETL é atualizado até quatro vezes por dia e os relatórios de coortes através do Data Locker são atualizados uma vez por dia.
-  * Os relatórios ETL de custo usam o fuso horário dos dados conforme eles são armazenados pela AppsFlyer. Os relatórios de coortes através do Data Locker utilizam o UTC.
+- Usar a consulta abaixo como um guia, personalizando-a para se adequar à sua própria ferramenta de BI.
+- **Considerações importantes**:
+  - Ajustando a consulta:
+    - Personalize as datas de início e fim.
+    - Personalize os nomes dos seus relatórios.
+    - Selecione as dimensões e métricas no seu esquema específico de Cost ETL.
+  - Existem diferenças na atualização dos relatórios. Por exemplo, o Cost ETL é atualizado até quatro vezes por dia e os relatórios de cohort via Data Locker são atualizados uma vez por dia.
+  - Os relatórios de Cost ETL usam o fuso horário dos dados conforme eles são armazenados pela AppsFlyer. Os relatórios de cohort via Data Locker utilizam UTC.
 
-<div id="query-1" />
+<span style="font-weight: 400;"><div id="query-1" /></span>
 
 #### Consulta
 
@@ -248,12 +249,12 @@ select dl.app_id,
 
 </Accordion>
 
-<div id="see-also" />
+<span style="font-weight: 400;"><div id="see-also" /></span>
 
-> 📄 **Veja também**
+> 📄 **Consulte também**
 >
-> * <Anchor target="_blank" href="/marketers/pt/docs/set-up-and-use-roi360-cost-etl-reports">ETL de custos</Anchor>
-> * <Anchor target="_blank" href="/marketers/pt/docs/advanced-aggregated-reports-in-data-locker">Relatórios agregados avançados no Data Locker</Anchor>
-> * <Anchor target="_blank" href="/marketers/pt/docs/cohort-analytics-via-data-locker">Relatórios de coortes via Data Locker</Anchor>
+> - <Anchor target="_blank" href="/marketers/pt/docs/set-up-and-use-roi360-cost-etl-reports">ETL de custos</Anchor>
+> - <Anchor target="_blank" href="/marketers/pt/docs/advanced-aggregated-reports-in-data-locker">Relatórios agregados avançados no Data Locker</Anchor>
+> - <Anchor target="_blank" href="/marketers/pt/docs/cohort-analytics-via-data-locker">Relatórios de cohort via Data Locker</Anchor>
 
-<div data-zendesk-anchors="about-combining-cost-etl-and-cohort-reports=sobre-a-combina%C3%A7%C3%A3o-de-etl-de-custos-e-relat%C3%B3rios-de-coortes h_01J55PCC5MJ3MJBESDVEFHT796=sobre-a-combina%C3%A7%C3%A3o-de-etl-de-custos-e-relat%C3%B3rios-de-coortes queries-to-combine-reports=consultas-para-combinar-relat%C3%B3rios h_01J55TR3SRXQPRBYRX6G3EJ7D9=consultas-para-combinar-relat%C3%B3rios h_01J55VAQ804JWE6WT552GY98JF=query-to-combine-cost-etl-and-advanced-aggregated-cohort-report query=consulta h_01J55W908AAPQ6YRT4P1R4CA58=consulta h_01J55VAQ80PQX00GA9D516ST2Z=query-to-combine-cost-etl-and-cohort-report query::84619524=consulta-1 h_01J55WCKZFA2JWV0MP72WVK7Y2=consulta-1 h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=veja-tamb%C3%A9m" />
+<span style="font-weight: 400;"><div data-zendesk-anchors="h_01J55PCC5MJ3MJBESDVEFHT796=about-combining-cost-etl-and-cohort-reports h_01J55TR3SRXQPRBYRX6G3EJ7D9=queries-to-combine-reports h_01J55VAQ804JWE6WT552GY98JF=query-to-combine-cost-etl-and-advanced-aggregated-cohort-report h_01J55W908AAPQ6YRT4P1R4CA58=query h_01J55VAQ80PQX00GA9D516ST2Z=query-to-combine-cost-etl-and-cohort-report query::84619524=query-1 h_01J55WCKZFA2JWV0MP72WVK7Y2=query-1 h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=see-also" /></span>
