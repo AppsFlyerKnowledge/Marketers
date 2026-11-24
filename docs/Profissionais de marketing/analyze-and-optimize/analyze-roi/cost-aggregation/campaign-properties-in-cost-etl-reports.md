@@ -15,12 +15,13 @@ x-zendesk:
     - Marketers
     - ROI360
   created_at: '2021-06-02T17:21:22Z'
-  edited_at: '2026-08-18T00:01:01Z'
+  edited_at: '2025-04-05T11:08:21Z'
   id: 360020994977
-  locale: pt
+  locale: ptbr
   section: Cost aggregation
   section_id: 6551029483281
-  url: https://support.appsflyer.com/hc/pt/articles/360020994977
+  url: >-
+    https://support.appsflyer.com/hc/pt-br/articles/360020994977-Campaign-properties-in-cost-ETL-reports
 ---
 > **Visão geral:** saiba mais sobre as propriedades da campanha e como elas são exibidas nos dados de Cost ETL da AppsFlyer.
 
@@ -32,14 +33,14 @@ As propriedades da campanha são um grupo especial de dimensões que representam
 
 Com os dados das propriedades da campanha, você pode:
 
-* Ver todas as alterações de bids feitas pela sua equipe de UA.
-* Mensurar e analisar a eficácia de uma alteração de bid e se ela teve o efeito pretendido.
+- Ver todas as alterações de bids feitas pela sua equipe de UA.
+- Mensurar e analisar a eficácia de uma alteração de bid e se ela teve o efeito pretendido.
 
 Os dados de propriedades da campanha da AppsFlyer estão disponíveis para Meta ads e Google. Veja quais dados a AppsFlyer extrai e como eles são padronizados e mapeados para cada ad network, nas seções a seguir.
 
 <div id="facebook" />
 
-<Accordion title="Meta Ads">
+<Accordion title="Meta ads">
 
 Veja quais dados a AppsFlyer extrai e como eles são padronizados e mapeados para o Meta ads, na tabela a seguir.
 
@@ -54,7 +55,6 @@ Veja quais dados a AppsFlyer extrai e como eles são padronizados e mapeados par
       </th>
     </tr>
   </thead>
-
   <tbody>
     <tr>
       <td>
@@ -85,6 +85,12 @@ Veja quais dados a AppsFlyer extrai e como eles são padronizados e mapeados par
         | valor | ROI |
         | * REACH<br />* IMPRESSIONS<br />* SOCIAL\_IMPRESSIONS | CPM (custo por mil impressões) |
         | * THRUPLAY<br />* VIDEO\_VIEWS<br />* TWO\_SECOND\_CONTINUOUS\_VIDEO\_VIEWS | CPCV |
+      <ul><li>LINK_CLIQUE</li><li>LOCAL_NOTIF_SETTINGS_POPUP_TITLE</li><li>RESPOSTAS</li><li>PLAYLIST_SHOP_DESCRIPTION</li></ul> ★ CPC &
+        de CPC <ul><li>CONVERSÕES_ OFSITES</li><li>GET_EVENTOS</li><li>LAD_GENERAÇÃO</li></ul> de CPA £
+        £APP\_INSTALLS ├CPI :trade_mark
+        ├VALUE ├ROI ├
+ <ul><li>ANQUIRES</li><li>IMPRESSÕES</li><li>SOCIAL_IMPRESSIONS</li></ul> ★ CPM L&gU
+        L&br <ul><li>ALGULAR</li><li>VIDEO_NOTIF_SETTINGS_POPUP_TITLE</li><li>YOU_NEED_PLAYLISTS_LABEL</li></ul> (ExplicitText="CPCV (EN
       </td>
     </tr>
     <tr>
@@ -92,22 +98,18 @@ Veja quais dados a AppsFlyer extrai e como eles são padronizados e mapeados par
         Estratégia de lances
       </td>
       <td>
-        Extraído de: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">adset.bid\_strategy</Anchor>
-
-        Se não houver bid\_strategy no nível do conjunto de anúncios, então: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">campaign.bid\_strategy</Anchor>
+        Extraído de: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">adset.bid\_strategy</Anchor><br /><br />Se não houver bid\_strategy no nível do conjunto de anúncios, então: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">campaign.advertising\_channel\_sub\_type</Anchor>
       </td>
     </tr>
     <tr>
       <td>
         Estratégia de bid padronizado da AppsFlyer
       </td>
-      <td>
-        | Estratégia de lances | Estratégia de lances normalizada |
-        | --- | --- |
-        | * {"LOWEST_COST_"} {"WITHOUT_CAP"}<br />* {"COST_CAP"}<br />* {"LOWEST_COST_"} {"WITH_MIN_ROAS"} | Bid automático |
-        | TARGET\_COST | Bid escolhido |
-        | Outros | Desconhecido |
-      </td>
+      <td>Estratégia de Ajuda de 
+        Econômica e estratégia de oferta normalizada ¶
+        Econômica --- ├
+├ <ul><li>{"LOWEST_COST_"} WITHOUT_CAP</li><li>COST_CAPS</li><li>{"LOWEST_COST_"} WITH_MIN_ROAS</li></ul>|
+        | TARGET\_COST | Bid escolhido |</td>
     </tr>
     <tr>
       <td>
@@ -122,8 +124,7 @@ Veja quais dados a AppsFlyer extrai e como eles são padronizados e mapeados par
         Valor do lance original
       </td>
       <td>
-        Extraído de: adset.bid\_amount
-      </td>
+        Extraído de: </td>
     </tr>
   </tbody>
 </Table>
@@ -136,84 +137,102 @@ Veja quais dados a AppsFlyer extrai e como eles são padronizados e mapeados par
 
 Veja quais dados a AppsFlyer extrai e como eles são padronizados e mapeados para o Google, na tabela a seguir.
 
-<Table>
-  <thead>
-    <tr>
-      <th>
-        Dimensão
-      </th>
-      <th>
+<table><thead><tr><th><font> <span>Dimensão</span> </font></th><th><span> <font>Descrição</font> </span></th></tr></thead><tbody><tr><td><span> <font> <span>Objetivo da Campanha</span> </font> </span></td><td><p><font> <span>Puxado de: <a href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.advertising_channel_sub_type" target="_blank">campaign.advertising_channel_sub_type</a></span> </font></p><p><font> <span>Nota: A seguinte população de campos depende do channel_sub_type:</span> </font></p><ul><li><font> <span>AC: APP_CAMPAIGN ou APP_CAMPAIGN_FOR_ENGAGEMENT</span> </font></li><li><font> <span>Não AC: Cada outro valor para channel_sub_type</span> </font></li></ul></td></tr><tr><td><span> <font>Modelo de custo</font> </span></td><td><ul><li><span>Para AC, puxado de: <a href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.app_campaign_setting.bidding_strategy_goal_type" target="_blank">campaign.app_campaign_setting.bidding_strategy_goal_type</a></span></li><li><span>Para non-AC, puxado de: <a href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.bidding_strategy_type" target="_blank">campaign.bidding_strategy_type</a></span></li></ul></td></tr><tr><td>    Observação: o preenchimento dos campos a seguir depende do channel\_sub\_type:
+
+    * AC: APP\_CAMPAIGN ou APP\_CAMPAIGN\_FOR\_ENGAGEMENT
+    * Não AC: todos os outros valores para channel\_sub\_type
+  </td>
+</tr>
+<tr>
+  <td>
+    Modelo de custo
+  </td>
+  <td>
+    * Para AC, extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.app_campaign_setting.bidding_strategy_goal_type">campaign.app\_campaign\_setting.bidding\_strategy\_goal\_type</Anchor>
+    * Para não-AC, extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.bidding_strategy_type">campaign.bidding\_strategy\_type</Anchor>
+  </td>
+</tr>
+<tr>
+  <td>
+    Mapeamento do modelo de custo padronizado da Appsflyer
+  </td>
+  <td>
+    <table><thead><tr><th colspan="2">Modelo de custo</th><th>Modelo de custo normalizado</th></tr></thead><tbody><tr><td rowspan="4"> <span>AC</span><span></span><br/> </td><td><ul><li>OPTIMIZE_INSTALLS_TARGET_INSTALL_COST</li><li>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_INSTALL_COST</li></ul></td><td><span>CPI</span></td></tr><tr><td><p>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_CONVERSION_COST</p></td><td><span>CPA</span></td></tr><tr><td>OPTIMIZE_RETURN_ON_ADVERTISING_SPEND</td><td><span>ROI</span></td></tr><tr><td><ul><li>Desconhecido</li><li>UNSPECIFIED</li></ul></td><td><span>Outros</span></td></tr><tr><td>Não AC</td><td><ul><li>REACH</li><li>ENHANCED_CPC</li><li>MANUAL_CPC</li><li>PERCENT_CPC</li><li>TARGET_SPEND</li></ul></td><td><span>CPC</span></td></tr><tr><td> </td><td><ul><li>MANUAL_CPM</li><li>TARGET_CPM</li><li>TARGET_IMPRESSION_SHARE</li></ul></td><td><span>CPM (custo por mil impressões)</span></td></tr><tr><td> </td><td>MANUAL_CPV</td><td><span>CPCV</span></td></tr><tr><td> </td><td><ul><li>MAXIMIZE_CONVERSIONS</li><li>TARGET_CPA</li></ul></td><td><span>CPA</span></td></tr><tr><td> </td><td><ul><li>MAXIMIZE_CONVERSION_VALUE</li><li>TARGET_ROAS</li></ul></td><td><span>ROI</span></td></tr><tr><td><span> </span></td><td><ul><li>COMMISSION</li><li>PAGE_ONE_PROMOTED</li><li>TARGET_OUTRANK_SHARE</li><li>Desconhecido</li><li>UNSPECIFIED</li></ul></td><td><span>Outros</span></td></tr></tbody></table>
+  </td>
+</tr>
+<tr>
+  <td>
+    Estratégia de lances
+  </td>
+  <td>
+    * Para AC, extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.app_campaign_setting.bidding_strategy_goal_type">campaign.app\_campaign\_setting.bidding\_strategy\_goal\_type</Anchor>
+    * Para não-AC, extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.bidding_strategy_type">campaign.bidding\_strategy\_type</Anchor>
+  </td>
+</tr>
+<tr>
+  <td>
+    Estratégia de bid padronizado da AppsFlyer
+  </td>
+  <td>
+    <table><thead><tr><th colspan="2"><font> <span>Estratégia de lances</span> </font></th><th><font> <span>Estratégia de lances normalizada</span> </font></th></tr></thead><tbody><tr><td rowspan="3"><font> <span>AC</span> </font></td><td><ul><li><font> <span>OPTIMIZE_INSTALLS_TARGET_INSTALL_COST</span> </font></li><li><font> <span>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_CONVERSION_COST</span> </font></li></ul></td><td><font> <span>Bid máx.</span> </font></td></tr><tr><td><ul><li><font> <span>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_INSTALL_COST</span> </font></li><li><font> <span>OPTIMIZE_RETURN_ON_ADVERTISING_SPEND</span> </font></li></ul></td><td><font> <span>Bid escolhido</span> </font></td></tr><tr><td><ul><li><font> <span>Desconhecido</span> </font></li><li><font> <span>UNSPECIFIED</span> </font></li></ul></td><td><font> <span>Outros</span> </font></td></tr><tr><td rowspan="5"><font> <span>Não AC</span> </font></td><td><ul><li><font> <span>ENHANCED_CPC</span> </font></li><li><font> <span>MANUAL_CPC</span> </font></li><li><font> <span>MANUAL_CPM</span> </font></li><li><font> <span>MANUAL_CPV</span> </font></li></ul></td><td><font> <span>Bid manual</span> </font></td></tr><tr><td><ul><li><font> <span>MAXIMIZE_CONVERSIONS</span> </font></li><li><font> <span>MAXIMIZE_CONVERSION_VALUE</span> </font></li><li><font> <span>PAGE_ONE_PROMOTED</span> </font></li><li><font> <span>TARGET_IMPRESSION_SHARE</span> </font></li><li><font> <span>TARGET_OUTRANK_SHARE</span> </font></li><li><font> <span>TARGET_SPEND</span> </font></li></ul></td><td><font> <span>Bid automático</span> </font></td></tr><tr><td><ul><li><font> <span>PERCENT_CPC</span> </font></li><li><font> <span>TARGET_CPA</span> </font></li><li><font> <span>TARGET_CPM</span> </font></li><li><font> <span>TARGET_ROAS</span> </font></li></ul></td><td><font> <span>Bid escolhido</span> </font></td></tr><tr><td><ul><li><font> <span>COMMISSION</span> </font></li><li><font> <span>Desconhecido</span> </font></li><li><font> <span>UNSPECIFIED</span> </font></li></ul></td><td><font> <span>Outros</span> </font></td></tr><tr><td><font> <span>Outros</span> </font></td><td><font> <span>Desconhecido</span> </font></td></tr></tbody></table>
+  </td>
+</tr>
+<tr>
+  <td>
+    Valor de bidding
+  </td>
+  <td>
+    Valor do bid na moeda do anunciante
+  </td>
+</tr>
+<tr>
+  <td>
+    Valor do lance original
+  </td>
+  <td>
+    Extraído de:    <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.target_cpa.target_cpa_micros">campaign.target\_cpa.target\_cpa\_micros</Anchor>
+  </td>
+</tr></td><td><table><thead><tr><th colspan="2">
         Descrição
-      </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>
-        Objetivo da campanha
-      </td>
-      <td>
-        Extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.advertising_channel_sub_type">campaign.advertising\_channel\_sub\_type</Anchor>
-
-        Observação: o preenchimento dos campos a seguir depende do channel\_sub\_type:
-
-        * AC: APP\_CAMPAIGN ou APP\_CAMPAIGN\_FOR\_ENGAGEMENT
-        * Não AC: todos os outros valores para channel\_sub\_type
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Modelo de custo
-      </td>
-      <td>
-        * Para AC, extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.app_campaign_setting.bidding_strategy_goal_type">campaign.app\_campaign\_setting.bidding\_strategy\_goal\_type</Anchor>
-        * Para não-AC, extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.bidding_strategy_type">campaign.bidding\_strategy\_type</Anchor>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Mapeamento do modelo de custo padronizado da Appsflyer
-      </td>
-      <td>
-        <table><thead><tr><th colspan="2">Modelo de custo</th><th>Modelo de custo normalizado</th></tr></thead><tbody><tr><td rowspan="4"> <span>AC</span><span></span><br/> </td><td><ul><li>OPTIMIZE_INSTALLS_TARGET_INSTALL_COST</li><li>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_INSTALL_COST</li></ul></td><td><span>CPI</span></td></tr><tr><td><p>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_CONVERSION_COST</p></td><td><span>CPA</span></td></tr><tr><td>OPTIMIZE_RETURN_ON_ADVERTISING_SPEND</td><td><span>ROI</span></td></tr><tr><td><ul><li>Desconhecido</li><li>UNSPECIFIED</li></ul></td><td><span>Outros</span></td></tr><tr><td>Não AC</td><td><ul><li>REACH</li><li>ENHANCED_CPC</li><li>MANUAL_CPC</li><li>PERCENT_CPC</li><li>TARGET_SPEND</li></ul></td><td><span>CPC</span></td></tr><tr><td> </td><td><ul><li>MANUAL_CPM</li><li>TARGET_CPM</li><li>TARGET_IMPRESSION_SHARE</li></ul></td><td><span>CPM (custo por mil impressões)</span></td></tr><tr><td> </td><td>MANUAL_CPV</td><td><span>CPCV</span></td></tr><tr><td> </td><td><ul><li>MAXIMIZE_CONVERSIONS</li><li>TARGET_CPA</li></ul></td><td><span>CPA</span></td></tr><tr><td> </td><td><ul><li>MAXIMIZE_CONVERSION_VALUE</li><li>TARGET_ROAS</li></ul></td><td><span>ROI</span></td></tr><tr><td><span> </span></td><td><ul><li>COMMISSION</li><li>PAGE_ONE_PROMOTED</li><li>TARGET_OUTRANK_SHARE</li><li>Desconhecido</li><li>UNSPECIFIED</li></ul></td><td><span>Outros</span></td></tr></tbody></table>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Estratégia de lances
-      </td>
-      <td>
-        * Para AC, extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.app_campaign_setting.bidding_strategy_goal_type">campaign.app\_campaign\_setting.bidding\_strategy\_goal\_type</Anchor>
-        * Para não-AC, extraído de: <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.bidding_strategy_type">campaign.bidding\_strategy\_type</Anchor>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Estratégia de bid padronizado da AppsFlyer
-      </td>
-      <td>
-        <table><thead><tr><th colspan="2"><font> <span>Estratégia de lances</span> </font></th><th><font> <span>Estratégia de lances normalizada</span> </font></th></tr></thead><tbody><tr><td rowspan="3"><font> <span>AC</span> </font></td><td><ul><li><font> <span>OPTIMIZE_INSTALLS_TARGET_INSTALL_COST</span> </font></li><li><font> <span>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_CONVERSION_COST</span> </font></li></ul></td><td><font> <span>Bid máx.</span> </font></td></tr><tr><td><ul><li><font> <span>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_INSTALL_COST</span> </font></li><li><font> <span>OPTIMIZE_RETURN_ON_ADVERTISING_SPEND</span> </font></li></ul></td><td><font> <span>Bid escolhido</span> </font></td></tr><tr><td><ul><li><font> <span>Desconhecido</span> </font></li><li><font> <span>UNSPECIFIED</span> </font></li></ul></td><td><font> <span>Outros</span> </font></td></tr><tr><td rowspan="5"><font> <span>Não AC</span> </font></td><td><ul><li><font> <span>ENHANCED_CPC</span> </font></li><li><font> <span>MANUAL_CPC</span> </font></li><li><font> <span>MANUAL_CPM</span> </font></li><li><font> <span>MANUAL_CPV</span> </font></li></ul></td><td><font> <span>Bid manual</span> </font></td></tr><tr><td><ul><li><font> <span>MAXIMIZE_CONVERSIONS</span> </font></li><li><font> <span>MAXIMIZE_CONVERSION_VALUE</span> </font></li><li><font> <span>PAGE_ONE_PROMOTED</span> </font></li><li><font> <span>TARGET_IMPRESSION_SHARE</span> </font></li><li><font> <span>TARGET_OUTRANK_SHARE</span> </font></li><li><font> <span>TARGET_SPEND</span> </font></li></ul></td><td><font> <span>Bid automático</span> </font></td></tr><tr><td><ul><li><font> <span>PERCENT_CPC</span> </font></li><li><font> <span>TARGET_CPA</span> </font></li><li><font> <span>TARGET_CPM</span> </font></li><li><font> <span>TARGET_ROAS</span> </font></li></ul></td><td><font> <span>Bid escolhido</span> </font></td></tr><tr><td><ul><li><font> <span>COMMISSION</span> </font></li><li><font> <span>Desconhecido</span> </font></li><li><font> <span>UNSPECIFIED</span> </font></li></ul></td><td><font> <span>Outros</span> </font></td></tr><tr><td><font> <span>Outros</span> </font></td><td><font> <span>Desconhecido</span> </font></td></tr></tbody></table>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Valor de bidding
-      </td>
-      <td>
-        Valor do bid na moeda do anunciante
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Valor do lance original
-      </td>
-      <td>
-        Extraído de:    <Anchor target="_blank" href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.target_cpa.target_cpa_micros">campaign.target\_cpa.target\_cpa\_micros</Anchor>
-      </td>
-    </tr>
-  </tbody>
-</Table>
+      </th><th>
+        | Modelo de custo | Modelo de custo normalizado |
+        | --- | --- |
+        | * DESLIZAMENTOS<br />* ABERTURAS\_DE\_HISTÓRIA | CPC |
+        | * USOS<br />* {"PIXEL_ADI"}ÇÃ{"O_AO_CARRINHO"}<br />* {"PIXEL_COMPRA"}<br />* {"PIXEL_CADASTRO"}<br />* {"APP_ADI"}ÇÃ{"O_AO_CARRINHO"}<br />* {"APP_COMPRA"}<br />* {"APP_CADASTRO"} | CPA |
+        | APP\_INSTALLS | CPI |
+        | * IMPRESSIONS | CPM (custo por mil impressões) |
+        | * VIDEO\_VIEWS<br />* VISUALIZAÇÕES\_DE\_VÍDEO\_15\_SEGUNDOS | CPCV |
+      </th></tr></thead><tbody><tr><td rowspan="4"><span>AC</span><span><br/></span></td><td><ul><li>OPTIMIZE_INSTALLS_TARGET_TITLE</li><li>OPTIMIZE_APP_CONVERSIONS_TARGET_TITLE</li></ul></td><td><span>CPI</span></td></tr><tr><td><p>OPTIMIZE_APP_CONVERSIONS_TITLE</p></td><td><span>CPA</span></td></tr><tr><td>OPTIMIZE_RETURN_PLAYLIST_DESCRIPTION</td><td><span>ROI</span></td></tr><tr><td><ul><li>DESCONHECIDO</li><li>ESPECÍFICO</li></ul></td><td><span>Outro</span></td></tr><tr><td>Non-AC</td><td><ul><li>ANQUIRES</li><li>PLAYLIST_DEACTIVATE_BTN</li><li>MANUAL_CPC</li><li>PLAYLIST_SHOP_DESCRIPTION</li><li>TARGET_PICK_PLAYLIST</li></ul></td><td><span>CPC</span></td></tr><tr><td> </td><td><ul><li>MANUAL_CPM</li><li>TARGET_CPM</li><li>PLAYLIST_DEACTIVATE_DESCRIPTION</li></ul></td><td><span>CPM</span></td></tr><tr><td> </td><td>MANUAL_CPV</td><td><span>CPCV</span></td></tr><tr><td> </td><td><ul><li>MAXIMIZE_CONVERSÕES</li><li>TARGET_CPA</li></ul></td><td><span>CPA</span></td></tr><tr><td> </td><td><ul><li>MAXIMIZE_CONVERSION_VALOR</li><li>TARGET_ROAS</li></ul></td><td><span>ROI</span></td></tr><tr><td><span> </span></td><td><ul><li>COMISSÃO</li><li>PAGE_ONE_PROMOTED</li><li>TARGET_OUTRANK_SHARE</li><li>DESCONHECIDO</li><li>ESPECÍFICO</li></ul></td><td><span>Outro</span></td></tr></tbody></table></td></tr><tr><td><span> <font>Estratégia de lances</font> </span></td><td><ul><li><span>Para AC, puxado de: <a href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.app_campaign_setting.bidding_strategy_goal_type" target="_blank">campaign.app_campaign_setting.bidding_strategy_goal_type</a></span></li><li><span>Para non-AC, puxado de: <a href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.bidding_strategy_type" target="_blank">campaign.bidding_strategy_type</a></span></li></ul></td></tr><tr><td>    Se não houver bid\_strategy no nível do conjunto de anúncios, então: <Anchor target="_blank" href="https://developers.facebook.com/docs/marketing-api/bidding/overview/bid-strategy">campaign.bid\_strategy</Anchor>
+  </td>
+</tr>
+<tr>
+  <td>
+    Estratégia de bid padronizado da AppsFlyer
+  </td>
+  <td>
+    | Estratégia de lances | Estratégia de lances normalizada |
+    | --- | --- |
+    | * {"LOWEST_COST_"} {"WITHOUT_CAP"}<br />* {"COST_CAP"}<br />* {"LOWEST_COST_"} {"WITH_MIN_ROAS"} | Bid automático |
+    | TARGET\_COST | Bid escolhido |
+    | Outros | Desconhecido |
+  </td>
+</tr>
+<tr>
+  <td>
+    Valor de bidding
+  </td>
+  <td>
+    Valor do bid na moeda do anunciante
+  </td>
+</tr>
+<tr>
+  <td>
+    Valor do lance original
+  </td>
+  <td>
+    Extraído de: adset.bid\_amount
+  </td>
+</tr></td><td><table><thead><tr><th colspan="2"><font> <span>Estratégia de lances</span> </font></th><th><font> <span>Estratégia de oferta normalizada</span> </font></th></tr></thead><tbody><tr><td rowspan="3"><font> <span>AC</span> </font></td><td><ul><li><font> <span>OPTIMIZE_INSTALLS_TARGET_INSTALL_CST</span> </font></li><li><font> <span>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_CONVERSION_COST</span> </font></li></ul></td><td><font> <span>Anual</span> </font></td></tr><tr><td><ul><li><font> <span>OPTIMIZE_IN_APP_CONVERSIONS_TARGET_INSTALL_COST</span> </font></li><li><font> <span>OPTIMIZE_RETURN_ON_ADVERTISING_SPEND</span> </font></li></ul></td><td><font> <span>Target bid</span> </font></td></tr><tr><td><ul><li><font> <span>DESCONHECIDO</span> </font></li><li>U<font> <span>ESPECIFICADO</span> </font></li></ul></td><td><font> <span>Outro</span> </font></td></tr><tr><td rowspan="5"><font> <span>Non-AC</span> </font></td><td><ul><li>U<font> <span>INHANCED_CPC</span> </font></li><li>U<font> <span>MANUAL_CPC</span> </font></li><li>U<font> <span>MANUAL_CPM</span> </font></li><li>U<font> <span>MANUAL_CPV</span> </font></li></ul></td><td><font> <span>Oferta manual</span> </font></td></tr><tr><td><ul><li><font> <span>MAXIMIZE_CONVERSIONS</span> </font></li><li><font> <span>MAXIMIZE_CONVERSION_VALUE</span> </font></li><li><font> <span>PAGE_ONE_PROMOTED</span> </font></li><li>U<font> <span>TARGET_IMPRESSION_SHARE</span> </font></li><li><font> <span>TARGET_OUTRANK_SHARE</span> </font></li><li><font> <span>TARGET_SPEND</span> </font></li></ul></td><td><font> <span>Auto bid</span> </font></td></tr><tr><td><ul><li><font> <span>PERCENT_CPC</span> </font></li><li><font> <span>TARGET_CPA</span> </font></li><li><font> <span>TARGET_CPM</span> </font></li><li><font> <span>TARGET_ROAS</span> </font></li></ul></td><td><font> <span>Target bid</span> </font></td></tr><tr><td><ul><li>U<font> <span>COMISSÃO</span> </font></li><li><font> <span>DESCONHECIDO</span> </font></li><li>U<font> <span>ESPECIFICADO</span> </font></li></ul></td><td><font> <span>Outro</span> </font></td></tr><tr><td>U<font> <span>Qualquer outra coisa</span> </font></td><td><font> <span>Desconhecido</span> </font></td></tr></tbody></table></td></tr><tr><td><span> <font>Valor do lance</font> </span></td><td><span> <font>Valor do lance na moeda do anunciante</font> </span></td></tr><tr><td><span> <font>Valor Original da licitação</font> </span></td><td><span> <font>Puxado de: </font> </span> <a href="https://developers.google.com/google-ads/api/fields/v5/campaign#campaign.target_cpa.target_cpa_micros" target="_blank">campaign.target_cpa.target_cpa_micros</a></td></tr></tbody></table>
 
 </Accordion>
 
@@ -232,7 +251,6 @@ Veja quais dados a AppsFlyer extrai e como eles são padronizados e mapeados par
       </th>
     </tr>
   </thead>
-
   <tbody>
     <tr>
       <td>
@@ -254,14 +272,12 @@ Veja quais dados a AppsFlyer extrai e como eles são padronizados e mapeados par
       <td>
         Mapeamento do modelo de custo padronizado da Appsflyer
       </td>
-      <td>
-        | Modelo de custo | Modelo de custo normalizado |
-        | --- | --- |
-        | * DESLIZAMENTOS<br />* ABERTURAS\_DE\_HISTÓRIA | CPC |
-        | * USOS<br />* {"PIXEL_ADI"}ÇÃ{"O_AO_CARRINHO"}<br />* {"PIXEL_COMPRA"}<br />* {"PIXEL_CADASTRO"}<br />* {"APP_ADI"}ÇÃ{"O_AO_CARRINHO"}<br />* {"APP_COMPRA"}<br />* {"APP_CADASTRO"} | CPA |
+      <td>  </tbody>
+<ul><li>ESPECIAS</li><li>CHAT_NOTIF_SETTINGS_POPUP_TITLE</li></ul> ★ CPC &
+        de CPC <ul><li>USOS</li><li>PLAYLIST_ACTIVATE_DESC</li><li>PLAYLIST_DEACTIVATE_DESCRIPTION</li><li>PICK_PLAYLIST_DESCRIPTION</li><li>APP_ADD_TO_CHALLENGE_CHALLENGES</li><li>PLAYLIST_DEACTIVATE_TEXT</li><li>PLAYLIST_SHOP_DESCRIPTION</li></ul> | CPA |
         | APP\_INSTALLS | CPI |
-        | * IMPRESSIONS | CPM (custo por mil impressões) |
-        | * VIDEO\_VIEWS<br />* VISUALIZAÇÕES\_DE\_VÍDEO\_15\_SEGUNDOS | CPCV |
+        | <ul><li>IMPRESSÕES</li></ul> ★ CPM L&gU
+        L&br <ul><li>VIDEO_NOTIF_SETTINGS_POPUP_TITLE</li><li>VIDEO_VIEWS_15_SEC</li></ul> (ExplicitText="CPCV (EN
       </td>
     </tr>
     <tr>
@@ -273,29 +289,25 @@ Veja quais dados a AppsFlyer extrai e como eles são padronizados e mapeados par
       </td>
     </tr>
     <tr>
-      <td>
-        Estratégia de bid padronizado da AppsFlyer
-      </td>
-      <td>
-        | Estratégia de lances | Estratégia de lances normalizada |
+      <td>https://support.appsflyer.com/hc/pt/articles/360020994977</td>
+      <td>| Estratégia de lances | Estratégia de lances normalizada |
         | --- | --- |
         | * ROAS\_MÍNIMO<br />* LANCE\_AUTOMÁTICO | Bid automático |
-        | {"MENOR_CUSTO_"} {"COM_LANCE_M"}ÁXIMO | Bid máx. |
-        | TARGET\_COST | Bid escolhido |
+        | {"MENOR_CUSTO_"} {"COM_LANCE_M"}ÁXIMO | Bid máx.<ul><li>MIN_ROAS</li><li>AUTO_BID</li></ul> | Auto bid |
+        | {"LOWEST_COST_"} {"WITH_MAX_BID"} | Max bid |
+        | TARGET\_COST | Target bid |
       </td>
     </tr>
     <tr>
       <td>
-        Valor de bidding
+        Dimensão
       </td>
       <td>
-        Valor do bid na moeda do anunciante
+        Objetivo da campanha
       </td>
     </tr>
     <tr>
-      <td>
-        Valor do lance original
-      </td>
+      <td>pt</td>
       <td>
         Extraído de: adsquad.bid\_micro
       </td>
