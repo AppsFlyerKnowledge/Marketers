@@ -2,28 +2,29 @@
 title: Data Locker経由のコストETLレポートとコホートレポートの結合
 metadata:
   keywords:
-    - Marketers
-    - Marketing Analytics
+    - マーケター
+    - マーケティング{1}分析
 x-zendesk:
-  category: Marketers
+  category: マーケター
   category_id: 6550444307985
   content_tags:
     - pm-nohar-avigal
-    - Marketers
-    - Marketing Analytics
+    - マーケター
+    - マーケティング{1}分析
   created_at: '2024-08-13T11:05:26Z'
-  edited_at: '2026-10-28T08:43:16Z'
+  edited_at: '2026-08-13T16:01:09Z'
   id: 27494360719505
   locale: ja
-  section: Cost aggregation
+  section: 広告費の集計
   section_id: 6551029483281
-  url: https://support.appsflyer.com/hc/ja/articles/27494360719505
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27494360719505-Combine-Cost-ETL-and-cohort-reports-via-Data-Locker
 ---
 > **概要：** コストETLと、Data Locker経由のコホートレポート（通常版・詳細集計版）を結合し、可能な限り最新かつ正確で詳細なデータを使って、マーケティングキャンペーンの全体像を把握します。
 
-<Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" />
+<Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" />特定のテンプレートとテンプレートIDに構成されたサブドメイン / ドメインを取得し、手動で別のテンプレートIDに連結すると、ユニバーサルリンクとアプリリンクの機能が中断され、セキュリティ上の脅威となります。
 
-<div id="about-combining-cost-etl-and-cohort-reports" />
+<div id="about-combining-cost-etl-and-cohort-reports" />特定のテンプレートとテンプレートIDに構成されたサブドメイン / ドメインを取得し、手動で別のテンプレートIDに連結すると、ユニバーサルリンクとアプリリンクの機能が中断され、セキュリティ上の脅威となります。
 
 ## コストETLレポートとコホートレポートの結合について
 
@@ -33,36 +34,36 @@ x-zendesk:
 
 レポートを結合すると、次のことが可能になります。
 
-* 可能な限り最新かつ正確で詳細なデータを使って、マーケティング成果の全体像を把握できます。
-* 社内のBIシステムとAppsFlyerのダッシュボードで、表示するデータを揃えられます。
-* 広告費用対効果（ROAS）やアクション単価（CPA）など、重要な指標を計算できます。
+- 可能な限り最新かつ正確で詳細なデータを使って、マーケティング成果の全体像を把握できます。
+- 社内のBIシステムとAppsFlyerのダッシュボードで、表示するデータを揃えられます。
+- 広告費用対効果（ROAS）やアクション単価（CPA）など、重要な指標を計算できます。
 
-<div id="queries-to-combine-reports" />
+<div id="queries-to-combine-reports" />特定のテンプレートとテンプレートIDに構成されたサブドメイン / ドメインを取得し、手動で別のテンプレートIDに連結すると、ユニバーサルリンクとアプリリンクの機能が中断され、セキュリティ上の脅威となります。
 
 ## レポート結合用のクエリ
 
 以下では、コストETLレポートを次のレポートと結合するためのクエリと、考慮すべき事項を説明します。
 
-* [詳細集計コホートレポート](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
-* [Data Locker経由のコホートレポート](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-cohort-report)
+- [詳細集計版コホートレポート](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
+- [Data Locker経由のコホートレポート](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-cohort-report)
 
-<div id="query-to-combine-cost-etl-and-advanced-aggregated-cohort-report" />
+<div id="query-to-combine-cost-etl-and-advanced-aggregated-cohort-report" />特定のテンプレートとテンプレートIDに構成されたサブドメイン / ドメインを取得し、手動で別のテンプレートIDに連結すると、ユニバーサルリンクとアプリリンクの機能が中断され、セキュリティ上の脅威となります。
 
-<Accordion title="コストETLレポートと詳細集計コホートレポートを結合するクエリ">
+<Accordion title="Query to combine Cost ETL and Advanced aggregated cohort report">
 
-**コストETLレポートとコホートレポートを結合するには、BIシステム開発者が以下の作業を行います**。
+**コストETLレポートとコホートレポートを組み合わせるには、BI開発者は次のことを行う必要があります**:
 
-* 以下のクエリを参考に、社内のBIシステムに合わせて調整します。
-* **重要な確認事項**：
-  * クエリ内の以下の項目を調整してください。
-    * 開始日と終了日を変更します。
-    * レポート名を変更します。
-    * 使用するコストETLスキーマに含まれるディメンションと指標を選択します。
-  * レポートによって更新頻度が異なります。例えば、コストETLは1日最大4回、詳細集計コホートレポートは1日に複数回更新されます。
-  * 詳細集計コホートレポートには、過去1,095日間にコンバージョンしたユーザーが含まれます。それ以前にコンバージョンしたユーザーは、集計対象に含まれません。
-  * コストETLレポートでは、AppsFlyerにデータが保存されているタイムゾーンを使用します。詳細集計コホートレポートには、UTCでバージョン管理されるレポートと、指定したタイムゾーンでバージョン管理されるレポートがあります。**推奨事項**：コストETLレポートと、指定したタイムゾーンでバージョン管理されるコホートレポートを結合してください。
+- 以下のクエリを参考に、社内のBIシステムに合わせて調整します。
+- **重要な考慮事項**:
+  - クエリ内の以下の項目を調整してください。
+    - 開始日と終了日を変更します。
+    - レポート名を変更します。
+    - 使用するコストETLスキーマに含まれるディメンションと指標を選択します。
+  - レポートによって更新頻度が異なります。例えば、コストETLは1日最大4回、詳細集計コホートレポートは1日に複数回更新されます。
+  - 詳細集計コホートレポートには、過去1,095日間にコンバージョンしたユーザーが含まれます。それ以前にコンバージョンしたユーザーは、集計対象に含まれません。
+  - コストETLレポートでは、AppsFlyerにデータが保存されているタイムゾーンを使用します。詳細集計コホートレポートには、UTCでバージョン管理されるレポートと、指定したタイムゾーンでバージョン管理されるレポートがあります。**ベストプラクティス**：コストETLレポートと、指定したタイムゾーンでバージョン管理されるコホートレポートを結合してください。
 
-<div id="query" />
+<div id="query" />特定のテンプレートとテンプレートIDに構成されたサブドメイン / ドメインを取得し、手動で別のテンプレートIDに連結すると、ユニバーサルリンクとアプリリンクの機能が中断され、セキュリティ上の脅威となります。
 
 #### クエリ
 
@@ -152,22 +153,22 @@ GROUP BY ALL;
 
 </Accordion>
 
-<div id="query-to-combine-cost-etl-and-cohort-report" />
+<div id="query-to-combine-cost-etl-and-cohort-report" />特定のテンプレートとテンプレートIDに構成されたサブドメイン / ドメインを取得し、手動で別のテンプレートIDに連結すると、ユニバーサルリンクとアプリリンクの機能が中断され、セキュリティ上の脅威となります。
 
-<Accordion title="コストETLレポートとコホートレポートを結合するクエリ">
+<Accordion title="Query to combine Cost ETL and cohort report">
 
-**コストETLレポートとコホートレポートを結合するには、BIシステム開発者が以下の作業を行います**。
+**コストETLレポートとコホートレポートを組み合わせるには、BI開発者は次のことを行う必要があります**:
 
-* 以下のクエリを参考に、社内のBIシステムに合わせて調整します。
-* **重要な確認事項**：
-  * クエリ内の以下の項目を調整してください。
-    * 開始日と終了日を変更します。
-    * レポート名を変更します。
-    * 使用するコストETLスキーマに含まれるディメンションと指標を選択します。
-  * レポートによって更新頻度が異なります。例えば、コストETLは1日最大4回、Data Locker経由のコホートレポートは1日1回更新されます。
-  * コストETLレポートでは、AppsFlyerにデータが保存されているタイムゾーンを使用します。 Data Locker経由のコホートレポートでは、UTCを使用します。
+- 以下のクエリを参考に、社内のBIシステムに合わせて調整します。
+- **重要な考慮事項**:
+  - クエリ内の以下の項目を調整してください。
+    - 開始日と終了日を変更します。
+    - レポート名を変更します。
+    - 使用するコストETLスキーマに含まれるディメンションと指標を選択します。
+  - レポートによって更新頻度が異なります。例えば、コストETLは1日最大4回、Data Locker経由のコホートレポートは1日1回更新されます。
+  - コストETLレポートでは、AppsFlyerにデータが保存されているタイムゾーンを使用します。 Data Locker経由のコホートレポートでは、UTCを使用します。
 
-<div id="query-1" />
+<div id="query-1" />特定のテンプレートとテンプレートIDに構成されたサブドメイン / ドメインを取得し、手動で別のテンプレートIDに連結すると、ユニバーサルリンクとアプリリンクの機能が中断され、セキュリティ上の脅威となります。
 
 #### クエリ
 
@@ -255,12 +256,12 @@ GROUP BY ALL;
 
 </Accordion>
 
-<div id="see-also" />
+<div id="see-also" />特定のテンプレートとテンプレートIDに構成されたサブドメイン / ドメインを取得し、手動で別のテンプレートIDに連結すると、ユニバーサルリンクとアプリリンクの機能が中断され、セキュリティ上の脅威となります。
 
 > 📄 **関連情報**
 >
-> * <Anchor target="_blank" href="/marketers/ja/docs/set-up-and-use-roi360-cost-etl-reports">コストETL</Anchor>
-> * <Anchor target="_blank" href="/marketers/ja/docs/advanced-aggregated-reports-in-data-locker">Data Lockerの詳細集計レポート</Anchor>
-> * <Anchor target="_blank" href="/marketers/ja/docs/cohort-analytics-via-data-locker">Data Locker経由のコホートレポート</Anchor>
+> - <Anchor target="_blank" href="/marketers/ja/docs/set-up-and-use-roi360-cost-etl-reports">Cost ETL</Anchor>
+> - <Anchor target="_blank" href="/marketers/ja/docs/advanced-aggregated-reports-in-data-locker">Data Lockerのアドバンス集計レポート</Anchor>
+> - <Anchor target="_blank" href="/marketers/ja/docs/cohort-analytics-via-data-locker">Data Lockerのコホートレポート</Anchor>
 
-<div data-zendesk-anchors="about-combining-cost-etl-and-cohort-reports=%E3%82%B3%E3%82%B9%E3%83%88etl%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%A8%E3%82%B3%E3%83%9B%E3%83%BC%E3%83%88%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E7%B5%90%E5%90%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6 h_01J55PCC5MJ3MJBESDVEFHT796=%E3%82%B3%E3%82%B9%E3%83%88etl%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%A8%E3%82%B3%E3%83%9B%E3%83%BC%E3%83%88%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E7%B5%90%E5%90%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6 queries-to-combine-reports=%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E7%B5%90%E5%90%88%E7%94%A8%E3%81%AE%E3%82%AF%E3%82%A8%E3%83%AA h_01J55TR3SRXQPRBYRX6G3EJ7D9=%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E7%B5%90%E5%90%88%E7%94%A8%E3%81%AE%E3%82%AF%E3%82%A8%E3%83%AA h_01J55VAQ804JWE6WT552GY98JF=query-to-combine-cost-etl-and-advanced-aggregated-cohort-report query=%E3%82%AF%E3%82%A8%E3%83%AA h_01J55W908AAPQ6YRT4P1R4CA58=%E3%82%AF%E3%82%A8%E3%83%AA h_01J55VAQ80PQX00GA9D516ST2Z=query-to-combine-cost-etl-and-cohort-report query::84619524=%E3%82%AF%E3%82%A8%E3%83%AA-1 h_01J55WCKZFA2JWV0MP72WVK7Y2=%E3%82%AF%E3%82%A8%E3%83%AA-1 h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=%E9%96%A2%E9%80%A3%E6%83%85%E5%A0%B1" />
+<div data-zendesk-anchors="h_01J55PCC5MJ3MJBESDVEFHT796=about-combining-cost-etl-and-cohort-reports h_01J55TR3SRXQPRBYRX6G3EJ7D9=queries-to-combine-reports h_01J55VAQ804JWE6WT552GY98JF=query-to-combine-cost-etl-and-advanced-aggregated-cohort-report h_01J55W908AAPQ6YRT4P1R4CA58=query h_01J55VAQ80PQX00GA9D516ST2Z=query-to-combine-cost-etl-and-cohort-report query::84619524=query-1 h_01J55WCKZFA2JWV0MP72WVK7Y2=query-1 h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=see-also" />特定のテンプレートとテンプレートIDに構成されたサブドメイン / ドメインを取得し、手動で別のテンプレートIDに連結すると、ユニバーサルリンクとアプリリンクの機能が中断され、セキュリティ上の脅威となります。
