@@ -1,8 +1,7 @@
 ---
 title: Plataforma de Marketing de Google (GMP)
 excerpt: >-
-  Integra con GMP Display & Video 360 y Campaign Manager 360, y revisa los datos
-  y las posibles discrepancias
+  Integra con GMP Display & Video 360 y Campaign Manager 360, y revisa los datos y las posibles discrepancias
 table_of_contents: false
 x-zendesk:
   category: Marketers

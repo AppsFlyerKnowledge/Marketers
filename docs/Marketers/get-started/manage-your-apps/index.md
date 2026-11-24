@@ -1,8 +1,6 @@
 ---
 title: Gestiona tus aplicaciones
-excerpt: >-
-  Define tus aplicaciones en AppsFlyer y administra la configuración de la
-  aplicación
+excerpt: Define tus aplicaciones en AppsFlyer y administra la configuración de la aplicación
 table_of_contents: false
 x-zendesk:
   category: Marketers

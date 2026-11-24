@@ -1,8 +1,7 @@
 ---
 title: Signal Hub
 excerpt: >-
-  Crea audiencias que respeten la privacidad con señales de compra del mundo
-  real y actívalas al instante en las principales plataformas de medios
+  Crea audiencias que respeten la privacidad con señales de compra del mundo real y actívalas al instante en las principales plataformas de medios
 table_of_contents: false
 x-zendesk:
   category: Marketers

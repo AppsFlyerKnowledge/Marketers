@@ -10,8 +10,7 @@ x-zendesk:
   locale: es
   parent_section_id: 6550990672401
   type: section
-  url: >-
-    https://support.appsflyer.com/hc/es/sections/6551205645457-Anuncios-de-Google
+  url: https://support.appsflyer.com/hc/es/sections/6551205645457-Anuncios-de-Google
 ---
 - [Google Ads (AdWords): Configuración de integración para anunciantes](/docs/google-ads-adwords-integration-setup-for-advertisers)
 - [Google Ads (AdWords): crea campañas web para aplicaciones web](/docs/google-ads-adwords-create-web-campaigns-for-website-apps)

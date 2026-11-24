@@ -1,8 +1,7 @@
 ---
 title: Atribución de medios propios
 excerpt: >-
-  Mide trayectorias de usuario de medios propios: invitaciones, promociones
-  cruzadas, SMS y más
+  Mide trayectorias de usuario de medios propios: invitaciones, promociones cruzadas, SMS y más
 table_of_contents: false
 x-zendesk:
   category: Marketers

@@ -1,8 +1,7 @@
 ---
 title: Redirecciona y atribuye usuarios
 excerpt: >-
-  Medios propios, uso de enlaces profundos, atribuye trayectorias de usuario
-  (PBA)
+  Medios propios, uso de enlaces profundos, atribuye trayectorias de usuario (PBA)
 table_of_contents: false
 x-zendesk:
   category: Marketers

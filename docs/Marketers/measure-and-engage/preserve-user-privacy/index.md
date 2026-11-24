@@ -1,6 +1,7 @@
 ---
 title: Preserva la privacidad del usuario
-excerpt: Cumple las normas de las tiendas de aplicaciones y de privacidad como el RGPD
+excerpt: >-
+  Cumple las normas de las tiendas de aplicaciones y de privacidad como el RGPD
 table_of_contents: false
 x-zendesk:
   category: Marketers

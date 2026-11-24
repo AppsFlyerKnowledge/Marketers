@@ -23,7 +23,8 @@ x-zendesk:
   locale: es
   section: SDK integration planning
   section_id: 6551182964369
-  url: https://support.appsflyer.com/hc/es/articles/207031996
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/207031996
 ---
 > **At a glance:** Cuando realices pruebas de atribución, registra tu dispositivo de prueba para asegurarte de que cada instalación se anote como nueva. Un dispositivo de prueba registrado impide que las instalaciones se atribuyan como reinstalaciones.
 
@@ -41,32 +42,36 @@ Registrar un dispositivo de prueba implica seleccionar el sistema operativo del 
 
 Puedes utilizar uno de los siguientes métodos para registrarte:
 
-* [Descarga e instala la aplicación My Device ID by AppsFlyer:](#register-a-device-using-the-appsflyer-device-id-app-admin-only) Una vez que instales la app en el dispositivo de prueba, podrás registrar el dispositivo automáticamente y compartir los detalles del ID de dispositivo con tu cuenta de AppsFlyer. El dispositivo aparecerá automáticamente en la página de **Dispositivos de prueba**.
+- [Descarga e instala la aplicación My Device ID by AppsFlyer:](#register-a-device-using-the-appsflyer-device-id-app-admin-only) Una vez que instales la app en el dispositivo de prueba, podrás registrar el dispositivo automáticamente y compartir los detalles del ID de dispositivo con tu cuenta de AppsFlyer. El dispositivo aparecerá automáticamente en la página de **Dispositivos de prueba**.
+
+<div id="note" />
 
 > 📘 **Note**
 >
-> * En dispositivos de prueba con iOS 14+, puedes usar este método de registro solo si se implementó AppTransparencyTracking (ATT) en tu aplicación y deseas realizar pruebas como usuario que da su consentimiento. Si este no es el caso, utiliza el método manual.
-> * Si tu cuenta de AppsFlyer tiene activada la autenticación de dos factores (2FA), no puedes registrar dispositivos de prueba mediante la aplicación porque la aplicación no admite la autenticación 2FA. En este caso, usa el método manual para registrar dispositivos de prueba.
+> - En dispositivos de prueba con iOS 14+, puedes usar este método de registro solo si se implementó AppTransparencyTracking (ATT) en tu aplicación y deseas realizar pruebas como usuario que da su consentimiento. Si este no es el caso, utiliza el método manual.
+> - Si tu cuenta de AppsFlyer tiene activada la autenticación de dos factores (2FA), no puedes registrar dispositivos de prueba mediante la aplicación porque la aplicación no admite la autenticación 2FA. En este caso, usa el método manual para registrar dispositivos de prueba.
 
-* [Agregar manualmente el dispositivo de prueba:](#register-a-device-manually) Cualquier usuario de la cuenta puede registrar directamente un dispositivo de prueba añadiendo el identificador del dispositivo a la página de **Dispositivos de prueba**.
+- [Agregar manualmente el dispositivo de prueba:](#register-a-device-manually) Cualquier usuario de la cuenta puede registrar directamente un dispositivo de prueba añadiendo el identificador del dispositivo a la página de **Dispositivos de prueba**.
 
 Ten en cuenta lo siguiente:
 
-* Los dispositivos de prueba registrados están disponibles para todas las aplicaciones que pertenecen a la cuenta.
-* Las ad networks deben pedir al anunciante que añada dispositivos; las agencias pueden añadir sus propios dispositivos.
+- Los dispositivos de prueba registrados están disponibles para todas las aplicaciones que pertenecen a la cuenta.
+- Las ad networks deben pedir al anunciante que añada dispositivos; las agencias pueden añadir sus propios dispositivos.
 
-<Accordion title="Identificadores de dispositivos compatibles">
+<Accordion title="Supported device identifiers">
 
 Los identificadores de dispositivos incluyen lo siguiente:
 
-* **Android:** AID (GAID u OAID), IMEI, ID de Android
+- **Android:** AID (GAID u OAID), IMEI, ID de Android
+
+<div id="note-1" />
 
 > 📘 **Note**
 >
 > Al registrar un dispositivo de prueba, debes agregar identificadores de dispositivo IMEI o Android ID solo si tu aplicación recopila y utiliza estos identificadores.
 
-* **iOS:** IDFA, IDFV
-* **Windows Phone:** ID de publicidad de Windows
+- **iOS:** IDFA, IDFV
+- **Windows Phone:** ID de publicidad de Windows
 
 </Accordion>
 
@@ -74,7 +79,7 @@ Los identificadores de dispositivos incluyen lo siguiente:
 
 ## Gestión del registro de dispositivos de prueba
 
-<Accordion title="Registrar un dispositivo usando la aplicación de ID de dispositivo de AppsFlyer">
+<Accordion title="Register a device using the AppsFlyer device ID app">
 
 **Para descargar la aplicación de ID de dispositivo de AppsFlyer:**
 
@@ -138,7 +143,7 @@ Los identificadores de dispositivos incluyen lo siguiente:
 
 </Accordion>
 
-<Accordion title="Registrar un dispositivo manualmente">
+<Accordion title="Register a device manually">
 
 Los usuarios de la cuenta pueden registrar un dispositivo manualmente:
 
@@ -148,19 +153,19 @@ Los usuarios de la cuenta pueden registrar un dispositivo manualmente:
 
    <Image align="center" alt="" src="https://files.readme.io/e28ef06002e423d4cf7863d4c7fd2b269a0ede5c4b996a50cee25ffbedfcd9d1-31773630618769.png" width="50%" />
 4. Completa lo siguiente:
-   * **Nombre (solo utiliza letras en inglés):** Introduce un nombre de identificación único para el dispositivo.
-   * **Sistema operativo:** Selecciona un sistema operativo.
-   * **Tipo de ID de dispositivo:** Selecciona un identificador de dispositivo.
-   * **Identificador del dispositivo:** Proporciona el ID del dispositivo según el sistema operativo:
+   - **Nombre (solo utiliza letras en inglés):** Introduce un nombre de identificación único para el dispositivo.
+   - **Sistema operativo:** Selecciona un sistema operativo.
+   - **Tipo de ID de dispositivo:** Selecciona un identificador de dispositivo.
+   - **Identificador del dispositivo:** Proporciona el ID del dispositivo según el sistema operativo:
 
      <div id="ios::41efa11e" />
 
-     <Accordion title="apps de iOS,">
+     <Accordion title="iOS">
 
      Cómo obtener los identificadores IDFA o IDFV:
 
-     * **IDFA:** Para obtener el IDFA, instala la aplicación de ID de dispositivo AppsFlyer en tu dispositivo de prueba. Para saber cómo, consulta: [Agrega un dispositivo](#register-a-device-manually) usando la aplicación de ID de dispositivo de AppsFlyer (solo admin) más arriba.
-     * **IDFV:** Para obtener el IDFV, pide a tu desarrollador que instale la herramienta de prueba de IDFV en tu dispositivo de prueba. Una vez instalada y ejecutada, la herramienta mostrará el IDFV. **Nota:** La herramienta de prueba se puede instalar solo después de que el desarrollador haya realizado los pasos preliminares en X-Code.
+     - **IDFA:** Para obtener el IDFA, instala la aplicación de ID de dispositivo AppsFlyer en tu dispositivo de prueba. Para saber cómo, consulta: [Agrega un dispositivo](#register-a-device-manually) usando la aplicación de ID de dispositivo de AppsFlyer (solo admin) más arriba.
+     - **IDFV:** Para obtener el IDFV, pide a tu desarrollador que instale la herramienta de prueba de IDFV en tu dispositivo de prueba. Una vez instalada y ejecutada, la herramienta mostrará el IDFV. **Nota:** La herramienta de prueba se puede instalar solo después de que el desarrollador haya realizado los pasos preliminares en X-Code.
 
      Para saber cuándo usar IDFA o IDFV, consulta [Registro de un dispositivo de prueba iOS](#registro-de-un-dispositivo-de-prueba-ios).
 
@@ -172,15 +177,17 @@ Los usuarios de la cuenta pueden registrar un dispositivo manualmente:
 
      Obtén los identificadores utilizando la aplicación AppsFlyer Device ID o marcando los códigos en el dispositivo:
 
-     | Identificador | Método de recuperación | Google Play | Otro |
-     | --- | --- | --- | --- |
-     | AID (GAID o OAID) | Usa la aplicación [AppsFlyer Device ID](https://play.google.com/store/apps/details?id=com.appsflyer.android.deviceid) | Obligatorio |  |
-     | IMEI | *#06#* | No aplicable | Asegúrate de que el desarrollador haya utilizado <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectimei">setCollectImei</Anchor> para recopilar el ID. |
-     | ID de Android | *#*#8255#*#* (puede que no funcione en dispositivos más recientes) | No aplicable | Asegúrate de que el desarrollador haya utilizado <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectandroidid">setCollectAndroidID</Anchor> para recopilar el ID. |
+     | Identificador     | Método de recuperación                                                                                                | Google Play  | Otro                                                                                                                                                                                                                        |
+     | ----------------- | --------------------------------------------------------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+     | AID (GAID o OAID) | Usa la aplicación [AppsFlyer Device ID](https://play.google.com/store/apps/details?id=com.appsflyer.android.deviceid) | Obligatorio  |                                                                                                                                                                                                                             |
+     | IMEI              | _#06#_                                                                                                                | No aplicable | Asegúrate de que el desarrollador haya utilizado <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectimei">setCollectImei</Anchor> para recopilar el ID.           |
+     | ID de Android     | _#_#8255#_#_ (puede que no funcione en dispositivos más recientes)                                                    | No aplicable | Asegúrate de que el desarrollador haya utilizado <Anchor target="_blank" href="https://dev.appsflyer.com/hc/docs/android-sdk-reference-appsflyerlib#setcollectandroidid">setCollectAndroidID</Anchor> para recopilar el ID. |
 
      </Accordion>
 
-5. Haz clic en **Guardar**. El dispositivo aparece en la lista de dispositivos registrados. **Nota**: Aunque el dispositivo aparece inmediatamente en la lista de dispositivos registrados, puede tardar unos minutos en registrarse en el sistema y funcionar como se espera.
+5. Haz clic en **Guardar**.El dispositivo aparece en la lista de dispositivos registrados.**Nota**: Aunque el dispositivo aparece inmediatamente en la lista de dispositivos registrados, puede tardar unos minutos en registrarse en el sistema y funcionar como se espera.
+
+<div id="note-2" />
 
 > 📘 **Note**
 >
@@ -196,7 +203,7 @@ Los usuarios de la cuenta pueden registrar un dispositivo manualmente:
 
 </Accordion>
 
-<Accordion title="Anular el registro de un dispositivo">
+<Accordion title="Unregister a device">
 
 Se pueden registrar hasta un máximo de 200 dispositivos por cuenta.
 
@@ -218,23 +225,23 @@ El diagrama de flujo a continuación ilustra los posibles cursos de acción al r
 
 Selecciona entre las siguientes opciones al registrar tu dispositivo de prueba iOS:
 
-<Accordion title="Registra tu dispositivo de prueba con IDFA">
+<Accordion title="Register your test device with IDFA">
 
 <div id="when-to-use-idfa-for-test-device-registration" />
 
-#### **¿Cuándo utilizar IDFA para el registro del dispositivo de prueba?**
+#### **¿Cómo registrar tu dispositivo de prueba con un IDFA?**
 
 Puedes registrarte con IDFA si tu aplicación ha implementado AppTransparencyTracking (ATT) y quieres realizar pruebas como un usuario que da su consentimiento. Al iniciar la aplicación probada por primera vez, asegúrate de hacer clic en **Permitir** en el aviso de ATT.
 
 <div id="how-to-register-your-test-device-with-an-idfa" />
 
-#### **¿Cómo registrar tu dispositivo de prueba con un IDFA?**
+#### **¿Cuándo utilizar IDFA para el registro del dispositivo de prueba?**
 
 Para registrarte con IDFA, utiliza la aplicación de ID del dispositivo AppsFlyer para registrar un dispositivo.
 
 </Accordion>
 
-<Accordion title="Registra tu dispositivo de prueba con IDFV">
+<Accordion title="Register your test device with IDFV">
 
 <div id="when-to-use-idfv-for-test-device-registration" />
 
@@ -242,8 +249,8 @@ Para registrarte con IDFA, utiliza la aplicación de ID del dispositivo AppsFlye
 
 Cuando IDFA no está disponible, IDFV es tu única opción. En los siguientes escenarios **debes usar IDFV:**
 
-* **Se implementó ATT,** pero quieres realizar pruebas como un usuario sin consentimiento. Al iniciar la aplicación por primera vez, asegúrate de hacer clic en **No permitir** en el aviso de la ATT.
-* **La ATT no fue implementada** en absoluto.
+- **Se implementó ATT,** pero quieres realizar pruebas como un usuario sin consentimiento. Al iniciar la aplicación por primera vez, asegúrate de hacer clic en **No permitir** en el aviso de la ATT.
+- **La ATT no fue implementada** en absoluto.
 
 <div id="how-to-register-your-device-with-idfv" />
 
@@ -253,23 +260,25 @@ Cuando IDFA no está disponible, IDFV es tu única opción. En los siguientes es
 2. Después de que tu desarrollador instale la aplicación de herramienta de prueba IDFV, ábrela y copia el IDFV que se muestra.
 3. [Registra el dispositivo de prueba manualmente](#register-a-device-manually) usando el IDFV.
 
+<div id="note-3" />
+
 > 📘 **Note**
 >
 > **¿Cuáles son las razones para instalar la aplicación de herramienta de prueba IDFV?**
 >
-> * La aplicación de herramienta de prueba IDFV se utiliza para obtener el IDFV que necesitas para registrar el dispositivo de prueba.
-> * Cuando no tienes ninguna otra aplicación de tu cuenta de desarrollador instalada en tu dispositivo de prueba. En este caso, iOS asigna un nuevo ID de proveedor cada vez que reinstalas la app. Dado que muchas pruebas implican reinstalar la app, cada reinstalación provoca que iOS restablezca el IDFV. **La aplicación de utilidad, al hacerse pasar por el proveedor, evita que iOS cree un nuevo IDFV cada vez que se reinstala la app en el dispositivo de prueba.**
+> - La aplicación de herramienta de prueba IDFV se utiliza para obtener el IDFV que necesitas para registrar el dispositivo de prueba.
+> - Cuando no tienes ninguna otra aplicación de tu cuenta de desarrollador instalada en tu dispositivo de prueba. En este caso, iOS asigna un nuevo ID de proveedor cada vez que reinstalas la app. Dado que muchas pruebas implican reinstalar la app, cada reinstalación provoca que iOS restablezca el IDFV. **La aplicación de utilidad, al hacerse pasar por el proveedor, evita que iOS cree un nuevo IDFV cada vez que se reinstala la app en el dispositivo de prueba.**
 
 </Accordion>
 
-<Accordion title="Prueba con un dispositivo no registrado">
+<Accordion title="Testing with a non-registered device">
 
 Utiliza esta opción solo si no puedes registrar un dispositivo de prueba con IDFA o IDFV. En este caso se utiliza el modelado probabilístico para la atribución. Cada instalación se registra como una nueva instalación en el dispositivo de prueba. Este método puede ser útil para registrar instalaciones de prueba repetidas en el mismo dispositivo si se cumple al menos una de las siguientes condiciones:
 
-* El SDK de iOS de AppsFlyer es la versión 6.8.0 o inferior.
-* La detección de reinstalación está desactivada para la aplicación (no se recomienda para aplicaciones en producción).
-* El enlace de atribución de prueba contiene `is_retargeting="true"`. En este caso, las instalaciones se consideran como reatribuciones y están disponibles en el dashboard y los reportes de raw data de retargeting.
-* Solo para iOS: Para evitar que Protect360 marque los clics como fraudulentos, añada el parámetro de consulta `pid="ios_testing"` a tu enlace de atribución de prueba.
+- El SDK de iOS de AppsFlyer es la versión 6.8.0 o inferior.
+- La detección de reinstalación está desactivada para la aplicación (no se recomienda para aplicaciones en producción).
+- El enlace de atribución de prueba contiene `is_retargeting="true"`. En este caso, las instalaciones se consideran como reatribuciones y están disponibles en el dashboard y los reportes de raw data de retargeting.
+- Solo para iOS: Para evitar que Protect360 marque los clics como fraudulentos, añada el parámetro de consulta `pid="ios_testing"` a tu enlace de atribución de prueba.
 
 </Accordion>
 

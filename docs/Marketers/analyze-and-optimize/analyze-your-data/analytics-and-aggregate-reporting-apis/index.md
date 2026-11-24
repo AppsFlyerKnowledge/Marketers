@@ -1,8 +1,7 @@
 ---
 title: API/Reportes agregados y analíticos
 excerpt: >-
-  Accede a los datos de analíticas a través de las API, Cohorte, SKAN, Pivote y
-  Monetización de ingresos por publicidad
+  Accede a los datos de analíticas a través de las API, Cohorte, SKAN, Pivote y Monetización de ingresos por publicidad
 table_of_contents: false
 x-zendesk:
   category: Marketers

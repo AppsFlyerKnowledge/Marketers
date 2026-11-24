@@ -1,8 +1,7 @@
 ---
 title: Plataforma para la colaboración de datos
 excerpt: >-
-  Utiliza tus datos propios en un entorno seguro para construir audiencias
-  específicas y activarlas en las redes de medios
+  Utiliza tus datos propios en un entorno seguro para construir audiencias específicas y activarlas en las redes de medios
 table_of_contents: false
 x-zendesk:
   category: Marketers

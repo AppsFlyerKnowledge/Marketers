@@ -1,8 +1,7 @@
 ---
 title: Plataforma iOS
 excerpt: >-
-  Notas de la versión del SDK de iOS, integración de Apple App Clips y otros
-  temas relacionados con iOS
+  Notas de la versión del SDK de iOS, integración de Apple App Clips y otros temas relacionados con iOS
 table_of_contents: false
 x-zendesk:
   category: Marketers

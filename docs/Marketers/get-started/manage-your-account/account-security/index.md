@@ -1,8 +1,6 @@
 ---
 title: Seguridad de la cuenta
-excerpt: >-
-  Conecta de forma segura los usuarios de tu cuenta y sistemas de BI con
-  servicios de AppsFlyer
+excerpt: Conecta de forma segura los usuarios de tu cuenta y sistemas de BI con servicios de AppsFlyer
 table_of_contents: false
 x-zendesk:
   category: Marketers

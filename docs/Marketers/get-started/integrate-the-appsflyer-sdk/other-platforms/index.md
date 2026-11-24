@@ -10,7 +10,8 @@ x-zendesk:
   locale: es
   parent_section_id: 6551164458257
   type: section
-  url: https://support.appsflyer.com/hc/es/sections/6551244207121-Otras-plataformas
+  url: >-
+    https://support.appsflyer.com/hc/es/sections/6551244207121-Otras-plataformas
 ---
 - [Descripción general del plugin React Native](/docs/react-native-plugin-overview)
 - [Plugin Flutter](/docs/flutter-plugin)

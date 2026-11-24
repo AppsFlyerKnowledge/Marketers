@@ -1,7 +1,6 @@
 ---
 title: >-
-  Uso de Firebase y Google Tag Manager con AppsFlyer: envío de instalaciones y
-  eventos
+  Uso de Firebase y Google Tag Manager con AppsFlyer: envío de instalaciones y eventos
 metadata:
   keywords:
     - Developers
@@ -20,7 +19,8 @@ x-zendesk:
   locale: es
   section: Firebase and Google Tag Manager
   section_id: 6551267006225
-  url: https://support.appsflyer.com/hc/es/articles/4410481550609
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/4410481550609
 ---
 > **En resumen:** Instrucciones para configurar el envío de eventos reportados a través del SDK de Firebase a AppsFlyer en tu aplicación.
 
@@ -34,14 +34,16 @@ Cuando se envía el evento, GTM comprueba si hay una etiqueta configurada para p
 
 <div id="creating-event-variables-for-revenue-and-price" />
 
-<Accordion title="Creación de variables de eventos para ingresos y precios">
+<Accordion title="Creating event variables for revenue and price">
+
+<div id="android" />
 
 #### Android
 
 <Tabs>
 <Tab title="Java">
 
-1. En la clase MainActivity, crea una variable para contener el ID de dispositivo de AppsFlyer:  
+1. En la clase MainActivity, crea una variable para guardar el ID de dispositivo de AppsFlyer:
 
    ```java
    public static String appsFlyerID;
@@ -56,7 +58,7 @@ Cuando se envía el evento, GTM comprueba si hay una etiqueta configurada para p
 
 <Tab title="Kotlin">
 
-1. En la clase MainActivity, crea una variable para guardar el ID de dispositivo de AppsFlyer:  
+1. En la clase MainActivity, crea una variable para contener el ID de dispositivo de AppsFlyer:
 
    ```kotlin
    var appsFlyerID: String? = null
@@ -116,18 +118,20 @@ Para iOS, los parámetros están disponibles en toda la aplicación. Puedes recu
 
 <div id="adding-events-in-the-app" />
 
-<Accordion title="Adición de eventos en la aplicación">
+<Accordion title="Adding events in the app">
 
 El primer paso es configurar el evento en la aplicación. El evento se envía mediante Firebase Event Logging en caso de que especifiques el ID de AppsFlyer, el nombre del evento y los parámetros del evento. El ID de AppsFlyer se recupera de la variable que se crea en el <Anchor target="_blank" href="/marketers/es/docs/using-firebase-and-google-tag-manager-with-appsflyer-google-tag-manager-setup#configuración-de-google-tag-manager">paso de configuración</Anchor>.
 
 <Anchor target="_blank" href="https://developers.google.com/tag-manager/ios/v5/#log-events-and-variables">Google Tag Manager usa Firebase Analytics</Anchor> Events para activar eventos de etiquetas. Siempre que se envía un evento a Firebase, Tag Manager lo reconoce y también lo envía a AppsFlyer.
+
+<div id="android-1" />
 
 #### Android
 
 <Tabs>
 <Tab title="Java">
 
-1. En la actividad deseada, agrega la declaración de importación para Firebase:  
+1. En la actividad deseada, agrega la declaración de importación para Firebase:
 
    ```java
    import com.google.firebase.analytics.FirebaseAnalytics;
@@ -148,7 +152,7 @@ El primer paso es configurar el evento en la aplicación. El evento se envía me
 
 <Tab title="Kotlin">
 
-1. En la actividad deseada, agrega la declaración de importación para Firebase:  
+1. En la actividad deseada, agrega la declaración de importación para Firebase:
 
    ```kotlin
    import com.google.firebase.analytics.FirebaseAnalytics
@@ -215,6 +219,8 @@ apps de iOS,
 ## Envío eventos de instalación a Firebase
 
 También puedes enviar eventos de instalación a Firebase con todos los datos relacionados con la instalación.
+
+<div id="android-2" />
 
 #### Android
 
@@ -446,9 +452,9 @@ El fragmento de código anterior comprueba si es la primera vez que se inicia la
 >
 > Algunas fuentes de medios no permiten que sus datos se compartan con plataformas y servicios de terceros. Si trabajas con partners como Anuncios de Meta, Twitter, Snap, Pinterest, etc., que tienen restricciones para compartir sus datos con plataformas y servicios de terceros, asegúrate de **seguir sus lineamientos y eliminar cualquier dato que se encuentre bajo estas restricciones**.
 >
-> * <Anchor target="_blank" href="https://www.facebook.com/privacy/policy/">Política de datos de Anuncios de Meta</Anchor>
-> * <Anchor target="_blank" href="https://business.twitter.com/en/help/ads-policies/introduction-to-twitter-ads/twitter-ads-policies.html">Política de datos de Twitter</Anchor>
-> * <Anchor target="_blank" href="https://www.snap.com/en-US/privacy/privacy-policy/">Política de datos de Snapchat</Anchor>
-> * <Anchor target="_blank" href="https://policy.pinterest.com/en/privacy-policy">Política de datos de Pinterest</Anchor>
+> - <Anchor target="_blank" href="https://www.facebook.com/privacy/policy/">Política de datos de Anuncios de Meta</Anchor>
+> - <Anchor target="_blank" href="https://business.twitter.com/en/help/ads-policies/introduction-to-twitter-ads/twitter-ads-policies.html">Política de datos de Twitter</Anchor>
+> - <Anchor target="_blank" href="https://www.snap.com/en-US/privacy/privacy-policy/">Política de datos de Snapchat</Anchor>
+> - <Anchor target="_blank" href="https://policy.pinterest.com/en/privacy-policy">Política de datos de Pinterest</Anchor>
 
 <div data-zendesk-anchors="configuring-events-in-the-app=configuraci%C3%B3n-de-eventos-en-la-aplicaci%C3%B3n 01H8H2MH93M1SB9HEQNHDDJZP0=configuraci%C3%B3n-de-eventos-en-la-aplicaci%C3%B3n 01H8H2MH93D36ZH7788XCMHHV6=creating-event-variables-for-revenue-and-price 01H8H2MH93RNWN6N6EWE5T26V1=android ios=apps-de-ios 01H8H2MH93CZ5TACG3MWJ8YRFK=apps-de-ios 01H8H2MH9340PQCCKB85BQZQEG=adding-events-in-the-app android::eb294e42=android-1 01H8H2MH9357Z5M1DBK4Z9N22P=android-1 sending-install-events-to-firebase=env%C3%ADo-eventos-de-instalaci%C3%B3n-a-firebase 01H8H2MH930VDZH5YSWEPTS8BN=env%C3%ADo-eventos-de-instalaci%C3%B3n-a-firebase android::319436d3=android-2 01H8H2MH938Y980A9KA9BPP44Y=android-2 creating-the-send-event-method=creaci%C3%B3n-del-m%C3%A9todo-de-env%C3%ADo-de-eventos 01H8H2MH932WYSS6Z5NZJ3195X=creaci%C3%B3n-del-m%C3%A9todo-de-env%C3%ADo-de-eventos sending-the-install-event=env%C3%ADo-del-evento-de-instalaci%C3%B3n 01H8H2MH93H0WKMV5DAN713EY0=env%C3%ADo-del-evento-de-instalaci%C3%B3n creating-the-send-event-method::64b5a305=creaci%C3%B3n-del-m%C3%A9todo-de-env%C3%ADo-de-eventos 01H8H2MH93VYXGMM5H6ZQWCFZY=creaci%C3%B3n-del-m%C3%A9todo-de-env%C3%ADo-de-eventos sending-the-install-event::aeb9cdb7=env%C3%ADo-del-evento-de-instalaci%C3%B3n 01H8H2MH93VTPZNF51R05QPK7C=env%C3%ADo-del-evento-de-instalaci%C3%B3n ios::95ad6e27=apps-de-ios-1 01H8H2MH93AQE7PKVW4QKD2ARN=apps-de-ios-1 creating-the-send-event-method::346138b1=creaci%C3%B3n-del-m%C3%A9todo-de-env%C3%ADo-de-eventos-2 01H8H2MH93NGBRHBDQTX4DKNTY=creaci%C3%B3n-del-m%C3%A9todo-de-env%C3%ADo-de-eventos-2 sending-the-install-event::aca3c0e3=env%C3%ADo-del-evento-de-instalaci%C3%B3n-2 01H8H2MH93SWYFF2KTC1HJ06FF=env%C3%ADo-del-evento-de-instalaci%C3%B3n-2 sending-the-install-event::b6997ad3=env%C3%ADo-del-evento-de-instalaci%C3%B3n-2 01H8H2MH93Y5J8QH0YBKPQSV5N=env%C3%ADo-del-evento-de-instalaci%C3%B3n-2 01H8H2MH93JQBAR6ZTW77HHFQR=advertencia" />

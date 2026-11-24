@@ -1,8 +1,6 @@
 ---
 title: La plataforma AppsFlyer
-excerpt: >-
-  Información detallada de la plataforma, notificaciones, acceso a datos, API y
-  más
+excerpt: Información detallada de la plataforma, notificaciones, acceso a datos, API y más
 table_of_contents: false
 x-zendesk:
   category: Marketers

@@ -1,8 +1,7 @@
 ---
 title: Plataformas de terceros
 excerpt: >-
-  Integra partners tecnológicos y plataformas de analíticas, como Segment,
-  mParticle, Amplitude, MixPanel y Braze
+  Integra partners tecnológicos y plataformas de analíticas, como Segment, mParticle, Amplitude, MixPanel y Braze
 table_of_contents: false
 x-zendesk:
   category: Marketers

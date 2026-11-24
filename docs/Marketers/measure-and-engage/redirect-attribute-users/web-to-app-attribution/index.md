@@ -1,8 +1,6 @@
 ---
 title: Atribución de la web a la aplicación
-excerpt: >-
-  Convierte y atribuye a los visitantes de sitios web móviles con nuestras
-  soluciones de atribución
+excerpt: Convierte y atribuye a los visitantes de sitios web móviles con nuestras soluciones de atribución
 table_of_contents: false
 x-zendesk:
   category: Marketers

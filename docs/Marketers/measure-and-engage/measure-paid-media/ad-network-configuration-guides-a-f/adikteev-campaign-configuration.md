@@ -20,7 +20,8 @@ x-zendesk:
   locale: es
   section: Ad network configuration guides (A-F)
   section_id: 6551990971793
-  url: https://support.appsflyer.com/hc/es/articles/115001997643
+  url: >-
+    https://support.appsflyer.com/hc/es/articles/115001997643
 ---
 > **De un vistazo:** Adikteev, un partner integrado de ad network de AppsFlyer, es una empresa de tecnología publicitaria centrada en el retargeting in-app y la tecnología publicitaria de engagement. Adikteev ofrece atribución móvil basada en clics y view-through. Además, Adikteev también ofrece retargeting basado en clics que puedes registrar con AppsFlyer.
 
@@ -36,19 +37,19 @@ x-zendesk:
    (**Para editar una integración existente:** Ve a la pestaña **Colaborar > Integraciones de Partners > Integraciones activas** .)
 2. Selecciona la aplicación correspondiente.
 3. Busca el Partners y selecciona **Integrate**.
-4. En la pestaña **Integración**, activa el selector **Activate partner**.   
+4. En la pestaña **Integración**, activa el selector **Activate partner**.  
    **Nota:** El selector **debe permanecer activado (activo) mientras trabajes con el Partners**. <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">Saber más</Anchor>
 5. Completa la configuración utilizando las pestañas correspondientes, como se describe a continuación. Saber más sobre las <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner">integraciones de partners.</Anchor>
 
 <div id="integration-tab" />
 
-<Accordion title="Pestaña de Integración">
+<Accordion title="Integration tab">
 
 <div id="activate-partner" />
 
 ### Activar socio
 
-En la **primera visita**, debes activar el botón ***Activar partner*** para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
+En la **primera visita**, debes activar el botón _**Activar partner**_ para habilitar la configuración de los parámetros de la pestaña de integración. El selector debe estar activado mientras trabajes con el partner.  
 Para obtener más información sobre la activación de partners, haz clic <Anchor target="_blank" href="/marketers/es/docs/partner-activation-deactivation">aquí</Anchor>.
 
 Configuración general
@@ -74,22 +75,21 @@ En esta sección, puedes asignar tus eventos de AppsFlyer a Adikteev vía postba
 
 1. Activa los postbacks de eventos in-app.
 2. Selecciona la opción de envío para todos los eventos definidos por el SDK.  
-   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner.  
-    **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
+   **- Solo eventos atribuidos a este partner** para eventos que provienen **únicamente** de usuarios atribuidos a este partner. **- Eventos atribuidos a cualquier partner u orgánicos** para tener toda tu base de usuarios disponible para ser reportada al partner.
 3. Haz clic en **Agregar evento** para agregar un evento del SDK a la lista.
 4. Completa los siguientes parámetros:
 
-| Nombre de Parámetro | Description |
-| --- | --- |
-| **Nombre del evento del SDK** | El nombre del evento, tal como lo recibe AppsFlyer, ya sea desde el SDK integrado en tu aplicación o desde eventos de servidor a servidor.  <br />**Consejo**: si no ves el evento que quieres en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a comprobarlo. |
-| **Identificador de Evento de Partner** | El nombre único o ID de cada evento, tal como se define en Adikteev.  <br />Obtén el ID de evento correspondiente de Adikteev e introdúcelo en el campo de texto. |
-| **Enviar Ingresos** | **Si no está marcada** - envía al partner todos los parámetros del evento in-app enriquecido, excepto el parámetro de ingresos, que está contenido en el parámetro **af\_revenue**.  <br />**Si está marcada** - envía todos los parámetros, incluido el valor de ingresos (si existe en el evento). |
+| Nombre de Parámetro                    | Description                                                                                                                                                                                                                                                                                                          |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre del evento del SDK**          | El nombre del evento, tal como lo recibe AppsFlyer, ya sea desde el SDK integrado en tu aplicación o desde eventos de servidor a servidor.  <br />**Consejo**: si no ves el evento que quieres en la lista, asegúrate de activar el evento en un dispositivo con una instalación no orgánica y vuelve a comprobarlo. |
+| **Identificador de Evento de Partner** | El nombre único o ID de cada evento, tal como se define en Adikteev.  <br />Obtén el ID de evento correspondiente de Adikteev e introdúcelo en el campo de texto.                                                                                                                                                    |
+| **Enviar Ingresos**                    | **Si no está marcada** - envía al partner todos los parámetros del evento in-app enriquecido, excepto el parámetro de ingresos, que está contenido en el parámetro **af\_revenue**.  <br />**Si está marcada** - envía todos los parámetros, incluido el valor de ingresos (si existe en el evento).                 |
 
 </Accordion>
 
 <div id="attribution-link-tab" />
 
-<Accordion title="Pestaña de enlaces de atribución">
+<Accordion title="Attribution link tab">
 
 En esta pestaña, puedes crear los enlaces de atribución que quieras enviar a Adikteev para atribuir las campañas, los conjuntos de anuncios o los anuncios individuales de Adikteev. Ten en cuenta que AppsFlyer NO guarda los enlaces de atribución generados para el partner.
 
@@ -103,15 +103,15 @@ En esta sección, selecciona los parámetros que quieres agregar al enlace de at
 
 Agregar parámetros al enlace de atribución en esta sección te permite realizar análisis en profundidad posteriormente. Los parámetros que ya están definidos en el enlace de atribución pueden editarse agregándolos junto con sus valores nuevos en esta sección.
 
-* **Campaña** - añádela para comparar distintas campañas en funcionamiento con Adikteev.  
+- **Campaña** - añádela para comparar distintas campañas en funcionamiento con Adikteev.  
   **Parámetro de enlace de atribución:** c
-* **Conjunto de anuncios** - define nombres de conjuntos de anuncios para comparar distintos conjuntos de anuncios dentro de campañas específicas de Adikteev.  
+- **Conjunto de anuncios** - define nombres de conjuntos de anuncios para comparar distintos conjuntos de anuncios dentro de campañas específicas de Adikteev.  
   **Parámetro de enlace de atribución:** af\_adset
-* **Nombre del anuncio** - define nombres de anuncios para comparar distintos creativos dentro de conjuntos de anuncios específicos de campañas específicas de Adikteev.  
+- **Nombre del anuncio** - define nombres de anuncios para comparar distintos creativos dentro de conjuntos de anuncios específicos de campañas específicas de Adikteev.  
   **Parámetro de enlace de atribución:** af\_ad
-* **ID de sitio** y **ID de subsitio** - configura el parámetro ID de sitio para atribuir instalaciones a publishers específicos. Si existen muchos publishers, recomendamos limitar la cantidad de IDs de sitio utilizados y usar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceder las limitaciones del ID de sitio</Anchor>.  
+- **ID de sitio** y **ID de subsitio** - configura el parámetro ID de sitio para atribuir instalaciones a publishers específicos. Si existen muchos publishers, recomendamos limitar la cantidad de IDs de sitio utilizados y usar el parámetro de ID de subsitio para evitar <Anchor target="_blank" href="/marketers/es/docs/measure-exceeded-dimensions-and-cardinality-limits#exceeded_siteid_limit">exceder las limitaciones del ID de sitio</Anchor>.  
   **Parámetros del enlace de atribución:** af\_siteid y af\_sub\_siteid
-* **Parámetros de suscriptor** - utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el Reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
+- **Parámetros de suscriptor** - utiliza cualquiera de los 5 parámetros de suscriptor para insertar valores útiles. Ten en cuenta que estos parámetros se analizan y aparecen en el Reporte de raw data, lo que los hace muy útiles para realizar la agregación o el filtrado de datos.  
   **Parámetros del enlace de atribución:** af\_sub1, af\_sub2, af\_sub3, af\_sub4, af\_sub5
 
 Agrega cualquier otro parámetro al enlace de atribución simplemente escribiéndolo en un nuevo cuadro de parámetro. Para obtener más información sobre <Anchor target="_blank" href="/marketers/es/docs/about-link-structure-and-parameters">**la estructura y los parámetros de los enlaces de atribución de AppsFlyer**</Anchor>.
@@ -127,15 +127,15 @@ Cuando la opción de retargeting está habilitada, se muestra la siguiente confi
 
 1. Enlace estándar vs. OneLink
 
-Selecciona la opción ***enlace de atribución estándar*** si:
+Selecciona la opción _**enlace de atribución estándar**_ si:
 
-* No necesitas un enlace profundo con la URL o
-* Planeas usar solo <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">esquemas de URI</Anchor> para Deep Linking
+- No necesitas un enlace profundo con la URL o
+- Planeas usar solo <Anchor target="_blank" href="/marketers/es/docs/create-deep-linking-and-redirection-links-for-your-campaigns-with-onelink#general-settings">esquemas de URI</Anchor> para Deep Linking
 
-select ***Usar OneLink*** para:
+select _**Usar OneLink**_ para:
 
-* Utilizar un solo enlace para aplicaciones de Android y iOS, o
-* Establecer enlaces profundos empleando enlaces universales o de aplicaciones.
+- Utilizar un solo enlace para aplicaciones de Android y iOS, o
+- Establecer enlaces profundos empleando enlaces universales o de aplicaciones.
 
 Ten en cuenta que seleccionar OneLink cambia el enlace de registro de clics de una URL específica de la aplicación a una <Anchor target="_blank" href="/marketers/es/docs/onelink-guide">URL de OneLink</Anchor>.
 
@@ -189,13 +189,13 @@ El enlace de atribución para impresiones contiene datos de atribución similare
 
 <div id="cost-tab" />
 
-<Accordion title="Pestaña de costos">
+<Accordion title="Cost tab">
 
 AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_blank" href="/marketers/es/docs/roi360-cost-aggregation-overview#ad-networks-supporting-cost-api">tabla de integración de costo de ad network</Anchor> para ver todos los detalles sobre las dimensiones, métricas y funciones compatibles. **Nota**: Los datos de costos requieren una suscripción a ROI360.
 
 **Para habilitar la API de costos**:
 
-* Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
+- Sigue <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#enable-cost-api">estas instrucciones de integración</Anchor>.
 
 <Anchor target="_blank" href="/marketers/es/docs/set-up-roi360-cost-api-to-measure-cost-data#cost-api-status">Visualiza el estado de tu API de costos</Anchor> y la última vez que AppsFlyer logró extraer los datos de costos coincidentes, ya sea en el Dashboard de estado de integración de costos (e ingresos por anuncios) o en el Dashboard de la ad network individual.
 
@@ -203,7 +203,7 @@ AppsFlyer obtiene los detalles de costos por API. Consulta la <Anchor target="_b
 
 <div id="ad-revenue-tab" />
 
-<Accordion title="Pestaña de Ingresos publicitarios">
+<Accordion title="Ad revenue tab">
 
 La integración de ingresos por anuncios no está disponible para Adikteev.
 
@@ -211,7 +211,7 @@ La integración de ingresos por anuncios no está disponible para Adikteev.
 
 <div id="permissions-tab" />
 
-<Accordion title="Pestaña de permisos">
+<Accordion title="Permissions tab">
 
 En esta pestaña, puedes seleccionar los permisos que quieres conceder a Adikteev. Ten en cuenta que, incluso si la atribución está deshabilitada para Adikteev, la pestaña de permisos está activa y puedes otorgarle el control a Adikteev.
 
@@ -221,13 +221,13 @@ Usa estos selectores para otorgarle permisos a una ad network para que maneje su
 
 ### Permisos de ad network
 
-* ***Permitir la configuración de la integración***: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
-* ***Permitir la configuración de postbacks de eventos in-app***: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
-* ***Permitir el acceso a tu reporte de retención***: solo para los propios datos de retención del partner.
-* ***Permitir acceso a tus datos agregados de Usuario fiel*** - solo a los datos de Usuario fiel propios del partner
-* ***Permitir acceso a tus datos agregados de eventos in-app** -* solo a los datos de eventos in-app propios del partner
-* ***Permitir acceso a tus datos agregados de ingresos*a** - solo a los datos de ingresos atribuidos al partner
-* ***Permitir el acceso a tu panel de control Protect360***: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
+- _**Permitir la configuración de la integración**_: permite que el partner configure la pestaña de integración (excepto postbacks de eventos in-app).
+- _**Permitir la configuración de postbacks de eventos in-app**_: permite que el partner configure la asignación de postbacks de eventos in-app a sí mismo en la pestaña de integración.
+- _**Permitir el acceso a tu reporte de retención**_: solo para los propios datos de retención del partner.
+- _**Permitir acceso a tus datos agregados de Usuario fiel**_ - solo a los datos de Usuario fiel propios del partner
+- _**Permitir acceso a tus datos agregados de eventos in-app** -_ solo a los datos de eventos in-app propios del partner
+- **_Permitir acceso a tus datos agregados de ingreso&#x73;_&#x61;** - solo a los datos de ingresos atribuidos al partner
+- _**Permitir el acceso a tu panel de control Protect360**_: solo a los datos de Protect360 propios del partner, y siempre que la característica esté habilitada para el anunciante.
 
 Aprende más acerca de cómo otorgar <Anchor target="_blank" href="/marketers/es/docs/set-up-an-integrated-partner#permissions-tab">permisos a la red de publicidad</Anchor>.
 

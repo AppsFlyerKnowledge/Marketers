@@ -1,8 +1,6 @@
 ---
 title: IA
-excerpt: >-
-  Utiliza la IA para desbloquear insights, automatizar flujos de trabajo e
-  impulsar decisiones más inteligentes.
+excerpt: Utiliza la IA para desbloquear insights, automatizar flujos de trabajo e impulsar decisiones más inteligentes.
 table_of_contents: false
 x-zendesk:
   category: Marketers

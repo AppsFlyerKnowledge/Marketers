@@ -1,8 +1,6 @@
 ---
 title: Analiza tus datos
-excerpt: >-
-  Utiliza nuestros paneles de control, reportes y herramientas de entrega de
-  datos
+excerpt: Utiliza nuestros paneles de control, reportes y herramientas de entrega de datos
 table_of_contents: false
 x-zendesk:
   category: Marketers
@@ -12,7 +10,8 @@ x-zendesk:
   locale: es
   parent_section_id: 6550913619473
   type: section
-  url: https://support.appsflyer.com/hc/es/sections/6550901627921-Analiza-tus-datos
+  url: >-
+    https://support.appsflyer.com/hc/es/sections/6550901627921-Analiza-tus-datos
 ---
 - [Paneles de control](/docs/dashboards)
 - [API/Reportes agregados y analíticos](/docs/analytics-and-aggregate-reporting-apis)
