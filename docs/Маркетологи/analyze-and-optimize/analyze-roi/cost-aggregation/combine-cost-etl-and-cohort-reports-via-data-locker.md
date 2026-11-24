@@ -2,8 +2,8 @@
 title: Объедините отчеты Cost ETL и когорты
 metadata:
   keywords:
-    - Marketers
-    - Marketing Analytics
+    - Маркетологи
+    - Маркетинговая аналитика
 x-zendesk:
   category: Marketers
   category_id: 6550444307985
@@ -17,13 +17,14 @@ x-zendesk:
   locale: ru
   section: Cost aggregation
   section_id: 6551029483281
-  url: https://support.appsflyer.com/hc/ru/articles/27494360719505
+  url: >-
+    https://support.appsflyer.com/hc/en-us/articles/27494360719505-Combine-Cost-ETL-and-cohort-reports-via-Data-Locker
 ---
 > **Краткий обзор:** Комбинируйте отчеты Cost ETL и когорты через Data Locker (обычные и расширенные агрегированные), чтобы получить полную картину ваших маркетинговых кампаний с наилучшей доступной актуальностью, точностью и детализацией.
 
-<Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" />
+<Image align="center" alt="" src="https://files.readme.io/46f3cd4c2cfd6ba97caafb788c92ce967d8f304abd7b620968f49095275edf1a-27497862728465.png" />.
 
-<div id="about-combining-cost-etl-and-cohort-reports" />
+<div id="about-combining-cost-etl-and-cohort-reports" />.
 
 ## Об объединении отчетов Cost ETL и когортных отчетов
 
@@ -33,36 +34,36 @@ x-zendesk:
 
 В сочетании друг с другом они:
 
-* Предоставят полную картину эффективности вашего маркетинга с максимальной актуальностью, точностью и детализацией данных.
-* Позволят сопоставить внутренние данные в BI с данными, которые вы видите на дэшбордах AppsFlyer.
-* Позволят рассчитать такие важные показатели, как рентабельность рекламных расходов (ROAS) и стоимость одного действия (CPA).
+- Предоставят полную картину эффективности вашего маркетинга с максимальной актуальностью, точностью и детализацией данных.
+- Позволят сопоставить внутренние данные в BI с данными, которые вы видите на дэшбордах AppsFlyer.
+- Позволят рассчитать такие важные показатели, как рентабельность рекламных расходов (ROAS) и стоимость одного действия (CPA).
 
-<div id="queries-to-combine-reports" />
+<div id="queries-to-combine-reports" />.
 
 ## Запросы для объединения отчетов
 
 В последующих разделах представлены запросы и соображения, которые необходимо учитывать при объединении отчетов Cost ETL с другими отчетами:
 
-* [Расширенные агрегированные отчеты по когортам](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
-* [Отчеты по когортам через Data Locker](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-cohort-report)
+- [Расширенные агрегированные отчеты по когортам](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-advanced-aggregated-cohort-report)
+- [Отчеты по когортам через Data Locker](/docs/combine-cost-etl-and-cohort-reports-via-data-locker#query-to-combine-cost-etl-and-cohort-report)
 
-<div id="query-to-combine-cost-etl-and-advanced-aggregated-cohort-report" />
+<div id="query-to-combine-cost-etl-and-advanced-aggregated-cohort-report" />.
 
-<Accordion title="Запрос для объединения данных Cost ETL и расширенного агрегированного отчета по когортам">
+<Accordion title="Query to combine Cost ETL and Advanced aggregated cohort report">
 
 **Чтобы объединить отчеты Cost ETL и когорты, ваш разработчик BI должен**:
 
-* Используйте следующий запрос в качестве примера, адаптировав его к вашей внутренней системе бизнес-аналитики.
-* **Важные замечания**:
-  * Настройте запрос:
-    * Настройте даты начала и окончания.
-    * Настройте названия отчетов.
-    * Выберите показатели и метрики в конкретной схеме Cost ETL.
-  * Есть различия в актуальности данных в отчетах. Например, Cost ETL обновляется до четырех раз в день, а расширенные агрегированные отчеты по когортам обновляются много раз в день.
-  * Расширенные отчеты по когортам включают пользователей, конвертированных за последние 1095 дней. Если они конвертировались до этого, они не учитываются.
-  * В отчетах Cost ETL используется часовой пояс данных, указанный в AppsFlyer. Расширенные агрегированные отчеты по когортам включают отчеты по версиям (UTC) и по часовым поясам. **Рекомендация**: Объедините отчеты Cost ETL и отчеты когорты с версиями по часовым поясам.
+- Используйте следующий запрос в качестве примера, адаптировав его к вашей внутренней системе бизнес-аналитики.
+- **Важные примечания**:
+  - Настройте запрос:
+    - Настройте даты начала и окончания.
+    - Настройте названия отчетов.
+    - Выберите значения и метрики в конкретной схеме Cost ETL.
+  - Есть различия в актуальности данных в отчетах. Например, Cost ETL обновляется до четырех раз в день, а расширенные агрегированные отчеты по когортам обновляются много раз в день.
+  - Расширенные отчеты по когортам включают пользователей, конвертированных за последние 1095 дней. Если они конвертировались до этого, они не учитываются.
+  - В отчетах Cost ETL используется часовой пояс данных, указанный в AppsFlyer. Расширенные агрегированные отчеты по когортам включают отчеты по версиям (UTC) и по часовым поясам. **Рекомендация**: Объедините отчеты Cost ETL и отчеты когорты с версиями по часовым поясам.
 
-<div id="query" />
+<div id="query" />.
 
 #### Запрос
 
@@ -152,22 +153,22 @@ GROUP BY ALL;
 
 </Accordion>
 
-<div id="query-to-combine-cost-etl-and-cohort-report" />
+<div id="query-to-combine-cost-etl-and-cohort-report" />.
 
-<Accordion title="Запрос для объединения отчета Cost ETL и отчета когорты">
+<Accordion title="Query to combine Cost ETL and cohort report">
 
 **Чтобы объединить отчеты Cost ETL и когорты, ваш разработчик BI должен**:
 
-* Использовать следующий запрос в качестве руководства, адаптируя его под свою внутреннюю BI-систему.
-* **Важные примечания**:
-  * Настройте запрос:
-    * Настройте даты начала и окончания.
-    * Настройте названия отчетов.
-    * Выберите значения и метрики в конкретной схеме Cost ETL.
-  * Есть различия в актуальности данных в отчетах. Например, Cost ETL обновляется до четырех раз в день, а когортные отчеты через Data Locker — один раз в день.
-  * В отчетах Cost ETL используется часовой пояс данных, указанный в AppsFlyer. Когортные отчеты через Data Locker используют UTC.
+- Используйте следующий запрос в качестве примера, адаптировав его к вашей внутренней системе бизнес-аналитики.
+- **Важные замечания**:
+  - Настройте запрос:
+    - Настройте даты начала и окончания.
+    - Настройте названия отчетов.
+    - Выберите значения и метрики в конкретной схеме Cost ETL.
+  - Есть различия в актуальности данных в отчетах. Например, Cost ETL обновляется до четырех раз в день, а когортные отчеты через Data Locker — один раз в день.
+  - В отчетах Cost ETL используется часовой пояс данных, указанный в AppsFlyer. Когортные отчеты через Data Locker используют UTC.
 
-<div id="query-1" />
+<div id="query-1" />.
 
 #### Запрос
 
@@ -255,12 +256,12 @@ GROUP BY ALL;
 
 </Accordion>
 
-<div id="see-also" />
+<div id="see-also" />.
 
-> 📄 **См. также**
+> 📄 **Смотрите также**
 >
-> * <Anchor target="_blank" href="/marketers/ru/docs/set-up-and-use-roi360-cost-etl-reports">Cost ETL</Anchor>
-> * <Anchor target="_blank" href="/marketers/ru/docs/advanced-aggregated-reports-in-data-locker">Расширенные агрегированные отчеты в Data Locker</Anchor>
-> * <Anchor target="_blank" href="/marketers/ru/docs/cohort-analytics-via-data-locker">Отчеты по когортам через Data Locker</Anchor>
+> - <Anchor target="_blank" href="/marketers/ru/docs/set-up-and-use-roi360-cost-etl-reports">ETL по затратам</Anchor>
+> - <Anchor target="_blank" href="/marketers/ru/docs/advanced-aggregated-reports-in-data-locker">Расширенные агрегированные отчеты в Data Locker</Anchor>
+> - <Anchor target="_blank" href="/marketers/ru/docs/cohort-analytics-via-data-locker">Отчеты по когортам через Data Locker</Anchor>
 
-<div data-zendesk-anchors="about-combining-cost-etl-and-cohort-reports=%D0%BE%D0%B1-%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D0%BE%D0%B2-cost-etl-%D0%B8-%D0%BA%D0%BE%D0%B3%D0%BE%D1%80%D1%82%D0%BD%D1%8B%D1%85-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D0%BE%D0%B2 h_01J55PCC5MJ3MJBESDVEFHT796=%D0%BE%D0%B1-%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D0%BE%D0%B2-cost-etl-%D0%B8-%D0%BA%D0%BE%D0%B3%D0%BE%D1%80%D1%82%D0%BD%D1%8B%D1%85-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D0%BE%D0%B2 queries-to-combine-reports=%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D0%BE%D0%B2 h_01J55TR3SRXQPRBYRX6G3EJ7D9=%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D0%BE%D0%B2 h_01J55VAQ804JWE6WT552GY98JF=query-to-combine-cost-etl-and-advanced-aggregated-cohort-report query=%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81 h_01J55W908AAPQ6YRT4P1R4CA58=%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81 h_01J55VAQ80PQX00GA9D516ST2Z=query-to-combine-cost-etl-and-cohort-report query::84619524=%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81-1 h_01J55WCKZFA2JWV0MP72WVK7Y2=%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81-1 h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=%D1%81%D0%BC-%D1%82%D0%B0%D0%BA%D0%B6%D0%B5" />
+<div data-zendesk-anchors="h_01J55PCC5MJ3MJBESDVEFHT796=about-combining-cost-etl-and-cohort-reports h_01J55TR3SRXQPRBYRX6G3EJ7D9=queries-to-combine-reports h_01J55VAQ804JWE6WT552GY98JF=query-to-combine-cost-etl-and-advanced-aggregated-cohort-report h_01J55W908AAPQ6YRT4P1R4CA58=query h_01J55VAQ80PQX00GA9D516ST2Z=query-to-combine-cost-etl-and-cohort-report query::84619524=query-1 h_01J55WCKZFA2JWV0MP72WVK7Y2=query-1 h_01HDNZ24ZDXSAPJ1F5QCB9X1EN=see-also" />.
